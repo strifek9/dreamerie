@@ -2,6 +2,14 @@
 
 This is the primary gameplay source of truth. **Confirmed rules** express the supplied product vision. **Prototype assumptions** are limited local demonstration choices, not settled production rules. **Unresolved questions** require a later decision. **Future ideas** are outside Prototype 0.1.
 
+**Prototype 0.2 planning:** The user wants shared playtests across phone and desktop browsers. [PROTOTYPE_0_2_PLAN.md](PROTOTYPE_0_2_PLAN.md) records the scope, proposed policies and decisions needed before implementation. These directions apply to the planned 0.2 playtest; implementation has not started and the local assumptions below remain scoped to the accepted Prototype 0.1.
+
+- **2–6 players total:** Two is the minimum; the previously approved maximum of six remains. This is a prototype limit, not a permanent production cap.
+- **Solo entry:** Put single players in a separate lobby with other single players, from which groups are formed. Grouping/start criteria, wait duration and host selection are unresolved; do not substitute bots or start a one-player game.
+- **Progression:** The host can manually progress the game. It must also advance automatically when the next day is due if the host does not act, including while the host is offline. The cutoff, room timezone or rolling 24-hour policy, preparation deadline, reveal timing and interaction with early manual advancement require decisions.
+- **Missed day:** Use a decoy and give the missing player zero points for that day when it advances. Whether to retain an already-prepared Dream, when the host may close an unfinished day early, and how missing players affect the recognition denominator remain unresolved. Do not infer these details or treat disconnecting alone as forfeiture.
+- **Two-player scoring consequence:** With the existing everyone-correct exception, the author receives no recognition points when their sole opponent guesses correctly. Therefore recognition is always zero in a fully participating two-player game, with up to one guessing point per player per day. No special scoring exception has been authorized.
+
 ## Intent
 
 **How well do you understand the way your friends see the world?**
@@ -106,7 +114,7 @@ These assumptions must preserve six-card hands, unique player allocations, hidde
 - Treatment of missing guesses in the “everyone” condition. Local friends simulate all required guesses, so missing participation is not part of the prototype. Whether to adopt personal clues as the main game remains subject to user testing.
 - Exact weekly timing, setup deadlines, daily boundaries, and timezones.
 - When Sunday's Dream is guessed and how final reveal relates to the next week.
-- Minimum and maximum group size.
+- Production minimum and maximum group size beyond the confirmed 2–6-player Prototype 0.2 range.
 - Whether six displayed guessing cards remain constant for larger groups.
 - How weekly concepts are selected and whether they repeat.
 - Exact decoy selection/generation, exposure, reuse, and exhaustion rules.

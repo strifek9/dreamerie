@@ -8,6 +8,8 @@ The product is mobile-first and responsive for mobile and desktop web. Artwork l
 
 ## Current status
 
+**Next prototype:** [Prototype 0.2 plan](docs/PROTOTYPE_0_2_PLAN.md) covers 2–6 players on their own phones or desktop browsers, private rooms and a separate lobby for solo players. The host can progress the game manually, and days must also advance automatically when due. The user requested decoy substitution and zero points for a missed day; its detailed scoring behavior, day timing and solo-group formation still need decisions. Planning is authorized; shared play, scheduling and hosting are not yet implemented. The runnable app remains the approved local Prototype 0.1.
+
 Round results now appear between **The dream comes into focus.** and **Dreams remembered**, above the dream cards. The summary includes each friend's dream clue, your guess result and points, followed by friends' recognition of your Dream and its points. It wraps across two columns on phones, up to three on tablets and up to five on wider screens. Five-friend layouts are checked with presentation fixtures; the playable prototype still uses Charlie, Nancy and Song.
 
 Player-facing text now consistently calls the text **dream clues** and the illustrations **dream cards**. Saved pairs are confirmed above the preparation progress with **Your dream clue and dream card are remembered.** Friends' dream clues are larger, headed **Nancy’s Dream Clue** (or Song's), with **Select their Dream Card.** underneath.

@@ -1,5 +1,9 @@
 # Prototype 0.1 plan
 
+## Prototype 0.2 planning
+
+Prototype 0.1 is complete and approved. The user has authorized planning shared games across phone and desktop browsers: 2–6 players, private rooms, a separate solo-player lobby, host controls and automatic daily progression. See [PROTOTYPE_0_2_PLAN.md](PROTOTYPE_0_2_PLAN.md) for the scope, unresolved policies and separately numbered 0.2 milestones, including group formation and scheduling. This file remains the scope index; the linked plan is its 0.2 supplement. Only planning is authorized so far. The exclusions and local assumptions below continue to describe Prototype 0.1, not a claim that connected play already exists.
+
 ## Starting point and scope
 
 **Current authorized experiment:** Add personal clues and mutual recognition scoring while retaining the original shared-word mode. The user chose six clue-and-card pairs per person on Day 1. This is one reversible prototype experiment, not authorization for another milestone or production infrastructure. Historical milestone notes below describe their implementation at the time.
