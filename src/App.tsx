@@ -7,19 +7,21 @@ import { concepts } from './data/concepts'
 import { CURRENT_PLAYER_ID, players } from './data/players'
 import { createDreamWeek, getWeekIntroduction } from './game/week'
 import { chooseDream, getNextDreamConcept } from './game/selection'
-import type { CardId, ConceptId, DreamWeek } from './game/types'
+import { getPreparedFirstRound, prepareSimulatedDreams } from './game/simulation'
+import type { CardId, ConceptId, DreamWeek, PreparedRound } from './game/types'
 
 interface LocalGame {
   week: DreamWeek
   error: string | null
   remembered: string | null
+  firstRound: PreparedRound | null
 }
 
 function commitChoice(state: LocalGame, action: { conceptId: ConceptId; cardId: CardId }): LocalGame {
   try {
     const week = chooseDream(state.week, CURRENT_PLAYER_ID, action.conceptId, action.cardId)
     const remembered = state.week.concepts.find((concept) => concept.id === action.conceptId)?.label ?? null
-    return { week, error: null, remembered }
+    return { week, error: null, remembered, firstRound: getPreparedFirstRound(week, CURRENT_PLAYER_ID) }
   } catch (error) {
     return { ...state, error: error instanceof Error ? error.message : 'Your choice could not be remembered.' }
   }
@@ -27,9 +29,13 @@ function commitChoice(state: LocalGame, action: { conceptId: ConceptId; cardId: 
 
 export default function App() {
   const [game, commit] = useReducer(commitChoice, undefined, () => ({
-    week: createDreamWeek('week-prototype', concepts, cards, players),
+    week: prepareSimulatedDreams(
+      createDreamWeek('week-prototype', concepts, cards, players),
+      CURRENT_PLAYER_ID,
+    ),
     error: null,
     remembered: null,
+    firstRound: null,
   }))
   const { week } = game
   const [screen, setScreen] = useState<'beginning' | 'week'>('beginning')

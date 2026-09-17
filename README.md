@@ -8,9 +8,9 @@ The product is mobile-first and responsive for mobile and desktop web. Artwork l
 
 ## Current status
 
-Milestones 1–4 are approved. Milestone 5 is implemented and awaiting user testing: after Charlie's sixth choice, “Your dreams are remembered.” appears in the same preparation page and receives focus. Committed choices stay intact, and the remaining hand has six cards including the final replacement. Display/setup order remains independent of the hidden randomized daily order. A shared pool of 60 local SVG placeholders supplies unique hands for Charlie, Nancy, and Song, with independent per-player exposure tracking. Nancy's and Song's cards remain hidden. Friends' simulated selections, guessing, and scoring come later.
+Milestones 1–5 are approved. Milestone 6 is implemented and awaiting user testing: Nancy and Song each prepare six hidden Dreams using the shared selection and replacement rules. Their random valid choices are local fixtures, not a model of personal interpretation. Charlie's preparation stays on the same page, with six cards throughout and “Your dreams are remembered.” after the final choice. Once everyone is prepared, the first hidden-order concept and Nancy/Song target IDs are ready in local state. No guessing controls or answers are displayed yet. A shared pool of 60 local SVG placeholders preserves unique allocations and independent per-player exposure tracking.
 
-Prototype 0.1 uses **React, TypeScript, and Vite**. Later milestones will add local Dream selection and guessing, with Charlie as the human and Nancy and Song as simulated players, temporary placeholder artwork, and +1 point per correctly identified Dream.
+Prototype 0.1 uses **React, TypeScript, and Vite**. Charlie is the human; Nancy and Song are simulated players. Local Dream selection is available; later milestones add guessing and +1 point per correctly identified Dream.
 
 ## Run locally
 
@@ -32,7 +32,7 @@ npm run build
 npm run preview
 ```
 
-The build includes TypeScript checks and writes production assets to `dist/`. Preview serves that build locally. Tests use Node's built-in runner and TypeScript stripping, with no added test dependency. Seventeen tests cover fixtures, dealing, exposure, schedule separation, and atomic selection/replacement, including invalid or repeated commands and exhaustion. Browser checks cover six phone/tablet/desktop widths, inspection without selection, keyboard commitment, focus, double activation, same-slot replacement, navigation stability, and the sixth-choice boundary.
+The build includes TypeScript checks and writes production assets to `dist/`. Preview serves that build locally. Tests use Node's built-in runner and TypeScript stripping, with no added test dependency. Twenty-two tests cover fixtures, dealing, exposure, schedule separation, atomic selection/replacement, simulated friends, and first-round readiness, including invalid or repeated commands and exhaustion. Browser checks cover six phone/tablet/desktop widths, inspection without selection, keyboard commitment, focus, double activation, same-slot replacement, navigation stability, and the sixth-choice boundary.
 
 Temporary artwork is original code-authored SVG geometry, not AI-generated images. See [artwork provenance and regeneration](public/artwork/README.md); it is a fixture collection rather than the final visual identity.
 

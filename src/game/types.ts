@@ -41,3 +41,10 @@ export interface DreamWeek {
 export interface WeekIntroduction {
   readonly concepts: readonly DreamConcept[]
 }
+
+/** Ready round metadata only; boards and assignments arrive in later milestones. */
+export interface PreparedRound {
+  readonly conceptId: ConceptId
+  readonly guesserId: PlayerId
+  readonly targetPlayerIds: readonly PlayerId[]
+}

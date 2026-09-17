@@ -4,7 +4,7 @@
 
 Inspection found one tracked minimal README, one initial commit, a clean working tree, and no application, tooling, assets, or existing architecture. This task creates documentation only. Bootstrap happens in a later implementation task.
 
-The paragraph above records the initial planning inspection. Milestones 1–4 are approved; Milestone 5 is implemented, awaiting user testing. See their statuses below and the README for current run instructions. Milestones 6–12 remain incomplete.
+The paragraph above records the initial planning inspection. Milestones 1–5 are approved; Milestone 6 is implemented, awaiting user testing. See their statuses below and the README for current run instructions. Milestones 7–12 remain incomplete.
 
 Build a local React + TypeScript + Vite browser game, mobile-first and responsive. Demonstrate Charlie choosing six Dreams and recognizing Nancy/Song Dreams using placeholder artwork. Follow [GAME_DESIGN.md](GAME_DESIGN.md), including its explicitly labeled prototype assumptions.
 
@@ -79,7 +79,7 @@ The continuous preparation flow is now the presentation direction: overview, cur
 
 ### 5. Selection completion
 
-- **Status:** Implemented; awaiting user testing and approval before Milestone 6.
+- **Status:** Approved by the user; proceeding to Milestone 6 was authorized.
 - **Goal:** Give the already-working six-choice sequence an atmospheric ending.
 - **Scope:** Replace the minimal end-of-selection note with “Your dreams are remembered.” in the same preparation page. Do not rebuild selection or add another required navigation step. Handle focus and remove obsolete choice controls.
 - **Completion:** After the sixth confirmation, Charlie has six distinct selected Dreams and six cards left in hand, including the final replacement. The completion state appears in place, offers no seventh choice, and survives returning to the beginning. Do not add guessing controls before the required later milestones supply that experience.
@@ -88,9 +88,12 @@ The continuous preparation flow is now the presentation direction: overview, cur
 
 ### 6. Simulated friends' Dreams
 
+- **Status:** Implemented; awaiting user testing and approval before Milestone 7.
 - **Goal:** Supply valid Nancy/Song targets.
 - **Scope:** Local simulation using shared allocation/selection rules; prepare the first hidden-order concept in local state. Keep friends' choices out of preparation views. No incomplete guessing screen or extra setup pages.
 - **Completion:** Friends each have six selected Dreams with no shared allocations, including their replacement draws. Charlie's prepared Dreams and remaining hand stay intact. The first round concept is available for Milestone 7; Charlie is never a guessing target. No clock/networking needed.
+- **Implementation:** A pure local simulation chooses valid cards from Nancy's and Song's current hands using the existing atomic selection/replacement function and injectable randomness. It runs at week initialization, skips completed choices, and preserves Charlie's hand, Dreams, and exposure. Once Charlie also completes preparation, local state holds the first hidden-order concept, Charlie as guesser, and only Nancy/Song as targets. No guessing board, assignments, scoring, or extra screens were added. After all preparation, 36 unique cards are reserved and 24 remain for later decoys.
+- **Validation:** TypeScript checks, production build, and all 22 rule tests passed. New tests cover disjoint selected Dreams and remaining hands, private exposure, unchanged Charlie state, reproducibility, partial/completed simulation, exhaustion, invalid randomness without input mutation, and first-round readiness. Headless Edge rechecked the continuous preparation and completion flow at all six documented widths, including keyboard selection, optional inspection, double activation, six same-slot replacements, completion focus, and preserved state after return navigation. No runtime errors were reported.
 
 ### 7. Six-card guessing board
 

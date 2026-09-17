@@ -64,7 +64,7 @@ These choices support a small local demonstration and must be revisited before p
 | Concepts | Use the six example concepts as fixtures. Setup/display order is separate from the hidden shuffled round order. |
 | Progression | Explicit local progression through selection, guessing, reveal, and the next round. No wall-clock waits, timezone policy, or scheduling service. |
 | Week demonstration | Demonstrate one complete guessing round, then extend to all six rounds and Charlie's accumulated score. Initially do not simulate Nancy/Song guesses or standings. |
-| Friends' selections | Use the same allocation/selection rules as Charlie, avoiding hardcoded overlapping cards. |
+| Friends' selections | Use the same allocation/selection rules as Charlie, avoiding hardcoded overlapping cards. At local week initialization, Nancy and Song randomly choose valid cards from their current hands for all six concepts. These reproducible fixture choices do not model personal interpretations; their Dreams remain hidden during Charlie's preparation. |
 | Allocation | Reserve every card dealt to a player, including replacement draws, in a shared per-week pool. Never return a reserved card to that week's deal pool. |
 | Decoys | Use distinct unallocated cards unseen by Charlie that week; exclude all players' dealt/reserved cards. Track images shown in hands and boards. Provision enough fresh decoys for every round; do not fall back to known images. |
 | Randomness | Supply randomness to rule functions so verification can reproduce fixture scenarios. No randomness framework is needed. |
