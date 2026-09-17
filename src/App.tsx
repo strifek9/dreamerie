@@ -99,7 +99,7 @@ export default function App() {
       ) : (
       <main className="introduction">
         <div className="welcome-art" aria-hidden="true">
-          <img src="/artwork/dreamerie-garden.jpg" alt="" width="1122" height="1402" />
+          <img src="/artwork/dreamerie-moonlight.jpg" alt="" width="1122" height="1402" />
         </div>
         <div className="welcome-copy">
         <p className="eyebrow">A quiet place for shared dreams</p>

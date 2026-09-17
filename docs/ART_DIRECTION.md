@@ -14,7 +14,9 @@ Variety is essential. Include joyful, sad, funny, tender, lonely, restless, eeri
 
 Mix readable surreal scenes with more abstract and confusing art: impossible perspective, shifting scale, ambiguous silhouettes, fragmented shapes, unexpected empty space, and objects transforming into one another. Some cards can feel unresolved or contradictory. Avoid making all images literal, cute, densely decorated or comforting. Each image should support several interpretations.
 
-The surrounding interface uses warm parchment, deep teal, plum and restrained gold ornament. Its stable palette supports the deck's much broader colors. Give the artwork room; decorative details must not hide choices or compete with the images.
+The welcome scene is a separate blue-and-purple painted dreamscape: an impossible doorway, cloud stairs and a creature asleep on the moon. It is never part of the dealt deck.
+
+The surrounding interface uses muted periwinkle surfaces, deep indigo, violet and restrained gold ornament. Its stable palette supports the deck's much broader colors. Give the artwork room; decorative details must not hide choices or compete with the images.
 
 ## Symbolism and ambiguity
 
@@ -34,7 +36,7 @@ Avoid relying on a clock for TIME, heart icon for LOVE, labeled house for HOME, 
 ## Artwork-first UI
 
 - Use restrained surfaces, generous spacing, and readable typography.
-- Use deep teal surroundings, warm parchment surfaces, plum accents and restrained gold details with sufficient contrast. Keep the card palette much broader than the interface palette.
+- Use deep indigo surroundings, muted periwinkle surfaces, violet accents and restrained gold details with sufficient contrast. Keep the card palette much broader than the interface palette.
 - Let images carry richness and color. Avoid bright arcade styling, dense dashboards, excess buttons/panels, a technology-heavy appearance, and gratuitous gradients.
 - Frame cards consistently without cropping defining details. Clear selection/lock markers should not cover important artwork.
 - Keep unnecessary scores/statistics away from the selection experience; results belong in reveal/completion states.
@@ -45,7 +47,7 @@ Design at phone width first. A two-column, three-row six-card gallery is a usefu
 
 All primary actions work by tapping with comfortable targets and no hover dependence. Keyboard focus, selection, availability, and locked states must be understandable. Separate image inspection from commitment. Progressively enhance galleries and spacing for tablet/desktop.
 
-Use concise visual descriptions for accessibility without prescribing image meaning or revealing answers. Correctness and locks need text/symbols as well as color. Keep surrounding text short so artwork stays prominent.
+Use concise visual descriptions for accessibility without prescribing image meaning or revealing answers. Correctness and locks need text/symbols as well as color. Keep surrounding text short so artwork stays prominent. Reserve space for selection, ownership and lock labels and unlock controls: marking or clearing a choice must not move the cards. Preserve scroll position as prompts change. Keep confirmation and the current prompt within reach while browsing, with enough scroll clearance for keyboard focus. Compact the overview and spacing before reducing image sizes. Use three larger cards per row on tablet and desktop, and two on phones. Keep the confirmation button compact and centered. Place an always-visible, keyboard-accessible magnifier beneath each image, outside its artwork. Holding for about half a second and releasing may also inspect; scrolling or a cancelled pointer must cancel that gesture. Inspection must preserve any tentative selection and return focus and scroll position on close. A hold is an optional shortcut, never the only route to inspection.
 
 ## UI writing
 
@@ -55,7 +57,7 @@ Quietly narrate entering, experiencing, and remembering Dreams. Use short, under
 
 Day 1 ends with the preparation completion state; do not show friends' guessing prompts that day. Keep the development-only day control small and in the top right. From Day 2, show one friend's prompt at a time. Confirming Nancy's guess changes the prompt to Song's for the same concept, preserves all six images in their positions, and labels Nancy's committed guess as locked. These labels describe the player's guesses, never the true image owners. Offer “Unlock Nancy’s guess” (or Song's) until reveal. Tapping a tentative selection again clears it; unlocking restores the relevant prompt and focus without erasing other confirmed guesses. Use gender-neutral “their” in the question for every friend.
 
-Keep the user's Dream in the first slot of the six-image board during guessing and reveal. Use a distinct teal border and an explicit “Your Dream · View only” label below the image; preserve the artwork's color and detail. Tapping or keyboard activation enlarges it without choosing a guess. The other five slots contain two friends' Dreams and three decoys. Do not use a separate own-Dream sidebar in the round workspace.
+Keep the user's Dream in the first slot of the six-image board during guessing and reveal. Use a distinct indigo border and an explicit “Your Dream · View only” label below the image; preserve the artwork's color and detail. Tapping or keyboard activation enlarges it without choosing a guess. The other five slots contain two friends' Dreams and three decoys. Do not use a separate own-Dream sidebar in the round workspace.
 
 After both guesses, “Reveal their dreams” keeps the same six cards in place. Add actual owners' names or “Decoy” below their images and retain “Your guess: Nancy” or Song on the guessed cards. Show correctness and +1 or 0 points in text below the board. Friends' ownership and decoy labels remain absent before reveal; the user's own card is the deliberate exception. The week ends with a recap containing the user's Dreams and friends' actual/guessed image pairs.
 
@@ -79,7 +81,7 @@ Avoid “These are your six words,” “Select an image for TIME,” or generic
 
 ## Animation
 
-Prototype 0.1 prioritizes gameplay. Gentle fades, cards drifting into place, softly disappearing choices, quiet replacements, and subtle reveals may later support the mood. Avoid elaborate effects, distracting motion, mandatory waits, or obscuring locked choices. Respect reduced motion and preserve focus.
+Prototype 0.1 prioritizes gameplay. Gentle opacity or color changes and subtle reveals may later support the mood. Keep card positions and dimensions stationary during selection, deselection, replacement, locking and reveal; do not add drifting cards or transitions that reflow the grid. Avoid elaborate effects, distracting motion, mandatory waits, or obscuring locked choices. Respect reduced motion and preserve focus.
 
 ## Local artwork and provenance
 

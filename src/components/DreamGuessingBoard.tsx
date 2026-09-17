@@ -18,7 +18,6 @@ export default function DreamGuessingBoard({ board, onUnlock, onAssign, error, r
   const friend = board.currentFriend
   useEffect(() => {
     heading.current?.focus({ preventScroll: true })
-    heading.current?.scrollIntoView({ block: 'start' })
   }, [friend?.id, board.concept.id, board.locks.size, reveal !== undefined])
 
   return (
@@ -29,7 +28,7 @@ export default function DreamGuessingBoard({ board, onUnlock, onAssign, error, r
           {reveal ? 'The dream comes into focus.' : friend ? <>{friend.name} dreamt of <span className="dream-word">{board.concept.label}</span>.</> : 'Your guesses are remembered.'}
         </h1>
         <p className="invitation">{reveal ? `${reveal.points} of 2 Dreams remembered.` : friend ? 'What did their dream look like?' : 'Two Dreams, held in mind.'}</p>
-        {reveal ? <p className="week-score">Your week: {totalScore} / 12 points</p> : !friend && <p className="gallery-hint">Their meanings are still hidden.</p>}
+        <p className={`round-note${reveal ? ' week-score' : ''}`}>{reveal ? `Your week: ${totalScore} / 12 points` : !friend ? 'Their meanings are still hidden.' : '\u00a0'}</p>
       </header>
       {error && <p className="selection-error" role="alert">{error}</p>}
       <div className="round-board friends-dreams">
@@ -41,11 +40,11 @@ export default function DreamGuessingBoard({ board, onUnlock, onAssign, error, r
         choiceKey={`${board.concept.id}:${friend?.id ?? 'complete'}:${JSON.stringify([...board.locks])}`}
         onChoose={!reveal && friend ? (cardId) => onAssign(friend.id, cardId) : undefined}
         confirmLabel={friend ? `Remember ${friend.name}’s dream` : undefined}
+        prompt={friend ? `${friend.name} dreamt of ${board.concept.label}.` : 'Your guesses are remembered.'}
+        action={reveal ? <DreamRoundReveal reveal={reveal} showImages={false} /> : onReveal && <button className="quiet-button reveal-dreams" onClick={onReveal}>Reveal their dreams</button>}
         locks={board.locks}
         onUnlock={onUnlock}
       />
-      {reveal && <DreamRoundReveal reveal={reveal} showImages={false} />}
-      {onReveal && <button className="quiet-button reveal-dreams" onClick={onReveal}>Reveal their dreams</button>}
       </div>
     </main>
   )

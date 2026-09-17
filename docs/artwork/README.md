@@ -20,8 +20,10 @@ The game contains no generation service, API key or remote artwork dependency.
 Only IDs, image paths and visual descriptions reach runtime card metadata.
 Emotional and palette notes do not define meanings or correct answers.
 
-The separate welcome illustration depicts a lantern-lit gate, clouds, flowering
-trees and a distant sleeping dragon in textured storybook gouache. It is excluded
+The current separate welcome illustration depicts a moonlit doorway, impossible
+cloud stairs and a creature asleep on a crescent moon in blue/violet storybook
+gouache. Its exact built-in generation prompt is `welcome-moonlight-prompt.txt`.
+The earlier garden welcome image and `welcome-prompt.txt` remain archived. It is excluded
 from the deck so welcome decoration cannot expose future decoys.
 
 Asset files and checksums are in `public/artwork/`; see its README for import and

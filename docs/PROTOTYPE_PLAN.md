@@ -4,7 +4,7 @@
 
 Inspection found one tracked minimal README, one initial commit, a clean working tree, and no application, tooling, assets, or existing architecture. This task creates documentation only. Bootstrap happens in a later implementation task.
 
-The paragraph above records the initial planning inspection. Milestones 1–6 are approved. Milestones 7–8 include the requested Day 1/Day 2 boundary and sequential Nancy/Song choices. The user's request to test the full week also authorized Milestones 9–10: reveal, scoring, all six rounds, ending, and restart. Milestones 7–10 are implemented and awaiting user testing. See their statuses below and the README for current run instructions. Milestones 11–12 remain incomplete.
+The paragraph above records the initial planning inspection. Milestones 1–6 are approved. Milestones 7–8 include the requested Day 1/Day 2 boundary and sequential Nancy/Song choices. The user's request to test the full week also authorized Milestones 9–10: reveal, scoring, all six rounds, ending, and restart. Milestones 7–10 are implemented, and the user approved proceeding to Milestone 11. See their statuses below and the README for current run instructions. Milestone 11 is implemented and awaiting user testing; Milestone 12 remains incomplete.
 
 Build a local React + TypeScript + Vite browser game, mobile-first and responsive. Demonstrate Charlie choosing six Dreams and recognizing Nancy/Song Dreams using local artwork. The user has requested a visual refresh with 120 generated illustrations before the remaining polish milestones. Follow [GAME_DESIGN.md](GAME_DESIGN.md), including its explicitly labeled prototype assumptions.
 
@@ -41,7 +41,7 @@ Each milestone leaves a checkable local result. Selection and replacement are on
 
 The continuous preparation flow is now the presentation direction: overview, current Dream, and hand share one page, with inline confirmation and optional enlargement. Later milestones extend that flow rather than restoring separate setup/gallery pages. Guessing should likewise keep one stable board while advancing friend prompts in place; reveal follows all assignments, without a separate page for each friend. Preserve small milestone boundaries and stop for user testing after each one.
 
-The latest user-requested revisions to this flow allow unselecting tentative choices and unlocking guesses before reveal, remove return-to-beginning navigation, pin Charlie's own Dream in the first slot of the six-card board through guessing and reveal, and add a complete current-week recap at the ending. They revise Milestones 7–10; Milestone 11 has not started. Earlier validation notes below describe the controls present when those checks ran.
+The latest user-requested revisions to this flow allow unselecting tentative choices and unlocking guesses before reveal, remove return-to-beginning navigation, pin Charlie's own Dream in the first slot of the six-card board through guessing and reveal, and add a complete current-week recap at the ending. They revise Milestones 7–10; the user has now authorized Milestone 11, including stationary cards, less scrolling and a blue/violet welcome theme. Earlier validation notes below describe the controls present when those checks ran.
 
 ### 1. Bootstrap and mobile shell
 
@@ -99,7 +99,7 @@ The latest user-requested revisions to this flow allow unselecting tentative cho
 
 ### 7. Six-card guessing board
 
-- **Status:** Revised at the user's request alongside the sequential assignment flow from Milestone 8; awaiting user testing and approval.
+- **Status:** Implemented with the requested revisions; the user approved proceeding to Milestone 11.
 - **Goal:** Create a stable, eligible board for one concept.
 - **Scope:** Charlie's own Dream first, Nancy/Song actual Dreams, three fresh eligible decoys, shuffle of the other five slots, exposure updates, and a development control to advance from Day 1 preparation to Day 2 guessing. Render one round workspace; assignment behavior is covered by Milestone 8.
 - **Completion:** Day 1 shows no friend guessing prompts. The development “Next day” action becomes available only after all six choices and opens Day 2. Six distinct images include Charlie's labeled, inspectable own Dream in slot one, both friend targets and three decoys. Only the other five images can be guessed; no friend ownership is shown before reveal. Decoys were unseen by Charlie. Rerendering does not regenerate the board. Insufficient candidates fail without weakening eligibility. Viewing or enlarging a board image does not commit an assignment.
@@ -108,7 +108,7 @@ The latest user-requested revisions to this flow allow unselecting tentative cho
 
 ### 8. Assignment locking
 
-- **Status:** Implemented at the user's request for Nancy-then-Song guessing; awaiting user testing alongside the requested full-week flow.
+- **Status:** Implemented with the requested revisions; the user approved proceeding to Milestone 11.
 - **Goal:** Associate different images with Nancy and Song.
 - **Scope:** Sequential friend prompts and inline confirmation in the same round workspace, committed assignments, reversible locks before reveal, and a ready-for-reveal phase after both guesses. Enlargement stays optional.
 - **Completion:** Nancy's committed card is unavailable for Song while locked; core rules reject duplicate assignments too. Before reveal, either guess can be unlocked without erasing the other. The released card becomes available and reveal is disabled until both guesses are confirmed. Friend prompts update in place on the same board. No correctness appears until both guesses are complete and reveal is requested. No separate navigation or modal is required to commit or unlock a guess.
@@ -117,7 +117,7 @@ The latest user-requested revisions to this flow allow unselecting tentative cho
 
 ### 9. Reveal and scoring
 
-- **Status:** Implemented as part of the user's request to test the full week; awaiting user testing and approval.
+- **Status:** Implemented as part of the full-week flow; the user approved proceeding to Milestone 11.
 - **Goal:** Reveal answers and award simple points.
 - **Scope:** After all assignments, show chosen/actual cards and results in the same round workspace; separate +1-per-correct scoring function. No intermediate correctness feedback or per-friend reveal pages.
 - **Completion:** Zero, one, and two correct answers produce 0, 1, and 2 points. Repeated reveal cannot score twice. Results do not rely solely on color.
@@ -126,7 +126,7 @@ The latest user-requested revisions to this flow allow unselecting tentative cho
 
 ### 10. Local week progression and restart
 
-- **Status:** Implemented as part of the user's request to test the full week; awaiting user testing and approval before Milestone 11.
+- **Status:** Implemented as part of the full-week flow; the user approved proceeding to Milestone 11.
 - **Goal:** Exercise all six concepts without a calendar.
 - **Scope:** Extend the development day control beyond the existing Day 1-to-Day 2 transition, advancing to later rounds in hidden order only after the current reveal. Keep the existing workspace, Charlie's accumulated score, “The dream fades,” and explicit fresh-state restart. Keep calendar scheduling excluded.
 - **Completion:** Six rounds complete; Charlie's score is 0–12. Restart clears hands, selections, boards, exposure, assignments, and scores. Do not fabricate friends' standings or a competitive winner; these require more simulation later.
@@ -138,7 +138,7 @@ The latest user-requested revisions to this flow allow unselecting tentative cho
 
 ### Requested first-slot own-Dream revision
 
-- **Status:** Implemented and validated; awaiting user testing and approval. This revises Milestones 7–9 without starting Milestone 11.
+- **Status:** Implemented and validated; the user approved proceeding to Milestone 11. This revision originally preceded that milestone.
 - **Scope:** Six total board cards: own Dream pinned first, two friend Dreams and three fresh decoys shuffled into the remaining five slots. Own Dream is inspectable but unassignable in both UI and core rules. Keep the board and order through reveal, adding owner/decoy and guess labels only then. Preserve unlocks, scoring and the complete recap.
 - Earlier validation notes describe the board and controls present at that time; references to four decoys or an external own-Dream reference are historical.
 - **Validation:** All 45 tests, TypeScript checks and the production build pass. Tests verify own Dream first, three unseen decoys, 18 distinct decoys across the week, rejected own-card assignments and forged own-card scoring, stable boards and unchanged 0/1/2 scoring. Edge played all six rounds through recap and restart, checked own-card inspection without assignment, unlock/reassignment, no premature friend/decoy labels, exactly six unchanged board images through reveal, and recap comparisons. Layouts passed at 320, 375, 390, 430, 768 and 1440 CSS-pixel widths; phone and desktop screenshots were visually reviewed.
@@ -149,20 +149,27 @@ The latest user-requested revisions to this flow allow unselecting tentative cho
 - **Scope:** Static local artwork, meaningful visual descriptions, generation provenance, a richer responsive theme, and a separate welcome illustration. Preserve all existing game rules and the continuous preparation/guessing/reveal/recap flow. Do not use deck artwork as welcome decoration, which would expose potential decoys before play.
 - **Art direction:** Follow the user's storybook references and Dixit-inspired associative storytelling with original imagery. No hyperrealism. Broad colors, varied emotions (happy, sad, funny, unsettling and mixed), and both readable surreal scenes and more abstract, puzzling compositions. Production moods must never become runtime answers or categories.
 - **Completion:** All 120 distinct local assets load; metadata and descriptions match them; no early ownership hints or duplicate artwork. Build, type and rule checks pass, and the complete week works with the new deck. Review phone, tablet and desktop layouts. Stop for user testing after this refresh.
-- **Status:** Implemented; awaiting user testing and approval. Milestones 11–12 remain separate; their checks should use this new art direction.
-- **Implementation:** 120 independently generated illustrations with reviewed visual descriptions, stored as full-composition JPEGs with checksums and recorded prompts. A separate welcome illustration, parchment surfaces, teal surroundings, plum controls, consistent artwork frames and labels below images establish the new presentation. The placeholder generator can no longer overwrite the active deck. Rule functions and gameplay behavior are unchanged by this refresh.
+- **Status:** Implemented; the user approved proceeding to Milestone 11, with a further welcome/theme refinement. The deck remains unchanged by that refinement.
+- **Implementation:** 120 independently generated illustrations with reviewed visual descriptions, stored as full-composition JPEGs with checksums and recorded prompts. The initial refresh used a separate welcome illustration, parchment surfaces, teal surroundings, plum controls, consistent artwork frames and labels below images to establish the presentation. Milestone 11 supersedes the interface palette and welcome illustration. The placeholder generator can no longer overwrite the active deck. Rule functions and gameplay behavior are unchanged by this refresh.
 - **Validation:** All 44 tests pass, including checks for 120 unique local image files and their provenance hashes. TypeScript checks and the production build pass. Edge decoded all 120 cards and the separate welcome illustration. Browser checks passed at 320, 375, 390, 430, 768 and 1440 CSS-pixel widths for welcome, preparation, guessing, locked guesses, reveal and recap, including keyboard/touch interaction, unlocking, own-Dream references, all six rounds and restart. All 120 compositions were visually reviewed in contact sheets; phone and desktop interface screenshots were also reviewed. One remaining test assumption about the old 60-card pool was updated to derive availability from deck size.
 
 ### 11. Responsive and accessibility polish
 
+- **Status:** Implemented and validated; awaiting user testing and approval. Do not begin Milestone 12 yet.
 - **Goal:** Make artwork and primary interactions comfortable on phones.
-- **Scope:** Polish the continuous preparation and round workspaces, optional image inspection, touch targets, focus/scroll position between prompts, keyboard flow, contrast, and locked/reveal states using the refreshed illustrated theme. Include raster-image loading and long recap scrolling. Keep artwork large enough to appreciate; do not force all content into one phone viewport.
+- **Scope:** Polish the continuous preparation and round workspaces, optional image inspection, touch targets, focus/scroll position between prompts, keyboard flow, contrast, and locked/reveal states using the refreshed illustrated theme. Include raster-image loading and long recap scrolling. The user also requested stationary cards when selecting or clearing, less scrolling, and a more dreamlike blue/purple welcome illustration and palette. Keep artwork large enough to appreciate; do not force all content into one phone viewport.
 - **Completion:** Check selection, guessing, and reveal at 320, 375, 390, and 430 CSS-pixel widths, tablet, and desktop. No hover dependence, clipped prompts, or tiny controls. Enlargement must not commit a guess. Artwork remains dominant.
+
+- **Implementation:** Reserved card-caption and unlock-control space, stable prompt heights and scrollbar gutter, focus without automatic scrolling between prompts, and a compact sticky confirmation area that repeats the current Dream, with separate magnifiers beneath the cards. Compact overview, two-column phone and three-column tablet/desktop galleries, tighter recap spacing, and scroll clearance for keyboard focus. New separate moonlit welcome illustration with recorded prompt/provenance, indigo surroundings and muted periwinkle/violet surfaces. The 120-card deck, game rules and dependencies are unchanged.
+- **Validation:** All 45 tests, TypeScript checks and production build passed. Edge played the full six-round week, checked recap against revealed guesses and restarted. Welcome, preparation, guessing, ready, reveal and recap layouts passed at 320x568, 375x667, 390x844, 430x932, 768x1024 and 1440x900 with no horizontal overflow, clipped text, undersized controls or runtime errors. Separate geometry checks confirmed stable card rectangles and scroll position during selection/deselection, replacement, Nancy/Song locks, unlocking and reveal at each size. Small-phone keyboard checks confirmed all six cards remain visible when focused, Enter selection, Escape inspection closure and focus/scroll restoration with reduced motion enabled. Phone and desktop screenshots were visually reviewed.
+
+- **User-requested refinement:** Restore larger three-per-row desktop cards, soften pale surfaces to muted periwinkle, and center a compact confirmation button. Each card has a 44px magnifier beneath the artwork, usable without selecting a card. An optional hold-and-release gesture (450ms) opens the same inspection; movement, pointer cancellation or leaving the card cancels the hold. Inspection preserves tentative choices. This remains Milestone 11, not the animation milestone.
+- **Refinement validation:** Build/type checks and all 45 tests passed. Full-week browser and stationary-card geometry checks passed again at all six sizes. At 320px, all twelve card/magnifier keyboard targets were reachable and unobscured, Enter/Escape restored focus and scroll, and real touch events verified hold/release, preserved selection, cancelled scrolling/pointers, and normal tap toggling. Phone and desktop screenshots were reviewed. Physical iOS/Android testing remains with the user.
 
 ### 12. Gentle transitions
 
 - **Goal:** Add atmosphere after gameplay works.
-- **Scope:** Restrained in-place prompt changes, replacement entry, reveals, and reduced-motion support. Avoid introducing page transitions or animation dependencies without clear need.
+- **Scope:** Restrained opacity/color changes for in-place prompts, replacements and reveals, with reduced-motion support. Preserve the stationary card positions established in Milestone 11; no translation, resizing or grid reflow. Avoid introducing page transitions or animation dependencies without clear need.
 - **Completion:** Transitions preserve state/focus, reject duplicate actions, and do not reveal early or delay essential input. Reduced-motion mode remains playable.
 
 ## Validation and handoffs

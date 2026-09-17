@@ -1,0 +1,9 @@
+Use case: illustration-story
+Asset type: Dreamerie welcome-page illustration, separate from the playing-card deck.
+Primary request: A magical, whimsical and more dreamlike painted welcome scene in blues and purples. Original surreal storybook art, slightly abstract, never photorealistic.
+Scene: An impossible moonlit garden dissolves into clouds; an open arched doorway floats above winding lavender stairs that become ribbons of sky. A tiny pale dream creature curls on the crescent moon, with a few warm stars and luminous flowers below. Shape relationships feel poetic and ambiguous rather than realistic.
+Style/medium: Flat decorative gouache and cut-paper shapes, visible grain, hand-painted edges, expressive storybook fantasy. Delicate but bold silhouettes, not glossy 3D.
+Composition: Portrait 4:5 illustration, full bleed. Central doorway and crescent readable in a shallow central landscape crop on phones; the full composition looks good as a tall panel on desktop. No typography.
+Palette: Midnight indigo, cornflower blue, lilac, periwinkle, dusty violet, soft pink clouds, small pale-gold light accents. Avoid teal dominance.
+Mood: Inviting, quiet wonder, floating between sleep and waking.
+Constraints: Original composition, no existing game cards, no logos, text, watermark or UI.

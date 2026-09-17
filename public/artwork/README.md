@@ -14,8 +14,10 @@ The original PNG is retained in the generation tool's local output directory;
 the repository contains the complete image encoded as JPEG at quality 88,
 without cropping, repainting or resizing. No runtime network service is needed.
 
-`dreamerie-garden.jpg` is a separate welcome illustration. It is not a playing
-card and cannot be selected or drawn. Do not reuse active deck images as interface
+`dreamerie-moonlight.jpg` is the current separate welcome illustration, generated
+with the built-in image tool from `docs/artwork/welcome-moonlight-prompt.txt`.
+`dreamerie-garden.jpg` preserves the earlier welcome artwork. Neither is a playing
+card and neither can be selected or drawn. Do not reuse active deck images as interface
 decoration that could expose otherwise unseen decoys.
 
 After generating and reviewing a new local image, import it from PowerShell:

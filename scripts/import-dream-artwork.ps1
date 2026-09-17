@@ -1,6 +1,6 @@
 param(
   [Parameter(Mandatory)][string]$Source,
-  [Parameter(Mandatory)][ValidatePattern('^(card-\d{3}|dreamerie-garden)$')][string]$CardId
+  [Parameter(Mandatory)][ValidatePattern('^(card-\d{3}|dreamerie-garden|dreamerie-moonlight)$')][string]$CardId
 )
 
 # Encode the complete generated illustration for the browser; no cropping or repainting.
@@ -8,7 +8,7 @@ $ErrorActionPreference = 'Stop'
 Add-Type -AssemblyName System.Drawing
 $projectRoot = Split-Path $PSScriptRoot -Parent
 $destination = Join-Path $projectRoot "public/artwork/dreams/$CardId.jpg"
-if ($CardId -eq 'dreamerie-garden') { $destination = Join-Path $projectRoot 'public/artwork/dreamerie-garden.jpg' }
+if ($CardId -like 'dreamerie-*') { $destination = Join-Path $projectRoot "public/artwork/$CardId.jpg" }
 New-Item -ItemType Directory -Force (Split-Path $destination -Parent) | Out-Null
 if (Test-Path -LiteralPath $destination) { throw "Artwork already exists: $destination" }
 $art = [System.Drawing.Image]::FromFile((Resolve-Path -LiteralPath $Source).Path)
