@@ -2,7 +2,7 @@ import { recordExposure } from './allocation.ts'
 import { getNextGuessTarget } from './assignments.ts'
 import { shuffle } from './random.ts'
 import { getDreamClue } from './clues.ts'
-import { getPreparedFirstRound } from './simulation.ts'
+import { getPreparedFirstRound } from './preparation.ts'
 import type { Card, ConceptId, DreamWeek, GuessingBoardView, GuessingRound, Player, PlayerId } from './types.ts'
 
 /** Convenience entry for the first hidden-order concept. */
@@ -27,9 +27,10 @@ export function createGuessingBoard(
   if (!Number.isInteger(roundIndex) || !conceptId || !week.concepts.some((concept) => concept.id === conceptId)) {
     throw new Error('That Dream day is outside this week.')
   }
-  if (prepared.targetPlayerIds.length !== 2) {
-    throw new Error('This local prototype needs two friends for its board.')
+  if (prepared.targetPlayerIds.length < 1 || prepared.targetPlayerIds.length > 5) {
+    throw new Error('A Dream Week needs 2 to 6 players.')
   }
+  const decoyCount = 5 - prepared.targetPlayerIds.length
   const { allocation } = week
   const seen = allocation.seen.get(guesserId)
   if (!seen) throw new Error('The guessing player has no dream card history.')
@@ -51,8 +52,8 @@ export function createGuessingBoard(
   const eligible = [...new Set(allocation.available)].filter((id) =>
     known.has(id) && !allocation.reserved.has(id) && !seen.has(id),
   )
-  if (eligible.length < 3) throw new Error('Not enough unseen dream cards to open this dream. Three are needed.')
-  const decoys = shuffle(eligible, random).slice(0, 3)
+  if (eligible.length < decoyCount) throw new Error(`Not enough unseen dream cards to open this dream. ${decoyCount} needed.`)
+  const decoys = decoyCount === 0 ? [] : shuffle(eligible, random).slice(0, decoyCount)
   const cardIds = [ownDreamId, ...shuffle([...actual, ...decoys], random)]
   const round: GuessingRound = { ...prepared, conceptId, id: `round-${week.id}-${roundIndex + 1}`, ownDreamId, cardIds, assignments: new Map() }
   // Decoys remain unallocated; this guesser's exposure excludes them from later boards.

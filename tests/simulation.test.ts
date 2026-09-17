@@ -4,7 +4,8 @@ import { cards } from '../src/data/cards.ts'
 import { concepts } from '../src/data/concepts.ts'
 import { CURRENT_PLAYER_ID, players } from '../src/data/players.ts'
 import { chooseDream, getNextDreamConcept } from '../src/game/selection.ts'
-import { getPreparedFirstRound, prepareSimulatedDreams } from '../src/game/simulation.ts'
+import { prepareSimulatedDreams } from '../src/game/simulation.ts'
+import { getPreparedFirstRound } from '../src/game/preparation.ts'
 import { createDreamWeek, getWeekIntroduction } from '../src/game/week.ts'
 import { prepareSimulatedGuesses } from '../src/game/simulatedGuesses.ts'
 import { createGuessingBoard, getGuessingBoardView } from '../src/game/board.ts'
@@ -89,7 +90,7 @@ test('invalid randomness after partial work and unknown human IDs cannot mutate 
   assert.throws(() => prepareSimulatedDreams(week, CURRENT_PLAYER_ID, () => ++calls < 4 ? 0 : 1), /Randomness/)
   assert.deepEqual(week, before)
   assert.throws(() => prepareSimulatedDreams(week, 'player-missing'), /Unknown human/)
-  assert.throws(() => getPreparedFirstRound(week, 'player-missing'), /Unknown human/)
+  assert.throws(() => getPreparedFirstRound(week, 'player-missing'), /Unknown guessing player/)
   assert.equal(getPreparedFirstRound(prepareCharlie(week), CURRENT_PLAYER_ID), null)
 })
 

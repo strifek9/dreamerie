@@ -2,9 +2,9 @@
 
 ## Prototype 0.2 planning
 
-Prototype 0.1 is complete and approved. The user has authorized planning shared games across phone and desktop browsers: 2–6 players, private rooms, host controls and automatic daily progression at midnight America/Chicago. Solo play and matchmaking are deferred. See [PROTOTYPE_0_2_PLAN.md](PROTOTYPE_0_2_PLAN.md) for the scope, unresolved policies and separately numbered 0.2 milestones, including scheduling. This file remains the scope index; the linked plan is its 0.2 supplement. Only planning is authorized so far. The exclusions and local assumptions below continue to describe Prototype 0.1, not a claim that connected play already exists.
+Prototype 0.1 is complete and approved. The user approved private groups across phone and desktop browsers: 2–6 players, host controls and automatic daily progression at midnight America/Chicago. Solo play and matchmaking are deferred. See [PROTOTYPE_0_2_PLAN.md](PROTOTYPE_0_2_PLAN.md) for scope, unresolved policies and separately numbered 0.2 milestones. This file remains the scope index; the linked plan is its 0.2 supplement. The exclusions and local assumptions below continue to describe Prototype 0.1, not a claim that connected play already exists.
 
-The user approved moving forward with 0.2. Milestone 0.2.0 has a [concrete technical design](PROTOTYPE_0_2_TECHNICAL_DESIGN.md) and a confirmed midnight America/Chicago cutoff; remaining game-policy decisions are tracked in the 0.2 plan. No application or infrastructure implementation has begun.
+Milestone 0.2.0 has a [concrete technical design](PROTOTYPE_0_2_TECHNICAL_DESIGN.md) and a confirmed midnight America/Chicago cutoff; remaining game-policy decisions are tracked in the 0.2 plan. The user separately authorized 0.2.1's independent roster-rule work: it is implemented with 70 passing tests and full local-mode browser regression checks, and awaits user testing. No room service or other infrastructure is implemented.
 
 ## Starting point and scope
 

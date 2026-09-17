@@ -7,7 +7,7 @@ export function getNextGuessTarget(round: GuessingRound): PlayerId | null {
 /** Lock one distinct board image for the current friend without revealing answers. */
 export function assignDream(round: GuessingRound, playerId: PlayerId, cardId: CardId): GuessingRound {
   const next = getNextGuessTarget(round)
-  if (!next) throw new Error('Both Dreams have already been remembered.')
+  if (!next) throw new Error('All guesses have already been remembered.')
   if (playerId === round.guesserId || playerId !== next) {
     throw new Error('This Dream is for the friend currently shown.')
   }

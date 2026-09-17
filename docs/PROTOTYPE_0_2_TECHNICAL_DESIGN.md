@@ -2,7 +2,7 @@
 
 ## Status
 
-Milestone **0.2.0** service-design deliverable. The user approved moving forward with the [0.2 plan](PROTOTYPE_0_2_PLAN.md). This document selects an implementation direction and proposes hosting; it does not provision anything. No application code, dependencies or infrastructure have been changed.
+Milestone **0.2.0** service-design deliverable. The user approved moving forward with the [0.2 plan](PROTOTYPE_0_2_PLAN.md). This document selects an implementation direction and proposes hosting; it does not provision anything. The subsequently authorized 0.2.1 roster-rule work is now implemented and awaiting testing. No server dependencies or infrastructure have been added.
 
 The user confirmed automatic rollover at **midnight in America/Chicago** for the first playtest. Solo play is deferred. Incomplete-day scoring and private-room lifecycle details still need decisions. [GAME_DESIGN.md](GAME_DESIGN.md) remains authoritative; open policies must not be supplied by a default in server code.
 
@@ -116,4 +116,4 @@ Before provisioning, prepare a reviewable deployment configuration: chosen Node 
 
 ## Review outcome
 
-The architecture and first coding scope are concrete. Midnight America/Chicago is confirmed. Milestone 0.2.0 remains **in progress** until affected game-policy decisions are recorded; documenting a recommendation does not mark it accepted. Independent 2–6-player rule work can be reviewed separately, but no subsequent milestone has been implemented in this documentation pass.
+The architecture and first coding scope are concrete. Midnight America/Chicago is confirmed. Milestone 0.2.0 retains open game-policy decisions; documenting a recommendation does not mark it accepted. The user separately authorized 0.2.1, now implemented for fully participating players with 70 passing tests and local-browser regression checks. Service, scheduling and missed-day behavior are not implemented.

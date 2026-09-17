@@ -74,6 +74,7 @@ export interface GuessingBoardView {
 }
 
 export interface RoundResult {
+  readonly guesserId: PlayerId
   readonly roundId: RoundId
   readonly conceptId: ConceptId
   readonly points: number

@@ -10,6 +10,15 @@ export function createDreamWeek(
   random: () => number = Math.random,
   mode: DreamMode = 'classic',
 ): DreamWeek {
+  if (players.length < 2 || players.length > 6) {
+    throw new Error('A Dream Week needs 2 to 6 players.')
+  }
+  if (players.some((player) => !player.id.startsWith('player-') || player.id.length <= 7 || /\s/.test(player.id))) {
+    throw new Error('Each player needs a valid player ID.')
+  }
+  if (new Set(players.map((player) => player.id)).size !== players.length) {
+    throw new Error('The player collection contains duplicate IDs.')
+  }
   if (concepts.length !== 6) throw new Error('A Dream Week must contain exactly six concepts.')
   if (new Set(concepts.map((concept) => concept.id)).size !== 6) {
     throw new Error('Dream Week concepts must have unique IDs.')

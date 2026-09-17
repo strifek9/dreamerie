@@ -9,9 +9,24 @@ export function getRecognitionPoints(correctGuessers: number, otherPlayers: numb
 }
 
 function evaluateGuesses(week: DreamWeek, round: GuessingRound): RoundResult['guesses'] {
+  const expectedTargets = [...week.dreams.keys()].filter((id) => id !== round.guesserId)
+  const roundIndex = week.roundOrder.indexOf(round.conceptId)
+  if (!week.dreams.has(round.guesserId) || expectedTargets.length < 1 || expectedTargets.length > 5 ||
+      roundIndex < 0 || round.id !== `round-${week.id}-${roundIndex + 1}` ||
+      round.targetPlayerIds.length !== expectedTargets.length ||
+      new Set(round.targetPlayerIds).size !== expectedTargets.length ||
+      expectedTargets.some((id) => !round.targetPlayerIds.includes(id))) {
+    throw new Error('This Dream round does not match the week and its players.')
+  }
   if (round.assignments.size !== round.targetPlayerIds.length ||
       new Set(round.assignments.values()).size !== round.targetPlayerIds.length) {
     throw new Error('Remember a different dream card for each friend before revealing their Dreams.')
+  }
+  if (round.cardIds.length !== 6 || new Set(round.cardIds).size !== 6 ||
+      round.cardIds.some((id) => !week.allocation.cardIds.includes(id)) ||
+      round.ownDreamId !== week.dreams.get(round.guesserId)?.get(round.conceptId) ||
+      round.cardIds[0] !== round.ownDreamId) {
+    throw new Error('This Dream cannot be revealed with incomplete or invalid choices.')
   }
   return round.targetPlayerIds.map((playerId) => {
     const chosenCardId = round.assignments.get(playerId)
@@ -26,16 +41,16 @@ function evaluateGuesses(week: DreamWeek, round: GuessingRound): RoundResult['gu
 }
 
 /** Only complete one-to-one assignments may expose answers and earn points. */
-export function scoreRound(week: DreamWeek, round: GuessingRound, simulatedRounds?: readonly GuessingRound[]): RoundResult {
+export function scoreRound(week: DreamWeek, round: GuessingRound, otherRounds?: readonly GuessingRound[]): RoundResult {
   const guesses = evaluateGuesses(week, round)
-  if (week.mode === 'personal' && !simulatedRounds) throw new Error('Each friend must finish their guesses before revealing.')
+  if (week.mode === 'personal' && !otherRounds) throw new Error('Each friend must finish their guesses before revealing.')
   const receivedGuesses: RoundResult['guesses'][number][] = []
-  if (simulatedRounds) {
-    if (simulatedRounds.length !== round.targetPlayerIds.length ||
-        new Set(simulatedRounds.map((entry) => entry.guesserId)).size !== round.targetPlayerIds.length) {
+  if (otherRounds) {
+    if (otherRounds.length !== round.targetPlayerIds.length ||
+        new Set(otherRounds.map((entry) => entry.guesserId)).size !== round.targetPlayerIds.length) {
       throw new Error('Each friend must finish their guesses before revealing.')
     }
-    for (const friend of simulatedRounds) {
+    for (const friend of otherRounds) {
       if (!round.targetPlayerIds.includes(friend.guesserId) || friend.conceptId !== round.conceptId || friend.id !== round.id) {
         throw new Error('Friends must guess the same Dream day before revealing.')
       }
@@ -44,13 +59,17 @@ export function scoreRound(week: DreamWeek, round: GuessingRound, simulatedRound
       receivedGuesses.push({ ...received, playerId: friend.guesserId })
     }
   }
-  const recognitionPoints = week.mode === 'personal' && simulatedRounds
+  const recognitionPoints = week.mode === 'personal' && otherRounds
     ? getRecognitionPoints(receivedGuesses.filter((guess) => guess.correct).length, round.targetPlayerIds.length) : 0
-  return { roundId: round.id, conceptId: round.conceptId,
+  return { guesserId: round.guesserId, roundId: round.id, conceptId: round.conceptId,
     points: guesses.filter((guess) => guess.correct).length + recognitionPoints, recognitionPoints, guesses, receivedGuesses }
 }
 
 export function getTotalScore(results: readonly RoundResult[]): number {
+  if (new Set(results.map((result) => result.roundId)).size !== results.length ||
+      new Set(results.map((result) => result.guesserId)).size > 1) {
+    throw new Error('Count each revealed round once for the same player.')
+  }
   return results.reduce((total, result) => total + result.points, 0)
 }
 

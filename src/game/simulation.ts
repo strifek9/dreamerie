@@ -1,6 +1,6 @@
 import { chooseDream, getNextDreamConcept } from './selection.ts'
 import { simulatedClues } from '../data/simulatedClues.ts'
-import type { DreamWeek, PlayerId, PreparedRound } from './types.ts'
+import type { DreamWeek, PlayerId } from './types.ts'
 
 /** Random valid choices are local fixtures, not a model of friends' interpretations. */
 export function prepareSimulatedDreams(
@@ -36,20 +36,4 @@ export function prepareSimulatedDreams(
     }
   }
   return prepared
-}
-
-/** Keep the first round private and unavailable until everyone has prepared. */
-export function getPreparedFirstRound(week: DreamWeek, humanPlayerId: PlayerId): PreparedRound | null {
-  if (!week.dreams.has(humanPlayerId)) throw new Error('Unknown human player.')
-  const playerIds = [...week.dreams.keys()]
-  if (playerIds.some((id) => getNextDreamConcept(week, id) !== null)) return null
-  const conceptId = week.roundOrder[0]
-  if (!conceptId || !week.concepts.some((concept) => concept.id === conceptId)) {
-    throw new Error('The first Dream round is missing.')
-  }
-  return {
-    conceptId,
-    guesserId: humanPlayerId,
-    targetPlayerIds: playerIds.filter((id) => id !== humanPlayerId),
-  }
 }

@@ -7,7 +7,8 @@ import { createFirstGuessingBoard, getGuessingBoardView } from '../src/game/boar
 import { localGameReducer, prepareGuessingAction } from '../src/game/localGame.ts'
 import type { LocalGame } from '../src/game/localGame.ts'
 import { chooseDream } from '../src/game/selection.ts'
-import { getPreparedFirstRound, prepareSimulatedDreams } from '../src/game/simulation.ts'
+import { prepareSimulatedDreams } from '../src/game/simulation.ts'
+import { getPreparedFirstRound } from '../src/game/preparation.ts'
 import { createDreamWeek } from '../src/game/week.ts'
 import type { DreamWeek } from '../src/game/types.ts'
 
@@ -94,7 +95,7 @@ test('incomplete preparation, duplicate target Dreams and unknown players are re
   const before = structuredClone(duplicate)
   assert.throws(() => createFirstGuessingBoard(duplicate, CURRENT_PLAYER_ID), /distinct Dreams/)
   assert.deepEqual(duplicate, before)
-  assert.throws(() => createFirstGuessingBoard(week, 'player-missing'), /Unknown human/)
+  assert.throws(() => createFirstGuessingBoard(week, 'player-missing'), /Unknown guessing player/)
 })
 
 test('shuffle is reproducible and failures in the final shuffle do not expose a partial board', () => {

@@ -2,7 +2,7 @@
 
 ## Status and authority
 
-**Plan approved; milestone 0.2.0 is in progress.** Prototype 0.1 is complete and user-approved. The user approved moving forward with this plan. The current milestone defines service design and records game-policy decisions; application implementation has not started. See [the technical design](PROTOTYPE_0_2_TECHNICAL_DESIGN.md) for the concrete stack, hosting proposal, privacy/command contracts and first coding scope. No services have been provisioned or purchased.
+**Milestone 0.2.1 is implemented and awaiting user testing.** Prototype 0.1 is complete and user-approved. The user authorized the independent 2–6-player rule milestone while remaining lifecycle and missed-day decisions from 0.2.0 stay open. See [the technical design](PROTOTYPE_0_2_TECHNICAL_DESIGN.md) for the future stack, hosting proposal and privacy/command contracts. No services have been provisioned or purchased; connected play is not yet available.
 
 [PROTOTYPE_PLAN.md](PROTOTYPE_PLAN.md) is the scope and milestone index. [GAME_DESIGN.md](GAME_DESIGN.md) remains the source of truth for confirmed gameplay rules; [ART_DIRECTION.md](ART_DIRECTION.md) governs presentation and writing. The proposed policies below are not confirmed gameplay rules. Record the user's decisions in GAME_DESIGN.md before implementing affected behavior.
 
@@ -16,10 +16,10 @@ The proposed experience is: join through a private invite, enter a group with a 
 
 - React, TypeScript and Vite already serve the complete local prototype; there is no server, room service, database or session system.
 - `src/game/` contains allocation, selection, assignment, scoring and recap functions that can be reused. Keep these rules separate from network handlers and React.
-- `src/game/board.ts` currently rejects any roster with other than two friends and selects exactly three decoys. Supporting more players requires rule changes and tests, not just extra names in the UI.
+- `src/game/board.ts` now supports 2–6 players, selecting `6 - N` decoys for `N` players. Shared preparation queries live in `src/game/preparation.ts`, independently of local simulation. This rule support does not add a room UI.
 - `src/game/localGame.ts` coordinates one human and simulated friends in local memory. Its object-reference checks are local guards, not network concurrency controls.
 - `src/App.tsx` uses Charlie, Nancy and Song, generates simulated selections, and has fixed 12/18-point maxima. Several components resolve accents from the static roster. A connected game must receive its identity, roster and scores from the room.
-- The deck has 120 bundled illustrations. The interface already has six accent slots and a reveal summary tested with five friends, but real six-player play has not been implemented.
+- The deck has 120 bundled illustrations. The interface has six accent slots and a reveal summary tested with five friends. Six-player rules have full-week automated coverage; real connected six-player play is not implemented.
 - There is no hosted playtest URL. The current development command binds to this computer's loopback address; sharing that address does not connect someone else's phone to the same game.
 
 ## Confirmed playtest direction
@@ -101,7 +101,7 @@ The proposed room phases are lobby, preparation, guessing, revealed and complete
 
 ## Milestones
 
-These are new **0.2 milestones**, not continuations of the completed 0.1 numbering. Milestone 0.2.0 is in progress; later milestones are pending. Implement only the explicitly requested milestone, run its checks, and stop for user testing and approval.
+These are new **0.2 milestones**, not continuations of the completed 0.1 numbering. Milestone 0.2.0 retains open policy decisions; the user separately authorized the independent rule work in 0.2.1, now implemented. Milestones 0.2.2 onward are pending. Implement only the explicitly requested milestone, run its checks, and stop for user testing and approval.
 
 ### 0.2.0 — Confirm playtest policies and service design
 
@@ -114,6 +114,12 @@ These are new **0.2 milestones**, not continuations of the completed 0.1 numberi
 **Completion:** Each affected policy has an explicit decision. Implementation commands, dependencies and likely file additions for 0.2.1 are reviewable. No services are provisioned and no app code is changed in this milestone.
 
 ### 0.2.1 — Support the approved roster in game rules
+
+**Status:** Implemented; awaiting user testing and approval. Scope is fully participating players. Missing-player scoring, deadlines and room infrastructure remain later work.
+
+**Implementation:** Validate 2–6 distinct, nonempty player IDs before randomness. Build a six-card board with the own Dream first, all other players' Dreams and enough eligible decoys, including zero at six players. Extract preparation readiness from simulation. Validate the complete participant roster, week/round identity and board before scoring; record the guesser's ID with each result. Reject mixed-player/duplicate score totals and wrong-player/wrong-week recaps. Keep existing local modes and their UI.
+
+**Validation:** All 70 tests and build/type checks pass. New tests cover both modes at every size through six full rounds per player with the minimum sufficient card pool, replacement through the sixth choice, independent exposure, current-clue privacy, unlocking, recognition outcomes, zero-decoy boards, malformed rosters/rounds, exhaustion and individual recaps. Headless Edge replayed both local modes through preparation, all six guessing days, recap and restart at 320, 375, 390, 430, 768 and 1440px, including image inspection and stable card/scroll checks. Larger rosters are verified in rule tests; the browser still presents three players.
 
 **Deliverable:** Replace three-player assumptions in the shared rules with the approved roster, while preserving the playable local modes. Use test fixtures for real-player inputs; do not add a room UI or networking yet.
 
@@ -185,4 +191,4 @@ Preserve the illustrated theme, six-card geometry, three-card desktop/two-card p
 
 At each milestone, report what runs, what remains simulated or unavailable, how to test it and the relevant Conventional Commit commands, including push. Never commit or push automatically. This documentation pass needs link/content review and `git diff --check`, not runtime tests.
 
-**Next action:** Review this plan and resolve 0.2.0. No implementation milestone is authorized by completion of this document alone.
+**Next action:** User-test 0.2.1 and approve proceeding before starting 0.2.2. Resolve the remaining policy questions before their dependent room/scoring/scheduling behavior; the new rule support does not decide them.

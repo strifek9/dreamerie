@@ -1,7 +1,7 @@
 import { createGuessingBoard } from './board.ts'
 import { assignDream, getNextGuessTarget, unassignDream } from './assignments.ts'
 import { chooseDream } from './selection.ts'
-import { getPreparedFirstRound } from './simulation.ts'
+import { getPreparedFirstRound } from './preparation.ts'
 import { scoreRound } from './scoring.ts'
 import { prepareSimulatedGuesses } from './simulatedGuesses.ts'
 import type { CardId, ConceptId, DreamWeek, GuessingRound, PlayerId, PreparedRound, RoundId, RoundResult } from './types.ts'
