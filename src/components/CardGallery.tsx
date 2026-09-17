@@ -8,13 +8,18 @@ interface CardGalleryProps {
   choiceKey?: string
   confirmLabel?: string
   locks?: ReadonlyMap<CardId, string>
+  onUnlock?: (cardId: CardId) => void
+  ownCardId?: CardId
+  revealedOwners?: ReadonlyMap<CardId, string>
 }
 
 export default function CardGallery({ cards, onChoose, label = 'Your six image cards', choiceKey,
-  confirmLabel = 'Remember this dream', locks }: CardGalleryProps) {
+  confirmLabel = 'Remember this dream', locks, onUnlock, ownCardId, revealedOwners }: CardGalleryProps) {
   const [inspected, setInspected] = useState<Card | null>(null)
-  const [choice, setChoice] = useState<{ card: Card; key: string | undefined } | null>(null)
-  const selected = choice?.key === choiceKey && choice && !locks?.has(choice.card.id) ? choice.card : null
+  const [choice, setChoice] = useState<{ card: Card | null; key: string | undefined }>({ card: null, key: choiceKey })
+  // Reset on a new friend or changed commitments, including returning to an unlocked friend.
+  if (choice.key !== choiceKey) setChoice({ card: null, key: choiceKey })
+  const selected = choice.key === choiceKey && choice.card && choice.card.id !== ownCardId && !locks?.has(choice.card.id) ? choice.card : null
   const dialog = useRef<HTMLDialogElement>(null)
   const returnButton = useRef<HTMLButtonElement>(null)
   const opener = useRef<HTMLButtonElement | null>(null)
@@ -38,19 +43,26 @@ export default function CardGallery({ cards, onChoose, label = 'Your six image c
         {cards.map((card) => (
           <li key={card.id}>
             <button
-              className="card-preview"
-              aria-label={`${onChoose && !locks?.has(card.id) ? 'Choose' : 'Look closer'}: ${card.description}${locks?.has(card.id) ? ` Your guess for ${locks.get(card.id)}, locked.` : ''}`}
-              aria-pressed={onChoose && !locks?.has(card.id) ? selected?.id === card.id : undefined}
+              className={`card-preview${card.id === ownCardId ? ' own-card' : ''}`}
+              aria-label={`${onChoose && card.id !== ownCardId && !locks?.has(card.id) ? 'Choose' : 'Look closer'}: ${card.description}${card.id === ownCardId ? ' Your Dream, view only.' : ''}${revealedOwners && card.id !== ownCardId ? ` ${revealedOwners.get(card.id) ?? 'Decoy'}.` : ''}${locks?.has(card.id) ? ` Your guess for ${locks.get(card.id)}${revealedOwners ? '.' : ', locked.'}` : ''}`}
+              aria-pressed={onChoose && card.id !== ownCardId && !locks?.has(card.id) ? selected?.id === card.id : undefined}
               onClick={(event) => {
                 opener.current = event.currentTarget
-                if (onChoose && !locks?.has(card.id)) setChoice({ card, key: choiceKey })
+                if (onChoose && card.id !== ownCardId && !locks?.has(card.id)) setChoice({ card: selected?.id === card.id ? null : card, key: choiceKey })
                 else setInspected(card)
               }}
             >
-              <img src={card.artwork} alt={card.description} width="320" height="400" />
+              <img src={card.artwork} alt={card.description} width="320" height="400" decoding="async" />
+              {card.id === ownCardId && <span className="own-card-marker">Your Dream <span>View only</span></span>}
+              {revealedOwners && card.id !== ownCardId && <span className="revealed-marker">{revealedOwners.get(card.id) ?? 'Decoy'}</span>}
               {onChoose && selected?.id === card.id && <span className="chosen-marker">Chosen</span>}
-              {locks?.has(card.id) && <span className="locked-marker">{locks.get(card.id)} · Locked</span>}
+              {locks?.has(card.id) && <span className="locked-marker">{revealedOwners ? `Your guess: ${locks.get(card.id)}` : `${locks.get(card.id)} · Locked`}</span>}
             </button>
+            {onUnlock && locks?.has(card.id) && (
+              <button className="text-button unlock-guess" onClick={() => onUnlock(card.id)}>
+                Unlock {locks.get(card.id)}’s guess
+              </button>
+            )}
           </li>
         ))}
       </ul>
@@ -84,7 +96,7 @@ export default function CardGallery({ cards, onChoose, label = 'Your six image c
       >
         {inspected && (
           <>
-            <img src={inspected.artwork} alt={inspected.description} width="320" height="400" />
+            <img src={inspected.artwork} alt={inspected.description} width="320" height="400" decoding="async" />
             <button ref={returnButton} className="quiet-button" onClick={() => dialog.current?.close()}>
               Return to your cards
             </button>

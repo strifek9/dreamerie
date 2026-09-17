@@ -29,7 +29,7 @@ test('friends use shared selection and replacement rules without changing Charli
   assert.equal(selected.length, 18)
   assert.equal(new Set([...selected, ...hands]).size, 36)
   assert.equal(prepared.allocation.reserved.size, 36)
-  assert.equal(prepared.allocation.available.length, 24)
+  assert.equal(prepared.allocation.available.length, cards.length - 36)
   for (const player of players) {
     assert.equal(prepared.allocation.hands.get(player.id)?.length, 6)
     assert.equal(prepared.dreams.get(player.id)?.size, 6)
@@ -37,7 +37,7 @@ test('friends use shared selection and replacement rules without changing Charli
   }
   assert.equal(week.dreams.get('player-nancy')?.size, 0)
   assert.equal(week.dreams.get('player-song')?.size, 0)
-  assert.equal(week.allocation.available.length, 36)
+  assert.equal(week.allocation.available.length, cards.length - 24)
 })
 
 test('startup simulation excludes Charlie and the public introduction does not expose friends or schedule', () => {
@@ -54,7 +54,7 @@ test('startup simulation excludes Charlie and the public introduction does not e
     guesserId: CURRENT_PLAYER_ID,
     targetPlayerIds: ['player-nancy', 'player-song'],
   })
-  assert.equal(completed.allocation.available.length, 24)
+  assert.equal(completed.allocation.available.length, cards.length - 36)
 })
 
 test('simulation can resume partial friends, is reproducible, and completed friends draw nothing twice', () => {

@@ -6,6 +6,16 @@ Dreamerie should feel like an illustrated dream journal, surreal gallery, or qui
 
 Artwork is the star. UI provides enough structure to choose, remember, and recognize images while leaving room for personal interpretation.
 
+### Confirmed visual refresh
+
+The user requested 120 actual illustrated art cards and a richer, magical interface. Their supplied references combine expressive storybook characters with decorative fantasy shapes and textured painted surfaces. Keep the work stylized and two-dimensional, never hyperrealistic or rendered like a photograph. Dixit is inspiration for open-ended visual storytelling; create original imagery rather than recreating its cards.
+
+Variety is essential. Include joyful, sad, funny, tender, lonely, restless, eerie, hopeful and bittersweet scenes. Use a wide spectrum of colors: vivid primaries, pinks, greens, oranges, purples, luminous pastels, pale compositions and darker paintings. No single palette should dominate the whole deck. Emotional notes guide art production, not categories, labels or correct gameplay answers.
+
+Mix readable surreal scenes with more abstract and confusing art: impossible perspective, shifting scale, ambiguous silhouettes, fragmented shapes, unexpected empty space, and objects transforming into one another. Some cards can feel unresolved or contradictory. Avoid making all images literal, cute, densely decorated or comforting. Each image should support several interpretations.
+
+The surrounding interface uses warm parchment, deep teal, plum and restrained gold ornament. Its stable palette supports the deck's much broader colors. Give the artwork room; decorative details must not hide choices or compete with the images.
+
 ## Symbolism and ambiguity
 
 An image should plausibly evoke several concepts. Meaning comes from the player's choice rather than an obvious answer printed into the illustration. Favor unusual relationships, impossible spaces, symbolic scale, ambiguous memories, and emotionally suggestive details.
@@ -24,7 +34,7 @@ Avoid relying on a clock for TIME, heart icon for LOVE, labeled house for HOME, 
 ## Artwork-first UI
 
 - Use restrained surfaces, generous spacing, and readable typography.
-- Explore a subdued nighttime palette with sufficient contrast; final colors/fonts remain to be developed.
+- Use deep teal surroundings, warm parchment surfaces, plum accents and restrained gold details with sufficient contrast. Keep the card palette much broader than the interface palette.
 - Let images carry richness and color. Avoid bright arcade styling, dense dashboards, excess buttons/panels, a technology-heavy appearance, and gratuitous gradients.
 - Frame cards consistently without cropping defining details. Clear selection/lock markers should not cover important artwork.
 - Keep unnecessary scores/statistics away from the selection experience; results belong in reveal/completion states.
@@ -43,9 +53,13 @@ Weekly preparation uses one continuous page: the week's six concepts, the curren
 
 Quietly narrate entering, experiencing, and remembering Dreams. Use short, understandable, elegant phrases. Do not stack metaphors or turn instructions into riddles. Essential errors may be direct, such as “That dream is already assigned.”
 
-Day 1 ends with the preparation completion state; do not show friends' guessing prompts that day. Keep the development-only day control small and in the top right. From Day 2, show one friend's prompt at a time. Confirming Nancy's guess changes the prompt to Song's for the same concept, preserves all six images in their positions, and labels Nancy's committed guess as locked. These labels describe the player's guesses, never the true image owners. Use gender-neutral “their” in the question for every friend.
+Day 1 ends with the preparation completion state; do not show friends' guessing prompts that day. Keep the development-only day control small and in the top right. From Day 2, show one friend's prompt at a time. Confirming Nancy's guess changes the prompt to Song's for the same concept, preserves all six images in their positions, and labels Nancy's committed guess as locked. These labels describe the player's guesses, never the true image owners. Offer “Unlock Nancy’s guess” (or Song's) until reveal. Tapping a tentative selection again clears it; unlocking restores the relevant prompt and focus without erasing other confirmed guesses. Use gender-neutral “their” in the question for every friend.
 
-After both guesses, “Reveal their dreams” shows both friends' results together in the current workspace. Pair “Your guess” with “Their Dream”; describe correctness in text and show +1 or 0 points. Keep the week's score in reveal and ending views. The development control advances through all six rounds and finishes with “The dream fades.” and “Begin a new week.”
+Keep the user's Dream in the first slot of the six-image board during guessing and reveal. Use a distinct teal border and an explicit “Your Dream · View only” label below the image; preserve the artwork's color and detail. Tapping or keyboard activation enlarges it without choosing a guess. The other five slots contain two friends' Dreams and three decoys. Do not use a separate own-Dream sidebar in the round workspace.
+
+After both guesses, “Reveal their dreams” keeps the same six cards in place. Add actual owners' names or “Decoy” below their images and retain “Your guess: Nancy” or Song on the guessed cards. Show correctness and +1 or 0 points in text below the board. Friends' ownership and decoy labels remain absent before reveal; the user's own card is the deliberate exception. The week ends with a recap containing the user's Dreams and friends' actual/guessed image pairs.
+
+After entering the week, do not offer “Return to the beginning” navigation. Keep progression within preparation, guessing, reveal, and the ending. Closing optional image inspection still returns to the current cards.
 
 | Moment | Preferred language |
 | --- | --- |
@@ -67,8 +81,8 @@ Avoid “These are your six words,” “Select an image for TIME,” or generic
 
 Prototype 0.1 prioritizes gameplay. Gentle fades, cards drifting into place, softly disappearing choices, quiet replacements, and subtle reveals may later support the mood. Avoid elaborate effects, distracting motion, mandatory waits, or obscuring locked choices. Respect reduced motion and preserve focus.
 
-## Placeholder and final artwork
+## Local artwork and provenance
 
-Use local temporary artwork for Prototype 0.1, with enough distinct images for its allocation/decoy assumptions. Placeholder quality may be modest, but silhouettes/compositions must differ enough to recognize choices. Do not distinguish friends' cards or decoys through separate visual styles.
+The visual refresh replaces the original geometric placeholders with 120 locally stored raster illustrations. Keep unique compositions and useful visual descriptions. Do not distinguish friends' cards or decoys through separate visual styles. Keep emotional and palette notes out of runtime card metadata; they are production guidance only.
 
-Do not generate AI artwork in Prototype 0.1. Final sourcing, generation, licensing, artist collaboration, and review remain unresolved. Record temporary assets' provenance/permitted use when introduced. Placeholder art is not the final Dreamerie style.
+The user's explicit request authorizes AI generation of development artwork for this refresh, superseding the earlier placeholder-only restriction. Record exact prompts, source generation filenames and asset hashes. The application serves bundled images and contains no generation API or credentials. Commercial release sourcing, licensing and artist collaboration still require later decisions. User-supplied reference images guide style only and are not redistributed as game assets.

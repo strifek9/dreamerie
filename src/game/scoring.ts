@@ -10,6 +10,7 @@ export function scoreRound(week: DreamWeek, round: GuessingRound): RoundResult {
     const chosenCardId = round.assignments.get(playerId)
     const actualCardId = week.dreams.get(playerId)?.get(round.conceptId)
     if (playerId === round.guesserId || !chosenCardId || !actualCardId ||
+        chosenCardId === round.ownDreamId || chosenCardId === week.dreams.get(round.guesserId)?.get(round.conceptId) ||
         !round.cardIds.includes(chosenCardId) || !round.cardIds.includes(actualCardId)) {
       throw new Error('This Dream cannot be revealed with incomplete or invalid choices.')
     }

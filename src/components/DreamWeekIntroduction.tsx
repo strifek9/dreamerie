@@ -3,13 +3,11 @@ import type { WeekIntroduction } from '../game/types.ts'
 
 interface DreamWeekIntroductionProps {
   introduction: WeekIntroduction
-  onReturn: () => void
   children: ReactNode
 }
 
 export default function DreamWeekIntroduction({
   introduction,
-  onReturn,
   children,
 }: DreamWeekIntroductionProps) {
   return (
@@ -25,9 +23,6 @@ export default function DreamWeekIntroduction({
       <p className="gallery-note">Their order is still a mystery.</p>
       </header>
       {children}
-      <button className="text-button" onClick={onReturn}>
-        Return to the beginning
-      </button>
     </main>
   )
 }

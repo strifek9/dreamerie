@@ -32,17 +32,19 @@ Dreamerie is standalone, asynchronous, and mobile-first for mobile and desktop w
 
 Hands do not carry between weeks. Unused cards disappear, and previous selections cannot simply be carried forward as new selections. Deal a fresh hand every week. Whether an image can be drawn again in another week is unresolved; within-week uniqueness is not a permanent reuse ban.
 
-Prototype 0.1 resets cards without a player-facing Dream History feature.
+Prototype 0.1 shows a recap of the just-completed week, then clears it on restart or refresh. It has no persistent Dream History feature.
 
 ### Guessing and reveal
 
 - Guess other players' Dreams, never your own.
-- The stated guessing experience displays six images: relevant friends' actual Dreams plus enough decoys to fill the board.
-- For Charlie guessing TIME, include Nancy's TIME Dream, Song's TIME Dream, and four decoys. Exclude Charlie's own Dream.
-- Assign one image to each required other player. A committed image is locked and cannot be assigned to another player.
+- The guessing experience displays six images: the user's own Dream, friends' actual Dreams, and enough decoys to fill the board.
+- For Charlie guessing TIME, pin Charlie's TIME Dream to the first slot. Shuffle Nancy's TIME Dream, Song's TIME Dream and three fresh decoys into the other five slots. Mark Charlie's card “Your Dream · View only”: it can be enlarged but cannot be assigned to a friend.
+- Keep all six images in their positions through guessing, unlocking and reveal. Reveal labels the friends' actual Dreams, the user's guesses and the decoys on that same board, with textual results below. There is no separate own-Dream sidebar during a round.
+- Assign one image to each required other player. A committed image cannot be assigned to another player while locked. Players can unlock a guess to change it before reveal, preserving any other friend's guess.
 - Prompt for one friend at a time on the same board: Nancy first, then Song for the same concept after Nancy's guess is confirmed.
 - Do not reveal correctness after an individual guess. Reveal only after all required assignments are complete, then calculate the score.
-- A six-card board cannot contain more than six other players' distinct Dreams. Larger-group behavior is unresolved; do not infer a confirmed group-size cap.
+- At the end of the week, show all six concepts with the user's own Dreams, friends' actual Dreams, the user's guesses, and results.
+- With one slot reserved for the user's Dream, a six-card board has at most five slots for friends' Dreams and decoys. Larger-group behavior is unresolved; do not infer a confirmed group-size cap.
 
 ### Decoys
 
@@ -70,12 +72,12 @@ These choices support a small local demonstration and must be revisited before p
 | Allocation | Reserve every card dealt to a player, including replacement draws, in a shared per-week pool. Never return a reserved card to that week's deal pool. |
 | Decoys | Use distinct unallocated cards unseen by Charlie that week; exclude all players' dealt/reserved cards. Track images shown in hands and boards. Provision enough fresh decoys for every round; do not fall back to known images. |
 | Randomness | Supply randomness to rule functions so verification can reproduce fixture scenarios. No randomness framework is needed. |
-| Commitment | A committed assignment cannot be edited during the round. A deliberate tap/confirmation flow can prevent accidental commitment; its exact UI is not a gameplay rule. |
+| Commitment | Tap an unconfirmed selection again to clear it. Before reveal, an explicit unlock removes that guess only and returns to the first unassigned friend. The released image becomes available again; reveal is unavailable until both guesses are reconfirmed. Revealed/scored rounds cannot be changed. Prepared Dream revisions after replacement remain unresolved. |
 | Persistence | In-memory state and explicit restart. Refresh resets the demonstration. |
 | Late joining | Document the rule and allow models to represent remaining concepts. Interactive joining is outside the initial selection/guessing flows. |
-| Week ending | Show Charlie's accumulated score and completion. Full standings/winner require additional simulated or real scores later. |
+| Week ending | Show Charlie's accumulated score and a recap of all six concepts in played order: Charlie's Dream, Nancy/Song actual Dreams, Charlie's final guesses, and results. The recap belongs to this local week only. Full standings/winner require additional simulated or real scores later. |
 
-A simple fixture budget is **60 unique cards**: three players consume six starting cards plus six replacements each (36 reserved); six Charlie guessing boards consume four fresh decoys each (24). This is a local planning budget, not a production minimum. Insufficient fixture data must cause a clear failure without partial state changes.
+A sufficient fixture budget is **54 unique cards**: three players consume six starting cards plus six replacements each (36 reserved); six Charlie guessing boards consume three fresh decoys each (18). Charlie's first-slot Dream was already reserved during preparation. The actual deck contains **120 illustrations**. These are local planning choices, not a production minimum. Insufficient fixture data must cause a clear failure without partial state changes.
 
 These assumptions must preserve six-card hands, unique player allocations, hidden daily order, one-to-one assignments, delayed reveal, and +1 scoring.
 
@@ -108,4 +110,4 @@ Accounts, friend groups, invitations, real asynchronous multiplayer, production 
 
 Discord login, invitations, notifications, an Activity, and server/channel connections are optional future entry points. They must not own core state or be required to play. Prototype 0.1 contains no Discord-specific code.
 
-Production backend, PostgreSQL, cloud image storage, push notifications, matchmaking, monetization, AI image generation, real networking, and native applications are excluded from Prototype 0.1.
+Production backend, PostgreSQL, cloud image storage, push notifications, matchmaking, monetization, in-app AI image generation, real networking, and native applications are excluded from Prototype 0.1. The user has authorized generating static local artwork during development; this does not add a generation service to the game.

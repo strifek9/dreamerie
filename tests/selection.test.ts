@@ -32,7 +32,7 @@ test('choosing records the Dream, replaces the same slot, reserves and exposes t
   assert.equal(updated.allocation.reserved.size, 19)
   assert.ok(updated.allocation.reserved.has(chosen))
   assert.ok(updated.allocation.reserved.has(replacement))
-  assert.equal(updated.allocation.available.length, 41)
+  assert.equal(updated.allocation.available.length, cards.length - 19)
   assert.equal(updated.allocation.seen.get(CURRENT_PLAYER_ID)?.size, 7)
   assert.ok(updated.allocation.seen.get(CURRENT_PLAYER_ID)?.has(replacement))
   assert.equal(getNextDreamConcept(updated, CURRENT_PLAYER_ID)?.id, 'concept-love')
@@ -100,7 +100,7 @@ test('every selection including the sixth preserves unique six-card hands and pr
   }
   assert.equal(week.dreams.get(CURRENT_PLAYER_ID)?.size, 6)
   assert.equal(week.allocation.reserved.size, 24)
-  assert.equal(week.allocation.available.length, 36)
+  assert.equal(week.allocation.available.length, cards.length - 24)
   assert.equal(week.allocation.seen.get(CURRENT_PLAYER_ID)?.size, 12)
   assert.equal(getNextDreamConcept(week, CURRENT_PLAYER_ID), null)
   assert.equal(getNextDreamConcept(week, 'player-nancy')?.id, 'concept-time')

@@ -50,9 +50,10 @@ export interface PreparedRound {
   readonly targetPlayerIds: readonly PlayerId[]
 }
 
-/** Stored once on entry. Ownership stays in the week's private Dream selections. */
+/** Stored once on entry. Only own ownership is public; friends' Dreams stay private until reveal. */
 export interface GuessingRound extends PreparedRound {
   readonly id: RoundId
+  readonly ownDreamId: CardId
   readonly cardIds: readonly CardId[]
   readonly assignments: ReadonlyMap<PlayerId, CardId>
 }
@@ -60,6 +61,7 @@ export interface GuessingRound extends PreparedRound {
 /** Presentation data contains no answer mapping or future schedule. */
 export interface GuessingBoardView {
   readonly concept: DreamConcept
+  readonly ownDream: Card
   readonly cards: readonly Card[]
   readonly friends: readonly Player[]
   readonly currentFriend: Player | null
@@ -87,4 +89,10 @@ export interface RoundRevealView {
     readonly actual: Card
     readonly correct: boolean
   }[]
+}
+
+export interface WeekRecapEntry {
+  readonly concept: DreamConcept
+  readonly ownDream: Card
+  readonly reveal: RoundRevealView
 }

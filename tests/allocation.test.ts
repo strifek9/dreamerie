@@ -1,25 +1,33 @@
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
+import { createHash } from 'node:crypto'
 import { test } from 'node:test'
 import { dealInitialHands, recordExposure } from '../src/game/allocation.ts'
 import { cards } from '../src/data/cards.ts'
 import { concepts } from '../src/data/concepts.ts'
 import { CURRENT_PLAYER_ID, players } from '../src/data/players.ts'
 
-test('fixtures provide six concepts, three players, and 60 visually distinct local assets', () => {
+test('fixtures provide six concepts, three players, and 120 unique local illustrations', () => {
   assert.equal(concepts.length, 6)
   assert.equal(new Set(concepts.map((concept) => concept.id)).size, 6)
   assert.equal(players.length, 3)
-  assert.equal(cards.length, 60)
-  assert.equal(new Set(cards.map((card) => card.id)).size, 60)
+  assert.equal(cards.length, 120)
+  assert.equal(new Set(cards.map((card) => card.id)).size, 120)
   const assets = cards.map((card) => {
     assert.ok(card.description.length > 0)
-    const svg = readFileSync(new URL(`../public${card.artwork}`, import.meta.url), 'utf8')
-    assert.ok(svg.includes('viewBox="0 0 320 400"'))
-    assert.ok(!svg.includes('<text'))
-    return svg
+    assert.match(card.artwork, /^\/artwork\/dreams\/card-\d{3}\.jpg$/)
+    const asset = readFileSync(new URL(`../public${card.artwork}`, import.meta.url))
+    assert.equal(asset.readUInt16BE(0), 0xffd8, `${card.id} must be a JPEG`)
+    assert.equal(asset.readUInt16BE(asset.length - 2), 0xffd9)
+    const provenance = JSON.parse(readFileSync(new URL(`../public${card.artwork.replace('.jpg', '.provenance.json')}`, import.meta.url), 'utf8').replace(/^\uFEFF/, ''))
+    const hash = createHash('sha256').update(asset).digest('hex')
+    assert.equal(hash, provenance.sha256)
+    assert.equal(asset.length, provenance.bytes)
+    assert.ok(provenance.width >= 800 && provenance.height >= 1000)
+    assert.ok(Math.abs(provenance.width / provenance.height - 0.8) < 0.02)
+    return hash
   })
-  assert.equal(new Set(assets).size, 60)
+  assert.equal(new Set(assets).size, 120, 'Every card needs a distinct illustration')
 })
 
 test('three hands have six cards each, with a disjoint available pool and private exposure', () => {
@@ -29,8 +37,8 @@ test('three hands have six cards each, with a disjoint available pool and privat
     assert.equal(dealt.length, 18)
     assert.equal(new Set(dealt).size, 18)
     assert.equal(state.reserved.size, 18)
-    assert.equal(state.available.length, 42)
-    assert.equal(new Set([...dealt, ...state.available]).size, 60)
+    assert.equal(state.available.length, cards.length - 18)
+    assert.equal(new Set([...dealt, ...state.available]).size, cards.length)
     for (const player of players) {
       const hand = state.hands.get(player.id)
       assert.equal(hand?.length, 6)

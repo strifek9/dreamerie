@@ -1,5 +1,5 @@
 import { createGuessingBoard } from './board.ts'
-import { assignDream, getNextGuessTarget } from './assignments.ts'
+import { assignDream, getNextGuessTarget, unassignDream } from './assignments.ts'
 import { chooseDream } from './selection.ts'
 import { getPreparedFirstRound } from './simulation.ts'
 import { scoreRound } from './scoring.ts'
@@ -23,6 +23,7 @@ export type LocalGameAction =
   | { type: 'begin-guessing'; sourceWeek: DreamWeek; sourceRoundId?: RoundId; week: DreamWeek; round: GuessingRound }
   | { type: 'error'; message: string }
   | { type: 'assign'; roundId: RoundId; playerId: PlayerId; cardId: CardId }
+  | { type: 'unassign'; roundId: RoundId; cardId: CardId }
   | { type: 'reveal'; roundId: RoundId }
   | { type: 'finish-week'; roundId: RoundId }
   | { type: 'restart'; sourceWeek: DreamWeek; week: DreamWeek }
@@ -83,6 +84,10 @@ export function localGameReducer(state: LocalGame, action: LocalGameAction): Loc
       return { ...state, week, remembered, error: null, firstRound: getPreparedFirstRound(week, state.humanPlayerId) }
     }
     if (action.type === 'choose' || action.roundId !== state.round.id) return state
+    if (action.type === 'unassign' && (state.phase === 'guessing' || state.phase === 'ready-for-reveal')) {
+      const round = unassignDream(state.round, action.cardId)
+      return round === state.round ? state : { ...state, round, phase: 'guessing', error: null }
+    }
     if (action.type === 'assign' && state.phase === 'guessing') {
       const round = assignDream(state.round, action.playerId, action.cardId)
       return { ...state, round, phase: getNextGuessTarget(round) ? 'guessing' : 'ready-for-reveal', error: null }

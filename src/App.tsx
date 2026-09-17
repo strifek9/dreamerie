@@ -13,6 +13,7 @@ import { prepareSimulatedDreams } from './game/simulation'
 import { getGuessingBoardView } from './game/board'
 import { createLocalGame, getLocalDay, localGameReducer, prepareGuessingAction } from './game/localGame'
 import { getRoundRevealView, getTotalScore } from './game/scoring'
+import { getWeekRecap } from './game/recap'
 
 function freshWeek() {
   return prepareSimulatedDreams(createDreamWeek(`week-${crypto.randomUUID()}`, concepts, cards, players), CURRENT_PLAYER_ID)
@@ -50,7 +51,7 @@ export default function App() {
   return (
     <div className="dreamerie-shell">
       <header className="masthead">
-        <p className="wordmark">Dreamerie</p>
+        <p className="wordmark"><span aria-hidden="true">☾</span> Dreamerie</p>
         <aside className="dev-day-controls" aria-label="Development day controls">
           <span>Dev · {game.phase === 'complete' ? 'Week complete' : `Day ${day}`}</span>
           {game.phase !== 'complete' && (
@@ -63,10 +64,12 @@ export default function App() {
       </header>
 
       {screen === 'week' ? (
-        game.phase === 'complete' ? <DreamWeekComplete score={totalScore} onRestart={restartWeek} /> : game.phase !== 'preparation' ? (
+        game.phase === 'complete' ? <DreamWeekComplete score={totalScore}
+          recap={getWeekRecap(week, game.results, CURRENT_PLAYER_ID, cards, players)} onRestart={restartWeek} /> : game.phase !== 'preparation' ? (
           <DreamGuessingBoard
             board={getGuessingBoardView(week, game.round, cards, players)}
-            onReturn={() => setScreen('beginning')}
+            onUnlock={game.phase === 'guessing' || game.phase === 'ready-for-reveal'
+              ? (cardId) => commit({ type: 'unassign', roundId: game.round.id, cardId }) : undefined}
             error={game.error}
             onAssign={(playerId, cardId) => commit({ type: 'assign', roundId: game.round.id, playerId, cardId })}
             onReveal={game.phase === 'ready-for-reveal' ? () => commit({ type: 'reveal', roundId: game.round.id }) : undefined}
@@ -76,7 +79,6 @@ export default function App() {
         ) : (
         <DreamWeekIntroduction
           introduction={getWeekIntroduction(week)}
-          onReturn={() => setScreen('beginning')}
         >
         {currentConcept ? (
         <DreamSelection
@@ -96,12 +98,10 @@ export default function App() {
         )
       ) : (
       <main className="introduction">
-        <div className="night-mark" aria-hidden="true">
-          <span className="moon" />
-          <span className="star star-one" />
-          <span className="star star-two" />
-          <span className="star star-three" />
+        <div className="welcome-art" aria-hidden="true">
+          <img src="/artwork/dreamerie-garden.jpg" alt="" width="1122" height="1402" />
         </div>
+        <div className="welcome-copy">
         <p className="eyebrow">A quiet place for shared dreams</p>
         <h1>A new Dreamerie begins.</h1>
         <p className="invitation">
@@ -109,11 +109,12 @@ export default function App() {
         </p>
         <div className="closing-note">
           <span className="divider" aria-hidden="true" />
-          <p>The first dreams are still taking shape.</p>
+          <p>Six dreams. A different world in every mind.</p>
         </div>
         <button className="quiet-button enter-week" onClick={() => setScreen('week')}>
           Enter your Dream Week
         </button>
+        </div>
       </main>
       )}
 

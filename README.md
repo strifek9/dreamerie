@@ -12,6 +12,8 @@ Milestones 1–6 are approved. Milestones 7–10, including the requested full-w
 
 Prototype 0.1 uses **React, TypeScript, and Vite**. Charlie is the human; Nancy and Song are simulated players. The complete local week is playable, with responsive/accessibility polish and gentle transitions still planned.
 
+The latest requested revisions add clearing/unlocking guesses before reveal, Charlie's own Dream in the first board slot, and a complete end-of-week recap. The “Return to the beginning” controls have been removed. These changes are awaiting user testing.
+
 ## Run locally
 
 Use Node.js 22.12+ and npm (validated with Node 22.18.0 and npm 11.5.2). This satisfies [Vite's Node.js requirements](https://vite.dev/guide/).
@@ -27,9 +29,11 @@ The weekly overview, current prompt, and six cards share one preparation page. I
 
 You remain on **Day 1** after completing preparation. Use **Next day →** in the top-right development controls to simulate **Day 2**. This is available only after six choices; no clock or real day wait is involved. The first concept comes from the hidden randomized order and may differ from TIME. First, **Nancy dreamt of [concept]. What did their dream look like?** Mark a card and confirm **Remember Nancy’s dream**. Your guess locks, and Song's prompt appears on the same board. Choose a different image and confirm **Remember Song’s dream**. Both guesses then remain locked until you choose **Reveal their dreams**.
 
-The reveal pairs each guess with the friend's actual Dream, explains the result, and adds +1 per match to your total. **Next day →** becomes available after reveal. Repeat through **Days 2–7**, one concept per day, then choose **Finish week** to see **The dream fades.** and your total out of 12. **Begin a new week** clears the previous week and returns to Day 1 with fresh hands, friend selections, and a hidden order. There are no simulated friend scores or standings.
+Reveal keeps the same six cards in position, labels friends' actual Dreams and decoys, and shows your guesses on their cards. Text below explains each result and adds +1 per match to your total. **Next day →** becomes available after reveal. Repeat through **Days 2–7**, one concept per day, then choose **Finish week** to see **The dream fades.** and your total out of 12. **Begin a new week** clears the previous week and returns to Day 1 with fresh hands, friend selections, and a hidden order. There are no simulated friend scores or standings.
 
-**Look closer** optionally enlarges a marked image without committing it. Locked images remain inspectable by tapping them; Escape or **Return to your cards** closes inspection. Returning to the beginning and entering the week preserves the day, current friend, board order, guesses, reveal, and score. Refreshing also resets the demonstration to Day 1.
+Tap a marked card again to clear an unconfirmed selection. Before reveal, use **Unlock Nancy’s guess** or **Unlock Song’s guess** to change that guess. The other friend's choice and board order stay intact; both guesses must be confirmed again before reveal. Once revealed, the results are final.
+
+Your own Dream for the current concept is always the first of the six cards during guessing and reveal, with a teal border and “Your Dream · View only” label. It cannot be assigned to a friend. The other five cards contain Nancy's and Song's Dreams plus three fresh decoys. **Look closer** optionally enlarges a marked image without committing it. Your own Dream and locked images remain inspectable by tapping them; Escape or **Return to your cards** closes inspection. The week ends with all six concepts, your own Dreams, Nancy's and Song's actual Dreams, your final guesses, and results. Refreshing or **Begin a new week** clears that recap and resets to Day 1.
 
 ```powershell
 npm run typecheck
@@ -38,9 +42,11 @@ npm run build
 npm run preview
 ```
 
-The build includes TypeScript checks and writes production assets to `dist/`. Preview serves that build locally. Tests use Node's built-in runner and TypeScript stripping, with no added test dependency. Forty tests cover dealing, exposure, selection/replacement, simulated friends, strict decoys, stable boards, assignment locking, delayed reveal, 0/1/2-point scoring, all six rounds, and fresh restart, including invalid/repeated commands and exhaustion. Browser checks cover six phone/tablet/desktop widths, touch/keyboard interaction, focus, double activation, navigation stability, all six guessing days, displayed score calculations, the week ending, and restart.
+The build includes TypeScript checks and writes production assets to `dist/`. Preview serves that build locally. Tests use Node's built-in runner and TypeScript stripping, with no added test dependency. Forty-five tests cover dealing, exposure, selection/replacement, simulated friends, strict decoys, stable boards, assignment locking/unlocking, delayed reveal, 0/1/2-point scoring, all six rounds, complete recaps, and fresh restart, including invalid/repeated commands and exhaustion. Browser checks cover six phone/tablet/desktop widths, touch/keyboard interaction, clearing and revising guesses, focus, own-Dream references, all six days, recap images against played results, and restart.
 
-Temporary artwork is original code-authored SVG geometry, not AI-generated images. See [artwork provenance and regeneration](public/artwork/README.md); it is a fixture collection rather than the final visual identity.
+The requested visual refresh uses **120 distinct local illustrations**, a separate illustrated welcome scene, and a parchment, teal and plum interface. The cards span vivid colors, quiet pastels, light and dark moods, funny scenes, and more abstract visual puzzles. They draw on the user's illustrated references and Dixit's associative storytelling with original compositions. The full card image remains visible in play and inspection. Selection and lock labels sit below the artwork.
+
+Artwork was generated during development with the built-in image-generation tool; the game has no live generation API or external image service. See [asset provenance and synchronization](public/artwork/README.md) and the [recorded prompt set](docs/artwork/prompts.json). The original SVG fixtures are archived and no longer dealt. All 120 illustrations were visually reviewed and decoded successfully in the browser. The 45 tests, TypeScript checks, production build and full-week browser checks at six viewport widths pass with the new deck. This visual refresh precedes Milestone 11 and awaits user testing; the remaining accessibility and transition milestones are still separate.
 
 ## Documentation
 

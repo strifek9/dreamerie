@@ -12,8 +12,18 @@ export function assignDream(round: GuessingRound, playerId: PlayerId, cardId: Ca
     throw new Error('This Dream is for the friend currently shown.')
   }
   if (!round.cardIds.includes(cardId)) throw new Error('Choose an image from this dream.')
+  if (cardId === round.ownDreamId) throw new Error('Your Dream is a reference. Choose another image for your friend.')
   if ([...round.assignments.values()].includes(cardId)) throw new Error('That dream is already assigned.')
   const assignments = new Map(round.assignments)
   assignments.set(playerId, cardId)
+  return { ...round, assignments }
+}
+
+/** Release only this guess; other friends' choices and the board stay intact. */
+export function unassignDream(round: GuessingRound, cardId: CardId): GuessingRound {
+  const assigned = [...round.assignments].find(([, chosen]) => chosen === cardId)
+  if (!assigned) return round
+  const assignments = new Map(round.assignments)
+  assignments.delete(assigned[0])
   return { ...round, assignments }
 }

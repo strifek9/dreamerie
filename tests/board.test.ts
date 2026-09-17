@@ -26,7 +26,7 @@ function preparation(week = preparedWeek()): LocalGame {
     firstRound: getPreparedFirstRound(week, CURRENT_PLAYER_ID) }
 }
 
-test('first board contains two actual Dreams and four fresh decoys, with only Charlie exposed', () => {
+test('first board contains own Dream first, two friend Dreams and three fresh decoys, with only Charlie exposed', () => {
   const input = preparedWeek()
   const before = structuredClone(input)
   const { week, round } = createFirstGuessingBoard(input, CURRENT_PLAYER_ID, () => 0)
@@ -35,14 +35,15 @@ test('first board contains two actual Dreams and four fresh decoys, with only Ch
   assert.deepEqual(round.targetPlayerIds, ['player-nancy', 'player-song'])
   const actual = round.targetPlayerIds.map((id) => input.dreams.get(id)!.get(round.conceptId)!)
   for (const id of actual) assert.ok(round.cardIds.includes(id))
-  const decoys = round.cardIds.filter((id) => !actual.includes(id))
-  assert.equal(decoys.length, 4)
+  const decoys = round.cardIds.filter((id) => id !== round.ownDreamId && !actual.includes(id))
+  assert.equal(decoys.length, 3)
+  assert.equal(round.cardIds[0], input.dreams.get(CURRENT_PLAYER_ID)!.get(round.conceptId))
   for (const id of decoys) {
     assert.ok(input.allocation.available.includes(id))
     assert.ok(!input.allocation.reserved.has(id))
     assert.ok(!input.allocation.seen.get(CURRENT_PLAYER_ID)!.has(id))
   }
-  assert.ok(round.cardIds.every((id) => ![...input.dreams.get(CURRENT_PLAYER_ID)!.values()].includes(id)))
+  assert.ok(round.cardIds.slice(1).every((id) => ![...input.dreams.get(CURRENT_PLAYER_ID)!.values()].includes(id)))
   assert.deepEqual(week.allocation.seen.get(CURRENT_PLAYER_ID), new Set([...input.allocation.seen.get(CURRENT_PLAYER_ID)!, ...round.cardIds]))
   for (const id of round.targetPlayerIds) assert.equal(week.allocation.seen.get(id), input.allocation.seen.get(id))
   assert.equal(week.allocation.hands, input.allocation.hands)
@@ -54,8 +55,8 @@ test('first board contains two actual Dreams and four fresh decoys, with only Ch
 
 test('decoy eligibility filters seen, reserved, unknown and duplicate candidates without weakening rules', () => {
   const week = preparedWeek()
-  const fresh = week.allocation.available.slice(0, 4)
-  const seenCard = week.allocation.available[4]!
+  const fresh = week.allocation.available.slice(0, 3)
+  const seenCard = week.allocation.available[3]!
   const reservedCard = week.allocation.hands.get('player-nancy')![0]!
   const seen = new Map(week.allocation.seen)
   seen.set(CURRENT_PLAYER_ID, new Set([...seen.get(CURRENT_PLAYER_ID)!, seenCard]))
@@ -71,7 +72,7 @@ test('decoy eligibility filters seen, reserved, unknown and duplicate candidates
 
 test('insufficient distinct unseen decoys fail before randomness without changing input or exposure', () => {
   const week = preparedWeek()
-  const first = week.allocation.available.slice(0, 3)
+  const first = week.allocation.available.slice(0, 2)
   const short = { ...week, allocation: { ...week.allocation, available: [...first, ...first] } }
   const before = structuredClone(short)
   let calls = 0
@@ -102,7 +103,7 @@ test('shuffle is reproducible and failures in the final shuffle do not expose a 
   assert.deepEqual(createFirstGuessingBoard(week, CURRENT_PLAYER_ID, () => 0.25), createFirstGuessingBoard(week, CURRENT_PLAYER_ID, () => 0.25))
   assert.notDeepEqual(createFirstGuessingBoard(week, CURRENT_PLAYER_ID, () => 0).round.cardIds, createFirstGuessingBoard(week, CURRENT_PLAYER_ID, () => 0.99).round.cardIds)
   let calls = 0
-  assert.throws(() => createFirstGuessingBoard(week, CURRENT_PLAYER_ID, () => ++calls <= 23 ? 0 : NaN), /Randomness/)
+  assert.throws(() => createFirstGuessingBoard(week, CURRENT_PLAYER_ID, () => ++calls < week.allocation.available.length ? 0 : NaN), /Randomness/)
   assert.deepEqual(week, before)
 })
 
@@ -122,7 +123,9 @@ test('entering stores one stable board and ignores repeated entry and stale sele
 test('public board data includes only current concept, uniform image metadata and friend identities', () => {
   const { week, round } = createFirstGuessingBoard(preparedWeek(), CURRENT_PLAYER_ID, () => 0)
   const view = getGuessingBoardView(week, round, cards, players)
-  assert.deepEqual(Object.keys(view).sort(), ['cards', 'concept', 'currentFriend', 'friends', 'locks'])
+  assert.deepEqual(Object.keys(view).sort(), ['cards', 'concept', 'currentFriend', 'friends', 'locks', 'ownDream'])
+  assert.equal(view.ownDream.id, week.dreams.get(CURRENT_PLAYER_ID)!.get(round.conceptId))
+  assert.equal(view.cards[0]?.id, view.ownDream.id)
   assert.equal(view.currentFriend?.id, 'player-nancy')
   assert.equal(view.locks.size, 0)
   assert.deepEqual(view.cards.map((card) => card.id), round.cardIds)

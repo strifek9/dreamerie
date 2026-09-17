@@ -1,0 +1,1280 @@
+{
+  "method": "Built-in image_gen; one generation per card. User references guide style only; original scenes.",
+  "basePrompt": "Use case: illustration-story. Create ONE original full-bleed portrait 4:5 picture-card illustration for Dreamerie. Reference image is STYLE INSPIRATION only: textured 2D storybook gouache, decorative flat fantasy shapes, playful exaggerated silhouettes, ornate foliage, paper grain, rich warm light. Create a completely NEW composition and subject. Magical, whimsical, emotionally open to several interpretations. Sophisticated illustrated fairytale; simplified dimensionality, flat layered planes, charming expressive characters where present. Vary the palette within teal, coral, ochre, plum, lavender and warm cream; not every image should be dark. Strong readable scene at small card size. NOT hyperrealistic, NOT photographic, NOT 3D, NOT realistic oil painting. No text, labels, numbers, border, watermark, playing-card symbols, logos or UI. No exact copying of reference compositions. One edge-to-edge image, no panels or sheet. Scene: ",
+  "cards": [
+    {
+      "id": "card-001",
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed portrait 4:5 picture-card illustration for Dreamerie. The two provided images are STYLE INSPIRATION only: combine the first's warm playful storybook shapes and expressive whimsy with the second's decorative flat fantasy shapes, textured paper, ornate foliage and jewel colors. Do not copy their characters or compositions. Scene: a small cream cottage nestled inside a giant teal moth, whose patterned wings carry apricot clouds above an orchard of curling plum trees; warm windows glow like little stars. Stylized 2D hand-painted gouache, charming deliberately exaggerated shapes, screenprint-like grain, simplified dimensionality, sophisticated illustrated fairytale, magical and emotionally ambiguous. Flat decorative planes, strong clear silhouette. Palette teal, ochre, coral, aubergine, lavender, warm cream. NOT hyperrealistic, NOT photographic, NOT realistic oil painting, NOT 3D. No text, labels, border, watermark, playing-card symbols or UI. Entire scene edge-to-edge; readable as a small card, rich when enlarged. Generate a single image.",
+      "description": "A cream cottage rides on a giant teal moth above a plum orchard and apricot clouds.",
+      "scene": "A cream cottage rides on a giant teal moth above a plum orchard and apricot clouds."
+    },
+    {
+      "id": "card-002",
+      "description": "A child in a coral coat waters a small cloud growing in a terracotta flowerpot.",
+      "scene": "A child in a coral coat waters a small cloud growing in a terracotta flowerpot."
+    },
+    {
+      "id": "card-003",
+      "description": "A long lavender dragon winds through an upside-down garden of floating doorways.",
+      "scene": "A long lavender dragon winds through an upside-down garden of floating doorways."
+    },
+    {
+      "id": "card-004",
+      "description": "A fox in a striped scarf rows a walnut-shell boat across a lake of fallen stars.",
+      "scene": "A fox in a striped scarf rows a walnut-shell boat across a lake of fallen stars."
+    },
+    {
+      "id": "card-005",
+      "description": "An enormous blue rabbit sleeps around a tiny candlelit village.",
+      "scene": "An enormous blue rabbit sleeps around a tiny candlelit village."
+    },
+    {
+      "id": "card-006",
+      "description": "An empty coral coat hangs from a cloud; its sleeves spill into two different seas, and a tiny yellow chair floats between them.",
+      "scene": "An empty coral coat hangs from a cloud; its sleeves spill into two different seas, and a tiny yellow chair floats between them.",
+      "artDirection": {
+        "mood": "calm but uncanny",
+        "palette": "celadon, deep coral, cerulean, pale butter yellow and white",
+        "medium": "sparse graphic painting, exaggerated scale and negative space"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: sparse graphic painting, exaggerated scale and negative space. Palette: celadon, deep coral, cerulean, pale butter yellow and white. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: calm but uncanny; imply it through composition and relationships, never label it. Scene: An empty coral coat hangs from a cloud; its sleeves spill into two different seas, and a tiny yellow chair floats between them. Abstraction: Combine hand-painted narrative with an abstract interruption: a torn gap, a shape swallowing the horizon, or an object becoming its own shadow. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-007",
+      "description": "Two profile-shaped islands almost touch across a white river; floating red fish become punctuation-like abstract shapes without actual letters.",
+      "scene": "Two profile-shaped islands almost touch across a white river; floating red fish become punctuation-like abstract shapes without actual letters.",
+      "artDirection": {
+        "mood": "playful, silly and celebratory",
+        "palette": "primary red, royal blue, bright yellow, violet and candy pink",
+        "medium": "rounded expressive 2D illustration and lively patterned surfaces"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: rounded expressive 2D illustration and lively patterned surfaces. Palette: primary red, royal blue, bright yellow, violet and candy pink. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: playful, silly and celebratory; imply it through composition and relationships, never label it. Scene: Two profile-shaped islands almost touch across a white river; floating red fish become punctuation-like abstract shapes without actual letters. Abstraction: Let the scene dissolve at its edges into colored planes; turn negative space into a second possible reading. Avoid a tidy literal explanation. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-008",
+      "description": "A staircase of open books climbs toward a small door in a peach-colored moon.",
+      "scene": "A staircase of open books climbs toward a small door in a peach-colored moon."
+    },
+    {
+      "id": "card-009",
+      "description": "A whale with patterned fins drifts between balconies hung with glowing laundry.",
+      "scene": "A whale with patterned fins drifts between balconies hung with glowing laundry."
+    },
+    {
+      "id": "card-010",
+      "description": "Two tiny travelers share an umbrella beneath a rain of colorful leaves.",
+      "scene": "Two tiny travelers share an umbrella beneath a rain of colorful leaves."
+    },
+    {
+      "id": "card-011",
+      "description": "A deer with flowering antlers holds a miniature theater between its branches.",
+      "scene": "A deer with flowering antlers holds a miniature theater between its branches.",
+      "artDirection": {
+        "mood": "lonely, tender and bittersweet",
+        "palette": "ultramarine, icy cyan, pale rose, a single vermilion accent and silver gray",
+        "medium": "watery gouache washes and fragmented paper collage"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: watery gouache washes and fragmented paper collage. Palette: ultramarine, icy cyan, pale rose, a single vermilion accent and silver gray. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: lonely, tender and bittersweet; imply it through composition and relationships, never label it. Scene: A deer with flowering antlers holds a miniature theater between its branches. Abstraction: Use large expressive color fields, textured paper shapes and a few symbolic fragments; avoid filling every inch with decoration. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-012",
+      "description": "A child releases paper boats from a window into a river flowing through the sky.",
+      "scene": "A child releases paper boats from a window into a river flowing through the sky.",
+      "artDirection": {
+        "mood": "absurdly funny and mischievous",
+        "palette": "tangerine, chartreuse, bright turquoise, raspberry and cream",
+        "medium": "exaggerated cartoon silhouettes and chalky painted texture"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: exaggerated cartoon silhouettes and chalky painted texture. Palette: tangerine, chartreuse, bright turquoise, raspberry and cream. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: absurdly funny and mischievous; imply it through composition and relationships, never label it. Scene: A child releases paper boats from a window into a river flowing through the sky. Abstraction: Combine hand-painted narrative with an abstract interruption: a torn gap, a shape swallowing the horizon, or an object becoming its own shadow. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-013",
+      "description": "A fish in small boots holds an eye-shaped umbrella amid orange rain and violet towers.",
+      "scene": "A lemon-yellow crown rests on a crooked fish with tiny boots; an enormous eye-shaped umbrella rains upward around it.",
+      "artDirection": {
+        "mood": "unsettling, mysterious and a little fearful, no gore",
+        "palette": "blood orange, violet, midnight blue, acid yellow and black",
+        "medium": "flat theatrical shadows and impossible architectural planes"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: flat theatrical shadows and impossible architectural planes. Palette: blood orange, violet, midnight blue, acid yellow and black. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: unsettling, mysterious and a little fearful, no gore; imply it through composition and relationships, never label it. Scene: A lemon-yellow crown rests on a crooked fish with tiny boots; an enormous eye-shaped umbrella rains upward around it. Abstraction: Let the scene dissolve at its edges into colored planes; turn negative space into a second possible reading. Avoid a tidy literal explanation. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-014",
+      "description": "A coral octopus conducts an orchestra of empty chairs beneath the sea.",
+      "scene": "A coral octopus conducts an orchestra of empty chairs beneath the sea.",
+      "artDirection": {
+        "mood": "gentle, affectionate and hopeful",
+        "palette": "lilac, fresh mint, strawberry pink, warm ivory and apricot",
+        "medium": "soft oil pastel, delicate gouache and unexpected blank space"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: soft oil pastel, delicate gouache and unexpected blank space. Palette: lilac, fresh mint, strawberry pink, warm ivory and apricot. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: gentle, affectionate and hopeful; imply it through composition and relationships, never label it. Scene: A coral octopus conducts an orchestra of empty chairs beneath the sea. Abstraction: Flatten depth and interrupt perspective with a floating slice of another landscape. Leave the relationship between objects unresolved. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-015",
+      "description": "A snail carries a domed observatory through a forest of tall paintbrush flowers.",
+      "scene": "A snail carries a domed observatory through a forest of tall paintbrush flowers.",
+      "artDirection": {
+        "mood": "frustrated, restless and chaotic",
+        "palette": "scarlet, electric blue, lime, black and stark white",
+        "medium": "angular painterly collage, interrupted patterns and slanted planes"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: angular painterly collage, interrupted patterns and slanted planes. Palette: scarlet, electric blue, lime, black and stark white. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: frustrated, restless and chaotic; imply it through composition and relationships, never label it. Scene: A snail carries a domed observatory through a forest of tall paintbrush flowers. Abstraction: Use a boldly unusual crop, surprising scale, and a partially missing silhouette. The visual puzzle matters more than realistic detail. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-016",
+      "description": "Scarlet stairs turn into a flock of violet hands; one small blue figure stands on a white plane with no horizon.",
+      "scene": "Scarlet stairs turn into a flock of violet hands; one small blue figure stands on a white plane with no horizon.",
+      "artDirection": {
+        "mood": "wistful and quietly sad",
+        "palette": "rainy periwinkle, wine red, pale yellow, faded jade and cream",
+        "medium": "grainy gouache, dissolving edges and sparse composition"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: grainy gouache, dissolving edges and sparse composition. Palette: rainy periwinkle, wine red, pale yellow, faded jade and cream. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: wistful and quietly sad; imply it through composition and relationships, never label it. Scene: Scarlet stairs turn into a flock of violet hands; one small blue figure stands on a white plane with no horizon. Abstraction: Create an impossible loop or simultaneous viewpoints; recognizable objects should overlap and transform rather than occupy an ordinary scene. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-017",
+      "description": "A little gardener plants silver spoons that bloom into striped umbrellas.",
+      "scene": "A little gardener plants silver spoons that bloom into striped umbrellas.",
+      "artDirection": {
+        "mood": "curious, bewildering and delightfully confusing",
+        "palette": "fuchsia, emerald, lemon yellow, bright violet and cyan",
+        "medium": "abstract collage, ambiguous figure-ground and overlapping silhouettes"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: abstract collage, ambiguous figure-ground and overlapping silhouettes. Palette: fuchsia, emerald, lemon yellow, bright violet and cyan. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: curious, bewildering and delightfully confusing; imply it through composition and relationships, never label it. Scene: A little gardener plants silver spoons that bloom into striped umbrellas. Abstraction: Use large expressive color fields, textured paper shapes and a few symbolic fragments; avoid filling every inch with decoration. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-018",
+      "description": "A house on bird legs steps carefully across stepping-stone clouds.",
+      "scene": "A house on bird legs steps carefully across stepping-stone clouds.",
+      "artDirection": {
+        "mood": "calm but uncanny",
+        "palette": "celadon, deep coral, cerulean, pale butter yellow and white",
+        "medium": "sparse graphic painting, exaggerated scale and negative space"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: sparse graphic painting, exaggerated scale and negative space. Palette: celadon, deep coral, cerulean, pale butter yellow and white. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: calm but uncanny; imply it through composition and relationships, never label it. Scene: A house on bird legs steps carefully across stepping-stone clouds. Abstraction: Combine hand-painted narrative with an abstract interruption: a torn gap, a shape swallowing the horizon, or an object becoming its own shadow. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-019",
+      "description": "A patchwork sun peels open to reveal a quiet teal room; a pink ribbon crosses both inside and outside.",
+      "scene": "A patchwork sun peels open to reveal a quiet teal room; a pink ribbon crosses both inside and outside.",
+      "artDirection": {
+        "mood": "playful, silly and celebratory",
+        "palette": "primary red, royal blue, bright yellow, violet and candy pink",
+        "medium": "rounded expressive 2D illustration and lively patterned surfaces"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: rounded expressive 2D illustration and lively patterned surfaces. Palette: primary red, royal blue, bright yellow, violet and candy pink. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: playful, silly and celebratory; imply it through composition and relationships, never label it. Scene: A patchwork sun peels open to reveal a quiet teal room; a pink ribbon crosses both inside and outside. Abstraction: Let the scene dissolve at its edges into colored planes; turn negative space into a second possible reading. Avoid a tidy literal explanation. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-020",
+      "description": "A polar bear in a saffron waistcoat pours tea for a tiny cloud at a round table.",
+      "scene": "A polar bear in a saffron waistcoat pours tea for a tiny cloud at a round table.",
+      "artDirection": {
+        "mood": "eerie, estranged and melancholy",
+        "palette": "indigo, mint, magenta, smoky gray and bone white",
+        "medium": "dislocated perspective, organic abstract shapes and chalky grain"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: dislocated perspective, organic abstract shapes and chalky grain. Palette: indigo, mint, magenta, smoky gray and bone white. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: eerie, estranged and melancholy; imply it through composition and relationships, never label it. Scene: A polar bear in a saffron waistcoat pours tea for a tiny cloud at a round table. Abstraction: Flatten depth and interrupt perspective with a floating slice of another landscape. Leave the relationship between objects unresolved. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-021",
+      "description": "A child looks through a keyhole and sees an ocean of enormous flowers.",
+      "scene": "A child looks through a keyhole and sees an ocean of enormous flowers.",
+      "artDirection": {
+        "mood": "wonder-filled and emotionally mixed",
+        "palette": "orange, lapis blue, orchid, malachite and pale peach",
+        "medium": "decorative illustrated fantasy with bold surreal simplification"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: decorative illustrated fantasy with bold surreal simplification. Palette: orange, lapis blue, orchid, malachite and pale peach. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: wonder-filled and emotionally mixed; imply it through composition and relationships, never label it. Scene: A child looks through a keyhole and sees an ocean of enormous flowers. Abstraction: Use a boldly unusual crop, surprising scale, and a partially missing silhouette. The visual puzzle matters more than realistic detail. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-022",
+      "description": "A choir of empty gloves grows from a checkerboard floor that curls into a vivid orange wave.",
+      "scene": "A choir of empty gloves grows from a checkerboard floor that curls into a vivid orange wave.",
+      "artDirection": {
+        "mood": "joyful and exuberant, with a strange uneasy undertone",
+        "palette": "sunflower yellow, electric cobalt, hot pink, grassy green and white",
+        "medium": "bold cut-paper shapes and playful gouache"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: bold cut-paper shapes and playful gouache. Palette: sunflower yellow, electric cobalt, hot pink, grassy green and white. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: joyful and exuberant, with a strange uneasy undertone; imply it through composition and relationships, never label it. Scene: A choir of empty gloves grows from a checkerboard floor that curls into a vivid orange wave. Abstraction: Create an impossible loop or simultaneous viewpoints; recognizable objects should overlap and transform rather than occupy an ordinary scene. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-023",
+      "description": "A crescent-shaped boat sails over a forest reflected in the night sky.",
+      "scene": "A crescent-shaped boat sails over a forest reflected in the night sky.",
+      "artDirection": {
+        "mood": "lonely, tender and bittersweet",
+        "palette": "ultramarine, icy cyan, pale rose, a single vermilion accent and silver gray",
+        "medium": "watery gouache washes and fragmented paper collage"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: watery gouache washes and fragmented paper collage. Palette: ultramarine, icy cyan, pale rose, a single vermilion accent and silver gray. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: lonely, tender and bittersweet; imply it through composition and relationships, never label it. Scene: A crescent-shaped boat sails over a forest reflected in the night sky. Abstraction: Use large expressive color fields, textured paper shapes and a few symbolic fragments; avoid filling every inch with decoration. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-024",
+      "description": "A giant hand wearing a knitted sleeve cradles a village inside a walnut.",
+      "scene": "A giant hand wearing a knitted sleeve cradles a village inside a walnut.",
+      "artDirection": {
+        "mood": "absurdly funny and mischievous",
+        "palette": "tangerine, chartreuse, bright turquoise, raspberry and cream",
+        "medium": "exaggerated cartoon silhouettes and chalky painted texture"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: exaggerated cartoon silhouettes and chalky painted texture. Palette: tangerine, chartreuse, bright turquoise, raspberry and cream. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: absurdly funny and mischievous; imply it through composition and relationships, never label it. Scene: A giant hand wearing a knitted sleeve cradles a village inside a walnut. Abstraction: Combine hand-painted narrative with an abstract interruption: a torn gap, a shape swallowing the horizon, or an object becoming its own shadow. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-025",
+      "description": "One chair casts three shadows: a tree, a bird and an open doorway; the room is divided into translucent colored wedges.",
+      "scene": "One chair casts three shadows: a tree, a bird and an open doorway; the room is divided into translucent colored wedges.",
+      "artDirection": {
+        "mood": "unsettling, mysterious and a little fearful, no gore",
+        "palette": "blood orange, violet, midnight blue, acid yellow and black",
+        "medium": "flat theatrical shadows and impossible architectural planes"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: flat theatrical shadows and impossible architectural planes. Palette: blood orange, violet, midnight blue, acid yellow and black. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: unsettling, mysterious and a little fearful, no gore; imply it through composition and relationships, never label it. Scene: One chair casts three shadows: a tree, a bird and an open doorway; the room is divided into translucent colored wedges. Abstraction: Let the scene dissolve at its edges into colored planes; turn negative space into a second possible reading. Avoid a tidy literal explanation. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-026",
+      "description": "A pair of shoes grows a twisting tree between them on a deserted stage.",
+      "scene": "A pair of shoes grows a twisting tree between them on a deserted stage.",
+      "artDirection": {
+        "mood": "gentle, affectionate and hopeful",
+        "palette": "lilac, fresh mint, strawberry pink, warm ivory and apricot",
+        "medium": "soft oil pastel, delicate gouache and unexpected blank space"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: soft oil pastel, delicate gouache and unexpected blank space. Palette: lilac, fresh mint, strawberry pink, warm ivory and apricot. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: gentle, affectionate and hopeful; imply it through composition and relationships, never label it. Scene: A pair of shoes grows a twisting tree between them on a deserted stage. Abstraction: Flatten depth and interrupt perspective with a floating slice of another landscape. Leave the relationship between objects unresolved. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-027",
+      "description": "A tiny red train circles the brim of a sleeping giant's hat.",
+      "scene": "A tiny red train circles the brim of a sleeping giant's hat.",
+      "artDirection": {
+        "mood": "frustrated, restless and chaotic",
+        "palette": "scarlet, electric blue, lime, black and stark white",
+        "medium": "angular painterly collage, interrupted patterns and slanted planes"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: angular painterly collage, interrupted patterns and slanted planes. Palette: scarlet, electric blue, lime, black and stark white. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: frustrated, restless and chaotic; imply it through composition and relationships, never label it. Scene: A tiny red train circles the brim of a sleeping giant's hat. Abstraction: Use a boldly unusual crop, surprising scale, and a partially missing silhouette. The visual puzzle matters more than realistic detail. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-028",
+      "description": "A large blue teardrop contains a tiny picnic; a smiling paper face drifts beside it.",
+      "scene": "A enormous blue tear contains a tiny pink picnic; a smiling paper mask drifts outside it like a torn cloud.",
+      "artDirection": {
+        "mood": "wistful and quietly sad",
+        "palette": "rainy periwinkle, wine red, pale yellow, faded jade and cream",
+        "medium": "grainy gouache, dissolving edges and sparse composition"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: grainy gouache, dissolving edges and sparse composition. Palette: rainy periwinkle, wine red, pale yellow, faded jade and cream. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: wistful and quietly sad; imply it through composition and relationships, never label it. Scene: A enormous blue tear contains a tiny pink picnic; a smiling paper mask drifts outside it like a torn cloud. Abstraction: Create an impossible loop or simultaneous viewpoints; recognizable objects should overlap and transform rather than occupy an ordinary scene. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-029",
+      "description": "A green saxophone grows roots into a pond, with a bird's nest among its keys.",
+      "scene": "A green violin grows roots into a pond while birds nest in its strings.",
+      "artDirection": {
+        "mood": "curious, bewildering and delightfully confusing",
+        "palette": "fuchsia, emerald, lemon yellow, bright violet and cyan",
+        "medium": "abstract collage, ambiguous figure-ground and overlapping silhouettes"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: abstract collage, ambiguous figure-ground and overlapping silhouettes. Palette: fuchsia, emerald, lemon yellow, bright violet and cyan. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: curious, bewildering and delightfully confusing; imply it through composition and relationships, never label it. Scene: A green violin grows roots into a pond while birds nest in its strings. Abstraction: Use large expressive color fields, textured paper shapes and a few symbolic fragments; avoid filling every inch with decoration. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-030",
+      "description": "Two small figures meet on opposite sides of a bridge made of colorful scarves.",
+      "scene": "Two small figures meet on opposite sides of a bridge made of colorful scarves.",
+      "artDirection": {
+        "mood": "calm but uncanny",
+        "palette": "celadon, deep coral, cerulean, pale butter yellow and white",
+        "medium": "sparse graphic painting, exaggerated scale and negative space"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: sparse graphic painting, exaggerated scale and negative space. Palette: celadon, deep coral, cerulean, pale butter yellow and white. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: calm but uncanny; imply it through composition and relationships, never label it. Scene: Two small figures meet on opposite sides of a bridge made of colorful scarves. Abstraction: Combine hand-painted narrative with an abstract interruption: a torn gap, a shape swallowing the horizon, or an object becoming its own shadow. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-031",
+      "description": "A green staircase folds into a sleeping face; yellow fish swim through its missing steps.",
+      "scene": "A green staircase folds into a sleeping face; yellow fish swim through its missing steps.",
+      "artDirection": {
+        "mood": "playful, silly and celebratory",
+        "palette": "primary red, royal blue, bright yellow, violet and candy pink",
+        "medium": "rounded expressive 2D illustration and lively patterned surfaces"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: rounded expressive 2D illustration and lively patterned surfaces. Palette: primary red, royal blue, bright yellow, violet and candy pink. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: playful, silly and celebratory; imply it through composition and relationships, never label it. Scene: A green staircase folds into a sleeping face; yellow fish swim through its missing steps. Abstraction: Let the scene dissolve at its edges into colored planes; turn negative space into a second possible reading. Avoid a tidy literal explanation. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-032",
+      "description": "A girl catches falling feathers in a butterfly net while her shadow becomes a bird.",
+      "scene": "A girl catches falling feathers in a butterfly net while her shadow becomes a bird.",
+      "artDirection": {
+        "mood": "eerie, estranged and melancholy",
+        "palette": "indigo, mint, magenta, smoky gray and bone white",
+        "medium": "dislocated perspective, organic abstract shapes and chalky grain"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: dislocated perspective, organic abstract shapes and chalky grain. Palette: indigo, mint, magenta, smoky gray and bone white. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: eerie, estranged and melancholy; imply it through composition and relationships, never label it. Scene: A girl catches falling feathers in a butterfly net while her shadow becomes a bird. Abstraction: Flatten depth and interrupt perspective with a floating slice of another landscape. Leave the relationship between objects unresolved. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-033",
+      "description": "A wind-up elephant carries a patchwork tent through a garden of coral mushrooms.",
+      "scene": "A wind-up elephant carries a patchwork tent through a garden of coral mushrooms.",
+      "artDirection": {
+        "mood": "wonder-filled and emotionally mixed",
+        "palette": "orange, lapis blue, orchid, malachite and pale peach",
+        "medium": "decorative illustrated fantasy with bold surreal simplification"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: decorative illustrated fantasy with bold surreal simplification. Palette: orange, lapis blue, orchid, malachite and pale peach. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: wonder-filled and emotionally mixed; imply it through composition and relationships, never label it. Scene: A wind-up elephant carries a patchwork tent through a garden of coral mushrooms. Abstraction: Use a boldly unusual crop, surprising scale, and a partially missing silhouette. The visual puzzle matters more than realistic detail. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-034",
+      "description": "A tiny orange figure pulls a vast violet shadow across a pale landscape; the shadow is full of bright windows.",
+      "scene": "A tiny orange figure pulls a vast violet shadow across a pale landscape; the shadow is full of bright windows.",
+      "artDirection": {
+        "mood": "joyful and exuberant, with a strange uneasy undertone",
+        "palette": "sunflower yellow, electric cobalt, hot pink, grassy green and white",
+        "medium": "bold cut-paper shapes and playful gouache"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: bold cut-paper shapes and playful gouache. Palette: sunflower yellow, electric cobalt, hot pink, grassy green and white. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: joyful and exuberant, with a strange uneasy undertone; imply it through composition and relationships, never label it. Scene: A tiny orange figure pulls a vast violet shadow across a pale landscape; the shadow is full of bright windows. Abstraction: Create an impossible loop or simultaneous viewpoints; recognizable objects should overlap and transform rather than occupy an ordinary scene. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-035",
+      "description": "An empty rocking chair sails beneath the ocean with a school of orange fish.",
+      "scene": "An empty rocking chair sails beneath the ocean with a school of orange fish.",
+      "artDirection": {
+        "mood": "lonely, tender and bittersweet",
+        "palette": "ultramarine, icy cyan, pale rose, a single vermilion accent and silver gray",
+        "medium": "watery gouache washes and fragmented paper collage"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: watery gouache washes and fragmented paper collage. Palette: ultramarine, icy cyan, pale rose, a single vermilion accent and silver gray. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: lonely, tender and bittersweet; imply it through composition and relationships, never label it. Scene: An empty rocking chair sails beneath the ocean with a school of orange fish. Abstraction: Use large expressive color fields, textured paper shapes and a few symbolic fragments; avoid filling every inch with decoration. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-036",
+      "description": "A flock of patterned envelopes flies out of a chest in a quiet attic.",
+      "scene": "A flock of patterned envelopes flies out of a chest in a quiet attic.",
+      "artDirection": {
+        "mood": "absurdly funny and mischievous",
+        "palette": "tangerine, chartreuse, bright turquoise, raspberry and cream",
+        "medium": "exaggerated cartoon silhouettes and chalky painted texture"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: exaggerated cartoon silhouettes and chalky painted texture. Palette: tangerine, chartreuse, bright turquoise, raspberry and cream. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: absurdly funny and mischievous; imply it through composition and relationships, never label it. Scene: A flock of patterned envelopes flies out of a chest in a quiet attic. Abstraction: Combine hand-painted narrative with an abstract interruption: a torn gap, a shape swallowing the horizon, or an object becoming its own shadow. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-037",
+      "description": "Two hands made of overlapping petals cradle a square of bright blue sky while the surrounding sky is red.",
+      "scene": "Two hands made of overlapping petals cradle a square of bright blue sky while the surrounding sky is red.",
+      "artDirection": {
+        "mood": "unsettling, mysterious and a little fearful, no gore",
+        "palette": "blood orange, violet, midnight blue, acid yellow and black",
+        "medium": "flat theatrical shadows and impossible architectural planes"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: flat theatrical shadows and impossible architectural planes. Palette: blood orange, violet, midnight blue, acid yellow and black. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: unsettling, mysterious and a little fearful, no gore; imply it through composition and relationships, never label it. Scene: Two hands made of overlapping petals cradle a square of bright blue sky while the surrounding sky is red. Abstraction: Let the scene dissolve at its edges into colored planes; turn negative space into a second possible reading. Avoid a tidy literal explanation. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-038",
+      "description": "A whale-shaped balloon pulls a tiny red cottage through a purple dawn.",
+      "scene": "A whale-shaped balloon pulls a tiny red cottage through a purple dawn.",
+      "artDirection": {
+        "mood": "gentle, affectionate and hopeful",
+        "palette": "lilac, fresh mint, strawberry pink, warm ivory and apricot",
+        "medium": "soft oil pastel, delicate gouache and unexpected blank space"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: soft oil pastel, delicate gouache and unexpected blank space. Palette: lilac, fresh mint, strawberry pink, warm ivory and apricot. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: gentle, affectionate and hopeful; imply it through composition and relationships, never label it. Scene: A whale-shaped balloon pulls a tiny red cottage through a purple dawn. Abstraction: Flatten depth and interrupt perspective with a floating slice of another landscape. Leave the relationship between objects unresolved. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-039",
+      "description": "A moth wearing a crown tends glowing flowers in a walled midnight garden.",
+      "scene": "A moth wearing a crown tends glowing flowers in a walled midnight garden.",
+      "artDirection": {
+        "mood": "frustrated, restless and chaotic",
+        "palette": "scarlet, electric blue, lime, black and stark white",
+        "medium": "angular painterly collage, interrupted patterns and slanted planes"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: angular painterly collage, interrupted patterns and slanted planes. Palette: scarlet, electric blue, lime, black and stark white. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: frustrated, restless and chaotic; imply it through composition and relationships, never label it. Scene: A moth wearing a crown tends glowing flowers in a walled midnight garden. Abstraction: Use a boldly unusual crop, surprising scale, and a partially missing silhouette. The visual puzzle matters more than realistic detail. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-040",
+      "description": "A pink ladder ties itself into a knot above a field of floating black hats and yellow seed shapes.",
+      "scene": "A pink ladder ties itself into a knot above a field of floating black hats and yellow seed shapes.",
+      "artDirection": {
+        "mood": "wistful and quietly sad",
+        "palette": "rainy periwinkle, wine red, pale yellow, faded jade and cream",
+        "medium": "grainy gouache, dissolving edges and sparse composition"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: grainy gouache, dissolving edges and sparse composition. Palette: rainy periwinkle, wine red, pale yellow, faded jade and cream. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: wistful and quietly sad; imply it through composition and relationships, never label it. Scene: A pink ladder ties itself into a knot above a field of floating black hats and yellow seed shapes. Abstraction: Create an impossible loop or simultaneous viewpoints; recognizable objects should overlap and transform rather than occupy an ordinary scene. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-041",
+      "description": "A small jester offers a star to a creature inside a blue cupboard.",
+      "scene": "A small jester offers a star to a shy creature inside a blue cupboard.",
+      "artDirection": {
+        "mood": "curious, bewildering and delightfully confusing",
+        "palette": "fuchsia, emerald, lemon yellow, bright violet and cyan",
+        "medium": "abstract collage, ambiguous figure-ground and overlapping silhouettes"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: abstract collage, ambiguous figure-ground and overlapping silhouettes. Palette: fuchsia, emerald, lemon yellow, bright violet and cyan. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: curious, bewildering and delightfully confusing; imply it through composition and relationships, never label it. Scene: A small jester offers a star to a shy creature inside a blue cupboard. Abstraction: Use large expressive color fields, textured paper shapes and a few symbolic fragments; avoid filling every inch with decoration. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-042",
+      "description": "A turtle with a patchwork shell carries a forest of orange umbrellas.",
+      "scene": "A turtle with a patchwork shell carries a forest of orange umbrellas.",
+      "artDirection": {
+        "mood": "calm but uncanny",
+        "palette": "celadon, deep coral, cerulean, pale butter yellow and white",
+        "medium": "sparse graphic painting, exaggerated scale and negative space"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: sparse graphic painting, exaggerated scale and negative space. Palette: celadon, deep coral, cerulean, pale butter yellow and white. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: calm but uncanny; imply it through composition and relationships, never label it. Scene: A turtle with a patchwork shell carries a forest of orange umbrellas. Abstraction: Combine hand-painted narrative with an abstract interruption: a torn gap, a shape swallowing the horizon, or an object becoming its own shadow. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-043",
+      "description": "A striped pear wears oversized purple shoes; a flock of tiny chairs follows it through a lime-green void.",
+      "scene": "A striped pear wears oversized purple shoes; a flock of tiny chairs follows it through a lime-green void.",
+      "artDirection": {
+        "mood": "playful, silly and celebratory",
+        "palette": "primary red, royal blue, bright yellow, violet and candy pink",
+        "medium": "rounded expressive 2D illustration and lively patterned surfaces"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: rounded expressive 2D illustration and lively patterned surfaces. Palette: primary red, royal blue, bright yellow, violet and candy pink. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: playful, silly and celebratory; imply it through composition and relationships, never label it. Scene: A striped pear wears oversized purple shoes; a flock of tiny chairs follows it through a lime-green void. Abstraction: Let the scene dissolve at its edges into colored planes; turn negative space into a second possible reading. Avoid a tidy literal explanation. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-044",
+      "description": "A child with a lantern stands before a towering wall of mismatched drawers.",
+      "scene": "A child with a lantern stands before a towering wall of mismatched drawers.",
+      "artDirection": {
+        "mood": "eerie, estranged and melancholy",
+        "palette": "indigo, mint, magenta, smoky gray and bone white",
+        "medium": "dislocated perspective, organic abstract shapes and chalky grain"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: dislocated perspective, organic abstract shapes and chalky grain. Palette: indigo, mint, magenta, smoky gray and bone white. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: eerie, estranged and melancholy; imply it through composition and relationships, never label it. Scene: A child with a lantern stands before a towering wall of mismatched drawers. Abstraction: Flatten depth and interrupt perspective with a floating slice of another landscape. Leave the relationship between objects unresolved. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-045",
+      "description": "A tree's roots become the legs of a deer.",
+      "scene": "A tree's roots become the legs of a gentle wandering deer.",
+      "artDirection": {
+        "mood": "wonder-filled and emotionally mixed",
+        "palette": "orange, lapis blue, orchid, malachite and pale peach",
+        "medium": "decorative illustrated fantasy with bold surreal simplification"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: decorative illustrated fantasy with bold surreal simplification. Palette: orange, lapis blue, orchid, malachite and pale peach. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: wonder-filled and emotionally mixed; imply it through composition and relationships, never label it. Scene: A tree's roots become the legs of a gentle wandering deer. Abstraction: Use a boldly unusual crop, surprising scale, and a partially missing silhouette. The visual puzzle matters more than realistic detail. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-046",
+      "description": "A circle of dancing silhouettes becomes a single blue flower when seen from afar; crimson gaps open between them.",
+      "scene": "A circle of dancing silhouettes becomes a single blue flower when seen from afar; crimson gaps open between them.",
+      "artDirection": {
+        "mood": "joyful and exuberant, with a strange uneasy undertone",
+        "palette": "sunflower yellow, electric cobalt, hot pink, grassy green and white",
+        "medium": "bold cut-paper shapes and playful gouache"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: bold cut-paper shapes and playful gouache. Palette: sunflower yellow, electric cobalt, hot pink, grassy green and white. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: joyful and exuberant, with a strange uneasy undertone; imply it through composition and relationships, never label it. Scene: A circle of dancing silhouettes becomes a single blue flower when seen from afar; crimson gaps open between them. Abstraction: Create an impossible loop or simultaneous viewpoints; recognizable objects should overlap and transform rather than occupy an ordinary scene. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-047",
+      "description": "A person climbs into a hanging coat whose lining contains a starry landscape.",
+      "scene": "A person climbs into a hanging coat whose lining contains a starry landscape.",
+      "artDirection": {
+        "mood": "lonely, tender and bittersweet",
+        "palette": "ultramarine, icy cyan, pale rose, a single vermilion accent and silver gray",
+        "medium": "watery gouache washes and fragmented paper collage"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: watery gouache washes and fragmented paper collage. Palette: ultramarine, icy cyan, pale rose, a single vermilion accent and silver gray. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: lonely, tender and bittersweet; imply it through composition and relationships, never label it. Scene: A person climbs into a hanging coat whose lining contains a starry landscape. Abstraction: Use large expressive color fields, textured paper shapes and a few symbolic fragments; avoid filling every inch with decoration. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-048",
+      "description": "A crocodile in a bow tie carries a tray of little moons across a tiled courtyard.",
+      "scene": "A crocodile in a bow tie carries a tray of little moons across a tiled courtyard.",
+      "artDirection": {
+        "mood": "absurdly funny and mischievous",
+        "palette": "tangerine, chartreuse, bright turquoise, raspberry and cream",
+        "medium": "exaggerated cartoon silhouettes and chalky painted texture"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: exaggerated cartoon silhouettes and chalky painted texture. Palette: tangerine, chartreuse, bright turquoise, raspberry and cream. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: absurdly funny and mischievous; imply it through composition and relationships, never label it. Scene: A crocodile in a bow tie carries a tray of little moons across a tiled courtyard. Abstraction: Combine hand-painted narrative with an abstract interruption: a torn gap, a shape swallowing the horizon, or an object becoming its own shadow. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-049",
+      "description": "A broken mirror reflects a rainbow-colored forest instead of the pale figure standing before it.",
+      "scene": "A broken mirror reflects a rainbow-colored forest instead of the lonely white figure standing before it.",
+      "artDirection": {
+        "mood": "unsettling, mysterious and a little fearful, no gore",
+        "palette": "blood orange, violet, midnight blue, acid yellow and black",
+        "medium": "flat theatrical shadows and impossible architectural planes"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: flat theatrical shadows and impossible architectural planes. Palette: blood orange, violet, midnight blue, acid yellow and black. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: unsettling, mysterious and a little fearful, no gore; imply it through composition and relationships, never label it. Scene: A broken mirror reflects a rainbow-colored forest instead of the lonely white figure standing before it. Abstraction: Let the scene dissolve at its edges into colored planes; turn negative space into a second possible reading. Avoid a tidy literal explanation. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-050",
+      "description": "A puppet cuts its strings and gently gathers them into a bird's nest.",
+      "scene": "A puppet cuts its strings and gently gathers them into a bird's nest.",
+      "artDirection": {
+        "mood": "gentle, affectionate and hopeful",
+        "palette": "lilac, fresh mint, strawberry pink, warm ivory and apricot",
+        "medium": "soft oil pastel, delicate gouache and unexpected blank space"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: soft oil pastel, delicate gouache and unexpected blank space. Palette: lilac, fresh mint, strawberry pink, warm ivory and apricot. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: gentle, affectionate and hopeful; imply it through composition and relationships, never label it. Scene: A puppet cuts its strings and gently gathers them into a bird's nest. Abstraction: Flatten depth and interrupt perspective with a floating slice of another landscape. Leave the relationship between objects unresolved. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-051",
+      "description": "A blue horse walks across a bridge made of stacked teacups.",
+      "scene": "A blue horse walks across a bridge made of stacked teacups.",
+      "artDirection": {
+        "mood": "frustrated, restless and chaotic",
+        "palette": "scarlet, electric blue, lime, black and stark white",
+        "medium": "angular painterly collage, interrupted patterns and slanted planes"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: angular painterly collage, interrupted patterns and slanted planes. Palette: scarlet, electric blue, lime, black and stark white. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: frustrated, restless and chaotic; imply it through composition and relationships, never label it. Scene: A blue horse walks across a bridge made of stacked teacups. Abstraction: Use a boldly unusual crop, surprising scale, and a partially missing silhouette. The visual puzzle matters more than realistic detail. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-052",
+      "description": "A red thread links separated fragments of a face across a vast turquoise field; one fragment contains a miniature storm.",
+      "scene": "A red thread links separated fragments of a face across a vast turquoise field; one fragment contains a miniature storm.",
+      "artDirection": {
+        "mood": "wistful and quietly sad",
+        "palette": "rainy periwinkle, wine red, pale yellow, faded jade and cream",
+        "medium": "grainy gouache, dissolving edges and sparse composition"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: grainy gouache, dissolving edges and sparse composition. Palette: rainy periwinkle, wine red, pale yellow, faded jade and cream. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: wistful and quietly sad; imply it through composition and relationships, never label it. Scene: A red thread links separated fragments of a face across a vast turquoise field; one fragment contains a miniature storm. Abstraction: Create an impossible loop or simultaneous viewpoints; recognizable objects should overlap and transform rather than occupy an ordinary scene. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-053",
+      "description": "A sleeping child and a tiny dragon share a quilt patterned with windows.",
+      "scene": "A sleeping child and a tiny dragon share a quilt patterned with windows.",
+      "artDirection": {
+        "mood": "curious, bewildering and delightfully confusing",
+        "palette": "fuchsia, emerald, lemon yellow, bright violet and cyan",
+        "medium": "abstract collage, ambiguous figure-ground and overlapping silhouettes"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: abstract collage, ambiguous figure-ground and overlapping silhouettes. Palette: fuchsia, emerald, lemon yellow, bright violet and cyan. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: curious, bewildering and delightfully confusing; imply it through composition and relationships, never label it. Scene: A sleeping child and a tiny dragon share a quilt patterned with windows. Abstraction: Use large expressive color fields, textured paper shapes and a few symbolic fragments; avoid filling every inch with decoration. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-054",
+      "description": "A train emerges from a sewing machine and crosses a landscape of folded cloth.",
+      "scene": "A train emerges from a sewing machine and crosses a landscape of folded cloth.",
+      "artDirection": {
+        "mood": "calm but uncanny",
+        "palette": "celadon, deep coral, cerulean, pale butter yellow and white",
+        "medium": "sparse graphic painting, exaggerated scale and negative space"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: sparse graphic painting, exaggerated scale and negative space. Palette: celadon, deep coral, cerulean, pale butter yellow and white. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: calm but uncanny; imply it through composition and relationships, never label it. Scene: A train emerges from a sewing machine and crosses a landscape of folded cloth. Abstraction: Combine hand-painted narrative with an abstract interruption: a torn gap, a shape swallowing the horizon, or an object becoming its own shadow. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-055",
+      "description": "A pair of mismatched doors lean toward one another, opening into a looping yellow ribbon with tiny blue footprints.",
+      "scene": "A pair of mismatched doors lean toward one another, opening into a looping yellow ribbon with tiny blue footprints.",
+      "artDirection": {
+        "mood": "playful, silly and celebratory",
+        "palette": "primary red, royal blue, bright yellow, violet and candy pink",
+        "medium": "rounded expressive 2D illustration and lively patterned surfaces"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: rounded expressive 2D illustration and lively patterned surfaces. Palette: primary red, royal blue, bright yellow, violet and candy pink. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: playful, silly and celebratory; imply it through composition and relationships, never label it. Scene: A pair of mismatched doors lean toward one another, opening into a looping yellow ribbon with tiny blue footprints. Abstraction: Let the scene dissolve at its edges into colored planes; turn negative space into a second possible reading. Avoid a tidy literal explanation. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-056",
+      "description": "A fox paints a doorway onto a tree while golden leaves gather around its feet.",
+      "scene": "A fox paints a doorway onto a tree while golden leaves gather around its feet.",
+      "artDirection": {
+        "mood": "eerie, estranged and melancholy",
+        "palette": "indigo, mint, magenta, smoky gray and bone white",
+        "medium": "dislocated perspective, organic abstract shapes and chalky grain"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: dislocated perspective, organic abstract shapes and chalky grain. Palette: indigo, mint, magenta, smoky gray and bone white. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: eerie, estranged and melancholy; imply it through composition and relationships, never label it. Scene: A fox paints a doorway onto a tree while golden leaves gather around its feet. Abstraction: Flatten depth and interrupt perspective with a floating slice of another landscape. Leave the relationship between objects unresolved. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-057",
+      "description": "A person in a plum cloak carries a bowl containing a thundercloud.",
+      "scene": "A person in a plum cloak carries a bowl containing a thundercloud.",
+      "artDirection": {
+        "mood": "wonder-filled and emotionally mixed",
+        "palette": "orange, lapis blue, orchid, malachite and pale peach",
+        "medium": "decorative illustrated fantasy with bold surreal simplification"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: decorative illustrated fantasy with bold surreal simplification. Palette: orange, lapis blue, orchid, malachite and pale peach. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: wonder-filled and emotionally mixed; imply it through composition and relationships, never label it. Scene: A person in a plum cloak carries a bowl containing a thundercloud. Abstraction: Use a boldly unusual crop, surprising scale, and a partially missing silhouette. The visual puzzle matters more than realistic detail. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-058",
+      "description": "A pink boat drifts through the hollow of a giant angular eye; green rain falls outside but not within it.",
+      "scene": "A pink boat drifts through the hollow of a giant angular eye; green rain falls outside but not within it.",
+      "artDirection": {
+        "mood": "joyful and exuberant, with a strange uneasy undertone",
+        "palette": "sunflower yellow, electric cobalt, hot pink, grassy green and white",
+        "medium": "bold cut-paper shapes and playful gouache"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: bold cut-paper shapes and playful gouache. Palette: sunflower yellow, electric cobalt, hot pink, grassy green and white. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: joyful and exuberant, with a strange uneasy undertone; imply it through composition and relationships, never label it. Scene: A pink boat drifts through the hollow of a giant angular eye; green rain falls outside but not within it. Abstraction: Create an impossible loop or simultaneous viewpoints; recognizable objects should overlap and transform rather than occupy an ordinary scene. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-059",
+      "description": "A giant striped fish shelters a small village under its fins.",
+      "scene": "A giant striped fish shelters a small village under its fins.",
+      "artDirection": {
+        "mood": "lonely, tender and bittersweet",
+        "palette": "ultramarine, icy cyan, pale rose, a single vermilion accent and silver gray",
+        "medium": "watery gouache washes and fragmented paper collage"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: watery gouache washes and fragmented paper collage. Palette: ultramarine, icy cyan, pale rose, a single vermilion accent and silver gray. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: lonely, tender and bittersweet; imply it through composition and relationships, never label it. Scene: A giant striped fish shelters a small village under its fins. Abstraction: Use large expressive color fields, textured paper shapes and a few symbolic fragments; avoid filling every inch with decoration. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-060",
+      "description": "A quiet room contains a tree whose fruit are tiny glowing houses.",
+      "scene": "A quiet room contains a tree whose fruit are tiny glowing houses.",
+      "artDirection": {
+        "mood": "absurdly funny and mischievous",
+        "palette": "tangerine, chartreuse, bright turquoise, raspberry and cream",
+        "medium": "exaggerated cartoon silhouettes and chalky painted texture"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: exaggerated cartoon silhouettes and chalky painted texture. Palette: tangerine, chartreuse, bright turquoise, raspberry and cream. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: absurdly funny and mischievous; imply it through composition and relationships, never label it. Scene: A quiet room contains a tree whose fruit are tiny glowing houses. Abstraction: Combine hand-painted narrative with an abstract interruption: a torn gap, a shape swallowing the horizon, or an object becoming its own shadow. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-061",
+      "description": "A violet mountain casts a yellow shadow shaped like a sleeping child; floating red windows puncture the sky.",
+      "scene": "A violet mountain casts a yellow shadow shaped like a sleeping child; floating red windows puncture the sky.",
+      "artDirection": {
+        "mood": "unsettling, mysterious and a little fearful, no gore",
+        "palette": "blood orange, violet, midnight blue, acid yellow and black",
+        "medium": "flat theatrical shadows and impossible architectural planes"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: flat theatrical shadows and impossible architectural planes. Palette: blood orange, violet, midnight blue, acid yellow and black. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: unsettling, mysterious and a little fearful, no gore; imply it through composition and relationships, never label it. Scene: A violet mountain casts a yellow shadow shaped like a sleeping child; floating red windows puncture the sky. Abstraction: Let the scene dissolve at its edges into colored planes; turn negative space into a second possible reading. Avoid a tidy literal explanation. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-062",
+      "description": "A gardener trims a hedge into the shape of an enormous sleeping dragon.",
+      "scene": "A gardener trims a hedge into the shape of an enormous sleeping dragon.",
+      "artDirection": {
+        "mood": "gentle, affectionate and hopeful",
+        "palette": "lilac, fresh mint, strawberry pink, warm ivory and apricot",
+        "medium": "soft oil pastel, delicate gouache and unexpected blank space"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: soft oil pastel, delicate gouache and unexpected blank space. Palette: lilac, fresh mint, strawberry pink, warm ivory and apricot. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: gentle, affectionate and hopeful; imply it through composition and relationships, never label it. Scene: A gardener trims a hedge into the shape of an enormous sleeping dragon. Abstraction: Flatten depth and interrupt perspective with a floating slice of another landscape. Leave the relationship between objects unresolved. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-063",
+      "description": "A red kite pulls its small owner across a sky filled with patterned hills.",
+      "scene": "A red kite pulls its small owner across a sky filled with patterned hills.",
+      "artDirection": {
+        "mood": "frustrated, restless and chaotic",
+        "palette": "scarlet, electric blue, lime, black and stark white",
+        "medium": "angular painterly collage, interrupted patterns and slanted planes"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: angular painterly collage, interrupted patterns and slanted planes. Palette: scarlet, electric blue, lime, black and stark white. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: frustrated, restless and chaotic; imply it through composition and relationships, never label it. Scene: A red kite pulls its small owner across a sky filled with patterned hills. Abstraction: Use a boldly unusual crop, surprising scale, and a partially missing silhouette. The visual puzzle matters more than realistic detail. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-064",
+      "description": "An enormous orange mouth opens into a silent mint garden; a tiny blue bird carries away one petal.",
+      "scene": "An enormous orange mouth opens into a silent mint garden; a tiny blue bird carries away one petal.",
+      "artDirection": {
+        "mood": "wistful and quietly sad",
+        "palette": "rainy periwinkle, wine red, pale yellow, faded jade and cream",
+        "medium": "grainy gouache, dissolving edges and sparse composition"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: grainy gouache, dissolving edges and sparse composition. Palette: rainy periwinkle, wine red, pale yellow, faded jade and cream. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: wistful and quietly sad; imply it through composition and relationships, never label it. Scene: An enormous orange mouth opens into a silent mint garden; a tiny blue bird carries away one petal. Abstraction: Create an impossible loop or simultaneous viewpoints; recognizable objects should overlap and transform rather than occupy an ordinary scene. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-065",
+      "description": "A white stag steps out of a tapestry into a room full of violet plants.",
+      "scene": "A white stag steps out of a tapestry into a room full of violet plants.",
+      "artDirection": {
+        "mood": "curious, bewildering and delightfully confusing",
+        "palette": "fuchsia, emerald, lemon yellow, bright violet and cyan",
+        "medium": "abstract collage, ambiguous figure-ground and overlapping silhouettes"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: abstract collage, ambiguous figure-ground and overlapping silhouettes. Palette: fuchsia, emerald, lemon yellow, bright violet and cyan. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: curious, bewildering and delightfully confusing; imply it through composition and relationships, never label it. Scene: A white stag steps out of a tapestry into a room full of violet plants. Abstraction: Use large expressive color fields, textured paper shapes and a few symbolic fragments; avoid filling every inch with decoration. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-066",
+      "description": "A tiny traveler crosses a giant open palm on a path of yellow flowers.",
+      "scene": "A tiny traveler crosses a giant open palm on a path of yellow flowers.",
+      "artDirection": {
+        "mood": "calm but uncanny",
+        "palette": "celadon, deep coral, cerulean, pale butter yellow and white",
+        "medium": "sparse graphic painting, exaggerated scale and negative space"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: sparse graphic painting, exaggerated scale and negative space. Palette: celadon, deep coral, cerulean, pale butter yellow and white. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: calm but uncanny; imply it through composition and relationships, never label it. Scene: A tiny traveler crosses a giant open palm on a path of yellow flowers. Abstraction: Combine hand-painted narrative with an abstract interruption: a torn gap, a shape swallowing the horizon, or an object becoming its own shadow. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-067",
+      "description": "A small figure holds an empty frame; the world inside is lush magenta while the world outside breaks into blue triangles.",
+      "scene": "A small figure holds an empty frame; the world inside is lush magenta while the world outside breaks into blue triangles.",
+      "artDirection": {
+        "mood": "playful, silly and celebratory",
+        "palette": "primary red, royal blue, bright yellow, violet and candy pink",
+        "medium": "rounded expressive 2D illustration and lively patterned surfaces"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: rounded expressive 2D illustration and lively patterned surfaces. Palette: primary red, royal blue, bright yellow, violet and candy pink. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: playful, silly and celebratory; imply it through composition and relationships, never label it. Scene: A small figure holds an empty frame; the world inside is lush magenta while the world outside breaks into blue triangles. Abstraction: Let the scene dissolve at its edges into colored planes; turn negative space into a second possible reading. Avoid a tidy literal explanation. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-068",
+      "description": "A child follows a trail of buttons through a forest of enormous threads.",
+      "scene": "A child follows a trail of buttons through a forest of enormous threads.",
+      "artDirection": {
+        "mood": "eerie, estranged and melancholy",
+        "palette": "indigo, mint, magenta, smoky gray and bone white",
+        "medium": "dislocated perspective, organic abstract shapes and chalky grain"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: dislocated perspective, organic abstract shapes and chalky grain. Palette: indigo, mint, magenta, smoky gray and bone white. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: eerie, estranged and melancholy; imply it through composition and relationships, never label it. Scene: A child follows a trail of buttons through a forest of enormous threads. Abstraction: Flatten depth and interrupt perspective with a floating slice of another landscape. Leave the relationship between objects unresolved. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-069",
+      "description": "A sleeping fox's curled tail forms a doorway into a lantern-lit town.",
+      "scene": "A sleeping fox's curled tail forms a doorway into a lantern-lit town.",
+      "artDirection": {
+        "mood": "wonder-filled and emotionally mixed",
+        "palette": "orange, lapis blue, orchid, malachite and pale peach",
+        "medium": "decorative illustrated fantasy with bold surreal simplification"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: decorative illustrated fantasy with bold surreal simplification. Palette: orange, lapis blue, orchid, malachite and pale peach. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: wonder-filled and emotionally mixed; imply it through composition and relationships, never label it. Scene: A sleeping fox's curled tail forms a doorway into a lantern-lit town. Abstraction: Use a boldly unusual crop, surprising scale, and a partially missing silhouette. The visual puzzle matters more than realistic detail. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-070",
+      "description": "A row of blue cups spills upward into a single many-headed orange bird, with scattered yellow moons beneath.",
+      "scene": "A row of blue cups spills upward into a single many-headed orange bird, with scattered yellow moons beneath.",
+      "artDirection": {
+        "mood": "joyful and exuberant, with a strange uneasy undertone",
+        "palette": "sunflower yellow, electric cobalt, hot pink, grassy green and white",
+        "medium": "bold cut-paper shapes and playful gouache"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: bold cut-paper shapes and playful gouache. Palette: sunflower yellow, electric cobalt, hot pink, grassy green and white. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: joyful and exuberant, with a strange uneasy undertone; imply it through composition and relationships, never label it. Scene: A row of blue cups spills upward into a single many-headed orange bird, with scattered yellow moons beneath. Abstraction: Create an impossible loop or simultaneous viewpoints; recognizable objects should overlap and transform rather than occupy an ordinary scene. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-071",
+      "description": "A person in a gold coat offers an empty cage to a tree made of birds.",
+      "scene": "A person in a gold coat offers an empty cage to a tree made of birds.",
+      "artDirection": {
+        "mood": "lonely, tender and bittersweet",
+        "palette": "ultramarine, icy cyan, pale rose, a single vermilion accent and silver gray",
+        "medium": "watery gouache washes and fragmented paper collage"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: watery gouache washes and fragmented paper collage. Palette: ultramarine, icy cyan, pale rose, a single vermilion accent and silver gray. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: lonely, tender and bittersweet; imply it through composition and relationships, never label it. Scene: A person in a gold coat offers an empty cage to a tree made of birds. Abstraction: Use large expressive color fields, textured paper shapes and a few symbolic fragments; avoid filling every inch with decoration. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-072",
+      "description": "A little red door stands alone on the back of a floating jellyfish.",
+      "scene": "A little red door stands alone on the back of a floating jellyfish.",
+      "artDirection": {
+        "mood": "absurdly funny and mischievous",
+        "palette": "tangerine, chartreuse, bright turquoise, raspberry and cream",
+        "medium": "exaggerated cartoon silhouettes and chalky painted texture"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: exaggerated cartoon silhouettes and chalky painted texture. Palette: tangerine, chartreuse, bright turquoise, raspberry and cream. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: absurdly funny and mischievous; imply it through composition and relationships, never label it. Scene: A little red door stands alone on the back of a floating jellyfish. Abstraction: Combine hand-painted narrative with an abstract interruption: a torn gap, a shape swallowing the horizon, or an object becoming its own shadow. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-073",
+      "description": "A floating pink glove unfolds into a map of green rivers; a miniature white traveler stands at a fold.",
+      "scene": "A floating pink glove unfolds into a map of green rivers; a miniature white traveler stands at a fold.",
+      "artDirection": {
+        "mood": "unsettling, mysterious and a little fearful, no gore",
+        "palette": "blood orange, violet, midnight blue, acid yellow and black",
+        "medium": "flat theatrical shadows and impossible architectural planes"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: flat theatrical shadows and impossible architectural planes. Palette: blood orange, violet, midnight blue, acid yellow and black. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: unsettling, mysterious and a little fearful, no gore; imply it through composition and relationships, never label it. Scene: A floating pink glove unfolds into a map of green rivers; a miniature white traveler stands at a fold. Abstraction: Let the scene dissolve at its edges into colored planes; turn negative space into a second possible reading. Avoid a tidy literal explanation. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-074",
+      "description": "A snail leaves a trail of tiny illuminated windows across a dark hill.",
+      "scene": "A snail leaves a trail of tiny illuminated windows across a dark hill.",
+      "artDirection": {
+        "mood": "gentle, affectionate and hopeful",
+        "palette": "lilac, fresh mint, strawberry pink, warm ivory and apricot",
+        "medium": "soft oil pastel, delicate gouache and unexpected blank space"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: soft oil pastel, delicate gouache and unexpected blank space. Palette: lilac, fresh mint, strawberry pink, warm ivory and apricot. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: gentle, affectionate and hopeful; imply it through composition and relationships, never label it. Scene: A snail leaves a trail of tiny illuminated windows across a dark hill. Abstraction: Flatten depth and interrupt perspective with a floating slice of another landscape. Leave the relationship between objects unresolved. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-075",
+      "description": "A long-eared creature carries a bundle of stairs through a meadow.",
+      "scene": "A long-eared creature carries a bundle of stairs through a meadow.",
+      "artDirection": {
+        "mood": "frustrated, restless and chaotic",
+        "palette": "scarlet, electric blue, lime, black and stark white",
+        "medium": "angular painterly collage, interrupted patterns and slanted planes"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: angular painterly collage, interrupted patterns and slanted planes. Palette: scarlet, electric blue, lime, black and stark white. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: frustrated, restless and chaotic; imply it through composition and relationships, never label it. Scene: A long-eared creature carries a bundle of stairs through a meadow. Abstraction: Use a boldly unusual crop, surprising scale, and a partially missing silhouette. The visual puzzle matters more than realistic detail. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-076",
+      "description": "A bright yellow bed rests between two immense blue waves; a red stairway disappears beneath the pillow.",
+      "scene": "A bright yellow bed rests between two immense blue waves; a red stairway disappears beneath the pillow.",
+      "artDirection": {
+        "mood": "wistful and quietly sad",
+        "palette": "rainy periwinkle, wine red, pale yellow, faded jade and cream",
+        "medium": "grainy gouache, dissolving edges and sparse composition"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: grainy gouache, dissolving edges and sparse composition. Palette: rainy periwinkle, wine red, pale yellow, faded jade and cream. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: wistful and quietly sad; imply it through composition and relationships, never label it. Scene: A bright yellow bed rests between two immense blue waves; a red stairway disappears beneath the pillow. Abstraction: Create an impossible loop or simultaneous viewpoints; recognizable objects should overlap and transform rather than occupy an ordinary scene. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-077",
+      "description": "A child holds a paper sun over a blue valley filled with sleeping houses.",
+      "scene": "A child holds a paper sun over a blue valley filled with sleeping houses.",
+      "artDirection": {
+        "mood": "curious, bewildering and delightfully confusing",
+        "palette": "fuchsia, emerald, lemon yellow, bright violet and cyan",
+        "medium": "abstract collage, ambiguous figure-ground and overlapping silhouettes"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: abstract collage, ambiguous figure-ground and overlapping silhouettes. Palette: fuchsia, emerald, lemon yellow, bright violet and cyan. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: curious, bewildering and delightfully confusing; imply it through composition and relationships, never label it. Scene: A child holds a paper sun over a blue valley filled with sleeping houses. Abstraction: Use large expressive color fields, textured paper shapes and a few symbolic fragments; avoid filling every inch with decoration. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-078",
+      "description": "A tiny village nestles in the folds of a giant sleeping woman's dress.",
+      "scene": "A tiny village nestles in the folds of a giant sleeping woman's dress.",
+      "artDirection": {
+        "mood": "calm but uncanny",
+        "palette": "celadon, deep coral, cerulean, pale butter yellow and white",
+        "medium": "sparse graphic painting, exaggerated scale and negative space"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: sparse graphic painting, exaggerated scale and negative space. Palette: celadon, deep coral, cerulean, pale butter yellow and white. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: calm but uncanny; imply it through composition and relationships, never label it. Scene: A tiny village nestles in the folds of a giant sleeping woman's dress. Abstraction: Combine hand-painted narrative with an abstract interruption: a torn gap, a shape swallowing the horizon, or an object becoming its own shadow. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-079",
+      "description": "A white tree is assembled from differently colored shadows; a tiny violet bird waits beside the missing trunk.",
+      "scene": "A white tree is assembled from differently colored shadows; a tiny violet bird waits beside the missing trunk.",
+      "artDirection": {
+        "mood": "playful, silly and celebratory",
+        "palette": "primary red, royal blue, bright yellow, violet and candy pink",
+        "medium": "rounded expressive 2D illustration and lively patterned surfaces"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: rounded expressive 2D illustration and lively patterned surfaces. Palette: primary red, royal blue, bright yellow, violet and candy pink. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: playful, silly and celebratory; imply it through composition and relationships, never label it. Scene: A white tree is assembled from differently colored shadows; a tiny violet bird waits beside the missing trunk. Abstraction: Let the scene dissolve at its edges into colored planes; turn negative space into a second possible reading. Avoid a tidy literal explanation. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-080",
+      "description": "A tiny gardener tends flowers growing from the palm of a stone statue.",
+      "scene": "A tiny gardener tends flowers growing from the palm of a stone statue.",
+      "artDirection": {
+        "mood": "eerie, estranged and melancholy",
+        "palette": "indigo, mint, magenta, smoky gray and bone white",
+        "medium": "dislocated perspective, organic abstract shapes and chalky grain"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: dislocated perspective, organic abstract shapes and chalky grain. Palette: indigo, mint, magenta, smoky gray and bone white. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: eerie, estranged and melancholy; imply it through composition and relationships, never label it. Scene: A tiny gardener tends flowers growing from the palm of a stone statue. Abstraction: Flatten depth and interrupt perspective with a floating slice of another landscape. Leave the relationship between objects unresolved. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-081",
+      "description": "A spiral shell opens onto an illuminated ballroom with tiny dancing figures.",
+      "scene": "A spiral shell opens onto a ballroom where little fish dance.",
+      "artDirection": {
+        "mood": "wonder-filled and emotionally mixed",
+        "palette": "orange, lapis blue, orchid, malachite and pale peach",
+        "medium": "decorative illustrated fantasy with bold surreal simplification"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: decorative illustrated fantasy with bold surreal simplification. Palette: orange, lapis blue, orchid, malachite and pale peach. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: wonder-filled and emotionally mixed; imply it through composition and relationships, never label it. Scene: A spiral shell opens onto a ballroom where little fish dance. Abstraction: Use a boldly unusual crop, surprising scale, and a partially missing silhouette. The visual puzzle matters more than realistic detail. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-082",
+      "description": "A peach-colored face splits into fluttering paper planes above a emerald sea; a black ladder connects two fragments.",
+      "scene": "A peach-colored face splits into fluttering paper planes above a emerald sea; a black ladder connects two fragments.",
+      "artDirection": {
+        "mood": "joyful and exuberant, with a strange uneasy undertone",
+        "palette": "sunflower yellow, electric cobalt, hot pink, grassy green and white",
+        "medium": "bold cut-paper shapes and playful gouache"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: bold cut-paper shapes and playful gouache. Palette: sunflower yellow, electric cobalt, hot pink, grassy green and white. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: joyful and exuberant, with a strange uneasy undertone; imply it through composition and relationships, never label it. Scene: A peach-colored face splits into fluttering paper planes above a emerald sea; a black ladder connects two fragments. Abstraction: Create an impossible loop or simultaneous viewpoints; recognizable objects should overlap and transform rather than occupy an ordinary scene. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-083",
+      "description": "A child rides a chair lifted by patterned umbrellas.",
+      "scene": "A child rides a chair lifted by six patterned umbrellas.",
+      "artDirection": {
+        "mood": "lonely, tender and bittersweet",
+        "palette": "ultramarine, icy cyan, pale rose, a single vermilion accent and silver gray",
+        "medium": "watery gouache washes and fragmented paper collage"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: watery gouache washes and fragmented paper collage. Palette: ultramarine, icy cyan, pale rose, a single vermilion accent and silver gray. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: lonely, tender and bittersweet; imply it through composition and relationships, never label it. Scene: A child rides a chair lifted by six patterned umbrellas. Abstraction: Use large expressive color fields, textured paper shapes and a few symbolic fragments; avoid filling every inch with decoration. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-084",
+      "description": "A pair of rabbits shares a long scarf that becomes a path through the hills.",
+      "scene": "A pair of rabbits shares a long scarf that becomes a path through the hills.",
+      "artDirection": {
+        "mood": "absurdly funny and mischievous",
+        "palette": "tangerine, chartreuse, bright turquoise, raspberry and cream",
+        "medium": "exaggerated cartoon silhouettes and chalky painted texture"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: exaggerated cartoon silhouettes and chalky painted texture. Palette: tangerine, chartreuse, bright turquoise, raspberry and cream. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: absurdly funny and mischievous; imply it through composition and relationships, never label it. Scene: A pair of rabbits shares a long scarf that becomes a path through the hills. Abstraction: Combine hand-painted narrative with an abstract interruption: a torn gap, a shape swallowing the horizon, or an object becoming its own shadow. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-085",
+      "description": "A checkerboard cloak contains a tiny laughing sun; an enormous blue hand tries to fold it into a paper boat.",
+      "scene": "A checkerboard cloak contains a tiny laughing sun; an enormous blue hand tries to fold it into a paper boat.",
+      "artDirection": {
+        "mood": "unsettling, mysterious and a little fearful, no gore",
+        "palette": "blood orange, violet, midnight blue, acid yellow and black",
+        "medium": "flat theatrical shadows and impossible architectural planes"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: flat theatrical shadows and impossible architectural planes. Palette: blood orange, violet, midnight blue, acid yellow and black. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: unsettling, mysterious and a little fearful, no gore; imply it through composition and relationships, never label it. Scene: A checkerboard cloak contains a tiny laughing sun; an enormous blue hand tries to fold it into a paper boat. Abstraction: Let the scene dissolve at its edges into colored planes; turn negative space into a second possible reading. Avoid a tidy literal explanation. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-086",
+      "description": "A tiny dragon breathes a stream of flowers into a deserted greenhouse.",
+      "scene": "A tiny dragon breathes a stream of flowers into a deserted greenhouse.",
+      "artDirection": {
+        "mood": "gentle, affectionate and hopeful",
+        "palette": "lilac, fresh mint, strawberry pink, warm ivory and apricot",
+        "medium": "soft oil pastel, delicate gouache and unexpected blank space"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: soft oil pastel, delicate gouache and unexpected blank space. Palette: lilac, fresh mint, strawberry pink, warm ivory and apricot. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: gentle, affectionate and hopeful; imply it through composition and relationships, never label it. Scene: A tiny dragon breathes a stream of flowers into a deserted greenhouse. Abstraction: Flatten depth and interrupt perspective with a floating slice of another landscape. Leave the relationship between objects unresolved. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-087",
+      "description": "A person carries a candle through a forest of enormous closed eyes.",
+      "scene": "A person carries a candle through a forest of enormous closed eyes.",
+      "artDirection": {
+        "mood": "frustrated, restless and chaotic",
+        "palette": "scarlet, electric blue, lime, black and stark white",
+        "medium": "angular painterly collage, interrupted patterns and slanted planes"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: angular painterly collage, interrupted patterns and slanted planes. Palette: scarlet, electric blue, lime, black and stark white. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: frustrated, restless and chaotic; imply it through composition and relationships, never label it. Scene: A person carries a candle through a forest of enormous closed eyes. Abstraction: Use a boldly unusual crop, surprising scale, and a partially missing silhouette. The visual puzzle matters more than realistic detail. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-088",
+      "description": "An orange flower has doors instead of petals; a small mint figure enters a petal whose shadow points elsewhere.",
+      "scene": "An orange flower has doors instead of petals; a small mint figure enters a petal whose shadow points elsewhere.",
+      "artDirection": {
+        "mood": "wistful and quietly sad",
+        "palette": "rainy periwinkle, wine red, pale yellow, faded jade and cream",
+        "medium": "grainy gouache, dissolving edges and sparse composition"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: grainy gouache, dissolving edges and sparse composition. Palette: rainy periwinkle, wine red, pale yellow, faded jade and cream. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: wistful and quietly sad; imply it through composition and relationships, never label it. Scene: An orange flower has doors instead of petals; a small mint figure enters a petal whose shadow points elsewhere. Abstraction: Create an impossible loop or simultaneous viewpoints; recognizable objects should overlap and transform rather than occupy an ordinary scene. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-089",
+      "description": "A little house floats inside a soap bubble caught in a thorny branch.",
+      "scene": "A little house floats inside a soap bubble caught in a thorny branch.",
+      "artDirection": {
+        "mood": "curious, bewildering and delightfully confusing",
+        "palette": "fuchsia, emerald, lemon yellow, bright violet and cyan",
+        "medium": "abstract collage, ambiguous figure-ground and overlapping silhouettes"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: abstract collage, ambiguous figure-ground and overlapping silhouettes. Palette: fuchsia, emerald, lemon yellow, bright violet and cyan. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: curious, bewildering and delightfully confusing; imply it through composition and relationships, never label it. Scene: A little house floats inside a soap bubble caught in a thorny branch. Abstraction: Use large expressive color fields, textured paper shapes and a few symbolic fragments; avoid filling every inch with decoration. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-090",
+      "description": "A giant purple bird nests in the open roof of an abandoned theater.",
+      "scene": "A giant purple bird nests in the open roof of an abandoned theater.",
+      "artDirection": {
+        "mood": "calm but uncanny",
+        "palette": "celadon, deep coral, cerulean, pale butter yellow and white",
+        "medium": "sparse graphic painting, exaggerated scale and negative space"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: sparse graphic painting, exaggerated scale and negative space. Palette: celadon, deep coral, cerulean, pale butter yellow and white. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: calm but uncanny; imply it through composition and relationships, never label it. Scene: A giant purple bird nests in the open roof of an abandoned theater. Abstraction: Combine hand-painted narrative with an abstract interruption: a torn gap, a shape swallowing the horizon, or an object becoming its own shadow. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-091",
+      "description": "A deep blue room is folded like an accordion; red chairs cling to different walls and a yellow cloud fills the middle.",
+      "scene": "A deep blue room is folded like an accordion; red chairs cling to different walls and a yellow cloud fills the middle.",
+      "artDirection": {
+        "mood": "playful, silly and celebratory",
+        "palette": "primary red, royal blue, bright yellow, violet and candy pink",
+        "medium": "rounded expressive 2D illustration and lively patterned surfaces"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: rounded expressive 2D illustration and lively patterned surfaces. Palette: primary red, royal blue, bright yellow, violet and candy pink. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: playful, silly and celebratory; imply it through composition and relationships, never label it. Scene: A deep blue room is folded like an accordion; red chairs cling to different walls and a yellow cloud fills the middle. Abstraction: Let the scene dissolve at its edges into colored planes; turn negative space into a second possible reading. Avoid a tidy literal explanation. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-092",
+      "description": "A tall accordion unfolds into a street of little yellow houses.",
+      "scene": "A tall accordion unfolds into a street of little yellow houses.",
+      "artDirection": {
+        "mood": "eerie, estranged and melancholy",
+        "palette": "indigo, mint, magenta, smoky gray and bone white",
+        "medium": "dislocated perspective, organic abstract shapes and chalky grain"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: dislocated perspective, organic abstract shapes and chalky grain. Palette: indigo, mint, magenta, smoky gray and bone white. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: eerie, estranged and melancholy; imply it through composition and relationships, never label it. Scene: A tall accordion unfolds into a street of little yellow houses. Abstraction: Flatten depth and interrupt perspective with a floating slice of another landscape. Leave the relationship between objects unresolved. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-093",
+      "description": "A rowboat grows branches and sails across a field of red flowers.",
+      "scene": "A rowboat grows branches and sails across a field of red flowers.",
+      "artDirection": {
+        "mood": "wonder-filled and emotionally mixed",
+        "palette": "orange, lapis blue, orchid, malachite and pale peach",
+        "medium": "decorative illustrated fantasy with bold surreal simplification"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: decorative illustrated fantasy with bold surreal simplification. Palette: orange, lapis blue, orchid, malachite and pale peach. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: wonder-filled and emotionally mixed; imply it through composition and relationships, never label it. Scene: A rowboat grows branches and sails across a field of red flowers. Abstraction: Use a boldly unusual crop, surprising scale, and a partially missing silhouette. The visual puzzle matters more than realistic detail. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-094",
+      "description": "A pair of purple scissors cuts a river into floating ribbons; small white fish swim across the gaps.",
+      "scene": "A pair of purple scissors cuts a river into floating ribbons; small white fish swim across the gaps.",
+      "artDirection": {
+        "mood": "joyful and exuberant, with a strange uneasy undertone",
+        "palette": "sunflower yellow, electric cobalt, hot pink, grassy green and white",
+        "medium": "bold cut-paper shapes and playful gouache"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: bold cut-paper shapes and playful gouache. Palette: sunflower yellow, electric cobalt, hot pink, grassy green and white. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: joyful and exuberant, with a strange uneasy undertone; imply it through composition and relationships, never label it. Scene: A pair of purple scissors cuts a river into floating ribbons; small white fish swim across the gaps. Abstraction: Create an impossible loop or simultaneous viewpoints; recognizable objects should overlap and transform rather than occupy an ordinary scene. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-095",
+      "description": "A blue cat curls around a sun hidden inside an open drawer.",
+      "scene": "A blue cat curls around a sun hidden inside an open drawer.",
+      "artDirection": {
+        "mood": "lonely, tender and bittersweet",
+        "palette": "ultramarine, icy cyan, pale rose, a single vermilion accent and silver gray",
+        "medium": "watery gouache washes and fragmented paper collage"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: watery gouache washes and fragmented paper collage. Palette: ultramarine, icy cyan, pale rose, a single vermilion accent and silver gray. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: lonely, tender and bittersweet; imply it through composition and relationships, never label it. Scene: A blue cat curls around a sun hidden inside an open drawer. Abstraction: Use large expressive color fields, textured paper shapes and a few symbolic fragments; avoid filling every inch with decoration. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-096",
+      "description": "A ladder descends from an enormous orange into a midnight garden.",
+      "scene": "A ladder descends from an enormous orange into a midnight garden.",
+      "artDirection": {
+        "mood": "absurdly funny and mischievous",
+        "palette": "tangerine, chartreuse, bright turquoise, raspberry and cream",
+        "medium": "exaggerated cartoon silhouettes and chalky painted texture"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: exaggerated cartoon silhouettes and chalky painted texture. Palette: tangerine, chartreuse, bright turquoise, raspberry and cream. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: absurdly funny and mischievous; imply it through composition and relationships, never label it. Scene: A ladder descends from an enormous orange into a midnight garden. Abstraction: Combine hand-painted narrative with an abstract interruption: a torn gap, a shape swallowing the horizon, or an object becoming its own shadow. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-097",
+      "description": "An enormous red shoe contains a silent lilac lake; a green umbrella rests beneath the water.",
+      "scene": "An enormous red shoe contains a silent lilac lake; a green umbrella rests beneath the water.",
+      "artDirection": {
+        "mood": "unsettling, mysterious and a little fearful, no gore",
+        "palette": "blood orange, violet, midnight blue, acid yellow and black",
+        "medium": "flat theatrical shadows and impossible architectural planes"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: flat theatrical shadows and impossible architectural planes. Palette: blood orange, violet, midnight blue, acid yellow and black. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: unsettling, mysterious and a little fearful, no gore; imply it through composition and relationships, never label it. Scene: An enormous red shoe contains a silent lilac lake; a green umbrella rests beneath the water. Abstraction: Let the scene dissolve at its edges into colored planes; turn negative space into a second possible reading. Avoid a tidy literal explanation. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-098",
+      "description": "A coat on a hook casts the shadow of a crowded forest.",
+      "scene": "A coat on a hook casts the shadow of a crowded forest.",
+      "artDirection": {
+        "mood": "gentle, affectionate and hopeful",
+        "palette": "lilac, fresh mint, strawberry pink, warm ivory and apricot",
+        "medium": "soft oil pastel, delicate gouache and unexpected blank space"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: soft oil pastel, delicate gouache and unexpected blank space. Palette: lilac, fresh mint, strawberry pink, warm ivory and apricot. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: gentle, affectionate and hopeful; imply it through composition and relationships, never label it. Scene: A coat on a hook casts the shadow of a crowded forest. Abstraction: Flatten depth and interrupt perspective with a floating slice of another landscape. Leave the relationship between objects unresolved. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-099",
+      "description": "A child blows bubbles containing miniature rooms into a pink evening sky.",
+      "scene": "A child blows bubbles containing miniature rooms into a pink evening sky.",
+      "artDirection": {
+        "mood": "frustrated, restless and chaotic",
+        "palette": "scarlet, electric blue, lime, black and stark white",
+        "medium": "angular painterly collage, interrupted patterns and slanted planes"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: angular painterly collage, interrupted patterns and slanted planes. Palette: scarlet, electric blue, lime, black and stark white. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: frustrated, restless and chaotic; imply it through composition and relationships, never label it. Scene: A child blows bubbles containing miniature rooms into a pink evening sky. Abstraction: Use a boldly unusual crop, surprising scale, and a partially missing silhouette. The visual puzzle matters more than realistic detail. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-100",
+      "description": "A green face appears only in the empty spaces between yellow birds and a winding magenta staircase.",
+      "scene": "A green face appears only in the empty spaces between yellow birds and a winding magenta staircase.",
+      "artDirection": {
+        "mood": "wistful and quietly sad",
+        "palette": "rainy periwinkle, wine red, pale yellow, faded jade and cream",
+        "medium": "grainy gouache, dissolving edges and sparse composition"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: grainy gouache, dissolving edges and sparse composition. Palette: rainy periwinkle, wine red, pale yellow, faded jade and cream. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: wistful and quietly sad; imply it through composition and relationships, never label it. Scene: A green face appears only in the empty spaces between yellow birds and a winding magenta staircase. Abstraction: Create an impossible loop or simultaneous viewpoints; recognizable objects should overlap and transform rather than occupy an ordinary scene. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-101",
+      "description": "A person carries an open window through a village with no walls.",
+      "scene": "A person carries an open window through a village with no walls.",
+      "artDirection": {
+        "mood": "curious, bewildering and delightfully confusing",
+        "palette": "fuchsia, emerald, lemon yellow, bright violet and cyan",
+        "medium": "abstract collage, ambiguous figure-ground and overlapping silhouettes"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: abstract collage, ambiguous figure-ground and overlapping silhouettes. Palette: fuchsia, emerald, lemon yellow, bright violet and cyan. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: curious, bewildering and delightfully confusing; imply it through composition and relationships, never label it. Scene: A person carries an open window through a village with no walls. Abstraction: Use large expressive color fields, textured paper shapes and a few symbolic fragments; avoid filling every inch with decoration. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-102",
+      "description": "A pair of moon-faced figures exchanges tiny potted planets on a balcony.",
+      "scene": "A pair of moon-faced figures exchanges tiny potted planets on a balcony.",
+      "artDirection": {
+        "mood": "calm but uncanny",
+        "palette": "celadon, deep coral, cerulean, pale butter yellow and white",
+        "medium": "sparse graphic painting, exaggerated scale and negative space"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: sparse graphic painting, exaggerated scale and negative space. Palette: celadon, deep coral, cerulean, pale butter yellow and white. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: calm but uncanny; imply it through composition and relationships, never label it. Scene: A pair of moon-faced figures exchanges tiny potted planets on a balcony. Abstraction: Combine hand-painted narrative with an abstract interruption: a torn gap, a shape swallowing the horizon, or an object becoming its own shadow. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-103",
+      "description": "A pale figure hugs an orange shadow that becomes a flock of cobalt birds at its edges.",
+      "scene": "A pale figure hugs an orange shadow that becomes a flock of cobalt birds at its edges.",
+      "artDirection": {
+        "mood": "playful, silly and celebratory",
+        "palette": "primary red, royal blue, bright yellow, violet and candy pink",
+        "medium": "rounded expressive 2D illustration and lively patterned surfaces"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: rounded expressive 2D illustration and lively patterned surfaces. Palette: primary red, royal blue, bright yellow, violet and candy pink. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: playful, silly and celebratory; imply it through composition and relationships, never label it. Scene: A pale figure hugs an orange shadow that becomes a flock of cobalt birds at its edges. Abstraction: Let the scene dissolve at its edges into colored planes; turn negative space into a second possible reading. Avoid a tidy literal explanation. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-104",
+      "description": "A small dragon sleeps inside the bell of a brass trumpet.",
+      "scene": "A small dragon sleeps inside the bell of a brass trumpet.",
+      "artDirection": {
+        "mood": "eerie, estranged and melancholy",
+        "palette": "indigo, mint, magenta, smoky gray and bone white",
+        "medium": "dislocated perspective, organic abstract shapes and chalky grain"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: dislocated perspective, organic abstract shapes and chalky grain. Palette: indigo, mint, magenta, smoky gray and bone white. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: eerie, estranged and melancholy; imply it through composition and relationships, never label it. Scene: A small dragon sleeps inside the bell of a brass trumpet. Abstraction: Flatten depth and interrupt perspective with a floating slice of another landscape. Leave the relationship between objects unresolved. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-105",
+      "description": "A purple mountain unzips to reveal a warm room with a single orange chair.",
+      "scene": "A purple mountain unzips to reveal a warm room with a single orange chair.",
+      "artDirection": {
+        "mood": "wonder-filled and emotionally mixed",
+        "palette": "orange, lapis blue, orchid, malachite and pale peach",
+        "medium": "decorative illustrated fantasy with bold surreal simplification"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: decorative illustrated fantasy with bold surreal simplification. Palette: orange, lapis blue, orchid, malachite and pale peach. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: wonder-filled and emotionally mixed; imply it through composition and relationships, never label it. Scene: A purple mountain unzips to reveal a warm room with a single orange chair. Abstraction: Use a boldly unusual crop, surprising scale, and a partially missing silhouette. The visual puzzle matters more than realistic detail. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-106",
+      "description": "A tiny pink house tips out of a blue bowl into a field of yellow squares; its shadow rises upward.",
+      "scene": "A tiny pink house tips out of a blue bowl into a field of yellow squares; its shadow rises upward.",
+      "artDirection": {
+        "mood": "joyful and exuberant, with a strange uneasy undertone",
+        "palette": "sunflower yellow, electric cobalt, hot pink, grassy green and white",
+        "medium": "bold cut-paper shapes and playful gouache"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: bold cut-paper shapes and playful gouache. Palette: sunflower yellow, electric cobalt, hot pink, grassy green and white. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: joyful and exuberant, with a strange uneasy undertone; imply it through composition and relationships, never label it. Scene: A tiny pink house tips out of a blue bowl into a field of yellow squares; its shadow rises upward. Abstraction: Create an impossible loop or simultaneous viewpoints; recognizable objects should overlap and transform rather than occupy an ordinary scene. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-107",
+      "description": "A bird folds the edge of the night sky to reveal a peach-colored garden.",
+      "scene": "A bird folds the edge of the night sky to reveal a peach-colored garden.",
+      "artDirection": {
+        "mood": "lonely, tender and bittersweet",
+        "palette": "ultramarine, icy cyan, pale rose, a single vermilion accent and silver gray",
+        "medium": "watery gouache washes and fragmented paper collage"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: watery gouache washes and fragmented paper collage. Palette: ultramarine, icy cyan, pale rose, a single vermilion accent and silver gray. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: lonely, tender and bittersweet; imply it through composition and relationships, never label it. Scene: A bird folds the edge of the night sky to reveal a peach-colored garden. Abstraction: Use large expressive color fields, textured paper shapes and a few symbolic fragments; avoid filling every inch with decoration. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-108",
+      "description": "A woman gathers stars into an apron while her long shadow scatters seeds.",
+      "scene": "A woman gathers stars into an apron while her long shadow scatters seeds.",
+      "artDirection": {
+        "mood": "absurdly funny and mischievous",
+        "palette": "tangerine, chartreuse, bright turquoise, raspberry and cream",
+        "medium": "exaggerated cartoon silhouettes and chalky painted texture"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: exaggerated cartoon silhouettes and chalky painted texture. Palette: tangerine, chartreuse, bright turquoise, raspberry and cream. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: absurdly funny and mischievous; imply it through composition and relationships, never label it. Scene: A woman gathers stars into an apron while her long shadow scatters seeds. Abstraction: Combine hand-painted narrative with an abstract interruption: a torn gap, a shape swallowing the horizon, or an object becoming its own shadow. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-109",
+      "description": "A violet curtain parts to reveal another identical curtain floating inside a bright green eye.",
+      "scene": "A violet curtain parts to reveal another identical curtain floating inside a bright green eye.",
+      "artDirection": {
+        "mood": "unsettling, mysterious and a little fearful, no gore",
+        "palette": "blood orange, violet, midnight blue, acid yellow and black",
+        "medium": "flat theatrical shadows and impossible architectural planes"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: flat theatrical shadows and impossible architectural planes. Palette: blood orange, violet, midnight blue, acid yellow and black. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: unsettling, mysterious and a little fearful, no gore; imply it through composition and relationships, never label it. Scene: A violet curtain parts to reveal another identical curtain floating inside a bright green eye. Abstraction: Let the scene dissolve at its edges into colored planes; turn negative space into a second possible reading. Avoid a tidy literal explanation. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-110",
+      "description": "A blue rabbit pulls a cart carrying a tiny purple mountain.",
+      "scene": "A blue rabbit pulls a cart carrying a tiny purple mountain.",
+      "artDirection": {
+        "mood": "gentle, affectionate and hopeful",
+        "palette": "lilac, fresh mint, strawberry pink, warm ivory and apricot",
+        "medium": "soft oil pastel, delicate gouache and unexpected blank space"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: soft oil pastel, delicate gouache and unexpected blank space. Palette: lilac, fresh mint, strawberry pink, warm ivory and apricot. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: gentle, affectionate and hopeful; imply it through composition and relationships, never label it. Scene: A blue rabbit pulls a cart carrying a tiny purple mountain. Abstraction: Flatten depth and interrupt perspective with a floating slice of another landscape. Leave the relationship between objects unresolved. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-111",
+      "description": "A striped tent stands on the tip of a giant feather drifting above the sea.",
+      "scene": "A striped tent stands on the tip of a giant feather drifting above the sea.",
+      "artDirection": {
+        "mood": "frustrated, restless and chaotic",
+        "palette": "scarlet, electric blue, lime, black and stark white",
+        "medium": "angular painterly collage, interrupted patterns and slanted planes"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: angular painterly collage, interrupted patterns and slanted planes. Palette: scarlet, electric blue, lime, black and stark white. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: frustrated, restless and chaotic; imply it through composition and relationships, never label it. Scene: A striped tent stands on the tip of a giant feather drifting above the sea. Abstraction: Use a boldly unusual crop, surprising scale, and a partially missing silhouette. The visual puzzle matters more than realistic detail. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-112",
+      "description": "A string of red balloons pulls the horizon into a crooked smile above a turquoise chair.",
+      "scene": "A string of red balloons pulls the horizon into a crooked smile above a lonely turquoise chair.",
+      "artDirection": {
+        "mood": "wistful and quietly sad",
+        "palette": "rainy periwinkle, wine red, pale yellow, faded jade and cream",
+        "medium": "grainy gouache, dissolving edges and sparse composition"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: grainy gouache, dissolving edges and sparse composition. Palette: rainy periwinkle, wine red, pale yellow, faded jade and cream. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: wistful and quietly sad; imply it through composition and relationships, never label it. Scene: A string of red balloons pulls the horizon into a crooked smile above a lonely turquoise chair. Abstraction: Create an impossible loop or simultaneous viewpoints; recognizable objects should overlap and transform rather than occupy an ordinary scene. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-113",
+      "description": "A person with a flowering hat waits at a station made of stacked suitcases.",
+      "scene": "A person with a flowering hat waits at a station made of stacked suitcases.",
+      "artDirection": {
+        "mood": "curious, bewildering and delightfully confusing",
+        "palette": "fuchsia, emerald, lemon yellow, bright violet and cyan",
+        "medium": "abstract collage, ambiguous figure-ground and overlapping silhouettes"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: abstract collage, ambiguous figure-ground and overlapping silhouettes. Palette: fuchsia, emerald, lemon yellow, bright violet and cyan. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: curious, bewildering and delightfully confusing; imply it through composition and relationships, never label it. Scene: A person with a flowering hat waits at a station made of stacked suitcases. Abstraction: Use large expressive color fields, textured paper shapes and a few symbolic fragments; avoid filling every inch with decoration. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-114",
+      "description": "A crane lifts a lantern from a pond filled with reflected doorways.",
+      "scene": "A crane lifts a lantern from a pond filled with reflected doorways.",
+      "artDirection": {
+        "mood": "calm but uncanny",
+        "palette": "celadon, deep coral, cerulean, pale butter yellow and white",
+        "medium": "sparse graphic painting, exaggerated scale and negative space"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: sparse graphic painting, exaggerated scale and negative space. Palette: celadon, deep coral, cerulean, pale butter yellow and white. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: calm but uncanny; imply it through composition and relationships, never label it. Scene: A crane lifts a lantern from a pond filled with reflected doorways. Abstraction: Combine hand-painted narrative with an abstract interruption: a torn gap, a shape swallowing the horizon, or an object becoming its own shadow. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-115",
+      "description": "A yellow boat sails across the back of an enormous purple hand; the fingers dissolve into pink rain.",
+      "scene": "A yellow boat sails across the back of an enormous purple hand; the fingers dissolve into pink rain.",
+      "artDirection": {
+        "mood": "playful, silly and celebratory",
+        "palette": "primary red, royal blue, bright yellow, violet and candy pink",
+        "medium": "rounded expressive 2D illustration and lively patterned surfaces"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: rounded expressive 2D illustration and lively patterned surfaces. Palette: primary red, royal blue, bright yellow, violet and candy pink. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: playful, silly and celebratory; imply it through composition and relationships, never label it. Scene: A yellow boat sails across the back of an enormous purple hand; the fingers dissolve into pink rain. Abstraction: Let the scene dissolve at its edges into colored planes; turn negative space into a second possible reading. Avoid a tidy literal explanation. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-116",
+      "description": "A small boat sails through a dragon's mane of long curling ribbons.",
+      "scene": "A small boat sails through a dragon's mane of long curling ribbons.",
+      "artDirection": {
+        "mood": "eerie, estranged and melancholy",
+        "palette": "indigo, mint, magenta, smoky gray and bone white",
+        "medium": "dislocated perspective, organic abstract shapes and chalky grain"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: dislocated perspective, organic abstract shapes and chalky grain. Palette: indigo, mint, magenta, smoky gray and bone white. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: eerie, estranged and melancholy; imply it through composition and relationships, never label it. Scene: A small boat sails through a dragon's mane of long curling ribbons. Abstraction: Flatten depth and interrupt perspective with a floating slice of another landscape. Leave the relationship between objects unresolved. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-117",
+      "description": "A girl plants a silver key in a garden of floating stones.",
+      "scene": "A girl plants a silver key in a garden of floating stones.",
+      "artDirection": {
+        "mood": "wonder-filled and emotionally mixed",
+        "palette": "orange, lapis blue, orchid, malachite and pale peach",
+        "medium": "decorative illustrated fantasy with bold surreal simplification"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: decorative illustrated fantasy with bold surreal simplification. Palette: orange, lapis blue, orchid, malachite and pale peach. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: wonder-filled and emotionally mixed; imply it through composition and relationships, never label it. Scene: A girl plants a silver key in a garden of floating stones. Abstraction: Use a boldly unusual crop, surprising scale, and a partially missing silhouette. The visual puzzle matters more than realistic detail. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-118",
+      "description": "A sun and moon exchange their shadows across two differently colored halves of an impossible room.",
+      "scene": "A sun and moon exchange their shadows across two differently colored halves of an impossible room.",
+      "artDirection": {
+        "mood": "joyful and exuberant, with a strange uneasy undertone",
+        "palette": "sunflower yellow, electric cobalt, hot pink, grassy green and white",
+        "medium": "bold cut-paper shapes and playful gouache"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: bold cut-paper shapes and playful gouache. Palette: sunflower yellow, electric cobalt, hot pink, grassy green and white. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: joyful and exuberant, with a strange uneasy undertone; imply it through composition and relationships, never label it. Scene: A sun and moon exchange their shadows across two differently colored halves of an impossible room. Abstraction: Create an impossible loop or simultaneous viewpoints; recognizable objects should overlap and transform rather than occupy an ordinary scene. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-119",
+      "description": "A blue bear and a little bird mend a tear in a star-patterned curtain.",
+      "scene": "A blue bear and a little bird mend a tear in a star-patterned curtain.",
+      "artDirection": {
+        "mood": "lonely, tender and bittersweet",
+        "palette": "ultramarine, icy cyan, pale rose, a single vermilion accent and silver gray",
+        "medium": "watery gouache washes and fragmented paper collage"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: watery gouache washes and fragmented paper collage. Palette: ultramarine, icy cyan, pale rose, a single vermilion accent and silver gray. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: lonely, tender and bittersweet; imply it through composition and relationships, never label it. Scene: A blue bear and a little bird mend a tear in a star-patterned curtain. Abstraction: Use large expressive color fields, textured paper shapes and a few symbolic fragments; avoid filling every inch with decoration. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    },
+    {
+      "id": "card-120",
+      "description": "A child opens a round attic window onto a sky full of sleeping whales.",
+      "scene": "A child opens a round attic window onto a sky full of sleeping whales.",
+      "artDirection": {
+        "mood": "absurdly funny and mischievous",
+        "palette": "tangerine, chartreuse, bright turquoise, raspberry and cream",
+        "medium": "exaggerated cartoon silhouettes and chalky painted texture"
+      },
+      "prompt": "Use case: illustration-story. Create ONE original full-bleed 4:5 portrait art card for Dreamerie. Artistic intent: Dixit-inspired open-ended visual storytelling, creating original imagery rather than reproducing any existing card. Stylized hand-painted 2D illustration, NOT hyperrealistic, photographic or 3D. More abstract and emotionally complex than a tidy cute storybook scene. Style: exaggerated cartoon silhouettes and chalky painted texture. Palette: tangerine, chartreuse, bright turquoise, raspberry and cream. Let these colors dominate; do NOT default to muted teal and gold. Emotional tone: absurdly funny and mischievous; imply it through composition and relationships, never label it. Scene: A child opens a round attic window onto a sky full of sleeping whales. Abstraction: Combine hand-painted narrative with an abstract interruption: a torn gap, a shape swallowing the horizon, or an object becoming its own shadow. Let viewers disagree about meaning. Retain a strong silhouette and recognizable focal elements at card size. Tactile painterly texture; playful graphic shapes. No words, numbers, borders, logos, watermarks, UI, ownership hints or card suits. One image, not a sheet."
+    }
+  ],
+  "direction": "120 original cards with broad color, emotional and compositional variety. Dixit is inspiration for associative storytelling, not copied cards. Mix joyful, sad, funny, unsettling, tender, angry and confusing imagery. Some scenes are strongly abstract. Style remains illustrated and non-photorealistic. Mood/palette notes are production prompts only, never gameplay categories or answers."
+}
