@@ -210,6 +210,26 @@ button:focus-visible {
   text-underline-offset: 0.25em;
 }
 
+.visit-cards { margin-top: 0.75rem; }
+.remember-dream { display: block; width: 100%; margin-bottom: 0.75rem; }
+.selection-feedback { min-height: 1.5rem; margin-top: 1rem; color: #c9c3b9; font-size: 0.875rem; line-height: 1.6; }
+.selection-error { margin-top: 1rem; color: #eee7d9; line-height: 1.6; }
+.selection-return { margin-top: 2rem; }
+.selection-page .card-gallery { margin-top: 1rem; }
+.selection-page h1:focus { outline: none; }
+
+.week-overview h1 { margin-inline: auto; max-width: 24ch; font-size: clamp(1.5rem, 5vw, 2rem); }
+.week-overview .concept-list { margin: 1.5rem auto 0; gap: 0.75rem 1rem; font-size: 0.875rem; }
+.week-overview { margin-bottom: 2rem; padding-bottom: 0.5rem; border-bottom: 1px solid #484753; }
+.selection-page h2 { margin: 0 auto; font-size: clamp(2rem, 6vw, 3rem); font-weight: 400; line-height: 1.2; scroll-margin-top: 1.5rem; }
+.selection-page h2:focus { outline: none; }
+.card-preview { position: relative; }
+.card-preview[aria-pressed='true'] { outline: 2px solid #e3cba2; outline-offset: 3px; }
+.chosen-marker { position: absolute; bottom: 0; left: 0; right: 0; padding: 0.4rem; color: #eee7d9; background: #191d29; font-size: 0.875rem; }
+.inline-choice { max-width: 22rem; margin: 1.5rem auto 0; }
+.inline-choice .remember-dream { margin-bottom: 0; }
+button:disabled { opacity: 0.5; cursor: default; }
+
 .gallery-page {
   flex: 1;
   width: 100%;

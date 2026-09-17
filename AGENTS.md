@@ -73,3 +73,8 @@ style(dreams): improve mobile card layout
 - Do not force push.
 - Do not rewrite Git history.
 - After completing work, suggest an appropriate Conventional Commit message and stop for user review.
+- Include terminal commands for staging the intended files, committing with that message, and pushing so the user can run them after testing and approval. Providing commands does not authorize running them automatically.
+
+## Model recommendations
+
+At milestone boundaries, flag when a stronger coding/reasoning model could materially help, using the checkpoints in [PROTOTYPE_PLAN.md](docs/PROTOTYPE_PLAN.md). Recommend the switch before beginning affected work, especially before decoy selection and the guessing/scoring state transitions. Explain the concrete benefit, verify current official model guidance when making product claims, and leave model selection to the user. Do not expand scope or change models automatically.

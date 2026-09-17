@@ -39,6 +39,8 @@ Use concise visual descriptions for accessibility without prescribing image mean
 
 ## UI writing
 
+Weekly preparation uses one continuous page: the week's six concepts, the current Dream prompt, and a six-card hand. Start with “You dream of TIME. What does that look like to you?” A player marks an image and confirms inline; the prompt advances to the next setup concept and a replacement enters the same hand. Enlargement is optional and never required to commit a choice. Avoid separate introduction, gallery, and selection steps that require players to navigate back and forth. Keep the hidden daily order separate from this visible setup sequence.
+
 Quietly narrate entering, experiencing, and remembering Dreams. Use short, understandable, elegant phrases. Do not stack metaphors or turn instructions into riddles. Essential errors may be direct, such as “That dream is already assigned.”
 
 | Moment | Preferred language |

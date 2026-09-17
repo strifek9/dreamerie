@@ -8,7 +8,7 @@ The product is mobile-first and responsive for mobile and desktop web. Artwork l
 
 ## Current status
 
-Milestones 1 and 2 are approved. Milestone 3 is implemented and awaiting user testing: enter a Dream Week to see all six concepts, then visit Charlie's six-card gallery. Display/setup order is independent of the hidden randomized daily order, which stays stable during navigation. A shared pool of 60 local SVG placeholders supplies unique hands for Charlie, Nancy, and Song, with independent per-player exposure tracking. Nancy's and Song's cards remain hidden. Dream selection, guessing, and scoring are not implemented yet.
+Milestones 1–3 are approved. Milestone 4 is implemented and awaiting user testing: Charlie can choose an image for each Dream, receive a unique replacement, and advance to the next setup concept. Each committed choice is recorded once, and the hand stays at six cards. Display/setup order remains independent of the hidden randomized daily order. A shared pool of 60 local SVG placeholders supplies unique hands for Charlie, Nancy, and Song, with independent per-player exposure tracking. Nancy's and Song's cards remain hidden. The dedicated weekly completion screen, friends' simulated selections, guessing, and scoring come later.
 
 Prototype 0.1 uses **React, TypeScript, and Vite**. Later milestones will add local Dream selection and guessing, with Charlie as the human and Nancy and Song as simulated players, temporary placeholder artwork, and +1 point per correctly identified Dream.
 
@@ -21,7 +21,9 @@ npm ci
 npm run dev
 ```
 
-Open the local URL printed in the terminal, normally `http://127.0.0.1:5173/`. Press Ctrl+C to stop the server. Choose **Enter your Dream Week** to see TIME, LOVE, FREEDOM, HOME, FEAR, and CHANGE. No day labels or daily schedule are displayed. Choose **Visit your cards**, then tap a card to enlarge it. Close with **Return to your cards** or Escape. Inspection does not select a Dream or change your hand. Returning to your Dream Week or the beginning preserves the hand and schedule; refreshing creates a new local week.
+Open the local URL printed in the terminal, normally `http://127.0.0.1:5173/`. Press Ctrl+C to stop the server. Choose **Enter your Dream Week** to see TIME, LOVE, FREEDOM, HOME, FEAR, and CHANGE. No day labels or daily schedule are displayed.
+
+The weekly overview, current prompt, and six cards share one preparation page. It starts with **You dream of TIME. What does that look like to you?** Tap a card to mark it as chosen, then use **Remember this dream** to commit it. The image is replaced in the same slot, and the prompt advances to LOVE in place. **Look closer** optionally enlarges the marked image; **Return to your cards** or Escape closes inspection without committing it. No gallery or setup-page navigation is required between choices. After six choices, the same page shows that all six Dreams are chosen, with no seventh choice offered; the atmospheric completion screen belongs to Milestone 5. Returning to the beginning preserves committed choices; refreshing creates a new local week and clears them.
 
 ```powershell
 npm run typecheck
@@ -30,7 +32,7 @@ npm run build
 npm run preview
 ```
 
-The build includes TypeScript checks and writes production assets to `dist/`. Preview serves that build locally. Tests use Node's built-in runner and TypeScript stripping, with no added test dependency. Eleven tests cover fixtures, unique dealing, exhaustion, invalid input, reproducibility, exposure, and separation of the public concept list from the hidden schedule. The weekly introduction and gallery were checked in headless Edge at 320, 375, 390, 430, 768, and 1440 CSS-pixel widths, including keyboard navigation/inspection, Escape, focus return, and unchanged hands.
+The build includes TypeScript checks and writes production assets to `dist/`. Preview serves that build locally. Tests use Node's built-in runner and TypeScript stripping, with no added test dependency. Seventeen tests cover fixtures, dealing, exposure, schedule separation, and atomic selection/replacement, including invalid or repeated commands and exhaustion. Browser checks cover six phone/tablet/desktop widths, inspection without selection, keyboard commitment, focus, double activation, same-slot replacement, navigation stability, and the sixth-choice boundary.
 
 Temporary artwork is original code-authored SVG geometry, not AI-generated images. See [artwork provenance and regeneration](public/artwork/README.md); it is a fixture collection rather than the final visual identity.
 

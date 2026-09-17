@@ -34,6 +34,7 @@ export interface DreamWeek {
   readonly setupOrder: readonly ConceptId[]
   readonly roundOrder: readonly ConceptId[]
   readonly allocation: WeekAllocation
+  readonly dreams: ReadonlyMap<PlayerId, ReadonlyMap<ConceptId, CardId>>
 }
 
 /** Public introduction data deliberately has no daily schedule. */

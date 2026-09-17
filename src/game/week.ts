@@ -26,6 +26,7 @@ export function createDreamWeek(
     setupOrder,
     roundOrder,
     allocation: dealInitialHands(id, cards, players, random),
+    dreams: new Map(players.map((player) => [player.id, new Map()])),
   }
 }
 
