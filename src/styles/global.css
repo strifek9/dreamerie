@@ -170,8 +170,44 @@ button:focus-visible {
   line-height: 1.5;
 }
 
-.enter-gallery {
+.enter-week {
   margin-top: 1.5rem;
+}
+
+.week-introduction {
+  max-width: 34rem;
+}
+
+.week-introduction h1 {
+  max-width: 19ch;
+  font-size: clamp(2rem, 6vw, 3rem);
+}
+
+.concept-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem 1rem;
+  width: 100%;
+  max-width: 26rem;
+  margin: 2.5rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: clamp(0.9375rem, 3.5vw, 1.125rem);
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+}
+
+.text-button {
+  min-height: 44px;
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  border: 0;
+  background: transparent;
+  color: #b8b5bf;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
 }
 
 .gallery-page {

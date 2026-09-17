@@ -27,3 +27,16 @@ export interface WeekAllocation {
   readonly hands: ReadonlyMap<PlayerId, readonly CardId[]>
   readonly seen: ReadonlyMap<PlayerId, ReadonlySet<CardId>>
 }
+
+export interface DreamWeek {
+  readonly id: WeekId
+  readonly concepts: readonly DreamConcept[]
+  readonly setupOrder: readonly ConceptId[]
+  readonly roundOrder: readonly ConceptId[]
+  readonly allocation: WeekAllocation
+}
+
+/** Public introduction data deliberately has no daily schedule. */
+export interface WeekIntroduction {
+  readonly concepts: readonly DreamConcept[]
+}

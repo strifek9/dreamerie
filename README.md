@@ -8,7 +8,7 @@ The product is mobile-first and responsive for mobile and desktop web. Artwork l
 
 ## Current status
 
-Milestone 1 is approved. Milestone 2 is implemented and awaiting user testing: the introduction now opens a gallery of Charlie's six cards. A shared pool of 60 local SVG placeholders supplies unique hands for Charlie, Nancy, and Song, with independent per-player exposure tracking. Nancy's and Song's cards remain hidden. Dream selection, guessing, and scoring are not implemented yet.
+Milestones 1 and 2 are approved. Milestone 3 is implemented and awaiting user testing: enter a Dream Week to see all six concepts, then visit Charlie's six-card gallery. Display/setup order is independent of the hidden randomized daily order, which stays stable during navigation. A shared pool of 60 local SVG placeholders supplies unique hands for Charlie, Nancy, and Song, with independent per-player exposure tracking. Nancy's and Song's cards remain hidden. Dream selection, guessing, and scoring are not implemented yet.
 
 Prototype 0.1 uses **React, TypeScript, and Vite**. Later milestones will add local Dream selection and guessing, with Charlie as the human and Nancy and Song as simulated players, temporary placeholder artwork, and +1 point per correctly identified Dream.
 
@@ -21,7 +21,7 @@ npm ci
 npm run dev
 ```
 
-Open the local URL printed in the terminal, normally `http://127.0.0.1:5173/`. Press Ctrl+C to stop the server. Choose **Enter the gallery**, then tap a card to enlarge it. Close with **Return to your cards** or Escape. Inspection does not select a Dream or change your hand. Returning to the introduction preserves the hand; refreshing creates a new local deal.
+Open the local URL printed in the terminal, normally `http://127.0.0.1:5173/`. Press Ctrl+C to stop the server. Choose **Enter your Dream Week** to see TIME, LOVE, FREEDOM, HOME, FEAR, and CHANGE. No day labels or daily schedule are displayed. Choose **Visit your cards**, then tap a card to enlarge it. Close with **Return to your cards** or Escape. Inspection does not select a Dream or change your hand. Returning to your Dream Week or the beginning preserves the hand and schedule; refreshing creates a new local week.
 
 ```powershell
 npm run typecheck
@@ -30,7 +30,7 @@ npm run build
 npm run preview
 ```
 
-The build includes TypeScript checks and writes production assets to `dist/`. Preview serves that build locally. Tests use Node's built-in runner and TypeScript stripping, with no added test dependency. Seven tests cover fixtures, unique dealing, exhaustion, invalid input, reproducibility, and exposure. The gallery was checked in headless Edge at 320, 375, 390, 430, 768, and 1440 CSS-pixel widths, including keyboard inspection, Escape, focus return, and unchanged hands.
+The build includes TypeScript checks and writes production assets to `dist/`. Preview serves that build locally. Tests use Node's built-in runner and TypeScript stripping, with no added test dependency. Eleven tests cover fixtures, unique dealing, exhaustion, invalid input, reproducibility, exposure, and separation of the public concept list from the hidden schedule. The weekly introduction and gallery were checked in headless Edge at 320, 375, 390, 430, 768, and 1440 CSS-pixel widths, including keyboard navigation/inspection, Escape, focus return, and unchanged hands.
 
 Temporary artwork is original code-authored SVG geometry, not AI-generated images. See [artwork provenance and regeneration](public/artwork/README.md); it is a fixture collection rather than the final visual identity.
 

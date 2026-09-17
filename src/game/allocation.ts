@@ -1,4 +1,5 @@
 import type { Card, CardId, Player, PlayerId, WeekAllocation, WeekId } from './types.ts'
+import { shuffle } from './random.ts'
 
 export const HAND_SIZE = 6
 
@@ -21,19 +22,7 @@ export function dealInitialHands(
     throw new Error(`Not enough unique cards: need ${required}, have ${ids.length}.`)
   }
 
-  const shuffled = [...ids]
-  for (let index = shuffled.length - 1; index > 0; index--) {
-    const value = random()
-    if (!Number.isFinite(value) || value < 0 || value >= 1) {
-      throw new Error('Randomness must return a number from 0 up to, but not including, 1.')
-    }
-    const other = Math.floor(value * (index + 1))
-    const first = shuffled[index]
-    const second = shuffled[other]
-    if (first === undefined || second === undefined) throw new Error('Invalid shuffle index.')
-    shuffled[index] = second
-    shuffled[other] = first
-  }
+  const shuffled = shuffle(ids, random)
 
   const hands = new Map<PlayerId, readonly CardId[]>()
   const seen = new Map<PlayerId, ReadonlySet<CardId>>()

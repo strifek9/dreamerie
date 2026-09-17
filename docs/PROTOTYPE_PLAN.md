@@ -4,7 +4,7 @@
 
 Inspection found one tracked minimal README, one initial commit, a clean working tree, and no application, tooling, assets, or existing architecture. This task creates documentation only. Bootstrap happens in a later implementation task.
 
-The paragraph above records the initial planning inspection. Milestone 1 is approved and Milestone 2 is implemented, awaiting user testing. See their statuses below and the README for current run instructions. Milestones 3–12 remain incomplete.
+The paragraph above records the initial planning inspection. Milestones 1 and 2 are approved; Milestone 3 is implemented, awaiting user testing. See their statuses below and the README for current run instructions. Milestones 4–12 remain incomplete.
 
 Build a local React + TypeScript + Vite browser game, mobile-first and responsive. Demonstrate Charlie choosing six Dreams and recognizing Nancy/Song Dreams using placeholder artwork. Follow [GAME_DESIGN.md](GAME_DESIGN.md), including its explicitly labeled prototype assumptions.
 
@@ -49,7 +49,7 @@ Each milestone leaves a checkable local result. Selection and replacement are on
 
 ### 2. Fixtures and card allocation
 
-- **Status:** Implemented; awaiting user testing and approval before Milestone 3.
+- **Status:** Approved by the user; proceeding to Milestone 3 was authorized.
 - **Goal:** Establish reliable data and unique hands.
 - **Scope:** Stable domain IDs, six concepts, three players, sufficient local placeholder cards, shared week pool, six-card dealing, exposure tracking.
 - **Completion:** Each initial hand has six distinct cards with no player overlap. Exhaustion fails clearly without partial dealing. A simple gallery permits fixture inspection.
@@ -58,9 +58,12 @@ Each milestone leaves a checkable local result. Selection and replacement are on
 
 ### 3. Weekly introduction and hidden order
 
+- **Status:** Implemented; awaiting user testing and approval before Milestone 4.
 - **Goal:** Introduce six Dreams without revealing daily order.
 - **Scope:** “This week, you will dream of...” view; separate setup/display order from randomized round order.
 - **Completion:** All six concepts appear once; visible order does not disclose the schedule. A reproducible rule check verifies the hidden order is a permutation.
+- **Implementation:** A pure week constructor keeps concepts, setup order, shuffled round order, and card allocation in one local week. Shared shuffling retains injectable randomness. A public introduction projection provides only concept metadata to its React view. Navigation from the beginning to the weekly introduction and gallery preserves the week; no daily schedule, selection, or guessing controls are shown. An unbiased shuffle can occasionally match display order by chance; the display is never derived from the shuffle.
+- **Validation:** TypeScript checks, production build, and all 11 rule tests passed. New tests cover the reproducible six-concept permutation, untouched setup order, identical public introductions for different hidden schedules, and invalid concept fixtures. Headless Edge checks passed at the six documented phone/tablet/desktop sizes for the introduction and gallery, including keyboard entry, all six visible concepts exactly once, no displayed schedule, stable hands across navigation, and existing inspection/closure/focus behavior. Phone and desktop screenshots were visually inspected. No runtime errors were reported; a missing favicon request was resolved with an empty inline icon reference.
 
 ### 4. Selection and replacement
 
