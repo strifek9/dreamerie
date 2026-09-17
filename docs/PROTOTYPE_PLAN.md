@@ -4,7 +4,7 @@
 
 Inspection found one tracked minimal README, one initial commit, a clean working tree, and no application, tooling, assets, or existing architecture. This task creates documentation only. Bootstrap happens in a later implementation task.
 
-The paragraph above records the initial planning inspection. Milestones 1–5 are approved; Milestone 6 is implemented, awaiting user testing. See their statuses below and the README for current run instructions. Milestones 7–12 remain incomplete.
+The paragraph above records the initial planning inspection. Milestones 1–6 are approved. Milestones 7–8 include the requested Day 1/Day 2 boundary and sequential Nancy/Song choices. The user's request to test the full week also authorized Milestones 9–10: reveal, scoring, all six rounds, ending, and restart. Milestones 7–10 are implemented and awaiting user testing. See their statuses below and the README for current run instructions. Milestones 11–12 remain incomplete.
 
 Build a local React + TypeScript + Vite browser game, mobile-first and responsive. Demonstrate Charlie choosing six Dreams and recognizing Nancy/Song Dreams using placeholder artwork. Follow [GAME_DESIGN.md](GAME_DESIGN.md), including its explicitly labeled prototype assumptions.
 
@@ -88,7 +88,7 @@ The continuous preparation flow is now the presentation direction: overview, cur
 
 ### 6. Simulated friends' Dreams
 
-- **Status:** Implemented; awaiting user testing and approval before Milestone 7.
+- **Status:** Approved by the user; proceeding to Milestone 7 was authorized.
 - **Goal:** Supply valid Nancy/Song targets.
 - **Scope:** Local simulation using shared allocation/selection rules; prepare the first hidden-order concept in local state. Keep friends' choices out of preparation views. No incomplete guessing screen or extra setup pages.
 - **Completion:** Friends each have six selected Dreams with no shared allocations, including their replacement draws. Charlie's prepared Dreams and remaining hand stay intact. The first round concept is available for Milestone 7; Charlie is never a guessing target. No clock/networking needed.
@@ -97,27 +97,39 @@ The continuous preparation flow is now the presentation direction: overview, cur
 
 ### 7. Six-card guessing board
 
+- **Status:** Revised at the user's request alongside the sequential assignment flow from Milestone 8; awaiting user testing and approval.
 - **Goal:** Create a stable, eligible board for one concept.
-- **Scope:** Nancy/Song actual Dreams, four fresh eligible decoys, shuffle, exposure updates, and a deliberate local entry into the guessing phase after preparation. Render one round workspace; assignment behavior comes in Milestone 8.
-- **Completion:** Six distinct images include both targets and no Charlie Dream or answer styling. Decoys were unseen by Charlie. Rerendering does not regenerate the board. Insufficient candidates fail without weakening eligibility. Viewing or enlarging a board image does not assign it yet.
+- **Scope:** Nancy/Song actual Dreams, four fresh eligible decoys, shuffle, exposure updates, and a development control to advance from Day 1 preparation to Day 2 guessing. Render one round workspace; assignment behavior is covered by Milestone 8.
+- **Completion:** Day 1 shows no friend guessing prompts. The development “Next day” action becomes available only after all six choices and opens Day 2. Six distinct images include both targets and no Charlie Dream or answer styling. Decoys were unseen by Charlie. Rerendering does not regenerate the board. Insufficient candidates fail without weakening eligibility. Viewing or enlarging a board image does not commit an assignment.
+- **Implementation:** A top-right “Dev · Day 1” control offers “Next day” once preparation is complete. It opens Day 2 with Nancy's individual prompt. A pure board builder takes Nancy's and Song's actual Dreams for the first hidden-order concept, adds four distinct unallocated cards unseen by Charlie, shuffles, and records all six as exposed only to Charlie. Decoys stay unallocated; exposure excludes them from Charlie's later eligible pool. The board and its stable round ID are stored on entry, with a pure local reducer rejecting repeated entry and stale selection. The view receives the current concept, uniform card metadata, friend identities, and player-chosen locks, without actual ownership or correctness. Optional inspection and return navigation preserve card order. The requested assignment flow is recorded under Milestone 8; reveal, scoring, and full-week progression are recorded under Milestones 9–10.
+- **Validation:** TypeScript checks, production build, and all 30 tests passed. New tests cover actual targets, Charlie exclusion, private exposure, strict eligibility, duplicate/seen/invalid candidates, exhaustion, reproducible shuffling, atomic failures, repeated/stale entry, and presentation data without answers. Headless Edge rechecked all six preparation choices and completion, then the board at 320, 375, 390, 430, 768, and 1440 CSS-pixel widths. Keyboard/touch inspection, Escape/focus return, entry focus, double activation, no Charlie hand images, and stable return navigation passed without runtime errors or horizontal overflow. Phone and desktop board screenshots were visually reviewed.
 
 ### 8. Assignment locking
 
+- **Status:** Implemented at the user's request for Nancy-then-Song guessing; awaiting user testing alongside the requested full-week flow.
 - **Goal:** Associate different images with Nancy and Song.
 - **Scope:** Sequential friend prompts and inline confirmation in the same round workspace, committed assignments, locked presentation, and a ready-for-reveal phase after both guesses. Enlargement stays optional.
 - **Completion:** Nancy's committed card is unavailable for Song; core rules reject duplicate assignments too. Song's prompt replaces Nancy's in place while the same board and locks remain. No correctness appears until both guesses are complete. No separate navigation or modal is required to commit each assignment.
+- **Implementation:** Each guessing day begins with “Nancy dreamt of [concept]. What did their dream look like?” Marking a card and confirming “Remember Nancy’s dream” locks it and changes the prompt to Song's for the same concept. Gender-neutral “their” is used for all friends. Locked cards remain inspectable but cannot be selected again. A pure assignment transition rejects out-of-order, duplicate, own-player, off-board, and completed guesses. The local reducer guards stale round actions and stores an explicit ready-for-reveal phase after Song's confirmation. Both locks and board order survive navigation; correctness and scores remain hidden until the reveal action.
+- **Validation of revised Milestones 7–8:** Build and TypeScript checks plus all 35 tests passed. Rule tests cover sequential assignments, immutable board order, invalid/duplicate/stale actions, lock preservation, and completion without answers. Headless Edge verified the Day 1 boundary, disabled early day advance, Day 2 entry, Nancy-to-Song prompts without remounting the board, keyboard/touch selection, optional inspection including locked cards, focus, double activation, navigation persistence, and both locked guesses. Preparation, Nancy, Song, and completed-guess layouts passed at six phone/tablet/desktop widths with no runtime errors or horizontal overflow. Phone and desktop screenshots were visually reviewed.
 
 ### 9. Reveal and scoring
 
+- **Status:** Implemented as part of the user's request to test the full week; awaiting user testing and approval.
 - **Goal:** Reveal answers and award simple points.
 - **Scope:** After all assignments, show chosen/actual cards and results in the same round workspace; separate +1-per-correct scoring function. No intermediate correctness feedback or per-friend reveal pages.
 - **Completion:** Zero, one, and two correct answers produce 0, 1, and 2 points. Repeated reveal cannot score twice. Results do not rely solely on color.
+- **Implementation:** “Reveal their dreams” appears only after both assignments. A pure scoring function validates complete, distinct guesses and awards +1 per match. The reducer stores each result once, with round IDs guarding repeated/stale events. Only the revealed view receives actual answers. Both friends' chosen/actual image pairs, textual results, round points, and accumulated score appear in the same workspace.
+- **Validation:** All 40 tests and the build/type checks passed. New tests cover 0/1/2-point rounds, incomplete/duplicate/invalid guesses, early reveal, exactly-once scoring, stale actions, and reveal metadata. Browser checks compare displayed guesses and answers against correctness text and score totals, including double reveal and return navigation. Reveal layouts passed at all six documented sizes; phone and desktop screenshots were visually reviewed.
 
 ### 10. Local week progression and restart
 
+- **Status:** Implemented as part of the user's request to test the full week; awaiting user testing and approval before Milestone 11.
 - **Goal:** Exercise all six concepts without a calendar.
-- **Scope:** A deliberate next-round action in the existing workspace, manual progression in hidden round order, Charlie's accumulated score, “The dream fades,” explicit fresh-state restart. Keep calendar scheduling excluded.
+- **Scope:** Extend the development day control beyond the existing Day 1-to-Day 2 transition, advancing to later rounds in hidden order only after the current reveal. Keep the existing workspace, Charlie's accumulated score, “The dream fades,” and explicit fresh-state restart. Keep calendar scheduling excluded.
 - **Completion:** Six rounds complete; Charlie's score is 0–12. Restart clears hands, selections, boards, exposure, assignments, and scores. Do not fabricate friends' standings or a competitive winner; these require more simulation later.
+- **Implementation:** Day 1 prepares the week; test Days 2–7 each use the next hidden-order concept. “Next day” is enabled after the current reveal, and “Finish week” replaces it for the final day. Each new board gets a distinct round ID and four fresh eligible decoys; exposure and accumulated results persist while assignments reset. “The dream fades.” shows Charlie's total out of 12. “Begin a new week” creates a new week ID, fresh allocations and simulated Dreams, clears Charlie's choices/exposure and all boards/results, and returns to Day 1. No friend standings, real scheduling, or skipped-round scoring rules were introduced.
+- **Validation:** All 40 tests and the build/type checks passed. A complete six-round rule test verifies hidden order, 24 distinct unseen decoys, 12-point maximum, retained hands/Dreams, guarded advancement, and fresh restart. Further tests cover later-day exhaustion and invalid indices. Headless Edge played all six rounds with 36 distinct board images, checked reveal totals and duplicate actions, finished Day 7, and restarted on Day 1. Preparation, guessing, reveal, and ending layouts passed at six phone/tablet/desktop widths; no runtime errors were reported.
 
 ### 11. Responsive and accessibility polish
 

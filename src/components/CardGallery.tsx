@@ -4,11 +4,17 @@ import type { Card, CardId } from '../game/types.ts'
 interface CardGalleryProps {
   cards: readonly Card[]
   onChoose?: (cardId: CardId) => void
+  label?: string
+  choiceKey?: string
+  confirmLabel?: string
+  locks?: ReadonlyMap<CardId, string>
 }
 
-export default function CardGallery({ cards, onChoose }: CardGalleryProps) {
+export default function CardGallery({ cards, onChoose, label = 'Your six image cards', choiceKey,
+  confirmLabel = 'Remember this dream', locks }: CardGalleryProps) {
   const [inspected, setInspected] = useState<Card | null>(null)
-  const [selected, setSelected] = useState<Card | null>(null)
+  const [choice, setChoice] = useState<{ card: Card; key: string | undefined } | null>(null)
+  const selected = choice?.key === choiceKey && choice && !locks?.has(choice.card.id) ? choice.card : null
   const dialog = useRef<HTMLDialogElement>(null)
   const returnButton = useRef<HTMLButtonElement>(null)
   const opener = useRef<HTMLButtonElement | null>(null)
@@ -17,7 +23,7 @@ export default function CardGallery({ cards, onChoose }: CardGalleryProps) {
   useEffect(() => {
     // A rejected commitment rerenders the hand and permits a deliberate retry.
     committed.current = false
-  }, [cards])
+  }, [cards, choiceKey])
 
   useEffect(() => {
     if (inspected && dialog.current && !dialog.current.open) {
@@ -28,21 +34,22 @@ export default function CardGallery({ cards, onChoose }: CardGalleryProps) {
 
   return (
     <>
-      <ul className="card-gallery" aria-label="Your six image cards">
+      <ul className="card-gallery" aria-label={label}>
         {cards.map((card) => (
           <li key={card.id}>
             <button
               className="card-preview"
-              aria-label={`${onChoose ? 'Choose' : 'Look closer'}: ${card.description}`}
-              aria-pressed={onChoose ? selected?.id === card.id : undefined}
+              aria-label={`${onChoose && !locks?.has(card.id) ? 'Choose' : 'Look closer'}: ${card.description}${locks?.has(card.id) ? ` Your guess for ${locks.get(card.id)}, locked.` : ''}`}
+              aria-pressed={onChoose && !locks?.has(card.id) ? selected?.id === card.id : undefined}
               onClick={(event) => {
                 opener.current = event.currentTarget
-                if (onChoose) setSelected(card)
+                if (onChoose && !locks?.has(card.id)) setChoice({ card, key: choiceKey })
                 else setInspected(card)
               }}
             >
               <img src={card.artwork} alt={card.description} width="320" height="400" />
               {onChoose && selected?.id === card.id && <span className="chosen-marker">Chosen</span>}
+              {locks?.has(card.id) && <span className="locked-marker">{locks.get(card.id)} · Locked</span>}
             </button>
           </li>
         ))}
@@ -57,7 +64,7 @@ export default function CardGallery({ cards, onChoose }: CardGalleryProps) {
               committed.current = true
               onChoose(selected.id)
             }}
-          >Remember this dream</button>
+          >{confirmLabel}</button>
           {selected && (
             <button className="text-button" onClick={(event) => {
               opener.current = event.currentTarget

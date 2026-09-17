@@ -43,6 +43,10 @@ Weekly preparation uses one continuous page: the week's six concepts, the curren
 
 Quietly narrate entering, experiencing, and remembering Dreams. Use short, understandable, elegant phrases. Do not stack metaphors or turn instructions into riddles. Essential errors may be direct, such as “That dream is already assigned.”
 
+Day 1 ends with the preparation completion state; do not show friends' guessing prompts that day. Keep the development-only day control small and in the top right. From Day 2, show one friend's prompt at a time. Confirming Nancy's guess changes the prompt to Song's for the same concept, preserves all six images in their positions, and labels Nancy's committed guess as locked. These labels describe the player's guesses, never the true image owners. Use gender-neutral “their” in the question for every friend.
+
+After both guesses, “Reveal their dreams” shows both friends' results together in the current workspace. Pair “Your guess” with “Their Dream”; describe correctness in text and show +1 or 0 points. Keep the week's score in reveal and ending views. The development control advances through all six rounds and finishes with “The dream fades.” and “Begin a new week.”
+
 | Moment | Preferred language |
 | --- | --- |
 | Beginning | “A new Dreamerie begins.” |
@@ -50,8 +54,8 @@ Quietly narrate entering, experiencing, and remembering Dreams. Use short, under
 | Selection | “You dream of TIME. What does it look like?” |
 | Choice remembered | “Your dream is remembered.” |
 | Setup complete | “Your dreams are remembered.” |
-| Guess Nancy | “Nancy dreamt of TIME. Which dream do you think was hers?” |
-| Guess Song | “Song dreamt of TIME. Which dream do you think was his?” |
+| Guess Nancy | “Nancy dreamt of FREEDOM. What did their dream look like?” |
+| Guess Song | “Song dreamt of FREEDOM. What did their dream look like?” |
 | Correct reveal | “You remembered.” |
 | Incorrect reveal | “The dream escaped you.” |
 | Waiting, when relevant | “The others are still dreaming.” |

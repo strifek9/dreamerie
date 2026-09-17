@@ -4,9 +4,10 @@ import type { Card } from '../game/types.ts'
 
 interface DreamSelectionCompleteProps {
   remainingHand: readonly Card[]
+  error: string | null
 }
 
-export default function DreamSelectionComplete({ remainingHand }: DreamSelectionCompleteProps) {
+export default function DreamSelectionComplete({ remainingHand, error }: DreamSelectionCompleteProps) {
   const heading = useRef<HTMLHeadingElement>(null)
 
   useEffect(() => {
@@ -21,6 +22,8 @@ export default function DreamSelectionComplete({ remainingHand }: DreamSelection
         Your dreams are remembered.
       </h2>
       <p className="invitation">Six Dreams, each your own.</p>
+      <p className="gallery-hint">Rest here. Your friends’ dreams arrive tomorrow.</p>
+      {error && <p className="selection-error" role="alert">{error}</p>}
       <p className="gallery-hint">You can still wander through the images left in your hand.</p>
       <CardGallery cards={remainingHand} />
     </section>

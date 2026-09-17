@@ -241,6 +241,25 @@ button:disabled { opacity: 0.5; cursor: default; }
 }
 
 .selection-complete h2:focus { outline: none; }
+.masthead { display: flex; align-items: start; justify-content: space-between; gap: 1rem; }
+.dev-day-controls { display: flex; flex-direction: column; align-items: flex-end; gap: 0.4rem; font: 0.75rem/1.5 system-ui, sans-serif; color: #b8b5bf; }
+.dev-day-controls .quiet-button { font-size: 0.75rem; padding: 0.5rem 0.75rem; }
+.guessing-page .gallery-heading h1 { max-width: 23ch; }
+.locked-marker { display: block; padding: 0.5rem; color: #eee7d9; background: #191d29; font-size: 0.875rem; line-height: 1.5; }
+.round-results { display: grid; gap: 2.5rem; margin-top: 2rem; }
+.friend-result h2 { margin: 0 0 0.5rem; font-weight: 400; }
+.result-message { color: #c9c3b9; line-height: 1.6; }
+.result-message span { display: block; font-size: 0.875rem; }
+.reveal-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.875rem; margin-top: 1rem; }
+.reveal-pair figure { margin: 0; }
+.reveal-pair figcaption { margin-bottom: 0.5rem; font-size: 0.875rem; color: #b8b5bf; }
+.reveal-pair img { display: block; width: 100%; height: auto; border: 1px solid #77717e; border-radius: 6px; }
+.week-score { margin-top: 1rem; color: #c9c3b9; line-height: 1.6; }
+.reveal-dreams, .restart-week { margin-top: 1.5rem; }
+.week-complete h1:focus { outline: none; }
+@media (min-width: 48rem) { .round-results { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.guessing-page h1 { scroll-margin-top: 1.5rem; }
+.guessing-page h1:focus { outline: none; }
 .selection-complete .invitation { margin-inline: auto; }
 .selection-complete .gallery-hint { max-width: 38ch; margin-inline: auto; }
 .completion-mark { display: block; margin-bottom: 1rem; color: #e3cba2; font-size: 2rem; line-height: 1; }

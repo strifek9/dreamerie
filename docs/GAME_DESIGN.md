@@ -18,6 +18,7 @@ Dreamerie is standalone, asynchronous, and mobile-first for mobile and desktop w
 - Show all six at the beginning: “This week, you will dream of...”
 - Daily order is randomized and hidden. The visible concept list must not disclose the daily schedule.
 - Players prepare images before the relevant daily guessing/reveal cycle. Exact calendar boundaries and deadlines remain unresolved.
+- Day 1 is for preparing Dreams. Friends' guessing prompts begin on Day 2, rather than immediately after the final preparation choice. The prototype advances days manually; this does not establish production deadlines or timezone rules.
 
 ### Hands and selection
 
@@ -39,6 +40,7 @@ Prototype 0.1 resets cards without a player-facing Dream History feature.
 - The stated guessing experience displays six images: relevant friends' actual Dreams plus enough decoys to fill the board.
 - For Charlie guessing TIME, include Nancy's TIME Dream, Song's TIME Dream, and four decoys. Exclude Charlie's own Dream.
 - Assign one image to each required other player. A committed image is locked and cannot be assigned to another player.
+- Prompt for one friend at a time on the same board: Nancy first, then Song for the same concept after Nancy's guess is confirmed.
 - Do not reveal correctness after an individual guess. Reveal only after all required assignments are complete, then calculate the score.
 - A six-card board cannot contain more than six other players' distinct Dreams. Larger-group behavior is unresolved; do not infer a confirmed group-size cap.
 
@@ -62,8 +64,8 @@ These choices support a small local demonstration and must be revisited before p
 | --- | --- |
 | Players | Charlie is the human; Nancy and Song are simulated. No login or group creation. |
 | Concepts | Use the six example concepts as fixtures. Setup/display order is separate from the hidden shuffled round order. |
-| Progression | Explicit local progression through selection, guessing, reveal, and the next round. No wall-clock waits, timezone policy, or scheduling service. |
-| Week demonstration | Demonstrate one complete guessing round, then extend to all six rounds and Charlie's accumulated score. Initially do not simulate Nancy/Song guesses or standings. |
+| Progression | Day 1 is preparation only. A top-right development “Next day” control advances to Day 2 once all six choices are complete. Days 2–7 demonstrate the six concepts in hidden order, with Nancy's prompt then Song's on each board. Both guesses and an explicit reveal are required before advancing. After the sixth reveal, “Finish week” shows Charlie's total and “Begin a new week” resets the demonstration. These are local test-day labels, not production scheduling rules. No wall-clock waits, timezone policy, or scheduling service. |
+| Week demonstration | Demonstrate all six guessing rounds and Charlie's accumulated score. Do not simulate Nancy/Song guesses or standings. |
 | Friends' selections | Use the same allocation/selection rules as Charlie, avoiding hardcoded overlapping cards. At local week initialization, Nancy and Song randomly choose valid cards from their current hands for all six concepts. These reproducible fixture choices do not model personal interpretations; their Dreams remain hidden during Charlie's preparation. |
 | Allocation | Reserve every card dealt to a player, including replacement draws, in a shared per-week pool. Never return a reserved card to that week's deal pool. |
 | Decoys | Use distinct unallocated cards unseen by Charlie that week; exclude all players' dealt/reserved cards. Track images shown in hands and boards. Provision enough fresh decoys for every round; do not fall back to known images. |
