@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 400" style="--night:#283e40;--mist:#8da79a;--light:#e1cfaa">
+  <rect width="320" height="400" fill="var(--night)"/>
+  <circle cx="44" cy="116" r="1.5" fill="var(--light)" opacity=".55"/><circle cx="87" cy="47" r="1" fill="var(--light)" opacity=".55"/><circle cx="130" cy="78" r="1.5" fill="var(--light)" opacity=".55"/><circle cx="173" cy="109" r="1" fill="var(--light)" opacity=".55"/><circle cx="216" cy="40" r="1.5" fill="var(--light)" opacity=".55"/><circle cx="259" cy="71" r="1" fill="var(--light)" opacity=".55"/><circle cx="32" cy="102" r="1.5" fill="var(--light)" opacity=".55"/><circle cx="75" cy="33" r="1" fill="var(--light)" opacity=".55"/><circle cx="118" cy="64" r="1.5" fill="var(--light)" opacity=".55"/>
+  <g stroke="var(--light)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M117 213v-100h64v100M110 213h90v18h-90zM120 231v48M185 231v48" fill="none" stroke-width="4"/><path d="M72 279h180l-25 20H95z" fill="var(--mist)"/><path d="M106 297l-55 60" fill="none" stroke-width="2"/><path d="M157 297l0 60" fill="none" stroke-width="3"/><path d="M208 297l55 60" fill="none" stroke-width="4"/><circle cx="112" cy="70" r="14" fill="var(--light)"/></g>
+  <path d="M20 368q70 -14 140 0t140 0M20 378q70 -14 140 0t140 0" fill="none" stroke="var(--mist)" opacity=".5"/>
+</svg>

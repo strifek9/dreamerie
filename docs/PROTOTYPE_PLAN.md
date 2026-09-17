@@ -4,7 +4,7 @@
 
 Inspection found one tracked minimal README, one initial commit, a clean working tree, and no application, tooling, assets, or existing architecture. This task creates documentation only. Bootstrap happens in a later implementation task.
 
-The paragraph above records the initial planning inspection. Milestone 1 has since been implemented; see its status below and the README for current run instructions. All later milestones remain incomplete.
+The paragraph above records the initial planning inspection. Milestone 1 is approved and Milestone 2 is implemented, awaiting user testing. See their statuses below and the README for current run instructions. Milestones 3–12 remain incomplete.
 
 Build a local React + TypeScript + Vite browser game, mobile-first and responsive. Demonstrate Charlie choosing six Dreams and recognizing Nancy/Song Dreams using placeholder artwork. Follow [GAME_DESIGN.md](GAME_DESIGN.md), including its explicitly labeled prototype assumptions.
 
@@ -41,7 +41,7 @@ Each milestone leaves a checkable local result. Selection and replacement are on
 
 ### 1. Bootstrap and mobile shell
 
-- **Status:** Implemented; awaiting user testing and approval before Milestone 2.
+- **Status:** Approved by the user; proceeding to Milestone 2 was authorized.
 - **Goal:** Establish a runnable local browser project.
 - **Scope:** Vite, React, TypeScript, minimal Dreamerie shell, mobile-first styles; document actual install/dev/build commands.
 - **Completion:** Shell runs locally, type/build checks pass, and phone/desktop layouts have no horizontal overflow. No excluded integrations.
@@ -49,9 +49,12 @@ Each milestone leaves a checkable local result. Selection and replacement are on
 
 ### 2. Fixtures and card allocation
 
+- **Status:** Implemented; awaiting user testing and approval before Milestone 3.
 - **Goal:** Establish reliable data and unique hands.
 - **Scope:** Stable domain IDs, six concepts, three players, sufficient local placeholder cards, shared week pool, six-card dealing, exposure tracking.
 - **Completion:** Each initial hand has six distinct cards with no player overlap. Exhaustion fails clearly without partial dealing. A simple gallery permits fixture inspection.
+- **Implementation:** Stable domain IDs, six concept fixtures, Charlie/Nancy/Song, 60 original local SVG fixtures with documented provenance, pure atomic dealing, and immutable per-player exposure updates. Only Charlie's six cards appear in the gallery. Inspection is separate from selection and does not expose friends' hands or the unused pool. No later-milestone gameplay was implemented.
+- **Validation:** TypeScript checks, production build, and seven Node built-in tests passed. Tests cover unique/disjoint hands and pool, private exposure, exhaustion before allocation, duplicate IDs, invalid randomness, reproducibility, and all 60 asset files. Headless Edge checked six phone/tablet/desktop viewports, loaded images, keyboard opening, Escape closure, focus return, and stable hands across inspection/navigation. Phone and desktop screenshots were visually reviewed.
 
 ### 3. Weekly introduction and hidden order
 

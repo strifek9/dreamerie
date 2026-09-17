@@ -149,3 +149,115 @@ h1 {
     font-size: 1.25rem;
   }
 }
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+button:focus-visible {
+  outline: 2px solid #e3cba2;
+  outline-offset: 5px;
+}
+
+.quiet-button {
+  min-height: 44px;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid #77717e;
+  border-radius: 4px;
+  color: #eee7d9;
+  background: transparent;
+  line-height: 1.5;
+}
+
+.enter-gallery {
+  margin-top: 1.5rem;
+}
+
+.gallery-page {
+  flex: 1;
+  width: 100%;
+  max-width: 54rem;
+  margin: 0 auto;
+  padding-block: 2.5rem;
+  text-align: center;
+}
+
+.gallery-heading h1,
+.gallery-heading .invitation {
+  margin-inline: auto;
+}
+
+.gallery-heading h1 {
+  font-size: clamp(2rem, 6vw, 3rem);
+}
+
+.gallery-heading .invitation {
+  margin-top: 1rem;
+}
+
+.gallery-hint,
+.gallery-note {
+  color: #b8b5bf;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.gallery-hint { margin-top: 0.5rem; }
+.gallery-note { margin-block: 1.5rem; }
+
+.card-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.875rem;
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card-preview {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 1px solid #77717e;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #273344;
+}
+
+.card-preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.artwork-dialog {
+  width: min(90vw, 26rem);
+  max-height: 90vh;
+  max-height: 90svh;
+  padding: 1rem;
+  border: 1px solid #77717e;
+  border-radius: 6px;
+  color: #eee7d9;
+  background: #191d29;
+  text-align: center;
+}
+
+.artwork-dialog::backdrop { background: rgb(10 12 19 / 85%); }
+
+.artwork-dialog img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 65vh;
+  max-height: 65svh;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 48rem) {
+  .card-gallery {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+}

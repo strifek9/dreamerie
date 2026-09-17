@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 400" style="--night:#30374e;--mist:#8c96b2;--light:#e3cba2">
+  <rect width="320" height="400" fill="var(--night)"/>
+  <circle cx="44" cy="42" r="1.5" fill="var(--light)" opacity=".55"/><circle cx="87" cy="73" r="1" fill="var(--light)" opacity=".55"/><circle cx="130" cy="104" r="1.5" fill="var(--light)" opacity=".55"/><circle cx="173" cy="35" r="1" fill="var(--light)" opacity=".55"/><circle cx="216" cy="66" r="1.5" fill="var(--light)" opacity=".55"/><circle cx="259" cy="97" r="1" fill="var(--light)" opacity=".55"/><circle cx="32" cy="28" r="1.5" fill="var(--light)" opacity=".55"/><circle cx="75" cy="59" r="1" fill="var(--light)" opacity=".55"/><circle cx="118" cy="90" r="1.5" fill="var(--light)" opacity=".55"/>
+  <g stroke="var(--light)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M92 52v190M228 52v190M82 242h156v13H82z" fill="none" stroke-width="3"/><circle cx="110" cy="224" r="10" fill="var(--light)"/><circle cx="162" cy="212" r="13" fill="var(--light)"/><path d="M68 340l60 -50 25 20 35 -55 66 85z" fill="var(--mist)"/></g>
+  <path d="M20 368q70 -14 140 0t140 0M20 378q70 -14 140 0t140 0" fill="none" stroke="var(--mist)" opacity=".5"/>
+</svg>

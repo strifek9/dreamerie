@@ -8,7 +8,7 @@ The product is mobile-first and responsive for mobile and desktop web. Artwork l
 
 ## Current status
 
-Milestone 1 is implemented and awaiting user testing and approval: React + TypeScript + Vite now runs a minimal, mobile-first Dreamerie introduction. The repository initially contained only documentation. Card fixtures and gameplay have not been implemented yet.
+Milestone 1 is approved. Milestone 2 is implemented and awaiting user testing: the introduction now opens a gallery of Charlie's six cards. A shared pool of 60 local SVG placeholders supplies unique hands for Charlie, Nancy, and Song, with independent per-player exposure tracking. Nancy's and Song's cards remain hidden. Dream selection, guessing, and scoring are not implemented yet.
 
 Prototype 0.1 uses **React, TypeScript, and Vite**. Later milestones will add local Dream selection and guessing, with Charlie as the human and Nancy and Song as simulated players, temporary placeholder artwork, and +1 point per correctly identified Dream.
 
@@ -21,15 +21,18 @@ npm ci
 npm run dev
 ```
 
-Open the local URL printed in the terminal, normally `http://127.0.0.1:5173/`. Press Ctrl+C to stop the server. The current screen is an introduction only; there are no gameplay controls yet.
+Open the local URL printed in the terminal, normally `http://127.0.0.1:5173/`. Press Ctrl+C to stop the server. Choose **Enter the gallery**, then tap a card to enlarge it. Close with **Return to your cards** or Escape. Inspection does not select a Dream or change your hand. Returning to the introduction preserves the hand; refreshing creates a new local deal.
 
 ```powershell
 npm run typecheck
+npm test
 npm run build
 npm run preview
 ```
 
-The build includes TypeScript checks and writes production assets to `dist/`. Preview serves that build locally. There is no automated unit-test suite yet; meaningful game-rule tests will be added alongside gameplay. Milestone 1 was checked in headless Edge at 320, 375, 390, 430, 768, and 1440 CSS-pixel widths, with no horizontal overflow, clipped text, or browser runtime errors.
+The build includes TypeScript checks and writes production assets to `dist/`. Preview serves that build locally. Tests use Node's built-in runner and TypeScript stripping, with no added test dependency. Seven tests cover fixtures, unique dealing, exhaustion, invalid input, reproducibility, and exposure. The gallery was checked in headless Edge at 320, 375, 390, 430, 768, and 1440 CSS-pixel widths, including keyboard inspection, Escape, focus return, and unchanged hands.
+
+Temporary artwork is original code-authored SVG geometry, not AI-generated images. See [artwork provenance and regeneration](public/artwork/README.md); it is a fixture collection rather than the final visual identity.
 
 ## Documentation
 
