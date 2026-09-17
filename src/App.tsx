@@ -1,5 +1,5 @@
 import { useReducer, useState } from 'react'
-import CardGallery from './components/CardGallery'
+import DreamSelectionComplete from './components/DreamSelectionComplete'
 import DreamWeekIntroduction from './components/DreamWeekIntroduction'
 import DreamSelection from './components/DreamSelection'
 import { cards } from './data/cards'
@@ -61,10 +61,7 @@ export default function App() {
           onChoose={(cardId) => commit({ conceptId: currentConcept.id, cardId })}
         />
         ) : (
-          <section>
-          <p className="gallery-note">All six Dreams are chosen.</p>
-          <CardGallery cards={hand} />
-          </section>
+          <DreamSelectionComplete remainingHand={hand} />
         )}
         </DreamWeekIntroduction>
       ) : (

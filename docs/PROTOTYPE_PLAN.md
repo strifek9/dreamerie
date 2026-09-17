@@ -4,7 +4,7 @@
 
 Inspection found one tracked minimal README, one initial commit, a clean working tree, and no application, tooling, assets, or existing architecture. This task creates documentation only. Bootstrap happens in a later implementation task.
 
-The paragraph above records the initial planning inspection. Milestones 1–3 are approved; Milestone 4 is implemented, awaiting user testing. See their statuses below and the README for current run instructions. Milestones 5–12 remain incomplete.
+The paragraph above records the initial planning inspection. Milestones 1–4 are approved; Milestone 5 is implemented, awaiting user testing. See their statuses below and the README for current run instructions. Milestones 6–12 remain incomplete.
 
 Build a local React + TypeScript + Vite browser game, mobile-first and responsive. Demonstrate Charlie choosing six Dreams and recognizing Nancy/Song Dreams using placeholder artwork. Follow [GAME_DESIGN.md](GAME_DESIGN.md), including its explicitly labeled prototype assumptions.
 
@@ -69,7 +69,7 @@ The continuous preparation flow is now the presentation direction: overview, cur
 
 ### 4. Selection and replacement
 
-- **Status:** Implemented; awaiting user testing and approval before Milestone 5.
+- **Status:** Approved by the user; proceeding to Milestone 5 was authorized.
 - **Goal:** Choose a Dream while maintaining a six-card hand.
 - **Scope:** Concept prompt, selectable hand, commitment, reserve chosen card, draw replacement, advance setup concept.
 - **Completion:** A valid choice is recorded once, removed, and replaced by an unallocated card. Hands stay disjoint. Invalid/double actions or exhaustion leave state unchanged. Tap/keyboard actions work.
@@ -79,9 +79,12 @@ The continuous preparation flow is now the presentation direction: overview, cur
 
 ### 5. Selection completion
 
+- **Status:** Implemented; awaiting user testing and approval before Milestone 6.
 - **Goal:** Give the already-working six-choice sequence an atmospheric ending.
 - **Scope:** Replace the minimal end-of-selection note with “Your dreams are remembered.” in the same preparation page. Do not rebuild selection or add another required navigation step. Handle focus and remove obsolete choice controls.
 - **Completion:** After the sixth confirmation, Charlie has six distinct selected Dreams and six cards left in hand, including the final replacement. The completion state appears in place, offers no seventh choice, and survives returning to the beginning. Do not add guessing controls before the required later milestones supply that experience.
+- **Implementation:** A small presentation component replaces the temporary note with “Your dreams are remembered.” and focuses/scrolls to that heading. The weekly overview and preparation page stay mounted. The remaining six-card hand is clearly identified and permits inspection only; selection controls and stale selection feedback are removed. No game-rule changes, new dependencies, simulated selections, or guessing controls.
+- **Validation:** TypeScript checks, production build, and all 17 existing rule tests passed. Headless Edge exercised six choices with same-slot replacements and checked completion focus, removal of choice controls, no seventh choice, and preservation of completion/hand after returning to the beginning. Completion layouts and keyboard inspection/Escape/focus return passed at all six documented widths; phone and desktop screenshots were visually inspected. No browser runtime errors were reported.
 
 ### 6. Simulated friends' Dreams
 

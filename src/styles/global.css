@@ -230,6 +230,21 @@ button:focus-visible {
 .inline-choice .remember-dream { margin-bottom: 0; }
 button:disabled { opacity: 0.5; cursor: default; }
 
+.selection-complete h2 {
+  max-width: 18ch;
+  margin: 0 auto;
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: 400;
+  line-height: 1.2;
+  text-wrap: balance;
+  scroll-margin-top: 1.5rem;
+}
+
+.selection-complete h2:focus { outline: none; }
+.selection-complete .invitation { margin-inline: auto; }
+.selection-complete .gallery-hint { max-width: 38ch; margin-inline: auto; }
+.completion-mark { display: block; margin-bottom: 1rem; color: #e3cba2; font-size: 2rem; line-height: 1; }
+
 .gallery-page {
   flex: 1;
   width: 100%;
