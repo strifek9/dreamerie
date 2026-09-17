@@ -6,7 +6,7 @@
 
 Inspection found one tracked minimal README, one initial commit, a clean working tree, and no application, tooling, assets, or existing architecture. This task creates documentation only. Bootstrap happens in a later implementation task.
 
-The paragraph above records the initial planning inspection. Milestones 1–6 are approved. Milestones 7–8 include the requested Day 1/Day 2 boundary and sequential Nancy/Song choices. The user's request to test the full week also authorized Milestones 9–10: reveal, scoring, all six rounds, ending, and restart. Milestones 7–10 are implemented, and the user approved proceeding to Milestone 11. See their statuses below and the README for current run instructions. Milestone 11 is approved. Milestone 12 is implemented and awaiting user testing; all planned milestones are implemented, with final prototype acceptance still pending.
+The paragraph above records the initial planning inspection. All 12 milestones are implemented and approved. The user completed the final full-week playtest and approved Prototype 0.1, including the personal-clue experiment, recognition scoring and subsequent presentation refinements. Historical validation and handoff notes below retain the status at the time; this final acceptance supersedes their pending-testing statements. See the README for current run instructions. Agree on the scope of a real-person playtest before further implementation; acceptance does not authorize new milestones or infrastructure.
 
 Build a local React + TypeScript + Vite browser game, mobile-first and responsive. Demonstrate Charlie choosing six Dreams and recognizing Nancy/Song Dreams using local artwork. The user has requested a visual refresh with 120 generated illustrations before the remaining polish milestones. Follow [GAME_DESIGN.md](GAME_DESIGN.md), including its explicitly labeled prototype assumptions.
 
@@ -170,7 +170,7 @@ The latest user-requested revisions to this flow allow unselecting tentative cho
 
 ### 12. Gentle transitions
 
-- **Status:** Implemented and validated; awaiting user testing and approval. Stop here for final Prototype 0.1 acceptance.
+- **Status:** Implemented, validated and approved by the user after the final full-week playtest. Prototype 0.1 is complete.
 - **Goal:** Add atmosphere after gameplay works.
 - **Scope:** Restrained opacity/color changes for in-place prompts, replacements and reveals, with reduced-motion support. Preserve the stationary card positions established in Milestone 11; no translation, resizing or grid reflow. Avoid introducing page transitions or animation dependencies without clear need.
 - **Completion:** Transitions preserve state/focus, reject duplicate actions, and do not reveal early or delay essential input. Reduced-motion mode remains playable.

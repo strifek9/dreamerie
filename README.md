@@ -22,7 +22,7 @@ In this mode, each correct guess earns you 1 point. You also earn 1 point for ea
 
 Milestones 1–6 are approved. Milestones 7–10, including the requested full-week test flow, are implemented, and the user approved proceeding to Milestone 11. Day 1 is preparation; the top-right development control advances through six guessing days. Each day has Nancy's prompt followed by Song's on one stable board, locked guesses, an explicit reveal, and +1 point per correct answer. After Day 7, finish the week to see Charlie's total and begin a fresh week. Nancy's and Song's random valid choices are local fixtures, not a model of personal interpretation.
 
-Prototype 0.1 uses **React, TypeScript, and Vite**. Charlie is the human; Nancy and Song are simulated players. The complete local week is playable. Milestone 11 responsive/accessibility polish is approved. Milestone 12 gentle transitions is implemented and awaiting user testing. All planned Prototype 0.1 milestones are now implemented; final acceptance remains with the user.
+Prototype 0.1 uses **React, TypeScript, and Vite**. Charlie is the human; Nancy and Song are simulated players. All 12 planned milestones and the subsequent personal-clue, scoring and presentation refinements are implemented. The user completed the final full-week playtest and approved Prototype 0.1. The next step is to agree on the scope of a real-person playtest; further implementation is not yet authorized.
 
 The latest requested revisions add clearing/unlocking guesses before reveal, Charlie's own Dream in the first board slot, and a complete end-of-week recap. The “Return to the beginning” controls have been removed. The user approved moving on to the responsive polish step.
 
