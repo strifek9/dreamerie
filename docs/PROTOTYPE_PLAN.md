@@ -4,6 +4,8 @@
 
 Inspection found one tracked minimal README, one initial commit, a clean working tree, and no application, tooling, assets, or existing architecture. This task creates documentation only. Bootstrap happens in a later implementation task.
 
+The paragraph above records the initial planning inspection. Milestone 1 has since been implemented; see its status below and the README for current run instructions. All later milestones remain incomplete.
+
 Build a local React + TypeScript + Vite browser game, mobile-first and responsive. Demonstrate Charlie choosing six Dreams and recognizing Nancy/Song Dreams using placeholder artwork. Follow [GAME_DESIGN.md](GAME_DESIGN.md), including its explicitly labeled prototype assumptions.
 
 No authentication, backend, PostgreSQL, cloud storage, Discord code, push notifications, matchmaking, monetization, AI artwork generation, production scheduling, real multiplayer networking, or native apps. Do not expand scope to resolve open production questions.
@@ -39,9 +41,11 @@ Each milestone leaves a checkable local result. Selection and replacement are on
 
 ### 1. Bootstrap and mobile shell
 
+- **Status:** Implemented; awaiting user testing and approval before Milestone 2.
 - **Goal:** Establish a runnable local browser project.
 - **Scope:** Vite, React, TypeScript, minimal Dreamerie shell, mobile-first styles; document actual install/dev/build commands.
 - **Completion:** Shell runs locally, type/build checks pass, and phone/desktop layouts have no horizontal overflow. No excluded integrations.
+- **Validation:** `npm run typecheck` and `npm run build` passed; the dev server started successfully. Headless Edge checks passed at 320×568, 375×667, 390×844, 430×932, 768×1024, and 1440×900, with no horizontal overflow, clipped text, or runtime errors. Phone and desktop screenshots were visually inspected. No unit-test suite is needed for this static shell; gameplay tests remain for later milestones. No gameplay or artwork fixtures were added.
 
 ### 2. Fixtures and card allocation
 
