@@ -19,7 +19,9 @@ export default function DreamSelection({ concept, hand, error, remembered, onCho
   return (
     <section className="selection-page" aria-labelledby="dream-prompt">
       <div className="gallery-heading">
-        <h2 id="dream-prompt" ref={heading} tabIndex={-1}>You dream of <span className="dream-word">{concept.label}</span>.</h2>
+        <h2 id="dream-prompt" ref={heading} tabIndex={-1}>
+          <span key={concept.id} className="dream-prompt-text">You dream of <span className="dream-word">{concept.label}</span>.</span>
+        </h2>
         <p className="invitation">What does that look like to you?</p>
         <p className="gallery-hint">Tap to choose. Hold to look closer.</p>
       </div>

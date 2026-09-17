@@ -81,7 +81,7 @@ Avoid “These are your six words,” “Select an image for TIME,” or generic
 
 ## Animation
 
-Prototype 0.1 prioritizes gameplay. Gentle opacity or color changes and subtle reveals may later support the mood. Keep card positions and dimensions stationary during selection, deselection, replacement, locking and reveal; do not add drifting cards or transitions that reflow the grid. Avoid elaborate effects, distracting motion, mandatory waits, or obscuring locked choices. Respect reduced motion and preserve focus.
+Prototype 0.1 prioritizes gameplay. Milestone 12 uses brief 140-260ms opacity and color/shadow changes for prompts, loaded replacement artwork, selection/lock labels and explicit reveals. Keep card positions and dimensions stationary during selection, deselection, replacement, locking and reveal; do not add drifting cards or transitions that reflow the grid. Avoid elaborate effects, distracting motion, mandatory waits, or obscuring locked choices. Respect reduced motion and preserve focus. Enable effects only when the user has no reduced-motion preference; otherwise show every update immediately. Keep headings, controls and unchanged card images mounted, and never use animation completion or delays to advance gameplay or allow input.
 
 ## Local artwork and provenance
 

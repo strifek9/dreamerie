@@ -4,7 +4,7 @@
 
 Inspection found one tracked minimal README, one initial commit, a clean working tree, and no application, tooling, assets, or existing architecture. This task creates documentation only. Bootstrap happens in a later implementation task.
 
-The paragraph above records the initial planning inspection. Milestones 1–6 are approved. Milestones 7–8 include the requested Day 1/Day 2 boundary and sequential Nancy/Song choices. The user's request to test the full week also authorized Milestones 9–10: reveal, scoring, all six rounds, ending, and restart. Milestones 7–10 are implemented, and the user approved proceeding to Milestone 11. See their statuses below and the README for current run instructions. Milestone 11 is implemented and awaiting user testing; Milestone 12 remains incomplete.
+The paragraph above records the initial planning inspection. Milestones 1–6 are approved. Milestones 7–8 include the requested Day 1/Day 2 boundary and sequential Nancy/Song choices. The user's request to test the full week also authorized Milestones 9–10: reveal, scoring, all six rounds, ending, and restart. Milestones 7–10 are implemented, and the user approved proceeding to Milestone 11. See their statuses below and the README for current run instructions. Milestone 11 is approved. Milestone 12 is implemented and awaiting user testing; all planned milestones are implemented, with final prototype acceptance still pending.
 
 Build a local React + TypeScript + Vite browser game, mobile-first and responsive. Demonstrate Charlie choosing six Dreams and recognizing Nancy/Song Dreams using local artwork. The user has requested a visual refresh with 120 generated illustrations before the remaining polish milestones. Follow [GAME_DESIGN.md](GAME_DESIGN.md), including its explicitly labeled prototype assumptions.
 
@@ -155,7 +155,7 @@ The latest user-requested revisions to this flow allow unselecting tentative cho
 
 ### 11. Responsive and accessibility polish
 
-- **Status:** Implemented and validated; awaiting user testing and approval. Do not begin Milestone 12 yet.
+- **Status:** Approved by the user; proceeding to Milestone 12 was authorized.
 - **Goal:** Make artwork and primary interactions comfortable on phones.
 - **Scope:** Polish the continuous preparation and round workspaces, optional image inspection, touch targets, focus/scroll position between prompts, keyboard flow, contrast, and locked/reveal states using the refreshed illustrated theme. Include raster-image loading and long recap scrolling. The user also requested stationary cards when selecting or clearing, less scrolling, and a more dreamlike blue/purple welcome illustration and palette. Keep artwork large enough to appreciate; do not force all content into one phone viewport.
 - **Completion:** Check selection, guessing, and reveal at 320, 375, 390, and 430 CSS-pixel widths, tablet, and desktop. No hover dependence, clipped prompts, or tiny controls. Enlargement must not commit a guess. Artwork remains dominant.
@@ -168,9 +168,13 @@ The latest user-requested revisions to this flow allow unselecting tentative cho
 
 ### 12. Gentle transitions
 
+- **Status:** Implemented and validated; awaiting user testing and approval. Stop here for final Prototype 0.1 acceptance.
 - **Goal:** Add atmosphere after gameplay works.
 - **Scope:** Restrained opacity/color changes for in-place prompts, replacements and reveals, with reduced-motion support. Preserve the stationary card positions established in Milestone 11; no translation, resizing or grid reflow. Avoid introducing page transitions or animation dependencies without clear need.
 - **Completion:** Transitions preserve state/focus, reject duplicate actions, and do not reveal early or delay essential input. Reduced-motion mode remains playable.
+
+- **Implementation:** CSS-only 140-260ms opacity and color/shadow effects for prompt changes, loaded preparation images, selection feedback, lock/owner labels and revealed results. Prompt text is keyed inside stable focused headings; card IDs preserve unchanged images. Loading an incoming image starts its fade without hiding or disabling it. No transforms, layout transitions, staggered delays, animation dependencies or animation-driven game state. Effects are opt-in under `prefers-reduced-motion: no-preference`; reduced motion renders immediate feedback.
+- **Validation:** TypeScript checks, production build and all 45 tests passed. Edge replayed the entire six-round week, recap and restart with normal and reduced motion at 320x568, 375x667, 390x844, 430x932, 768x1024 and 1440x900. Card rectangles and scroll position stayed stable during selecting, clearing, replacement, locking/unlocking and reveal. Touch/keyboard zoom checks passed. Dedicated checks verified stable heading focus, only the replacement image animating, visible artwork throughout the effect, rapid double confirmation/toggling, no early answers, immediate next-day availability and cancellation of active effects when reduced motion is enabled. Final user testing remains pending.
 
 ## Validation and handoffs
 

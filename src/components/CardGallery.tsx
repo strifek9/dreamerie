@@ -85,7 +85,8 @@ export default function CardGallery({ cards, onChoose, label = 'Your six image c
                 else setInspected(card)
               }}
             >
-              <img src={card.artwork} alt={card.description} width="320" height="400" decoding="async" draggable={false} />
+              <img src={card.artwork} alt={card.description} width="320" height="400" decoding="async" draggable={false}
+                onLoad={(event) => event.currentTarget.classList.add('artwork-ready')} />
               {(ownCardId || onChoose) && (
                 <span className="card-caption">
                   {card.id === ownCardId && <span className="own-card-marker">Your Dream <span>View only</span></span>}
@@ -120,7 +121,7 @@ export default function CardGallery({ cards, onChoose, label = 'Your six image c
       </ul>
       {(onChoose || action) && (
         <div className={`inline-choice${revealedOwners ? ' revealed-choice' : ''}`}>
-          {!revealedOwners && <p className="choice-prompt" role="status">{prompt ?? '\u00a0'}</p>}
+          {!revealedOwners && <p className="choice-prompt" role="status"><span key={prompt} className="dream-prompt-text">{prompt ?? '\u00a0'}</span></p>}
           {onChoose ? (
             <>
               <button

@@ -25,7 +25,9 @@ export default function DreamGuessingBoard({ board, onUnlock, onAssign, error, r
       <header className="gallery-heading">
         <p className="eyebrow">{reveal ? board.concept.label : 'A shared dream'}</p>
         <h1 id="round-concept" ref={heading} tabIndex={-1}>
+          <span key={`${board.concept.id}:${reveal ? 'revealed' : friend?.id ?? 'ready'}`} className="dream-prompt-text">
           {reveal ? 'The dream comes into focus.' : friend ? <>{friend.name} dreamt of <span className="dream-word">{board.concept.label}</span>.</> : 'Your guesses are remembered.'}
+          </span>
         </h1>
         <p className="invitation">{reveal ? `${reveal.points} of 2 Dreams remembered.` : friend ? 'What did their dream look like?' : 'Two Dreams, held in mind.'}</p>
         <p className={`round-note${reveal ? ' week-score' : ''}`}>{reveal ? `Your week: ${totalScore} / 12 points` : !friend ? 'Their meanings are still hidden.' : '\u00a0'}</p>
