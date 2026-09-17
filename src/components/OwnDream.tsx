@@ -5,7 +5,7 @@ export default function OwnDream({ card, concept }: { card: Card; concept: strin
   return (
     <aside className="own-dream" aria-label={`Your Dream of ${concept}`}>
       <div><p className="eyebrow">Your Dream</p><p className="own-concept">{concept}</p></div>
-      <CardGallery cards={[card]} label={`Your remembered image for ${concept}`} />
+      <CardGallery cards={[card]} label={`Your remembered dream card for ${concept}`} />
     </aside>
   )
 }

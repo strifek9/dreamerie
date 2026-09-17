@@ -1,9 +1,9 @@
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
 import { assignDream, getNextGuessTarget, unassignDream } from '../src/game/assignments.ts'
-import { localGameReducer } from '../src/game/localGame.ts'
+import { createLocalGame, localGameReducer, prepareGuessingAction } from '../src/game/localGame.ts'
 import type { LocalGame } from '../src/game/localGame.ts'
-import { createFirstGuessingBoard, getGuessingBoardView } from '../src/game/board.ts'
+import { getGuessingBoardView } from '../src/game/board.ts'
 import { chooseDream } from '../src/game/selection.ts'
 import { prepareSimulatedDreams } from '../src/game/simulation.ts'
 import { createDreamWeek } from '../src/game/week.ts'
@@ -24,7 +24,8 @@ function freshRound(): GuessingRound {
 function guessing(): LocalGame {
   let week = prepareSimulatedDreams(createDreamWeek('week-fixture', concepts, cards, players, () => 0), CURRENT_PLAYER_ID, () => 0)
   for (const concept of concepts) week = chooseDream(week, CURRENT_PLAYER_ID, concept.id, week.allocation.hands.get(CURRENT_PLAYER_ID)![0]!)
-  return { phase: 'guessing', ...createFirstGuessingBoard(week, CURRENT_PLAYER_ID, () => 0), humanPlayerId: CURRENT_PLAYER_ID, error: null, remembered: null, results: [] }
+  const state = createLocalGame(week, CURRENT_PLAYER_ID)
+  return localGameReducer(state, prepareGuessingAction(state, () => 0))
 }
 
 test('Nancy then Song commit distinct guesses while preserving the exact board and input', () => {
@@ -49,7 +50,7 @@ test('out-of-order, own, unknown and off-board guesses leave the round intact', 
   for (const id of ['player-song', 'player-charlie', 'player-missing'] as const) {
     assert.throws(() => assignDream(round, id, 'card-001'), /friend currently shown/)
   }
-  assert.throws(() => assignDream(round, 'player-nancy', 'card-missing'), /Choose an image/)
+  assert.throws(() => assignDream(round, 'player-nancy', 'card-missing'), /Choose a dream card/)
   assert.throws(() => assignDream(round, 'player-nancy', round.ownDreamId), /Your Dream is a reference/)
   assert.deepEqual(round, before)
 })

@@ -4,6 +4,7 @@ import DreamWeekIntroduction from './components/DreamWeekIntroduction'
 import DreamSelection from './components/DreamSelection'
 import DreamGuessingBoard from './components/DreamGuessingBoard'
 import DreamWeekComplete from './components/DreamWeekComplete'
+import ScoringHelp from './components/ScoringHelp'
 import { cards } from './data/cards'
 import { concepts } from './data/concepts'
 import { CURRENT_PLAYER_ID, players } from './data/players'
@@ -14,13 +15,30 @@ import { getGuessingBoardView } from './game/board'
 import { createLocalGame, getLocalDay, localGameReducer, prepareGuessingAction } from './game/localGame'
 import { getRoundRevealView, getTotalScore } from './game/scoring'
 import { getWeekRecap } from './game/recap'
+import type { DreamConcept, DreamMode } from './game/types'
 
-function freshWeek() {
-  return prepareSimulatedDreams(createDreamWeek(`week-${crypto.randomUUID()}`, concepts, cards, players), CURRENT_PLAYER_ID)
+const personalDreams: readonly DreamConcept[] = ['First', 'Second', 'Third', 'Fourth', 'Fifth', 'Sixth']
+  .map((ordinal, index) => ({ id: `concept-dream-${index + 1}`, label: `${ordinal} Dream` }))
+
+function freshWeek(mode: DreamMode) {
+  return prepareSimulatedDreams(createDreamWeek(`week-${crypto.randomUUID()}`, mode === 'personal' ? personalDreams : concepts, cards, players, Math.random, mode), CURRENT_PLAYER_ID)
 }
 
 export default function App() {
-  const [game, commit] = useReducer(localGameReducer, undefined, () => createLocalGame(freshWeek(), CURRENT_PLAYER_ID))
+  const [mode, setMode] = useState<DreamMode>(() => new URLSearchParams(window.location.search).get('mode') === 'classic' ? 'classic' : 'personal')
+  function changeMode(next: DreamMode) {
+    const url = new URL(window.location.href)
+    url.searchParams.set('mode', next)
+    window.history.replaceState(null, '', url)
+    setMode(next)
+  }
+  return <LocalPrototype key={mode} mode={mode} onModeChange={changeMode} />
+}
+
+function LocalPrototype({ mode, onModeChange }: { mode: DreamMode; onModeChange: (mode: DreamMode) => void }) {
+  const personal = mode === 'personal'
+  const maxScore = personal ? 18 : 12
+  const [game, commit] = useReducer(localGameReducer, undefined, () => createLocalGame(freshWeek(mode), CURRENT_PLAYER_ID))
   const { week } = game
   const day = getLocalDay(game)
   const totalScore = getTotalScore(game.results)
@@ -45,13 +63,16 @@ export default function App() {
   }
   function restartWeek() {
     if (game.phase !== 'complete') return
-    commit({ type: 'restart', sourceWeek: game.week, week: freshWeek() })
+    commit({ type: 'restart', sourceWeek: game.week, week: freshWeek(mode) })
     setScreen('week')
   }
   return (
     <div className="dreamerie-shell">
       <header className="masthead">
-        <p className="wordmark"><span aria-hidden="true">☾</span> Dreamerie</p>
+        <div className="masthead-start">
+          <ScoringHelp personal={personal} />
+          <p className="wordmark"><span aria-hidden="true">☾</span> Dreamerie</p>
+        </div>
         <aside className="dev-day-controls" aria-label="Development day controls">
           <span>Dev · {game.phase === 'complete' ? 'Week complete' : `Day ${day}`}</span>
           {game.phase !== 'complete' && (
@@ -64,7 +85,7 @@ export default function App() {
       </header>
 
       {screen === 'week' ? (
-        game.phase === 'complete' ? <DreamWeekComplete score={totalScore}
+        game.phase === 'complete' ? <DreamWeekComplete score={totalScore} personal={personal} maxScore={maxScore}
           recap={getWeekRecap(week, game.results, CURRENT_PLAYER_ID, cards, players)} onRestart={restartWeek} /> : game.phase !== 'preparation' ? (
           <DreamGuessingBoard
             board={getGuessingBoardView(week, game.round, cards, players)}
@@ -73,12 +94,15 @@ export default function App() {
             error={game.error}
             onAssign={(playerId, cardId) => commit({ type: 'assign', roundId: game.round.id, playerId, cardId })}
             onReveal={game.phase === 'ready-for-reveal' ? () => commit({ type: 'reveal', roundId: game.round.id }) : undefined}
-            reveal={revealedResult ? getRoundRevealView(revealedResult, cards, players) : undefined}
+            reveal={revealedResult ? getRoundRevealView(revealedResult, cards, players, week) : undefined}
             totalScore={totalScore}
+            personal={personal} maxScore={maxScore}
           />
         ) : (
         <DreamWeekIntroduction
           introduction={getWeekIntroduction(week)}
+          personal={personal}
+          completedDreams={week.dreams.get(CURRENT_PLAYER_ID)?.size ?? 0}
         >
         {currentConcept ? (
         <DreamSelection
@@ -86,10 +110,12 @@ export default function App() {
           hand={hand}
           error={game.error}
           remembered={game.remembered}
-          onChoose={(cardId) => commit({ type: 'choose', conceptId: currentConcept.id, cardId })}
+          personal={personal}
+          onChoose={(cardId, clue) => commit({ type: 'choose', conceptId: currentConcept.id, cardId, clue })}
         />
         ) : (
           <DreamSelectionComplete
+            personal={personal}
             remainingHand={hand}
             error={game.error}
           />
@@ -114,12 +140,20 @@ export default function App() {
         <button className="quiet-button enter-week" onClick={() => setScreen('week')}>
           Enter your Dream Week
         </button>
+        <fieldset className="mode-picker">
+          <legend>Choose your Dream Week</legend>
+          <label><input type="radio" name="mode" checked={personal} onChange={() => onModeChange('personal')} />Your own dream clues · experiment</label>
+          <label><input type="radio" name="mode" checked={!personal} onChange={() => onModeChange('classic')} />Original shared words</label>
+        </fieldset>
         </div>
       </main>
       )}
 
       <footer className="footer">
         <p>Local prototype · 0.1</p>
+        {screen === 'week' && <button className="mode-reset" onClick={() => onModeChange(personal ? 'classic' : 'personal')}>
+          {personal ? 'Try original shared words' : 'Try your own dream clues'} · starts a new week
+        </button>}
       </footer>
     </div>
   )

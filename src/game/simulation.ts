@@ -1,4 +1,5 @@
 import { chooseDream, getNextDreamConcept } from './selection.ts'
+import { simulatedClues } from '../data/simulatedClues.ts'
 import type { DreamWeek, PlayerId, PreparedRound } from './types.ts'
 
 /** Random valid choices are local fixtures, not a model of friends' interpretations. */
@@ -14,11 +15,11 @@ export function prepareSimulatedDreams(
     return count + week.setupOrder.filter((conceptId) => !dreams?.has(conceptId)).length
   }, 0)
   if (week.allocation.available.length < replacementsNeeded) {
-    throw new Error('Not enough new images to prepare the simulated Dreams.')
+    throw new Error('Not enough new dream cards to prepare the simulated Dreams.')
   }
 
   let prepared = week
-  for (const friendId of friends) {
+  for (const [friendIndex, friendId] of friends.entries()) {
     let concept = getNextDreamConcept(prepared, friendId)
     while (concept) {
       const hand = prepared.allocation.hands.get(friendId)
@@ -28,8 +29,9 @@ export function prepareSimulatedDreams(
         throw new Error('Randomness must return a number from 0 up to, but not including, 1.')
       }
       const chosen = hand[Math.floor(value * hand.length)]
-      if (!chosen) throw new Error('A simulated player has no available image.')
-      prepared = chooseDream(prepared, friendId, concept.id, chosen)
+      if (!chosen) throw new Error('A simulated player has no available dream card.')
+      const clue = simulatedClues[(friendIndex * week.setupOrder.length + week.setupOrder.indexOf(concept.id)) % simulatedClues.length]
+      prepared = chooseDream(prepared, friendId, concept.id, chosen, clue)
       concept = getNextDreamConcept(prepared, friendId)
     }
   }

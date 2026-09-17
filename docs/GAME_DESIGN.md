@@ -12,6 +12,21 @@ Dreamerie is standalone, asynchronous, and mobile-first for mobile and desktop w
 
 ## Confirmed rules
 
+### Reversible experiment: personal clues
+
+The user approved testing this alternative alongside the original shared-concept game. **Your own dream clues** is the default prototype mode; **Original shared words** retains the earlier six concepts and guessing-only scoring for comparison. A mode belongs to a whole week and cannot change its rules midway. Switching modes explicitly starts a fresh local week; nothing is committed to Git or discarded from the source to switch back.
+
+- On Day 1, each person prepares **six clue-and-card pairs**. Write a word or short sentence and choose a card from the current six-card hand. Save them together, then replace the selected card in the same slot, including after the sixth choice.
+- The implementation limit is **80 characters** (the browser's UTF-16 `maxlength` units). Trim and collapse whitespace; reject blank or overlong clues in the game logic as well as the form. This limit is adjustable presentation policy, not a permanent production rule.
+- The six Dream slots, named First Dream through Sixth Dream, replace shared words. Their daily order remains shuffled and hidden. Each guessing day uses the corresponding prepared slot for every player; each player has their own words for that slot.
+- Show Nancy's clue while guessing Nancy's card, then Song's clue while guessing Song's card. Keep the same six-card board and all existing selection, unlock, own-card and delayed-reveal rules. Never label an unrevealed image with its owner's clue. Do not expose future clues in the preparation overview.
+- For every correct identification, the guesser earns **1 point** and the card's author earns **1 recognition point**. If **all other players** correctly identify that card, the author earns **0 recognition points** for it. Correct guessers keep their points. If nobody recognizes it, the author earns 0. A wrong guess has no penalty.
+- In this three-player prototype, a player can earn up to **2 guessing points + 1 recognition point per day**, or **18 points over six days**. The recap must distinguish Dreams correctly guessed from total points.
+- Nancy and Song prepare six authored fixture clues, mixing single words, phrases and sentences, paired with random legal cards and make random valid guesses. These fixtures demonstrate the flow, not semantic understanding or live AI generation. Full standings remain outside this experiment.
+- Final review keeps each person's clue attached to their actual card and shows Charlie's guesses, friends' guesses about Charlie, correctness and recognition points. Images remain inspectable.
+
+The sections below describe the **original shared-concept mode** and unchanged common rules. The personal-clue experiment overrides its shared concepts and scoring as stated above; retaining the original mode does not revoke the experimental rules.
+
 ### Dream Week
 
 - Each Dream Week contains six concepts. TIME, LOVE, FREEDOM, HOME, FEAR, and CHANGE are an example set, not a fixed production vocabulary.
@@ -39,7 +54,7 @@ Prototype 0.1 shows a recap of the just-completed week, then clears it on restar
 - Guess other players' Dreams, never your own.
 - The guessing experience displays six images: the user's own Dream, friends' actual Dreams, and enough decoys to fill the board.
 - For Charlie guessing TIME, pin Charlie's TIME Dream to the first slot. Shuffle Nancy's TIME Dream, Song's TIME Dream and three fresh decoys into the other five slots. Mark Charlie's card “Your Dream · View only”: it can be enlarged but cannot be assigned to a friend.
-- Keep all six images in their positions through guessing, unlocking and reveal. Reveal labels the friends' actual Dreams, the user's guesses and the decoys on that same board, with textual results below. There is no separate own-Dream sidebar during a round.
+- Keep all six images in their positions through guessing, unlocking and reveal. Reveal labels the friends' actual Dreams, the user's guesses and the decoys on that same board. Put textual results above the cards, between “The dream comes into focus.” and the “Dreams remembered” count. There is no separate own-Dream sidebar during a round.
 - Assign one image to each required other player. A committed image cannot be assigned to another player while locked. Players can unlock a guess to change it before reveal, preserving any other friend's guess.
 - Prompt for one friend at a time on the same board: Nancy first, then Song for the same concept after Nancy's guess is confirmed.
 - Do not reveal correctness after an individual guess. Reveal only after all required assignments are complete, then calculate the score.
@@ -58,6 +73,10 @@ Late joiners prepare and participate only in remaining concepts. They do not par
 
 Scores accumulate across the Dream Week. At the end, show final standings and a weekly winner under “The dream fades.” Prototype 0.1 uses **+1 per correctly identified Dream**. Final production scoring and tie handling remain unresolved; add no bonuses, penalties, or tie-breakers without a decision.
 
+**Confirmed experimental scoring addition:** The user has resolved the amount: +1 per other player who correctly identifies your Dream, except when everyone does. This is active in personal-clue mode. How missed participation affects “everyone” remains a production question.
+
+Both runnable modes simulate Nancy/Song guesses. Original mode preserves its 2-point round and 12-point week maxima; personal-clue mode includes recognition points and uses maxima of 3 and 18.
+
 ## Prototype assumptions
 
 These choices support a small local demonstration and must be revisited before production scheduling or real multiplayer.
@@ -67,23 +86,24 @@ These choices support a small local demonstration and must be revisited before p
 | Players | Charlie is the human; Nancy and Song are simulated. No login or group creation. |
 | Concepts | Use the six example concepts as fixtures. Setup/display order is separate from the hidden shuffled round order. |
 | Progression | Day 1 is preparation only. A top-right development “Next day” control advances to Day 2 once all six choices are complete. Days 2–7 demonstrate the six concepts in hidden order, with Nancy's prompt then Song's on each board. Both guesses and an explicit reveal are required before advancing. After the sixth reveal, “Finish week” shows Charlie's total and “Begin a new week” resets the demonstration. These are local test-day labels, not production scheduling rules. No wall-clock waits, timezone policy, or scheduling service. |
-| Week demonstration | Demonstrate all six guessing rounds and Charlie's accumulated score. Do not simulate Nancy/Song guesses or standings. |
+| Week demonstration | Demonstrate all six guessing rounds and Charlie's accumulated guessing score. Nancy and Song each make two random, distinct valid assignments on their own six-card board when a day begins. Their own Dream is unassignable; the other five images contain both friends' Dreams and three decoys. Freeze their guesses through Charlie's revisions and reveal. Show their guesses about Charlie only after reveal and retain those choices in the recap. No friend standings. |
 | Friends' selections | Use the same allocation/selection rules as Charlie, avoiding hardcoded overlapping cards. At local week initialization, Nancy and Song randomly choose valid cards from their current hands for all six concepts. These reproducible fixture choices do not model personal interpretations; their Dreams remain hidden during Charlie's preparation. |
 | Allocation | Reserve every card dealt to a player, including replacement draws, in a shared per-week pool. Never return a reserved card to that week's deal pool. |
-| Decoys | Use distinct unallocated cards unseen by Charlie that week; exclude all players' dealt/reserved cards. Track images shown in hands and boards. Provision enough fresh decoys for every round; do not fall back to known images. |
+| Decoys | Use distinct unallocated cards unseen by the guessing player that week; exclude all players' dealt/reserved cards. Track images shown in hands and boards separately for Charlie, Nancy and Song. Decoys may recur across different players' boards, but never for the same player. Provision enough fresh decoys for every round; do not fall back to known images. |
 | Randomness | Supply randomness to rule functions so verification can reproduce fixture scenarios. No randomness framework is needed. |
 | Commitment | Tap an unconfirmed selection again to clear it. Before reveal, an explicit unlock removes that guess only and returns to the first unassigned friend. The released image becomes available again; reveal is unavailable until both guesses are reconfirmed. Revealed/scored rounds cannot be changed. Prepared Dream revisions after replacement remain unresolved. |
 | Persistence | In-memory state and explicit restart. Refresh resets the demonstration. |
 | Late joining | Document the rule and allow models to represent remaining concepts. Interactive joining is outside the initial selection/guessing flows. |
-| Week ending | Show Charlie's accumulated score and a recap of all six concepts in played order: Charlie's Dream, Nancy/Song actual Dreams, Charlie's final guesses, and results. The recap belongs to this local week only. Full standings/winner require additional simulated or real scores later. |
+| Week ending | Show Charlie's accumulated score and a recap of all six concepts in played order: Charlie's Dream, Nancy/Song actual Dreams, Charlie's final guesses, friends' guesses about Charlie, and results. Every recap image is inspectable. The recap belongs to this local week only. Full standings/winner remain outside this prototype revision. |
 
-A sufficient fixture budget is **54 unique cards**: three players consume six starting cards plus six replacements each (36 reserved); six Charlie guessing boards consume three fresh decoys each (18). Charlie's first-slot Dream was already reserved during preparation. The actual deck contains **120 illustrations**. These are local planning choices, not a production minimum. Insufficient fixture data must cause a clear failure without partial state changes.
+A sufficient fixture budget is **54 unique cards**: three players consume six starting cards plus six replacements each (36 reserved); each player's six guessing boards need 18 distinct unallocated decoys. Those 18 can be reused across different players because exposure is private. Each player's first-slot Dream was already reserved during preparation. The actual deck contains **120 illustrations**. These are local planning choices, not a production minimum. Preparing all three boards and simulated guesses must succeed together; insufficient fixture data causes a clear failure without partial state changes.
 
 These assumptions must preserve six-card hands, unique player allocations, hidden daily order, one-to-one assignments, delayed reveal, and +1 scoring.
 
 ## Unresolved questions
 
 - Final scoring system; tie handling and weekly winners.
+- Treatment of missing guesses in the “everyone” condition. Local friends simulate all required guesses, so missing participation is not part of the prototype. Whether to adopt personal clues as the main game remains subject to user testing.
 - Exact weekly timing, setup deadlines, daily boundaries, and timezones.
 - When Sunday's Dream is guessed and how final reveal relates to the next week.
 - Minimum and maximum group size.

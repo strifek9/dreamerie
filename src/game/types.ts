@@ -3,6 +3,7 @@ export type PlayerId = `player-${string}`
 export type ConceptId = `concept-${string}`
 export type WeekId = `week-${string}`
 export type RoundId = `round-${string}`
+export type DreamMode = 'classic' | 'personal'
 
 export interface Card {
   readonly id: CardId
@@ -30,12 +31,14 @@ export interface WeekAllocation {
 }
 
 export interface DreamWeek {
+  readonly mode: DreamMode
   readonly id: WeekId
   readonly concepts: readonly DreamConcept[]
   readonly setupOrder: readonly ConceptId[]
   readonly roundOrder: readonly ConceptId[]
   readonly allocation: WeekAllocation
   readonly dreams: ReadonlyMap<PlayerId, ReadonlyMap<ConceptId, CardId>>
+  readonly clues: ReadonlyMap<PlayerId, ReadonlyMap<ConceptId, string>>
 }
 
 /** Public introduction data deliberately has no daily schedule. */
@@ -60,6 +63,7 @@ export interface GuessingRound extends PreparedRound {
 
 /** Presentation data contains no answer mapping or future schedule. */
 export interface GuessingBoardView {
+  readonly currentClue?: string
   readonly concept: DreamConcept
   readonly ownDream: Card
   readonly cards: readonly Card[]
@@ -73,6 +77,9 @@ export interface RoundResult {
   readonly roundId: RoundId
   readonly conceptId: ConceptId
   readonly points: number
+  readonly recognitionPoints: number
+  /** Other players' guesses about this player's Dream, published only at reveal. */
+  readonly receivedGuesses: RoundResult['guesses']
   readonly guesses: readonly {
     readonly playerId: PlayerId
     readonly chosenCardId: CardId
@@ -83,15 +90,19 @@ export interface RoundResult {
 
 export interface RoundRevealView {
   readonly points: number
+  readonly recognitionPoints: number
+  readonly receivedGuesses: RoundRevealView['guesses']
   readonly guesses: readonly {
     readonly player: Player
     readonly chosen: Card
     readonly actual: Card
     readonly correct: boolean
+    readonly clue?: string
   }[]
 }
 
 export interface WeekRecapEntry {
+  readonly ownClue?: string
   readonly concept: DreamConcept
   readonly ownDream: Card
   readonly reveal: RoundRevealView

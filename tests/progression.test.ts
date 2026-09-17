@@ -53,11 +53,11 @@ test('zero, one and two correct guesses score exactly 0, 1 and 2 without mutatio
 
 test('scoring rejects incomplete, duplicate, foreign-player and off-board assignments', () => {
   const { week, round } = createGuessingBoard(preparation().week, CURRENT_PLAYER_ID, 0, () => 0)
-  assert.throws(() => scoreRound(week, round), /different image for each friend/)
+  assert.throws(() => scoreRound(week, round), /different dream card for each friend/)
   const first = assignDream(round, 'player-nancy', round.cardIds[1]!)
-  assert.throws(() => scoreRound(week, first), /different image for each friend/)
+  assert.throws(() => scoreRound(week, first), /different dream card for each friend/)
   const duplicate = { ...round, assignments: new Map([['player-nancy' as const, round.cardIds[1]!], ['player-song' as const, round.cardIds[1]!]]) }
-  assert.throws(() => scoreRound(week, duplicate), /different image for each friend/)
+  assert.throws(() => scoreRound(week, duplicate), /different dream card for each friend/)
   const wrong = { ...round, assignments: new Map([['player-nancy' as const, round.cardIds[1]!], ['player-charlie' as const, round.cardIds[2]!]]) }
   assert.throws(() => scoreRound(week, wrong), /incomplete or invalid/)
   const outside = { ...round, assignments: new Map([['player-nancy' as const, round.cardIds[1]!], ['player-song' as const, 'card-missing' as const]]) }
@@ -209,4 +209,35 @@ test('a full-week recap is unavailable until all six concepts have revealed resu
   const result = scoreRound(week, complete)
   assert.throws(() => getWeekRecap(week, [result], CURRENT_PLAYER_ID, cards, players), /Reveal all six/)
   assert.throws(() => getWeekRecap(week, Array.from({ length: 6 }, () => result), CURRENT_PLAYER_ID, cards, players), /Reveal all six/)
+})
+
+test('friend guesses stay fixed through revising, reveal once, and survive into stored results', () => {
+  const prepared = preparation()
+  let state = localGameReducer(prepared, prepareGuessingAction(prepared, () => 0.3))
+  assert.ok(state.phase === 'guessing')
+  const simulated = state.simulatedRounds
+  state = guessBoth(state)
+  assert.ok(state.phase === 'ready-for-reveal')
+  state = localGameReducer(state, { type: 'unassign', roundId: state.round.id, cardId: state.round.assignments.get('player-nancy')! })
+  assert.ok(state.phase === 'guessing')
+  assert.equal(state.simulatedRounds, simulated)
+  assert.equal(state.results.length, 0)
+  state = localGameReducer(state, { type: 'assign', roundId: state.round.id, playerId: 'player-nancy', cardId: state.week.dreams.get('player-nancy')!.get(state.round.conceptId)! })
+  assert.ok(state.phase === 'ready-for-reveal')
+  const reveal = { type: 'reveal' as const, roundId: state.round.id }
+  const revealed = localGameReducer(state, reveal)
+  assert.ok(revealed.phase === 'revealed')
+  assert.equal(revealed.simulatedRounds, simulated)
+  const received = revealed.results[0]!.receivedGuesses
+  assert.equal(received.length, 2)
+  for (const guess of received) {
+    assert.equal(guess.chosenCardId, simulated.find((round) => round.guesserId === guess.playerId)!.assignments.get(CURRENT_PLAYER_ID))
+    assert.equal(guess.actualCardId, state.round.ownDreamId)
+    assert.equal(guess.correct, guess.chosenCardId === guess.actualCardId)
+  }
+  assert.equal(localGameReducer(revealed, reveal), revealed)
+  assert.throws(() => scoreRound(state.week, state.round, []), /Each friend/)
+  assert.throws(() => scoreRound(state.week, state.round, [simulated[0]!, simulated[0]!]), /Each friend/)
+  assert.throws(() => scoreRound(state.week, state.round, [{ ...simulated[0]!, conceptId: 'concept-missing' }, simulated[1]!]), /same Dream day/)
+  assert.throws(() => scoreRound(state.week, state.round, [{ ...simulated[0]!, assignments: new Map() }, simulated[1]!]), /different dream card/)
 })

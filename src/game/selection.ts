@@ -1,4 +1,5 @@
 import { HAND_SIZE, recordExposure } from './allocation.ts'
+import { normalizeClue } from './clues.ts'
 import type { CardId, ConceptId, DreamConcept, DreamWeek, PlayerId } from './types.ts'
 
 export function getNextDreamConcept(week: DreamWeek, playerId: PlayerId): DreamConcept | null {
@@ -17,18 +18,20 @@ export function chooseDream(
   playerId: PlayerId,
   conceptId: ConceptId,
   cardId: CardId,
+  clue?: string,
 ): DreamWeek {
+  const words = week.mode === 'personal' ? normalizeClue(clue ?? '') : undefined
   const next = getNextDreamConcept(week, playerId)
   if (!next) throw new Error('All six Dreams have already been chosen.')
   if (next.id !== conceptId) throw new Error('That Dream is no longer awaiting a choice.')
   const hand = week.allocation.hands.get(playerId)
   if (!hand || hand.length !== HAND_SIZE) throw new Error('A Dream needs a six-card hand.')
   const slot = hand.indexOf(cardId)
-  if (slot < 0) throw new Error('That image is not in your hand.')
+  if (slot < 0) throw new Error('That dream card is not in your hand.')
   const replacement = week.allocation.available[0]
-  if (!replacement) throw new Error('No new images remain. Your choice has not been saved.')
+  if (!replacement) throw new Error('No new dream cards remain. Your choice has not been saved.')
   if (week.allocation.reserved.has(replacement) || !week.allocation.cardIds.includes(replacement)) {
-    throw new Error('The replacement image is not available. Your choice has not been saved.')
+    throw new Error('The replacement dream card is not available. Your choice has not been saved.')
   }
 
   const newHand = [...hand]
@@ -45,5 +48,11 @@ export function chooseDream(
   const playerDreams = new Map(dreams.get(playerId))
   playerDreams.set(conceptId, cardId)
   dreams.set(playerId, playerDreams)
-  return { ...week, allocation, dreams }
+  const clues = new Map(week.clues)
+  if (words) {
+    const playerClues = new Map(clues.get(playerId))
+    playerClues.set(conceptId, words)
+    clues.set(playerId, playerClues)
+  }
+  return { ...week, allocation, dreams, clues }
 }

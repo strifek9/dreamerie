@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import type { ReactNode } from 'react'
 import type { Card, CardId } from '../game/types.ts'
+import type { PlayerAccent } from '../data/playerAccents.ts'
 
 interface CardGalleryProps {
   cards: readonly Card[]
@@ -8,16 +9,21 @@ interface CardGalleryProps {
   label?: string
   choiceKey?: string
   confirmLabel?: string
+  selectionLabel?: string
   prompt?: string
   action?: ReactNode
   locks?: ReadonlyMap<CardId, string>
+  lockAccents?: ReadonlyMap<CardId, PlayerAccent | undefined>
+  ownAccent?: PlayerAccent
   onUnlock?: (cardId: CardId) => void
   ownCardId?: CardId
   revealedOwners?: ReadonlyMap<CardId, string>
+  imageLoading?: 'eager' | 'lazy'
+  canConfirm?: boolean
 }
 
-export default function CardGallery({ cards, onChoose, label = 'Your six image cards', choiceKey,
-  confirmLabel = 'Remember this dream', prompt, action, locks, onUnlock, ownCardId, revealedOwners }: CardGalleryProps) {
+export default function CardGallery({ cards, onChoose, label = 'Your six dream cards', choiceKey,
+  confirmLabel = 'Remember this dream', selectionLabel = 'Selected', prompt, action, locks, lockAccents, ownAccent, onUnlock, ownCardId, revealedOwners, imageLoading, canConfirm = true }: CardGalleryProps) {
   const [inspected, setInspected] = useState<Card | null>(null)
   const [choice, setChoice] = useState<{ card: Card | null; key: string | undefined }>({ card: null, key: choiceKey })
   // Reset on a new friend or changed commitments, including returning to an unlocked friend.
@@ -48,11 +54,11 @@ export default function CardGallery({ cards, onChoose, label = 'Your six image c
     <>
       <ul className={`card-gallery${ownCardId ? ' guessing-gallery' : onChoose ? ' choosing-gallery' : ''}`} aria-label={label}>
         {cards.map((card) => (
-          <li key={card.id}>
+          <li key={card.id} data-player-accent={card.id === ownCardId ? ownAccent : locks?.has(card.id) ? lockAccents?.get(card.id) : undefined}>
             <div className="card-frame">
             <button
-              className={`card-preview${card.id === ownCardId ? ' own-card' : ''}`}
-              aria-label={`${onChoose && card.id !== ownCardId && !locks?.has(card.id) ? 'Choose' : 'Look closer'}: ${card.description}${card.id === ownCardId ? ' Your Dream, view only.' : ''}${revealedOwners && card.id !== ownCardId ? ` ${revealedOwners.get(card.id) ?? 'Decoy'}.` : ''}${locks?.has(card.id) ? ` Your guess for ${locks.get(card.id)}${revealedOwners ? '.' : ', locked.'}` : ''}`}
+              className={`card-preview${card.id === ownCardId ? ' own-card' : ''}${locks?.has(card.id) ? ' locked-card' : ''}`}
+              aria-label={`${onChoose && card.id !== ownCardId && !locks?.has(card.id) ? 'Choose' : 'Look closer'}: ${card.description}${card.id === ownCardId ? ' Your Dream, view only.' : ''}${revealedOwners && card.id !== ownCardId ? ` ${revealedOwners.get(card.id) ?? 'A Stranger’s Dream'}.` : ''}${selected?.id === card.id ? ` ${selectionLabel}.` : ''}${locks?.has(card.id) ? ` Your guess for ${locks.get(card.id)}${revealedOwners ? '.' : ', locked.'}` : ''}`}
               aria-pressed={onChoose && card.id !== ownCardId && !locks?.has(card.id) ? selected?.id === card.id : undefined}
               onPointerDown={(event) => {
                 suppressClick.current = false
@@ -85,13 +91,13 @@ export default function CardGallery({ cards, onChoose, label = 'Your six image c
                 else setInspected(card)
               }}
             >
-              <img src={card.artwork} alt={card.description} width="320" height="400" decoding="async" draggable={false}
+              <img src={card.artwork} alt={card.description} width="320" height="400" decoding="async" loading={imageLoading} draggable={false}
                 onLoad={(event) => event.currentTarget.classList.add('artwork-ready')} />
               {(ownCardId || onChoose) && (
                 <span className="card-caption">
                   {card.id === ownCardId && <span className="own-card-marker">Your Dream <span>View only</span></span>}
-                  {revealedOwners && card.id !== ownCardId && <span className="revealed-marker">{revealedOwners.get(card.id) ?? 'Decoy'}</span>}
-                  {onChoose && selected?.id === card.id && <span className="chosen-marker">Chosen</span>}
+                  {revealedOwners && card.id !== ownCardId && <span className="revealed-marker">{revealedOwners.get(card.id) ?? 'A Stranger’s Dream'}</span>}
+                  {onChoose && selected?.id === card.id && <span className="chosen-marker">{selectionLabel}</span>}
                   {locks?.has(card.id) && <span className="locked-marker">{revealedOwners ? `Your guess: ${locks.get(card.id)}` : `${locks.get(card.id)} · Locked`}</span>}
                 </span>
               )}
@@ -110,8 +116,11 @@ export default function CardGallery({ cards, onChoose, label = 'Your six image c
             {ownCardId && (
               <div className="card-revision">
                 {onUnlock && locks?.has(card.id) && (
-                  <button className="text-button unlock-guess" onClick={() => onUnlock(card.id)}>
-                    Unlock {locks.get(card.id)}’s guess
+                  <button className="unlock-guess" aria-label={`Unlock ${locks.get(card.id)}’s guess`} onClick={() => onUnlock(card.id)}>
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true">
+                      <rect x="5" y="10" width="14" height="11" rx="3" /><path d="M8 10V6a4 4 0 0 1 8 0M12 14v3" />
+                    </svg>
+                    <span>Unlock guess</span>
                   </button>
                 )}
               </div>
@@ -126,9 +135,9 @@ export default function CardGallery({ cards, onChoose, label = 'Your six image c
             <>
               <button
                 className="quiet-button remember-dream"
-                disabled={!selected}
+                disabled={!selected || !canConfirm}
                 onClick={() => {
-                  if (!selected || committed.current) return
+                  if (!selected || !canConfirm || committed.current) return
                   committed.current = true
                   onChoose(selected.id)
                 }}
@@ -140,7 +149,7 @@ export default function CardGallery({ cards, onChoose, label = 'Your six image c
       <dialog
         ref={dialog}
         className="artwork-dialog"
-        aria-label="A closer look at your image card"
+        aria-label="A closer look at your dream card"
         onClose={() => {
           setInspected(null)
           opener.current?.focus({ preventScroll: true })

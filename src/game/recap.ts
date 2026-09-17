@@ -1,4 +1,5 @@
 import { getOwnDreamCard } from './board.ts'
+import { getDreamClue } from './clues.ts'
 import { getRoundRevealView } from './scoring.ts'
 import type { Card, DreamWeek, Player, PlayerId, RoundResult, WeekRecapEntry } from './types.ts'
 
@@ -15,6 +16,7 @@ export function getWeekRecap(
     const concept = week.concepts.find((entry) => entry.id === conceptId)
     if (!result || !concept) throw new Error('A Dream is missing from the week’s results.')
     return { concept, ownDream: getOwnDreamCard(week, humanPlayerId, conceptId, cards),
-      reveal: getRoundRevealView(result, cards, players) }
+      ownClue: week.mode === 'personal' ? getDreamClue(week, humanPlayerId, conceptId) : undefined,
+      reveal: getRoundRevealView(result, cards, players, week) }
   })
 }

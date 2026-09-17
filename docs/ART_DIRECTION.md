@@ -51,6 +51,18 @@ Use concise visual descriptions for accessibility without prescribing image mean
 
 ## UI writing
 
+Refer to player-written text as **dream clues** and the illustrated choices as **dream cards** in player-facing prompts, hints, errors and accessible labels. Personal-mode guessing uses “Nancy’s Dream Clue” and “Select their Dream Card.” Make the active dream clue larger than body copy (24–32px), with readable wrapping. After a successful preparation commitment, show “Your dream clue and dream card are remembered.” with a check mark above the preparation progress; keep it visible after the sixth save. Reserve its space to prevent moving the cards and announce saves through a polite status region. Do not show success before a pair is committed.
+
+Use matching size and weight for **Describe Your Dream Clue** above the input and **Select a Dream Card** above the cards. These are the two primary preparation tasks. The confirmation caption reads **Your clue and card**.
+
+Keep personal preparation concise: omit “A word, a sentence. An image only you could choose.” and place “Select a Dream Card” directly above the image cards.
+
+Use **First Dream**, **Second Dream**, through **Sixth Dream** for personal Dream slots, in prompts and the recap. The clue field's placeholder is “Tell us about your dream... but leave some to the imagination.” in a softer but readable color than entered text. Single words, short phrases and sentences are all welcome; simulated clues should mix examples such as Hope, Freedom and Love with longer thoughts. A tentative guessing choice reads “Selected for Nancy” (or the current friend's name), describing a guess rather than ownership. Preparation uses “Selected.” At reveal, label decoys **A Stranger’s Dream**, including accessible labels; this is atmospheric wording for the existing decoys, not another simulated player. Reserve room for the longer captions so selection and reveal do not change card dimensions.
+
+The reversible **Your own dream clues** experiment removes the large preparation overview, six-slot list, repeated instructions and divider. Use a compact “Dream 1 of 6” progress line above “First Dream”, updating through the sixth Dream and showing completion after all six. The current Dream name is the page heading. Place the larger, prominent instruction “Write a dream clue and choose its dream card.” directly beneath it. Keep the character counter below the input, and place “Tap to choose. Hold to look closer.” beside “Select a Dream Card” immediately above the cards. Original shared-word mode retains its concept overview. Show a labeled, 80-character word/sentence field with a visible counter beside the hand; the player may write or choose the image first. Keep text outside the artwork, wrap long unbroken text, and reserve prompt space so changing friends does not move cards. Prompt “Nancy’s Dream Clue” followed by their clue and “Select their Dream Card.” Preserve clues verbatim after whitespace normalization, without uppercasing sentences. Include each person's words in the recap next to their Dream. Help must explain both guessing and recognition points, the everyone-correct exception, and the experimental maximum of 3 points per day / 18 per week. Original mode keeps its existing wording and 2 / 12 maxima.
+
+Offer **Your own words · experiment** and **Original shared words** on the welcome screen. A footer switch must explicitly say that it starts a new week. This is a prototype comparison control; switching clears local progress rather than changing active-week rules.
+
 Weekly preparation uses one continuous page: the week's six concepts, the current Dream prompt, and a six-card hand. Start with “You dream of TIME. What does that look like to you?” A player marks an image and confirms inline; the prompt advances to the next setup concept and a replacement enters the same hand. Enlargement is optional and never required to commit a choice. Avoid separate introduction, gallery, and selection steps that require players to navigate back and forth. Keep the hidden daily order separate from this visible setup sequence.
 
 Quietly narrate entering, experiencing, and remembering Dreams. Use short, understandable, elegant phrases. Do not stack metaphors or turn instructions into riddles. Essential errors may be direct, such as “That dream is already assigned.”
@@ -59,9 +71,19 @@ Day 1 ends with the preparation completion state; do not show friends' guessing 
 
 Keep the user's Dream in the first slot of the six-image board during guessing and reveal. Use a distinct indigo border and an explicit “Your Dream · View only” label below the image; preserve the artwork's color and detail. Tapping or keyboard activation enlarges it without choosing a guess. The other five slots contain two friends' Dreams and three decoys. Do not use a separate own-Dream sidebar in the round workspace.
 
-After both guesses, “Reveal their dreams” keeps the same six cards in place. Add actual owners' names or “Decoy” below their images and retain “Your guess: Nancy” or Song on the guessed cards. Show correctness and +1 or 0 points in text below the board. Friends' ownership and decoy labels remain absent before reveal; the user's own card is the deliberate exception. The week ends with a recap containing the user's Dreams and friends' actual/guessed image pairs.
+Use stable prototype player accents: rose for Nancy and blue for Song. Match each friend's prompt/result name, locked-guess border and lock label. Give “Unlock guess” a compact tinted button with an open-lock icon and an accessible name such as “Unlock Nancy’s guess.” Keep the touch target at least 44px high and within the reserved revision area. Names and explicit lock text remain essential; color is supplementary. Add the border only after that guess is confirmed, remove it when unlocked, and retain its guess identity after reveal. Never color unrevealed cards using their actual owners. Keep border and padding totals constant so the artwork does not resize.
+
+The full palette has six slots, in order: indigo, rose, blue, amber, forest and plum. Assign accents by player ID using the stable roster order, not hardcoded display-name CSS selectors. Charlie uses indigo; future fourth, fifth and sixth players can use the remaining slots. This supplies presentation colors without adding players or resolving the production group-size rules. Keep all six text accents readable on both the main surface and their tinted buttons.
+
+Place a 44px “?” scoring-help button at the top left beside the wordmark. Its accessible name is “How scoring works.” Open a native modal dialog with concise scoring rules, initial focus at its heading and inert background controls. Clearly label the 2-per-day/12-per-week maximum as specific to the current two-friend prototype. Escape or “Back to dreaming” returns focus and preserves gameplay and scroll position; on short screens the explanation can scroll within the dialog.
+
+After both guesses, “Reveal their dreams” keeps the same six cards in place. Add actual owners' names or “A Stranger’s Dream” below their images and retain “Your guess: Nancy” or Song on the guessed cards. Place the results between “The dream comes into focus.” and the “Dreams remembered” count, above the cards: each friend's name, dream clue where applicable, correctness and +1 or 0 points, followed by friends' guesses about the user's Dream and its recognition points in personal mode. Use two result columns on phones, up to three on tablets and up to five on wide screens; wrap long clues without clipping. Reserve header space through guessing and reveal to keep the cards stationary. Five-friend presentation readiness does not expand the current three-player simulation. Friends' ownership and decoy labels remain absent before reveal; the user's own card is the deliberate exception. The week ends with a recap containing the user's Dreams and friends' actual/guessed image pairs.
 
 After entering the week, do not offer “Return to the beginning” navigation. Keep progression within preparation, guessing, reveal, and the ending. Closing optional image inspection still returns to the current cards.
+
+Introduce the player in the help as a **Dreamier**, someone who can see others' dreams. Preserve that spelling. All final-review artwork, including friends' actual Dreams and the user's guessed images, supports the same optional tap/hold/keyboard inspection as the own-Dream reference. Keep images lazily loaded in the long recap, preserve their full composition, and return focus and scroll position when inspection closes.
+
+After reveal, describe each simulated friend's recognition plainly: “Nancy recognized your Dream.” or “Song chose another dream.” In the final recap, group their guessed images under “Your Dream through their eyes,” with names and inspection controls. Before reveal, keep their guesses and recognition hidden. Help should explain that these prototype guesses are random.
 
 | Moment | Preferred language |
 | --- | --- |
@@ -70,8 +92,8 @@ After entering the week, do not offer “Return to the beginning” navigation. 
 | Selection | “You dream of TIME. What does it look like?” |
 | Choice remembered | “Your dream is remembered.” |
 | Setup complete | “Your dreams are remembered.” |
-| Guess Nancy | “Nancy dreamt of FREEDOM. What did their dream look like?” |
-| Guess Song | “Song dreamt of FREEDOM. What did their dream look like?” |
+| Guess Nancy | “Nancy dreamt of FREEDOM. Select their Dream Card.” |
+| Guess Song | “Song dreamt of FREEDOM. Select their Dream Card.” |
 | Correct reveal | “You remembered.” |
 | Incorrect reveal | “The dream escaped you.” |
 | Waiting, when relevant | “The others are still dreaming.” |

@@ -72,7 +72,7 @@ test('replacement exhaustion leaves the selected card in hand and no Dream recor
   const exhausted = { ...week, allocation: { ...week.allocation, available: [] } }
   const before = snapshot(exhausted)
   const chosen = exhausted.allocation.hands.get(CURRENT_PLAYER_ID)![0]!
-  assert.throws(() => chooseDream(exhausted, CURRENT_PLAYER_ID, 'concept-time', chosen), /No new images/)
+  assert.throws(() => chooseDream(exhausted, CURRENT_PLAYER_ID, 'concept-time', chosen), /No new dream cards/)
   assert.deepEqual(snapshot(exhausted), before)
 })
 

@@ -1,6 +1,7 @@
 import { recordExposure } from './allocation.ts'
 import { getNextGuessTarget } from './assignments.ts'
 import { shuffle } from './random.ts'
+import { getDreamClue } from './clues.ts'
 import { getPreparedFirstRound } from './simulation.ts'
 import type { Card, ConceptId, DreamWeek, GuessingBoardView, GuessingRound, Player, PlayerId } from './types.ts'
 
@@ -31,7 +32,7 @@ export function createGuessingBoard(
   }
   const { allocation } = week
   const seen = allocation.seen.get(guesserId)
-  if (!seen) throw new Error('The guessing player has no image history.')
+  if (!seen) throw new Error('The guessing player has no dream card history.')
   const known = new Set(allocation.cardIds)
   const ownDreams = new Set(week.dreams.get(guesserId)?.values())
   const ownDreamId = week.dreams.get(guesserId)?.get(conceptId)
@@ -50,11 +51,11 @@ export function createGuessingBoard(
   const eligible = [...new Set(allocation.available)].filter((id) =>
     known.has(id) && !allocation.reserved.has(id) && !seen.has(id),
   )
-  if (eligible.length < 3) throw new Error('Not enough unseen images to open this dream. Three are needed.')
+  if (eligible.length < 3) throw new Error('Not enough unseen dream cards to open this dream. Three are needed.')
   const decoys = shuffle(eligible, random).slice(0, 3)
   const cardIds = [ownDreamId, ...shuffle([...actual, ...decoys], random)]
   const round: GuessingRound = { ...prepared, conceptId, id: `round-${week.id}-${roundIndex + 1}`, ownDreamId, cardIds, assignments: new Map() }
-  // Decoys remain unallocated; Charlie's exposure excludes them from later boards.
+  // Decoys remain unallocated; this guesser's exposure excludes them from later boards.
   return { week: { ...week, allocation: recordExposure(allocation, guesserId, cardIds) }, round }
 }
 
@@ -73,6 +74,7 @@ export function getGuessingBoardView(
   })
   const next = getNextGuessTarget(round)
   return {
+    ...(week.mode === 'personal' && next ? { currentClue: getDreamClue(week, next, round.conceptId) } : {}),
     concept,
     ownDream: getOwnDreamCard(week, round.guesserId, round.conceptId, cards),
     cards: round.cardIds.map((id) => {

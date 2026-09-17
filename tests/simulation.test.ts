@@ -6,6 +6,9 @@ import { CURRENT_PLAYER_ID, players } from '../src/data/players.ts'
 import { chooseDream, getNextDreamConcept } from '../src/game/selection.ts'
 import { getPreparedFirstRound, prepareSimulatedDreams } from '../src/game/simulation.ts'
 import { createDreamWeek, getWeekIntroduction } from '../src/game/week.ts'
+import { prepareSimulatedGuesses } from '../src/game/simulatedGuesses.ts'
+import { createGuessingBoard, getGuessingBoardView } from '../src/game/board.ts'
+import { scoreRound } from '../src/game/scoring.ts'
 import type { DreamWeek } from '../src/game/types.ts'
 
 const fresh = () => createDreamWeek('week-fixture', concepts, cards, players, () => 0)
@@ -88,4 +91,63 @@ test('invalid randomness after partial work and unknown human IDs cannot mutate 
   assert.throws(() => prepareSimulatedDreams(week, 'player-missing'), /Unknown human/)
   assert.throws(() => getPreparedFirstRound(week, 'player-missing'), /Unknown human/)
   assert.equal(getPreparedFirstRound(prepareCharlie(week), CURRENT_PLAYER_ID), null)
+})
+
+test('simulated guesses use each friend’s own board, distinct legal choices and private exposure across the week', () => {
+  let week = prepareSimulatedDreams(prepareCharlie(fresh()), CURRENT_PLAYER_ID, () => 0.4)
+  const humanSeen = week.allocation.seen.get(CURRENT_PLAYER_ID)
+  const hands = week.allocation.hands
+  const dreams = week.dreams
+  for (let day = 0; day < 6; day++) {
+    const before = structuredClone(week)
+    const prepared = prepareSimulatedGuesses(week, CURRENT_PLAYER_ID, day, () => 0.3)
+    assert.deepEqual(week, before)
+    assert.deepEqual(prepared, prepareSimulatedGuesses(week, CURRENT_PLAYER_ID, day, () => 0.3))
+    assert.deepEqual(prepared.simulatedRounds.map((round) => round.guesserId), ['player-nancy', 'player-song'])
+    for (const round of prepared.simulatedRounds) {
+      assert.equal(round.conceptId, week.roundOrder[day])
+      assert.equal(round.cardIds.length, 6)
+      assert.equal(new Set(round.cardIds).size, 6)
+      assert.equal(round.cardIds[0], round.ownDreamId)
+      assert.equal(round.assignments.size, 2)
+      assert.equal(new Set(round.assignments.values()).size, 2)
+      assert.ok(![...round.assignments.values()].includes(round.ownDreamId))
+      assert.ok(round.assignments.has(CURRENT_PLAYER_ID))
+      assert.equal(scoreRound(prepared.week, round).guesses.length, 2)
+      const decoys = round.cardIds.filter((id) => !week.allocation.reserved.has(id))
+      assert.equal(decoys.length, 3)
+      for (const id of decoys) {
+        assert.ok(!week.allocation.seen.get(round.guesserId)!.has(id))
+        assert.ok(prepared.week.allocation.seen.get(round.guesserId)!.has(id))
+      }
+    }
+    week = prepared.week
+  }
+  assert.equal(week.allocation.seen.get(CURRENT_PLAYER_ID), humanSeen)
+  assert.equal(week.allocation.hands, hands)
+  assert.equal(week.dreams, dreams)
+})
+
+test('failed friend simulation leaves all boards and exposure untouched, even after preparing one friend', () => {
+  const week = prepareSimulatedDreams(prepareCharlie(fresh()), CURRENT_PLAYER_ID, () => 0)
+  const seen = new Map(week.allocation.seen)
+  seen.set('player-song', new Set(week.allocation.cardIds))
+  const exhausted = { ...week, allocation: { ...week.allocation, seen } }
+  const before = structuredClone(exhausted)
+  assert.throws(() => prepareSimulatedGuesses(exhausted, CURRENT_PLAYER_ID, 0, () => 0), /Not enough unseen/)
+  assert.deepEqual(exhausted, before)
+  let calls = 0
+  const original = structuredClone(week)
+  assert.throws(() => prepareSimulatedGuesses(week, CURRENT_PLAYER_ID, 0, () => ++calls < 95 ? 0 : NaN), /Randomness/)
+  assert.deepEqual(week, original)
+  assert.throws(() => prepareSimulatedGuesses(week, 'player-missing', 0), /Unknown human/)
+})
+
+test('simulation cannot add private guesses or answers to Charlie’s presentation', () => {
+  const week = prepareSimulatedDreams(prepareCharlie(fresh()), CURRENT_PLAYER_ID, () => 0)
+  const human = createGuessingBoard(week, CURRENT_PLAYER_ID, 0, () => 0)
+  const before = getGuessingBoardView(human.week, human.round, cards, players)
+  const simulated = prepareSimulatedGuesses(human.week, CURRENT_PLAYER_ID, 0, () => 0.5)
+  assert.deepEqual(getGuessingBoardView(simulated.week, human.round, cards, players), before)
+  assert.equal(human.round.assignments.size, 0)
 })

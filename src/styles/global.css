@@ -31,6 +31,17 @@ button:disabled { opacity: 0.5; cursor: default; }
 .masthead { display: flex; align-items: center; justify-content: space-between; gap: 1rem; width: 100%; max-width: 76rem; margin: 0 auto 0.75rem; padding-inline: 0.25rem; }
 .wordmark { color: #f3d8a7; font-size: clamp(1.2rem, 3vw, 1.65rem); letter-spacing: 0.045em; }
 .wordmark > span { display: inline-block; margin-right: 0.15rem; color: #d6ae71; }
+.masthead-start { display: flex; align-items: center; gap: 0.5rem; }
+.scoring-help-button { display: grid; place-items: center; flex-shrink: 0; width: 44px; height: 44px; padding: 0; border: 1px solid #aca6c5; border-radius: 50%; background: #ffffff08; color: #f3d8a7; font-size: 1.25rem; }
+.scoring-help-button:focus-visible { outline-color: #f3d8a7; }
+.scoring-help-dialog { width: min(92vw, 28rem); max-height: 90svh; padding: 1.5rem; border: 1px solid #b6a5c5; border-radius: 1.5rem 0.5rem; background: var(--paper); color: var(--ink); box-shadow: 0 1.5rem 6rem #07191db3; line-height: 1.6; }
+.scoring-help-dialog::backdrop { background: #22213ce6; }
+.scoring-help-dialog h2 { margin: 0.375rem 0 1rem; font-size: 1.75rem; font-weight: 400; line-height: 1.2; }
+.scoring-help-dialog h2:focus { outline: none; }
+.scoring-help-dialog ul { padding-left: 1.25rem; }
+.scoring-help-dialog li + li { margin-top: 0.5rem; }
+.scoring-help-total { margin-top: 1rem; }
+.scoring-help-dialog .quiet-button { display: block; margin: 1.25rem auto 0; max-width: 100%; }
 .dev-day-controls { display: flex; flex-direction: column; align-items: flex-end; gap: 0.25rem; color: #d9d8ec; font: 0.6875rem/1.5 system-ui, sans-serif; }
 .dev-day-controls .quiet-button { min-height: 44px; padding: 0.5rem 0.75rem; border-color: #9692b4; background: transparent; color: #f5eff9; font: inherit; box-shadow: none; }
 .dev-day-controls button:focus-visible { outline-color: #f3d8a7; }
@@ -52,6 +63,27 @@ h1 { max-width: 14ch; margin-top: 1rem; font-size: clamp(2.4rem, 7vw, 4.5rem); f
 .closing-note { margin-top: 1rem; color: var(--muted); font-size: 0.875rem; line-height: 1.7; }
 .divider { display: block; width: 2.5rem; height: 1px; margin: 0 auto 1.2rem; background: var(--gold); }
 .enter-week { margin-top: 1.5rem; }
+.mode-picker { display: grid; gap: 0.25rem; max-width: 25rem; margin: 1.25rem auto 0; padding: 0; border: 0; color: var(--muted); font: 0.875rem/1.5 system-ui, sans-serif; text-align: left; }
+.mode-picker legend { margin-bottom: 0.375rem; }
+.mode-picker label { display: flex; align-items: center; gap: 0.5rem; min-height: 44px; cursor: pointer; }
+.mode-picker input { accent-color: var(--plum); width: 1.125rem; height: 1.125rem; }
+.mode-picker input:focus-visible, .clue-editor textarea:focus-visible { outline: 3px solid #b46a29; outline-offset: 3px; }
+.mode-reset { min-height: 44px; max-width: 100%; margin-top: 0.5rem; padding: 0.5rem; background: transparent; border: 0; color: #e1d9ef; font: 0.75rem/1.5 system-ui, sans-serif; text-decoration: underline; text-underline-offset: 0.25em; }
+.clue-editor { max-width: 32rem; margin: 0.75rem auto 0; text-align: left; font: 0.875rem/1.5 system-ui, sans-serif; }
+.clue-editor label { display: block; margin-bottom: 0.375rem; }
+.preparation-priority { color: var(--ink); font: 600 1rem/1.5 system-ui, sans-serif; }
+.clue-editor textarea { display: block; width: 100%; height: 6rem; resize: none; padding: 0.625rem; border: 1px solid #776391; border-radius: 0.5rem; background: #d9d8eb; color: var(--ink); font: 1rem/1.5 system-ui, sans-serif; }
+.clue-editor textarea::placeholder { color: #635c71; opacity: 1; }
+.clue-editor p { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.25rem; margin-top: 0.375rem; font-size: 0.75rem; }
+.clue-editor .clue-counter { justify-content: flex-end; }
+.preparation-instruction { margin: 0.5rem auto 1rem; color: var(--ink); font-size: 1.125rem; font-weight: 600; line-height: 1.5; }
+.clue-text, .own-concept, .choice-prompt { overflow-wrap: anywhere; white-space: normal; }
+.clue-text { font-size: 1rem; line-height: 1.5; letter-spacing: normal; text-transform: none; }
+.current-clue { display: grid; align-content: center; min-height: 9rem; max-width: 38rem; margin: 0.5rem auto 0; color: var(--plum); font-size: clamp(1.5rem, 4vw, 2rem); line-height: 1.4; }
+.personal-guessing .gallery-heading h1 { min-height: 3.6em; }
+.result-clue { margin-block: 0.5rem; color: var(--muted); }
+.recognition-score { margin-top: 0.5rem; color: var(--plum); font-size: 0.875rem; line-height: 1.5; }
+.received-guesses { grid-column: 1 / -1; }
 
 /* Moonlit paper frames a deck with deliberately varied colors and emotions. */
 .gallery-page { flex: 1; width: 100%; max-width: 76rem; margin: 0 auto; padding: 1.25rem 0.75rem; border: 1px solid #b6a5c5; border-radius: 1.75rem 0.5rem 1.75rem 0.5rem; background: radial-gradient(ellipse at 0 0, #d7c6ec44, transparent 32rem), radial-gradient(ellipse at 100% 100%, #c4cee833, transparent 36rem), var(--paper); box-shadow: 0 1rem 3rem #0b222933; text-align: center; }
@@ -67,13 +99,17 @@ h1 { max-width: 14ch; margin-top: 1rem; font-size: clamp(2.4rem, 7vw, 4.5rem); f
 .concept-list { display: flex; justify-content: center; flex-wrap: wrap; gap: 0.25rem 0.75rem; width: 100%; max-width: 37rem; margin: 0.625rem auto 0; padding: 0; list-style: none; font-size: 0.6875rem; line-height: 1.5; letter-spacing: 0.06em; }
 .concept-list li { padding: 0.125rem; }
 .week-overview .gallery-note { margin: 0.25rem 0 0.5rem; font-size: 0.75rem; }
-.selection-page h2, .selection-complete h2 { margin: 0 auto; font-size: clamp(1.65rem, 4vw, 2.75rem); font-weight: 400; line-height: 1.25; text-wrap: balance; scroll-margin-top: 1.5rem; }
+.preparation-progress { margin-bottom: 0.5rem; }
+.saved-dream { display: grid; align-content: center; min-height: 3rem; margin-bottom: 0.375rem; color: var(--plum); font: 0.8125rem/1.5 system-ui, sans-serif; }
+.clue-editor + .preparation-priority { margin-top: 1rem; }
+.selection-page h1, .selection-page h2, .selection-complete h1, .selection-complete h2 { margin: 0 auto; font-size: clamp(1.65rem, 4vw, 2.75rem); font-weight: 400; line-height: 1.25; text-wrap: balance; scroll-margin-top: 1.5rem; }
+.selection-page h1 { min-height: 1.25em; }
 .dream-word { color: #554174; }
-.selection-page h2:focus, .selection-complete h2:focus, .guessing-page h1:focus, .week-complete h1:focus { outline: none; }
+.selection-page h1:focus, .selection-page h2:focus, .selection-complete h1:focus, .selection-complete h2:focus, .guessing-page h1:focus, .week-complete h1:focus { outline: none; }
 .guessing-page h1 { scroll-margin-top: 1.5rem; }
 .selection-feedback { min-height: 1.5rem; margin-top: 0.25rem; color: var(--muted); font-size: 0.8125rem; line-height: 1.6; }
 .selection-error { margin-top: 1rem; color: #8b3245; line-height: 1.6; }
-.selection-complete h2 { max-width: 18ch; }
+.selection-complete h1, .selection-complete h2 { max-width: 18ch; }
 .selection-complete .invitation, .selection-complete .gallery-hint { margin-inline: auto; }
 .selection-complete .gallery-hint { max-width: 38ch; }
 .completion-mark { display: block; margin-bottom: 1rem; color: #9c7236; font-size: 2rem; line-height: 1; }
@@ -91,9 +127,20 @@ h1 { max-width: 14ch; margin-top: 1rem; font-size: clamp(2.4rem, 7vw, 4.5rem); f
 .card-preview[aria-pressed='true'] { outline: 3px solid var(--plum); outline-offset: 3px; }
 .chosen-marker, .locked-marker { display: block; padding: 0.4rem 0.15rem 0.15rem; color: var(--plum); background: #d1cfe5; font-family: system-ui, sans-serif; font-size: 0.6875rem; font-weight: 600; line-height: 1.5; }
 .chosen-marker::before { content: '✓ '; }
-.card-preview.own-card { border: 3px solid #5f619b; padding: 2px; }
+.card-preview.own-card { border: 3px solid var(--player-color, #5f619b); padding: 2px; }
+/* These accents identify the player's guesses, never unrevealed answers. */
+[data-player-accent='indigo'] { --player-color: #484979; --player-surface: #ddddef; }
+[data-player-accent='rose'] { --player-color: #813656; --player-surface: #ead5e0; }
+[data-player-accent='blue'] { --player-color: #22566c; --player-surface: #d1e2ea; }
+[data-player-accent='amber'] { --player-color: #6e4818; --player-surface: #eddfc5; }
+[data-player-accent='forest'] { --player-color: #2b5635; --player-surface: #d6e4d6; }
+[data-player-accent='plum'] { --player-color: #673e83; --player-surface: #e5d7ed; }
+.player-name { color: var(--player-color, var(--plum)); }
+.card-frame .card-preview.locked-card { border: 3px solid var(--player-color, var(--plum)); padding: 2px; }
+.locked-card .locked-marker { color: var(--player-color, var(--plum)); }
 .own-card-marker, .revealed-marker { display: block; padding: 0.45rem 0.2rem 0.2rem; color: #4f5083; font: 600 0.75rem/1.5 system-ui, sans-serif; }
 .own-card-marker > span { display: block; font-weight: 400; font-size: 0.6875rem; }
+.own-card .own-card-marker { color: var(--player-color, #4f5083); }
 .round-board { margin-top: 0.75rem; }
 /* Sticky actions stay within reach without a trip to the bottom of the hand. */
 .inline-choice { position: sticky; bottom: max(0.5rem, env(safe-area-inset-bottom)); z-index: 2; display: grid; grid-template-columns: minmax(0, 1fr); justify-items: center; align-items: center; gap: 0.375rem 0.5rem; width: fit-content; max-width: 100%; margin: 0.75rem auto 0; padding: 0.5rem 1rem; border: 1px solid #b6a5c5; border-radius: 0.75rem; background: var(--paper); box-shadow: 0 3px 20px #24244030; }
@@ -104,7 +151,7 @@ h1 { max-width: 14ch; margin-top: 1rem; font-size: clamp(2.4rem, 7vw, 4.5rem); f
 .revealed-choice { width: 100%; position: static; display: block; min-height: 113px; max-width: none; padding: 0; border: 0; background: none; box-shadow: none; }
 /* Labels and revisions have reserved space: selecting, locking and revealing never resize a card. */
 .card-caption { padding-right: 44px; display: flex; flex-direction: column; justify-content: center; min-height: 3.25rem; }
-.guessing-gallery .card-caption { min-height: 3.25rem; }
+.guessing-gallery .card-caption { min-height: 5rem; }
 .card-caption > span { padding: 0; }
 .card-revision { min-height: 48px; }
 .card-revision .unlock-guess { margin: 0; }
@@ -112,7 +159,9 @@ h1 { max-width: 14ch; margin-top: 1rem; font-size: clamp(2.4rem, 7vw, 4.5rem); f
 .round-note { min-height: 1.6em; margin-top: 0.25rem; color: var(--muted); font-size: 0.875rem; line-height: 1.6; }
 .card-preview[aria-pressed='true']:focus-visible { outline: 3px solid #b46a29; outline-offset: 3px; }
 .remember-dream { display: block; width: 100%; }
-.unlock-guess { width: 100%; padding-inline: 0.125rem; font-size: 0.75rem; }
+.unlock-guess { display: inline-flex; justify-content: center; align-items: center; gap: 0.375rem; min-height: 44px; max-width: 100%; padding: 0.375rem 0.625rem; border: 1px solid var(--player-color, var(--plum)); border-radius: 0.5rem 1rem 0.5rem 1rem; background: var(--player-surface, var(--paper)); color: var(--player-color, var(--plum)); box-shadow: 0 2px 4px #24244015; font: 500 0.75rem/1.4 system-ui, sans-serif; }
+.unlock-guess svg { flex-shrink: 0; }
+.unlock-guess:hover { box-shadow: inset 0 0 0 1px currentColor, 0 2px 4px #24244015; }
 .dream-context { margin-top: 1.5rem; }
 .own-dream { display: flex; justify-content: center; align-items: center; gap: 1.25rem; max-width: 20rem; margin: 0 auto 1.5rem; padding: 0.875rem 1rem; border: 1px dashed #b3a0c2; border-radius: 1.5rem 0.375rem; background: #e2d8ed66; }
 .own-dream .card-gallery { flex-shrink: 0; width: 5.5rem; grid-template-columns: minmax(0, 1fr); margin: 0; }
@@ -120,13 +169,27 @@ h1 { max-width: 14ch; margin-top: 1rem; font-size: clamp(2.4rem, 7vw, 4.5rem); f
 .friends-dreams { min-width: 0; }
 .friends-dreams > .card-gallery { margin-top: 0; }
 .round-results { display: grid; gap: 1.5rem; margin-top: 1.5rem; }
+.round-summary-slot { display: grid; align-items: center; min-height: calc(var(--summary-phone-rows) * 8rem + 5rem); max-width: 56rem; margin: 0.5rem auto; }
+.round-summary-slot .current-clue { margin-block: 0; }
+.round-results.round-results-summary { grid-template-columns: repeat(var(--summary-phone-columns), minmax(0, 1fr)); gap: 0.75rem; margin: 0; align-items: start; }
+.round-results-summary .friend-result { min-width: 0; overflow-wrap: anywhere; }
+.round-results-summary .friend-result h2 { margin: 0 0 0.25rem; font-size: 1.25rem; }
+.round-results-summary .result-clue { margin: 0.25rem 0; font-size: 0.875rem; line-height: 1.4; }
+.round-results-summary .result-message { font-size: 0.875rem; line-height: 1.4; }
+.round-results-summary .result-message span { font-size: inherit; }
+.round-results-summary .received-guesses .result-message > span { display: inline; }
+.round-results-summary .recognition-score { margin-top: 0.375rem; }
 .friend-result h2, .friend-result h3 { margin: 0 0 0.5rem; color: var(--plum); font-weight: 400; font-size: 1.625rem; }
 .result-message { color: #50485f; line-height: 1.6; }
 .result-message span { display: block; font-size: 0.875rem; }
+.received-guesses h2, .received-guesses h3 { margin: 0 0 0.5rem; color: var(--plum); font-weight: 400; font-size: 1.25rem; }
+.received-guesses .result-message .player-name { display: inline; }
+.final-choice .received-guesses { grid-column: 1 / -1; }
+.final-choice .received-guesses .result-message > span { display: inline; }
 .reveal-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem; margin-top: 1rem; }
 .reveal-pair figure { min-width: 0; margin: 0; }
 .reveal-pair figcaption { margin-bottom: 0.5rem; color: var(--muted); font-size: 0.8125rem; }
-.reveal-pair img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: contain; padding: 3px; border: 1px solid #a394b6; border-radius: 0.625rem; background: #d1cfe5; box-shadow: 0 3px 8px #4331231a; }
+.reveal-pair .card-gallery { display: block; margin: 0; }
 .week-score { margin-top: 1rem; color: var(--plum); font-size: 0.9375rem; line-height: 1.6; }
 .round-note.week-score { margin-top: 0.25rem; font-size: 0.875rem; }
 .reveal-dreams, .restart-week { margin-top: 1.5rem; }
@@ -146,9 +209,11 @@ h1 { max-width: 14ch; margin-top: 1rem; font-size: clamp(2.4rem, 7vw, 4.5rem); f
 }
 @media (max-width: 22rem) {
   .selection-page h2 { min-height: 2.5em; }
-  .guessing-gallery .card-caption { min-height: 4.5rem; }
+  .guessing-gallery .card-caption { min-height: 6.5rem; }
 }
 @media (min-width: 48rem) {
+  .round-summary-slot { min-height: calc(var(--summary-tablet-rows) * 8rem + 5rem); }
+  .round-results.round-results-summary { grid-template-columns: repeat(var(--summary-tablet-columns), minmax(0, 1fr)); }
   .dreamerie-shell { padding: 1rem 1.5rem; }
   .gallery-page { padding: 1.5rem; }
   .concept-list { grid-template-columns: repeat(6, minmax(0, 1fr)); font-size: 0.75rem; }
@@ -169,6 +234,8 @@ h1 { max-width: 14ch; margin-top: 1rem; font-size: clamp(2.4rem, 7vw, 4.5rem); f
   .masthead { margin-bottom: 1rem; }
 }
 @media (min-width: 70rem) {
+  .round-summary-slot { min-height: calc(var(--summary-wide-rows) * 8rem + 5rem); }
+  .round-results.round-results-summary { grid-template-columns: repeat(var(--summary-wide-columns), minmax(0, 1fr)); }
   .selection-page > .card-gallery, .friends-dreams > .card-gallery, .selection-complete > .card-gallery { max-width: 56rem; gap: 1rem; }
   .guessing-page .gallery-heading h1 { min-height: 1.1em; max-width: none; }
 }
@@ -182,7 +249,7 @@ h1 { max-width: 14ch; margin-top: 1rem; font-size: clamp(2.4rem, 7vw, 4.5rem); f
   to { opacity: 1; }
 }
 @media (prefers-reduced-motion: no-preference) {
-  .dream-prompt-text, .selection-complete h2, .week-complete h1 {
+  .dream-prompt-text, .selection-complete h1, .selection-complete h2, .week-complete h1 {
     animation: dream-text-in 220ms ease-out;
   }
   /* Card IDs preserve the five unchanged images; only incoming images load again. */

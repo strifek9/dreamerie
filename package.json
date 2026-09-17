@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "typecheck": "tsc -b",
-    "test": "node --experimental-strip-types --test tests/allocation.test.ts tests/week.test.ts tests/selection.test.ts tests/simulation.test.ts tests/board.test.ts tests/assignments.test.ts tests/progression.test.ts",
+    "test": "node --experimental-strip-types --test tests/allocation.test.ts tests/week.test.ts tests/selection.test.ts tests/simulation.test.ts tests/board.test.ts tests/assignments.test.ts tests/progression.test.ts tests/personal.test.ts",
     "build": "npm run typecheck && vite build",
     "preview": "vite preview --host 127.0.0.1"
   },

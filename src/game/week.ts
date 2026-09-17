@@ -1,6 +1,6 @@
 import { dealInitialHands } from './allocation.ts'
 import { shuffle } from './random.ts'
-import type { Card, DreamConcept, DreamWeek, Player, WeekId, WeekIntroduction } from './types.ts'
+import type { Card, DreamConcept, DreamMode, DreamWeek, Player, WeekId, WeekIntroduction } from './types.ts'
 
 export function createDreamWeek(
   id: WeekId,
@@ -8,6 +8,7 @@ export function createDreamWeek(
   cards: readonly Card[],
   players: readonly Player[],
   random: () => number = Math.random,
+  mode: DreamMode = 'classic',
 ): DreamWeek {
   if (concepts.length !== 6) throw new Error('A Dream Week must contain exactly six concepts.')
   if (new Set(concepts.map((concept) => concept.id)).size !== 6) {
@@ -21,12 +22,14 @@ export function createDreamWeek(
   const setupOrder = weekConcepts.map((concept) => concept.id)
   const roundOrder = shuffle(setupOrder, random)
   return {
+    mode,
     id,
     concepts: weekConcepts,
     setupOrder,
     roundOrder,
     allocation: dealInitialHands(id, cards, players, random),
     dreams: new Map(players.map((player) => [player.id, new Map()])),
+    clues: new Map(players.map((player) => [player.id, new Map()])),
   }
 }
 
