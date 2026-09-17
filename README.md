@@ -8,7 +8,9 @@ The product is mobile-first and responsive for mobile and desktop web. Artwork l
 
 ## Current status
 
-**Next prototype:** [Prototype 0.2 plan](docs/PROTOTYPE_0_2_PLAN.md) covers 2–6 players on their own phones or desktop browsers, private rooms and a separate lobby for solo players. The host can progress the game manually, and days must also advance automatically when due. The user requested decoy substitution and zero points for a missed day; its detailed scoring behavior, day timing and solo-group formation still need decisions. Planning is authorized; shared play, scheduling and hosting are not yet implemented. The runnable app remains the approved local Prototype 0.1.
+**Next prototype:** [Prototype 0.2 plan](docs/PROTOTYPE_0_2_PLAN.md) covers 2–6 players on their own phones or desktop browsers, private rooms; solo play and matchmaking are deferred. The host can progress the game manually, and days also advance automatically at midnight America/Chicago. The user requested decoy substitution and zero points for a missed day; its detailed scoring behavior and deadline-transition policies still need decisions. Planning is authorized; shared play, scheduling and hosting are not yet implemented. The runnable app remains the approved local Prototype 0.1.
+
+Milestone **0.2.0 is in progress**: [the technical design](docs/PROTOTYPE_0_2_TECHNICAL_DESIGN.md) specifies the service, storage, private player views, scheduling and first coding scope. Midnight America/Chicago is now confirmed for automatic rollover. No server packages or hosting have been installed; unresolved game policies remain identified in the plan.
 
 Round results now appear between **The dream comes into focus.** and **Dreams remembered**, above the dream cards. The summary includes each friend's dream clue, your guess result and points, followed by friends' recognition of your Dream and its points. It wraps across two columns on phones, up to three on tablets and up to five on wider screens. Five-friend layouts are checked with presentation fixtures; the playable prototype still uses Charlie, Nancy and Song.
 
