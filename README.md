@@ -8,11 +8,11 @@ The product is mobile-first and responsive for mobile and desktop web. Artwork l
 
 ## Current status
 
-**Next prototype:** [Prototype 0.2 plan](docs/PROTOTYPE_0_2_PLAN.md) covers 2–6 players on their own phones or desktop browsers, private rooms; solo play and matchmaking are deferred. The host can progress the game manually, and days also advance automatically at midnight America/Chicago. The user requested decoy substitution and zero points for a missed day; its detailed scoring behavior and deadline-transition policies still need decisions. Planning is authorized; shared play, scheduling and hosting are not yet implemented. The runnable app remains the approved local Prototype 0.1.
+**Prototype 0.2:** [The plan](docs/PROTOTYPE_0_2_PLAN.md) covers private rooms for 2–6 players on phone and desktop browsers. Milestone **0.2.2 is implemented and awaiting user testing**: create a room, share an invitation, join with distinct names, and return to the same seat after refresh or a service restart. The waiting room shows all six player accents and host identity. It stops before dealing cards; connected gameplay, scheduling and hosting are not yet implemented. The complete local Prototype 0.1 remains available.
 
-Milestone **0.2.1 is implemented and awaiting user testing**: the game rules support 2–6 fully participating players, with the correct decoy count, private exposure, scoring and individual recaps. Results carry the guessing player's ID; scoring rejects incomplete/foreign rosters and recaps reject another player's or week's results. Fifteen new tests play complete personal and classic weeks for every supported size, including two-player zero recognition and six-player boards without decoys. The visible demo still uses Charlie, Nancy and Song; room joining comes in 0.2.2.
+Milestone **0.2.1 is approved**: the game rules support 2–6 fully participating players, with the correct decoy count, private exposure, scoring and individual recaps. Results carry the guessing player's ID; scoring rejects incomplete/foreign rosters and recaps reject another player's or week's results. Rule tests play complete personal and classic weeks for every supported size, including two-player zero recognition and six-player boards without decoys. The local demo still uses Charlie, Nancy and Song.
 
-The [technical design](docs/PROTOTYPE_0_2_TECHNICAL_DESIGN.md) specifies the future service, storage, private player views and scheduling. Midnight America/Chicago is confirmed for automatic rollover, but no server packages or hosting have been installed. The user authorized independent roster-rule work while remaining lifecycle and missed-day policies from 0.2.0 stay open; this milestone does not implement skips or timers.
+The [technical design](docs/PROTOTYPE_0_2_TECHNICAL_DESIGN.md) describes the Fastify/SQLite service and later private gameplay/scheduling. Midnight America/Chicago is confirmed for future rollover. Detailed lifecycle and missed-day policies remain open; this milestone sets no room-expiry schedule, skips or timers. Solo play and matchmaking are deferred. No hosting has been purchased or provisioned.
 
 Round results now appear between **The dream comes into focus.** and **Dreams remembered**, above the dream cards. The summary includes each friend's dream clue, your guess result and points, followed by friends' recognition of your Dream and its points. It wraps across two columns on phones, up to three on tablets and up to five on wider screens. Five-friend layouts are checked with presentation fixtures; the playable prototype still uses Charlie, Nancy and Song.
 
@@ -28,7 +28,7 @@ In this mode, each correct guess earns you 1 point. You also earn 1 point for ea
 
 Milestones 1–6 are approved. Milestones 7–10, including the requested full-week test flow, are implemented, and the user approved proceeding to Milestone 11. Day 1 is preparation; the top-right development control advances through six guessing days. Each day has Nancy's prompt followed by Song's on one stable board, locked guesses, an explicit reveal, and +1 point per correct answer. After Day 7, finish the week to see Charlie's total and begin a fresh week. Nancy's and Song's random valid choices are local fixtures, not a model of personal interpretation.
 
-Prototype 0.1 uses **React, TypeScript, and Vite**. Charlie is the human; Nancy and Song are simulated players. All 12 planned milestones and the subsequent personal-clue, scoring and presentation refinements are implemented. The user completed the final full-week playtest and approved Prototype 0.1. The authorized 0.2.1 rule changes preserve that local demonstration; private rooms remain the next milestone after testing and approval.
+Prototype 0.1 uses **React, TypeScript, and Vite**. Charlie is the human; Nancy and Song are simulated players. All 12 planned milestones and the subsequent personal-clue, scoring and presentation refinements are implemented and approved. Open the local demo to play a complete week while connected preparation remains the next milestone.
 
 The latest requested revisions add clearing/unlocking guesses before reveal, Charlie's own Dream in the first board slot, and a complete end-of-week recap. The “Return to the beginning” controls have been removed. The user approved moving on to the responsive polish step.
 
@@ -36,7 +36,45 @@ The user confirmed +1 per friend who recognizes your Dream, except when everyone
 
 ## Run locally
 
-Use Node.js 22.12+ and npm (validated with Node 22.18.0 and npm 11.5.2). This satisfies [Vite's Node.js requirements](https://vite.dev/guide/).
+Use Node.js **22.18+ on the 22.x line, or 24+**, and npm. Node 24 LTS remains the intended hosting runtime; this implementation and native SQLite installation were tested on the existing Windows Node 22.18.0 / npm 11.5.2 environment. The development service uses Node's built-in TypeScript support.
+
+### Private waiting rooms (0.2.2)
+
+Install the new dependencies once, then start the room service:
+
+```powershell
+npm install
+npm run dev:server
+```
+
+In a second terminal:
+
+```powershell
+npm run dev
+```
+
+Open **http://127.0.0.1:5173/?play=rooms**, or choose **Gather friends in a private room** on the welcome page. Use this exact address (not `localhost`) with the default origin setting. If Vite was already running during package installation, restart it. Stop either process with **Ctrl+C** in its terminal.
+
+Create a room, copy its invitation, and open it in a different browser or an InPrivate/incognito window. Join with another display name. Ordinary tabs in the same browser share a seat; private windows can also share one private session with each other. To test six distinct players, use separate browser profiles. Refresh both windows and restart the room service to check that the roster, colors, host and identities remain. A seventh player and a duplicate name should receive clear feedback. **There is no Start button or card dealing in this milestone.**
+
+Names use 1–24 characters after trimming/collapsing whitespace; case and Unicode compatibility differences do not make a duplicate name distinct. Add an initial if needed. A name or invitation never recovers another player's seat. Session cookies last 30 days; clearing browser data, closing the last private window, switching profiles/devices or losing the cookie loses access to that seat. There is no account recovery or seat-removal flow yet.
+
+The service stores local rooms in ignored `data/dreamerie.sqlite` with SQLite sidecar files. These are separate from the in-memory local demo. Room expiry/cleanup is not scheduled while retention policy remains undecided. `.env.example` lists optional settings; no `.env` is needed for the defaults. Never put the database under `dist/` or `public/`, which contain public assets.
+
+This loopback URL works only on this computer. A shared phone/remote-browser URL and HTTPS hosting come in the later hosted-playtest milestone. `npm run preview` serves only the local demo assets; use the two-terminal setup above for rooms.
+
+To check the compiled service serving the frontend on one local origin:
+
+```powershell
+npm run build
+$env:SERVE_STATIC='1'
+$env:APP_ORIGIN='http://127.0.0.1:3001'
+npm start
+```
+
+Open `http://127.0.0.1:3001/?play=rooms` after stopping any service already on port 3001. These settings apply to this terminal; use a fresh terminal for the default development commands. Production configuration requires HTTPS and an explicit persistent database path; it has not been deployed.
+
+### Local game demo (0.1)
 
 ```powershell
 npm ci
@@ -66,7 +104,7 @@ npm run build
 npm run preview
 ```
 
-The build includes TypeScript checks and writes production assets to `dist/`. Preview serves that build locally. Tests use Node's built-in runner and TypeScript stripping, with no added test dependency. Seventy tests cover clue validation, per-guesser recognition scoring, both modes, 2–6-player full weeks, dealing, exposure, selection/replacement, simulated Dreams and guesses, strict decoys, stable boards, assignment locking/unlocking, delayed reveal, complete individual recaps, and fresh restart, including invalid/repeated commands, foreign results and exhaustion. Browser checks cover six phone/tablet/desktop widths, touch/keyboard interaction, clearing and revising guesses, focus, own-Dream references, all six days, recap images against played results, and restart in the existing three-player demo.
+The build includes frontend/server TypeScript checks and writes frontend assets to `dist/` and the service to `dist-server/`. Tests use Node's built-in runner and TypeScript stripping. All **81 tests** pass: 70 gameplay tests and 11 service tests covering session isolation, duplicate requests/names, concurrent capacity, invalid input, CSRF/origin protection, state guards, restart persistence, credential expiry, HTTPS cookies and rate limits. Use `npm run test:server` for just the service tests. Browser checks cover six independent room sessions, invitation entry, full/duplicate-room errors, refresh, lost-response retry across refresh, disconnect/reconnect and preserved focus at 320, 375, 390, 430, 768 and 1440px. Both local modes also pass full-week preparation, guessing, reveal, inspection, recap and restart checks. Real-device and hosted validation remain later work.
 
 Nancy and Song each receive a private six-card board and make two random valid guesses when a day begins. They cannot choose their own Dream or reuse an image for both friends. Their choices stay fixed while you choose or unlock guesses. After reveal, see whether each friend recognized your Dream; the final recap includes their guessed images under **Your Dream through their eyes**. Tap those images to inspect them. These are local random fixtures, not an AI interpretation of the artwork; no friend standings are shown.
 

@@ -2,7 +2,7 @@
 
 ## Status
 
-Milestone **0.2.0** service-design deliverable. The user approved moving forward with the [0.2 plan](PROTOTYPE_0_2_PLAN.md). This document selects an implementation direction and proposes hosting; it does not provision anything. The subsequently authorized 0.2.1 roster-rule work is now implemented and awaiting testing. No server dependencies or infrastructure have been added.
+Milestone **0.2.0** service-design deliverable, updated for implementation. The user approved 0.2.1 and authorized **0.2.2**, now implemented and awaiting testing. The local Fastify/SQLite room service, browser sessions, invitations and waiting-room UI exist. Dealing/gameplay/scheduling remain future milestones. This document proposes hosting; nothing has been provisioned or purchased.
 
 The user confirmed automatic rollover at **midnight in America/Chicago** for the first playtest. Solo play is deferred. Incomplete-day scoring and private-room lifecycle details still need decisions. [GAME_DESIGN.md](GAME_DESIGN.md) remains authoritative; open policies must not be supplied by a default in server code.
 
@@ -17,6 +17,8 @@ SQLite stores a small room's complete authoritative state in a transaction. Use 
 Use ordinary HTTP commands and poll the current player's view approximately every three seconds while visible. Fetch immediately after a command, on reconnect and on foregrounding a tab; use bounded backoff on failures and stop unnecessary hidden-tab polling. Polling is a transport choice, never the clock that advances a room. Reconcile views by revision and preserve focus, scroll and unchanged cards. Do not blindly retry a stale action after refreshing its revision.
 
 ## Hosting proposal and limits
+
+The proposal below remains a later deployment decision; running the local room service does not authorize provisioning.
 
 Propose **one paid Render web service plus a 1 GB persistent disk**, with the SQLite database under `/var/data/dreamerie.sqlite`. The published smallest paid compute price is approximately **$7/month**, and persistent disk storage is **$0.25/GB/month**: roughly **$7.25/month for compute plus this disk**, before bandwidth, build usage, taxes or any workspace charges. This is an estimate checked on 2026-09-17, not a purchased plan or a fixed total bill. Confirm the actual plan name, checkout price and budget before provisioning. [Render pricing](https://render.com/pricing).
 
@@ -110,10 +112,25 @@ For 0.2.2, start with `server/index.ts`, `server/http.ts`, `server/store.ts`, `s
 
 Add a separate server TypeScript configuration and build output (`dist-server/`), while Vite continues to build `dist/`. Compile the service and shared rules as Node-compatible ESM; explicitly handle the existing `.ts` import extensions in emitted output. Keep one lockfile and avoid reorganizing the app into workspaces without a demonstrated need.
 
-The future server milestone should introduce documented scripts such as `dev:server`, `build:server`, `test:server` and `start`. They do not exist yet. During local testing use one terminal for Vite and one for the service; production `start` serves the built assets and API. Ignore local database/WAL files and private environment files. A checked-in environment example contains names and safe placeholders only.
+Milestone 0.2.2 now provides `dev:server`, `build:server`, `test:server` and `start`; `npm test` includes service tests and `npm run build` builds both outputs. Use one terminal for Vite and one for the service. `start` serves built assets when `SERVE_STATIC=1` or `NODE_ENV=production`; production also requires explicit HTTPS origin and database configuration. Local database/WAL files and private environment files are ignored. `.env.example` contains safe local defaults. See the README for exact commands.
 
 Before provisioning, prepare a reviewable deployment configuration: chosen Node version, install/build/start commands, health endpoint, origin setting, persistent disk path, migration and backup procedure, measured resource needs and current estimated cost. Purchase and publication remain later actions requiring authorization.
 
 ## Review outcome
 
-The architecture and first coding scope are concrete. Midnight America/Chicago is confirmed. Milestone 0.2.0 retains open game-policy decisions; documenting a recommendation does not mark it accepted. The user separately authorized 0.2.1, now implemented for fully participating players with 70 passing tests and local-browser regression checks. Service, scheduling and missed-day behavior are not implemented.
+Midnight America/Chicago is confirmed. Milestone 0.2.0 retains open game-policy decisions; documenting a recommendation does not mark it accepted. Milestone 0.2.1 is approved. Milestone 0.2.2 adds the independent waiting-room service; scheduling, missed-day behavior and connected gameplay are not implemented.
+
+## Implemented boundary: 0.2.2
+
+- Exact direct service versions: Fastify 5.12.5, better-sqlite3 12.11.1, cookie 11.1.2, static 10.1.4 and rate-limit 10.3.0, locked in `package-lock.json`. Static 10.1.4 replaces the initially checked older line after its advisory was found; installation audit reports zero vulnerabilities. Compatibility references: [cookie](https://github.com/fastify/fastify-cookie), [static](https://github.com/fastify/fastify-static), [rate limiting](https://github.com/fastify/fastify-rate-limit).
+- Node 24 remains the intended hosting runtime. Existing Windows Node 22.18.0 also installs the SQLite native binary and passes build/tests; local support is 22.18+ within 22.x or 24+. Hosted Node 24 validation remains part of deployment, not an inferred result.
+- `server/migrations/001-lobbies.ts` holds the initial SQL, compiled alongside the service. Startup applies it transactionally with `user_version`; unsupported schema versions fail closed. SQLite uses WAL and foreign keys. Only sessions, rooms, memberships and entry receipts exist. Future game-state/deadline/outcome fields are deliberately absent.
+- Names are NFC-normalized, trimmed and whitespace-collapsed, 1–24 UTF-16 units, without control/format characters. NFKC plus case folding supplies the per-room uniqueness key. This is adjustable identification/presentation policy, not scoring. Names cannot transfer or rename seats; each session gets at most one fixed player/accent slot per room.
+- Credentials are 256 random bits, hashed at rest, held in a host-only HttpOnly/SameSite=Lax cookie for 30 days; HTTPS adds Secure. This credential lifetime does not expire or delete a room. Browser data loss and cross-device recovery remain unsupported. Session bootstrap requires exact Origin; other mutations also require a credential-derived anti-CSRF token. Bodies reject extra properties and are capped at 4 KiB.
+- Implemented routes are session bootstrap/resume, room create/join, the member-only room view and health. Create/join use session-scoped request IDs and normalized payload fingerprints within an immediate SQLite transaction. Receipt retries return current permitted state, never add seats. There is no mutable room command endpoint yet; expected revision/week/round guards belong to subsequent gameplay commands.
+- Public responses explicitly select roster, own/host IDs, phase, revision and invite. They contain no database session IDs, credential hashes or game state. API responses are non-cacheable. Request logging is off. Create, join and bootstrap limits are respectively 10, 30 and 30 attempts per minute per IP; GET polling is not counted. These are local playtest abuse limits to review with hosting/proxy configuration.
+- The client polls every three seconds while visible, with backoff capped at 30 seconds and refresh on focus/reconnect. It keeps unsatisfied create/join request IDs in tab session storage across refresh, without credentials; uncertain outcomes are retried with the same payload. A rate-limited retry retains its ID. Names/entry controls never announce acceptance before a successful response.
+- New rooms stay in the lobby with no expiry timestamp. Existing stored started/closed/expired states reject new seats and allow authorized status recovery, tested with fixtures. No start, leave, close, cleanup or deadline transition exists; these guards do not resolve their still-open policies.
+- Private-room UI uses `?play=rooms`; invitation links add `invite=CODE`, then accepted membership replaces it with `room=ID`. Local modes stay available at `?mode=personal` and `?mode=classic`. No online route initializes local simulation.
+
+Validation: 81 tests, frontend/server type checks and both builds pass. SQLite restart recovery, authorization, concurrent capacity and retries are covered by service tests. Headless Edge checks six independent sessions, six responsive sizes, refresh, offline/reconnect, lost-response retry across refresh and local-mode full-week regressions. Compiled static/API serving is checked locally. Physical devices, HTTPS deployment, backup restoration and unattended scheduling remain later work. Stop here for user testing and approval before 0.2.3.

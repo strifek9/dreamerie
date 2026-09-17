@@ -2,7 +2,7 @@
 
 ## Status and authority
 
-**Milestone 0.2.1 is implemented and awaiting user testing.** Prototype 0.1 is complete and user-approved. The user authorized the independent 2–6-player rule milestone while remaining lifecycle and missed-day decisions from 0.2.0 stay open. See [the technical design](PROTOTYPE_0_2_TECHNICAL_DESIGN.md) for the future stack, hosting proposal and privacy/command contracts. No services have been provisioned or purchased; connected play is not yet available.
+**Milestone 0.2.1 is approved; 0.2.2 is implemented and awaiting user testing.** Prototype 0.1 remains complete and approved. Private rooms now have a local Fastify/SQLite service, independent browser seats, invitation entry and a persistent waiting room. Connected gameplay stops before preparation/dealing. Lifecycle and missed-day decisions from 0.2.0 stay open. See [the technical design](PROTOTYPE_0_2_TECHNICAL_DESIGN.md) for implementation details, hosting proposal and privacy/command contracts. No hosted services have been provisioned or purchased.
 
 [PROTOTYPE_PLAN.md](PROTOTYPE_PLAN.md) is the scope and milestone index. [GAME_DESIGN.md](GAME_DESIGN.md) remains the source of truth for confirmed gameplay rules; [ART_DIRECTION.md](ART_DIRECTION.md) governs presentation and writing. The proposed policies below are not confirmed gameplay rules. Record the user's decisions in GAME_DESIGN.md before implementing affected behavior.
 
@@ -14,11 +14,11 @@ The proposed experience is: join through a private invite, enter a group with a 
 
 ## Repository findings
 
-- React, TypeScript and Vite already serve the complete local prototype; there is no server, room service, database or session system.
+- React, TypeScript and Vite serve the complete local prototype; `server/` now supplies persistent private rooms and browser sessions through Fastify and SQLite.
 - `src/game/` contains allocation, selection, assignment, scoring and recap functions that can be reused. Keep these rules separate from network handlers and React.
 - `src/game/board.ts` now supports 2–6 players, selecting `6 - N` decoys for `N` players. Shared preparation queries live in `src/game/preparation.ts`, independently of local simulation. This rule support does not add a room UI.
 - `src/game/localGame.ts` coordinates one human and simulated friends in local memory. Its object-reference checks are local guards, not network concurrency controls.
-- `src/App.tsx` uses Charlie, Nancy and Song, generates simulated selections, and has fixed 12/18-point maxima. Several components resolve accents from the static roster. A connected game must receive its identity, roster and scores from the room.
+- `src/App.tsx` separates the room entry path from the existing Charlie/Nancy/Song local demo. `src/rooms/` receives identities and fixed accent slots from the service and does not initialize a simulated week. Connected gameplay/scoring is not wired yet.
 - The deck has 120 bundled illustrations. The interface has six accent slots and a reveal summary tested with five friends. Six-player rules have full-week automated coverage; real connected six-player play is not implemented.
 - There is no hosted playtest URL. The current development command binds to this computer's loopback address; sharing that address does not connect someone else's phone to the same game.
 
@@ -81,7 +81,7 @@ Recognition is calculated separately for each card's author. If `c` of the other
 
 ## Technical direction to review before implementation
 
-Keep React + TypeScript + Vite and the bundled illustrations. Milestone 0.2.0 selects Node.js 24 LTS, Fastify 5, SQLite via better-sqlite3 and ordinary HTTP polling as the implementation direction. [The technical design](PROTOTYPE_0_2_TECHNICAL_DESIGN.md) contains the contracts and a paid Render service/disk proposal with verified pricing and limits. No packages are installed and hosting has not been purchased or provisioned.
+Keep React + TypeScript + Vite and the bundled illustrations. The selected Fastify 5 / better-sqlite3 service and ordinary HTTP polling are installed in 0.2.2. Node 24 remains the hosting target; local Windows checks use Node 22.18. [The technical design](PROTOTYPE_0_2_TECHNICAL_DESIGN.md) contains the contracts and a paid Render service/disk proposal. Hosting has not been purchased or provisioned.
 
 Start with simple commands and a player-specific state endpoint; short polling is a reasonable first transport to evaluate. A socket framework is not inherently required. Decide based on the actual hosting environment and reconnect needs, without building a general networking framework.
 
@@ -101,7 +101,7 @@ The proposed room phases are lobby, preparation, guessing, revealed and complete
 
 ## Milestones
 
-These are new **0.2 milestones**, not continuations of the completed 0.1 numbering. Milestone 0.2.0 retains open policy decisions; the user separately authorized the independent rule work in 0.2.1, now implemented. Milestones 0.2.2 onward are pending. Implement only the explicitly requested milestone, run its checks, and stop for user testing and approval.
+These are new **0.2 milestones**, not continuations of the completed 0.1 numbering. Milestone 0.2.0 retains open policy decisions; 0.2.1 is approved and 0.2.2 awaits testing. Milestones 0.2.3 onward are pending. Implement only the explicitly requested milestone, run its checks, and stop for user testing and approval.
 
 ### 0.2.0 — Confirm playtest policies and service design
 
@@ -115,7 +115,7 @@ These are new **0.2 milestones**, not continuations of the completed 0.1 numberi
 
 ### 0.2.1 — Support the approved roster in game rules
 
-**Status:** Implemented; awaiting user testing and approval. Scope is fully participating players. Missing-player scoring, deadlines and room infrastructure remain later work.
+**Status:** Implemented and user-approved. Scope is fully participating players. Missing-player scoring and deadlines remain later work; waiting-room infrastructure is in 0.2.2.
 
 **Implementation:** Validate 2–6 distinct, nonempty player IDs before randomness. Build a six-card board with the own Dream first, all other players' Dreams and enough eligible decoys, including zero at six players. Extract preparation readiness from simulation. Validate the complete participant roster, week/round identity and board before scoring; record the guesser's ID with each result. Reject mixed-player/duplicate score totals and wrong-player/wrong-week recaps. Keep existing local modes and their UI.
 
@@ -128,6 +128,12 @@ These are new **0.2 milestones**, not continuations of the completed 0.1 numberi
 **Completion:** Every size from two through six can prepare six pairs and construct six valid boards per player; cards remain unique, own cards are excluded from assignments, decoys follow private exposure rules, and hidden order stays hidden. Test invalid sizes, exhausted pools, incomplete assignments, recognition for none/some/everyone, two-player zero recognition and complete per-player recaps. Implement and test only the missed-day semantics resolved in 0.2.0, including the zero-point override and chosen denominator. Existing 0.1 behavior and tests still pass.
 
 ### 0.2.2 — Private rooms, sessions and a waiting room
+
+**Status:** Implemented; awaiting user testing and approval. No dealing, start/leave/close controls, automatic expiry, gameplay commands or scheduling were added.
+
+**Implementation policy:** Display names are 1–24 normalized characters, unique per room ignoring case, repeated whitespace and Unicode compatibility differences. Names never authenticate or rename a seat. A browser's protected 30-day session resumes its existing membership; no cross-device/lost-cookie recovery is provided. All members can share the private invitation. New rooms have no expiry deadline while retention remains undecided. Defensive started/closed/expired join checks are tested using stored-state fixtures; no transition into those phases is available yet.
+
+**Validation:** Build/type checks and all 81 tests pass. Eleven service tests cover distinct seats, six-slot capacity under concurrent requests, safe retries, name collisions, room isolation, request validation, origin/CSRF controls, restart persistence and credential expiry. Six isolated Edge browser sessions tested invitations, refresh, full-room and duplicate-name feedback, lost-response retry after refresh, offline/reconnect and stable focus. Entry and six-player waiting layouts pass 320, 375, 390, 430, 768 and 1440px checks. Both local modes still pass full-week browser regressions. Windows native SQLite installation and compiled service/static frontend are validated locally; hosted and physical-device checks remain 0.2.8.
 
 **Deliverable:** Implement the chosen minimal service and storage, room creation/invites, joining by display name, stable player IDs and accents, host identity and refresh recovery. Provide a browser waiting room. This milestone stops before dealing cards.
 

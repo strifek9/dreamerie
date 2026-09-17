@@ -5,6 +5,7 @@ import DreamSelection from './components/DreamSelection'
 import DreamGuessingBoard from './components/DreamGuessingBoard'
 import DreamWeekComplete from './components/DreamWeekComplete'
 import ScoringHelp from './components/ScoringHelp'
+import RoomExperience from './rooms/RoomExperience'
 import { cards } from './data/cards'
 import { concepts } from './data/concepts'
 import { CURRENT_PLAYER_ID, players } from './data/players'
@@ -32,7 +33,8 @@ export default function App() {
     window.history.replaceState(null, '', url)
     setMode(next)
   }
-  return <LocalPrototype key={mode} mode={mode} onModeChange={changeMode} />
+  return new URLSearchParams(window.location.search).get('play') === 'rooms'
+    ? <RoomExperience /> : <LocalPrototype key={mode} mode={mode} onModeChange={changeMode} />
 }
 
 function LocalPrototype({ mode, onModeChange }: { mode: DreamMode; onModeChange: (mode: DreamMode) => void }) {
@@ -140,6 +142,7 @@ function LocalPrototype({ mode, onModeChange }: { mode: DreamMode; onModeChange:
         <button className="quiet-button enter-week" onClick={() => setScreen('week')}>
           Enter your Dream Week
         </button>
+        <a className="text-button room-welcome-link" href="/?play=rooms">Gather friends in a private room</a>
         <fieldset className="mode-picker">
           <legend>Choose your Dream Week</legend>
           <label><input type="radio" name="mode" checked={personal} onChange={() => onModeChange('personal')} />Your own dream clues · experiment</label>
