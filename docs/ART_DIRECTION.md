@@ -35,6 +35,10 @@ Avoid relying on a clock for TIME, heart icon for LOVE, labeled house for HOME, 
 
 ## Shared play presentation
 
+Show the creator's chosen mode and a short scoring explanation before an invitee joins. Word of the Day is the default card-only room mode. Explain that six Dreams are prepared today for six later guessing days. Personal preparation offers examples mixing words and phrases. Show personal clues on a restrained periwinkle clue card, with **Which was [name]'s Dream?** as the guessing question. This replaces the older possessive clue heading.
+
+A small book/page cue may animate above preparation prompts when the next Dream opens. Animate only the decorative leaf, never the gallery, and disable the animation for reduced-motion preferences. Keep progress understandable without motion. Hints and results must distinguish ranked-only Word of the Day awards from personal-mode guessing and recognition points.
+
 Show the room's authoritative cutoff near the host controls as a date and **12:00 AM · Chicago time**, with phase-specific wording for preparation, next-day opening or week ending. Keep space reserved and avoid a ticking countdown that distracts from the artwork. Explain that deadlines reveal and advance automatically, and keep earlier results inspectable when a player returns after rollover.
 
 Private rooms use actual display names and the six stable roster accents; Nancy and Song belong only to explicitly labeled solo practice. Keep readiness compact and expandable, with host progression in the header. Saving feedback follows server acceptance; uncertain saves offer a deliberate retry. Explain early closure and zero missed-day points clearly without exposing future clues or implying that disconnecting alone loses a day.

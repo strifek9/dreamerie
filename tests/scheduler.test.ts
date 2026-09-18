@@ -29,9 +29,9 @@ async function fixture(t: TestContext, interval = 60_000) {
     const response = await app.inject({ method: 'POST', url: '/api/session', headers: { origin }, payload: {} })
     users.push({ cookie: `dreamerie_session=${response.cookies[0].value}`, csrf: response.json<SessionView>().csrfToken })
   }
-  let room = (await post(app, users[0], '/api/rooms', { requestId: randomUUID(), displayName: 'Host' })).json<RoomView>()
+  let room = (await post(app, users[0], '/api/rooms', { requestId: randomUUID(), displayName: 'Host', mode: 'personal' as const })).json<RoomView>()
   for (let i = 1; i < 3; i++) await post(app, users[i], '/api/rooms/join', { requestId: randomUUID(), displayName: `Friend ${i}`, inviteCode: room.inviteCode })
-  room = await act(app, users[0], room.id, { type: 'start' })
+  room = await act(app, users[0], room.id, { type: 'start', mode: 'personal' })
   return { app, db, room, users, clock, options }
 }
 function post(app: App, user: User, url: string, payload: object) {
@@ -192,7 +192,7 @@ test('upgrade gives existing manual rooms one fresh window and never extends it 
   const before = readGame(db, room.id)
   await app.close()
   // Recreate the previous schema in this isolated test database.
-  db.exec('DROP TABLE room_schedules; PRAGMA user_version = 2;')
+  db.exec('DROP TABLE room_schedules; ALTER TABLE rooms DROP COLUMN mode; PRAGMA user_version = 2;')
   clock.now = Date.parse('2026-03-20T18:00:00Z')
   const restarted = await createService(options)
   try {

@@ -26,7 +26,7 @@ function freshWeek(mode: DreamMode) {
 }
 
 export default function App() {
-  const [mode, setMode] = useState<DreamMode>(() => new URLSearchParams(window.location.search).get('mode') === 'classic' ? 'classic' : 'personal')
+  const [mode, setMode] = useState<DreamMode>(() => new URLSearchParams(window.location.search).get('mode') === 'personal' ? 'personal' : 'classic')
   function changeMode(next: DreamMode) {
     const url = new URL(window.location.href)
     url.searchParams.set('mode', next)
@@ -112,6 +112,7 @@ function LocalPrototype({ mode, onModeChange }: { mode: DreamMode; onModeChange:
           hand={hand}
           error={game.error}
           remembered={game.remembered}
+          completedDreams={week.dreams.get(CURRENT_PLAYER_ID)?.size ?? 0}
           personal={personal}
           onChoose={(cardId, clue) => commit({ type: 'choose', conceptId: currentConcept.id, cardId, clue })}
         />
@@ -145,8 +146,8 @@ function LocalPrototype({ mode, onModeChange }: { mode: DreamMode; onModeChange:
         <a className="text-button room-welcome-link" href="/?play=rooms">Gather friends in a private room</a>
         <fieldset className="mode-picker">
           <legend>Choose your Dream Week</legend>
+          <label><input type="radio" name="mode" checked={!personal} onChange={() => onModeChange('classic')} />Original shared words · guessing points</label>
           <label><input type="radio" name="mode" checked={personal} onChange={() => onModeChange('personal')} />Your own dream clues · experiment</label>
-          <label><input type="radio" name="mode" checked={!personal} onChange={() => onModeChange('classic')} />Original shared words</label>
         </fieldset>
         </div>
       </main>

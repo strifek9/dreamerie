@@ -22,7 +22,8 @@ function normalizeName(value: string) {
 export function enterRoom(db: Store, sessionId: string, action: 'create' | 'join', request: RoomRequest, now: number) {
   const { name, key } = normalizeName(request.displayName)
   const code = request.inviteCode?.trim().toUpperCase()
-  const fingerprint = credentialHash(JSON.stringify([action, name, code ?? null]))
+  // Preserve old receipt fingerprints when the optional mode was not supplied.
+  const fingerprint = credentialHash(JSON.stringify([action, name, code ?? null, ...(request.mode === undefined ? [] : [request.mode])]))
   return db.transaction(() => {
     const receipt = db.prepare<[string, string], { fingerprint: string; room_id: string }>(
       'SELECT fingerprint, room_id FROM command_receipts WHERE session_id = ? AND request_id = ?',
@@ -67,7 +68,7 @@ export function enterRoom(db: Store, sessionId: string, action: 'create' | 'join
       let inviteCode: string
       do { inviteCode = randomBytes(5).toString('hex').toUpperCase() }
       while (db.prepare('SELECT 1 FROM rooms WHERE invite_code = ?').get(inviteCode))
-      db.prepare('INSERT INTO rooms (id, invite_code, host_id, created_at, expires_at) VALUES (?, ?, ?, ?, ?)').run(roomId, inviteCode, playerId, now, now + LOBBY_LIFETIME_MS)
+      db.prepare('INSERT INTO rooms (id, invite_code, host_id, created_at, expires_at, mode) VALUES (?, ?, ?, ?, ?, ?)').run(roomId, inviteCode, playerId, now, now + LOBBY_LIFETIME_MS, request.mode ?? 'classic')
     }
     db.prepare('INSERT INTO memberships (player_id, room_id, session_id, display_name, name_key, accent_slot) VALUES (?, ?, ?, ?, ?, ?)')
       .run(playerId, roomId, sessionId, name, key, seat)

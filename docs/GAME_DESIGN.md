@@ -1,5 +1,17 @@
 # Dreamerie game design
 
+## Confirmed room modes (September 2026)
+
+These rules supersede older personal-only connected-play scope below. New rooms default to **Word of the Day**; creators may instead choose **Your own dream clues**. Invitees see the creator's mode and scoring before joining and cannot change it. A room's mode stays fixed. Existing rooms retain personal clues and their original scoring on upgrade.
+
+- Both modes prepare six Dreams on Day 1, one for each of six guessing days in hidden order. Word of the Day supplies shared words and asks only for cards; personal mode asks for a clue (1–80 characters) and card. Examples may be single words or phrases; they suggest possibilities, not correct meanings.
+- **Word of the Day:** Count correct guesses from completed players for each eligible author's card. Award first place 3 points, second 2, third 1, and other places 0. Zero correct guesses always earns 0. Ties share their occupied rank and consume places: 3, 3, 1. A card recognized by everyone remains eligible. There are no guessing points. Maximum 3 per day / 18 per week.
+- **Your own dream clues:** Keep +1 per correct guess and +1 per completed friend who recognizes your card, except when every completed friend recognizes it, when recognition earns 0. Correct guessers keep their points. In a two-player room recognition is therefore 0; this exception does not apply to Word of the Day.
+- Missed-day rules apply to both modes: incomplete players earn 0, their partial guesses count for nobody, and prepared cards remain targets. Only completed authors participate in ranked awards. No completed guesses means no award.
+- These ranked awards apply to shared online Word of the Day rooms. The separately labeled **Original shared words · guessing points** solo comparison retains its historical guessing-only scoring. Personal solo practice retains its recognition scoring.
+
+Personal guessing presents the clue itself on a dream clue card and asks **Which was [name]'s Dream?** Scoring help and revealed results follow the room mode. A small decorative book cue marks preparation progress without moving the cards; reduced motion disables its animation.
+
 This is the primary gameplay source of truth. **Confirmed rules** express the supplied product vision. **Prototype assumptions** are limited local demonstration choices, not settled production rules. **Unresolved questions** require a later decision. **Future ideas** are outside Prototype 0.1.
 
 **Prototype 0.2:** Shared play, scheduling and lifecycle through 0.2.7 are approved by the instruction to proceed. Milestone 0.2.8 is preparing hosting without changing gameplay rules. Private rooms use actual players, persistent browser seats, host controls, automatic rollover and inspectable results. Deployment and physical-device acceptance remain pending. [PROTOTYPE_0_2_PLAN.md](PROTOTYPE_0_2_PLAN.md) records scope and remaining decisions. The separate local demo still uses Charlie, Nancy and Song; its assumptions below remain scoped to Prototype 0.1.

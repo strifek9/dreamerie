@@ -4,6 +4,7 @@ import { dirname } from 'node:path'
 import { lobbySchema } from './migrations/001-lobbies.ts'
 import { gameplaySchema } from './migrations/002-gameplay.ts'
 import { scheduleSchema } from './migrations/003-schedules.ts'
+import { roomModeSchema } from './migrations/004-room-modes.ts'
 
 export type Store = Database.Database
 
@@ -19,7 +20,8 @@ export function openStore(path: string): Store {
       if (version === 0 || version === 1) db.exec(gameplaySchema)
       db.exec(scheduleSchema)
     })()
-    else if (version !== 3) throw new Error('Unsupported database version. Use a compatible Dreamerie service.')
+    else if (version !== 3 && version !== 4) throw new Error('Unsupported database version. Use a compatible Dreamerie service.')
+    if (version !== 4) db.transaction(() => { db.exec(roomModeSchema) })()
     return db
   } catch (error) {
     db.close()

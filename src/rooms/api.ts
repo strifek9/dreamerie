@@ -1,6 +1,7 @@
 import type { RoomRequest, RoomView, SessionView } from '../../shared/rooms'
 import type { GameCommand } from '../../shared/game'
-import { parseGameView } from '../../shared/gameParsing'
+import { parseGameView, parseDreamMode } from '../../shared/gameParsing'
+import type { DreamMode } from '../game/types'
 
 export class ApiError extends Error {
   status: number
@@ -12,6 +13,7 @@ function record(value: unknown): value is Record<string, unknown> {
 }
 
 function isRoom(value: unknown): value is RoomView {
+  if (!record(value) || (value.mode !== 'classic' && value.mode !== 'personal')) return false
   if (record(value) && value.expiresAt !== undefined && (typeof value.expiresAt !== 'number' || !Number.isSafeInteger(value.expiresAt))) return false
   if (record(value) && value.schedule !== undefined && (!record(value.schedule)
     || typeof value.schedule.deadline !== 'number' || !Number.isSafeInteger(value.schedule.deadline) || value.schedule.deadline <= 0
@@ -58,6 +60,8 @@ export function openSession() {
 }
 
 export const readRoom = (id: string) => request(`/api/rooms/${encodeURIComponent(id)}`, isRoom)
+export const readInvitation = (code: string) => request(`/api/invitations/${encodeURIComponent(code)}`, (value: unknown): value is { mode: DreamMode } =>
+  record(value) && (value.mode === 'classic' || value.mode === 'personal'))
 export const saveRoom = (action: 'create' | 'join', body: RoomRequest, csrf: string) =>
   request(action === 'create' ? '/api/rooms' : '/api/rooms/join', isRoom, body, csrf)
 export const sendGameCommand = (roomId: string, body: GameCommand, csrf: string) =>
@@ -71,7 +75,8 @@ export function readPending(): PendingEntry | undefined {
     if (record(value) && (value.action === 'create' || value.action === 'join') && record(value.body)
       && typeof value.body.requestId === 'string' && typeof value.body.displayName === 'string'
       && (value.body.inviteCode === undefined || typeof value.body.inviteCode === 'string')) {
-      return { action: value.action, body: { requestId: value.body.requestId, displayName: value.body.displayName, inviteCode: value.body.inviteCode } }
+      return { action: value.action, body: { requestId: value.body.requestId, displayName: value.body.displayName, inviteCode: value.body.inviteCode,
+        ...(value.body.mode === undefined ? {} : { mode: parseDreamMode(value.body.mode) }) } }
     }
   } catch { /* Restricted storage does not prevent this tab from joining. */ }
   return undefined

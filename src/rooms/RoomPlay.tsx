@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import type { GameAction } from '../../shared/game'
 import type { RoomView } from '../../shared/rooms'
 import { playerId } from '../../shared/parse'
+import { RoomModeDescription } from './RoomModeChoice'
 import { playerAccents } from '../data/playerAccents'
 import DreamSelection from '../components/DreamSelection'
 import DreamGuessingBoard from '../components/DreamGuessingBoard'
@@ -17,6 +18,7 @@ import { useRoomCommands } from './useRoomCommands'
 export default function RoomPlay({ room, csrf, accept, connection }: { room: RoomView; csrf: string; accept: (room: RoomView) => void; connection: string }) {
   const commands = useRoomCommands(room, csrf, accept)
   const game = room.game
+  const personal = room.mode === 'personal'
   const host = room.selfId === room.hostId
   const roster = room.members.map((member) => ({ id: playerId(member.playerId), name: member.displayName }))
   const self = roster.find((player) => player.id === room.selfId)
@@ -44,7 +46,7 @@ export default function RoomPlay({ room, csrf, accept, connection }: { room: Roo
   const invitation = `${window.location.origin}/?play=rooms&invite=${room.inviteCode}`
   return <div className="dreamerie-shell shared-room">
     <header className="masthead">
-      <div className="masthead-start"><ScoringHelp personal online playerCount={roster.length} /><p className="wordmark"><span aria-hidden="true">☾</span> Dreamerie</p></div>
+      <div className="masthead-start"><ScoringHelp personal={personal} ranked={!personal} online playerCount={roster.length} /><p className="wordmark"><span aria-hidden="true">☾</span> Dreamerie</p></div>
       <aside className="dev-day-controls room-day-controls" aria-label="Shared Dream Week controls">
         <span>{self?.name} · {room.phase === 'closed' ? 'Room closed' : room.phase === 'expired' ? 'Room expired' : game ? room.phase === 'complete' ? 'Week complete' : `Day ${game.day}` : 'Waiting room'}</span>
         {host && active && <button ref={advanceButton} className="quiet-button room-progress" disabled={blocked || room.members.length < 2} onClick={progress}>{label}</button>}
@@ -59,6 +61,7 @@ export default function RoomPlay({ room, csrf, accept, connection }: { room: Roo
     {room.phase === 'closed' || room.phase === 'expired' ? <RoomEnded room={room} /> : !game ? <main className="introduction room-page">
       <div className="welcome-art" aria-hidden="true"><img src="/artwork/dreamerie-moonlight.jpg" alt="" width="1122" height="1402" /></div>
       <div className="room-content"><RoomLobby room={room} connection={connection} />
+        {room.phase === 'lobby' && <RoomModeDescription mode={room.mode} />}
         {room.phase === 'lobby' && <p className="room-note">{host ? 'When your friends have joined, start the Dream Week above.' : 'Your host will start the Dream Week when you are ready.'}</p>}
       </div>
     </main> : <>
@@ -76,20 +79,24 @@ export default function RoomPlay({ room, csrf, accept, connection }: { room: Roo
       {game.board && game.preparation.next && active && <button className="room-prepare-toggle text-button" onClick={() => setPrepareLater(!prepareLater)}>
         {prepareLater ? 'Return to this day’s dream cards' : 'Prepare your remaining Dreams'}
       </button>}
-      {room.phase === 'complete' ? <main className="gallery-page"><RoomHistory days={game.history} roster={roster} complete total={game.totalScore} /></main>
+      {room.phase === 'complete' ? <main className="gallery-page"><RoomHistory days={game.history} roster={roster} complete total={game.totalScore} ranked={!personal} /></main>
         : showPreparation ? <main className="gallery-page week-preparation">
-          <div className="preparation-summary"><p className="saved-dream" role="status">{game.preparation.saved.length > 0 ? '✓ Your dream clue and dream card are remembered.' : '\u00a0'}</p>
-            <p className="eyebrow">{game.preparation.saved.length} Dreams remembered</p></div>
-          {game.preparation.next ? <DreamSelection concept={game.preparation.next} hand={game.preparation.hand} personal remembered={null} error={null} busy={blocked}
-            onChoose={(cardId, clue) => commands.act({ type: 'save', conceptId: game.preparation.next!.id, cardId, clue: clue ?? '' })} />
+          <div className="preparation-summary"><p className="saved-dream" role="status">{game.preparation.saved.length > 0 ? personal ? '✓ Your dream clue and dream card are remembered.' : '✓ Your dream card is remembered.' : '\u00a0'}</p>
+            <p className="eyebrow">{personal ? 'Your own dream clues' : 'Word of the Day'} · {game.preparation.saved.length} of 6 Dreams remembered</p>
+            {game.preparation.next && <p className="gallery-note room-preparation-guide">{game.day === 1
+              ? personal ? 'Prepare six clues and cards today, one at a time. From Day 2, your friends will guess one of your Dreams each day.' : 'Choose one card for each of the six words today. From Day 2, everyone guesses the same word each day. The order is a surprise.'
+              : 'Choose cards for your remaining unopened Dreams. Days already opened cannot be changed.'}</p>}
+          </div>
+          {game.preparation.next ? <DreamSelection concept={game.preparation.next} hand={game.preparation.hand} personal={personal} completedDreams={game.preparation.saved.length} remembered={null} error={null} busy={blocked}
+            onChoose={(cardId, clue) => commands.act({ type: 'save', conceptId: game.preparation.next!.id, cardId, ...(personal ? { clue } : {}) })} />
             : <section className="gallery-heading"><h1>Your Dreams are remembered.</h1><p className="invitation">{host ? 'Open the next day early when you’re ready.' : 'The next day opens at the time above, or when your host advances.'}</p></section>}
-          {room.phase === 'revealed' && game.reveal && <RoomHistory days={game.history.filter((day) => day.day === game.day)} roster={roster} total={game.totalScore} />}
-        </main> : game.board ? <DreamGuessingBoard board={{ ...game.board, locks: new Map(game.board.locks) }} roster={roster} selfId={playerId(room.selfId)} personal
-          totalScore={game.totalScore} maxScore={6 * (2 * roster.length - 3)} reveal={game.reveal} busy={blocked} error={null}
+          {room.phase === 'revealed' && game.reveal && <RoomHistory days={game.history.filter((day) => day.day === game.day)} roster={roster} total={game.totalScore} ranked={!personal} />}
+        </main> : game.board ? <DreamGuessingBoard board={{ ...game.board, locks: new Map(game.board.locks) }} roster={roster} selfId={playerId(room.selfId)} personal={personal} ranked={!personal}
+          totalScore={game.totalScore} maxScore={personal ? 6 * (2 * roster.length - 3) : 18} reveal={game.reveal} busy={blocked} error={null}
           onAssign={(playerId, cardId) => commands.act({ type: 'lock', playerId, cardId })}
           onUnlock={room.phase === 'guessing' ? (cardId) => commands.act({ type: 'unlock', cardId }) : undefined} />
-          : <main className="gallery-page"><RoomHistory days={game.history} roster={roster} total={game.totalScore} /></main>}
-      {room.phase !== 'complete' && game.history.length > 0 && <details className="room-past"><summary>Earlier Dreams · your week: {game.totalScore} points</summary><RoomHistory days={game.history} roster={roster} total={game.totalScore} /></details>}
+          : <main className="gallery-page"><RoomHistory days={game.history} roster={roster} total={game.totalScore} ranked={!personal} /></main>}
+      {room.phase !== 'complete' && game.history.length > 0 && <details className="room-past"><summary>Earlier Dreams · your week: {game.totalScore} points</summary><RoomHistory days={game.history} roster={roster} total={game.totalScore} ranked={!personal} /></details>}
       {active && game.day < 7 && <details className="room-invite"><summary>Invite a friend</summary><p>Late joiners begin guessing on the next unopened day.</p><label htmlFor="active-invitation">Share this invitation</label><input id="active-invitation" readOnly value={invitation} onFocus={(event) => event.target.select()} /></details>}
     </>}
     {host && active && <RoomClose room={room} blocked={blocked} onClose={() => commands.act({ type: 'close', confirmed: true })} />}

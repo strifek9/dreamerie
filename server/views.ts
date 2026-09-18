@@ -5,8 +5,10 @@ import { gameView } from './gameViews.ts'
 import { playerId } from '../shared/parse.ts'
 import { advanceDueRoom } from './scheduler.ts'
 import { expireRoom } from './roomLifecycle.ts'
+import type { DreamMode } from '../src/game/types.ts'
 
 export interface StoredRoom {
+  mode: DreamMode
   id: string
   invite_code: string
   host_id: string
@@ -20,10 +22,10 @@ export function roomView(db: Store, roomId: string, sessionId: string, now: numb
   if (!self) throw new RoomError(403, 'ROOM_FORBIDDEN', 'This browser does not have a place in that room. Open its invitation to join.')
   advanceDueRoom(db, roomId, now)
   expireRoom(db, roomId, now)
-  const room = db.prepare<[string], StoredRoom>('SELECT id, invite_code, host_id, phase, revision, expires_at FROM rooms WHERE id = ?').get(roomId)
+  const room = db.prepare<[string], StoredRoom>('SELECT id, invite_code, host_id, phase, revision, expires_at, mode FROM rooms WHERE id = ?').get(roomId)
   if (!room) throw new RoomError(404, 'ROOM_NOT_FOUND', 'That room could not be found.')
   const view: RoomView = {
-    id: room.id, inviteCode: room.invite_code, hostId: room.host_id, selfId: self.player_id,
+    mode: room.mode, id: room.id, inviteCode: room.invite_code, hostId: room.host_id, selfId: self.player_id,
     phase: room.expires_at !== null && now >= room.expires_at ? 'expired' : room.phase,
     revision: room.revision,
     ...(room.expires_at === null ? {} : { expiresAt: room.expires_at }),

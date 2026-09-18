@@ -39,10 +39,10 @@ async function fixture(t: TestContext, interval = 60_000) {
   const app = await createService(options), db = openStore(databasePath)
   t.after(async () => { await app.close(); db.close(); rmSync(directory, { recursive: true, force: true }) })
   const host = await user(app), guest = await user(app)
-  const entry = { requestId: randomUUID(), displayName: 'Host' }
+  const entry = { requestId: randomUUID(), displayName: 'Host', mode: 'personal' as const }
   const room = (await post(app, host, '/api/rooms', entry)).json<RoomView>()
   assert.equal((await post(app, guest, '/api/rooms/join', { requestId: randomUUID(), displayName: 'Friend', inviteCode: room.inviteCode })).statusCode, 200)
-  const started = await act(app, host, room.id, { type: 'start' })
+  const started = await act(app, host, room.id, { type: 'start', mode: 'personal' })
   assert.equal(started.statusCode, 200, started.body)
   for (const player of [host, guest]) {
     let current = await view(app, player, room.id)
@@ -73,7 +73,7 @@ test('completed recaps expire after exactly seven days; polling, retries and new
   assert.equal(ended.game!.history.length, 6)
   assert.deepEqual(ended.game!.preparation, { next: null, hand: [], saved: [] })
   assert.equal(ended.game!.board, undefined)
-  const newRoom = (await post(f.app, f.host, '/api/rooms', { requestId: randomUUID(), displayName: 'Host' })).json<RoomView>()
+  const newRoom = (await post(f.app, f.host, '/api/rooms', { requestId: randomUUID(), displayName: 'Host', mode: 'personal' as const })).json<RoomView>()
   assert.notEqual(newRoom.id, ended.id)
   assert.deepEqual(await view(f.app, f.host, ended.id), ended)
   f.clock.now = ended.expiresAt! - 1
@@ -88,7 +88,7 @@ test('completed recaps expire after exactly seven days; polling, retries and new
   assert.ok(!JSON.stringify(expired).includes('private dream'))
   assert.equal(f.db.prepare('SELECT * FROM room_games WHERE room_id = ?').all(ended.id).length, 0)
   assert.equal(f.db.prepare('SELECT * FROM round_outcomes WHERE room_id = ?').all(ended.id).length, 0)
-  assert.equal((await act(f.app, f.host, ended.id, { type: 'start' })).statusCode, 409)
+  assert.equal((await act(f.app, f.host, ended.id, { type: 'start', mode: 'personal' })).statusCode, 409)
   const retry = (await post(f.app, f.host, '/api/rooms', f.entry)).json<RoomView>()
   assert.equal(retry.id, ended.id)
   assert.equal(retry.phase, 'expired')
@@ -102,9 +102,9 @@ test('background expiry removes only due private data and keeps the original hos
   const f = await fixture(t, 10)
   const ended = await complete(f)
   f.clock.now = ended.expiresAt! - 60_000
-  const other = (await post(f.app, f.host, '/api/rooms', { requestId: randomUUID(), displayName: 'Host' })).json<RoomView>()
+  const other = (await post(f.app, f.host, '/api/rooms', { requestId: randomUUID(), displayName: 'Host', mode: 'personal' as const })).json<RoomView>()
   await post(f.app, f.guest, '/api/rooms/join', { requestId: randomUUID(), displayName: 'Friend', inviteCode: other.inviteCode })
-  assert.equal((await act(f.app, f.host, other.id, { type: 'start' })).statusCode, 200)
+  assert.equal((await act(f.app, f.host, other.id, { type: 'start', mode: 'personal' })).statusCode, 200)
   const before = await view(f.app, f.guest, other.id)
   f.clock.now = ended.expiresAt!
   for (let i = 0; i < 100 && f.db.prepare('SELECT * FROM room_games WHERE room_id = ?').get(ended.id); i++) await new Promise((resolve) => setTimeout(resolve, 10))
@@ -146,20 +146,20 @@ test('long downtime expires completed recap from its scheduled ending, not serve
 
 test('waiting rooms expire 24 hours from creation; joining never extends expiry and starting removes it', async (t) => {
   const f = await fixture(t)
-  const waiting = (await post(f.app, f.host, '/api/rooms', { requestId: randomUUID(), displayName: 'Host' })).json<RoomView>()
+  const waiting = (await post(f.app, f.host, '/api/rooms', { requestId: randomUUID(), displayName: 'Host', mode: 'personal' as const })).json<RoomView>()
   assert.equal(waiting.expiresAt, f.clock.now + LOBBY_LIFETIME_MS)
   f.clock.now = waiting.expiresAt! - 1
   const joined = (await post(f.app, f.guest, '/api/rooms/join', { requestId: randomUUID(), displayName: 'Friend', inviteCode: waiting.inviteCode })).json<RoomView>()
   assert.equal(joined.expiresAt, waiting.expiresAt)
-  const expiredRoom = (await post(f.app, f.host, '/api/rooms', { requestId: randomUUID(), displayName: 'Host' })).json<RoomView>()
-  const started = (await act(f.app, f.host, waiting.id, { type: 'start' })).json<RoomView>()
+  const expiredRoom = (await post(f.app, f.host, '/api/rooms', { requestId: randomUUID(), displayName: 'Host', mode: 'personal' as const })).json<RoomView>()
+  const started = (await act(f.app, f.host, waiting.id, { type: 'start', mode: 'personal' })).json<RoomView>()
   assert.equal(started.phase, 'preparation')
   assert.equal(started.expiresAt, undefined)
   f.clock.now++
   assert.equal((await view(f.app, f.host, waiting.id)).phase, 'preparation')
   f.clock.now = expiredRoom.expiresAt!
   const staleStart = await post(f.app, f.host, `/api/rooms/${expiredRoom.id}/commands`, {
-    requestId: randomUUID(), expectedRevision: expiredRoom.revision, weekId: null, roundId: null, action: { type: 'start' },
+    requestId: randomUUID(), expectedRevision: expiredRoom.revision, weekId: null, roundId: null, action: { type: 'start', mode: 'personal' },
   })
   assert.equal(staleStart.statusCode, 409)
   assert.equal((await view(f.app, f.host, expiredRoom.id)).phase, 'expired')
@@ -224,7 +224,7 @@ test('closing preserves only revealed results, hides unfinished cards and surviv
 
 test('a host can close a waiting or preparation room without creating any results', async (t) => {
   const f = await fixture(t)
-  const waiting = (await post(f.app, f.host, '/api/rooms', { requestId: randomUUID(), displayName: 'Host' })).json<RoomView>()
+  const waiting = (await post(f.app, f.host, '/api/rooms', { requestId: randomUUID(), displayName: 'Host', mode: 'personal' as const })).json<RoomView>()
   for (const id of [waiting.id, f.room.id]) {
     const closed = (await act(f.app, f.host, id, { type: 'close', confirmed: true })).json<RoomView>()
     assert.equal(closed.phase, 'closed')

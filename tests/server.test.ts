@@ -60,7 +60,7 @@ test('private sessions, stable seats and six accents persist across refresh', as
     selfIds.push(restored.selfId)
     assert.deepEqual(restored.members.map((member) => member.accentSlot), [0, 1, 2, 3, 4, 5])
     assert.equal(restored.revision, 6)
-    assert.deepEqual(Object.keys(restored).sort(), ['expiresAt', 'hostId', 'id', 'inviteCode', 'members', 'phase', 'revision', 'selfId'])
+    assert.deepEqual(Object.keys(restored).sort(), ['expiresAt', 'hostId', 'id', 'inviteCode', 'members', 'mode', 'phase', 'revision', 'selfId'])
     for (const member of restored.members) assert.deepEqual(Object.keys(member).sort(), ['accentSlot', 'displayName', 'playerId'])
   }
   assert.equal(new Set(selfIds).size, 6)

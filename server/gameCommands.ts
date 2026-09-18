@@ -55,7 +55,8 @@ export function commandRoom(db: Store, roomId: string, sessionId: string, comman
     try {
       if (action.type === 'start') {
         if (phase !== 'lobby' || game) throw new Error('This Dream Week has already started.')
-        game = newRoomGame(view.members.map((member) => ({ id: playerId(member.playerId), name: member.displayName })))
+        if (action.mode !== undefined && action.mode !== view.mode) throw new Error('This room’s mode was chosen when it was created. Create another room to change modes.')
+        game = newRoomGame(view.members.map((member) => ({ id: playerId(member.playerId), name: member.displayName })), view.mode)
         phase = 'preparation'
         db.prepare('UPDATE rooms SET expires_at = NULL WHERE id = ?').run(roomId)
       } else {

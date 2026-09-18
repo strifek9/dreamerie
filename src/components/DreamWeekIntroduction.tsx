@@ -33,7 +33,8 @@ export default function DreamWeekIntroduction({
           <li key={concept.id}>{concept.label}</li>
         ))}
       </ul>
-      <p className="gallery-note">Their order is still a mystery.</p>
+      <p className="gallery-note">Choose one card for each word today. From Day 2, you’ll guess one word each day. Their order is still a mystery.</p>
+      <p className="eyebrow">{completedDreams} of 6 Dreams remembered</p>
       </header>}
       {children}
     </main>

@@ -1,6 +1,7 @@
 import { recordExposure } from './allocation.ts'
 import { chooseDream } from './selection.ts'
 import { shuffle } from './random.ts'
+import { rankedRecognition } from './recognition.ts'
 import type { CardId, ConceptId, DreamConcept, DreamWeek, GuessingRound, PlayerId, RoundResult } from './types.ts'
 
 /** Online-only day membership is frozen when its boards open. */
@@ -24,7 +25,7 @@ export function nextSharedDream(game: SharedWeek, player: PlayerId): DreamConcep
   return game.week.concepts.find((concept) => concept.id === id) ?? null
 }
 
-export function saveSharedDream(game: SharedWeek, player: PlayerId, conceptId: ConceptId, cardId: CardId, clue: string): SharedWeek {
+export function saveSharedDream(game: SharedWeek, player: PlayerId, conceptId: ConceptId, cardId: CardId, clue?: string): SharedWeek {
   const next = nextSharedDream(game, player)
   if (!next || next.id !== conceptId) throw new Error('That Dream is no longer open for preparation. Check the current Dream and try again.')
   // Reuse atomic selection/replacement while excluding days already opened.
@@ -89,6 +90,10 @@ export function scoreSharedDay(game: SharedWeek): SharedOutcome[] {
   const conceptId = game.week.roundOrder[game.roundIndex]
   if (!conceptId) throw new Error('No guessing day is open.')
   const finished = game.rounds.filter((round) => finishedSharedDay(game, round.guesserId))
+  const recognition = rankedRecognition(new Map(finished.map((author) => [author.guesserId,
+    finished.filter((guesser) => guesser.guesserId !== author.guesserId
+      && guesser.assignments.get(author.guesserId) === author.ownDreamId).length,
+  ])))
   return game.dayPlayerIds.map((guesserId): SharedOutcome => {
     const round = game.rounds.find((round) => round.guesserId === guesserId)
     const missed = !finishedSharedDay(game, guesserId)
@@ -106,9 +111,10 @@ export function scoreSharedDay(game: SharedWeek): SharedOutcome[] {
       return { playerId: friend.guesserId, chosenCardId, actualCardId: ownCard, correct: chosenCardId === ownCard }
     }) : []
     const correctReceived = receivedGuesses.filter((guess) => guess.correct).length
-    const recognitionPoints = missed || correctReceived === receivedGuesses.length ? 0 : correctReceived
+    const recognitionPoints = game.week.mode === 'classic' ? recognition.get(guesserId) ?? 0
+      : missed || correctReceived === receivedGuesses.length ? 0 : correctReceived
     return { missed, unanswered: round?.targetPlayerIds.filter((player) => !round.assignments.has(player)) ?? game.rounds.map((round) => round.guesserId),
       result: { guesserId, roundId: `round-${game.week.id}-${game.roundIndex + 1}`, conceptId,
-        guesses, receivedGuesses, recognitionPoints, points: missed ? 0 : guesses.filter((guess) => guess.correct).length + recognitionPoints } }
+        guesses, receivedGuesses, recognitionPoints, points: missed ? 0 : recognitionPoints + (game.week.mode === 'personal' ? guesses.filter((guess) => guess.correct).length : 0) } }
   })
 }

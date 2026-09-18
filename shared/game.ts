@@ -1,9 +1,9 @@
-import type { Card, CardId, ConceptId, DreamConcept, GuessingBoardView, PlayerId, RoundId, RoundRevealView, WeekId } from '../src/game/types.ts'
+import type { Card, CardId, ConceptId, DreamConcept, DreamMode, GuessingBoardView, PlayerId, RoundId, RoundRevealView, WeekId } from '../src/game/types.ts'
 
 export type GameAction =
-  | { type: 'start' }
+  | { type: 'start'; mode?: DreamMode }
   | { type: 'close'; confirmed: true }
-  | { type: 'save'; conceptId: ConceptId; cardId: CardId; clue: string }
+  | { type: 'save'; conceptId: ConceptId; cardId: CardId; clue?: string }
   | { type: 'open-day'; confirmMissing?: PlayerId[] }
   | { type: 'lock'; playerId: PlayerId; cardId: CardId }
   | { type: 'unlock'; cardId: CardId }
@@ -35,6 +35,7 @@ export interface DayReview {
 
 // Only the recipient's view. Wire locks use entries, never JSON.stringify(Map).
 export interface GameView {
+  mode: DreamMode
   weekId: WeekId
   day: number
   roundId: RoundId | null

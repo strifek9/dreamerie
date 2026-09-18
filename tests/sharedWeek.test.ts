@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict'
+import { rankedRecognition } from '../src/game/recognition.ts'
 import { test } from 'node:test'
 import { cards } from '../src/data/cards.ts'
 import { createDreamWeek } from '../src/game/week.ts'
@@ -7,6 +8,43 @@ import { addSharedPlayer, nextSharedDream, openSharedDay, saveSharedDream, score
 import { roomConcepts } from '../server/gamePreparation.ts'
 import { decodeGame, encodeGame } from '../server/gameState.ts'
 import type { Player, PlayerId } from '../src/game/types.ts'
+
+test('ranked recognition awards 3/2/1, skips tied places, and never rewards zero guesses', () => {
+  const cases = [
+    { counts: [5, 4, 3, 2, 1, 0], expected: [3, 2, 1, 0, 0, 0] },
+    { counts: [4, 4, 2, 1, 0, 0], expected: [3, 3, 1, 0, 0, 0] },
+    { counts: [5, 3, 3, 1, 0, 0], expected: [3, 2, 2, 0, 0, 0] },
+    { counts: [3, 3, 3, 2, 1, 0], expected: [3, 3, 3, 0, 0, 0] },
+    { counts: [1, 0], expected: [3, 0] },
+    { counts: [0, 0, 0], expected: [0, 0, 0] },
+  ]
+  for (const { counts, expected } of cases) {
+    const input = new Map<PlayerId, number>(counts.map((count, index) => [`player-${index}`, count]))
+    assert.deepEqual([...rankedRecognition(input).values()], expected)
+    assert.deepEqual([...input.values()], counts)
+  }
+})
+
+test('Word of the Day scores only ranked awards and excludes missed authors and unfinished guesses', () => {
+  let game = fresh(3)
+  game = { ...game, week: { ...game.week, mode: 'classic' } }
+  const ids = [...game.week.dreams.keys()]
+  for (const id of ids) game = prepare(game, id)
+  game = openSharedDay(game, () => 0.37)
+  const untouched = encodeGame(game)
+  let allRight = game
+  for (const id of ids) allRight = complete(allRight, id, true)
+  assert.deepEqual(scoreSharedDay(allRight).map(({ result }) => [result.points, result.recognitionPoints]), [[3, 3], [3, 3], [3, 3]])
+  let allWrong = game
+  for (const id of ids) allWrong = complete(allWrong, id, false)
+  assert.deepEqual(scoreSharedDay(allWrong).map(({ result }) => result.points), [0, 0, 0])
+  const partial = complete(game, ids[0], true)
+  const results = scoreSharedDay(partial)
+  assert.deepEqual(results.map(({ result }) => result.points), [0, 0, 0])
+  assert.deepEqual(results.map(({ missed }) => missed), [false, true, true])
+  assert.equal(encodeGame(game), untouched)
+  assert.deepEqual(decodeGame(encodeGame(allRight)), allRight)
+})
 
 function fresh(count: number): SharedWeek {
   const roster: Player[] = Array.from({ length: count }, (_, index) => ({ id: `player-${index}`, name: `Dreamer ${index}` }))

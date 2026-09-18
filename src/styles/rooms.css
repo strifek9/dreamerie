@@ -1,4 +1,9 @@
 .room-demo-link { display: inline-flex; align-items: center; min-height: 44px; color: #f3d8a7; font: 0.875rem/1.5 system-ui, sans-serif; text-underline-offset: 0.25em; }
+.room-mode-picker { text-align: left; max-width: 28rem; margin: 1rem auto; }
+.room-mode-picker p { margin: 0 0 0.75rem; color: var(--muted); font: 0.8125rem/1.5 system-ui, sans-serif; }
+.room-preparation-guide { max-width: 48rem; margin-inline: auto; }
+.room-mode-description { max-width: 32rem; margin: 0.75rem auto; color: var(--ink); font: 0.875rem/1.5 system-ui, sans-serif; }
+.room-mode-description p { margin-top: 0.35rem; }
 .room-demo-link:focus-visible, .room-welcome-link:focus-visible { outline: 3px solid #cfad76; outline-offset: 4px; }
 .room-welcome-link { display: block; width: fit-content; margin: 0.5rem auto 0; }
 .room-content { padding: 1.5rem 1.25rem; text-align: center; min-width: 0; }

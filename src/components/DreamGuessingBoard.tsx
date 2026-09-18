@@ -15,13 +15,14 @@ interface DreamGuessingBoardProps {
   onReveal?: () => void
   totalScore: number
   personal?: boolean
+  ranked?: boolean
   maxScore?: number
   roster?: readonly Player[]
   selfId?: PlayerId
   busy?: boolean
 }
 
-export default function DreamGuessingBoard({ board, onUnlock, onAssign, error, reveal, onReveal, totalScore, personal = false, maxScore = 12, roster, selfId = CURRENT_PLAYER_ID, busy = false }: DreamGuessingBoardProps) {
+export default function DreamGuessingBoard({ board, onUnlock, onAssign, error, reveal, onReveal, totalScore, personal = false, ranked = false, maxScore = 12, roster, selfId = CURRENT_PLAYER_ID, busy = false }: DreamGuessingBoardProps) {
   const heading = useRef<HTMLHeadingElement>(null)
   const friend = board.currentFriend
   const friendCount = board.friends.length
@@ -44,12 +45,12 @@ export default function DreamGuessingBoard({ board, onUnlock, onAssign, error, r
         <p className="eyebrow">{reveal ? board.concept.label : 'A shared dream'}</p>
         <h1 id="round-concept" ref={heading} tabIndex={-1}>
           <span key={`${board.concept.id}:${reveal ? 'revealed' : friend?.id ?? 'ready'}`} className="dream-prompt-text">
-          {reveal ? 'The dream comes into focus.' : friend ? <><span className="player-name" data-player-accent={getPlayerAccent(friend.id, roster)}>{friend.name}</span>{personal ? '’s Dream Clue' : <> dreamt of <span className="dream-word">{board.concept.label}</span>.</>}</> : 'Your guesses are remembered.'}
+          {reveal ? 'The dream comes into focus.' : friend ? personal ? <>Which was <span className="player-name" data-player-accent={getPlayerAccent(friend.id, roster)}>{friend.name}’s</span> Dream?</> : <><span className="player-name" data-player-accent={getPlayerAccent(friend.id, roster)}>{friend.name}</span> dreamt of <span className="dream-word">{board.concept.label}</span>.</> : 'Your guesses are remembered.'}
           </span>
         </h1>
         <div className="round-summary-slot" style={summaryStyle} tabIndex={roster ? 0 : undefined} role={roster ? 'region' : undefined} aria-label={roster ? reveal ? 'This day’s results' : 'Current dream clue' : undefined}>
-          {reveal ? <DreamRoundReveal reveal={reveal} showImages={false} showRecognition={personal} compact roster={roster} />
-            : personal && <p className="current-clue clue-text">{board.currentClue ? `“${board.currentClue}”` : '\u00a0'}</p>}
+          {reveal ? <DreamRoundReveal reveal={reveal} showImages={false} showRecognition={personal || ranked} ranked={ranked} compact roster={roster} />
+            : personal && <div className="dream-clue-card"><p className="eyebrow">Dream clue</p><p className="current-clue clue-text">{board.currentClue ? `“${board.currentClue}”` : '\u00a0'}</p></div>}
         </div>
         <p className="invitation">{reveal ? `${reveal.guesses.filter((guess) => guess.correct).length} of ${friendCount} Dreams remembered.` : friend ? 'Select their Dream Card.' : 'Your guesses are held in mind.'}</p>
         <p className={`round-note${reveal ? ' week-score' : ''}`}>{reveal ? `Your week: ${totalScore} / ${maxScore} points` : !friend ? 'Their meanings are still hidden.' : '\u00a0'}</p>

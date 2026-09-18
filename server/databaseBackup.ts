@@ -7,7 +7,7 @@ import { decodeGame, readResults } from './gameState.ts'
 export function verifyDatabase(path: string) {
   const db = new Database(path, { readonly: true, fileMustExist: true })
   try {
-    if (db.pragma('user_version', { simple: true }) !== 3) throw new Error('Backup schema is not supported by this release.')
+    if (![3, 4].includes(Number(db.pragma('user_version', { simple: true })))) throw new Error('Backup schema is not supported by this release.')
     if (db.pragma('integrity_check', { simple: true }) !== 'ok') throw new Error('Database integrity check failed.')
     const violations = db.pragma('foreign_key_check')
     if (!Array.isArray(violations) || violations.length) throw new Error('Database references are inconsistent.')

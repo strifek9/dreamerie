@@ -26,14 +26,14 @@ test('online backup and restore preserve WAL gameplay, identity, deadlines and s
   const { directory, source, db } = fixture(t)
   const now = Date.parse('2026-09-18T18:00:00Z'), origin = 'http://127.0.0.1:5173'
   const host = createSession(db, now), guest = createSession(db, now)
-  const room = enterRoom(db, host.session.id, 'create', { requestId: randomUUID(), displayName: 'Host' }, now)
+  const room = enterRoom(db, host.session.id, 'create', { requestId: randomUUID(), displayName: 'Host', mode: 'personal' as const }, now)
   enterRoom(db, guest.session.id, 'join', { requestId: randomUUID(), displayName: 'Guest', inviteCode: room.inviteCode }, now)
   function command(sessionId: string, action: GameAction) {
     const view = roomView(db, room.id, sessionId, now)
     return { requestId: randomUUID(), expectedRevision: view.revision, weekId: view.game?.weekId ?? null, roundId: view.game?.roundId ?? null, action }
   }
   const act = (id: string, action: GameAction) => commandRoom(db, room.id, id, command(id, action), now)
-  act(host.session.id, { type: 'start' })
+  act(host.session.id, { type: 'start', mode: 'personal' })
   for (const player of [host, guest]) {
     let view = roomView(db, room.id, player.session.id, now)
     while (view.game!.preparation.next) {
@@ -88,10 +88,10 @@ test('maintenance refuses overwrite, sidecar collisions, public snapshots, missi
 test('verification rejects malformed game data without running migrations or altering the source', (t) => {
   const { db, source } = fixture(t)
   const now = Date.now(), user = createSession(db, now)
-  const room = enterRoom(db, user.session.id, 'create', { requestId: randomUUID(), displayName: 'Host' }, now)
+  const room = enterRoom(db, user.session.id, 'create', { requestId: randomUUID(), displayName: 'Host', mode: 'personal' as const }, now)
   db.prepare('INSERT INTO room_games VALUES (?, ?)').run(room.id, '{"broken":true}')
   assert.throws(() => verifyDatabase(source))
-  assert.equal(db.pragma('user_version', { simple: true }), 3)
+  assert.equal(db.pragma('user_version', { simple: true }), 4)
   assert.equal(db.prepare('SELECT phase FROM rooms WHERE id = ?').pluck().get(room.id), 'lobby')
 })
 
@@ -130,7 +130,7 @@ test('public site entry needs no shared password while HTTPS sessions and room p
     }
     const host = await visitor(), guest = await visitor()
     assert.notEqual(host.cookie, guest.cookie)
-    const created = await app.inject({ method: 'POST', url: '/api/rooms', headers: host, payload: { requestId: randomUUID(), displayName: 'Host' } })
+    const created = await app.inject({ method: 'POST', url: '/api/rooms', headers: host, payload: { requestId: randomUUID(), displayName: 'Host', mode: 'personal' as const } })
     assert.equal(created.statusCode, 200)
     const room = created.json<RoomView>(), url = `/api/rooms/${room.id}`
     assert.equal((await app.inject({ url })).statusCode, 401)
@@ -144,8 +144,8 @@ test('public site entry needs no shared password while HTTPS sessions and room p
         requestId: randomUUID(), expectedRevision: current.revision, weekId: current.game?.weekId ?? null, roundId: current.game?.roundId ?? null, action,
       } })
     }
-    assert.equal((await act(guest, { type: 'start' })).statusCode, 403)
-    const started = (await act(host, { type: 'start' })).json<RoomView>()
+    assert.equal((await act(guest, { type: 'start', mode: 'personal' })).statusCode, 403)
+    const started = (await act(host, { type: 'start', mode: 'personal' })).json<RoomView>()
     const p = started.game!.preparation
     assert.equal((await act(host, { type: 'save', conceptId: p.next!.id, cardId: p.hand[0].id, clue: 'Private before reveal' })).statusCode, 200)
     const guestView = await app.inject({ url, headers: guest })

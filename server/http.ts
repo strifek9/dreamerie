@@ -13,6 +13,7 @@ import { commandRoom } from './gameCommands.ts'
 import { gameCommandSchema } from './gameSchema.ts'
 import { initializeSchedules, runDueRooms } from './scheduler.ts'
 import { initializeLifecycle, expireDueRooms } from './roomLifecycle.ts'
+import type { DreamMode } from '../src/game/types.ts'
 
 interface ServiceOptions {
   databasePath: string
@@ -112,6 +113,17 @@ export async function createService(options: ServiceOptions) {
       const { session, credential } = authenticate(request)
       return { csrfToken: csrfToken(credential), expiresAt: session.expires_at, rooms: sessionRooms(db, session.id, now()) }
     })
+    app.get<{ Params: { code: string } }>('/api/invitations/:code', {
+      config: limit(30),
+      schema: { params: { type: 'object', required: ['code'], properties: { code: { type: 'string', pattern: '^[0-9a-fA-F]{10}$' } } } },
+    }, async (request) => {
+      authenticate(request)
+      const room = db.prepare<[string], { mode: DreamMode; phase: string; expires_at: number | null }>('SELECT mode, phase, expires_at FROM rooms WHERE invite_code = ?').get(request.params.code.toUpperCase())
+      if (!room) throw new RoomError(404, 'ROOM_NOT_FOUND', 'No room matches that invitation code. Check it and try again.')
+      if (['expired', 'closed', 'complete'].includes(room.phase) || (room.expires_at !== null && now() >= room.expires_at)) throw new RoomError(410, 'ROOM_FINISHED', 'That invitation has ended. Ask for a new invitation.')
+      // An invitation reveals the shared rules, never the roster, clues, or cards.
+      return { mode: room.mode }
+    })
     app.get<{ Params: { roomId: string } }>('/api/rooms/:roomId', {
       schema: { params: { type: 'object', required: ['roomId'], properties: { roomId: { type: 'string', maxLength: 64 } } } },
     }, async (request) => roomView(db, request.params.roomId, authenticate(request).session.id, now()))
@@ -125,7 +137,7 @@ export async function createService(options: ServiceOptions) {
         schema: { body: {
           type: 'object', additionalProperties: false,
           required: action === 'create' ? ['requestId', 'displayName'] : ['requestId', 'displayName', 'inviteCode'],
-          properties: action === 'create' ? { requestId, displayName } : {
+          properties: action === 'create' ? { requestId, displayName, mode: { enum: ['classic', 'personal'] } } : {
             requestId, displayName, inviteCode: { type: 'string', pattern: '^\\s*[0-9a-fA-F]{10}\\s*$' },
           },
         } },

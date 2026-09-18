@@ -2,6 +2,8 @@
 
 ## Release status
 
+The room-mode refinement is local and awaits user testing; it has not been deployed. Migration 004 adds a fixed room mode, preserving every existing room as personal-clue mode. New rooms default to Word of the Day. Before deploying, take and verify a backup using the procedure below. Backup tooling accepts schemas 3 and 4 without migrating snapshots. Restoring a schema-3 snapshot into the new server upgrades it on startup; old server code cannot open schema 4, so reverting code alone is not a data rollback.
+
 Dreamerie was deployed on Render on 2026-09-18 at **https://dreamerie-playtest.onrender.com**. The user approved the $7.25/month compute-and-disk estimate, plus applicable usage charges and taxes. HTTPS health, browser session creation, room creation and room persistence after refresh pass. Service auto-deploy is Off and Blueprint Auto Sync is paused. Milestone 0.2.8 remains in progress: hosted multiplayer, physical-device testing and the actual-host backup/recovery rehearsal are still pending. See [PLAYTEST_RECORD.md](PLAYTEST_RECORD.md) and [SCALING_PLAN.md](SCALING_PLAN.md); this is a small supervised playtest, with no measured public capacity claim.
 
 **Approved access:** anyone with the site link can enter and create a room, without a shared password or account signup. Joining a particular room still requires its invitation/code. Each browser gets its own protected session; the public site link does not grant another player’s seat, private clues or host controls. There is no public room directory or automatic matchmaking. The Blueprint has maintenance mode disabled, so a successful authorized deployment opens the site immediately. Review the actual hosting price before creating paid resources.

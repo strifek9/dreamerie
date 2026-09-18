@@ -13,7 +13,7 @@ export default function RoomEnded({ room }: { room: RoomView }) {
     <h1 ref={heading} tabIndex={-1} id="room-ended-title">{expired ? 'This room has faded.' : 'This room is closed.'}</h1>
     <p className="invitation">{expired ? 'This invitation has expired. Gather in a new room to dream again.' : 'No more choices can be made here. Your revealed Dreams are kept below.'}</p>
     {!expired && room.game && <p className="week-score">Your revealed days: {room.game.totalScore} points</p>}
-    {!expired && room.game && <RoomHistory days={room.game.history} roster={roster} total={room.game.totalScore} />}
+    {!expired && room.game && <RoomHistory days={room.game.history} roster={roster} total={room.game.totalScore} ranked={room.game.mode === 'classic'} />}
     <a className="quiet-button room-new-link" href="/?play=rooms">Gather in another room</a>
   </main>
 }

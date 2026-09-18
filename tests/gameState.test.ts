@@ -70,7 +70,8 @@ test('gameplay migration preserves existing waiting rooms, sessions and receipts
   original.close()
   const migrated = openStore(path)
   try {
-    assert.equal(migrated.pragma('user_version', { simple: true }), 3)
+    assert.equal(migrated.pragma('user_version', { simple: true }), 4)
+    assert.equal(migrated.prepare<[], { mode: string }>('SELECT mode FROM rooms').get()!.mode, 'personal')
     assert.deepEqual(migrated.prepare('SELECT player_id, display_name FROM memberships').get(), { player_id: 'player-existing', display_name: 'Kou' })
     assert.equal(migrated.prepare('SELECT * FROM command_receipts').all().length, 1)
     assert.deepEqual(migrated.prepare('SELECT * FROM room_games').all(), [])

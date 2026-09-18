@@ -22,7 +22,7 @@ export function decodeGame(json: string): StoredGame {
   const root = p.object(JSON.parse(json))
   if (root.version !== 1) throw new Error('Unsupported game format.')
   const value = p.object(root.week), allocation = p.object(value.allocation)
-  if (value.mode !== 'personal') throw new Error('Unsupported room game mode.')
+  if (value.mode !== 'personal' && value.mode !== 'classic') throw new Error('Unsupported room game mode.')
   const week: DreamWeek = {
     id: p.weekId(value.id), mode: value.mode,
     concepts: p.array(value.concepts, (item) => { const concept = p.object(item); return { id: p.conceptId(concept.id), label: p.text(concept.label) } }, 6),

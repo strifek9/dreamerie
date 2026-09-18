@@ -1,6 +1,11 @@
-import type { Card, DreamConcept, Player, RoundRevealView } from '../src/game/types.ts'
+import type { Card, DreamConcept, DreamMode, Player, RoundRevealView } from '../src/game/types.ts'
 import type { DayReview, GameAction, GameCommand, GameView, PreparationView } from './game.ts'
 import * as p from './parse.ts'
+
+export function parseDreamMode(value: unknown): DreamMode {
+  if (value !== 'classic' && value !== 'personal') throw new Error('Choose Word of the Day or Your own dream clues.')
+  return value
+}
 
 export function parseCard(value: unknown): Card {
   const card = p.object(value)
@@ -41,6 +46,7 @@ function preparation(value: unknown): PreparationView {
 export function parseGameView(value: unknown): GameView {
   const game = p.object(value)
   const view: GameView = {
+    mode: parseDreamMode(game.mode),
     weekId: p.weekId(game.weekId), roundId: game.roundId === null ? null : p.roundId(game.roundId), day: p.integer(game.day, 1, 7),
     preparation: preparation(game.preparation), totalScore: p.integer(game.totalScore, 0, 54),
     canGuess: p.boolean(game.canGuess), waitingForNextDay: p.boolean(game.waitingForNextDay),
@@ -65,11 +71,11 @@ export function parseGameView(value: unknown): GameView {
 export function parseAction(value: unknown): GameAction {
   const action = p.object(value)
   switch (action.type) {
-    case 'start': return { type: 'start' }
+    case 'start': return { type: 'start', ...(action.mode === undefined ? {} : { mode: parseDreamMode(action.mode) }) }
     case 'close':
       if (action.confirmed !== true) throw new Error('Confirm before closing this room.')
       return { type: 'close', confirmed: true }
-    case 'save': return { type: 'save', conceptId: p.conceptId(action.conceptId), cardId: p.cardId(action.cardId), clue: p.text(action.clue) }
+    case 'save': return { type: 'save', conceptId: p.conceptId(action.conceptId), cardId: p.cardId(action.cardId), ...(action.clue === undefined ? {} : { clue: p.text(action.clue) }) }
     case 'lock': return { type: 'lock', playerId: p.playerId(action.playerId), cardId: p.cardId(action.cardId) }
     case 'unlock': return { type: 'unlock', cardId: p.cardId(action.cardId) }
     case 'open-day': case 'reveal': case 'advance': return { type: action.type,

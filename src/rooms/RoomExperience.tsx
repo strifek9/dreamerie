@@ -1,4 +1,7 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import type { DreamMode } from '../game/types'
+import { readInvitation } from './api'
+import RoomModeChoice, { RoomModeDescription } from './RoomModeChoice'
 import RoomLobby from './RoomLobby'
 import RoomPlay from './RoomPlay'
 import { useRoomConnection } from './useRoomConnection'
@@ -9,6 +12,17 @@ export default function RoomExperience() {
   const [action, setAction] = useState<'create' | 'join'>(() => new URLSearchParams(window.location.search).has('invite') ? 'join' : 'create')
   const [name, setName] = useState('')
   const [code, setCode] = useState(() => new URLSearchParams(window.location.search).get('invite') ?? '')
+  const [mode, setMode] = useState<DreamMode>('classic')
+  const [invitation, setInvitation] = useState<{ code: string; mode?: DreamMode; error?: string }>()
+  const inviteCode = code.trim().toUpperCase()
+  useEffect(() => {
+    if (action !== 'join' || !state.session || !/^[0-9A-F]{10}$/.test(inviteCode)) return
+    let current = true
+    void readInvitation(inviteCode).then((result) => { if (current) setInvitation({ code: inviteCode, mode: result.mode }) })
+      .catch((error: unknown) => { if (current) setInvitation({ code: inviteCode, error: error instanceof Error ? error.message : 'Could not check this invitation.' }) })
+    return () => { current = false }
+  }, [action, inviteCode, state.session])
+  const preview = invitation?.code === inviteCode ? invitation : undefined
   if (state.unavailable) return <div className="dreamerie-shell">
     <header className="masthead"><p className="wordmark">Dreamerie</p></header>
     <main className="gallery-page room-ended"><h1>Your place could not be restored.</h1>
@@ -21,7 +35,7 @@ export default function RoomExperience() {
   return <div className="dreamerie-shell">
     <header className="masthead">
       <p className="wordmark"><span aria-hidden="true">☾</span> Dreamerie</p>
-      <a className="room-demo-link" href="/?mode=personal">Solo practice · simulated players</a>
+      <a className="room-demo-link" href="/?mode=classic">Solo practice · simulated players</a>
     </header>
     <main className="introduction room-page">
       <div className="welcome-art" aria-hidden="true"><img src="/artwork/dreamerie-moonlight.jpg" alt="" width="1122" height="1402" /></div>
@@ -38,21 +52,25 @@ export default function RoomExperience() {
               </button>
             </div> : <form className="room-entry" onSubmit={(event) => {
               event.preventDefault()
-              void state.submit({ action, body: { requestId: crypto.randomUUID(), displayName: name, ...(action === 'join' ? { inviteCode: code.trim().toUpperCase() } : {}) } })
+              if (action === 'join' && !preview?.mode) return
+              void state.submit({ action, body: { requestId: crypto.randomUUID(), displayName: name, ...(action === 'join' ? { inviteCode } : { mode }) } })
             }}>
               <fieldset className="room-options" disabled={state.busy}>
                 <legend>Your invitation</legend>
                 <label><input type="radio" name="room-action" checked={action === 'create'} onChange={() => setAction('create')} />Create a room</label>
                 <label><input type="radio" name="room-action" checked={action === 'join'} onChange={() => setAction('join')} />Join a room</label>
               </fieldset>
+              {action === 'create' && <RoomModeChoice mode={mode} onChange={setMode} disabled={state.busy} />}
               <label htmlFor="room-name">Your display name</label>
               <input id="room-name" value={name} onChange={(event) => setName(event.target.value)} autoComplete="nickname" required maxLength={24} disabled={state.busy} aria-describedby="room-name-hint" />
               <p id="room-name-hint" className="room-note">Use a name your friends know. Each name in a room is distinct.</p>
               {action === 'join' && <>
                 <label htmlFor="room-code">Invitation code</label>
                 <input id="room-code" value={code} onChange={(event) => setCode(event.target.value)} required maxLength={10} pattern="[0-9a-fA-F]{10}" autoCapitalize="characters" spellCheck={false} disabled={state.busy} />
+                <div role="status">{preview?.mode ? <><RoomModeDescription mode={preview.mode} /><p className="room-note">You’ll join this room using the creator’s mode.</p></>
+                  : <p className="room-note">{preview?.error ?? (/^[0-9A-F]{10}$/.test(inviteCode) ? 'Checking this room’s mode…' : 'Enter an invitation to see its game mode before joining.')}</p>}</div>
               </>}
-              <button className="quiet-button" type="submit" disabled={state.busy}>{state.busy ? 'Saving your place…' : action === 'create' ? 'Create your room' : 'Join your friends'}</button>
+              <button className="quiet-button" type="submit" disabled={state.busy || (action === 'join' && !preview?.mode)}>{state.busy ? 'Saving your place…' : action === 'create' ? 'Create your room' : 'Join your friends'}</button>
             </form>}
             {!state.pending && state.session.rooms.length > 0 && <section className="room-return" aria-label="Your saved rooms">
               <h2>Your saved rooms</h2>

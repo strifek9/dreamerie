@@ -10,6 +10,8 @@ The host can start, open guessing days, reveal results, finish a week or explici
 
 ## Goal
 
+**Authorized room-mode refinement:** Word of the Day becomes the default for new rooms, with card-only preparation and ranked 3/2/1 recognition awards (competition ties; zero guesses earn zero; no guessing points). Your own dream clues remains an option at creation with the previous scoring. Invitees join the creator's fixed mode after seeing it. Existing rooms migrate to personal mode without changing their work or results. Implement mode-aware hints/results, clue examples, and a decorative preparation page cue; preserve six prepared Dreams and all existing scheduling/missed-day behavior. Validation includes both modes, two/six-player full weeks, ranking ties, invitation privacy and persistence. Stop for user testing; deployment is separate.
+
 Let groups of 2–6 people play one complete Dream Week using real dream clues, dream cards and guesses, each from their own browser. Players join private rooms. The user has deferred solo play and matchmaking. Learn whether people understand the instructions, enjoy interpreting each other's clues, and understand the scoring. Retain the existing artwork, mobile layout and continuous selection/guessing flow.
 
 The proposed experience is: join through a private invite, enter a group with a display name, prepare six dream-clue/card pairs, play six guessing days, reveal results, and review the week. The host can progress the game manually; the server must also advance it when the next day is due without requiring the host to be online. The confirmed cutoff is midnight America/Chicago; the preparation, manual advancement and recovery policies below are confirmed. Nobody needs to install an app.
@@ -33,7 +35,7 @@ The proposed experience is: join through a private invite, enter a group with a 
 
 ## Approved connected scope and later milestones
 
-Keep the first connected game focused on personal dream clues and the existing recognition scoring. Preserve both local Prototype 0.1 modes for comparison; adding online shared-word mode is outside this first playtest.
+The initial connected game used personal dream clues and recognition scoring. The authorized refinement above adds online Word of the Day; preserve both local Prototype 0.1 modes for historical comparison.
 
 Include private invite links/room codes, display names, a room waiting screen, a roster of up to six with next-day late joining, private preparation, per-player guessing boards, shared readiness, reveal, host controls, scheduled day progression, each player's scores and recap, missed-day handling and recovery after refresh or a temporary disconnect. A display name is presentation, not proof of identity: a private browser session identifies the player.
 

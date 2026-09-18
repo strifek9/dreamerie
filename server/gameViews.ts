@@ -35,7 +35,7 @@ export function gameView(db: Store, roomId: string, self: PlayerId, phase: RoomP
     }
   })
   if (phase === 'closed' || phase === 'complete') return {
-    weekId: week.id, day: Math.max(1, game.roundIndex + 2), roundId: null,
+    mode: week.mode, weekId: week.id, day: Math.max(1, game.roundIndex + 2), roundId: null,
     preparation: { next: null, hand: [], saved: [] }, readiness: [], history,
     totalScore: outcomes.reduce((sum, outcome) => sum + outcome.result.points, 0),
     canGuess: false, waitingForNextDay: false, preparingPlayerIds: [], unfinishedPlayerIds: [],
@@ -43,7 +43,7 @@ export function gameView(db: Store, roomId: string, self: PlayerId, phase: RoomP
   const current = game.rounds.find((round) => round.guesserId === self)
   const board = current ? getGuessingBoardView(week, current, cards, players) : undefined
   return {
-    weekId: week.id, day: Math.max(1, game.roundIndex + 2),
+    mode: week.mode, weekId: week.id, day: Math.max(1, game.roundIndex + 2),
     roundId: game.roundIndex < 0 ? null : `round-${week.id}-${game.roundIndex + 1}`,
     preparation: {
       next: nextSharedDream(game, self),

@@ -10,18 +10,58 @@ import { readGame } from '../server/gameState.ts'
 import type { GameAction, GameCommand } from '../shared/game.ts'
 import type { RoomView, SessionView } from '../shared/rooms.ts'
 import { playerId } from '../shared/parse.ts'
+import type { DreamMode } from '../src/game/types.ts'
+import { parseGameView } from '../shared/gameParsing.ts'
 
 const origin = 'http://127.0.0.1:5173'
+
+test('room mode is previewed privately before joining and cannot be changed at start or by a retry', async (t) => {
+  const { app, users, room } = await fixture(t, 2, 'classic')
+  const path = `/api/invitations/${room.inviteCode}`
+  assert.equal((await app.inject({ url: path })).statusCode, 401)
+  const outsider = await user(app, 'New guest')
+  const preview = await app.inject({ url: path, headers: { cookie: outsider.cookie } })
+  assert.equal(preview.statusCode, 200)
+  assert.equal(preview.headers['cache-control'], 'no-store')
+  assert.deepEqual(preview.json(), { mode: 'classic' })
+  assert.equal((await app.inject({ url: `/api/rooms/${room.id}`, headers: { cookie: outsider.cookie } })).statusCode, 403)
+  assert.equal((await send(app, users[0], room.id, command(room, { type: 'start', mode: 'personal' }))).statusCode, 400)
+  const body = { requestId: randomUUID(), displayName: 'Author', mode: 'personal' as const }
+  const made = await post(app, outsider, '/api/rooms', body)
+  const created = made.json<RoomView>()
+  assert.equal(created.mode, 'personal')
+  assert.deepEqual((await post(app, outsider, '/api/rooms', body)).json(), created)
+  assert.equal((await post(app, outsider, '/api/rooms', { ...body, mode: 'classic' })).statusCode, 409)
+  assert.equal((await post(app, outsider, '/api/rooms', { ...body, requestId: randomUUID(), mode: 'invalid' })).statusCode, 400)
+  const personalPreview = await app.inject({ url: `/api/invitations/${created.inviteCode}`, headers: { cookie: users[0].cookie } })
+  assert.deepEqual(personalPreview.json(), { mode: 'personal' })
+})
+
+test('personal clues are still required, while Word of the Day accepts card-only choices', async (t) => {
+  for (const mode of ['personal', 'classic'] as const) {
+    const { app, users, room } = await fixture(t, 2, mode)
+    const started = await act(app, users[0], room.id, { type: 'start' })
+    const prep = started.game!.preparation
+    const saved = await send(app, users[0], room.id, command(started, { type: 'save', conceptId: prep.next!.id, cardId: prep.hand[0].id }))
+    assert.equal(saved.statusCode, mode === 'personal' ? 400 : 200)
+    if (mode === 'classic') {
+      const after = saved.json<RoomView>()
+      assert.equal(after.game!.preparation.saved[0].clue, '')
+      assert.equal(after.game!.preparation.hand.length, 6)
+      assert.ok(!after.game!.preparation.hand.some((card) => card.id === prep.hand[0].id))
+    }
+  }
+})
 type App = Awaited<ReturnType<typeof createService>>
 interface User { cookie: string; csrf: string; name: string }
-async function fixture(t: TestContext, count = 3) {
+async function fixture(t: TestContext, count = 3, mode: DreamMode = 'personal') {
   const directory = mkdtempSync(join(tmpdir(), 'dreamerie-shared-service-'))
   const path = join(directory, 'game.sqlite')
   const app = await createService({ databasePath: path, origin, rateLimits: false })
   t.after(async () => { await app.close(); rmSync(directory, { recursive: true, force: true }) })
   const users = []
   for (let i = 0; i < count; i++) users.push(await user(app, `Human ${i}`))
-  const response = await post(app, users[0], '/api/rooms', { requestId: randomUUID(), displayName: users[0].name })
+  const response = await post(app, users[0], '/api/rooms', { requestId: randomUUID(), displayName: users[0].name, ...(mode === 'personal' ? { mode } : {}) })
   const room = response.json<RoomView>()
   for (const guest of users.slice(1)) assert.equal((await joinRoom(app, guest, room)).statusCode, 200)
   return { app, users, room: await view(app, users[0], room.id), path }
@@ -54,7 +94,8 @@ async function prepare(app: App, user: User, id: string) {
   let room = await view(app, user, id)
   while (room.game?.preparation.next) {
     const prep = room.game.preparation
-    room = await act(app, user, id, { type: 'save', conceptId: prep.next!.id, cardId: prep.hand[0].id, clue: `${user.name} secret ${prep.next!.label}` })
+    room = await act(app, user, id, { type: 'save', conceptId: prep.next!.id, cardId: prep.hand[0].id,
+      ...(room.game!.mode === 'personal' ? { clue: `${user.name} secret ${prep.next!.label}` } : {}) })
   }
   return room
 }
@@ -71,13 +112,16 @@ async function finishGuesses(app: App, user: User, id: string, path: string) {
   return room
 }
 
-for (const count of [2, 6]) test(`HTTP: ${count} humans prepare, guess and reveal the entire same week privately`, async (t) => {
-  const { app, users, room, path } = await fixture(t, count)
-  await act(app, users[0], room.id, { type: 'start' })
+for (const mode of ['classic', 'personal'] as const) for (const count of [2, 6]) test(`HTTP: ${count} humans prepare, guess and reveal an entire ${mode} week privately`, async (t) => {
+  const { app, users, room, path } = await fixture(t, count, mode)
+  assert.equal(room.mode, mode)
+  const started = await act(app, users[0], room.id, { type: 'start', ...(mode === 'personal' ? { mode } : {}) })
+  assert.equal(started.game?.mode, mode)
   for (const guest of users) await prepare(app, guest, room.id)
   for (const guest of users) {
     const privateView = await view(app, guest, room.id)
     assert.equal(privateView.game?.preparation.saved.length, 6)
+    assert.deepEqual(parseGameView(privateView.game), privateView.game)
     for (const other of users.filter((entry) => entry !== guest)) assert.ok(!JSON.stringify(privateView).includes(`${other.name} secret`))
     assert.equal(privateView.game?.board, undefined)
     assert.equal(privateView.game?.reveal, undefined)
@@ -107,10 +151,10 @@ for (const count of [2, 6]) test(`HTTP: ${count} humans prepare, guess and revea
     for (const guest of users) {
       const revealed = await view(app, guest, room.id)
       assert.equal(revealed.phase, 'revealed')
-      assert.equal(revealed.game?.reveal?.points, count - 1)
-      assert.equal(revealed.game?.reveal?.recognitionPoints, 0)
+      assert.equal(revealed.game?.reveal?.points, mode === 'classic' ? 3 : count - 1)
+      assert.equal(revealed.game?.reveal?.recognitionPoints, mode === 'classic' ? 3 : 0)
       assert.equal(revealed.game?.history.length, day - 1)
-      assert.equal(revealed.game?.totalScore, (day - 1) * (count - 1))
+      assert.equal(revealed.game?.totalScore, (day - 1) * (mode === 'classic' ? 3 : count - 1))
       assert.equal(JSON.stringify(revealed.game?.board?.cards), boards.get(guest.name))
       const invalid = await send(app, guest, room.id, command(revealed, { type: 'unlock', cardId: revealed.game!.board!.locks[0][0] }))
       assert.equal(invalid.statusCode, 400)
@@ -125,10 +169,10 @@ for (const count of [2, 6]) test(`HTTP: ${count} humans prepare, guess and revea
 
 test('HTTP: host authority, cross-room access, validation, concurrent saves and stale retries', async (t) => {
   const { app, users, room } = await fixture(t)
-  assert.equal((await send(app, users[1], room.id, command(room, { type: 'start' }))).statusCode, 403)
+  assert.equal((await send(app, users[1], room.id, command(room, { type: 'start', mode: 'personal' }))).statusCode, 403)
   const outsider = await user(app, 'Outsider')
-  assert.equal((await send(app, outsider, room.id, command(room, { type: 'start' }))).statusCode, 403)
-  const started = await act(app, users[0], room.id, { type: 'start' })
+  assert.equal((await send(app, outsider, room.id, command(room, { type: 'start', mode: 'personal' }))).statusCode, 403)
+  const started = await act(app, users[0], room.id, { type: 'start', mode: 'personal' })
   const guest = await view(app, users[1], room.id)
   assert.ok(!JSON.stringify(started).includes(guest.game!.preparation.hand[0].id))
   const foreign = command(started, { type: 'save', conceptId: started.game!.preparation.next!.id, cardId: guest.game!.preparation.hand[0].id, clue: 'Invalid' })
@@ -150,7 +194,7 @@ test('HTTP: host authority, cross-room access, validation, concurrent saves and 
 
 test('HTTP: early closure scores incomplete players zero, late joins cannot change current boards', async (t) => {
   const { app, users, room, path } = await fixture(t)
-  await act(app, users[0], room.id, { type: 'start' })
+  await act(app, users[0], room.id, { type: 'start', mode: 'personal' })
   await prepare(app, users[0], room.id)
   await prepare(app, users[1], room.id)
   const before = await view(app, users[0], room.id)
@@ -181,9 +225,9 @@ test('HTTP: early closure scores incomplete players zero, late joins cannot chan
   assert.equal((await view(app, newcomer, room.id)).game?.canGuess, true)
 })
 
-test('HTTP: unlock/reveal races serialize; exactly one outcome survives restart', async (t) => {
+test('HTTP: unlock/reveal races serialize; personal results survive a schema-3 upgrade and restart', async (t) => {
   const { app, users, room, path } = await fixture(t, 2)
-  await act(app, users[0], room.id, { type: 'start' })
+  await act(app, users[0], room.id, { type: 'start', mode: 'personal' })
   for (const guest of users) await prepare(app, guest, room.id)
   await act(app, users[0], room.id, { type: 'open-day' })
   for (const guest of users) await finishGuesses(app, guest, room.id, path)
@@ -201,6 +245,10 @@ test('HTTP: unlock/reveal races serialize; exactly one outcome survives restart'
   }
   const old = await view(app, users[1], room.id)
   await app.close()
+  // Reproduce the deployed pre-mode schema with accepted clues, guesses and scores.
+  const previousSchema = openStore(path)
+  previousSchema.exec('ALTER TABLE rooms DROP COLUMN mode; PRAGMA user_version = 3;')
+  previousSchema.close()
   const restarted = await createService({ databasePath: path, origin, rateLimits: false })
   try {
     assert.deepEqual(await view(restarted, users[1], room.id), old)
@@ -215,7 +263,7 @@ test('HTTP: unlock/reveal races serialize; exactly one outcome survives restart'
 test('HTTP: last guess and confirmed missed-day closure cannot both apply at one revision', async (t) => {
   for (const closeFirst of [false, true]) {
     const { app, users, room, path } = await fixture(t, 2)
-    await act(app, users[0], room.id, { type: 'start' })
+    await act(app, users[0], room.id, { type: 'start', mode: 'personal' })
     for (const guest of users) await prepare(app, guest, room.id)
     await act(app, users[0], room.id, { type: 'open-day' })
     await finishGuesses(app, users[0], room.id, path)
