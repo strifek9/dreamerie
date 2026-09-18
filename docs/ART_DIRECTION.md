@@ -33,6 +33,12 @@ An image should plausibly evoke several concepts. Meaning comes from the player'
 
 Avoid relying on a clock for TIME, heart icon for LOVE, labeled house for HOME, or padlock for FEAR. These objects can appear in richer ambiguous compositions, but should not dictate a single obvious interpretation. Avoid concept names, answer labels, or ownership hints in artwork.
 
+## Shared play presentation
+
+Private rooms use actual display names and the six stable roster accents; Nancy and Song belong only to explicitly labeled solo practice. Keep readiness compact and expandable, with host progression in the header. Saving feedback follows server acceptance; uncertain saves offer a deliberate retry. Explain early closure and zero missed-day points clearly without exposing future clues or implying that disconnecting alone loses a day.
+
+Keep the same six cards stationary through locks, unlocks and reveal. Results remain above the board; long clues/results may scroll inside the reserved, keyboard-accessible summary area. After reveal, label actual Dreams even when the player left that guess unanswered. Decoys remain indistinguishable until reveal. Personal recaps include inspectable cards and explicit missed-day results.
+
 ## Artwork-first UI
 
 - Use restrained surfaces, generous spacing, and readable typography.

@@ -8,6 +8,9 @@ import { enterRoom } from './rooms.ts'
 import { COOKIE_NAME, SESSION_SECONDS, createSession, csrfToken, findSession, validCsrf } from './sessions.ts'
 import { openStore } from './store.ts'
 import { roomView, sessionRooms } from './views.ts'
+import { parseCommand } from '../shared/gameParsing.ts'
+import { commandRoom } from './gameCommands.ts'
+import { gameCommandSchema } from './gameSchema.ts'
 
 interface ServiceOptions {
   databasePath: string
@@ -52,7 +55,7 @@ export async function createService(options: ServiceOptions) {
       if (error instanceof RoomError) return reply.code(error.statusCode).send({ code: error.code, message: error.message })
       const status = error instanceof Error && 'statusCode' in error && typeof error.statusCode === 'number' ? error.statusCode : 500
       if (status === 400 || status === 415 || status === 413) {
-        return reply.code(status).send({ code: 'INVALID_REQUEST', message: 'Check your name and invitation code, then try again.' })
+        return reply.code(status).send({ code: 'INVALID_REQUEST', message: 'That request could not be read. Check your input and try again.' })
       }
       if (status === 429) return reply.code(429).send({ code: 'TOO_MANY_REQUESTS', message: 'Too many attempts. Wait a minute before trying again.' })
       return reply.code(500).send({ code: 'SERVICE_ERROR', message: 'The room could not be saved. Please try again.' })
@@ -88,6 +91,10 @@ export async function createService(options: ServiceOptions) {
     app.get<{ Params: { roomId: string } }>('/api/rooms/:roomId', {
       schema: { params: { type: 'object', required: ['roomId'], properties: { roomId: { type: 'string', maxLength: 64 } } } },
     }, async (request) => roomView(db, request.params.roomId, authenticate(request).session.id, now()))
+    app.post<{ Params: { roomId: string }; Body: unknown }>('/api/rooms/:roomId/commands', {
+      schema: { body: gameCommandSchema, params: { type: 'object', required: ['roomId'], properties: { roomId: { type: 'string', maxLength: 64 } } } },
+      config: { rateLimit: options.rateLimits === false ? false : { max: 120, timeWindow: '1 minute', keyGenerator: (request) => request.cookies[COOKIE_NAME] ?? request.ip } },
+    }, async (request) => commandRoom(db, request.params.roomId, authenticate(request, true).session.id, parseCommand(request.body), now()))
     for (const action of ['create', 'join'] as const) {
       app.post<{ Body: RoomRequest }>(action === 'create' ? '/api/rooms' : '/api/rooms/join', {
         config: limit(action === 'create' ? 10 : 30),

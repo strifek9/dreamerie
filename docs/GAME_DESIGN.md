@@ -2,13 +2,17 @@
 
 This is the primary gameplay source of truth. **Confirmed rules** express the supplied product vision. **Prototype assumptions** are limited local demonstration choices, not settled production rules. **Unresolved questions** require a later decision. **Future ideas** are outside Prototype 0.1.
 
-**Prototype 0.2:** The user wants shared playtests across phone and desktop browsers. [PROTOTYPE_0_2_PLAN.md](PROTOTYPE_0_2_PLAN.md) records scope, policies and decisions needed before implementation. Approved milestone 0.2.1 supports 2–6 fully participating players in the core rules. Milestone 0.2.2 adds private rooms, protected browser seats, invitations and a persistent waiting room; it stops before dealing cards. Connected gameplay, missed-day handling and automatic progression are not implemented. The local game still uses Charlie, Nancy and Song, and its assumptions below remain scoped to accepted Prototype 0.1.
+**Prototype 0.2:** The user authorized connecting private preparation, guessing and results (0.2.3–0.2.5), with late joining and early host advancement. This shared personal-clue week is implemented and awaiting user testing. Private rooms use actual players, persistent browser seats, host controls and inspectable results. Automatic midnight progression and hosting remain later milestones. [PROTOTYPE_0_2_PLAN.md](PROTOTYPE_0_2_PLAN.md) records scope and remaining decisions. The separate local demo still uses Charlie, Nancy and Song; its assumptions below remain scoped to Prototype 0.1.
 
 - **2–6 players total:** Two is the minimum; the previously approved maximum of six remains. This is a prototype limit, not a permanent production cap.
 - **Solo entry deferred:** The user explicitly postponed solo play. Do not implement a lobby or matchmaking in Prototype 0.2. Their idea of random solo opponents with only the player’s correct-guess points carrying into a weekly total remains a future thought, not an approved scoring change.
 - **Progression:** The host can manually progress the game. The user confirmed automatic daily rollover at **midnight in America/Chicago** for the initial playtest, including while the host is offline. All room members share this cutoff regardless of their device timezone. The first preparation deadline, reveal timing and interaction with early manual advancement still require decisions. Use calendar midnights rather than assuming every day lasts exactly 24 hours.
-- **Missed day:** Use a decoy and give the missing player zero points for that day when it advances. Whether to retain an already-prepared Dream, when the host may close an unfinished day early, and how missing players affect the recognition denominator remain unresolved. Do not infer these details or treat disconnecting alone as forfeiture.
+- **Missed day, approved policy:** Missing that day's prepared Dream or leaving required guesses incomplete earns **0 total points**, overriding guessing and recognition. A prepared Dream stays on the board as a target; only a missing Dream is replaced with an anonymous decoy when the boards open. The missing player has no guessing board for that day. Partial guesses remain in their review but earn points for nobody. Disconnecting alone is not forfeiture: accepted complete guesses still count.
+- **Recognition after a missed day:** Only other players who finished their required guesses count toward “everyone.” A finished author earns +1 per correct completed guesser unless all completed guessers identify their Dream. With no completed guessers, recognition is zero. Correct completed guessers keep their points even when the author misses the day. With no prepared Dreams, everyone misses; with only one prepared Dream, that player has no guessing targets and earns zero.
+- **Early closure:** The host may open or reveal a day before everyone finishes, after explicit confirmation listing unfinished players. Missing preparation is decided when the boards open; incomplete guesses are decided at reveal. Readiness means every required guess is locked; unlocking makes the player unready again. Results are immutable after reveal. When opening a day, report unfinished preparation without exposing which hidden slot comes next.
 - **Two-player scoring consequence:** With the existing everyone-correct exception, the author receives no recognition points when their sole opponent guesses correctly. Therefore recognition is always zero in a fully participating two-player game, with up to one guessing point per player per day. No special scoring exception has been authorized.
+- **Late joining, approved policy:** Give a new player six cards and let them prepare only unopened Dreams. A player joining during preparation can participate on Day 2; one joining after a guessing day opens begins guessing the next day. Joining never changes existing boards, targets or scores, and grants no earlier results or points. No new seats are accepted once the last guessing day has opened. Existing members can reconnect. The six-player capacity remains in force.
+- **Returning after missing preparation:** Prepare remaining unopened Dreams with the same selection/replacement rule. Never fill in or edit an already-opened day retroactively. Saved pairs remain immutable after replacement, as in the accepted local flow. Scores and missed status remain in each player's own recap; no shared ranking or winner is added.
 
 ## Intent
 
@@ -65,7 +69,7 @@ Prototype 0.1 shows a recap of the just-completed week, then clears it on restar
 - Keep all six images in their positions through guessing, unlocking and reveal. Reveal labels the friends' actual Dreams, the user's guesses and the decoys on that same board. Put textual results above the cards, between “The dream comes into focus.” and the “Dreams remembered” count. There is no separate own-Dream sidebar during a round.
 - Assign one image to each required other player. A committed image cannot be assigned to another player while locked. Players can unlock a guess to change it before reveal, preserving any other friend's guess.
 - Prompt for one friend at a time on the same board: Nancy first, then Song for the same concept after Nancy's guess is confirmed.
-- Do not reveal correctness after an individual guess. Reveal only after all required assignments are complete, then calculate the score.
+- Do not reveal correctness after an individual guess. Normal reveal follows complete assignments. In shared rooms, the approved early-closure policy above also permits a host-confirmed reveal with missed-day outcomes.
 - At the end of the week, show all six concepts with the user's own Dreams, friends' actual Dreams, the user's guesses, and results.
 - With one slot reserved for the user's Dream, a six-card board has at most five slots for friends' Dreams and decoys. Larger-group behavior is unresolved; do not infer a confirmed group-size cap.
 
@@ -75,7 +79,7 @@ Decoys must not leak ownership information. Ideally, they are images the guessin
 
 ### Midweek joining
 
-Late joiners prepare and participate only in remaining concepts. They do not participate retroactively or receive points for earlier rounds. Give them six cards and apply the same selection/replacement rule for each remaining concept. Exact join deadlines, eligibility boundaries, and standings effects remain unresolved.
+Late joiners prepare and participate only in remaining concepts. They do not participate retroactively or receive points for earlier rounds. Give them six cards and apply the same selection/replacement rule for each remaining concept. Prototype 0.2 uses the approved next-unopened-day boundary above. Production standings and fairness effects remain unresolved.
 
 ### Competition
 
@@ -83,7 +87,7 @@ Scores accumulate across the Dream Week. At the end, show final standings and a 
 
 **Confirmed experimental scoring addition:** The user has resolved the amount: +1 per other player who correctly identifies your Dream, except when everyone does. This is active in personal-clue mode. How missed participation affects “everyone” remains a production question.
 
-Both runnable modes simulate Nancy/Song guesses. Original mode preserves its 2-point round and 12-point week maxima; personal-clue mode includes recognition points and uses maxima of 3 and 18.
+Both local modes simulate Nancy/Song guesses. Original mode preserves its 2-point round and 12-point week maxima; local personal-clue mode includes recognition points and uses maxima of 3 and 18. Connected rooms use human choices and the actual roster, with the approved missed-day override above.
 
 ## Prototype assumptions
 
@@ -111,30 +115,29 @@ These assumptions must preserve six-card hands, unique player allocations, hidde
 ## Unresolved questions
 
 - Final scoring system; tie handling and weekly winners.
-- Treatment of missing guesses in the “everyone” condition. Local friends simulate all required guesses, so missing participation is not part of the prototype. Whether to adopt personal clues as the main game remains subject to user testing.
+- Whether to adopt personal clues and the Prototype 0.2 completed-guesser recognition policy as permanent production rules.
 - Exact weekly timing, setup deadlines, daily boundaries, and timezones.
 - When Sunday's Dream is guessed and how final reveal relates to the next week.
 - Production minimum and maximum group size beyond the confirmed 2–6-player Prototype 0.2 range.
 - Whether six displayed guessing cards remain constant for larger groups.
 - How weekly concepts are selected and whether they repeat.
 - Exact decoy selection/generation, exposure, reuse, and exhaustion rules.
-- How late joiners affect standings/fairness and become eligible for rounds.
-- Missing selections, skipped guesses, and players leaving a group.
+- How late joiners affect production standings/fairness beyond the approved 0.2 next-day eligibility.
+- Players voluntarily leaving a group, host transfer and room closure. Missing selections and skipped guesses in 0.2 follow the approved policy above.
 - Whether prepared Dreams can be revised and whether players choose setup concept order.
 - Artwork recurrence across weeks and the precise meaning of a fresh deal.
 - Whether Dream History becomes permanent and who can see it.
 - Eventual artwork sourcing/generation, licensing, and review strategy.
 - Account system.
-- How players create/join Dream groups.
-- Invite links.
+- Permanent group management and account-based invitations beyond the implemented private-room links.
 - Whether PWA installation is worthwhile.
 - Future notification strategy.
 
-No existing repository implementation resolves these questions.
+The implemented private playtest does not resolve these broader production questions.
 
 ## Future ideas
 
-Accounts, friend groups, invitations, real asynchronous multiplayer, production scheduling, full weekly leaderboards, and Dream History come later. PWA installation and native apps may be evaluated later.
+Permanent accounts and friend groups, production scheduling, full weekly leaderboards, and Dream History come later. Prototype 0.2 now has private invitations and shared host-led browser play; scheduled progression and remote hosting remain pending. PWA installation and native apps may be evaluated later.
 
 Discord login, invitations, notifications, an Activity, and server/channel connections are optional future entry points. They must not own core state or be required to play. Prototype 0.1 contains no Discord-specific code.
 

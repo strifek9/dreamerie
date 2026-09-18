@@ -1,4 +1,6 @@
 import type { RoomRequest, RoomView, SessionView } from '../../shared/rooms'
+import type { GameCommand } from '../../shared/game'
+import { parseGameView } from '../../shared/gameParsing'
 
 export class ApiError extends Error {
   status: number
@@ -10,6 +12,9 @@ function record(value: unknown): value is Record<string, unknown> {
 }
 
 function isRoom(value: unknown): value is RoomView {
+  if (record(value) && value.game !== undefined) {
+    try { parseGameView(value.game) } catch { return false }
+  }
   return record(value) && typeof value.id === 'string' && typeof value.inviteCode === 'string'
     && typeof value.selfId === 'string' && typeof value.hostId === 'string'
     && typeof value.revision === 'number' && Number.isInteger(value.revision)
@@ -51,6 +56,8 @@ export function openSession() {
 export const readRoom = (id: string) => request(`/api/rooms/${encodeURIComponent(id)}`, isRoom)
 export const saveRoom = (action: 'create' | 'join', body: RoomRequest, csrf: string) =>
   request(action === 'create' ? '/api/rooms' : '/api/rooms/join', isRoom, body, csrf)
+export const sendGameCommand = (roomId: string, body: GameCommand, csrf: string) =>
+  request(`/api/rooms/${encodeURIComponent(roomId)}/commands`, isRoom, body, csrf)
 
 export interface PendingEntry { action: 'create' | 'join'; body: RoomRequest }
 const pendingKey = 'dreamerie.pending-room-entry'

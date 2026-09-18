@@ -9,10 +9,11 @@ interface DreamSelectionProps {
   error: string | null
   remembered: string | null
   personal?: boolean
+  busy?: boolean
   onChoose: (cardId: CardId, clue?: string) => void
 }
 
-export default function DreamSelection({ concept, hand, error, remembered, personal = false, onChoose }: DreamSelectionProps) {
+export default function DreamSelection({ concept, hand, error, remembered, personal = false, onChoose, busy = false }: DreamSelectionProps) {
   const Heading = personal ? 'h1' : 'h2'
   const heading = useRef<HTMLHeadingElement>(null)
   const [draft, setDraft] = useState({ id: concept.id, text: '' })
@@ -33,7 +34,7 @@ export default function DreamSelection({ concept, hand, error, remembered, perso
       </div>
       {personal && <div className="clue-editor">
         <label htmlFor="dream-clue" className="preparation-priority">Describe Your Dream Clue</label>
-        <textarea id="dream-clue" rows={2} maxLength={MAX_CLUE_LENGTH} value={clue}
+        <textarea id="dream-clue" rows={2} maxLength={MAX_CLUE_LENGTH} value={clue} readOnly={busy}
           aria-describedby="clue-guidance clue-count" onChange={(event) => setDraft({ id: concept.id, text: event.target.value })}
           placeholder="Tell us about your dream... but leave some to the imagination." />
         <p id="clue-count" className="clue-counter">{clue.length} / {MAX_CLUE_LENGTH}</p>
@@ -45,7 +46,7 @@ export default function DreamSelection({ concept, hand, error, remembered, perso
       {personal && <p className="preparation-priority">Select a Dream Card</p>}
       <p className="gallery-hint">Tap to choose. Hold to look closer.</p>
       <CardGallery cards={hand} choiceKey={concept.id} prompt={personal ? 'Your clue and card' : `You dream of ${concept.label}.`}
-        canConfirm={!personal || clue.trim().length > 0}
+        canConfirm={!personal || clue.trim().length > 0} busy={busy}
         onChoose={(cardId) => onChoose(cardId, personal ? clue : undefined)} />
     </section>
   )

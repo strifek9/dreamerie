@@ -20,10 +20,11 @@ interface CardGalleryProps {
   revealedOwners?: ReadonlyMap<CardId, string>
   imageLoading?: 'eager' | 'lazy'
   canConfirm?: boolean
+  busy?: boolean
 }
 
 export default function CardGallery({ cards, onChoose, label = 'Your six dream cards', choiceKey,
-  confirmLabel = 'Remember this dream', selectionLabel = 'Selected', prompt, action, locks, lockAccents, ownAccent, onUnlock, ownCardId, revealedOwners, imageLoading, canConfirm = true }: CardGalleryProps) {
+  confirmLabel = 'Remember this dream', selectionLabel = 'Selected', prompt, action, locks, lockAccents, ownAccent, onUnlock, ownCardId, revealedOwners, imageLoading, canConfirm = true, busy = false }: CardGalleryProps) {
   const [inspected, setInspected] = useState<Card | null>(null)
   const [choice, setChoice] = useState<{ card: Card | null; key: string | undefined }>({ card: null, key: choiceKey })
   // Reset on a new friend or changed commitments, including returning to an unlocked friend.
@@ -41,7 +42,7 @@ export default function CardGallery({ cards, onChoose, label = 'Your six dream c
     committed.current = false
     press.current = null
     suppressClick.current = false
-  }, [cards, choiceKey])
+  }, [cards, choiceKey, busy])
 
   useEffect(() => {
     if (inspected && dialog.current && !dialog.current.open) {
@@ -87,7 +88,9 @@ export default function CardGallery({ cards, onChoose, label = 'Your six dream c
               onClick={(event) => {
                 if (event.detail > 0 && suppressClick.current) { suppressClick.current = false; return }
                 opener.current = event.currentTarget
-                if (onChoose && card.id !== ownCardId && !locks?.has(card.id)) setChoice({ card: selected?.id === card.id ? null : card, key: choiceKey })
+                if (onChoose && card.id !== ownCardId && !locks?.has(card.id)) {
+                  if (!busy) setChoice({ card: selected?.id === card.id ? null : card, key: choiceKey })
+                }
                 else setInspected(card)
               }}
             >
@@ -116,7 +119,7 @@ export default function CardGallery({ cards, onChoose, label = 'Your six dream c
             {ownCardId && (
               <div className="card-revision">
                 {onUnlock && locks?.has(card.id) && (
-                  <button className="unlock-guess" aria-label={`Unlock ${locks.get(card.id)}’s guess`} onClick={() => onUnlock(card.id)}>
+                  <button className="unlock-guess" disabled={busy} aria-label={`Unlock ${locks.get(card.id)}’s guess`} onClick={() => onUnlock(card.id)}>
                     <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true">
                       <rect x="5" y="10" width="14" height="11" rx="3" /><path d="M8 10V6a4 4 0 0 1 8 0M12 14v3" />
                     </svg>
@@ -135,7 +138,7 @@ export default function CardGallery({ cards, onChoose, label = 'Your six dream c
             <>
               <button
                 className="quiet-button remember-dream"
-                disabled={!selected || !canConfirm}
+                disabled={!selected || !canConfirm || busy}
                 onClick={() => {
                   if (!selected || !canConfirm || committed.current) return
                   committed.current = true

@@ -8,17 +8,17 @@ The product is mobile-first and responsive for mobile and desktop web. Artwork l
 
 ## Current status
 
-**Prototype 0.2:** [The plan](docs/PROTOTYPE_0_2_PLAN.md) covers private rooms for 2–6 players on phone and desktop browsers. Milestone **0.2.2 is implemented and awaiting user testing**: create a room, share an invitation, join with distinct names, and return to the same seat after refresh or a service restart. The waiting room shows all six player accents and host identity. It stops before dealing cards; connected gameplay, scheduling and hosting are not yet implemented. The complete local Prototype 0.1 remains available.
+**Prototype 0.2 shared play is implemented and ready for testing.** Private rooms support 2–6 actual players through six personal clue/card pairs, guessing, unlocking, host-led reveal and a persistent full-week recap. Your tester’s name and choices now replace the local Nancy/Song simulation inside the room. Milestones 0.2.3–0.2.5 were connected together at the user’s request; the accepted local practice modes remain separate.
 
-Milestone **0.2.1 is approved**: the game rules support 2–6 fully participating players, with the correct decoy count, private exposure, scoring and individual recaps. Results carry the guessing player's ID; scoring rejects incomplete/foreign rosters and recaps reject another player's or week's results. Rule tests play complete personal and classic weeks for every supported size, including two-player zero recognition and six-player boards without decoys. The local demo still uses Charlie, Nancy and Song.
+The host can advance before everyone finishes after confirming unfinished players. Missing preparation or incomplete guesses earn zero total points; a prepared Dream remains a target, and unfinished guesses do not contribute recognition. Only completed guessers count toward “everyone.” Late joiners prepare unopened Dreams and begin guessing the next day, without changing existing boards. With two players, recognition is always zero; correct guesses still earn one point.
 
-The [technical design](docs/PROTOTYPE_0_2_TECHNICAL_DESIGN.md) describes the Fastify/SQLite service and later private gameplay/scheduling. Midnight America/Chicago is confirmed for future rollover. Detailed lifecycle and missed-day policies remain open; this milestone sets no room-expiry schedule, skips or timers. Solo play and matchmaking are deferred. No hosting has been purchased or provisioned.
+See [the plan](docs/PROTOTYPE_0_2_PLAN.md) and [technical design](docs/PROTOTYPE_0_2_TECHNICAL_DESIGN.md). Automatic midnight America/Chicago progression, room cleanup/closure and remote hosting remain later work. All current shared progression is host-controlled. Solo matchmaking is deferred; no hosting has been purchased or provisioned.
 
-Round results now appear between **The dream comes into focus.** and **Dreams remembered**, above the dream cards. The summary includes each friend's dream clue, your guess result and points, followed by friends' recognition of your Dream and its points. It wraps across two columns on phones, up to three on tablets and up to five on wider screens. Five-friend layouts are checked with presentation fixtures; the playable prototype still uses Charlie, Nancy and Song.
+Round results now appear between **The dream comes into focus.** and **Dreams remembered**, above the dream cards. The summary includes each friend's dream clue, your guess result and points, followed by friends' recognition of your Dream and its points. It wraps across two columns on phones, up to three on tablets and up to five on wider screens. Shared rooms use the actual roster and support five friends. Long result text scrolls within the reserved summary area so the cards stay stationary.
 
 Player-facing text now consistently calls the text **dream clues** and the illustrations **dream cards**. Saved pairs are confirmed above the preparation progress with **Your dream clue and dream card are remembered.** Friends' dream clues are larger, headed **Nancy’s Dream Clue** (or Song's), with **Select their Dream Card.** underneath.
 
-The latest experiment is **Your own dream clues**: prepare six personal clue-and-card pairs instead of matching shared concepts. Write up to 80 characters for each Dream, choose its image, and confirm them together. Nancy and Song use a mix of single-word and longer fixture clues with random valid cards/guesses. Their individual clues guide the same sequential guessing board.
+The local comparison experiment is **Your own dream clues**: prepare six personal clue-and-card pairs instead of matching shared concepts. Write up to 80 characters for each Dream, choose its image, and confirm them together. Nancy and Song use a mix of single-word and longer fixture clues with random valid cards/guesses. Their individual clues guide the same sequential guessing board.
 
 Personal slots are named **First Dream** through **Sixth Dream**. The softer input hint reads **Tell us about your dream... but leave some to the imagination.** The heading is **First Dream**, advancing through all six Dreams. The prominent instruction **Write a dream clue and choose its dream card.** sits beneath it; the tap/hold hint sits immediately above the cards. A compact **Dream 1 of 6** progress line replaces the repeated personal-mode overview. Tentative guesses say **Selected for Nancy** or **Selected for Song**; after reveal, decoy images are labeled **A Stranger’s Dream**. The rules and reversible mode switch are unchanged.
 
@@ -28,7 +28,7 @@ In this mode, each correct guess earns you 1 point. You also earn 1 point for ea
 
 Milestones 1–6 are approved. Milestones 7–10, including the requested full-week test flow, are implemented, and the user approved proceeding to Milestone 11. Day 1 is preparation; the top-right development control advances through six guessing days. Each day has Nancy's prompt followed by Song's on one stable board, locked guesses, an explicit reveal, and +1 point per correct answer. After Day 7, finish the week to see Charlie's total and begin a fresh week. Nancy's and Song's random valid choices are local fixtures, not a model of personal interpretation.
 
-Prototype 0.1 uses **React, TypeScript, and Vite**. Charlie is the human; Nancy and Song are simulated players. All 12 planned milestones and the subsequent personal-clue, scoring and presentation refinements are implemented and approved. Open the local demo to play a complete week while connected preparation remains the next milestone.
+Prototype 0.1 uses **React, TypeScript, and Vite**. Charlie is the human; Nancy and Song are simulated players. All 12 planned milestones and the subsequent personal-clue, scoring and presentation refinements are implemented and approved. Open the local demo for solo practice; choose private rooms for a shared week.
 
 The latest requested revisions add clearing/unlocking guesses before reveal, Charlie's own Dream in the first board slot, and a complete end-of-week recap. The “Return to the beginning” controls have been removed. The user approved moving on to the responsive polish step.
 
@@ -38,9 +38,9 @@ The user confirmed +1 per friend who recognizes your Dream, except when everyone
 
 Use Node.js **22.18+ on the 22.x line, or 24+**, and npm. Node 24 LTS remains the intended hosting runtime; this implementation and native SQLite installation were tested on the existing Windows Node 22.18.0 / npm 11.5.2 environment. The development service uses Node's built-in TypeScript support.
 
-### Private waiting rooms (0.2.2)
+### Shared private Dream Weeks (0.2.3–0.2.5)
 
-Install the new dependencies once, then start the room service:
+Install dependencies if needed, then start the room service:
 
 ```powershell
 npm install
@@ -55,11 +55,17 @@ npm run dev
 
 Open **http://127.0.0.1:5173/?play=rooms**, or choose **Gather friends in a private room** on the welcome page. Use this exact address (not `localhost`) with the default origin setting. If Vite was already running during package installation, restart it. Stop either process with **Ctrl+C** in its terminal.
 
-Create a room, copy its invitation, and open it in a different browser or an InPrivate/incognito window. Join with another display name. Ordinary tabs in the same browser share a seat; private windows can also share one private session with each other. To test six distinct players, use separate browser profiles. Refresh both windows and restart the room service to check that the roster, colors, host and identities remain. A seventh player and a duplicate name should receive clear feedback. **There is no Start button or card dealing in this milestone.**
+Create a room, copy its invitation, and open it in a different browser or an InPrivate/incognito window. Join with another display name. Ordinary tabs in the same browser share a seat; private windows can also share one private session. Use separate profiles to test six distinct players. The room creator chooses **Start Dream Week** in the top-right corner once at least two people have joined.
+
+Each player writes and saves six dream clues with their cards. The host chooses **Open Day 2**, everyone guesses their actual friends’ cards, and the host chooses **Reveal dreams**, then **Next day**. Repeat through Day 7 and **Finish week** to review the week. Guesses can be unlocked until reveal. Refresh or restart the service to check that accepted choices and results remain; a rejected stale choice requires a deliberate retry rather than silently applying it to a new day.
+
+To check the missed-day policy, let the host progress while a player is unfinished and confirm the named players. Missing preparation gives that player no board and zero points. Incomplete guesses give zero total points; the prepared Dream stays available for others to guess. A late invitation starts a new seat on the next unopened day, with remaining preparation available immediately. No new player can join after Day 7 opens. Readiness is under **View players**; results remain under **Earlier Dreams**.
+
+Only **Solo practice · simulated players** leads to Nancy and Song. Staying inside the joined room uses the shared game.
 
 Names use 1–24 characters after trimming/collapsing whitespace; case and Unicode compatibility differences do not make a duplicate name distinct. Add an initial if needed. A name or invitation never recovers another player's seat. Session cookies last 30 days; clearing browser data, closing the last private window, switching profiles/devices or losing the cookie loses access to that seat. There is no account recovery or seat-removal flow yet.
 
-The service stores local rooms in ignored `data/dreamerie.sqlite` with SQLite sidecar files. These are separate from the in-memory local demo. Room expiry/cleanup is not scheduled while retention policy remains undecided. `.env.example` lists optional settings; no `.env` is needed for the defaults. Never put the database under `dist/` or `public/`, which contain public assets.
+The service stores local rooms, private gameplay and results in ignored `data/dreamerie.sqlite` with SQLite sidecar files. Startup migrates existing waiting-room databases without deleting seats or invitations. These are separate from the in-memory local demo. Room expiry/cleanup is not scheduled while retention policy remains undecided. `.env.example` lists optional settings; no `.env` is needed for the defaults. Never put the database under `dist/` or `public/`, which contain public assets.
 
 This loopback URL works only on this computer. A shared phone/remote-browser URL and HTTPS hosting come in the later hosted-playtest milestone. `npm run preview` serves only the local demo assets; use the two-terminal setup above for rooms.
 

@@ -90,6 +90,8 @@ export interface RoundResult {
 }
 
 export interface RoundRevealView {
+  readonly missed?: boolean
+  readonly unanswered?: readonly { readonly player: Player; readonly actual: Card; readonly clue?: string }[]
   readonly points: number
   readonly recognitionPoints: number
   readonly receivedGuesses: RoundRevealView['guesses']

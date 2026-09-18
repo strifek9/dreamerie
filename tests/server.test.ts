@@ -224,6 +224,6 @@ test('create attempts are bounded and cannot fall through to static responses', 
     const limited = await post(app, user, '/api/rooms', { requestId: randomUUID(), displayName: 'Charlie' })
     assert.equal(limited.statusCode, 429)
     assert.equal(limited.json().code, 'TOO_MANY_REQUESTS')
-    assert.equal((await app.inject({ method: 'POST', url: '/api/rooms/anything/commands', payload: {}, headers: { origin } })).statusCode, 404, 'future phase commands are unavailable')
+    assert.equal((await app.inject({ method: 'POST', url: '/api/rooms/anything/commands', payload: {}, headers: { origin } })).statusCode, 400, 'malformed phase commands are rejected')
   } finally { await app.close() }
 })

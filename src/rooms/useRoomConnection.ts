@@ -22,6 +22,10 @@ export function useRoomConnection() {
     setError('')
   }
 
+  function accept(view: RoomView) {
+    setRoom((previous) => previous?.id === view.id && previous.revision > view.revision ? previous : view)
+  }
+
   useEffect(() => {
     let active = true
     setConnecting(true)
@@ -110,5 +114,5 @@ export function useRoomConnection() {
     }
   }
 
-  return { session, room, connecting, error, connection, busy, pending, enter, submit, retryConnection: () => setAttempt((value) => value + 1) }
+  return { session, room, connecting, error, connection, busy, pending, enter, accept, submit, retryConnection: () => setAttempt((value) => value + 1) }
 }

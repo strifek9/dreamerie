@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import RoomLobby from './RoomLobby'
+import RoomPlay from './RoomPlay'
 import { useRoomConnection } from './useRoomConnection'
 import '../styles/rooms.css'
 
@@ -8,10 +9,11 @@ export default function RoomExperience() {
   const [action, setAction] = useState<'create' | 'join'>(() => new URLSearchParams(window.location.search).has('invite') ? 'join' : 'create')
   const [name, setName] = useState('')
   const [code, setCode] = useState(() => new URLSearchParams(window.location.search).get('invite') ?? '')
+  if (state.room && state.session) return <RoomPlay key={state.room.id} room={state.room} csrf={state.session.csrfToken} accept={state.accept} connection={state.connection} />
   return <div className="dreamerie-shell">
     <header className="masthead">
       <p className="wordmark"><span aria-hidden="true">☾</span> Dreamerie</p>
-      <a className="room-demo-link" href="/?mode=personal">Local demo</a>
+      <a className="room-demo-link" href="/?mode=personal">Solo practice · simulated players</a>
     </header>
     <main className="introduction room-page">
       <div className="welcome-art" aria-hidden="true"><img src="/artwork/dreamerie-moonlight.jpg" alt="" width="1122" height="1402" /></div>
@@ -57,6 +59,6 @@ export default function RoomExperience() {
         </div>}
       </div>
     </main>
-    <footer className="footer"><p>Private rooms · 0.2 waiting-room preview</p></footer>
+    <footer className="footer"><p>Private rooms · shared Dream Weeks</p></footer>
   </div>
 }
