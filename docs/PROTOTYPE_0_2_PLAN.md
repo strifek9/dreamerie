@@ -2,7 +2,7 @@
 
 ## Status and authority
 
-**Milestone 0.2.7 is implemented and awaiting user testing.** Shared play and automatic scheduling through 0.2.6 are approved by the instruction to proceed. The user confirmed host closure preserving only revealed results, seven-day recap retention, 24-hour unused waiting-room expiry and keeping the original host. Prototype 0.1 remains available separately.
+**Milestone 0.2.8 deployment preparation is in progress.** Work through 0.2.7 is approved by the instruction to proceed. The user requested a path to a large audience; [SCALING_PLAN.md](SCALING_PLAN.md) distinguishes the first hosted playtest from later shared-storage/multiple-server work. Prototype 0.1 remains available separately.
 
 The host can start, open guessing days, reveal results, finish a week or explicitly close a room with 2–6 actual players. A lone host can close an unstarted waiting room. Late joiners prepare unopened Dreams and begin guessing the next day. Missing preparation or incomplete guesses earn zero total points under GAME_DESIGN.md. Automatic midnight progression, room closure/expiry and recovery are implemented; hosting remains later work. No hosted services have been provisioned or purchased.
 
@@ -187,7 +187,7 @@ These are new **0.2 milestones**, not continuations of the completed 0.1 numberi
 
 ### 0.2.7 — Complete the week and recovery paths
 
-**Status:** Implemented; awaiting user testing and approval. Adds host-confirmed permanent closure, seven-day recap retention, 24-hour waiting-room expiry, cleanup on startup/background/access, clear terminal screens and session-loss recovery. Retains the full-week recap, card inspection, safe command retry and scheduled catch-up supplied by earlier milestones. No hosting is added.
+**Status:** Implemented and approved by the instruction to start 0.2.8. Adds host-confirmed permanent closure, seven-day recap retention, 24-hour waiting-room expiry, cleanup on startup/background/access, clear terminal screens and session-loss recovery. Retains the full-week recap, card inspection, safe command retry and scheduled catch-up supplied by earlier milestones. No hosting is added in 0.2.7.
 
 **Deliverable:** Play all six guessing days through each player's inspectable recap. Finish the approved close/expiry/new-room flow and clear messages for disconnected, abandoned or expired sessions. Verify recovery across every phase, extending the refresh support already required in earlier milestones.
 
@@ -196,6 +196,8 @@ These are new **0.2 milestones**, not continuations of the completed 0.1 numberi
 **Completion:** Complete real-input weeks through private invitations; all recap clues, cards, guesses and totals match stored results. Exercise both host-driven and scheduled progression. Interrupt preparation, guessing and reveal, then reconnect without rerolling or losing accepted work. A backgrounded phone catches up and can inspect results from days advanced while it was away. Expiry/closure cannot leave actionable stale controls. Starting another room does not silently erase someone else's recap.
 
 ### 0.2.8 — Hosted phone-and-desktop playtest
+
+**Status:** In progress, not complete. `render.yaml`, a Linux/Node 24 CI workflow, database-path guards, backup/verify/restore commands and [HOSTING.md](HOSTING.md) are prepared and locally checked. The owner approved entry for anyone with the site link, without a shared password. Invitations and browser sessions still protect individual rooms. The proposed deployment has maintenance mode disabled; actual costs, provisioning, deployed behavior and physical-device testing remain outstanding. [PLAYTEST_RECORD.md](PLAYTEST_RECORD.md) records these limits. No paid resources have been created. The scalability request adds a roadmap and a clear single-server limit, not an untested claim of mass capacity.
 
 **Deliverable:** Prepare a concrete reviewed deployment and operating instructions, then publish when authorized. Provide a playtest URL with private-room entry, reachable from separate devices and networks, and verify scheduled work on that host. Agree on playtest access before publishing; a local development server alone is not completion.
 
@@ -215,4 +217,6 @@ At each milestone, report what runs, what remains simulated or unavailable, how 
 
 The 0.2.7 handoff passes 117 automated tests and frontend/server build/type checks. Added tests cover exact lobby/recap boundaries, manual closure with earned results, host authority and explicit confirmation, private terminal payloads, receipt retries, timer-versus-close ordering, cleanup without requests, restart and downtime. Separate Edge sessions check preparation/guessing/reveal refresh and reconnect, confirmation focus/Escape/stale revisions, closure for both players, recap inspection, expiry, old invitations, new-room entry and lost credentials across all six documented widths. Phone/desktop screenshots were reviewed; physical devices and remote hosting remain untested.
 
-**Next action:** User-test 0.2.7 with two browser sessions, especially closing after a reveal and viewing the retained cards from both seats. Run `npm run test:server` to verify time boundaries immediately. Stop for acceptance; then prepare the 0.2.8 hosted playtest without adding matchmaking or account infrastructure.
+0.2.8 preparation passes 122 automated tests, frontend/server type checks and builds, local Render-schema validation and compiled same-origin browser play. Backup/restore preserves saved Dreams, locks, history, sessions, deadlines and retry receipts. It refuses existing destinations, public directories and unsupported/corrupt sources. The hosted checklist and record explicitly retain untested Linux/Node 24 CI, physical devices, actual-host midnight and off-site recovery.
+
+**Next action:** Public entry is approved and locally verified. Review the prepared hosting configuration and actual checkout price, provision the service and verify the deployed access behavior. Complete the hosted human playtest before marking 0.2.8 complete. Matchmaking and account infrastructure remain deferred.

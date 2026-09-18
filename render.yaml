@@ -1,0 +1,31 @@
+# Anyone with the site link may enter; individual rooms still require an invitation.
+# Importing provisions paid resources. Review docs/HOSTING.md and the checkout price first.
+services:
+  - type: web
+    name: dreamerie-playtest
+    runtime: node
+    plan: 0.5c-512mb
+    region: ohio
+    numInstances: 1
+    autoDeployTrigger: off
+    maintenanceMode:
+      enabled: false
+    buildCommand: npm ci --include=dev && npm test && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    maxShutdownDelaySeconds: 30
+    envVars:
+      - key: NODE_VERSION
+        value: 24
+      - key: NODE_ENV
+        value: production
+      - key: HOST
+        value: 0.0.0.0
+      - key: APP_ORIGIN
+        sync: false
+      - key: DATABASE_PATH
+        value: /var/data/dreamerie.sqlite
+    disk:
+      name: dreamerie-data
+      mountPath: /var/data
+      sizeGB: 1

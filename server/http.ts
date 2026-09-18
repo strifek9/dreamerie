@@ -91,7 +91,10 @@ export async function createService(options: ServiceOptions) {
       return { session, credential }
     }
     const limit = (max: number) => ({ rateLimit: options.rateLimits === false ? false as const : { max, timeWindow: '1 minute' } })
-    app.get('/api/health', async () => ({ ok: true }))
+    app.get('/api/health', async () => {
+      db.prepare('SELECT 1').get()
+      return { ok: true }
+    })
     app.post('/api/session', { schema: { body: emptyBody }, config: limit(30) }, async (request, reply): Promise<SessionView> => {
       let credential = request.cookies[COOKIE_NAME]
       let session = findSession(db, credential, now())

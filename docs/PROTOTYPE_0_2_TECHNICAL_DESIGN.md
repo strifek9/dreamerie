@@ -2,7 +2,7 @@
 
 ## Status
 
-This design describes the local service through **0.2.7**, implemented and awaiting testing. Shared play and scheduling through 0.2.6 are approved by the instruction to proceed. Host closure, seven-day recap retention, 24-hour waiting-room expiry and recovery are now implemented. Hosting remains later work; nothing has been provisioned or purchased.
+This design describes the service through **0.2.7**, approved by the instruction to proceed, and the in-progress **0.2.8 hosting preparation**. See [HOSTING.md](HOSTING.md) for the deployment/recovery procedure and [SCALING_PLAN.md](SCALING_PLAN.md) for the requested path to a large audience. Nothing has been provisioned or purchased. The owner approved entry for anyone with the site link. Paid resource approval and actual-host/device checks remain pending.
 
 The user confirmed automatic rollover at **midnight in America/Chicago** for the first playtest. Solo play is deferred. Missed-day, late-join, scheduling and lifecycle policies are confirmed. [GAME_DESIGN.md](GAME_DESIGN.md) remains authoritative; open policies must not be supplied by a default in server code.
 
@@ -166,7 +166,7 @@ Validation: 109 tests plus frontend/server build and type checks. The nine sched
 
 Run the normal service with `npm run dev:server`; `npm run test:server` exercises scheduling immediately with a controlled clock. There is no test-time override in the application's public API or environment configuration. Stopping the room service pauses processing; restarting it catches up rather than extending expired windows. No external worker, hosting provision, expiry policy or host-transfer behavior is added.
 
-## Current boundary: room lifecycle and recovery (0.2.7)
+## Historical boundary: room lifecycle and recovery (0.2.7)
 
 - Reuse `rooms.expires_at`; no schema version change or dependency. Waiting rooms get creation + 24 elapsed hours. `start` clears that expiry in the same transaction as game creation/deadline persistence. Joins, polling and accepted retries never extend it.
 - `close` is a host-only command with required `confirmed: true`, the existing exact revision/week/round guards and a request receipt. It can close a lobby, preparation, guessing or revealed room. It changes phase, clears the schedule and records now + seven elapsed days atomically. It never invokes scoring or reveal. Complete/closed/expired rooms reject new commands; matching receipts return current authorized state without extending retention. Due transitions run before command validation; a stale close cannot undo a day already due.
@@ -176,3 +176,12 @@ Run the normal service with `npm run dev:server`; `npm run test:server` exercise
 - `RoomClose` keeps permanent closure separate from daily progression, with a native modal, cancel focus/Escape and revision-aware confirmation. `RoomEnded` and `RoomRetention` provide read-only recap/expiry and new-room entry. Temporary connection failures preserve accepted state and retry; definitive 401/403/404/410 responses stop retrying, hide stale gameplay and explain recovery limits. Host identity never transfers on disconnect.
 
 Validation: 117 automated tests, frontend/server type checks and builds. Two independent Edge sessions cover reconnect/refresh in preparation, guessing and reveal; host-only UI, confirmation focus/Escape/staleness, closure visible to both players, retained-card inspection, both expiry paths, invalid old invites, new-room entry and lost cookies. Six viewport widths pass without horizontal overflow; screenshots at phone and desktop sizes were reviewed. Tests inject time only through isolated service fixtures, not the application's public API. Physical devices, HTTPS hosting, deployed background operation and backup/restore remain 0.2.8 work. Stop for user approval.
+
+## Current boundary: deployment preparation (0.2.8, in progress)
+
+- `render.yaml` describes one Node 24 web service and a 1 GB mounted SQLite disk, a tests/build release command, manual deployments, health checks and maintenance mode disabled for the approved public entry. No shared password is required; private session/membership, origin/CSRF, host authority and rate-limit checks still apply. GitHub CI adds Linux/Node 24 tests/builds without deployment. Local schema validation passes; neither file has provisioned a service or run GitHub jobs yet.
+- `server/config.ts` preserves local defaults but requires explicit absolute production storage outside served asset directories, checking physical ancestors for symlinks. `server/index.ts` still starts one portable Fastify service and closes on termination. Health performs a database read without exposing private data. It is not a scheduler-lag or backup-freshness monitor.
+- `server/databaseBackup.ts` uses SQLite's online backup operation and read-only validation, without migrations or time progression. `server/maintenance.ts` provides backup/restore-to-new-file/verify commands. Exclusive destination creation prevents overwrites; public paths, existing sidecars and invalid sources are rejected. Restore never switches a running service automatically. The operator must rehearse the separate-copy check and actual host switch, and arrange private off-disk copies.
+- [SCALING_PLAN.md](SCALING_PLAN.md) records the user's larger-audience direction. Current polling, synchronous per-room state work, midnight concentration, process-local limits and growing tombstones need measurement. PostgreSQL plus coordinated workers is proposed before horizontal scaling; pure rules and public views remain portable. No database migration, cache cluster, account system, live artwork service or broad-public capacity promise is added here.
+
+Local validation: 122 tests, TypeScript checks/builds, online snapshot/restore of real saved/locked/revealed state and compiled same-origin browser play through a full week, early progression and next-day late joining. [PLAYTEST_RECORD.md](PLAYTEST_RECORD.md) tracks remaining deployed-access, provisioning, physical-device, Linux CI, real-midnight and off-site recovery checks. Do not mark the milestone complete on local evidence alone.

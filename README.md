@@ -8,7 +8,7 @@ The product is mobile-first and responsive for mobile and desktop web. Artwork l
 
 ## Current status
 
-**Prototype 0.2.7 room lifecycle and recovery are implemented and ready for testing.** Private rooms support 2–6 actual players through preparation, guessing, host or scheduled reveal, and a retained full-week recap. Work through 0.2.6 is approved by the instruction to proceed; both local practice modes remain separate.
+**Prototype 0.2.8 hosted-playtest preparation is in progress.** Work through 0.2.7 is approved by the instruction to proceed. Deployment configuration, release checks, backup/restore commands and a scaling roadmap are prepared; nothing is hosted or purchased yet. Approved access is anyone with the site link, without a shared password; individual rooms still use invitations and protected browser sessions. Private rooms already support 2–6 actual players through preparation, guessing, host or scheduled reveal, and a retained full-week recap; both local practice modes remain separate.
 
 The host can advance before everyone finishes after confirming unfinished players. Missing preparation or incomplete guesses earn zero total points; a prepared Dream remains a target, and unfinished guesses do not contribute recognition. Only completed guessers count toward “everyone.” Late joiners prepare unopened Dreams and begin guessing the next day, without changing existing boards. With two players, recognition is always zero; correct guesses still earn one point.
 
@@ -16,7 +16,7 @@ Days now progress automatically at midnight **America/Chicago**, even with no br
 
 Hosts can explicitly close a room for everyone. Only already revealed results remain; the unfinished day is not revealed or awarded points. Completed and closed rooms retain their personal recaps for seven days. Waiting rooms expire 24 hours after creation unless the host starts the week. Disconnecting never transfers the host role or stops scheduled progression.
 
-See [the plan](docs/PROTOTYPE_0_2_PLAN.md) and [technical design](docs/PROTOTYPE_0_2_TECHNICAL_DESIGN.md). Remote hosting remains later work. Solo matchmaking is deferred; no hosting has been purchased or provisioned.
+See [the plan](docs/PROTOTYPE_0_2_PLAN.md), [hosting instructions](docs/HOSTING.md) and [scaling roadmap](docs/SCALING_PLAN.md). The first deployment uses one server and a persistent SQLite disk; a large public audience will need measured capacity and shared persistence before adding servers. Solo matchmaking is deferred. Deployment preparation is not completion of the hosted human playtest.
 
 Round results now appear between **The dream comes into focus.** and **Dreams remembered**, above the dream cards. The summary includes each friend's dream clue, your guess result and points, followed by friends' recognition of your Dream and its points. It wraps across two columns on phones, up to three on tablets and up to five on wider screens. Shared rooms use the actual roster and support five friends. Long result text scrolls within the reserved summary area so the cards stay stationary.
 
@@ -39,6 +39,8 @@ The latest requested revisions add clearing/unlocking guesses before reveal, Cha
 The user confirmed +1 per friend who recognizes your Dream, except when everyone does. This is implemented in personal-clue mode. Both modes simulate friends' guesses, and scoring help follows the selected mode.
 
 ## Run locally
+
+For the proposed hosted setup, use [HOSTING.md](docs/HOSTING.md) and record actual-host/device checks in [PLAYTEST_RECORD.md](docs/PLAYTEST_RECORD.md). `render.yaml` specifies manual deployments and has maintenance mode disabled for the approved public entry; importing it provisions paid resources and a successful deployment opens the site. The GitHub workflow checks Linux/Node 24 but never deploys. Production requires an absolute database path outside served asset directories; backup, verify and restore commands are documented in the hosting guide. Local run commands below stay the same.
 
 Use Node.js **22.18+ on the 22.x line, or 24+**, and npm. Node 24 LTS remains the intended hosting runtime; this implementation and native SQLite installation were tested on the existing Windows Node 22.18.0 / npm 11.5.2 environment. The development service uses Node's built-in TypeScript support.
 
@@ -122,7 +124,7 @@ npm run build
 npm run preview
 ```
 
-The build includes frontend/server TypeScript checks and writes frontend assets to `dist/` and the service to `dist-server/`. Tests use Node's built-in runner and TypeScript stripping. All **117 tests** pass, including full shared weeks, private views, allocation/scoring invariants, authorization, concurrency, retries, Chicago scheduling, restart recovery, host closure and exact retention boundaries. Use `npm run test:server` for service tests with controlled time. Lifecycle browser checks cover separate host/guest sessions, preparation/guessing/reveal reconnect and refresh, confirmation cancellation and stale revisions, retained-card inspection, room and session expiry, old invitations and new-room entry at 320, 375, 390, 430, 768 and 1440px. Earlier validation also covered both local modes and full two- and six-player weeks. These are desktop browser sessions and emulated widths; physical-device and hosted validation remain later work.
+The build includes frontend/server TypeScript checks and writes frontend assets to `dist/` and the service to `dist-server/`. Tests use Node's built-in runner and TypeScript stripping. All **122 tests** pass, including full shared weeks, privacy, allocation/scoring, authorization, concurrency, retries, scheduling, lifecycle, online backup/restore and production path guards. The public-entry HTTPS test verifies anonymous page access, session creation, invitation joining, host-only controls and private clues. Use `npm run test:server` for service tests with controlled time. The compiled app passes a same-origin browser run through a two-person week, refresh, lock/unlock, six reveals, recap inspection, early progression and late joins at the six documented widths. This local smoke test uses loopback HTTP; production Secure-cookie behavior is separately covered by service tests. The Render Blueprint passes local validation against Render's published schema, and the CI YAML parses. Actual Render provisioning, Linux/Node 24 CI execution, physical phones and hosted midnight/backup operation remain unverified; see the playtest record. Earlier validation covered both local modes and full two- and six-player weeks.
 
 Nancy and Song each receive a private six-card board and make two random valid guesses when a day begins. They cannot choose their own Dream or reuse an image for both friends. Their choices stay fixed while you choose or unlock guesses. After reveal, see whether each friend recognized your Dream; the final recap includes their guessed images under **Your Dream through their eyes**. Tap those images to inspect them. These are local random fixtures, not an AI interpretation of the artwork; no friend standings are shown.
 
