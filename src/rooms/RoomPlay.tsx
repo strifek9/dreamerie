@@ -8,6 +8,7 @@ import DreamGuessingBoard from '../components/DreamGuessingBoard'
 import ScoringHelp from '../components/ScoringHelp'
 import RoomLobby from './RoomLobby'
 import RoomHistory from './RoomHistory'
+import RoomDeadline from './RoomDeadline'
 import { useRoomCommands } from './useRoomCommands'
 
 export default function RoomPlay({ room, csrf, accept, connection }: { room: RoomView; csrf: string; accept: (room: RoomView) => void; connection: string }) {
@@ -47,6 +48,7 @@ export default function RoomPlay({ room, csrf, accept, connection }: { room: Roo
         {!host && active && <span>{roster.find((player) => player.id === room.hostId)?.name} is your host</span>}
       </aside>
     </header>
+    <RoomDeadline room={room} />
     <div className="room-sync" role="status">{connection || (commands.busy ? 'Saving your choice…' : commands.pending ? 'Your last choice needs confirmation.' : '')}</div>
     {commands.error && <p className="room-error" role="alert">{commands.error}</p>}
     {commands.pending && !commands.busy && <div className="room-retry"><button className="quiet-button" onClick={commands.retry}>Check your last choice</button></div>}
@@ -76,7 +78,7 @@ export default function RoomPlay({ room, csrf, accept, connection }: { room: Roo
             <p className="eyebrow">{game.preparation.saved.length} Dreams remembered</p></div>
           {game.preparation.next ? <DreamSelection concept={game.preparation.next} hand={game.preparation.hand} personal remembered={null} error={null} busy={blocked}
             onChoose={(cardId, clue) => commands.act({ type: 'save', conceptId: game.preparation.next!.id, cardId, clue: clue ?? '' })} />
-            : <section className="gallery-heading"><h1>Your Dreams are remembered.</h1><p className="invitation">{host ? 'Open the next day when you’re ready.' : 'Your host will open the next day.'}</p></section>}
+            : <section className="gallery-heading"><h1>Your Dreams are remembered.</h1><p className="invitation">{host ? 'Open the next day early when you’re ready.' : 'The next day opens at the time above, or when your host advances.'}</p></section>}
           {room.phase === 'revealed' && game.reveal && <RoomHistory days={game.history.filter((day) => day.day === game.day)} roster={roster} total={game.totalScore} />}
         </main> : game.board ? <DreamGuessingBoard board={{ ...game.board, locks: new Map(game.board.locks) }} roster={roster} selfId={playerId(room.selfId)} personal
           totalScore={game.totalScore} maxScore={6 * (2 * roster.length - 3)} reveal={game.reveal} busy={blocked} error={null}
@@ -86,7 +88,7 @@ export default function RoomPlay({ room, csrf, accept, connection }: { room: Roo
       {room.phase !== 'complete' && game.history.length > 0 && <details className="room-past"><summary>Earlier Dreams · your week: {game.totalScore} points</summary><RoomHistory days={game.history} roster={roster} total={game.totalScore} /></details>}
       {active && game.day < 7 && <details className="room-invite"><summary>Invite a friend</summary><p>Late joiners begin guessing on the next unopened day.</p><label htmlFor="active-invitation">Share this invitation</label><input id="active-invitation" readOnly value={invitation} onFocus={(event) => event.target.select()} /></details>}
     </>}
-    <footer className="footer"><p>Shared room · host-led playtest</p></footer>
+    <footer className="footer"><p>Shared room · days turn at midnight, Chicago time</p></footer>
     <dialog className="scoring-help-dialog" ref={dialog} aria-labelledby="missing-title" onClose={() => { setConfirm(undefined); advanceButton.current?.focus({ preventScroll: true }) }}>
       <h2 id="missing-title">Some Dreams are unfinished.</h2>
       <p>{confirm?.names.join(', ')}</p>

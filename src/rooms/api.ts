@@ -12,6 +12,9 @@ function record(value: unknown): value is Record<string, unknown> {
 }
 
 function isRoom(value: unknown): value is RoomView {
+  if (record(value) && value.schedule !== undefined && (!record(value.schedule)
+    || typeof value.schedule.deadline !== 'number' || !Number.isSafeInteger(value.schedule.deadline) || value.schedule.deadline <= 0
+    || value.schedule.timeZone !== 'America/Chicago')) return false
   if (record(value) && value.game !== undefined) {
     try { parseGameView(value.game) } catch { return false }
   }

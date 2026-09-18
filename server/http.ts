@@ -11,6 +11,7 @@ import { roomView, sessionRooms } from './views.ts'
 import { parseCommand } from '../shared/gameParsing.ts'
 import { commandRoom } from './gameCommands.ts'
 import { gameCommandSchema } from './gameSchema.ts'
+import { initializeSchedules, runDueRooms } from './scheduler.ts'
 
 interface ServiceOptions {
   databasePath: string
@@ -19,6 +20,7 @@ interface ServiceOptions {
   staticRoot?: string
   now?: () => number
   rateLimits?: boolean
+  schedulerIntervalMs?: number
 }
 
 const requestId = { type: 'string', pattern: '^[0-9a-fA-F-]{36}$' }
@@ -38,8 +40,21 @@ export async function createService(options: ServiceOptions) {
     logger: false, bodyLimit: 4096,
     ajv: { customOptions: { removeAdditional: false, coerceTypes: false } },
   })
-  app.addHook('onClose', async () => { db.close() })
+  let scheduler: ReturnType<typeof setInterval> | undefined
+  app.addHook('onClose', async () => { if (scheduler) clearInterval(scheduler); db.close() })
   try {
+    const interval = options.schedulerIntervalMs ?? 15_000
+    if (!Number.isInteger(interval) || interval < 1) throw new Error('Invalid scheduler interval.')
+    const tick = () => {
+      try { runDueRooms(db, now(), (roomId) => { console.error(`Dreamerie could not advance ${roomId}; it will retry.`) }) }
+      catch { console.error('Dreamerie could not check due rooms; it will retry.') }
+    }
+    app.addHook('onReady', async () => {
+      initializeSchedules(db, now())
+      tick()
+      scheduler = setInterval(tick, interval)
+      scheduler.unref()
+    })
     await app.register(cookie)
     await app.register(rateLimit, { global: false })
     app.addHook('onRequest', async (request, reply) => {

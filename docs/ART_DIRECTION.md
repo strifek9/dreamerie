@@ -35,6 +35,8 @@ Avoid relying on a clock for TIME, heart icon for LOVE, labeled house for HOME, 
 
 ## Shared play presentation
 
+Show the room's authoritative cutoff near the host controls as a date and **12:00 AM · Chicago time**, with phase-specific wording for preparation, next-day opening or week ending. Keep space reserved and avoid a ticking countdown that distracts from the artwork. Explain that deadlines reveal and advance automatically, and keep earlier results inspectable when a player returns after rollover.
+
 Private rooms use actual display names and the six stable roster accents; Nancy and Song belong only to explicitly labeled solo practice. Keep readiness compact and expandable, with host progression in the header. Saving feedback follows server acceptance; uncertain saves offer a deliberate retry. Explain early closure and zero missed-day points clearly without exposing future clues or implying that disconnecting alone loses a day.
 
 Keep the same six cards stationary through locks, unlocks and reveal. Results remain above the board; long clues/results may scroll inside the reserved, keyboard-accessible summary area. After reveal, label actual Dreams even when the player left that guess unanswered. Decoys remain indistinguishable until reveal. Personal recaps include inspectable cards and explicit missed-day results.

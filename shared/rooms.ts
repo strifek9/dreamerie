@@ -18,6 +18,7 @@ export interface RoomView {
   hostId: string
   members: RoomMember[]
   game?: GameView
+  schedule?: { deadline: number; timeZone: 'America/Chicago' }
 }
 
 export interface SessionView {

@@ -2,11 +2,14 @@
 
 This is the primary gameplay source of truth. **Confirmed rules** express the supplied product vision. **Prototype assumptions** are limited local demonstration choices, not settled production rules. **Unresolved questions** require a later decision. **Future ideas** are outside Prototype 0.1.
 
-**Prototype 0.2:** The user authorized connecting private preparation, guessing and results (0.2.3–0.2.5), with late joining and early host advancement. This shared personal-clue week is implemented and awaiting user testing. Private rooms use actual players, persistent browser seats, host controls and inspectable results. Automatic midnight progression and hosting remain later milestones. [PROTOTYPE_0_2_PLAN.md](PROTOTYPE_0_2_PLAN.md) records scope and remaining decisions. The separate local demo still uses Charlie, Nancy and Song; its assumptions below remain scoped to Prototype 0.1.
+**Prototype 0.2:** Shared personal-clue play through 0.2.5 is approved by the user’s instruction to proceed. Milestone 0.2.6 implements the approved automatic Chicago-midnight timing policies and awaits user testing. Private rooms use actual players, persistent browser seats, host controls, automatic rollover and inspectable results. Room lifecycle and hosting remain later work. [PROTOTYPE_0_2_PLAN.md](PROTOTYPE_0_2_PLAN.md) records scope and remaining decisions. The separate local demo still uses Charlie, Nancy and Song; its assumptions below remain scoped to Prototype 0.1.
 
 - **2–6 players total:** Two is the minimum; the previously approved maximum of six remains. This is a prototype limit, not a permanent production cap.
 - **Solo entry deferred:** The user explicitly postponed solo play. Do not implement a lobby or matchmaking in Prototype 0.2. Their idea of random solo opponents with only the player’s correct-guess points carrying into a weekly total remains a future thought, not an approved scoring change.
-- **Progression:** The host can manually progress the game. The user confirmed automatic daily rollover at **midnight in America/Chicago** for the initial playtest, including while the host is offline. All room members share this cutoff regardless of their device timezone. The first preparation deadline, reveal timing and interaction with early manual advancement still require decisions. Use calendar midnights rather than assuming every day lasts exactly 24 hours.
+- **Progression, approved timing:** All automatic cutoffs use midnight in **America/Chicago**, regardless of device timezone. Starting a week or manually opening a guessing day allows the remainder of the current date plus one full calendar day: Monday evening closes Wednesday at 12:00 AM. A calendar day may contain 23 or 25 hours across daylight-saving changes. Automatically opened days close at the next Chicago midnight.
+- **Automatic reveal:** At the deadline, close preparation and open Day 2, or reveal/score the current guessing day and immediately open the next. Day 7’s deadline finishes the week. Previous results remain accessible. A host reveal by itself keeps the current deadline; a manual next-day action starts a fresh full-day window. No browser or online host is required, but the room service must be running.
+- **Downtime:** Catch up every overdue deadline on recovery, applying the approved missed-day rules separately to each day. Anchor each next cutoff to the preceding scheduled cutoff, not the recovery time. Persist results and transitions atomically so no day is scored twice. Commands received at or after a cutoff cannot change the closed day.
+- **Existing playtest rooms:** Rooms created before scheduling have no historical deadlines. On upgrade, grant their current active phase one fresh full-day window without inventing past missed days. Preserve that deadline across future restarts. Completed rooms and waiting rooms receive no running deadline.
 - **Missed day, approved policy:** Missing that day's prepared Dream or leaving required guesses incomplete earns **0 total points**, overriding guessing and recognition. A prepared Dream stays on the board as a target; only a missing Dream is replaced with an anonymous decoy when the boards open. The missing player has no guessing board for that day. Partial guesses remain in their review but earn points for nobody. Disconnecting alone is not forfeiture: accepted complete guesses still count.
 - **Recognition after a missed day:** Only other players who finished their required guesses count toward “everyone.” A finished author earns +1 per correct completed guesser unless all completed guessers identify their Dream. With no completed guessers, recognition is zero. Correct completed guessers keep their points even when the author misses the day. With no prepared Dreams, everyone misses; with only one prepared Dream, that player has no guessing targets and earns zero.
 - **Early closure:** The host may open or reveal a day before everyone finishes, after explicit confirmation listing unfinished players. Missing preparation is decided when the boards open; incomplete guesses are decided at reveal. Readiness means every required guess is locked; unlocking makes the player unready again. Results are immutable after reveal. When opening a day, report unfinished preparation without exposing which hidden slot comes next.
@@ -44,8 +47,8 @@ The sections below describe the **original shared-concept mode** and unchanged c
 - Each Dream Week contains six concepts. TIME, LOVE, FREEDOM, HOME, FEAR, and CHANGE are an example set, not a fixed production vocabulary.
 - Show all six at the beginning: “This week, you will dream of...”
 - Daily order is randomized and hidden. The visible concept list must not disclose the daily schedule.
-- Players prepare images before the relevant daily guessing/reveal cycle. Exact calendar boundaries and deadlines remain unresolved.
-- Day 1 is for preparing Dreams. Friends' guessing prompts begin on Day 2, rather than immediately after the final preparation choice. The prototype advances days manually; this does not establish production deadlines or timezone rules.
+- Players prepare images before the relevant daily guessing/reveal cycle. Prototype 0.2 follows the calendar policy above; broader production timing remains unresolved.
+- Day 1 is for preparing Dreams. Friends' guessing prompts begin on Day 2, rather than immediately after the final preparation choice. Prototype 0.1 advances days manually. Shared Prototype 0.2 follows the confirmed scheduling rules above.
 
 ### Hands and selection
 
@@ -116,7 +119,7 @@ These assumptions must preserve six-card hands, unique player allocations, hidde
 
 - Final scoring system; tie handling and weekly winners.
 - Whether to adopt personal clues and the Prototype 0.2 completed-guesser recognition policy as permanent production rules.
-- Exact weekly timing, setup deadlines, daily boundaries, and timezones.
+- Production-wide timing beyond the confirmed Prototype 0.2 Chicago calendar policy.
 - When Sunday's Dream is guessed and how final reveal relates to the next week.
 - Production minimum and maximum group size beyond the confirmed 2–6-player Prototype 0.2 range.
 - Whether six displayed guessing cards remain constant for larger groups.
@@ -137,7 +140,7 @@ The implemented private playtest does not resolve these broader production quest
 
 ## Future ideas
 
-Permanent accounts and friend groups, production scheduling, full weekly leaderboards, and Dream History come later. Prototype 0.2 now has private invitations and shared host-led browser play; scheduled progression and remote hosting remain pending. PWA installation and native apps may be evaluated later.
+Permanent accounts and friend groups, production scheduling, full weekly leaderboards, and Dream History come later. Prototype 0.2 now has private invitations and shared host-led browser play; scheduled progression is implemented and remote hosting remains pending. PWA installation and native apps may be evaluated later.
 
 Discord login, invitations, notifications, an Activity, and server/channel connections are optional future entry points. They must not own core state or be required to play. Prototype 0.1 contains no Discord-specific code.
 

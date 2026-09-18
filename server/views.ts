@@ -3,6 +3,7 @@ import { RoomError } from './errors.ts'
 import type { Store } from './store.ts'
 import { gameView } from './gameViews.ts'
 import { playerId } from '../shared/parse.ts'
+import { advanceDueRoom } from './scheduler.ts'
 
 export interface StoredRoom {
   id: string
@@ -16,6 +17,7 @@ export interface StoredRoom {
 export function roomView(db: Store, roomId: string, sessionId: string, now: number): RoomView {
   const self = db.prepare<[string, string], { player_id: string }>('SELECT player_id FROM memberships WHERE room_id = ? AND session_id = ?').get(roomId, sessionId)
   if (!self) throw new RoomError(403, 'ROOM_FORBIDDEN', 'This browser does not have a place in that room. Open its invitation to join.')
+  advanceDueRoom(db, roomId, now)
   const room = db.prepare<[string], StoredRoom>('SELECT id, invite_code, host_id, phase, revision, expires_at FROM rooms WHERE id = ?').get(roomId)
   if (!room) throw new RoomError(404, 'ROOM_NOT_FOUND', 'That room could not be found.')
   const view: RoomView = {
@@ -27,7 +29,8 @@ export function roomView(db: Store, roomId: string, sessionId: string, now: numb
     ).all(roomId),
   }
   const game = gameView(db, roomId, playerId(self.player_id), view.phase, view.members.map((member) => ({ id: playerId(member.playerId), name: member.displayName })))
-  return game ? { ...view, game } : view
+  const schedule = db.prepare<[string], { deadline: number; timeZone: 'America/Chicago' }>('SELECT deadline, time_zone AS timeZone FROM room_schedules WHERE room_id = ?').get(roomId)
+  return { ...view, ...(game ? { game } : {}), ...(schedule ? { schedule } : {}) }
 }
 
 export function sessionRooms(db: Store, sessionId: string, now: number) {

@@ -2,9 +2,9 @@
 
 ## Status
 
-This design now describes the implemented local service through the user-authorized combined **0.2.3–0.2.5** handoff. Actual players can prepare, guess, unlock, reveal and review a full shared week. Late joining and early host progression use the approved missed-day policy. User testing is pending. Scheduling, room lifecycle and hosting remain later work; nothing has been provisioned or purchased.
+This design describes the local service through **0.2.6**, implemented and awaiting testing. Shared play through 0.2.5 is approved. The user confirmed preparation/manual full-calendar-day windows, automatic reveal and next-day opening, and full overdue-day catch-up. Room lifecycle and hosting remain later work; nothing has been provisioned or purchased.
 
-The user confirmed automatic rollover at **midnight in America/Chicago** for the first playtest. Solo play is deferred. The missed-day and late-join policies are confirmed; scheduling boundaries and private-room lifecycle details still need decisions. [GAME_DESIGN.md](GAME_DESIGN.md) remains authoritative; open policies must not be supplied by a default in server code.
+The user confirmed automatic rollover at **midnight in America/Chicago** for the first playtest. Solo play is deferred. The missed-day and late-join policies are confirmed; scheduling boundaries are confirmed, while private-room lifecycle details still need decisions. [GAME_DESIGN.md](GAME_DESIGN.md) remains authoritative; open policies must not be supplied by a default in server code.
 
 ## Selected implementation direction
 
@@ -74,7 +74,7 @@ All rows describe intended behavior; policy-dependent transitions remain unavail
 | Room lobby | Room roster, display names, accents, own identity and host identity; private-room invite for authorized sharing. | Join/reconnect; lobby leave if approved. | Host starts the private room at 2–6 members. |
 | Preparation | Own hand and saved pairs, own next slot, other players' completion status, room time/deadline. | Save a valid pair atomically; inspect own cards. | Host starts guessing after readiness, or deadline resolution applies the approved missing-preparation policy. |
 | Guessing | Own six-card board, own Dream marker, current friend's current-day clue, own locks, public readiness and deadline; earlier revealed results remain accessible. | Lock/unlock own guesses; inspect current cards. | Host can request normal reveal when ready. Early incomplete closure requires the host’s explicit confirmation of the current unfinished-player list. At cutoff, the service resolves the day using confirmed rules. |
-| Revealed | Actual current-day ownership, own correctness/points and friends' guesses about own Dream; no future hands, clues or order. | Inspect results; no edits to resolved guesses. | Host advances, or the service opens the next phase at its due transition. Reveal dwell and early-advance timing remain pending. |
+| Revealed | Actual current-day ownership, own correctness/points and friends' guesses about own Dream; no future hands, clues or order. | Inspect results; no edits to resolved guesses. | Host advances, or the service opens the next phase at its due transition. A host reveal keeps the existing deadline; automatic resolution immediately opens the next day. A manual next-day action grants a fresh full-calendar-day window. |
 | Complete | Own full-week recap and allowed per-friend results; no extra standings. | Inspect recap and enter another game under approved lifecycle policy. | No more daily transitions. Cleanup follows the approved retention policy. |
 | Closed/expired | Clear final room status and only retained, permitted data. | Return to entry flow. | No game writes or revival of stale commands. |
 
@@ -88,7 +88,7 @@ Run a lightweight service loop, for example every 15 seconds, querying persisted
 
 Each due job identifies the room, round, phase and expected deadline. A stale job after host advancement is a no-op. Persist the result and replacement deadline in the same transaction. A guess accepted before cutoff participates according to policy; one processed at or after cutoff is handled as late. Test boundary ordering with an injected clock.
 
-Still pending: the first preparation deadline; how early host progression changes the next cutoff; whether scheduled resolution opens the next day immediately or retains a reveal phase; and whether a multi-day outage catches up every elapsed day or pauses for recovery. These affect gameplay, not the choice of hosting product. Do not implement timer defaults for these decisions yet. Catch-up infrastructure can enumerate due work without deciding its game outcomes.
+Confirmed: a started week or manually opened day receives the remainder of today plus the next full Chicago calendar day. Automatically opened days receive the next calendar day. At deadline, preparation opens Day 2; guessing reveals and opens the next day, or completes after Day 7. Manual reveal alone preserves the current deadline. Catch up every elapsed deadline after downtime, anchoring each successor to the stored prior deadline. Existing active rooms without scheduling get one fresh window on upgrade; no past deadline is invented.
 
 ## First coding milestone: exact scope
 
@@ -118,7 +118,7 @@ Before provisioning, prepare a reviewable deployment configuration: chosen Node 
 
 ## Review outcome
 
-Midnight America/Chicago is confirmed for future scheduling. The shared game and approved missed-day rules are implemented through 0.2.5. First preparation cutoff, manual rescheduling, service catch-up, closure and retention remain open. Do not treat the historical 0.2.2 boundary below as the current gameplay status.
+Chicago-midnight progression and all 0.2.6 timing policies are confirmed and implemented. Remaining open policies concern room closure/retention and host departure. Earlier implementation-boundary sections below are historical.
 
 ## Historical boundary: 0.2.2
 
@@ -137,7 +137,7 @@ This section records the earlier lobby-only handoff. The current boundary follow
 
 Validation: 81 tests, frontend/server type checks and both builds pass. SQLite restart recovery, authorization, concurrent capacity and retries are covered by service tests. Headless Edge checks six independent sessions, six responsive sizes, refresh, offline/reconnect, lost-response retry across refresh and local-mode full-week regressions. Compiled static/API serving is checked locally. Physical devices, HTTPS deployment, backup restoration and unattended scheduling remain later work. The user subsequently approved connecting gameplay; see the current boundary below.
 
-## Current boundary: connected shared weeks (0.2.3–0.2.5)
+## Historical boundary: connected shared weeks (0.2.3–0.2.5)
 
 - Migration 002 adds `room_games` and `round_outcomes`, preserving the existing room/session data. Explicit versioned encoders restore Maps/Sets, validate allocation partitions and bound stored JSON. Outcomes have unique room/round/player and room/day/player keys. State, room revision, outcomes and command receipts commit in one immediate SQLite transaction.
 - `src/game/sharedWeek.ts` owns pure remaining-preparation, late-allocation, immutable day membership/board generation and missed-day scoring. `server/gameCommands.ts` authorizes and persists commands; `server/gameViews.ts` builds only the recipient's permitted preparation, current board/clue, readiness and revealed history. The online service never initializes local simulated players.
@@ -151,4 +151,17 @@ Validation: 81 tests, frontend/server type checks and both builds pass. SQLite r
 
 Validation: 100 automated tests, frontend/server type checks and builds pass. Coverage includes schema migration, complete two- and six-player HTTP weeks, 2–6-player decoy exposure, hidden payloads, invalid/stale actions, safe retries, late joining, zero-point missed days, recognition edge cases, concurrent saves, unlock/reveal serialization and restart recovery. Independent Edge contexts exercise shared weeks, late joins and early closure; six viewport sizes include maximum-length six-player names/clues. Local-mode browser regression checks remain part of the handoff. Physical devices and remote hosting are not validated by these local checks.
 
-No scheduler, room-close command, host transfer, account recovery, expiry cleanup or deployment is added. The stored schema intentionally has no speculative deadline defaults. Resolve the timing policies in the plan before 0.2.6, and obtain user acceptance of this shared-play handoff first.
+That shared-play handoff did not add scheduling. The current boundary below supersedes its scheduler limitation. Room-close commands, host transfer, account recovery, expiry cleanup and deployment remain outside this milestone.
+
+## Current boundary: automatic daily progression (0.2.6)
+
+- Migration 003 adds `room_schedules`, storing the UTC deadline, `America/Chicago` timezone and policy version 1. Existing data and receipts are preserved. Startup assigns a fresh full-day window once to an active game without a schedule and increments its revision. Lobby and terminal rooms receive no schedule. Later restarts preserve the saved cutoff.
+- `server/roomClock.ts` computes Chicago calendar midnights with the runtime's IANA timezone data through `Intl.DateTimeFormat`. New preparation/manual day openings use midnight after tomorrow; automatic day openings use the next midnight. No external date dependency or fixed 24-hour offset is used. Calendar/DST tests cover 23- and 25-hour days.
+- `server/gameTransitions.ts` supplies the same open/reveal/advance and persistence functions to host commands and the scheduler. Caller-owned immediate transactions include scores, state, revision and deadline. Unique outcome keys remain the second guard against duplicate scoring. A host reveal keeps its existing deadline; manually opening another day resets the window. Receipt retries cannot extend it.
+- `server/scheduler.ts` checks due rooms at startup and every 15 seconds while the service runs, independently of browser polling. It re-reads phase/deadline under the write lock and ignores stale deadline jobs. A guessing cutoff scores the day and opens its successor together; the final cutoff completes the week and clears the schedule. Catch-up walks every elapsed deadline against the prior scheduled date, preserving separate missed statuses and outcomes. Failures roll back that room and are retried; one broken room does not prevent other due rooms from progressing. The interval stops on service close.
+- Authorized room views resolve overdue work before returning state. Gameplay commands perform this check before their own transaction so a rejected late command cannot roll back the due transition. Join processing resolves the room's schedule before determining day eligibility. The server clock decides the cutoff; no request field or public endpoint can change time. At or after the cutoff, a stale command cannot modify the previous day.
+- The public view adds only `schedule.deadline` and `schedule.timeZone`; hidden gameplay fields remain private. The room displays the date and 12:00 AM Chicago cutoff without a client-driven countdown or independent phase transition. Results from automatically closed days stay in the existing inspectable history. Saving, polling, late joining and unlocking do not extend a deadline.
+
+Validation: 109 tests plus frontend/server build and type checks. The nine scheduling tests cover calendar boundaries, background-only advancement, exact-cutoff rejection, stale jobs, manual progression/retries, restart catch-up of an entire week, missing preparation, final-day joining, schema upgrade and atomic rollback/retry. Browser checks use an isolated database and injected clock, never the user's rooms: two independent sessions advance through preparation, guessing and final completion; prior results remain inspectable; deadline layout passes all six documented widths and remains Chicago-based under a Tokyo browser timezone. Physical phone and hosted unattended checks remain future work.
+
+Run the normal service with `npm run dev:server`; `npm run test:server` exercises scheduling immediately with a controlled clock. There is no test-time override in the application's public API or environment configuration. Stopping the room service pauses processing; restarting it catches up rather than extending expired windows. No external worker, hosting provision, expiry policy or host-transfer behavior is added.

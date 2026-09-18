@@ -34,9 +34,9 @@ export default function ScoringHelp({ personal = false, playerCount = 3, online 
             {personal && <li>You also earn <strong>+1 point for each friend who recognizes your Dream</strong>, unless everyone recognizes it. If everyone does, you earn <strong>0 recognition points</strong>; their correct guesses still earn points.</li>}
           </ul>
           <p>Confirm a guess for each friend, then reveal their Dreams to see your points. You can unlock a guess before the reveal.</p>
-          {online ? <p>Your room’s players choose their own clues, dream cards and guesses. The host reveals the shared results.</p>
+          {online ? <p>Your room’s players choose their own clues, dream cards and guesses. The host can reveal early. At the displayed midnight deadline, results are revealed and the next day opens automatically; earlier results stay available.</p>
             : <p>Nancy and Song make random guesses in this prototype. Their choices stay hidden until you reveal.</p>}
-          {online && <p>If the host closes a day before you finish, you receive 0 total points, including recognition. Your unfinished guesses do not earn points for anyone. A prepared Dream stays on the board; a missing Dream is replaced by an anonymous card. Only friends who finish count toward “everyone.”</p>}
+          {online && <p>If a day closes before you finish, you receive 0 total points, including recognition. Your unfinished guesses do not earn points for anyone. A prepared Dream stays on the board; a missing Dream is replaced by an anonymous card. Only friends who finish count toward “everyone.”</p>}
           <p className="scoring-help-total">With {playerCount - 1} {playerCount === 2 ? 'friend' : 'friends'} participating: up to <strong>{personal ? 2 * playerCount - 3 : playerCount - 1} points per guessing day</strong> and <strong>{6 * (personal ? 2 * playerCount - 3 : playerCount - 1)} points across the six days</strong>.</p>
           {online && playerCount === 2 && <p>With two players, recognition points are always zero: one correct friend means everyone recognized your Dream. Your correct guesses still earn points.</p>}
           <button className="quiet-button" onClick={() => dialog.current?.close()}>Back to dreaming</button>

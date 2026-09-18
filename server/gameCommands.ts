@@ -2,13 +2,16 @@ import type { GameCommand } from '../shared/game.ts'
 import type { RoomPhase } from '../shared/rooms.ts'
 import { playerId } from '../shared/parse.ts'
 import { assignDream, unassignDream } from '../src/game/assignments.ts'
-import { nextSharedDream, openSharedDay, saveSharedDream, scoreSharedDay, unfinishedSharedDay } from '../src/game/sharedWeek.ts'
+import { nextSharedDream, saveSharedDream, unfinishedSharedDay } from '../src/game/sharedWeek.ts'
 import { RoomError } from './errors.ts'
-import { newRoomGame, roomRandom } from './gamePreparation.ts'
-import { encodeGame, readGame } from './gameState.ts'
+import { newRoomGame } from './gamePreparation.ts'
+import { readGame } from './gameState.ts'
 import { credentialHash } from './sessions.ts'
 import type { Store } from './store.ts'
 import { roomView } from './views.ts'
+import { saveGame, transitionDay } from './gameTransitions.ts'
+import { setDeadline } from './scheduler.ts'
+import { fullDayDeadline } from './roomClock.ts'
 
 function confirmMissing(required: string[], supplied?: string[]) {
   if (required.length && (!supplied || supplied.length !== required.length || new Set(supplied).size !== required.length || required.some((id) => !supplied.includes(id)))) {
@@ -17,6 +20,8 @@ function confirmMissing(required: string[], supplied?: string[]) {
 }
 
 export function commandRoom(db: Store, roomId: string, sessionId: string, command: GameCommand, now: number) {
+  // Authorize and resolve due work separately so rejecting a late command cannot roll it back.
+  roomView(db, roomId, sessionId, now)
   const fingerprint = credentialHash(JSON.stringify([roomId, command]))
   return db.transaction(() => {
     const view = roomView(db, roomId, sessionId, now)
@@ -52,8 +57,7 @@ export function commandRoom(db: Store, roomId: string, sessionId: string, comman
           case 'open-day':
             if (phase !== 'preparation') throw new Error('The first guessing day has already opened.')
             confirmMissing(view.game?.preparingPlayerIds ?? [], action.confirmMissing)
-            game = openSharedDay(game, roomRandom)
-            phase = 'guessing'
+            ;({ game, phase } = transitionDay(db, roomId, game, phase, 'open-day'))
             break
           case 'lock': case 'unlock': {
             if (phase !== 'guessing') throw new Error('These guesses can no longer be changed.')
@@ -67,20 +71,14 @@ export function commandRoom(db: Store, roomId: string, sessionId: string, comman
           case 'reveal':
             if (phase !== 'guessing') throw new Error('This day has already been revealed.')
             confirmMissing(unfinishedSharedDay(game), action.confirmMissing)
-            for (const outcome of scoreSharedDay(game)) {
-              db.prepare('INSERT INTO round_outcomes (room_id, round_id, player_id, day_index, result_json) VALUES (?, ?, ?, ?, ?)')
-                .run(roomId, outcome.result.roundId, outcome.result.guesserId, game.roundIndex, JSON.stringify(outcome))
-            }
-            phase = 'revealed'
+            ;({ game, phase } = transitionDay(db, roomId, game, phase, 'reveal'))
             break
           case 'advance':
             if (phase !== 'revealed') throw new Error('Reveal this day’s results before opening the next day.')
-            if (game.roundIndex === 5) phase = 'complete'
-            else {
+            if (game.roundIndex !== 5) {
               confirmMissing([...game.week.dreams.keys()].filter((id) => nextSharedDream(game!, id)), action.confirmMissing)
-              game = openSharedDay(game, roomRandom)
-              phase = 'guessing'
             }
+            ;({ game, phase } = transitionDay(db, roomId, game, phase, 'advance'))
             break
         }
       }
@@ -90,8 +88,9 @@ export function commandRoom(db: Store, roomId: string, sessionId: string, comman
       if (error instanceof Error && !('code' in error)) throw new RoomError(400, 'INVALID_ACTION', error.message)
       throw error
     }
-    db.prepare('INSERT INTO room_games (room_id, state_json) VALUES (?, ?) ON CONFLICT(room_id) DO UPDATE SET state_json = excluded.state_json').run(roomId, encodeGame(game))
-    db.prepare('UPDATE rooms SET phase = ?, revision = revision + 1 WHERE id = ?').run(phase, roomId)
+    saveGame(db, roomId, game, phase)
+    if (phase === 'complete') setDeadline(db, roomId, null)
+    else if (action.type === 'start' || action.type === 'open-day' || action.type === 'advance') setDeadline(db, roomId, fullDayDeadline(now))
     db.prepare('INSERT INTO command_receipts VALUES (?, ?, ?, ?)').run(sessionId, command.requestId, fingerprint, roomId)
     return roomView(db, roomId, sessionId, now)
   }).immediate()

@@ -2,17 +2,17 @@
 
 ## Status and authority
 
-**0.2.3–0.2.5 are implemented and awaiting user testing.** After the waiting-room playtest, the user authorized connecting preparation, guessing and results together, explicitly requested both late joining and early host advancement, and approved the recommended missed-day policy. This combined handoff includes the private recap needed to review a complete shared week. Milestones 0.2.1 and 0.2.2 are approved; Prototype 0.1 remains available separately.
+**Milestone 0.2.6 is implemented and awaiting user testing.** Shared play through 0.2.5 is approved by the user’s instruction to proceed. The user accepted all recommended timing options: full calendar-day windows for preparation and manual day opening, immediate automatic reveal/advancement, and catch-up of every overdue day after downtime. Prototype 0.1 remains available separately.
 
-The host can start, open guessing days, reveal results and finish a week with 2–6 actual players. Late joiners prepare unopened Dreams and begin guessing the next day. Missing preparation or incomplete guesses earn zero total points under the confirmed policy in GAME_DESIGN.md. Automatic midnight progression, room cleanup/closure and hosting remain separate work. No hosted services have been provisioned or purchased.
+The host can start, open guessing days, reveal results and finish a week with 2–6 actual players. Late joiners prepare unopened Dreams and begin guessing the next day. Missing preparation or incomplete guesses earn zero total points under the confirmed policy in GAME_DESIGN.md. Automatic midnight progression is implemented; room cleanup/closure and hosting remain separate work. No hosted services have been provisioned or purchased.
 
-[PROTOTYPE_PLAN.md](PROTOTYPE_PLAN.md) is the scope and milestone index. [GAME_DESIGN.md](GAME_DESIGN.md) remains the source of truth for confirmed gameplay rules; [ART_DIRECTION.md](ART_DIRECTION.md) governs presentation and writing. The confirmed shared-play policies are recorded in GAME_DESIGN.md. The remaining scheduling and lifecycle recommendations below are still pending; do not implement them as defaults.
+[PROTOTYPE_PLAN.md](PROTOTYPE_PLAN.md) is the scope and milestone index. [GAME_DESIGN.md](GAME_DESIGN.md) remains the source of truth for confirmed gameplay rules; [ART_DIRECTION.md](ART_DIRECTION.md) governs presentation and writing. The confirmed shared-play policies are recorded in GAME_DESIGN.md. The timing decisions below are confirmed; the remaining lifecycle recommendations still need decisions.
 
 ## Goal
 
 Let groups of 2–6 people play one complete Dream Week using real dream clues, dream cards and guesses, each from their own browser. Players join private rooms. The user has deferred solo play and matchmaking. Learn whether people understand the instructions, enjoy interpreting each other's clues, and understand the scoring. Retain the existing artwork, mobile layout and continuous selection/guessing flow.
 
-The proposed experience is: join through a private invite, enter a group with a display name, prepare six dream-clue/card pairs, play six guessing days, reveal results, and review the week. The host can progress the game manually; the server must also advance it when the next day is due without requiring the host to be online. The confirmed cutoff is midnight America/Chicago; preparation and early-advance timing details remain open. Nobody needs to install an app.
+The proposed experience is: join through a private invite, enter a group with a display name, prepare six dream-clue/card pairs, play six guessing days, reveal results, and review the week. The host can progress the game manually; the server must also advance it when the next day is due without requiring the host to be online. The confirmed cutoff is midnight America/Chicago; the preparation, manual advancement and recovery policies below are confirmed. Nobody needs to install an app.
 
 ## Repository findings
 
@@ -28,7 +28,7 @@ The proposed experience is: join through a private invite, enter a group with a 
 
 - Support **2–6 players total**, including the room creator. The minimum is now two; the previously agreed six-player maximum remains. This is a Prototype 0.2 limit, not a permanent production limit.
 - **Solo play is deferred.** The user wants to figure it out later. Do not implement solo entry, queues or matchmaking in Prototype 0.2.
-- The **host can manually control progression**, normally after everyone is ready. **Day progression happens automatically at midnight in America/Chicago** if the host does not advance it. The user confirmed this shared cutoff for the initial playtest. Automatic progression must work without an open browser or an online host; the interaction with early manual advancement remains to be decided.
+- The **host can manually control progression**, normally after everyone is ready. **Day progression happens automatically at midnight in America/Chicago** if the host does not advance it. The user confirmed this shared cutoff for the initial playtest. Automatic progression must work without an open browser or an online host; manual day opening grants a fresh full-calendar-day window as specified below.
 - The approved missed-day policy gives an absent or unfinished player zero total points, retains any prepared Dream as a target, excludes partial guesses from recognition, and counts only completed guessers toward “everyone.” Missing Dreams are replaced with anonymous decoys when the day opens. Host-confirmed early closure and next-day late joining are implemented; a disconnect alone does not forfeit accepted complete work.
 
 ## Approved connected scope and later milestones
@@ -55,14 +55,16 @@ The gameplay decisions below are settled for this playtest:
 - Saved clue/card pairs remain immutable after replacement. Personal recaps show actual cards, clues, submitted and unanswered guesses, received completed guesses, points and missed status. No unrestricted guess matrix or room ranking is added.
 - Same-browser credentials resume an existing seat. Invite links cannot recover another person’s seat. A new week uses a new room without erasing the previous one.
 
-Remaining recommendations require decisions before the affected milestone:
+The user approved these scheduling policies for 0.2.6:
+
+- A newly started week or manually opened guessing day closes at midnight after the next full Chicago calendar day (Monday evening → Wednesday 12:00 AM). Automatically opened days close at the following midnight. Use calendar arithmetic through daylight-saving changes, not elapsed 24-hour additions.
+- Automatic preparation expiry opens Day 2. Guessing expiry reveals and scores the day, then opens the next immediately; Day 7 finishes the week. Prior results remain accessible. A manual reveal does not extend the current cutoff; a manual next-day action resets it to a fresh full-day window.
+- After downtime, process every overdue deadline using the same missed-day policy, anchored to the persisted schedule. No client timestamp or open browser is needed. Existing manual rooms get one fresh current-phase deadline on upgrade, with no retroactive missed days.
+
+Remaining recommendations require decisions before the affected lifecycle milestone:
 
 | Decision | Pending recommendation | Implementation impact |
 | --- | --- | --- |
-| First preparation cutoff | Choose the next Chicago midnight or an initial full preparation window. | Persist authoritative UTC deadlines using the room timezone and daylight-saving boundaries. |
-| Manual advancement and next deadline | Give a newly opened day a full scheduled window; exact rescheduling needs approval. | Prevent an imminent midnight from closing a manually opened day immediately. |
-| Automatic reveal and next-day timing | Agree how a due transition resolves and advances, including final-week completion. | Keep prior results accessible without requiring an online host. |
-| Service downtime | Agree whether to catch up all overdue days or pause after recovery. | Preserve each missed day and score it once. |
 | Host disconnect, departure or abandonment | Keep the original host while scheduled progression continues; explicit room abandonment could be added later. | No host transfer, seat removal or close-room action is implemented. |
 | Room retention | Seven days for completed/abandoned rooms is proposed; lobby/active retention is separate. | Do not silently delete active weeks or implement an expiry schedule without approval. |
 
@@ -93,18 +95,18 @@ Start with simple commands and a player-specific state endpoint; short polling i
 - Make the distinction between saving, saved and disconnected clear. Only acknowledge a commitment after the server accepts it. Retry safely after uncertain responses. Do not queue offline gameplay that pretends to be accepted.
 - Persist seats, accepted preparation, fixed boards, guesses, phase and results so refresh, a suspended phone tab and a service restart do not reset the week. Document limits for lost browser credentials separately from network recovery.
 - Store deadlines and run due transitions on the server with no connected clients required. Manual actions and scheduled jobs must use the same atomic phase transition and exactly-once scoring path. Reject stale jobs for an already-advanced round. Recover pending jobs after restart; verify the selected host supports work while every browser is closed.
-- At a deadline, close the current day's guesses, resolve its confirmed missing-player policy, store results and open the next phase consistently. Keep previous results accessible to players who return after automatic advancement. Decide how long the reveal remains current before the next day opens; do not require everyone to click a reveal button to unblock a due transition.
+- At a deadline, close the current day's guesses, resolve its confirmed missing-player policy, store results and open the next phase consistently. Keep previous results accessible to players who return after automatic advancement. Automatic reveal immediately opens the next day; do not require everyone to click a reveal button to unblock a due transition.
 - Before remote hosting, verify transport protection, session handling, request validation, room isolation and basic limits on room creation/join attempts. Select exact mechanisms with the service design, not by inventing account infrastructure.
 
 The proposed room phases are lobby, preparation, guessing, revealed and complete, with an explicit closed/expired state. Readiness belongs to players within a phase. Visibility, legal commands, deadlines and host controls must be written down for each phase before handlers are implemented.
 
 ## Milestones
 
-These are new **0.2 milestones**, not continuations of the completed 0.1 numbering. 0.2.1–0.2.2 are approved. The user authorized 0.2.3–0.2.5 as one connected play milestone with late joining and missed-day handling; this handoff awaits testing. Scheduling and the remaining lifecycle/hosting work are not included.
+These are new **0.2 milestones**, not continuations of the completed 0.1 numbering. 0.2.1–0.2.5 are approved. Milestone 0.2.6 adds automatic progression under the user-confirmed timing policy and awaits testing. Historical validation below records earlier handoffs; current status takes precedence.
 
 ### 0.2.0 — Confirm playtest policies and service design
 
-**Status:** Service design is documented. Midnight America/Chicago, late joining and missed-day scoring are confirmed. Solo play is deferred; scheduling boundaries and private-room lifecycle questions remain open, so this milestone is not yet fully complete.
+**Status:** Service design is documented. Midnight America/Chicago, late joining and missed-day scoring are confirmed. Solo play is deferred; private-room lifecycle questions remain open, so this milestone is not yet fully complete.
 
 **Deliverable:** Record answers to the decision table, the phase/action/visibility/deadline contract, and a concrete service/storage/hosting proposal with actual costs or limits checked at selection time. Recommend a stronger reasoning model before the authority, privacy, scheduling and concurrency work if it would materially help; leave the choice to the user.
 
@@ -142,7 +144,7 @@ These are new **0.2 milestones**, not continuations of the completed 0.1 numberi
 
 ### 0.2.3 — Private preparation shared across devices
 
-**Status:** Implemented in the user-authorized combined shared-play handoff; awaiting user testing. Server-owned dealing and replacement, private saved pairs, actual player names, readiness, same-seat recovery, safe command retries, and remaining-Dream preparation for missing/late players.
+**Status:** Implemented in the user-authorized combined shared-play handoff and approved by the instruction to proceed. Server-owned dealing and replacement, private saved pairs, actual player names, readiness, same-seat recovery, safe command retries, and remaining-Dream preparation for missing/late players.
 
 **Deliverable:** Start the shared week and connect the existing six-pair preparation flow to authoritative saving and replacement. Show who has finished without exposing their clues or cards. Preserve local comparison modes separately.
 
@@ -152,7 +154,7 @@ These are new **0.2 milestones**, not continuations of the completed 0.1 numberi
 
 ### 0.2.4 — Guessing, unlocking and shared readiness
 
-**Status:** Implemented in the user-authorized combined shared-play handoff; awaiting user testing. Fixed per-player six-card boards, current friend clues, server-authorized lock/unlock, private readiness, immutable day membership and next-day late-join eligibility.
+**Status:** Implemented in the user-authorized combined shared-play handoff and approved by the instruction to proceed. Fixed per-player six-card boards, current friend clues, server-authorized lock/unlock, private readiness, immutable day membership and next-day late-join eligibility.
 
 **Deliverable:** Open each guessing day on all devices using fixed private boards and sequential friend prompts. Connect lock/unlock actions, progress and waiting states. Its guessing deliverable is now connected to 0.2.5 reveal in this combined handoff.
 
@@ -162,7 +164,7 @@ These are new **0.2 milestones**, not continuations of the completed 0.1 numberi
 
 ### 0.2.5 — Shared reveal and exactly-once scoring
 
-**Status:** Implemented in the user-authorized combined shared-play handoff; awaiting user testing. Host reveal/advance, explicit early-closure confirmation, zero missed-day totals, completed-guesser recognition, atomic stored outcomes, persistent personal recaps and inspection.
+**Status:** Implemented in the user-authorized combined shared-play handoff and approved by the instruction to proceed. Host reveal/advance, explicit early-closure confirmation, zero missed-day totals, completed-guesser recognition, atomic stored outcomes, persistent personal recaps and inspection.
 
 **Deliverable:** Implement the shared transition used by host controls and the upcoming scheduler. Gate normal early reveal on complete assignments; apply the explicitly approved missed-day closure policy when applicable. Store all players' round results and missed statuses together and show each person their results in the existing header above the cards. Open the next day only after the current day has been resolved.
 
@@ -172,7 +174,9 @@ These are new **0.2 milestones**, not continuations of the completed 0.1 numberi
 
 ### 0.2.6 — Automatic daily progression
 
-**Status:** Not started. Resolve the first cutoff, early-advance rescheduling and downtime catch-up policies before implementation.
+**Status:** Implemented; awaiting user testing. A persisted schedule, shared host/timer transitions, a 15-second server loop, startup catch-up and deadline checks on room access/commands implement the approved timing policies. The UI shows the cutoff in Chicago time and retains prior results.
+
+**Validation:** 109 tests and build/type checks pass. Scheduling tests cover both DST changes, leap/year boundaries, no-browser advancement, exact-cutoff commands, stale jobs, host reveal/advance and receipt retries, full-week downtime catch-up, empty days, late joins at the final day, upgrade/restart preservation and transaction rollback/retry. Independent Edge sessions pass automatic preparation, guessing and final rollover, missed-day history/inspection, stable lock/unlock layouts, and six responsive sizes (320, 375, 390, 430, 768, 1440px). The displayed Chicago deadline stays correct with the browser set to Tokyo. Physical devices and hosted unattended operation remain later validation.
 
 **Deliverable:** Persist and display room deadlines, run server-side due transitions without open browsers, and reconcile host advancement with the approved clock, missed-day and rescheduling policies. Preserve each resolved day's results for later viewing.
 
@@ -182,7 +186,7 @@ These are new **0.2 milestones**, not continuations of the completed 0.1 numberi
 
 ### 0.2.7 — Complete the week and recovery paths
 
-**Status:** Personal full-week recap, card inspection, accepted-command recovery and a separate new-room entry are already supplied by the authorized shared-play handoff. Remaining scheduled recovery, close/expiry and room-lifecycle work is pending; this milestone is not complete.
+**Status:** Personal full-week recap, card inspection, accepted-command recovery and a separate new-room entry are already supplied by the authorized shared-play handoff. Scheduled catch-up is now supplied by 0.2.6; remaining close/expiry and room-lifecycle work is pending; this milestone is not complete.
 
 **Deliverable:** Play all six guessing days through each player's inspectable recap. Finish the approved close/expiry/new-room flow and clear messages for disconnected, abandoned or expired sessions. Verify recovery across every phase, extending the refresh support already required in earlier milestones.
 
@@ -208,4 +212,4 @@ Preserve the illustrated theme, six-card geometry, three-card desktop/two-card p
 
 At each milestone, report what runs, what remains simulated or unavailable, how to test it and the relevant Conventional Commit commands, including push. Never commit or push automatically. Documentation-only edits need link/content review; gameplay changes require the runtime checks above.
 
-**Next action:** User-test the connected private week with two independent browser sessions, early closure and a late join. Then agree on 0.2.6 timing policies before starting scheduling. Physical phone and remote-browser testing still require the later shared hosting setup.
+**Next action:** User-test the displayed deadline, normal host controls and preserved results. The scheduler checks use an injected clock for immediate verification. After acceptance, agree on the remaining 0.2.7 room lifecycle policies before implementing them. Physical phone/remote-browser play still needs the later hosted setup.

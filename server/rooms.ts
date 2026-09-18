@@ -1,4 +1,5 @@
 import { randomBytes, randomUUID } from 'node:crypto'
+import { advanceDueRoom } from './scheduler.ts'
 import type { RoomRequest } from '../shared/rooms.ts'
 import { RoomError } from './errors.ts'
 import { credentialHash } from './sessions.ts'
@@ -34,8 +35,10 @@ export function enterRoom(db: Store, sessionId: string, action: 'create' | 'join
     let seat = 0
     const playerId: PlayerId = `player-${randomUUID()}`
     if (action === 'join') {
-      const room = db.prepare<[string], StoredRoom>('SELECT id, invite_code, host_id, phase, revision, expires_at FROM rooms WHERE invite_code = ?').get(code ?? '')
+      let room = db.prepare<[string], StoredRoom>('SELECT id, invite_code, host_id, phase, revision, expires_at FROM rooms WHERE invite_code = ?').get(code ?? '')
       if (!room) throw new RoomError(404, 'ROOM_NOT_FOUND', 'No room matches that invitation code. Check it and try again.')
+      advanceDueRoom(db, room.id, now)
+      room = db.prepare<[string], StoredRoom>('SELECT id, invite_code, host_id, phase, revision, expires_at FROM rooms WHERE id = ?').get(room.id)!
       roomId = room.id
       const existing = db.prepare('SELECT 1 FROM memberships WHERE room_id = ? AND session_id = ?').get(roomId, sessionId)
       if (!existing) {
