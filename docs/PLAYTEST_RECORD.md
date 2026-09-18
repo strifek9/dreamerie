@@ -1,13 +1,14 @@
 # Prototype 0.2.8 playtest record
 
-Status: deployment preparation only. This record does not claim hosted or physical-device acceptance.
+Status: deployed on Render on 2026-09-18; initial hosted smoke checks pass. Full multiplayer and physical-device acceptance remain pending.
 
 | Item | Result |
 | --- | --- |
-| Hosted URL / deployed commit | Not deployed |
-| Owner / hosting account | Not selected in this handoff |
-| Actual compute, disk, workspace and usage charges | Not purchased; review the estimate in HOSTING.md |
-| Initial playtest access | Approved: anyone with the site link, without a shared password. Room invitations and private browser sessions remain. Local HTTPS service checks pass; actual-host verification pending. |
+| Hosted URL / deployed commit | https://dreamerie-playtest.onrender.com / `52e2e3822e5bf2ae983bcb4b0c37d7af89df17f9`; Render reports Live after the APP_ORIGIN update |
+| Owner / hosting account | User-owned Dreamerie workspace on Render; Hobby workspace |
+| Actual compute, disk, workspace and usage charges | User approved provisioning at the displayed $7/month service + $0.25/month disk estimate. Usage and taxes additional; final invoice not yet available. |
+| Initial hosted smoke checks | HTTPS health returns `{"ok":true}`; browser session and test-room creation succeed; host seat and invitation survive refresh. Service auto-deploy is Off and Blueprint Auto Sync is paused. |
+| Initial playtest access | Public entry and room creation verified in Chrome. Cross-session membership/privacy checks and human multiplayer testing remain pending on the actual host. |
 | Linux / Node 24 CI | Workflow prepared; not yet run on GitHub |
 | Local backup/restore rehearsal | Pass: private state, identities, deadlines, results and command receipts survive an online snapshot and restore into a separate database |
 | Actual-host restore / off-site verified copy | Pending |
