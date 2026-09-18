@@ -60,7 +60,7 @@ test('private sessions, stable seats and six accents persist across refresh', as
     selfIds.push(restored.selfId)
     assert.deepEqual(restored.members.map((member) => member.accentSlot), [0, 1, 2, 3, 4, 5])
     assert.equal(restored.revision, 6)
-    assert.deepEqual(Object.keys(restored).sort(), ['hostId', 'id', 'inviteCode', 'members', 'phase', 'revision', 'selfId'])
+    assert.deepEqual(Object.keys(restored).sort(), ['expiresAt', 'hostId', 'id', 'inviteCode', 'members', 'phase', 'revision', 'selfId'])
     for (const member of restored.members) assert.deepEqual(Object.keys(member).sort(), ['accentSlot', 'displayName', 'playerId'])
   }
   assert.equal(new Set(selfIds).size, 6)
@@ -196,7 +196,7 @@ test('session expiry prevents taking actions as the old player', async (t) => {
   assert.equal((await app.inject({ url: `/api/rooms/${room.id}`, headers: { cookie: user.cookie } })).statusCode, 401)
   const fresh = await browser(app)
   assert.equal((await app.inject({ url: `/api/rooms/${room.id}`, headers: { cookie: fresh.cookie } })).statusCode, 403)
-  assert.equal((await joinRoom(app, fresh, room, 'Charlie')).json().code, 'NAME_TAKEN')
+  assert.equal((await joinRoom(app, fresh, room, 'Charlie')).json().code, 'ROOM_EXPIRED')
 })
 
 test('production requires HTTPS and sends a secure HttpOnly session cookie', async () => {

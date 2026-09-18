@@ -12,6 +12,7 @@ import { roomView } from './views.ts'
 import { saveGame, transitionDay } from './gameTransitions.ts'
 import { setDeadline } from './scheduler.ts'
 import { fullDayDeadline } from './roomClock.ts'
+import { retainRoomUntil } from './roomLifecycle.ts'
 
 function confirmMissing(required: string[], supplied?: string[]) {
   if (required.length && (!supplied || supplied.length !== required.length || new Set(supplied).size !== required.length || required.some((id) => !supplied.includes(id)))) {
@@ -37,8 +38,17 @@ export function commandRoom(db: Store, roomId: string, sessionId: string, comman
       throw new RoomError(409, 'STALE_DAY', 'That choice belongs to an earlier day. Review the current Dream.')
     }
     const { action } = command
-    if (['start', 'open-day', 'reveal', 'advance'].includes(action.type) && view.selfId !== view.hostId) {
+    if (['start', 'open-day', 'reveal', 'advance', 'close'].includes(action.type) && view.selfId !== view.hostId) {
       throw new RoomError(403, 'HOST_ONLY', 'Only the room’s host can progress the Dream Week.')
+    }
+    if (action.type === 'close') {
+      if (action.confirmed !== true) throw new RoomError(400, 'CONFIRM_CLOSE', 'Confirm before closing this room.')
+      // Closing never calls the reveal/scoring path. Only existing outcomes remain visible.
+      db.prepare("UPDATE rooms SET phase = 'closed', revision = revision + 1 WHERE id = ?").run(roomId)
+      setDeadline(db, roomId, null)
+      retainRoomUntil(db, roomId, now)
+      db.prepare('INSERT INTO command_receipts VALUES (?, ?, ?, ?)').run(sessionId, command.requestId, fingerprint, roomId)
+      return roomView(db, roomId, sessionId, now)
     }
     let game = readGame(db, roomId)
     let phase: RoomPhase = view.phase
@@ -47,6 +57,7 @@ export function commandRoom(db: Store, roomId: string, sessionId: string, comman
         if (phase !== 'lobby' || game) throw new Error('This Dream Week has already started.')
         game = newRoomGame(view.members.map((member) => ({ id: playerId(member.playerId), name: member.displayName })))
         phase = 'preparation'
+        db.prepare('UPDATE rooms SET expires_at = NULL WHERE id = ?').run(roomId)
       } else {
         if (!game) throw new Error('The host must start this Dream Week first.')
         const self = playerId(view.selfId)
@@ -89,7 +100,7 @@ export function commandRoom(db: Store, roomId: string, sessionId: string, comman
       throw error
     }
     saveGame(db, roomId, game, phase)
-    if (phase === 'complete') setDeadline(db, roomId, null)
+    if (phase === 'complete') { setDeadline(db, roomId, null); retainRoomUntil(db, roomId, now) }
     else if (action.type === 'start' || action.type === 'open-day' || action.type === 'advance') setDeadline(db, roomId, fullDayDeadline(now))
     db.prepare('INSERT INTO command_receipts VALUES (?, ?, ?, ?)').run(sessionId, command.requestId, fingerprint, roomId)
     return roomView(db, roomId, sessionId, now)

@@ -9,6 +9,14 @@ export default function RoomExperience() {
   const [action, setAction] = useState<'create' | 'join'>(() => new URLSearchParams(window.location.search).has('invite') ? 'join' : 'create')
   const [name, setName] = useState('')
   const [code, setCode] = useState(() => new URLSearchParams(window.location.search).get('invite') ?? '')
+  if (state.unavailable) return <div className="dreamerie-shell">
+    <header className="masthead"><p className="wordmark">Dreamerie</p></header>
+    <main className="gallery-page room-ended"><h1>Your place could not be restored.</h1>
+      <p role="alert" className="invitation">{state.unavailable}</p>
+      <p className="room-note">If this browser lost its session, an invitation cannot recover the old seat. You can gather in another room.</p>
+      <a className="quiet-button room-new-link" href="/?play=rooms">Gather in another room</a>
+    </main>
+  </div>
   if (state.room && state.session) return <RoomPlay key={state.room.id} room={state.room} csrf={state.session.csrfToken} accept={state.accept} connection={state.connection} />
   return <div className="dreamerie-shell">
     <header className="masthead">
@@ -49,13 +57,14 @@ export default function RoomExperience() {
             {!state.pending && state.session.rooms.length > 0 && <section className="room-return" aria-label="Your saved rooms">
               <h2>Your saved rooms</h2>
               {state.session.rooms.map((room) => <button className="text-button" key={room.id} onClick={() => state.enter(room)}>
-                Return to {room.members.find((member) => member.playerId === room.hostId)?.displayName}’s room · {room.inviteCode}
+                Return to {room.members.find((member) => member.playerId === room.hostId)?.displayName}’s room · {room.phase === 'complete' ? 'Week complete' : room.phase === 'closed' ? 'Closed' : room.phase === 'lobby' ? 'Waiting room' : `Day ${room.game?.day ?? 1}`}
               </button>)}
             </section>}
           </> : <button className="quiet-button" onClick={state.retryConnection}>Try connecting again</button>}
         </>}
         {state.error && <div className="room-error"><p role="alert">{state.error}</p>
           {!state.pending && state.session && <button className="text-button" onClick={state.retryConnection}>Reconnect</button>}
+          <a className="text-button room-new-link" href="/?play=rooms">Choose another room</a>
         </div>}
       </div>
     </main>

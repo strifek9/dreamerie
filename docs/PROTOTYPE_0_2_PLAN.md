@@ -2,11 +2,11 @@
 
 ## Status and authority
 
-**Milestone 0.2.6 is implemented and awaiting user testing.** Shared play through 0.2.5 is approved by the user’s instruction to proceed. The user accepted all recommended timing options: full calendar-day windows for preparation and manual day opening, immediate automatic reveal/advancement, and catch-up of every overdue day after downtime. Prototype 0.1 remains available separately.
+**Milestone 0.2.7 is implemented and awaiting user testing.** Shared play and automatic scheduling through 0.2.6 are approved by the instruction to proceed. The user confirmed host closure preserving only revealed results, seven-day recap retention, 24-hour unused waiting-room expiry and keeping the original host. Prototype 0.1 remains available separately.
 
-The host can start, open guessing days, reveal results and finish a week with 2–6 actual players. Late joiners prepare unopened Dreams and begin guessing the next day. Missing preparation or incomplete guesses earn zero total points under the confirmed policy in GAME_DESIGN.md. Automatic midnight progression is implemented; room cleanup/closure and hosting remain separate work. No hosted services have been provisioned or purchased.
+The host can start, open guessing days, reveal results, finish a week or explicitly close a room with 2–6 actual players. A lone host can close an unstarted waiting room. Late joiners prepare unopened Dreams and begin guessing the next day. Missing preparation or incomplete guesses earn zero total points under GAME_DESIGN.md. Automatic midnight progression, room closure/expiry and recovery are implemented; hosting remains later work. No hosted services have been provisioned or purchased.
 
-[PROTOTYPE_PLAN.md](PROTOTYPE_PLAN.md) is the scope and milestone index. [GAME_DESIGN.md](GAME_DESIGN.md) remains the source of truth for confirmed gameplay rules; [ART_DIRECTION.md](ART_DIRECTION.md) governs presentation and writing. The confirmed shared-play policies are recorded in GAME_DESIGN.md. The timing decisions below are confirmed; the remaining lifecycle recommendations still need decisions.
+[PROTOTYPE_PLAN.md](PROTOTYPE_PLAN.md) is the scope and milestone index. [GAME_DESIGN.md](GAME_DESIGN.md) remains the source of truth for confirmed gameplay rules; [ART_DIRECTION.md](ART_DIRECTION.md) governs presentation and writing. The shared-play, timing and lifecycle policies below are confirmed and recorded in GAME_DESIGN.md.
 
 ## Goal
 
@@ -61,12 +61,13 @@ The user approved these scheduling policies for 0.2.6:
 - Automatic preparation expiry opens Day 2. Guessing expiry reveals and scores the day, then opens the next immediately; Day 7 finishes the week. Prior results remain accessible. A manual reveal does not extend the current cutoff; a manual next-day action resets it to a fresh full-day window.
 - After downtime, process every overdue deadline using the same missed-day policy, anchored to the persisted schedule. No client timestamp or open browser is needed. Existing manual rooms get one fresh current-phase deadline on upgrade, with no retroactive missed days.
 
-Remaining recommendations require decisions before the affected lifecycle milestone:
+The user approved these lifecycle policies for 0.2.7:
 
-| Decision | Pending recommendation | Implementation impact |
-| --- | --- | --- |
-| Host disconnect, departure or abandonment | Keep the original host while scheduled progression continues; explicit room abandonment could be added later. | No host transfer, seat removal or close-room action is implemented. |
-| Room retention | Seven days for completed/abandoned rooms is proposed; lobby/active retention is separate. | Do not silently delete active weeks or implement an expiry schedule without approval. |
+- Keep the original host through disconnects/abandonment; scheduled progression continues. No host transfer, seat removal or account recovery.
+- The host can explicitly confirm closing a waiting or active room for everyone. Preserve only already revealed results and points; do not reveal or award points for the unfinished day. Closed rooms cannot reopen. Due scheduled work is reconciled first, so a stale close confirmation must be reviewed again.
+- Waiting rooms expire 24 elapsed hours after creation. Joining and polling do not extend that time; starting removes lobby expiry and starts normal day scheduling.
+- Completed/closed rooms retain each player's permitted recap for seven elapsed days from their ending. Automatic completion uses the scheduled ending even after downtime. Expiry removes private game state, outcomes and schedules; room identity, invitation, memberships and receipts remain for expired-link feedback and safe retries. New-room entry does not erase an unexpired recap.
+- Older ended rooms with no expiry receive one fresh seven-day window on upgrade; older waiting rooms use their original creation plus 24 hours. Active weeks keep their existing schedule. This is bounded prototype retention, not permanent Dream History.
 
 Day participation is stored separately from room membership. Substitute cards are anonymous decoys, never fabricated human clues or selections. Boards and exposure are committed together; insufficient eligible cards fail without partial changes.
 
@@ -106,7 +107,7 @@ These are new **0.2 milestones**, not continuations of the completed 0.1 numberi
 
 ### 0.2.0 — Confirm playtest policies and service design
 
-**Status:** Service design is documented. Midnight America/Chicago, late joining and missed-day scoring are confirmed. Solo play is deferred; private-room lifecycle questions remain open, so this milestone is not yet fully complete.
+**Status:** Service design and the private-room policies required through 0.2.7 are documented and confirmed. Solo play is deferred. Hosting access and operating decisions belong to 0.2.8.
 
 **Deliverable:** Record answers to the decision table, the phase/action/visibility/deadline contract, and a concrete service/storage/hosting proposal with actual costs or limits checked at selection time. Recommend a stronger reasoning model before the authority, privacy, scheduling and concurrency work if it would materially help; leave the choice to the user.
 
@@ -132,7 +133,7 @@ These are new **0.2 milestones**, not continuations of the completed 0.1 numberi
 
 **Status:** Implemented and approved by the user’s request to connect gameplay. At this milestone, no dealing, start/leave/close controls, automatic expiry, gameplay commands or scheduling were added. The subsequent shared-play work adds start and gameplay commands.
 
-**Implementation policy:** Display names are 1–24 normalized characters, unique per room ignoring case, repeated whitespace and Unicode compatibility differences. Names never authenticate or rename a seat. A browser's protected 30-day session resumes its existing membership; no cross-device/lost-cookie recovery is provided. All members can share the private invitation. New rooms have no expiry deadline while retention remains undecided. Defensive started/closed/expired join checks are tested using stored-state fixtures; no transition into those phases is available yet.
+**Historical implementation policy (0.2.2):** Display names are 1–24 normalized characters, unique per room ignoring case, repeated whitespace and Unicode compatibility differences. Names never authenticate or rename a seat. A browser's protected 30-day session resumes its existing membership; no cross-device/lost-cookie recovery is provided. All members can share the private invitation. This initial lobby-only milestone had no expiry deadline or phase transitions; later milestones implement gameplay, scheduling and the lifecycle policy above.
 
 **Validation:** Build/type checks and all 81 tests pass. Eleven service tests cover distinct seats, six-slot capacity under concurrent requests, safe retries, name collisions, room isolation, request validation, origin/CSRF controls, restart persistence and credential expiry. Six isolated Edge browser sessions tested invitations, refresh, full-room and duplicate-name feedback, lost-response retry after refresh, offline/reconnect and stable focus. Entry and six-player waiting layouts pass 320, 375, 390, 430, 768 and 1440px checks. Both local modes still pass full-week browser regressions. Windows native SQLite installation and compiled service/static frontend are validated locally; hosted and physical-device checks remain 0.2.8.
 
@@ -174,7 +175,7 @@ These are new **0.2 milestones**, not continuations of the completed 0.1 numberi
 
 ### 0.2.6 — Automatic daily progression
 
-**Status:** Implemented; awaiting user testing. A persisted schedule, shared host/timer transitions, a 15-second server loop, startup catch-up and deadline checks on room access/commands implement the approved timing policies. The UI shows the cutoff in Chicago time and retains prior results.
+**Status:** Implemented and approved by the instruction to start 0.2.7. A persisted schedule, shared host/timer transitions, a 15-second server loop, startup catch-up and deadline checks on room access/commands implement the approved timing policies. The UI shows the cutoff in Chicago time and retains prior results.
 
 **Validation:** 109 tests and build/type checks pass. Scheduling tests cover both DST changes, leap/year boundaries, no-browser advancement, exact-cutoff commands, stale jobs, host reveal/advance and receipt retries, full-week downtime catch-up, empty days, late joins at the final day, upgrade/restart preservation and transaction rollback/retry. Independent Edge sessions pass automatic preparation, guessing and final rollover, missed-day history/inspection, stable lock/unlock layouts, and six responsive sizes (320, 375, 390, 430, 768, 1440px). The displayed Chicago deadline stays correct with the browser set to Tokyo. Physical devices and hosted unattended operation remain later validation.
 
@@ -186,7 +187,7 @@ These are new **0.2 milestones**, not continuations of the completed 0.1 numberi
 
 ### 0.2.7 — Complete the week and recovery paths
 
-**Status:** Personal full-week recap, card inspection, accepted-command recovery and a separate new-room entry are already supplied by the authorized shared-play handoff. Scheduled catch-up is now supplied by 0.2.6; remaining close/expiry and room-lifecycle work is pending; this milestone is not complete.
+**Status:** Implemented; awaiting user testing and approval. Adds host-confirmed permanent closure, seven-day recap retention, 24-hour waiting-room expiry, cleanup on startup/background/access, clear terminal screens and session-loss recovery. Retains the full-week recap, card inspection, safe command retry and scheduled catch-up supplied by earlier milestones. No hosting is added.
 
 **Deliverable:** Play all six guessing days through each player's inspectable recap. Finish the approved close/expiry/new-room flow and clear messages for disconnected, abandoned or expired sessions. Verify recovery across every phase, extending the refresh support already required in earlier milestones.
 
@@ -212,4 +213,6 @@ Preserve the illustrated theme, six-card geometry, three-card desktop/two-card p
 
 At each milestone, report what runs, what remains simulated or unavailable, how to test it and the relevant Conventional Commit commands, including push. Never commit or push automatically. Documentation-only edits need link/content review; gameplay changes require the runtime checks above.
 
-**Next action:** User-test the displayed deadline, normal host controls and preserved results. The scheduler checks use an injected clock for immediate verification. After acceptance, agree on the remaining 0.2.7 room lifecycle policies before implementing them. Physical phone/remote-browser play still needs the later hosted setup.
+The 0.2.7 handoff passes 117 automated tests and frontend/server build/type checks. Added tests cover exact lobby/recap boundaries, manual closure with earned results, host authority and explicit confirmation, private terminal payloads, receipt retries, timer-versus-close ordering, cleanup without requests, restart and downtime. Separate Edge sessions check preparation/guessing/reveal refresh and reconnect, confirmation focus/Escape/stale revisions, closure for both players, recap inspection, expiry, old invitations, new-room entry and lost credentials across all six documented widths. Phone/desktop screenshots were reviewed; physical devices and remote hosting remain untested.
+
+**Next action:** User-test 0.2.7 with two browser sessions, especially closing after a reveal and viewing the retained cards from both seats. Run `npm run test:server` to verify time boundaries immediately. Stop for acceptance; then prepare the 0.2.8 hosted playtest without adding matchmaking or account infrastructure.

@@ -8,6 +8,7 @@ export function useRoomConnection() {
   const [connecting, setConnecting] = useState(true)
   const [error, setError] = useState('')
   const [connection, setConnection] = useState('')
+  const [unavailable, setUnavailable] = useState('')
   const [busy, setBusy] = useState(false)
   const [attempt, setAttempt] = useState(0)
   const [pending, setPending] = useState(readPending)
@@ -20,6 +21,7 @@ export function useRoomConnection() {
     window.history.replaceState(null, '', url)
     setRoom(view)
     setError('')
+    setUnavailable('')
   }
 
   function accept(view: RoomView) {
@@ -67,8 +69,9 @@ export function useRoomConnection() {
       } catch (reason) {
         if (!active) return
         failures++
-        if (reason instanceof ApiError && [401, 403].includes(reason.status)) {
+        if (reason instanceof ApiError && [401, 403, 404, 410].includes(reason.status)) {
           setConnection(reason.message)
+          setUnavailable(reason.message)
           active = false
         } else setConnection('Connection lost. Your place is saved. Reconnecting…')
       } finally {
@@ -114,5 +117,5 @@ export function useRoomConnection() {
     }
   }
 
-  return { session, room, connecting, error, connection, busy, pending, enter, accept, submit, retryConnection: () => setAttempt((value) => value + 1) }
+  return { session, room, connecting, error, connection, unavailable, busy, pending, enter, accept, submit, retryConnection: () => setAttempt((value) => value + 1) }
 }

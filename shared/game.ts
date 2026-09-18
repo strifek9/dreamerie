@@ -2,6 +2,7 @@ import type { Card, CardId, ConceptId, DreamConcept, GuessingBoardView, PlayerId
 
 export type GameAction =
   | { type: 'start' }
+  | { type: 'close'; confirmed: true }
   | { type: 'save'; conceptId: ConceptId; cardId: CardId; clue: string }
   | { type: 'open-day'; confirmMissing?: PlayerId[] }
   | { type: 'lock'; playerId: PlayerId; cardId: CardId }

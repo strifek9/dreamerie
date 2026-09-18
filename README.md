@@ -8,13 +8,15 @@ The product is mobile-first and responsive for mobile and desktop web. Artwork l
 
 ## Current status
 
-**Prototype 0.2.6 automatic progression is implemented and ready for testing.** Private rooms support 2–6 actual players through preparation, guessing, host or scheduled reveal, and a persistent full-week recap. Shared play through 0.2.5 is approved; both local practice modes remain separate.
+**Prototype 0.2.7 room lifecycle and recovery are implemented and ready for testing.** Private rooms support 2–6 actual players through preparation, guessing, host or scheduled reveal, and a retained full-week recap. Work through 0.2.6 is approved by the instruction to proceed; both local practice modes remain separate.
 
 The host can advance before everyone finishes after confirming unfinished players. Missing preparation or incomplete guesses earn zero total points; a prepared Dream remains a target, and unfinished guesses do not contribute recognition. Only completed guessers count toward “everyone.” Late joiners prepare unopened Dreams and begin guessing the next day, without changing existing boards. With two players, recognition is always zero; correct guesses still earn one point.
 
 Days now progress automatically at midnight **America/Chicago**, even with no browser open, while the room service is running. Starting a week or manually opening a day gives the remainder of today plus all of tomorrow: Monday evening → Wednesday at 12:00 AM. Automatic days then last until the next Chicago midnight. At each cutoff, results are revealed and the next day opens immediately; Day 7 ends the week. After downtime, the service catches up every overdue day using the approved missed-day policy.
 
-See [the plan](docs/PROTOTYPE_0_2_PLAN.md) and [technical design](docs/PROTOTYPE_0_2_TECHNICAL_DESIGN.md). Room cleanup/closure and remote hosting remain later work. Solo matchmaking is deferred; no hosting has been purchased or provisioned.
+Hosts can explicitly close a room for everyone. Only already revealed results remain; the unfinished day is not revealed or awarded points. Completed and closed rooms retain their personal recaps for seven days. Waiting rooms expire 24 hours after creation unless the host starts the week. Disconnecting never transfers the host role or stops scheduled progression.
+
+See [the plan](docs/PROTOTYPE_0_2_PLAN.md) and [technical design](docs/PROTOTYPE_0_2_TECHNICAL_DESIGN.md). Remote hosting remains later work. Solo matchmaking is deferred; no hosting has been purchased or provisioned.
 
 Round results now appear between **The dream comes into focus.** and **Dreams remembered**, above the dream cards. The summary includes each friend's dream clue, your guess result and points, followed by friends' recognition of your Dream and its points. It wraps across two columns on phones, up to three on tablets and up to five on wider screens. Shared rooms use the actual roster and support five friends. Long result text scrolls within the reserved summary area so the cards stay stationary.
 
@@ -40,7 +42,7 @@ The user confirmed +1 per friend who recognizes your Dream, except when everyone
 
 Use Node.js **22.18+ on the 22.x line, or 24+**, and npm. Node 24 LTS remains the intended hosting runtime; this implementation and native SQLite installation were tested on the existing Windows Node 22.18.0 / npm 11.5.2 environment. The development service uses Node's built-in TypeScript support.
 
-### Shared private Dream Weeks (0.2.6)
+### Shared private Dream Weeks (0.2.7)
 
 Install dependencies if needed, then start the room service:
 
@@ -63,7 +65,11 @@ Each player writes and saves six dream clues with their cards. The host chooses 
 
 To check the missed-day policy, let the host progress while a player is unfinished and confirm the named players. Missing preparation gives that player no board and zero points. Incomplete guesses give zero total points; the prepared Dream stays available for others to guess. A late invitation starts a new seat on the next unopened day, with remaining preparation available immediately. No new player can join after Day 7 opens. Readiness is under **View players**; results remain under **Earlier Dreams**.
 
-The date above the room shows its authoritative cutoff in Chicago time. A host reveal keeps that deadline; **Next day** creates a new full-day window. Earlier results remain inspectable after automatic advancement. Restarting the service preserves deadlines and catches up overdue days. Existing active rooms without deadlines receive one fresh window on their first scheduling upgrade; waiting rooms do not count down.
+The date above the room shows its authoritative cutoff in Chicago time. A host reveal keeps that deadline; **Next day** creates a new full-day window. Earlier results remain inspectable after automatic advancement. Restarting the service preserves deadlines and catches up overdue days. Existing active rooms without deadlines receive one fresh window on their first scheduling upgrade. Waiting rooms display a separate expiry time, 24 hours from creation; joining or refreshing does not extend it. Starting clears that lobby expiry.
+
+To test closure, use the host's **Close this room** button below the game. **Keep dreaming** or Escape cancels; **Close for everyone** ends the week permanently, preserving only revealed days and their points for seven elapsed days. Both players see a read-only recap with inspectable cards and **Gather in another room**. Creating another room leaves the earlier recap intact. A changed room invalidates an open confirmation; review it again. At an elapsed day deadline, the server resolves that due day before accepting a new close request.
+
+An expired room shows a clear ending with no gameplay controls or recap cards; a new visitor's old invitation is rejected. Temporary network loss preserves accepted work and reconnects; an ended browser session hides cached gameplay and offers a new-room path. It cannot restore a lost seat.
 
 For an immediate scheduling check without waiting for midnight, run `npm run test:server`: its controlled clock checks cutoff behavior, daylight-saving changes and recovery. There is no public clock-changing endpoint. Stopping `npm run dev:server` stops the timer until the service restarts.
 
@@ -71,7 +77,7 @@ Only **Solo practice · simulated players** leads to Nancy and Song. Staying ins
 
 Names use 1–24 characters after trimming/collapsing whitespace; case and Unicode compatibility differences do not make a duplicate name distinct. Add an initial if needed. A name or invitation never recovers another player's seat. Session cookies last 30 days; clearing browser data, closing the last private window, switching profiles/devices or losing the cookie loses access to that seat. There is no account recovery or seat-removal flow yet.
 
-The service stores local rooms, private gameplay and results in ignored `data/dreamerie.sqlite` with SQLite sidecar files. Startup migrates existing room databases without deleting seats, invitations or saved gameplay; schedule migration 003 adds persisted deadlines. These are separate from the in-memory local demo. Room expiry/cleanup is not scheduled while retention policy remains undecided. `.env.example` lists optional settings; no `.env` is needed for the defaults. Never put the database under `dist/` or `public/`, which contain public assets.
+The service stores local rooms, private gameplay and results in ignored `data/dreamerie.sqlite` with SQLite sidecar files, separately from the in-memory local demo. Startup preserves seats and invitations; schedule migration 003 adds persisted deadlines. Lifecycle handling uses the existing expiry field, without another schema migration. Expiry runs at startup, every 15 seconds, and on room access while the service runs. Seven elapsed days after completion/closure, private game state (including clues, cards and guesses), results and schedules are removed. Room identity, invitation, memberships/display names and command receipts remain so old links explain expiry and retries cannot recreate a room. This is not a full database erasure. Automatic completion retention starts at the scheduled end, even after downtime. Older completed/closed rooms without expiry receive one fresh seven-day window on upgrade; older waiting rooms expire from their original creation time. `.env.example` lists optional settings; no `.env` is needed for the defaults. Never put the database under `dist/` or `public/`, which contain public assets.
 
 This loopback URL works only on this computer. A shared phone/remote-browser URL and HTTPS hosting come in the later hosted-playtest milestone. `npm run preview` serves only the local demo assets; use the two-terminal setup above for rooms.
 
@@ -116,7 +122,7 @@ npm run build
 npm run preview
 ```
 
-The build includes frontend/server TypeScript checks and writes frontend assets to `dist/` and the service to `dist-server/`. Tests use Node's built-in runner and TypeScript stripping. All **81 tests** pass: 70 gameplay tests and 11 service tests covering session isolation, duplicate requests/names, concurrent capacity, invalid input, CSRF/origin protection, state guards, restart persistence, credential expiry, HTTPS cookies and rate limits. Use `npm run test:server` for just the service tests. Browser checks cover six independent room sessions, invitation entry, full/duplicate-room errors, refresh, lost-response retry across refresh, disconnect/reconnect and preserved focus at 320, 375, 390, 430, 768 and 1440px. Both local modes also pass full-week preparation, guessing, reveal, inspection, recap and restart checks. Real-device and hosted validation remain later work.
+The build includes frontend/server TypeScript checks and writes frontend assets to `dist/` and the service to `dist-server/`. Tests use Node's built-in runner and TypeScript stripping. All **117 tests** pass, including full shared weeks, private views, allocation/scoring invariants, authorization, concurrency, retries, Chicago scheduling, restart recovery, host closure and exact retention boundaries. Use `npm run test:server` for service tests with controlled time. Lifecycle browser checks cover separate host/guest sessions, preparation/guessing/reveal reconnect and refresh, confirmation cancellation and stale revisions, retained-card inspection, room and session expiry, old invitations and new-room entry at 320, 375, 390, 430, 768 and 1440px. Earlier validation also covered both local modes and full two- and six-player weeks. These are desktop browser sessions and emulated widths; physical-device and hosted validation remain later work.
 
 Nancy and Song each receive a private six-card board and make two random valid guesses when a day begins. They cannot choose their own Dream or reuse an image for both friends. Their choices stay fixed while you choose or unlock guesses. After reveal, see whether each friend recognized your Dream; the final recap includes their guessed images under **Your Dream through their eyes**. Tap those images to inspect them. These are local random fixtures, not an AI interpretation of the artwork; no friend standings are shown.
 

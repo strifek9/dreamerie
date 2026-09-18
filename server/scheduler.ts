@@ -3,6 +3,7 @@ import { readGame } from './gameState.ts'
 import { saveGame, transitionDay } from './gameTransitions.ts'
 import { chicagoMidnight, fullDayDeadline, ROOM_TIME_ZONE, SCHEDULE_POLICY } from './roomClock.ts'
 import type { Store } from './store.ts'
+import { expireRoom, retainRoomUntil } from './roomLifecycle.ts'
 
 export function setDeadline(db: Store, roomId: string, deadline: number | null) {
   if (deadline === null) db.prepare('DELETE FROM room_schedules WHERE room_id = ?').run(roomId)
@@ -25,6 +26,7 @@ export function initializeSchedules(db: Store, now: number) {
 
 /** Re-read under the write lock; retries and stale timer jobs cannot advance twice. */
 export function advanceDueRoom(db: Store, roomId: string, now: number, expectedDeadline?: number): number {
+  if (expireRoom(db, roomId, now)) return 0
   return db.transaction(() => {
     const room = db.prepare<[string], { deadline: number; phase: RoomPhase; expires_at: number | null }>(
       'SELECT s.deadline, r.phase, r.expires_at FROM room_schedules s JOIN rooms r ON r.id = s.room_id WHERE r.id = ?').get(roomId)
@@ -45,7 +47,7 @@ export function advanceDueRoom(db: Store, roomId: string, now: number, expectedD
       }
       saveGame(db, roomId, game, phase)
       transitions++
-      if (phase === 'complete') { setDeadline(db, roomId, null); break }
+      if (phase === 'complete') { setDeadline(db, roomId, null); retainRoomUntil(db, roomId, deadline); break }
       // Anchor catch-up to the old deadline, not the recovery time.
       deadline = chicagoMidnight(deadline, 1)
       setDeadline(db, roomId, deadline)

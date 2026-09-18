@@ -12,6 +12,7 @@ import { parseCommand } from '../shared/gameParsing.ts'
 import { commandRoom } from './gameCommands.ts'
 import { gameCommandSchema } from './gameSchema.ts'
 import { initializeSchedules, runDueRooms } from './scheduler.ts'
+import { initializeLifecycle, expireDueRooms } from './roomLifecycle.ts'
 
 interface ServiceOptions {
   databasePath: string
@@ -46,10 +47,15 @@ export async function createService(options: ServiceOptions) {
     const interval = options.schedulerIntervalMs ?? 15_000
     if (!Number.isInteger(interval) || interval < 1) throw new Error('Invalid scheduler interval.')
     const tick = () => {
-      try { runDueRooms(db, now(), (roomId) => { console.error(`Dreamerie could not advance ${roomId}; it will retry.`) }) }
+      try {
+        const instant = now()
+        runDueRooms(db, instant, (roomId) => { console.error(`Dreamerie could not advance ${roomId}; it will retry.`) })
+        expireDueRooms(db, instant)
+      }
       catch { console.error('Dreamerie could not check due rooms; it will retry.') }
     }
     app.addHook('onReady', async () => {
+      initializeLifecycle(db, now())
       initializeSchedules(db, now())
       tick()
       scheduler = setInterval(tick, interval)

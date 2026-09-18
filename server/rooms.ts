@@ -1,5 +1,6 @@
 import { randomBytes, randomUUID } from 'node:crypto'
 import { advanceDueRoom } from './scheduler.ts'
+import { LOBBY_LIFETIME_MS, expireRoom } from './roomLifecycle.ts'
 import type { RoomRequest } from '../shared/rooms.ts'
 import { RoomError } from './errors.ts'
 import { credentialHash } from './sessions.ts'
@@ -38,6 +39,7 @@ export function enterRoom(db: Store, sessionId: string, action: 'create' | 'join
       let room = db.prepare<[string], StoredRoom>('SELECT id, invite_code, host_id, phase, revision, expires_at FROM rooms WHERE invite_code = ?').get(code ?? '')
       if (!room) throw new RoomError(404, 'ROOM_NOT_FOUND', 'No room matches that invitation code. Check it and try again.')
       advanceDueRoom(db, room.id, now)
+      expireRoom(db, room.id, now)
       room = db.prepare<[string], StoredRoom>('SELECT id, invite_code, host_id, phase, revision, expires_at FROM rooms WHERE id = ?').get(room.id)!
       roomId = room.id
       const existing = db.prepare('SELECT 1 FROM memberships WHERE room_id = ? AND session_id = ?').get(roomId, sessionId)
@@ -65,7 +67,7 @@ export function enterRoom(db: Store, sessionId: string, action: 'create' | 'join
       let inviteCode: string
       do { inviteCode = randomBytes(5).toString('hex').toUpperCase() }
       while (db.prepare('SELECT 1 FROM rooms WHERE invite_code = ?').get(inviteCode))
-      db.prepare('INSERT INTO rooms (id, invite_code, host_id, created_at) VALUES (?, ?, ?, ?)').run(roomId, inviteCode, playerId, now)
+      db.prepare('INSERT INTO rooms (id, invite_code, host_id, created_at, expires_at) VALUES (?, ?, ?, ?, ?)').run(roomId, inviteCode, playerId, now, now + LOBBY_LIFETIME_MS)
     }
     db.prepare('INSERT INTO memberships (player_id, room_id, session_id, display_name, name_key, accent_slot) VALUES (?, ?, ?, ?, ?, ?)')
       .run(playerId, roomId, sessionId, name, key, seat)

@@ -66,6 +66,9 @@ export function parseAction(value: unknown): GameAction {
   const action = p.object(value)
   switch (action.type) {
     case 'start': return { type: 'start' }
+    case 'close':
+      if (action.confirmed !== true) throw new Error('Confirm before closing this room.')
+      return { type: 'close', confirmed: true }
     case 'save': return { type: 'save', conceptId: p.conceptId(action.conceptId), cardId: p.cardId(action.cardId), clue: p.text(action.clue) }
     case 'lock': return { type: 'lock', playerId: p.playerId(action.playerId), cardId: p.cardId(action.cardId) }
     case 'unlock': return { type: 'unlock', cardId: p.cardId(action.cardId) }

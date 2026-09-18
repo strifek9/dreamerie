@@ -9,7 +9,7 @@ export const gameCommandSchema = {
   properties: {
     requestId: { type: 'string', pattern: '^[0-9a-fA-F-]{36}$' }, expectedRevision: { type: 'integer', minimum: 1 },
     weekId: { anyOf: [identifier('week-'), { type: 'null' }] }, roundId: { anyOf: [identifier('round-'), { type: 'null' }] },
-    action: { oneOf: [action('start'), action('save', { conceptId: concept, cardId: card, clue: { type: 'string', minLength: 1, maxLength: 80 } }, ['conceptId', 'cardId', 'clue']),
+    action: { oneOf: [action('start'), action('close', { confirmed: { const: true } }, ['confirmed']), action('save', { conceptId: concept, cardId: card, clue: { type: 'string', minLength: 1, maxLength: 80 } }, ['conceptId', 'cardId', 'clue']),
       action('lock', { playerId: player, cardId: card }, ['playerId', 'cardId']), action('unlock', { cardId: card }, ['cardId']),
       ...['open-day', 'reveal', 'advance'].map((type) => action(type, { confirmMissing: missing }))] },
   },

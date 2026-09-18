@@ -39,6 +39,8 @@ Show the room's authoritative cutoff near the host controls as a date and **12:0
 
 Private rooms use actual display names and the six stable roster accents; Nancy and Song belong only to explicitly labeled solo practice. Keep readiness compact and expandable, with host progression in the header. Saving feedback follows server acceptance; uncertain saves offer a deliberate retry. Explain early closure and zero missed-day points clearly without exposing future clues or implying that disconnecting alone loses a day.
 
+Keep the host's permanent room-close action below gameplay, separate from daily reveal/progression. A focused confirmation defaults to “Keep dreaming,” supports Escape and explains that only revealed results remain for seven days; stale confirmations require review. Closed rooms retain inspectable revealed cards. Expired rooms say “This room has faded.” and offer “Gather in another room,” without stale gameplay controls. Show lobby/recap expiry compactly in Chicago time. A lost session must explain that the old seat cannot be recovered; temporary disconnection must preserve accepted choices.
+
 Keep the same six cards stationary through locks, unlocks and reveal. Results remain above the board; long clues/results may scroll inside the reserved, keyboard-accessible summary area. After reveal, label actual Dreams even when the player left that guess unanswered. Decoys remain indistinguishable until reveal. Personal recaps include inspectable cards and explicit missed-day results.
 
 ## Artwork-first UI

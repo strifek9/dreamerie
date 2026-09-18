@@ -4,7 +4,7 @@
 
 Prototype 0.1 is complete and approved. The user approved private groups across phone and desktop browsers: 2–6 players, host controls and automatic daily progression at midnight America/Chicago. Solo play and matchmaking are deferred. See [PROTOTYPE_0_2_PLAN.md](PROTOTYPE_0_2_PLAN.md) for scope, unresolved policies and separately numbered 0.2 milestones. This file remains the scope index; the linked plan is its 0.2 supplement. The exclusions and local assumptions below continue to describe Prototype 0.1, not a claim that connected play already exists.
 
-Milestone 0.2.0 has a [concrete technical design](PROTOTYPE_0_2_TECHNICAL_DESIGN.md). Shared play through 0.2.5 is approved by the user’s request to proceed. They confirmed full-calendar-day preparation/manual windows, immediate automatic reveal and next-day opening, and catch-up of every overdue day. Milestone 0.2.6 implements these policies with persisted Chicago-midnight deadlines, server-side progression, restart recovery and deadline UI. It awaits user testing. Room lifecycle and hosting remain later milestones; see the 0.2 plan for current checks and outstanding decisions.
+Milestone 0.2.0 has a [concrete technical design](PROTOTYPE_0_2_TECHNICAL_DESIGN.md). Shared play and Chicago scheduling through 0.2.6 are approved by the instruction to proceed. Milestone 0.2.7 now implements host-confirmed room closure preserving only revealed results, seven-day recap retention, 24-hour unused waiting-room expiry and clear recovery/ending screens. It awaits user testing. Hosting remains Milestone 0.2.8; see the 0.2 plan for checks and limits. Do not proceed to deployment before acceptance and authorization.
 
 ## Starting point and scope
 

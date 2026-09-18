@@ -9,6 +9,9 @@ import ScoringHelp from '../components/ScoringHelp'
 import RoomLobby from './RoomLobby'
 import RoomHistory from './RoomHistory'
 import RoomDeadline from './RoomDeadline'
+import RoomEnded from './RoomEnded'
+import RoomRetention from './RoomRetention'
+import RoomClose from './RoomClose'
 import { useRoomCommands } from './useRoomCommands'
 
 export default function RoomPlay({ room, csrf, accept, connection }: { room: RoomView; csrf: string; accept: (room: RoomView) => void; connection: string }) {
@@ -43,16 +46,17 @@ export default function RoomPlay({ room, csrf, accept, connection }: { room: Roo
     <header className="masthead">
       <div className="masthead-start"><ScoringHelp personal online playerCount={roster.length} /><p className="wordmark"><span aria-hidden="true">☾</span> Dreamerie</p></div>
       <aside className="dev-day-controls room-day-controls" aria-label="Shared Dream Week controls">
-        <span>{self?.name} · {game ? room.phase === 'complete' ? 'Week complete' : `Day ${game.day}` : 'Waiting room'}</span>
+        <span>{self?.name} · {room.phase === 'closed' ? 'Room closed' : room.phase === 'expired' ? 'Room expired' : game ? room.phase === 'complete' ? 'Week complete' : `Day ${game.day}` : 'Waiting room'}</span>
         {host && active && <button ref={advanceButton} className="quiet-button room-progress" disabled={blocked || room.members.length < 2} onClick={progress}>{label}</button>}
         {!host && active && <span>{roster.find((player) => player.id === room.hostId)?.name} is your host</span>}
       </aside>
     </header>
     <RoomDeadline room={room} />
+    <RoomRetention room={room} />
     <div className="room-sync" role="status">{connection || (commands.busy ? 'Saving your choice…' : commands.pending ? 'Your last choice needs confirmation.' : '')}</div>
     {commands.error && <p className="room-error" role="alert">{commands.error}</p>}
     {commands.pending && !commands.busy && <div className="room-retry"><button className="quiet-button" onClick={commands.retry}>Check your last choice</button></div>}
-    {!game ? <main className="introduction room-page">
+    {room.phase === 'closed' || room.phase === 'expired' ? <RoomEnded room={room} /> : !game ? <main className="introduction room-page">
       <div className="welcome-art" aria-hidden="true"><img src="/artwork/dreamerie-moonlight.jpg" alt="" width="1122" height="1402" /></div>
       <div className="room-content"><RoomLobby room={room} connection={connection} />
         {room.phase === 'lobby' && <p className="room-note">{host ? 'When your friends have joined, start the Dream Week above.' : 'Your host will start the Dream Week when you are ready.'}</p>}
@@ -88,8 +92,9 @@ export default function RoomPlay({ room, csrf, accept, connection }: { room: Roo
       {room.phase !== 'complete' && game.history.length > 0 && <details className="room-past"><summary>Earlier Dreams · your week: {game.totalScore} points</summary><RoomHistory days={game.history} roster={roster} total={game.totalScore} /></details>}
       {active && game.day < 7 && <details className="room-invite"><summary>Invite a friend</summary><p>Late joiners begin guessing on the next unopened day.</p><label htmlFor="active-invitation">Share this invitation</label><input id="active-invitation" readOnly value={invitation} onFocus={(event) => event.target.select()} /></details>}
     </>}
-    <footer className="footer"><p>Shared room · days turn at midnight, Chicago time</p></footer>
-    <dialog className="scoring-help-dialog" ref={dialog} aria-labelledby="missing-title" onClose={() => { setConfirm(undefined); advanceButton.current?.focus({ preventScroll: true }) }}>
+    {host && active && <RoomClose room={room} blocked={blocked} onClose={() => commands.act({ type: 'close', confirmed: true })} />}
+    <footer className="footer"><p>{active ? 'Shared room · days turn at midnight, Chicago time' : 'A shared Dream Week'}</p></footer>
+    {active && <dialog className="scoring-help-dialog" ref={dialog} aria-labelledby="missing-title" onClose={() => { setConfirm(undefined); advanceButton.current?.focus({ preventScroll: true }) }}>
       <h2 id="missing-title">Some Dreams are unfinished.</h2>
       <p>{confirm?.names.join(', ')}</p>
       <p>{room.phase === 'guessing' ? 'These players will receive 0 total points for this day. Their unfinished guesses will not earn points for anyone. Prepared Dreams stay on the board.'
@@ -100,6 +105,6 @@ export default function RoomPlay({ room, csrf, accept, connection }: { room: Roo
         if (confirm) commands.act(confirm.action)
         dialog.current?.close()
       }}>Continue and close this day’s choices</button>
-    </dialog>
+    </dialog>}
   </div>
 }

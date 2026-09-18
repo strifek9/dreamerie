@@ -2,9 +2,9 @@
 
 ## Status
 
-This design describes the local service through **0.2.6**, implemented and awaiting testing. Shared play through 0.2.5 is approved. The user confirmed preparation/manual full-calendar-day windows, automatic reveal and next-day opening, and full overdue-day catch-up. Room lifecycle and hosting remain later work; nothing has been provisioned or purchased.
+This design describes the local service through **0.2.7**, implemented and awaiting testing. Shared play and scheduling through 0.2.6 are approved by the instruction to proceed. Host closure, seven-day recap retention, 24-hour waiting-room expiry and recovery are now implemented. Hosting remains later work; nothing has been provisioned or purchased.
 
-The user confirmed automatic rollover at **midnight in America/Chicago** for the first playtest. Solo play is deferred. The missed-day and late-join policies are confirmed; scheduling boundaries are confirmed, while private-room lifecycle details still need decisions. [GAME_DESIGN.md](GAME_DESIGN.md) remains authoritative; open policies must not be supplied by a default in server code.
+The user confirmed automatic rollover at **midnight in America/Chicago** for the first playtest. Solo play is deferred. Missed-day, late-join, scheduling and lifecycle policies are confirmed. [GAME_DESIGN.md](GAME_DESIGN.md) remains authoritative; open policies must not be supplied by a default in server code.
 
 ## Selected implementation direction
 
@@ -153,7 +153,7 @@ Validation: 100 automated tests, frontend/server type checks and builds pass. Co
 
 That shared-play handoff did not add scheduling. The current boundary below supersedes its scheduler limitation. Room-close commands, host transfer, account recovery, expiry cleanup and deployment remain outside this milestone.
 
-## Current boundary: automatic daily progression (0.2.6)
+## Historical boundary: automatic daily progression (0.2.6)
 
 - Migration 003 adds `room_schedules`, storing the UTC deadline, `America/Chicago` timezone and policy version 1. Existing data and receipts are preserved. Startup assigns a fresh full-day window once to an active game without a schedule and increments its revision. Lobby and terminal rooms receive no schedule. Later restarts preserve the saved cutoff.
 - `server/roomClock.ts` computes Chicago calendar midnights with the runtime's IANA timezone data through `Intl.DateTimeFormat`. New preparation/manual day openings use midnight after tomorrow; automatic day openings use the next midnight. No external date dependency or fixed 24-hour offset is used. Calendar/DST tests cover 23- and 25-hour days.
@@ -165,3 +165,14 @@ That shared-play handoff did not add scheduling. The current boundary below supe
 Validation: 109 tests plus frontend/server build and type checks. The nine scheduling tests cover calendar boundaries, background-only advancement, exact-cutoff rejection, stale jobs, manual progression/retries, restart catch-up of an entire week, missing preparation, final-day joining, schema upgrade and atomic rollback/retry. Browser checks use an isolated database and injected clock, never the user's rooms: two independent sessions advance through preparation, guessing and final completion; prior results remain inspectable; deadline layout passes all six documented widths and remains Chicago-based under a Tokyo browser timezone. Physical phone and hosted unattended checks remain future work.
 
 Run the normal service with `npm run dev:server`; `npm run test:server` exercises scheduling immediately with a controlled clock. There is no test-time override in the application's public API or environment configuration. Stopping the room service pauses processing; restarting it catches up rather than extending expired windows. No external worker, hosting provision, expiry policy or host-transfer behavior is added.
+
+## Current boundary: room lifecycle and recovery (0.2.7)
+
+- Reuse `rooms.expires_at`; no schema version change or dependency. Waiting rooms get creation + 24 elapsed hours. `start` clears that expiry in the same transaction as game creation/deadline persistence. Joins, polling and accepted retries never extend it.
+- `close` is a host-only command with required `confirmed: true`, the existing exact revision/week/round guards and a request receipt. It can close a lobby, preparation, guessing or revealed room. It changes phase, clears the schedule and records now + seven elapsed days atomically. It never invokes scoring or reveal. Complete/closed/expired rooms reject new commands; matching receipts return current authorized state without extending retention. Due transitions run before command validation; a stale close cannot undo a day already due.
+- Both manual and automatic completion set retention in their transition transaction. Automatic completion uses the scheduled final deadline, so downtime does not extend recap life. Startup assigns existing terminal rooms lacking expiry one fresh seven-day window and existing lobbies creation + 24 hours; repeat startup preserves it.
+- `server/roomLifecycle.ts` purges game state, round outcomes and schedule together at expiry and changes phase/revision. Startup, the existing 15-second loop and authorized room access reconcile expiry; no clients need to be connected. Room identity, invitation, memberships/display names and command receipts remain as minimal expiry/retry records. Sessions retain their existing independent 30-day lifetime. This is logical private-data cleanup, not secure erasure of database pages/backups or full removal of all metadata.
+- Closed/complete public game views contain only the recipient's already revealed history and total, with empty preparation, no board/current reveal and no legal gameplay actions. Expired views contain no game or schedule. New joins to closed/expired rooms fail clearly; old members can see the ending. Expired rooms leave the saved-room list. A separate new room does not overwrite earlier recaps.
+- `RoomClose` keeps permanent closure separate from daily progression, with a native modal, cancel focus/Escape and revision-aware confirmation. `RoomEnded` and `RoomRetention` provide read-only recap/expiry and new-room entry. Temporary connection failures preserve accepted state and retry; definitive 401/403/404/410 responses stop retrying, hide stale gameplay and explain recovery limits. Host identity never transfers on disconnect.
+
+Validation: 117 automated tests, frontend/server type checks and builds. Two independent Edge sessions cover reconnect/refresh in preparation, guessing and reveal; host-only UI, confirmation focus/Escape/staleness, closure visible to both players, retained-card inspection, both expiry paths, invalid old invites, new-room entry and lost cookies. Six viewport widths pass without horizontal overflow; screenshots at phone and desktop sizes were reviewed. Tests inject time only through isolated service fixtures, not the application's public API. Physical devices, HTTPS hosting, deployed background operation and backup/restore remain 0.2.8 work. Stop for user approval.

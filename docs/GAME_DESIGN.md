@@ -2,7 +2,7 @@
 
 This is the primary gameplay source of truth. **Confirmed rules** express the supplied product vision. **Prototype assumptions** are limited local demonstration choices, not settled production rules. **Unresolved questions** require a later decision. **Future ideas** are outside Prototype 0.1.
 
-**Prototype 0.2:** Shared personal-clue play through 0.2.5 is approved by the user’s instruction to proceed. Milestone 0.2.6 implements the approved automatic Chicago-midnight timing policies and awaits user testing. Private rooms use actual players, persistent browser seats, host controls, automatic rollover and inspectable results. Room lifecycle and hosting remain later work. [PROTOTYPE_0_2_PLAN.md](PROTOTYPE_0_2_PLAN.md) records scope and remaining decisions. The separate local demo still uses Charlie, Nancy and Song; its assumptions below remain scoped to Prototype 0.1.
+**Prototype 0.2:** Shared personal-clue play and scheduling through 0.2.6 are approved by the instruction to proceed. Milestone 0.2.7 implements the approved room closure, retention and recovery policies and awaits user testing. Private rooms use actual players, persistent browser seats, host controls, automatic rollover and inspectable results. Hosting remains later work. [PROTOTYPE_0_2_PLAN.md](PROTOTYPE_0_2_PLAN.md) records scope and remaining decisions. The separate local demo still uses Charlie, Nancy and Song; its assumptions below remain scoped to Prototype 0.1.
 
 - **2–6 players total:** Two is the minimum; the previously approved maximum of six remains. This is a prototype limit, not a permanent production cap.
 - **Solo entry deferred:** The user explicitly postponed solo play. Do not implement a lobby or matchmaking in Prototype 0.2. Their idea of random solo opponents with only the player’s correct-guess points carrying into a weekly total remains a future thought, not an approved scoring change.
@@ -16,6 +16,9 @@ This is the primary gameplay source of truth. **Confirmed rules** express the su
 - **Two-player scoring consequence:** With the existing everyone-correct exception, the author receives no recognition points when their sole opponent guesses correctly. Therefore recognition is always zero in a fully participating two-player game, with up to one guessing point per player per day. No special scoring exception has been authorized.
 - **Late joining, approved policy:** Give a new player six cards and let them prepare only unopened Dreams. A player joining during preparation can participate on Day 2; one joining after a guessing day opens begins guessing the next day. Joining never changes existing boards, targets or scores, and grants no earlier results or points. No new seats are accepted once the last guessing day has opened. Existing members can reconnect. The six-player capacity remains in force.
 - **Returning after missing preparation:** Prepare remaining unopened Dreams with the same selection/replacement rule. Never fill in or edit an already-opened day retroactively. Saved pairs remain immutable after replacement, as in the accepted local flow. Scores and missed status remain in each player's own recap; no shared ranking or winner is added.
+- **Host identity:** Keep the original host when they disconnect or stop playing; automatic progression continues while the service runs. No host transfer or seat removal is included.
+- **Room closure:** The host may explicitly confirm closing a waiting or active room for everyone. Keep only already revealed results and points; end an unfinished day without revealing it or awarding new points. A closed room cannot reopen, accept new members or accept gameplay changes. A due day is resolved before processing a close request; a stale confirmation must be reviewed again.
+- **Retention:** A waiting room expires 24 elapsed hours after creation unless started; joining/polling never extends it. Starting removes lobby expiry and starts the normal day schedule. Completed or explicitly closed rooms retain each player's permitted recap for seven elapsed days from completion/closure. Scheduled completion uses its scheduled end, not the time the server catches up. After expiry, remove private game data and results and reject gameplay/new joins. Minimal room, membership and retry records remain to explain old links and prevent duplicate room creation; this is not permanent Dream History or complete database deletion. Existing ended rooms without a recorded end receive one fresh seven-day window on upgrade; older waiting rooms use creation plus 24 hours. Starting another room never erases an unexpired recap.
 
 ## Intent
 
@@ -126,7 +129,7 @@ These assumptions must preserve six-card hands, unique player allocations, hidde
 - How weekly concepts are selected and whether they repeat.
 - Exact decoy selection/generation, exposure, reuse, and exhaustion rules.
 - How late joiners affect production standings/fairness beyond the approved 0.2 next-day eligibility.
-- Players voluntarily leaving a group, host transfer and room closure. Missing selections and skipped guesses in 0.2 follow the approved policy above.
+- Players voluntarily leaving a group, host transfer and production room lifecycle beyond the approved 0.2 policies above.
 - Whether prepared Dreams can be revised and whether players choose setup concept order.
 - Artwork recurrence across weeks and the precise meaning of a fresh deal.
 - Whether Dream History becomes permanent and who can see it.
