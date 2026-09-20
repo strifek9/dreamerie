@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-002.jpg",
+  "generated": "/artwork/differences/card-002-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Repaint the teal watering can coral red, keeping all gold plant ornaments, its spout and the water.\n2. Remove the uppermost large yellow lemon at x89% y8%, replacing only its silhouette with the matching dark leaves behind.\n3. Change the two closed smiling cat eyes at x78% y64% into small open green cat eyes, preserving its head, nose and smile.\n4. Change the lowest brown button on the child's coat at x28% y62% to a matching small gold button.\n5. Remove only the top upright gold leaf of the central plant ornament on the terracotta cloud pot at x57% y76%, leaving its stem and all other leaves.",
+  "review": "Visually inspected against the original. Only the five declared regions are composited. Labels describe visible output; pot sprig on card-002 changed leaf count instead of just the tip leaf.",
+  "edits": [
+    {
+      "id": "watering-can",
+      "difficulty": "Easy",
+      "label": "The watering can turned coral red.",
+      "box": {
+        "left": 0.338,
+        "top": 0.472,
+        "width": 0.244,
+        "height": 0.134
+      }
+    },
+    {
+      "id": "lemon",
+      "difficulty": "Medium",
+      "label": "The uppermost large lemon disappeared.",
+      "box": {
+        "left": 0.851,
+        "top": 0.044,
+        "width": 0.084,
+        "height": 0.075
+      }
+    },
+    {
+      "id": "cat-eyes",
+      "difficulty": "Hard",
+      "label": "The cat opened its eyes.",
+      "box": {
+        "left": 0.736,
+        "top": 0.624,
+        "width": 0.087,
+        "height": 0.028
+      }
+    },
+    {
+      "id": "button",
+      "difficulty": "Very hard",
+      "label": "The lowest coat button turned gold.",
+      "box": {
+        "left": 0.266,
+        "top": 0.605,
+        "width": 0.037,
+        "height": 0.03
+      }
+    },
+    {
+      "id": "pot-leaf",
+      "difficulty": "Dreamlike",
+      "label": "The pot’s central sprig has fewer leaves.",
+      "box": {
+        "left": 0.51,
+        "top": 0.748,
+        "width": 0.108,
+        "height": 0.079
+      }
+    }
+  ]
+}

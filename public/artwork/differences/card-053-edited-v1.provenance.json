@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-053.jpg",
+  "generated": "/artwork/differences/card-053-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The little dragon opened its eye. Target near x50%, y35%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The gold crescent in the child's hair became a star. Target near x28%, y16%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The dragon gained a small red bow at its neck. Target near x59%, y41%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The purple quilt's little window lost its horizontal bar. Target near x65%, y52%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The smallest pink star in the hair disappeared. Target near x12%, y15%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "eye",
+      "difficulty": "Easy",
+      "label": "The little dragon opened its eye.",
+      "box": {
+        "left": 0.482,
+        "top": 0.336,
+        "width": 0.045,
+        "height": 0.034
+      }
+    },
+    {
+      "id": "moon",
+      "difficulty": "Medium",
+      "label": "The gold crescent in the child's hair became a star.",
+      "box": {
+        "left": 0.255,
+        "top": 0.132,
+        "width": 0.057,
+        "height": 0.056
+      }
+    },
+    {
+      "id": "ribbon",
+      "difficulty": "Hard",
+      "label": "The dragon gained a small red bow at its neck.",
+      "box": {
+        "left": 0.524,
+        "top": 0.356,
+        "width": 0.081,
+        "height": 0.062
+      }
+    },
+    {
+      "id": "window",
+      "difficulty": "Very hard",
+      "label": "The purple quilt's little window lost its horizontal bar.",
+      "box": {
+        "left": 0.6,
+        "top": 0.502,
+        "width": 0.09,
+        "height": 0.027
+      }
+    },
+    {
+      "id": "star",
+      "difficulty": "Dreamlike",
+      "label": "The smallest pink star in the hair disappeared.",
+      "box": {
+        "left": 0.106,
+        "top": 0.138,
+        "width": 0.036,
+        "height": 0.03
+      }
+    }
+  ]
+}

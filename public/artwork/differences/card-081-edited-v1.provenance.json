@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-081.jpg",
+  "generated": "/artwork/differences/card-081-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The star earring became a crescent. Target near x15%, y23%. Keep all other pixels/objects untouched.\n2. Recolor only the nearest orange fish-dancer's flowing dress ivory, keeping her orange head and partner untouched. Target near x69%, y70%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The round lamp in the left arch became a diamond lantern. Target near x43%, y33%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The lone fish near the top center disappeared. Target near x48%, y4%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The nearest blue dancer closed her eye. Target near x80%, y63%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "earring",
+      "difficulty": "Easy",
+      "label": "The star earring became a crescent.",
+      "box": {
+        "left": 0.115,
+        "top": 0.187,
+        "width": 0.071,
+        "height": 0.077
+      }
+    },
+    {
+      "id": "dress",
+      "difficulty": "Medium",
+      "label": "The nearest orange dancer's dress turned ivory.",
+      "box": {
+        "left": 0.598,
+        "top": 0.627,
+        "width": 0.173,
+        "height": 0.126
+      }
+    },
+    {
+      "id": "lamp",
+      "difficulty": "Hard",
+      "label": "The round lamp in the left arch became a diamond lantern.",
+      "box": {
+        "left": 0.406,
+        "top": 0.315,
+        "width": 0.039,
+        "height": 0.037
+      }
+    },
+    {
+      "id": "fish",
+      "difficulty": "Very hard",
+      "label": "The lone fish near the top center disappeared.",
+      "box": {
+        "left": 0.433,
+        "top": 0.025,
+        "width": 0.089,
+        "height": 0.036
+      }
+    },
+    {
+      "id": "eye",
+      "difficulty": "Dreamlike",
+      "label": "The nearest blue dancer closed her eye.",
+      "box": {
+        "left": 0.787,
+        "top": 0.62,
+        "width": 0.017,
+        "height": 0.014
+      }
+    }
+  ]
+}

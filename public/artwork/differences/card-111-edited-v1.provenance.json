@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-111.jpg",
+  "generated": "/artwork/differences/card-111-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The tent's red stripes turned forest green. Target near x69%, y18%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The lower white gull disappeared. Target near x76%, y56%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The ringmaster's hat became a pointed magician's hat. Target near x69%, y24%. Keep all other pixels/objects untouched.\n4. Give only the free end of the highest red ribbon flag two small swallowtail points instead of a single point. Target near x96%, y13%. Keep all other pixels/objects untouched.\n5. Paint one small dark natural eye-shaped feather marking in the pale green tip, matching the brushwork. No graphic outline. Target near x90%, y31%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "tent",
+      "difficulty": "Easy",
+      "label": "The tent's red stripes turned forest green.",
+      "box": {
+        "left": 0.521,
+        "top": 0.068,
+        "width": 0.334,
+        "height": 0.221
+      }
+    },
+    {
+      "id": "bird",
+      "difficulty": "Medium",
+      "label": "The lower white gull disappeared.",
+      "box": {
+        "left": 0.71,
+        "top": 0.539,
+        "width": 0.1,
+        "height": 0.046
+      }
+    },
+    {
+      "id": "hat",
+      "difficulty": "Hard",
+      "label": "The ringmaster's hat became a pointed magician's hat.",
+      "box": {
+        "left": 0.68,
+        "top": 0.232,
+        "width": 0.021,
+        "height": 0.017
+      }
+    },
+    {
+      "id": "flag",
+      "difficulty": "Very hard",
+      "label": "The highest red flag's tip split in two.",
+      "box": {
+        "left": 0.871,
+        "top": 0.08,
+        "width": 0.11,
+        "height": 0.076
+      }
+    },
+    {
+      "id": "feather",
+      "difficulty": "Dreamlike",
+      "label": "The feather gained a small eye-shaped marking.",
+      "box": {
+        "left": 0.894,
+        "top": 0.304,
+        "width": 0.04,
+        "height": 0.029
+      }
+    }
+  ]
+}

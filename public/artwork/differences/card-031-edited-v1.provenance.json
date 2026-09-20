@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-031.jpg",
+  "generated": "/artwork/differences/card-031-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The topmost gold fish turned coral pink. Target near x44%, y34%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The girl’s red dress turned blue, keeping its pink dots. Target near x63%, y15%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The small fish beside the middle step disappeared. Target near x51%, y50%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The little round sun at the far right became a crescent. Target near x96%, y56%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The biggest lower fish closed its eye. Target near x57%, y75%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "fish",
+      "difficulty": "Easy",
+      "label": "The topmost gold fish turned coral pink.",
+      "box": {
+        "left": 0.363,
+        "top": 0.322,
+        "width": 0.147,
+        "height": 0.045
+      }
+    },
+    {
+      "id": "dress",
+      "difficulty": "Medium",
+      "label": "The girl’s red dress turned blue, keeping its pink dots.",
+      "box": {
+        "left": 0.573,
+        "top": 0.097,
+        "width": 0.111,
+        "height": 0.111
+      }
+    },
+    {
+      "id": "small-fish",
+      "difficulty": "Hard",
+      "label": "The small fish beside the middle step disappeared.",
+      "box": {
+        "left": 0.468,
+        "top": 0.482,
+        "width": 0.081,
+        "height": 0.029
+      }
+    },
+    {
+      "id": "sun",
+      "difficulty": "Very hard",
+      "label": "The little round sun at the far right became a crescent.",
+      "box": {
+        "left": 0.932,
+        "top": 0.535,
+        "width": 0.064,
+        "height": 0.049
+      }
+    },
+    {
+      "id": "eye",
+      "difficulty": "Dreamlike",
+      "label": "The biggest lower fish closed its eye.",
+      "box": {
+        "left": 0.552,
+        "top": 0.733,
+        "width": 0.026,
+        "height": 0.025
+      }
+    }
+  ]
+}

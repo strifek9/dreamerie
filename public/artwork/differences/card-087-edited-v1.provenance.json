@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-087.jpg",
+  "generated": "/artwork/differences/card-087-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The blue tree opened its eye. Target near x41%, y25%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The candle's white wax turned red. Target near x59%, y59%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The red folded paper at the left disappeared. Target near x19%, y62%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The blue teardrop on the green tree became a golden leaf. Target near x94%, y54%. Keep all other pixels/objects untouched.\n5. Add a narrow ivory stitched edging only along the lowest trailing hem of the traveler's red coat, no new jewelry. Target near x47%, y73%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "eye",
+      "difficulty": "Easy",
+      "label": "The blue tree opened its eye.",
+      "box": {
+        "left": 0.335,
+        "top": 0.174,
+        "width": 0.159,
+        "height": 0.147
+      }
+    },
+    {
+      "id": "candle",
+      "difficulty": "Medium",
+      "label": "The candle's white wax turned red.",
+      "box": {
+        "left": 0.581,
+        "top": 0.572,
+        "width": 0.023,
+        "height": 0.037
+      }
+    },
+    {
+      "id": "paper",
+      "difficulty": "Hard",
+      "label": "The red folded paper at the left disappeared.",
+      "box": {
+        "left": 0.139,
+        "top": 0.587,
+        "width": 0.111,
+        "height": 0.062
+      }
+    },
+    {
+      "id": "tear",
+      "difficulty": "Very hard",
+      "label": "The blue teardrop on the green tree became a golden leaf.",
+      "box": {
+        "left": 0.916,
+        "top": 0.494,
+        "width": 0.043,
+        "height": 0.062
+      }
+    },
+    {
+      "id": "hem",
+      "difficulty": "Dreamlike",
+      "label": "The traveler's coat gained a narrow ivory hem.",
+      "box": {
+        "left": 0.362,
+        "top": 0.709,
+        "width": 0.193,
+        "height": 0.034
+      }
+    }
+  ]
+}

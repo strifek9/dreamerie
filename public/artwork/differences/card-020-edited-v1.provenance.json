@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-020.jpg",
+  "generated": "/artwork/differences/card-020-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The bear’s gold waistcoat turned muted teal. Target near x28%, y42%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The nearest swimming fish turned gold. Target near x46%, y87%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The cloud closed its right eye. Target near x73%, y51%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The teapot’s blue sprig decoration became a blue star. Target near x54%, y48%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The empty little saucer on the table disappeared. Target near x67%, y56%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "vest",
+      "difficulty": "Easy",
+      "label": "The bear’s gold waistcoat turned muted teal.",
+      "box": {
+        "left": 0.122,
+        "top": 0.272,
+        "width": 0.308,
+        "height": 0.289
+      }
+    },
+    {
+      "id": "fish",
+      "difficulty": "Medium",
+      "label": "The nearest swimming fish turned gold.",
+      "box": {
+        "left": 0.398,
+        "top": 0.851,
+        "width": 0.121,
+        "height": 0.042
+      }
+    },
+    {
+      "id": "cloud-eye",
+      "difficulty": "Hard",
+      "label": "The cloud closed its right eye.",
+      "box": {
+        "left": 0.72,
+        "top": 0.501,
+        "width": 0.015,
+        "height": 0.02
+      }
+    },
+    {
+      "id": "teapot",
+      "difficulty": "Very hard",
+      "label": "The teapot’s blue sprig decoration became a blue star.",
+      "box": {
+        "left": 0.512,
+        "top": 0.45,
+        "width": 0.06,
+        "height": 0.05
+      }
+    },
+    {
+      "id": "saucer",
+      "difficulty": "Dreamlike",
+      "label": "The empty little saucer on the table disappeared.",
+      "box": {
+        "left": 0.639,
+        "top": 0.547,
+        "width": 0.07,
+        "height": 0.022
+      }
+    }
+  ]
+}

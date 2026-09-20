@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-063.jpg",
+  "generated": "/artwork/differences/card-063-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The kite-flyer's red dress turned ivory. Target near x37%, y43%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The upper shoe gained a white sole. Target near x24%, y40%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The tallest village roof turned blue. Target near x86%, y56%. Keep all other pixels/objects untouched.\n4. Edit only this object so: One round red hill motif became a diamond. Target near x91%, y83%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The tiny white paper shard beside the kite disappeared. Target near x76%, y37%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "dress",
+      "difficulty": "Easy",
+      "label": "The kite-flyer's red dress turned ivory.",
+      "box": {
+        "left": 0.28,
+        "top": 0.372,
+        "width": 0.175,
+        "height": 0.118
+      }
+    },
+    {
+      "id": "shoe",
+      "difficulty": "Medium",
+      "label": "The upper shoe gained a white sole.",
+      "box": {
+        "left": 0.217,
+        "top": 0.385,
+        "width": 0.055,
+        "height": 0.029
+      }
+    },
+    {
+      "id": "roof",
+      "difficulty": "Hard",
+      "label": "The tallest village roof turned blue.",
+      "box": {
+        "left": 0.842,
+        "top": 0.552,
+        "width": 0.033,
+        "height": 0.019
+      }
+    },
+    {
+      "id": "pattern",
+      "difficulty": "Very hard",
+      "label": "One round red hill motif became a diamond.",
+      "box": {
+        "left": 0.874,
+        "top": 0.807,
+        "width": 0.063,
+        "height": 0.054
+      }
+    },
+    {
+      "id": "paper",
+      "difficulty": "Dreamlike",
+      "label": "The tiny white paper shard beside the kite disappeared.",
+      "box": {
+        "left": 0.742,
+        "top": 0.353,
+        "width": 0.044,
+        "height": 0.025
+      }
+    }
+  ]
+}

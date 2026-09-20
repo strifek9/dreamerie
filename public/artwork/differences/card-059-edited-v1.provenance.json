@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-059.jpg",
+  "generated": "/artwork/differences/card-059-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The little red sail turned gold. Target near x81%, y78%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The giant fish closed its eye. Target near x79%, y39%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The round moon became a crescent. Target near x82%, y10%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The lowest white bird disappeared. Target near x92%, y31%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The bell tower lost its left lit window. Target near x46%, y46%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "sail",
+      "difficulty": "Easy",
+      "label": "The little red sail turned gold.",
+      "box": {
+        "left": 0.781,
+        "top": 0.74,
+        "width": 0.06,
+        "height": 0.072
+      }
+    },
+    {
+      "id": "eye",
+      "difficulty": "Medium",
+      "label": "The giant fish closed its eye.",
+      "box": {
+        "left": 0.743,
+        "top": 0.357,
+        "width": 0.086,
+        "height": 0.067
+      }
+    },
+    {
+      "id": "moon",
+      "difficulty": "Hard",
+      "label": "The round moon became a crescent.",
+      "box": {
+        "left": 0.727,
+        "top": 0.024,
+        "width": 0.187,
+        "height": 0.151
+      }
+    },
+    {
+      "id": "bird",
+      "difficulty": "Very hard",
+      "label": "The lowest white bird disappeared.",
+      "box": {
+        "left": 0.897,
+        "top": 0.301,
+        "width": 0.045,
+        "height": 0.018
+      }
+    },
+    {
+      "id": "window",
+      "difficulty": "Dreamlike",
+      "label": "The bell tower lost its left lit window.",
+      "box": {
+        "left": 0.454,
+        "top": 0.449,
+        "width": 0.012,
+        "height": 0.022
+      }
+    }
+  ]
+}

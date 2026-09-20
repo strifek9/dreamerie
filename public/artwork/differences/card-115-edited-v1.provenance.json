@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-115.jpg",
+  "generated": "/artwork/differences/card-115-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The sail's red stripes turned blue. Target near x40%, y31%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The crescent on the giant palm became a full moon. Target near x56%, y60%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The white dog gained one black round body spot. Target near x49%, y43%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The smallest white bird beside the mast disappeared. Target near x23%, y30%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The lower-right blue tower lost its right-hand pink window. Target near x96%, y76%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "sail",
+      "difficulty": "Easy",
+      "label": "The sail's red stripes turned blue.",
+      "box": {
+        "left": 0.322,
+        "top": 0.168,
+        "width": 0.155,
+        "height": 0.293
+      }
+    },
+    {
+      "id": "moon",
+      "difficulty": "Medium",
+      "label": "The crescent on the giant palm became a full moon.",
+      "box": {
+        "left": 0.505,
+        "top": 0.553,
+        "width": 0.102,
+        "height": 0.086
+      }
+    },
+    {
+      "id": "dog",
+      "difficulty": "Hard",
+      "label": "The white dog gained one black round body spot.",
+      "box": {
+        "left": 0.482,
+        "top": 0.422,
+        "width": 0.023,
+        "height": 0.02
+      }
+    },
+    {
+      "id": "bird",
+      "difficulty": "Very hard",
+      "label": "The smallest white bird beside the mast disappeared.",
+      "box": {
+        "left": 0.197,
+        "top": 0.281,
+        "width": 0.068,
+        "height": 0.036
+      }
+    },
+    {
+      "id": "window",
+      "difficulty": "Dreamlike",
+      "label": "The lower-right blue tower lost its right-hand pink window.",
+      "box": {
+        "left": 0.954,
+        "top": 0.749,
+        "width": 0.014,
+        "height": 0.016
+      }
+    }
+  ]
+}

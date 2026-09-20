@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-110.jpg",
+  "generated": "/artwork/differences/card-110-edited-v2.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\nIMPORTANT: preserve the purple miniature mountain sitting INSIDE the cart exactly, and preserve every cart wheel/spoke except the one named. Do not empty the cart or alter its contents.\n1. Repaint only the cart's green plank box dusty rose, preserving all wooden grain, wheels and structure. Target center x73%, y70%.\n2. The rabbit closed its eye. Target center x21%, y48%.\n3. The large lower-left coral flower turned ivory. Target center x11%, y81%.\n4. The floating island's waterfall dried up. Target center x60%, y19%.\n5. The small right wheel lost its top vertical spoke. Target center x91%, y75%.\nCorrection: Use case: precise-object-edit. Image 1 is the EDIT TARGET. ONE correction only: remove the TOP VERTICAL SPOKE in the small far-right cart wheel. This is the short thin wooden radial bar between the axle at x91.5%,y78% and the top rim at x91%,y73%. Paint the previously occluded rose cart plank behind the missing spoke. Keep the wheel rim, axle, all other spokes, purple mountain inside the cart, and everything else precisely unchanged. No blur, labels, markers, reframing or extra edits.\nFinal correction: Use case: precise-object-edit. Image 1 edit target. ONE tiny correction: replace the round central hub of the SMALL FAR-RIGHT WHEEL (x91.5%, y78%) with a clearly SQUARE wooden axle cap. Its square silhouette should fit the wooden cart's rustic style. Keep all spokes, both wheel rims, the mountain cargo and every other object, position, color and brushstroke unchanged. No text, highlight or reframing.",
+  "review": "Corrected incidental loss of mountain cargo in v1. The current pair keeps the mountain, uses a square small-wheel hub, and composites only the five declared regions.",
+  "edits": [
+    {
+      "id": "cart",
+      "difficulty": "Easy",
+      "label": "The wooden cart turned dusty rose.",
+      "box": {
+        "left": 0.486,
+        "top": 0.608,
+        "width": 0.483,
+        "height": 0.183
+      }
+    },
+    {
+      "id": "eye",
+      "difficulty": "Medium",
+      "label": "The rabbit closed its eye.",
+      "box": {
+        "left": 0.195,
+        "top": 0.467,
+        "width": 0.039,
+        "height": 0.026
+      }
+    },
+    {
+      "id": "flower",
+      "difficulty": "Hard",
+      "label": "The large lower-left coral flower turned ivory.",
+      "box": {
+        "left": 0.055,
+        "top": 0.766,
+        "width": 0.11,
+        "height": 0.084
+      }
+    },
+    {
+      "id": "waterfall",
+      "difficulty": "Very hard",
+      "label": "The floating island's waterfall dried up.",
+      "box": {
+        "left": 0.567,
+        "top": 0.113,
+        "width": 0.064,
+        "height": 0.155
+      }
+    },
+    {
+      "id": "hub",
+      "difficulty": "Dreamlike",
+      "label": "The small right wheel's round hub became square.",
+      "box": {
+        "left": 0.9,
+        "top": 0.765,
+        "width": 0.034,
+        "height": 0.034
+      }
+    }
+  ]
+}

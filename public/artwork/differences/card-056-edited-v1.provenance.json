@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-056.jpg",
+  "generated": "/artwork/differences/card-056-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The painted round moon became a crescent. Target near x75%, y30%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The dark paint can turned burgundy. Target near x57%, y77%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The floating ginkgo leaf left of the fox disappeared. Target near x33%, y59%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The fox's paintbrush tip turned gold. Target near x65%, y39%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The fox closed its eye. Target near x52%, y42%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "moon",
+      "difficulty": "Easy",
+      "label": "The painted round moon became a crescent.",
+      "box": {
+        "left": 0.727,
+        "top": 0.273,
+        "width": 0.05,
+        "height": 0.044
+      }
+    },
+    {
+      "id": "can",
+      "difficulty": "Medium",
+      "label": "The dark paint can turned burgundy.",
+      "box": {
+        "left": 0.522,
+        "top": 0.724,
+        "width": 0.092,
+        "height": 0.084
+      }
+    },
+    {
+      "id": "leaf",
+      "difficulty": "Hard",
+      "label": "The floating ginkgo leaf left of the fox disappeared.",
+      "box": {
+        "left": 0.302,
+        "top": 0.567,
+        "width": 0.057,
+        "height": 0.036
+      }
+    },
+    {
+      "id": "brush",
+      "difficulty": "Very hard",
+      "label": "The fox's paintbrush tip turned gold.",
+      "box": {
+        "left": 0.635,
+        "top": 0.375,
+        "width": 0.025,
+        "height": 0.02
+      }
+    },
+    {
+      "id": "eye",
+      "difficulty": "Dreamlike",
+      "label": "The fox closed its eye.",
+      "box": {
+        "left": 0.504,
+        "top": 0.409,
+        "width": 0.025,
+        "height": 0.019
+      }
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-054.jpg",
+  "generated": "/artwork/differences/card-054-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The red thread spool turned blue. Target near x17%, y20%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The engine's headlight turned pale blue. Target near x68%, y55%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The front carriage lost its rightmost lit window. Target near x46%, y52%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The sewing machine lost its small lower gold sprig. Target near x12%, y45%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The little front steam dome turned gold. Target near x62%, y51%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "spool",
+      "difficulty": "Easy",
+      "label": "The red thread spool turned blue.",
+      "box": {
+        "left": 0.14,
+        "top": 0.159,
+        "width": 0.069,
+        "height": 0.075
+      }
+    },
+    {
+      "id": "light",
+      "difficulty": "Medium",
+      "label": "The engine's headlight turned pale blue.",
+      "box": {
+        "left": 0.671,
+        "top": 0.539,
+        "width": 0.026,
+        "height": 0.03
+      }
+    },
+    {
+      "id": "window",
+      "difficulty": "Hard",
+      "label": "The front carriage lost its rightmost lit window.",
+      "box": {
+        "left": 0.455,
+        "top": 0.504,
+        "width": 0.015,
+        "height": 0.026
+      }
+    },
+    {
+      "id": "sprig",
+      "difficulty": "Very hard",
+      "label": "The sewing machine lost its small lower gold sprig.",
+      "box": {
+        "left": 0.091,
+        "top": 0.428,
+        "width": 0.052,
+        "height": 0.046
+      }
+    },
+    {
+      "id": "dome",
+      "difficulty": "Dreamlike",
+      "label": "The rear steam dome turned gold.",
+      "box": {
+        "left": 0.571,
+        "top": 0.479,
+        "width": 0.033,
+        "height": 0.04
+      }
+    }
+  ]
+}

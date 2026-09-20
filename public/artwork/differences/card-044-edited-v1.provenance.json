@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-044.jpg",
+  "generated": "/artwork/differences/card-044-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The moon in the open drawer became a star. Target near x77%, y49%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The girl's dark coat turned burgundy. Target near x24%, y74%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The hanging drawer tassel turned gold. Target near x77%, y39%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The little cat gained a white tail tip. Target near x18%, y33%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The butterfly drawer ornament lost its right wing. Target near x36%, y37%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "moon",
+      "difficulty": "Easy",
+      "label": "The moon in the open drawer became a star.",
+      "box": {
+        "left": 0.751,
+        "top": 0.467,
+        "width": 0.045,
+        "height": 0.04
+      }
+    },
+    {
+      "id": "coat",
+      "difficulty": "Medium",
+      "label": "The girl's dark coat turned burgundy.",
+      "box": {
+        "left": 0.187,
+        "top": 0.691,
+        "width": 0.106,
+        "height": 0.105
+      }
+    },
+    {
+      "id": "tassel",
+      "difficulty": "Hard",
+      "label": "The hanging drawer tassel turned gold.",
+      "box": {
+        "left": 0.754,
+        "top": 0.36,
+        "width": 0.029,
+        "height": 0.058
+      }
+    },
+    {
+      "id": "cat",
+      "difficulty": "Very hard",
+      "label": "The little cat gained a white tail tip.",
+      "box": {
+        "left": 0.17,
+        "top": 0.318,
+        "width": 0.024,
+        "height": 0.017
+      }
+    },
+    {
+      "id": "butterfly",
+      "difficulty": "Dreamlike",
+      "label": "The butterfly drawer ornament lost its right wing.",
+      "box": {
+        "left": 0.338,
+        "top": 0.348,
+        "width": 0.038,
+        "height": 0.039
+      }
+    }
+  ]
+}

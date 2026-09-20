@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-112.jpg",
+  "generated": "/artwork/differences/card-112-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The chair's red scarf turned ochre. Target near x22%, y75%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The crescent through the left arch became a full moon. Target near x14%, y41%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The small balloon just left of the central tower disappeared. Target near x47%, y23%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The largest loose leaf on the floor turned blue. Target near x68%, y88%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The rightmost lit window in the little bridge house went dark. Target near x71%, y49%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "scarf",
+      "difficulty": "Easy",
+      "label": "The chair's red scarf turned ochre.",
+      "box": {
+        "left": 0.087,
+        "top": 0.576,
+        "width": 0.265,
+        "height": 0.339
+      }
+    },
+    {
+      "id": "moon",
+      "difficulty": "Medium",
+      "label": "The crescent through the left arch became a full moon.",
+      "box": {
+        "left": 0.092,
+        "top": 0.377,
+        "width": 0.086,
+        "height": 0.071
+      }
+    },
+    {
+      "id": "balloon",
+      "difficulty": "Hard",
+      "label": "The small balloon just left of the central tower disappeared.",
+      "box": {
+        "left": 0.451,
+        "top": 0.193,
+        "width": 0.047,
+        "height": 0.068
+      }
+    },
+    {
+      "id": "leaf",
+      "difficulty": "Very hard",
+      "label": "The largest loose leaf on the floor turned blue.",
+      "box": {
+        "left": 0.623,
+        "top": 0.872,
+        "width": 0.109,
+        "height": 0.028
+      }
+    },
+    {
+      "id": "window",
+      "difficulty": "Dreamlike",
+      "label": "The rightmost lit window in the little bridge house went dark.",
+      "box": {
+        "left": 0.703,
+        "top": 0.478,
+        "width": 0.011,
+        "height": 0.02
+      }
+    }
+  ]
+}

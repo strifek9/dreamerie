@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-011.jpg",
+  "generated": "/artwork/differences/card-011-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The white paper boat turned coral pink. Target near x86%, y80%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The theater's crescent became a star. Target near x48%, y11%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The deer closed its eye. Target near x43%, y49%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The hanging star ornament disappeared. Target near x83%, y26%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The single petal to the right of the deer’s face disappeared. Target near x63%, y58%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "boat",
+      "difficulty": "Easy",
+      "label": "The white paper boat turned coral pink.",
+      "box": {
+        "left": 0.801,
+        "top": 0.774,
+        "width": 0.119,
+        "height": 0.048
+      }
+    },
+    {
+      "id": "roof-moon",
+      "difficulty": "Medium",
+      "label": "The theater's crescent became a star.",
+      "box": {
+        "left": 0.463,
+        "top": 0.099,
+        "width": 0.035,
+        "height": 0.031
+      }
+    },
+    {
+      "id": "eye",
+      "difficulty": "Hard",
+      "label": "The deer closed its eye.",
+      "box": {
+        "left": 0.41,
+        "top": 0.466,
+        "width": 0.047,
+        "height": 0.039
+      }
+    },
+    {
+      "id": "star",
+      "difficulty": "Very hard",
+      "label": "The hanging star ornament disappeared.",
+      "box": {
+        "left": 0.795,
+        "top": 0.231,
+        "width": 0.067,
+        "height": 0.065
+      }
+    },
+    {
+      "id": "petal",
+      "difficulty": "Dreamlike",
+      "label": "The single petal to the right of the deer’s face disappeared.",
+      "box": {
+        "left": 0.602,
+        "top": 0.556,
+        "width": 0.05,
+        "height": 0.044
+      }
+    }
+  ]
+}

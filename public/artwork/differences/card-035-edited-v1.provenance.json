@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-035.jpg",
+  "generated": "/artwork/differences/card-035-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The large fish at the right turned silver. Target near x89%, y55%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The left chair finial turned gold. Target near x22%, y18%. Keep all other pixels/objects untouched.\n3. Edit only this object so: One central backrest spindle disappeared. Target near x31%, y34%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The small fish above the scarf disappeared. Target near x48%, y31%. Keep all other pixels/objects untouched.\n5. Edit only this object so: A tiny gold crescent appeared at the scarf's tip. Target near x69%, y59%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "fish",
+      "difficulty": "Easy",
+      "label": "The large fish at the right turned silver.",
+      "box": {
+        "left": 0.798,
+        "top": 0.507,
+        "width": 0.179,
+        "height": 0.087
+      }
+    },
+    {
+      "id": "finial",
+      "difficulty": "Medium",
+      "label": "The left chair finial turned gold.",
+      "box": {
+        "left": 0.205,
+        "top": 0.163,
+        "width": 0.034,
+        "height": 0.036
+      }
+    },
+    {
+      "id": "spindle",
+      "difficulty": "Hard",
+      "label": "One central backrest spindle disappeared.",
+      "box": {
+        "left": 0.311,
+        "top": 0.287,
+        "width": 0.043,
+        "height": 0.119
+      }
+    },
+    {
+      "id": "small-fish",
+      "difficulty": "Very hard",
+      "label": "The small fish above the scarf disappeared.",
+      "box": {
+        "left": 0.442,
+        "top": 0.296,
+        "width": 0.07,
+        "height": 0.035
+      }
+    },
+    {
+      "id": "scarf",
+      "difficulty": "Dreamlike",
+      "label": "A tiny gold crescent appeared at the scarf's tip.",
+      "box": {
+        "left": 0.714,
+        "top": 0.615,
+        "width": 0.036,
+        "height": 0.04
+      }
+    }
+  ]
+}

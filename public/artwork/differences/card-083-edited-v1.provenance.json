@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-083.jpg",
+  "generated": "/artwork/differences/card-083-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The red umbrella turned emerald green. Target near x62%, y22%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The crescent on the dark umbrella became a full moon. Target near x30%, y8%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The rooftop cat's tail curled upward. Target near x92%, y82%. Keep all other pixels/objects untouched.\n4. Repaint only the middle wooden vertical slat of the chair back ivory, keeping its geometry. Target near x42%, y48%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The little paper scrap to the right of the chair disappeared. Target near x64%, y52%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "umbrella",
+      "difficulty": "Easy",
+      "label": "The red umbrella turned emerald green.",
+      "box": {
+        "left": 0.503,
+        "top": 0.142,
+        "width": 0.236,
+        "height": 0.165
+      }
+    },
+    {
+      "id": "moon",
+      "difficulty": "Medium",
+      "label": "The crescent on the dark umbrella became a full moon.",
+      "box": {
+        "left": 0.261,
+        "top": 0.048,
+        "width": 0.08,
+        "height": 0.06
+      }
+    },
+    {
+      "id": "tail",
+      "difficulty": "Hard",
+      "label": "The rooftop cat's tail curled upward.",
+      "box": {
+        "left": 0.905,
+        "top": 0.792,
+        "width": 0.037,
+        "height": 0.049
+      }
+    },
+    {
+      "id": "slat",
+      "difficulty": "Very hard",
+      "label": "The middle chair-back slat turned pale ivory.",
+      "box": {
+        "left": 0.405,
+        "top": 0.461,
+        "width": 0.03,
+        "height": 0.047
+      }
+    },
+    {
+      "id": "paper",
+      "difficulty": "Dreamlike",
+      "label": "The little paper scrap to the right of the chair disappeared.",
+      "box": {
+        "left": 0.615,
+        "top": 0.502,
+        "width": 0.054,
+        "height": 0.032
+      }
+    }
+  ]
+}

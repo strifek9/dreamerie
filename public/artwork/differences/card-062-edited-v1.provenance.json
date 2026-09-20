@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-062.jpg",
+  "generated": "/artwork/differences/card-062-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The gardener's straw hat turned dusty blue. Target near x25%, y53%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The hedge dragon opened its eye. Target near x76%, y63%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The nearest water lily turned pink. Target near x75%, y84%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The ladder lost its lowest rung. Target near x21%, y80%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The basket lost its handle. Target near x30%, y80%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "hat",
+      "difficulty": "Easy",
+      "label": "The gardener's straw hat turned dusty blue.",
+      "box": {
+        "left": 0.211,
+        "top": 0.495,
+        "width": 0.078,
+        "height": 0.061
+      }
+    },
+    {
+      "id": "eye",
+      "difficulty": "Medium",
+      "label": "The hedge dragon opened its eye.",
+      "box": {
+        "left": 0.714,
+        "top": 0.592,
+        "width": 0.086,
+        "height": 0.066
+      }
+    },
+    {
+      "id": "lily",
+      "difficulty": "Hard",
+      "label": "The nearest water lily turned pink.",
+      "box": {
+        "left": 0.72,
+        "top": 0.821,
+        "width": 0.053,
+        "height": 0.029
+      }
+    },
+    {
+      "id": "rung",
+      "difficulty": "Very hard",
+      "label": "The ladder lost its lowest rung.",
+      "box": {
+        "left": 0.188,
+        "top": 0.788,
+        "width": 0.049,
+        "height": 0.026
+      }
+    },
+    {
+      "id": "basket",
+      "difficulty": "Dreamlike",
+      "label": "The basket lost its handle.",
+      "box": {
+        "left": 0.287,
+        "top": 0.781,
+        "width": 0.029,
+        "height": 0.03
+      }
+    }
+  ]
+}

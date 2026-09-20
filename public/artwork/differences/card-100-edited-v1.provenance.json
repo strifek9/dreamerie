@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-100.jpg",
+  "generated": "/artwork/differences/card-100-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The traveler's red cloak turned ivory. Target near x77%, y61%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The giant face closed its eye. Target near x50%, y30%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The small leaf carried by the middle-left bird turned burgundy. Target near x46%, y40%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The full moon in the upper arch became a crescent. Target near x77%, y11%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The highest bird's pointed beak became short and rounded. Target near x39%, y16%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "cloak",
+      "difficulty": "Easy",
+      "label": "The traveler's red cloak turned ivory.",
+      "box": {
+        "left": 0.716,
+        "top": 0.549,
+        "width": 0.109,
+        "height": 0.116
+      }
+    },
+    {
+      "id": "eye",
+      "difficulty": "Medium",
+      "label": "The giant face closed its eye.",
+      "box": {
+        "left": 0.414,
+        "top": 0.268,
+        "width": 0.165,
+        "height": 0.073
+      }
+    },
+    {
+      "id": "sprig",
+      "difficulty": "Hard",
+      "label": "The small leaf carried by the middle-left bird turned burgundy.",
+      "box": {
+        "left": 0.422,
+        "top": 0.366,
+        "width": 0.084,
+        "height": 0.061
+      }
+    },
+    {
+      "id": "moon",
+      "difficulty": "Very hard",
+      "label": "The full moon in the upper arch became a crescent.",
+      "box": {
+        "left": 0.699,
+        "top": 0.049,
+        "width": 0.138,
+        "height": 0.122
+      }
+    },
+    {
+      "id": "beak",
+      "difficulty": "Dreamlike",
+      "label": "The highest bird's pointed beak became short and rounded.",
+      "box": {
+        "left": 0.368,
+        "top": 0.15,
+        "width": 0.035,
+        "height": 0.019
+      }
+    }
+  ]
+}

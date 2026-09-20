@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-033.jpg",
+  "generated": "/artwork/differences/card-033-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The winding key turned silver. Target near x32%, y39%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The tapestry's crescent became a star. Target near x50%, y34%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The elephant closed its eye. Target near x85%, y25%. Keep all other pixels/objects untouched.\n4. Edit only this object so: A gold fringe tassel disappeared. Target near x58%, y43%. Keep all other pixels/objects untouched.\n5. Add a tiny bright coral-red ribbon collar around the black cat's neck inside the pavilion, x72%,y13%. It must be clearly red against the black fur and look painted in this artwork. Target near x72%, y14%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "key",
+      "difficulty": "Easy",
+      "label": "The winding key turned silver.",
+      "box": {
+        "left": 0.221,
+        "top": 0.307,
+        "width": 0.207,
+        "height": 0.168
+      }
+    },
+    {
+      "id": "moon",
+      "difficulty": "Medium",
+      "label": "The tapestry's crescent became a star.",
+      "box": {
+        "left": 0.456,
+        "top": 0.287,
+        "width": 0.081,
+        "height": 0.094
+      }
+    },
+    {
+      "id": "eye",
+      "difficulty": "Hard",
+      "label": "The elephant closed its eye.",
+      "box": {
+        "left": 0.819,
+        "top": 0.229,
+        "width": 0.067,
+        "height": 0.043
+      }
+    },
+    {
+      "id": "tassel",
+      "difficulty": "Very hard",
+      "label": "A gold fringe tassel disappeared.",
+      "box": {
+        "left": 0.564,
+        "top": 0.408,
+        "width": 0.029,
+        "height": 0.043
+      }
+    },
+    {
+      "id": "cat",
+      "difficulty": "Dreamlike",
+      "label": "The little black cat gained a red ribbon collar.",
+      "box": {
+        "left": 0.7,
+        "top": 0.126,
+        "width": 0.033,
+        "height": 0.03
+      }
+    }
+  ]
+}

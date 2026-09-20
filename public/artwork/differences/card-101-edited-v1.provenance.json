@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-101.jpg",
+  "generated": "/artwork/differences/card-101-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Replace the yellow-and-white floral pattern on the hanging garment with yellow-and-white horizontal stripes. Target near x25%, y17%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The tall cat on the left winked. Target near x13%, y14%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The white heron's black beak turned orange. Target near x88%, y35%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The tiny chair on the isolated left platform disappeared. Target near x33%, y46%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The little vase on the lower-right table turned pink. Target near x85%, y70%. Keep all other pixels/objects untouched.\nCorrection pass: Use case: precise-object-edit. Image 1 is the edit target, a nearly complete spot-the-difference image. Make ONE tiny correction only: the tall dark cat in the upper left must wink. Its rightmost yellow eye at x13%, y14% must become a thin CLOSED eyelid with no yellow iris visible. Leave the other eye round and open. Do not alter any other part of the picture. Preserve the exact framing, brushwork, geometry, lighting and all existing objects and colors. No text, rings, labels or highlights.\nCorrection: Use case: precise-object-edit. Image 1 is the EDIT TARGET. One correction only. Replace the failed cat wink with a small ivory diamond-shaped patch on the cat's forehead at x12%, y13%. Keep BOTH eyes exactly unchanged. The patch is a painted fur marking, not an overlay. Change no other part of the image. Preserve exact composition, geometry, painted brushwork, palette, lighting and framing. No text, circles, arrows or markers.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "laundry",
+      "difficulty": "Easy",
+      "label": "The yellow garment on the clothesline gained stripes.",
+      "box": {
+        "left": 0.204,
+        "top": 0.114,
+        "width": 0.085,
+        "height": 0.111
+      }
+    },
+    {
+      "id": "mark",
+      "difficulty": "Medium",
+      "label": "The cat gained an ivory diamond on its forehead.",
+      "box": {
+        "left": 0.113,
+        "top": 0.125,
+        "width": 0.016,
+        "height": 0.014
+      }
+    },
+    {
+      "id": "beak",
+      "difficulty": "Hard",
+      "label": "The white heron's black beak turned orange.",
+      "box": {
+        "left": 0.867,
+        "top": 0.339,
+        "width": 0.033,
+        "height": 0.017
+      }
+    },
+    {
+      "id": "chair",
+      "difficulty": "Very hard",
+      "label": "The tiny chair on the isolated left platform disappeared.",
+      "box": {
+        "left": 0.316,
+        "top": 0.446,
+        "width": 0.024,
+        "height": 0.025
+      }
+    },
+    {
+      "id": "vase",
+      "difficulty": "Dreamlike",
+      "label": "The little vase on the lower-right table turned pink.",
+      "box": {
+        "left": 0.832,
+        "top": 0.684,
+        "width": 0.03,
+        "height": 0.033
+      }
+    }
+  ]
+}

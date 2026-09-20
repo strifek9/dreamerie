@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-060.jpg",
+  "generated": "/artwork/differences/card-060-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Close only the tall black cat's right eye (the eye on the viewer's right), creating a cheeky painted wink; retain the other golden eye. Target near x69%, y29%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The house in the cat's raised paw gained a blue roof. Target near x56%, y14%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The sleeping dog opened its eye. Target near x8%, y64%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The teacup on the books lost its handle. Target near x20%, y60%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The green leaf on the tablecloth disappeared. Target near x77%, y77%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "eye",
+      "difficulty": "Easy",
+      "label": "The tall cat winked its right eye.",
+      "box": {
+        "left": 0.646,
+        "top": 0.269,
+        "width": 0.087,
+        "height": 0.045
+      }
+    },
+    {
+      "id": "roof",
+      "difficulty": "Medium",
+      "label": "The house in the cat's raised paw gained a blue roof.",
+      "box": {
+        "left": 0.508,
+        "top": 0.118,
+        "width": 0.094,
+        "height": 0.053
+      }
+    },
+    {
+      "id": "dog",
+      "difficulty": "Hard",
+      "label": "The sleeping dog opened its eye.",
+      "box": {
+        "left": 0.067,
+        "top": 0.629,
+        "width": 0.016,
+        "height": 0.016
+      }
+    },
+    {
+      "id": "cup",
+      "difficulty": "Very hard",
+      "label": "The teacup on the books lost its handle.",
+      "box": {
+        "left": 0.187,
+        "top": 0.589,
+        "width": 0.021,
+        "height": 0.026
+      }
+    },
+    {
+      "id": "leaf",
+      "difficulty": "Dreamlike",
+      "label": "The green leaf on the tablecloth disappeared.",
+      "box": {
+        "left": 0.742,
+        "top": 0.752,
+        "width": 0.049,
+        "height": 0.038
+      }
+    }
+  ]
+}

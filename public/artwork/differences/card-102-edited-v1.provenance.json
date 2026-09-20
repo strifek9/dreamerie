@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-102.jpg",
+  "generated": "/artwork/differences/card-102-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The large crescent on the blue robe became a full moon. Target near x60%, y58%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The red potted planet lost its orbit ring. Target near x44%, y37%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The blue potted planet's sprout gained a third leaf. Target near x35%, y26%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The white cat gained a dark tail tip. Target near x31%, y83%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The small middle planet in the torn night sky disappeared. Target near x80%, y18%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "moon",
+      "difficulty": "Easy",
+      "label": "The large crescent on the blue robe became a full moon.",
+      "box": {
+        "left": 0.539,
+        "top": 0.487,
+        "width": 0.119,
+        "height": 0.177
+      }
+    },
+    {
+      "id": "ring",
+      "difficulty": "Medium",
+      "label": "The red potted planet lost its orbit ring.",
+      "box": {
+        "left": 0.376,
+        "top": 0.351,
+        "width": 0.12,
+        "height": 0.042
+      }
+    },
+    {
+      "id": "leaf",
+      "difficulty": "Hard",
+      "label": "The blue potted planet's sprout gained a third leaf.",
+      "box": {
+        "left": 0.328,
+        "top": 0.242,
+        "width": 0.041,
+        "height": 0.039
+      }
+    },
+    {
+      "id": "tail",
+      "difficulty": "Very hard",
+      "label": "The white cat gained a dark tail tip.",
+      "box": {
+        "left": 0.296,
+        "top": 0.815,
+        "width": 0.029,
+        "height": 0.032
+      }
+    },
+    {
+      "id": "planet",
+      "difficulty": "Dreamlike",
+      "label": "The small middle planet in the torn night sky disappeared.",
+      "box": {
+        "left": 0.784,
+        "top": 0.162,
+        "width": 0.035,
+        "height": 0.028
+      }
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-116.jpg",
+  "generated": "/artwork/differences/card-116-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The dragon closed its eye. Target near x75%, y38%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The small upper crescent became a full moon. Target near x43%, y6%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The traveler's pale coat turned ochre. Target near x35%, y61%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The lantern lost its curved handle. Target near x44%, y56%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The lower of the two nearby floating rocks disappeared. Target near x38%, y33%. Keep all other pixels/objects untouched.\nFinal correction: Use case: precise-object-edit. Image 1 is the EDIT TARGET. Make ONE tiny object edit only: replace the little lantern's crossed diagonal window bars, near x43%,y59%, with a SINGLE VERTICAL center bar. The illuminated glass panes must no longer have an X on them. Preserve the lantern's size, frame, handle, warm light and every other part of the painting exactly. No text, markings, circles, extra props, reframing or style change.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "eye",
+      "difficulty": "Easy",
+      "label": "The dragon closed its eye.",
+      "box": {
+        "left": 0.712,
+        "top": 0.349,
+        "width": 0.073,
+        "height": 0.055
+      }
+    },
+    {
+      "id": "moon",
+      "difficulty": "Medium",
+      "label": "The small upper crescent became a full moon.",
+      "box": {
+        "left": 0.382,
+        "top": 0.023,
+        "width": 0.075,
+        "height": 0.057
+      }
+    },
+    {
+      "id": "coat",
+      "difficulty": "Hard",
+      "label": "The traveler's pale coat turned ochre.",
+      "box": {
+        "left": 0.285,
+        "top": 0.576,
+        "width": 0.126,
+        "height": 0.066
+      }
+    },
+    {
+      "id": "bars",
+      "difficulty": "Very hard",
+      "label": "The lantern's crossed window bars became straight.",
+      "box": {
+        "left": 0.414,
+        "top": 0.577,
+        "width": 0.033,
+        "height": 0.03
+      }
+    },
+    {
+      "id": "island",
+      "difficulty": "Dreamlike",
+      "label": "The lower of the two nearby floating rocks disappeared.",
+      "box": {
+        "left": 0.366,
+        "top": 0.293,
+        "width": 0.035,
+        "height": 0.075
+      }
+    }
+  ]
+}

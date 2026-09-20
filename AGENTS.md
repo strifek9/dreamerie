@@ -1,6 +1,20 @@
 # Working on DREAMERIE
 
+## Current product direction
+
+Daily Dream Recall is the primary mode. Two versions of one daily surreal art card appear side by side for two minutes. The player may tap either image and zoom with touch or mouse. Only reviewed, authored image pairs enter rotation: 120 cards, card-001 through card-120. Every playable pair needs exactly five actual object-level changes that preserve its theme, brushwork, palette, and visual logic. Choose changes individually for each painting: expressions, patterns, flowers, architecture, missing details and existing-object colors. Red bows and gold details are examples, not a deck-wide formula. Do not add unrelated props or use generic discoloration/filter patches as differences. Keep generation prompts and provenance. The full answer ledger and review limitations are in `docs/ARTWORK_REVIEW.md`. Small nested answer regions take hit priority; an already-found detail must not fall through to score a larger enclosing region. The player receives exactly five confirmed guesses total. A pointer action only places or repositions a pending marker; only **Remember** submits and consumes a guess. Accuracy out of five is primary, and whole-second elapsed time breaks accuracy ties. Results reveal found differences in green on the left image and missed differences in red on the right, with numbered outlines that gently fade fully out and back in (static with reduced motion), plus a Hide markers control with written Found/Missed explanations, keep zoom available, and support a spoiler-free Wordle-style text share.
+
+A development-only New day control advances the catalogue and displayed day, resetting the round to the rules screen; it does not change the real date and is absent from production. Simulated/review shares are labeled Playtest.
+
+Keep the current implementation deliberately small: React, TypeScript, Vite, local prototype data, and straightforward CSS. Do not add a six-card interface, dashboard, backend, authentication, Discord integration, multiplayer, hosted leaderboard, global state library, or complex infrastructure unless explicitly requested in a later task.
+
+The former social/card-selection prototype and its pre-redesign working state are preserved on `prototype/social-dreams`. Historical sections in the documentation describe that alternate/future mode and do not override the Daily Dream Recall rules above.
+
+For current work, read the top **Current primary mode** section in `docs/GAME_DESIGN.md`, **Current scope** in `docs/PROTOTYPE_PLAN.md`, and **Daily Dream Recall direction** in `docs/ART_DIRECTION.md`. Run `npm run typecheck`, `npm test`, and `npm run build` after implementation. Do not commit or push redesign work without explicit user approval.
+
 ## Read first
+
+The current welcome screen previews the day's original artwork above the reverie poem, with an untimed preview and a Start action. Results have five square tiles, Share/Copy controls and a selectable message fallback. Share day/accuracy/time/grid plus the current site's clean play URL, never answer locations or URL queries/fragments. Localhost is not a public invitation; warn clearly, and do not deploy without authorization.
 
 Read [README.md](README.md) for project context. Treat [GAME_DESIGN.md](docs/GAME_DESIGN.md) as the source of truth for confirmed gameplay rules and [PROTOTYPE_PLAN.md](docs/PROTOTYPE_PLAN.md) as the source of truth for prototype scope and milestones. Read both before modifying gameplay. Read [ART_DIRECTION.md](docs/ART_DIRECTION.md) before making UI or writing decisions. Inspect existing work and preserve unrelated changes.
 

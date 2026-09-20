@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-055.jpg",
+  "generated": "/artwork/differences/card-055-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The red door's pink crescent turned ivory. Target near x29%, y30%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The blue tassel turned pink. Target near x39%, y57%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The gold star charm became a crescent. Target near x38%, y50%. Keep all other pixels/objects untouched.\n4. Add one blue toe dot to the nearest large footprint at the bottom, so it has five toe dots instead of four. Match existing paint. Target near x44%, y91%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The little red leaf beside the cat's face disappeared. Target near x48%, y82%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "moon",
+      "difficulty": "Easy",
+      "label": "The red door's pink crescent turned ivory.",
+      "box": {
+        "left": 0.242,
+        "top": 0.245,
+        "width": 0.105,
+        "height": 0.107
+      }
+    },
+    {
+      "id": "tassel",
+      "difficulty": "Medium",
+      "label": "The blue tassel turned pink.",
+      "box": {
+        "left": 0.361,
+        "top": 0.527,
+        "width": 0.06,
+        "height": 0.078
+      }
+    },
+    {
+      "id": "charm",
+      "difficulty": "Hard",
+      "label": "The gold star charm became a crescent.",
+      "box": {
+        "left": 0.357,
+        "top": 0.47,
+        "width": 0.052,
+        "height": 0.051
+      }
+    },
+    {
+      "id": "toe",
+      "difficulty": "Very hard",
+      "label": "The nearest footprint gained two extra toe dots.",
+      "box": {
+        "left": 0.386,
+        "top": 0.89,
+        "width": 0.091,
+        "height": 0.035
+      }
+    },
+    {
+      "id": "leaf",
+      "difficulty": "Dreamlike",
+      "label": "The little red leaf beside the cat's face disappeared.",
+      "box": {
+        "left": 0.459,
+        "top": 0.794,
+        "width": 0.04,
+        "height": 0.052
+      }
+    }
+  ]
+}

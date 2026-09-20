@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-098.jpg",
+  "generated": "/artwork/differences/card-098-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The green scarf turned lavender. Target near x19%, y29%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The smaller deer vanished from the shadow forest. Target near x61%, y52%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The upper coat button became square. Target near x23%, y33%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The empty right-hand coat peg disappeared. Target near x34%, y4%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The chair lost its lower horizontal rung. Target near x89%, y84%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "scarf",
+      "difficulty": "Easy",
+      "label": "The green scarf turned lavender.",
+      "box": {
+        "left": 0.116,
+        "top": 0.037,
+        "width": 0.157,
+        "height": 0.504
+      }
+    },
+    {
+      "id": "deer",
+      "difficulty": "Medium",
+      "label": "The smaller deer vanished from the shadow forest.",
+      "box": {
+        "left": 0.584,
+        "top": 0.489,
+        "width": 0.054,
+        "height": 0.056
+      }
+    },
+    {
+      "id": "button",
+      "difficulty": "Hard",
+      "label": "The upper coat button became square.",
+      "box": {
+        "left": 0.218,
+        "top": 0.32,
+        "width": 0.021,
+        "height": 0.025
+      }
+    },
+    {
+      "id": "peg",
+      "difficulty": "Very hard",
+      "label": "The empty right-hand coat peg disappeared.",
+      "box": {
+        "left": 0.32,
+        "top": 0.021,
+        "width": 0.041,
+        "height": 0.033
+      }
+    },
+    {
+      "id": "chair",
+      "difficulty": "Dreamlike",
+      "label": "The chair lost its lower horizontal rung.",
+      "box": {
+        "left": 0.85,
+        "top": 0.824,
+        "width": 0.073,
+        "height": 0.022
+      }
+    }
+  ]
+}

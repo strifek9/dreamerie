@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-024.jpg",
+  "generated": "/artwork/differences/card-024-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The little sailboat’s sails turned red. Target near x61%, y45%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The giant cat’s pink nose turned blue. Target near x30%, y17%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The café umbrella’s orange stripes turned green. Target near x34%, y40%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The smaller of the two white gulls disappeared. Target near x80%, y65%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The far-right rabbit on the bridge has one ear instead of two. Target near x90%, y81%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "sail",
+      "difficulty": "Easy",
+      "label": "The little sailboat’s sails turned red.",
+      "box": {
+        "left": 0.586,
+        "top": 0.426,
+        "width": 0.051,
+        "height": 0.055
+      }
+    },
+    {
+      "id": "nose",
+      "difficulty": "Medium",
+      "label": "The giant cat’s pink nose turned blue.",
+      "box": {
+        "left": 0.269,
+        "top": 0.154,
+        "width": 0.057,
+        "height": 0.036
+      }
+    },
+    {
+      "id": "umbrella",
+      "difficulty": "Hard",
+      "label": "The café umbrella’s orange stripes turned green.",
+      "box": {
+        "left": 0.295,
+        "top": 0.385,
+        "width": 0.084,
+        "height": 0.032
+      }
+    },
+    {
+      "id": "bird",
+      "difficulty": "Very hard",
+      "label": "The smaller of the two white gulls disappeared.",
+      "box": {
+        "left": 0.78,
+        "top": 0.641,
+        "width": 0.046,
+        "height": 0.022
+      }
+    },
+    {
+      "id": "rabbit",
+      "difficulty": "Dreamlike",
+      "label": "The far-right rabbit on the bridge has one ear instead of two.",
+      "box": {
+        "left": 0.881,
+        "top": 0.8,
+        "width": 0.033,
+        "height": 0.023
+      }
+    }
+  ]
+}

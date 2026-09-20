@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-094.jpg",
+  "generated": "/artwork/differences/card-094-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The largest fish at mid-left turned coral. Target near x36%, y67%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The scissors' round screw became hexagonal. Target near x35%, y20%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The nearest left cottage roof turned blue. Target near x13%, y44%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The bottom fish lost its upper fin. Target near x68%, y83%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The lowest bubble beside the large mid-left fish disappeared. Target near x25%, y71%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "fish",
+      "difficulty": "Easy",
+      "label": "The largest fish at mid-left turned coral.",
+      "box": {
+        "left": 0.26,
+        "top": 0.632,
+        "width": 0.19,
+        "height": 0.073
+      }
+    },
+    {
+      "id": "screw",
+      "difficulty": "Medium",
+      "label": "The scissors' round screw became hexagonal.",
+      "box": {
+        "left": 0.329,
+        "top": 0.178,
+        "width": 0.042,
+        "height": 0.039
+      }
+    },
+    {
+      "id": "roof",
+      "difficulty": "Hard",
+      "label": "The nearest left cottage roof turned blue.",
+      "box": {
+        "left": 0.094,
+        "top": 0.429,
+        "width": 0.077,
+        "height": 0.029
+      }
+    },
+    {
+      "id": "fin",
+      "difficulty": "Very hard",
+      "label": "The bottom fish lost its upper fin.",
+      "box": {
+        "left": 0.62,
+        "top": 0.81,
+        "width": 0.054,
+        "height": 0.058
+      }
+    },
+    {
+      "id": "bubble",
+      "difficulty": "Dreamlike",
+      "label": "The lowest bubble beside the large mid-left fish disappeared.",
+      "box": {
+        "left": 0.243,
+        "top": 0.697,
+        "width": 0.018,
+        "height": 0.019
+      }
+    }
+  ]
+}

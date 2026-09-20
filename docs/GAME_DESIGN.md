@@ -1,5 +1,27 @@
 # Dreamerie game design
 
+## Current primary mode: Daily Dream Recall
+
+This section supersedes the historical social-mode design below for the primary prototype.
+
+Before play, show the day's original card (not the altered card) as the main focal point, with Dreamerie and the day number grouped directly above it. Below the card on phones, or alongside it on desktop, show: “Lost within a reverie, nothing stays where it should be. Glance away, then look once more—the moon has left its silver shore.” The instruction begins “Find the five differences before the dream fades.” The preview has no time limit; **Start** begins the two-minute comparison round.
+
+A Dream is selected each day from the reviewed, authored image pairs. The catalogue now contains all 120 original cards with five authored answers each. The original and altered visions remain visible side by side for a configurable two-minute round. Both images are valid places to mark a difference. Players can zoom with a mouse wheel, pinch and drag on touchscreens, or use visible zoom controls.
+
+The player has exactly five confirmed guesses total. A tap or click only places or repositions a pending circle and never submits. The floating **Remember** action confirms the current marker and consumes one guess. A correct confirmation marks one unfound difference; that difference cannot score again. An incorrect confirmation, including a repeated confirmation on an already-found region, is a false memory and still consumes the guess.
+
+Each playable pair has exactly five stable declared object-level differences, with intended difficulty from **Easy** through **Dreamlike** (difficulty still needs human playtesting). Changes must fit the original card's theme and painterly art direction, not add arbitrary unrelated props or circular discoloration. Pick varied, image-specific changes rather than repeating red bows and gold details across the deck. The altered view composites edited artwork within five declared answer regions; everything outside them remains identical. A small detail may be nested inside a larger changed object; the smallest containing region takes hit priority. If that smaller region was already found, the duplicate is a false memory rather than scoring the enclosing object. The round ends immediately when all five confirmations are used, all five differences are found, or the timer expires. Accuracy is the number of unique differences found out of five. Results display accuracy and whole-second elapsed time, such as `4/5 · 1:07`.
+
+Every ending reveals all five answers across the pair: found answers have green numbered outlines only on the left image, missed answers have red outlines only on the right. The outlines fade fully out and back in over six seconds, without moving the artwork. Hide markers clears all overlays; reduced-motion users get static outlines with that same control. Written descriptions and Found/Missed status stay visible below. Players can continue zooming and panning to inspect the answers, but cannot place or confirm further guesses. Sharing includes the result and difficulty grid, not the answer descriptions or locations.
+
+Comparison is lexicographic: higher accuracy always wins; only equal accuracy compares elapsed time, where faster wins. Equal accuracy and equal measured time are tied. There is no weighted point formula.
+
+Results show five square tiles and can be shared in a compact Wordle-style message: day number, accuracy, whole-second time, five purple/black squares by difficulty, and a clean link to play on the current site. Friends see the result in the message; the link starts the current daily game, not an archived puzzle or score page. Native share, copy, and selectable-text fallback must not expose answer locations/descriptions or URL query/fragment data. A local-only address is clearly labeled; public sharing requires public hosting. The prototype has no dashboard, six-card hand, account, backend, multiplayer, Discord integration, leaderboard service, or global state library. The former social interpretation mode is preserved on `prototype/social-dreams` as an alternate/future direction.
+
+Development only: New day advances one catalogue entry and displayed day (wrapping after 120), remounts a clean round at the rules screen, and labels simulated/review shares Playtest. It does not change the actual date or production daily selection. Refresh restores the real day or explicit review URL.
+
+## Historical social-mode design
+
 ## Confirmed room modes (September 2026)
 
 These rules supersede older personal-only connected-play scope below. New rooms default to **Word of the Day**; creators may instead choose **Your own dream clues**. Invitees see the creator's mode and scoring before joining and cannot change it. A room's mode stays fixed. Existing rooms retain personal clues and their original scoring on upgrade.

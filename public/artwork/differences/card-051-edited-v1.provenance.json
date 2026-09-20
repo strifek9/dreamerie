@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-051.jpg",
+  "generated": "/artwork/differences/card-051-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The central cup's red handle turned blue. Target near x49%, y46%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The black flower on the small white cup turned red. Target near x64%, y43%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The top cup on the far-right stack lost its handle. Target near x98%, y39%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The blue horse closed its eye. Target near x85%, y13%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The lowest teardrop below the cups disappeared. Target near x24%, y71%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "handle",
+      "difficulty": "Easy",
+      "label": "The central cup's red handle turned blue.",
+      "box": {
+        "left": 0.452,
+        "top": 0.418,
+        "width": 0.066,
+        "height": 0.075
+      }
+    },
+    {
+      "id": "flower",
+      "difficulty": "Medium",
+      "label": "The black flower on the small white cup turned red.",
+      "box": {
+        "left": 0.597,
+        "top": 0.398,
+        "width": 0.082,
+        "height": 0.055
+      }
+    },
+    {
+      "id": "cup",
+      "difficulty": "Hard",
+      "label": "The top cup on the far-right stack lost its handle.",
+      "box": {
+        "left": 0.97,
+        "top": 0.376,
+        "width": 0.025,
+        "height": 0.022
+      }
+    },
+    {
+      "id": "eye",
+      "difficulty": "Very hard",
+      "label": "The blue horse closed its eye.",
+      "box": {
+        "left": 0.838,
+        "top": 0.12,
+        "width": 0.023,
+        "height": 0.026
+      }
+    },
+    {
+      "id": "drop",
+      "difficulty": "Dreamlike",
+      "label": "The lowest teardrop below the cups disappeared.",
+      "box": {
+        "left": 0.226,
+        "top": 0.69,
+        "width": 0.026,
+        "height": 0.035
+      }
+    }
+  ]
+}

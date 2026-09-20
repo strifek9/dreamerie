@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-049.jpg",
+  "generated": "/artwork/differences/card-049-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The woman's pale hair gained a red bow. Target near x39%, y47%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The upper-right crescent turned pale blue. Target near x94%, y9%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The cat gained a gold collar. Target near x43%, y9%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The tiny loose shard near the right edge disappeared. Target near x84%, y81%. Keep all other pixels/objects untouched.\n5. Edit only this object so: A tiny gold star appeared on the mirror's top rim. Target near x65%, y10%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "bow",
+      "difficulty": "Easy",
+      "label": "The woman's pale hair gained a red bow.",
+      "box": {
+        "left": 0.308,
+        "top": 0.423,
+        "width": 0.134,
+        "height": 0.109
+      }
+    },
+    {
+      "id": "moon",
+      "difficulty": "Medium",
+      "label": "The upper-right crescent turned pale blue.",
+      "box": {
+        "left": 0.907,
+        "top": 0.05,
+        "width": 0.062,
+        "height": 0.075
+      }
+    },
+    {
+      "id": "cat",
+      "difficulty": "Hard",
+      "label": "The cat gained a gold collar.",
+      "box": {
+        "left": 0.412,
+        "top": 0.084,
+        "width": 0.03,
+        "height": 0.021
+      }
+    },
+    {
+      "id": "shard",
+      "difficulty": "Very hard",
+      "label": "The tiny loose shard near the right edge disappeared.",
+      "box": {
+        "left": 0.822,
+        "top": 0.801,
+        "width": 0.031,
+        "height": 0.014
+      }
+    },
+    {
+      "id": "star",
+      "difficulty": "Dreamlike",
+      "label": "A tiny gold star appeared on the mirror's top rim.",
+      "box": {
+        "left": 0.65,
+        "top": 0.087,
+        "width": 0.034,
+        "height": 0.03
+      }
+    }
+  ]
+}

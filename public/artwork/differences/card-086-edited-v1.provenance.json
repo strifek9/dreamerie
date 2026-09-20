@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-086.jpg",
+  "generated": "/artwork/differences/card-086-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The little dragon's wing membrane turned pale mint. Target near x15%, y58%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The large purple flower lost its bottom petal. Target near x43%, y23%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The dragon lost its long backward-pointing horn. Target near x25%, y51%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The green bud above the largest coral flower opened pink. Target near x57%, y7%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The dragon gained a fourth tiny toe on its front foot. Target near x30%, y63%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "wing",
+      "difficulty": "Easy",
+      "label": "The little dragon's wing membrane turned pale mint.",
+      "box": {
+        "left": 0.047,
+        "top": 0.516,
+        "width": 0.209,
+        "height": 0.128
+      }
+    },
+    {
+      "id": "petal",
+      "difficulty": "Medium",
+      "label": "The large purple flower lost its lower-right petals.",
+      "box": {
+        "left": 0.418,
+        "top": 0.204,
+        "width": 0.044,
+        "height": 0.043
+      }
+    },
+    {
+      "id": "horn",
+      "difficulty": "Hard",
+      "label": "The dragon lost its long backward-pointing horn.",
+      "box": {
+        "left": 0.211,
+        "top": 0.495,
+        "width": 0.07,
+        "height": 0.026
+      }
+    },
+    {
+      "id": "bud",
+      "difficulty": "Very hard",
+      "label": "The green bud above the largest coral flower opened pink.",
+      "box": {
+        "left": 0.521,
+        "top": 0.046,
+        "width": 0.063,
+        "height": 0.046
+      }
+    },
+    {
+      "id": "claw",
+      "difficulty": "Dreamlike",
+      "label": "The dragon gained a fourth tiny toe on its front foot.",
+      "box": {
+        "left": 0.281,
+        "top": 0.624,
+        "width": 0.034,
+        "height": 0.018
+      }
+    }
+  ]
+}

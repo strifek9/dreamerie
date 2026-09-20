@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-005.jpg",
+  "generated": "/artwork/differences/card-005-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Repaint only the large sky crescent moon coral pink, preserving the crescent silhouette and texture.\n2. Remove only the gold five-point star painted on the rabbit's right flank at x76% y38%, restoring its teal fur.\n3. Repaint the rabbit's small pink nose warm gold, preserving its exact triangular shape.\n4. Extinguish the golden light inside the nearest foreground lantern at x24% y83%, keeping its frame and nearby warm wall illumination.\n5. Remove the tiny ornamental cross and finial at x39% y38% atop the central village bell tower, leaving the roof.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "moon",
+      "difficulty": "Easy",
+      "label": "The sky's crescent moon turned coral pink.",
+      "box": {
+        "left": 0.751,
+        "top": 0.023,
+        "width": 0.15,
+        "height": 0.142
+      }
+    },
+    {
+      "id": "body-star",
+      "difficulty": "Medium",
+      "label": "The star on the rabbit’s right flank disappeared.",
+      "box": {
+        "left": 0.732,
+        "top": 0.355,
+        "width": 0.06,
+        "height": 0.053
+      }
+    },
+    {
+      "id": "nose",
+      "difficulty": "Hard",
+      "label": "The rabbit’s pink nose turned gold.",
+      "box": {
+        "left": 0.64,
+        "top": 0.468,
+        "width": 0.058,
+        "height": 0.033
+      }
+    },
+    {
+      "id": "lantern",
+      "difficulty": "Very hard",
+      "label": "The foreground lantern went dark.",
+      "box": {
+        "left": 0.225,
+        "top": 0.809,
+        "width": 0.029,
+        "height": 0.034
+      }
+    },
+    {
+      "id": "small-star",
+      "difficulty": "Dreamlike",
+      "label": "The little star on the rabbit’s left flank disappeared.",
+      "box": {
+        "left": 0.239,
+        "top": 0.321,
+        "width": 0.047,
+        "height": 0.046
+      }
+    }
+  ]
+}

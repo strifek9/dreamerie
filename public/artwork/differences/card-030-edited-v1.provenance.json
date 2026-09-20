@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-030.jpg",
+  "generated": "/artwork/differences/card-030-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The left traveler’s coral dress turned blue. Target near x18%, y25%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The right traveler’s ivory coat turned coral. Target near x86%, y29%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The large crescent on the blue cloth became a star. Target near x37%, y43%. Keep all other pixels/objects untouched.\n4. Remove ONLY the small ivory embroidered leafy sprig at the very bottom tip of the long hanging red cloth on the right, around x88%, y60%. Replace its ivory lines with matching coral cloth texture. Do NOT erase the cloth or any other embroidery. Target near x88%, y60%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The tiny isolated tower's top turned coral red. Target near x81%, y72%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "dress",
+      "difficulty": "Easy",
+      "label": "The left traveler’s coral dress turned blue.",
+      "box": {
+        "left": 0.135,
+        "top": 0.216,
+        "width": 0.094,
+        "height": 0.066
+      }
+    },
+    {
+      "id": "coat",
+      "difficulty": "Medium",
+      "label": "The right traveler’s ivory coat turned coral.",
+      "box": {
+        "left": 0.844,
+        "top": 0.263,
+        "width": 0.038,
+        "height": 0.051
+      }
+    },
+    {
+      "id": "moon",
+      "difficulty": "Hard",
+      "label": "The large crescent on the blue cloth became a star.",
+      "box": {
+        "left": 0.345,
+        "top": 0.404,
+        "width": 0.068,
+        "height": 0.045
+      }
+    },
+    {
+      "id": "leaf",
+      "difficulty": "Very hard",
+      "label": "The lowest gold leaves became fine outline stitching.",
+      "box": {
+        "left": 0.863,
+        "top": 0.582,
+        "width": 0.035,
+        "height": 0.035
+      }
+    },
+    {
+      "id": "roof",
+      "difficulty": "Dreamlike",
+      "label": "The tiny isolated tower's top turned coral red.",
+      "box": {
+        "left": 0.805,
+        "top": 0.707,
+        "width": 0.012,
+        "height": 0.022
+      }
+    }
+  ]
+}

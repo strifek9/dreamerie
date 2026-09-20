@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-028.jpg",
+  "generated": "/artwork/differences/card-028-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The mask opened its left eye. Target near x81%, y17%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The right-hand picnic chair disappeared. Target near x49%, y55%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The picnic blanket turned muted teal. Target near x42%, y58%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The little moon inside the tear became a crescent. Target near x55%, y43%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The tiny hanging tear beneath the eye turned gold. Target near x34%, y12%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "mask-eye",
+      "difficulty": "Easy",
+      "label": "The mask opened its left eye.",
+      "box": {
+        "left": 0.758,
+        "top": 0.155,
+        "width": 0.098,
+        "height": 0.039
+      }
+    },
+    {
+      "id": "chair",
+      "difficulty": "Medium",
+      "label": "The right-hand picnic chair disappeared.",
+      "box": {
+        "left": 0.466,
+        "top": 0.514,
+        "width": 0.052,
+        "height": 0.064
+      }
+    },
+    {
+      "id": "cloth",
+      "difficulty": "Hard",
+      "label": "The picnic blanket turned muted teal.",
+      "box": {
+        "left": 0.304,
+        "top": 0.558,
+        "width": 0.237,
+        "height": 0.052
+      }
+    },
+    {
+      "id": "moon",
+      "difficulty": "Very hard",
+      "label": "The little moon inside the tear became a crescent.",
+      "box": {
+        "left": 0.525,
+        "top": 0.406,
+        "width": 0.048,
+        "height": 0.044
+      }
+    },
+    {
+      "id": "tear",
+      "difficulty": "Dreamlike",
+      "label": "The tiny hanging tear beneath the eye turned gold.",
+      "box": {
+        "left": 0.331,
+        "top": 0.102,
+        "width": 0.023,
+        "height": 0.04
+      }
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-068.jpg",
+  "generated": "/artwork/differences/card-068-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Fill the two lower holes of the large foreground mint button with matching button material, leaving exactly two upper holes. Target near x28%, y90%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The girl's magenta scarf turned teal. Target near x20%, y56%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The left tallest castle spire disappeared. Target near x62%, y9%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The girl's left boot gained a pale cuff. Target near x31%, y64%. Keep all other pixels/objects untouched.\n5. Edit only this object so: One little white path button became triangular. Target near x61%, y63%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "button",
+      "difficulty": "Easy",
+      "label": "The nearest giant button had only two holes.",
+      "box": {
+        "left": 0.184,
+        "top": 0.848,
+        "width": 0.184,
+        "height": 0.103
+      }
+    },
+    {
+      "id": "scarf",
+      "difficulty": "Medium",
+      "label": "The girl's magenta scarf turned teal.",
+      "box": {
+        "left": 0.001,
+        "top": 0.473,
+        "width": 0.394,
+        "height": 0.211
+      }
+    },
+    {
+      "id": "spire",
+      "difficulty": "Hard",
+      "label": "The left tallest castle spire disappeared.",
+      "box": {
+        "left": 0.603,
+        "top": 0.029,
+        "width": 0.041,
+        "height": 0.13
+      }
+    },
+    {
+      "id": "boot",
+      "difficulty": "Very hard",
+      "label": "The girl's right boot gained a pale cuff.",
+      "box": {
+        "left": 0.325,
+        "top": 0.634,
+        "width": 0.035,
+        "height": 0.025
+      }
+    },
+    {
+      "id": "path-button",
+      "difficulty": "Dreamlike",
+      "label": "One little white path button became triangular.",
+      "box": {
+        "left": 0.58,
+        "top": 0.615,
+        "width": 0.055,
+        "height": 0.031
+      }
+    }
+  ]
+}

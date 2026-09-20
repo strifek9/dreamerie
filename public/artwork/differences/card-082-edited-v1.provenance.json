@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-082.jpg",
+  "generated": "/artwork/differences/card-082-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The girl's red dress turned green. Target near x56%, y30%. Keep all other pixels/objects untouched.\n2. Add three blue ink dots on the white paper of the large mid-left paper airplane; keep its geometry and pink undersides. Target near x21%, y27%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The ladder lost its lowest visible rung. Target near x52%, y43%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The giant upper-right face opened its eye. Target near x81%, y19%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The tiny paper plane beside the upper-right face disappeared. Target near x95%, y17%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "dress",
+      "difficulty": "Easy",
+      "label": "The girl's red dress turned green.",
+      "box": {
+        "left": 0.508,
+        "top": 0.268,
+        "width": 0.095,
+        "height": 0.071
+      }
+    },
+    {
+      "id": "plane",
+      "difficulty": "Medium",
+      "label": "The large left paper plane gained blue polka dots.",
+      "box": {
+        "left": 0.106,
+        "top": 0.194,
+        "width": 0.209,
+        "height": 0.151
+      }
+    },
+    {
+      "id": "rung",
+      "difficulty": "Hard",
+      "label": "The ladder lost its lowest visible rung.",
+      "box": {
+        "left": 0.497,
+        "top": 0.416,
+        "width": 0.047,
+        "height": 0.021
+      }
+    },
+    {
+      "id": "eye",
+      "difficulty": "Very hard",
+      "label": "The giant upper-right face opened its eye.",
+      "box": {
+        "left": 0.746,
+        "top": 0.161,
+        "width": 0.133,
+        "height": 0.062
+      }
+    },
+    {
+      "id": "paper",
+      "difficulty": "Dreamlike",
+      "label": "The tiny paper plane beside the upper-right face disappeared.",
+      "box": {
+        "left": 0.928,
+        "top": 0.16,
+        "width": 0.04,
+        "height": 0.028
+      }
+    }
+  ]
+}

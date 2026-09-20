@@ -4,7 +4,7 @@ dist/
 .validation/
 *.local
 dist-server/
-data/
+/data/
 *.sqlite
 *.sqlite-shm
 *.sqlite-wal

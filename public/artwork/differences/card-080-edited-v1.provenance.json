@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-080.jpg",
+  "generated": "/artwork/differences/card-080-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The large flower by the statue's chin turned warm ivory. Target near x36%, y48%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The gardener's pink hat turned blue. Target near x53%, y48%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The floating petal above the gardener became a leaf. Target near x55%, y39%. Keep all other pixels/objects untouched.\n4. Paint one tiny pale crescent emblem on the watering can body, preserving its handle. Target near x51%, y56%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The ruined castle's topmost window disappeared. Target near x85%, y10%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "flower",
+      "difficulty": "Easy",
+      "label": "The large flower by the statue's chin turned warm ivory.",
+      "box": {
+        "left": 0.297,
+        "top": 0.44,
+        "width": 0.126,
+        "height": 0.084
+      }
+    },
+    {
+      "id": "hat",
+      "difficulty": "Medium",
+      "label": "The gardener's pink hat turned blue.",
+      "box": {
+        "left": 0.493,
+        "top": 0.456,
+        "width": 0.071,
+        "height": 0.04
+      }
+    },
+    {
+      "id": "petal",
+      "difficulty": "Hard",
+      "label": "The floating petal above the gardener became a leaf.",
+      "box": {
+        "left": 0.517,
+        "top": 0.369,
+        "width": 0.056,
+        "height": 0.044
+      }
+    },
+    {
+      "id": "can",
+      "difficulty": "Very hard",
+      "label": "The watering can gained a small crescent emblem.",
+      "box": {
+        "left": 0.497,
+        "top": 0.546,
+        "width": 0.031,
+        "height": 0.026
+      }
+    },
+    {
+      "id": "window",
+      "difficulty": "Dreamlike",
+      "label": "The castle's tall upper window became a tiny round opening.",
+      "box": {
+        "left": 0.846,
+        "top": 0.088,
+        "width": 0.012,
+        "height": 0.021
+      }
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-045.jpg",
+  "generated": "/artwork/differences/card-045-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The deer closed its eye. Target near x85%, y23%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The large five-petal flower at the left turned ivory. Target near x7%, y61%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The isolated orange leaf beneath the belly disappeared. Target near x41%, y48%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The pink inner ear turned deep violet. Target near x80%, y11%. Keep all other pixels/objects untouched.\n5. Remove only the top petal of the five-petal flower near x13%,y66%, leaving four intact. Target near x14%, y66%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "eye",
+      "difficulty": "Easy",
+      "label": "The deer closed its eye.",
+      "box": {
+        "left": 0.836,
+        "top": 0.203,
+        "width": 0.037,
+        "height": 0.054
+      }
+    },
+    {
+      "id": "flower",
+      "difficulty": "Medium",
+      "label": "The large five-petal flower at the left turned ivory.",
+      "box": {
+        "left": 0.044,
+        "top": 0.587,
+        "width": 0.043,
+        "height": 0.038
+      }
+    },
+    {
+      "id": "leaf",
+      "difficulty": "Hard",
+      "label": "The isolated orange leaf beneath the belly disappeared.",
+      "box": {
+        "left": 0.387,
+        "top": 0.458,
+        "width": 0.045,
+        "height": 0.037
+      }
+    },
+    {
+      "id": "ear",
+      "difficulty": "Very hard",
+      "label": "The pink inner ear turned deep violet.",
+      "box": {
+        "left": 0.775,
+        "top": 0.067,
+        "width": 0.053,
+        "height": 0.092
+      }
+    },
+    {
+      "id": "petal",
+      "difficulty": "Dreamlike",
+      "label": "The lower-left flower lost one petal.",
+      "box": {
+        "left": 0.112,
+        "top": 0.643,
+        "width": 0.047,
+        "height": 0.038
+      }
+    }
+  ]
+}

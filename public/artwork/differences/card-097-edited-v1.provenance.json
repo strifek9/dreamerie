@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-097.jpg",
+  "generated": "/artwork/differences/card-097-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The floating umbrella turned ivory. Target near x50%, y46%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The shoe's round buckle became square. Target near x23%, y19%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The umbrella's curved handle became straight. Target near x41%, y39%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The tall tower's highest lit window went dark. Target near x95%, y16%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The traveler's sleeve gained a tiny pale button. Target near x18%, y56%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "umbrella",
+      "difficulty": "Easy",
+      "label": "The floating umbrella turned ivory.",
+      "box": {
+        "left": 0.373,
+        "top": 0.415,
+        "width": 0.255,
+        "height": 0.084
+      }
+    },
+    {
+      "id": "buckle",
+      "difficulty": "Medium",
+      "label": "The shoe's round buckle became square.",
+      "box": {
+        "left": 0.194,
+        "top": 0.155,
+        "width": 0.067,
+        "height": 0.064
+      }
+    },
+    {
+      "id": "handle",
+      "difficulty": "Hard",
+      "label": "The umbrella's curved handle became straight.",
+      "box": {
+        "left": 0.386,
+        "top": 0.368,
+        "width": 0.047,
+        "height": 0.041
+      }
+    },
+    {
+      "id": "window",
+      "difficulty": "Very hard",
+      "label": "The tall tower's highest lit window went dark.",
+      "box": {
+        "left": 0.944,
+        "top": 0.123,
+        "width": 0.018,
+        "height": 0.064
+      }
+    },
+    {
+      "id": "button",
+      "difficulty": "Dreamlike",
+      "label": "The traveler's sleeve gained a tiny pale button.",
+      "box": {
+        "left": 0.171,
+        "top": 0.549,
+        "width": 0.012,
+        "height": 0.015
+      }
+    }
+  ]
+}

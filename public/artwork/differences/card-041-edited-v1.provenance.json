@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-041.jpg",
+  "generated": "/artwork/differences/card-041-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The glowing star became a crescent. Target near x56%, y50%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The right tip of the jester's hat lost its bell. Target near x46%, y45%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The wardrobe's gold handle turned red. Target near x53%, y41%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The black cat gained a white tail tip. Target near x2%, y76%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The golden mug on the wardrobe lost its handle. Target near x64%, y6%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "gift",
+      "difficulty": "Easy",
+      "label": "The glowing star became a crescent.",
+      "box": {
+        "left": 0.505,
+        "top": 0.458,
+        "width": 0.114,
+        "height": 0.091
+      }
+    },
+    {
+      "id": "bell",
+      "difficulty": "Medium",
+      "label": "The right tip of the jester's hat lost its bell.",
+      "box": {
+        "left": 0.442,
+        "top": 0.431,
+        "width": 0.033,
+        "height": 0.029
+      }
+    },
+    {
+      "id": "handle",
+      "difficulty": "Hard",
+      "label": "The wardrobe's gold handle turned red.",
+      "box": {
+        "left": 0.517,
+        "top": 0.389,
+        "width": 0.029,
+        "height": 0.04
+      }
+    },
+    {
+      "id": "cat",
+      "difficulty": "Very hard",
+      "label": "The cat lifted its white-tipped tail.",
+      "box": {
+        "left": 0,
+        "top": 0.65,
+        "width": 0.083,
+        "height": 0.13
+      }
+    },
+    {
+      "id": "mug",
+      "difficulty": "Dreamlike",
+      "label": "The golden mug on the wardrobe lost its handle.",
+      "box": {
+        "left": 0.624,
+        "top": 0.037,
+        "width": 0.041,
+        "height": 0.048
+      }
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-050.jpg",
+  "generated": "/artwork/differences/card-050-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The bird on the nest turned pale blue. Target near x70%, y61%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The scissors' gold handles turned silver. Target near x50%, y37%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The small upper-right moon became a crescent. Target near x87%, y4%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The floating white feather disappeared. Target near x73%, y51%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The puppet opened its nearer eye. Target near x43%, y30%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "bird",
+      "difficulty": "Easy",
+      "label": "The bird on the nest turned pale blue.",
+      "box": {
+        "left": 0.612,
+        "top": 0.539,
+        "width": 0.166,
+        "height": 0.147
+      }
+    },
+    {
+      "id": "scissors",
+      "difficulty": "Medium",
+      "label": "The scissors' gold handles turned silver.",
+      "box": {
+        "left": 0.448,
+        "top": 0.329,
+        "width": 0.101,
+        "height": 0.08
+      }
+    },
+    {
+      "id": "moon",
+      "difficulty": "Hard",
+      "label": "The small upper-right moon became a crescent.",
+      "box": {
+        "left": 0.84,
+        "top": 0.012,
+        "width": 0.058,
+        "height": 0.046
+      }
+    },
+    {
+      "id": "feather",
+      "difficulty": "Very hard",
+      "label": "The floating white feather disappeared.",
+      "box": {
+        "left": 0.683,
+        "top": 0.471,
+        "width": 0.092,
+        "height": 0.069
+      }
+    },
+    {
+      "id": "eye",
+      "difficulty": "Dreamlike",
+      "label": "The puppet opened its nearer eye.",
+      "box": {
+        "left": 0.406,
+        "top": 0.289,
+        "width": 0.04,
+        "height": 0.031
+      }
+    }
+  ]
+}

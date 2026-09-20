@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-095.jpg",
+  "generated": "/artwork/differences/card-095-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The folded paper boat turned dusty rose. Target near x37%, y20%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The blue cat opened one eye. Target near x59%, y44%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The drawer's round knob became a heart. Target near x55%, y73%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The lowest silver leaf above the vase disappeared. Target near x30%, y8%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The sun under the cat lost its topmost ray. Target near x42%, y46%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "boat",
+      "difficulty": "Easy",
+      "label": "The folded paper boat turned dusty rose.",
+      "box": {
+        "left": 0.292,
+        "top": 0.15,
+        "width": 0.159,
+        "height": 0.092
+      }
+    },
+    {
+      "id": "eye",
+      "difficulty": "Medium",
+      "label": "The blue cat opened one eye.",
+      "box": {
+        "left": 0.487,
+        "top": 0.384,
+        "width": 0.049,
+        "height": 0.05
+      }
+    },
+    {
+      "id": "knob",
+      "difficulty": "Hard",
+      "label": "The drawer's round knob became a heart.",
+      "box": {
+        "left": 0.489,
+        "top": 0.689,
+        "width": 0.113,
+        "height": 0.087
+      }
+    },
+    {
+      "id": "leaf",
+      "difficulty": "Very hard",
+      "label": "The lowest silver leaf above the vase disappeared.",
+      "box": {
+        "left": 0.263,
+        "top": 0.038,
+        "width": 0.071,
+        "height": 0.086
+      }
+    },
+    {
+      "id": "ray",
+      "difficulty": "Dreamlike",
+      "label": "One of the sun's upper rays became shorter.",
+      "box": {
+        "left": 0.438,
+        "top": 0.428,
+        "width": 0.04,
+        "height": 0.068
+      }
+    }
+  ]
+}

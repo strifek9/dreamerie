@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-072.jpg",
+  "generated": "/artwork/differences/card-072-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The top orange suitcase turned blue. Target near x22%, y14%. Keep all other pixels/objects untouched.\n2. Close only the cat's right eye (viewer right) into a curved wink. Target near x54%, y18%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The door's oval window became diamond-shaped. Target near x47%, y16%. Keep all other pixels/objects untouched.\n4. Keep the folded map held by the middle penguin but erase its little route marks to leave plain parchment. Target near x34%, y22%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The small gull above the bottom-right islands disappeared. Target near x79%, y54%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "suitcase",
+      "difficulty": "Easy",
+      "label": "The top orange suitcase turned blue.",
+      "box": {
+        "left": 0.201,
+        "top": 0.128,
+        "width": 0.044,
+        "height": 0.023
+      }
+    },
+    {
+      "id": "eye",
+      "difficulty": "Medium",
+      "label": "The doorway cat winked.",
+      "box": {
+        "left": 0.531,
+        "top": 0.175,
+        "width": 0.027,
+        "height": 0.015
+      }
+    },
+    {
+      "id": "door-window",
+      "difficulty": "Hard",
+      "label": "The door's oval window became diamond-shaped.",
+      "box": {
+        "left": 0.447,
+        "top": 0.138,
+        "width": 0.037,
+        "height": 0.039
+      }
+    },
+    {
+      "id": "map",
+      "difficulty": "Very hard",
+      "label": "The penguin's map lost its markings.",
+      "box": {
+        "left": 0.318,
+        "top": 0.201,
+        "width": 0.034,
+        "height": 0.04
+      }
+    },
+    {
+      "id": "bird",
+      "difficulty": "Dreamlike",
+      "label": "The small gull above the bottom-right islands disappeared.",
+      "box": {
+        "left": 0.771,
+        "top": 0.531,
+        "width": 0.038,
+        "height": 0.019
+      }
+    }
+  ]
+}

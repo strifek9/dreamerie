@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-019.jpg",
+  "generated": "/artwork/differences/card-019-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The blue flower vase turned gold. Target near x64%, y49%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The sun's red cheek star became a heart. Target near x34%, y31%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The flying dog’s red collar turned teal. Target near x17%, y14%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The sleeping cat opened one golden eye. Target near x85%, y50%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The mug lost its red heart. Target near x67%, y50%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "vase",
+      "difficulty": "Easy",
+      "label": "The blue flower vase turned gold.",
+      "box": {
+        "left": 0.616,
+        "top": 0.462,
+        "width": 0.039,
+        "height": 0.054
+      }
+    },
+    {
+      "id": "cheek",
+      "difficulty": "Medium",
+      "label": "The sun's red cheek star became a heart.",
+      "box": {
+        "left": 0.306,
+        "top": 0.282,
+        "width": 0.07,
+        "height": 0.06
+      }
+    },
+    {
+      "id": "collar",
+      "difficulty": "Hard",
+      "label": "The flying dog’s red collar turned teal.",
+      "box": {
+        "left": 0.147,
+        "top": 0.13,
+        "width": 0.037,
+        "height": 0.023
+      }
+    },
+    {
+      "id": "cat-eye",
+      "difficulty": "Very hard",
+      "label": "The sleeping cat opened one golden eye.",
+      "box": {
+        "left": 0.837,
+        "top": 0.496,
+        "width": 0.018,
+        "height": 0.012
+      }
+    },
+    {
+      "id": "mug",
+      "difficulty": "Dreamlike",
+      "label": "The mug lost its red heart.",
+      "box": {
+        "left": 0.658,
+        "top": 0.488,
+        "width": 0.017,
+        "height": 0.021
+      }
+    }
+  ]
+}

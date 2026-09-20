@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-029.jpg",
+  "generated": "/artwork/differences/card-029-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The perched bird’s yellow breast turned coral. Target near x67%, y6%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The white bird in the nest turned golden yellow. Target near x61%, y35%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The right-hand pink lotus turned ivory. Target near x76%, y85%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The lower flying bird disappeared. Target near x78%, y30%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The lowest round tuning peg on the right disappeared. Target near x64%, y14%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "bird",
+      "difficulty": "Easy",
+      "label": "The perched bird’s yellow breast turned coral.",
+      "box": {
+        "left": 0.65,
+        "top": 0.035,
+        "width": 0.045,
+        "height": 0.042
+      }
+    },
+    {
+      "id": "nest",
+      "difficulty": "Medium",
+      "label": "The white bird in the nest turned golden yellow.",
+      "box": {
+        "left": 0.578,
+        "top": 0.329,
+        "width": 0.057,
+        "height": 0.045
+      }
+    },
+    {
+      "id": "lotus",
+      "difficulty": "Hard",
+      "label": "The right-hand pink lotus turned ivory.",
+      "box": {
+        "left": 0.7,
+        "top": 0.822,
+        "width": 0.13,
+        "height": 0.054
+      }
+    },
+    {
+      "id": "flying-bird",
+      "difficulty": "Very hard",
+      "label": "The lower flying bird disappeared.",
+      "box": {
+        "left": 0.747,
+        "top": 0.272,
+        "width": 0.059,
+        "height": 0.065
+      }
+    },
+    {
+      "id": "peg",
+      "difficulty": "Dreamlike",
+      "label": "The lowest round tuning peg on the right disappeared.",
+      "box": {
+        "left": 0.618,
+        "top": 0.123,
+        "width": 0.038,
+        "height": 0.036
+      }
+    }
+  ]
+}

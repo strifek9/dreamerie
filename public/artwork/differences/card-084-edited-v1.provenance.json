@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-084.jpg",
+  "generated": "/artwork/differences/card-084-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The largest lower-right poppy turned blue. Target near x85%, y85%. Keep all other pixels/objects untouched.\n2. Recolor ONLY the pointed tip of the black rabbit's EXISTING uppermost ear white. Exactly two ears, unchanged outlines and positions, no new ear. Target near x67%, y35%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The white rabbit showed two front teeth instead of one. Target near x27%, y58%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The giant sun's triangular nose became round. Target near x78%, y11%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The tallest castle turret lost its tiny dark window. Target near x91%, y19%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "flower",
+      "difficulty": "Easy",
+      "label": "The largest lower-right poppy turned blue.",
+      "box": {
+        "left": 0.792,
+        "top": 0.813,
+        "width": 0.116,
+        "height": 0.069
+      }
+    },
+    {
+      "id": "ear",
+      "difficulty": "Medium",
+      "label": "The black rabbit gained a white ear tip.",
+      "box": {
+        "left": 0.65,
+        "top": 0.335,
+        "width": 0.045,
+        "height": 0.03
+      }
+    },
+    {
+      "id": "tooth",
+      "difficulty": "Hard",
+      "label": "The white rabbit showed two front teeth instead of one.",
+      "box": {
+        "left": 0.257,
+        "top": 0.575,
+        "width": 0.027,
+        "height": 0.018
+      }
+    },
+    {
+      "id": "nose",
+      "difficulty": "Very hard",
+      "label": "The giant sun's triangular nose became round.",
+      "box": {
+        "left": 0.742,
+        "top": 0.077,
+        "width": 0.081,
+        "height": 0.058
+      }
+    },
+    {
+      "id": "window",
+      "difficulty": "Dreamlike",
+      "label": "The tallest castle turret lost its tiny dark window.",
+      "box": {
+        "left": 0.905,
+        "top": 0.18,
+        "width": 0.011,
+        "height": 0.014
+      }
+    }
+  ]
+}

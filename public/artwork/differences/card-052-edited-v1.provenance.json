@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-052.jpg",
+  "generated": "/artwork/differences/card-052-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The eye in the upper fragment closed. Target near x39%, y21%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The traveler's red dress turned ivory. Target near x37%, y60%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The large face's tear turned gold. Target near x70%, y39%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The largest white bird below the moon disappeared. Target near x28%, y43%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The tiny storm cottage gained a red roof. Target near x20%, y15%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "eye",
+      "difficulty": "Easy",
+      "label": "The eye in the upper fragment closed.",
+      "box": {
+        "left": 0.326,
+        "top": 0.174,
+        "width": 0.119,
+        "height": 0.063
+      }
+    },
+    {
+      "id": "dress",
+      "difficulty": "Medium",
+      "label": "The traveler's red dress turned ivory.",
+      "box": {
+        "left": 0.325,
+        "top": 0.557,
+        "width": 0.086,
+        "height": 0.077
+      }
+    },
+    {
+      "id": "tear",
+      "difficulty": "Hard",
+      "label": "The large face's tear turned gold.",
+      "box": {
+        "left": 0.679,
+        "top": 0.348,
+        "width": 0.035,
+        "height": 0.077
+      }
+    },
+    {
+      "id": "bird",
+      "difficulty": "Very hard",
+      "label": "The highest small white bird disappeared.",
+      "box": {
+        "left": 0.323,
+        "top": 0.412,
+        "width": 0.027,
+        "height": 0.018
+      }
+    },
+    {
+      "id": "roof",
+      "difficulty": "Dreamlike",
+      "label": "The tiny storm cottage gained a red roof.",
+      "box": {
+        "left": 0.187,
+        "top": 0.142,
+        "width": 0.032,
+        "height": 0.016
+      }
+    }
+  ]
+}

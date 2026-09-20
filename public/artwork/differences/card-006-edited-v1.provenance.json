@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-006.jpg",
+  "generated": "/artwork/differences/card-006-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Turn the round pale-yellow sun at x16% y41% into a pale-yellow crescent of the same outer size. Restore sky within the missing part.\n2. Repaint the small floating yellow chair plum purple, keeping its exact shape, spindles and painted highlights. Keep water reflection unchanged.\n3. Remove only the right-hand pocket flap on the coral coat at x56% y33%, replacing it with matching plain coat fabric.\n4. Make the tiny existing buttons on the left front placket at x47% y32% clearly gold instead of coral-brown. Keep their count and placement.\n5. Reverse the tiny hanger hook at x49.6% y13% so it bends left rather than right. Keep the hanger, coat and clouds unchanged.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "sun",
+      "difficulty": "Easy",
+      "label": "The round sun became a crescent.",
+      "box": {
+        "left": 0.113,
+        "top": 0.374,
+        "width": 0.096,
+        "height": 0.079
+      }
+    },
+    {
+      "id": "chair",
+      "difficulty": "Medium",
+      "label": "The yellow chair turned plum purple.",
+      "box": {
+        "left": 0.446,
+        "top": 0.578,
+        "width": 0.097,
+        "height": 0.098
+      }
+    },
+    {
+      "id": "pocket",
+      "difficulty": "Hard",
+      "label": "The coat’s right pocket flap disappeared.",
+      "box": {
+        "left": 0.544,
+        "top": 0.308,
+        "width": 0.041,
+        "height": 0.036
+      }
+    },
+    {
+      "id": "buttons",
+      "difficulty": "Very hard",
+      "label": "The coat’s buttons turned gold.",
+      "box": {
+        "left": 0.462,
+        "top": 0.288,
+        "width": 0.023,
+        "height": 0.048
+      }
+    },
+    {
+      "id": "hook",
+      "difficulty": "Dreamlike",
+      "label": "The hanger’s hook curves the other way.",
+      "box": {
+        "left": 0.468,
+        "top": 0.108,
+        "width": 0.039,
+        "height": 0.04
+      }
+    }
+  ]
+}

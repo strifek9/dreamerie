@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-118.jpg",
+  "generated": "/artwork/differences/card-118-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The blue chair turned coral. Target near x12%, y53%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The moon in the chair's shadow became full. Target near x25%, y65%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The sun's rightmost eye closed. Target near x33%, y16%. Keep all other pixels/objects untouched.\n4. Change only the rightmost yellow fruit at the left edge near x6%, y35% to a green pear, preserving leaves and vase. Target near x6%, y35%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The smallest star between the moon and top stair vanished. Target near x72%, y12%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "chair",
+      "difficulty": "Easy",
+      "label": "The blue chair turned coral.",
+      "box": {
+        "left": 0.06,
+        "top": 0.447,
+        "width": 0.125,
+        "height": 0.168
+      }
+    },
+    {
+      "id": "moon",
+      "difficulty": "Medium",
+      "label": "The moon in the chair's shadow became full.",
+      "box": {
+        "left": 0.211,
+        "top": 0.624,
+        "width": 0.075,
+        "height": 0.051
+      }
+    },
+    {
+      "id": "eye",
+      "difficulty": "Hard",
+      "label": "The sun's rightmost eye closed.",
+      "box": {
+        "left": 0.311,
+        "top": 0.144,
+        "width": 0.045,
+        "height": 0.028
+      }
+    },
+    {
+      "id": "lemon",
+      "difficulty": "Very hard",
+      "label": "One lemon became a green pear.",
+      "box": {
+        "left": 0.039,
+        "top": 0.325,
+        "width": 0.037,
+        "height": 0.044
+      }
+    },
+    {
+      "id": "star",
+      "difficulty": "Dreamlike",
+      "label": "The smallest star between the moon and top stair vanished.",
+      "box": {
+        "left": 0.708,
+        "top": 0.113,
+        "width": 0.017,
+        "height": 0.019
+      }
+    }
+  ]
+}

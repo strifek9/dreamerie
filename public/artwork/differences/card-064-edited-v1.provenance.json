@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-064.jpg",
+  "generated": "/artwork/differences/card-064-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The bird carried a green leaf instead of a red petal. Target near x92%, y26%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The giant mouth lost its middle front tooth. Target near x50%, y19%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The large lower-left poppy turned ivory. Target near x16%, y68%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The small petal at the middle of the river disappeared. Target near x51%, y71%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The blue bird closed its tiny eye. Target near x86%, y22%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "petal",
+      "difficulty": "Easy",
+      "label": "The bird carried a green leaf instead of a red petal.",
+      "box": {
+        "left": 0.873,
+        "top": 0.222,
+        "width": 0.084,
+        "height": 0.076
+      }
+    },
+    {
+      "id": "tooth",
+      "difficulty": "Medium",
+      "label": "The giant mouth lost its middle front tooth.",
+      "box": {
+        "left": 0.463,
+        "top": 0.169,
+        "width": 0.065,
+        "height": 0.041
+      }
+    },
+    {
+      "id": "flower",
+      "difficulty": "Hard",
+      "label": "The large lower-left poppy turned ivory.",
+      "box": {
+        "left": 0.049,
+        "top": 0.617,
+        "width": 0.226,
+        "height": 0.131
+      }
+    },
+    {
+      "id": "river-petal",
+      "difficulty": "Very hard",
+      "label": "The small petal at the middle of the river disappeared.",
+      "box": {
+        "left": 0.481,
+        "top": 0.7,
+        "width": 0.055,
+        "height": 0.026
+      }
+    },
+    {
+      "id": "bird-eye",
+      "difficulty": "Dreamlike",
+      "label": "The blue bird closed its tiny eye.",
+      "box": {
+        "left": 0.855,
+        "top": 0.215,
+        "width": 0.015,
+        "height": 0.011
+      }
+    }
+  ]
+}

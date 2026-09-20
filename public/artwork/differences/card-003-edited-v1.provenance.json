@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-003.jpg",
+  "generated": "/artwork/differences/card-003-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Repaint only the tall central closed green door plum red, preserving its boards, gold handle and arch.\n2. Close the dragon's visible eye into a gentle curved sleeping eyelid. Keep its head outline, lashes, mouth and horns exactly in place.\n3. Replace only the small yellow crescent inside the far-right doorway at x94% y32% with a same-size yellow five-point star.\n4. Remove only the gold star at x93% y85% on the lower-right dragon tail, restoring purple scales beneath.\n5. Change the tiny flame inside the hanging central lantern at x60% y44% from yellow to turquoise blue; leave its golden glass glow and frame intact.",
+  "review": "Visually inspected against the original. Only the five declared regions are composited. Labels describe visible output; pot sprig on card-002 changed leaf count instead of just the tip leaf.",
+  "edits": [
+    {
+      "id": "door",
+      "difficulty": "Easy",
+      "label": "The large green door turned plum red.",
+      "box": {
+        "left": 0.532,
+        "top": 0.101,
+        "width": 0.116,
+        "height": 0.216
+      }
+    },
+    {
+      "id": "eye",
+      "difficulty": "Medium",
+      "label": "The dragon closed its eye.",
+      "box": {
+        "left": 0.604,
+        "top": 0.519,
+        "width": 0.055,
+        "height": 0.039
+      }
+    },
+    {
+      "id": "moon",
+      "difficulty": "Hard",
+      "label": "The right-hand doorway's crescent became a star.",
+      "box": {
+        "left": 0.922,
+        "top": 0.305,
+        "width": 0.034,
+        "height": 0.032
+      }
+    },
+    {
+      "id": "tail-star",
+      "difficulty": "Very hard",
+      "label": "The star near the lower-right tail disappeared.",
+      "box": {
+        "left": 0.9,
+        "top": 0.816,
+        "width": 0.056,
+        "height": 0.054
+      }
+    },
+    {
+      "id": "flame",
+      "difficulty": "Dreamlike",
+      "label": "The hanging lantern's flame turned blue.",
+      "box": {
+        "left": 0.593,
+        "top": 0.425,
+        "width": 0.025,
+        "height": 0.029
+      }
+    }
+  ]
+}

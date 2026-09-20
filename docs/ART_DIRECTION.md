@@ -1,5 +1,25 @@
 # Dreamerie art direction
 
+## Daily Dream Recall direction
+
+The current experience should feel like opening two windows onto the same half-remembered night: quiet, strange, spacious, and intimate. Both artworks occupy most of the screen. Deep indigo surroundings, moonlit ivory, dusty violet, and restrained rose support the pair without turning the interface into a dashboard.
+
+Use generous negative space, one elegant display face, one highly readable sans-serif face, and very little copy. Controls float lightly and remain unmistakable. A pending guess is a luminous ring; found memories become calm checked rings; false memories remain visible but subdued. Nothing should encourage rapid tapping.
+
+The original and altered views share the same composition and dimensions. Exactly five recognizable object details change: for example a blue bow becomes red, two gold buttons become four matching buttons, a glove gains a finger, or an existing moon changes color. Preserve each card's own palette, brushwork, lighting, silhouettes, and visual logic. The red bow and gold buttons are successful examples, not a required palette or formula for every card. Choose interesting details that belong to each individual scene: facial expression, fabric pattern, flower anatomy, architecture, missing components, and celestial motifs. Do not add random props that feel unrelated to the card. Do not substitute circular discoloration, generic filters, or tiny low-contrast artifacts for real answers.
+
+Use a progression from obvious object edits to small, meaningful details. Difficulty should come from observation and scale, not ambiguous damage to the painting. Review generated changes before including a card in rotation; all 120 cards now have authored pairs. The answer ledger in `ARTWORK_REVIEW.md` records the final accepted descriptions; difficulty is an editorial estimate, not playtest calibration. Composite only the five declared edited regions onto the original so everything outside remains identical. Small nested details have hit priority over their enclosing object, including on repeat guesses. Hit regions are normalized to the artwork so they stay aligned through responsive sizing and zoom. Markers must not hide large portions of the image.
+
+At the end, show found regions in green only on the left and missed regions in soft red only on the right, with matching numbered descriptions and Found/Missed labels. Keep outlines thin, interiors transparent, and number badges just above the regions. Fade the whole marker, including the badge, completely out and back in over a calm six-second cycle. Keep zoom and a Hide markers control available. With reduced motion, use static outlines and manual hiding. Do not fade the artwork or written explanations.
+
+The opening makes the day's original painting its main focal point. Group the Dreamerie wordmark directly above the small day-number heading and artwork, rather than leaving a detached site header at the top. On phones, show a large uncropped card (up to 20rem wide) followed by the user's reverie poem, short rules and Start. On desktop, grow the painting up to 29rem wide (bounded by viewport height) and place the poem and Start alongside it. Allow normal vertical scrolling on small screens; never shrink the artwork back to a thumbnail just to fit all copy. Landing-page development controls sit below the main composition. The original-card preview is untimed; never show the altered art or answer markers there. Results use five small violet/dark square tiles with check/dash cues, not color alone, and light Share/Copy controls above the answer explanations. Keep the complete text share in an expandable preview rather than repeating it across the screen.
+
+The opening may fade gently into the game, but both images stay stationary during play. Marker breathing and zoom easing are subtle and reduced-motion aware. Mobile keeps both visions side by side because zoom makes inspection possible; desktop makes the pair larger rather than denser.
+
+The prior broad card-deck and social-room direction remains historical reference for `prototype/social-dreams`, not guidance for the primary prototype below.
+
+## Historical social-mode art direction
+
 ## Identity
 
 Dreamerie should feel like an illustrated dream journal, surreal gallery, or quiet nighttime storybook: artistic, mysterious, calm, whimsical, slightly magical, and emotionally evocative. Develop an original identity; do not imitate the exact style of an existing commercial game.

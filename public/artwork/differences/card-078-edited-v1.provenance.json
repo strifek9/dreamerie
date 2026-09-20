@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-078.jpg",
+  "generated": "/artwork/differences/card-078-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The large mid-left coral flower turned ivory. Target near x10%, y57%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The full moon in the torn sky became a crescent. Target near x83%, y12%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The isolated cottage roof beside the waterfall turned blue. Target near x76%, y59%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The smoking chimney became a tiny bell tower. Target near x41%, y42%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The tall village tower lost its upper window. Target near x29%, y39%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "flower",
+      "difficulty": "Easy",
+      "label": "The large mid-left coral flower turned ivory.",
+      "box": {
+        "left": 0,
+        "top": 0.487,
+        "width": 0.193,
+        "height": 0.167
+      }
+    },
+    {
+      "id": "moon",
+      "difficulty": "Medium",
+      "label": "The full moon in the torn sky became a crescent.",
+      "box": {
+        "left": 0.772,
+        "top": 0.07,
+        "width": 0.121,
+        "height": 0.108
+      }
+    },
+    {
+      "id": "roof",
+      "difficulty": "Hard",
+      "label": "The isolated cottage roof beside the waterfall turned blue.",
+      "box": {
+        "left": 0.723,
+        "top": 0.584,
+        "width": 0.072,
+        "height": 0.019
+      }
+    },
+    {
+      "id": "smoke",
+      "difficulty": "Very hard",
+      "label": "The smoking chimney became a tiny bell tower.",
+      "box": {
+        "left": 0.375,
+        "top": 0.394,
+        "width": 0.06,
+        "height": 0.061
+      }
+    },
+    {
+      "id": "window",
+      "difficulty": "Dreamlike",
+      "label": "The tall village tower lost its upper window.",
+      "box": {
+        "left": 0.282,
+        "top": 0.38,
+        "width": 0.012,
+        "height": 0.014
+      }
+    }
+  ]
+}

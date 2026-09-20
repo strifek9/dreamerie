@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-110.jpg",
+  "generated": "/artwork/differences/card-110-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Repaint only the cart's green plank box dusty rose, preserving all wooden grain, wheels and structure. Target near x73%, y70%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The rabbit closed its eye. Target near x21%, y48%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The large lower-left coral flower turned ivory. Target near x11%, y81%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The floating island's waterfall dried up. Target near x60%, y19%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The small right wheel lost its top vertical spoke. Target near x91%, y75%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "cart",
+      "difficulty": "Easy",
+      "label": "The wooden cart turned dusty rose.",
+      "box": {
+        "left": 0.486,
+        "top": 0.608,
+        "width": 0.483,
+        "height": 0.183
+      }
+    },
+    {
+      "id": "eye",
+      "difficulty": "Medium",
+      "label": "The rabbit closed its eye.",
+      "box": {
+        "left": 0.195,
+        "top": 0.467,
+        "width": 0.039,
+        "height": 0.026
+      }
+    },
+    {
+      "id": "flower",
+      "difficulty": "Hard",
+      "label": "The large lower-left coral flower turned ivory.",
+      "box": {
+        "left": 0.055,
+        "top": 0.766,
+        "width": 0.11,
+        "height": 0.084
+      }
+    },
+    {
+      "id": "waterfall",
+      "difficulty": "Very hard",
+      "label": "The floating island's waterfall dried up.",
+      "box": {
+        "left": 0.567,
+        "top": 0.113,
+        "width": 0.064,
+        "height": 0.155
+      }
+    },
+    {
+      "id": "spoke",
+      "difficulty": "Dreamlike",
+      "label": "The small right wheel lost its top vertical spoke.",
+      "box": {
+        "left": 0.904,
+        "top": 0.725,
+        "width": 0.015,
+        "height": 0.045
+      }
+    }
+  ]
+}

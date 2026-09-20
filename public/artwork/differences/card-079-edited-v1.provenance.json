@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-079.jpg",
+  "generated": "/artwork/differences/card-079-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The purple foreground bird turned blue. Target near x63%, y69%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The blue dancer's brimmed hat became a pointed hat. Target near x33%, y9%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The red floating leaf beside the lower-right dancer became a heart. Target near x80%, y48%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The yellow dancer lost her round hair bun. Target near x84%, y17%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The foreground bird closed its tiny eye. Target near x60%, y66%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "bird",
+      "difficulty": "Easy",
+      "label": "The purple foreground bird turned blue.",
+      "box": {
+        "left": 0.582,
+        "top": 0.647,
+        "width": 0.093,
+        "height": 0.078
+      }
+    },
+    {
+      "id": "hat",
+      "difficulty": "Medium",
+      "label": "The blue dancer's brimmed hat became a pointed hat.",
+      "box": {
+        "left": 0.288,
+        "top": 0.062,
+        "width": 0.083,
+        "height": 0.06
+      }
+    },
+    {
+      "id": "leaf",
+      "difficulty": "Hard",
+      "label": "The red floating leaf beside the lower-right dancer became a heart.",
+      "box": {
+        "left": 0.76,
+        "top": 0.45,
+        "width": 0.072,
+        "height": 0.055
+      }
+    },
+    {
+      "id": "bun",
+      "difficulty": "Very hard",
+      "label": "The yellow dancer lost her round hair bun.",
+      "box": {
+        "left": 0.819,
+        "top": 0.16,
+        "width": 0.037,
+        "height": 0.028
+      }
+    },
+    {
+      "id": "eye",
+      "difficulty": "Dreamlike",
+      "label": "The foreground bird closed its tiny eye.",
+      "box": {
+        "left": 0.596,
+        "top": 0.654,
+        "width": 0.013,
+        "height": 0.013
+      }
+    }
+  ]
+}

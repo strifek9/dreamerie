@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-025.jpg",
+  "generated": "/artwork/differences/card-025-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The dark wooden chair turned burgundy red. Target near x46%, y42%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The upper central crescent became a full moon. Target near x53%, y7%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The bird shadow’s pointed beak became short and curved. Target near x92%, y46%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The chair lost its middle backrest rung. Target near x43%, y36%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The tiny gold knob on the lower door disappeared. Target near x64%, y74%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "chair",
+      "difficulty": "Easy",
+      "label": "The dark wooden chair turned burgundy red.",
+      "box": {
+        "left": 0.373,
+        "top": 0.289,
+        "width": 0.18,
+        "height": 0.253
+      }
+    },
+    {
+      "id": "moon",
+      "difficulty": "Medium",
+      "label": "The upper central crescent became a full moon.",
+      "box": {
+        "left": 0.508,
+        "top": 0.047,
+        "width": 0.041,
+        "height": 0.036
+      }
+    },
+    {
+      "id": "beak",
+      "difficulty": "Hard",
+      "label": "The bird shadow’s pointed beak became short and curved.",
+      "box": {
+        "left": 0.889,
+        "top": 0.446,
+        "width": 0.061,
+        "height": 0.034
+      }
+    },
+    {
+      "id": "rung",
+      "difficulty": "Very hard",
+      "label": "The chair lost its two lower backrest rungs.",
+      "box": {
+        "left": 0.393,
+        "top": 0.338,
+        "width": 0.069,
+        "height": 0.061
+      }
+    },
+    {
+      "id": "knob",
+      "difficulty": "Dreamlike",
+      "label": "The tiny gold knob on the lower door disappeared.",
+      "box": {
+        "left": 0.632,
+        "top": 0.735,
+        "width": 0.018,
+        "height": 0.019
+      }
+    }
+  ]
+}

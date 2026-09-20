@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-037.jpg",
+  "generated": "/artwork/differences/card-037-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The sun inside the blue square became a crescent. Target near x59%, y18%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The right-hand traveler's cloak turned gold. Target near x86%, y38%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The floating leaf between the wrists disappeared. Target near x51%, y57%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The lowest floating leaf turned deep blue. Target near x60%, y89%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The little golden doorway gained a tiny red knob. Target near x81%, y80%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "sun",
+      "difficulty": "Easy",
+      "label": "The sun inside the blue square became a crescent.",
+      "box": {
+        "left": 0.556,
+        "top": 0.149,
+        "width": 0.077,
+        "height": 0.065
+      }
+    },
+    {
+      "id": "cloak",
+      "difficulty": "Medium",
+      "label": "The right-hand traveler's cloak turned gold.",
+      "box": {
+        "left": 0.837,
+        "top": 0.353,
+        "width": 0.046,
+        "height": 0.063
+      }
+    },
+    {
+      "id": "leaf",
+      "difficulty": "Hard",
+      "label": "The floating leaf between the wrists disappeared.",
+      "box": {
+        "left": 0.475,
+        "top": 0.544,
+        "width": 0.062,
+        "height": 0.054
+      }
+    },
+    {
+      "id": "lower-leaf",
+      "difficulty": "Very hard",
+      "label": "The lowest floating leaf turned deep blue.",
+      "box": {
+        "left": 0.546,
+        "top": 0.854,
+        "width": 0.099,
+        "height": 0.072
+      }
+    },
+    {
+      "id": "door",
+      "difficulty": "Dreamlike",
+      "label": "The little golden doorway gained a tiny red knob.",
+      "box": {
+        "left": 0.808,
+        "top": 0.829,
+        "width": 0.025,
+        "height": 0.022
+      }
+    }
+  ]
+}

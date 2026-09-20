@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-009.jpg",
+  "generated": "/artwork/differences/card-009-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The upper cloth’s crescent became a star. Target near x44%, y14%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The right balcony's cream cat turned ginger. Target near x90%, y50%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The whale closed its eye. Target near x43%, y39%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The lower purple cloth lost its gold star. Target near x68%, y76%. Keep all other pixels/objects untouched.\n5. Edit only this object so: One peg above the lower ivory sheet disappeared. Target near x54%, y67%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "cloth-moon",
+      "difficulty": "Easy",
+      "label": "The upper cloth’s crescent became a star.",
+      "box": {
+        "left": 0.415,
+        "top": 0.114,
+        "width": 0.048,
+        "height": 0.045
+      }
+    },
+    {
+      "id": "cat",
+      "difficulty": "Medium",
+      "label": "The right balcony's cream cat turned ginger.",
+      "box": {
+        "left": 0.862,
+        "top": 0.46,
+        "width": 0.076,
+        "height": 0.07
+      }
+    },
+    {
+      "id": "eye",
+      "difficulty": "Hard",
+      "label": "The whale closed its eye.",
+      "box": {
+        "left": 0.404,
+        "top": 0.379,
+        "width": 0.045,
+        "height": 0.025
+      }
+    },
+    {
+      "id": "cloth-star",
+      "difficulty": "Very hard",
+      "label": "The lower purple cloth lost its gold star.",
+      "box": {
+        "left": 0.645,
+        "top": 0.723,
+        "width": 0.066,
+        "height": 0.066
+      }
+    },
+    {
+      "id": "peg",
+      "difficulty": "Dreamlike",
+      "label": "One peg above the lower ivory sheet disappeared.",
+      "box": {
+        "left": 0.527,
+        "top": 0.661,
+        "width": 0.02,
+        "height": 0.022
+      }
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-106.jpg",
+  "generated": "/artwork/differences/card-106-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The pink cottage's upper front window became round. Target near x36%, y45%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The large white flower on the bowl turned pink. Target near x11%, y35%. Keep all other pixels/objects untouched.\n3. Edit only this object so: One floating yellow tile became heart-shaped. Target near x76%, y31%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The tall shadow-house lost its chimney. Target near x77%, y6%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The small white leaf near the bowl's upper rim disappeared. Target near x22%, y23%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "window",
+      "difficulty": "Easy",
+      "label": "The pink cottage's upper front window became round.",
+      "box": {
+        "left": 0.328,
+        "top": 0.42,
+        "width": 0.064,
+        "height": 0.062
+      }
+    },
+    {
+      "id": "flower",
+      "difficulty": "Medium",
+      "label": "The large white flower on the bowl turned pink.",
+      "box": {
+        "left": 0.045,
+        "top": 0.286,
+        "width": 0.135,
+        "height": 0.131
+      }
+    },
+    {
+      "id": "tile",
+      "difficulty": "Hard",
+      "label": "One floating yellow tile became heart-shaped.",
+      "box": {
+        "left": 0.736,
+        "top": 0.281,
+        "width": 0.056,
+        "height": 0.048
+      }
+    },
+    {
+      "id": "chimney",
+      "difficulty": "Very hard",
+      "label": "The tall shadow-house lost its chimney.",
+      "box": {
+        "left": 0.744,
+        "top": 0.015,
+        "width": 0.046,
+        "height": 0.094
+      }
+    },
+    {
+      "id": "leaf",
+      "difficulty": "Dreamlike",
+      "label": "The small white leaf near the bowl's upper rim disappeared.",
+      "box": {
+        "left": 0.199,
+        "top": 0.222,
+        "width": 0.043,
+        "height": 0.021
+      }
+    }
+  ]
+}

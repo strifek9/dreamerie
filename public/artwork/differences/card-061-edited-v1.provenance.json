@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-061.jpg",
+  "generated": "/artwork/differences/card-061-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The small traveler's black cloak turned coral red. Target near x17%, y54%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The bird in the largest window turned gold. Target near x85%, y11%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The tiny floating window left of the peak disappeared. Target near x20%, y25%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The orange moon became a crescent. Target near x20%, y10%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The small rightmost floating window gained a gold knob. Target near x87%, y39%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "cloak",
+      "difficulty": "Easy",
+      "label": "The small traveler's black cloak turned coral red.",
+      "box": {
+        "left": 0.107,
+        "top": 0.485,
+        "width": 0.127,
+        "height": 0.112
+      }
+    },
+    {
+      "id": "bird",
+      "difficulty": "Medium",
+      "label": "The bird in the largest window turned gold.",
+      "box": {
+        "left": 0.83,
+        "top": 0.085,
+        "width": 0.049,
+        "height": 0.042
+      }
+    },
+    {
+      "id": "window",
+      "difficulty": "Hard",
+      "label": "The tiny floating window left of the peak disappeared.",
+      "box": {
+        "left": 0.186,
+        "top": 0.223,
+        "width": 0.024,
+        "height": 0.054
+      }
+    },
+    {
+      "id": "moon",
+      "difficulty": "Very hard",
+      "label": "The orange moon became a crescent.",
+      "box": {
+        "left": 0.088,
+        "top": 0.016,
+        "width": 0.215,
+        "height": 0.166
+      }
+    },
+    {
+      "id": "knob",
+      "difficulty": "Dreamlike",
+      "label": "The small rightmost floating window gained a gold knob.",
+      "box": {
+        "left": 0.872,
+        "top": 0.384,
+        "width": 0.021,
+        "height": 0.017
+      }
+    }
+  ]
+}

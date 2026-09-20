@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-085.jpg",
+  "generated": "/artwork/differences/card-085-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Open the little sun's eye on the viewer's left, keeping its smile. Target near x41%, y52%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The giant thumb's nail turned ivory. Target near x73%, y47%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The crescent in the right arch became a half moon. Target near x91%, y46%. Keep all other pixels/objects untouched.\n4. Repaint the pale checkerboard square on the boat's near face centered around x42%,y65% vermilion red, without changing neighboring squares. Target near x42%, y65%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The tiny figure at the top-left bridge disappeared. Target near x18%, y5%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "eye",
+      "difficulty": "Easy",
+      "label": "The little sun opened its left eye.",
+      "box": {
+        "left": 0.39,
+        "top": 0.51,
+        "width": 0.035,
+        "height": 0.018
+      }
+    },
+    {
+      "id": "nail",
+      "difficulty": "Medium",
+      "label": "The giant thumb's nail turned ivory.",
+      "box": {
+        "left": 0.698,
+        "top": 0.431,
+        "width": 0.071,
+        "height": 0.079
+      }
+    },
+    {
+      "id": "moon",
+      "difficulty": "Hard",
+      "label": "The crescent in the right arch became a half moon.",
+      "box": {
+        "left": 0.869,
+        "top": 0.4,
+        "width": 0.089,
+        "height": 0.117
+      }
+    },
+    {
+      "id": "square",
+      "difficulty": "Very hard",
+      "label": "One pale square on the boat turned red.",
+      "box": {
+        "left": 0.396,
+        "top": 0.589,
+        "width": 0.038,
+        "height": 0.045
+      }
+    },
+    {
+      "id": "figure",
+      "difficulty": "Dreamlike",
+      "label": "The tiny figure at the top-left bridge disappeared.",
+      "box": {
+        "left": 0.169,
+        "top": 0.028,
+        "width": 0.017,
+        "height": 0.034
+      }
+    }
+  ]
+}

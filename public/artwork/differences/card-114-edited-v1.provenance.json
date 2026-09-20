@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-114.jpg",
+  "generated": "/artwork/differences/card-114-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Change the round glowing paper lantern silhouette to a six-sided hexagonal paper lantern, keeping light, size, handle and dripping water. Target near x56%, y52%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The full moon in the upper-right sky became a crescent. Target near x85%, y7%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The crane's red wing feather turned blue. Target near x14%, y42%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The red floating leaf below the crane disappeared. Target near x12%, y84%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The crane closed its eye. Target near x54%, y29%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "lantern",
+      "difficulty": "Easy",
+      "label": "The round lantern became an angular lantern.",
+      "box": {
+        "left": 0.486,
+        "top": 0.465,
+        "width": 0.143,
+        "height": 0.119
+      }
+    },
+    {
+      "id": "moon",
+      "difficulty": "Medium",
+      "label": "The full moon in the upper-right sky became a crescent.",
+      "box": {
+        "left": 0.798,
+        "top": 0.031,
+        "width": 0.106,
+        "height": 0.085
+      }
+    },
+    {
+      "id": "feather",
+      "difficulty": "Hard",
+      "label": "The crane's red wing feather turned blue.",
+      "box": {
+        "left": 0.108,
+        "top": 0.375,
+        "width": 0.056,
+        "height": 0.083
+      }
+    },
+    {
+      "id": "leaf",
+      "difficulty": "Very hard",
+      "label": "The red floating leaf below the crane disappeared.",
+      "box": {
+        "left": 0.026,
+        "top": 0.824,
+        "width": 0.184,
+        "height": 0.027
+      }
+    },
+    {
+      "id": "eye",
+      "difficulty": "Dreamlike",
+      "label": "The crane closed its eye.",
+      "box": {
+        "left": 0.53,
+        "top": 0.286,
+        "width": 0.016,
+        "height": 0.017
+      }
+    }
+  ]
+}

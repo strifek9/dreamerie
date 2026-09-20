@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-027.jpg",
+  "generated": "/artwork/differences/card-027-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The engine’s yellow headlight turned blue. Target near x40%, y47%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The upper-left silver star turned gold. Target near x16%, y11%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The first carriage lost its second window. Target near x64%, y42%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The large sheet at the far right lost its writing. Target near x96%, y20%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The bird directly below the full moon disappeared. Target near x78%, y13%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "headlight",
+      "difficulty": "Easy",
+      "label": "The engine’s yellow headlight turned blue.",
+      "box": {
+        "left": 0.386,
+        "top": 0.455,
+        "width": 0.035,
+        "height": 0.029
+      }
+    },
+    {
+      "id": "star",
+      "difficulty": "Medium",
+      "label": "The upper-left silver star turned gold.",
+      "box": {
+        "left": 0.107,
+        "top": 0.065,
+        "width": 0.096,
+        "height": 0.098
+      }
+    },
+    {
+      "id": "window",
+      "difficulty": "Hard",
+      "label": "The first carriage lost its second window.",
+      "box": {
+        "left": 0.632,
+        "top": 0.41,
+        "width": 0.02,
+        "height": 0.024
+      }
+    },
+    {
+      "id": "paper",
+      "difficulty": "Very hard",
+      "label": "The large sheet at the far right lost its writing.",
+      "box": {
+        "left": 0.912,
+        "top": 0.146,
+        "width": 0.088,
+        "height": 0.102
+      }
+    },
+    {
+      "id": "bird",
+      "difficulty": "Dreamlike",
+      "label": "The bird directly below the full moon disappeared.",
+      "box": {
+        "left": 0.746,
+        "top": 0.097,
+        "width": 0.076,
+        "height": 0.059
+      }
+    }
+  ]
+}

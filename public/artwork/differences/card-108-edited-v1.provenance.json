@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-108.jpg",
+  "generated": "/artwork/differences/card-108-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Repaint ONLY the main ivory apron cloth pale blue, leave its separate waist bow and ribbons ivory. Target near x27%, y34%. Keep all other pixels/objects untouched.\n2. Edit only this object so: One large circle on the skirt became a triangle. Target near x33%, y49%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The smiling sun lost one rounded tooth. Target near x90%, y23%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The woman gained a tiny pearl earring. Target near x35%, y17%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The rightmost falling seed vanished. Target near x84%, y70%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "apron",
+      "difficulty": "Easy",
+      "label": "The woman's ivory apron turned pale blue.",
+      "box": {
+        "left": 0.164,
+        "top": 0.224,
+        "width": 0.21,
+        "height": 0.232
+      }
+    },
+    {
+      "id": "pattern",
+      "difficulty": "Medium",
+      "label": "One large circle on the skirt became a triangle.",
+      "box": {
+        "left": 0.29,
+        "top": 0.457,
+        "width": 0.081,
+        "height": 0.064
+      }
+    },
+    {
+      "id": "tooth",
+      "difficulty": "Hard",
+      "label": "The smiling sun lost one rounded tooth.",
+      "box": {
+        "left": 0.876,
+        "top": 0.215,
+        "width": 0.044,
+        "height": 0.027
+      }
+    },
+    {
+      "id": "earring",
+      "difficulty": "Very hard",
+      "label": "The woman gained a tiny pearl earring.",
+      "box": {
+        "left": 0.346,
+        "top": 0.164,
+        "width": 0.014,
+        "height": 0.015
+      }
+    },
+    {
+      "id": "seed",
+      "difficulty": "Dreamlike",
+      "label": "The rightmost falling seed vanished.",
+      "box": {
+        "left": 0.825,
+        "top": 0.687,
+        "width": 0.02,
+        "height": 0.016
+      }
+    }
+  ]
+}

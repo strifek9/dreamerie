@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-004.jpg",
+  "generated": "/artwork/differences/card-004-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Replace the largest floating gold star at x78% y88% with a gold crescent floating in exactly the same ripple, matching glow and texture. Keep reflections unchanged.\n2. Change just the teal stripe directly beneath the fox's chin at x51% y45% to coral red. Keep all other scarf stripes unchanged.\n3. Change the fox's visible closed eye into a small open dark eye, keeping its happy expression and face.\n4. Remove only the round carrying handle above the boat lantern at x66% y50%, restoring background water.\n5. Remove the tiny cross finial on the largest middle-right hilltop dome at x85.5% y16%, leaving the dome itself.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "star",
+      "difficulty": "Easy",
+      "label": "The large foreground star became a crescent.",
+      "box": {
+        "left": 0.692,
+        "top": 0.829,
+        "width": 0.183,
+        "height": 0.092
+      }
+    },
+    {
+      "id": "scarf",
+      "difficulty": "Medium",
+      "label": "A scarf stripe turned coral red.",
+      "box": {
+        "left": 0.487,
+        "top": 0.434,
+        "width": 0.047,
+        "height": 0.04
+      }
+    },
+    {
+      "id": "eye",
+      "difficulty": "Hard",
+      "label": "The fox opened its eye.",
+      "box": {
+        "left": 0.493,
+        "top": 0.371,
+        "width": 0.039,
+        "height": 0.023
+      }
+    },
+    {
+      "id": "handle",
+      "difficulty": "Very hard",
+      "label": "The lantern lost its carrying loop.",
+      "box": {
+        "left": 0.631,
+        "top": 0.473,
+        "width": 0.048,
+        "height": 0.035
+      }
+    },
+    {
+      "id": "spire",
+      "difficulty": "Dreamlike",
+      "label": "The middle hilltop dome lost its cross.",
+      "box": {
+        "left": 0.843,
+        "top": 0.148,
+        "width": 0.028,
+        "height": 0.021
+      }
+    }
+  ]
+}

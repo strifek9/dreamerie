@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-070.jpg",
+  "generated": "/artwork/differences/card-070-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Repaint only ceramic of largest nearest cup coral, preserving its white star, yellow crescent, handle and bird. Target near x20%, y84%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The small central bird closed its eye. Target near x58%, y18%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The second cup's white star became a diamond. Target near x40%, y74%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The farthest little cup lost its handle. Target near x64%, y61%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The right-hand round yellow hill motif became a diamond. Target near x83%, y87%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "cup",
+      "difficulty": "Easy",
+      "label": "The nearest blue cup turned coral.",
+      "box": {
+        "left": 0.005,
+        "top": 0.705,
+        "width": 0.38,
+        "height": 0.261
+      }
+    },
+    {
+      "id": "eye",
+      "difficulty": "Medium",
+      "label": "The small central bird closed its eye.",
+      "box": {
+        "left": 0.555,
+        "top": 0.16,
+        "width": 0.053,
+        "height": 0.03
+      }
+    },
+    {
+      "id": "star",
+      "difficulty": "Hard",
+      "label": "The second cup's white star became a diamond.",
+      "box": {
+        "left": 0.369,
+        "top": 0.713,
+        "width": 0.057,
+        "height": 0.052
+      }
+    },
+    {
+      "id": "handle",
+      "difficulty": "Very hard",
+      "label": "The farthest little cup lost its handle.",
+      "box": {
+        "left": 0.626,
+        "top": 0.598,
+        "width": 0.022,
+        "height": 0.026
+      }
+    },
+    {
+      "id": "orb",
+      "difficulty": "Dreamlike",
+      "label": "The right-hand round yellow hill motif became a diamond.",
+      "box": {
+        "left": 0.788,
+        "top": 0.834,
+        "width": 0.087,
+        "height": 0.073
+      }
+    }
+  ]
+}

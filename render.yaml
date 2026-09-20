@@ -1,4 +1,5 @@
-# Anyone with the site link may enter; individual rooms still require an invitation.
+# Daily Dream Recall uses the existing service, but serves built files only.
+# Keep the legacy disk attached and untouched for recovery of the social prototype.
 # Importing provisions paid resources. Review docs/HOSTING.md and the checkout price first.
 services:
   - type: web

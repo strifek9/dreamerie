@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-057.jpg",
+  "generated": "/artwork/differences/card-057-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The green storm bowl turned deep blue, keeping its gold repairs. Target near x37%, y51%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The crescent on her shoulder became a star. Target near x13%, y16%. Keep all other pixels/objects untouched.\n3. Edit only this object so: Her near hand gained a small gold ring. Target near x47%, y61%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The tiny star below her hand disappeared. Target near x36%, y73%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The lone cottage on the upper-right cliff gained a blue roof. Target near x85%, y18%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "bowl",
+      "difficulty": "Easy",
+      "label": "The green storm bowl turned deep blue, keeping its gold repairs.",
+      "box": {
+        "left": 0.101,
+        "top": 0.405,
+        "width": 0.538,
+        "height": 0.203
+      }
+    },
+    {
+      "id": "moon",
+      "difficulty": "Medium",
+      "label": "The crescent on her shoulder became a star.",
+      "box": {
+        "left": 0.08,
+        "top": 0.125,
+        "width": 0.099,
+        "height": 0.076
+      }
+    },
+    {
+      "id": "ring",
+      "difficulty": "Hard",
+      "label": "Her near hand gained a small gold ring.",
+      "box": {
+        "left": 0.455,
+        "top": 0.598,
+        "width": 0.037,
+        "height": 0.028
+      }
+    },
+    {
+      "id": "star",
+      "difficulty": "Very hard",
+      "label": "The tiny star below her hand disappeared.",
+      "box": {
+        "left": 0.343,
+        "top": 0.711,
+        "width": 0.036,
+        "height": 0.036
+      }
+    },
+    {
+      "id": "roof",
+      "difficulty": "Dreamlike",
+      "label": "The lone cottage on the upper-right cliff gained a blue roof.",
+      "box": {
+        "left": 0.836,
+        "top": 0.171,
+        "width": 0.037,
+        "height": 0.018
+      }
+    }
+  ]
+}

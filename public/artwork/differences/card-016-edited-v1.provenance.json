@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-016.jpg",
+  "generated": "/artwork/differences/card-016-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The little traveler’s blue coat turned gold. Target near x18%, y76%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The crescent in the doorway became a full moon. Target near x16%, y7%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The highest bird at the upper right disappeared. Target near x90%, y3%. Keep all other pixels/objects untouched.\n4. Add a thin painterly gold band around the base of the single upper finger on the large foreground horizontal hand at x60% y37%. It must wrap the finger naturally, not float. Target near x61%, y37%. Keep all other pixels/objects untouched.\n5. Remove only the two pale blue footprints nearest x5% y94%, restoring the ivory ground. Target near x5%, y93%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "coat",
+      "difficulty": "Easy",
+      "label": "The little traveler’s blue coat turned gold.",
+      "box": {
+        "left": 0.095,
+        "top": 0.706,
+        "width": 0.137,
+        "height": 0.103
+      }
+    },
+    {
+      "id": "moon",
+      "difficulty": "Medium",
+      "label": "The crescent in the doorway became a full moon.",
+      "box": {
+        "left": 0.124,
+        "top": 0.041,
+        "width": 0.065,
+        "height": 0.055
+      }
+    },
+    {
+      "id": "bird",
+      "difficulty": "Hard",
+      "label": "The highest bird at the upper right disappeared.",
+      "box": {
+        "left": 0.859,
+        "top": 0.001,
+        "width": 0.09,
+        "height": 0.062
+      }
+    },
+    {
+      "id": "ring",
+      "difficulty": "Very hard",
+      "label": "One outstretched hand wears a narrow gold bracelet.",
+      "box": {
+        "left": 0.632,
+        "top": 0.293,
+        "width": 0.05,
+        "height": 0.057
+      }
+    },
+    {
+      "id": "footprints",
+      "difficulty": "Dreamlike",
+      "label": "A pair of footprints near the bottom-left vanished.",
+      "box": {
+        "left": 0.028,
+        "top": 0.912,
+        "width": 0.047,
+        "height": 0.045
+      }
+    }
+  ]
+}

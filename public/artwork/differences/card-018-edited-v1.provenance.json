@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-018.jpg",
+  "generated": "/artwork/differences/card-018-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The cottage’s front shutters turned plum red. Target near x29%, y25%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The cat in the window disappeared. Target near x29%, y28%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The smaller chimney disappeared. Target near x35%, y14%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The little cloth nearest the house disappeared from the line. Target near x16%, y30%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The round attic window lost its horizontal crossbar. Target near x27%, y15%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "shutters",
+      "difficulty": "Easy",
+      "label": "The cottage’s front shutters turned plum red.",
+      "box": {
+        "left": 0.233,
+        "top": 0.2,
+        "width": 0.105,
+        "height": 0.095
+      }
+    },
+    {
+      "id": "cat",
+      "difficulty": "Medium",
+      "label": "The cat in the window disappeared.",
+      "box": {
+        "left": 0.282,
+        "top": 0.26,
+        "width": 0.023,
+        "height": 0.03
+      }
+    },
+    {
+      "id": "chimney",
+      "difficulty": "Hard",
+      "label": "The smaller chimney disappeared.",
+      "box": {
+        "left": 0.335,
+        "top": 0.104,
+        "width": 0.031,
+        "height": 0.063
+      }
+    },
+    {
+      "id": "washing",
+      "difficulty": "Very hard",
+      "label": "The little cloth nearest the house disappeared from the line.",
+      "box": {
+        "left": 0.15,
+        "top": 0.282,
+        "width": 0.024,
+        "height": 0.034
+      }
+    },
+    {
+      "id": "window-bar",
+      "difficulty": "Dreamlike",
+      "label": "The round attic window lost its crossbars.",
+      "box": {
+        "left": 0.247,
+        "top": 0.138,
+        "width": 0.037,
+        "height": 0.033
+      }
+    }
+  ]
+}

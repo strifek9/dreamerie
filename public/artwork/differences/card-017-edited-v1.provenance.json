@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-017.jpg",
+  "generated": "/artwork/differences/card-017-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The spoon in the gardener’s hand turned gold. Target near x50%, y70%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The smallest umbrella’s pink stripes turned blue. Target near x86%, y66%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The cat’s tail has a white tip. Target near x22%, y22%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The crescent inside the left arch became a star. Target near x12%, y37%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The tiny umbrella plant lost its left leaf. Target near x56%, y71%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "spoon",
+      "difficulty": "Easy",
+      "label": "The spoon in the gardener’s hand turned gold.",
+      "box": {
+        "left": 0.477,
+        "top": 0.623,
+        "width": 0.048,
+        "height": 0.15
+      }
+    },
+    {
+      "id": "small-umbrella",
+      "difficulty": "Medium",
+      "label": "The smallest umbrella’s pink stripes turned blue.",
+      "box": {
+        "left": 0.79,
+        "top": 0.634,
+        "width": 0.139,
+        "height": 0.058
+      }
+    },
+    {
+      "id": "tail",
+      "difficulty": "Hard",
+      "label": "The cat’s tail has a white tip.",
+      "box": {
+        "left": 0.202,
+        "top": 0.206,
+        "width": 0.037,
+        "height": 0.03
+      }
+    },
+    {
+      "id": "moon",
+      "difficulty": "Very hard",
+      "label": "The crescent inside the left arch became a star.",
+      "box": {
+        "left": 0.072,
+        "top": 0.309,
+        "width": 0.09,
+        "height": 0.113
+      }
+    },
+    {
+      "id": "leaf",
+      "difficulty": "Dreamlike",
+      "label": "The tiny umbrella plant lost its left leaf.",
+      "box": {
+        "left": 0.549,
+        "top": 0.698,
+        "width": 0.018,
+        "height": 0.027
+      }
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-093.jpg",
+  "generated": "/artwork/differences/card-093-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The traveler's scarf turned pale gold. Target near x85%, y40%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The largest floating petal to the left became a butterfly. Target near x29%, y43%. Keep all other pixels/objects untouched.\n3. Edit only this object so: One flower on the mast turned blue. Target near x53%, y14%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The traveler wore a long braid instead of loose hair. Target near x80%, y35%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The distant tower lost its little round window. Target near x92%, y19%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "scarf",
+      "difficulty": "Easy",
+      "label": "The traveler's scarf turned pale gold.",
+      "box": {
+        "left": 0.717,
+        "top": 0.354,
+        "width": 0.262,
+        "height": 0.088
+      }
+    },
+    {
+      "id": "petal",
+      "difficulty": "Medium",
+      "label": "A floating petal on the left became a butterfly.",
+      "box": {
+        "left": 0.083,
+        "top": 0.343,
+        "width": 0.074,
+        "height": 0.059
+      }
+    },
+    {
+      "id": "flower",
+      "difficulty": "Hard",
+      "label": "One flower on the mast turned blue.",
+      "box": {
+        "left": 0.383,
+        "top": 0.088,
+        "width": 0.063,
+        "height": 0.041
+      }
+    },
+    {
+      "id": "hair",
+      "difficulty": "Very hard",
+      "label": "The traveler wore a long braid instead of loose hair.",
+      "box": {
+        "left": 0.725,
+        "top": 0.312,
+        "width": 0.137,
+        "height": 0.109
+      }
+    },
+    {
+      "id": "window",
+      "difficulty": "Dreamlike",
+      "label": "The distant tower lost its little round window.",
+      "box": {
+        "left": 0.917,
+        "top": 0.181,
+        "width": 0.015,
+        "height": 0.022
+      }
+    }
+  ]
+}

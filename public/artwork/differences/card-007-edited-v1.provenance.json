@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-007.jpg",
+  "generated": "/artwork/differences/card-007-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The yellow sun turned ivory. Target near x54%, y6%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The large lower fish turned golden yellow. Target near x48%, y81%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The moon on the blue forehead became a star. Target near x23%, y21%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The middle fish lost its pale side fin. Target near x62%, y66%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The top-left house's upper window became round. Target near x21%, y7%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "sun",
+      "difficulty": "Easy",
+      "label": "The yellow sun turned ivory.",
+      "box": {
+        "left": 0.463,
+        "top": 0.003,
+        "width": 0.16,
+        "height": 0.123
+      }
+    },
+    {
+      "id": "fish",
+      "difficulty": "Medium",
+      "label": "The large lower fish turned golden yellow.",
+      "box": {
+        "left": 0.389,
+        "top": 0.749,
+        "width": 0.187,
+        "height": 0.113
+      }
+    },
+    {
+      "id": "moon",
+      "difficulty": "Hard",
+      "label": "The moon on the blue forehead became a star.",
+      "box": {
+        "left": 0.196,
+        "top": 0.166,
+        "width": 0.093,
+        "height": 0.086
+      }
+    },
+    {
+      "id": "fish-fin",
+      "difficulty": "Very hard",
+      "label": "The middle fish lost its pale side fin.",
+      "box": {
+        "left": 0.595,
+        "top": 0.643,
+        "width": 0.056,
+        "height": 0.037
+      }
+    },
+    {
+      "id": "window",
+      "difficulty": "Dreamlike",
+      "label": "The top-left house's upper window became round.",
+      "box": {
+        "left": 0.18,
+        "top": 0.058,
+        "width": 0.02,
+        "height": 0.02
+      }
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-067.jpg",
+  "generated": "/artwork/differences/card-067-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The jester's hat gained triangles instead of round spots. Target near x14%, y41%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The jester's red boots turned violet. Target near x26%, y75%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The white bird inside the frame disappeared. Target near x55%, y20%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The black cat's tail curled upward. Target near x65%, y40%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The little tower at the lower right lost one lit window. Target near x80%, y72%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "hat",
+      "difficulty": "Easy",
+      "label": "The jester's hat gained triangles instead of round spots.",
+      "box": {
+        "left": 0.071,
+        "top": 0.357,
+        "width": 0.137,
+        "height": 0.104
+      }
+    },
+    {
+      "id": "boots",
+      "difficulty": "Medium",
+      "label": "The jester's red boots turned violet.",
+      "box": {
+        "left": 0.106,
+        "top": 0.717,
+        "width": 0.312,
+        "height": 0.062
+      }
+    },
+    {
+      "id": "bird",
+      "difficulty": "Hard",
+      "label": "The white bird inside the frame disappeared.",
+      "box": {
+        "left": 0.52,
+        "top": 0.179,
+        "width": 0.05,
+        "height": 0.036
+      }
+    },
+    {
+      "id": "tail",
+      "difficulty": "Very hard",
+      "label": "The black cat's tail curled upward.",
+      "box": {
+        "left": 0.599,
+        "top": 0.357,
+        "width": 0.072,
+        "height": 0.067
+      }
+    },
+    {
+      "id": "window",
+      "difficulty": "Dreamlike",
+      "label": "The little tower at the lower right lost one lit window.",
+      "box": {
+        "left": 0.796,
+        "top": 0.701,
+        "width": 0.015,
+        "height": 0.03
+      }
+    }
+  ]
+}

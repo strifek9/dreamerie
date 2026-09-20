@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-023.jpg",
+  "generated": "/artwork/differences/card-023-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The long red pennant turned turquoise. Target near x18%, y12%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The traveler’s blue shawl turned dusty rose. Target near x40%, y32%. Keep all other pixels/objects untouched.\n3. Paint a small ivory tip on the seated black cat's curled tail at the base of its body. Keep its whole silhouette unchanged. Target near x49%, y36%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The hanging lantern went dark. Target near x69%, y36%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The bright star to the right of the moon disappeared. Target near x87%, y25%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "flag",
+      "difficulty": "Easy",
+      "label": "The long red pennant turned turquoise.",
+      "box": {
+        "left": 0.029,
+        "top": 0.064,
+        "width": 0.301,
+        "height": 0.108
+      }
+    },
+    {
+      "id": "shawl",
+      "difficulty": "Medium",
+      "label": "The traveler’s blue shawl turned dusty rose.",
+      "box": {
+        "left": 0.335,
+        "top": 0.279,
+        "width": 0.131,
+        "height": 0.086
+      }
+    },
+    {
+      "id": "tail",
+      "difficulty": "Hard",
+      "label": "The cat has a small white tail tip.",
+      "box": {
+        "left": 0.482,
+        "top": 0.345,
+        "width": 0.025,
+        "height": 0.02
+      }
+    },
+    {
+      "id": "lantern",
+      "difficulty": "Very hard",
+      "label": "The hanging lantern went dark.",
+      "box": {
+        "left": 0.679,
+        "top": 0.342,
+        "width": 0.025,
+        "height": 0.031
+      }
+    },
+    {
+      "id": "star",
+      "difficulty": "Dreamlike",
+      "label": "The bright star to the right of the moon disappeared.",
+      "box": {
+        "left": 0.86,
+        "top": 0.231,
+        "width": 0.025,
+        "height": 0.031
+      }
+    }
+  ]
+}

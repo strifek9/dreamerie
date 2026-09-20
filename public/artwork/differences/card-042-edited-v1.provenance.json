@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-042.jpg",
+  "generated": "/artwork/differences/card-042-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The highest umbrella turned pale gold. Target near x23%, y13%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The tortoise closed its eye. Target near x72%, y58%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The smallest umbrella beside the tallest trunk disappeared. Target near x22%, y22%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The pale square on the shell gained a coral stitched star. Target near x37%, y50%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The second-highest umbrella gained a gold finial. Target near x39%, y15%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "umbrella",
+      "difficulty": "Easy",
+      "label": "The highest umbrella turned pale gold.",
+      "box": {
+        "left": 0.098,
+        "top": 0.079,
+        "width": 0.269,
+        "height": 0.108
+      }
+    },
+    {
+      "id": "eye",
+      "difficulty": "Medium",
+      "label": "The tortoise closed its eye.",
+      "box": {
+        "left": 0.696,
+        "top": 0.564,
+        "width": 0.05,
+        "height": 0.033
+      }
+    },
+    {
+      "id": "small-umbrella",
+      "difficulty": "Hard",
+      "label": "The smallest umbrella beside the tallest trunk disappeared.",
+      "box": {
+        "left": 0.204,
+        "top": 0.208,
+        "width": 0.037,
+        "height": 0.032
+      }
+    },
+    {
+      "id": "patch",
+      "difficulty": "Very hard",
+      "label": "The pale square on the shell gained a coral stitched star.",
+      "box": {
+        "left": 0.313,
+        "top": 0.463,
+        "width": 0.12,
+        "height": 0.083
+      }
+    },
+    {
+      "id": "finial",
+      "difficulty": "Dreamlike",
+      "label": "The second-highest umbrella gained a gold finial.",
+      "box": {
+        "left": 0.382,
+        "top": 0.144,
+        "width": 0.016,
+        "height": 0.018
+      }
+    }
+  ]
+}

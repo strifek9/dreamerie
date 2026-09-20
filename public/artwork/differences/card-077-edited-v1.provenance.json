@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-077.jpg",
+  "generated": "/artwork/differences/card-077-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The largest origami bird turned blue. Target near x85%, y7%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The larger round foreground flower became heart-shaped. Target near x25%, y86%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The nearest cottage's smiling roof became a frown. Target near x91%, y74%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The sun lost its topmost triangular ray. Target near x49%, y6%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The lowest hanging leaf at the upper left disappeared. Target near x24%, y10%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "bird",
+      "difficulty": "Easy",
+      "label": "The largest origami bird turned blue.",
+      "box": {
+        "left": 0.809,
+        "top": 0.033,
+        "width": 0.082,
+        "height": 0.081
+      }
+    },
+    {
+      "id": "flower",
+      "difficulty": "Medium",
+      "label": "The larger round foreground flower became heart-shaped.",
+      "box": {
+        "left": 0.195,
+        "top": 0.815,
+        "width": 0.105,
+        "height": 0.092
+      }
+    },
+    {
+      "id": "roof",
+      "difficulty": "Hard",
+      "label": "The nearest cottage's smiling roof became a frown.",
+      "box": {
+        "left": 0.866,
+        "top": 0.727,
+        "width": 0.078,
+        "height": 0.028
+      }
+    },
+    {
+      "id": "ray",
+      "difficulty": "Very hard",
+      "label": "The sun lost one of its upper triangular rays.",
+      "box": {
+        "left": 0.511,
+        "top": 0.032,
+        "width": 0.054,
+        "height": 0.061
+      }
+    },
+    {
+      "id": "leaf",
+      "difficulty": "Dreamlike",
+      "label": "One hanging leaf at the upper left disappeared.",
+      "box": {
+        "left": 0.122,
+        "top": 0.03,
+        "width": 0.05,
+        "height": 0.1
+      }
+    }
+  ]
+}

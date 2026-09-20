@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-014.jpg",
+  "generated": "/artwork/differences/card-014-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The nearest pink chair turned teal. Target near x58%, y83%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The octopus opened its larger eye. Target near x36%, y35%. Keep all other pixels/objects untouched.\n3. Bend only the top third of the thin baton gently to the right, keeping its held base in the same place. Target near x49%, y27%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The purple fish near the right-hand chairs disappeared. Target near x81%, y40%. Keep all other pixels/objects untouched.\n5. Fill the central hole of just the large cream suction cup at x20.5% y42% on the left rising tentacle; preserve the other rings. Target near x21%, y42%. Keep all other pixels/objects untouched.\nRevision: Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\nThis is an already edited image. Preserve every existing object and color exactly. Make ONLY this one additional change: Add one tiny dark-blue quarter note on the otherwise blank left page of the music stand at x39% y66%, matching the painterly style. No other marks or letters.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "chair",
+      "difficulty": "Easy",
+      "label": "The nearest pink chair turned teal.",
+      "box": {
+        "left": 0.462,
+        "top": 0.686,
+        "width": 0.241,
+        "height": 0.285
+      }
+    },
+    {
+      "id": "eye",
+      "difficulty": "Medium",
+      "label": "The octopus opened its larger eye.",
+      "box": {
+        "left": 0.335,
+        "top": 0.332,
+        "width": 0.043,
+        "height": 0.038
+      }
+    },
+    {
+      "id": "baton",
+      "difficulty": "Hard",
+      "label": "The conductor’s baton has a curved tip.",
+      "box": {
+        "left": 0.451,
+        "top": 0.232,
+        "width": 0.087,
+        "height": 0.076
+      }
+    },
+    {
+      "id": "fish",
+      "difficulty": "Very hard",
+      "label": "The purple fish near the right-hand chairs disappeared.",
+      "box": {
+        "left": 0.775,
+        "top": 0.386,
+        "width": 0.074,
+        "height": 0.033
+      }
+    },
+    {
+      "id": "note",
+      "difficulty": "Dreamlike",
+      "label": "A small musical note appeared on the front-left music stand.",
+      "box": {
+        "left": 0.359,
+        "top": 0.639,
+        "width": 0.038,
+        "height": 0.038
+      }
+    }
+  ]
+}

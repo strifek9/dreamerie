@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-074.jpg",
+  "generated": "/artwork/differences/card-074-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The snail's spiral shell turned sage green. Target near x72%, y47%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The upper foreground blossom turned ivory. Target near x89%, y86%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The tallest floating village roof turned blue. Target near x27%, y4%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The large window below the snail lost its crossbar. Target near x60%, y57%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The highest round bud at the right disappeared. Target near x82%, y65%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "shell",
+      "difficulty": "Easy",
+      "label": "The snail's spiral shell turned sage green.",
+      "box": {
+        "left": 0.593,
+        "top": 0.383,
+        "width": 0.246,
+        "height": 0.176
+      }
+    },
+    {
+      "id": "flower",
+      "difficulty": "Medium",
+      "label": "The upper foreground blossom turned ivory.",
+      "box": {
+        "left": 0.837,
+        "top": 0.822,
+        "width": 0.104,
+        "height": 0.08
+      }
+    },
+    {
+      "id": "roof",
+      "difficulty": "Hard",
+      "label": "The tallest floating village roof turned blue.",
+      "box": {
+        "left": 0.236,
+        "top": 0.027,
+        "width": 0.065,
+        "height": 0.024
+      }
+    },
+    {
+      "id": "window",
+      "difficulty": "Very hard",
+      "label": "The large window below the snail lost its crossbar.",
+      "box": {
+        "left": 0.584,
+        "top": 0.554,
+        "width": 0.031,
+        "height": 0.041
+      }
+    },
+    {
+      "id": "bud",
+      "difficulty": "Dreamlike",
+      "label": "The highest round bud at the right disappeared.",
+      "box": {
+        "left": 0.804,
+        "top": 0.64,
+        "width": 0.031,
+        "height": 0.029
+      }
+    }
+  ]
+}

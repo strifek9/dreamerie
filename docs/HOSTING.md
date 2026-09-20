@@ -1,5 +1,19 @@
 # Hosted Dreamerie playtest
 
+## Daily Dream Recall release — September 20, 2026
+
+The user approved committing, pushing and deploying the daily spot-the-difference redesign to the existing `dreamerie-playtest` Render service. This release replaces the public social-room UI, not its retained source branch or stored data. The intended public address remains https://dreamerie-playtest.onrender.com. Deployment completion must be verified in Render and over HTTPS before calling this release live.
+
+Build: `npm ci --include=dev && npm test && npm run build`. Start: `npm start`, which now runs `scripts/serve.ts` under Node 24. This small file server uses the already-installed Fastify/static packages to serve only `dist/` and `/api/health`. It does not import the legacy room service, open/migrate the database, run its scheduler or expose room APIs. Keep the existing disk and environment settings untouched; there is no new paid resource or plan change. Render auto-deploy remains Off.
+
+The old social prototype remains on `prototype/social-dreams` at `c6b1cbd`. Keep that branch on the remote as well. Database backup/recovery instructions below apply only to the old social service; its npm maintenance commands are not part of the daily frontend release. Retaining the disk is not a verified off-site backup. Rolling back to the previous deployed social commit may resume its scheduled expiry/catch-up behavior, so inspect recovery needs before restoring that service.
+
+Release checks: rule/catalogue/share tests, static-server health/content/private-file isolation tests, type checking, build, clean Git diff, and public original/altered artwork loading. Verify production omits New day/review overrides and uses the HTTPS site in share messages. Native share destinations and real phone pinch gestures still require owner testing. Build artifacts and private databases must not be committed.
+
+## Historical social-service hosting notes
+
+The following sections describe the former social-room release, not the new daily game.
+
 ## Release status
 
 The room-mode refinement is local and awaits user testing; it has not been deployed. Migration 004 adds a fixed room mode, preserving every existing room as personal-clue mode. New rooms default to Word of the Day. Before deploying, take and verify a backup using the procedure below. Backup tooling accepts schemas 3 and 4 without migrating snapshots. Restoring a schema-3 snapshot into the new server upgrades it on startup; old server code cannot open schema 4, so reverting code alone is not a data rollback.

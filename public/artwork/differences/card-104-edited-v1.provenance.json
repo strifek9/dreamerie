@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-104.jpg",
+  "generated": "/artwork/differences/card-104-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The dragon opened its eye. Target near x76%, y68%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The dragon's left wing membrane turned blue. Target near x51%, y62%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The trumpet lost its middle valve button. Target near x21%, y25%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The loose leaf on the book turned ochre. Target near x39%, y78%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The tallest pale tower lost one upper window. Target near x54%, y4%. Keep all other pixels/objects untouched.\nCorrection: Use case: precise-object-edit. Image 1 is the EDIT TARGET. One correction only. Add one tiny crescent-shaped roof finial on the tallest pale tower at x54%, y2%. Preserve all windows exactly. Make the tiny crescent a believable ornament on the roof. Change nothing else. Preserve exact composition, geometry, painted brushwork, palette, lighting and framing. No text, circles, arrows or markers.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "eye",
+      "difficulty": "Easy",
+      "label": "The dragon opened its eye.",
+      "box": {
+        "left": 0.742,
+        "top": 0.658,
+        "width": 0.03,
+        "height": 0.035
+      }
+    },
+    {
+      "id": "wing",
+      "difficulty": "Medium",
+      "label": "The dragon's left wing membrane turned blue.",
+      "box": {
+        "left": 0.459,
+        "top": 0.483,
+        "width": 0.11,
+        "height": 0.274
+      }
+    },
+    {
+      "id": "valve",
+      "difficulty": "Hard",
+      "label": "The trumpet lost its middle valve button.",
+      "box": {
+        "left": 0.162,
+        "top": 0.237,
+        "width": 0.076,
+        "height": 0.076
+      }
+    },
+    {
+      "id": "leaf",
+      "difficulty": "Very hard",
+      "label": "The loose leaf on the book turned ochre.",
+      "box": {
+        "left": 0.346,
+        "top": 0.752,
+        "width": 0.094,
+        "height": 0.054
+      }
+    },
+    {
+      "id": "finial",
+      "difficulty": "Dreamlike",
+      "label": "The tallest pale tower gained a tiny crescent finial.",
+      "box": {
+        "left": 0.532,
+        "top": 0.002,
+        "width": 0.015,
+        "height": 0.017
+      }
+    }
+  ]
+}

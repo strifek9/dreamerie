@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-036.jpg",
+  "generated": "/artwork/differences/card-036-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The cat's golden eyes turned blue. Target near x40%, y42%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The nearest envelope's red heart became a star. Target near x63%, y64%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The trunk's gold crescent became a sun. Target near x30%, y86%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The little cup lost its handle. Target near x96%, y86%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The bird's tiny letter lost its heart seal. Target near x26%, y12%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "eyes",
+      "difficulty": "Easy",
+      "label": "The cat's golden eyes turned blue.",
+      "box": {
+        "left": 0.351,
+        "top": 0.394,
+        "width": 0.106,
+        "height": 0.059
+      }
+    },
+    {
+      "id": "seal",
+      "difficulty": "Medium",
+      "label": "The nearest envelope's red heart became a star.",
+      "box": {
+        "left": 0.621,
+        "top": 0.623,
+        "width": 0.044,
+        "height": 0.035
+      }
+    },
+    {
+      "id": "moon",
+      "difficulty": "Hard",
+      "label": "The trunk's gold crescent became a sun.",
+      "box": {
+        "left": 0.244,
+        "top": 0.798,
+        "width": 0.115,
+        "height": 0.12
+      }
+    },
+    {
+      "id": "cup",
+      "difficulty": "Very hard",
+      "label": "The little cup lost its handle.",
+      "box": {
+        "left": 0.936,
+        "top": 0.839,
+        "width": 0.039,
+        "height": 0.04
+      }
+    },
+    {
+      "id": "letter",
+      "difficulty": "Dreamlike",
+      "label": "The bird's tiny letter lost its heart seal.",
+      "box": {
+        "left": 0.249,
+        "top": 0.11,
+        "width": 0.024,
+        "height": 0.018
+      }
+    }
+  ]
+}

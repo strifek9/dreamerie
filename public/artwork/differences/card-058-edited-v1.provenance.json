@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-058.jpg",
+  "generated": "/artwork/differences/card-058-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The rower's white dress turned coral. Target near x53%, y46%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The pink oar blade turned gold. Target near x66%, y55%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The largest white bird turned pink. Target near x44%, y31%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The tiny bird to the right of the sun disappeared. Target near x68%, y41%. Keep all other pixels/objects untouched.\n5. Braid the woman's currently loose windblown hair into one dark braid of the same length, without moving her head or changing any other objects. Target near x49%, y44%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "dress",
+      "difficulty": "Easy",
+      "label": "The rower's white dress turned coral.",
+      "box": {
+        "left": 0.489,
+        "top": 0.439,
+        "width": 0.075,
+        "height": 0.051
+      }
+    },
+    {
+      "id": "oar",
+      "difficulty": "Medium",
+      "label": "The pink oar blade turned gold.",
+      "box": {
+        "left": 0.616,
+        "top": 0.516,
+        "width": 0.079,
+        "height": 0.052
+      }
+    },
+    {
+      "id": "bird",
+      "difficulty": "Hard",
+      "label": "The largest white bird turned pink.",
+      "box": {
+        "left": 0.384,
+        "top": 0.285,
+        "width": 0.106,
+        "height": 0.047
+      }
+    },
+    {
+      "id": "small-bird",
+      "difficulty": "Very hard",
+      "label": "The tiny bird to the right of the sun disappeared.",
+      "box": {
+        "left": 0.662,
+        "top": 0.397,
+        "width": 0.044,
+        "height": 0.023
+      }
+    },
+    {
+      "id": "hair",
+      "difficulty": "Dreamlike",
+      "label": "The rower's loose hair became a braid.",
+      "box": {
+        "left": 0.435,
+        "top": 0.4,
+        "width": 0.117,
+        "height": 0.075
+      }
+    }
+  ]
+}

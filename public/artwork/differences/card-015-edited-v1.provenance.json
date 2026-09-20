@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-015.jpg",
+  "generated": "/artwork/differences/card-015-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The brass telescope turned silver. Target near x44%, y31%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The little moon inside the dome became a crescent. Target near x44%, y23%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The middle arched window glows gold instead of red. Target near x27%, y40%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The biggest bird against the white sky disappeared. Target near x57%, y10%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The crescent on the weather vane disappeared. Target near x42%, y11%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "telescope",
+      "difficulty": "Easy",
+      "label": "The brass telescope turned silver.",
+      "box": {
+        "left": 0.386,
+        "top": 0.275,
+        "width": 0.105,
+        "height": 0.065
+      }
+    },
+    {
+      "id": "moon",
+      "difficulty": "Medium",
+      "label": "The little moon inside the dome became a crescent.",
+      "box": {
+        "left": 0.417,
+        "top": 0.218,
+        "width": 0.04,
+        "height": 0.031
+      }
+    },
+    {
+      "id": "window",
+      "difficulty": "Hard",
+      "label": "The middle arched window glows gold instead of red.",
+      "box": {
+        "left": 0.243,
+        "top": 0.372,
+        "width": 0.046,
+        "height": 0.063
+      }
+    },
+    {
+      "id": "bird",
+      "difficulty": "Very hard",
+      "label": "The biggest bird against the white sky disappeared.",
+      "box": {
+        "left": 0.543,
+        "top": 0.083,
+        "width": 0.05,
+        "height": 0.034
+      }
+    },
+    {
+      "id": "vane",
+      "difficulty": "Dreamlike",
+      "label": "The crescent on the weather vane disappeared.",
+      "box": {
+        "left": 0.387,
+        "top": 0.084,
+        "width": 0.06,
+        "height": 0.055
+      }
+    }
+  ]
+}

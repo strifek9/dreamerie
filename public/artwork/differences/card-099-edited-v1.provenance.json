@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-099.jpg",
+  "generated": "/artwork/differences/card-099-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The quilt in the largest bubble turned green. Target near x77%, y17%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The reading chair in the book-filled bubble turned blue. Target near x67%, y39%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The largest black bird at the right disappeared. Target near x87%, y38%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The black cat winked. Target near x80%, y56%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The red ladder lost its second rung from the top. Target near x89%, y77%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "bed",
+      "difficulty": "Easy",
+      "label": "The quilt in the largest bubble turned green.",
+      "box": {
+        "left": 0.65,
+        "top": 0.126,
+        "width": 0.231,
+        "height": 0.094
+      }
+    },
+    {
+      "id": "chair",
+      "difficulty": "Medium",
+      "label": "The reading chair in the book-filled bubble turned blue.",
+      "box": {
+        "left": 0.638,
+        "top": 0.361,
+        "width": 0.054,
+        "height": 0.053
+      }
+    },
+    {
+      "id": "bird",
+      "difficulty": "Hard",
+      "label": "The largest black bird at the right disappeared.",
+      "box": {
+        "left": 0.842,
+        "top": 0.368,
+        "width": 0.059,
+        "height": 0.027
+      }
+    },
+    {
+      "id": "eye",
+      "difficulty": "Very hard",
+      "label": "The black cat winked.",
+      "box": {
+        "left": 0.787,
+        "top": 0.552,
+        "width": 0.017,
+        "height": 0.016
+      }
+    },
+    {
+      "id": "rung",
+      "difficulty": "Dreamlike",
+      "label": "The red ladder lost its second rung from the top.",
+      "box": {
+        "left": 0.877,
+        "top": 0.754,
+        "width": 0.026,
+        "height": 0.022
+      }
+    }
+  ]
+}

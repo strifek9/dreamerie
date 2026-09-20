@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-069.jpg",
+  "generated": "/artwork/differences/card-069-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The sleeping fox opened one eye. Target near x27%, y22%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The nearest lantern glowed cool blue. Target near x48%, y83%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The little cat gained a white tail tip. Target near x44%, y67%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The highest little crescent disappeared. Target near x90%, y2%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The lower-right arched window lost its crossbar. Target near x84%, y64%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "eye",
+      "difficulty": "Easy",
+      "label": "The sleeping fox opened one eye.",
+      "box": {
+        "left": 0.212,
+        "top": 0.171,
+        "width": 0.124,
+        "height": 0.106
+      }
+    },
+    {
+      "id": "lantern",
+      "difficulty": "Medium",
+      "label": "The nearest lantern glowed cool blue.",
+      "box": {
+        "left": 0.456,
+        "top": 0.796,
+        "width": 0.052,
+        "height": 0.073
+      }
+    },
+    {
+      "id": "tail",
+      "difficulty": "Hard",
+      "label": "The little cat gained a white tail tip.",
+      "box": {
+        "left": 0.424,
+        "top": 0.661,
+        "width": 0.037,
+        "height": 0.02
+      }
+    },
+    {
+      "id": "moon",
+      "difficulty": "Very hard",
+      "label": "The highest little crescent disappeared.",
+      "box": {
+        "left": 0.873,
+        "top": 0.003,
+        "width": 0.049,
+        "height": 0.042
+      }
+    },
+    {
+      "id": "window",
+      "difficulty": "Dreamlike",
+      "label": "The lower-right arched window lost its crossbar.",
+      "box": {
+        "left": 0.822,
+        "top": 0.61,
+        "width": 0.03,
+        "height": 0.063
+      }
+    }
+  ]
+}

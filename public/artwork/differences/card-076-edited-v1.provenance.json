@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-076.jpg",
+  "generated": "/artwork/differences/card-076-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The white pillow turned dusty rose. Target near x31%, y35%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The nearer paper boat turned blue. Target near x25%, y74%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The near bedpost's round finial became a star. Target near x70%, y49%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The face in the right-hand wave opened its eye. Target near x94%, y26%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The footboard lost one middle vertical bar. Target near x76%, y55%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "pillow",
+      "difficulty": "Easy",
+      "label": "The white pillow turned dusty rose.",
+      "box": {
+        "left": 0.224,
+        "top": 0.306,
+        "width": 0.175,
+        "height": 0.083
+      }
+    },
+    {
+      "id": "boat",
+      "difficulty": "Medium",
+      "label": "The nearer paper boat turned blue.",
+      "box": {
+        "left": 0.167,
+        "top": 0.694,
+        "width": 0.166,
+        "height": 0.094
+      }
+    },
+    {
+      "id": "finial",
+      "difficulty": "Hard",
+      "label": "The near bedpost's round finial became a star.",
+      "box": {
+        "left": 0.678,
+        "top": 0.467,
+        "width": 0.046,
+        "height": 0.043
+      }
+    },
+    {
+      "id": "eye",
+      "difficulty": "Very hard",
+      "label": "The face in the right-hand wave opened its eye.",
+      "box": {
+        "left": 0.923,
+        "top": 0.235,
+        "width": 0.044,
+        "height": 0.04
+      }
+    },
+    {
+      "id": "slat",
+      "difficulty": "Dreamlike",
+      "label": "The footboard lost one middle vertical bar.",
+      "box": {
+        "left": 0.753,
+        "top": 0.501,
+        "width": 0.023,
+        "height": 0.073
+      }
+    }
+  ]
+}

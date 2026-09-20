@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-088.jpg",
+  "generated": "/artwork/differences/card-088-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The traveler's pale cloak turned burgundy. Target near x45%, y39%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The moon in the top-left doorway became a full moon. Target near x23%, y6%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The lower-right door's handle became a round ring. Target near x60%, y39%. Keep all other pixels/objects untouched.\n4. Add one small natural oval insect hole through the broad small leaf on the left of the stem, with sky showing through, centered x7%,y58%. Target near x7%, y58%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The little red petal on the far lower-left step disappeared. Target near x10%, y97%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "cloak",
+      "difficulty": "Easy",
+      "label": "The traveler's pale cloak turned burgundy.",
+      "box": {
+        "left": 0.416,
+        "top": 0.327,
+        "width": 0.078,
+        "height": 0.119
+      }
+    },
+    {
+      "id": "moon",
+      "difficulty": "Medium",
+      "label": "The moon in the top-left doorway became a full moon.",
+      "box": {
+        "left": 0.205,
+        "top": 0.041,
+        "width": 0.044,
+        "height": 0.043
+      }
+    },
+    {
+      "id": "handle",
+      "difficulty": "Hard",
+      "label": "The lower-right door's handle became a round ring.",
+      "box": {
+        "left": 0.581,
+        "top": 0.373,
+        "width": 0.036,
+        "height": 0.037
+      }
+    },
+    {
+      "id": "leaf",
+      "difficulty": "Very hard",
+      "label": "The small left leaf gained a little insect hole.",
+      "box": {
+        "left": 0.053,
+        "top": 0.566,
+        "width": 0.035,
+        "height": 0.028
+      }
+    },
+    {
+      "id": "petal",
+      "difficulty": "Dreamlike",
+      "label": "The little red petal on the far lower-left step disappeared.",
+      "box": {
+        "left": 0.089,
+        "top": 0.962,
+        "width": 0.031,
+        "height": 0.021
+      }
+    }
+  ]
+}

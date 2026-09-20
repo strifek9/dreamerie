@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-039.jpg",
+  "generated": "/artwork/differences/card-039-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The ivory crescent turned gold. Target near x76%, y7%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The nearest red paper boat turned blue. Target near x60%, y91%. Keep all other pixels/objects untouched.\n3. Add a small gold collar to the neck of the black cat on top of the upper-right pillar. Do not change the cat's silhouette. Target near x90%, y6%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The small red leaf at the pool's rim disappeared. Target near x47%, y85%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The moth's crown lost its rightmost spike. Target near x68%, y23%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "moon",
+      "difficulty": "Easy",
+      "label": "The ivory crescent turned gold.",
+      "box": {
+        "left": 0.708,
+        "top": 0.011,
+        "width": 0.103,
+        "height": 0.114
+      }
+    },
+    {
+      "id": "boat",
+      "difficulty": "Medium",
+      "label": "The nearest red paper boat turned blue.",
+      "box": {
+        "left": 0.544,
+        "top": 0.886,
+        "width": 0.116,
+        "height": 0.056
+      }
+    },
+    {
+      "id": "cat",
+      "difficulty": "Hard",
+      "label": "The stone cat gained a gold collar.",
+      "box": {
+        "left": 0.877,
+        "top": 0.026,
+        "width": 0.048,
+        "height": 0.026
+      }
+    },
+    {
+      "id": "leaf",
+      "difficulty": "Very hard",
+      "label": "The small red leaf at the pool's rim disappeared.",
+      "box": {
+        "left": 0.444,
+        "top": 0.816,
+        "width": 0.044,
+        "height": 0.066
+      }
+    },
+    {
+      "id": "crown",
+      "difficulty": "Dreamlike",
+      "label": "The moth's crown lost its rightmost spike.",
+      "box": {
+        "left": 0.655,
+        "top": 0.194,
+        "width": 0.051,
+        "height": 0.081
+      }
+    }
+  ]
+}

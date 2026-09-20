@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-043.jpg",
+  "generated": "/artwork/differences/card-043-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The blue chair's heart cutout became a star. Target near x48%, y50%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The grounded purple shoe's laces turned gold. Target near x65%, y59%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The pear opened its left eye. Target near x72%, y24%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The red chair behind the blue one lost a backrest slat. Target near x38%, y51%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The tall pink chair lost its topmost pink dot. Target near x28%, y45%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "heart",
+      "difficulty": "Easy",
+      "label": "The blue chair's heart cutout became a star.",
+      "box": {
+        "left": 0.458,
+        "top": 0.485,
+        "width": 0.037,
+        "height": 0.034
+      }
+    },
+    {
+      "id": "lace",
+      "difficulty": "Medium",
+      "label": "The grounded purple shoe's laces turned gold.",
+      "box": {
+        "left": 0.6,
+        "top": 0.561,
+        "width": 0.093,
+        "height": 0.057
+      }
+    },
+    {
+      "id": "eye",
+      "difficulty": "Hard",
+      "label": "The pear opened its left eye.",
+      "box": {
+        "left": 0.699,
+        "top": 0.226,
+        "width": 0.038,
+        "height": 0.023
+      }
+    },
+    {
+      "id": "rung",
+      "difficulty": "Very hard",
+      "label": "The red chair behind the blue one lost a backrest slat.",
+      "box": {
+        "left": 0.372,
+        "top": 0.472,
+        "width": 0.017,
+        "height": 0.069
+      }
+    },
+    {
+      "id": "dot",
+      "difficulty": "Dreamlike",
+      "label": "The tall pink chair lost its topmost pink dot.",
+      "box": {
+        "left": 0.269,
+        "top": 0.447,
+        "width": 0.018,
+        "height": 0.012
+      }
+    }
+  ]
+}

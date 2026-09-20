@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-013.jpg",
+  "generated": "/artwork/differences/card-013-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Change only the golden circular iris around the black umbrella pupil to turquoise blue; preserve the black pupil and eye whites. Target near x55%, y13%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The fish’s gold crown turned silver. Target near x49%, y41%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The tiny cat on the right ledge disappeared. Target near x89%, y32%. Keep all other pixels/objects untouched.\n4. Remove the pale teardrop painted at x39% y23% inside the navy canopy, restoring navy fabric. Target near x39%, y23%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The middle boot’s buckle turned silver. Target near x41%, y63%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "iris",
+      "difficulty": "Easy",
+      "label": "The umbrella’s golden iris turned turquoise.",
+      "box": {
+        "left": 0.45,
+        "top": 0.074,
+        "width": 0.193,
+        "height": 0.112
+      }
+    },
+    {
+      "id": "crown",
+      "difficulty": "Medium",
+      "label": "The fish’s gold crown turned silver.",
+      "box": {
+        "left": 0.444,
+        "top": 0.373,
+        "width": 0.094,
+        "height": 0.073
+      }
+    },
+    {
+      "id": "cat",
+      "difficulty": "Hard",
+      "label": "The tiny cat on the right ledge disappeared.",
+      "box": {
+        "left": 0.87,
+        "top": 0.29,
+        "width": 0.039,
+        "height": 0.062
+      }
+    },
+    {
+      "id": "drop",
+      "difficulty": "Very hard",
+      "label": "One large painted drop on the umbrella disappeared.",
+      "box": {
+        "left": 0.376,
+        "top": 0.202,
+        "width": 0.025,
+        "height": 0.057
+      }
+    },
+    {
+      "id": "buckle",
+      "difficulty": "Dreamlike",
+      "label": "The middle boot’s buckle turned silver.",
+      "box": {
+        "left": 0.398,
+        "top": 0.626,
+        "width": 0.023,
+        "height": 0.016
+      }
+    }
+  ]
+}

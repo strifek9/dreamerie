@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-113.jpg",
+  "generated": "/artwork/differences/card-113-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Replace gold polka dots on only the green scarf with gold horizontal stripes. Preserve drape, edges and suitcase. Target near x35%, y65%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The pink bird in the cage turned ivory. Target near x77%, y84%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The moon on the lower-left suitcase became a star. Target near x10%, y94%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The sky whale gained a small round eye. Target near x78%, y19%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The small key at the lower left lost one tooth. Target near x5%, y88%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "scarf",
+      "difficulty": "Easy",
+      "label": "The hanging scarf's dots became stripes.",
+      "box": {
+        "left": 0.292,
+        "top": 0.503,
+        "width": 0.123,
+        "height": 0.291
+      }
+    },
+    {
+      "id": "bird",
+      "difficulty": "Medium",
+      "label": "The pink bird in the cage turned ivory.",
+      "box": {
+        "left": 0.738,
+        "top": 0.823,
+        "width": 0.079,
+        "height": 0.063
+      }
+    },
+    {
+      "id": "moon",
+      "difficulty": "Hard",
+      "label": "The moon on the lower-left suitcase became a star.",
+      "box": {
+        "left": 0.072,
+        "top": 0.911,
+        "width": 0.053,
+        "height": 0.048
+      }
+    },
+    {
+      "id": "whale",
+      "difficulty": "Very hard",
+      "label": "The sky whale gained a small round eye.",
+      "box": {
+        "left": 0.749,
+        "top": 0.171,
+        "width": 0.018,
+        "height": 0.015
+      }
+    },
+    {
+      "id": "tooth",
+      "difficulty": "Dreamlike",
+      "label": "The small key at the lower left lost one tooth.",
+      "box": {
+        "left": 0.05,
+        "top": 0.79,
+        "width": 0.02,
+        "height": 0.047
+      }
+    }
+  ]
+}

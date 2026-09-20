@@ -1,4 +1,36 @@
-# Prototype 0.1 plan
+# Dreamerie Daily Dream Recall Prototype Plan
+
+## Current scope
+
+Build one polished, artwork-first daily spot-the-difference round in React, TypeScript, and Vite. Use local data and straightforward CSS only.
+
+1. Rotate only through reviewed, genuinely edited pairs. All 120 cards now have authored pairs and five answer descriptions/regions each; original files are preserved.
+2. Preview the day's original card, the reverie poem and short rules before Start; do not run the timer yet. Place the original and altered visions side by side for the whole round after Start.
+3. Give each playable pair five recognizable, theme-consistent object edits with responsive hit regions and a two-minute timer. Intended difficulty ranges from easy to very difficult and needs playtesting.
+4. Let taps on either image place or move one pending circle; submit only through **Remember**.
+5. Support synchronized mouse-wheel zoom, touch pinch/drag, visible zoom controls, and reset.
+6. Allow no more than five confirmed guesses. Count incorrect and duplicate-found confirmations as consumed false memories.
+7. End on five confirmations, five unique finds, or timer expiry.
+8. Show `accuracy/5 · elapsed time`; compare accuracy first and time only on ties, then offer a Wordle-style text share. Split numbered result regions into found/green on the left and missed/red on the right; gently fade overlays fully out and back in, with Hide markers and a reduced-motion fallback. Keep the full Found/Missed explanation list. Keep zoom available after the round.
+9. Support phone-first layout, larger screens, pointer input, keyboard-visible controls, reduced motion, and human-readable timers.
+
+10. Development only: provide New day to advance the catalogue and displayed test day, wrapping safely and resetting timer, guesses, markers, zoom, results and gestures to the rules screen. Do not ship this control in production; label simulated/review shares Playtest.
+
+11. Make the result visibly shareable: five square tiles, native Share, explicit Copy and an expandable selectable message. Include day/score/time/grid and a query/fragment-free play link to the current site. Warn on localhost. No deployment, stored score page or backend is part of this refinement.
+
+### Verification
+
+- Rule tests cover all 120 pair assets/provenance and individually reachable answer regions (including nested-detail priority), rejection of unauthored cards, pending-marker behavior, one-confirmation/one-guess accounting, the hard five-guess ceiling, duplicate prevention, perfect completion, accuracy-first ordering, elapsed-time tie breaking, and share text.
+- Visually review every new pair: five intended changes only, intact composition and brushwork, no unrelated additions or visible patch boundaries; labels must describe actual output rather than merely the generation prompt. Keep prompts and provenance beside local assets.
+- Keep the full answer ledger in `docs/ARTWORK_REVIEW.md`. Use the development-only `?review=card-NNN` URL to inspect specific cards; never treat review-mode shares as a daily result.
+- Run `npm run typecheck`, `npm test`, and `npm run build`.
+- Manually verify rules → side-by-side play → zoom → result → share preparation on narrow mobile and desktop widths.
+
+### Explicit exclusions
+
+No six-card UI, dashboard, backend, authentication, Discord integration, multiplayer, hosted leaderboard, global state library, or complex infrastructure. The social/card-selection prototype is preserved on `prototype/social-dreams` and is not the primary mode.
+
+## Historical social prototype plan
 
 ## Prototype 0.2 planning
 

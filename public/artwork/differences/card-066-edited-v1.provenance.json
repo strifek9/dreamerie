@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-066.jpg",
+  "generated": "/artwork/differences/card-066-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The traveler's brown backpack turned blue. Target near x47%, y50%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The large left flower turned pale pink. Target near x19%, y77%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The floating petal at the right of the flower trail disappeared. Target near x49%, y74%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The walking stick gained a curved handle. Target near x50%, y49%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The backpack lost its lower strap buckle. Target near x47%, y50%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "pack",
+      "difficulty": "Easy",
+      "label": "The traveler's brown backpack turned blue.",
+      "box": {
+        "left": 0.451,
+        "top": 0.478,
+        "width": 0.034,
+        "height": 0.034
+      }
+    },
+    {
+      "id": "flower",
+      "difficulty": "Medium",
+      "label": "The large left flower turned pale pink.",
+      "box": {
+        "left": 0.095,
+        "top": 0.713,
+        "width": 0.181,
+        "height": 0.108
+      }
+    },
+    {
+      "id": "petal",
+      "difficulty": "Hard",
+      "label": "The floating petal at the right of the flower trail disappeared.",
+      "box": {
+        "left": 0.455,
+        "top": 0.731,
+        "width": 0.063,
+        "height": 0.026
+      }
+    },
+    {
+      "id": "staff",
+      "difficulty": "Very hard",
+      "label": "The walking stick gained a curved handle.",
+      "box": {
+        "left": 0.493,
+        "top": 0.47,
+        "width": 0.023,
+        "height": 0.036
+      }
+    },
+    {
+      "id": "buckle",
+      "difficulty": "Dreamlike",
+      "label": "The backpack lost its lower strap buckle.",
+      "box": {
+        "left": 0.458,
+        "top": 0.496,
+        "width": 0.014,
+        "height": 0.012
+      }
+    }
+  ]
+}

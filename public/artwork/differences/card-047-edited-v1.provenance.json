@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-047.jpg",
+  "generated": "/artwork/differences/card-047-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The crescent inside the coat turned gold. Target near x68%, y22%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The red scarf on the chair turned muted gold. Target near x14%, y62%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The coat's middle black button became gold. Target near x80%, y38%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The dried flower drawing lost its upper flower. Target near x33%, y19%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The sleeping cat opened one eye. Target near x73%, y91%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "moon",
+      "difficulty": "Easy",
+      "label": "The crescent inside the coat turned gold.",
+      "box": {
+        "left": 0.651,
+        "top": 0.191,
+        "width": 0.062,
+        "height": 0.055
+      }
+    },
+    {
+      "id": "scarf",
+      "difficulty": "Medium",
+      "label": "The red scarf on the chair turned muted gold.",
+      "box": {
+        "left": 0.056,
+        "top": 0.442,
+        "width": 0.168,
+        "height": 0.348
+      }
+    },
+    {
+      "id": "button",
+      "difficulty": "Hard",
+      "label": "The coat's middle black button became gold.",
+      "box": {
+        "left": 0.781,
+        "top": 0.367,
+        "width": 0.031,
+        "height": 0.03
+      }
+    },
+    {
+      "id": "flower",
+      "difficulty": "Very hard",
+      "label": "The dried flower drawing lost its upper flower.",
+      "box": {
+        "left": 0.309,
+        "top": 0.179,
+        "width": 0.034,
+        "height": 0.025
+      }
+    },
+    {
+      "id": "cat",
+      "difficulty": "Dreamlike",
+      "label": "The sleeping cat opened one eye.",
+      "box": {
+        "left": 0.722,
+        "top": 0.903,
+        "width": 0.023,
+        "height": 0.016
+      }
+    }
+  ]
+}

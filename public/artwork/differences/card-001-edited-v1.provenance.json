@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-001.jpg",
+  "generated": "/artwork/differences/card-001-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Paint only the cottage's wooden front door teal instead of brown, keeping its woodgrain.\n2. Make the large plum at x12% y84% golden yellow instead of purple, retaining its fruit shape, stem and shaded paint.\n3. Replace the small gold star inside the top-left wing eyespot at x17% y9% with a matching small gold crescent.\n4. Remove only the overhanging rectangular top cap of the cottage chimney at x66% y17%, leaving the chimney shaft and smoke.\n5. Remove only the horizontal crossbar inside the little oval attic window x60% y24%, leaving the vertical bar and golden light.",
+  "review": "Visually inspected against the original. Only the five declared regions are composited. Labels describe visible output; pot sprig on card-002 changed leaf count instead of just the tip leaf.",
+  "edits": [
+    {
+      "id": "door",
+      "difficulty": "Easy",
+      "label": "The cottage door turned teal.",
+      "box": {
+        "left": 0.551,
+        "top": 0.301,
+        "width": 0.073,
+        "height": 0.072
+      }
+    },
+    {
+      "id": "fruit",
+      "difficulty": "Medium",
+      "label": "The large lower-left plum turned golden.",
+      "box": {
+        "left": 0.075,
+        "top": 0.796,
+        "width": 0.099,
+        "height": 0.09
+      }
+    },
+    {
+      "id": "wing-star",
+      "difficulty": "Hard",
+      "label": "The upper wing's star became a crescent.",
+      "box": {
+        "left": 0.144,
+        "top": 0.063,
+        "width": 0.054,
+        "height": 0.043
+      }
+    },
+    {
+      "id": "chimney-cap",
+      "difficulty": "Very hard",
+      "label": "The chimney lost its overhanging cap.",
+      "box": {
+        "left": 0.638,
+        "top": 0.153,
+        "width": 0.046,
+        "height": 0.028
+      }
+    },
+    {
+      "id": "window-bar",
+      "difficulty": "Dreamlike",
+      "label": "The attic window lost its horizontal crossbar.",
+      "box": {
+        "left": 0.585,
+        "top": 0.216,
+        "width": 0.037,
+        "height": 0.043
+      }
+    }
+  ]
+}

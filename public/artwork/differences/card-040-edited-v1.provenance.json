@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-040.jpg",
+  "generated": "/artwork/differences/card-040-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The woman's burgundy dress turned deep blue. Target near x72%, y29%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The floating hat at the upper left turned coral. Target near x5%, y18%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The ladder lost the rung just below the knot. Target near x45%, y36%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The small feather below her feet disappeared. Target near x58%, y42%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The small hat near the bottom gained a gold hatband. Target near x48%, y77%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "dress",
+      "difficulty": "Easy",
+      "label": "The woman's burgundy dress turned deep blue.",
+      "box": {
+        "left": 0.636,
+        "top": 0.211,
+        "width": 0.159,
+        "height": 0.161
+      }
+    },
+    {
+      "id": "hat",
+      "difficulty": "Medium",
+      "label": "The floating hat at the upper left turned coral.",
+      "box": {
+        "left": 0.01,
+        "top": 0.161,
+        "width": 0.073,
+        "height": 0.046
+      }
+    },
+    {
+      "id": "rung",
+      "difficulty": "Hard",
+      "label": "The ladder lost the rung just below the knot.",
+      "box": {
+        "left": 0.419,
+        "top": 0.352,
+        "width": 0.063,
+        "height": 0.021
+      }
+    },
+    {
+      "id": "feather",
+      "difficulty": "Very hard",
+      "label": "The small feather below her feet disappeared.",
+      "box": {
+        "left": 0.559,
+        "top": 0.4,
+        "width": 0.041,
+        "height": 0.032
+      }
+    },
+    {
+      "id": "band",
+      "difficulty": "Dreamlike",
+      "label": "The small hat near the bottom gained a gold hatband.",
+      "box": {
+        "left": 0.445,
+        "top": 0.746,
+        "width": 0.065,
+        "height": 0.044
+      }
+    }
+  ]
+}

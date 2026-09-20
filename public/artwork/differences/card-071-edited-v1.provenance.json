@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-071.jpg",
+  "generated": "/artwork/differences/card-071-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Close the open gate extending to the right of the birdcage, preserving the cage and hand, restoring sky where its projecting door was. Target near x40%, y47%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The orange-red bird turned soft gold. Target near x80%, y13%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The farthest scarf tip became forked. Target near x5%, y62%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The tiny lone bird at the far left disappeared. Target near x13%, y14%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The tallest distant tower lost its lit window. Target near x73%, y72%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "cage",
+      "difficulty": "Easy",
+      "label": "The birdcage door swung closed.",
+      "box": {
+        "left": 0.347,
+        "top": 0.416,
+        "width": 0.098,
+        "height": 0.108
+      }
+    },
+    {
+      "id": "bird",
+      "difficulty": "Medium",
+      "label": "The orange-red bird turned soft gold.",
+      "box": {
+        "left": 0.74,
+        "top": 0.063,
+        "width": 0.126,
+        "height": 0.132
+      }
+    },
+    {
+      "id": "scarf",
+      "difficulty": "Hard",
+      "label": "The farthest scarf tip became forked.",
+      "box": {
+        "left": 0.015,
+        "top": 0.591,
+        "width": 0.062,
+        "height": 0.05
+      }
+    },
+    {
+      "id": "small-bird",
+      "difficulty": "Very hard",
+      "label": "The tiny lone bird at the far left disappeared.",
+      "box": {
+        "left": 0.109,
+        "top": 0.119,
+        "width": 0.046,
+        "height": 0.04
+      }
+    },
+    {
+      "id": "window",
+      "difficulty": "Dreamlike",
+      "label": "The tallest distant tower lost its lit window.",
+      "box": {
+        "left": 0.721,
+        "top": 0.706,
+        "width": 0.013,
+        "height": 0.024
+      }
+    }
+  ]
+}

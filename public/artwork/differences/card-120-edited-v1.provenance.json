@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-120.jpg",
+  "generated": "/artwork/differences/card-120-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Replace only the coral polka dots on the child's ivory shirt with similarly sized coral five-point stars. Preserve sleeves, shirt shape, folds, arms and everything else. Target near x68%, y56%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The biggest whale opened its eye. Target near x41%, y26%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The toy boat's right-hand sail turned pale blue. Target near x90%, y80%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The teacup lost its right handle. Target near x88%, y64%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The smallest bottom-left star in the jar disappeared. Target near x94%, y65%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "shirt",
+      "difficulty": "Easy",
+      "label": "The child's red shirt dots became small stars.",
+      "box": {
+        "left": 0.533,
+        "top": 0.472,
+        "width": 0.284,
+        "height": 0.173
+      }
+    },
+    {
+      "id": "whale",
+      "difficulty": "Medium",
+      "label": "The biggest whale opened its eye.",
+      "box": {
+        "left": 0.38,
+        "top": 0.237,
+        "width": 0.054,
+        "height": 0.035
+      }
+    },
+    {
+      "id": "sail",
+      "difficulty": "Hard",
+      "label": "The toy boat's right-hand sail turned pale blue.",
+      "box": {
+        "left": 0.865,
+        "top": 0.739,
+        "width": 0.077,
+        "height": 0.119
+      }
+    },
+    {
+      "id": "cup",
+      "difficulty": "Very hard",
+      "label": "The teacup lost its right handle.",
+      "box": {
+        "left": 0.864,
+        "top": 0.628,
+        "width": 0.026,
+        "height": 0.027
+      }
+    },
+    {
+      "id": "star",
+      "difficulty": "Dreamlike",
+      "label": "The smallest bottom-left star in the jar disappeared.",
+      "box": {
+        "left": 0.923,
+        "top": 0.635,
+        "width": 0.027,
+        "height": 0.023
+      }
+    }
+  ]
+}

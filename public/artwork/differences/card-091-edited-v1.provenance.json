@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-091.jpg",
+  "generated": "/artwork/differences/card-091-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The red hanging lampshade turned green. Target near x60%, y26%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The black cat gained a white tail tip. Target near x29%, y38%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The flower-patterned vase became plain ivory. Target near x95%, y39%. Keep all other pixels/objects untouched.\n4. Edit only this object so: One flower on the red pajamas became a heart. Target near x52%, y43%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The tiny yellow diamond above the hanging lamp disappeared. Target near x62%, y8%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "lamp",
+      "difficulty": "Easy",
+      "label": "The red hanging lampshade turned green.",
+      "box": {
+        "left": 0.552,
+        "top": 0.229,
+        "width": 0.099,
+        "height": 0.06
+      }
+    },
+    {
+      "id": "tail",
+      "difficulty": "Medium",
+      "label": "The black cat gained a white tail tip.",
+      "box": {
+        "left": 0.269,
+        "top": 0.358,
+        "width": 0.034,
+        "height": 0.037
+      }
+    },
+    {
+      "id": "vase",
+      "difficulty": "Hard",
+      "label": "The flower-patterned vase became plain ivory.",
+      "box": {
+        "left": 0.92,
+        "top": 0.355,
+        "width": 0.054,
+        "height": 0.074
+      }
+    },
+    {
+      "id": "flower",
+      "difficulty": "Very hard",
+      "label": "One flower on the red pajamas became a heart.",
+      "box": {
+        "left": 0.459,
+        "top": 0.399,
+        "width": 0.044,
+        "height": 0.033
+      }
+    },
+    {
+      "id": "diamond",
+      "difficulty": "Dreamlike",
+      "label": "The tiny yellow diamond above the hanging lamp disappeared.",
+      "box": {
+        "left": 0.6,
+        "top": 0.059,
+        "width": 0.043,
+        "height": 0.046
+      }
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-021.jpg",
+  "generated": "/artwork/differences/card-021-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The nearest sailboat’s ivory sail turned coral red. Target near x52%, y42%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The round sun became a crescent. Target near x69%, y15%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The loose petal near the bottom of the keyhole disappeared. Target near x43%, y87%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The tiny distant sailboat near the upper center disappeared. Target near x62%, y25%. Keep all other pixels/objects untouched.\n5. Add a tiny triangular gold pennant at the top of the mast of the right-hand boat at x78% y34%; keep all sails unchanged. Target near x78%, y33%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "sail",
+      "difficulty": "Easy",
+      "label": "The nearest sailboat’s ivory sail turned coral red.",
+      "box": {
+        "left": 0.501,
+        "top": 0.386,
+        "width": 0.044,
+        "height": 0.06
+      }
+    },
+    {
+      "id": "sun",
+      "difficulty": "Medium",
+      "label": "The round sun became a crescent.",
+      "box": {
+        "left": 0.6,
+        "top": 0.08,
+        "width": 0.173,
+        "height": 0.126
+      }
+    },
+    {
+      "id": "petal",
+      "difficulty": "Hard",
+      "label": "The loose petal near the bottom of the keyhole disappeared.",
+      "box": {
+        "left": 0.375,
+        "top": 0.851,
+        "width": 0.103,
+        "height": 0.044
+      }
+    },
+    {
+      "id": "boat",
+      "difficulty": "Very hard",
+      "label": "The tiny distant sailboat near the upper center disappeared.",
+      "box": {
+        "left": 0.608,
+        "top": 0.236,
+        "width": 0.023,
+        "height": 0.022
+      }
+    },
+    {
+      "id": "flag",
+      "difficulty": "Dreamlike",
+      "label": "The right-hand sailboat gained a tiny gold pennant.",
+      "box": {
+        "left": 0.766,
+        "top": 0.32,
+        "width": 0.024,
+        "height": 0.02
+      }
+    }
+  ]
+}

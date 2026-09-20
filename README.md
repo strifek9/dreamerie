@@ -1,10 +1,76 @@
 # DREAMERIE
 
-**How well do you understand the way your friends see the world?**
+Dreamerie is now a mobile-first daily spot-the-difference game. Two visions of one surreal Dream appear side by side; use exactly five confirmed guesses to find five changes before the two-minute timer ends. Accuracy is the score, and elapsed time breaks ties.
 
-Dreamerie is a standalone, asynchronous social game about interpreting abstract concepts through surreal images. Players choose images that express their Dreams; later, friends try to recognize those choices. The social reward is discovering why someone saw TIME, LOVE, or HOME in a strange piece of art.
+The current prototype is intentionally local and small: React, TypeScript, Vite, straightforward CSS, and local artwork. The 120 original illustrations are preserved; **all 120 cards now have individually authored, object-edited pairs**, with five declared answers each (600 total). Automatic circular color/shift effects are no longer used. No account, multiplayer, Discord, database, or production service is required.
 
-The product is mobile-first and responsive for mobile and desktop web. Artwork leads the experience, supported by a calm interface and short, atmospheric language.
+## Play locally
+
+Use Node.js 22.18+ or 24+ and npm.
+
+```powershell
+npm ci
+npm run dev
+```
+
+Open the URL Vite prints, normally `http://127.0.0.1:5173/`.
+
+```powershell
+npm run typecheck
+npm test
+npm run build
+npm run preview
+```
+
+The puzzle catalogue and answer regions live in `src/data/authoredDreams.ts` and `src/data/authoredExpansion.ts`; scoring, sharing, timing settings, and hit detection live in `src/game/dailyRecall.ts`. The opening shows the day's original artwork above the reverie poem and short rules; no timer runs during this preview. **Start** opens both images and starts the two-minute timer. Tapping either image only moves the pending circle; **Remember** consumes one of five guesses. Mouse-wheel zoom, touch pinch/drag, and visible zoom controls keep fine changes inspectable.
+
+Each painting gets its own changes: expressions, moon phases, fabric patterns, plants, architecture, missing pieces, and existing-object colors. Red bows and gold buttons are not a repeated formula. Generated edits are clipped to five declared regions over the untouched original, keeping everything outside those regions identical. Source prompts and provenance are stored beside the edited artwork in `public/artwork/differences/`. Every ending shows found answers in green on the left and missed answers in red on the right. Numbered outlines gently fade completely out and back in; Hide markers clears them manually. Reduced-motion users get static outlines and the same hide control. All five descriptions remain visible below, and zoom stays available.
+
+The result format is `accuracy · elapsed time`, for example `4/5 · 1:07`. Higher accuracy always ranks first. Faster time matters only when accuracy ties; equal accuracy and equal time are tied.
+
+### Sharing a result
+
+The landing artwork is now the focal point: Dreamerie sits directly above the daily number and large card. Desktop places the poem and Start alongside the painting; phones stack them below. Testing controls move to the bottom on this screen only. The layout was checked at 1280px, 390px and 320px widths, with no horizontal overflow and Start still usable.
+
+Results show five Wordle-style tiles ordered by difficulty, plus **Share result**, **Copy result**, and an expandable message preview. Native sharing is used when available; copying is the fallback, with selectable text if clipboard access fails. The shared message contains the day number, accuracy, elapsed time, five purple/black squares, and a link to play, without answer locations or descriptions. The link uses the current site's address/path, removing review parameters, other query data, fragments and credentials. It opens the current daily game, not a saved score page or archived puzzle. Friends see the score and time in the message itself.
+
+Localhost links only work on the same computer; the result screen warns about this. On a public host, shares automatically use that public address. The user has now approved deployment to the existing Render service; see [current hosting notes](docs/HOSTING.md) for setup and release verification. `npm start` serves the built game and health check only, leaving the legacy room database untouched. Native operating-system share destinations still need a physical-device check; no message was sent to anyone during verification.
+
+The previous social/card-selection game, including the uncommitted reset notes that preceded this redesign, is preserved on `prototype/social-dreams` at commit `c6b1cbd`.
+
+### Artwork review
+
+In development only, open `http://127.0.0.1:5173/?review=card-120` to inspect a specific card (001–120). Production ignores this override. Use the development-only **New day →** control at the top to advance to another card and reset to the rules screen. It advances the displayed test day without changing the real date, wraps after all 120 cards, and resets on page refresh. Review/simulated-day shares are prefixed Playtest; production has no New day control. The spoiler-containing [answer ledger](docs/ARTWORK_REVIEW.md) lists all five changes for every card. The gallery remains one daily pair, not a card-selection dashboard.
+
+### Review and handoff
+
+Checks passed: fourteen rule/catalogue/sharing tests, TypeScript checking, production build, and Git whitespace checks. The catalogue tests require all 120 IDs, original/edited assets and provenance, five reachable answers per card, valid normalized regions, and correct nested-hit priority. Share tests cover score/time, perfect and expired grids, spoiler-free text and clean play URLs. See `docs/ARTWORK_REVIEW.md` for the artwork review and limitations. Browser checks covered desktop and 390px phone-sized layouts, pending-marker repositioning across both images without submission, one guess per confirmation, duplicate-found consumption without a second score, immediate five-guess completion, timer-expiry reveal, and wheel zoom after results without further scoring. The latest opening/share check verified the original artwork, exact new poem, Start, five-confirmation results, copy-success feedback, complete share preview, and New day's artwork replacement. Physical multi-touch pinch still needs a real-device playtest. Difficulty labels are editorial estimates, not calibrated player data.
+
+Changed areas: `src/App.tsx`, `src/styles/global.css`, `src/game/dailyRecall.ts`, `src/data/authoredDreams.ts`, `src/data/authoredExpansion.ts`, `tests/dailyRecall.test.ts`, 120 edited assets and their provenance under `public/artwork/differences/`, frontend package scripts, `.gitignore`, and the five primary project/design documents and the new full answer ledger. Original deck artwork is untouched. The discarded automatic discoloration/position generator is removed; its output is not used.
+
+The user approved committing, pushing and deploying the full redesign on September 20, 2026. The earlier handoff commands below cover the frontend; deployment additionally includes `scripts/serve.ts`, `tests/staticHosting.test.ts`, `render.yaml` and `docs/HOSTING.md`. Run release checks before any future publication.
+
+```powershell
+git add .gitignore AGENTS.md README.md docs/ART_DIRECTION.md docs/GAME_DESIGN.md docs/PROTOTYPE_PLAN.md docs/ARTWORK_REVIEW.md index.html package.json src/App.tsx src/styles/global.css src/game/dailyRecall.ts src/data/authoredDreams.ts src/data/authoredExpansion.ts tests/dailyRecall.test.ts public/artwork/differences
+git commit -m "feat(dreams): add daily difference game with 120 authored art pairs"
+git push origin main
+```
+
+If the opening/sharing refinement is committed separately after the base redesign, its suggested message is `feat(dreams): add daily artwork welcome and shareable results`.
+
+For the subsequent landing-layout refinement, after the earlier redesign is committed and this change is approved:
+
+```powershell
+git add src/App.tsx src/styles/global.css README.md docs/ART_DIRECTION.md docs/GAME_DESIGN.md
+git commit -m "style(dreams): make daily artwork the landing focal point"
+git push origin main
+```
+
+## Historical social prototype notes
+
+Everything below describes the preserved social prototype and is not authoritative for the current Daily Dream Recall mode.
+
+**Former premise:** How well do you understand the way your friends see the world?
 
 ## Current status
 

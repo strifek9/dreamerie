@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-038.jpg",
+  "generated": "/artwork/differences/card-038-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The whale opened its sleepy eye. Target near x66%, y13%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The cottage's green door turned blue. Target near x42%, y60%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The cottage lost its chimney. Target near x35%, y51%. Keep all other pixels/objects untouched.\n4. Remove the entire little rectangular window high on the right-facing cottage gable at x43%,y55%. Fill with matching red stucco. Target near x43%, y55%. Keep all other pixels/objects untouched.\n5. On the cottage's now-blue door, add a tiny gold five-pointed star door knob at x42.7%,y60%, replacing the existing dark dot. Keep it tiny and painted. Target near x43%, y60%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "eye",
+      "difficulty": "Easy",
+      "label": "The whale opened its sleepy eye.",
+      "box": {
+        "left": 0.624,
+        "top": 0.105,
+        "width": 0.067,
+        "height": 0.039
+      }
+    },
+    {
+      "id": "door",
+      "difficulty": "Medium",
+      "label": "The cottage's green door turned blue.",
+      "box": {
+        "left": 0.408,
+        "top": 0.57,
+        "width": 0.033,
+        "height": 0.056
+      }
+    },
+    {
+      "id": "chimney",
+      "difficulty": "Hard",
+      "label": "The cottage lost its chimney.",
+      "box": {
+        "left": 0.327,
+        "top": 0.491,
+        "width": 0.037,
+        "height": 0.043
+      }
+    },
+    {
+      "id": "window",
+      "difficulty": "Very hard",
+      "label": "The upper cottage window disappeared.",
+      "box": {
+        "left": 0.416,
+        "top": 0.537,
+        "width": 0.025,
+        "height": 0.031
+      }
+    },
+    {
+      "id": "knob",
+      "difficulty": "Dreamlike",
+      "label": "The cottage door gained a tiny golden star knob.",
+      "box": {
+        "left": 0.42,
+        "top": 0.591,
+        "width": 0.014,
+        "height": 0.016
+      }
+    }
+  ]
+}

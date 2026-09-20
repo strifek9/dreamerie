@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-109.jpg",
+  "generated": "/artwork/differences/card-109-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Repaint the entire green iris blue, keeping its circular pupil, curtain, eyelids and everything else untouched. Target near x50%, y29%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The crescent motif on the robe became a full moon. Target near x7%, y39%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The distant doorway figure gained a pointed hat. Target near x90%, y22%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The crescent in the lower-right doorway became a star. Target near x88%, y66%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The hand on the curtain gained a thin silver ring. Target near x23%, y34%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "iris",
+      "difficulty": "Easy",
+      "label": "The giant green iris turned blue.",
+      "box": {
+        "left": 0.238,
+        "top": 0.136,
+        "width": 0.522,
+        "height": 0.308
+      }
+    },
+    {
+      "id": "robe",
+      "difficulty": "Medium",
+      "label": "The crescent motif on the robe became a full moon.",
+      "box": {
+        "left": 0.038,
+        "top": 0.361,
+        "width": 0.062,
+        "height": 0.065
+      }
+    },
+    {
+      "id": "figure",
+      "difficulty": "Hard",
+      "label": "The distant doorway figure gained a pointed hat.",
+      "box": {
+        "left": 0.882,
+        "top": 0.205,
+        "width": 0.032,
+        "height": 0.034
+      }
+    },
+    {
+      "id": "moon",
+      "difficulty": "Very hard",
+      "label": "The crescent in the lower-right doorway became a star.",
+      "box": {
+        "left": 0.859,
+        "top": 0.647,
+        "width": 0.033,
+        "height": 0.034
+      }
+    },
+    {
+      "id": "ring",
+      "difficulty": "Dreamlike",
+      "label": "The hand on the curtain gained a thin silver ring.",
+      "box": {
+        "left": 0.22,
+        "top": 0.335,
+        "width": 0.023,
+        "height": 0.018
+      }
+    }
+  ]
+}

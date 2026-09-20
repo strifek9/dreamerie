@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-117.jpg",
+  "generated": "/artwork/differences/card-117-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The key's clover-shaped head became a heart. Target near x63%, y51%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The orange flower left of the key turned ivory. Target near x53%, y60%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The crescent on the woman's sleeve became a full moon. Target near x6%, y28%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The fingernail holding the key turned deep blue. Target near x64%, y48%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The small empty floating stone just left of the key disappeared. Target near x46%, y54%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "key",
+      "difficulty": "Easy",
+      "label": "The key's clover-shaped head became a heart.",
+      "box": {
+        "left": 0.581,
+        "top": 0.477,
+        "width": 0.099,
+        "height": 0.071
+      }
+    },
+    {
+      "id": "flower",
+      "difficulty": "Medium",
+      "label": "The orange flower left of the key turned ivory.",
+      "box": {
+        "left": 0.482,
+        "top": 0.565,
+        "width": 0.093,
+        "height": 0.066
+      }
+    },
+    {
+      "id": "moon",
+      "difficulty": "Hard",
+      "label": "The crescent on the woman's sleeve became a full moon.",
+      "box": {
+        "left": 0.014,
+        "top": 0.248,
+        "width": 0.099,
+        "height": 0.074
+      }
+    },
+    {
+      "id": "nail",
+      "difficulty": "Very hard",
+      "label": "The fingernail holding the key turned deep blue.",
+      "box": {
+        "left": 0.634,
+        "top": 0.458,
+        "width": 0.02,
+        "height": 0.027
+      }
+    },
+    {
+      "id": "stone",
+      "difficulty": "Dreamlike",
+      "label": "The small empty floating stone just left of the key disappeared.",
+      "box": {
+        "left": 0.435,
+        "top": 0.511,
+        "width": 0.052,
+        "height": 0.056
+      }
+    }
+  ]
+}

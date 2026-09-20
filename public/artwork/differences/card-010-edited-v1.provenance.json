@@ -1,0 +1,64 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/artwork/dreams/card-010.jpg",
+  "generated": "/artwork/differences/card-010-edited-v1.png",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET for a Dreamerie spot-the-difference puzzle. Return ONE altered image with the EXACT SAME 4:5 framing, geometry, textured painted style and positions. Make exactly the five specified meaningful object edits below. Match this existing illustrator's brushwork, shading and palette. NO random new props, circular patches, tint spots, labels, arrows or answer markers. Keep absolutely everything else unchanged, including background, all edges, decorations and lighting. Do not redraw or reframe the scene. Coordinates are percentages from top-left and help identify objects, not visible boxes.\n1. Edit only this object so: The rabbit’s purple scarf turned teal. Target near x34%, y46%. Keep all other pixels/objects untouched.\n2. Edit only this object so: The mouse closed its eye. Target near x51%, y42%. Keep all other pixels/objects untouched.\n3. Edit only this object so: The red floating leaf beside the umbrella disappeared. Target near x60%, y38%. Keep all other pixels/objects untouched.\n4. Edit only this object so: The mouse’s gold button turned coral. Target near x52%, y46%. Keep all other pixels/objects untouched.\n5. Edit only this object so: The rabbit’s satchel buckle became round. Target near x33%, y49%. Keep all other pixels/objects untouched.",
+  "review": "Visually reviewed. Only the five declared object regions are composited over the original; labels describe actual generated changes. See edits for final accepted answers.",
+  "edits": [
+    {
+      "id": "scarf",
+      "difficulty": "Easy",
+      "label": "The rabbit’s purple scarf turned teal.",
+      "box": {
+        "left": 0.23,
+        "top": 0.418,
+        "width": 0.212,
+        "height": 0.087
+      }
+    },
+    {
+      "id": "mouse-eye",
+      "difficulty": "Medium",
+      "label": "The mouse closed its eye.",
+      "box": {
+        "left": 0.5,
+        "top": 0.409,
+        "width": 0.022,
+        "height": 0.022
+      }
+    },
+    {
+      "id": "leaf",
+      "difficulty": "Hard",
+      "label": "The red floating leaf beside the umbrella disappeared.",
+      "box": {
+        "left": 0.559,
+        "top": 0.344,
+        "width": 0.073,
+        "height": 0.066
+      }
+    },
+    {
+      "id": "button",
+      "difficulty": "Very hard",
+      "label": "The mouse’s gold button turned coral.",
+      "box": {
+        "left": 0.508,
+        "top": 0.456,
+        "width": 0.017,
+        "height": 0.014
+      }
+    },
+    {
+      "id": "buckle",
+      "difficulty": "Dreamlike",
+      "label": "The rabbit’s satchel buckle became round.",
+      "box": {
+        "left": 0.316,
+        "top": 0.476,
+        "width": 0.028,
+        "height": 0.029
+      }
+    }
+  ]
+}
