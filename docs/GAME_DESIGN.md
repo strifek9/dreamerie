@@ -2,6 +2,14 @@
 
 ## Confirmed room modes (September 2026)
 
+### Requested for the next version: card resets
+
+The user requested a per-player reset allowance: once a day during guessing and three times during setup. Require a confirmation before applying a reset, show the remaining count beside the reset control, and visibly disable it when unavailable. This is a future-version request; no reset behavior is implemented or deployed yet.
+
+Clarify before implementation: whether guessing reset clears assignments or replaces cards; whether the three setup resets cover the entire preparation phase or each Dream; and whether a guessing allowance renews per game day or calendar day. Replacing only decoys during guessing could reveal answers by comparison, while replacing real Dreams would change other players' saved choices. Do not silently choose either behavior. The proposed setup interpretation is to redraw the current six-card hand while preserving saved Dreams, with three redraws across preparation; it awaits confirmation.
+
+### Current mode rules
+
 These rules supersede older personal-only connected-play scope below. New rooms default to **Word of the Day**; creators may instead choose **Your own dream clues**. Invitees see the creator's mode and scoring before joining and cannot change it. A room's mode stays fixed. Existing rooms retain personal clues and their original scoring on upgrade.
 
 - Both modes prepare six Dreams on Day 1, one for each of six guessing days in hidden order. Word of the Day supplies shared words and asks only for cards; personal mode asks for a clue (1–80 characters) and card. Examples may be single words or phrases; they suggest possibilities, not correct meanings.
