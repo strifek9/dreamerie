@@ -2,13 +2,15 @@
 
 ## Daily Dream Recall release — September 20, 2026
 
-The user approved committing, pushing and deploying the daily spot-the-difference redesign to the existing `dreamerie-playtest` Render service. This release replaces the public social-room UI, not its retained source branch or stored data. The intended public address remains https://dreamerie-playtest.onrender.com. Deployment completion must be verified in Render and over HTTPS before calling this release live.
+Daily Dream Recall is **live at https://dreamerie-playtest.onrender.com**, verified September 20, 2026. The user approved committing, pushing and deploying the redesign to the existing `dreamerie-playtest` service. Render deployment `dep-danp3pjm8hqs73c2lmfg` reports **Deploy succeeded / Live** for commit `c01d528f2b87d81ec5ec30acc3acc290e7a73647`; it became live at approximately 02:58:53 CDT. This release replaces the public social-room UI, not its retained source branch or stored data.
 
 Build: `npm ci --include=dev && npm test && npm run build`. Start: `npm start`, which now runs `scripts/serve.ts` under Node 24. This small file server uses the already-installed Fastify/static packages to serve only `dist/` and `/api/health`. It does not import the legacy room service, open/migrate the database, run its scheduler or expose room APIs. Keep the existing disk and environment settings untouched; there is no new paid resource or plan change. Render auto-deploy remains Off.
 
 The old social prototype remains on `prototype/social-dreams` at `c6b1cbd`. Keep that branch on the remote as well. Database backup/recovery instructions below apply only to the old social service; its npm maintenance commands are not part of the daily frontend release. Retaining the disk is not a verified off-site backup. Rolling back to the previous deployed social commit may resume its scheduled expiry/catch-up behavior, so inspect recovery needs before restoring that service.
 
 Release checks: rule/catalogue/share tests, static-server health/content/private-file isolation tests, type checking, build, clean Git diff, and public original/altered artwork loading. Verify production omits New day/review overrides and uses the HTTPS site in share messages. Native share destinations and real phone pinch gestures still require owner testing. Build artifacts and private databases must not be committed.
+
+Verified release results: all 16 tests and the build passed locally, in GitHub Actions run `35498151793`, and on Render (Node 24.21.0). HTTPS homepage and health return 200; the homepage references the reviewed `index-DEl4cBOB.js` bundle. Original and altered card-023 artwork return 200 with correct image types. Legacy `/api/rooms` returns 404. Hosted Chrome checks verified the artwork-first opening, no New day control, Start with 2:00/five guesses, tap without submission, completion after five confirmations, all five revealed answers, Copy success and the public HTTPS URL in the share preview. Browser error log was empty. No message was sent to a third party. The social branch is also pushed to GitHub. Physical-phone acceptance remains pending.
 
 ## Historical social-service hosting notes
 

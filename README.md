@@ -2,6 +2,8 @@
 
 Dreamerie is now a mobile-first daily spot-the-difference game. Two visions of one surreal Dream appear side by side; use exactly five confirmed guesses to find five changes before the two-minute timer ends. Accuracy is the score, and elapsed time breaks ties.
 
+**Play online:** https://dreamerie-playtest.onrender.com — Daily Dream Recall release `c01d528`, deployed and checked September 20, 2026. Open this HTTPS address on your phone or browser; localhost is only for development. All 16 release tests, GitHub checks and Render build passed. See [hosting verification](docs/HOSTING.md).
+
 The current prototype is intentionally local and small: React, TypeScript, Vite, straightforward CSS, and local artwork. The 120 original illustrations are preserved; **all 120 cards now have individually authored, object-edited pairs**, with five declared answers each (600 total). Automatic circular color/shift effects are no longer used. No account, multiplayer, Discord, database, or production service is required.
 
 ## Play locally

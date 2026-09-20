@@ -1,4 +1,16 @@
-# Prototype 0.2.8 playtest record
+# Dreamerie playtest record
+
+## Daily Dream Recall — September 20, 2026
+
+- Public URL: https://dreamerie-playtest.onrender.com
+- Deployed release: `c01d528f2b87d81ec5ec30acc3acc290e7a73647`; Render `dep-danp3pjm8hqs73c2lmfg` reports Live.
+- All 16 tests, type checking and build passed locally, on GitHub Actions and on Render.
+- HTTPS health/homepage and current original/altered artwork return 200. Legacy room API returns 404; the static host does not access the retained database.
+- Hosted Chrome smoke check passed: artwork opening, no dev controls, Start, pending tap without submission, five-confirmation ending, score/time, all answer descriptions, Copy feedback and public share link. No browser errors observed and no external messages sent.
+- Responsive layout was checked locally at 320px, 390px and desktop widths before release. Actual iPhone Safari/Android Chrome, physical pinch gestures and native share destinations remain for the owner to test.
+- Social prototype source preserved locally and remotely on `prototype/social-dreams` at `c6b1cbd`. Existing Render service, disk and plan were retained; no database migration or deletion was performed by the new server.
+
+## Historical Prototype 0.2.8 playtest record
 
 Status: deployed on Render on 2026-09-18; initial hosted smoke checks pass. Full multiplayer and physical-device acceptance remain pending.
 
