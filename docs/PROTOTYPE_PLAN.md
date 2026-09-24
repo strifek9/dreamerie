@@ -2,6 +2,8 @@
 
 ## V2 milestone — one landscape sample
 
+Current refinement: remove the practice round completely. Start is immediately available after artwork loads, with no practice gate or completion flag. A small ? / How to play button opens concise instructions in a keyboard-accessible dialog before or during play. Help never starts, pauses or resets the timer, or changes guesses; it shows the active remaining time and closes on expiry. Remove unused landing bottom padding and use the visible dynamic viewport height for V2, without V1's larger 100vh body floor. Keep scrolling for real overflow (results, enlarged text and small help dialogs), not empty background. V1 is unaffected. Older practice wording below is historical; this local refinement awaits publication.
+
 Implement and user-test one purpose-composed wide pair in the existing card style before converting any of the 120 cards. V1 is preserved on `prototype/version-1`; V2 work is on `prototype/v2-landscape`. After local review, the user approved the separate static phone preview, now live at https://dreamerie-v2-playtest.onrender.com (`34b34df`); the V1 site is unchanged. Existing V1 scope below remains historical/public behavior.
 
 Deliverables: a two-step introduction with an untimed tap/Remember practice; a stacked landscape pair fitted to play viewports; synchronized pinch/wheel/drag and visible zoom controls; fixed two-minute deadline with no pause; exactly five guesses; score/share before answers; V2-independent saved attempt; dev-only repeatable test. Preserve V1 route, assets, and saved attempts. No dependencies or infrastructure added.

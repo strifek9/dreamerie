@@ -2,6 +2,8 @@
 
 ## V2 landscape art and interface
 
+Current refinement: remove the practice round completely. Start is immediately available after artwork loads, with no practice gate or completion flag. A small ? / How to play button opens concise instructions in a keyboard-accessible dialog before or during play. Help never starts, pauses or resets the timer, or changes guesses; it shows the active remaining time and closes on expiry. Remove unused landing bottom padding and use the visible dynamic viewport height for V2, without V1's larger 100vh body floor. Keep scrolling for real overflow (results, enlarged text and small help dialogs), not empty background. V1 is unaffected. Older practice wording below is historical; this local refinement awaits publication.
+
 The current card collection is the visual reference, not something to replace stylistically. Preserve painterly gouache/paper texture, rich varied color, symbolic surreal compositions, simplified readable silhouettes, and the existing storybook feeling. Recompose for a wide frame rather than stretching or cropping portrait cards. This prototype uses card-001 as a style reference for a new scene, A Sea in a Teacup.
 
 Keep both original-resolution 1672×941 PNGs in `public/artwork/v2/`, with prompts and provenance. Do not artificially upscale and call it extra detail, or reduce them to thumbnails. Inspect the smallest clue at zoom. Five scene-fitting edits: full moon to crescent, red sails to gold, one fewer bell flower, one fewer lantern crossbar, star engraving to crescent. Only declared regions from the edited source are composited onto the original; all other pixels stay unchanged. Review boundaries and difficulty with people before more artwork.

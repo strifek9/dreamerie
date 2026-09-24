@@ -1,11 +1,10 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { DreamCanvas, DreamViewer } from '../components/InspectableDream'
 import { createShareText, formatClock, getAnswerReveals, getRemainingGuesses } from '../game/dailyRecall'
 import { RESTING_VIEW, zoomAt, type ImageView } from '../game/imageInspection'
 import { useDailySession } from '../game/useDailySession'
 import { LandscapeArtwork } from './LandscapeArtwork'
 import { landscapeDifferences as differences, landscapeDream as dream, V2_SESSION_OPTIONS } from './landscapeDream'
-import { Practice } from './Practice'
 import './versionTwo.css'
 
 export default function VersionTwo() {
@@ -16,8 +15,7 @@ export default function VersionTwo() {
 function Round({ run, onNew }: { run: number; onNew: () => void }) {
   const { phase, recall, result, recallLeft, pendingSide, dispatch, storageError, busy } = useDailySession(1, dream.id, differences, run > 0, V2_SESSION_OPTIONS)
   const [home, setHome] = useState(false)
-  const [ready, setReady] = useState(false)
-  const [teaching, setTeaching] = useState(false)
+  const [hintOpen, setHintOpen] = useState(false)
   const [assetsReady, setAssetsReady] = useState(false)
   const [assetError, setAssetError] = useState(false)
   const [view, setView] = useState<ImageView>(RESTING_VIEW)
@@ -33,7 +31,7 @@ function Round({ run, onNew }: { run: number; onNew: () => void }) {
     }))).then(() => { if (active) setAssetsReady(true) }, () => { if (active) setAssetError(true) })
     return () => { active = false }
   }, [])
-  useEffect(() => { if (phase === 'result') { setHome(false); setPreviewZoom(false); setView(RESTING_VIEW) } }, [phase])
+  useEffect(() => { if (phase === 'result') { setHome(false); setPreviewZoom(false); setHintOpen(false); setView(RESTING_VIEW) } }, [phase])
   const shareText = result ? createShareText(1, result, differences, recall.foundDifferenceIds, location.href).replace('Dreamerie #1', 'Dreamerie V2 · Playtest 1') : ''
   async function share(copy = false) {
     try {
@@ -43,18 +41,17 @@ function Round({ run, onNew }: { run: number; onNew: () => void }) {
   }
   function updateView(next: ImageView) { setView(next) }
   return <main className={`v2-app ${landing ? 'v2-landing' : 'v2-round'} ${result ? 'v2-finished' : ''}`}>
-    <header className="v2-header"><a href="./" onClick={event => { event.preventDefault(); setTeaching(false); setHome(true) }}>☾ Dreamerie</a><span>Version 2 · Playtest</span></header>
+    <header className="v2-header"><div className="v2-brand-row"><a href="./" onClick={event => { event.preventDefault(); setHome(true) }}>☾ Dreamerie</a><button className="v2-hint-toggle" aria-label="How to play" aria-haspopup="dialog" onClick={() => setHintOpen(true)}>?</button></div><span>Version 2 · Playtest</span></header>
     {storageError && <p role="alert" className="storage-warning">{storageError}</p>}
     {landing ? <section className="v2-welcome">
       <p className="eyebrow">{dream.title}</p>
-      {!teaching && <><button className="v2-preview" onClick={() => setPreviewZoom(true)} aria-label="Enlarge the dream preview"><img src={dream.original} alt="A sailboat crosses a sea inside a teacup, beside a sleeping cat under a moonlit sky."/></button>
-      <p className="v2-poem">Lost within a reverie, nothing stays where it should be.<br/>Glance away, then look once more—the moon has left its silver shore.</p></>}
+      <button className="v2-preview" onClick={() => setPreviewZoom(true)} aria-label="Enlarge the dream preview"><img src={dream.original} alt="A sailboat crosses a sea inside a teacup, beside a sleeping cat under a moonlit sky."/></button>
+      <p className="v2-poem">Lost within a reverie, nothing stays where it should be.<br/>Glance away, then look once more—the moon has left its silver shore.</p>
       <h1>Find the five differences.</h1>
-      <p className="v2-rules"><strong>5 guesses. 2 minutes. No pauses.</strong><br/>Tap either image, then <strong>Remember</strong> to confirm.<br/>Wrong guesses count too.</p>
-      {phase === 'rules' && teaching && <Practice onReady={() => setReady(true)}/>}
+      <p className="v2-rules">5 guesses · 2 minutes · No pauses<br/>Tap a difference, then <strong>Remember</strong>.</p>
       {phase === 'play' && <p role="status">Your dream is still fading. <strong>{formatClock(recallLeft)}</strong> left · {getRemainingGuesses(recall)} guesses left.</p>}
       {assetError && <p role="alert">The paintings couldn’t load. Refresh before starting.</p>}
-      <div className="v2-start"><button className="primary-action" disabled={busy || Boolean(storageError) || !assetsReady || (phase === 'rules' && teaching && !ready)} onClick={() => { if (phase === 'rules' && !teaching) { setTeaching(true); return } setHome(false); if (phase === 'rules') void dispatch({ type: 'start' }) }}>{phase === 'rules' ? teaching ? 'Start · 2 minutes' : 'Try a quick practice' : result ? 'View result' : 'Continue'}</button>{phase === 'rules' && !ready && <small>{teaching ? 'Try the practice above first. No timer yet.' : 'Learn one guess before the clock starts.'}</small>}</div>
+      <div className="v2-start"><button className="primary-action" disabled={busy || Boolean(storageError) || !assetsReady} onClick={() => { setHome(false); if (phase === 'rules') void dispatch({ type: 'start' }) }}>{phase === 'rules' ? 'Start' : result ? 'View result' : 'Continue'}</button></div>
     </section> : <>
       {result ? <section className="v2-result" aria-labelledby="result-title"><p className="eyebrow">{result.reason === 'time' ? 'The dream has faded' : 'Your dream, remembered'}</p><h1 id="result-title">{result.accuracy}/5 <span>· {formatClock(result.elapsedSeconds)}</span></h1><p className="v2-tiles" aria-label={`${result.accuracy} of 5 differences found`}>{differences.map(d => recall.foundDifferenceIds.includes(d.id) ? '🟪' : '⬛').join('')}</p><div className="v2-share"><button className="primary-action" onClick={() => void share()}>Share result</button><button className="text-action" onClick={() => void share(true)}>Copy</button></div><p role="status">{shareStatus}</p></section>
       : <div className="v2-status"><strong>{getRemainingGuesses(recall)} guesses left</strong><time aria-label="Time remaining">{formatClock(recallLeft)}</time><span>{recall.foundDifferenceIds.length}/5 found</span></div>}
@@ -77,6 +74,26 @@ function Round({ run, onNew }: { run: number; onNew: () => void }) {
       {result && <section className="v2-answers"><h2>The five differences</h2><ol>{differences.map(d => <li key={d.id}>{d.label}<small>{recall.foundDifferenceIds.includes(d.id) ? 'Found' : 'Missed'} · {d.difficulty}</small></li>)}</ol><details><summary>Your share message</summary><textarea aria-label="Share message" readOnly value={shareText} rows={6}/></details>{['localhost', '127.0.0.1'].includes(location.hostname) && <p>This is a local preview. Its link won’t open on someone else’s device.</p>}<p>One landscape sample for testing—not the full daily collection.</p></section>}
     </>}
     {previewZoom && landing && <DreamViewer title={dream.title} onClose={() => setPreviewZoom(false)} simpleZoom status={phase === 'play' ? <span>{formatClock(recallLeft)} left · timer running</span> : undefined}><LandscapeArtwork changed={false}/></DreamViewer>}
+    {hintOpen && <GameHint onClose={() => setHintOpen(false)} timeLeft={phase === 'play' ? recallLeft : undefined}/>}
     {import.meta.env.DEV && <div className="v2-dev"><button className="text-action" onClick={onNew}>New playtest (dev only)</button><a href="?version=1">Compare Version 1</a></div>}
   </main>
+}
+
+function GameHint({ onClose, timeLeft }: { onClose: () => void; timeLeft?: number }) {
+  const dialog = useRef<HTMLDialogElement>(null)
+  useEffect(() => {
+    const element = dialog.current!
+    const opener = document.activeElement instanceof HTMLElement ? document.activeElement : null
+    element.showModal()
+    return () => { element.close(); if (opener?.isConnected) opener.focus({ preventScroll: true }) }
+  }, [])
+  return <dialog className="v2-hint" ref={dialog} aria-labelledby="v2-hint-title" onCancel={event => { event.preventDefault(); onClose() }}>
+    <h2 id="v2-hint-title">How to play</h2>
+    <p>Find five differences between <strong>The Dream</strong> and <strong>The Memory</strong>.</p>
+    <p>Tap either painting to place a circle. Tap again to move it. Only <strong>Remember</strong> confirms your guess.</p>
+    <p>You have <strong>five guesses total</strong>. Wrong guesses count too. Find more differences first; faster time breaks a tie.</p>
+    <p>Pinch or use +/− to zoom. Drag either painting to move both together.</p>
+    <p className="v2-hint-timer">{timeLeft === undefined ? 'Two minutes once you press Start. No pauses.' : `${formatClock(timeLeft)} left · The timer is still running.`}</p>
+    <button autoFocus className="primary-action" onClick={onClose}>Got it</button>
+  </dialog>
 }
