@@ -1,5 +1,13 @@
 # Hosted Dreamerie playtest
 
+## Home-navigation release — September 23, 2026
+
+Release `991a5978646f03f5ceea0b34ba915c565c8b62e9` is **live at https://dreamerie-playtest.onrender.com** following the user's commit/push/deploy request. Render deployment `dep-daq9l5lg1s2s73fm56a0` reports **Deploy succeeded / Live**, with service-live logs at 22:37:19 CDT. No plan, disk, environment, access, saved data or manual-deployment settings changed.
+
+All 31 tests, typecheck and build passed locally and on Render. GitHub Actions run `35952053238` succeeded. Public homepage and health returned 200, with expected `index-_JQJYvTQ.js` and `index-B1DxDp6W.css` assets. Hosted Chrome confirmed Found · Green / Missed · Red, click and Enter activation of the Dreamerie home link, and View result restoring the unchanged saved score/time. Browser errors were empty; site storage was not cleared. Local browser testing also verified Resume preserves the pending marker and original running deadline.
+
+Runtime stays on `991a597`; the following documentation-only commit records verification and needs no redeployment. Earlier records below are historical.
+
 ## Saved daily attempts and landing-controls release — September 23, 2026
 
 Release `79bcf49aac8d6b16d6475b2c72d3f7aef20cfd55` is **live at https://dreamerie-playtest.onrender.com** after the user's explicit commit/push/deploy request. Render deployment `dep-daq9flgjo6nc73dkk0k0` reports **Deploy succeeded / Live**, with service-live logs at 22:25:35 CDT. The existing plan, disk, environment, access and manual deployment settings remain unchanged; the social source branch and stored data were not changed.

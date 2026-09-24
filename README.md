@@ -2,21 +2,23 @@
 
 Dreamerie is now a mobile-first daily spot-the-difference game. Two visions of one surreal Dream stay visible together—stacked in phone portrait, side by side in landscape and on desktop; use exactly five confirmed guesses to find five changes before the two-minute timer ends. Accuracy is the score, and elapsed time breaks ties.
 
-**Play online:** https://dreamerie-playtest.onrender.com — Saved daily attempts and landing-controls release `79bcf49`, deployed and checked September 23, 2026. Open this HTTPS address on your phone or browser; localhost is only for development. All 31 release tests, GitHub checks and Render build passed. See [hosting verification](docs/HOSTING.md).
+**Play online:** https://dreamerie-playtest.onrender.com — Home-navigation release `991a597`, deployed and checked September 23, 2026. Open this HTTPS address on your phone or browser; localhost is only for development. All 31 release tests, GitHub checks and Render build passed. See [hosting verification](docs/HOSTING.md).
 
 The current prototype is intentionally local and small: React, TypeScript, Vite, straightforward CSS, and local artwork. The 120 original illustrations are preserved; **all 120 cards now have individually authored, object-edited pairs**, with five declared answers each (600 total). Automatic circular color/shift effects are no longer used. No account, multiplayer, Discord, database, or production service is required.
 
 ## Play locally
 
-### Home navigation polish (local, not yet deployed)
+### Home navigation polish (live)
 
-Click Dreamerie to return to the landing screen. Resume returns to an active attempt and View result reopens a completed score; neither resets guesses or the original deadline. Result captions now read **Found · Green** and **Missed · Red**. After testing and explicit publication approval:
+Click Dreamerie to return to the landing screen. Resume returns to an active attempt and View result reopens a completed score; neither resets guesses or the original deadline. Result captions now read **Found · Green** and **Missed · Red**. The user approved publication; release `991a597` is verified live. These commands record the completed publication, not a request to repeat it:
 
 ```powershell
 git add src/App.tsx src/styles/global.css README.md docs/GAME_DESIGN.md docs/ART_DIRECTION.md
 git commit -m "fix(ui): add Dreamerie home navigation and capitalize result labels"
 git push origin main
 ```
+
+Hosted checks verified click and keyboard home navigation, View result preserving the existing score/time, the capitalized labels, and no browser errors. Local checks also covered Resume retaining the pending marker and running deadline. No site data or hosting settings were changed.
 
 ### Saved daily attempts and simpler landing controls (live)
 
