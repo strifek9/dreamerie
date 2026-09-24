@@ -1,5 +1,13 @@
 # Hosted Dreamerie playtest
 
+## V2 answer-image scrolling — September 24, 2026
+
+Release `82aafabced58c9cfea85e5231363ad88aa407d02` is live at https://dreamerie-v2-playtest.onrender.com after explicit commit/push/deploy approval. Existing V2 Static Site deployment `dep-daqq0k8jo6nc73dke2hg` reports **Deploy succeeded / Live**, duration 22.9 seconds. GitHub Actions run `36066058717` succeeded. No hosting settings or saved data changed.
+
+Only finished answer-review gestures change: fitted paintings permit native page scrolling; + enables synchronized inspection, and Fit restores scrolling. Active gameplay remains unchanged. All 35 tests, typecheck and production build passed before publishing. Public V2 homepage returns 200 with `index-BNqUEKxK.js` / `index-BwBdUYdN.css`. Hosted Chrome at 390×844 verified scrolling over the painting moved the page 100px without zooming; + zoomed both images to 140%, and Fit restored native vertical touch behavior. The existing 0/5 · 2:00 result remained unchanged; no site storage was cleared. Browser errors were empty and the viewport override was reset. Physical phone swipes still need owner acceptance.
+
+V1 remains 200 with unchanged `index-_JQJYvTQ.js` / `index-B1DxDp6W.css` bundles. A documentation-only follow-up records verification and needs no deployment. Earlier records below are historical.
+
 ## V2 optional hints and mobile fit — September 24, 2026
 
 Release `60ea989d414e237496438fa778aab68551508d48` is live at https://dreamerie-v2-playtest.onrender.com following explicit commit/push/deploy approval. Existing Static Site `srv-daqp97vlk1mc73ejvdk0`, deployment `dep-daqpq3u7bikc738b3ddg`, reports **Deploy succeeded / Live** (25 seconds). No hosting settings, plans, access, environment or saved attempts were changed.

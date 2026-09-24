@@ -2,11 +2,11 @@
 
 ## Version 2 — landscape playtest
 
-**Local fix awaiting review:** fitted answer images now allow normal page swipes and wheel/trackpad scrolling. Use + to inspect details with synchronized zoom/pan; Fit (or zooming back to 100%) restores page scrolling. Active gameplay, scores, saved attempts and V1 are unchanged. Physical phone swipes still need owner acceptance.
+**Live results-scrolling fix — `82aafab`:** fitted answer images now allow normal page swipes and wheel/trackpad scrolling. Use + to inspect details with synchronized zoom/pan; Fit (or zooming back to 100%) restores page scrolling. Active gameplay, scores, saved attempts and V1 are unchanged. Physical phone swipes still need owner acceptance. The user approved publication; Render reports Live and hosted scrolling/zoom/Fit checks passed. See `docs/HOSTING.md`.
 
 Verified locally: typecheck, all 35 tests and build pass. At 390×844, scrolling over each fitted answer image moved the page without zooming; computed touch behavior allows native vertical swipes. Zoom-in enabled synchronized drag inspection, and both Fit and zoom-out restored scrolling. The saved result remained unchanged. A separate in-memory playtest confirmed tapping still leaves all five guesses and enables Remember. No browser errors; viewport override reset. Real touch-device swipe acceptance remains unverified by this desktop check.
 
-Suggested publication commands after approval (not run):
+Completed after explicit publication approval:
 
 ```powershell
 git add src/v2/VersionTwo.tsx README.md docs/ART_DIRECTION.md
@@ -26,7 +26,7 @@ git commit -m "fix(v2): replace practice with hints and remove mobile overflow"
 git push origin prototype/v2-landscape
 ```
 
-**V2 phone/browser preview:** https://dreamerie-v2-playtest.onrender.com — release `60ea989`, verified live September 24, 2026. This is separate from the unchanged V1 site. It contains one sample with a saved attempt; use a fresh private-browsing session or clear only the V2 site's data to test again. Automatic deployments are Off. See `docs/HOSTING.md` for verification.
+**V2 phone/browser preview:** https://dreamerie-v2-playtest.onrender.com — release `82aafab`, verified live September 24, 2026. This is separate from the unchanged V1 site. It contains one sample with a saved attempt; use a fresh private-browsing session or clear only the V2 site's data to test again. Automatic deployments are Off. See `docs/HOSTING.md` for verification.
 
 This branch now opens the V2 experiment by default: one new landscape pair, optional How to play hints, stacked synchronized comparison, an unpausable two-minute round, and score/share above the answer reveal. The existing painted cards remain the visual reference. This is a single sample, not a new 120-card landscape catalogue. The user approved a separate Render static preview for phone testing on September 24; see `docs/HOSTING.md` for deployment status. The V1 service must remain untouched.
 
