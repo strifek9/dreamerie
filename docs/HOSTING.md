@@ -1,5 +1,15 @@
 # Hosted Dreamerie playtest
 
+## Saved daily attempts and landing-controls release — September 23, 2026
+
+Release `79bcf49aac8d6b16d6475b2c72d3f7aef20cfd55` is **live at https://dreamerie-playtest.onrender.com** after the user's explicit commit/push/deploy request. Render deployment `dep-daq9flgjo6nc73dkk0k0` reports **Deploy succeeded / Live**, with service-live logs at 22:25:35 CDT. The existing plan, disk, environment, access and manual deployment settings remain unchanged; the social source branch and stored data were not changed.
+
+The release persists browser-local daily progress/results and the original deadline, removes Dream again, simplifies landing click-to-zoom, keeps Start visible on narrow/short screens, emphasizes remember, capitalizes the image labels, and moves X just above the painting. All 31 tests, typecheck and build passed locally and on Render; GitHub Actions run `35951235617` succeeded. Public homepage and `/api/health` returned 200, and the page serves the expected `index-COVI074l.js` and `index-Dk5e1-oe.css` assets.
+
+Hosted Chrome checks at 390×844 confirmed reachable Start without scrolling, bold remember, no horizontal overflow, preview click zoom in/out without selection markers, artwork-adjacent X, no development New day control, title-case pair labels, tap retaining all five guesses, confirmation consuming one, and the same guess count with a continuing countdown after reload. Browser errors were empty. The viewport override was reset. The verification attempt is intentionally left saved in that browser; site storage was not cleared. Phone/browser profiles remain independent; physical touch acceptance is still recommended.
+
+Runtime stays on `79bcf49`; the following documentation-only commit records this verification and does not require redeployment. Earlier releases below are historical.
+
 ## Full-screen inspection release — September 23, 2026
 
 Release `95aee6ad77589aca7666682fb3b49530e3dcb79b` is **live at https://dreamerie-playtest.onrender.com** following the user's explicit commit/push/deploy request. Render deployment `dep-daq91q97lnhs73c4v5t0` reports **Deploy succeeded / Live**, with service-live logs at 21:56:42 CDT. The existing plan, disk, environment, access and manual deployment settings were left unchanged. No social-game source branch or stored data was changed.

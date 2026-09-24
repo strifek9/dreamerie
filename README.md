@@ -2,13 +2,13 @@
 
 Dreamerie is now a mobile-first daily spot-the-difference game. Two visions of one surreal Dream stay visible together—stacked in phone portrait, side by side in landscape and on desktop; use exactly five confirmed guesses to find five changes before the two-minute timer ends. Accuracy is the score, and elapsed time breaks ties.
 
-**Play online:** https://dreamerie-playtest.onrender.com — Full-screen inspection release `95aee6a`, deployed and checked September 23, 2026. Open this HTTPS address on your phone or browser; localhost is only for development. All 24 release tests, GitHub checks and Render build passed. See [hosting verification](docs/HOSTING.md).
+**Play online:** https://dreamerie-playtest.onrender.com — Saved daily attempts and landing-controls release `79bcf49`, deployed and checked September 23, 2026. Open this HTTPS address on your phone or browser; localhost is only for development. All 31 release tests, GitHub checks and Render build passed. See [hosting verification](docs/HOSTING.md).
 
 The current prototype is intentionally local and small: React, TypeScript, Vite, straightforward CSS, and local artwork. The 120 original illustrations are preserved; **all 120 cards now have individually authored, object-edited pairs**, with five declared answers each (600 total). Automatic circular color/shift effects are no longer used. No account, multiplayer, Discord, database, or production service is required.
 
 ## Play locally
 
-### Saved daily attempts and simpler landing controls (local, not yet published)
+### Saved daily attempts and simpler landing controls (live)
 
 The landing viewer now toggles zoom on click/tap without a selection ring or zoom toolbar. **remember** is bold in the rules. Start stays at the bottom of narrow/short screens without needing to scroll; the painting and poem can still scroll normally. The viewer X sits immediately above the artwork's top-right edge. The comparison labels are **The Dream** and **The Memory**.
 
@@ -16,7 +16,7 @@ The real daily attempt is saved in this browser, including its original start ti
 
 Verification: 31 tests cover round rules plus saved pending guesses/deadlines, five-guess result restoration, stale/duplicate confirmations, cross-tab re-reads, invalid records and failed writes. Typecheck, tests and build pass. Browser checks confirmed click-to-toggle preview without markers, a reachable Start at 320×568, close placement above the artwork, live cross-tab updates, resumed countdown/guesses after reload, and unchanged completed/expired results after reload. Real-device touch acceptance remains recommended.
 
-After testing and explicit approval, suggested publication commands (not run):
+The user approved publication. Release `79bcf49` is verified live; these commands record the completed publication, not a request to repeat it:
 
 ```powershell
 git add AGENTS.md README.md docs/GAME_DESIGN.md docs/PROTOTYPE_PLAN.md docs/ART_DIRECTION.md src/App.tsx src/components/InspectableDream.tsx src/game/dailySession.ts src/game/useDailySession.ts src/styles/global.css tests/dailyRecall.test.ts
@@ -24,9 +24,9 @@ git commit -m "feat(game): save daily attempts and simplify landing controls"
 git push origin main
 ```
 
-The public release described below has not yet received these changes.
+Hosted Chrome checks at 390×844 confirmed visible Start, bold remember, click-to-zoom in/out without guess markers, the X above the artwork, correct labels, tap without submission, one guess consumed by confirmation, and continued timer/guess state after refresh. No New day control or browser errors appeared. The test attempt remains saved in the checking browser; no site data was cleared. Hosting settings are unchanged.
 
-### Full-screen artwork inspection (live)
+### Full-screen artwork inspection (earlier release)
 
 Click/tap or hold the landing painting to view it fitted to the screen. During play, tap to mark a guess; hold or choose **Expand** to look closer. Zoom/pan lives only in the viewer, using pinch/wheel/drag or +/−/Reset. The visible X or Escape returns to the pair without losing a pending guess. Remember remains available in the viewer; the two-minute timer keeps running, and expiry/final confirmation returns to the results. Expanded result images retain Hide/Show markers. Side-by-side is used on wider screens and portrait tablets; narrow portrait phones stack. No instant version-swap control is added.
 
