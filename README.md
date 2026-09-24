@@ -8,6 +8,22 @@ The current prototype is intentionally local and small: React, TypeScript, Vite,
 
 ## Play locally
 
+### Full-screen artwork inspection (approved for deployment)
+
+Click/tap or hold the landing painting to view it fitted to the screen. During play, tap to mark a guess; hold or choose **Expand** to look closer. Zoom/pan lives only in the viewer, using pinch/wheel/drag or +/−/Reset. The visible X or Escape returns to the pair without losing a pending guess. Remember remains available in the viewer; the two-minute timer keeps running, and expiry/final confirmation returns to the results. Expanded result images retain Hide/Show markers. Side-by-side is used on wider screens and portrait tablets; narrow portrait phones stack. No instant version-swap control is added.
+
+The user approved committing, pushing and deploying this update. Publication commands:
+
+```powershell
+git add AGENTS.md README.md docs/GAME_DESIGN.md docs/PROTOTYPE_PLAN.md docs/ART_DIRECTION.md src/App.tsx src/components/InspectableDream.tsx src/game/imageInspection.ts src/styles/global.css tests/dailyRecall.test.ts
+git commit -m "feat(game): add full-screen dream inspection"
+git push origin main
+```
+
+The earlier mobile release notes below describe the published inline-zoom implementation, superseded locally by the viewer above.
+
+Viewer verification: 24 automated tests cover the existing round rules plus bounded pan/reset, anchored zoom and coordinate mapping at different sizes/zoom levels. Browser checks covered 320×568 and 390×844 phones, 768×1024 portrait tablet, 844×390 landscape and 1280×800 desktop, with no horizontal overflow. Verified landing click-to-open, stationary mouse hold without a guess, Expand, wheel/+ zoom, drag without a pending guess, pending selection preserved on close/reopen, one guess per confirmation, automatic close after five confirmations and timer expiry, result marker hiding, keyboard arrow selection, Escape and focus return. Controls are outside the artwork. Browser errors were empty. Actual phone long-press/pinch and native sharing still need physical-device acceptance. Run `npm run typecheck`, `npm test`, and `npm run build` to repeat the automated checks.
+
 **Mobile refinement is live:** portrait stacking, wider landscape comparison and whole-circle overlap scoring. The circle has the same artwork-relative size on every device; touching an answer region is enough, but repeat hits cannot score again. Pan stays synchronized through rotation. Scroll over unzoomed images normally; use Reset after zoomed panning to resume page scrolling. Phone controls stay reachable. Automated coverage includes edge/corner overlap, multiple-target priority and device/zoom scaling. Physical two-finger gestures still need owner testing.
 
 The approved publication commands were:

@@ -2,6 +2,7 @@ import assert from 'node:assert/strict'
 import test from 'node:test'
 import { existsSync } from 'node:fs'
 import { authoredDreams } from '../src/data/authoredDreams.ts'
+import { constrainView, imagePoint, RESTING_VIEW, zoomAt } from '../src/game/imageInspection.ts'
 import {
   GAME_CONFIG,
   compareResults,
@@ -18,6 +19,30 @@ import {
 } from '../src/game/dailyRecall.ts'
 
 const differences = createDifferences('card-022')
+
+test('viewer pan remains bounded and zooming out restores a fully fitted painting', () => {
+  assert.deepEqual(constrainView({ scale: 1, x: .4, y: -.3 }), RESTING_VIEW)
+  assert.deepEqual(constrainView({ scale: 2, x: 9, y: -9 }), { scale: 2, x: .5, y: -.5 })
+  assert.deepEqual(constrainView({ scale: 8, x: 9, y: -9 }), { scale: 4, x: 1.5, y: -1.5 })
+  assert.deepEqual(constrainView({ scale: .5, x: 1, y: 1 }), RESTING_VIEW)
+})
+
+test('zoom keeps the detail under the pointer stationary', () => {
+  const zoomed = zoomAt(RESTING_VIEW, 2, { x: .75, y: .25 })
+  assert.deepEqual(zoomed, { scale: 2, x: -.25, y: .25 })
+  assert.deepEqual(zoomAt(zoomed, 1, { x: .75, y: .25 }), RESTING_VIEW)
+})
+
+test('viewer taps use transformed artwork bounds at different sizes and reject outside taps', () => {
+  for (const width of [280, 390, 620]) for (const zoom of [1, 2, 4]) {
+    const bounds = { left: -width / 2, top: 44, width: width * zoom, height: width * zoom * 1.25 }
+    const point = imagePoint({ x: bounds.left + bounds.width * .25, y: bounds.top + bounds.height * .75 }, bounds)
+    assert.deepEqual(point, { x: .25, y: .75 })
+    assert.equal(imagePoint({ x: bounds.left - 1, y: bounds.top }, bounds), null)
+    assert.equal(imagePoint({ x: bounds.left, y: bounds.top + bounds.height + 1 }, bounds), null)
+  }
+  assert.equal(imagePoint({ x: 0, y: 0 }, { left: 0, top: 0, width: 0, height: 0 }), null)
+})
 
 test('results split found answers left and missed answers right without renumbering', () => {
   const found = [differences[1].id, differences[4].id]

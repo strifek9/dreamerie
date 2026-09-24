@@ -2,6 +2,8 @@
 
 ## Daily Dream Recall direction
 
+**Current inspection direction:** keep the comparison page quiet, with one short hint and a restrained, labeled Expand control on each card. Opening the image reveals an edge-to-edge night-colored viewer: uncropped fitted painting, a clearly reachable X, a compact zoom toolbar below, and timer/Remember only during play. Controls occupy their own space rather than covering details. Native modal focus containment and Escape support are required; restore focus and page position on close. Keep page scrolling separate from artwork pan/zoom. Use a simple side-by-side layout whenever width allows it (including portrait tablets above 40rem), stacking only narrow portrait screens. No swipe/flicker comparison or competing panel chrome. This replaces the earlier inline synchronized-zoom guidance below.
+
 The current experience should feel like opening two windows onto the same half-remembered night: quiet, strange, spacious, and intimate. Both artworks occupy most of the screen. Deep indigo surroundings, moonlit ivory, dusty violet, and restrained rose support the pair without turning the interface into a dashboard.
 
 Use generous negative space, one elegant display face, one highly readable sans-serif face, and very little copy. Controls float lightly and remain unmistakable. A pending guess is a luminous ring; found memories become calm checked rings; false memories remain visible but subdued. Nothing should encourage rapid tapping.
