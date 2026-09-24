@@ -23,6 +23,8 @@ function Round({ run, onNew }: { run: number; onNew: () => void }) {
   const [markers, setMarkers] = useState(true)
   const [shareStatus, setShareStatus] = useState('')
   const landing = phase === 'rules' || home
+  // Fitted result images belong to the scrolling page. Zoom in explicitly to inspect.
+  const scrollResults = Boolean(result) && view.scale <= 1
   useEffect(() => { window.scrollTo({ top: 0, behavior: 'instant' }) }, [landing, phase])
   useEffect(() => {
     let active = true
@@ -57,7 +59,7 @@ function Round({ run, onNew }: { run: number; onNew: () => void }) {
       : <div className="v2-status"><strong>{getRemainingGuesses(recall)} guesses left</strong><time aria-label="Time remaining">{formatClock(recallLeft)}</time><span>{recall.foundDifferenceIds.length}/5 found</span></div>}
       <section className="v2-board" aria-label="Compare both paintings">
         {(['original', 'changed'] as const).map(side => <figure key={side}><figcaption>{side === 'original' ? 'The Dream' : 'The Memory'}{result && <span>{side === 'original' ? 'Found · Green' : 'Missed · Red'}</span>}</figcaption>
-          <DreamCanvas label={`${side === 'original' ? 'The Dream' : 'The Memory'}. ${result ? 'Inspect the answers.' : 'Tap to mark, then Remember to confirm.'} Zoom and drag move both paintings.`} view={view} onView={updateView} selectable={!result} pendingPoint={recall.pending} onTap={result ? undefined : point => { void dispatch({ type: 'mark', point, side }) }}>
+          <DreamCanvas label={`${side === 'original' ? 'The Dream' : 'The Memory'}. ${result ? 'Inspect the answers.' : 'Tap to mark, then Remember to confirm.'} ${scrollResults ? 'Swipe to scroll the page. Use Zoom in to examine details.' : 'Zoom and drag move both paintings.'}`} view={view} onView={scrollResults ? undefined : updateView} selectable={!result} pendingPoint={recall.pending} onTap={result ? undefined : point => { void dispatch({ type: 'mark', point, side }) }}>
             <LandscapeArtwork changed={side === 'changed'}/>
             {!result && recall.confirmed.map((guess, i) => <span key={i} className={`dream-marker ${guess.correct ? 'dream-marker--found' : 'dream-marker--false'}`} style={{ left: `${guess.point.x * 100}%`, top: `${guess.point.y * 100}%` }}>{guess.correct ? '✓' : '×'}</span>)}
             {!result && recall.pending && <span className="dream-marker dream-marker--pending" style={{ left: `${recall.pending.x * 100}%`, top: `${recall.pending.y * 100}%` }}/>}
@@ -69,7 +71,7 @@ function Round({ run, onNew }: { run: number; onNew: () => void }) {
         <div className="v2-zoom" aria-label="Zoom both paintings"><button aria-label="Zoom out both paintings" disabled={view.scale <= 1} onClick={() => setView(zoomAt(view, view.scale / 1.4, { x: .5, y: .5 }))}>−</button><button onClick={() => setView(RESTING_VIEW)}>Fit</button><button aria-label="Zoom in both paintings" disabled={view.scale >= 4} onClick={() => setView(zoomAt(view, view.scale * 1.4, recall.pending ?? { x: .5, y: .5 }))}>+</button></div>
         {result ? <button className="text-action" onClick={() => setMarkers(!markers)}>{markers ? 'Hide' : 'Show'} markers</button> : <button className="primary-action" disabled={!recall.pending || busy || Boolean(storageError)} onClick={() => { if (recall.pending) void dispatch({ type: 'confirm', point: recall.pending, side: pendingSide, expectedCount: recall.confirmed.length }) }}>Remember</button>}
         <p role="status">{result ? 'Zoom to examine every difference.' : recall.pending ? 'Circle placed. Remember uses 1 guess.' : recall.confirmed.length ? `${recall.confirmed.at(-1)?.correct ? 'Found!' : 'Not a new difference.'} Tap your next guess.` : 'Tap a difference in either image.'}</p>
-        <small>Pinch or scroll to zoom · drag to explore both</small>
+        <small>{result ? scrollResults ? 'Swipe to scroll · + to examine details' : 'Drag to explore both · Fit to scroll the page' : 'Pinch or scroll to zoom · drag to explore both'}</small>
       </footer>
       {result && <section className="v2-answers"><h2>The five differences</h2><ol>{differences.map(d => <li key={d.id}>{d.label}<small>{recall.foundDifferenceIds.includes(d.id) ? 'Found' : 'Missed'} · {d.difficulty}</small></li>)}</ol><details><summary>Your share message</summary><textarea aria-label="Share message" readOnly value={shareText} rows={6}/></details>{['localhost', '127.0.0.1'].includes(location.hostname) && <p>This is a local preview. Its link won’t open on someone else’s device.</p>}<p>One landscape sample for testing—not the full daily collection.</p></section>}
     </>}

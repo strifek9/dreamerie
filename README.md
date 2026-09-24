@@ -2,6 +2,18 @@
 
 ## Version 2 — landscape playtest
 
+**Local fix awaiting review:** fitted answer images now allow normal page swipes and wheel/trackpad scrolling. Use + to inspect details with synchronized zoom/pan; Fit (or zooming back to 100%) restores page scrolling. Active gameplay, scores, saved attempts and V1 are unchanged. Physical phone swipes still need owner acceptance.
+
+Verified locally: typecheck, all 35 tests and build pass. At 390×844, scrolling over each fitted answer image moved the page without zooming; computed touch behavior allows native vertical swipes. Zoom-in enabled synchronized drag inspection, and both Fit and zoom-out restored scrolling. The saved result remained unchanged. A separate in-memory playtest confirmed tapping still leaves all five guesses and enables Remember. No browser errors; viewport override reset. Real touch-device swipe acceptance remains unverified by this desktop check.
+
+Suggested publication commands after approval (not run):
+
+```powershell
+git add src/v2/VersionTwo.tsx README.md docs/ART_DIRECTION.md
+git commit -m "fix(v2): allow scrolling from fitted answer images"
+git push origin prototype/v2-landscape
+```
+
 **Live refinement — `60ea989`:** no practice round or completion flag. Start begins immediately once artwork loads. A small ? button opens optional How to play instructions before or during play, with the running timer visible and no pause. Removed the unused bottom padding and the V2 inheritance of V1's 100vh body minimum; V2 fits the dynamic visible viewport and accounts for the bottom safe area. Results/help still scroll when needed; content is never globally clipped to hide overflow.
 
 Validation used a production-style local preview without the development footer. Typecheck, all 35 gameplay/hosting tests, and build pass. Landing checks at 320×568, 390×700, 390×844 and 844×390 matched document size to the viewport with no scrollbar gutter or extra height. Active-game checks also passed at phone, tablet and desktop sizes. Start works without practice; the hint opens before/during play, Escape restores focus, and the active countdown continues. Hosted checks confirmed the new assets, optional hint, saved-result preservation and landing fit at 320×568 and 390×844. Physical Safari/Chrome browser-bar behavior still needs a phone recheck. See `docs/HOSTING.md` for the successful approved deployment.
