@@ -2,6 +2,8 @@
 
 ## State and scope
 
+Hosted preview verified September 24: https://dreamerie-v2-playtest.onrender.com (`34b34df`). See `HOSTING.md` for deployment and hosted acceptance evidence. The original V1 site is unchanged.
+
 V1 is preserved locally on `prototype/version-1` at `4952a01`; main and the original public Render release are unchanged. V2 work is on `prototype/v2-landscape`. After local review, the user approved publishing a separate V2 phone-testing site; see `HOSTING.md` for verified deployment status. `?version=1` selects the previous interface; the default entry is V2.
 
 One new composition follows the existing card style, using card-001 as reference. Both native 1672×941 PNGs and the built-in imagegen prompts/provenance are in `public/artwork/v2`. Five object changes are composited into declared regions so the remainder stays pixel-identical. This is a sample for acceptance, not a completed landscape deck. Fine-detail difficulty is not calibrated yet.

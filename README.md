@@ -2,9 +2,11 @@
 
 ## Version 2 — local landscape playtest
 
+**V2 phone/browser preview:** https://dreamerie-v2-playtest.onrender.com — release `34b34df`, verified live September 24, 2026. This is separate from the unchanged V1 site. It contains one sample with a saved attempt; use a fresh private-browsing session or clear only the V2 site's data to test again. Automatic deployments are Off. See `docs/HOSTING.md` for verification.
+
 This branch now opens the V2 experiment by default: one new landscape pair, a brief hands-on practice, stacked synchronized comparison, an unpausable two-minute round, and score/share above the answer reveal. The existing painted cards remain the visual reference. This is a single sample, not a new 120-card landscape catalogue. The user approved a separate Render static preview for phone testing on September 24; see `docs/HOSTING.md` for deployment status. The V1 service must remain untouched.
 
-V1 is preserved on `prototype/version-1` at `4952a01`; development is on `prototype/v2-landscape`. Use `?version=1` to compare the old UI locally. The original live Render site still runs V1. V2 is being committed and published separately following user approval.
+V1 is preserved on `prototype/version-1` at `4952a01`; both the backup and `prototype/v2-landscape` are pushed. Use `?version=1` to compare the old UI locally. The original live Render site still runs V1. V2 is committed and published separately following user approval.
 
 Run `npm run dev` and open `http://127.0.0.1:5173/`. Validate with `npm run typecheck`, `npm test`, and `npm run build`. Development-only New playtest is repeatable and in-memory; the default sample uses its own saved attempt and fixed deadline, separate from V1. Clearing site storage allows replay. Physical phone pinch/drag acceptance and first-time human understanding still need user testing.
 

@@ -2,9 +2,15 @@
 
 ## Version 2 separate static playtest — September 24, 2026
 
+**Live:** https://dreamerie-v2-playtest.onrender.com — commit `34b34dfdfb508e1ee4b6d33dcadf958f5c6eac3c`. Render Static Site `srv-daqp97vlk1mc73ejvdk0`, deployment `dep-daqp98flk1mc73ejveh0`, reports Live. All 35 tests, typecheck and build passed locally and on Render. The build uses Node 24.21.0. Auto-Deploy is verified Off.
+
+HTTPS homepage and both V2 PNG assets return 200; the homepage serves `index-DRCd7G4x.js` and `index-Ja5dMZVB.css`. Hosted Chrome at 390×844 verified practice → Start with five guesses/two minutes, one confirmation consuming one guess, reload retaining four guesses and the original deadline, and no dev-only reset. Browser errors were empty and the viewport override was reset. The checking browser's attempt remains saved; no site data was cleared. Physical phone gestures remain for owner testing.
+
+The original V1 site still returns 200 with its unchanged `index-_JQJYvTQ.js` / `index-B1DxDp6W.css` assets. Remote main remains `4952a01`; the V1 backup is also pushed at `prototype/version-1`. No V1 service, environment, disk, billing plan, or Blueprint was changed. A documentation-only follow-up commit records verification and needs no redeployment.
+
 The user approved a separate Render V2 preview for phone and browser testing. Publish only `prototype/v2-landscape`; do not merge into main, redeploy the V1 service, import its paid Blueprint, change its disk, or copy its environment variables. V1 remains on `dreamerie-playtest` at `991a597`.
 
-Create a Static Site named `dreamerie-v2-playtest` using the existing GitHub repository. Build: `npm ci --include=dev && npm test && npm run build`. Publish directory: `dist`. Set `NODE_VERSION=24`, disable auto-deploy, and add no server, disk, database, secrets, or paid compute plan. Static-site traffic and builds still use the workspace's bandwidth/pipeline allowances. The assigned URL and successful deployed commit must be verified before sharing; this paragraph records setup intent, not a successful deployment.
+Created a Static Site named `dreamerie-v2-playtest` using the existing GitHub repository. Build: `npm ci --include=dev && npm test && npm run build`. Publish directory: `dist`. `NODE_VERSION=24`, auto-deploy Off, and no server, disk, database, secrets, or paid compute plan added. Static-site traffic and builds still use the workspace's bandwidth/pipeline allowances.
 
 The preview contains one landscape sample and uses production settings: no dev-only New playtest control, and one saved attempt per browser/site-data lifetime. Clear only the preview site's data or use a separate browser profile for another test. No pause or reset is added as part of deployment. Phone gesture acceptance remains the user's next check.
 

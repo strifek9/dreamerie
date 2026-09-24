@@ -2,7 +2,7 @@
 
 ## V2 milestone — one landscape sample
 
-Implement and user-test one purpose-composed wide pair in the existing card style before converting any of the 120 cards. V1 is preserved on `prototype/version-1`; V2 work is on `prototype/v2-landscape`, not committed or deployed. Existing V1 scope below remains historical/public behavior.
+Implement and user-test one purpose-composed wide pair in the existing card style before converting any of the 120 cards. V1 is preserved on `prototype/version-1`; V2 work is on `prototype/v2-landscape`. After local review, the user approved the separate static phone preview, now live at https://dreamerie-v2-playtest.onrender.com (`34b34df`); the V1 site is unchanged. Existing V1 scope below remains historical/public behavior.
 
 Deliverables: a two-step introduction with an untimed tap/Remember practice; a stacked landscape pair fitted to play viewports; synchronized pinch/wheel/drag and visible zoom controls; fixed two-minute deadline with no pause; exactly five guesses; score/share before answers; V2-independent saved attempt; dev-only repeatable test. Preserve V1 route, assets, and saved attempts. No dependencies or infrastructure added.
 
