@@ -4,6 +4,8 @@
 
 This section supersedes the historical social-mode design below for the primary prototype.
 
+The Dreamerie wordmark returns to the landing screen without resetting the daily attempt or pausing its deadline. The landing action becomes Resume for an active attempt or View result for a finished one. Result captions read **Found · Green** and **Missed · Red**.
+
 **Current daily-attempt rule:** save the day's original start time, confirmed guesses and pending marker in browser storage. Refresh/reopen/another tab continues the same two-minute deadline, including time away. Five confirmations or expiry still ends the round; the saved result cannot be restarted with Dream again (that action is removed). Keep sharing and answer inspection. The next local calendar day opens its own attempt. Clearing site data permits replay; different browsers/profiles/devices are independent. This is a local safeguard, not an account or secure leaderboard. Storage failures must not silently create or accept an unsaved attempt. Development review/New day rounds are separate in-memory playtests.
 
 **Current landing refinement:** click/tap the preview to expand, then click/tap the painting to toggle zoom in/out, with no guessing ring or extra zoom toolbar. Keep **remember** bold in the instructions and Start visible without scrolling on narrow/short screens. The X sits just above the artwork's top-right edge in every viewer. Pair labels read **The Dream** and **The Memory**. These details supersede the older landing Expand/toolbar wording below; game inspection and confirmation remain unchanged.

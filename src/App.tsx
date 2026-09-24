@@ -70,8 +70,12 @@ function Marker({ point, kind }: { point: Point; kind: 'pending' | 'found' | 'fa
   )
 }
 
-function Brand() {
-  return <header className="brand" aria-label="Dreamerie"><span aria-hidden="true">☾</span><span>Dreamerie</span></header>
+function Brand({ onHome }: { onHome: () => void }) {
+  return <header className="brand"><a href={import.meta.env.BASE_URL} aria-label="Dreamerie home" onClick={(event) => {
+    if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return
+    event.preventDefault()
+    onHome()
+  }}><span aria-hidden="true">☾</span><span>Dreamerie</span></a></header>
 }
 
 export default function App() {
@@ -104,7 +108,9 @@ export default function App() {
 
 function DreamRound({ daily, onNewDay }: { daily: ReturnType<typeof getDailyDream>; onNewDay: () => void }) {
   const differences = useMemo(() => createDifferences(daily.card.id), [daily.card.id])
-  const { phase, recallLeft, recall, result, pendingSide, dispatch, storageError, busy } = useDailySession(daily.dreamNumber, daily.card.id, differences, daily.playtest)
+  const { phase: sessionPhase, recallLeft, recall, result, pendingSide, dispatch, storageError, busy } = useDailySession(daily.dreamNumber, daily.card.id, differences, daily.playtest)
+  const [showHome, setShowHome] = useState(false)
+  const phase = showHome ? 'rules' : sessionPhase
   const [inspecting, setInspecting] = useState<Side | null>(null)
   const [shareStatus, setShareStatus] = useState('')
   const [manualCopy, setManualCopy] = useState(false)
@@ -117,10 +123,17 @@ function DreamRound({ daily, onNewDay }: { daily: ReturnType<typeof getDailyDrea
 
   useEffect(() => {
     setInspecting(null)
-    if (phase === 'play') window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
+    if (phase === 'play' || phase === 'rules') window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
   }, [phase])
 
+  function goHome() {
+    setInspecting(null)
+    setShowHome(true)
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
+  }
+
   function begin() {
+    setShowHome(false)
     setShareStatus('')
     setManualCopy(false)
     setShowAnswers(true)
@@ -186,7 +199,7 @@ function DreamRound({ daily, onNewDay }: { daily: ReturnType<typeof getDailyDrea
   return (
     <main className={`app phase-${phase}`} style={{ '--guess-diameter': `${GAME_CONFIG.guessRadius * 200}%` } as React.CSSProperties}>
       {storageError && <p className="storage-warning" role="alert">{storageError}</p>}
-      {phase !== 'rules' && <Brand />}
+      {phase !== 'rules' && <Brand onHome={goHome} />}
       {import.meta.env.DEV && <nav className="dev-controls" aria-label="Playtest controls">
         <span>Playtest · Day {daily.dreamNumber} · {daily.card.id}</span>
         <button className="text-action" onClick={onNewDay}>New day →</button>
@@ -195,7 +208,7 @@ function DreamRound({ daily, onNewDay }: { daily: ReturnType<typeof getDailyDrea
       {phase === 'rules' ? (
         <section className="rules" aria-labelledby="rules-title">
           <div className="dream-preview">
-            <Brand />
+            <Brand onHome={goHome} />
             <h1 id="rules-title" className="eyebrow">Daily Dream · No. {daily.dreamNumber}</h1>
             <div className="daily-card">
               <DreamCanvas label="Expand today's dream card" onTap={() => setInspecting('original')} onExpand={() => setInspecting('original')}>
@@ -206,7 +219,7 @@ function DreamRound({ daily, onNewDay }: { daily: ReturnType<typeof getDailyDrea
           <div className="rules-intro">
             <p className="dream-prose">Lost within a reverie, nothing stays where it should be. Glance away, then look once more—the moon has left its silver shore.</p>
             <p className="rules-copy">Find the five differences before the dream fades. Tap either image, then <strong>remember</strong> your choice. You have five guesses and two minutes.</p>
-            <div className="landing-start"><button className="primary-action" disabled={busy} onClick={begin}>Start</button></div>
+            <div className="landing-start"><button className="primary-action" disabled={busy} onClick={begin}>{sessionPhase === 'result' ? 'View result' : sessionPhase === 'play' ? 'Resume' : 'Start'}</button></div>
           </div>
         </section>
       ) : (
@@ -225,7 +238,7 @@ function DreamRound({ daily, onNewDay }: { daily: ReturnType<typeof getDailyDrea
             {(['original', 'changed'] as const).map((side) => (
               <figure className="dream-panel" key={side}>
                 <figcaption className={phase === 'result' ? `result-caption result-caption--${side}` : undefined}>
-                  <span>{phase === 'result' ? (side === 'original' ? 'Found · green' : 'Missed · red') : (side === 'original' ? 'The Dream' : 'The Memory')}</span>
+                  <span>{phase === 'result' ? (side === 'original' ? 'Found · Green' : 'Missed · Red') : (side === 'original' ? 'The Dream' : 'The Memory')}</span>
                   <button className="expand-card" aria-label={`Expand ${side === 'original' ? 'original' : 'changed'} dream`} onClick={() => setInspecting(side)}><span aria-hidden="true">⤢</span> Expand</button>
                 </figcaption>
                 <div className="card-frame">

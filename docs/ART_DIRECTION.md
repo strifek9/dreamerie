@@ -2,6 +2,8 @@
 
 ## Daily Dream Recall direction
 
+Make the Dreamerie wordmark a keyboard-accessible home link without changing its quiet styling. Returning home preserves the attempt; show Resume or View result as appropriate. Capitalize the result-caption colors: **Found · Green**, **Missed · Red**.
+
 **Latest landing polish:** let the untimed painting itself open the viewer and toggle zoom on click/tap; no selection ring, extra Expand button or zoom toolbar in this preview. Bold **remember** in the short rules. Keep the generous painting size and scrolling poem, but anchor Start to the viewport bottom on narrow or short screens with safe-area padding and a restrained gradient. Place X just above the painting's top-right edge, not the far corner of the page or over a clue. Use **The Dream** and **The Memory** for the pair. Saved results replace Dream again with one quiet line saying a new dream awaits tomorrow. This overrides conflicting earlier control placement below.
 
 **Current inspection direction:** keep the comparison page quiet, with one short hint and a restrained, labeled Expand control on each card. Opening the image reveals an edge-to-edge night-colored viewer: uncropped fitted painting, a clearly reachable X, a compact zoom toolbar below, and timer/Remember only during play. Controls occupy their own space rather than covering details. Native modal focus containment and Escape support are required; restore focus and page position on close. Keep page scrolling separate from artwork pan/zoom. Use a simple side-by-side layout whenever width allows it (including portrait tablets above 40rem), stacking only narrow portrait screens. No swipe/flicker comparison or competing panel chrome. This replaces the earlier inline synchronized-zoom guidance below.

@@ -8,6 +8,16 @@ The current prototype is intentionally local and small: React, TypeScript, Vite,
 
 ## Play locally
 
+### Home navigation polish (local, not yet deployed)
+
+Click Dreamerie to return to the landing screen. Resume returns to an active attempt and View result reopens a completed score; neither resets guesses or the original deadline. Result captions now read **Found · Green** and **Missed · Red**. After testing and explicit publication approval:
+
+```powershell
+git add src/App.tsx src/styles/global.css README.md docs/GAME_DESIGN.md docs/ART_DIRECTION.md
+git commit -m "fix(ui): add Dreamerie home navigation and capitalize result labels"
+git push origin main
+```
+
 ### Saved daily attempts and simpler landing controls (live)
 
 The landing viewer now toggles zoom on click/tap without a selection ring or zoom toolbar. **remember** is bold in the rules. Start stays at the bottom of narrow/short screens without needing to scroll; the painting and poem can still scroll normally. The viewer X sits immediately above the artwork's top-right edge. The comparison labels are **The Dream** and **The Memory**.
