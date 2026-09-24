@@ -2,6 +2,12 @@
 
 ## Current product direction
 
+### Daily attempt persistence and landing controls
+
+Save the real daily attempt in browser localStorage, keyed by day: original start time, confirmed guesses and pending marker. Refresh, reopening, and a second tab must retain the same attempt and original two-minute deadline; time away still counts. Persist before accepting an action, serialize cross-tab updates with Web Locks, and fail clearly if storage is unavailable or damaged. Never silently grant a new attempt. Completed results remain available with sharing and answer inspection; remove Dream again. Clearing this site's data permits replay, and different browsers/devices remain independent; this is not server-enforced anti-cheat. Development review/New day sessions are in-memory and must not overwrite the real daily attempt.
+
+The untimed landing viewer has click/tap zoom in/out and no guess selection or zoom toolbar. Emphasize **remember** in the instructions, keep Start visible without scrolling on narrow or short screens, label the pair **The Dream** / **The Memory**, and place the viewer X immediately above the artwork's top-right edge. These refinements supersede conflicting inspection wording below.
+
 ### Current image-inspection interaction
 
 The landing card opens a fitted full-screen viewer on click/tap or a 450ms hold. During play a short tap still only places a pending guess; hold a card or use its visible Expand button to inspect it. Zoom/pan is available only inside the viewer, not on the comparison page. The viewer has an X/Escape close, focus containment/return, pinch/wheel and visible zoom controls, and Remember during play. Inspection never pauses or resets the timer, consumes a guess, or clears a pending selection. Expiry/final confirmation closes the viewer to reveal results. Results can be expanded with the existing marker visibility toggle. No instant version-switching/flicker control. The responsive pair stays side by side when there is room, including portrait tablets above 40rem; only narrow portrait screens stack. These rules supersede the earlier synchronized inline-zoom wording below.

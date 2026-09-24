@@ -119,13 +119,14 @@ export function DreamCanvas({ children, label, onTap, onExpand, view = RESTING_V
   </button>
 }
 
-export function DreamViewer({ children, title, onClose, onTap, status, action }: {
+export function DreamViewer({ children, title, onClose, onTap, status, action, simpleZoom = false }: {
   children: ReactNode
   title: string
   onClose: () => void
   onTap?: (point: Point) => void
   status?: ReactNode
   action?: ReactNode
+  simpleZoom?: boolean
 }) {
   const dialog = useRef<HTMLDialogElement>(null)
   const [view, setView] = useState(RESTING_VIEW)
@@ -142,25 +143,28 @@ export function DreamViewer({ children, title, onClose, onTap, status, action }:
     }
   }, [])
 
-  return <dialog ref={dialog} className="dream-viewer" aria-labelledby="viewer-title"
+  return <dialog ref={dialog} className={`dream-viewer${simpleZoom ? ' dream-viewer--preview' : ''}`} aria-labelledby="viewer-title"
     onCancel={(event) => { event.preventDefault(); onClose() }}>
     <header className="viewer-header">
       <h2 id="viewer-title">{title}</h2>
       <div className="viewer-status">{status}</div>
-      <button className="viewer-close" autoFocus aria-label="Close image viewer" onClick={onClose}>×</button>
     </header>
     <div className="viewer-stage">
-      <DreamCanvas label={`${title}. ${onTap ? 'Tap to place a guess. ' : ''}Pinch or scroll to zoom; drag to explore.`} view={view} onView={setView} onTap={onTap} selectable={Boolean(onTap)}>
-        {children}
-      </DreamCanvas>
+      <div className="viewer-artwork">
+        <button className="viewer-close" autoFocus aria-label="Close image viewer" onClick={onClose}>×</button>
+        <DreamCanvas label={simpleZoom ? `${title}. Click to ${view.scale > 1 ? 'zoom out' : 'zoom in'}.` : `${title}. ${onTap ? 'Tap to place a guess. ' : ''}Pinch or scroll to zoom; drag to explore.`}
+          view={view} onView={setView} onTap={simpleZoom ? (point) => setView(view.scale > 1 ? RESTING_VIEW : zoomAt(view, 2, point)) : onTap} selectable={!simpleZoom && Boolean(onTap)}>
+          {children}
+        </DreamCanvas>
+      </div>
     </div>
     <footer className="viewer-footer">
-      <div className="zoom-controls" aria-label="Image zoom">
+      {simpleZoom ? <p className="inspection-hint">Click or tap to zoom {view.scale > 1 ? 'out' : 'in'}.</p> : <div className="zoom-controls" aria-label="Image zoom">
         <button aria-label="Zoom out" disabled={view.scale <= 1} onClick={() => setView(constrainView({ ...view, scale: view.scale / 1.25 }))}>−</button>
         <span>{Math.round(view.scale * 100)}%</span>
         <button aria-label="Zoom in" disabled={view.scale >= GAME_CONFIG.maxZoom} onClick={() => setView(constrainView({ ...view, scale: view.scale * 1.25 }))}>+</button>
         <button onClick={() => setView(RESTING_VIEW)}>Reset</button>
-      </div>
+      </div>}
       {action}
     </footer>
   </dialog>

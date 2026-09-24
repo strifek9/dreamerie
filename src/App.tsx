@@ -1,12 +1,11 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { cards } from './data/cards'
 import { authoredDreams } from './data/authoredDreams'
 import { DreamCanvas, DreamViewer } from './components/InspectableDream'
+import { useDailySession } from './game/useDailySession'
 import {
   GAME_CONFIG,
-  confirmGuess,
   createDifferences,
-  createRecallState,
   createPlayUrl,
   createShareText,
   formatClock,
@@ -15,10 +14,8 @@ import {
   getAnswerReveals,
   type Difference,
   type Point,
-  type RecallResult,
 } from './game/dailyRecall'
 
-type Phase = 'rules' | 'play' | 'result'
 type Side = 'original' | 'changed'
 
 const DAY_MS = 86_400_000
@@ -80,6 +77,17 @@ function Brand() {
 export default function App() {
   const [daily, setDaily] = useState(getDailyDream)
 
+  useEffect(() => {
+    const refreshDay = () => setDaily((current) => {
+      if (current.playtest) return current
+      const next = getDailyDream()
+      return next.dreamNumber === current.dreamNumber ? current : next
+    })
+    const timer = window.setInterval(refreshDay, 30_000)
+    window.addEventListener('focus', refreshDay)
+    return () => { clearInterval(timer); window.removeEventListener('focus', refreshDay) }
+  }, [])
+
   function newDay() {
     if (!import.meta.env.DEV) return
     setDaily((current) => {
@@ -96,11 +104,7 @@ export default function App() {
 
 function DreamRound({ daily, onNewDay }: { daily: ReturnType<typeof getDailyDream>; onNewDay: () => void }) {
   const differences = useMemo(() => createDifferences(daily.card.id), [daily.card.id])
-  const [phase, setPhase] = useState<Phase>('rules')
-  const [recallLeft, setRecallLeft] = useState<number>(GAME_CONFIG.recallSeconds)
-  const [recall, setRecall] = useState(createRecallState)
-  const [result, setResult] = useState<RecallResult | null>(null)
-  const [pendingSide, setPendingSide] = useState<Side>('changed')
+  const { phase, recallLeft, recall, result, pendingSide, dispatch, storageError, busy } = useDailySession(daily.dreamNumber, daily.card.id, differences, daily.playtest)
   const [inspecting, setInspecting] = useState<Side | null>(null)
   const [shareStatus, setShareStatus] = useState('')
   const [manualCopy, setManualCopy] = useState(false)
@@ -110,61 +114,28 @@ function DreamRound({ daily, onNewDay }: { daily: ReturnType<typeof getDailyDrea
   const shareText = result
     ? `${daily.playtest ? 'Playtest · ' : ''}${createShareText(daily.dreamNumber, result, differences, recall.foundDifferenceIds, playUrl)}`
     : ''
-  const startedAt = useRef<number | null>(null)
 
-  const finish = useCallback((nextResult: RecallResult) => {
-    setResult(nextResult)
+  useEffect(() => {
     setInspecting(null)
-    setPhase('result')
-  }, [])
-
-  useEffect(() => {
-    if (phase !== 'play') return
-    const update = () => {
-      if (startedAt.current === null) return
-      const elapsed = (performance.now() - startedAt.current) / 1000
-      setRecallLeft(Math.max(0, Math.ceil(GAME_CONFIG.recallSeconds - elapsed)))
-      if (elapsed >= GAME_CONFIG.recallSeconds) {
-        finish({ accuracy: recall.foundDifferenceIds.length, elapsedSeconds: GAME_CONFIG.recallSeconds, reason: 'time' })
-      }
-    }
-    const id = window.setInterval(update, 100)
-    update()
-    return () => window.clearInterval(id)
-  }, [finish, phase, recall.foundDifferenceIds.length])
-
-  useEffect(() => {
     if (phase === 'play') window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
   }, [phase])
 
   function begin() {
-    setRecall(createRecallState())
-    setResult(null)
     setShareStatus('')
     setManualCopy(false)
     setShowAnswers(true)
     setInspecting(null)
-    setRecallLeft(GAME_CONFIG.recallSeconds)
-    startedAt.current = performance.now()
-    setPhase('play')
+    void dispatch({ type: 'start' })
   }
 
   function placeGuess(point: Point, side: Side) {
     if (phase !== 'play') return
-    setPendingSide(side)
-    setRecall((current) => ({ ...current, pending: point }))
+    void dispatch({ type: 'mark', point, side })
   }
 
   function remember() {
     if (phase !== 'play' || !recall.pending || recall.confirmed.length >= GAME_CONFIG.maxGuesses) return
-    const elapsedSeconds = startedAt.current === null ? 0 : Math.min(GAME_CONFIG.recallSeconds, Math.floor((performance.now() - startedAt.current) / 1000))
-    if (elapsedSeconds >= GAME_CONFIG.recallSeconds) {
-      finish({ accuracy: recall.foundDifferenceIds.length, elapsedSeconds: GAME_CONFIG.recallSeconds, reason: 'time' })
-      return
-    }
-    const outcome = confirmGuess(recall, recall.pending, elapsedSeconds, differences)
-    setRecall(outcome.state)
-    if (outcome.result) finish(outcome.result)
+    void dispatch({ type: 'confirm', expectedCount: recall.confirmed.length, point: recall.pending, side: pendingSide })
   }
 
   async function copyResult() {
@@ -209,11 +180,12 @@ function DreamRound({ daily, onNewDay }: { daily: ReturnType<typeof getDailyDrea
   </>
   const confirmation = <div className="guess-confirmation">
     <span>{recall.confirmed.length} / {GAME_CONFIG.maxGuesses}</span>
-    <button className="primary-action" disabled={!recall.pending || Boolean(inspecting && pendingSide !== inspecting)} onClick={remember}>Remember</button>
+    <button className="primary-action" disabled={busy || !recall.pending || Boolean(inspecting && pendingSide !== inspecting)} onClick={remember}>Remember</button>
   </div>
 
   return (
     <main className={`app phase-${phase}`} style={{ '--guess-diameter': `${GAME_CONFIG.guessRadius * 200}%` } as React.CSSProperties}>
+      {storageError && <p className="storage-warning" role="alert">{storageError}</p>}
       {phase !== 'rules' && <Brand />}
       {import.meta.env.DEV && <nav className="dev-controls" aria-label="Playtest controls">
         <span>Playtest · Day {daily.dreamNumber} · {daily.card.id}</span>
@@ -229,13 +201,12 @@ function DreamRound({ daily, onNewDay }: { daily: ReturnType<typeof getDailyDrea
               <DreamCanvas label="Expand today's dream card" onTap={() => setInspecting('original')} onExpand={() => setInspecting('original')}>
                 {artworkContent('original')}
               </DreamCanvas>
-              <button className="expand-card" onClick={() => setInspecting('original')} aria-label="Expand today's dream card"><span aria-hidden="true">⤢</span> Expand</button>
             </div>
           </div>
           <div className="rules-intro">
             <p className="dream-prose">Lost within a reverie, nothing stays where it should be. Glance away, then look once more—the moon has left its silver shore.</p>
-            <p className="rules-copy">Find the five differences before the dream fades. Tap either image, then remember your choice. You have five guesses and two minutes.</p>
-            <button className="primary-action" onClick={begin}>Start</button>
+            <p className="rules-copy">Find the five differences before the dream fades. Tap either image, then <strong>remember</strong> your choice. You have five guesses and two minutes.</p>
+            <div className="landing-start"><button className="primary-action" disabled={busy} onClick={begin}>Start</button></div>
           </div>
         </section>
       ) : (
@@ -254,7 +225,7 @@ function DreamRound({ daily, onNewDay }: { daily: ReturnType<typeof getDailyDrea
             {(['original', 'changed'] as const).map((side) => (
               <figure className="dream-panel" key={side}>
                 <figcaption className={phase === 'result' ? `result-caption result-caption--${side}` : undefined}>
-                  <span>{phase === 'result' ? (side === 'original' ? 'Found · green' : 'Missed · red') : (side === 'original' ? 'The dream' : 'The memory')}</span>
+                  <span>{phase === 'result' ? (side === 'original' ? 'Found · green' : 'Missed · red') : (side === 'original' ? 'The Dream' : 'The Memory')}</span>
                   <button className="expand-card" aria-label={`Expand ${side === 'original' ? 'original' : 'changed'} dream`} onClick={() => setInspecting(side)}><span aria-hidden="true">⤢</span> Expand</button>
                 </figcaption>
                 <div className="card-frame">
@@ -299,15 +270,15 @@ function DreamRound({ daily, onNewDay }: { daily: ReturnType<typeof getDailyDrea
                   </li>
                 ))}</ol>
               </div>
-              <button className="text-action" onClick={begin}>Dream again</button>
+              {!daily.playtest && <p className="share-note">Today’s dream is saved. A new dream awaits tomorrow.</p>}
             </section>
           )}
         </section>
       )}
-      {inspecting && <DreamViewer key={`${phase}-${inspecting}`} title={phase === 'rules' ? 'Today’s dream' : inspecting === 'original' ? 'The dream' : 'The memory'}
+      {inspecting && <DreamViewer key={`${phase}-${inspecting}`} title={phase === 'rules' ? 'Today’s Dream' : inspecting === 'original' ? 'The Dream' : 'The Memory'} simpleZoom={phase === 'rules'}
         onClose={() => setInspecting(null)} onTap={phase === 'play' ? (point) => placeGuess(point, inspecting) : undefined}
         status={phase === 'play' ? <><span>{getRemainingGuesses(recall)} guesses left</span><time>{formatClock(recallLeft)}</time></> : undefined}
-        action={phase === 'play' ? confirmation : phase === 'result' ? <button className="text-action" aria-pressed={showAnswers} onClick={() => setShowAnswers((shown) => !shown)}>{showAnswers ? 'Hide markers' : 'Show markers'}</button> : undefined}>
+        action={<>{storageError && <p className="storage-warning" role="alert">{storageError}</p>}{phase === 'play' ? confirmation : phase === 'result' ? <button className="text-action" aria-pressed={showAnswers} onClick={() => setShowAnswers((shown) => !shown)}>{showAnswers ? 'Hide markers' : 'Show markers'}</button> : undefined}</>}>
         {artworkContent(inspecting)}
       </DreamViewer>}
     </main>

@@ -3,6 +3,7 @@ import test from 'node:test'
 import { existsSync } from 'node:fs'
 import { authoredDreams } from '../src/data/authoredDreams.ts'
 import { constrainView, imagePoint, RESTING_VIEW, zoomAt } from '../src/game/imageInspection.ts'
+import { changeSession, dailyStorageKey, parseSession, sessionSnapshot, updateStoredSession, type DailySession } from '../src/game/dailySession.ts'
 import {
   GAME_CONFIG,
   compareResults,
@@ -19,6 +20,83 @@ import {
 } from '../src/game/dailyRecall.ts'
 
 const differences = createDifferences('card-022')
+
+const startTime = 1_800_000_000_000
+const newSession = () => changeSession(null, { type: 'start' }, 'card-022', differences, startTime)!
+const markedSession = () => changeSession(newSession(), { type: 'mark', point: { x: .5, y: .5 }, side: 'original' }, 'card-022', differences, startTime + 1000)!
+const confirmSaved = (session: DailySession, now: number) => changeSession(session, { type: 'confirm', expectedCount: session.guesses.length, point: session.pending!.point, side: session.pending!.side }, 'card-022', differences, now)!
+
+test('daily attempts restore pending markers and the original timer after refresh', () => {
+  const restored = parseSession(JSON.stringify(markedSession()), 'card-022')!
+  const snapshot = sessionSnapshot(restored, differences, startTime + 31_000)
+  assert.equal(snapshot.phase, 'play')
+  assert.equal(snapshot.recallLeft, 89)
+  assert.deepEqual(snapshot.recall.pending, { x: .5, y: .5 })
+  assert.equal(snapshot.pendingSide, 'original')
+  assert.equal(snapshot.recall.confirmed.length, 0)
+  assert.equal(changeSession(restored, { type: 'start' }, 'card-022', differences, startTime + 31_000), restored)
+})
+
+test('closing the browser does not pause the attempt; expired attempts cannot restart', () => {
+  const saved = confirmSaved(markedSession(), startTime + 10_000)
+  const restored = parseSession(JSON.stringify(saved), 'card-022')!
+  const snapshot = sessionSnapshot(restored, differences, startTime + 121_000)
+  assert.equal(snapshot.phase, 'result')
+  assert.equal(snapshot.result?.elapsedSeconds, 120)
+  assert.equal(snapshot.result?.reason, 'time')
+  assert.equal(snapshot.recall.confirmed.length, 1)
+  assert.equal(changeSession(restored, { type: 'start' }, 'card-022', differences, startTime + 121_000), restored)
+  assert.equal(changeSession(restored, { type: 'mark', point: { x: .1, y: .1 }, side: 'original' }, 'card-022', differences, startTime + 121_000), restored)
+})
+
+test('five saved guesses freeze the score and measured time across reloads', () => {
+  let saved = newSession()
+  for (let n = 0; n < 5; n++) {
+    saved = changeSession(saved, { type: 'mark', point: { x: .5, y: .5 }, side: 'changed' }, 'card-022', differences, startTime + (n + 1) * 1000)!
+    saved = confirmSaved(saved, startTime + (n + 1) * 1000)
+  }
+  const first = sessionSnapshot(saved, differences, startTime + 5000)
+  const later = sessionSnapshot(parseSession(JSON.stringify(saved), 'card-022'), differences, startTime + 900_000)
+  assert.deepEqual(later.result, first.result)
+  assert.equal(later.result?.elapsedSeconds, 5)
+  assert.equal(later.recall.confirmed.length, 5)
+  assert.equal(changeSession(saved, { type: 'start' }, 'card-022', differences, startTime + 900_000), saved)
+})
+
+test('stale or double confirmations cannot use another guess or another tab’s marker', () => {
+  const marked = markedSession()
+  const action = { type: 'confirm' as const, expectedCount: 0, point: { x: .5, y: .5 }, side: 'original' as const }
+  const first = changeSession(marked, action, 'card-022', differences, startTime + 1000)!
+  const secondMark = changeSession(first, { type: 'mark', point: { x: .2, y: .3 }, side: 'original' }, 'card-022', differences, startTime + 2000)!
+  assert.equal(changeSession(secondMark, action, 'card-022', differences, startTime + 3000), secondMark)
+  assert.equal(changeSession(secondMark, { ...action, expectedCount: 1 }, 'card-022', differences, startTime + 3000), secondMark)
+})
+
+test('storage updates read the latest attempt and each new date gets its own key', () => {
+  const items = new Map<string, string>()
+  const storage = { getItem: (key: string) => items.get(key) ?? null, setItem: (key: string, value: string) => { items.set(key, value) } }
+  const key = dailyStorageKey(266)
+  updateStoredSession(storage, key, { type: 'start' }, 'card-022', differences, startTime)
+  const secondTab = updateStoredSession(storage, key, { type: 'start' }, 'card-022', differences, startTime + 10_000)!
+  assert.equal(secondTab.startedAt, startTime)
+  assert.notEqual(key, dailyStorageKey(267))
+  assert.equal(storage.getItem(dailyStorageKey(267)), null)
+  items.delete(key) // User clearing site data intentionally permits a fresh attempt.
+  const cleared = updateStoredSession(storage, key, { type: 'start' }, 'card-022', differences, startTime + 20_000)!
+  assert.equal(cleared.startedAt, startTime + 20_000)
+})
+
+test('malformed or incompatible saved attempts fail closed rather than silently resetting', () => {
+  for (const raw of ['broken', '{}', JSON.stringify({ ...newSession(), cardId: 'card-023' }), JSON.stringify({ ...newSession(), guesses: [{ point: { x: 3, y: .5 }, elapsedSeconds: 2 }] }), JSON.stringify({ ...newSession(), guesses: [{ point: { x: .5, y: .5 }, elapsedSeconds: 120 }] })]) {
+    assert.throws(() => parseSession(raw, 'card-022'))
+  }
+  assert.equal(parseSession(null, 'card-022'), null)
+})
+
+test('storage failures do not report a successfully started or saved attempt', () => {
+  const storage = { getItem: () => null, setItem: () => { throw new Error('Storage unavailable') } }
+  assert.throws(() => updateStoredSession(storage, dailyStorageKey(266), { type: 'start' }, 'card-022', differences, startTime))
+})
 
 test('viewer pan remains bounded and zooming out restores a fully fitted painting', () => {
   assert.deepEqual(constrainView({ scale: 1, x: .4, y: -.3 }), RESTING_VIEW)

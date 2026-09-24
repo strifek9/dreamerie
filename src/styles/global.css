@@ -53,6 +53,8 @@ button:focus-visible { outline: 2px solid var(--moon); outline-offset: 4px; }
 .primary-action { min-width: 9rem; min-height: 3.1rem; padding: .7rem 1.5rem; border: 1px solid #ded5f266; border-radius: 999px; color: #15152b; background: linear-gradient(135deg, #f0deb3, #c5b2f1); box-shadow: 0 .8rem 2.5rem #04051077, inset 0 1px #fff9; cursor: pointer; font-weight: 600; letter-spacing: .03em; }
 .primary-action:disabled { opacity: .34; cursor: default; }
 .rules .primary-action { margin-top: 2rem; }
+.rules-copy strong { color: #f5f0ff; font-weight: 750; }
+.storage-warning { max-width: 40rem; margin: .5rem auto; padding: .6rem; color: #ffe2b7; font-size: .8rem; text-align: center; }
 
 .game { width: min(100%, 78rem); margin: 0 auto; padding-top: .35rem; }
 .game-heading { min-height: 2.2rem; display: flex; align-items: baseline; justify-content: center; gap: .75rem; color: var(--mist); font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; }
@@ -98,9 +100,12 @@ button:focus-visible { outline: 2px solid var(--moon); outline-offset: 4px; }
 .viewer-header h2 { flex: 1; margin: 0; font: 400 clamp(1rem, 3vw, 1.3rem) Georgia, serif; }
 .viewer-status { display: flex; flex-wrap: wrap; gap: .35rem .7rem; color: var(--mist); font-size: .75rem; font-variant-numeric: tabular-nums; }
 .viewer-status time { color: var(--moon); }
-.viewer-close { flex: 0 0 2.75rem; height: 2.75rem; border: 1px solid #c8bee655; border-radius: 50%; background: #171934; color: #f5f0ff; font-size: 1.6rem; cursor: pointer; }
+.viewer-close { position: absolute; right: 0; bottom: calc(100% + .4rem); width: 2.75rem; height: 2.75rem; border: 1px solid #c8bee655; border-radius: 50%; background: #171934; color: #f5f0ff; font-size: 1.6rem; cursor: pointer; }
 .viewer-stage { min-height: 0; min-width: 0; display: grid; place-items: center; container-type: size; }
-.viewer-stage .dream-canvas { width: min(100cqw, 80cqh); height: min(125cqw, 100cqh); border-radius: .5rem; }
+.viewer-artwork { position: relative; width: min(100cqw, calc((100cqh - 3.25rem) * .8)); height: min(125cqw, calc(100cqh - 3.25rem)); margin-top: 3.25rem; }
+.viewer-artwork .dream-canvas { width: 100%; height: 100%; border-radius: .5rem; }
+.dream-viewer--preview .dream-canvas { cursor: zoom-in; }
+.dream-viewer--preview .dream-canvas[aria-label*="zoom out"] { cursor: zoom-out; }
 .viewer-stage .zoom-layer { transition: none; }
 .viewer-footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: .4rem 1.25rem; }
 .viewer-footer .zoom-controls { margin: 0; }
@@ -161,6 +166,12 @@ button:focus-visible { outline: 2px solid var(--moon); outline-offset: 4px; }
 @media (max-width: 64rem) {
   .phase-play { padding-bottom: calc(5rem + env(safe-area-inset-bottom)); }
   .phase-play .floating-action { position: fixed; left: 50%; transform: translateX(-50%); margin: 0; }
+}
+
+@media (max-width: 47.99rem), (max-height: 36rem) {
+  .phase-rules { padding-bottom: calc(6rem + env(safe-area-inset-bottom)); }
+  .landing-start { position: fixed; z-index: 6; inset: auto 0 0; display: flex; justify-content: center; padding: .7rem 1rem max(.8rem, env(safe-area-inset-bottom)); background: linear-gradient(transparent, #090b1cf5 28%); }
+  .landing-start .primary-action { margin: 0; min-width: 11rem; }
 }
 
 @media (max-width: 64rem) and (max-height: 32rem) and (orientation: landscape) {

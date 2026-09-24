@@ -8,6 +8,24 @@ The current prototype is intentionally local and small: React, TypeScript, Vite,
 
 ## Play locally
 
+### Saved daily attempts and simpler landing controls (local, not yet published)
+
+The landing viewer now toggles zoom on click/tap without a selection ring or zoom toolbar. **remember** is bold in the rules. Start stays at the bottom of narrow/short screens without needing to scroll; the painting and poem can still scroll normally. The viewer X sits immediately above the artwork's top-right edge. The comparison labels are **The Dream** and **The Memory**.
+
+The real daily attempt is saved in this browser, including its original start time, guesses and pending marker. Refreshing, reopening or using another tab resumes the same attempt, not a fresh timer. Time away counts toward the two minutes. A finished game returns to its saved score/time, share controls and answer reveal; **Dream again** is removed. A new local calendar day opens a new puzzle. Clearing this site's stored data permits replay; this is per browser/profile/device, not account-based anti-cheat. Storage must be available in a current HTTPS/localhost browser with Web Locks; failures show a warning rather than accepting unsaved play. Development review/New day rounds stay in memory and do not alter the saved daily attempt.
+
+Verification: 31 tests cover round rules plus saved pending guesses/deadlines, five-guess result restoration, stale/duplicate confirmations, cross-tab re-reads, invalid records and failed writes. Typecheck, tests and build pass. Browser checks confirmed click-to-toggle preview without markers, a reachable Start at 320×568, close placement above the artwork, live cross-tab updates, resumed countdown/guesses after reload, and unchanged completed/expired results after reload. Real-device touch acceptance remains recommended.
+
+After testing and explicit approval, suggested publication commands (not run):
+
+```powershell
+git add AGENTS.md README.md docs/GAME_DESIGN.md docs/PROTOTYPE_PLAN.md docs/ART_DIRECTION.md src/App.tsx src/components/InspectableDream.tsx src/game/dailySession.ts src/game/useDailySession.ts src/styles/global.css tests/dailyRecall.test.ts
+git commit -m "feat(game): save daily attempts and simplify landing controls"
+git push origin main
+```
+
+The public release described below has not yet received these changes.
+
 ### Full-screen artwork inspection (live)
 
 Click/tap or hold the landing painting to view it fitted to the screen. During play, tap to mark a guess; hold or choose **Expand** to look closer. Zoom/pan lives only in the viewer, using pinch/wheel/drag or +/−/Reset. The visible X or Escape returns to the pair without losing a pending guess. Remember remains available in the viewer; the two-minute timer keeps running, and expiry/final confirmation returns to the results. Expanded result images retain Hide/Show markers. Side-by-side is used on wider screens and portrait tablets; narrow portrait phones stack. No instant version-swap control is added.
