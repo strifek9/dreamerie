@@ -1,5 +1,17 @@
 # Hosted Dreamerie playtest
 
+## Mobile comparison release — September 23, 2026
+
+Release `f0e2a43d4f470a212a6176e8089d75f96963c799` is **live at https://dreamerie-playtest.onrender.com**. The user approved commit/push/deploy and confirmed the final Render publish action. Deployment `dep-daq8ijc9v7es73c82790` reports **Deploy succeeded / Live**; logs show the service became live at 21:23:35 CDT on September 23. No plan, disk, environment, access policy or automatic-deployment setting was changed. The preserved social branch and stored data were not modified.
+
+This release stacks the two images in phone portrait, retains side-by-side comparison in landscape/desktop, keeps mobile confirmation reachable, and scores overlap with the entire visible circle. Both views retain synchronized artwork-relative zoom/pan. There is no swap/flicker mode or device-specific scoring advantage.
+
+Verification: all 21 tests, type checks and the production build passed locally and on Render; GitHub Actions run `35945539340` succeeded. The public homepage and `/api/health` returned 200 after rollout. The homepage serves the expected `index-Conw6geU.js` and `index-tuc0-nF0.css` assets. A temporary 502 during the single-instance rollout cleared when the service became live.
+
+Hosted browser checks passed at 390×844 portrait (approximately 356px-wide stacked images, no horizontal overflow, visible fixed confirmation) and 844×390 landscape (approximately 392px-wide side-by-side images, no horizontal overflow). A tap retained five guesses and enabled Remember; confirming consumed exactly one guess and scored the selected difference. Zoom controls reached 125%. Browser error logs were empty. The temporary viewport override was reset and the game returned to its opening screen. Earlier local overlap, repeat-prevention, synchronized-pan, rotation and timer-expiry checks are recorded in the README. Actual phone pinch gestures and native sharing still need owner acceptance; emulation is not a physical-device test.
+
+The runtime remains on `f0e2a43`; the subsequent documentation-only commit records this verification and does not require another deployment. The September 20 record below is historical.
+
 ## Daily Dream Recall release — September 20, 2026
 
 Daily Dream Recall is **live at https://dreamerie-playtest.onrender.com**, verified September 20, 2026. The user approved committing, pushing and deploying the redesign to the existing `dreamerie-playtest` service. Render deployment `dep-danp3pjm8hqs73c2lmfg` reports **Deploy succeeded / Live** for commit `c01d528f2b87d81ec5ec30acc3acc290e7a73647`; it became live at approximately 02:58:53 CDT. This release replaces the public social-room UI, not its retained source branch or stored data.

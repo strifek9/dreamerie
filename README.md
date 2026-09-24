@@ -2,15 +2,15 @@
 
 Dreamerie is now a mobile-first daily spot-the-difference game. Two visions of one surreal Dream stay visible together—stacked in phone portrait, side by side in landscape and on desktop; use exactly five confirmed guesses to find five changes before the two-minute timer ends. Accuracy is the score, and elapsed time breaks ties.
 
-**Play online:** https://dreamerie-playtest.onrender.com — Daily Dream Recall release `c01d528`, deployed and checked September 20, 2026. Open this HTTPS address on your phone or browser; localhost is only for development. All 16 release tests, GitHub checks and Render build passed. See [hosting verification](docs/HOSTING.md).
+**Play online:** https://dreamerie-playtest.onrender.com — Mobile comparison release `f0e2a43`, deployed and checked September 23, 2026. Open this HTTPS address on your phone or browser; localhost is only for development. All 21 release tests, GitHub checks and Render build passed. See [hosting verification](docs/HOSTING.md).
 
 The current prototype is intentionally local and small: React, TypeScript, Vite, straightforward CSS, and local artwork. The 120 original illustrations are preserved; **all 120 cards now have individually authored, object-edited pairs**, with five declared answers each (600 total). Automatic circular color/shift effects are no longer used. No account, multiplayer, Discord, database, or production service is required.
 
 ## Play locally
 
-**Mobile refinement approved for publication:** portrait stacking, wider landscape comparison and whole-circle overlap scoring. The circle has the same artwork-relative size on every device; touching an answer region is enough, but repeat hits cannot score again. Pan stays synchronized through rotation. Scroll over unzoomed images normally; use Reset after zoomed panning to resume page scrolling. Phone controls stay reachable. Automated coverage includes edge/corner overlap, multiple-target priority and device/zoom scaling. Physical two-finger gestures still need owner testing.
+**Mobile refinement is live:** portrait stacking, wider landscape comparison and whole-circle overlap scoring. The circle has the same artwork-relative size on every device; touching an answer region is enough, but repeat hits cannot score again. Pan stays synchronized through rotation. Scroll over unzoomed images normally; use Reset after zoomed panning to resume page scrolling. Phone controls stay reachable. Automated coverage includes edge/corner overlap, multiple-target priority and device/zoom scaling. Physical two-finger gestures still need owner testing.
 
-The approved publication commands are:
+The approved publication commands were:
 
 ```powershell
 git add AGENTS.md README.md docs/GAME_DESIGN.md docs/PROTOTYPE_PLAN.md docs/ART_DIRECTION.md src/App.tsx src/styles/global.css src/game/dailyRecall.ts tests/dailyRecall.test.ts
@@ -18,7 +18,7 @@ git commit -m "fix(game): improve mobile comparison and circle hit detection"
 git push origin main
 ```
 
-The user approved committing, pushing and deploying this refinement on September 23, 2026. Render remains on the release shown above until the new deployment is verified; see the hosting notes for the latest confirmed release.
+The user approved committing, pushing and deploying this refinement on September 23, 2026. Release `f0e2a43` is now verified live on Render; see the hosting notes for the deployment record. These commands are a record, not a request to repeat the commit.
 
 Mobile-refinement browser checks passed at 320×568 and 390×844 portrait, 844×390 landscape and 1280×800 desktop: larger stacked cards, no horizontal overflow, reachable confirmation, sticky portrait controls, ordinary portrait scrolling without a guess, synchronized zoom/pan through rotation, and no browser errors. An outside-center moon overlap scored correctly at 100% and 125% zoom; four repeats consumed the remaining guesses without extra credit (1/5). Timer expiry also revealed the correct one-found/four-missed split. These emulated checks do not replace physical-phone touch testing.
 
