@@ -1,12 +1,12 @@
 # DREAMERIE
 
-## Version 2 — local landscape playtest
+## Version 2 — landscape playtest
 
-**Local refinement awaiting publication:** no practice round or completion flag. Start begins immediately once artwork loads. A small ? button opens optional How to play instructions before or during play, with the running timer visible and no pause. Removed the unused bottom padding and the V2 inheritance of V1's 100vh body minimum; V2 fits the dynamic visible viewport and accounts for the bottom safe area. Results/help still scroll when needed; content is never globally clipped to hide overflow.
+**Live refinement — `60ea989`:** no practice round or completion flag. Start begins immediately once artwork loads. A small ? button opens optional How to play instructions before or during play, with the running timer visible and no pause. Removed the unused bottom padding and the V2 inheritance of V1's 100vh body minimum; V2 fits the dynamic visible viewport and accounts for the bottom safe area. Results/help still scroll when needed; content is never globally clipped to hide overflow.
 
-Validation used a production-style local preview without the development footer. Typecheck, all 35 gameplay/hosting tests, and build pass. Landing checks at 320×568, 390×700, 390×844 and 844×390 matched document size to the viewport with no scrollbar gutter or extra height. Active-game checks also passed at phone, tablet and desktop sizes. Start works without practice; the hint opens before/during play, Escape restores focus, and the active countdown continues. Physical Safari/Chrome browser-bar behavior still needs a phone recheck after deployment. The published V2 site remains on the previous release until approval.
+Validation used a production-style local preview without the development footer. Typecheck, all 35 gameplay/hosting tests, and build pass. Landing checks at 320×568, 390×700, 390×844 and 844×390 matched document size to the viewport with no scrollbar gutter or extra height. Active-game checks also passed at phone, tablet and desktop sizes. Start works without practice; the hint opens before/during play, Escape restores focus, and the active countdown continues. Hosted checks confirmed the new assets, optional hint, saved-result preservation and landing fit at 320×568 and 390×844. Physical Safari/Chrome browser-bar behavior still needs a phone recheck. See `docs/HOSTING.md` for the successful approved deployment.
 
-After review and explicit approval:
+Completed after explicit commit/push/deploy approval:
 
 ```powershell
 git add AGENTS.md README.md docs/GAME_DESIGN.md docs/PROTOTYPE_PLAN.md docs/ART_DIRECTION.md src/v2/VersionTwo.tsx src/v2/Practice.tsx src/v2/versionTwo.css
@@ -14,7 +14,7 @@ git commit -m "fix(v2): replace practice with hints and remove mobile overflow"
 git push origin prototype/v2-landscape
 ```
 
-**V2 phone/browser preview:** https://dreamerie-v2-playtest.onrender.com — release `34b34df`, verified live September 24, 2026. This is separate from the unchanged V1 site. It contains one sample with a saved attempt; use a fresh private-browsing session or clear only the V2 site's data to test again. Automatic deployments are Off. See `docs/HOSTING.md` for verification.
+**V2 phone/browser preview:** https://dreamerie-v2-playtest.onrender.com — release `60ea989`, verified live September 24, 2026. This is separate from the unchanged V1 site. It contains one sample with a saved attempt; use a fresh private-browsing session or clear only the V2 site's data to test again. Automatic deployments are Off. See `docs/HOSTING.md` for verification.
 
 This branch now opens the V2 experiment by default: one new landscape pair, optional How to play hints, stacked synchronized comparison, an unpausable two-minute round, and score/share above the answer reveal. The existing painted cards remain the visual reference. This is a single sample, not a new 120-card landscape catalogue. The user approved a separate Render static preview for phone testing on September 24; see `docs/HOSTING.md` for deployment status. The V1 service must remain untouched.
 

@@ -2,6 +2,8 @@
 
 ## Version 2 landscape experiment — current branch
 
+Publication update: the refinement below is now live on the separate V2 site at commit `60ea989`, following explicit user approval. See `docs/HOSTING.md` (or `HOSTING.md` from this directory) for verification; earlier awaiting-publication/practice wording is historical. V1 remains unchanged.
+
 Current refinement: remove the practice round completely. Start is immediately available after artwork loads, with no practice gate or completion flag. A small ? / How to play button opens concise instructions in a keyboard-accessible dialog before or during play. Help never starts, pauses or resets the timer, or changes guesses; it shows the active remaining time and closes on expiry. Remove unused landing bottom padding and use the visible dynamic viewport height for V2, without V1's larger 100vh body floor. Keep scrolling for real overflow (results, enlarged text and small help dialogs), not empty background. V1 is unaffected. Older practice wording below is historical; this local refinement awaits publication.
 
 User-approved V2 work is isolated on `prototype/v2-landscape`; V1 is preserved at local branch `prototype/version-1` (`4952a01`). The public V1 release remains unchanged. This experiment overrides conflicting V1 layout/inspection instructions below only for V2. Keep V1 components and all 120 original pairs intact.

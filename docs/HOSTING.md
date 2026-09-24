@@ -1,5 +1,15 @@
 # Hosted Dreamerie playtest
 
+## V2 optional hints and mobile fit — September 24, 2026
+
+Release `60ea989d414e237496438fa778aab68551508d48` is live at https://dreamerie-v2-playtest.onrender.com following explicit commit/push/deploy approval. Existing Static Site `srv-daqp97vlk1mc73ejvdk0`, deployment `dep-daqpq3u7bikc738b3ddg`, reports **Deploy succeeded / Live** (25 seconds). No hosting settings, plans, access, environment or saved attempts were changed.
+
+Practice is removed entirely; optional How to play hints replace it, and the empty mobile bottom overflow is removed. Typecheck, all 35 tests and build passed locally and on Render. GitHub Actions run `36064716217` succeeded. Public homepage and both V2 PNG assets return 200, with expected `index-CPe0IJHz.js` / `index-BwBdUYdN.css` bundles.
+
+Hosted Chrome verified the optional hint, Escape focus return and landing document dimensions exactly matching 320×568 and 390×844 viewports. The existing saved 0/5 · 2:00 result survived the release; site storage was not cleared. No browser errors were captured. Local production-style checks covered immediate Start, active hint countdown without pause, and additional phone/tablet/desktop sizes. Temporary viewport override was reset. Physical mobile browser-bar behavior still needs owner testing.
+
+V1 remains unchanged: homepage 200 with `index-_JQJYvTQ.js` / `index-B1DxDp6W.css`; remote main and `prototype/version-1` both remain `4952a01`. A documentation-only follow-up records this verification and needs no deployment. Earlier records below are historical.
+
 ## Version 2 separate static playtest — September 24, 2026
 
 **Live:** https://dreamerie-v2-playtest.onrender.com — commit `34b34dfdfb508e1ee4b6d33dcadf958f5c6eac3c`. Render Static Site `srv-daqp97vlk1mc73ejvdk0`, deployment `dep-daqp98flk1mc73ejveh0`, reports Live. All 35 tests, typecheck and build passed locally and on Render. The build uses Node 24.21.0. Auto-Deploy is verified Off.
