@@ -1,5 +1,13 @@
 # Hosted Dreamerie playtest
 
+## Version 2 separate static playtest — September 24, 2026
+
+The user approved a separate Render V2 preview for phone and browser testing. Publish only `prototype/v2-landscape`; do not merge into main, redeploy the V1 service, import its paid Blueprint, change its disk, or copy its environment variables. V1 remains on `dreamerie-playtest` at `991a597`.
+
+Create a Static Site named `dreamerie-v2-playtest` using the existing GitHub repository. Build: `npm ci --include=dev && npm test && npm run build`. Publish directory: `dist`. Set `NODE_VERSION=24`, disable auto-deploy, and add no server, disk, database, secrets, or paid compute plan. Static-site traffic and builds still use the workspace's bandwidth/pipeline allowances. The assigned URL and successful deployed commit must be verified before sharing; this paragraph records setup intent, not a successful deployment.
+
+The preview contains one landscape sample and uses production settings: no dev-only New playtest control, and one saved attempt per browser/site-data lifetime. Clear only the preview site's data or use a separate browser profile for another test. No pause or reset is added as part of deployment. Phone gesture acceptance remains the user's next check.
+
 ## Home-navigation release — September 23, 2026
 
 Release `991a5978646f03f5ceea0b34ba915c565c8b62e9` is **live at https://dreamerie-playtest.onrender.com** following the user's commit/push/deploy request. Render deployment `dep-daq9l5lg1s2s73fm56a0` reports **Deploy succeeded / Live**, with service-live logs at 22:37:19 CDT. No plan, disk, environment, access, saved data or manual-deployment settings changed.

@@ -1,5 +1,14 @@
 # Dreamerie Daily Dream Recall Prototype Plan
 
+## V2 milestone — one landscape sample
+
+Implement and user-test one purpose-composed wide pair in the existing card style before converting any of the 120 cards. V1 is preserved on `prototype/version-1`; V2 work is on `prototype/v2-landscape`, not committed or deployed. Existing V1 scope below remains historical/public behavior.
+
+Deliverables: a two-step introduction with an untimed tap/Remember practice; a stacked landscape pair fitted to play viewports; synchronized pinch/wheel/drag and visible zoom controls; fixed two-minute deadline with no pause; exactly five guesses; score/share before answers; V2-independent saved attempt; dev-only repeatable test. Preserve V1 route, assets, and saved attempts. No dependencies or infrastructure added.
+
+Validation: typecheck, all 35 tests, and production build pass. New tests cover native asset dimensions, five reachable landscape regions, aspect-correct circle overlap, one confirmation per guess, repeat prevention, five-guess ceiling, unchanged deadline, and accuracy/time ordering. Browser checks and remaining device acceptance are recorded in `docs/V2_PLAYTEST.md`. Ask new human players to explain the rules, locate Remember, and compare a detail without losing their place. Do not convert the deck or publish until this milestone receives user approval.
+
+
 ## Current scope
 
 Build one polished, artwork-first daily spot-the-difference round in React, TypeScript, and Vite. Use local data and straightforward CSS only.

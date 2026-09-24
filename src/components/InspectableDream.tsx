@@ -10,15 +10,17 @@ type CanvasProps = {
   view?: ImageView
   onView?: (view: ImageView) => void
   selectable?: boolean
+  pendingPoint?: Point | null
 }
 
 /** The page scrolls normally; only an explicitly expanded painting captures pan/zoom. */
-export function DreamCanvas({ children, label, onTap, onExpand, view = RESTING_VIEW, onView, selectable = false }: CanvasProps) {
+export function DreamCanvas({ children, label, onTap, onExpand, view = RESTING_VIEW, onView, selectable = false, pendingPoint }: CanvasProps) {
   const canvas = useRef<HTMLButtonElement>(null)
   const layer = useRef<HTMLSpanElement>(null)
   const hold = useRef<ReturnType<typeof setTimeout> | null>(null)
   const points = useRef(new Map<number, Point>())
   const keyboardPoint = useRef<Point>({ x: .5, y: .5 })
+  if (pendingPoint) keyboardPoint.current = pendingPoint
   const currentView = useRef(view)
   currentView.current = view
   const gesture = useRef({ origin: { x: 0, y: 0 }, view, distance: 0, moved: false })

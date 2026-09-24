@@ -1,5 +1,26 @@
 # DREAMERIE
 
+## Version 2 — local landscape playtest
+
+This branch now opens the V2 experiment by default: one new landscape pair, a brief hands-on practice, stacked synchronized comparison, an unpausable two-minute round, and score/share above the answer reveal. The existing painted cards remain the visual reference. This is a single sample, not a new 120-card landscape catalogue. The user approved a separate Render static preview for phone testing on September 24; see `docs/HOSTING.md` for deployment status. The V1 service must remain untouched.
+
+V1 is preserved on `prototype/version-1` at `4952a01`; development is on `prototype/v2-landscape`. Use `?version=1` to compare the old UI locally. The original live Render site still runs V1. V2 is being committed and published separately following user approval.
+
+Run `npm run dev` and open `http://127.0.0.1:5173/`. Validate with `npm run typecheck`, `npm test`, and `npm run build`. Development-only New playtest is repeatable and in-memory; the default sample uses its own saved attempt and fixed deadline, separate from V1. Clearing site storage allows replay. Physical phone pinch/drag acceptance and first-time human understanding still need user testing.
+
+Artwork masters: `public/artwork/v2/sea-in-a-teacup-original.png` and `sea-in-a-teacup-edited-source.png`, both native 1672×941 PNGs, without lossy recompression or artificial upscaling. Prompts, style reference and provenance are in `public/artwork/v2/provenance.json`. Only the five declared regions are composited. Tiny-detail difficulty remains an estimate.
+
+Suggested publication commands AFTER testing and explicit approval (not run):
+
+```powershell
+git add AGENTS.md README.md docs/GAME_DESIGN.md docs/PROTOTYPE_PLAN.md docs/ART_DIRECTION.md docs/V2_PLAYTEST.md package.json src/main.tsx src/components/InspectableDream.tsx src/game/dailyRecall.ts src/game/dailySession.ts src/game/useDailySession.ts src/v2 tests/landscape.test.ts public/artwork/v2
+git commit -m "feat(v2): prototype landscape comparison and guided first guess"
+git push -u origin prototype/v2-landscape
+```
+
+### Version 1 release notes (historical/current public site)
+
+
 Dreamerie is now a mobile-first daily spot-the-difference game. Two visions of one surreal Dream stay visible together—stacked in phone portrait, side by side in landscape and on desktop; use exactly five confirmed guesses to find five changes before the two-minute timer ends. Accuracy is the score, and elapsed time breaks ties.
 
 **Play online:** https://dreamerie-playtest.onrender.com — Home-navigation release `991a597`, deployed and checked September 23, 2026. Open this HTTPS address on your phone or browser; localhost is only for development. All 31 release tests, GitHub checks and Render build passed. See [hosting verification](docs/HOSTING.md).

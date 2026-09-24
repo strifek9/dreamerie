@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from 'react'
 import type { Difference } from './dailyRecall'
 import { changeSession, dailyStorageKey, parseSession, sessionSnapshot, updateStoredSession, type DailySession, type SessionAction } from './dailySession'
 
-export function useDailySession(day: number, cardId: string, differences: readonly Difference[], playtest: boolean) {
-  const key = dailyStorageKey(day)
+export function useDailySession(day: number, cardId: string, differences: readonly Difference[], playtest: boolean, options?: { namespace: string; aspectRatio: number }) {
+  const key = options ? `${options.namespace}:${day}` : dailyStorageKey(day)
   const [initial] = useState(() => {
     try { return { session: playtest ? null : parseSession(localStorage.getItem(key), cardId), error: '' } }
     catch { return { session: null, error: 'Your saved dream could not be opened. Allow browser storage, or clear this site’s data to start again.' } }
@@ -48,8 +48,8 @@ export function useDailySession(day: number, cardId: string, differences: readon
     try {
       const update = () => {
         const at = Date.now()
-        const next = playtest ? changeSession(sessionRef.current, action, cardId, differences, at)
-          : updateStoredSession(localStorage, key, action, cardId, differences, at)
+        const next = playtest ? changeSession(sessionRef.current, action, cardId, differences, at, options?.aspectRatio)
+          : updateStoredSession(localStorage, key, action, cardId, differences, at, options?.aspectRatio)
         sessionRef.current = next
         setSession(next)
         setNow(at)
@@ -63,5 +63,5 @@ export function useDailySession(day: number, cardId: string, differences: readon
     finally { busyRef.current = false; setBusy(false) }
   }
 
-  return { ...sessionSnapshot(session, differences, now), dispatch, storageError, busy }
+  return { ...sessionSnapshot(session, differences, now, options?.aspectRatio), dispatch, storageError, busy }
 }

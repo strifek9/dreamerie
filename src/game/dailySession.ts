@@ -46,12 +46,12 @@ export function parseSession(raw: string | null, cardId: string): DailySession |
   return { version: 1, cardId, startedAt: record.startedAt, guesses, pending }
 }
 
-export function sessionSnapshot(session: DailySession | null, differences: readonly Difference[], now: number) {
+export function sessionSnapshot(session: DailySession | null, differences: readonly Difference[], now: number, aspectRatio: number = GAME_CONFIG.artworkAspectRatio) {
   let recall = createRecallState()
   let result: RecallResult | null = null
   if (!session) return { phase: 'rules' as const, recall, result, recallLeft: GAME_CONFIG.recallSeconds, pendingSide: 'changed' as DreamSide }
   for (const guess of session.guesses) {
-    const outcome = confirmGuess(recall, guess.point, guess.elapsedSeconds, differences)
+    const outcome = confirmGuess(recall, guess.point, guess.elapsedSeconds, differences, aspectRatio)
     recall = outcome.state
     result = outcome.result
   }
@@ -62,9 +62,9 @@ export function sessionSnapshot(session: DailySession | null, differences: reado
     recallLeft: Math.max(0, Math.ceil(GAME_CONFIG.recallSeconds - elapsed)), pendingSide: session.pending?.side ?? 'changed' }
 }
 
-export function changeSession(session: DailySession | null, action: SessionAction, cardId: string, differences: readonly Difference[], now: number): DailySession | null {
+export function changeSession(session: DailySession | null, action: SessionAction, cardId: string, differences: readonly Difference[], now: number, aspectRatio: number = GAME_CONFIG.artworkAspectRatio): DailySession | null {
   if (action.type === 'start') return session ?? { version: 1, cardId, startedAt: now, guesses: [], pending: null }
-  if (!session || sessionSnapshot(session, differences, now).result) return session
+  if (!session || sessionSnapshot(session, differences, now, aspectRatio).result) return session
   if (action.type === 'mark') return isPoint(action.point) ? { ...session, pending: { point: action.point, side: action.side } } : session
   // A stale tab/double confirmation must never consume the next guess.
   if (!session.pending || action.expectedCount !== session.guesses.length || action.side !== session.pending.side
@@ -73,9 +73,9 @@ export function changeSession(session: DailySession | null, action: SessionActio
   return { ...session, pending: null, guesses: [...session.guesses, { point: session.pending.point, elapsedSeconds }] }
 }
 
-export function updateStoredSession(storage: Pick<Storage, 'getItem' | 'setItem'>, key: string, action: SessionAction, cardId: string, differences: readonly Difference[], now: number) {
+export function updateStoredSession(storage: Pick<Storage, 'getItem' | 'setItem'>, key: string, action: SessionAction, cardId: string, differences: readonly Difference[], now: number, aspectRatio: number = GAME_CONFIG.artworkAspectRatio) {
   const current = parseSession(storage.getItem(key), cardId)
-  const next = changeSession(current, action, cardId, differences, now)
+  const next = changeSession(current, action, cardId, differences, now, aspectRatio)
   if (next && next !== current) storage.setItem(key, JSON.stringify(next))
   return next
 }

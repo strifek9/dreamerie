@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "typecheck": "tsc -b",
-    "test": "node --experimental-strip-types --test tests/dailyRecall.test.ts tests/staticHosting.test.ts",
+    "test": "node --experimental-strip-types --test tests/dailyRecall.test.ts tests/landscape.test.ts tests/staticHosting.test.ts",
     "build": "npm run typecheck && vite build",
     "preview": "vite preview --host 127.0.0.1",
     "start": "node --experimental-strip-types scripts/serve.ts"

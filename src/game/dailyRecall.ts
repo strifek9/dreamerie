@@ -82,13 +82,14 @@ export function findDifference(
   point: Point,
   foundDifferenceIds: readonly string[],
   differences: readonly Difference[],
+  aspectRatio: number = GAME_CONFIG.artworkAspectRatio,
 ): Difference | undefined {
   // Compare the entire visible circle to the answer rectangle, in artwork-width
-  // units (the painting is taller than it is wide). Corners stay circular, not square.
+  // units, correcting for the painting's aspect ratio. Corners stay circular.
   const candidates = differences.map((difference) => {
     const { left, top, width, height } = difference.box
     const dx = Math.max(left - point.x, 0, point.x - left - width)
-    const dy = Math.max(top - point.y, 0, point.y - top - height) / GAME_CONFIG.artworkAspectRatio
+    const dy = Math.max(top - point.y, 0, point.y - top - height) / aspectRatio
     return { difference, distance: Math.hypot(dx, dy) }
   })
   // Center hits win over edge overlaps; nested center hits favor the smaller
@@ -106,10 +107,11 @@ export function confirmGuess(
   point: Point,
   elapsedSeconds: number,
   differences: readonly Difference[],
+  aspectRatio: number = GAME_CONFIG.artworkAspectRatio,
 ): { state: RecallState; result: RecallResult | null } {
   if (state.confirmed.length >= GAME_CONFIG.maxGuesses) return { state, result: null }
 
-  const difference = findDifference(point, state.foundDifferenceIds, differences)
+  const difference = findDifference(point, state.foundDifferenceIds, differences, aspectRatio)
   const nextState: RecallState = {
     pending: null,
     confirmed: [...state.confirmed, {

@@ -1,5 +1,16 @@
 # Dreamerie game design
 
+## V2 landscape playtest (current experimental branch)
+
+V1 remains the published game, preserved locally on `prototype/version-1` at `4952a01`. On `prototype/v2-landscape`, the default entry is a single sample called A Sea in a Teacup; `?version=1` retains the old interface. This section overrides conflicting V1 comparison/inspection details below for V2 only.
+
+Before starting, players complete one untimed practice: mark the changed moon, reposition if needed, then Remember. Practice is separate from the real attempt. Explain five differences, exactly five total guesses, two minutes, wrong guesses consume guesses, and no pause. Start begins the saved deadline only after both paintings load.
+
+Keep both landscape paintings stacked and visible together during play. Their zoom and pan are synchronized; corresponding pending circles appear on both, but only one confirmation is recorded. Controls occupy their own space, beside the pair on short landscape viewports. There is no swapping, hold-to-open requirement or pause. Home displays remaining time and Continue; time away and reload count. The V2 sample uses separate saved storage from V1. Dev-only New playtest is explicitly in-memory.
+
+All core scoring/guess rules below remain: circle overlap, exactly five confirmations, no duplicate score, accuracy primary, whole-second time only breaks ties. Results appear above the answer reveal. Retain spoiler-free sharing and found/green versus missed/red fading markers. Difficulty and first-time understanding need human testing before expanding the sample.
+
+
 ## Current primary mode: Daily Dream Recall
 
 This section supersedes the historical social-mode design below for the primary prototype.

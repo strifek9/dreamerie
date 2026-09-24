@@ -1,5 +1,14 @@
 # Dreamerie art direction
 
+## V2 landscape art and interface
+
+The current card collection is the visual reference, not something to replace stylistically. Preserve painterly gouache/paper texture, rich varied color, symbolic surreal compositions, simplified readable silhouettes, and the existing storybook feeling. Recompose for a wide frame rather than stretching or cropping portrait cards. This prototype uses card-001 as a style reference for a new scene, A Sea in a Teacup.
+
+Keep both original-resolution 1672×941 PNGs in `public/artwork/v2/`, with prompts and provenance. Do not artificially upscale and call it extra detail, or reduce them to thumbnails. Inspect the smallest clue at zoom. Five scene-fitting edits: full moon to crescent, red sails to gold, one fewer bell flower, one fewer lantern crossbar, star engraving to crescent. Only declared regions from the edited source are composited onto the original; all other pixels stay unchanged. Review boundaries and difficulty with people before more artwork.
+
+The V2 interface stacks the pair, shares pan/zoom, and keeps controls off the paintings. A short native-vector practice is instructional UI only, not replacement game artwork. Plain-language essentials take priority over dreamy copy when explaining guesses and time. Keep the existing reverie poem and understated typography. No pause affordance; Home shows the live remaining time. V1 design instructions below still describe the public release.
+
+
 ## Daily Dream Recall direction
 
 Make the Dreamerie wordmark a keyboard-accessible home link without changing its quiet styling. Returning home preserves the attempt; show Resume or View result as appropriate. Capitalize the result-caption colors: **Found · Green**, **Missed · Red**.

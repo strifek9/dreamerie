@@ -1,0 +1,19 @@
+{
+  "tool": "Built-in imagegen",
+  "styleReference": "../dreams/card-001.jpg",
+  "title": "A Sea in a Teacup",
+  "original": {
+    "file": "sea-in-a-teacup-original.png",
+    "width": 1672,
+    "height": 941,
+    "prompt": "Use case: illustration-story. Create one ORIGINAL 16:9 landscape Dreamerie spot-the-difference game painting, not a collage or UI. Image 1 is STYLE REFERENCE ONLY: match its hand-painted textured gouache/paper-cut storybook craft, simplified elegant silhouettes, subtle grain, strange gentle dream mood; do not reuse its composition. New scene 'A Sea in a Teacup': a giant ivory porcelain teacup filled with a calm teal night sea on a rose-lavender tablecloth, a small boat with a bold RED triangular sail floating inside it. A WHITE FULL MOON in the spacious upper-left sky. A white cat asleep on a closed plum-colored book in lower left. To the right a brass candle lantern with TWO horizontal bars on its front glass, near a stem bearing THREE distinct cream bell flowers. A silver spoon rests diagonally in lower right with a small STAR engraved on the broad handle tip. Distant peach cloud shapes and dark indigo sky frame this impossible still life. Compose the teacup, cat, moon, boat, flowers, lantern and spoon clearly in one spacious wide scene; large readable silhouettes at mobile size; no dense ornament, no extra tiny props. All key objects fully inside frame with breathing room. The sea-in-a-cup is the poetic focal point, not a photorealistic tabletop. Output exactly wide 16:9, ideally 1536x864 or 2048x1152, single full-bleed original painting. No text, labels, borders, split panels, UI, watermarks. Do not generate the altered version yet."
+  },
+  "altered": {
+    "file": "sea-in-a-teacup-edited-source.png",
+    "width": 1672,
+    "height": 941,
+    "prompt": "Use case: precise-object-edit. Input image 1 is the edit target. Create the matching altered Dreamerie painting for a spot-the-difference game. Preserve the exact composition, object positions, proportions, gouache brushwork, paper texture, colors and every untouched detail. Change ONLY these FIVE localized details: (1) the large full moon in upper-left becomes a luminous crescent within the same circular footprint; (2) both red triangular boat sails become warm golden yellow, keep red pennant unchanged; (3) remove only the smallest rightmost hanging cream bell flower (at about 90% width,22% height), leaving the other two flowers untouched; (4) remove the LOWER of the two horizontal bars across the lantern's front glass, preserve candle and upper bar; (5) replace the tiny engraved star on the spoon handle tip at 63% width,94% height with an engraved crescent moon in matching gold. No other changes. Keep the cat, book, cup decoration, stars, clouds, water and all edges perfectly aligned. Output one full-bleed altered landscape painting, no labels or split panels. Preserve source resolution and crisp original-quality detail, ideally 2048x1152 or higher, suitable for examining details at zoom. Do not blur or oversoften."
+  },
+  "display": "Only five declared rectangles from the altered source are composited over the original. Original PNGs retained without lossy recompression or artificial upscaling.",
+  "review": "Five intended object-level edits visually present. Difficulty needs real-player testing; inspect composite boundaries and tiny detail at zoom."
+}
