@@ -1,5 +1,15 @@
 # Hosted Dreamerie playtest
 
+## Full-screen inspection release — September 23, 2026
+
+Release `95aee6ad77589aca7666682fb3b49530e3dcb79b` is **live at https://dreamerie-playtest.onrender.com** following the user's explicit commit/push/deploy request. Render deployment `dep-daq91q97lnhs73c4v5t0` reports **Deploy succeeded / Live**, with service-live logs at 21:56:42 CDT. The existing plan, disk, environment, access and manual deployment settings were left unchanged. No social-game source branch or stored data was changed.
+
+The release adds the landing/game full-screen card viewer, bounded detail-anchored zoom/pan, X/Escape close, guess confirmation inside inspection, and adaptive side-by-side/stacked comparison. All 24 tests, type checking and build passed locally and on Render. GitHub Actions run `35949143459` succeeded. Public homepage and `/api/health` returned 200; the homepage serves the expected `index-CXh88g17.js` and `index-zGzQiazR.css` assets.
+
+Hosted Chrome checks at 390×844 verified landing click-to-open, 125% zoom, Escape close/focus return, Start, Expand during play, timer continuing in the viewer, tap leaving five guesses, Remember consuming exactly one, and closing back to the pair without resetting progress. No development New day control was present; browser error logs were empty. The viewport override was reset and the public game returned to its opening screen. Broader responsive, hold, pan, keyboard, expiry and fifth-confirmation checks are recorded in the README. Physical phone pinch/long-press and native sharing still need owner acceptance.
+
+The runtime remains on `95aee6a`; a following documentation-only commit records verification and needs no further deployment. Earlier release records below are historical.
+
 ## Mobile comparison release — September 23, 2026
 
 Release `f0e2a43d4f470a212a6176e8089d75f96963c799` is **live at https://dreamerie-playtest.onrender.com**. The user approved commit/push/deploy and confirmed the final Render publish action. Deployment `dep-daq8ijc9v7es73c82790` reports **Deploy succeeded / Live**; logs show the service became live at 21:23:35 CDT on September 23. No plan, disk, environment, access policy or automatic-deployment setting was changed. The preserved social branch and stored data were not modified.

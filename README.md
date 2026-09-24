@@ -2,17 +2,17 @@
 
 Dreamerie is now a mobile-first daily spot-the-difference game. Two visions of one surreal Dream stay visible together—stacked in phone portrait, side by side in landscape and on desktop; use exactly five confirmed guesses to find five changes before the two-minute timer ends. Accuracy is the score, and elapsed time breaks ties.
 
-**Play online:** https://dreamerie-playtest.onrender.com — Mobile comparison release `f0e2a43`, deployed and checked September 23, 2026. Open this HTTPS address on your phone or browser; localhost is only for development. All 21 release tests, GitHub checks and Render build passed. See [hosting verification](docs/HOSTING.md).
+**Play online:** https://dreamerie-playtest.onrender.com — Full-screen inspection release `95aee6a`, deployed and checked September 23, 2026. Open this HTTPS address on your phone or browser; localhost is only for development. All 24 release tests, GitHub checks and Render build passed. See [hosting verification](docs/HOSTING.md).
 
 The current prototype is intentionally local and small: React, TypeScript, Vite, straightforward CSS, and local artwork. The 120 original illustrations are preserved; **all 120 cards now have individually authored, object-edited pairs**, with five declared answers each (600 total). Automatic circular color/shift effects are no longer used. No account, multiplayer, Discord, database, or production service is required.
 
 ## Play locally
 
-### Full-screen artwork inspection (approved for deployment)
+### Full-screen artwork inspection (live)
 
 Click/tap or hold the landing painting to view it fitted to the screen. During play, tap to mark a guess; hold or choose **Expand** to look closer. Zoom/pan lives only in the viewer, using pinch/wheel/drag or +/−/Reset. The visible X or Escape returns to the pair without losing a pending guess. Remember remains available in the viewer; the two-minute timer keeps running, and expiry/final confirmation returns to the results. Expanded result images retain Hide/Show markers. Side-by-side is used on wider screens and portrait tablets; narrow portrait phones stack. No instant version-swap control is added.
 
-The user approved committing, pushing and deploying this update. Publication commands:
+The user approved committing, pushing and deploying this update. Release `95aee6a` is verified live. Publication commands below are a record, not a request to repeat the commit:
 
 ```powershell
 git add AGENTS.md README.md docs/GAME_DESIGN.md docs/PROTOTYPE_PLAN.md docs/ART_DIRECTION.md src/App.tsx src/components/InspectableDream.tsx src/game/imageInspection.ts src/styles/global.css tests/dailyRecall.test.ts
@@ -20,11 +20,11 @@ git commit -m "feat(game): add full-screen dream inspection"
 git push origin main
 ```
 
-The earlier mobile release notes below describe the published inline-zoom implementation, superseded locally by the viewer above.
+The earlier mobile release notes below describe the former inline-zoom implementation, now superseded by the live viewer above.
 
 Viewer verification: 24 automated tests cover the existing round rules plus bounded pan/reset, anchored zoom and coordinate mapping at different sizes/zoom levels. Browser checks covered 320×568 and 390×844 phones, 768×1024 portrait tablet, 844×390 landscape and 1280×800 desktop, with no horizontal overflow. Verified landing click-to-open, stationary mouse hold without a guess, Expand, wheel/+ zoom, drag without a pending guess, pending selection preserved on close/reopen, one guess per confirmation, automatic close after five confirmations and timer expiry, result marker hiding, keyboard arrow selection, Escape and focus return. Controls are outside the artwork. Browser errors were empty. Actual phone long-press/pinch and native sharing still need physical-device acceptance. Run `npm run typecheck`, `npm test`, and `npm run build` to repeat the automated checks.
 
-**Mobile refinement is live:** portrait stacking, wider landscape comparison and whole-circle overlap scoring. The circle has the same artwork-relative size on every device; touching an answer region is enough, but repeat hits cannot score again. Pan stays synchronized through rotation. Scroll over unzoomed images normally; use Reset after zoomed panning to resume page scrolling. Phone controls stay reachable. Automated coverage includes edge/corner overlap, multiple-target priority and device/zoom scaling. Physical two-finger gestures still need owner testing.
+**Earlier mobile refinement (historical):** portrait stacking, wider landscape comparison and whole-circle overlap scoring. The circle has the same artwork-relative size on every device; touching an answer region is enough, but repeat hits cannot score again. This release used synchronized inline pan/zoom, now replaced by the viewer above. Automated coverage includes edge/corner overlap, multiple-target priority and device/zoom scaling. Physical two-finger gestures still need owner testing.
 
 The approved publication commands were:
 
@@ -34,7 +34,7 @@ git commit -m "fix(game): improve mobile comparison and circle hit detection"
 git push origin main
 ```
 
-The user approved committing, pushing and deploying this refinement on September 23, 2026. Release `f0e2a43` is now verified live on Render; see the hosting notes for the deployment record. These commands are a record, not a request to repeat the commit.
+The user approved committing, pushing and deploying this earlier refinement on September 23, 2026. Release `f0e2a43` was verified live before the viewer release; see the hosting notes for the deployment record. These commands are a record, not a request to repeat the commit.
 
 Mobile-refinement browser checks passed at 320×568 and 390×844 portrait, 844×390 landscape and 1280×800 desktop: larger stacked cards, no horizontal overflow, reachable confirmation, sticky portrait controls, ordinary portrait scrolling without a guess, synchronized zoom/pan through rotation, and no browser errors. An outside-center moon overlap scored correctly at 100% and 125% zoom; four repeats consumed the remaining guesses without extra credit (1/5). Timer expiry also revealed the correct one-found/four-missed split. These emulated checks do not replace physical-phone touch testing.
 
