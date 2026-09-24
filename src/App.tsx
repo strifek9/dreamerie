@@ -20,6 +20,7 @@ import {
 type Phase = 'rules' | 'play' | 'result'
 type Side = 'original' | 'changed'
 type View = { scale: number; x: number; y: number }
+const PORTRAIT_COMPARISON = '(max-width: 48rem) and (orientation: portrait)'
 
 const DAY_MS = 86_400_000
 const DREAM_EPOCH = Date.UTC(2026, 0, 1)
@@ -113,6 +114,7 @@ function DreamRound({ daily, onNewDay }: { daily: ReturnType<typeof getDailyDrea
   const startedAt = useRef<number | null>(null)
   const comparisonRef = useRef<HTMLDivElement>(null)
   const pointers = useRef(new Map<number, Point>())
+  const gestureTarget = useRef<HTMLButtonElement | null>(null)
   const gesture = useRef({ startView: view, startPoint: { x: 0, y: 0 }, distance: 0, midpoint: { x: 0, y: 0 }, moved: false })
 
   const finish = useCallback((nextResult: RecallResult) => {
@@ -141,6 +143,8 @@ function DreamRound({ daily, onNewDay }: { daily: ReturnType<typeof getDailyDrea
     const element = comparisonRef.current
     if (!element) return
     const zoom = (event: WheelEvent) => {
+      // In a stacked layout ordinary wheel/trackpad movement scrolls the page.
+      if (window.matchMedia(PORTRAIT_COMPARISON).matches && !event.ctrlKey && !event.metaKey) return
       event.preventDefault()
       setView((current) => {
         const scale = Math.min(GAME_CONFIG.maxZoom, Math.max(1, current.scale * (event.deltaY < 0 ? 1.16 : 0.86)))
@@ -149,6 +153,19 @@ function DreamRound({ daily, onNewDay }: { daily: ReturnType<typeof getDailyDrea
     }
     element.addEventListener('wheel', zoom, { passive: false })
     return () => element.removeEventListener('wheel', zoom)
+  }, [phase])
+
+  useEffect(() => {
+    const cancelGesture = () => {
+      pointers.current.clear()
+      gesture.current.moved = true
+    }
+    window.addEventListener('resize', cancelGesture)
+    return () => window.removeEventListener('resize', cancelGesture)
+  }, [])
+
+  useEffect(() => {
+    if (phase === 'play') window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
   }, [phase])
 
   function begin() {
@@ -170,6 +187,8 @@ function DreamRound({ daily, onNewDay }: { daily: ReturnType<typeof getDailyDrea
 
   function handlePointerDown(event: React.PointerEvent<HTMLButtonElement>) {
     if (phase === 'rules') return
+    if (pointers.current.size && gestureTarget.current !== event.currentTarget) return
+    gestureTarget.current = event.currentTarget
     event.currentTarget.setPointerCapture(event.pointerId)
     pointers.current.set(event.pointerId, { x: event.clientX, y: event.clientY })
     const values = [...pointers.current.values()]
@@ -178,7 +197,7 @@ function DreamRound({ daily, onNewDay }: { daily: ReturnType<typeof getDailyDrea
       startPoint: values[0],
       distance: values.length === 2 ? Math.hypot(values[1].x - values[0].x, values[1].y - values[0].y) : 0,
       midpoint: values.length === 2 ? { x: (values[0].x + values[1].x) / 2, y: (values[0].y + values[1].y) / 2 } : values[0],
-      moved: false,
+      moved: values.length > 1,
     }
   }
 
@@ -186,29 +205,39 @@ function DreamRound({ daily, onNewDay }: { daily: ReturnType<typeof getDailyDrea
     if (!pointers.current.has(event.pointerId)) return
     pointers.current.set(event.pointerId, { x: event.clientX, y: event.clientY })
     const values = [...pointers.current.values()]
+    const width = event.currentTarget.clientWidth
+    const height = event.currentTarget.clientHeight
     if (values.length === 2) {
       const distance = Math.hypot(values[1].x - values[0].x, values[1].y - values[0].y)
       const midpoint = { x: (values[0].x + values[1].x) / 2, y: (values[0].y + values[1].y) / 2 }
       const scale = Math.min(GAME_CONFIG.maxZoom, Math.max(1, gesture.current.startView.scale * distance / Math.max(1, gesture.current.distance)))
       gesture.current.moved = true
-      setView({ scale, x: gesture.current.startView.x + midpoint.x - gesture.current.midpoint.x, y: gesture.current.startView.y + midpoint.y - gesture.current.midpoint.y })
-    } else if (values.length === 1 && view.scale > 1) {
+      setView({ scale,
+        x: scale === 1 ? 0 : gesture.current.startView.x + (midpoint.x - gesture.current.midpoint.x) / width,
+        y: scale === 1 ? 0 : gesture.current.startView.y + (midpoint.y - gesture.current.midpoint.y) / height })
+    } else if (values.length === 1) {
       const deltaX = values[0].x - gesture.current.startPoint.x
       const deltaY = values[0].y - gesture.current.startPoint.y
       if (Math.hypot(deltaX, deltaY) > 4) gesture.current.moved = true
-      setView({ ...view, x: gesture.current.startView.x + deltaX, y: gesture.current.startView.y + deltaY })
+      if (view.scale > 1) setView({ ...view, x: gesture.current.startView.x + deltaX / width, y: gesture.current.startView.y + deltaY / height })
     }
   }
 
   function handlePointerUp(event: React.PointerEvent<HTMLButtonElement>, side: Side) {
-    const wasTap = pointers.current.size === 1 && !gesture.current.moved
+    const wasTap = pointers.current.has(event.pointerId) && pointers.current.size === 1 && !gesture.current.moved
     pointers.current.delete(event.pointerId)
+    if (pointers.current.size === 1) {
+      gesture.current = { ...gesture.current, startView: view, startPoint: [...pointers.current.values()][0], moved: true }
+    }
     if (!wasTap || phase !== 'play') return
-    const bounds = event.currentTarget.getBoundingClientRect()
-    const localX = (event.clientX - bounds.left - bounds.width / 2 - view.x) / view.scale + bounds.width / 2
-    const localY = (event.clientY - bounds.top - bounds.height / 2 - view.y) / view.scale + bounds.height / 2
+    const layer = event.currentTarget.querySelector<HTMLElement>('.zoom-layer')
+    if (!layer) return
+    const bounds = layer.getBoundingClientRect()
+    const x = (event.clientX - bounds.left) / bounds.width
+    const y = (event.clientY - bounds.top) / bounds.height
+    if (x < 0 || x > 1 || y < 0 || y > 1) return
     setPendingSide(side)
-    setRecall((current) => ({ ...current, pending: { x: localX / bounds.width, y: localY / bounds.height } }))
+    setRecall((current) => ({ ...current, pending: { x, y } }))
   }
 
   function remember() {
@@ -282,20 +311,24 @@ function DreamRound({ daily, onNewDay }: { daily: ReturnType<typeof getDailyDrea
         </section>
       ) : (
         <section className="game" aria-live="polite">
-          <div className="game-heading">
-            <p>{phase === 'play' ? `${getRemainingGuesses(recall)} guesses left` : 'The dream fades.'}</p>
-            {phase === 'play' && <time aria-label={`${recallLeft} seconds remaining`}>{formatClock(recallLeft)}</time>}
+          <div className="game-toolbar">
+            <div className="game-heading">
+              <p>{phase === 'play' ? `${getRemainingGuesses(recall)} guesses left` : 'The dream fades.'}</p>
+              {phase === 'play' && <time aria-label={`${recallLeft} seconds remaining`}>{formatClock(recallLeft)}</time>}
+            </div>
+
+            <div className="zoom-controls" aria-label="Image zoom">
+              <button onClick={() => setZoom(view.scale / 1.25)} disabled={view.scale <= 1} aria-label="Zoom out">−</button>
+              <span>{Math.round(view.scale * 100)}%</span>
+              <button onClick={() => setZoom(view.scale * 1.25)} disabled={view.scale >= GAME_CONFIG.maxZoom} aria-label="Zoom in">+</button>
+              <button onClick={() => setView({ scale: 1, x: 0, y: 0 })}>Reset</button>
+              {phase === 'result' && <button aria-pressed={showAnswers} onClick={() => setShowAnswers((shown) => !shown)}>{showAnswers ? 'Hide markers' : 'Show markers'}</button>}
+            </div>
+
+            <p className="portrait-hint">{view.scale > 1 ? 'Drag to explore. Reset zoom to scroll between images.' : 'Turn sideways for a wider view.'}</p>
           </div>
 
-          <div className="zoom-controls" aria-label="Image zoom">
-            <button onClick={() => setZoom(view.scale / 1.25)} disabled={view.scale <= 1} aria-label="Zoom out">−</button>
-            <span>{Math.round(view.scale * 100)}%</span>
-            <button onClick={() => setZoom(view.scale * 1.25)} disabled={view.scale >= GAME_CONFIG.maxZoom} aria-label="Zoom in">+</button>
-            <button onClick={() => setView({ scale: 1, x: 0, y: 0 })}>Reset</button>
-            {phase === 'result' && <button aria-pressed={showAnswers} onClick={() => setShowAnswers((shown) => !shown)}>{showAnswers ? 'Hide markers' : 'Show markers'}</button>}
-          </div>
-
-          <div ref={comparisonRef} className="comparison" style={{ '--zoom': view.scale, '--pan-x': `${view.x}px`, '--pan-y': `${view.y}px` } as React.CSSProperties}>
+          <div ref={comparisonRef} className={`comparison${view.scale > 1 ? ' is-zoomed' : ''}`} style={{ '--zoom': view.scale, '--pan-x': `${view.x * 100}%`, '--pan-y': `${view.y * 100}%`, '--guess-diameter': `${GAME_CONFIG.guessRadius * 200}%` } as React.CSSProperties}>
             {(['original', 'changed'] as const).map((side) => (
               <figure className="dream-panel" key={side}>
                 <figcaption className={phase === 'result' ? `result-caption result-caption--${side}` : undefined}>{phase === 'result' ? (side === 'original' ? 'Found · green' : 'Missed · red') : (side === 'original' ? 'The dream' : 'The memory')}</figcaption>
@@ -304,7 +337,7 @@ function DreamRound({ daily, onNewDay }: { daily: ReturnType<typeof getDailyDrea
                   onPointerDown={handlePointerDown}
                   onPointerMove={handlePointerMove}
                   onPointerUp={(event) => handlePointerUp(event, side)}
-                  onPointerCancel={(event) => pointers.current.delete(event.pointerId)}>
+                  onPointerCancel={() => { pointers.current.clear(); gesture.current.moved = true }}>
                   <span className="zoom-layer">
                     <DreamImage artwork={daily.card.artwork} description={daily.card.description} differences={differences} editedArtwork={side === 'changed' ? daily.authored.editedArtwork : undefined} />
                     {markerContent(side)}
@@ -340,7 +373,7 @@ function DreamRound({ daily, onNewDay }: { daily: ReturnType<typeof getDailyDrea
               </details>
               <div className="answer-key">
                 <h2>What changed</h2>
-                <p>Found on the left. Missed on the right. Markers gently fade; hide them for a clear view.</p>
+                <p>Found in the dream. Missed in the memory. Markers gently fade; hide them for a clear view.</p>
                 <ol>{differences.map((difference, index) => (
                   <li key={difference.id}>
                     <span className="answer-number">{index + 1}</span>

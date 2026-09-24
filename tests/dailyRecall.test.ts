@@ -141,8 +141,8 @@ test('only reviewed image pairs are playable, with five individually hittable ob
         y: top + height * ((Math.floor(index / 9) + 1) / 10),
       }))
       assert.ok(candidates.some((point) => findDifference(point, [], entries)?.id === entry.id), entry.id)
-      assert.equal(findDifference({ x: left - .001, y: entry.y }, [], [entry]), undefined)
-      assert.equal(findDifference({ x: left + width + .001, y: entry.y }, [], [entry]), undefined)
+      assert.equal(findDifference({ x: left - GAME_CONFIG.guessRadius - .001, y: entry.y }, [], [entry]), undefined)
+      assert.equal(findDifference({ x: left + width + GAME_CONFIG.guessRadius + .001, y: entry.y }, [], [entry]), undefined)
     }
   }
 })
@@ -154,6 +154,65 @@ test('small nested details retain their hit area after being found', () => {
   assert.equal(findDifference(point, [], [outer, inner])?.id, 'inner')
   assert.equal(findDifference(point, ['inner'], [outer, inner]), undefined)
   assert.equal(findDifference({ x: .5, y: .5 }, ['inner'], [outer, inner])?.id, 'outer')
+})
+
+test('the visible circle counts side overlaps and exact tangency, not just its center', () => {
+  const target = { ...differences[0], id: 'target', box: { left: .4, top: .4, width: .1, height: .1 } }
+  const rx = GAME_CONFIG.guessRadius
+  const ry = rx * GAME_CONFIG.artworkAspectRatio
+  const edges = [
+    { x: .4 - rx, y: .45 }, { x: .5 + rx, y: .45 },
+    { x: .45, y: .4 - ry }, { x: .45, y: .5 + ry },
+  ]
+  for (const point of edges) assert.equal(findDifference(point, [], [target])?.id, target.id)
+  assert.equal(findDifference({ x: .4 - rx - .0001, y: .45 }, [], [target]), undefined)
+  assert.equal(findDifference({ x: .45, y: .4 - ry - .0001 }, [], [target]), undefined)
+})
+
+test('corner overlap uses a circle rather than an expanded rectangular hit area', () => {
+  const target = { ...differences[0], id: 'target', box: { left: .4, top: .4, width: .1, height: .1 } }
+  const r = GAME_CONFIG.guessRadius
+  const aspect = GAME_CONFIG.artworkAspectRatio
+  assert.equal(findDifference({ x: .4 - r * .6, y: .4 - r * aspect * .6 }, [], [target])?.id, target.id)
+  assert.equal(findDifference({ x: .4 - r * .8, y: .4 - r * aspect * .8 }, [], [target]), undefined)
+})
+
+test('multiple overlaps score only the nearest region; found targets never fall through', () => {
+  const near = { ...differences[0], id: 'near', box: { left: .4, top: .4, width: .05, height: .05 } }
+  const far = { ...differences[1], id: 'far', box: { left: .48, top: .4, width: .05, height: .05 } }
+  const point = { x: .46, y: .42 }
+  assert.equal(findDifference(point, [], [far, near])?.id, 'near')
+  const first = confirmGuess(createRecallState(), point, 10, [near, far])
+  assert.deepEqual(first.state.foundDifferenceIds, ['near'])
+  const repeated = confirmGuess(first.state, point, 12, [near, far])
+  assert.deepEqual(repeated.state.foundDifferenceIds, ['near'])
+  assert.equal(repeated.state.confirmed.length, 2)
+  assert.equal(repeated.state.confirmed[1].correct, false)
+})
+
+test('center hits take priority over nearby overlaps and ties are deterministic', () => {
+  const outer = { ...differences[0], id: 'outer', box: { left: .2, top: .2, width: .4, height: .4 } }
+  const inner = { ...differences[1], id: 'inner', box: { left: .3, top: .3, width: .05, height: .05 } }
+  assert.equal(findDifference({ x: .29, y: .32 }, [], [inner, outer])?.id, 'outer')
+  assert.equal(findDifference({ x: .32, y: .32 }, [], [outer, inner])?.id, 'inner')
+  const same = { ...inner, id: 'another' }
+  assert.equal(findDifference({ x: .29, y: .32 }, [], [inner, same])?.id,
+    findDifference({ x: .29, y: .32 }, [], [same, inner])?.id)
+})
+
+test('overlap allowance scales with the artwork on phone, desktop and zoomed views', () => {
+  const target = { ...differences[0], id: 'target', box: { left: .4, top: .4, width: .1, height: .1 } }
+  for (const width of [280, 370, 520]) {
+    for (const zoom of [1, 2, 4]) {
+      const renderedWidth = width * zoom
+      const renderedHeight = renderedWidth / GAME_CONFIG.artworkAspectRatio
+      const radiusPixels = GAME_CONFIG.guessRadius * renderedWidth
+      const inside = { x: (.4 * renderedWidth - radiusPixels * .9) / renderedWidth, y: .45 }
+      const outside = { x: .45, y: (.4 * renderedHeight - radiusPixels * 1.1) / renderedHeight }
+      assert.equal(findDifference(inside, [], [target])?.id, 'target')
+      assert.equal(findDifference(outside, [], [target]), undefined)
+    }
+  }
 })
 
 test('share text reports the Wordle-style score without revealing locations', () => {

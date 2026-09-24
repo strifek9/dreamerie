@@ -39,6 +39,9 @@ export const GAME_CONFIG = {
   maxGuesses: 5,
   differenceCount: 5,
   maxZoom: 4,
+  artworkAspectRatio: 4 / 5,
+  // Radius as a fraction of artwork width, shared by rendering and hit testing.
+  guessRadius: 0.04,
 } as const
 
 export function getNextAuthoredDream(cardId: string) {
@@ -80,12 +83,21 @@ export function findDifference(
   foundDifferenceIds: readonly string[],
   differences: readonly Difference[],
 ): Difference | undefined {
-  // A tiny detail can sit inside a larger object's bounds. It always owns its
-  // hit area, even after being found, so a duplicate cannot score its parent.
-  const target = [...differences].sort((a, b) => a.box.width * a.box.height - b.box.width * b.box.height).find((difference) => {
+  // Compare the entire visible circle to the answer rectangle, in artwork-width
+  // units (the painting is taller than it is wide). Corners stay circular, not square.
+  const candidates = differences.map((difference) => {
     const { left, top, width, height } = difference.box
-    return point.x >= left && point.x <= left + width && point.y >= top && point.y <= top + height
+    const dx = Math.max(left - point.x, 0, point.x - left - width)
+    const dy = Math.max(top - point.y, 0, point.y - top - height) / GAME_CONFIG.artworkAspectRatio
+    return { difference, distance: Math.hypot(dx, dy) }
   })
+  // Center hits win over edge overlaps; nested center hits favor the smaller
+  // detail. Include found regions when choosing, so a repeat never scores a neighbor.
+  candidates.sort((a, b) => a.distance - b.distance
+    || a.difference.box.width * a.difference.box.height - b.difference.box.width * b.difference.box.height
+    || a.difference.id.localeCompare(b.difference.id))
+  const nearest = candidates[0]
+  const target = nearest && nearest.distance <= GAME_CONFIG.guessRadius + 1e-10 ? nearest.difference : undefined
   return target && !foundDifferenceIds.includes(target.id) ? target : undefined
 }
 

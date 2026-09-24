@@ -1,12 +1,26 @@
 # DREAMERIE
 
-Dreamerie is now a mobile-first daily spot-the-difference game. Two visions of one surreal Dream appear side by side; use exactly five confirmed guesses to find five changes before the two-minute timer ends. Accuracy is the score, and elapsed time breaks ties.
+Dreamerie is now a mobile-first daily spot-the-difference game. Two visions of one surreal Dream stay visible together—stacked in phone portrait, side by side in landscape and on desktop; use exactly five confirmed guesses to find five changes before the two-minute timer ends. Accuracy is the score, and elapsed time breaks ties.
 
 **Play online:** https://dreamerie-playtest.onrender.com — Daily Dream Recall release `c01d528`, deployed and checked September 20, 2026. Open this HTTPS address on your phone or browser; localhost is only for development. All 16 release tests, GitHub checks and Render build passed. See [hosting verification](docs/HOSTING.md).
 
 The current prototype is intentionally local and small: React, TypeScript, Vite, straightforward CSS, and local artwork. The 120 original illustrations are preserved; **all 120 cards now have individually authored, object-edited pairs**, with five declared answers each (600 total). Automatic circular color/shift effects are no longer used. No account, multiplayer, Discord, database, or production service is required.
 
 ## Play locally
+
+**Mobile refinement approved for publication:** portrait stacking, wider landscape comparison and whole-circle overlap scoring. The circle has the same artwork-relative size on every device; touching an answer region is enough, but repeat hits cannot score again. Pan stays synchronized through rotation. Scroll over unzoomed images normally; use Reset after zoomed panning to resume page scrolling. Phone controls stay reachable. Automated coverage includes edge/corner overlap, multiple-target priority and device/zoom scaling. Physical two-finger gestures still need owner testing.
+
+The approved publication commands are:
+
+```powershell
+git add AGENTS.md README.md docs/GAME_DESIGN.md docs/PROTOTYPE_PLAN.md docs/ART_DIRECTION.md src/App.tsx src/styles/global.css src/game/dailyRecall.ts tests/dailyRecall.test.ts
+git commit -m "fix(game): improve mobile comparison and circle hit detection"
+git push origin main
+```
+
+The user approved committing, pushing and deploying this refinement on September 23, 2026. Render remains on the release shown above until the new deployment is verified; see the hosting notes for the latest confirmed release.
+
+Mobile-refinement browser checks passed at 320×568 and 390×844 portrait, 844×390 landscape and 1280×800 desktop: larger stacked cards, no horizontal overflow, reachable confirmation, sticky portrait controls, ordinary portrait scrolling without a guess, synchronized zoom/pan through rotation, and no browser errors. An outside-center moon overlap scored correctly at 100% and 125% zoom; four repeats consumed the remaining guesses without extra credit (1/5). Timer expiry also revealed the correct one-found/four-missed split. These emulated checks do not replace physical-phone touch testing.
 
 Use Node.js 22.18+ or 24+ and npm.
 
@@ -26,7 +40,7 @@ npm run preview
 
 The puzzle catalogue and answer regions live in `src/data/authoredDreams.ts` and `src/data/authoredExpansion.ts`; scoring, sharing, timing settings, and hit detection live in `src/game/dailyRecall.ts`. The opening shows the day's original artwork above the reverie poem and short rules; no timer runs during this preview. **Start** opens both images and starts the two-minute timer. Tapping either image only moves the pending circle; **Remember** consumes one of five guesses. Mouse-wheel zoom, touch pinch/drag, and visible zoom controls keep fine changes inspectable.
 
-Each painting gets its own changes: expressions, moon phases, fabric patterns, plants, architecture, missing pieces, and existing-object colors. Red bows and gold buttons are not a repeated formula. Generated edits are clipped to five declared regions over the untouched original, keeping everything outside those regions identical. Source prompts and provenance are stored beside the edited artwork in `public/artwork/differences/`. Every ending shows found answers in green on the left and missed answers in red on the right. Numbered outlines gently fade completely out and back in; Hide markers clears them manually. Reduced-motion users get static outlines and the same hide control. All five descriptions remain visible below, and zoom stays available.
+Each painting gets its own changes: expressions, moon phases, fabric patterns, plants, architecture, missing pieces, and existing-object colors. Red bows and gold buttons are not a repeated formula. Generated edits are clipped to five declared regions over the untouched original, keeping everything outside those regions identical. Source prompts and provenance are stored beside the edited artwork in `public/artwork/differences/`. Every ending shows found answers in green on the original (top/left) and missed answers in red on the changed image (bottom/right). Numbered outlines gently fade completely out and back in; Hide markers clears them manually. Reduced-motion users get static outlines and the same hide control. All five descriptions remain visible below, and zoom stays available.
 
 The result format is `accuracy · elapsed time`, for example `4/5 · 1:07`. Higher accuracy always ranks first. Faster time matters only when accuracy ties; equal accuracy and equal time are tied.
 
@@ -46,7 +60,7 @@ In development only, open `http://127.0.0.1:5173/?review=card-120` to inspect a 
 
 ### Review and handoff
 
-Checks passed: fourteen rule/catalogue/sharing tests, TypeScript checking, production build, and Git whitespace checks. The catalogue tests require all 120 IDs, original/edited assets and provenance, five reachable answers per card, valid normalized regions, and correct nested-hit priority. Share tests cover score/time, perfect and expired grids, spoiler-free text and clean play URLs. See `docs/ARTWORK_REVIEW.md` for the artwork review and limitations. Browser checks covered desktop and 390px phone-sized layouts, pending-marker repositioning across both images without submission, one guess per confirmation, duplicate-found consumption without a second score, immediate five-guess completion, timer-expiry reveal, and wheel zoom after results without further scoring. The latest opening/share check verified the original artwork, exact new poem, Start, five-confirmation results, copy-success feedback, complete share preview, and New day's artwork replacement. Physical multi-touch pinch still needs a real-device playtest. Difficulty labels are editorial estimates, not calibrated player data.
+Checks passed: twenty-one rule/catalogue/sharing/overlap/hosting tests, TypeScript checking, production build, and Git whitespace checks. The catalogue tests require all 120 IDs, original/edited assets and provenance, five reachable answers per card, valid normalized regions, and correct nested-hit priority. Share tests cover score/time, perfect and expired grids, spoiler-free text and clean play URLs. See `docs/ARTWORK_REVIEW.md` for the artwork review and limitations. Browser checks covered desktop and 390px phone-sized layouts, pending-marker repositioning across both images without submission, one guess per confirmation, duplicate-found consumption without a second score, immediate five-guess completion, timer-expiry reveal, and wheel zoom after results without further scoring. The latest opening/share check verified the original artwork, exact new poem, Start, five-confirmation results, copy-success feedback, complete share preview, and New day's artwork replacement. Physical multi-touch pinch still needs a real-device playtest. Difficulty labels are editorial estimates, not calibrated player data.
 
 Changed areas: `src/App.tsx`, `src/styles/global.css`, `src/game/dailyRecall.ts`, `src/data/authoredDreams.ts`, `src/data/authoredExpansion.ts`, `tests/dailyRecall.test.ts`, 120 edited assets and their provenance under `public/artwork/differences/`, frontend package scripts, `.gitignore`, and the five primary project/design documents and the new full answer ledger. Original deck artwork is untouched. The discarded automatic discoloration/position generator is removed; its output is not used.
 

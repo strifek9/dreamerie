@@ -5,13 +5,13 @@
 Build one polished, artwork-first daily spot-the-difference round in React, TypeScript, and Vite. Use local data and straightforward CSS only.
 
 1. Rotate only through reviewed, genuinely edited pairs. All 120 cards now have authored pairs and five answer descriptions/regions each; original files are preserved.
-2. Preview the day's original card, the reverie poem and short rules before Start; do not run the timer yet. Place the original and altered visions side by side for the whole round after Start.
+2. Preview the day's original card, the reverie poem and short rules before Start; do not run the timer yet. Keep both visions in the page for the whole round after Start: stack them on phone portrait, use side-by-side landscape/desktop, and never swap/flicker between versions.
 3. Give each playable pair five recognizable, theme-consistent object edits with responsive hit regions and a two-minute timer. Intended difficulty ranges from easy to very difficult and needs playtesting.
-4. Let taps on either image place or move one pending circle; submit only through **Remember**.
-5. Support synchronized mouse-wheel zoom, touch pinch/drag, visible zoom controls, and reset.
+4. Let taps on either image place or move one pending circle; submit only through **Remember**. Hit-test the whole visible circle against answer rectangles, using a shared normalized radius and true circular corners. Score at most one nearest target; preserve nested priority and repeat prevention.
+5. Support synchronized mouse-wheel zoom, touch pinch/drag, visible zoom controls, and reset. Store pan in artwork-relative units so rotation keeps both views aligned. Unzoomed touch dragging scrolls the page; zoomed dragging pans without placing guesses. Ordinary wheel movement scrolls portrait layouts; Ctrl/Command-wheel zooms. Keep the timer/zoom controls sticky and confirmation reachable on phones.
 6. Allow no more than five confirmed guesses. Count incorrect and duplicate-found confirmations as consumed false memories.
 7. End on five confirmations, five unique finds, or timer expiry.
-8. Show `accuracy/5 · elapsed time`; compare accuracy first and time only on ties, then offer a Wordle-style text share. Split numbered result regions into found/green on the left and missed/red on the right; gently fade overlays fully out and back in, with Hide markers and a reduced-motion fallback. Keep the full Found/Missed explanation list. Keep zoom available after the round.
+8. Show `accuracy/5 · elapsed time`; compare accuracy first and time only on ties, then offer a Wordle-style text share. Split numbered result regions into found/green on the original (top/left) and missed/red on the changed image (bottom/right); gently fade overlays fully out and back in, with Hide markers and a reduced-motion fallback. Keep the full Found/Missed explanation list. Keep zoom available after the round.
 9. Support phone-first layout, larger screens, pointer input, keyboard-visible controls, reduced motion, and human-readable timers.
 
 10. Development only: provide New day to advance the catalogue and displayed test day, wrapping safely and resetting timer, guesses, markers, zoom, results and gestures to the rules screen. Do not ship this control in production; label simulated/review shares Playtest.
