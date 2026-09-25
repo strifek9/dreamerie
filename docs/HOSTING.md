@@ -1,5 +1,13 @@
 # Hosted Dreamerie playtest
 
+## V2 full-stage inspection and landing buttons — September 25, 2026
+
+Release `99737558cf92d67a7863ce8fbe40e37a4b2c7843` is live at https://dreamerie-v2-playtest.onrender.com after explicit commit/push/deploy approval. Render deployment `dep-dara3eh42hec73di4p30` reports **Deploy succeeded / Live**, duration 42.8 seconds; site-live log at 11:31:32 CDT. GitHub Actions run `36161093335` succeeded. No hosting settings, plans, saved data or V1 deployment changed.
+
+All 41 tests, typecheck, build and 120-pair collection validation passed locally; Render repeated tests and build successfully. Public V2 returns HTTP 200 with `index-CfFkhwSY.js` / `index-BSIZoPFY.css`. Hosted Chrome at 390×844 verified the transparent View result container and expanded preview: the inspection area is approximately 356×686px, allowing the 2× artwork to occupy 712×400px instead of clipping it to the fitted 356×200px rectangle. The close button remains outside the art. The saved `0/5 · 0:05` result survived reload; no storage was cleared. Browser error logs were empty and temporary viewport sizing was reset. Local checks additionally covered active guessing, confirmation, result inspection and responsive layouts. Physical phone hold/pinch remains owner acceptance.
+
+V1 remains HTTP 200 with unchanged `index-_JQJYvTQ.js` / `index-B1DxDp6W.css`; remote main and `prototype/version-1` remain `4952a01`. The build's 500.49kB minified JavaScript chunk produces a size advisory, not a failure. This documentation-only follow-up needs no redeployment. Older local/not-yet-published wording describes pre-release milestones.
+
 ## V2 revised poems and landscape preview — September 25, 2026
 
 Release `0b3680f8d6b48cf0eb435496d2c9eaf3c973711a` is live at https://dreamerie-v2-playtest.onrender.com after explicit commit/push/deploy approval. Render deployment `dep-dar805e0tbcc739cav8g` reports **Deploy succeeded / Live**, duration 3m16s; site-live log at 09:10:31 CDT. GitHub Actions run `36145216931` succeeded. No hosting settings, plans, storage, artwork or scoring geometry changed.

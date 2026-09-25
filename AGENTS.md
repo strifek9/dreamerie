@@ -2,6 +2,8 @@
 
 ## V2 daily landscape collection — current branch
 
+Publication update: the full-stage inspection and transparent landing-button refinement below is live as `9973755`, following explicit commit/push/deploy approval. Current automated suite: 41 tests. See docs/HOSTING.md for verification. Earlier “not yet published” wording is historical; do not redeploy automatically.
+
 Latest local refinement (not yet published): the Start/Continue/View result container is transparent, with no separate dark-blue panel. All V2 enlarged viewers use the full available inspection area rather than clipping zoom to the original fitted painting rectangle. At 100% the entire painting is fitted; zoomed artwork can grow into the surrounding space. Empty letterbox taps do not place guesses. Pan/zoom anchors, markers and hit detection remain artwork-relative; short landscape viewers keep controls in an adjacent rail, outside the artwork. Resize updates fitted dimensions and pan limits without changing guesses or the deadline. V1 callers retain the existing default viewer geometry. This supersedes the earlier preview-only landscape sizing instructions.
 
 Publication update: the latest poem/copy/landscape-preview revision below is now live as `0b3680f`, following explicit approval. See docs/HOSTING.md for verification. Its “not yet published” wording is historical; do not redeploy automatically.
