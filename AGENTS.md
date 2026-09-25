@@ -2,6 +2,8 @@
 
 ## V2 daily landscape collection — current branch
 
+Publication update: the refinement below is now live on V2 as `a38350e`, following explicit commit/push/deploy approval on September 25, 2026. The quoted daily poems contain at most two sentences. All 39 tests, typecheck, build and collection validation passed; see `docs/HOSTING.md` for release verification. Earlier “not yet published” wording below records the pre-release milestone.
+
 Local refinement (not yet published): hold either painting for 450ms or use its quiet 44px-target expand icon beside the caption, outside the artwork, to open fitted full-screen inspection during play or results. In play, marking/Remember still work in the viewer and the deadline never pauses; fifth confirmation or expiry closes it. Result inspection retains found/missed overlays and Hide markers, and Fit on the comparison page restores scrolling. Keep both paintings stacked; on sufficiently wide, short screens use distinct header/status/control sidebar rows, never overlapping grid cells. Other sizes retain the centered stack, and results retain the centered score/share/answer flow. The answer heading is “What was different?”. The landing instruction is “Find the differences between the Dream and the Memory.” Each of the 120 card IDs has its own original, spoiler-free rhyming couplet in src/v2/dreamVerses.ts; the verse follows the daily artwork, remains stable on reload, and repeats with the 120-card rotation. No network quote service or storage migration.
 
 The user authorized finishing all 120 NEW landscape cards, then committing, pushing and deploying to the existing V2 Static Site. Do not publish a partial collection. This section overrides older V1/sample instructions below for V2.

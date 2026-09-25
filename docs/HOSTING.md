@@ -1,5 +1,13 @@
 # Hosted Dreamerie playtest
 
+## V2 art inspection and daily verses — September 25, 2026
+
+Release `a38350ea2a8a6f01e6688e89d87d0f45f16a5010` is live at https://dreamerie-v2-playtest.onrender.com after explicit commit/push/deploy approval. Render deployment `dep-dar7hrnlot8c73eolufg` reports **Deploy succeeded / Live**, duration 39.4 seconds, with the site-live log at 08:37:24 CDT. GitHub Actions run `36141915324` succeeded. No settings, plan, infrastructure, artwork geometry or saved attempts changed.
+
+All 39 tests, typecheck, production build and 120-pair collection validation passed locally; Render repeated the tests and build successfully. Public V2 returns HTTP 200 with `index-Vadr8Aq-.js` / `index-B_VQOHtr.css`. Hosted Chrome verified the new landing instruction and quoted, artwork-matched poem, “What was different?”, caption-side Expand controls, the expanded result artwork with all five missed outlines, and close/focus return. The prior `0/5 · 0:05` result survived reload without clearing storage. Browser error logs were empty. Local pre-release checks covered responsive layouts, active expanded guessing and expiry; physical-phone hold/pinch still needs owner acceptance.
+
+V1 remains HTTP 200 with unchanged `index-_JQJYvTQ.js` / `index-B1DxDp6W.css`; remote main and `prototype/version-1` remain `4952a01`. This documentation-only follow-up records publication and needs no redeployment. Earlier not-yet-published notes describe the pre-release milestone.
+
 ## V2 result layout and copy polish — September 25, 2026
 
 Release `2adf4ee44ebddea70621cb96d86d85b54ffa4216` is live at https://dreamerie-v2-playtest.onrender.com after explicit commit/push/deploy approval. Render deployment `dep-dar0qn60tbcc738jabh0` reports **Deploy succeeded / Live** (33.4 seconds; live at 00:58:20 CDT). GitHub Actions run `36100652015` succeeded. No hosting settings, plan, infrastructure or saved attempts changed.
