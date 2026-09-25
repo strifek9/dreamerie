@@ -2,6 +2,8 @@
 
 ## V3 dream ritual — current development
 
+Publication update: V3 `cb15010` is live on `dreamerie-playtest.onrender.com` after explicit approval. See docs/HOSTING.md. The service is still configured to main, so future approved V3 deployments must select the exact V3 commit; do not deploy latest main accidentally. V2 remains unchanged. Earlier local/not-yet-published instructions below describe the pre-release milestone; do not publish further changes automatically.
+
 The user approved trying the first design-review package as Version 3: bespoke vector crescent-D/wandering-star identity, five explicit guess fragments, clearer miss/repeat feedback, kind score-aware results, and optional paired close-up answer inspection after completion only. No postcard/journal yet. V3 is developed on `prototype/v3-dream-ritual`, based on V2 `561a064`; V2 remains preserved on `prototype/v2-landscape` and V1 on `prototype/version-1` / main (`4952a01`).
 
 Planned publication destination is the existing V1 site `dreamerie-playtest.onrender.com`, replacing its frontend, NOT the V2 static playtest site. This overrides older V2-only destination instructions. Do not deploy, change Render settings, remove disks/data, or alter hosting plans during this local milestone; wait for explicit publication approval. No automatic commit/push.

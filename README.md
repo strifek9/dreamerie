@@ -1,5 +1,7 @@
 # DREAMERIE
 
+V3 is now live at https://dreamerie-playtest.onrender.com as `cb15010`, replacing the V1 frontend after approval. All 44 tests and release checks passed. V1 remains preserved in Git; the V2 playtest site is unchanged. See `docs/HOSTING.md` for verification and exact-commit deployment instructions. “Local preview” notes below describe the pre-release milestone.
+
 ## Version 3 — the daily dream ritual (local preview)
 
 V3 builds on the 120-card V2 collection with a custom crescent-D/wandering-star mark, five visible guess fragments, explicit total-guess guidance, distinct repeat/miss feedback, score-aware result language and a paired answer-inspection dialog. Choose an answer under “What was different?” to compare matching enlarged crops; Previous/Next explores all five after completion. Scoring, daily timing, image geometry, saved collection attempts and text sharing are unchanged. The postcard and journal remain future work.

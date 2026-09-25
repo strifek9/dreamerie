@@ -1,5 +1,13 @@
 # Hosted Dreamerie playtest
 
+## V3 released over V1 — September 25, 2026
+
+Release `cb150106179e122973d54aadae1fbf8f0b474c17` is live at https://dreamerie-playtest.onrender.com following explicit commit/push/deploy approval. Existing Web Service `srv-daml13cri2ms73dpouk0`, deployment `dep-daraq8o93c1s73es5vt0`, reports **Deploy succeeded / Live**, with the service-live log at 12:21:56 PM CDT. The exact V3 commit was manually selected from `prototype/v3-dream-ritual`; the service's configured branch remains main. For future V3 releases select the exact approved commit, NOT “Deploy latest commit” from main. No hosting settings, Blueprint, plan, environment, disk or database changed.
+
+All 44 tests, typecheck, production build and 120-pair collection validation passed locally; Render repeated tests/build successfully. GitHub Actions run `36166213496` has a completed successful `check` job. Public homepage returns HTTP 200 with `index-i08NEZjB.js` / `index-BlRzzie2.css`; `/api/health` returns `{ "ok": true }`. The logo and both daily artwork sources return 200. Hosted Chrome at 390×844 verified Version 3 branding, total-guess guidance, enabled Start, optional help, preview zoom and close/focus return, with no browser errors. No hosted round was started, and no site storage was cleared. Responsive gameplay, feedback and answer inspection were tested locally before release; physical-device acceptance remains with the owner.
+
+The separate V2 site remains HTTP 200 with unchanged `index-BQHV4NK0.js` / `index-C31VduYi.css`. Remote V2 branch remains `561a064`; main and `prototype/version-1` remain `4952a01`. This documentation-only follow-up records publication and needs no redeployment. Local-preview/publication-plan wording below is historical.
+
 ## V3 publication plan — not yet deployed
 
 The user designated V3 to replace the frontend at https://dreamerie-playtest.onrender.com (the current V1 site), not the V2 Static Site. Local branch `prototype/v3-dream-ritual` starts at V2 `561a064`; the prior V1 implementation remains on `prototype/version-1` / main at `4952a01`, and V2 remains on `prototype/v2-landscape`. This overrides older V2-only destination restrictions for a future explicitly approved release. No Render settings, plan, disk, database or environment were changed during V3 development. Before publishing, inspect the existing V1 service/build path; deploy the reviewed exact V3 commit without deleting preserved data, recreating infrastructure or changing the plan. Keep V2 online unchanged.
