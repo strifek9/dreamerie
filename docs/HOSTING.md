@@ -1,5 +1,13 @@
 # Hosted Dreamerie playtest
 
+## V2 result layout and copy polish — September 25, 2026
+
+Release `2adf4ee44ebddea70621cb96d86d85b54ffa4216` is live at https://dreamerie-v2-playtest.onrender.com after explicit commit/push/deploy approval. Render deployment `dep-dar0qn60tbcc738jabh0` reports **Deploy succeeded / Live** (33.4 seconds; live at 00:58:20 CDT). GitHub Actions run `36100652015` succeeded. No hosting settings, plan, infrastructure or saved attempts changed.
+
+The release updates landing copy, preserves painting size/zoom at completion, retains the centered score/share block, and centers the answer section with the heading “The Five Differences”. All 38 tests, typecheck, build and collection validation passed locally; Render repeated the tests/build successfully. Public V2 returns 200 with `index-B0iAYF8X.js` / `index-CpoIyZtI.css`. Hosted Chrome verified the exact landing text, title-case answer heading, shared horizontal center of paintings/heading/list, and unchanged saved `0/5 · 0:05` result after reload. Browser errors were empty. No storage was cleared.
+
+V1 remains 200 with unchanged `index-_JQJYvTQ.js` / `index-B1DxDp6W.css` bundles. This documentation-only follow-up records the release and needs no redeployment. Physical-phone gesture acceptance remains separate from browser checks.
+
 ## V2 120-card daily collection — September 25, 2026
 
 Release `0d4636481659904c88c174ba5b9cfc2491215825` is live at https://dreamerie-v2-playtest.onrender.com. The user explicitly approved finishing all 120 cards before commit, push and deployment. Branch `prototype/v2-landscape` was pushed without rewriting history. Render Static Site `srv-daqp97vlk1mc73ejvdk0`, deployment `dep-dar08pvlot8c73dvhuf0`, reports **Deploy succeeded / Live** (36.1 seconds; live at 00:20:10 CDT). GitHub Actions run `36097962546` succeeded. No hosting plan, environment, access, database, disk or auto-deployment setting changed.
