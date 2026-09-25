@@ -173,7 +173,7 @@ export function createShareText(
     `Dreamerie #${dreamNumber}`,
     `${result.accuracy}/5 · ${formatClock(result.elapsedSeconds)}`,
     tiles,
-    'Find the five differences before the dream fades.',
+    'Your turn to dream.',
     createPlayUrl(playUrl),
   ].join('\n')
 }

@@ -343,7 +343,7 @@ test('overlap allowance scales with the artwork on phone, desktop and zoomed vie
 test('share text reports the Wordle-style score without revealing locations', () => {
   const result = { accuracy: 2, elapsedSeconds: 67, reason: 'guesses' as const }
   const text = createShareText(42, result, differences, [differences[0].id, differences[3].id], 'https://example.com/dreamerie/?review=card-022#private')
-  assert.equal(text, 'Dreamerie #42\n2/5 · 1:07\n🟪⬛⬛🟪⬛\nFind the five differences before the dream fades.\nhttps://example.com/dreamerie/')
+  assert.equal(text, 'Dreamerie #42\n2/5 · 1:07\n🟪⬛⬛🟪⬛\nYour turn to dream.\nhttps://example.com/dreamerie/')
   for (const difference of differences) assert.ok(!text.includes(difference.label))
 })
 
