@@ -1,5 +1,13 @@
 # Hosted Dreamerie playtest
 
+## V2 stable result scrolling and shorter help — September 25, 2026
+
+Release `84176e4346baa5b35eb113d1990068182feb2b6c` is live at https://dreamerie-v2-playtest.onrender.com after explicit commit/push/deploy approval. Render deployment `dep-darac75g1s2s73ame880` reports **Deploy succeeded / Live**, duration 44.7 seconds; site-live log at 11:50:16 CDT. All 41 tests, typecheck, build and collection validation passed locally; Render repeated tests/build successfully. Existing bundle-size advisory only.
+
+Public V2 returns HTTP 200 with `index-BQHV4NK0.js` / `index-C31VduYi.css`. Hosted Chrome verified the removed help sentence, stable `svh` board sizing, and unchanged saved `0/5 · 0:05` result. At 390×664 the board remained 277.17px wide at page top, bottom (scroll 587px), and back at top. Browser errors were empty and temporary viewport sizing was reset. Physical-phone browser-bar collapse remains an owner acceptance check; desktop emulation cannot reproduce it. No saved data or hosting settings changed. V1 remains HTTP 200 with unchanged `index-_JQJYvTQ.js` / `index-B1DxDp6W.css`.
+
+This documentation-only follow-up needs no redeployment. Older not-yet-published notes below and in README record pre-release milestones.
+
 ## V2 full-stage inspection and landing buttons — September 25, 2026
 
 Release `99737558cf92d67a7863ce8fbe40e37a4b2c7843` is live at https://dreamerie-v2-playtest.onrender.com after explicit commit/push/deploy approval. Render deployment `dep-dara3eh42hec73di4p30` reports **Deploy succeeded / Live**, duration 42.8 seconds; site-live log at 11:31:32 CDT. GitHub Actions run `36161093335` succeeded. No hosting settings, plans, saved data or V1 deployment changed.

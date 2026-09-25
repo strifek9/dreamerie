@@ -2,6 +2,8 @@
 
 ## Version 2 — 120 daily landscape dreams
 
+Publication update: the scrolling fix below and shorter help tip are live as `84176e4`. All 41 tests and release checks passed; hosted results retain their size while scrolling and preserve saved progress. See `docs/HOSTING.md`. Test actual collapsing browser bars on a physical phone.
+
 Local scroll-stability fix (not yet published): inline paintings use stable small-viewport height in play and results, so phone browser bars hiding/showing do not resize the pair while scrolling. Expanded inspection, scoring and saved attempts are unchanged. Suggested commit: `fix(v2): keep paintings stable during result scrolling`.
 
 Checks: all 41 tests, typecheck and build pass (existing bundle-size advisory only). At 390×664, the pair stayed 277.17px wide during play, after the fifth guess, at the bottom of results and back at the top. Landscape 844×390 and desktop 1440×900 still adapt without horizontal overflow. Browser error logs were empty. Desktop viewport emulation cannot reproduce a physical phone's collapsing browser bars; check that behavior on-device after publication.
