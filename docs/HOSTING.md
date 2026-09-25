@@ -1,5 +1,15 @@
 # Hosted Dreamerie playtest
 
+## V2 120-card daily collection — September 25, 2026
+
+Release `0d4636481659904c88c174ba5b9cfc2491215825` is live at https://dreamerie-v2-playtest.onrender.com. The user explicitly approved finishing all 120 cards before commit, push and deployment. Branch `prototype/v2-landscape` was pushed without rewriting history. Render Static Site `srv-daqp97vlk1mc73ejvdk0`, deployment `dep-dar08pvlot8c73dvhuf0`, reports **Deploy succeeded / Live** (36.1 seconds; live at 00:20:10 CDT). GitHub Actions run `36097962546` succeeded. No hosting plan, environment, access, database, disk or auto-deployment setting changed.
+
+All 120 new landscape pairs are playable, with 600 authored answers and daily rotation. All 38 tests, typecheck and build passed locally and in the release pipeline. The collection validator passed. Every answer was visually reviewed in enlarged production-compositor crops. All 246 published PNG sources (240 pair sources and six targeted corrections) returned HTTP 200 with image/png content type. The homepage returns 200 with `index-C1_eCHQI.js` / `index-BwBdUYdN.css`.
+
+Hosted Chrome at 390×844 verified Daily Dream #2 artwork, Start, no development reset controls, tapping without spending a guess, confirmation consuming exactly one, reload preserving the guess count and running deadline, and completion immediately after the fifth confirmation. The saved `0/5 · 0:53` verification result survived reload. All five answers appeared, and the spoiler-free share message included the score, elapsed time, five tiles and the clean public play link. Browser error logs were empty. Site data was not cleared; the verification attempt remains saved in that checking browser. Physical phone gestures/native sharing and real-player difficulty calibration remain owner acceptance checks.
+
+V1 still returns 200 with unchanged `index-_JQJYvTQ.js` / `index-B1DxDp6W.css` bundles. Remote main and `prototype/version-1` remain `4952a01`. A documentation-only follow-up records this verification and needs no deployment. Earlier records below are historical.
+
 ## V2 answer-image scrolling — September 24, 2026
 
 Release `82aafabced58c9cfea85e5231363ad88aa407d02` is live at https://dreamerie-v2-playtest.onrender.com after explicit commit/push/deploy approval. Existing V2 Static Site deployment `dep-daqq0k8jo6nc73dke2hg` reports **Deploy succeeded / Live**, duration 22.9 seconds. GitHub Actions run `36066058717` succeeded. No hosting settings or saved data changed.

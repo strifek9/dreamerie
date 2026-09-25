@@ -2,7 +2,7 @@
 
 ## Version 2 — 120 daily landscape dreams
 
-The V2 collection now contains **120 new playable landscape pairs**, with **five authored differences each (600 answers)**. The original portrait collection and the first V2 teacup sample are preserved. Only the existing V2 site is authorized for this release: https://dreamerie-v2-playtest.onrender.com. See [hosting verification](docs/HOSTING.md) for deployment status.
+The V2 collection now contains **120 new playable landscape pairs**, with **five authored differences each (600 answers)**. The original portrait collection and the first V2 teacup sample are preserved. **Play online:** https://dreamerie-v2-playtest.onrender.com — release `0d46364`, deployed and verified September 25, 2026. All 246 published artwork sources are reachable, release checks passed, and V1 remains unchanged. See [hosting verification](docs/HOSTING.md).
 
 Each day's painting follows the existing painterly, surreal card style. The Memory uses five carefully bounded areas from its edited counterpart over the unchanged Dream; incidental generation drift outside those areas is excluded. Native PNGs are preserved, with six targeted correction sources. Every answer has been inspected in enlarged production-rendered crops. Difficulty labels are editorial estimates; real-player calibration remains useful.
 
