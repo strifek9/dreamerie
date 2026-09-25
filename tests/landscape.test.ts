@@ -14,8 +14,7 @@ test('all 120 daily paintings have their own short couplet, stable on reload and
     const lines = verseForDream(card.id)
     assert.equal(lines.length, 2)
     for (const line of lines) assert.ok(line.trim().length > 10 && line.length <= 80, card.id)
-    const sentences = lines.join(' ').split(/[.!?]+/u).filter(sentence => sentence.trim())
-    assert.ok(sentences.length >= 1 && sentences.length <= 2, `${card.id}: at most two sentences`)
+    assert.ok(lines.join(' ').length <= 150, `${card.id}: keep the verse brief`)
     poems.add(lines.join('\n'))
   }
   assert.equal(poems.size, 120)

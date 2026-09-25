@@ -70,9 +70,9 @@ function Round({ dream, day, playtest, onNew }: { dream: LandscapeDream; day: nu
       <p className="eyebrow">{dream.title}</p>
       <button className="v2-preview" onClick={() => setPreviewZoom(true)} aria-label="Enlarge the dream preview"><img src={dream.original} alt={dream.title}/></button>
       <p className="v2-poem">“{verse[0]}<br/>{verse[1]}”</p>
-      <h1>Find the differences between the Dream and the Memory.</h1>
+      <h1>Can you spot the differences between the dream and the memory?</h1>
       <p className="v2-rules">5 guesses · 2 minutes · No pauses<br/>Tap to guess, <strong>Remember</strong> to confirm.</p>
-      {phase === 'play' && <p role="status">Your dream is still fading. <strong>{formatClock(recallLeft)}</strong> left · {getRemainingGuesses(recall)} guesses left.</p>}
+      {phase === 'play' && <p role="status">The dream is fading... <strong>{formatClock(recallLeft)}</strong> left · {getRemainingGuesses(recall)} guesses left.</p>}
       {assetError && <p role="alert">The paintings couldn’t load. Refresh before starting.</p>}
       <div className="v2-start"><button className="primary-action" disabled={busy || Boolean(storageError) || !assetsReady} onClick={() => { setHome(false); if (phase === 'rules') void dispatch({ type: 'start' }) }}>{phase === 'rules' ? 'Start' : result ? 'View result' : 'Continue'}</button></div>
     </section> : <>

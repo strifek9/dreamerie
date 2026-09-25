@@ -63,6 +63,18 @@ html:has(.v2-app) { scrollbar-gutter: stable; }
 .v2-dev { flex-wrap: wrap; }
 .v2-app .viewer-header { flex-wrap: wrap; }
 .v2-app .viewer-status { max-width: 100%; }
+/* A short landscape preview gives the painting the full available height.
+   Keep its title/hint in a quiet rail and X immediately beside the artwork. */
+@media (orientation: landscape) and (max-height: 45rem) {
+  .v2-app .dream-viewer--preview[open] { grid-template-columns: minmax(0, 1fr) clamp(6rem, 18vw, 11rem); grid-template-rows: minmax(0, 1fr) auto; column-gap: .6rem; }
+  .v2-app .dream-viewer--preview .viewer-stage { grid-column: 1; grid-row: 1 / -1; }
+  .v2-app .dream-viewer--preview .viewer-artwork { width: min(100cqw, calc(100cqh * 1.7768)); height: min(56.2835cqw, 100cqh); margin-top: 0; }
+  .v2-app .dream-viewer--preview .viewer-header { grid-column: 2; grid-row: 1; align-self: center; min-width: 0; min-height: 0; padding-top: 3.5rem; gap: .5rem; }
+  .v2-app .dream-viewer--preview .viewer-header h2 { flex-basis: 100%; font-size: .9rem; overflow-wrap: anywhere; }
+  .v2-app .dream-viewer--preview .viewer-footer { grid-column: 2; grid-row: 2; padding-bottom: .25rem; }
+  .v2-app .dream-viewer--preview .inspection-hint { margin: 0; font-size: .7rem; }
+  .v2-app .dream-viewer--preview .viewer-close { top: 0; bottom: auto; right: auto; left: calc(100% + .5rem); }
+}
 @media (max-height: 42rem) and (orientation: portrait) {
   .v2-preview { margin-block: .5rem; }
   .v2-welcome h1 { margin-top: .5rem; }
@@ -79,6 +91,12 @@ html:has(.v2-app) { scrollbar-gutter: stable; }
 }
 /* A sidebar only when both a useful painting and a readable control column fit.
    Distinct rows prevent status and controls from overlapping at short heights. */
+@media (orientation: landscape) and (max-height: 25rem) {
+  .v2-welcome h1 { font-size: 1.15rem; margin-block: .35rem; }
+  .v2-poem { font-size: .8rem; line-height: 1.35; }
+  .v2-rules { font-size: .75rem; line-height: 1.4; margin-block: .35rem; }
+  .v2-start .primary-action { min-height: 44px; padding-block: .55rem; }
+}
 @media (min-width: 40rem) and (max-height: 45rem) and (min-aspect-ratio: 3/2) {
   .v2-app { --board-limit: max(14rem, min(calc((100dvh - 7.5rem - env(safe-area-inset-bottom)) * .8884), calc(100vw - 18rem))); }
   .v2-round:not(.v2-finished) { display: grid; justify-content: center; align-content: start; grid-template-columns: minmax(0, var(--board-limit)) minmax(13rem, 16rem); grid-template-rows: auto auto 1fr; gap: .6rem 1.25rem; }
