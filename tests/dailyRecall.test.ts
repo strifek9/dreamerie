@@ -3,6 +3,7 @@ import test from 'node:test'
 import { existsSync } from 'node:fs'
 import { authoredDreams } from '../src/data/authoredDreams.ts'
 import { constrainView, imagePoint, RESTING_VIEW, zoomAt } from '../src/game/imageInspection.ts'
+
 import { changeSession, dailyStorageKey, parseSession, sessionSnapshot, updateStoredSession, type DailySession } from '../src/game/dailySession.ts'
 import {
   GAME_CONFIG,
@@ -20,6 +21,27 @@ import {
 } from '../src/game/dailyRecall.ts'
 
 const differences = createDifferences('card-022')
+
+test('full-stage inspection centers letterboxed axes and bounds pan against the larger window', () => {
+  const portrait = { x: 1, y: 3.4 }
+  assert.deepEqual(constrainView({ scale: 2, x: 10, y: 10 }, portrait), { scale: 2, x: .5, y: 0 })
+  const tallZoom = constrainView({ scale: 4, x: -10, y: 10 }, portrait)
+  assert.equal(tallZoom.x, -1.5)
+  assert.ok(Math.abs(tallZoom.y - .3) < 1e-9)
+  assert.deepEqual(constrainView({ scale: 2, x: 1, y: 1 }, { x: 3, y: 1 }), { scale: 2, x: 0, y: .5 })
+  assert.deepEqual(constrainView(tallZoom, { x: 4, y: 4 }), { scale: 4, x: 0, y: 0 })
+  assert.deepEqual(constrainView({ ...tallZoom, scale: 1 }, portrait), RESTING_VIEW)
+  assert.equal(zoomAt(RESTING_VIEW, 2, { x: .25, y: .1 }, portrait).y, 0)
+})
+
+test('full-stage taps use the enlarged painting, including areas beyond the original fitted frame', () => {
+  const fitted = { left: 10, top: 350, width: 360, height: 200 }
+  const zoomed = { left: -170, top: 250, width: 720, height: 400 }
+  const point = { x: 190, y: 280 }
+  assert.equal(imagePoint(point, fitted), null)
+  assert.deepEqual(imagePoint(point, zoomed), { x: .5, y: .075 })
+  assert.equal(imagePoint({ x: 190, y: 200 }, zoomed), null)
+})
 
 const startTime = 1_800_000_000_000
 const newSession = () => changeSession(null, { type: 'start' }, 'card-022', differences, startTime)!

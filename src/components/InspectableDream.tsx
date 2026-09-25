@@ -11,19 +11,36 @@ type CanvasProps = {
   onView?: (view: ImageView) => void
   selectable?: boolean
   pendingPoint?: Point | null
+  fitAspectRatio?: number
 }
 
 /** The page scrolls normally; only an explicitly expanded painting captures pan/zoom. */
-export function DreamCanvas({ children, label, onTap, onExpand, view = RESTING_VIEW, onView, selectable = false, pendingPoint }: CanvasProps) {
+export function DreamCanvas({ children, label, onTap, onExpand, view = RESTING_VIEW, onView, selectable = false, pendingPoint, fitAspectRatio }: CanvasProps) {
   const canvas = useRef<HTMLButtonElement>(null)
+  const fittedFrame = useRef<HTMLSpanElement>(null)
+  const [viewport, setViewport] = useState<Point>({ x: 1, y: 1 })
+  const displayedView = constrainView(view, viewport)
   const layer = useRef<HTMLSpanElement>(null)
   const hold = useRef<ReturnType<typeof setTimeout> | null>(null)
   const points = useRef(new Map<number, Point>())
   const keyboardPoint = useRef<Point>({ x: .5, y: .5 })
   if (pendingPoint) keyboardPoint.current = pendingPoint
   const currentView = useRef(view)
-  currentView.current = view
+  currentView.current = displayedView
   const gesture = useRef({ origin: { x: 0, y: 0 }, view, distance: 0, moved: false })
+
+  useEffect(() => {
+    if (!fitAspectRatio || !canvas.current || !fittedFrame.current) return
+    const measure = () => {
+      const outer = canvas.current!.getBoundingClientRect()
+      const fitted = fittedFrame.current!.getBoundingClientRect()
+      if (fitted.width && fitted.height) setViewport({ x: outer.width / fitted.width, y: outer.height / fitted.height })
+    }
+    const observer = new ResizeObserver(measure)
+    observer.observe(canvas.current)
+    measure()
+    return () => observer.disconnect()
+  }, [fitAspectRatio])
 
   function clearHold() {
     if (hold.current !== null) clearTimeout(hold.current)
@@ -42,12 +59,12 @@ export function DreamCanvas({ children, label, onTap, onExpand, view = RESTING_V
     if (!element || !onView) return
     const wheel = (event: WheelEvent) => {
       event.preventDefault()
-      const bounds = element.getBoundingClientRect()
-      onView(zoomAt(currentView.current, currentView.current.scale * (event.deltaY < 0 ? 1.16 : .86), { x: (event.clientX - bounds.left) / bounds.width, y: (event.clientY - bounds.top) / bounds.height }))
+      const bounds = (fittedFrame.current ?? element).getBoundingClientRect()
+      onView(zoomAt(currentView.current, currentView.current.scale * (event.deltaY < 0 ? 1.16 : .86), { x: (event.clientX - bounds.left) / bounds.width, y: (event.clientY - bounds.top) / bounds.height }, viewport))
     }
     element.addEventListener('wheel', wheel, { passive: false })
     return () => element.removeEventListener('wheel', wheel)
-  }, [onView])
+  }, [onView, viewport])
 
   function start(event: PointerEvent<HTMLButtonElement>) {
     if (event.button !== 0 || points.current.size >= 2) return
@@ -79,10 +96,10 @@ export function DreamCanvas({ children, label, onTap, onExpand, view = RESTING_V
     const dy = midpoint.y - gesture.current.origin.y
     if (second || Math.hypot(dx, dy) > MOVE_THRESHOLD) { clearHold(); gesture.current.moved = true }
     if (!onView || !gesture.current.moved) return
-    const bounds = event.currentTarget.getBoundingClientRect()
+    const bounds = (fittedFrame.current ?? event.currentTarget).getBoundingClientRect()
     const scale = second ? gesture.current.view.scale * Math.hypot(first.x - second.x, first.y - second.y) / Math.max(1, gesture.current.distance) : gesture.current.view.scale
-    const zoomed = zoomAt(gesture.current.view, scale, { x: (gesture.current.origin.x - bounds.left) / bounds.width, y: (gesture.current.origin.y - bounds.top) / bounds.height })
-    onView(constrainView({ ...zoomed, x: zoomed.x + dx / bounds.width, y: zoomed.y + dy / bounds.height }))
+    const zoomed = zoomAt(gesture.current.view, scale, { x: (gesture.current.origin.x - bounds.left) / bounds.width, y: (gesture.current.origin.y - bounds.top) / bounds.height }, viewport)
+    onView(constrainView({ ...zoomed, x: zoomed.x + dx / bounds.width, y: zoomed.y + dy / bounds.height }, viewport))
   }
 
   function end(event: PointerEvent<HTMLButtonElement>) {
@@ -98,7 +115,7 @@ export function DreamCanvas({ children, label, onTap, onExpand, view = RESTING_V
     }
   }
 
-  return <button ref={canvas} type="button" className={`dream-canvas${onView ? ' dream-canvas--inspect' : ''}`}
+  return <button ref={canvas} type="button" className={`dream-canvas${onView ? ' dream-canvas--inspect' : ''}${fitAspectRatio ? ' dream-canvas--full-stage' : ''}`}
     aria-label={`${label}${selectable ? ' Arrow keys move your marker.' : ''}`} onPointerDown={start} onPointerMove={move} onPointerUp={end}
     onPointerCancel={() => { clearHold(); points.current.clear(); gesture.current.moved = true }}
     onLostPointerCapture={(event) => { if (points.current.has(event.pointerId)) { clearHold(); points.current.clear(); gesture.current.moved = true } }}
@@ -114,14 +131,14 @@ export function DreamCanvas({ children, label, onTap, onExpand, view = RESTING_V
       }
       keyboardPoint.current = point
       onTap?.(point)
-      if (onView) onView(constrainView({ ...currentView.current, x: (.5 - point.x) * currentView.current.scale, y: (.5 - point.y) * currentView.current.scale }))
+      if (onView) onView(constrainView({ ...currentView.current, x: (.5 - point.x) * currentView.current.scale, y: (.5 - point.y) * currentView.current.scale }, viewport))
     }}
-    style={{ '--zoom': view.scale, '--pan-x': `${view.x * 100}%`, '--pan-y': `${view.y * 100}%` } as CSSProperties}>
-    <span className="zoom-layer" ref={layer}>{children}</span>
+    style={{ '--zoom': displayedView.scale, '--pan-x': `${displayedView.x * 100}%`, '--pan-y': `${displayedView.y * 100}%`, '--art-ratio': fitAspectRatio } as CSSProperties}>
+    {fitAspectRatio ? <span className="canvas-fit-frame" ref={fittedFrame}><span className="zoom-layer" ref={layer}>{children}</span></span> : <span className="zoom-layer" ref={layer}>{children}</span>}
   </button>
 }
 
-export function DreamViewer({ children, title, onClose, onTap, status, action, simpleZoom = false }: {
+export function DreamViewer({ children, title, onClose, onTap, status, action, simpleZoom = false, fitAspectRatio }: {
   children: ReactNode
   title: string
   onClose: () => void
@@ -129,6 +146,7 @@ export function DreamViewer({ children, title, onClose, onTap, status, action, s
   status?: ReactNode
   action?: ReactNode
   simpleZoom?: boolean
+  fitAspectRatio?: number
 }) {
   const dialog = useRef<HTMLDialogElement>(null)
   const [view, setView] = useState(RESTING_VIEW)
@@ -145,7 +163,7 @@ export function DreamViewer({ children, title, onClose, onTap, status, action, s
     }
   }, [])
 
-  return <dialog ref={dialog} className={`dream-viewer${simpleZoom ? ' dream-viewer--preview' : ''}`} aria-labelledby="viewer-title"
+  return <dialog ref={dialog} className={`dream-viewer${simpleZoom ? ' dream-viewer--preview' : ''}${fitAspectRatio ? ' dream-viewer--full-stage' : ''}`} aria-labelledby="viewer-title"
     onCancel={(event) => { event.preventDefault(); onClose() }}>
     <header className="viewer-header">
       <h2 id="viewer-title">{title}</h2>
@@ -155,7 +173,7 @@ export function DreamViewer({ children, title, onClose, onTap, status, action, s
       <div className="viewer-artwork">
         <button className="viewer-close" autoFocus aria-label="Close image viewer" onClick={onClose}>×</button>
         <DreamCanvas label={simpleZoom ? `${title}. Click to ${view.scale > 1 ? 'zoom out' : 'zoom in'}.` : `${title}. ${onTap ? 'Tap to place a guess. ' : ''}Pinch or scroll to zoom; drag to explore.`}
-          view={view} onView={setView} onTap={simpleZoom ? (point) => setView(view.scale > 1 ? RESTING_VIEW : zoomAt(view, 2, point)) : onTap} selectable={!simpleZoom && Boolean(onTap)}>
+          fitAspectRatio={fitAspectRatio} view={view} onView={setView} onTap={simpleZoom ? (point) => setView(view.scale > 1 ? RESTING_VIEW : zoomAt(view, 2, point)) : onTap} selectable={!simpleZoom && Boolean(onTap)}>
           {children}
         </DreamCanvas>
       </div>

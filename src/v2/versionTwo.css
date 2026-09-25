@@ -16,7 +16,7 @@ html:has(.v2-app) { scrollbar-gutter: stable; }
 .v2-welcome h1 { font: 400 clamp(1.5rem, 4vw, 2.2rem) Georgia, serif; margin: 1.3rem 0 .6rem; }
 .v2-rules { font-size: .9rem; line-height: 1.7; color: #ccc6dc; }
 .v2-rules strong { color: #f5f0ff; }
-.v2-start { display: grid; justify-items: center; padding: .4rem; background: #0c0d1bf5; border-radius: 1rem; }
+.v2-start { display: grid; justify-items: center; padding: .4rem; background: transparent; }
 .v2-hint { width: min(26rem, calc(100% - 2rem)); max-height: calc(100dvh - 2rem); padding: 1.3rem; border: 1px solid #c8bee655; border-radius: 1rem; background: #171629; color: #f5f0ff; box-shadow: 0 1rem 4rem #0009; }
 .v2-hint::backdrop { background: #090b1ccc; }
 .v2-hint h2 { margin: 0; font: 400 1.5rem Georgia, serif; }
@@ -63,17 +63,23 @@ html:has(.v2-app) { scrollbar-gutter: stable; }
 .v2-dev { flex-wrap: wrap; }
 .v2-app .viewer-header { flex-wrap: wrap; }
 .v2-app .viewer-status { max-width: 100%; }
-/* A short landscape preview gives the painting the full available height.
+.v2-app .dream-viewer--full-stage .viewer-artwork { width: 100cqw; height: calc(100cqh - 3.25rem); }
+.v2-app .dream-canvas--full-stage { container-type: size; background: transparent; box-shadow: none; border-radius: 0; }
+.v2-app .dream-canvas--full-stage::after { display: none; }
+.canvas-fit-frame { position: absolute; left: 50%; top: 50%; translate: -50% -50%; width: min(100cqw, calc(100cqh * var(--art-ratio))); height: min(calc(100cqw / var(--art-ratio)), 100cqh); }
+.v2-app .dream-viewer--full-stage .viewer-footer .zoom-controls { flex-wrap: wrap; justify-content: center; }
+.v2-app .dream-viewer--full-stage .viewer-footer .primary-action { min-width: 0; }
+/* A short landscape viewer gives the painting the full available height.
    Keep its title/hint in a quiet rail and X immediately beside the artwork. */
 @media (orientation: landscape) and (max-height: 45rem) {
-  .v2-app .dream-viewer--preview[open] { grid-template-columns: minmax(0, 1fr) clamp(6rem, 18vw, 11rem); grid-template-rows: minmax(0, 1fr) auto; column-gap: .6rem; }
-  .v2-app .dream-viewer--preview .viewer-stage { grid-column: 1; grid-row: 1 / -1; }
-  .v2-app .dream-viewer--preview .viewer-artwork { width: min(100cqw, calc(100cqh * 1.7768)); height: min(56.2835cqw, 100cqh); margin-top: 0; }
-  .v2-app .dream-viewer--preview .viewer-header { grid-column: 2; grid-row: 1; align-self: center; min-width: 0; min-height: 0; padding-top: 3.5rem; gap: .5rem; }
-  .v2-app .dream-viewer--preview .viewer-header h2 { flex-basis: 100%; font-size: .9rem; overflow-wrap: anywhere; }
-  .v2-app .dream-viewer--preview .viewer-footer { grid-column: 2; grid-row: 2; padding-bottom: .25rem; }
-  .v2-app .dream-viewer--preview .inspection-hint { margin: 0; font-size: .7rem; }
-  .v2-app .dream-viewer--preview .viewer-close { top: 0; bottom: auto; right: auto; left: calc(100% + .5rem); }
+  .v2-app .dream-viewer--full-stage[open] { grid-template-columns: minmax(0, 1fr) clamp(8rem, 18vw, 11rem); grid-template-rows: minmax(0, 1fr) auto; column-gap: .6rem; }
+  .v2-app .dream-viewer--full-stage .viewer-stage { grid-column: 1; grid-row: 1 / -1; }
+  .v2-app .dream-viewer--full-stage .viewer-artwork { width: 100cqw; height: 100cqh; margin-top: 0; }
+  .v2-app .dream-viewer--full-stage .viewer-header { grid-column: 2; grid-row: 1; align-self: center; min-width: 0; min-height: 0; padding-top: 3.5rem; gap: .5rem; }
+  .v2-app .dream-viewer--full-stage .viewer-header h2 { flex-basis: 100%; font-size: .9rem; overflow-wrap: anywhere; }
+  .v2-app .dream-viewer--full-stage .viewer-footer { grid-column: 2; grid-row: 2; padding-bottom: .25rem; }
+  .v2-app .dream-viewer--full-stage .inspection-hint { margin: 0; font-size: .7rem; }
+  .v2-app .dream-viewer--full-stage .viewer-close { top: 0; bottom: auto; right: auto; left: calc(100% + .5rem); }
 }
 @media (max-height: 42rem) and (orientation: portrait) {
   .v2-preview { margin-block: .5rem; }
