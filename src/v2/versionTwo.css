@@ -25,7 +25,10 @@ html:has(.v2-app) { scrollbar-gutter: stable; }
 .v2-status { display: flex; justify-content: center; align-items: center; gap: clamp(.7rem, 3vw, 2rem); min-height: 2.25rem; font-size: .8rem; }
 .v2-status time { font-size: 1.2rem; font-variant-numeric: tabular-nums; color: var(--moon); }
 .v2-status > span { color: var(--mist); }
-.v2-app { --board-limit: max(14rem, calc((100dvh - 22rem - env(safe-area-inset-bottom)) * .8884)); }
+/* Browser bars expand/collapse while scrolling. Keep the inline pair based on
+   the stable small viewport in both play and results; rotation still resizes it.
+   The expanded viewer intentionally continues to use the available full stage. */
+.v2-app { --board-limit: max(14rem, calc((100svh - 22rem - env(safe-area-inset-bottom)) * .8884)); }
 .v2-board { width: min(100%, 60rem, var(--board-limit)); margin: .25rem auto .6rem; display: grid; gap: .5rem; }
 .v2-board figure { margin: 0; min-width: 0; }
 .v2-board figcaption { display: flex; justify-content: space-between; align-items: center; min-height: 1rem; margin: 0 0 .2rem; font: .8rem/1.25 Georgia, serif; color: #d8d1e6; }
@@ -104,7 +107,7 @@ html:has(.v2-app) { scrollbar-gutter: stable; }
   .v2-start .primary-action { min-height: 44px; padding-block: .55rem; }
 }
 @media (min-width: 40rem) and (max-height: 45rem) and (min-aspect-ratio: 3/2) {
-  .v2-app { --board-limit: max(14rem, min(calc((100dvh - 7.5rem - env(safe-area-inset-bottom)) * .8884), calc(100vw - 18rem))); }
+  .v2-app { --board-limit: max(14rem, min(calc((100svh - 7.5rem - env(safe-area-inset-bottom)) * .8884), calc(100vw - 18rem))); }
   .v2-round:not(.v2-finished) { display: grid; justify-content: center; align-content: start; grid-template-columns: minmax(0, var(--board-limit)) minmax(13rem, 16rem); grid-template-rows: auto auto 1fr; gap: .6rem 1.25rem; }
   .v2-round:not(.v2-finished) .v2-header { grid-column: 2; grid-row: 1; margin: 0; }
   .v2-round:not(.v2-finished) .v2-status { grid-column: 2; grid-row: 2; flex-wrap: wrap; gap: .4rem 1rem; }

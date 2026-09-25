@@ -2,6 +2,18 @@
 
 ## Version 2 — 120 daily landscape dreams
 
+Local scroll-stability fix (not yet published): inline paintings use stable small-viewport height in play and results, so phone browser bars hiding/showing do not resize the pair while scrolling. Expanded inspection, scoring and saved attempts are unchanged. Suggested commit: `fix(v2): keep paintings stable during result scrolling`.
+
+Checks: all 41 tests, typecheck and build pass (existing bundle-size advisory only). At 390×664, the pair stayed 277.17px wide during play, after the fifth guess, at the bottom of results and back at the top. Landscape 844×390 and desktop 1440×900 still adapt without horizontal overflow. Browser error logs were empty. Desktop viewport emulation cannot reproduce a physical phone's collapsing browser bars; check that behavior on-device after publication.
+
+After explicit approval:
+
+```powershell
+git add src/v2/versionTwo.css README.md docs/ART_DIRECTION.md
+git commit -m "fix(v2): keep paintings stable during result scrolling"
+git push origin prototype/v2-landscape
+```
+
 Publication update: the full-stage inspection and transparent landing-button refinement below is now live as `9973755`. All 41 tests, typecheck, build and collection validation passed; hosted phone-size zoom and saved-result persistence were verified. See `docs/HOSTING.md`. Earlier “not yet published” wording records the pre-release milestone.
 
 Latest local refinement (not yet published): the Start/Continue/View result container is transparent, with no separate dark-blue panel. All V2 enlarged viewers use the full available inspection area rather than clipping zoom to the original fitted painting rectangle. At 100% the entire painting is fitted; zoomed artwork can grow into the surrounding space. Empty letterbox taps do not place guesses. Pan/zoom anchors, markers and hit detection remain artwork-relative; short landscape viewers keep controls in an adjacent rail, outside the artwork. Resize updates fitted dimensions and pan limits without changing guesses or the deadline. V1 callers retain the existing default viewer geometry. This supersedes the earlier preview-only landscape sizing instructions.

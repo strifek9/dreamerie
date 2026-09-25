@@ -112,7 +112,7 @@ function GameHint({ onClose, timeLeft }: { onClose: () => void; timeLeft?: numbe
     <h2 id="v2-hint-title">How to play</h2>
     <p>Find five differences between <strong>The Dream</strong> and <strong>The Memory</strong>.</p>
     <p>Tap either painting to place a circle. Tap again to move it. Only <strong>Remember</strong> confirms your guess.</p>
-    <p>You have <strong>five guesses total</strong>. Wrong guesses count too. Find more differences first; faster time breaks a tie.</p>
+    <p>You have <strong>five guesses total</strong>. Wrong guesses count too.</p>
     <p>Hold a painting or choose ⤢ to expand it. You can still mark a guess and Remember in the enlarged view. Pinch or use +/− to zoom.</p>
     <p className="v2-hint-timer">{timeLeft === undefined ? 'Two minutes once you press Start. No pauses.' : `${formatClock(timeLeft)} left · The timer is still running.`}</p>
     <button autoFocus className="primary-action" onClick={onClose}>Got it</button>
