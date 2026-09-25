@@ -2,6 +2,8 @@
 
 ## V3 dream ritual — current development
 
+Publication update: the decoration removal below is live as `d55483c` after explicit approval; all 44 tests and release checks passed. See docs/HOSTING.md. Preserve the undecorated background; local/awaiting-approval wording below is historical. Further changes still require publication approval.
+
 Latest local direction: the user rejected artwork-themed edge decorations. Remove their component/theme helper/styles and keep the quiet undecorated page background. Preserve the crescent/star logo and every other approved UI refinement. This overrides the historical marginalia direction below; do not reintroduce it. Await approval before committing/pushing/deploying this removal.
 
 Publication update: the crescent/simplified-UI refinement below is now live as `66ed2ce` after explicit approval. All 45 tests and release checks passed; see docs/HOSTING.md. Its local/awaiting-review wording is historical. Do not publish further changes without approval.

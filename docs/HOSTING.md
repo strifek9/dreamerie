@@ -1,5 +1,11 @@
 # Hosted Dreamerie playtest
 
+## V3 decoration removal — September 25, 2026
+
+Release `d55483cb36867dd4e97e7d21f43d8c05c12ac67f` is live at https://dreamerie-playtest.onrender.com after explicit approval. Existing service `srv-daml13cri2ms73dpouk0`, deployment `dep-darbstfavr4c73e1u2vg`, reports **Deploy succeeded / Live**, duration 2m48s; service-live log at 1:36:14 PM CDT. Manually selected the exact V3 commit; configured main branch, plans, environment and stored data remain unchanged. Do not deploy latest main for future V3 updates.
+
+All 44 tests, typecheck/build and collection validation passed locally; Render repeated tests/build successfully. GitHub Actions run `36173996215` succeeded. The public site briefly returned 502 during restart, then recovered: homepage and health both return 200, health `{ "ok": true }`, with `index-CjcEUTzw.js` / `index-CJ27ng7e.css`. Hosted browser confirms no edge-decoration elements, retained crescent logo, enabled Start and no errors. No daily round was started or storage cleared. V2 retains `index-BQHV4NK0.js` / `index-C31VduYi.css`. This documentation-only follow-up needs no redeployment.
+
 ## V3 crescent and simplified UI — September 25, 2026
 
 Release `66ed2cea2403c65c1c9acc1b88fbc41137d12ae1` is live at https://dreamerie-playtest.onrender.com after explicit commit/push/deploy approval. Existing Web Service `srv-daml13cri2ms73dpouk0`, deployment `dep-darbknd9fdbs73fqsoe0`, reports **Deploy succeeded / Live**, duration 2m44s; service-live log at 1:18:41 PM CDT. The exact V3 commit was selected manually. Configured branch remains main: future V3 releases must still select the approved exact commit, not deploy latest main. No hosting settings, plans, data, disks or environment changed.

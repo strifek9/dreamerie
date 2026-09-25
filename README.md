@@ -1,5 +1,7 @@
 # DREAMERIE
 
+Publication update: decoration removal is live as `d55483c` at https://dreamerie-playtest.onrender.com. All 44 tests and release checks passed; the live page has the clean background and retained crescent logo. See docs/HOSTING.md. The local-removal note below is now historical.
+
 Local refinement (not yet published): removed the artwork-themed page-edge decorations at the user's request. The crescent logo, compact help circle, simplified copy, responsive layout, gameplay and saved progress are unchanged. Decoration-only implementation and its test were removed; they remain recoverable in Git. Suggested commit: `style(v3): remove themed page-edge decorations`. After approval, stage the reviewed changes with `git add -u`, commit with that message and push `prototype/v3-dream-ritual`; deployment remains a separate explicitly approved step.
 
 Publication update: the crescent and simplified-UI refinement is live at https://dreamerie-playtest.onrender.com as `66ed2ce`. All 45 tests, build/typecheck, artwork validation, GitHub checks and Render deployment passed. Hosted phone-size landing/help were verified without using the daily attempt. V2 remains unchanged. See docs/HOSTING.md; the local-preview notes below now describe this released milestone.
