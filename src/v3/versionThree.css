@@ -58,16 +58,6 @@
 }
 @media (prefers-reduced-motion: reduce) { .v3-fragments .fragment-used { animation: none; } }
 
-/* Quiet marginalia: no layout space, input interception, or motion over clues. */
-.v3-app { position: relative; isolation: isolate; }
-.v3-atmosphere { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; color: #c9bbdc; opacity: .32; }
-.v3-atmosphere--water { color: #a6c7cc; }
-.v3-atmosphere--leaves { color: #c6cfa8; }
-.v3-atmosphere--stars { color: #ddc99b; }
-.v3-edge { position: absolute; top: 8%; height: 84%; width: min(8vw, 7rem); }
-.v3-edge--left { left: 0; }
-.v3-edge--right { right: 0; transform: rotate(180deg); }
-.v3-app.v2-round:not(.v2-finished) .v3-atmosphere { opacity: .12; }
 .v3-app .v2-result { margin: .55rem auto .75rem; }
 .v3-app .v2-result > p[role="status"]:empty { margin: 0; }
 .v3-app .v3-result-stars { margin: .4rem 0 .65rem; }
@@ -80,7 +70,6 @@
 .v3-app .v2-status .v3-fragments { gap: .25rem; }
 .v3-app .v2-status .v3-fragments li { width: 1.2rem; height: 1.2rem; font-size: .75rem; }
 @media (max-width: 40rem) {
-  .v3-edge { width: 12px; opacity: .6; }
   .v3-app .v2-controls { gap: .3rem .65rem; }
 }
 @media (max-width: 22rem) {
@@ -100,11 +89,9 @@
   .v3-app.v2-round:not(.v2-finished) .v2-board { grid-column: 1; grid-row: 1 / 4; margin: 0; align-self: start; }
   .v3-app.v2-round:not(.v2-finished) .v2-controls { grid-column: 2; grid-row: 3; align-self: start; margin: 0; }
   .v3-app.v2-round:not(.v2-finished) .v2-dev, .v3-app.v2-round:not(.v2-finished) .storage-warning { grid-column: 1 / -1; }
-  .v3-app.v2-round:not(.v2-finished) .v3-atmosphere { display: none; }
 }
 @media (min-width: 40rem) and (max-height: 45rem) and (min-aspect-ratio: 3/2) {
   .v3-app.v2-round:not(.v2-finished) .v2-header a { font-size: 1.3rem; gap: .3rem; letter-spacing: .02em; }
   .v3-app.v2-round:not(.v2-finished) .v3-brand-mark { width: 1.9rem; height: 1.9rem; }
   .v3-app.v2-round:not(.v2-finished) .v2-brand-row { gap: .25rem; }
-  .v3-app.v2-round:not(.v2-finished) .v3-atmosphere { display: none; }
 }

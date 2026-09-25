@@ -8,7 +8,6 @@ import { verseForDream } from '../v2/dreamVerses'
 import { differencesFor, landscapeCollection, landscapeDay, landscapeForDay, LANDSCAPE_SESSION_OPTIONS, type LandscapeDream } from '../v2/landscapeCollection'
 import { AnswerInspection } from './AnswerInspection'
 import { MemoryFragments } from './MemoryFragments'
-import { PageAtmosphere } from './PageAtmosphere'
 import { guessFeedback, resultVerse } from './dreamRitual'
 import '../v2/versionTwo.css'
 import './versionThree.css'
@@ -70,7 +69,6 @@ function Round({ dream, day, playtest, onNew }: { dream: LandscapeDream; day: nu
   const guessAction = <button className="primary-action" disabled={!recall.pending || busy || Boolean(storageError)} onClick={() => { if (recall.pending) void dispatch({ type: 'confirm', point: recall.pending, side: pendingSide, expectedCount: recall.confirmed.length }) }}>Remember</button>
   const revealAction = <button className="text-action" onClick={() => setMarkers(!markers)}>{markers ? 'Hide' : 'Show'} markers</button>
   return <main className={`v2-app v3-app ${landing ? 'v2-landing' : 'v2-round'} ${result ? 'v2-finished' : ''}`}>
-    <PageAtmosphere title={dream.title}/>
     <header className="v2-header"><div className="v2-brand-row"><a href="./" aria-label="Dreamerie home" onClick={event => { event.preventDefault(); setHome(true) }}><img className="v3-brand-mark" src="/dreamerie-mark.svg" alt=""/><span>Dreamerie</span></a><button className="v2-hint-toggle" aria-label="How to play" aria-haspopup="dialog" onClick={() => setHintOpen(true)}>?</button></div><span>{playtest ? 'Playtest' : 'Daily Dream'} #{day}</span></header>
     {storageError && <p role="alert" className="storage-warning">{storageError}</p>}
     {landing ? <section className="v2-welcome">
