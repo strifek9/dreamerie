@@ -41,7 +41,7 @@ function Round({ dream, day, playtest, onNew }: { dream: LandscapeDream; day: nu
     }))).then(() => { if (active) setAssetsReady(true) }, () => { if (active) setAssetError(true) })
     return () => { active = false }
   }, [dream])
-  useEffect(() => { if (phase === 'result') { setHome(false); setPreviewZoom(false); setHintOpen(false); setView(RESTING_VIEW) } }, [phase])
+  useEffect(() => { if (phase === 'result') { setHome(false); setPreviewZoom(false); setHintOpen(false) } }, [phase])
   const shareText = result ? createShareText(day, result, differences, recall.foundDifferenceIds, location.href).replace(`Dreamerie #${day}`, `Dreamerie V2 · ${playtest ? 'Playtest' : 'Daily Dream'} #${day}`) : ''
   async function share(copy = false) {
     try {
@@ -57,8 +57,8 @@ function Round({ dream, day, playtest, onNew }: { dream: LandscapeDream; day: nu
       <p className="eyebrow">{dream.title}</p>
       <button className="v2-preview" onClick={() => setPreviewZoom(true)} aria-label="Enlarge the dream preview"><img src={dream.original} alt={dream.title}/></button>
       <p className="v2-poem">Lost within a reverie, nothing stays where it should be.<br/>Glance away, then look once more—the moon has left its silver shore.</p>
-      <h1>Find the five differences.</h1>
-      <p className="v2-rules">5 guesses · 2 minutes · No pauses<br/>Tap a difference, then <strong>Remember</strong>.</p>
+      <h1>Spot the differences.</h1>
+      <p className="v2-rules">5 guesses · 2 minutes · No pauses<br/>Tap to guess, <strong>Remember</strong> to confirm.</p>
       {phase === 'play' && <p role="status">Your dream is still fading. <strong>{formatClock(recallLeft)}</strong> left · {getRemainingGuesses(recall)} guesses left.</p>}
       {assetError && <p role="alert">The paintings couldn’t load. Refresh before starting.</p>}
       <div className="v2-start"><button className="primary-action" disabled={busy || Boolean(storageError) || !assetsReady} onClick={() => { setHome(false); if (phase === 'rules') void dispatch({ type: 'start' }) }}>{phase === 'rules' ? 'Start' : result ? 'View result' : 'Continue'}</button></div>
@@ -81,7 +81,7 @@ function Round({ dream, day, playtest, onNew }: { dream: LandscapeDream; day: nu
         <p role="status">{result ? 'Zoom to examine every difference.' : recall.pending ? 'Circle placed. Remember uses 1 guess.' : recall.confirmed.length ? `${recall.confirmed.at(-1)?.correct ? 'Found!' : 'Not a new difference.'} Tap your next guess.` : 'Tap a difference in either image.'}</p>
         <small>{result ? scrollResults ? 'Swipe to scroll · + to examine details' : 'Drag to explore both · Fit to scroll the page' : 'Pinch or scroll to zoom · drag to explore both'}</small>
       </footer>
-      {result && <section className="v2-answers"><h2>The five differences</h2><ol>{differences.map(d => <li key={d.id}>{d.label}<small>{recall.foundDifferenceIds.includes(d.id) ? 'Found' : 'Missed'} · {d.difficulty}</small></li>)}</ol><details><summary>Your share message</summary><textarea aria-label="Share message" readOnly value={shareText} rows={6}/></details>{['localhost', '127.0.0.1'].includes(location.hostname) && <p>This is a local preview. Its link won’t open on someone else’s device.</p>}<p>A new dream each day. Come back tomorrow.</p></section>}
+      {result && <section className="v2-answers"><h2>The Five Differences</h2><ol>{differences.map(d => <li key={d.id}>{d.label}<small>{recall.foundDifferenceIds.includes(d.id) ? 'Found' : 'Missed'} · {d.difficulty}</small></li>)}</ol><details><summary>Your share message</summary><textarea aria-label="Share message" readOnly value={shareText} rows={6}/></details>{['localhost', '127.0.0.1'].includes(location.hostname) && <p>This is a local preview. Its link won’t open on someone else’s device.</p>}<p>A new dream each day. Come back tomorrow.</p></section>}
     </>}
     {previewZoom && landing && <DreamViewer title={dream.title} onClose={() => setPreviewZoom(false)} simpleZoom status={phase === 'play' ? <span>{formatClock(recallLeft)} left · timer running</span> : undefined}><LandscapeArtwork dream={dream} changed={false}/></DreamViewer>}
     {hintOpen && <GameHint onClose={() => setHintOpen(false)} timeLeft={phase === 'play' ? recallLeft : undefined}/>}

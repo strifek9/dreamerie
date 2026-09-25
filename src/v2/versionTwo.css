@@ -1,6 +1,8 @@
 /* Avoid the V1 100vh body floor extending below mobile browser bars. */
 html:has(.v2-app), body:has(.v2-app) { min-height: 0; background: #0c0d1b; overscroll-behavior-y: none; }
+html:has(.v2-app) { scrollbar-gutter: stable; }
 .v2-app { min-height: 100dvh; padding: .5rem max(.65rem, env(safe-area-inset-right)) max(.65rem, env(safe-area-inset-bottom)); background: radial-gradient(ellipse at 50% -10%, #353050, transparent 55rem), #0c0d1b; }
+.v2-round { overflow-anchor: none; }
 .v2-header { display: flex; flex-direction: column; align-items: center; gap: .1rem; margin-bottom: .5rem; }
 .v2-header a { display: grid; align-items: center; min-height: 44px; color: #efe3d1; font: 1.2rem Georgia, serif; text-decoration: none; letter-spacing: .12em; }
 .v2-header > span { font-size: .62rem; color: var(--mist); letter-spacing: .12em; }
@@ -25,7 +27,7 @@ html:has(.v2-app), body:has(.v2-app) { min-height: 0; background: #0c0d1b; overs
 .v2-status > span { color: var(--mist); }
 .v2-board { width: min(100%, 60rem, calc((100dvh - 18rem - env(safe-area-inset-bottom)) * .8884)); margin: .25rem auto .6rem; display: grid; gap: .5rem; }
 .v2-board figure { margin: 0; min-width: 0; }
-.v2-board figcaption { display: flex; justify-content: space-between; margin: 0 0 .2rem; font: .8rem Georgia, serif; color: #d8d1e6; }
+.v2-board figcaption { display: flex; justify-content: space-between; align-items: center; min-height: 1rem; margin: 0 0 .2rem; font: .8rem/1.25 Georgia, serif; color: #d8d1e6; }
 .v2-board figcaption span { font: .65rem system-ui; }
 .v2-board .dream-canvas { aspect-ratio: 1672 / 941; border-radius: .45rem; box-shadow: 0 .3rem 1.2rem #0004; }
 .v2-board .zoom-layer { transition: none; }
@@ -34,22 +36,23 @@ html:has(.v2-app), body:has(.v2-app) { min-height: 0; background: #0c0d1b; overs
 .v2-zoom button { min-width: 44px; min-height: 44px; border: 1px solid #c8bee644; border-radius: 2rem; background: #232139; color: #eee8f5; cursor: pointer; }
 .v2-zoom button:disabled { opacity: .35; }
 .v2-controls .primary-action { min-width: 8rem; min-height: 44px; padding: .55rem .9rem; }
+.v2-controls > .text-action { min-width: 8rem; min-height: 44px; padding: .55rem .9rem; }
 .v2-controls p, .v2-controls small { flex-basis: 100%; text-align: center; margin: .1rem 0; font-size: .75rem; color: #ddd6e7; }
 .v2-controls small { font-size: .65rem; color: var(--mist); }
-.v2-result { text-align: center; }
-.v2-result h1 { margin: .45rem 0; font: 400 2.4rem Georgia, serif; }
+.v2-result { margin: 1rem auto 1.5rem; text-align: center; }
+.v2-result h1 { margin: .45rem 0; font: 400 2.4rem Georgia, serif; font-variant-numeric: tabular-nums; }
 .v2-result h1 span { color: #c5b2df; }
 .v2-result p { font-size: .75rem; }
 .v2-result .v2-tiles { font-size: 1.2rem; margin: .6rem; }
 .v2-share { display: flex; justify-content: center; gap: .4rem; }
-.v2-finished .v2-board { width: min(100%, 48rem); margin-top: 1.5rem; }
-.v2-answers { max-width: 38rem; margin: 1.5rem auto; font-size: .9rem; line-height: 1.6; }
-.v2-answers h2 { font: 400 1.6rem Georgia, serif; }
+.v2-answers { width: min(100%, 38rem); margin: 1.5rem auto; font-size: .9rem; line-height: 1.6; }
+.v2-answers h2 { text-align: center; font: 400 1.6rem Georgia, serif; }
+.v2-answers ol { width: fit-content; max-width: 100%; margin-inline: auto; padding-left: 1.6rem; }
 .v2-answers li { margin-bottom: .65rem; padding-left: .3rem; }
 .v2-answers small { display: block; color: var(--mist); }
 .v2-answers textarea { width: 100%; background: #171629; color: #f5f0ff; border: 1px solid #c8bee644; padding: .7rem; font: inherit; }
-.v2-answers summary { cursor: pointer; padding: .7rem 0; }
-.v2-answers > p { color: var(--mist); font-size: .75rem; }
+.v2-answers summary { cursor: pointer; padding: .7rem 0; text-align: center; }
+.v2-answers > p { color: var(--mist); font-size: .75rem; text-align: center; }
 .v2-dev { margin: 1rem auto 0; display: flex; gap: .7rem; align-items: center; justify-content: center; font-size: .65rem; }
 .v2-dev a { color: var(--mist); }
 @media (max-height: 42rem) and (orientation: portrait) {
@@ -68,7 +71,9 @@ html:has(.v2-app), body:has(.v2-app) { min-height: 0; background: #0c0d1b; overs
   .v2-round:not(.v2-finished) { display: grid; justify-content: center; grid-template-columns: minmax(0, calc((100dvh - 5rem - env(safe-area-inset-bottom)) * .8884)) 12rem; grid-template-rows: auto 1fr; gap: .2rem .8rem; }
   .v2-round:not(.v2-finished) .v2-header { grid-column: 2; grid-row: 1; margin: 0; }
   .v2-round:not(.v2-finished) .v2-status { grid-column: 2; grid-row: 2; flex-wrap: wrap; align-self: start; gap: .4rem 1rem; padding-top: .5rem; }
-  .v2-round:not(.v2-finished) .v2-board { grid-column: 1; grid-row: 1 / 3; width: min(100%, calc((100dvh - 5rem - env(safe-area-inset-bottom)) * .8884)); }
+  /* Use the same painting width during play and in the centered result layout. */
+  .v2-round .v2-board { width: min(100%, calc((100dvh - 5rem - env(safe-area-inset-bottom)) * .8884)); }
+  .v2-round:not(.v2-finished) .v2-board { grid-column: 1; grid-row: 1 / 3; }
   .v2-round:not(.v2-finished) .v2-controls { grid-column: 2; grid-row: 2; align-self: end; padding-bottom: .3rem; }
   .v2-round:not(.v2-finished) .v2-dev { grid-column: 1 / 3; margin: 0; }
 }

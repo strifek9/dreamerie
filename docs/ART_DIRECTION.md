@@ -2,6 +2,8 @@
 
 ## Current V2 collection — September 25, 2026
 
+Current local UI refinement: use “Spot the differences.” and “Tap to guess, Remember to confirm.” on the opening, with Remember emphasized. The fifth guess or expiry must not shrink the paintings or reset their shared zoom/pan. Restore the earlier centered result hierarchy: large accuracy/time, five tiles and Share/Copy together above the pair; written Found/Missed explanations in a readable column below. Return to the page top to show the result. It is intentional that the paintings move down to accommodate the result summary, without changing size. The short-landscape gameplay sidebar becomes the centered result flow, retaining its artwork width. Fitted answer images still allow page scrolling, and Fit restores that behavior after zooming. This refinement awaits separate publication approval.
+
 The user approved all 120 new landscape pairs as playable daily puzzles, followed by commit, push and deployment to the existing V2 site. This supersedes the historical single-sample/practice milestones below. V1 and the sample assets/data remain preserved.
 
 The runtime catalogue contains 120 native-resolution pairs with five visually reviewed, scene-fitting changes each. Only authored edited regions are overlaid on the untouched original. See [collection QA](artwork/V2_COLLECTION_PROGRESS.md), [final answer audit](artwork/V2_PLAYABLE_AUDIT.json) and [source provenance](artwork/V2_COLLECTION_MANIFEST.json). Difficulty remains an editorial estimate, not measured player performance.

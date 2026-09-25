@@ -20,6 +20,16 @@ Production has no review route, card override or replay/reset button. One card i
 
 ### Rules and persistence
 
+Local refinement (awaiting approval to publish): the opening now reads “Spot the differences.” and “Tap to guess, Remember to confirm.” Finishing a round keeps the same painting dimensions and synchronized zoom/pan instead of switching to a narrower result layout and resetting zoom. Following feedback, the earlier centered score, tiles and Share/Copy block is restored above the pair, with readable answer explanations below. Results return to the top so the score is visible: the paintings move down to accommodate it, but do not shrink. The short-landscape gameplay sidebar becomes the same centered result flow. Fit still restores ordinary scrolling over either result image.
+
+Validation: all 38 tests, typecheck and build pass. The revised centered result flow was checked with five-confirmation rounds at 390×844 and 1440×1200, retaining identical artwork dimensions and the selected zoom. The desktop answer column is 608px wide, rather than squeezed into the gameplay sidebar. Physical phone gestures remain a separate acceptance check. After testing and explicit approval, the suggested publication commands are:
+
+```powershell
+git add src/v2/VersionTwo.tsx src/v2/versionTwo.css README.md docs/ART_DIRECTION.md
+git commit -m "fix(v2): keep artwork size and zoom stable in results"
+git push origin prototype/v2-landscape
+```
+
 Both images remain stacked and share zoom/pan. Tap either to place or move a pending circle; **Remember** alone confirms. Exactly five guesses total, including misses/repeats, and two minutes with no pause. The whole circle counts for overlap. Accuracy always ranks first; only tied accuracy compares whole-second recall time. Results reveal all five differences and offer spoiler-free score/time sharing.
 
 The collection uses `dreamerie:v2:daily-collection:v1` storage, independent of V1 and the previous single-sample attempt. Existing stored data is never cleared or migrated. Reload, Home, help and backgrounding retain the deadline. Clearing site data permits replay; devices/browsers remain independent.
