@@ -1,5 +1,13 @@
 # Hosted Dreamerie playtest
 
+## Shorter share invitation — September 25, 2026
+
+Release `3c35b3e0eab990349a0c37cf7d62698e8a975f40` is live at https://dreamerie-playtest.onrender.com after explicit commit/push/deploy approval. Existing service `srv-daml13cri2ms73dpouk0`, deployment `dep-dardjfk9v7es73e7i2ng`, reports **Deploy succeeded / Live**, duration 4m26s. The exact V3 commit was selected manually; configured main branch, hosting settings and stored data remain unchanged.
+
+This release changes only the result invitation to “Your turn to dream.”, updates its regression test and adds `CARD_CREATION_GUIDE.md`. The unfinished 18-card holiday rework, calendar integration and associated documentation remain uncommitted in the primary checkout and are NOT deployed. No holiday drafts or replacement artwork were published.
+
+An isolated checkout of the release passed all 44 tests, typecheck/build and the 120-pair artwork validator. A disposable local production-preview round ended after five confirmations; its result textarea showed score/time, five squares, the new invitation and a clean play URL. Copy reported success. GitHub Actions run `36185958528` succeeded; Render repeated the tests/build successfully. After a temporary 502 during restart, public homepage and health recovered to 200; health reports `{ "ok": true }`. The public `index-D57iifLM.js` bundle contains the new invitation; CSS remains `index-CJ27ng7e.css`. No public daily round was started or saved attempts cleared. This documentation-only follow-up requires no redeployment.
+
 ## V3 decoration removal — September 25, 2026
 
 Release `d55483cb36867dd4e97e7d21f43d8c05c12ac67f` is live at https://dreamerie-playtest.onrender.com after explicit approval. Existing service `srv-daml13cri2ms73dpouk0`, deployment `dep-darbstfavr4c73e1u2vg`, reports **Deploy succeeded / Live**, duration 2m48s; service-live log at 1:36:14 PM CDT. Manually selected the exact V3 commit; configured main branch, plans, environment and stored data remain unchanged. Do not deploy latest main for future V3 updates.
