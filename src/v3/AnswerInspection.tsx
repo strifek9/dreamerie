@@ -36,7 +36,7 @@ export function AnswerInspection({ dream, differences, foundIds, index, onSelect
       if (event.shiftKey && document.activeElement === first && last) { event.preventDefault(); last.focus() }
       else if (!event.shiftKey && document.activeElement === last && first) { event.preventDefault(); first.focus() }
     }}>
-    <header><div><p className="eyebrow">A closer look</p><h2 id="answer-inspection-title">What was different?</h2></div><button autoFocus className="v3-close" aria-label="Close answer inspection" onClick={onClose}>×</button></header>
+    <header><h2 id="answer-inspection-title">What was different?</h2><button autoFocus className="v3-close" aria-label="Close answer inspection" onClick={onClose}>×</button></header>
     <div className="v3-answer-pair">
       {(['original', 'changed'] as const).map(side => <figure key={side}>
         <figcaption>{side === 'original' ? 'The Dream' : 'The Memory'}</figcaption>
@@ -45,7 +45,7 @@ export function AnswerInspection({ dream, differences, foundIds, index, onSelect
         </div>
       </figure>)}
     </div>
-    <div className="v3-answer-description" aria-live="polite" aria-atomic="true"><p>{difference.label}</p><span>{foundIds.includes(difference.id) ? '✓ Found' : '○ Missed'} · {difference.difficulty}</span></div>
+    <div className="v3-answer-description" aria-live="polite" aria-atomic="true"><p>{difference.label}</p><span>{foundIds.includes(difference.id) ? '✓ Found' : '○ Missed'}</span></div>
     <nav aria-label="Inspect differences"><button aria-disabled={index === 0} onClick={() => { if (index > 0) onSelect(index - 1) }}>← Previous</button><span>{index + 1} / {differences.length}</span><button aria-disabled={index === differences.length - 1} onClick={() => { if (index < differences.length - 1) onSelect(index + 1) }}>Next →</button></nav>
   </dialog>
 }

@@ -2,6 +2,8 @@
 
 ## Version 3 — current local milestone
 
+Local simplification: difficulty ratings are not shown to players (metadata remains unchanged). Five guess fragments sit beside the main timer instead of a redundant found tally. Landing keeps “5 guesses total · Misses count” and explicit Remember confirmation. No-pause information remains in help; the two-minute deadline, scoring, confirmation rules and saved attempts are unchanged. Answer inspection retains Found/Missed without difficulty. Static daily-themed margins use only the public title and carry no puzzle hints.
+
 The core V2 daily landscape game is unchanged. Exactly five confirmed guesses total; misses and repeats consume a guess, no duplicate scoring, no pause, and accuracy first with whole-second time breaking ties. V3 makes this visible through five guess fragments and distinct correct/repeat/miss feedback. Results use kind score-aware language without changing factual accuracy/time. After completion only, any answer opens identical enlarged crops of Dream/Memory with Previous/Next; no pre-result hints or flicker comparison. Keep the existing collection namespace to preserve attempts and never clear V1 storage. Brand identity and the result presentation change, not the puzzle data. Postcard/journal are deferred.
 
 ## Current V2 collection — September 25, 2026

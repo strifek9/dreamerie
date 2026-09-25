@@ -3,6 +3,20 @@ import assert from 'node:assert/strict'
 import { answerCrop, guessFeedback, resultVerse } from '../src/v3/dreamRitual.ts'
 import { confirmGuess, createRecallState } from '../src/game/dailyRecall.ts'
 import { differencesFor, landscapeCollection } from '../src/v2/landscapeCollection.ts'
+import { atmosphereFor } from '../src/v3/atmosphereTheme.ts'
+
+test('daily marginalia uses the public scene title, with a stable quiet fallback', () => {
+  assert.equal(atmosphereFor('The Seamstress of Rain'), 'water')
+  assert.equal(atmosphereFor('The Cloud in the Shoe'), 'clouds')
+  assert.equal(atmosphereFor('The Sleeping Garden'), 'leaves')
+  assert.equal(atmosphereFor('The Sleeping Constellation'), 'stars')
+  assert.equal(atmosphereFor('The Train Beneath the Pillow'), 'stars')
+  assert.equal(atmosphereFor('The Hat Full of Rainbows'), 'clouds')
+  for (const dream of landscapeCollection) {
+    assert.ok(['water', 'clouds', 'leaves', 'stars'].includes(atmosphereFor(dream.title)))
+    assert.equal(atmosphereFor(dream.title), atmosphereFor(dream.title))
+  }
+})
 
 test('all 600 answer crops contain their full detail, stay within native artwork, and are square', () => {
   for (const dream of landscapeCollection) for (const edit of dream.edits) {

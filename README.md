@@ -1,5 +1,23 @@
 # DREAMERIE
 
+## Current local refinement — crescent and quieter UI
+
+Awaiting user review; not committed or deployed. The crescent/star sits beside Dreamerie, with a permanent small help circle and a comfortable 44px touch target. Quiet static page-edge motifs follow the day's public title, never answer data. Difficulty labels and repeated copy are removed from player-facing results; authored difficulty metadata is retained. Landing reads “Spot the differences.” and keeps five-total/misses-count guidance. Guess fragments move beside the timer to reduce control wrapping; short landscape phones gain a compact side rail. Artwork sizing stays stable between play/results and while scrolling. No new dependencies, scoring changes or storage resets.
+
+Run `npm run dev` and use `http://127.0.0.1:5173/?dream=dream-002` for a disposable round. Validation: `npm test`, `npm run build` (includes typecheck), and `node scripts/validateLandscapeCollection.mjs`. Physical-device pinch/long-press and collapsing browser bars still need owner acceptance.
+
+Local validation: all 45 tests, typecheck/build, collection validation and diff checks pass. Responsive browser checks covered 320×568, 390×844, 568×320, 844×390, 768×1024, 1024×600, 1280×720 and 1440×900 with no horizontal overflow. Start stayed visible at tested landing sizes. The narrow-landscape board stayed 177.67px wide before/after completion; the fifth confirmation inside inspection closed it and revealed results. Verified tap-without-submit, one-guess confirmation, shortened help, difficulty-free answers/crops, and Escape returning focus to the selected answer. Essential game controls fit the small-phone checks; full results and development-only tools still scroll naturally. Real saved daily attempts were not used or cleared.
+
+Suggested publication commands **only after approval**:
+
+```powershell
+git add AGENTS.md README.md docs/ART_DIRECTION.md docs/GAME_DESIGN.md docs/PROTOTYPE_PLAN.md public/dreamerie-mark.svg src/v3 tests/dreamRitual.test.ts
+git commit -m "style(v3): refine crescent identity and simplify responsive UI"
+git push origin prototype/v3-dream-ritual
+```
+
+Publication still requires selecting the exact approved V3 commit for the original Render service; do not deploy latest main. See docs/HOSTING.md.
+
 V3 is now live at https://dreamerie-playtest.onrender.com as `cb15010`, replacing the V1 frontend after approval. All 44 tests and release checks passed. V1 remains preserved in Git; the V2 playtest site is unchanged. See `docs/HOSTING.md` for verification and exact-commit deployment instructions. “Local preview” notes below describe the pre-release milestone.
 
 ## Version 3 — the daily dream ritual (local preview)

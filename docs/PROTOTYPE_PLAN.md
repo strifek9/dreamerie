@@ -2,6 +2,8 @@
 
 ## Version 3 — local design-review package
 
+Follow-up local scope: selected B-style crescent/star beside the wordmark; sparse static title-themed margins; smaller permanent hint circle with 44px target; fewer duplicate labels and no player-facing difficulty. Reflow fragments into status and enable a compact rail on narrow landscape phones to reduce scrolling. Preserve readable text, real-overflow scrolling, paired image inspection, stable artwork dimensions and existing daily attempts. Validate small phones, short landscape, tablets, intermediate widths, desktop, help/answer focus return and five-confirmation flow. No automatic publication.
+
 Implement custom SVG identity, five visible guess fragments, explicit five-total guidance, distinct miss/repeat feedback, kind result copy, and an accessible result-only paired-detail modal. Reuse the 120-pair compositor without changing artwork/geometry or adding dependencies. Test crop containment across all 600 answers, scoring/feedback, five-confirmation completion, dialog keyboard/focus behavior, responsive fit, page scrolling and expanded guessing. Preserve V1/V2 branches and services during development. After user review/publication approval, deploy V3 over the existing V1 frontend; do not replace the V2 preview or alter plans/data. Postcards, journals and extra modes are outside this first package.
 
 ## Current V2 collection — September 25, 2026
