@@ -1,5 +1,7 @@
 # DREAMERIE
 
+Publication update: the crescent and simplified-UI refinement is live at https://dreamerie-playtest.onrender.com as `66ed2ce`. All 45 tests, build/typecheck, artwork validation, GitHub checks and Render deployment passed. Hosted phone-size landing/help were verified without using the daily attempt. V2 remains unchanged. See docs/HOSTING.md; the local-preview notes below now describe this released milestone.
+
 ## Current local refinement — crescent and quieter UI
 
 Awaiting user review; not committed or deployed. The crescent/star sits beside Dreamerie, with a permanent small help circle and a comfortable 44px touch target. Quiet static page-edge motifs follow the day's public title, never answer data. Difficulty labels and repeated copy are removed from player-facing results; authored difficulty metadata is retained. Landing reads “Spot the differences.” and keeps five-total/misses-count guidance. Guess fragments move beside the timer to reduce control wrapping; short landscape phones gain a compact side rail. Artwork sizing stays stable between play/results and while scrolling. No new dependencies, scoring changes or storage resets.

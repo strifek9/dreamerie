@@ -1,5 +1,13 @@
 # Hosted Dreamerie playtest
 
+## V3 crescent and simplified UI — September 25, 2026
+
+Release `66ed2cea2403c65c1c9acc1b88fbc41137d12ae1` is live at https://dreamerie-playtest.onrender.com after explicit commit/push/deploy approval. Existing Web Service `srv-daml13cri2ms73dpouk0`, deployment `dep-darbknd9fdbs73fqsoe0`, reports **Deploy succeeded / Live**, duration 2m44s; service-live log at 1:18:41 PM CDT. The exact V3 commit was selected manually. Configured branch remains main: future V3 releases must still select the approved exact commit, not deploy latest main. No hosting settings, plans, data, disks or environment changed.
+
+All 45 tests, typecheck/build and 120-pair collection validation passed locally; Render repeated the tests and build successfully. GitHub Actions run `36172185497` completed successfully. Public homepage returns 200 with `index-Gk8X-9Ce.js` / `index-D0_dpdx2.css`; health returns `{ "ok": true }`; the crescent/star SVG is served correctly. Hosted Chrome at 390×844 verified the new logo, simplified landing, enabled Start, permanent small hint circle, shortened help and focus return. Browser errors were empty. No hosted round was started and no browser storage was cleared. Broader responsive/gameplay checks were performed locally and are recorded in README.
+
+V2 remains unchanged with `index-BQHV4NK0.js` / `index-C31VduYi.css`. This documentation-only follow-up records publication and requires no redeployment. Earlier local/not-yet-published wording below and in other documents is historical.
+
 ## V3 released over V1 — September 25, 2026
 
 Release `cb150106179e122973d54aadae1fbf8f0b474c17` is live at https://dreamerie-playtest.onrender.com following explicit commit/push/deploy approval. Existing Web Service `srv-daml13cri2ms73dpouk0`, deployment `dep-daraq8o93c1s73es5vt0`, reports **Deploy succeeded / Live**, with the service-live log at 12:21:56 PM CDT. The exact V3 commit was manually selected from `prototype/v3-dream-ritual`; the service's configured branch remains main. For future V3 releases select the exact approved commit, NOT “Deploy latest commit” from main. No hosting settings, Blueprint, plan, environment, disk or database changed.
