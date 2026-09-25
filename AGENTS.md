@@ -1,5 +1,15 @@
 # Working on DREAMERIE
 
+## V3 dream ritual — current development
+
+The user approved trying the first design-review package as Version 3: bespoke vector crescent-D/wandering-star identity, five explicit guess fragments, clearer miss/repeat feedback, kind score-aware results, and optional paired close-up answer inspection after completion only. No postcard/journal yet. V3 is developed on `prototype/v3-dream-ritual`, based on V2 `561a064`; V2 remains preserved on `prototype/v2-landscape` and V1 on `prototype/version-1` / main (`4952a01`).
+
+Planned publication destination is the existing V1 site `dreamerie-playtest.onrender.com`, replacing its frontend, NOT the V2 static playtest site. This overrides older V2-only destination instructions. Do not deploy, change Render settings, remove disks/data, or alter hosting plans during this local milestone; wait for explicit publication approval. No automatic commit/push.
+
+Keep the same catalogue, geometry, five-confirmation rules, accuracy/time ranking, no-pause deadline and V2 collection storage namespace. A visual version bump must not reset an existing collection attempt. V1 storage is separate and must not be cleared or interpreted as a landscape attempt. Storage is origin-specific; V2-site progress cannot automatically follow to the V1 URL. V3 entry/UI live in `src/v3/`, sharing V2 artwork/compositor/styles and the existing game engine. Previous full V2 UI is retained in its branch, not duplicated. Production does not expose V1 via query parameters; dev comparison remains available.
+
+Paired answer crops must use identical native-image coordinates and the actual five-region compositor (including correction sources), never the raw altered-source image. All 600 regions must fit their crops. Dialog opens only after results, traps focus, closes with X/Escape and returns focus without scrolling; selection must not modify guesses or scoring. Small decorative motion respects reduced motion. Keep artwork dimensions stable through completion and scrolling. Run all tests/typecheck/build plus affected mobile/desktop UI checks before handoff.
+
 ## V2 daily landscape collection — current branch
 
 Publication update: the full-stage inspection and transparent landing-button refinement below is live as `9973755`, following explicit commit/push/deploy approval. Current automated suite: 41 tests. See docs/HOSTING.md for verification. Earlier “not yet published” wording is historical; do not redeploy automatically.

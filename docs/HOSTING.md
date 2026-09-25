@@ -1,5 +1,11 @@
 # Hosted Dreamerie playtest
 
+## V3 publication plan — not yet deployed
+
+The user designated V3 to replace the frontend at https://dreamerie-playtest.onrender.com (the current V1 site), not the V2 Static Site. Local branch `prototype/v3-dream-ritual` starts at V2 `561a064`; the prior V1 implementation remains on `prototype/version-1` / main at `4952a01`, and V2 remains on `prototype/v2-landscape`. This overrides older V2-only destination restrictions for a future explicitly approved release. No Render settings, plan, disk, database or environment were changed during V3 development. Before publishing, inspect the existing V1 service/build path; deploy the reviewed exact V3 commit without deleting preserved data, recreating infrastructure or changing the plan. Keep V2 online unchanged.
+
+V3 shares V2's collection storage namespace and does not reset saved collection attempts on the same origin. Storage cannot follow users from the separate V2 domain automatically. Existing V1 keys are preserved but refer to different puzzles and are not migrated into landscape attempts. V3 production defaults to the landscape game; the V1 query-mode comparison is development-only. All V3 verification is recorded in README; stop for owner review before commit/push/deployment.
+
 ## V2 stable result scrolling and shorter help — September 25, 2026
 
 Release `84176e4346baa5b35eb113d1990068182feb2b6c` is live at https://dreamerie-v2-playtest.onrender.com after explicit commit/push/deploy approval. Render deployment `dep-darac75g1s2s73ame880` reports **Deploy succeeded / Live**, duration 44.7 seconds; site-live log at 11:50:16 CDT. All 41 tests, typecheck, build and collection validation passed locally; Render repeated tests/build successfully. Existing bundle-size advisory only.

@@ -1,5 +1,9 @@
 # Dreamerie game design
 
+## Version 3 — current local milestone
+
+The core V2 daily landscape game is unchanged. Exactly five confirmed guesses total; misses and repeats consume a guess, no duplicate scoring, no pause, and accuracy first with whole-second time breaking ties. V3 makes this visible through five guess fragments and distinct correct/repeat/miss feedback. Results use kind score-aware language without changing factual accuracy/time. After completion only, any answer opens identical enlarged crops of Dream/Memory with Previous/Next; no pre-result hints or flicker comparison. Keep the existing collection namespace to preserve attempts and never clear V1 storage. Brand identity and the result presentation change, not the puzzle data. Postcard/journal are deferred.
+
 ## Current V2 collection — September 25, 2026
 
 Latest local refinement (not yet published): the Start/Continue/View result container is transparent, with no separate dark-blue panel. All V2 enlarged viewers use the full available inspection area rather than clipping zoom to the original fitted painting rectangle. At 100% the entire painting is fitted; zoomed artwork can grow into the surrounding space. Empty letterbox taps do not place guesses. Pan/zoom anchors, markers and hit detection remain artwork-relative; short landscape viewers keep controls in an adjacent rail, outside the artwork. Resize updates fitted dimensions and pan limits without changing guesses or the deadline. V1 callers retain the existing default viewer geometry. This supersedes the earlier preview-only landscape sizing instructions.

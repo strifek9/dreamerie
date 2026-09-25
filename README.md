@@ -1,5 +1,23 @@
 # DREAMERIE
 
+## Version 3 — the daily dream ritual (local preview)
+
+V3 builds on the 120-card V2 collection with a custom crescent-D/wandering-star mark, five visible guess fragments, explicit total-guess guidance, distinct repeat/miss feedback, score-aware result language and a paired answer-inspection dialog. Choose an answer under “What was different?” to compare matching enlarged crops; Previous/Next explores all five after completion. Scoring, daily timing, image geometry, saved collection attempts and text sharing are unchanged. The postcard and journal remain future work.
+
+Run `npm run dev`, then open http://127.0.0.1:5173/. For a disposable local round use `?dream=dream-002`; production still allows one saved daily attempt. V3 is on `prototype/v3-dream-ritual`; V2 is preserved at `561a064` on `prototype/v2-landscape`, and V1 at `4952a01` on main / `prototype/version-1`. Nothing is published yet. After review, V3 is intended to replace the V1 frontend at https://dreamerie-playtest.onrender.com, leaving the V2 site untouched. Browser storage does not transfer between these domains. Keep existing V1 storage/data and hosting plans intact.
+
+Suggested Conventional Commit: `feat(v3): add dream identity and guided answer discovery`. Stage only the reviewed V3 implementation/docs, commit and push `prototype/v3-dream-ritual` after explicit approval. See AGENTS.md for the current scope; all V2 records below are historical.
+
+Validation: all 44 tests, typecheck, build and collection validation pass. All 600 authored regions fit matching in-bounds crops. Browser checks covered 320×568, 390×844, 568×320, 768×1024 and 1440×900: Start remains visible on small phones; paired answer controls stay in view without horizontal overflow; X/Escape restore answer focus; Tab/Shift+Tab wrap within the answer dialog. A disposable round verified taps consume nothing, correct/repeat feedback, one token per confirmation, and fifth-guess completion inside the expanded viewer. Short-landscape viewer controls do not overlap. Real-device gestures, browser-bar behavior and subjective logo preference remain owner acceptance. No live site, saved daily attempt or hosting setting changed.
+
+Publication commands, only after approval:
+
+```powershell
+git add AGENTS.md README.md docs/ART_DIRECTION.md docs/GAME_DESIGN.md docs/PROTOTYPE_PLAN.md docs/HOSTING.md index.html package.json src/main.tsx src/v2/VersionTwo.tsx src/v3 public/dreamerie-mark.svg tests/dreamRitual.test.ts
+git commit -m "feat(v3): add dream identity and guided answer discovery"
+git push -u origin prototype/v3-dream-ritual
+```
+
 ## Version 2 — 120 daily landscape dreams
 
 Publication update: the scrolling fix below and shorter help tip are live as `84176e4`. All 41 tests and release checks passed; hosted results retain their size while scrolling and preserve saved progress. See `docs/HOSTING.md`. Test actual collapsing browser bars on a physical phone.

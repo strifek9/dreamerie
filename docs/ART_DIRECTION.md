@@ -1,5 +1,9 @@
 # Dreamerie art direction
 
+## Version 3 — current local direction
+
+Retain the painterly collection and quiet dark presentation. Introduce an ivory crescent-like D with a muted gold wandering star, built as a crisp lightweight SVG and paired with a storybook serif wordmark. The artwork remains dominant. The help control retains a 44px target with quieter styling. Five outlined memory fragments show confirmed ✓/× outcomes, not five required successes; brief confirmation glow respects reduced motion. Result stars and kind outcome language are decorative companions to factual accuracy/time. Answer descriptions open optional paired native-detail crops in a separate modal, never resizing the main board. No particles over clues, audio, forced tutorial or new game rules. This V3 milestone is not published; eventual destination is the V1 site, while V2 remains preserved.
+
 ## Current V2 collection — September 25, 2026
 
 Local scroll-stability fix (not yet published): size the inline painting pair from the stable small viewport height (`svh`), not the changing visible height (`dvh`), in both normal and short-landscape layouts. This prevents mobile browser-bar collapse/reappearance from resizing the pair during result scrolling. Use the same sizing during play and results so completion does not shrink the artwork. Real viewport resizing/rotation still adapts the layout; expanded inspection retains its full available stage.

@@ -1,5 +1,9 @@
 # Dreamerie Daily Dream Recall Prototype Plan
 
+## Version 3 — local design-review package
+
+Implement custom SVG identity, five visible guess fragments, explicit five-total guidance, distinct miss/repeat feedback, kind result copy, and an accessible result-only paired-detail modal. Reuse the 120-pair compositor without changing artwork/geometry or adding dependencies. Test crop containment across all 600 answers, scoring/feedback, five-confirmation completion, dialog keyboard/focus behavior, responsive fit, page scrolling and expanded guessing. Preserve V1/V2 branches and services during development. After user review/publication approval, deploy V3 over the existing V1 frontend; do not replace the V2 preview or alter plans/data. Postcards, journals and extra modes are outside this first package.
+
 ## Current V2 collection — September 25, 2026
 
 Latest local refinement (not yet published): the Start/Continue/View result container is transparent, with no separate dark-blue panel. All V2 enlarged viewers use the full available inspection area rather than clipping zoom to the original fitted painting rectangle. At 100% the entire painting is fitted; zoomed artwork can grow into the surrounding space. Empty letterbox taps do not place guesses. Pan/zoom anchors, markers and hit detection remain artwork-relative; short landscape viewers keep controls in an adjacent rail, outside the artwork. Resize updates fitted dimensions and pan limits without changing guesses or the deadline. V1 callers retain the existing default viewer geometry. This supersedes the earlier preview-only landscape sizing instructions.
