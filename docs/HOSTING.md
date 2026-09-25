@@ -1,5 +1,13 @@
 # Hosted Dreamerie playtest
 
+## V2 revised poems and landscape preview — September 25, 2026
+
+Release `0b3680f8d6b48cf0eb435496d2c9eaf3c973711a` is live at https://dreamerie-v2-playtest.onrender.com after explicit commit/push/deploy approval. Render deployment `dep-dar805e0tbcc739cav8g` reports **Deploy succeeded / Live**, duration 3m16s; site-live log at 09:10:31 CDT. GitHub Actions run `36145216931` succeeded. No hosting settings, plans, storage, artwork or scoring geometry changed.
+
+All 39 tests, typecheck, build and 120-pair collection validation passed locally; Render repeated tests and build successfully. Public V2 returns HTTP 200 with `index-C3NTarvl.js` / `index-CMOwuuNp.css`. Hosted Chrome verified the revised seamstress rhyme, exact new landing question, preserved `0/5 · 0:05` saved result, preview click zoom, and portrait-to-landscape resizing: the 844×390 viewer fits an uncropped 651×366px painting with its 44px close button outside the art. Browser error logs were empty and temporary viewport sizing was reset. The active “The dream is fading...” message and unpaused timer were checked locally before release; no saved attempts were cleared for hosted checks. Physical phone rotation/pinch remains owner acceptance.
+
+V1 remains HTTP 200 with unchanged `index-_JQJYvTQ.js` / `index-B1DxDp6W.css`; main and `prototype/version-1` remain `4952a01`. This documentation-only follow-up needs no redeployment. Older local/not-yet-published wording describes pre-release milestones.
+
 ## V2 art inspection and daily verses — September 25, 2026
 
 Release `a38350ea2a8a6f01e6688e89d87d0f45f16a5010` is live at https://dreamerie-v2-playtest.onrender.com after explicit commit/push/deploy approval. Render deployment `dep-dar7hrnlot8c73eolufg` reports **Deploy succeeded / Live**, duration 39.4 seconds, with the site-live log at 08:37:24 CDT. GitHub Actions run `36141915324` succeeded. No settings, plan, infrastructure, artwork geometry or saved attempts changed.

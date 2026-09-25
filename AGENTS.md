@@ -2,6 +2,8 @@
 
 ## V2 daily landscape collection — current branch
 
+Publication update: the latest poem/copy/landscape-preview revision below is now live as `0b3680f`, following explicit approval. See docs/HOSTING.md for verification. Its “not yet published” wording is historical; do not redeploy automatically.
+
 Latest local revision (not yet published): use “Can you spot the differences between the dream and the memory?” and “The dream is fading...”. Daily quoted poems stay short, use clear end-rhymes, and suggest a shifting or unreliable dream without revealing answer locations. There is no strict sentence-count limit; the current set uses two brief lines per artwork. In short landscape viewports, the landing image viewer gives the uncropped painting nearly the full available height, with the title/hint in a slim side rail and the 44px close control beside the artwork. Portrait preview and gameplay/result viewers retain their existing layout. Rotation and click-to-zoom do not reset or pause a running attempt. These directions supersede older copy and two-sentence restrictions below.
 
 Publication update: the refinement below is now live on V2 as `a38350e`, following explicit commit/push/deploy approval on September 25, 2026. The quoted daily poems contain at most two sentences. All 39 tests, typecheck, build and collection validation passed; see `docs/HOSTING.md` for release verification. Earlier “not yet published” wording below records the pre-release milestone.
