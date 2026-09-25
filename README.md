@@ -1,48 +1,38 @@
 # DREAMERIE
 
-## Version 2 — landscape playtest
+## Version 2 — 120 daily landscape dreams
 
-**Live results-scrolling fix — `82aafab`:** fitted answer images now allow normal page swipes and wheel/trackpad scrolling. Use + to inspect details with synchronized zoom/pan; Fit (or zooming back to 100%) restores page scrolling. Active gameplay, scores, saved attempts and V1 are unchanged. Physical phone swipes still need owner acceptance. The user approved publication; Render reports Live and hosted scrolling/zoom/Fit checks passed. See `docs/HOSTING.md`.
+The V2 collection now contains **120 new playable landscape pairs**, with **five authored differences each (600 answers)**. The original portrait collection and the first V2 teacup sample are preserved. Only the existing V2 site is authorized for this release: https://dreamerie-v2-playtest.onrender.com. See [hosting verification](docs/HOSTING.md) for deployment status.
 
-Verified locally: typecheck, all 35 tests and build pass. At 390×844, scrolling over each fitted answer image moved the page without zooming; computed touch behavior allows native vertical swipes. Zoom-in enabled synchronized drag inspection, and both Fit and zoom-out restored scrolling. The saved result remained unchanged. A separate in-memory playtest confirmed tapping still leaves all five guesses and enables Remember. No browser errors; viewport override reset. Real touch-device swipe acceptance remains unverified by this desktop check.
+Each day's painting follows the existing painterly, surreal card style. The Memory uses five carefully bounded areas from its edited counterpart over the unchanged Dream; incidental generation drift outside those areas is excluded. Native PNGs are preserved, with six targeted correction sources. Every answer has been inspected in enlarged production-rendered crops. Difficulty labels are editorial estimates; real-player calibration remains useful.
 
-Completed after explicit publication approval:
+### Play and review locally
 
-```powershell
-git add src/v2/VersionTwo.tsx README.md docs/ART_DIRECTION.md
-git commit -m "fix(v2): allow scrolling from fitted answer images"
-git push origin prototype/v2-landscape
-```
+Run `npm install`, then `npm run dev`. Open http://127.0.0.1:5173/.
 
-**Live refinement — `60ea989`:** no practice round or completion flag. Start begins immediately once artwork loads. A small ? button opens optional How to play instructions before or during play, with the running timer visible and no pause. Removed the unused bottom padding and the V2 inheritance of V1's 100vh body minimum; V2 fits the dynamic visible viewport and accounts for the bottom safe area. Results/help still scroll when needed; content is never globally clipped to hide overflow.
+- Default route: the actual daily card and saved daily attempt.
+- Development-only `?review=1`: inspect all 120 playable composites, answer close-ups and whole paintings.
+- Development-only `?dream=dream-120`: an in-memory playtest of a chosen card.
+- **New day (dev only)**: advance through all 120 without changing real saved progress.
+- `?version=1`: preserved portrait version.
 
-Validation used a production-style local preview without the development footer. Typecheck, all 35 gameplay/hosting tests, and build pass. Landing checks at 320×568, 390×700, 390×844 and 844×390 matched document size to the viewport with no scrollbar gutter or extra height. Active-game checks also passed at phone, tablet and desktop sizes. Start works without practice; the hint opens before/during play, Escape restores focus, and the active countdown continues. Hosted checks confirmed the new assets, optional hint, saved-result preservation and landing fit at 320×568 and 390×844. Physical Safari/Chrome browser-bar behavior still needs a phone recheck. See `docs/HOSTING.md` for the successful approved deployment.
+Production has no review route, card override or replay/reset button. One card is selected by the device's local calendar date; September 24, 2026 is Daily Dream #1. After 120 days the artwork repeats, but each date has its own saved attempt. An open round keeps its date until reload. This is a local prototype calendar, not server-enforced anti-cheat.
 
-Completed after explicit commit/push/deploy approval:
+### Rules and persistence
 
-```powershell
-git add AGENTS.md README.md docs/GAME_DESIGN.md docs/PROTOTYPE_PLAN.md docs/ART_DIRECTION.md src/v2/VersionTwo.tsx src/v2/Practice.tsx src/v2/versionTwo.css
-git commit -m "fix(v2): replace practice with hints and remove mobile overflow"
-git push origin prototype/v2-landscape
-```
+Both images remain stacked and share zoom/pan. Tap either to place or move a pending circle; **Remember** alone confirms. Exactly five guesses total, including misses/repeats, and two minutes with no pause. The whole circle counts for overlap. Accuracy always ranks first; only tied accuracy compares whole-second recall time. Results reveal all five differences and offer spoiler-free score/time sharing.
 
-**V2 phone/browser preview:** https://dreamerie-v2-playtest.onrender.com — release `82aafab`, verified live September 24, 2026. This is separate from the unchanged V1 site. It contains one sample with a saved attempt; use a fresh private-browsing session or clear only the V2 site's data to test again. Automatic deployments are Off. See `docs/HOSTING.md` for verification.
+The collection uses `dreamerie:v2:daily-collection:v1` storage, independent of V1 and the previous single-sample attempt. Existing stored data is never cleared or migrated. Reload, Home, help and backgrounding retain the deadline. Clearing site data permits replay; devices/browsers remain independent.
 
-This branch now opens the V2 experiment by default: one new landscape pair, optional How to play hints, stacked synchronized comparison, an unpausable two-minute round, and score/share above the answer reveal. The existing painted cards remain the visual reference. This is a single sample, not a new 120-card landscape catalogue. The user approved a separate Render static preview for phone testing on September 24; see `docs/HOSTING.md` for deployment status. The V1 service must remain untouched.
+### Validation and artwork records
 
-V1 is preserved on `prototype/version-1` at `4952a01`; both the backup and `prototype/v2-landscape` are pushed. Use `?version=1` to compare the old UI locally. The original live Render site still runs V1. V2 is committed and published separately following user approval.
+Run `npm test`, `npm run typecheck`, `npm run build`, and `node scripts/validateLandscapeCollection.mjs`.
 
-Run `npm run dev` and open `http://127.0.0.1:5173/`. Validate with `npm run typecheck`, `npm test`, and `npm run build`. Development-only New playtest is repeatable and in-memory; the default sample uses its own saved attempt and fixed deadline, separate from V1. Clearing site storage allows replay. Physical phone pinch/drag acceptance and first-time human understanding still need user testing.
+All 38 tests and typecheck/build pass. Collection tests exercise all 120 cards: five reachable answers, valid geometry/native assets, tapping without submission, perfect completion, duplicate scoring protection, five-guess ceiling, expiry and result restoration. Shared rule tests cover circle overlap, accuracy/time ordering, share text and storage failure behavior.
 
-Artwork masters: `public/artwork/v2/sea-in-a-teacup-original.png` and `sea-in-a-teacup-edited-source.png`, both native 1672×941 PNGs, without lossy recompression or artificial upscaling. Prompts, style reference and provenance are in `public/artwork/v2/provenance.json`. Only the five declared regions are composited. Tiny-detail difficulty remains an estimate.
+[Collection QA and limitations](docs/artwork/V2_COLLECTION_PROGRESS.md) · [generation provenance](docs/artwork/V2_COLLECTION_MANIFEST.json) · [final answer audit](docs/artwork/V2_PLAYABLE_AUDIT.json).
 
-Suggested publication commands AFTER testing and explicit approval (not run):
-
-```powershell
-git add AGENTS.md README.md docs/GAME_DESIGN.md docs/PROTOTYPE_PLAN.md docs/ART_DIRECTION.md docs/V2_PLAYTEST.md package.json src/main.tsx src/components/InspectableDream.tsx src/game/dailyRecall.ts src/game/dailySession.ts src/game/useDailySession.ts src/v2 tests/landscape.test.ts public/artwork/v2
-git commit -m "feat(v2): prototype landscape comparison and guided first guess"
-git push -u origin prototype/v2-landscape
-```
+The source-only review gallery and prompt manifest are archived under docs, not shipped as public game pages. Runtime images are under `public/artwork/v2/collection/`. Only today's two sources (plus a targeted correction when needed) are loaded, not the entire collection. Native files total roughly 600 MiB for the new collection, so initial daily image loading can take longer on slow connections; Start waits for the paintings.
 
 ### Version 1 release notes (historical/current public site)
 

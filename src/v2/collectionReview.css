@@ -1,0 +1,12 @@
+.collection-review { padding: 12px; background: #161625; color: #eee; min-height: 100dvh; font: 14px system-ui; }
+.collection-review nav { display: flex; align-items: center; gap: 12px; }
+.collection-review button, .collection-review input { padding: 8px; }
+.collection-review input { width: 70px; }
+.collection-review a { color: #dec3ff; }
+.collection-review h1 { font-size: 20px; }
+.review-crops { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; }
+.review-crops h2 { font-size: 14px; margin: 3px; }
+.review-crops svg { width: 100%; height: auto; aspect-ratio: 1; display: block; margin-bottom: 5px; background: #343443; }
+.review-crops p { font-size: 12px; }
+.review-full { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.review-full svg { width: 100%; height: auto; }

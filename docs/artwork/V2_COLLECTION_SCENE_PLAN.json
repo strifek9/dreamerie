@@ -1,0 +1,725 @@
+{
+  "scope": "120 new V2 source pairs; summary reconciled with generation manifest. Not a playable catalogue.",
+  "cards": [
+    {
+      "id": "dream-001",
+      "title": "The Orchard of Sleeping Clocks",
+      "intendedChanges": "The large clock's ivory dial turns teal.; The fox's white tail tip becomes russet.; The middle water droplet disappears.; The lowest ladder bracket becomes round.; The cloth's embroidered sprig loses its lower right leaves.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-002",
+      "title": "The Seamstress of Rain",
+      "intendedChanges": "The shawl loses its middle cream spot.; The spool's star-shaped hole becomes round.; The parasol's curved handle becomes straight.; The stool loses its front crossbar.; The pink button has fewer holes.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-003",
+      "title": "The Train Beneath the Pillow",
+      "intendedChanges": "The pillow's crescent becomes a full moon.; The lower cactus flower turns yellow.; The suitcase loses its middle front rivet.; The bell loses its lowest pendant.; The pillow's small diamond becomes a heart.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-004",
+      "title": "An Ocean Behind the Door",
+      "intendedChanges": "The moon-shaped knocker becomes a star.; The dress loses its lower cream hem stripe.; The middle fence bird disappears.; The shoe buckle turns silver.; The shell loses its ivory tip.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-005",
+      "title": "The House That Walked Away",
+      "intendedChanges": "The round window loses its horizontal divider.; The purple door turns blue.; The umbrella loses its middle dot.; The bird's crest turns yellow.; One snail eye turns blue.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-006",
+      "title": "The Unbuttoned Horizon",
+      "intendedChanges": "The shirt loses its lowest button.; The chair's heart cutout becomes round.; The blue ladder rung turns yellow.; The feather loses its white tip.; A small notch appears in the glove cuff.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-007",
+      "title": "The Whale's Conservatory",
+      "intendedChanges": "The conservatory door turns turquoise.; The fish turns blue.; The tree loses its lowest large orange.; The teapot's triangle becomes a circle.; The violet frond loses its dangling tip.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-008",
+      "title": "A Pocket Full of Winter",
+      "intendedChanges": "The mitten loses one cuff stripe.; The paper star turns violet.; The scarf's blue patch turns red.; The cup handle turns silver.; The acorn cap turns brown.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-009",
+      "title": "The Umbrella Orchestra",
+      "intendedChanges": "The drum's star becomes a crescent.; The pink umbrella opens one eye.; The trumpet loses its pink tassel.; The tall umbrella's finial turns silver.; The piano key's blue dot becomes a diamond.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-010",
+      "title": "The Garden in the Mirror",
+      "intendedChanges": "The mirror's blue jewel turns red.; The watering can's red handle turns mint.; The moth loses one dark wing spot.; The key loses its middle upper tooth.; The candle's wick disappears.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-011",
+      "title": "The Library of Tides",
+      "intendedChanges": "The book changes color; The bow tie changes color; A pearl disappears; The miniature sail disappears; The shell handle becomes smooth",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-012",
+      "title": "The Tailor of Shadows",
+      "intendedChanges": "The iron handle changes color; The sock loses a stripe; A scissors handle changes shape; The stool loses its cutout; The cuff stitch becomes a cross",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-013",
+      "title": "The Strawberry Lighthouse",
+      "intendedChanges": "The sail changes color; The window loses a crossbar; A coat button disappears; A daisy has a blue center; The post's heart becomes a diamond",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-014",
+      "title": "The Quiet Balloon Seller",
+      "intendedChanges": "The stone balloon loses its crack; The collar changes color; A chair slat disappears; The clasp becomes a crescent; The paper crane's wingtip changes color",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-015",
+      "title": "The Moon's Laundry",
+      "intendedChanges": "The full moon becomes a crescent; The apron pocket changes color; A clothes peg disappears; The basin handle changes color; The embroidery loses a leaf",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-016",
+      "title": "The Teapot Volcano",
+      "intendedChanges": "The teapot's diamond becomes a circle; The goat's horns change color; A sugar cube disappears; The cherry changes color; The spoon's cutout becomes a heart",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-017",
+      "title": "The Deer Who Carried Autumn",
+      "intendedChanges": "The ribbon changes color; The frog changes color; A floating leaf disappears; The window latch becomes a star; The candle flame disappears",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-018",
+      "title": "The Stairs That Forgot Up",
+      "intendedChanges": "A stair changes color; The shoelaces change color; The doorknob becomes a ring; A moth wing spot disappears; The crescent becomes a circle",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-019",
+      "title": "The Kettle Kite",
+      "intendedChanges": "The sweater's star becomes a crescent; The kettle knob changes color; The fox loses its white tail tip; A ribbon bow disappears; A stitch becomes a diamond",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-020",
+      "title": "The Museum of Lost Wings",
+      "intendedChanges": "The elephant's blanket changes color; The wing's eyespot changes color; A pearl disappears; The pedestal's crescent becomes a star; The bell's finial turns silver",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-021",
+      "title": "The Baker of Sunsets",
+      "intendedChanges": "Make the amber oven knob coral; change the apron crescent to a blue circle; remove the middle of the three cherries on the foreground tart; remove the white band around the rolling pin's right end; change the cupboard's star-shaped keyhole to a diamond.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-022",
+      "title": "The Snail Observatory",
+      "intendedChanges": "Turn the red observatory dome teal; turn the yellow telescope end rim white; remove the middle of the three ivory path stones at lower right; change the triangular door vent to a circle; remove the largest blue dot on the front of the foreground left flowerpot.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-023",
+      "title": "The Pocket of Rain",
+      "intendedChanges": "Change the green collar to blue; remove the lowest coat button; remove one middle white stripe from the orange sock; change the boat buckle to a round ring; turn the pebble crescent into a full circle.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-024",
+      "title": "The Fox's Paper Moon",
+      "intendedChanges": "Make the ivory paper moon pale pink; make the red spool turquoise; remove the middle blue paper star; make the white tail tip russet; change the diamond notch into a round hole.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-025",
+      "title": "The Violin Orchard",
+      "intendedChanges": "Change the watering can to coral; turn the violin heart into a crescent; remove the center basket apple; change the ivory hat band to blue; turn the clasp star into a diamond.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-026",
+      "title": "The House Beneath the Hat",
+      "intendedChanges": "Change the red door to turquoise; remove the window's horizontal crossbar; remove the middle hatband bead; make the chair cutout round; change the tiny cross stitch to a square.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-027",
+      "title": "The Penguin's Summer",
+      "intendedChanges": "Change the penguin's blue bow tie to gold; turn the beach ball's white star into a crescent; remove the LEFT of the two lemon slices lying on the tray, leaving the pitcher unchanged; turn the towel's white hanging fringe coral; make the shovel handle's square cutout round.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-028",
+      "title": "The Swan Station",
+      "intendedChanges": "Turn the door violet; turn the red flag cream; remove the smallest gold suitcase; remove the blue suitcase ribbon; change the tiny heart to a diamond.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-029",
+      "title": "The Room of Slow Fish",
+      "intendedChanges": "Turn the blue cushion pink; change the large orange fish's ivory crescent to a circle; remove the middle cushion tassel; make the square mint window latch round; remove the small gold dot on the FRONT OF THE TEACUP.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-030",
+      "title": "The Little Comet Gardener",
+      "intendedChanges": "Make the red spout blue; turn the coat star into a heart; remove the middle ivory flower; make the purple ribbon green; turn the pot's crescent into a gold circle.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-031",
+      "title": "The Lampshade Forest",
+      "intendedChanges": "Turn the blue scarf cream, retaining embroidered branches; turn the large right coral lampshade lilac; remove the middle amber drop dangling under that shade; change its crescent pull switch to a star; make the tiny ankle-bracelet diamond a circle.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-032",
+      "title": "The Glove That Held the Sea",
+      "intendedChanges": "Make the green glove cuff lavender; make the boat's red sail golden yellow; remove the smallest purple stone at the RIGHT of the foreground stone group; change the square brass cuff-button base to a circle; remove the white paint on the two adjacent ladder rungs at the far right.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-033",
+      "title": "The Marmalade Planet",
+      "intendedChanges": "Change the blue spoon to red; turn the bib moon into a white star; remove the middle blueberry; change the green cup handle to lavender; make the knife notch semicircular.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-034",
+      "title": "The Umbrella Lake",
+      "intendedChanges": "Turn the coral roof blue; remove ONLY the horizontal porthole crossbar; remove the foreground center white water lily; turn the blue umbrella-handle band yellow; change the small cross-shaped brass door latch to a diamond.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-035",
+      "title": "The Last Stair at Sea",
+      "intendedChanges": "Turn the door's green knob blue; change the white star cutout to a heart; remove the UPPER of the two blue beads dangling at the boot's right side; remove the red stair stripe; change the TOPMOST round metal boot-lace eyelet into a square eyelet.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-036",
+      "title": "The Rabbit's Cloud Picnic",
+      "intendedChanges": "Make the turquoise teapot pink, keeping its cream flowers; change ONLY the leftmost red diamond on the picnic blanket to a circle; remove the middle strawberry from the blue plate; turn the gold ear bow blue; make the lower basket flap's square clasp opening heart-shaped.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-037",
+      "title": "The Whale's Bookmark",
+      "intendedChanges": "Make the coral bookmark lavender; make the cover crescent a star; remove the rightmost white candle, retaining its empty holder; make the cup handle ivory; remove the whale's small blue cheek dot.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-038",
+      "title": "The Mirror in the Dunes",
+      "intendedChanges": "Turn the ribbon pale yellow; change the finial's sun into a crescent; remove the middle shell; make the box latch circular; change the glove's gold cross stitch into a diamond.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-039",
+      "title": "The Apricot Airship",
+      "intendedChanges": "Turn the pennant cream; change the basket star to a moon; remove the middle tassel; make the mouse scarf pink; change the leaf's heart vent to a circle.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-040",
+      "title": "The Porcelain Weather",
+      "intendedChanges": "Make the saddle cloth lavender; change the cage star into a crescent; remove the middle blue raindrop; turn the white rein tassel yellow; make the saddle buckle round.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-041",
+      "title": "The Clockmaker's Nest",
+      "intendedChanges": "Turn the blue nest ribbon coral; make the red clock face mint while preserving its hands; remove the LEFT of the two ivory eggs in the nest; replace the separate triangular brass winding key in the lower-right foreground with a circular bow winding key; remove the broad ivory stripe on the wren's visible folded wing, filling it with the same brown feathers.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-042",
+      "title": "The Window That Walked",
+      "intendedChanges": "Turn the coral frame mint; change the crescent latch into a round ring; remove the middle chest knob; turn the ivory sock yellow; change the carved star into a diamond.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-043",
+      "title": "The Otter's Lemon Boat",
+      "intendedChanges": "Turn the oar blade yellow; make the scarf mint; remove the middle blue berry; make the bucket heart a star; fill the leaf's tiny notch.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-044",
+      "title": "The Theatre of Moths",
+      "intendedChanges": "Turn the large blue LEFT curtain tassel ivory; change the coral crescent on the spoon ballerina's FACE into a circle; remove the middle pearl footlight; make the crown's square cutout triangular; remove the silver bead-like dot on the lower-right wing of the large foreground-left moth.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-045",
+      "title": "The Chair Above the Rain",
+      "intendedChanges": "Turn the green chair cushion lavender; make the chair's round back hole heart-shaped; remove the lowest blue coat button; remove the red heel stripe from ONLY the UPRIGHT boot at lower right; make the cushion's small ivory diamond a circle.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-046",
+      "title": "The Peach Umbrella Parade",
+      "intendedChanges": "Turn the rabbit's blue scarf coral; make the white star on the largest peach umbrella above the deer a crescent; remove the middle gold bead on the deer's green handbag; turn ONLY the deer's red umbrella handle ivory; change the little gold cross stitch on the mouse's front pocket to a square.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-047",
+      "title": "The Whale in the Attic",
+      "intendedChanges": "Turn the curtain blue; turn the ribbon gold; remove the middle shelf jar; make the trunk crescent a star; make the keyhole round.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-048",
+      "title": "The Handful of Horizons",
+      "intendedChanges": "Turn the coral finger ring mint; turn the pedestal's blue square into a circle; remove the upper-middle yellow stone in the three-stone foreground group; remove the white wrist band; change the key's ivory crescent emblem to a star.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-049",
+      "title": "The Strawberry Post Office",
+      "intendedChanges": "Turn the door lilac; change the mailbag star to a moon; remove the middle bench envelope; turn the pen feather orange; make the letter's heart seal a diamond.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-050",
+      "title": "The River in the Piano",
+      "intendedChanges": "Turn the stool cushion mint; make the crescent a sun; remove the middle white lily; remove the music stand's blue ribbon; make the pedal opening round.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-051",
+      "title": "The Umbrella's Shadow",
+      "intendedChanges": "Turn the handle coral; turn the cushion blue; remove the middle shell; change the square strap button to a triangle; remove the bird-shadow's white eye dot.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-052",
+      "title": "The Mouse Who Watered Stars",
+      "intendedChanges": "Turn ONLY the coral watering-cup HANDLE lilac, leaving the cup's body coral; change the overalls' blue heart patch to a moon; remove the center tallest golden star flower in the foreground pot; remove the white stripe from the green hose; make the balcony door latch's diamond opening round.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-053",
+      "title": "The Swan's Secret Wardrobe",
+      "intendedChanges": "Turn the drawer front lavender; make the crescent pull a ring; remove the middle pearl hook; turn the bow teal; make the base vent round.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-054",
+      "title": "The Lost Sock Archipelago",
+      "intendedChanges": "Turn the sock's green heel patch blue; remove the LOWER of the two purple cuff stripes; turn the little boat's ivory sail yellow; replace the rectangular brass frame at the ladder's top with a round ring; turn the foreground stone's small ivory star into a crescent.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-055",
+      "title": "The Tortoise's Kite Festival",
+      "intendedChanges": "Turn the red triangular kite lilac; make the central child's blue sweater moon a star; remove the middle of the three daisies above the shell planter; turn the tortoise's green neck ribbon gold; make the small blue square ankle patch above the central child's LEFT yellow shoe a diamond.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-056",
+      "title": "The Lantern Keeper's Fox",
+      "intendedChanges": "Turn the scarf lavender; make the lantern door blue; remove the middle acorn; make the roof crescent a full circle; make the handle cutout diamond-shaped.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-057",
+      "title": "The Door in the Pillow",
+      "intendedChanges": "Turn the knob mint; make the embroidered diamond a circle; remove the middle floor bead; remove the slipper stripe; make the keyhole round.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-058",
+      "title": "The Cherries That Rang",
+      "intendedChanges": "Make the blue bell-rope tassel pink; turn the squirrel's white vest star into a crescent; remove the middle yellow cake on the foreground tray; make ONLY the large foreground LEFT red teacup handle lavender; replace the tiny red floral embroidery on the mint napkin at bottom center with a small gold diamond.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-059",
+      "title": "The Library of Feathers",
+      "intendedChanges": "Turn the large central coral book blue; make the peacock's round gold collar clasp heart-shaped; remove the middle of the three ivory quills in the foreground left pot; make the hanging blue shelf tassel cream; remove only the topmost small leaf-shaped feather from the peacock's crest.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-060",
+      "title": "The Mountain in the Cupboard",
+      "intendedChanges": "Turn the door lavender; make the knob a ring; remove the center shelf stone; remove the boot stripe; change the hinge diamond into a cross.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-061",
+      "title": "The Sea Beneath the Carpet",
+      "intendedChanges": "Change the red boat's triangular sail to a square sail; remove only the yellow chair's rear-right leg; turn the right slipper's pompom golden yellow; replace one short zigzag segment near the rug's front-left corner with a straight blue line; remove the lowest right-facing tooth of the brass key.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-062",
+      "title": "The Umbrella Jellyfish",
+      "intendedChanges": "Replace the lavender umbrella hook with a straight purple grip; make only the coral shell's UPPER hinged lid ivory, preserving its lower half; remove the pearl from the shell's lower half; change the blue fish tail from forked to a rounded fan; turn the lantern's gold ring latch into a square.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-063",
+      "title": "The Biscuit Train",
+      "intendedChanges": "Turn the SMALL blue square train window left of the mouse's larger cab window round; turn the red smokestack cap purple; turn the gold front wheel of the first carriage silver; turn the mouse's white bow blue; fill in the crescent bite to make the foreground biscuit whole.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-064",
+      "title": "The Keeper of Empty Birdcages",
+      "intendedChanges": "Close the coral cage door while retaining its color; remove the hood tassel; turn the crescent moon into a small full moon in the same bounds; give the front flower six petals; turn the cloak clasp's emerald pearl-white.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-065",
+      "title": "The Cloud in the Shoe",
+      "intendedChanges": "Untie the shoe bow into two loose lace ends; repair the broken middle section of the ladder; remove the watering can's round rose leaving a plain spout; make the red heel patch triangular; erase the foreground rock's white spiral.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-066",
+      "title": "The Banana Gondola",
+      "intendedChanges": "Remove the raccoon's red cap tassel; make the RIGHT/front banana-tip black mark cream; change only the lantern's front rectangular glass opening to a circle; make the ivory pole's upper handle segment above the hands coral; make the lone blue foreground flower petal pink.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-067",
+      "title": "The Sleeping Constellation",
+      "intendedChanges": "Replace the painted eye emblem on the blue cushion with a heart emblem, retaining the cushion shape; open only the bear's closed eye on the left side of its face in the image; turn the curtain crescent into a star; reverse the nearest chaise foot curl outward; remove the lamp's leaf-shaped pull.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-068",
+      "title": "The Hat Full of Rainbows",
+      "intendedChanges": "Make the hatband coral; turn its square buckle into a circle; remove the RIGHT inner back slat from the little chair; fill the lavender pebble's hole; make the RIGHTMOST pink rainbow ribbon end straight instead of forked.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-069",
+      "title": "The Sunflower Ferris Wheel",
+      "intendedChanges": "Turn only the UPPER-LEFT red gondola lilac; make the central heart hub a diamond; close the upper-right green gondola gate; remove the blue feather from the upper-left mouse's cap; make the foreground leaf's round insect hole star-shaped.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-070",
+      "title": "The Mapmaker's Owl",
+      "intendedChanges": "Make only the owl's LEFT spectacle lens square; make the large red foreground wax seal blue; color the white quill's bottom writing tip blue; remove the open gold inkwell lid at left; rotate the compass needle ninety degrees within the same compass.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-071",
+      "title": "The Blue Door's Reflection",
+      "intendedChanges": "Make the crescent window round; make the knob mint; close the brass mail slot; turn the flower center blue; remove the lower screw from the upper hinge.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-072",
+      "title": "The Pomegranate Circus",
+      "intendedChanges": "Make the blue flag swallowtailed; remove just the TOP white stripe from the red hoop; change the sugar cube to a sugar sphere; turn the white leaf bow lavender; remove the bell's clapper.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-073",
+      "title": "The Garden of Spectacles",
+      "intendedChanges": "Turn the pink lens pale amber; shorten the blue necktie into a bow tie; bend the foreground spectacle arm upward; reverse the stone snail's spiral direction; make the bench heart cutout circular.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-074",
+      "title": "The Folded Horizon",
+      "intendedChanges": "Make the small red rectangular window in the LEFT paper mountain round; remove only the THIRD ladder rung from the top; shorten the blue crane's long tail; make the foreground drawer knob silver; remove the loose white paper triangle on the lower-right foreground.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-075",
+      "title": "The Teaspoon Skiers",
+      "intendedChanges": "Make the nearest penguin's red scarf gold; straighten the green ski's curled front tip; make the blue mug's square handle round; turn its yellow star into a crescent; make the foreground red glove's white thumb red like its body.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-076",
+      "title": "The Velvet Moon Hotel",
+      "intendedChanges": "Turn the curtain teal; remove the clock's short hand; remove the crane's crown feather; turn the crescent cushion into a full round cushion; make the doorbell jewel amber.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-077",
+      "title": "The Umbrella Inside the Hourglass",
+      "intendedChanges": "Make the detached red umbrella handle lying at lower-left gold; join the blue waist band into an unbroken band; make the base screw's square brass PLATE round; remove the LEFT loop of the boot's upper bow; remove the pebble's blue dot.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-078",
+      "title": "The Peach Pit Planetarium",
+      "intendedChanges": "Turn the red telescope cap yellow; make the white chest patch russet; make the crescent a ring; unfold the green notebook's corner; turn the silver strap buckle gold.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-079",
+      "title": "The Harp of Branches",
+      "intendedChanges": "Repaint the entire central blue harp string coral red; change the red ribbon to cream; make the fox's dark tail tip white; fill the wedge in the LARGE foreground center-right lily pad; open the tiny hanging brass acorn charm along its hinge.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-080",
+      "title": "The Drawer of Snow",
+      "intendedChanges": "Turn the upper knob mint; open the lowest drawer a small amount showing darkness; move the mitten thumb to its left side; make the stool hole square; make the key's diamond bow round.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-081",
+      "title": "The Umbrella Repair Shop",
+      "intendedChanges": "Fill the umbrella's missing triangular panel with matching lavender cloth; make the red foreground spool blue; make the woman's LEFT eyeglass lens hexagonal; repair the scissors' broken tip; remove the cork from the smallest storm bottle on the UPPER-RIGHT shelf.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-082",
+      "title": "The Shadow's Shoes",
+      "intendedChanges": "Change the silver buckle to a ring; change the shadow umbrella to a closed umbrella silhouette; straighten the chair's curved back; make the feather ivory; remove the tiny blue hem pin.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-083",
+      "title": "The Pancake Observatory",
+      "intendedChanges": "Turn the telescope's blue eyepiece coral; remove only the leftmost leaf from the strawberry crown; make the square butter pat heart-shaped; make the forked red scarf end straight; remove the tiny white dot from the purple planet in the upper-right sky.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-084",
+      "title": "The Heron's Glasshouse",
+      "intendedChanges": "Straighten the watering can spout; remove the window's horizontal bar; give the ivory flower six petals; make the ankle ring silver; repair the pot's tiny rim crack.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-085",
+      "title": "The Moon Behind the Coat",
+      "intendedChanges": "Remove the lowest blue coat button; unfold the rolled cuff on the LEFT side of the image; turn the pocket crescent into a full moon; make the chair's round cutout square; change the red hem cross stitch into a tiny diamond.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-086",
+      "title": "The Pear-Slice Playground",
+      "intendedChanges": "Turn the blue swing seat coral; make the rabbit cap rounded; remove the ball's white stripe; restore the missing ladder rung; remove the bell's clapper.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-087",
+      "title": "The Portrait That Dreamed",
+      "intendedChanges": "Turn the ribbon ivory; make the pearl earring a crescent; make the painted gold bird face right; straighten the lamp shade's scalloped edge; make the book clasp diamond-shaped.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-088",
+      "title": "The River's Thread",
+      "intendedChanges": "Make the red end cap yellow; change the bridge opening to a pointed arch; make the glove's white thumb lavender; straighten the bent needle; turn the stone square into a circle.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-089",
+      "title": "The Raspberry Rocket",
+      "intendedChanges": "Make the blue porthole triangular; make only the LARGE foreground yellow leaf-fin green; remove one forked tip from the red scarf; give the isolated large white star at upper-right six points; make the tiny square gold rivet left of the porthole round.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-090",
+      "title": "The Badger's Fog Ferry",
+      "intendedChanges": "Turn the square sail into a triangle; turn the rope tassel ivory; remove the sleeve patch; remove the anchor's right fluke; change the carved heart into a crescent.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-091",
+      "title": "The Room at the End of the Ribbon",
+      "intendedChanges": "Make the door knob a ring; make the ribbon end straight; repair the cracked chair slat; make the floor tile circular; turn the hinge star into a dot.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-092",
+      "title": "The Waffle Windmill",
+      "intendedChanges": "Turn the blue windmill sail coral; make the fox's red collar green; remove the window's vertical crossbar; change the single white ring-shaped seed on the large lower-left strawberry yellow like the others; remove the doorway bell's top loop.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-093",
+      "title": "The Paper Swan's Tailor",
+      "intendedChanges": "Make the blue thread spool red; unfold the triangular paper wing flap nearest the rabbit's needle; remove only the bottom-right pearl waistcoat button; turn the thimble star into a crescent; make only the upper scissors handle opening round.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-094",
+      "title": "The Ladder That Became Rain",
+      "intendedChanges": "Remove the blue middle ladder rung; turn the boot cuff stripe ivory; change the round cloud pendant into a crescent; make the puddle pebble pink; make the stool cutout square.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-095",
+      "title": "The Tangerine Tuba",
+      "intendedChanges": "Make the blue mouthpiece lavender; make the waistcoat's white heart a star; make the square center valve button round; join the forked tip on the orange musical leaf-note at upper-right into one point; remove the stool's green dot.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-096",
+      "title": "The Clock in the Lily",
+      "intendedChanges": "Turn the clock face pale amber; shorten the long red clock hand; remove the small antler ring; mend the lily petal notch; make the gate latch round.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-097",
+      "title": "The Folded Sea",
+      "intendedChanges": "Make the house door pink; make the roof window crescent-shaped; remove a short section of the white hem stripe at the front corner; make the drawer handle round; turn the tiny red paper boat blue.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-098",
+      "title": "The Honeycomb Railway",
+      "intendedChanges": "Turn the blue chimney coral; make the red-framed round cab window square; make the yellow flag's forked edge straight; remove just the bottom-right petal from the large isolated foreground white flower; remove only the green hub dot on the locomotive's FRONT large wheel.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-099",
+      "title": "The Pearl Diver's Umbrella",
+      "intendedChanges": "Turn the coat collar mint; make the blue pearl amber; make the rib's crescent end a ring; make the round coat clasp diamond-shaped; remove the shell's ivory stripe.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-100",
+      "title": "The Window in the Sandal",
+      "intendedChanges": "Turn only the sandal's upper ankle strap mint, preserving its gold buckle; make the round gold buckle square; remove the horizontal window crossbar; mend the yellow feather's split tip; remove the pebble's white dot.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-101",
+      "title": "The Telephone That Grew Leaves",
+      "intendedChanges": "Turn the blue coiled receiver cord plum; make the red dial hole ivory like the others; make the telephone's FRONT square gold foot round; mend the split tip of the upper-right coral leaf; remove the white tassel at the cord's loose end.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-102",
+      "title": "The Violinist on the Moonfish",
+      "intendedChanges": "Turn the long coral violin bow ribbon mint; make the fish's crescent tail a rounded fan; make the round pearl hairpin a teardrop; add a sixth pale petal to the large violet flower directly below the fish's tail at lower-left-center; remove the violin case's gold clasp.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-103",
+      "title": "The Macaron Meadow",
+      "intendedChanges": "Make the rabbit's red neckerchief lavender; make the yellow macaron's square orange center round; fill the large hole in the blue foreground leaf with matching leaf tissue; make the white picnic-bag button golden yellow; remove the cream cup's green spot.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-104",
+      "title": "The Doorway of Falling Feathers",
+      "intendedChanges": "Make the red door knob mint; make only the largest left foreground feather's white tip blue; make the green stool opening round; straighten the yellow boot's curled toe; remove the uppermost tiny screw from the door's top brass hinge.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-105",
+      "title": "The Seahorse Carousel",
+      "intendedChanges": "Turn the central seahorse's coral saddle lavender; remove the single tiny gold drop hanging from the middle of the blue canopy fringe; make the CENTRAL FRONT pole's round pearl finial teardrop-shaped; reverse the rightmost gold seahorse's tail curl outward; make the diamond shell-base latch round.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-106",
+      "title": "The Honey Bear's Balloon",
+      "intendedChanges": "Turn the red jar lid lilac; make the basket's blue heart a star; make only the trailing left white scarf end blue; remove only the RIGHT yellow leaf pennant from its rope; make the square basket buckle round.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-107",
+      "title": "The Curtain of Small Oceans",
+      "intendedChanges": "Make the red curtain tie pale yellow; make only the LEFTMOST gold curtain ring heart-shaped; remove the white chair-cushion stripe; make the lone blue floor tile round; repair the notch in the frame's left foot.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-108",
+      "title": "The Stag's Velvet Library",
+      "intendedChanges": "Turn only the large upright coral book in the UPPER-LEFT antler teal; shorten the longer dangling blue neck ribbon tail; make the antler's hanging crescent a full ring; remove the mushroom's single ivory spot; make the brass clasp on the FOREGROUND plum book silver.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-109",
+      "title": "The Kiwi Rowing Club",
+      "intendedChanges": "Turn only the large foreground blue oar blade coral; turn the penguin's red scarf lavender; make the white kiwi seed black; make the bow bell's round top loop square; mend the green pennant's triangular tear.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-110",
+      "title": "The Staircase in the Sleeve",
+      "intendedChanges": "Turn the green sleeve cuff stripe blue; make the gold cufflink circular; turn the red stool leg mint; make the paper crane's blue pointed tip white; make the yellow slipper's round hole diamond-shaped.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-111",
+      "title": "The Cloud Collector's Bicycle",
+      "intendedChanges": "Make the coral bicycle saddle lavender; remove the blue cork from the tallest front-basket bottle; remove only the bright gold front-wheel spoke that points upper-right from the hub; make the white jacket leaf pin heart-shaped; make the bell's crescent engraving a star.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-112",
+      "title": "The Lemon-Slice Swing",
+      "intendedChanges": "Turn the blue swing seat pink; remove only the right dangling tail of the red tail bow; make the green cup's white star a crescent; give the large lower-left yellow flower six petals; fill the split in the lower-right green leaf tip.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-113",
+      "title": "The Mirror's Forgotten Handle",
+      "intendedChanges": "Turn the mirror's coral handle lavender; make the round top brass ornament crescent-shaped; make the blue glove's white thumb blue; make only the yellow floor tile immediately in front of the glove ivory; repair the blue cracks at the mirror frame's upper-right corner.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-114",
+      "title": "The Orchard of Lantern Birds",
+      "intendedChanges": "Turn only the largest lantern bird's blue TAIL ivory, preserving its wing; turn only the chair's coral SEAT cushion mint; make the pearl pendant teardrop-shaped; close the rabbit's visible eye gently; make the small center bird lantern's door star cutout diamond-shaped.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-115",
+      "title": "The Cherry Pie Moon",
+      "intendedChanges": "Turn the scarf lavender; restore the missing lattice segment; make the cup crescent a star; make the spoon handle hole square; mend the leaf bite notch.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-116",
+      "title": "The Umbrella at the End of the Hall",
+      "intendedChanges": "Make the handle tip lavender; make the umbrella clasp round; remove one short front section of the bowl stripe; straighten the chair back; remove the tiny blue bead.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-117",
+      "title": "The Fox and the Porcelain Forest",
+      "intendedChanges": "Turn the scarf cream; make the spoon crescent a star; remove the bell's clapper; repair the mushroom cap notch; make the blue leaf mark a diamond.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-118",
+      "title": "The Watermelon Gondoliers",
+      "intendedChanges": "Make the blue triangular sail rectangular; make the red hat feather lavender; turn the boat's one white watermelon seed black; make the lantern's front square glass window round; remove the rightmost tine from the tiny silver fork hanging beside the green tassel.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-119",
+      "title": "The Room Inside the Ribbon Knot",
+      "intendedChanges": "Make the coral ribbon tip lavender; make the yellow room window crescent-shaped; remove the white stripes from the green chair seat; make the silver box latch circular; change the foreground pebble's star engraving to a cross.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    },
+    {
+      "id": "dream-120",
+      "title": "The Last Lantern Before Morning",
+      "intendedChanges": "Turn the coral lantern door handle lavender; make the gold coat clasp heart-shaped; remove only the right blue spot from the largest ivory moth; turn the roof crescent finial into a ring; mend the leaf-shaped cutout in the coat's lower-left hem with matching pale blue cloth.",
+      "review": "Generated source pair, not approved for gameplay. Exactly-five-change composite masks, hit regions, and difficulty playtesting pending."
+    }
+  ]
+}

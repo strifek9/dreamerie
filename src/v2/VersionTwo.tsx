@@ -1,19 +1,26 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { DreamCanvas, DreamViewer } from '../components/InspectableDream'
 import { createShareText, formatClock, getAnswerReveals, getRemainingGuesses } from '../game/dailyRecall'
 import { RESTING_VIEW, zoomAt, type ImageView } from '../game/imageInspection'
 import { useDailySession } from '../game/useDailySession'
 import { LandscapeArtwork } from './LandscapeArtwork'
-import { landscapeDifferences as differences, landscapeDream as dream, V2_SESSION_OPTIONS } from './landscapeDream'
+import { differencesFor, landscapeCollection, landscapeDay, landscapeForDay, LANDSCAPE_SESSION_OPTIONS, type LandscapeDream } from './landscapeCollection'
 import './versionTwo.css'
 
 export default function VersionTwo() {
   const [run, setRun] = useState(0)
-  return <Round key={run} run={run} onNew={() => setRun(value => value + 1)}/>
+  const [today] = useState(() => landscapeDay())
+  const requested = import.meta.env.DEV ? new URLSearchParams(location.search).get('dream') : null
+  const selected = landscapeCollection.find(card => card.id === requested)
+  const [index, setIndex] = useState(() => landscapeCollection.indexOf(selected ?? landscapeForDay(today)))
+  const playtest = Boolean(selected) || run > 0
+  const dream = landscapeCollection[index]
+  return <Round key={`${dream.id}-${run}`} dream={dream} day={playtest ? index + 1 : today} playtest={playtest} onNew={() => { setIndex(value => (value + 1) % landscapeCollection.length); setRun(value => value + 1) }}/>
 }
 
-function Round({ run, onNew }: { run: number; onNew: () => void }) {
-  const { phase, recall, result, recallLeft, pendingSide, dispatch, storageError, busy } = useDailySession(1, dream.id, differences, run > 0, V2_SESSION_OPTIONS)
+function Round({ dream, day, playtest, onNew }: { dream: LandscapeDream; day: number; playtest: boolean; onNew: () => void }) {
+  const differences = useMemo(() => differencesFor(dream), [dream])
+  const { phase, recall, result, recallLeft, pendingSide, dispatch, storageError, busy } = useDailySession(day, dream.id, differences, playtest, LANDSCAPE_SESSION_OPTIONS)
   const [home, setHome] = useState(false)
   const [hintOpen, setHintOpen] = useState(false)
   const [assetsReady, setAssetsReady] = useState(false)
@@ -28,13 +35,14 @@ function Round({ run, onNew }: { run: number; onNew: () => void }) {
   useEffect(() => { window.scrollTo({ top: 0, behavior: 'instant' }) }, [landing, phase])
   useEffect(() => {
     let active = true
-    Promise.all([dream.original, dream.altered].map(src => new Promise<void>((resolve, reject) => {
+    const sources = new Set([dream.original, dream.altered, ...dream.edits.flatMap(edit => edit.source ? [edit.source] : [])])
+    Promise.all([...sources].map(src => new Promise<void>((resolve, reject) => {
       const image = new Image(); image.onload = () => resolve(); image.onerror = reject; image.src = src
     }))).then(() => { if (active) setAssetsReady(true) }, () => { if (active) setAssetError(true) })
     return () => { active = false }
-  }, [])
+  }, [dream])
   useEffect(() => { if (phase === 'result') { setHome(false); setPreviewZoom(false); setHintOpen(false); setView(RESTING_VIEW) } }, [phase])
-  const shareText = result ? createShareText(1, result, differences, recall.foundDifferenceIds, location.href).replace('Dreamerie #1', 'Dreamerie V2 · Playtest 1') : ''
+  const shareText = result ? createShareText(day, result, differences, recall.foundDifferenceIds, location.href).replace(`Dreamerie #${day}`, `Dreamerie V2 · ${playtest ? 'Playtest' : 'Daily Dream'} #${day}`) : ''
   async function share(copy = false) {
     try {
       if (!copy && navigator.share) { await navigator.share({ text: shareText }); setShareStatus('Shared.') }
@@ -43,11 +51,11 @@ function Round({ run, onNew }: { run: number; onNew: () => void }) {
   }
   function updateView(next: ImageView) { setView(next) }
   return <main className={`v2-app ${landing ? 'v2-landing' : 'v2-round'} ${result ? 'v2-finished' : ''}`}>
-    <header className="v2-header"><div className="v2-brand-row"><a href="./" onClick={event => { event.preventDefault(); setHome(true) }}>☾ Dreamerie</a><button className="v2-hint-toggle" aria-label="How to play" aria-haspopup="dialog" onClick={() => setHintOpen(true)}>?</button></div><span>Version 2 · Playtest</span></header>
+    <header className="v2-header"><div className="v2-brand-row"><a href="./" onClick={event => { event.preventDefault(); setHome(true) }}>☾ Dreamerie</a><button className="v2-hint-toggle" aria-label="How to play" aria-haspopup="dialog" onClick={() => setHintOpen(true)}>?</button></div><span>Version 2 · {playtest ? 'Playtest' : 'Daily Dream'} #{day}</span></header>
     {storageError && <p role="alert" className="storage-warning">{storageError}</p>}
     {landing ? <section className="v2-welcome">
       <p className="eyebrow">{dream.title}</p>
-      <button className="v2-preview" onClick={() => setPreviewZoom(true)} aria-label="Enlarge the dream preview"><img src={dream.original} alt="A sailboat crosses a sea inside a teacup, beside a sleeping cat under a moonlit sky."/></button>
+      <button className="v2-preview" onClick={() => setPreviewZoom(true)} aria-label="Enlarge the dream preview"><img src={dream.original} alt={dream.title}/></button>
       <p className="v2-poem">Lost within a reverie, nothing stays where it should be.<br/>Glance away, then look once more—the moon has left its silver shore.</p>
       <h1>Find the five differences.</h1>
       <p className="v2-rules">5 guesses · 2 minutes · No pauses<br/>Tap a difference, then <strong>Remember</strong>.</p>
@@ -60,7 +68,7 @@ function Round({ run, onNew }: { run: number; onNew: () => void }) {
       <section className="v2-board" aria-label="Compare both paintings">
         {(['original', 'changed'] as const).map(side => <figure key={side}><figcaption>{side === 'original' ? 'The Dream' : 'The Memory'}{result && <span>{side === 'original' ? 'Found · Green' : 'Missed · Red'}</span>}</figcaption>
           <DreamCanvas label={`${side === 'original' ? 'The Dream' : 'The Memory'}. ${result ? 'Inspect the answers.' : 'Tap to mark, then Remember to confirm.'} ${scrollResults ? 'Swipe to scroll the page. Use Zoom in to examine details.' : 'Zoom and drag move both paintings.'}`} view={view} onView={scrollResults ? undefined : updateView} selectable={!result} pendingPoint={recall.pending} onTap={result ? undefined : point => { void dispatch({ type: 'mark', point, side }) }}>
-            <LandscapeArtwork changed={side === 'changed'}/>
+            <LandscapeArtwork dream={dream} changed={side === 'changed'}/>
             {!result && recall.confirmed.map((guess, i) => <span key={i} className={`dream-marker ${guess.correct ? 'dream-marker--found' : 'dream-marker--false'}`} style={{ left: `${guess.point.x * 100}%`, top: `${guess.point.y * 100}%` }}>{guess.correct ? '✓' : '×'}</span>)}
             {!result && recall.pending && <span className="dream-marker dream-marker--pending" style={{ left: `${recall.pending.x * 100}%`, top: `${recall.pending.y * 100}%` }}/>}
             {result && markers && getAnswerReveals(differences, recall.foundDifferenceIds, side).map(({ difference: d, number, found }) => <span key={d.id} className={`answer-outline ${found ? 'answer-found' : ''}`} style={{ left: `${d.box.left * 100}%`, top: `${d.box.top * 100}%`, width: `${d.box.width * 100}%`, height: `${d.box.height * 100}%` }}><span>{number}</span></span>)}
@@ -73,11 +81,11 @@ function Round({ run, onNew }: { run: number; onNew: () => void }) {
         <p role="status">{result ? 'Zoom to examine every difference.' : recall.pending ? 'Circle placed. Remember uses 1 guess.' : recall.confirmed.length ? `${recall.confirmed.at(-1)?.correct ? 'Found!' : 'Not a new difference.'} Tap your next guess.` : 'Tap a difference in either image.'}</p>
         <small>{result ? scrollResults ? 'Swipe to scroll · + to examine details' : 'Drag to explore both · Fit to scroll the page' : 'Pinch or scroll to zoom · drag to explore both'}</small>
       </footer>
-      {result && <section className="v2-answers"><h2>The five differences</h2><ol>{differences.map(d => <li key={d.id}>{d.label}<small>{recall.foundDifferenceIds.includes(d.id) ? 'Found' : 'Missed'} · {d.difficulty}</small></li>)}</ol><details><summary>Your share message</summary><textarea aria-label="Share message" readOnly value={shareText} rows={6}/></details>{['localhost', '127.0.0.1'].includes(location.hostname) && <p>This is a local preview. Its link won’t open on someone else’s device.</p>}<p>One landscape sample for testing—not the full daily collection.</p></section>}
+      {result && <section className="v2-answers"><h2>The five differences</h2><ol>{differences.map(d => <li key={d.id}>{d.label}<small>{recall.foundDifferenceIds.includes(d.id) ? 'Found' : 'Missed'} · {d.difficulty}</small></li>)}</ol><details><summary>Your share message</summary><textarea aria-label="Share message" readOnly value={shareText} rows={6}/></details>{['localhost', '127.0.0.1'].includes(location.hostname) && <p>This is a local preview. Its link won’t open on someone else’s device.</p>}<p>A new dream each day. Come back tomorrow.</p></section>}
     </>}
-    {previewZoom && landing && <DreamViewer title={dream.title} onClose={() => setPreviewZoom(false)} simpleZoom status={phase === 'play' ? <span>{formatClock(recallLeft)} left · timer running</span> : undefined}><LandscapeArtwork changed={false}/></DreamViewer>}
+    {previewZoom && landing && <DreamViewer title={dream.title} onClose={() => setPreviewZoom(false)} simpleZoom status={phase === 'play' ? <span>{formatClock(recallLeft)} left · timer running</span> : undefined}><LandscapeArtwork dream={dream} changed={false}/></DreamViewer>}
     {hintOpen && <GameHint onClose={() => setHintOpen(false)} timeLeft={phase === 'play' ? recallLeft : undefined}/>}
-    {import.meta.env.DEV && <div className="v2-dev"><button className="text-action" onClick={onNew}>New playtest (dev only)</button><a href="?version=1">Compare Version 1</a></div>}
+    {import.meta.env.DEV && <div className="v2-dev"><button className="text-action" onClick={onNew}>New day (dev only)</button><a href="?version=1">Compare Version 1</a><a href="?review=1">Review all 120</a><span>{dream.id}</span></div>}
   </main>
 }
 

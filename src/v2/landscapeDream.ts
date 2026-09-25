@@ -7,7 +7,7 @@ export const landscapeDream = {
   aspectRatio: 1672 / 941,
 } as const
 
-const edits = [
+export const sampleEdits = [
   { id: 'moon', difficulty: 'Easy', label: 'The full moon becomes a crescent.', box: { left: .185, top: .015, width: .132, height: .22 } },
   { id: 'sail', difficulty: 'Medium', label: 'The boat’s red sails turn gold.', box: { left: .524, top: .19, width: .13, height: .21 } },
   { id: 'flower', difficulty: 'Hard', label: 'The smallest bell flower disappears.', box: { left: .865, top: .168, width: .062, height: .104 } },
@@ -15,7 +15,7 @@ const edits = [
   { id: 'spoon', difficulty: 'Dreamlike', label: 'The spoon’s engraved star becomes a crescent.', box: { left: .614, top: .913, width: .037, height: .044 } },
 ] as const
 
-export const landscapeDifferences: readonly Difference[] = edits.map(edit => ({
+export const landscapeDifferences: readonly Difference[] = sampleEdits.map(edit => ({
   ...edit, x: edit.box.left + edit.box.width / 2, y: edit.box.top + edit.box.height / 2,
   radius: Math.max(edit.box.width, edit.box.height / landscapeDream.aspectRatio) / 2,
 }))

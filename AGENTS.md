@@ -1,16 +1,22 @@
 # Working on DREAMERIE
 
-## Version 2 landscape experiment — current branch
+## V2 daily landscape collection — current branch
 
-Publication update: the refinement below is now live on the separate V2 site at commit `60ea989`, following explicit user approval. See `docs/HOSTING.md` (or `HOSTING.md` from this directory) for verification; earlier awaiting-publication/practice wording is historical. V1 remains unchanged.
+The user authorized finishing all 120 NEW landscape cards, then committing, pushing and deploying to the existing V2 Static Site. Do not publish a partial collection. This section overrides older V1/sample instructions below for V2.
 
-Current refinement: remove the practice round completely. Start is immediately available after artwork loads, with no practice gate or completion flag. A small ? / How to play button opens concise instructions in a keyboard-accessible dialog before or during play. Help never starts, pauses or resets the timer, or changes guesses; it shows the active remaining time and closes on expiry. Remove unused landing bottom padding and use the visible dynamic viewport height for V2, without V1's larger 100vh body floor. Keep scrolling for real overflow (results, enlarged text and small help dialogs), not empty background. V1 is unaffected. Older practice wording below is historical; this local refinement awaits publication.
+Current V2 has 120 playable native-resolution landscape pairs and 600 authored answers. Preserve V1, the portrait catalogue, the teacup sample, generation provenance and all saved attempts. Sources are in `public/artwork/v2/collection/`; the typed runtime catalogue is `src/v2/landscapeCollection.ts`; final geometry/correction provenance is in `docs/artwork/V2_PLAYABLE_AUDIT.json`. Generation manifest and source review live under docs and must not be copied into public.
 
-User-approved V2 work is isolated on `prototype/v2-landscape`; V1 is preserved at local branch `prototype/version-1` (`4952a01`). The public V1 release remains unchanged. This experiment overrides conflicting V1 layout/inspection instructions below only for V2. Keep V1 components and all 120 original pairs intact.
+Daily rotation uses the local calendar (September 24, 2026 = day 1), wraps artwork after 120 days and keys saved attempts by absolute day. Do not reorder published IDs or alter scoring geometry without considering saved attempts. The collection storage namespace is separate from V1 and the retired sample; never clear them. Dev-only review/card selection/New day rounds are in-memory; production has no reset. Day remains fixed during an open round until reload.
 
-V2 starts with ONE new wide painting in the style of the existing cards, not a conversion of the catalogue. Preserve original-resolution PNGs and generation provenance. Show the pair stacked at every size, fit both within the playing viewport, and synchronize pan/zoom. On very short landscape screens controls sit beside the stacked pair. Teach tap → pending circle → Remember with one untimed example before Start. Exactly five total guesses, two minutes, accuracy then whole-second time, no pauses. Home and inspection never pause; retain the original deadline through reload/backgrounding. V2 uses an independent storage namespace. A dev-only New playtest creates an in-memory test run; no production reset.
+Keep both wide paintings stacked, fitted and synchronized in zoom/pan. No image swapping, practice gate, hold requirement or pause. Start waits for current artwork. Optional ? help, Home and reload never pause the deadline. Tap only marks; Remember consumes one of exactly five total guesses. Accuracy first, whole-second time only for ties. Results show all five answers; fitted result images allow normal scrolling from either image, with explicit +/Fit for inspection.
 
-Do not commit, push, deploy, or expand to more cards until user review. Follow the existing validation and handoff requirements below.
+Every pair needs five actual theme-fitting edits, not arbitrary color overlays. Only five authored source regions are composited over the untouched original, with narrow edge blending when needed. Preserve native PNG detail. Difficulty labels are estimates pending human calibration. Use the imagegen skill for new raster artwork/corrections, not programmatic painting.
+
+Before publishing run `npm test`, `npm run typecheck`, `npm run build` and `node scripts/validateLandscapeCollection.mjs`; inspect composites and affected mobile/desktop flows. Current automated suite has 38 tests. See README and collection progress for review controls and limitations.
+
+Only commit/push branch `prototype/v2-landscape` and deploy existing service `dreamerie-v2-playtest` (`srv-daqp97vlk1mc73ejvdk0`). V1 service/branches, database, plans and infrastructure stay untouched. Use Conventional Commits; no force push or history rewrite. Current explicit authorization supersedes older no-publication milestone text below.
+
+## Historical V1 and original-prototype guidance
 
 
 ## Current product direction

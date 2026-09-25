@@ -1,0 +1,38 @@
+<!doctype html>
+<!-- Archived source-only gallery. Use the development /?review=1 route for the exact playable images. -->
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dreamerie · New artwork review</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#101d29;color:#f5eee1;font:16px/1.6 system-ui}main{max-width:1600px;margin:auto;padding:24px}h1{font:clamp(26px,4vw,44px) Georgia,serif;margin:0}p{color:#c0ccd0;max-width:80ch}nav{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:24px 0}button,select,a{font:inherit}button,select{min-height:44px;padding:8px 16px;border:1px solid #65818c;border-radius:10px;background:#1c3440;color:inherit}select{max-width:100%}button:disabled{opacity:.4}a{color:#cbe4d3}h2{font:26px Georgia,serif}.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}figure{margin:0;min-width:0}img{width:100%;height:auto;display:block;border-radius:12px}figcaption{margin:8px 0}details{margin:24px 0;padding:16px;background:#1a2c37;border-radius:12px}summary{cursor:pointer;min-height:44px}.note{color:#f0c796}a:focus-visible,button:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #f0c796;outline-offset:4px}@media(max-width:700px){main{padding:16px}.pair{grid-template-columns:1fr}}[hidden]{display:none}
+</style>
+<main>
+<h1>Dreamerie</h1>
+<p>New landscape collection · Source artwork review, not the daily game.</p>
+<p>These are full generated sources. Final puzzle masks and hit regions still need verification to ensure exactly five playable differences. Click either painting to examine the native-resolution image in a new tab.</p>
+<nav aria-label="Choose artwork"><button id="previous" disabled>← Previous</button><label for="card">Dream</label><select id="card" disabled></select><button id="next" disabled>Next →</button></nav>
+<h2 id="title">Loading collection…</h2>
+<p id="status" role="status"></p>
+<div class="pair" hidden id="pair"><figure><a id="original-link" target="_blank" rel="noopener"><img id="original" alt=""></a><figcaption>The Dream · Original</figcaption></figure><figure><a id="altered-link" target="_blank" rel="noopener"><img id="altered" alt=""></a><figcaption>The Memory · Altered source</figcaption></figure></div>
+<details id="answers" hidden><summary>Review intended changes (spoilers)</summary><ol id="changes"></ol><p class="note" id="notes"></p></details>
+<p id="error" role="alert"></p>
+</main>
+<script type="module">
+const byId=id=>document.getElementById(id);
+try {
+ const response=await fetch('./manifest.json');
+ if(!response.ok)throw new Error('Collection manifest could not be loaded.');
+ const {cards}=await response.json();
+ if(!Array.isArray(cards)||!cards.length)throw new Error('No artwork is available yet.');
+ const select=byId('card');
+ for(const [index,card]of cards.entries()){const option=document.createElement('option');option.value=String(index);option.textContent=`${index+1} · ${card.title}`;select.append(option)}
+ const initial=cards.findIndex(card=>`#${card.id}`===location.hash);let index=initial<0?0:initial;
+ function show(){const card=cards[index];select.value=String(index);byId('title').textContent=card.title;byId('status').textContent=`${index+1} of ${cards.length} · ${card.width} × ${card.height} · Not enabled in gameplay`;for(const kind of ['original','altered']){const path='./'+card[kind].split('/').pop();byId(kind).src=path;byId(kind).alt=`${card.title} — ${kind==='original'?'original painting':'altered source painting'}`;byId(kind+'-link').href=path}const changes=card.intendedChanges?card.intendedChanges.split(';').map(x=>x.trim()).filter(Boolean):card.differences.map(x=>x.label);byId('changes').replaceChildren(...changes.map(change=>{const li=document.createElement('li');li.textContent=change;return li}));byId('notes').textContent=card.qaNotes||'Detailed five-region verification and difficulty playtesting pending.';byId('answers').open=false;byId('previous').disabled=index===0;byId('next').disabled=index===cards.length-1;history.replaceState(null,'',`#${card.id}`)}
+ select.disabled=false;byId('pair').hidden=false;byId('answers').hidden=false;
+ select.addEventListener('change',()=>{index=Number(select.value);show()});byId('previous').addEventListener('click',()=>{if(index>0){index--;show()}});byId('next').addEventListener('click',()=>{if(index<cards.length-1){index++;show()}});
+ for(const kind of ['original','altered'])byId(kind).addEventListener('error',()=>{byId('error').textContent='An image could not be loaded. Please check the saved collection files.'});
+ show();
+} catch(error){byId('title').textContent='Collection unavailable';byId('error').textContent=error.message+' Open this review through the local development server, not directly as a file.'}
+</script>
+</html>

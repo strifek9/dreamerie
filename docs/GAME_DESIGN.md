@@ -1,5 +1,19 @@
 # Dreamerie game design
 
+## Current V2 collection — September 25, 2026
+
+The user approved all 120 new landscape pairs as playable daily puzzles, followed by commit, push and deployment to the existing V2 site. This supersedes the historical single-sample/practice milestones below. V1 and the sample assets/data remain preserved.
+
+The runtime catalogue contains 120 native-resolution pairs with five visually reviewed, scene-fitting changes each. Only authored edited regions are overlaid on the untouched original. See [collection QA](artwork/V2_COLLECTION_PROGRESS.md), [final answer audit](artwork/V2_PLAYABLE_AUDIT.json) and [source provenance](artwork/V2_COLLECTION_MANIFEST.json). Difficulty remains an editorial estimate, not measured player performance.
+
+Use the local calendar for one daily card (September 24, 2026 = day 1), wrapping artwork after 120 days with independent per-date attempts. Keep the open round's date fixed until reload. The new collection has its own storage namespace; never erase V1 or previous sample attempts. Review/card overrides and New day are development-only, in-memory controls.
+
+No practice round, no pause: optional ? instructions, exactly five confirmed guesses total, two minutes, circle-overlap hit detection, accuracy first and whole-second time only for ties. Keep both landscape paintings stacked with synchronized zoom/pan and controls outside the artwork. Results reveal all five answers, allow fitted-image page scrolling, and share score/time without spoilers. Preserve the established painterly style and full-resolution PNGs; no new infrastructure or dependencies.
+
+All 38 automated tests, typecheck and build pass. Final browser/deployment verification is recorded in the collection QA and hosting documents. Physical touch gestures and human difficulty calibration remain owner acceptance checks.
+
+## Historical milestones (superseded where they conflict with the collection above)
+
 ## V2 landscape playtest (current experimental branch)
 
 Publication update: the refinement below is now live on the separate V2 site at commit `60ea989`, following explicit user approval. See `docs/HOSTING.md` (or `HOSTING.md` from this directory) for verification; earlier awaiting-publication/practice wording is historical. V1 remains unchanged.
