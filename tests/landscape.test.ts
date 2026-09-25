@@ -5,6 +5,24 @@ import { landscapeDifferences as differences, landscapeDream as dream, V2_SESSIO
 import { changeSession, sessionSnapshot, type DailySession } from '../src/game/dailySession.ts'
 import { compareResults, findDifference, GAME_CONFIG } from '../src/game/dailyRecall.ts'
 import { differencesFor, landscapeCollection, landscapeDay, landscapeForDay, LANDSCAPE_SESSION_OPTIONS } from '../src/v2/landscapeCollection.ts'
+import { dreamVerses, verseForDream } from '../src/v2/dreamVerses.ts'
+
+test('all 120 daily paintings have their own short couplet, stable on reload and rotation', () => {
+  assert.deepEqual(Object.keys(dreamVerses).sort(), landscapeCollection.map(card => card.id).sort())
+  const poems = new Set<string>()
+  for (const card of landscapeCollection) {
+    const lines = verseForDream(card.id)
+    assert.equal(lines.length, 2)
+    for (const line of lines) assert.ok(line.trim().length > 10 && line.length <= 80, card.id)
+    const sentences = lines.join(' ').split(/[.!?]+/u).filter(sentence => sentence.trim())
+    assert.ok(sentences.length >= 1 && sentences.length <= 2, `${card.id}: at most two sentences`)
+    poems.add(lines.join('\n'))
+  }
+  assert.equal(poems.size, 120)
+  assert.deepEqual(verseForDream(landscapeForDay(1).id), verseForDream(landscapeForDay(121).id))
+  assert.notDeepEqual(verseForDream(landscapeForDay(1).id), verseForDream(landscapeForDay(2).id))
+  assert.throws(() => verseForDream('missing-card'), /Missing dream verse/)
+})
 
 test('all 120 landscape cards have five distinct reachable answers and can finish perfectly', () => {
   assert.equal(landscapeCollection.length, 120)
