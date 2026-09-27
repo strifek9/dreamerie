@@ -1,5 +1,13 @@
 # Hosted Dreamerie playtest
 
+## Browser-local play streaks — September 27, 2026
+
+Release `b0eea845cf743aa4a889d3f99785f70b057fa72a` is live at https://dreamerie-playtest.onrender.com after explicit commit/push/deploy approval. Existing service `srv-daml13cri2ms73dpouk0`, deployment `dep-dasqblrbc2fs738dhud0`, reports **Deploy succeeded / Live**, duration 2m41s, with the service-live log at 6:27:52 PM CDT. The exact V3 commit was manually selected; configured main branch, hosting settings, plans and data remain unchanged. Future releases must still select the exact approved V3 commit.
+
+This release adds current/best play streaks and total dreams played, a quiet landing cue and a short share line for completed-today streaks of two or more. Existing collection attempts remain the only source of history: no migration, extra storage writes, reset or device sync. Unfinished holiday artwork/calendar work remains uncommitted and unpublished.
+
+The isolated release passed all 55 tests, typecheck/build and the 120-pair artwork validator. GitHub Actions run `36358561950` succeeded; Render repeated tests/build successfully. A disposable exact-release local preview credited an existing older round plus today's five-confirmation 0/5 round as 2 dreams played, current 1 / best 1 after the missed intervening day; reload preserved 0/5 · 0:11 and those statistics. Local browser errors were empty. Public homepage and health return 200, health `{ "ok": true }`; the live `index-BJoVPSKP.js` contains the new streak/history UI and CSS is `index-VOwLSknf.css`. Hosted browser verified the daily painting and enabled Start with no errors. No hosted daily attempt was started and no storage was cleared. This documentation-only follow-up requires no redeployment.
+
 ## Shorter share invitation — September 25, 2026
 
 Release `3c35b3e0eab990349a0c37cf7d62698e8a975f40` is live at https://dreamerie-playtest.onrender.com after explicit commit/push/deploy approval. Existing service `srv-daml13cri2ms73dpouk0`, deployment `dep-dardjfk9v7es73e7i2ng`, reports **Deploy succeeded / Live**, duration 4m26s. The exact V3 commit was selected manually; configured main branch, hosting settings and stored data remain unchanged.

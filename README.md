@@ -1,5 +1,7 @@
 # DREAMERIE
 
+Publication update (September 27, 2026): the streak-only release `b0eea84` is now live at https://dreamerie-playtest.onrender.com after explicit approval. All 55 isolated release tests, typecheck/build and artwork validation passed. See docs/HOSTING.md. The local/not-deployed streak wording below records development history; unfinished holiday work remains excluded and unpublished. No future publication is authorized automatically.
+
 ## Play streaks — local preview, September 27, 2026
 
 V3 now shows current day streak, best streak and dreams played after the answer list, plus a small landing streak for returning players. Finishing a daily round at any score counts, including expiry; simply opening the site does not. An already-started round that expires while away counts on its original puzzle day. Yesterday's streak stays alive until today is missed. Completed-today streaks of two or more add one short line to sharing. Development previews never count.
