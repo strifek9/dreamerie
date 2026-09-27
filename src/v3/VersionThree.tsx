@@ -9,8 +9,13 @@ import { differencesFor, landscapeCollection, landscapeDay, landscapeForDay, LAN
 import { AnswerInspection } from './AnswerInspection'
 import { MemoryFragments } from './MemoryFragments'
 import { guessFeedback, resultVerse } from './dreamRitual'
+import { streakShareLine } from '../game/playStats'
+import { PlayStats } from './PlayStats'
+import { usePlayStats } from './usePlayStats'
 import '../v2/versionTwo.css'
 import './versionThree.css'
+
+const knownCardIds = new Set(landscapeCollection.map(dream => dream.id))
 
 export default function VersionThree() {
   const [run, setRun] = useState(0)
@@ -27,6 +32,7 @@ function Round({ dream, day, playtest, onNew }: { dream: LandscapeDream; day: nu
   const verse = verseForDream(dream.id)
   const differences = useMemo(() => differencesFor(dream), [dream])
   const { phase, recall, result, recallLeft, pendingSide, dispatch, storageError, busy } = useDailySession(day, dream.id, differences, playtest, LANDSCAPE_SESSION_OPTIONS)
+  const stats = usePlayStats(playtest, Boolean(result), knownCardIds)
   const [home, setHome] = useState(false)
   const [hintOpen, setHintOpen] = useState(false)
   const [assetsReady, setAssetsReady] = useState(false)
@@ -50,7 +56,8 @@ function Round({ dream, day, playtest, onNew }: { dream: LandscapeDream; day: nu
     return () => { active = false }
   }, [dream])
   useEffect(() => { if (phase === 'result') { setHome(false); setPreviewZoom(false); setHintOpen(false); setExpandedSide(null) } }, [phase])
-  const shareText = result ? createShareText(day, result, differences, recall.foundDifferenceIds, location.href).replace(`Dreamerie #${day}`, `Dreamerie V3 · ${playtest ? 'Playtest' : 'Daily Dream'} #${day}`) : ''
+  const streakLine = !playtest && day === landscapeDay() ? streakShareLine(stats) : ''
+  const shareText = result ? createShareText(day, result, differences, recall.foundDifferenceIds, location.href).replace(`Dreamerie #${day}`, `Dreamerie V3 · ${playtest ? 'Playtest' : 'Daily Dream'} #${day}`).replace('Your turn to dream.', `${streakLine ? `${streakLine}\n` : ''}Your turn to dream.`) : ''
   async function share(copy = false) {
     try {
       if (!copy && navigator.share) { await navigator.share({ text: shareText }); setShareStatus('Shared.') }
@@ -76,7 +83,7 @@ function Round({ dream, day, playtest, onNew }: { dream: LandscapeDream; day: nu
       <button className="v2-preview" onClick={() => setPreviewZoom(true)} aria-label="Enlarge the dream preview"><img src={dream.original} alt={dream.title}/></button>
       <p className="v2-poem">“{verse[0]}<br/>{verse[1]}”</p>
       <h1>Spot the differences.</h1>
-      <p className="v2-rules"><span className="v3-rules-limit">2 minutes · 5 guesses total · Misses count</span>Tap to guess, <strong>Remember</strong> to confirm.</p>
+      <p className="v2-rules">{phase !== 'play' && stats && stats.current > 0 && <span className="v3-landing-streak"><span aria-hidden="true">✦ </span>{stats.current}-day streak</span>}<span className="v3-rules-limit">2 minutes · 5 guesses total · Misses count</span>Tap to guess, <strong>Remember</strong> to confirm.</p>
       {phase === 'play' && <p role="status">The dream is fading... <strong>{formatClock(recallLeft)}</strong> left · {getRemainingGuesses(recall)} guesses left.</p>}
       {assetError && <p role="alert">The paintings couldn’t load. Refresh before starting.</p>}
       <div className="v2-start"><button className="primary-action" disabled={busy || Boolean(storageError) || !assetsReady} onClick={() => { setHome(false); if (phase === 'rules') void dispatch({ type: 'start' }) }}>{phase === 'rules' ? 'Start' : result ? 'View result' : 'Continue'}</button></div>
@@ -96,7 +103,7 @@ function Round({ dream, day, playtest, onNew }: { dream: LandscapeDream; day: nu
         {!result && <p role="status">{guessFeedback(recall, differences, dream.aspectRatio)}</p>}
         <small>{result ? scrollResults ? 'Hold to expand' : 'Fit to scroll' : 'Hold to expand · pinch to zoom'}</small>
       </footer>
-      {result && <section className="v2-answers"><h2>What was different?</h2><ol>{differences.map((d, i) => <li key={d.id}><button className="v3-answer-link" aria-haspopup="dialog" onClick={() => setAnswerIndex(i)}><span className="v3-answer-number" aria-hidden="true">{i + 1}</span><span>{d.label}<small>{recall.foundDifferenceIds.includes(d.id) ? '✓ Found' : '○ Missed'}</small></span><span aria-hidden="true">⤢</span></button></li>)}</ol><details><summary>Your share message</summary><textarea aria-label="Share message" readOnly value={shareText} rows={6}/></details>{['localhost', '127.0.0.1'].includes(location.hostname) && <p>Local preview—share links only work on this device.</p>}<p>A new dream tomorrow.</p></section>}
+      {result && <section className="v2-answers"><h2>What was different?</h2><ol>{differences.map((d, i) => <li key={d.id}><button className="v3-answer-link" aria-haspopup="dialog" onClick={() => setAnswerIndex(i)}><span className="v3-answer-number" aria-hidden="true">{i + 1}</span><span>{d.label}<small>{recall.foundDifferenceIds.includes(d.id) ? '✓ Found' : '○ Missed'}</small></span><span aria-hidden="true">⤢</span></button></li>)}</ol>{!playtest && <PlayStats stats={stats}/>}<details><summary>Your share message</summary><textarea aria-label="Share message" readOnly value={shareText} rows={streakLine ? 7 : 6}/></details>{['localhost', '127.0.0.1'].includes(location.hostname) && <p>Local preview—share links only work on this device.</p>}<p>A new dream tomorrow.</p></section>}
     </>}
     {previewZoom && landing && <DreamViewer fitAspectRatio={dream.aspectRatio} title={dream.title} onClose={() => setPreviewZoom(false)} simpleZoom status={phase === 'play' ? <span>{formatClock(recallLeft)} left · timer running</span> : undefined}><LandscapeArtwork dream={dream} changed={false}/></DreamViewer>}
     {expandedSide && !landing && <DreamViewer fitAspectRatio={dream.aspectRatio} title={expandedSide === 'original' ? 'The Dream' : 'The Memory'} onClose={() => setExpandedSide(null)} onTap={result ? undefined : point => { void dispatch({ type: 'mark', point, side: expandedSide }) }} status={result ? <span>{result.accuracy}/5 · {formatClock(result.elapsedSeconds)}</span> : <span>{getRemainingGuesses(recall)} guesses left · {formatClock(recallLeft)} · timer running</span>} action={result ? revealAction : <><div className="v3-guess-action"><MemoryFragments guesses={recall.confirmed}/>{guessAction}</div><p className="v3-viewer-feedback" role="status">{guessFeedback(recall, differences, dream.aspectRatio)}</p></>}>{artwork(expandedSide)}</DreamViewer>}

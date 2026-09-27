@@ -1,5 +1,9 @@
 # Dreamerie game design
 
+## Gentle play streaks — current local addition
+
+Reward returning, not perfection: one completed daily round (five guesses or timer expiry, even 0/5) counts per original puzzle day. An expired round counts even if the browser was closed; unstarted days never count. Consecutive local-calendar days build the current streak. Yesterday's run stays current while today's puzzle is available; missing a whole day resets current but not best or total played. Dates use the existing DST-safe absolute puzzle day, not 24-hour elapsed windows. Overnight rounds never count twice. Read existing valid saved attempts without changing them. Preview rounds are excluded, and same-browser/site storage is the only persistence. No account, guilt prompts, streak freezes, currency, additional game rules or pressure to score perfectly. Minimal landing streak and result-only history; no added active-game clutter.
+
 ## Version 3 — current local milestone
 
 Latest visual-only refinement removes themed page-edge ornaments; all rules, saved attempts and other V3 presentation improvements remain unchanged. Earlier margin-decoration notes below are historical.

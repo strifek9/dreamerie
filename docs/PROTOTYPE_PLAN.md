@@ -1,5 +1,9 @@
 # Dreamerie Daily Dream Recall Prototype Plan
 
+## Play-streak milestone — local review
+
+Add browser-local current/best play streak and total completed dreams using the existing daily attempts as the only source of truth. No writes, migration or extra infrastructure; exclude previews. Keep history below results/answers so painting dimensions stay unchanged, with a small returning-player landing cue. Test completion at any score, expiry while away, yesterday grace, missed days, reload/idempotence, cross-tab reads, calendar/DST/leap boundaries, invalid/future storage and concise streak sharing. Check mobile/landscape/desktop fit and saved progress. Keep the unfinished holiday work intact and unpublished; await explicit commit/push/deploy approval.
+
 ## Version 3 — local design-review package
 
 Current local follow-up removes only the rejected artwork-themed edge decoration layer, helper, CSS and decoration-specific test. Preserve the new logo, hint circle, simplified copy and compact layouts. Verify tests/typecheck/build and undecorated local rendering; do not automatically publish.

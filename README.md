@@ -1,5 +1,26 @@
 # DREAMERIE
 
+## Play streaks — local preview, September 27, 2026
+
+V3 now shows current day streak, best streak and dreams played after the answer list, plus a small landing streak for returning players. Finishing a daily round at any score counts, including expiry; simply opening the site does not. An already-started round that expires while away counts on its original puzzle day. Yesterday's streak stays alive until today is missed. Completed-today streaks of two or more add one short line to sharing. Development previews never count.
+
+History is read directly from existing valid collection attempts: no new database, account, counter writes or storage migration. It is specific to this browser/site; clearing site data clears history, and devices do not sync. Damaged/unavailable history hides the numbers with a quiet explanation and never changes attempts. Current streak updates on completion, focus, other-tab updates and a 30-second calendar refresh. Previously saved rounds count automatically.
+
+Development validation: all 65 tests (including ten unpublished holiday tests) and production build/typecheck passed. The isolated streak release excludes those holiday tests and changes; its release suite contains 55 tests. Browser checks verified a five-confirmation 0/5 round yields 1 day / 1 best / 1 played, reload preserves score/time/history, returning-player controls fit 320×568 and 844×390, and mobile/desktop have no horizontal overflow. The landscape streak stays in the instruction column. Browser errors were empty. Multi-day/clock/storage cases are automated tests; physical-device touch remains owner acceptance. No live-site attempt was touched.
+
+Run `npm test` and `npm run build` (includes typecheck). The streak suite covers gaps, duplicates, legacy/preview isolation, expired rounds, previous saves, corrupted storage, clock rollback, DST/month/year/leap boundaries and sharing. This is local only; unfinished holiday assets remain unpublished. Suggested commit: `feat(streaks): add browser-local daily play history`. After review and approval, stage only intended hunks in shared files (`git add -p`) plus `src/game/playStats.ts`, `src/v3/PlayStats.tsx`, `src/v3/usePlayStats.ts` and `tests/playStats.test.ts`, then commit and push `prototype/v3-dream-ritual`. Do not accidentally publish unfinished holiday work.
+
+Publication commands, only after explicit approval and separating/reviewing the overlapping holiday hunks (especially imports and share text):
+
+```powershell
+git add -p -- AGENTS.md README.md docs/GAME_DESIGN.md docs/PROTOTYPE_PLAN.md package.json src/v3/VersionThree.tsx src/v3/versionThree.css
+git add -- src/game/playStats.ts src/v3/PlayStats.tsx src/v3/usePlayStats.ts tests/playStats.test.ts
+git diff --cached
+# Verify the isolated staged release passes tests/build before committing.
+git commit -m "feat(streaks): add browser-local daily play history"
+git push origin prototype/v3-dream-ritual
+```
+
 Publication update: decoration removal is live as `d55483c` at https://dreamerie-playtest.onrender.com. All 44 tests and release checks passed; the live page has the clean background and retained crescent logo. See docs/HOSTING.md. The local-removal note below is now historical.
 
 Local refinement (not yet published): removed the artwork-themed page-edge decorations at the user's request. The crescent logo, compact help circle, simplified copy, responsive layout, gameplay and saved progress are unchanged. Decoration-only implementation and its test were removed; they remain recoverable in Git. Suggested commit: `style(v3): remove themed page-edge decorations`. After approval, stage the reviewed changes with `git add -u`, commit with that message and push `prototype/v3-dream-ritual`; deployment remains a separate explicitly approved step.

@@ -1,5 +1,9 @@
 # Working on DREAMERIE
 
+## Play streaks — September 27, 2026, local only
+
+V3 derives current streak, best streak and dreams played from valid completed collection attempts already saved in this browser. Completion means five confirmations OR the original two-minute deadline expiring, any score including zero. Count each puzzle's absolute local-calendar day once; yesterday's streak remains current until today is missed. Overnight rounds belong to their original puzzle day. Existing history counts; no migration, new counter store, writes, clearing or cross-device sync. Ignore preview/legacy/unknown-card/future records; damaged relevant history makes optional stats unavailable, not a new attempt. Refresh on completion, other-tab storage events, focus and calendar rollover. No stats during active guessing or development previews. Keep a quiet landing streak, compact result history below answers, and one share line only for a completed-today streak of two or more. Preserve scoring, timers, artwork size and unfinished holiday work. Not committed or deployed; await approval.
+
 ## V3 dream ritual — current development
 
 Publication update: the decoration removal below is live as `d55483c` after explicit approval; all 44 tests and release checks passed. See docs/HOSTING.md. Preserve the undecorated background; local/awaiting-approval wording below is historical. Further changes still require publication approval.
