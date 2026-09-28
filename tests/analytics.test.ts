@@ -2,15 +2,16 @@ import assert from 'node:assert/strict'
 import test from 'node:test'
 import { installCloudflareAnalytics, shouldLoadAnalytics } from '../src/analytics/cloudflare.ts'
 
-const live = 'https://dreamerie-playtest.onrender.com/'
+const live = 'https://dreamerie.onrender.com/'
 
 test('analytics runs only on the exact HTTPS production origin', () => {
   assert.equal(shouldLoadAnalytics(true, live), true)
   assert.equal(shouldLoadAnalytics(false, live), false)
   for (const href of ['http://127.0.0.1:5173/', 'http://localhost:5187/',
     'http://192.168.1.2:5173/', 'https://dreamerie-v2-playtest.onrender.com/',
-    'http://dreamerie-playtest.onrender.com/', 'https://dreamerie-playtest.onrender.com:8443/',
-    'https://dreamerie-playtest.onrender.com.example.org/', 'not a URL']) {
+    'https://dreamerie-playtest.onrender.com/',
+    'http://dreamerie.onrender.com/', 'https://dreamerie.onrender.com:8443/',
+    'https://dreamerie.onrender.com.example.org/', 'not a URL']) {
     assert.equal(shouldLoadAnalytics(true, href), false, href)
   }
 })
@@ -40,7 +41,7 @@ test('installs exactly one nonblocking vendor script with only the public site t
   assert.equal(appended[0].async, true)
   assert.equal(appended[0].src, 'https://static.cloudflareinsights.com/beacon.min.js')
   assert.deepEqual(JSON.parse(appended[0].attributes['data-cf-beacon']), {
-    token: '1a8a88c8b9e341e58653cb2af0132599',
+    token: 'b184fc0494ec43e981f99c33a66fb2a5',
   })
 })
 

@@ -1,5 +1,7 @@
 # DREAMERIE
 
+New home (deployment in progress): https://dreamerie.onrender.com. The owner-approved move uses a Render Static Site with no base compute fee; bandwidth/build usage still counts against workspace allowances. It retains the same game/artwork and does not require a database. Cloudflare registration and the production origin guard are updated together. Existing scores/streaks remain stored under the old address and cannot automatically follow to this new origin. See [hosting status](docs/HOSTING.md) before assuming cutover or old-server retirement is complete. Root render.yaml remains the legacy paid-service configuration and must not be synced as the new site.
+
 Analytics is live: owner-approved release `9eaad35` adds free Cloudflare Web Analytics to the current live hostname. The dashboard has received the first verification visits. The optional production-only script measures site traffic/performance, not custom guesses, scores or saved history; local previews and V2 are excluded. All 74 tests and build/typecheck passed. See [analytics setup and dashboard instructions](docs/ANALYTICS.md) and [deployment verification](docs/HOSTING.md).
 
 ## Complete painted artwork rollout — September 28, 2026

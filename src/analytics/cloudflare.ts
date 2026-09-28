@@ -1,8 +1,8 @@
 /// <reference lib="dom" />
 
 // Public site identifier from Cloudflare's installation snippet, NOT an API key.
-const SITE_TOKEN = '1a8a88c8b9e341e58653cb2af0132599'
-const LIVE_ORIGIN = 'https://dreamerie-playtest.onrender.com'
+const SITE_TOKEN = 'b184fc0494ec43e981f99c33a66fb2a5'
+const LIVE_ORIGIN = 'https://dreamerie.onrender.com'
 const SCRIPT_ID = 'dreamerie-web-analytics'
 
 export function shouldLoadAnalytics(production: boolean, href: string): boolean {

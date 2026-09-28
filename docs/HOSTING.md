@@ -1,5 +1,11 @@
 # Hosted Dreamerie playtest
 
+## Clean address and static hosting — September 28, 2026, in progress
+
+The owner approved creating a no-base-fee Render Static Site after reviewing costs, plus committing/pushing/deploying the address-only analytics update. New service `srv-data2gvpn0mc73bgfhc0` received https://dreamerie.onrender.com. Configuration: repository strifek9/dreamerie, branch `prototype/v3-dream-ritual`, Node 24, build `npm ci --include=dev && npm test && npm run build`, publish directory `dist`, Auto-Deploy Off. First build `dep-data2h7pn0mc73bgfih0` uses `d91f5ba`; the follow-up address-only release will add the new-host Cloudflare token/origin guard. Static hosting has no server process, persistent disk or /api/health endpoint; verify homepage and actual assets instead. Render's global CDN and HTTPS serve the built game. Monthly workspace bandwidth/pipeline allowances and overage billing still apply.
+
+The existing server was cosmetically renamed back to `dreamerie-playtest` to free the name; renaming never changed its original public URL. Its last deployed release `9eaad35` remains online until the new site is verified. Do not delete this service or its 1 GB /var/data disk. Retained code/art/data and disk must remain recoverable; preservation is not a verified off-site database backup. Separate V2 remains untouched. Saved attempts/streaks are origin-specific: the new address starts a separate history without clearing the old one. Root render.yaml is the LEGACY paid service; do not apply/sync it for this static site. Blueprint Auto Sync remains paused. No new custom domain purchase, subscription, database or backend.
+
 ## Cloudflare Web Analytics — September 28, 2026
 
 Owner-approved release `9eaad35554abd777b58cbd8c73272eba9159a6b7` is live at https://dreamerie-playtest.onrender.com. Existing service `srv-daml13cri2ms73dpouk0`, exact-commit deployment `dep-dat94aojo6nc73eobp4g`, reports **Deploy succeeded / Live**, duration 4m20s; service-live log at 11:17:50 AM CDT. No hosting, DNS, domain, plan, environment, database or disk settings changed. Configured branch remains main, so future approved V3 releases must still select their exact commit.

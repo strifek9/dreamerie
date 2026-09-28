@@ -1,4 +1,6 @@
-# Daily Dream Recall uses the existing service, but serves built files only.
+# LEGACY paid service only. The new dreamerie.onrender.com Static Site is managed
+# separately in Render; see docs/HOSTING.md. Do not sync this file for that site.
+# Daily Dream Recall on the legacy address serves built files only.
 # Keep the legacy disk attached and untouched for recovery of the social prototype.
 # Importing provisions paid resources. Review docs/HOSTING.md and the checkout price first.
 services:

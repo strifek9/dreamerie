@@ -1,5 +1,11 @@
 # Dreamerie web analytics
 
+## New static-site address — September 28, 2026
+
+The owner approved moving to https://dreamerie.onrender.com and committing, pushing and deploying the address-only integration update. The new hostname has its own Cloudflare registration, site tag `169b375deaee49fd978539ef88efb4e9`; its public token is embedded in src/analytics/cloudflare.ts. The prior site's registration and history remain untouched. Open Cloudflare → Analytics → Web analytics → dreamerie.onrender.com for the new report. New-host live collection is pending deployment/verification; the verified older milestone below is historical.
+
+The exact production-origin guard now permits only the new HTTPS address and rejects the old playtest address, V2, localhost/LAN, alternate ports and lookalikes. Preview query exclusions and optional/nonblocking behavior are unchanged. No game data, storage, scoring, artwork, dependencies or custom events changed. New and old reports remain separate; no claim of historical data migration. See docs/HOSTING.md for the final release record.
+
 ## Cloudflare setup — September 28, 2026
 
 The owner selected free Cloudflare Web Analytics to start; Plausible/gameplay events may be considered later. The existing `dreamerie-playtest.onrender.com` hostname is registered in the owner's Cloudflare account. No domain, DNS, hosting, subscription, security or account permission changes were made.
