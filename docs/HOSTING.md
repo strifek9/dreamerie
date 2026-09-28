@@ -1,5 +1,15 @@
 # Hosted Dreamerie playtest
 
+## Complete painted collection — September 28, 2026
+
+Release `04f739e8e46be0c856f65e12f5d587a5e5e56912` is live at https://dreamerie-playtest.onrender.com after the owner-authorized full-collection completion gate. Existing service `srv-daml13cri2ms73dpouk0`, deployment `dep-dat8b78jo6nc73elf9ig`, reports **Deploy succeeded / Live**, duration 19m58s; service-live log at 10:39:56 AM CDT. The exact V3 commit was manually selected. Configured main branch, hosting plan/settings, environment, disk and database remain unchanged; never deploy latest main for a V3 release.
+
+All 120 ordinary pairs and 18 holiday pairs use the approved grain-free painted direction. All 690 real-compositor answer crops and 138 full composites passed visual QA. Old originals, counterparts, geometry and saved IDs remain intact; current selection uses 138 painted IDs while 276 IDs remain resolvable for saved rounds. Existing same-day attempts retain their old art, guesses, time and score. No storage migration/reset. Unused intermediate drafts remain in the local artwork-review backup archive.
+
+All 70 tests, typecheck/build and the unchanged 120-pair validator passed locally. GitHub Actions run `36442641114` succeeded; Render repeated all 70 tests and build successfully. Public homepage returns 200 with `index-ByCsGyFm.js` / `index-CWnjVzCD.css`; health is `{ "ok": true }`. Sample new ordinary original/counterpart and holiday artwork return 200 image/png. Hosted phone landing (390×844) shows the new painted house, enabled Start and reachable controls; landscape (844×390) enlargement fills its stage and closes correctly. No browser errors. No hosted round was started and no storage was cleared. Local production-preview gameplay verified correct/repeat/miss confirmations, five-guess completion, expanded guessing/zoom, paired answer inspection, sharing and reload persistence.
+
+V2 remains unchanged with `index-BQHV4NK0.js` / `index-C31VduYi.css`. The large retained full-resolution collection made checkout/deployment slower; production asset-size optimization remains a later cleanup, not part of this release. Vite's 574 kB minified chunk warning is non-blocking (142 kB gzip); no build failures. Physical-device gestures and subjective difficulty remain ongoing owner playtesting. This documentation-only follow-up needs no redeployment. Earlier incomplete/local-only milestone notes below are historical.
+
 ## Browser-local play streaks — September 27, 2026
 
 Release `b0eea845cf743aa4a889d3f99785f70b057fa72a` is live at https://dreamerie-playtest.onrender.com after explicit commit/push/deploy approval. Existing service `srv-daml13cri2ms73dpouk0`, deployment `dep-dasqblrbc2fs738dhud0`, reports **Deploy succeeded / Live**, duration 2m41s, with the service-live log at 6:27:52 PM CDT. The exact V3 commit was manually selected; configured main branch, hosting settings, plans and data remain unchanged. Future releases must still select the exact approved V3 commit.

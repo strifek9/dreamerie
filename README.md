@@ -2,6 +2,8 @@
 
 ## Complete painted artwork rollout — September 28, 2026
 
+**Live:** release `04f739e` is committed, pushed and deployed at https://dreamerie-playtest.onrender.com. Render reports Deploy succeeded / Live; all 70 tests and build passed locally, on GitHub and on Render. See docs/HOSTING.md for verification. The separate V2 site is unchanged. Older local/not-deployed notes below are historical.
+
 All **120 ordinary cards and 18 holiday cards** now have complete playable pairs in the approved visibly painted, grain-free style. All 690 paired answer crops and 138 full composites passed visual review. New assets live in `public/artwork/v3/collection-painted-v1/` and `holidays-painted-v1/`; original artwork and geometry remain intact for backup and already-saved rounds. The schedule/review uses 138 current cards; 276 current/legacy IDs remain resolvable without changing storage keys, scores, streaks or deadlines.
 
 Run `npm run dev`; preview `?dream=painted-dream-001` or `?dream=holiday-painted-halloween`, or use `?review=1&card=1` through card 138. Preview overrides are development-only. `npm test` passes all 70 tests; `npm run build` includes typecheck; `node scripts/validateLandscapeCollection.mjs` validates the untouched legacy ordinary pairs. New tests validate all 600 ordinary targets, crop containment, source hashes, five-guess limits, overlap hits, repeats, expiry, accuracy-first ranking and old-save compatibility. Generation prompts, corrections, audit records and hashes are in `docs/artwork/ORDINARY_PAINTED_*` and `HOLIDAY_PAINTED_PROVENANCE.json`.

@@ -1,6 +1,6 @@
 # Holiday dream calendar
 
-Local V3 preview: 18 special pairs, 90 authored differences, plus the unchanged 120 ordinary pairs (138 playable puzzles). Every special has an original rhyming couplet and native artwork mapped to the common 1672 × 941 artboard (one altered source is one pixel narrower). Painted replacements are integrated locally; publication is authorized only after all 120 ordinary-card cleanups and validation are complete.
+Completed V3 catalogue: 18 painted special pairs, 90 authored differences, plus 120 painted ordinary pairs (138 current puzzles). Every special has an original rhyming couplet and native artwork mapped to the common 1672 × 941 artboard (one altered source is one pixel narrower). All ordinary cleanup and pair validation is complete; publication of the full milestone is owner-authorized. Old artwork/geometry remains available for saved attempts without changing the ordinary rotation or storage namespace. See HOSTING.md for deployment status.
 
 ## Annual schedule
 

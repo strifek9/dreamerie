@@ -1,5 +1,7 @@
 # Dreamerie card creation guide
 
+Publication scope update (September 28, 2026): the owner authorized commit, push and deployment after the full painted collection was complete. All 120 ordinary and 18 holiday pairs are now complete and validated, committed as `04f739e`. Older no-publication / unfinished-batch notes below are historical. Keep the approved art safeguards and preserve old assets and intermediate drafts; future artwork changes still need their own scope authorization.
+
 ## Latest refinement: keep the presidential card; vary the storytelling
 
 The owner explicitly restored the Presidents' Day original with Washington/Lincoln carved portrait bookends in workspace holiday-completion-05/presidents-day-painted-v1.png. Keep that exact artwork as the selected original; do not substitute the symbolic paper-animal town. This is a narrow exception to the public-figure/landmark restrictions below, not permission for contemporary politics, campaign art, other real-person portraits or stereotypes. The MLK portrait and Juneteenth picnic remain rejected.
