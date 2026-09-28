@@ -24,7 +24,7 @@ export function guessFeedback(state: RecallState, differences: readonly Differen
 }
 
 export function resultVerse(accuracy: number) {
-  if (accuracy === 5) return 'Nothing escaped you.'
+  if (accuracy === 5) return 'You remembered the dream.'
   if (accuracy === 0) return 'The dream slipped away.'
   if (accuracy >= 3) return 'Much of the dream stayed.'
   return 'A few fragments stayed.'

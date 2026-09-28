@@ -1,5 +1,15 @@
 # DREAMERIE
 
+Local UI refinement (September 28, 2026; not published): the landscape landing page groups its right-hand copy so the Start / View result / Continue button shares the artwork's bottom edge. Portrait remains stacked. Perfect 5/5 results now say “You remembered the dream.” in a warm gold serif treatment with matching score/stars; other outcomes, scoring, share text, timers and saves are unchanged. All 77 tests and typecheck/build pass. Browser checks covered 568×320, 844×390, 1280×720, 390×844 and 320×568, plus a full five-correct-confirmation round. Suggested commit: `style(v3): align landscape welcome and celebrate perfect recall`. Await owner approval before publication.
+
+After review and explicit approval only (not run):
+
+```powershell
+git add README.md AGENTS.md src/v3/VersionThree.tsx src/v3/versionThree.css src/v3/dreamRitual.ts tests/dreamRitual.test.ts
+git commit -m "style(v3): align landscape welcome and celebrate perfect recall"
+git push origin prototype/v3-dream-ritual
+```
+
 **Live performance release — September 28, 2026:** `6396977` is committed, pushed and deployed at https://dreamerie.onrender.com. Artwork delivery uses 57.1% fewer bytes across the 138 current cards without resizing or changing decoded pixels. All 77 tests and build/typecheck passed locally, on GitHub and Render. Live artwork hashes, enlargement/zoom/close and existing saved-result persistence were verified. Masters, gameplay and saved progress are preserved. See [deployment verification](docs/HOSTING.md) and [remaining real-device checks](docs/PERFORMANCE.md). Earlier local/unpublished wording below describes the pre-release milestone.
 
 Local pre-launch performance pass (September 28, 2026; NOT published): the 138 current paintings now use native-resolution, lossless WebP originals plus five padded clue-source crops. Artwork delivery totals fall from 748,233,433 to 320,998,368 bytes (57.1%); every decoded crop was verified pixel-for-pixel against its PNG master. Masters, legacy cards, answer geometry and saved attempts remain unchanged. A viewer resize/close callback guard was also fixed. See [performance checks and the remaining device checklist](docs/PERFORMANCE.md). All 77 automated tests, typecheck/build and legacy collection validation pass. No commit, push or deployment has occurred for this pass.

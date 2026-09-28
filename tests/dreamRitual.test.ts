@@ -43,5 +43,5 @@ test('result language acknowledges zero, partial and perfect accuracy', () => {
   assert.equal(resultVerse(0), 'The dream slipped away.')
   for (const n of [1, 2]) assert.equal(resultVerse(n), 'A few fragments stayed.')
   for (const n of [3, 4]) assert.equal(resultVerse(n), 'Much of the dream stayed.')
-  assert.equal(resultVerse(5), 'Nothing escaped you.')
+  assert.equal(resultVerse(5), 'You remembered the dream.')
 })
