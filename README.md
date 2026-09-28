@@ -1,5 +1,7 @@
 # DREAMERIE
 
+Analytics setup (local, not deployed): free Cloudflare Web Analytics is registered for the current live hostname. The optional production-only script measures site traffic/performance, not guesses, scores or saved history; local previews and V2 are excluded. See [analytics setup and dashboard instructions](docs/ANALYTICS.md). Await publication approval before activating the prepared integration.
+
 ## Complete painted artwork rollout — September 28, 2026
 
 **Live:** release `04f739e` is committed, pushed and deployed at https://dreamerie-playtest.onrender.com. Render reports Deploy succeeded / Live; all 70 tests and build passed locally, on GitHub and on Render. See docs/HOSTING.md for verification. The separate V2 site is unchanged. Older local/not-deployed notes below are historical.
