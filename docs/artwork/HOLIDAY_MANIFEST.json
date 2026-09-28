@@ -1,0 +1,53 @@
+{
+  "created": "2026-09-25",
+  "tool": "built-in image_gen",
+  "styleReference": "public/artwork/v2/collection/dream-056-original.png",
+  "prompts": "docs/artwork/HOLIDAY_PROMPTS.md",
+  "geometry": "src/v3/holidayDreams.ts",
+  "status": "composite-reviewed",
+  "review": "All 15 original/composited answer crops visually inspected; Halloween reached 5/5 through mobile-size UI.",
+  "assets": [
+    {
+      "path": "public/artwork/v3/holidays/christmas-altered-source.png",
+      "sha256": "006e657b3398f037142957728cc8f5afe504b0532cef3b73131b583ca5e36782",
+      "width": 1672,
+      "height": 941,
+      "generatedSource": "C:/Users/Kou/.codex/generated_images/01a0bcb0-e299-75d3-a499-50cd08ef04ac/exec-66f3e050-fd0e-4025-b42b-c59ae715fb07.png"
+    },
+    {
+      "path": "public/artwork/v3/holidays/christmas-original.png",
+      "sha256": "754bc6d5e0d371f4365f73211aa214568a62d397925c49baaa001e26f6e74a45",
+      "width": 1672,
+      "height": 941,
+      "generatedSource": "C:/Users/Kou/.codex/generated_images/01a0bcb0-e299-75d3-a499-50cd08ef04ac/exec-97f640b1-cad4-4fa1-a603-c97ab4d1435a.png"
+    },
+    {
+      "path": "public/artwork/v3/holidays/halloween-altered-source.png",
+      "sha256": "b8d537ddbf59118bb51057606a2708e285934f647824e8432d137be041dcc2d8",
+      "width": 1672,
+      "height": 941,
+      "generatedSource": "C:/Users/Kou/.codex/generated_images/01a0bcb0-e299-75d3-a499-50cd08ef04ac/exec-6ff0edc7-c18d-4591-8374-0dc5d761de4b.png"
+    },
+    {
+      "path": "public/artwork/v3/holidays/halloween-original.png",
+      "sha256": "8a9caeb090c851c334c97a5c8455217a42dc991b6138c965f395ead7789c6efe",
+      "width": 1672,
+      "height": 941,
+      "generatedSource": "C:/Users/Kou/.codex/generated_images/01a0bcb0-e299-75d3-a499-50cd08ef04ac/exec-505abcf0-27c6-4374-ab8c-3b129ff853ad.png"
+    },
+    {
+      "path": "public/artwork/v3/holidays/thanksgiving-altered-source.png",
+      "sha256": "86c6de1cb2776ae2a0b626587681d0eab57a17802de169f2b6024bbd73ce153b",
+      "width": 1672,
+      "height": 941,
+      "generatedSource": "C:/Users/Kou/.codex/generated_images/01a0bcb0-e299-75d3-a499-50cd08ef04ac/exec-3bd50b0c-bdad-443d-8eac-74ebd3baed31.png"
+    },
+    {
+      "path": "public/artwork/v3/holidays/thanksgiving-original.png",
+      "sha256": "2ab07d23a94eccc5d64a3f399cd9af25c0d6b79bc478b28060ab96ddc76cc3d7",
+      "width": 1672,
+      "height": 941,
+      "generatedSource": "C:/Users/Kou/.codex/generated_images/01a0bcb0-e299-75d3-a499-50cd08ef04ac/exec-1cf8e0fe-1624-42ba-a708-e72ff3d1019c.png"
+    }
+  ]
+}

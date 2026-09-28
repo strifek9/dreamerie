@@ -1,8 +1,20 @@
 # Dreamerie game design
 
+## Current painted catalogue — September 28, 2026
+
+All 120 ordinary pairs and 18 holiday pairs are complete and validated: 690 authored differences. Versioned painted IDs drive the current schedule; 138 old IDs/assets/geometry remain available exclusively for saved-round compatibility. Ordinary ordering and wraparound are unchanged. Daily gameplay, confirmation, scoring, time, streaks and storage semantics are unchanged. Earlier local/incomplete milestone notes below are historical.
+
 ## Gentle play streaks — current local addition
 
 Reward returning, not perfection: one completed daily round (five guesses or timer expiry, even 0/5) counts per original puzzle day. An expired round counts even if the browser was closed; unstarted days never count. Consecutive local-calendar days build the current streak. Yesterday's run stays current while today's puzzle is available; missing a whole day resets current but not best or total played. Dates use the existing DST-safe absolute puzzle day, not 24-hour elapsed windows. Overnight rounds never count twice. Read existing valid saved attempts without changing them. Preview rounds are excluded, and same-browser/site storage is the only persistence. No account, guilt prompts, streak freezes, currency, additional game rules or pressure to score perfectly. Minimal landing streak and result-only history; no added active-game clutter.
+
+## Holiday specials — latest local addition
+
+The catalogue now has 18 special puzzles in addition to the 120 ordinary cards. See HOLIDAY_CALENDAR.md for the full annual schedule: all nationwide federal holidays plus Valentine’s, St. Patrick’s, Easter, Mother’s/Father’s, Halloween and New Year’s Eve. Use actual local dates, fixed until reload, rather than substitute federal observed dates. The rare Juneteenth/Father’s Day collision gives June 19 to Juneteenth and June 20 to the Father’s puzzle (owner-feedback assumption).
+
+A special replaces only its date’s ordinary selection; the original 120-day sequence is not shifted. Specials repeat annually with fresh absolute-day attempt keys. A valid already-started saved card wins over any schedule update, preserving guesses, pending marker, result and original deadline. Never silently reset damaged storage.
+
+Each special has exactly five authored differences and a short rhyming verse. Five total confirmations, misses/repeats consuming guesses, two-minute unpausable deadline, circle-overlap hits, accuracy-first ranking and whole-second ties stay unchanged. Real holiday shares name the occasion and link to the clean site URL, not a reset/preview route. Development previews are disposable and labeled Playtest; the holiday picker is absent in production. No new mode or backend scheduler.
 
 ## Version 3 — current local milestone
 

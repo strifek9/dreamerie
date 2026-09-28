@@ -1,16 +1,18 @@
 import { useEffect, useState } from 'react'
 import { LandscapeArtwork } from './LandscapeArtwork'
-import { landscapeCollection, type LandscapeDream } from './landscapeCollection'
+import type { LandscapeDream } from './landscapeCollection'
+import { currentDreams as landscapeCollection } from '../v3/dailyDream'
 import './collectionReview.css'
 
 // Development-only: the exact production compositor, enlarged at each answer.
 export default function CollectionReview() {
   const params = new URLSearchParams(location.search)
-  const [index, setIndex] = useState(() => Math.max(0, Math.min(119, Number(params.get('card') || 1) - 1)))
+  const last = landscapeCollection.length - 1
+  const [index, setIndex] = useState(() => Math.max(0, Math.min(last, Number(params.get('card') || 1) - 1)))
   const [full, setFull] = useState(false)
   const dream = landscapeCollection[index]
   return <main className="collection-review">
-    <nav><button disabled={index === 0} onClick={() => setIndex(Math.max(0, index - 2))}>Previous</button><label>Card <input type="number" min="1" max="120" value={index + 1} onChange={e => setIndex(Math.max(0, Math.min(119, Number(e.target.value) - 1)))}/></label><button disabled={index >= 119} onClick={() => setIndex(Math.min(119, index + 2))}>Next</button><button onClick={() => setFull(!full)}>{full ? 'Hide' : 'Show'} whole paintings</button><a href={`?dream=${dream.id}`}>Play this card</a><a href="./">Daily game</a></nav>
+    <nav><button disabled={index === 0} onClick={() => setIndex(Math.max(0, index - 2))}>Previous</button><label>Card <input type="number" min="1" max={landscapeCollection.length} value={index + 1} onChange={e => setIndex(Math.max(0, Math.min(last, Number(e.target.value) - 1)))}/></label><button disabled={index >= last} onClick={() => setIndex(Math.min(last, index + 2))}>Next</button><button onClick={() => setFull(!full)}>{full ? 'Hide' : 'Show'} whole paintings</button><a href={`?dream=${dream.id}`}>Play this card</a><a href="./">Daily game</a></nav>
     {landscapeCollection.slice(index, index + 2).map(card => <ReviewCard key={card.id} dream={card} full={full}/>)}
   </main>
 }

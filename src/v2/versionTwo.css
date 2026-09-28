@@ -63,6 +63,7 @@ html:has(.v2-app) { scrollbar-gutter: stable; }
 .v2-answers > p { color: var(--mist); font-size: .75rem; text-align: center; }
 .v2-dev { margin: 1rem auto 0; display: flex; gap: .7rem; align-items: center; justify-content: center; font-size: .65rem; }
 .v2-dev a { color: var(--mist); }
+.v2-dev select { max-width: 15rem; min-height: 44px; padding: .35rem .6rem; border: 1px solid #ffffff30; border-radius: .4rem; background: var(--night, #171526); color: var(--mist); font: inherit; }
 .v2-dev { flex-wrap: wrap; }
 .v2-app .viewer-header { flex-wrap: wrap; }
 .v2-app .viewer-status { max-width: 100%; }

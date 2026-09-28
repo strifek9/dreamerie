@@ -1,5 +1,15 @@
 # DREAMERIE
 
+## Complete painted artwork rollout — September 28, 2026
+
+All **120 ordinary cards and 18 holiday cards** now have complete playable pairs in the approved visibly painted, grain-free style. All 690 paired answer crops and 138 full composites passed visual review. New assets live in `public/artwork/v3/collection-painted-v1/` and `holidays-painted-v1/`; original artwork and geometry remain intact for backup and already-saved rounds. The schedule/review uses 138 current cards; 276 current/legacy IDs remain resolvable without changing storage keys, scores, streaks or deadlines.
+
+Run `npm run dev`; preview `?dream=painted-dream-001` or `?dream=holiday-painted-halloween`, or use `?review=1&card=1` through card 138. Preview overrides are development-only. `npm test` passes all 70 tests; `npm run build` includes typecheck; `node scripts/validateLandscapeCollection.mjs` validates the untouched legacy ordinary pairs. New tests validate all 600 ordinary targets, crop containment, source hashes, five-guess limits, overlap hits, repeats, expiry, accuracy-first ranking and old-save compatibility. Generation prompts, corrections, audit records and hashes are in `docs/artwork/ORDINARY_PAINTED_*` and `HOLIDAY_PAINTED_PROVENANCE.json`.
+
+Production-preview browser checks covered phone landing and landscape enlargement, a complete five-confirmation round with correct/duplicate/missed guesses, expanded-image guessing and zoom, answer reveals, sharing feedback and score/time persistence after reload. Physical-device gestures and subjective difficulty remain ongoing playtest feedback, not blockers to this owner-approved release.
+
+The owner has authorized commit, push and deployment only after all 120 regular cards are cleaned up, paired, visually verified and tested. No partial collection should be published. Earlier milestone/preview descriptions below are retained as development history; see docs/HOLIDAY_CALENDAR.md for the current holiday IDs.
+
 Publication update (September 27, 2026): the streak-only release `b0eea84` is now live at https://dreamerie-playtest.onrender.com after explicit approval. All 55 isolated release tests, typecheck/build and artwork validation passed. See docs/HOSTING.md. The local/not-deployed streak wording below records development history; unfinished holiday work remains excluded and unpublished. No future publication is authorized automatically.
 
 ## Play streaks — local preview, September 27, 2026
@@ -8,7 +18,7 @@ V3 now shows current day streak, best streak and dreams played after the answer 
 
 History is read directly from existing valid collection attempts: no new database, account, counter writes or storage migration. It is specific to this browser/site; clearing site data clears history, and devices do not sync. Damaged/unavailable history hides the numbers with a quiet explanation and never changes attempts. Current streak updates on completion, focus, other-tab updates and a 30-second calendar refresh. Previously saved rounds count automatically.
 
-Development validation: all 65 tests (including ten unpublished holiday tests) and production build/typecheck passed. The isolated streak release excludes those holiday tests and changes; its release suite contains 55 tests. Browser checks verified a five-confirmation 0/5 round yields 1 day / 1 best / 1 played, reload preserves score/time/history, returning-player controls fit 320×568 and 844×390, and mobile/desktop have no horizontal overflow. The landscape streak stays in the instruction column. Browser errors were empty. Multi-day/clock/storage cases are automated tests; physical-device touch remains owner acceptance. No live-site attempt was touched.
+Validation: all 65 tests and production build/typecheck passed. Browser checks verified a five-confirmation 0/5 round yields 1 day / 1 best / 1 played, reload preserves score/time/history, returning-player controls fit 320×568 and 844×390, and mobile/desktop have no horizontal overflow. The landscape streak stays in the instruction column. Browser errors were empty. Multi-day/clock/storage cases are automated tests; physical-device touch remains owner acceptance. No live-site attempt was touched.
 
 Run `npm test` and `npm run build` (includes typecheck). The streak suite covers gaps, duplicates, legacy/preview isolation, expired rounds, previous saves, corrupted storage, clock rollback, DST/month/year/leap boundaries and sharing. This is local only; unfinished holiday assets remain unpublished. Suggested commit: `feat(streaks): add browser-local daily play history`. After review and approval, stage only intended hunks in shared files (`git add -p`) plus `src/game/playStats.ts`, `src/v3/PlayStats.tsx`, `src/v3/usePlayStats.ts` and `tests/playStats.test.ts`, then commit and push `prototype/v3-dream-ritual`. Do not accidentally publish unfinished holiday work.
 
@@ -22,6 +32,33 @@ git diff --cached
 git commit -m "feat(streaks): add browser-local daily play history"
 git push origin prototype/v3-dream-ritual
 ```
+
+## Holiday dreams — local preview, awaiting approval
+
+Three extra native-resolution playable pairs now supplement the ordinary 120: **The Lantern Ferry** (Halloween, October 31), **A Feast Upon a Falling Leaf** (U.S. Thanksgiving, the fourth Thursday in November), and **The Keeper of Snow** (Christmas, December 25). Each has five authored object changes, a short original rhyming verse, all existing inspection/result/sharing controls, and unchanged five-total-guess/two-minute rules.
+
+Selection uses the player's local calendar and is fixed when the page opens. A holiday replaces that date's ordinary card without shifting the 120-card rotation; the normal sequence resumes the following day. These three specials repeat annually until new ones are authored. Saved attempts keep their card, guesses and original deadline, even if a holiday release changes the schedule after somebody started. No storage migration/reset, backend scheduler, new dependencies or page-edge decorations.
+
+Run `npm run dev` and preview without touching today's saved attempt:
+
+- Halloween: http://127.0.0.1:5173/?dream=holiday-halloween
+- Thanksgiving: http://127.0.0.1:5173/?dream=holiday-thanksgiving
+- Christmas: http://127.0.0.1:5173/?dream=holiday-christmas
+- Paired answer review: http://127.0.0.1:5173/?review=1&card=121 (Next for Christmas).
+
+Preview links and New day are development-only and in memory; production ignores puzzle overrides. Artwork lives in `public/artwork/v3/holidays/`; see [prompts](docs/artwork/HOLIDAY_PROMPTS.md) and [source hashes](docs/artwork/HOLIDAY_MANIFEST.json). Run `npm test`, `npm run build` (includes typecheck), and `node scripts/validateLandscapeCollection.mjs`. The six new tests cover calendar boundaries/leap years, ordinary rotation, saved-card compatibility, full-resolution assets, all 15 hit regions/crops and gameplay invariants. Existing collection validation still covers the unchanged 120; holiday validation is in `npm test`.
+
+Validation: all 50 tests, typecheck/build and the unchanged 120-pair collection validator pass. All 15 real composite crops were visually checked. Local browser checks covered 320×568, 390×844, 844×390 and 1440×900 with no horizontal overflow; Start stayed visible, the rotated preview filled its available stage, and paired answer inspection fit and restored focus with Escape. Halloween reached 5/5 through both paintings; Thanksgiving verified correct/miss/repeat feedback and fifth-guess completion with found/missed reveals. Share text retained score/time and a clean link. No browser errors. Physical-device gestures and subjective difficulty still need owner playtesting.
+
+Not committed, pushed or deployed. Suggested Conventional Commit and commands **after approval**:
+
+```powershell
+git add AGENTS.md README.md docs/ART_DIRECTION.md docs/GAME_DESIGN.md docs/PROTOTYPE_PLAN.md docs/artwork/HOLIDAY_PROMPTS.md docs/artwork/HOLIDAY_MANIFEST.json package.json public/artwork/v3/holidays src/v2/CollectionReview.tsx src/v3/VersionThree.tsx src/v3/dailyDream.ts src/v3/holidayCalendar.ts src/v3/holidayDreams.ts tests/holidays.test.ts
+git commit -m "feat(dreams): add seasonal holiday puzzles and calendar selection"
+git push origin prototype/v3-dream-ritual
+```
+
+Publication still needs explicit approval and the exact V3 commit on the original Render service. Historical milestones follow.
 
 Publication update: decoration removal is live as `d55483c` at https://dreamerie-playtest.onrender.com. All 44 tests and release checks passed; the live page has the clean background and retained crescent logo. See docs/HOSTING.md. The local-removal note below is now historical.
 

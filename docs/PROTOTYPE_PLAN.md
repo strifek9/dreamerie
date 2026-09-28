@@ -1,8 +1,20 @@
 # Dreamerie Daily Dream Recall Prototype Plan
 
+## Completed painted-art milestone — September 28, 2026
+
+120/120 ordinary and 18/18 holiday pairs are integrated, with all 690 paired answer crops and 138 full composites visually reviewed. All 70 tests, typecheck/build and the unchanged legacy validator pass. Existing artwork and saved rounds remain recoverable/resolvable. Production-preview phone gameplay, landscape enlargement, completed score persistence, answer reveals and sharing feedback are checked. The owner authorized commit, push and deployment after this full milestone; earlier review/publishing restrictions below are historical. Publish the exact V3 commit to the existing original Render service; do not change hosting settings or the separate V2 service. Continue physical-device and difficulty feedback after release.
+
 ## Play-streak milestone — local review
 
 Add browser-local current/best play streak and total completed dreams using the existing daily attempts as the only source of truth. No writes, migration or extra infrastructure; exclude previews. Keep history below results/answers so painting dimensions stay unchanged, with a small returning-player landing cue. Test completion at any score, expiry while away, yesterday grace, missed days, reload/idempotence, cross-tab reads, calendar/DST/leap boundaries, invalid/future storage and concise streak sharing. Check mobile/landscape/desktop fit and saved progress. Keep the unfinished holiday work intact and unpublished; await explicit commit/push/deploy approval.
+
+## Holiday milestone — local review
+
+Expanded scope: 18 holiday pairs, 90 authored holiday answers and 138 playable puzzles in total. See HOLIDAY_CALENDAR.md for the annual schedule and collision assumptions. Preserve all 120 published ordinary pairs, dates, scores and saved attempts. Use the existing painterly style, compositor, inspection and five-confirmation game; add no backend, dependencies, practice gate or edge ornaments.
+
+Verification includes a complete 400-year calendar cycle, Gregorian Easter exceptions, actual-versus-observed dates, rare coincident holidays, ordinary rotation and existing saved-card compatibility. Check native assets including correction sources, all holiday hit regions/crops, five-guess ceiling, repeats/misses/expiry and accuracy-first ties. Run npm test, build/typecheck and the old collection validator, visually inspect all new composites, and test affected phone/desktop landing, gameplay and result flows.
+
+Native artwork and exact prompts/provenance remain local in the repository. Dev-only holiday picker and review cards 121–138 do not touch daily saved attempts. Stop for owner review; no automatic commit, push or deployment. Human difficulty calibration and physical touch gestures remain owner acceptance.
 
 ## Version 3 — local design-review package
 

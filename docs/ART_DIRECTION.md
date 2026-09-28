@@ -1,5 +1,51 @@
 # Dreamerie art direction
 
+## Core visual and narrative target: Dreamerie with Dixit-inspired storytelling
+
+This is a standing owner-approved direction for future normal cards, holiday cards, revised originals and their counterparts, not a one-off experiment. Use Dixit as inspiration for the breadth of visual storytelling and composition, while keeping Dreamerie's own characters, situations and visibly painted, grain-free finish. Do not treat Dixit as one uniform artist style or copy individual cards.
+
+### Visual language
+
+- Expressive character-led paintings, intimate interiors, surreal still lifes, overhead/tabletop scenes, theatrical or abstract spaces, and occasional outdoor landscapes all belong in the same collection. Keep the wide game format without defaulting to scenery.
+- Favor clear focal silhouettes, expressive poses and a readable relationship between subjects. Let negative space and selective detail support the story. Some paintings may be dense, others spare.
+- Use impossible scale, metamorphosis, object/character role reversal, contradictory shadows or reflections, and unexpected material behavior. One strong visual idea can carry a whole card; do not pile unrelated magical props onto it.
+- Keep elegant painterly form, matte layered color, visible flowing brushstrokes and gently irregular edges. No all-over grain, stippling, canvas noise, muddy detail, plastic rendering or slick airbrushing. Vary palettes and lighting rather than applying the same warm golden glow to everything.
+- Characters may be human, animal, mechanical, fantastical or object-like. Neither scenery nor people nor cute woodland creatures should dominate by default. Preserve PG limits and the representation safeguards, including the specific owner-approved presidential-card exception.
+
+### Narrative language
+
+- Paint a question or an unfinished little story rather than an illustration with one obvious explanation. Leave room for several associations: belonging, identity, change, time, longing, courage, loss, absurdity, frustration, wonder or care.
+- Make emotion legible through expression, gesture and relationships, not captions. Mix funny, tender, uncanny, spooky, melancholic and exuberant moods. Beautiful does not always mean cheerful or cozy.
+- Put the dream logic inside the action: someone folds their own shadow, an ordinary device longs to be something else, or an everyday task changes the rules of the room. These are example prompts, not recurring mandatory motifs.
+- A story can be simple and still mysterious. Do not explain the metaphor in the UI or burden the game with extra mechanics. Holiday identity should remain recognizable while its story becomes fantastical; civic themes stay respectful.
+- Narrative ambiguity must not become puzzle ambiguity. Each finished pair still needs exactly five definite, scene-fitting, visually verified differences with readable details and fair hit regions. Do not count texture noise or interpretive meaning as an answer.
+
+Before generating a group, record subject, composition/viewpoint, central impossible relationship, emotional undertone, palette and density. Compare adjacent cards to avoid repeating the same setting, camera angle, mood or story structure. Existing finish-only cleanup should preserve composition and clue intent unless a content redesign has been requested.
+
+Research reference: [Xavier Collette's official Dixit Journey gallery](https://www.xaviercollette.com/works/dixit-journey/), reviewed for character expression, focal relationships, scale shifts and non-scenic composition. These are editorial observations and broad principles, not permission to reuse the illustrations. No third-party card art belongs in Dreamerie's assets or image-edit inputs. See the local research notes in artwork-review/storytelling-variety-07/README.md.
+
+Latest exception: the owner wants to keep the original presidential portrait/bookend artwork (holiday-completion-05/presidents-day-painted-v1.png). Keep that one specific historical scene; the general nonpolitical, stereotype-free rule still applies elsewhere. Mix character-led, interior, tabletop, overhead and abstract compositions, not only outdoor vistas. Wide game-image format is not a requirement for landscape scenery. Dixit is a reference for imaginative visual storytelling and variety, not a source of assets or compositions to copy. See the latest CARD_CREATION_GUIDE.md section.
+
+## Latest owner direction: symbolic, nonpolitical dreams
+
+No actual people/public figures or recognizable portraits, statues, murals or busts. Avoid political messaging, partisan symbols, government landmarks and militaristic imagery. Civic occasions should evoke universal values through fantastical objects: equal black-and-white paper cutouts holding hands, an opening horizon, a lantern of remembrance, a welcoming home. Avoid racial/cultural stereotypes in the combination of subjects, activities and props; diverse fictional people are still welcome. The MLK portrait, presidential bookends and Juneteenth picnic drafts are rejected, not final artwork. See CARD_CREATION_GUIDE.md for the required prompt/output checks.
+
+Use the latest approved visibly painted, grain-free finish, not slick airbrushing. The owner has removed review-batch pauses; preserve old assets and work in new versions while completing the requested collection. This supersedes older finish/review language below. No publication is authorized.
+
+## Latest approved finish and density direction
+
+The approved smooth holiday samples establish a clean digital-painting finish: natural lighting, controlled gradients and crisp inspectable detail, with selective brushwork but no pervasive grain, chalky speckling or simulated canvas noise. This supersedes older all-over textured-gouache guidance below. Extend cleanup across the current ordinary and holiday collection in small owner-reviewed batches; preserve old playable pairs until replacements are fully checked. Future compositions must vary from quiet/spacious through medium-detail to busy scenes with more activity. Complexity may vary search effort, but visual noise and illegible clues must not create difficulty. Make holiday identity stronger without losing surreal variety. See CARD_CREATION_GUIDE.md for the standing production and compatibility rules.
+
+## Standing card-creation direction
+
+Read [CARD_CREATION_GUIDE.md](CARD_CREATION_GUIDE.md) before generating cards. The owner wants emotionally and thematically varied, somewhat abstract dreams: robots, aliens, mermaids, ninjas, cowboys, computers, monsters and much more—not a repeated vocabulary of flowers, moons and birds. Beautiful painterly style can include spooky, scary, sad, angry, silly and joyful scenes, always PG. Use impossible situations and unexpected combinations, not just ordinary scenes with holiday props. This supersedes literal/cozy repetition in earlier holiday drafts. All 18 holiday cards are being reworked under this direction.
+
+## Holiday dreams — current addition
+
+Eighteen native 1672×941 holiday pairs now accompany the ordinary 120. Seasonal character belongs inside the painting, never around the page edges. Match the existing textured gouache, rich varied color, whimsical symbolic storytelling and inspectable detail. Valentine’s swan letters, St. Patrick’s wishing well and July Fourth’s flowering fireworks retain the same Dreamerie world. Civic observances are gentle and respectful; the October scene celebrates the enduring landscape without costumes, sacred motifs or historical reenactment. See HOLIDAY_CALENDAR.md for the full list.
+
+Each pair has exactly five real scene-fitting changes, composited only inside authored regions over the untouched original. Use native assets; do not substitute discoloration overlays. Short original couplets use clear end-rhymes and suggest a shifting dream without pointing out answers. Difficulty metadata remains editorial and hidden. Built-in image generation produced all sources; exact prompts and hashes are in artwork/HOLIDAY_PROMPTS.md, HOLIDAY_MANIFEST.json, HOLIDAY_EXPANSION_PROMPTS.json and HOLIDAY_EXPANSION_MANIFEST.json. Physical-device legibility and subjective difficulty still need owner playtesting.
+
 ## Version 3 — current local direction
 
 The user rejected themed page-edge decorations. Keep the existing quiet background with no stars, clouds, waves, rain or leaf ornaments at the page edges. Retain the approved crescent/star wordmark and all other UI refinements. This supersedes the marginalia direction below.

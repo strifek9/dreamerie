@@ -5,7 +5,9 @@ import { RESTING_VIEW, zoomAt, type ImageView } from '../game/imageInspection'
 import { useDailySession } from '../game/useDailySession'
 import { LandscapeArtwork } from '../v2/LandscapeArtwork'
 import { verseForDream } from '../v2/dreamVerses'
-import { differencesFor, landscapeCollection, landscapeDay, landscapeForDay, LANDSCAPE_SESSION_OPTIONS, type LandscapeDream } from '../v2/landscapeCollection'
+import { differencesFor, landscapeDay, LANDSCAPE_SESSION_OPTIONS, type LandscapeDream } from '../v2/landscapeCollection'
+import { currentDreams, dreamForDate, playableDreams } from './dailyDream'
+import { holidayDetails, holidayDreams } from './holidayDreams'
 import { AnswerInspection } from './AnswerInspection'
 import { MemoryFragments } from './MemoryFragments'
 import { guessFeedback, resultVerse } from './dreamRitual'
@@ -15,21 +17,31 @@ import { usePlayStats } from './usePlayStats'
 import '../v2/versionTwo.css'
 import './versionThree.css'
 
-const knownCardIds = new Set(landscapeCollection.map(dream => dream.id))
+const knownCardIds = new Set(playableDreams.map(dream => dream.id))
 
 export default function VersionThree() {
   const [run, setRun] = useState(0)
-  const [today] = useState(() => landscapeDay())
+  const [date] = useState(() => new Date())
+  const today = landscapeDay(date)
   const requested = import.meta.env.DEV ? new URLSearchParams(location.search).get('dream') : null
-  const selected = landscapeCollection.find(card => card.id === requested)
-  const [index, setIndex] = useState(() => landscapeCollection.indexOf(selected ?? landscapeForDay(today)))
+  const selected = playableDreams.find(card => card.id === requested)
+  const [index, setIndex] = useState(() => {
+    if (selected) return playableDreams.indexOf(selected)
+    try {
+      return playableDreams.indexOf(dreamForDate(date, localStorage.getItem(`${LANDSCAPE_SESSION_OPTIONS.namespace}:${today}`)))
+    } catch {
+      // The session hook will show its existing storage error and disable Start.
+      return playableDreams.indexOf(dreamForDate(date))
+    }
+  })
   const playtest = Boolean(selected) || run > 0
-  const dream = landscapeCollection[index]
-  return <Round key={`${dream.id}-${run}`} dream={dream} day={playtest ? index + 1 : today} playtest={playtest} onNew={() => { setIndex(value => (value + 1) % landscapeCollection.length); setRun(value => value + 1) }}/>
+  const dream = playableDreams[index]
+  return <Round key={`${dream.id}-${run}`} dream={dream} day={playtest ? index + 1 : today} playtest={playtest} onNew={() => { setIndex(value => (value + 1) % currentDreams.length); setRun(value => value + 1) }}/>
 }
 
 function Round({ dream, day, playtest, onNew }: { dream: LandscapeDream; day: number; playtest: boolean; onNew: () => void }) {
-  const verse = verseForDream(dream.id)
+  const holiday = holidayDetails(dream.id)
+  const verse = holiday?.verse ?? verseForDream(dream.id.replace(/^painted-/, ''))
   const differences = useMemo(() => differencesFor(dream), [dream])
   const { phase, recall, result, recallLeft, pendingSide, dispatch, storageError, busy } = useDailySession(day, dream.id, differences, playtest, LANDSCAPE_SESSION_OPTIONS)
   const stats = usePlayStats(playtest, Boolean(result), knownCardIds)
@@ -57,7 +69,7 @@ function Round({ dream, day, playtest, onNew }: { dream: LandscapeDream; day: nu
   }, [dream])
   useEffect(() => { if (phase === 'result') { setHome(false); setPreviewZoom(false); setHintOpen(false); setExpandedSide(null) } }, [phase])
   const streakLine = !playtest && day === landscapeDay() ? streakShareLine(stats) : ''
-  const shareText = result ? createShareText(day, result, differences, recall.foundDifferenceIds, location.href).replace(`Dreamerie #${day}`, `Dreamerie V3 · ${playtest ? 'Playtest' : 'Daily Dream'} #${day}`).replace('Your turn to dream.', `${streakLine ? `${streakLine}\n` : ''}Your turn to dream.`) : ''
+  const shareText = result ? createShareText(day, result, differences, recall.foundDifferenceIds, location.href).replace(`Dreamerie #${day}`, `Dreamerie V3 · ${playtest ? 'Playtest' : holiday?.occasion ?? 'Daily Dream'} #${day}`).replace('Your turn to dream.', `${streakLine ? `${streakLine}\n` : ''}Your turn to dream.`) : ''
   async function share(copy = false) {
     try {
       if (!copy && navigator.share) { await navigator.share({ text: shareText }); setShareStatus('Shared.') }
@@ -109,7 +121,7 @@ function Round({ dream, day, playtest, onNew }: { dream: LandscapeDream; day: nu
     {expandedSide && !landing && <DreamViewer fitAspectRatio={dream.aspectRatio} title={expandedSide === 'original' ? 'The Dream' : 'The Memory'} onClose={() => setExpandedSide(null)} onTap={result ? undefined : point => { void dispatch({ type: 'mark', point, side: expandedSide }) }} status={result ? <span>{result.accuracy}/5 · {formatClock(result.elapsedSeconds)}</span> : <span>{getRemainingGuesses(recall)} guesses left · {formatClock(recallLeft)} · timer running</span>} action={result ? revealAction : <><div className="v3-guess-action"><MemoryFragments guesses={recall.confirmed}/>{guessAction}</div><p className="v3-viewer-feedback" role="status">{guessFeedback(recall, differences, dream.aspectRatio)}</p></>}>{artwork(expandedSide)}</DreamViewer>}
     {hintOpen && <GameHint onClose={() => setHintOpen(false)} timeLeft={phase === 'play' ? recallLeft : undefined}/>}
     {result && !landing && answerIndex !== null && <AnswerInspection dream={dream} differences={differences} foundIds={recall.foundDifferenceIds} index={answerIndex} onSelect={setAnswerIndex} onClose={() => setAnswerIndex(null)}/>}
-    {import.meta.env.DEV && <div className="v2-dev"><button className="text-action" onClick={onNew}>New day (dev only)</button><a href="?version=1">Compare Version 1</a><a href="?review=1">Review all 120</a><span>{dream.id}</span></div>}
+    {import.meta.env.DEV && <div className="v2-dev"><button className="text-action" onClick={onNew}>New day (dev only)</button><a href="?version=1">Compare Version 1</a><a href="?review=1">Review all {currentDreams.length}</a><select aria-label="Preview a holiday" value={holiday?.id ?? ''} onChange={event => { if (event.target.value) location.assign(`?dream=${event.target.value}`) }}><option value="" disabled>Holiday previews</option>{holidayDreams.map(card => <option key={card.id} value={card.id}>{card.occasion}</option>)}</select><span>{dream.id}</span></div>}
   </main>
 }
 

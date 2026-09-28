@@ -1,0 +1,227 @@
+[
+  {"id":"dream-001","kind":"original","tool":"built-in image_gen","source":"C:/Users/Kou/.codex/generated_images/01a0bcb0-e299-75d3-a499-50cd08ef04ac/exec-ac5a67b7-72ff-4f0e-b667-43f97c49b97f.png","references":["artwork-review/smooth-batch-02/dream-001-smooth-v1.png","D:/Dreamerie/public/artwork/v2/collection/dream-001-original.png"],"saved":"artwork-review/painted-middle-ground-01/dream-001-painted-v1.png","prompt":"Use case: style-transfer. Asset: Dreamerie painterly-finish review sample, one landscape illustration. Input image 1 is the EDIT TARGET: the cleaned Orchard of Sleeping Clocks. Input image 2 is the EARLIER PAINTING, provided only as a reference for warmth and hand-painted character, NOT its grain or speckling. Repaint image 1 with the feel of an intentional hand-painted gouache illustration on a completely SMOOTH surface. The previous cleanup feels too slick and digitally polished. We want clearly visible medium-sized, confident, flowing brushstrokes and gently irregular hand-painted edges, matte pigment, softly layered shapes, broad color planes, and subtle organic variation INSIDE the brush marks. Keep colors rich and lighting believable, but simplify shiny digital highlights into painted shapes. Let strokes follow the forms of fur, foliage, hills, cloth and clouds. Depth comes from purposeful brushwork and color relationships rather than plastic shading or airbrush gradients. IMPORTANT: painterly does NOT mean grainy. Absolutely no canvas texture, paper tooth, random dots, speckle, chalky stippling, scratchy scumbling, grit, fine noise or pointillism. No blur or smeared detail. Smooth pigment within each individual stroke, visible strokes at a meaningful scale, softer matte surfaces. Preserve the exact scene composition, landscape framing, all object positions, counts, colors, patterns and small meaningful details of image 1. Sleeping russet fox with white tail tip in an ornate golden scale bowl; pear clocks with ivory faces; purple ladder with small solid brass studs; teal watering can with exactly THREE water drops; embroidered foreground cloth with its complete leaf sprig. Preserve these clue candidates. Do not add or remove anything. PG whimsical dream; warm restful orchard, gold/teal/russet palette. No text, frame, collage, UI, watermark, photorealism, glossy CGI or flat clip-art. Single high-resolution landscape at 1672x941 or greater preserving aspect, not a comparison sheet. The result should feel hand-painted and tactile THROUGH BRUSH SHAPES, not through noisy texture."},
+  {
+    "id": "dream-001",
+    "kind": "altered",
+    "original": "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/painted-middle-ground-01/dream-001-painted-v1.png",
+    "references": [
+      "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/painted-middle-ground-01/dream-001-painted-v1.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET. Make exactly FIVE local differences for a Dreamerie puzzle. Preserve exact 1672x941 framing, object positions, painterly grain-free finish and every other detail. No global repaint or restyling, no labels. Changes: 1. Large left pear clock IVORY dial becomes TEAL, retain gold ticks and hands (x155 y162 w258 h260). 2. Sleeping fox white TAIL TIP across its front becomes RUSSET ORANGE like its body (x690 y529 w150 h80), not the face. 3. Remove MIDDLE of the three suspended WATER DROPLETS below watering can; leave first and third. 4. Lowest ladder brass bracket's round central STUD becomes a small RING-shaped fastener (x568 y433 w37 h44). 5. Embroidered green sprig on foreground white cloth loses only its LOWER RIGHT pair of leaves (x303 y800 w84 h66), retain stem and other leaves. Return one full-frame altered image, same dimensions.",
+    "source": "C:\\Users\\Kou\\.codex\\generated_images\\01a0bcb0-e299-75d3-a499-50cd08ef04ac\\exec-a651fbcb-44f7-40e4-ab71-2e5a79670c39.png",
+    "saved": "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/ordinary-painted-09/dream-001-altered-v1.png"
+  },
+  {
+    "id": "dream-002",
+    "kind": "original-v2",
+    "original": "D:/Dreamerie/public/artwork/v2/collection/dream-002-original.png",
+    "prompt": "Use case: style-transfer. Image 1 is the EDIT TARGET, an existing Dreamerie puzzle original. Image 2 is ONLY the approved PAINT FINISH reference, never copy its scene or objects. Remove pervasive grain, speckles, canvas noise and scratchy stippling from Image 1. Repaint surfaces with visible flowing matte brushstrokes, gently irregular hand-painted edges and clean layered pigment shapes. NOT slick airbrush, plastic 3D or photorealism. Preserve Image 1 exact composition, framing, palette, lighting, all characters, object positions/counts, shapes, decorations, marks and tiny details. Do not add or remove anything or change the narrative. The whimsical surreal dream must remain the same scene. Keep native sharp detail for zoom inspection; single full-frame 1672x941 landscape image, no UI/text/watermark. Especially retain these original clue objects exactly unchanged: The red shawl has THREE cream spots and a pink FOUR-hole button. The floating spool has a STAR-shaped black hole. The closed parasol at lower right has a CURLED U-shaped brass handle. The green stool on left has all its existing crossbars.",
+    "references": [
+      "D:/Dreamerie/public/artwork/v2/collection/dream-002-original.png",
+      "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/painted-middle-ground-01/dream-001-painted-v1.png"
+    ],
+    "source": "C:\\Users\\Kou\\.codex\\generated_images\\01a0bcb0-e299-75d3-a499-50cd08ef04ac\\exec-ce0e49e9-1a9a-44bb-8d6b-524f5a57e7ff.png",
+    "saved": "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/ordinary-painted-09/dream-002-original-v2.png",
+    "review": "Visually checked: approved matte painted finish, original clue details retained."
+  },
+  {
+    "id": "dream-002",
+    "kind": "altered",
+    "references": [
+      "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/ordinary-painted-09/dream-002-original-v2.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET, a cleaned Dreamerie ORIGINAL. Preserve every object position, composition, exact 1672x941 framing, all brushstrokes and colors outside FIVE local edits. Do not redraw or restyle globally. Make these exact five realized changes, boxes in native pixels: 1. x=455,y=352,w=81,h=91: The shawl loses its middle cream spot.  2. x=1349,y=617,w=44,h=51: The spool's star-shaped hole becomes round.  3. x=1496,y=782,w=84,h=76: The parasol's curved handle becomes straight.  4. x=104,y=705,w=208,h=48: The stool loses its front crossbar.  5. x=410,y=551,w=36,h=33: The pink button has fewer holes. Replace FOUR holes with exactly TWO holes. Return ONE full-frame altered image at identical dimensions, no labels or annotations.",
+    "source": "C:\\Users\\Kou\\.codex\\generated_images\\01a0bcb0-e299-75d3-a499-50cd08ef04ac\\exec-6bcf7ae0-b5a7-4229-9df1-4cbd8b227604.png",
+    "saved": "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/ordinary-painted-09/dream-002-altered-v1.png"
+  },
+  {
+    "id": "dream-002",
+    "kind": "correction",
+    "references": [
+      "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/ordinary-painted-09/dream-002-original-v2.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET. Change ONLY the small pink round button on the bottom tip of the heron's red shawl, centered x427,y568 in this 1672x941 image. It currently has THREE black holes. Replace with exactly TWO clearly separated black holes, aligned vertically. Same pink circular button, same position and size, same rim and shadow. Preserve all other artwork and exact framing, brushstrokes and grain-free finish. Return one full-frame image, no labels.",
+    "source": "C:\\Users\\Kou\\.codex\\generated_images\\01a0bcb0-e299-75d3-a499-50cd08ef04ac\\exec-76b8361d-39c9-47a7-8640-bf785d9351b8.png",
+    "saved": "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/ordinary-painted-09/dream-002-correction-v1.png"
+  },
+  {
+    "id": "dream-003",
+    "kind": "original-v2",
+    "original": "D:/Dreamerie/public/artwork/v2/collection/dream-003-original.png",
+    "prompt": "Use case: style-transfer. Image 1 is the EDIT TARGET, an existing Dreamerie puzzle original. Image 2 is ONLY the approved PAINT FINISH reference, never copy its scene or objects. Remove pervasive grain, speckles, canvas noise and scratchy stippling from Image 1. Repaint surfaces with visible flowing matte brushstrokes, gently irregular hand-painted edges and clean layered pigment shapes. NOT slick airbrush, plastic 3D or photorealism. Preserve Image 1 exact composition, framing, palette, lighting, all characters, object positions/counts, shapes, decorations, marks and tiny details. Do not add or remove anything or change the narrative. The whimsical surreal dream must remain the same scene. Keep native sharp detail for zoom inspection; single full-frame 1672x941 landscape image, no UI/text/watermark. Especially retain these original clue objects exactly unchanged: The pillow has a CRESCENT and the small pale DIAMOND motif at upper left. The two cactus blossoms are both PINK. The teal suitcase front has THREE gold round rivets. The hanging brass bell has TWO gold pendants dangling below it.",
+    "references": [
+      "D:/Dreamerie/public/artwork/v2/collection/dream-003-original.png",
+      "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/painted-middle-ground-01/dream-001-painted-v1.png"
+    ],
+    "source": "C:\\Users\\Kou\\.codex\\generated_images\\01a0bcb0-e299-75d3-a499-50cd08ef04ac\\exec-26dc7def-172b-4ad6-85ca-ea5c6870f828.png",
+    "saved": "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/ordinary-painted-09/dream-003-original-v2.png",
+    "review": "Visually checked: approved matte painted finish, original clue details retained."
+  },
+  {
+    "id": "dream-003",
+    "kind": "altered",
+    "references": [
+      "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/ordinary-painted-09/dream-003-original-v2.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET, a cleaned Dreamerie ORIGINAL. Preserve every object position, composition, exact 1672x941 framing, all brushstrokes and colors outside FIVE local edits. Do not redraw or restyle globally. Make these exact five realized changes, boxes in native pixels: 1. x=639,y=175,w=121,h=140: The pillow's crescent becomes a full moon.  2. x=177,y=264,w=154,h=128: The lower cactus flower turns yellow.  3. x=533,y=744,w=42,h=49: The suitcase loses its middle front rivet.  4. x=1353,y=314,w=27,h=34: The bell loses its lowest pendant.  5. x=328,y=99,w=57,h=85: The pillow's small diamond becomes a heart.  Return ONE full-frame altered image at identical dimensions, no labels or annotations.",
+    "source": "C:\\Users\\Kou\\.codex\\generated_images\\01a0bcb0-e299-75d3-a499-50cd08ef04ac\\exec-45a13c40-1311-4774-860b-724eff29bb8b.png",
+    "saved": "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/ordinary-painted-09/dream-003-altered-v1.png"
+  },
+  {
+    "id": "dream-004",
+    "kind": "original",
+    "references": [
+      "D:/Dreamerie/public/artwork/v2/collection/dream-004-original.png",
+      "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/painted-middle-ground-01/dream-001-painted-v1.png"
+    ],
+    "prompt": "Use case: style-transfer. Image 1 is the EDIT TARGET, an existing Dreamerie puzzle original. Image 2 is ONLY the approved PAINT FINISH reference, never copy its scene or objects. Remove pervasive grain, speckles, canvas noise and scratchy stippling from Image 1. Repaint surfaces with visible flowing matte brushstrokes, gently irregular hand-painted edges and clean layered pigment shapes. NOT slick airbrush, plastic 3D or photorealism. Preserve Image 1 exact composition, framing, palette, lighting, all characters, object positions/counts, shapes, decorations, marks and tiny details. Do not add or remove anything or change the narrative. The whimsical surreal dream must remain the same scene. Keep native sharp detail for zoom inspection; single full-frame 1672x941 landscape image, no UI/text/watermark. Especially retain these original clue objects exactly unchanged: Crescent brass door knocker; TWO ivory stripes on yellow dress hem; THREE white birds on fence; gold shoe buckle; ivory shell tip. Keep girl tying ribbon around cloud fish.",
+    "source": "C:\\Users\\Kou\\.codex\\generated_images\\01a0bcb0-e299-75d3-a499-50cd08ef04ac\\exec-d5f04dc8-26d3-4ec9-9a2d-650a32b8eb1d.png",
+    "saved": "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/ordinary-painted-09/dream-004-original-v1.png"
+  },
+  {
+    "id": "dream-004",
+    "kind": "altered",
+    "references": [
+      "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/ordinary-painted-09/dream-004-original-v1.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET, a cleaned Dreamerie ORIGINAL. Preserve every object position, composition, exact 1672x941 framing, all brushstrokes and colors outside FIVE local edits. Do not redraw or restyle globally. Make these exact five realized changes, boxes in native pixels: 1. x=249,y=289,w=84,h=97: The moon-shaped knocker becomes a star. 2. x=680,y=650,w=350,h=91: The dress loses its lower cream hem stripe. 3. x=1394,y=477,w=96,h=67: The middle fence bird disappears. 4. x=1237,y=725,w=42,h=36: The shoe buckle turns silver. 5. x=1331,y=793,w=71,h=67: The shell loses its ivory tip. Return ONE full-frame altered image at identical dimensions, no labels or annotations.",
+    "source": "C:\\Users\\Kou\\.codex\\generated_images\\01a0bcb0-e299-75d3-a499-50cd08ef04ac\\exec-f235f148-98da-4033-a44d-c43e851de231.png",
+    "saved": "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/ordinary-painted-09/dream-004-altered-v1.png"
+  },
+  {
+    "id": "dream-005",
+    "kind": "original",
+    "references": [
+      "D:/Dreamerie/public/artwork/v2/collection/dream-005-original.png",
+      "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/painted-middle-ground-01/dream-001-painted-v1.png"
+    ],
+    "prompt": "Use case: style-transfer. Image 1 is the EDIT TARGET, an existing Dreamerie puzzle original. Image 2 is ONLY the approved PAINT FINISH reference, never copy its scene or objects. Remove pervasive grain, speckles, canvas noise and scratchy stippling from Image 1. Repaint surfaces with visible flowing matte brushstrokes, gently irregular hand-painted edges and clean layered pigment shapes. NOT slick airbrush, plastic 3D or photorealism. Preserve Image 1 exact composition, framing, palette, lighting, all characters, object positions/counts, shapes, decorations, marks and tiny details. Do not add or remove anything or change the narrative. The whimsical surreal dream must remain the same scene. Keep native sharp detail for zoom inspection; single full-frame 1672x941 landscape image, no UI/text/watermark. Especially retain these original clue objects exactly unchanged: Round house attic window with cross-shaped dividers; PURPLE front door; green umbrella with THREE ivory dots; teal bird RED crest; snail TWO black eyes. Preserve walking house with striped stockings and pink river.",
+    "source": "C:\\Users\\Kou\\.codex\\generated_images\\01a0bcb0-e299-75d3-a499-50cd08ef04ac\\exec-26899dff-6caa-4dad-887b-c69359553d93.png",
+    "saved": "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/ordinary-painted-09/dream-005-original-v1.png"
+  },
+  {
+    "id": "dream-005",
+    "kind": "altered",
+    "references": [
+      "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/ordinary-painted-09/dream-005-original-v1.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET, a cleaned Dreamerie ORIGINAL. Preserve every object position, composition, exact 1672x941 framing, all brushstrokes and colors outside FIVE local edits. Do not redraw or restyle globally. Make these exact five realized changes, boxes in native pixels: 1. x=741,y=205,w=74,h=84: The round window loses its horizontal divider. 2. x=808,y=327,w=74,h=157: The purple door turns blue. 3. x=1485,y=659,w=52,h=53: The umbrella loses its middle dot. 4. x=995,y=24,w=42,h=32: The bird's crest turns yellow. 5. x=247,y=636,w=29,h=28: One snail eye turns blue. Return ONE full-frame altered image at identical dimensions, no labels or annotations.",
+    "source": "C:\\Users\\Kou\\.codex\\generated_images\\01a0bcb0-e299-75d3-a499-50cd08ef04ac\\exec-7e3b7de2-88cf-4618-9d5d-aba9a0249005.png",
+    "saved": "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/ordinary-painted-09/dream-005-altered-v1.png"
+  },
+  {
+    "id": "dream-006",
+    "kind": "original",
+    "references": [
+      "D:/Dreamerie/public/artwork/v2/collection/dream-006-original.png",
+      "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/painted-middle-ground-01/dream-001-painted-v1.png"
+    ],
+    "prompt": "Use case: style-transfer. Image 1 is the EDIT TARGET, an existing Dreamerie puzzle original. Image 2 is ONLY the approved PAINT FINISH reference, never copy its scene or objects. Remove pervasive grain, speckles, canvas noise and scratchy stippling from Image 1. Repaint surfaces with visible flowing matte brushstrokes, gently irregular hand-painted edges and clean layered pigment shapes. NOT slick airbrush, plastic 3D or photorealism. Preserve Image 1 exact composition, framing, palette, lighting, all characters, object positions/counts, shapes, decorations, marks and tiny details. Do not add or remove anything or change the narrative. The whimsical surreal dream must remain the same scene. Keep native sharp detail for zoom inspection; single full-frame 1672x941 landscape image, no UI/text/watermark. Especially retain these original clue objects exactly unchanged: THREE dark round shirt buttons; purple chair HEART-shaped opening; BLUE middle ladder rung; blue feather WHITE tip; smooth straight glove cuff. Preserve immense shirt curtain framing coral sea.",
+    "source": "C:\\Users\\Kou\\.codex\\generated_images\\01a0bcb0-e299-75d3-a499-50cd08ef04ac\\exec-e83cb9ea-f61b-490d-97b8-0bc5d53377eb.png",
+    "saved": "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/ordinary-painted-09/dream-006-original-v1.png"
+  },
+  {
+    "id": "dream-006",
+    "kind": "altered",
+    "references": [
+      "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/ordinary-painted-09/dream-006-original-v1.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET, a cleaned Dreamerie ORIGINAL. Preserve every object position, composition, exact 1672x941 framing, all brushstrokes and colors outside FIVE local edits. Do not redraw or restyle globally. Make these exact five realized changes, boxes in native pixels: 1. x=577,y=532,w=56,h=60: The shirt loses its lowest button. 2. x=209,y=630,w=39,h=43: The chair's heart cutout becomes round. 3. x=299,y=556,w=66,h=25: The blue ladder rung turns yellow. 4. x=1284,y=78,w=51,h=53: The feather loses its white tip. 5. x=1553,y=261,w=32,h=42: A small notch appears in the glove cuff. Return ONE full-frame altered image at identical dimensions, no labels or annotations.",
+    "source": "C:\\Users\\Kou\\.codex\\generated_images\\01a0bcb0-e299-75d3-a499-50cd08ef04ac\\exec-ca87f359-f463-46af-822a-b127df702d08.png",
+    "saved": "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/ordinary-painted-09/dream-006-altered-v1.png"
+  },
+  {
+    "id": "dream-007",
+    "kind": "original",
+    "references": [
+      "D:/Dreamerie/public/artwork/v2/collection/dream-007-original.png",
+      "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/painted-middle-ground-01/dream-001-painted-v1.png"
+    ],
+    "prompt": "Use case: style-transfer. Image 1 is the EDIT TARGET, an existing Dreamerie puzzle original. Image 2 is ONLY the approved PAINT FINISH reference, never copy its scene or objects. Remove pervasive grain, speckles, canvas noise and scratchy stippling from Image 1. Repaint surfaces with visible flowing matte brushstrokes, gently irregular hand-painted edges and clean layered pigment shapes. NOT slick airbrush, plastic 3D or photorealism. Preserve Image 1 exact composition, framing, palette, lighting, all characters, object positions/counts, shapes, decorations, marks and tiny details. Do not add or remove anything or change the narrative. The whimsical surreal dream must remain the same scene. Keep native sharp detail for zoom inspection; single full-frame 1672x941 landscape image, no UI/text/watermark. Especially retain these original clue objects exactly unchanged: Conservatory RED door, ORANGE fish in hanging glass bowl, THREE large oranges in central treetop (including lowest one), blue TRIANGLE on teapot, violet frond dangling tip. Whale carrying glass conservatory unchanged.",
+    "source": "C:\\Users\\Kou\\.codex\\generated_images\\01a0bcb0-e299-75d3-a499-50cd08ef04ac\\exec-e5eb0a8c-516a-4fec-8396-3a869d56e8d3.png",
+    "saved": "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/ordinary-painted-09/dream-007-original-v1.png"
+  },
+  {
+    "id": "dream-007",
+    "kind": "altered",
+    "references": [
+      "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/ordinary-painted-09/dream-007-original-v1.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET, a cleaned Dreamerie ORIGINAL. Preserve every object position, composition, exact 1672x941 framing, all brushstrokes and colors outside FIVE local edits. Do not redraw or restyle globally. Make these exact five realized changes, boxes in native pixels: 1. x=886,y=217,w=77,h=169: The conservatory door turns turquoise. 2. x=219,y=570,w=146,h=112: The fish turns blue. 3. x=833,y=134,w=51,h=45: The tree loses its lowest large orange. 4. x=1478,y=113,w=64,h=65: The teapot's triangle becomes a circle. 5. x=1503,y=433,w=34,h=51: The violet frond loses its dangling tip. Return ONE full-frame altered image at identical dimensions, no labels or annotations.",
+    "source": "C:\\Users\\Kou\\.codex\\generated_images\\01a0bcb0-e299-75d3-a499-50cd08ef04ac\\exec-de716987-45fb-4001-ba68-122f5c8ee28c.png",
+    "saved": "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/ordinary-painted-09/dream-007-altered-v1.png"
+  },
+  {
+    "id": "dream-008",
+    "kind": "original",
+    "references": [
+      "D:/Dreamerie/public/artwork/v2/collection/dream-008-original.png",
+      "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/painted-middle-ground-01/dream-001-painted-v1.png"
+    ],
+    "prompt": "Use case: style-transfer. Image 1 is the EDIT TARGET, an existing Dreamerie puzzle original. Image 2 is ONLY the approved PAINT FINISH reference, never copy its scene or objects. Remove pervasive grain, speckles, canvas noise and scratchy stippling from Image 1. Repaint surfaces with visible flowing matte brushstrokes, gently irregular hand-painted edges and clean layered pigment shapes. NOT slick airbrush, plastic 3D or photorealism. Preserve Image 1 exact composition, framing, palette, lighting, all characters, object positions/counts, shapes, decorations, marks and tiny details. Do not add or remove anything or change the narrative. The whimsical surreal dream must remain the same scene. Keep native sharp detail for zoom inspection; single full-frame 1672x941 landscape image, no UI/text/watermark. Especially retain these original clue objects exactly unchanged: Red mitten TWO pale cuff stripes, RED hanging paper star, rabbit yellow scarf with TWO red patches and ONE blue patch, blue cup GOLD handle, pale IVORY acorn cap. Snow forest spilling from mitten unchanged.",
+    "source": "C:\\Users\\Kou\\.codex\\generated_images\\01a0bcb0-e299-75d3-a499-50cd08ef04ac\\exec-9f944239-d59a-4686-b22b-4901bff3e39c.png",
+    "saved": "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/ordinary-painted-09/dream-008-original-v1.png"
+  },
+  {
+    "id": "dream-008",
+    "kind": "altered",
+    "references": [
+      "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/ordinary-painted-09/dream-008-original-v1.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET, a cleaned Dreamerie ORIGINAL. Preserve every object position, composition, exact 1672x941 framing, all brushstrokes and colors outside FIVE local edits. Do not redraw or restyle globally. Make these exact five realized changes, boxes in native pixels: 1. x=582,y=213,w=230,h=409: The mitten loses one cuff stripe. 2. x=1323,y=142,w=153,h=151: The paper star turns violet. 3. x=199,y=687,w=37,h=33: The scarf's blue patch turns red. 4. x=1471,y=478,w=94,h=120: The cup handle turns silver. 5. x=1505,y=696,w=72,h=59: The acorn cap turns brown. Return ONE full-frame altered image at identical dimensions, no labels or annotations.",
+    "source": "C:\\Users\\Kou\\.codex\\generated_images\\01a0bcb0-e299-75d3-a499-50cd08ef04ac\\exec-d12313e8-112c-472e-bb08-a0481a39032c.png",
+    "saved": "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/ordinary-painted-09/dream-008-altered-v1.png"
+  },
+  {
+    "id": "dream-008",
+    "kind": "correction",
+    "references": [
+      "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/ordinary-painted-09/dream-008-original-v1.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET. Change ONLY the long curved IVORY stripe around the red mitten's cuff into a series of clearly separated ivory DIAMONDS. Keep diamonds within the exact same stripe footprint, with red knit gaps between them. The stripe arcs from x775 y227 down through x630 y400 to x641 y610. Keep rest of mitten, forest inside, rabbit, scarf, red star, blue cup with GOLD handle, ivory acorn cap and all surroundings EXACTLY unchanged. Same 1672x941 framing, smooth visible painted brushwork without grain. Return one full-frame altered image; no annotations.",
+    "source": "C:\\Users\\Kou\\.codex\\generated_images\\01a0bcb0-e299-75d3-a499-50cd08ef04ac\\exec-9a02f1e5-3cac-42d2-97cf-a34471a1480f.png",
+    "saved": "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/ordinary-painted-09/dream-008-correction-v1.png"
+  },
+  {
+    "id": "dream-009",
+    "kind": "original",
+    "references": [
+      "D:/Dreamerie/public/artwork/v2/collection/dream-009-original.png",
+      "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/painted-middle-ground-01/dream-001-painted-v1.png"
+    ],
+    "prompt": "Use case: style-transfer. Image 1 is the EDIT TARGET, an existing Dreamerie puzzle original. Image 2 is ONLY the approved PAINT FINISH reference, never copy its scene or objects. Remove pervasive grain, speckles, canvas noise and scratchy stippling from Image 1. Repaint surfaces with visible flowing matte brushstrokes, gently irregular hand-painted edges and clean layered pigment shapes. NOT slick airbrush, plastic 3D or photorealism. Preserve Image 1 exact composition, framing, palette, lighting, all characters, object positions/counts, shapes, decorations, marks and tiny details. Do not add or remove anything or change the narrative. The whimsical surreal dream must remain the same scene. Keep native sharp detail for zoom inspection; single full-frame 1672x941 landscape image, no UI/text/watermark. Especially retain these original clue objects exactly unchanged: Drum white STAR, pink umbrella BOTH eyes shut, trumpet PINK tassel, tall teal umbrella GOLD finial, foreground piano key BLUE ROUND DOT. Three instrument-playing umbrella figures unchanged.",
+    "source": "C:\\Users\\Kou\\.codex\\generated_images\\01a0bcb0-e299-75d3-a499-50cd08ef04ac\\exec-7db6aaa6-1bb0-4b1c-b33a-54678ae9c6e2.png",
+    "saved": "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/ordinary-painted-09/dream-009-original-v1.png"
+  },
+  {
+    "id": "dream-009",
+    "kind": "altered",
+    "references": [
+      "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/ordinary-painted-09/dream-009-original-v1.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET, a cleaned Dreamerie ORIGINAL. Preserve every object position, composition, exact 1672x941 framing, all brushstrokes and colors outside FIVE local edits. Do not redraw or restyle globally. Make these exact five realized changes, boxes in native pixels: 1. x=923,y=431,w=62,h=62: The drum's star becomes a crescent. 2. x=1202,y=237,w=39,h=34: The pink umbrella opens one eye. 3. x=1369,y=315,w=51,h=91: The trumpet loses its pink tassel. 4. x=655,y=23,w=41,h=44: The tall umbrella's finial turns silver. 5. x=517,y=837,w=72,h=47: The piano key's blue dot becomes a diamond. Return ONE full-frame altered image at identical dimensions, no labels or annotations.",
+    "source": "C:\\Users\\Kou\\.codex\\generated_images\\01a0bcb0-e299-75d3-a499-50cd08ef04ac\\exec-2b7dd9bf-6b5e-427d-8275-d8919523a08b.png",
+    "saved": "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/ordinary-painted-09/dream-009-altered-v1.png"
+  },
+  {
+    "id": "dream-010",
+    "kind": "original",
+    "references": [
+      "D:/Dreamerie/public/artwork/v2/collection/dream-010-original.png",
+      "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/painted-middle-ground-01/dream-001-painted-v1.png"
+    ],
+    "prompt": "Use case: style-transfer. Image 1 is the EDIT TARGET, an existing Dreamerie puzzle original. Image 2 is ONLY the approved PAINT FINISH reference, never copy its scene or objects. Remove pervasive grain, speckles, canvas noise and scratchy stippling from Image 1. Repaint surfaces with visible flowing matte brushstrokes, gently irregular hand-painted edges and clean layered pigment shapes. NOT slick airbrush, plastic 3D or photorealism. Preserve Image 1 exact composition, framing, palette, lighting, all characters, object positions/counts, shapes, decorations, marks and tiny details. Do not add or remove anything or change the narrative. The whimsical surreal dream must remain the same scene. Keep native sharp detail for zoom inspection; single full-frame 1672x941 landscape image, no UI/text/watermark. Especially retain these original clue objects exactly unchanged: Mirror BLUE oval jewel, watering can RED arched handle, moth TWO dark wing spots, silver key full existing teeth, candle with black upright WICK. Preserve ornate room and upside-down paper fox reflected in mirror.",
+    "source": "C:\\Users\\Kou\\.codex\\generated_images\\01a0bcb0-e299-75d3-a499-50cd08ef04ac\\exec-ab13c283-09ba-4041-b70d-68a2ee31e12f.png",
+    "saved": "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/ordinary-painted-09/dream-010-original-v1.png"
+  },
+  {
+    "id": "dream-010",
+    "kind": "altered",
+    "references": [
+      "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/ordinary-painted-09/dream-010-original-v1.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET, a cleaned Dreamerie ORIGINAL. Preserve every object position, composition, exact 1672x941 framing, all brushstrokes and colors outside FIVE local edits. Do not redraw or restyle globally. Make these exact five realized changes, boxes in native pixels: 1. The mirror's oval blue jewel becomes RUBY RED, keep gold setting. 2. The watering can's red arch handle turns MINT GREEN. 3. Remove only the LEFT/lower dark spot on moth wing near x1008 y235; retain the other wing spot. 4. The silver key on the cushion has TWO teeth instead of three, retain key bow. 5. Remove only black wick above candle x1605 y138, reconstruct blue wall. Keep all other details untouched. Paint natural surfaces without grain; no annotations.",
+    "source": "C:\\Users\\Kou\\.codex\\generated_images\\01a0bcb0-e299-75d3-a499-50cd08ef04ac\\exec-5bf3d831-0f9b-498b-96cb-00fcfa9fab4a.png",
+    "saved": "C:/Users/Kou/.codex/.chatgpt-projects/g-p-6aab0310bf808191afe33b7feb67c547/artwork-review/ordinary-painted-09/dream-010-altered-v1.png"
+  }
+]
