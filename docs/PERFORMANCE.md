@@ -1,6 +1,6 @@
 # Pre-launch artwork delivery
 
-September 28, 2026. Local implementation only; not committed, pushed or deployed.
+September 28, 2026. **Published with owner approval** as `6396977` at https://dreamerie.onrender.com, Render deployment `dep-datbi4hsrm7s7382ln80`. Local, GitHub and Render checks passed; live current-day artwork checksums, zoom and existing saved-result persistence were verified. See [hosting verification](HOSTING.md). The implementation notes and real-device checklist below remain applicable.
 
 ## What changed
 
@@ -49,7 +49,7 @@ Completed checks:
 
 ## Next checkpoint: real devices
 
-After owner testing and explicit preview-publication approval, check actual iPhone Safari and Android Chrome, not just narrow desktop viewports:
+The release is now available on the live site for actual iPhone Safari and Android Chrome checks, not just narrow desktop viewports:
 
 1. Cold load over cellular/slow Wi-Fi: artwork arrives intact and the clock does not start before Start.
 2. Long-press, pinch, drag, orientation change and close: clear clues, no accidental confirmation, no pause.
@@ -60,11 +60,11 @@ After owner testing and explicit preview-publication approval, check actual iPho
 
 Record device/browser, puzzle ID, connection, failure and reproduction. Do not describe physical gestures, Safari or production-network speed as verified by desktop viewport checks. No live attempt was used for this pass.
 
-## Publication handoff (only after approval)
+## Historical publication handoff (completed with approval)
 
 Suggested commit: `perf(artwork): deliver lossless originals and native clue crops`.
 
-Explicit staging keeps the earlier hosting-retirement documentation distinguishable; inspect README/AGENTS hunks before staging them. No command below has been run as publication authorization.
+These commands describe the reviewed release workflow. The owner subsequently approved publication, and release `6396977` also includes the previously verified hosting-retirement documentation. No private backup/database files were included.
 
 ```powershell
 git add package.json src/v2/CollectionReview.tsx src/v2/LandscapeArtwork.tsx src/v3/VersionThree.tsx src/v3/artworkDelivery.ts src/v3/artworkDelivery.generated.ts src/components/InspectableDream.tsx tests/artworkDelivery.test.ts scripts/prepareArtworkDeliveryV1.py docs/artwork/DELIVERY_LOSSLESS_V1.json docs/PERFORMANCE.md public/artwork/v3/delivery-lossless-v1
@@ -74,4 +74,4 @@ git commit -m "perf(artwork): deliver lossless originals and native clue crops"
 git push origin prototype/v3-dream-ritual
 ```
 
-Publishing the new Render Static Site remains a separate explicitly authorized step. Do not resume or modify the suspended legacy paid service or the separate V2 site.
+This release was explicitly deployed to the current Render Static Site. Future publication needs new authorization. Do not resume or modify the suspended legacy paid service or the separate V2 site.

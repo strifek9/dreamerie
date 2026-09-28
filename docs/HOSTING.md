@@ -1,5 +1,15 @@
 # Hosted Dreamerie playtest
 
+## Lossless artwork delivery — September 28, 2026, LIVE
+
+Owner-approved release `639697786dbc76867affc07ee14201e624bc905d` is committed and pushed on `prototype/v3-dream-ritual`, and live at https://dreamerie.onrender.com. Existing Static Site `srv-data2gvpn0mc73bgfhc0`, exact-commit deployment `dep-datbi4hsrm7s7382ln80`, reports **Deploy succeeded | Live**, duration 55.7 seconds, site-live log at 2:00:23 PM CDT. No plan, service configuration, analytics, storage namespace or game-rule changes. Original masters, legacy assets and saved attempts remain intact; the suspended old paid service/disk/backups and separate V2 site were not modified.
+
+All 77 tests, typecheck/build, legacy artwork validator and offline exact RGBA/ICC verification of 828 delivery files passed locally. GitHub Actions run `36468956999` succeeded; Render repeated all 77 tests and the production build. Existing JavaScript chunk-size advisory remains nonblocking. GitHub additionally notes v4 checkout/setup actions' Node runtime migration; no unrelated workflow upgrade was included.
+
+Public homepage returns HTTP 200 and references `index-B1d-eZlF.js` / unchanged `index-CWnjVzCD.css`. All six current-day WebP files were retrieved and their SHA-256 values matched the committed audit. Hosted browser confirmed optimized sources in the actual SVG, full-screen enlargement, 125% zoom, close/focus return, and the existing completed result/history unchanged after reload. Browser error logs were empty; no daily round was started and no site data was cleared. The landing screen still offers View result for that completed attempt. V2 remains HTTP 200. Actual phone gestures/cellular performance remain an owner test, not a claim based on desktop resizing.
+
+The follow-up documentation commit records this verification and requires no redeployment. Older local/not-yet-published performance notes are historical. Future changes still require separate approval.
+
 ## Legacy-server retirement — September 28, 2026, COMPLETE
 
 After explicit owner approval of the sensitive backup transfer and the destination `D:/Kou/Dreamerie/backups`, the verified archive was received in `D:/Kou/Dreamerie/backups/2026-09-28-retirement/`. Archive and both extracted snapshot SHA-256 values match those below. Local maintenance verification passed for both (4 current / 2 historical room records); restoring current.sqlite into a NEW `restore-rehearsal.sqlite` also passed (4 rooms). No legacy runtime was started and no source database was overwritten. Recovery notes are in the private folder's README. Folder ACL permits only Kou, SYSTEM and Administrators; transfer was encrypted, files at rest are not password-encrypted. Never commit these private files.
