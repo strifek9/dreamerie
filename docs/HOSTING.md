@@ -1,5 +1,13 @@
 # Hosted Dreamerie playtest
 
+## Cloudflare Web Analytics — September 28, 2026
+
+Owner-approved release `9eaad35554abd777b58cbd8c73272eba9159a6b7` is live at https://dreamerie-playtest.onrender.com. Existing service `srv-daml13cri2ms73dpouk0`, exact-commit deployment `dep-dat94aojo6nc73eobp4g`, reports **Deploy succeeded / Live**, duration 4m20s; service-live log at 11:17:50 AM CDT. No hosting, DNS, domain, plan, environment, database or disk settings changed. Configured branch remains main, so future approved V3 releases must still select their exact commit.
+
+All 74 tests and typecheck/build passed locally and on Render; GitHub run `36448999173` has a successful completed check job. A brief 502 during restart recovered. Homepage and health return 200, health `{ "ok": true }`; live assets are `index-PvFPaiP7.js` / `index-CWnjVzCD.css`. Hosted browser confirms enabled Start, exactly one optional Cloudflare module script and no errors. Cloudflare reports 2 visits / 2 page views following ordinary verification visits, confirming ingestion after a short reporting delay. These initial counts include testing, not only organic players. Individual beacon network status was not captured. No hosted round was started or browser storage cleared.
+
+Integration adds only traffic/performance analytics, no custom gameplay events or history access. Production localhost/LAN, preview query parameters and separate V2 are excluded. V2 remains 200 with unchanged `index-BQHV4NK0.js` / `index-C31VduYi.css`. Local production preview restored its existing result and streak unchanged. Artwork/gameplay/saved progress are untouched. See docs/ANALYTICS.md for dashboard access and vendor removal. The existing bundle-size advisory remains non-blocking. This documentation-only follow-up requires no redeployment.
+
 ## Complete painted collection — September 28, 2026
 
 Release `04f739e8e46be0c856f65e12f5d587a5e5e56912` is live at https://dreamerie-playtest.onrender.com after the owner-authorized full-collection completion gate. Existing service `srv-daml13cri2ms73dpouk0`, deployment `dep-dat8b78jo6nc73elf9ig`, reports **Deploy succeeded / Live**, duration 19m58s; service-live log at 10:39:56 AM CDT. The exact V3 commit was manually selected. Configured main branch, hosting plan/settings, environment, disk and database remain unchanged; never deploy latest main for a V3 release.

@@ -1,6 +1,6 @@
 # DREAMERIE
 
-Analytics setup (local, not deployed): free Cloudflare Web Analytics is registered for the current live hostname. The optional production-only script measures site traffic/performance, not guesses, scores or saved history; local previews and V2 are excluded. See [analytics setup and dashboard instructions](docs/ANALYTICS.md). Await publication approval before activating the prepared integration.
+Analytics is live: owner-approved release `9eaad35` adds free Cloudflare Web Analytics to the current live hostname. The dashboard has received the first verification visits. The optional production-only script measures site traffic/performance, not custom guesses, scores or saved history; local previews and V2 are excluded. All 74 tests and build/typecheck passed. See [analytics setup and dashboard instructions](docs/ANALYTICS.md) and [deployment verification](docs/HOSTING.md).
 
 ## Complete painted artwork rollout — September 28, 2026
 
