@@ -1,6 +1,7 @@
 import { useId } from 'react'
 import { landscapeDream, sampleEdits } from './landscapeDream'
 import type { LandscapeDream } from './landscapeCollection'
+import { changedArtwork, originalArtwork } from '../v3/artworkDelivery'
 
 const sample = { ...landscapeDream, edits: sampleEdits }
 
@@ -8,8 +9,10 @@ const sample = { ...landscapeDream, edits: sampleEdits }
 export function LandscapeArtwork({ changed, dream = sample, viewBox = '0 0 1672 941' }: { changed: boolean; dream?: LandscapeDream; viewBox?: string }) {
   const clip = useId().replaceAll(':', '')
   return <svg viewBox={viewBox} className="dream-image" aria-hidden="true">
-    <image href={dream.original} width="1672" height="941" preserveAspectRatio="none"/>
-    {changed && dream.edits.map(({ id, box, maskPath, source, edgeFade }) => {
+    <image href={originalArtwork(dream)} width="1672" height="941" preserveAspectRatio="none"/>
+    {changed && dream.edits.map(edit => {
+      const { id, box, maskPath, edgeFade } = edit
+      const placement = changedArtwork(dream, edit)
       const key = `${clip}-${id}`, x = box.left * 1672, y = box.top * 941, w = box.width * 1672, h = box.height * 941
       // Fade just the patch boundary, never the painting detail. No pixels outside
       // the authored region are changed. The published sample stays untouched.
@@ -24,7 +27,7 @@ export function LandscapeArtwork({ changed, dream = sample, viewBox = '0 0 1672 
             <mask id={`${key}-mx`} maskUnits="userSpaceOnUse" x={x} y={y} width={w} height={h}><rect x={x} y={y} width={w} height={h} fill={`url(#${key}-x)`} mask={`url(#${key}-my)`}/></mask>
           </>}
         </defs>
-        <image href={source ?? dream.altered} width="1672" height="941" preserveAspectRatio="none" clipPath={`url(#${key})`} mask={feather > 0 ? `url(#${key}-mx)` : undefined}/>
+        <image href={placement.src} x={placement.x} y={placement.y} width={placement.width} height={placement.height} preserveAspectRatio="none" clipPath={`url(#${key})`} mask={feather > 0 ? `url(#${key}-mx)` : undefined}/>
       </g>
     })}
   </svg>

@@ -30,14 +30,18 @@ export function DreamCanvas({ children, label, onTap, onExpand, view = RESTING_V
   const gesture = useRef({ origin: { x: 0, y: 0 }, view, distance: 0, moved: false })
 
   useEffect(() => {
-    if (!fitAspectRatio || !canvas.current || !fittedFrame.current) return
+    const element = canvas.current
+    const frame = fittedFrame.current
+    if (!fitAspectRatio || !element || !frame) return
     const measure = () => {
-      const outer = canvas.current!.getBoundingClientRect()
-      const fitted = fittedFrame.current!.getBoundingClientRect()
+      // A queued resize can arrive after the viewer has closed, before cleanup.
+      if (!element.isConnected || !frame.isConnected) return
+      const outer = element.getBoundingClientRect()
+      const fitted = frame.getBoundingClientRect()
       if (fitted.width && fitted.height) setViewport({ x: outer.width / fitted.width, y: outer.height / fitted.height })
     }
     const observer = new ResizeObserver(measure)
-    observer.observe(canvas.current)
+    observer.observe(element)
     measure()
     return () => observer.disconnect()
   }, [fitAspectRatio])

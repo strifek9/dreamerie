@@ -14,6 +14,7 @@ import { guessFeedback, resultVerse } from './dreamRitual'
 import { streakShareLine } from '../game/playStats'
 import { PlayStats } from './PlayStats'
 import { usePlayStats } from './usePlayStats'
+import { artworkSources, originalArtwork } from './artworkDelivery'
 import '../v2/versionTwo.css'
 import './versionThree.css'
 
@@ -61,8 +62,8 @@ function Round({ dream, day, playtest, onNew }: { dream: LandscapeDream; day: nu
   useEffect(() => { window.scrollTo({ top: 0, behavior: 'instant' }) }, [landing, phase])
   useEffect(() => {
     let active = true
-    const sources = new Set([dream.original, dream.altered, ...dream.edits.flatMap(edit => edit.source ? [edit.source] : [])])
-    Promise.all([...sources].map(src => new Promise<void>((resolve, reject) => {
+    const sources = artworkSources(dream)
+    Promise.all(sources.map(src => new Promise<void>((resolve, reject) => {
       const image = new Image(); image.onload = () => resolve(); image.onerror = reject; image.src = src
     }))).then(() => { if (active) setAssetsReady(true) }, () => { if (active) setAssetError(true) })
     return () => { active = false }
@@ -92,7 +93,7 @@ function Round({ dream, day, playtest, onNew }: { dream: LandscapeDream; day: nu
     {storageError && <p role="alert" className="storage-warning">{storageError}</p>}
     {landing ? <section className="v2-welcome">
       <p className="eyebrow">{dream.title}</p>
-      <button className="v2-preview" onClick={() => setPreviewZoom(true)} aria-label="Enlarge the dream preview"><img src={dream.original} alt={dream.title}/></button>
+      <button className="v2-preview" onClick={() => setPreviewZoom(true)} aria-label="Enlarge the dream preview"><img src={originalArtwork(dream)} alt={dream.title}/></button>
       <p className="v2-poem">“{verse[0]}<br/>{verse[1]}”</p>
       <h1>Spot the differences.</h1>
       <p className="v2-rules">{phase !== 'play' && stats && stats.current > 0 && <span className="v3-landing-streak"><span aria-hidden="true">✦ </span>{stats.current}-day streak</span>}<span className="v3-rules-limit">2 minutes · 5 guesses total · Misses count</span>Tap to guess, <strong>Remember</strong> to confirm.</p>

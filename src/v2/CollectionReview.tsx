@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { LandscapeArtwork } from './LandscapeArtwork'
+import { artworkSources } from '../v3/artworkDelivery'
 import type { LandscapeDream } from './landscapeCollection'
 import { currentDreams as landscapeCollection } from '../v3/dailyDream'
 import './collectionReview.css'
@@ -21,7 +22,7 @@ function ReviewCard({ dream, full }: { dream: LandscapeDream; full: boolean }) {
   const [loaded, setLoaded] = useState('')
   useEffect(() => {
     let active = true
-    Promise.all([...new Set([dream.original, dream.altered, ...dream.edits.flatMap(e => e.source ? [e.source] : [])])].map(src => new Promise<void>((resolve, reject) => { const image = new Image(); image.onload = () => resolve(); image.onerror = reject; image.src = src }))).then(() => { if (active) setLoaded(dream.id) }, () => { if (active) setLoaded('error') })
+    Promise.all(artworkSources(dream).map(src => new Promise<void>((resolve, reject) => { const image = new Image(); image.onload = () => resolve(); image.onerror = reject; image.src = src }))).then(() => { if (active) setLoaded(dream.id) }, () => { if (active) setLoaded('error') })
     return () => { active = false }
   }, [dream])
   return <article>
