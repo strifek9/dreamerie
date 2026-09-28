@@ -1,5 +1,7 @@
 # DREAMERIE
 
+**Live UI release — September 28, 2026:** `e2edd36` is committed, pushed and deployed at https://dreamerie.onrender.com. The landscape primary button shares the artwork's bottom edge, and perfect results display “You remembered the dream.” in warm gold. All 77 tests and typecheck/build passed locally, on GitHub and Render; both changes and preserved saved score/history were verified live. See [deployment verification](docs/HOSTING.md). The local/pending-approval notes and commands below are historical.
+
 Local UI refinement (September 28, 2026; not published): the landscape landing page groups its right-hand copy so the Start / View result / Continue button shares the artwork's bottom edge. Portrait remains stacked. Perfect 5/5 results now say “You remembered the dream.” in a warm gold serif treatment with matching score/stars; other outcomes, scoring, share text, timers and saves are unchanged. All 77 tests and typecheck/build pass. Browser checks covered 568×320, 844×390, 1280×720, 390×844 and 320×568, plus a full five-correct-confirmation round. Suggested commit: `style(v3): align landscape welcome and celebrate perfect recall`. Await owner approval before publication.
 
 After review and explicit approval only (not run):

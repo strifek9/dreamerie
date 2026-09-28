@@ -1,5 +1,13 @@
 # Hosted Dreamerie playtest
 
+## Landscape welcome and perfect recall — September 28, 2026, LIVE
+
+Owner-approved release `e2edd3699249d41139cf9e950f9947c744355f5a` is committed/pushed on `prototype/v3-dream-ritual` and live at https://dreamerie.onrender.com. Exact-commit deployment `dep-datbphvavr4c73ctojd0` on existing Static Site `srv-data2gvpn0mc73bgfhc0` reports **Deploy succeeded | Live**, 57.5 seconds, site-live log at 2:16:15 PM CDT. No hosting configuration, artwork, scoring, timer, share format or saved-state changes; suspended legacy resources and V2 remain untouched.
+
+All 77 tests/typecheck/build passed locally, GitHub Actions run `36470815789` succeeded, and Render repeated the tests/build successfully. The existing bundle-size advisory remains nonblocking. Live assets are `index-C7Qcd4SF.js` / `index-D5_t8gir.css`. Hosted browser at 844×390 measured identical artwork/button bottom coordinates (316.59375 CSS pixels), including a completed-day View result and streak. The existing perfect result shows the new message with computed gold color rgb(242, 220, 168), while its score/time/history remain unchanged. Browser errors were empty; no new attempt was started and no site data was cleared. Temporary viewport override was reset. Homepage and V2 remain HTTP 200.
+
+This documentation-only follow-up records verification and does not need redeployment. Earlier local/not-published UI descriptions are historical; future release work requires new approval.
+
 ## Lossless artwork delivery — September 28, 2026, LIVE
 
 Owner-approved release `639697786dbc76867affc07ee14201e624bc905d` is committed and pushed on `prototype/v3-dream-ritual`, and live at https://dreamerie.onrender.com. Existing Static Site `srv-data2gvpn0mc73bgfhc0`, exact-commit deployment `dep-datbi4hsrm7s7382ln80`, reports **Deploy succeeded | Live**, duration 55.7 seconds, site-live log at 2:00:23 PM CDT. No plan, service configuration, analytics, storage namespace or game-rule changes. Original masters, legacy assets and saved attempts remain intact; the suspended old paid service/disk/backups and separate V2 site were not modified.
