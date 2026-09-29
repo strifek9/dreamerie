@@ -5,6 +5,7 @@ import { RESTING_VIEW, zoomAt, type ImageView } from '../game/imageInspection'
 import { useDailySession } from '../game/useDailySession'
 import { LandscapeArtwork } from '../v2/LandscapeArtwork'
 import { verseForDream } from '../v2/dreamVerses'
+import { yearVerses } from './yearExpansion.generated'
 import { differencesFor, landscapeDay, LANDSCAPE_SESSION_OPTIONS, type LandscapeDream } from '../v2/landscapeCollection'
 import { currentDreams, dreamForDate, playableDreams } from './dailyDream'
 import { holidayDetails, holidayDreams } from './holidayDreams'
@@ -42,7 +43,8 @@ export default function VersionThree() {
 
 function Round({ dream, day, playtest, onNew }: { dream: LandscapeDream; day: number; playtest: boolean; onNew: () => void }) {
   const holiday = holidayDetails(dream.id)
-  const verse = holiday?.verse ?? verseForDream(dream.id.replace(/^painted-/, ''))
+  const verseId = dream.id.replace(/^painted-/, '')
+  const verse = holiday?.verse ?? yearVerses[verseId] ?? verseForDream(verseId)
   const differences = useMemo(() => differencesFor(dream), [dream])
   const { phase, recall, result, recallLeft, pendingSide, dispatch, storageError, busy } = useDailySession(day, dream.id, differences, playtest, LANDSCAPE_SESSION_OPTIONS)
   const stats = usePlayStats(playtest, Boolean(result), knownCardIds)

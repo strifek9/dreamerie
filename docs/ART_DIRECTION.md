@@ -1,5 +1,9 @@
 # Dreamerie art direction
 
+## Full-year selected artwork — September 29, 2026
+
+365 regular originals and 18 holiday pairs now use the approved varied, visibly painted, grain-free direction. The additional 245 pairs retain their owner-approved originals, with five individually reviewed theme-fitting changes each. Dream 214 replaces the rejected grey-tentacle teapot with The Laundry of Borrowed Shadows: expressive wool creatures washing and hanging shadows in a magical laundrette. The teapot remains backup-only. Preserve expressive nonphotoreal characters, varied subjects/viewpoints/moods/density, coherent impossible relationships and no demographic stereotypes. Do not default to scenic landscapes, people, moons, flowers or birds. Continue following CARD_CREATION_GUIDE.md; append new versioned files rather than overwriting published artwork.
+
 ## Core visual and narrative target: Dreamerie with Dixit-inspired storytelling
 
 This is a standing owner-approved direction for future normal cards, holiday cards, revised originals and their counterparts, not a one-off experiment. Use Dixit as inspiration for the breadth of visual storytelling and composition, while keeping Dreamerie's own characters, situations and visibly painted, grain-free finish. Do not treat Dixit as one uniform artist style or copy individual cards.

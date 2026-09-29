@@ -1,5 +1,11 @@
 # Dreamerie Daily Dream Recall Prototype Plan
 
+## Full-year expansion — September 29, 2026
+
+All 245 new regular pairs are generated, visually reviewed and integrated, bringing the current catalogue to 365 regular +18 holiday pairs. Dream 214 was replaced at the owner's request; rejected art remains backup-only. All 1,225 new answer crops and 245 full composites have passed visual review. All 79 tests, typecheck/build, legacy validation and 2,298-file lossless pixel checks pass. Complete phone-sized gameplay on the replacement verified marking without submission, confirmation, duplicate/miss consumption, fifth-guess results, enlargement and paired answer inspection. Physical touch and difficulty calibration remain human playtests.
+
+Publish the entire validated collection under the explicit owner authorization; no partial batches. Commit/push the existing V3 branch and deploy its exact release commit to the existing dreamerie Static Site, preserving V2, legacy resources, saves and all published assets. Final deployment verification belongs in docs/HOSTING.md.
+
 ## Completed painted-art milestone — September 28, 2026
 
 120/120 ordinary and 18/18 holiday pairs are integrated, with all 690 paired answer crops and 138 full composites visually reviewed. All 70 tests, typecheck/build and the unchanged legacy validator pass. Existing artwork and saved rounds remain recoverable/resolvable. Production-preview phone gameplay, landscape enlargement, completed score persistence, answer reveals and sharing feedback are checked. The owner authorized commit, push and deployment after this full milestone; earlier review/publishing restrictions below are historical. Publish the exact V3 commit to the existing original Render service; do not change hosting settings or the separate V2 service. Continue physical-device and difficulty feedback after release.

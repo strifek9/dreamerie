@@ -16,7 +16,7 @@ const assets = new Map(audit.assets.map(asset => [asset.delivery, asset]))
 const bytes = (path: string) => readFileSync(new URL(`../public${path}`, import.meta.url))
 const hash = (value: Buffer) => createHash('sha256').update(value).digest('hex')
 
-test('all 138 current cards preload only their full original and five lossless clue crops', () => {
+test('all 383 current cards preload only their full original and five lossless clue crops', () => {
   assert.equal(audit.cards.length, currentDreams.length)
   assert.equal(assets.size, currentDreams.length * 6)
   for (const dream of currentDreams) {

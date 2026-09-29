@@ -1,5 +1,9 @@
 # Dreamerie game design
 
+## Current full-year catalogue — September 29, 2026
+
+365 regular pairs and 18 holiday pairs provide 1,915 authored differences. The new regular cards append after the unchanged first 120; the regular sequence wraps after 365 absolute local-calendar puzzle days, not at January 1. Holidays replace only their date and do not shift the sequence. All 138 legacy card IDs remain resolvable. An already-started attempt preserves its exact card, guesses and original deadline across this expansion. No changes to five total confirmations, overlap detection, duplicate prevention, unpausable two-minute deadline, accuracy-first ranking, whole-second time, sharing or streaks. Older 120-day catalogue descriptions below are historical.
+
 ## Current painted catalogue — September 28, 2026
 
 All 120 ordinary pairs and 18 holiday pairs are complete and validated: 690 authored differences. Versioned painted IDs drive the current schedule; 138 old IDs/assets/geometry remain available exclusively for saved-round compatibility. Ordinary ordering and wraparound are unchanged. Daily gameplay, confirmation, scoring, time, streaks and storage semantics are unchanged. Earlier local/incomplete milestone notes below are historical.

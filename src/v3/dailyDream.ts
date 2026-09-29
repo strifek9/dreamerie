@@ -5,7 +5,7 @@ import { holidayForDate } from './holidayCalendar.ts'
 import { holidayDreams } from './holidayDreams.ts'
 import { legacyHolidayDreams } from './legacyHolidayDreams.ts'
 
-// Holiday cards never enter or reorder the published 120-day ordinary rotation.
+// Holiday cards never enter or reorder the ordinary rotation.
 export const currentDreams: readonly LandscapeDream[] = [...paintedCollection, ...holidayDreams]
 // Legacy IDs are resolvable for saved attempts, not part of review or new-day rotation.
 export const playableDreams: readonly LandscapeDream[] = [...currentDreams, ...landscapeCollection, ...legacyHolidayDreams]

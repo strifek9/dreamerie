@@ -39,10 +39,10 @@ test('U.S. Thanksgiving is the fourth Thursday, not a fixed November date', () =
 })
 
 test('holiday overrides never reorder or shift the ordinary daily rotation', () => {
-  assert.equal(currentDreams.length, 138)
-  assert.equal(playableDreams.length, 276)
-  assert.equal(new Set(playableDreams.map(d => d.id)).size, 276)
-  assert.deepEqual(playableDreams.slice(0, 120), paintedCollection)
+  assert.equal(currentDreams.length, 383)
+  assert.equal(playableDreams.length, 521)
+  assert.equal(new Set(playableDreams.map(d => d.id)).size, 521)
+  assert.deepEqual(playableDreams.slice(0, 365), paintedCollection)
   for (let day = 0; day < 366; day++) {
     const date = new Date(2028, 0, 1 + day, 12)
     const holiday = holidayForDate(date)

@@ -1,5 +1,15 @@
 # DREAMERIE
 
+## Full-year collection — September 29, 2026
+
+The current V3 catalogue contains **365 ordinary dreams plus 18 holiday specials**, each with exactly five reviewed differences. The new 245 pairs are appended after the original 120; existing artwork, IDs, answer geometry, saved guesses, streaks and deadlines are preserved. Regular artwork wraps after 365 absolute puzzle days; holidays replace their date without shifting the sequence. An already-started saved card still wins over the schedule.
+
+Dream 214 is now **The Laundry of Borrowed Shadows**, replacing the owner-rejected teapot. The teapot remains a nonshipping workspace backup. New native PNG masters are under `public/artwork/v3/collection-year-v1/`; selected prompts, corrections, hashes and final geometry are in `docs/artwork/YEAR_EXPANSION_PROVENANCE.json`. All 245 full composites and 1,225 paired answer crops passed visual review. Only five authored regions are composited, never the entire generated counterpart.
+
+Run `npm run dev` and use development-only `?dream=painted-dream-214`, `?dream=painted-dream-365`, or `?review=1&card=121`. The review includes 383 cards; production has no overrides or replay reset. `npm test` passes 79 tests; `npm run build` includes type checking. The unchanged legacy validator also passes. Offline `python scripts/prepareArtworkDeliveryV1.py --check` verifies all 2,298 lossless files against native master pixels/color profiles. Total current-card downloads are 800,855,742 bytes across the whole catalogue, 59.8% below their selected PNG sources; each round fetches only its own six images.
+
+The owner authorized committing, pushing and deploying this complete validated collection, not partial batches. Release status is recorded in [HOSTING.md](docs/HOSTING.md); historical milestones below do not override this scope. Physical-device gestures and human difficulty calibration remain ongoing playtests.
+
 **Live UI release — September 28, 2026:** `e2edd36` is committed, pushed and deployed at https://dreamerie.onrender.com. The landscape primary button shares the artwork's bottom edge, and perfect results display “You remembered the dream.” in warm gold. All 77 tests and typecheck/build passed locally, on GitHub and Render; both changes and preserved saved score/history were verified live. See [deployment verification](docs/HOSTING.md). The local/pending-approval notes and commands below are historical.
 
 Local UI refinement (September 28, 2026; not published): the landscape landing page groups its right-hand copy so the Start / View result / Continue button shares the artwork's bottom edge. Portrait remains stacked. Perfect 5/5 results now say “You remembered the dream.” in a warm gold serif treatment with matching score/stars; other outcomes, scoring, share text, timers and saves are unchanged. All 77 tests and typecheck/build pass. Browser checks covered 568×320, 844×390, 1280×720, 390×844 and 320×568, plus a full five-correct-confirmation round. Suggested commit: `style(v3): align landscape welcome and celebrate perfect recall`. Await owner approval before publication.
