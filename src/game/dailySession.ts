@@ -9,7 +9,9 @@ export type DailySession = {
   pending: { point: Point; side: DreamSide } | null
 }
 export type SessionAction = { type: 'start' } | { type: 'mark'; point: Point; side: DreamSide } | { type: 'confirm'; expectedCount: number; point: Point; side: DreamSide }
-export const dailyStorageKey = (day: number) => `dreamerie:daily:v1:${day}`
+// Keep the published collection key: removing old modes must not reset attempts.
+export const DAILY_SESSION_NAMESPACE = 'dreamerie:v2:daily-collection:v1'
+export const dailyStorageKey = (day: number) => `${DAILY_SESSION_NAMESPACE}:${day}`
 
 function isPoint(value: unknown): value is Point {
   if (!value || typeof value !== 'object') return false

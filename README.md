@@ -1,5 +1,15 @@
 # DREAMERIE
 
+## Current application
+
+Dreamerie is a daily spot-the-difference game: two paintings, two minutes, five confirmed guesses. The approved V3 interface is now the only game mode on `main`. `npm run dev` starts it locally; `npm test` runs current-game regression tests; `npm run build` type-checks and builds the static site. `npm start` optionally serves an existing build, without a database or room API.
+
+The retired social/weekly game and portrait comparison UI are preserved in Git (`prototype/social-dreams`, `prototype/version-1`, and pre-cleanup commit `74a3589`), not shipped as unused application code. No private databases or backups were changed. Older milestone notes below describe development history, not current setup instructions.
+
+All 383 current cards and 175 historical saved-card IDs remain intact. The collection storage key, scoring, deadlines and streaks are unchanged. Cleanup removes 527 unused images (424 MB) from old modes/sample and superseded delivery copies; all removals are recoverable through Git and listed in [the cleanup ledger](docs/artwork/RETIRED_ASSETS_20260929.json). Audit future assets with `node --experimental-strip-types scripts/auditArtwork.ts` before removing anything.
+
+Development-only `?review=1`, `?dream=<published-id>` and New day remain available; `?version=1` is retired. `src/v2/` contains shared landscape rendering and compatibility metadata still used by the current game, not a second running mode. Hosting status: [docs/HOSTING.md](docs/HOSTING.md).
+
 ## Revisited artwork refresh — September 29, 2026
 
 **Live:** `3a7ff3c` is committed, pushed and deployed at https://dreamerie.onrender.com. All 80 tests and build/typecheck passed locally and on Render; live artwork hashes and preview controls were verified. See [release verification](docs/HOSTING.md).

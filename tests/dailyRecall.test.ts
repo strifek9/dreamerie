@@ -1,7 +1,5 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
-import { existsSync } from 'node:fs'
-import { authoredDreams } from '../src/data/authoredDreams.ts'
 import { constrainView, imagePoint, RESTING_VIEW, zoomAt } from '../src/game/imageInspection.ts'
 
 import { changeSession, dailyStorageKey, parseSession, sessionSnapshot, updateStoredSession, type DailySession } from '../src/game/dailySession.ts'
@@ -9,18 +7,21 @@ import {
   GAME_CONFIG,
   compareResults,
   confirmGuess,
-  createDifferences,
   createRecallState,
   createPlayUrl,
   createShareText,
   formatClock,
   findDifference,
   getAnswerReveals,
-  getNextAuthoredDream,
   type RecallResult,
 } from '../src/game/dailyRecall.ts'
 
-const differences = createDifferences('card-022')
+// Geometry-only fixture: core rules must not depend on a retired card catalogue.
+const differences = Array.from({ length: 5 }, (_, i) => ({
+  id: 'detail-' + i, x: .1 + i * .18, y: .2, radius: .025,
+  difficulty: 'Easy' as const, label: 'An authored detail changes.',
+  box: { left: .075 + i * .18, top: .175, width: .05, height: .05 },
+}))
 
 test('full-stage inspection centers letterboxed axes and bounds pan against the larger window', () => {
   const portrait = { x: 1, y: 3.4 }
@@ -44,80 +45,80 @@ test('full-stage taps use the enlarged painting, including areas beyond the orig
 })
 
 const startTime = 1_800_000_000_000
-const newSession = () => changeSession(null, { type: 'start' }, 'card-022', differences, startTime)!
-const markedSession = () => changeSession(newSession(), { type: 'mark', point: { x: .5, y: .5 }, side: 'original' }, 'card-022', differences, startTime + 1000)!
-const confirmSaved = (session: DailySession, now: number) => changeSession(session, { type: 'confirm', expectedCount: session.guesses.length, point: session.pending!.point, side: session.pending!.side }, 'card-022', differences, now)!
+const newSession = () => changeSession(null, { type: 'start' }, 'fixture-dream', differences, startTime)!
+const markedSession = () => changeSession(newSession(), { type: 'mark', point: { x: .5, y: .5 }, side: 'original' }, 'fixture-dream', differences, startTime + 1000)!
+const confirmSaved = (session: DailySession, now: number) => changeSession(session, { type: 'confirm', expectedCount: session.guesses.length, point: session.pending!.point, side: session.pending!.side }, 'fixture-dream', differences, now)!
 
 test('daily attempts restore pending markers and the original timer after refresh', () => {
-  const restored = parseSession(JSON.stringify(markedSession()), 'card-022')!
+  const restored = parseSession(JSON.stringify(markedSession()), 'fixture-dream')!
   const snapshot = sessionSnapshot(restored, differences, startTime + 31_000)
   assert.equal(snapshot.phase, 'play')
   assert.equal(snapshot.recallLeft, 89)
   assert.deepEqual(snapshot.recall.pending, { x: .5, y: .5 })
   assert.equal(snapshot.pendingSide, 'original')
   assert.equal(snapshot.recall.confirmed.length, 0)
-  assert.equal(changeSession(restored, { type: 'start' }, 'card-022', differences, startTime + 31_000), restored)
+  assert.equal(changeSession(restored, { type: 'start' }, 'fixture-dream', differences, startTime + 31_000), restored)
 })
 
 test('closing the browser does not pause the attempt; expired attempts cannot restart', () => {
   const saved = confirmSaved(markedSession(), startTime + 10_000)
-  const restored = parseSession(JSON.stringify(saved), 'card-022')!
+  const restored = parseSession(JSON.stringify(saved), 'fixture-dream')!
   const snapshot = sessionSnapshot(restored, differences, startTime + 121_000)
   assert.equal(snapshot.phase, 'result')
   assert.equal(snapshot.result?.elapsedSeconds, 120)
   assert.equal(snapshot.result?.reason, 'time')
   assert.equal(snapshot.recall.confirmed.length, 1)
-  assert.equal(changeSession(restored, { type: 'start' }, 'card-022', differences, startTime + 121_000), restored)
-  assert.equal(changeSession(restored, { type: 'mark', point: { x: .1, y: .1 }, side: 'original' }, 'card-022', differences, startTime + 121_000), restored)
+  assert.equal(changeSession(restored, { type: 'start' }, 'fixture-dream', differences, startTime + 121_000), restored)
+  assert.equal(changeSession(restored, { type: 'mark', point: { x: .1, y: .1 }, side: 'original' }, 'fixture-dream', differences, startTime + 121_000), restored)
 })
 
 test('five saved guesses freeze the score and measured time across reloads', () => {
   let saved = newSession()
   for (let n = 0; n < 5; n++) {
-    saved = changeSession(saved, { type: 'mark', point: { x: .5, y: .5 }, side: 'changed' }, 'card-022', differences, startTime + (n + 1) * 1000)!
+    saved = changeSession(saved, { type: 'mark', point: { x: .5, y: .5 }, side: 'changed' }, 'fixture-dream', differences, startTime + (n + 1) * 1000)!
     saved = confirmSaved(saved, startTime + (n + 1) * 1000)
   }
   const first = sessionSnapshot(saved, differences, startTime + 5000)
-  const later = sessionSnapshot(parseSession(JSON.stringify(saved), 'card-022'), differences, startTime + 900_000)
+  const later = sessionSnapshot(parseSession(JSON.stringify(saved), 'fixture-dream'), differences, startTime + 900_000)
   assert.deepEqual(later.result, first.result)
   assert.equal(later.result?.elapsedSeconds, 5)
   assert.equal(later.recall.confirmed.length, 5)
-  assert.equal(changeSession(saved, { type: 'start' }, 'card-022', differences, startTime + 900_000), saved)
+  assert.equal(changeSession(saved, { type: 'start' }, 'fixture-dream', differences, startTime + 900_000), saved)
 })
 
 test('stale or double confirmations cannot use another guess or another tab’s marker', () => {
   const marked = markedSession()
   const action = { type: 'confirm' as const, expectedCount: 0, point: { x: .5, y: .5 }, side: 'original' as const }
-  const first = changeSession(marked, action, 'card-022', differences, startTime + 1000)!
-  const secondMark = changeSession(first, { type: 'mark', point: { x: .2, y: .3 }, side: 'original' }, 'card-022', differences, startTime + 2000)!
-  assert.equal(changeSession(secondMark, action, 'card-022', differences, startTime + 3000), secondMark)
-  assert.equal(changeSession(secondMark, { ...action, expectedCount: 1 }, 'card-022', differences, startTime + 3000), secondMark)
+  const first = changeSession(marked, action, 'fixture-dream', differences, startTime + 1000)!
+  const secondMark = changeSession(first, { type: 'mark', point: { x: .2, y: .3 }, side: 'original' }, 'fixture-dream', differences, startTime + 2000)!
+  assert.equal(changeSession(secondMark, action, 'fixture-dream', differences, startTime + 3000), secondMark)
+  assert.equal(changeSession(secondMark, { ...action, expectedCount: 1 }, 'fixture-dream', differences, startTime + 3000), secondMark)
 })
 
 test('storage updates read the latest attempt and each new date gets its own key', () => {
   const items = new Map<string, string>()
   const storage = { getItem: (key: string) => items.get(key) ?? null, setItem: (key: string, value: string) => { items.set(key, value) } }
   const key = dailyStorageKey(266)
-  updateStoredSession(storage, key, { type: 'start' }, 'card-022', differences, startTime)
-  const secondTab = updateStoredSession(storage, key, { type: 'start' }, 'card-022', differences, startTime + 10_000)!
+  updateStoredSession(storage, key, { type: 'start' }, 'fixture-dream', differences, startTime)
+  const secondTab = updateStoredSession(storage, key, { type: 'start' }, 'fixture-dream', differences, startTime + 10_000)!
   assert.equal(secondTab.startedAt, startTime)
   assert.notEqual(key, dailyStorageKey(267))
   assert.equal(storage.getItem(dailyStorageKey(267)), null)
   items.delete(key) // User clearing site data intentionally permits a fresh attempt.
-  const cleared = updateStoredSession(storage, key, { type: 'start' }, 'card-022', differences, startTime + 20_000)!
+  const cleared = updateStoredSession(storage, key, { type: 'start' }, 'fixture-dream', differences, startTime + 20_000)!
   assert.equal(cleared.startedAt, startTime + 20_000)
 })
 
 test('malformed or incompatible saved attempts fail closed rather than silently resetting', () => {
-  for (const raw of ['broken', '{}', JSON.stringify({ ...newSession(), cardId: 'card-023' }), JSON.stringify({ ...newSession(), guesses: [{ point: { x: 3, y: .5 }, elapsedSeconds: 2 }] }), JSON.stringify({ ...newSession(), guesses: [{ point: { x: .5, y: .5 }, elapsedSeconds: 120 }] })]) {
-    assert.throws(() => parseSession(raw, 'card-022'))
+  for (const raw of ['broken', '{}', JSON.stringify({ ...newSession(), cardId: 'other-dream' }), JSON.stringify({ ...newSession(), guesses: [{ point: { x: 3, y: .5 }, elapsedSeconds: 2 }] }), JSON.stringify({ ...newSession(), guesses: [{ point: { x: .5, y: .5 }, elapsedSeconds: 120 }] })]) {
+    assert.throws(() => parseSession(raw, 'fixture-dream'))
   }
-  assert.equal(parseSession(null, 'card-022'), null)
+  assert.equal(parseSession(null, 'fixture-dream'), null)
 })
 
 test('storage failures do not report a successfully started or saved attempt', () => {
   const storage = { getItem: () => null, setItem: () => { throw new Error('Storage unavailable') } }
-  assert.throws(() => updateStoredSession(storage, dailyStorageKey(266), { type: 'start' }, 'card-022', differences, startTime))
+  assert.throws(() => updateStoredSession(storage, dailyStorageKey(266), { type: 'start' }, 'fixture-dream', differences, startTime))
 })
 
 test('viewer pan remains bounded and zooming out restores a fully fitted painting', () => {
@@ -156,21 +157,6 @@ test('results split found answers left and missed answers right without renumber
   assert.equal(getAnswerReveals(differences, [], 'original').length, 0)
   assert.equal(getAnswerReveals(differences, [], 'changed').length, 5)
   assert.equal(getAnswerReveals(differences, differences.map((d) => d.id), 'changed').length, 0)
-})
-
-test('new test days visit every authored pair and wrap safely', () => {
-  const first = authoredDreams[0]
-  let current: (typeof authoredDreams)[number] = first
-  const seen = new Set<string>()
-  for (let day = 0; day < authoredDreams.length; day += 1) {
-    seen.add(current.id)
-    const next = getNextAuthoredDream(current.id)
-    assert.notEqual(next.id, current.id)
-    current = next
-  }
-  assert.equal(seen.size, 120)
-  assert.equal(current.id, first.id)
-  assert.throws(() => getNextAuthoredDream('card-999'), /Missing difference profile/)
 })
 
 test('placing or repositioning a pending marker does not submit a guess', () => {
@@ -240,36 +226,6 @@ test('accuracy ranks before time and time breaks accuracy ties', () => {
 test('time display stays simple and human-readable', () => {
   assert.equal(formatClock(67), '1:07')
   assert.equal(formatClock(120), '2:00')
-})
-
-test('only reviewed image pairs are playable, with five individually hittable object answers', () => {
-  assert.equal(authoredDreams.length, 120)
-  assert.deepEqual(authoredDreams.map((dream) => dream.id).sort(),
-    Array.from({ length: 120 }, (_, index) => `card-${String(index + 1).padStart(3, '0')}`))
-  assert.throws(() => createDifferences('card-999'), /Missing difference profile/)
-  assert.equal(new Set(authoredDreams.map((dream) => dream.id)).size, authoredDreams.length)
-  for (const dream of authoredDreams) {
-    assert.ok(existsSync(new URL('../public' + dream.editedArtwork, import.meta.url)))
-    assert.ok(existsSync(new URL(`../public/artwork/dreams/${dream.id}.jpg`, import.meta.url)))
-    assert.ok(existsSync(new URL('../public' + dream.editedArtwork.replace(/\.png$/, '.provenance.json'), import.meta.url)))
-    const entries = createDifferences(dream.id)
-    assert.equal(entries.length, 5)
-    assert.equal(new Set(entries.map((entry) => entry.id)).size, 5)
-    for (const entry of entries) {
-      const { left, top, width, height } = entry.box
-      assert.ok(width > 0 && height > 0 && left >= 0 && top >= 0 && left + width <= 1 && top + height <= 1, entry.id)
-      assert.ok(entry.label.length > 10)
-      // A smaller detail can sit at a larger object's center (e.g. a doorknob).
-      // Every answer must still have reachable interior points of its own.
-      const candidates = Array.from({ length: 81 }, (_, index) => ({
-        x: left + width * ((index % 9 + 1) / 10),
-        y: top + height * ((Math.floor(index / 9) + 1) / 10),
-      }))
-      assert.ok(candidates.some((point) => findDifference(point, [], entries)?.id === entry.id), entry.id)
-      assert.equal(findDifference({ x: left - GAME_CONFIG.guessRadius - .001, y: entry.y }, [], [entry]), undefined)
-      assert.equal(findDifference({ x: left + width + GAME_CONFIG.guessRadius + .001, y: entry.y }, [], [entry]), undefined)
-    }
-  }
 })
 
 test('small nested details retain their hit area after being found', () => {
@@ -342,7 +298,7 @@ test('overlap allowance scales with the artwork on phone, desktop and zoomed vie
 
 test('share text reports the Wordle-style score without revealing locations', () => {
   const result = { accuracy: 2, elapsedSeconds: 67, reason: 'guesses' as const }
-  const text = createShareText(42, result, differences, [differences[0].id, differences[3].id], 'https://example.com/dreamerie/?review=card-022#private')
+  const text = createShareText(42, result, differences, [differences[0].id, differences[3].id], 'https://example.com/dreamerie/?review=fixture-dream#private')
   assert.equal(text, 'Dreamerie #42\n2/5 · 1:07\n🟪⬛⬛🟪⬛\nYour turn to dream.\nhttps://example.com/dreamerie/')
   for (const difference of differences) assert.ok(!text.includes(difference.label))
 })

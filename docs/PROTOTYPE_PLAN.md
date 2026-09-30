@@ -1,5 +1,9 @@
 # Dreamerie Daily Dream Recall Prototype Plan
 
+## Permanent-mode cleanup — September 29, 2026
+
+Consolidate on main and remove unused social/portrait/sample rules, server dependencies and tests for retired modes. Keep the current UI and all current-game regression coverage, current artwork and historical landscape save compatibility. Add an asset-inventory regression to protect every referenced master/delivery copy. Old code/art is recoverable from commit 74a3589 and preserved prototype branches. Owner approved commit, push, merge and deployment after checks; no database, disk, plan or separate V2 changes.
+
 ## Revisit refresh — September 29, 2026
 
 All 37 owner-selected originals and complete counterparts have been generated, integrated and visually checked (37 actual composites /185 paired answer crops). Preserve earlier versions and publish the complete refresh only after regression, native-pixel delivery and browser checks. Owner explicitly authorized commit, push and deployment to the existing dreamerie Static Site after completion. Scope excludes unrelated UI/gameplay/infrastructure changes. Physical-device touch feel and subjective clue difficulty remain human playtest feedback.

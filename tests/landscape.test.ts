@@ -1,11 +1,13 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
 import { readFileSync } from 'node:fs'
-import { landscapeDifferences as differences, landscapeDream as dream, V2_SESSION_OPTIONS } from '../src/v2/landscapeDream.ts'
 import { changeSession, sessionSnapshot, type DailySession } from '../src/game/dailySession.ts'
 import { compareResults, findDifference, GAME_CONFIG } from '../src/game/dailyRecall.ts'
 import { differencesFor, landscapeCollection, landscapeDay, landscapeForDay, LANDSCAPE_SESSION_OPTIONS } from '../src/v2/landscapeCollection.ts'
 import { dreamVerses, verseForDream } from '../src/v2/dreamVerses.ts'
+
+const dream = landscapeCollection[0]
+const differences = differencesFor(dream)
 
 test('all 120 daily paintings have their own short couplet, stable on reload and rotation', () => {
   assert.deepEqual(Object.keys(dreamVerses).sort(), landscapeCollection.map(card => card.id).sort())
@@ -59,7 +61,7 @@ test('daily landscape rotation visits every card, wraps, and isolates existing s
   assert.equal(landscapeForDay(121).id, landscapeForDay(1).id)
   assert.equal(landscapeForDay(0).id, landscapeForDay(120).id)
   assert.throws(() => landscapeForDay(NaN))
-  assert.notEqual(LANDSCAPE_SESSION_OPTIONS.namespace, V2_SESSION_OPTIONS.namespace)
+  assert.notEqual(LANDSCAPE_SESSION_OPTIONS.namespace, 'dreamerie:v2:landscape-playtest')
   assert.notEqual(LANDSCAPE_SESSION_OPTIONS.namespace, 'dreamerie:daily:v1')
 })
 
@@ -98,7 +100,7 @@ test('V2 preserves full-resolution originals and exactly five reachable landscap
     assert.ok(png.readUInt32BE(20) >= 900)
   }
   for (const d of differences) assert.equal(findDifference(d, [], differences, dream.aspectRatio)?.id, d.id)
-  assert.notEqual(V2_SESSION_OPTIONS.namespace, 'dreamerie:daily:v1')
+  assert.notEqual(LANDSCAPE_SESSION_OPTIONS.namespace, 'dreamerie:daily:v1')
 })
 test('landscape circle overlap uses width units on both axes, including edges', () => {
   const d = differences[0]

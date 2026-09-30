@@ -9,22 +9,18 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "typecheck": "tsc -b",
-    "test": "node --experimental-strip-types --test tests/dailyRecall.test.ts tests/landscape.test.ts tests/staticHosting.test.ts tests/dreamRitual.test.ts tests/holidays.test.ts tests/playStats.test.ts tests/paintedCollection.test.ts tests/analytics.test.ts tests/artworkDelivery.test.ts",
+    "test": "node --experimental-strip-types --test tests/dailyRecall.test.ts tests/landscape.test.ts tests/staticHosting.test.ts tests/dreamRitual.test.ts tests/holidays.test.ts tests/playStats.test.ts tests/paintedCollection.test.ts tests/analytics.test.ts tests/artworkDelivery.test.ts tests/assetInventory.test.ts",
     "build": "npm run typecheck && vite build",
     "preview": "vite preview --host 127.0.0.1",
     "start": "node --experimental-strip-types scripts/serve.ts"
   },
   "dependencies": {
-    "@fastify/cookie": "11.1.2",
-    "@fastify/rate-limit": "10.3.0",
     "@fastify/static": "10.1.4",
-    "better-sqlite3": "12.11.1",
     "fastify": "5.12.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@types/better-sqlite3": "9.6.0",
     "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",

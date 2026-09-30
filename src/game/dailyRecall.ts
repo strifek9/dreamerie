@@ -1,5 +1,3 @@
-import { authoredDreams } from '../data/authoredDreams.ts'
-
 export interface Point {
   readonly x: number
   readonly y: number
@@ -39,16 +37,10 @@ export const GAME_CONFIG = {
   maxGuesses: 5,
   differenceCount: 5,
   maxZoom: 4,
-  artworkAspectRatio: 4 / 5,
+  artworkAspectRatio: 1672 / 941,
   // Radius as a fraction of artwork width, shared by rendering and hit testing.
   guessRadius: 0.04,
 } as const
-
-export function getNextAuthoredDream(cardId: string) {
-  const index = authoredDreams.findIndex((dream) => dream.id === cardId)
-  if (index < 0) throw new Error(`Missing difference profile for ${cardId}.`)
-  return authoredDreams[(index + 1) % authoredDreams.length]
-}
 
 export function getAnswerReveals(differences: readonly Difference[], foundIds: readonly string[], side: 'original' | 'changed') {
   return differences.map((difference, index) => ({
@@ -56,18 +48,6 @@ export function getAnswerReveals(differences: readonly Difference[], foundIds: r
     number: index + 1,
     found: foundIds.includes(difference.id),
   })).filter((answer) => side === 'original' ? answer.found : !answer.found)
-}
-
-export function createDifferences(cardId: string): readonly Difference[] {
-  const profile = authoredDreams.find((dream) => dream.id === cardId)
-  if (!profile) throw new Error(`Missing difference profile for ${cardId}.`)
-  return profile.edits.map((edit) => ({
-    ...edit,
-    id: `${cardId}-${edit.id}`,
-    x: edit.box.left + edit.box.width / 2,
-    y: edit.box.top + edit.box.height / 2,
-    radius: Math.max(edit.box.width, edit.box.height * 1.25) / 2,
-  }))
 }
 
 export function createRecallState(): RecallState {

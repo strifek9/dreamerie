@@ -1,0 +1,2114 @@
+{
+  "recoveryCommit": "74a35894d871168cac1a4f799312d4ee286457c8",
+  "reason": "Retired portrait/social modes and sample; superseded WebP copies unused by any current or historical saved card. All 558 playable IDs and their PNG masters remain.",
+  "removed": [
+    {
+      "file": "/artwork/card-001.svg",
+      "bytes": 1146
+    },
+    {
+      "file": "/artwork/card-002.svg",
+      "bytes": 1299
+    },
+    {
+      "file": "/artwork/card-003.svg",
+      "bytes": 1543
+    },
+    {
+      "file": "/artwork/card-004.svg",
+      "bytes": 1605
+    },
+    {
+      "file": "/artwork/card-005.svg",
+      "bytes": 1759
+    },
+    {
+      "file": "/artwork/card-006.svg",
+      "bytes": 2091
+    },
+    {
+      "file": "/artwork/card-007.svg",
+      "bytes": 1289
+    },
+    {
+      "file": "/artwork/card-008.svg",
+      "bytes": 1312
+    },
+    {
+      "file": "/artwork/card-009.svg",
+      "bytes": 1337
+    },
+    {
+      "file": "/artwork/card-010.svg",
+      "bytes": 1361
+    },
+    {
+      "file": "/artwork/card-011.svg",
+      "bytes": 1386
+    },
+    {
+      "file": "/artwork/card-012.svg",
+      "bytes": 1410
+    },
+    {
+      "file": "/artwork/card-013.svg",
+      "bytes": 1216
+    },
+    {
+      "file": "/artwork/card-014.svg",
+      "bytes": 1223
+    },
+    {
+      "file": "/artwork/card-015.svg",
+      "bytes": 1231
+    },
+    {
+      "file": "/artwork/card-016.svg",
+      "bytes": 1238
+    },
+    {
+      "file": "/artwork/card-017.svg",
+      "bytes": 1245
+    },
+    {
+      "file": "/artwork/card-018.svg",
+      "bytes": 1253
+    },
+    {
+      "file": "/artwork/card-019.svg",
+      "bytes": 1293
+    },
+    {
+      "file": "/artwork/card-020.svg",
+      "bytes": 1346
+    },
+    {
+      "file": "/artwork/card-021.svg",
+      "bytes": 1400
+    },
+    {
+      "file": "/artwork/card-022.svg",
+      "bytes": 1457
+    },
+    {
+      "file": "/artwork/card-023.svg",
+      "bytes": 1507
+    },
+    {
+      "file": "/artwork/card-024.svg",
+      "bytes": 1561
+    },
+    {
+      "file": "/artwork/card-025.svg",
+      "bytes": 1321
+    },
+    {
+      "file": "/artwork/card-026.svg",
+      "bytes": 1433
+    },
+    {
+      "file": "/artwork/card-027.svg",
+      "bytes": 1598
+    },
+    {
+      "file": "/artwork/card-028.svg",
+      "bytes": 1662
+    },
+    {
+      "file": "/artwork/card-029.svg",
+      "bytes": 1754
+    },
+    {
+      "file": "/artwork/card-030.svg",
+      "bytes": 1986
+    },
+    {
+      "file": "/artwork/card-031.svg",
+      "bytes": 1246
+    },
+    {
+      "file": "/artwork/card-032.svg",
+      "bytes": 1346
+    },
+    {
+      "file": "/artwork/card-033.svg",
+      "bytes": 1498
+    },
+    {
+      "file": "/artwork/card-034.svg",
+      "bytes": 1550
+    },
+    {
+      "file": "/artwork/card-035.svg",
+      "bytes": 1630
+    },
+    {
+      "file": "/artwork/card-036.svg",
+      "bytes": 1851
+    },
+    {
+      "file": "/artwork/card-037.svg",
+      "bytes": 1336
+    },
+    {
+      "file": "/artwork/card-038.svg",
+      "bytes": 1416
+    },
+    {
+      "file": "/artwork/card-039.svg",
+      "bytes": 1448
+    },
+    {
+      "file": "/artwork/card-040.svg",
+      "bytes": 1493
+    },
+    {
+      "file": "/artwork/card-041.svg",
+      "bytes": 1608
+    },
+    {
+      "file": "/artwork/card-042.svg",
+      "bytes": 1599
+    },
+    {
+      "file": "/artwork/card-043.svg",
+      "bytes": 1315
+    },
+    {
+      "file": "/artwork/card-044.svg",
+      "bytes": 1370
+    },
+    {
+      "file": "/artwork/card-045.svg",
+      "bytes": 1459
+    },
+    {
+      "file": "/artwork/card-046.svg",
+      "bytes": 1490
+    },
+    {
+      "file": "/artwork/card-047.svg",
+      "bytes": 1548
+    },
+    {
+      "file": "/artwork/card-048.svg",
+      "bytes": 1656
+    },
+    {
+      "file": "/artwork/card-049.svg",
+      "bytes": 1314
+    },
+    {
+      "file": "/artwork/card-050.svg",
+      "bytes": 1390
+    },
+    {
+      "file": "/artwork/card-051.svg",
+      "bytes": 1497
+    },
+    {
+      "file": "/artwork/card-052.svg",
+      "bytes": 1543
+    },
+    {
+      "file": "/artwork/card-053.svg",
+      "bytes": 1628
+    },
+    {
+      "file": "/artwork/card-054.svg",
+      "bytes": 1757
+    },
+    {
+      "file": "/artwork/card-055.svg",
+      "bytes": 1194
+    },
+    {
+      "file": "/artwork/card-056.svg",
+      "bytes": 1248
+    },
+    {
+      "file": "/artwork/card-057.svg",
+      "bytes": 1333
+    },
+    {
+      "file": "/artwork/card-058.svg",
+      "bytes": 1357
+    },
+    {
+      "file": "/artwork/card-059.svg",
+      "bytes": 1420
+    },
+    {
+      "file": "/artwork/card-060.svg",
+      "bytes": 1527
+    },
+    {
+      "file": "/artwork/differences/card-001-edited-v1.png",
+      "bytes": 2467720
+    },
+    {
+      "file": "/artwork/differences/card-002-edited-v1.png",
+      "bytes": 2501704
+    },
+    {
+      "file": "/artwork/differences/card-003-edited-v1.png",
+      "bytes": 2530206
+    },
+    {
+      "file": "/artwork/differences/card-004-edited-v1.png",
+      "bytes": 2629325
+    },
+    {
+      "file": "/artwork/differences/card-005-edited-v1.png",
+      "bytes": 2589978
+    },
+    {
+      "file": "/artwork/differences/card-006-edited-v1.png",
+      "bytes": 2177340
+    },
+    {
+      "file": "/artwork/differences/card-007-edited-v1.png",
+      "bytes": 2272739
+    },
+    {
+      "file": "/artwork/differences/card-008-edited-v1.png",
+      "bytes": 2464989
+    },
+    {
+      "file": "/artwork/differences/card-009-edited-v1.png",
+      "bytes": 2594009
+    },
+    {
+      "file": "/artwork/differences/card-010-edited-v1.png",
+      "bytes": 2493944
+    },
+    {
+      "file": "/artwork/differences/card-011-edited-v1.png",
+      "bytes": 2703601
+    },
+    {
+      "file": "/artwork/differences/card-012-edited-v1.png",
+      "bytes": 2505435
+    },
+    {
+      "file": "/artwork/differences/card-013-edited-v1.png",
+      "bytes": 2176062
+    },
+    {
+      "file": "/artwork/differences/card-014-edited-v1.png",
+      "bytes": 2233501
+    },
+    {
+      "file": "/artwork/differences/card-015-edited-v1.png",
+      "bytes": 2688557
+    },
+    {
+      "file": "/artwork/differences/card-016-edited-v1.png",
+      "bytes": 2305432
+    },
+    {
+      "file": "/artwork/differences/card-017-edited-v1.png",
+      "bytes": 2467427
+    },
+    {
+      "file": "/artwork/differences/card-018-edited-v1.png",
+      "bytes": 2135384
+    },
+    {
+      "file": "/artwork/differences/card-019-edited-v1.png",
+      "bytes": 2316399
+    },
+    {
+      "file": "/artwork/differences/card-020-edited-v1.png",
+      "bytes": 2467169
+    },
+    {
+      "file": "/artwork/differences/card-021-edited-v1.png",
+      "bytes": 2041529
+    },
+    {
+      "file": "/artwork/differences/card-022-edited-v1.png",
+      "bytes": 2401263
+    },
+    {
+      "file": "/artwork/differences/card-023-edited-v1.png",
+      "bytes": 2847118
+    },
+    {
+      "file": "/artwork/differences/card-024-edited-v1.png",
+      "bytes": 2522899
+    },
+    {
+      "file": "/artwork/differences/card-025-edited-v1.png",
+      "bytes": 2115576
+    },
+    {
+      "file": "/artwork/differences/card-026-edited-v1.png",
+      "bytes": 2394484
+    },
+    {
+      "file": "/artwork/differences/card-027-edited-v1.png",
+      "bytes": 2723082
+    },
+    {
+      "file": "/artwork/differences/card-028-edited-v1.png",
+      "bytes": 2528810
+    },
+    {
+      "file": "/artwork/differences/card-029-edited-v1.png",
+      "bytes": 2768225
+    },
+    {
+      "file": "/artwork/differences/card-030-edited-v1.png",
+      "bytes": 2135164
+    },
+    {
+      "file": "/artwork/differences/card-031-edited-v1.png",
+      "bytes": 2258291
+    },
+    {
+      "file": "/artwork/differences/card-032-edited-v1.png",
+      "bytes": 2645248
+    },
+    {
+      "file": "/artwork/differences/card-033-edited-v1.png",
+      "bytes": 2339037
+    },
+    {
+      "file": "/artwork/differences/card-034-edited-v1.png",
+      "bytes": 2334305
+    },
+    {
+      "file": "/artwork/differences/card-035-edited-v1.png",
+      "bytes": 2615113
+    },
+    {
+      "file": "/artwork/differences/card-036-edited-v1.png",
+      "bytes": 2447840
+    },
+    {
+      "file": "/artwork/differences/card-037-edited-v1.png",
+      "bytes": 2136632
+    },
+    {
+      "file": "/artwork/differences/card-038-edited-v1.png",
+      "bytes": 2203558
+    },
+    {
+      "file": "/artwork/differences/card-039-edited-v1.png",
+      "bytes": 2703249
+    },
+    {
+      "file": "/artwork/differences/card-040-edited-v1.png",
+      "bytes": 2409573
+    },
+    {
+      "file": "/artwork/differences/card-041-edited-v1.png",
+      "bytes": 2513517
+    },
+    {
+      "file": "/artwork/differences/card-042-edited-v1.png",
+      "bytes": 2202786
+    },
+    {
+      "file": "/artwork/differences/card-043-edited-v1.png",
+      "bytes": 2038301
+    },
+    {
+      "file": "/artwork/differences/card-044-edited-v1.png",
+      "bytes": 2598585
+    },
+    {
+      "file": "/artwork/differences/card-045-edited-v1.png",
+      "bytes": 2468836
+    },
+    {
+      "file": "/artwork/differences/card-046-edited-v1.png",
+      "bytes": 2429749
+    },
+    {
+      "file": "/artwork/differences/card-047-edited-v1.png",
+      "bytes": 2567542
+    },
+    {
+      "file": "/artwork/differences/card-048-edited-v1.png",
+      "bytes": 2481219
+    },
+    {
+      "file": "/artwork/differences/card-049-edited-v1.png",
+      "bytes": 2308404
+    },
+    {
+      "file": "/artwork/differences/card-050-edited-v1.png",
+      "bytes": 2360171
+    },
+    {
+      "file": "/artwork/differences/card-051-edited-v1.png",
+      "bytes": 2560756
+    },
+    {
+      "file": "/artwork/differences/card-052-edited-v1.png",
+      "bytes": 2316812
+    },
+    {
+      "file": "/artwork/differences/card-053-edited-v1.png",
+      "bytes": 2585424
+    },
+    {
+      "file": "/artwork/differences/card-054-edited-v1.png",
+      "bytes": 2229925
+    },
+    {
+      "file": "/artwork/differences/card-055-edited-v1.png",
+      "bytes": 2234216
+    },
+    {
+      "file": "/artwork/differences/card-056-edited-v1.png",
+      "bytes": 2542697
+    },
+    {
+      "file": "/artwork/differences/card-057-edited-v1.png",
+      "bytes": 2399282
+    },
+    {
+      "file": "/artwork/differences/card-058-edited-v1.png",
+      "bytes": 2312993
+    },
+    {
+      "file": "/artwork/differences/card-059-edited-v1.png",
+      "bytes": 2826070
+    },
+    {
+      "file": "/artwork/differences/card-060-edited-v1.png",
+      "bytes": 2363196
+    },
+    {
+      "file": "/artwork/differences/card-061-edited-v1.png",
+      "bytes": 2392062
+    },
+    {
+      "file": "/artwork/differences/card-062-edited-v1.png",
+      "bytes": 2587048
+    },
+    {
+      "file": "/artwork/differences/card-063-edited-v1.png",
+      "bytes": 2700644
+    },
+    {
+      "file": "/artwork/differences/card-064-edited-v1.png",
+      "bytes": 2563690
+    },
+    {
+      "file": "/artwork/differences/card-065-edited-v1.png",
+      "bytes": 2415977
+    },
+    {
+      "file": "/artwork/differences/card-066-edited-v1.png",
+      "bytes": 2161592
+    },
+    {
+      "file": "/artwork/differences/card-067-edited-v1.png",
+      "bytes": 2386169
+    },
+    {
+      "file": "/artwork/differences/card-068-edited-v1.png",
+      "bytes": 2568533
+    },
+    {
+      "file": "/artwork/differences/card-069-edited-v1.png",
+      "bytes": 2505071
+    },
+    {
+      "file": "/artwork/differences/card-070-edited-v1.png",
+      "bytes": 2409191
+    },
+    {
+      "file": "/artwork/differences/card-071-edited-v1.png",
+      "bytes": 2795482
+    },
+    {
+      "file": "/artwork/differences/card-072-edited-v1.png",
+      "bytes": 2410653
+    },
+    {
+      "file": "/artwork/differences/card-073-edited-v1.png",
+      "bytes": 2102217
+    },
+    {
+      "file": "/artwork/differences/card-074-edited-v1.png",
+      "bytes": 2204208
+    },
+    {
+      "file": "/artwork/differences/card-075-edited-v1.png",
+      "bytes": 2752258
+    },
+    {
+      "file": "/artwork/differences/card-076-edited-v1.png",
+      "bytes": 2645905
+    },
+    {
+      "file": "/artwork/differences/card-077-edited-v1.png",
+      "bytes": 2318826
+    },
+    {
+      "file": "/artwork/differences/card-078-edited-v1.png",
+      "bytes": 2445353
+    },
+    {
+      "file": "/artwork/differences/card-079-edited-v1.png",
+      "bytes": 2282850
+    },
+    {
+      "file": "/artwork/differences/card-080-edited-v1.png",
+      "bytes": 2573888
+    },
+    {
+      "file": "/artwork/differences/card-081-edited-v1.png",
+      "bytes": 2266799
+    },
+    {
+      "file": "/artwork/differences/card-082-edited-v1.png",
+      "bytes": 2457469
+    },
+    {
+      "file": "/artwork/differences/card-083-edited-v1.png",
+      "bytes": 2602314
+    },
+    {
+      "file": "/artwork/differences/card-084-edited-v1.png",
+      "bytes": 2405370
+    },
+    {
+      "file": "/artwork/differences/card-085-edited-v1.png",
+      "bytes": 2238432
+    },
+    {
+      "file": "/artwork/differences/card-086-edited-v1.png",
+      "bytes": 2591439
+    },
+    {
+      "file": "/artwork/differences/card-087-edited-v1.png",
+      "bytes": 2668899
+    },
+    {
+      "file": "/artwork/differences/card-088-edited-v1.png",
+      "bytes": 2458558
+    },
+    {
+      "file": "/artwork/differences/card-089-edited-v1.png",
+      "bytes": 2665061
+    },
+    {
+      "file": "/artwork/differences/card-090-edited-v1.png",
+      "bytes": 2417987
+    },
+    {
+      "file": "/artwork/differences/card-091-edited-v1.png",
+      "bytes": 2158152
+    },
+    {
+      "file": "/artwork/differences/card-092-edited-v1.png",
+      "bytes": 2620940
+    },
+    {
+      "file": "/artwork/differences/card-093-edited-v1.png",
+      "bytes": 2296907
+    },
+    {
+      "file": "/artwork/differences/card-094-edited-v1.png",
+      "bytes": 2477186
+    },
+    {
+      "file": "/artwork/differences/card-095-edited-v1.png",
+      "bytes": 2579383
+    },
+    {
+      "file": "/artwork/differences/card-096-edited-v1.png",
+      "bytes": 2351243
+    },
+    {
+      "file": "/artwork/differences/card-097-edited-v1.png",
+      "bytes": 2062568
+    },
+    {
+      "file": "/artwork/differences/card-098-edited-v1.png",
+      "bytes": 2397139
+    },
+    {
+      "file": "/artwork/differences/card-099-edited-v1.png",
+      "bytes": 2565351
+    },
+    {
+      "file": "/artwork/differences/card-100-edited-v1.png",
+      "bytes": 2459310
+    },
+    {
+      "file": "/artwork/differences/card-101-edited-v1.png",
+      "bytes": 2123971
+    },
+    {
+      "file": "/artwork/differences/card-102-edited-v1.png",
+      "bytes": 2346608
+    },
+    {
+      "file": "/artwork/differences/card-103-edited-v1.png",
+      "bytes": 2223123
+    },
+    {
+      "file": "/artwork/differences/card-104-edited-v1.png",
+      "bytes": 2426816
+    },
+    {
+      "file": "/artwork/differences/card-105-edited-v1.png",
+      "bytes": 2210129
+    },
+    {
+      "file": "/artwork/differences/card-106-edited-v1.png",
+      "bytes": 2372629
+    },
+    {
+      "file": "/artwork/differences/card-107-edited-v1.png",
+      "bytes": 2639585
+    },
+    {
+      "file": "/artwork/differences/card-108-edited-v1.png",
+      "bytes": 2433923
+    },
+    {
+      "file": "/artwork/differences/card-109-edited-v1.png",
+      "bytes": 2102943
+    },
+    {
+      "file": "/artwork/differences/card-110-edited-v1.png",
+      "bytes": 2400670
+    },
+    {
+      "file": "/artwork/differences/card-110-edited-v2.png",
+      "bytes": 2170335
+    },
+    {
+      "file": "/artwork/differences/card-111-edited-v1.png",
+      "bytes": 2869189
+    },
+    {
+      "file": "/artwork/differences/card-112-edited-v1.png",
+      "bytes": 2488392
+    },
+    {
+      "file": "/artwork/differences/card-113-edited-v1.png",
+      "bytes": 2431695
+    },
+    {
+      "file": "/artwork/differences/card-114-edited-v1.png",
+      "bytes": 2074163
+    },
+    {
+      "file": "/artwork/differences/card-115-edited-v1.png",
+      "bytes": 2268032
+    },
+    {
+      "file": "/artwork/differences/card-116-edited-v1.png",
+      "bytes": 2542892
+    },
+    {
+      "file": "/artwork/differences/card-117-edited-v1.png",
+      "bytes": 2272870
+    },
+    {
+      "file": "/artwork/differences/card-118-edited-v1.png",
+      "bytes": 2234884
+    },
+    {
+      "file": "/artwork/differences/card-119-edited-v1.png",
+      "bytes": 2663890
+    },
+    {
+      "file": "/artwork/differences/card-120-edited-v1.png",
+      "bytes": 2420380
+    },
+    {
+      "file": "/artwork/dreamerie-garden.jpg",
+      "bytes": 495479
+    },
+    {
+      "file": "/artwork/dreamerie-moonlight.jpg",
+      "bytes": 473057
+    },
+    {
+      "file": "/artwork/dreams/card-001.jpg",
+      "bytes": 437624
+    },
+    {
+      "file": "/artwork/dreams/card-002.jpg",
+      "bytes": 476046
+    },
+    {
+      "file": "/artwork/dreams/card-003.jpg",
+      "bytes": 500371
+    },
+    {
+      "file": "/artwork/dreams/card-004.jpg",
+      "bytes": 478263
+    },
+    {
+      "file": "/artwork/dreams/card-005.jpg",
+      "bytes": 497995
+    },
+    {
+      "file": "/artwork/dreams/card-006.jpg",
+      "bytes": 333288
+    },
+    {
+      "file": "/artwork/dreams/card-007.jpg",
+      "bytes": 406431
+    },
+    {
+      "file": "/artwork/dreams/card-008.jpg",
+      "bytes": 448510
+    },
+    {
+      "file": "/artwork/dreams/card-009.jpg",
+      "bytes": 535399
+    },
+    {
+      "file": "/artwork/dreams/card-010.jpg",
+      "bytes": 484137
+    },
+    {
+      "file": "/artwork/dreams/card-011.jpg",
+      "bytes": 476682
+    },
+    {
+      "file": "/artwork/dreams/card-012.jpg",
+      "bytes": 465840
+    },
+    {
+      "file": "/artwork/dreams/card-013.jpg",
+      "bytes": 367148
+    },
+    {
+      "file": "/artwork/dreams/card-014.jpg",
+      "bytes": 397665
+    },
+    {
+      "file": "/artwork/dreams/card-015.jpg",
+      "bytes": 511515
+    },
+    {
+      "file": "/artwork/dreams/card-016.jpg",
+      "bytes": 349591
+    },
+    {
+      "file": "/artwork/dreams/card-017.jpg",
+      "bytes": 441561
+    },
+    {
+      "file": "/artwork/dreams/card-018.jpg",
+      "bytes": 307817
+    },
+    {
+      "file": "/artwork/dreams/card-019.jpg",
+      "bytes": 388506
+    },
+    {
+      "file": "/artwork/dreams/card-020.jpg",
+      "bytes": 405698
+    },
+    {
+      "file": "/artwork/dreams/card-021.jpg",
+      "bytes": 303978
+    },
+    {
+      "file": "/artwork/dreams/card-022.jpg",
+      "bytes": 434890
+    },
+    {
+      "file": "/artwork/dreams/card-023.jpg",
+      "bytes": 499411
+    },
+    {
+      "file": "/artwork/dreams/card-024.jpg",
+      "bytes": 452833
+    },
+    {
+      "file": "/artwork/dreams/card-025.jpg",
+      "bytes": 283030
+    },
+    {
+      "file": "/artwork/dreams/card-026.jpg",
+      "bytes": 372046
+    },
+    {
+      "file": "/artwork/dreams/card-027.jpg",
+      "bytes": 482044
+    },
+    {
+      "file": "/artwork/dreams/card-028.jpg",
+      "bytes": 412715
+    },
+    {
+      "file": "/artwork/dreams/card-029.jpg",
+      "bytes": 530697
+    },
+    {
+      "file": "/artwork/dreams/card-030.jpg",
+      "bytes": 328757
+    },
+    {
+      "file": "/artwork/dreams/card-031.jpg",
+      "bytes": 362337
+    },
+    {
+      "file": "/artwork/dreams/card-032.jpg",
+      "bytes": 436478
+    },
+    {
+      "file": "/artwork/dreams/card-033.jpg",
+      "bytes": 385616
+    },
+    {
+      "file": "/artwork/dreams/card-034.jpg",
+      "bytes": 408620
+    },
+    {
+      "file": "/artwork/dreams/card-035.jpg",
+      "bytes": 438356
+    },
+    {
+      "file": "/artwork/dreams/card-036.jpg",
+      "bytes": 447521
+    },
+    {
+      "file": "/artwork/dreams/card-037.jpg",
+      "bytes": 321257
+    },
+    {
+      "file": "/artwork/dreams/card-038.jpg",
+      "bytes": 320657
+    },
+    {
+      "file": "/artwork/dreams/card-039.jpg",
+      "bytes": 506692
+    },
+    {
+      "file": "/artwork/dreams/card-040.jpg",
+      "bytes": 377130
+    },
+    {
+      "file": "/artwork/dreams/card-041.jpg",
+      "bytes": 450770
+    },
+    {
+      "file": "/artwork/dreams/card-042.jpg",
+      "bytes": 346880
+    },
+    {
+      "file": "/artwork/dreams/card-043.jpg",
+      "bytes": 292276
+    },
+    {
+      "file": "/artwork/dreams/card-044.jpg",
+      "bytes": 417879
+    },
+    {
+      "file": "/artwork/dreams/card-045.jpg",
+      "bytes": 441314
+    },
+    {
+      "file": "/artwork/dreams/card-046.jpg",
+      "bytes": 425905
+    },
+    {
+      "file": "/artwork/dreams/card-047.jpg",
+      "bytes": 413133
+    },
+    {
+      "file": "/artwork/dreams/card-048.jpg",
+      "bytes": 451569
+    },
+    {
+      "file": "/artwork/dreams/card-049.jpg",
+      "bytes": 401126
+    },
+    {
+      "file": "/artwork/dreams/card-050.jpg",
+      "bytes": 378654
+    },
+    {
+      "file": "/artwork/dreams/card-051.jpg",
+      "bytes": 456065
+    },
+    {
+      "file": "/artwork/dreams/card-052.jpg",
+      "bytes": 358581
+    },
+    {
+      "file": "/artwork/dreams/card-053.jpg",
+      "bytes": 454123
+    },
+    {
+      "file": "/artwork/dreams/card-054.jpg",
+      "bytes": 328323
+    },
+    {
+      "file": "/artwork/dreams/card-055.jpg",
+      "bytes": 371674
+    },
+    {
+      "file": "/artwork/dreams/card-056.jpg",
+      "bytes": 410935
+    },
+    {
+      "file": "/artwork/dreams/card-057.jpg",
+      "bytes": 396541
+    },
+    {
+      "file": "/artwork/dreams/card-058.jpg",
+      "bytes": 421975
+    },
+    {
+      "file": "/artwork/dreams/card-059.jpg",
+      "bytes": 500853
+    },
+    {
+      "file": "/artwork/dreams/card-060.jpg",
+      "bytes": 438279
+    },
+    {
+      "file": "/artwork/dreams/card-061.jpg",
+      "bytes": 383868
+    },
+    {
+      "file": "/artwork/dreams/card-062.jpg",
+      "bytes": 465027
+    },
+    {
+      "file": "/artwork/dreams/card-063.jpg",
+      "bytes": 496308
+    },
+    {
+      "file": "/artwork/dreams/card-064.jpg",
+      "bytes": 430998
+    },
+    {
+      "file": "/artwork/dreams/card-065.jpg",
+      "bytes": 421721
+    },
+    {
+      "file": "/artwork/dreams/card-066.jpg",
+      "bytes": 318539
+    },
+    {
+      "file": "/artwork/dreams/card-067.jpg",
+      "bytes": 410044
+    },
+    {
+      "file": "/artwork/dreams/card-068.jpg",
+      "bytes": 403318
+    },
+    {
+      "file": "/artwork/dreams/card-069.jpg",
+      "bytes": 424447
+    },
+    {
+      "file": "/artwork/dreams/card-070.jpg",
+      "bytes": 445614
+    },
+    {
+      "file": "/artwork/dreams/card-071.jpg",
+      "bytes": 512325
+    },
+    {
+      "file": "/artwork/dreams/card-072.jpg",
+      "bytes": 437887
+    },
+    {
+      "file": "/artwork/dreams/card-073.jpg",
+      "bytes": 314574
+    },
+    {
+      "file": "/artwork/dreams/card-074.jpg",
+      "bytes": 312331
+    },
+    {
+      "file": "/artwork/dreams/card-075.jpg",
+      "bytes": 523602
+    },
+    {
+      "file": "/artwork/dreams/card-076.jpg",
+      "bytes": 457248
+    },
+    {
+      "file": "/artwork/dreams/card-077.jpg",
+      "bytes": 372540
+    },
+    {
+      "file": "/artwork/dreams/card-078.jpg",
+      "bytes": 390784
+    },
+    {
+      "file": "/artwork/dreams/card-079.jpg",
+      "bytes": 368708
+    },
+    {
+      "file": "/artwork/dreams/card-080.jpg",
+      "bytes": 404419
+    },
+    {
+      "file": "/artwork/dreams/card-081.jpg",
+      "bytes": 395109
+    },
+    {
+      "file": "/artwork/dreams/card-082.jpg",
+      "bytes": 433591
+    },
+    {
+      "file": "/artwork/dreams/card-083.jpg",
+      "bytes": 440400
+    },
+    {
+      "file": "/artwork/dreams/card-084.jpg",
+      "bytes": 435089
+    },
+    {
+      "file": "/artwork/dreams/card-085.jpg",
+      "bytes": 352005
+    },
+    {
+      "file": "/artwork/dreams/card-086.jpg",
+      "bytes": 464325
+    },
+    {
+      "file": "/artwork/dreams/card-087.jpg",
+      "bytes": 509297
+    },
+    {
+      "file": "/artwork/dreams/card-088.jpg",
+      "bytes": 394081
+    },
+    {
+      "file": "/artwork/dreams/card-089.jpg",
+      "bytes": 446981
+    },
+    {
+      "file": "/artwork/dreams/card-090.jpg",
+      "bytes": 421408
+    },
+    {
+      "file": "/artwork/dreams/card-091.jpg",
+      "bytes": 338691
+    },
+    {
+      "file": "/artwork/dreams/card-092.jpg",
+      "bytes": 435765
+    },
+    {
+      "file": "/artwork/dreams/card-093.jpg",
+      "bytes": 384451
+    },
+    {
+      "file": "/artwork/dreams/card-094.jpg",
+      "bytes": 459107
+    },
+    {
+      "file": "/artwork/dreams/card-095.jpg",
+      "bytes": 404794
+    },
+    {
+      "file": "/artwork/dreams/card-096.jpg",
+      "bytes": 413367
+    },
+    {
+      "file": "/artwork/dreams/card-097.jpg",
+      "bytes": 300361
+    },
+    {
+      "file": "/artwork/dreams/card-098.jpg",
+      "bytes": 346948
+    },
+    {
+      "file": "/artwork/dreams/card-099.jpg",
+      "bytes": 458152
+    },
+    {
+      "file": "/artwork/dreams/card-100.jpg",
+      "bytes": 400944
+    },
+    {
+      "file": "/artwork/dreams/card-101.jpg",
+      "bytes": 451363
+    },
+    {
+      "file": "/artwork/dreams/card-102.jpg",
+      "bytes": 378143
+    },
+    {
+      "file": "/artwork/dreams/card-103.jpg",
+      "bytes": 387411
+    },
+    {
+      "file": "/artwork/dreams/card-104.jpg",
+      "bytes": 431185
+    },
+    {
+      "file": "/artwork/dreams/card-105.jpg",
+      "bytes": 409553
+    },
+    {
+      "file": "/artwork/dreams/card-106.jpg",
+      "bytes": 397698
+    },
+    {
+      "file": "/artwork/dreams/card-107.jpg",
+      "bytes": 434342
+    },
+    {
+      "file": "/artwork/dreams/card-108.jpg",
+      "bytes": 424532
+    },
+    {
+      "file": "/artwork/dreams/card-109.jpg",
+      "bytes": 308271
+    },
+    {
+      "file": "/artwork/dreams/card-110.jpg",
+      "bytes": 366675
+    },
+    {
+      "file": "/artwork/dreams/card-111.jpg",
+      "bytes": 554239
+    },
+    {
+      "file": "/artwork/dreams/card-112.jpg",
+      "bytes": 405687
+    },
+    {
+      "file": "/artwork/dreams/card-113.jpg",
+      "bytes": 386111
+    },
+    {
+      "file": "/artwork/dreams/card-114.jpg",
+      "bytes": 319198
+    },
+    {
+      "file": "/artwork/dreams/card-115.jpg",
+      "bytes": 418265
+    },
+    {
+      "file": "/artwork/dreams/card-116.jpg",
+      "bytes": 486872
+    },
+    {
+      "file": "/artwork/dreams/card-117.jpg",
+      "bytes": 394252
+    },
+    {
+      "file": "/artwork/dreams/card-118.jpg",
+      "bytes": 370133
+    },
+    {
+      "file": "/artwork/dreams/card-119.jpg",
+      "bytes": 445199
+    },
+    {
+      "file": "/artwork/dreams/card-120.jpg",
+      "bytes": 414446
+    },
+    {
+      "file": "/artwork/v2/sea-in-a-teacup-edited-source.png",
+      "bytes": 2411908
+    },
+    {
+      "file": "/artwork/v2/sea-in-a-teacup-original.png",
+      "bytes": 2722419
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/holiday-painted-october-observance-clasp.webp",
+      "bytes": 24964
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/holiday-painted-october-observance-handle.webp",
+      "bytes": 26196
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/holiday-painted-october-observance-leaf.webp",
+      "bytes": 49534
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/holiday-painted-october-observance-original.webp",
+      "bytes": 2445544
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/holiday-painted-october-observance-sail.webp",
+      "bytes": 30430
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/holiday-painted-october-observance-stone.webp",
+      "bytes": 28418
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/holiday-painted-veterans-bell.webp",
+      "bytes": 17178
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/holiday-painted-veterans-bowl.webp",
+      "bytes": 16248
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/holiday-painted-veterans-clasp.webp",
+      "bytes": 20704
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/holiday-painted-veterans-original.webp",
+      "bytes": 2260138
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/holiday-painted-veterans-tag.webp",
+      "bytes": 17422
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/holiday-painted-veterans-window.webp",
+      "bytes": 15670
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-006-button.webp",
+      "bytes": 13766
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-006-chair.webp",
+      "bytes": 12288
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-006-cuff.webp",
+      "bytes": 9362
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-006-feather.webp",
+      "bytes": 13842
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-006-original.webp",
+      "bytes": 1806882
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-006-rung.webp",
+      "bytes": 12864
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-018-knob.webp",
+      "bytes": 20866
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-018-laces.webp",
+      "bytes": 46840
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-018-moth.webp",
+      "bytes": 13234
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-018-original.webp",
+      "bytes": 1763748
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-018-riser.webp",
+      "bytes": 40560
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-018-tile.webp",
+      "bytes": 31602
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-019-bow.webp",
+      "bytes": 40824
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-019-knob.webp",
+      "bytes": 17504
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-019-original.webp",
+      "bytes": 2199226
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-019-stitch.webp",
+      "bytes": 18072
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-019-sweater.webp",
+      "bytes": 38646
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-019-tail.webp",
+      "bytes": 43296
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-023-buckle.webp",
+      "bytes": 23364
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-023-button.webp",
+      "bytes": 11598
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-023-collar.webp",
+      "bytes": 53320
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-023-original.webp",
+      "bytes": 1929432
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-023-pebble.webp",
+      "bytes": 17982
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-023-stripe.webp",
+      "bytes": 20238
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-035-bead.webp",
+      "bytes": 14650
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-035-cutout.webp",
+      "bytes": 14732
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-035-eyelet.webp",
+      "bytes": 8306
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-035-knob.webp",
+      "bytes": 8886
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-035-original.webp",
+      "bytes": 1973966
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-035-stripe.webp",
+      "bytes": 25456
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-042-carving.webp",
+      "bytes": 13384
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-042-frame.webp",
+      "bytes": 347920
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-042-knob.webp",
+      "bytes": 10306
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-042-latch.webp",
+      "bytes": 18914
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-042-original.webp",
+      "bytes": 2059594
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-042-sock.webp",
+      "bytes": 58004
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-043-berry.webp",
+      "bytes": 53412
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-043-bucket.webp",
+      "bytes": 22700
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-043-leaf.webp",
+      "bytes": 25222
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-043-oar.webp",
+      "bytes": 79594
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-043-original.webp",
+      "bytes": 2317468
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-043-scarf.webp",
+      "bytes": 173322
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-045-button.webp",
+      "bytes": 10446
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-045-chair.webp",
+      "bytes": 22746
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-045-cushion.webp",
+      "bytes": 37754
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-045-heel.webp",
+      "bytes": 13504
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-045-original.webp",
+      "bytes": 1686034
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-045-tag.webp",
+      "bytes": 12344
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-060-door.webp",
+      "bytes": 218084
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-060-hinge.webp",
+      "bytes": 12760
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-060-knob.webp",
+      "bytes": 18822
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-060-original.webp",
+      "bytes": 1808520
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-060-stone.webp",
+      "bytes": 21584
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-060-stripe.webp",
+      "bytes": 23584
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-068-band.webp",
+      "bytes": 62770
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-068-buckle.webp",
+      "bytes": 23708
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-068-chair.webp",
+      "bytes": 15634
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-068-hole.webp",
+      "bytes": 13008
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-068-original.webp",
+      "bytes": 1861482
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-068-ribbon.webp",
+      "bytes": 34378
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-080-drawer.webp",
+      "bytes": 132052
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-080-key.webp",
+      "bytes": 18952
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-080-knob.webp",
+      "bytes": 14364
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-080-mitten.webp",
+      "bytes": 77722
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-080-original.webp",
+      "bytes": 1884452
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-080-stool.webp",
+      "bytes": 15268
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-082-buckle.webp",
+      "bytes": 30368
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-082-chair.webp",
+      "bytes": 60404
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-082-feather.webp",
+      "bytes": 30824
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-082-original.webp",
+      "bytes": 1671614
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-082-pin.webp",
+      "bytes": 13570
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-082-umbrella.webp",
+      "bytes": 242288
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-085-button.webp",
+      "bytes": 16210
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-085-chair.webp",
+      "bytes": 17760
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-085-cuff.webp",
+      "bytes": 30330
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-085-moon.webp",
+      "bytes": 20840
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-085-original.webp",
+      "bytes": 1568842
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-085-stitch.webp",
+      "bytes": 11716
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-091-chair.webp",
+      "bytes": 13844
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-091-hinge.webp",
+      "bytes": 8990
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-091-knob.webp",
+      "bytes": 11114
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-091-original.webp",
+      "bytes": 1704268
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-091-ribbon.webp",
+      "bytes": 71224
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-091-tile.webp",
+      "bytes": 22378
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-094-boot.webp",
+      "bytes": 15004
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-094-original.webp",
+      "bytes": 1811832
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-094-pebble.webp",
+      "bytes": 16628
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-094-pendant.webp",
+      "bytes": 28568
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-094-rung.webp",
+      "bytes": 16240
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-094-stool.webp",
+      "bytes": 21140
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-100-buckle.webp",
+      "bytes": 76442
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-100-feather.webp",
+      "bytes": 118474
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-100-original.webp",
+      "bytes": 1827858
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-100-pebble.webp",
+      "bytes": 9482
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-100-strap.webp",
+      "bytes": 339006
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-100-window.webp",
+      "bytes": 22146
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-104-boot.webp",
+      "bytes": 29596
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-104-feather.webp",
+      "bytes": 23258
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-104-hinge.webp",
+      "bytes": 12068
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-104-knob.webp",
+      "bytes": 14536
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-104-original.webp",
+      "bytes": 1780370
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-104-stool.webp",
+      "bytes": 16318
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-107-foot.webp",
+      "bytes": 30936
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-107-original.webp",
+      "bytes": 1784708
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-107-ring.webp",
+      "bytes": 16188
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-107-stripe.webp",
+      "bytes": 26112
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-107-tie.webp",
+      "bytes": 120538
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-107-tile.webp",
+      "bytes": 39298
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-110-crane.webp",
+      "bytes": 20862
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-110-cufflink.webp",
+      "bytes": 16948
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-110-leg.webp",
+      "bytes": 72858
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-110-original.webp",
+      "bytes": 1754628
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-110-slipper.webp",
+      "bytes": 16426
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-110-stripe.webp",
+      "bytes": 88714
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-113-crack.webp",
+      "bytes": 19778
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-113-glove.webp",
+      "bytes": 14976
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-113-handle.webp",
+      "bytes": 75538
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-113-original.webp",
+      "bytes": 1633118
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-113-ornament.webp",
+      "bytes": 19052
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-113-tile.webp",
+      "bytes": 89006
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-116-bead.webp",
+      "bytes": 25330
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-116-bowl.webp",
+      "bytes": 19126
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-116-chair.webp",
+      "bytes": 40286
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-116-clasp.webp",
+      "bytes": 17794
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-116-handle.webp",
+      "bytes": 20524
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-116-original.webp",
+      "bytes": 1663420
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-118-feather.webp",
+      "bytes": 25448
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-118-fork.webp",
+      "bytes": 17432
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-118-lantern.webp",
+      "bytes": 24802
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-118-original.webp",
+      "bytes": 2105200
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-118-sail.webp",
+      "bytes": 298030
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-118-seed.webp",
+      "bytes": 15418
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-119-chair.webp",
+      "bytes": 13366
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-119-latch.webp",
+      "bytes": 9866
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-119-original.webp",
+      "bytes": 1689852
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-119-ribbon.webp",
+      "bytes": 204620
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-119-stone.webp",
+      "bytes": 18758
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-119-window.webp",
+      "bytes": 29932
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-182-buckle.webp",
+      "bytes": 14712
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-182-button.webp",
+      "bytes": 9930
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-182-cork.webp",
+      "bytes": 31604
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-182-original.webp",
+      "bytes": 2119730
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-182-star.webp",
+      "bytes": 32018
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-182-stone.webp",
+      "bytes": 48888
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-231-brace.webp",
+      "bytes": 23642
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-231-notch.webp",
+      "bytes": 19426
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-231-original.webp",
+      "bytes": 1609796
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-231-screw.webp",
+      "bytes": 13038
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-231-stripe.webp",
+      "bytes": 45750
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-231-tip.webp",
+      "bytes": 12766
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-288-bubble.webp",
+      "bytes": 7220
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-288-mark.webp",
+      "bytes": 12072
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-288-original.webp",
+      "bytes": 1645046
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-288-spoon.webp",
+      "bytes": 82448
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-288-stripe.webp",
+      "bytes": 27188
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-288-whale.webp",
+      "bytes": 142296
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-295-bow.webp",
+      "bytes": 11518
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-295-cloth.webp",
+      "bytes": 218772
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-295-holder.webp",
+      "bytes": 104610
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-295-original.webp",
+      "bytes": 1414702
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-295-teeth.webp",
+      "bytes": 24676
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-295-wick.webp",
+      "bytes": 9468
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-297-cord.webp",
+      "bytes": 329476
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-297-crescent.webp",
+      "bytes": 51758
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-297-key.webp",
+      "bytes": 92522
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-297-knob.webp",
+      "bytes": 12576
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-297-original.webp",
+      "bytes": 1826628
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-297-stripe.webp",
+      "bytes": 50364
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-302-button.webp",
+      "bytes": 14534
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-302-cushion.webp",
+      "bytes": 43462
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-302-drop.webp",
+      "bytes": 9102
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-302-eye.webp",
+      "bytes": 21070
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-302-original.webp",
+      "bytes": 1818396
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-302-pin.webp",
+      "bytes": 14108
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-320-beads.webp",
+      "bytes": 17696
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-320-knob.webp",
+      "bytes": 18882
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-320-original.webp",
+      "bytes": 1699372
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-320-panel.webp",
+      "bytes": 13292
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-320-stone.webp",
+      "bytes": 17496
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-320-tie.webp",
+      "bytes": 17828
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-323-door.webp",
+      "bytes": 35758
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-323-drop.webp",
+      "bytes": 12798
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-323-hinge.webp",
+      "bytes": 12650
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-323-leaf.webp",
+      "bytes": 12296
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-323-original.webp",
+      "bytes": 1539372
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-323-ribbon.webp",
+      "bytes": 13030
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-341-cloth.webp",
+      "bytes": 132980
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-341-handle.webp",
+      "bytes": 24352
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-341-original.webp",
+      "bytes": 1480346
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-341-rung.webp",
+      "bytes": 9806
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-341-stack.webp",
+      "bytes": 12714
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-341-stone.webp",
+      "bytes": 15844
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-343-chip.webp",
+      "bytes": 26610
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-343-cup.webp",
+      "bytes": 21084
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-343-knob.webp",
+      "bytes": 12168
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-343-original.webp",
+      "bytes": 1632144
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-343-peg.webp",
+      "bytes": 8760
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-343-pillow.webp",
+      "bytes": 50954
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-344-cloth.webp",
+      "bytes": 93422
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-344-eye.webp",
+      "bytes": 10980
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-344-flake.webp",
+      "bytes": 19268
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-344-knob.webp",
+      "bytes": 12088
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-344-original.webp",
+      "bytes": 1846388
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-344-peg.webp",
+      "bytes": 19656
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-353-knob.webp",
+      "bytes": 27940
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-353-original.webp",
+      "bytes": 1605872
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-353-ribbon.webp",
+      "bytes": 336296
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-353-rung.webp",
+      "bytes": 55330
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-353-stem.webp",
+      "bytes": 25104
+    },
+    {
+      "file": "/artwork/v3/delivery-lossless-v1/painted-dream-353-top.webp",
+      "bytes": 17962
+    }
+  ]
+}

@@ -15,7 +15,7 @@ interface Delivery {
 const deliveries: Readonly<Record<string, Delivery>> = artworkDelivery
 
 // Only the current, pixel-verified catalogue has delivery copies. Legacy saved
-// rounds and the sample keep their original sources, IDs, geometry and timing.
+// rounds keep their original sources, IDs, geometry and timing.
 export function originalArtwork(dream: LandscapeDream): string {
   return deliveries[dream.id]?.original ?? dream.original
 }

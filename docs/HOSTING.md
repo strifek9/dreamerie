@@ -1,5 +1,13 @@
 # Hosted Dreamerie playtest
 
+## Permanent-mode cleanup — release candidate, September 29, 2026
+
+The owner authorized merging the approved V3 history into main, removing unused images and legacy-rule code, then committing, pushing and deploying. Main was fast-forwarded from 4952a01 to 74a3589 without rewriting history; all prototype branches remain. The cleanup removes 94 obsolete code/test/script files, 527 unused images (424,282,481 bytes), and four direct social-server dependencies (40 installed packages including transitives). Actual databases, private backups, legacy disk/service and the separate V2 site are untouched. Recover removed files from 74a3589; image ledger: docs/artwork/RETIRED_ASSETS_20260929.json.
+
+All 80 current-game tests, typecheck/build and 120-pair compatibility validation pass. Inventory protects 3,518 required artwork files for 383 current cards and 175 historical saved-card IDs. Mobile disposable round verified marking/repositioning without submission, five total confirmations, timed enlarged guessing, final results and paired answer inspection; desktop landing/result flow remains unchanged. No live attempt has been started or reset. Build bundle: index-fHPEvRXf.js; CSS unchanged at index-D5_t8gir.css. The existing large-JavaScript-chunk advisory remains nonblocking.
+
+Deploy the verified cleanup commit from main to the existing Static Site srv-data2gvpn0mc73bgfhc0; retain manual deployments and the existing build settings/plan. Record the exact live deployment below after verification. Prior release notes remain historical. Root render.yaml continues to describe only the suspended legacy paid service: do not sync it.
+
 ## Revisit refresh — September 29, 2026, LIVE
 
 Owner-approved release `3a7ff3c0e1c8befe01c7b327721d21d77bc74ba7` is committed/pushed on `prototype/v3-dream-ritual` and live at https://dreamerie.onrender.com. Exact-commit deployment `dep-dau54t893c1s73cp3kgg` on existing Static Site `srv-data2gvpn0mc73bgfhc0` reports **Deploy succeeded | Live**, duration 2m23s, site-live log at 7:08:36 PM CDT. All 80 tests/typecheck/build passed locally and again on Render (Node 24.21.0). Existing chunk-size advisory is nonblocking. No hosting configuration/plan, V2, legacy resources or saved-state changes.

@@ -1,5 +1,16 @@
 # Working on DREAMERIE
 
+## Permanent mode and maintenance — September 29, 2026
+
+The owner confirmed the current daily spot-the-difference game is the permanent direction and explicitly authorized removing unused legacy social/portrait code, committing, pushing, merging into main and deploying this cleanup. Main now contains the V3 history. Older milestones below are historical, not instructions to restore retired modes or deploy old branches.
+
+- Preserve the current UI, five confirmed guesses total, misses/repeats consuming guesses, circle-overlap hit detection, unpausable two-minute deadline, accuracy-first/whole-second time comparison, sharing and streaks.
+- Preserve the exact collection storage namespace and all 558 current/historical landscape card IDs, pixels and geometry. Never clear or migrate saved attempts as part of a refactor.
+- Legacy social server/rooms/weekly scoring, portrait UI and sample logic are retired from main. Their recoverable source is on the preserved prototype branches and commit `74a3589`. No backend, database, account or multiplayer code is needed for this game.
+- Current artwork remains 365 regular +18 holiday cards. Only audited unused files may be removed; `scripts/auditArtwork.ts` protects current delivery copies AND masters needed by historical saves. Recovery ledger: docs/artwork/RETIRED_ASSETS_20260929.json. Private databases/backups and the suspended service/disk are out of scope.
+- Use `npm test`, `npm run build`, `node scripts/validateLandscapeCollection.mjs`, and affected browser flows before publishing. Deploy only the verified main commit to existing Static Site `srv-data2gvpn0mc73bgfhc0` (dreamerie.onrender.com), without plan changes or touching V2/legacy services. Future releases still require authorization.
+- Existing artwork direction in docs/CARD_CREATION_GUIDE.md and docs/ART_DIRECTION.md remains in effect. Shared `src/v2/` artwork utilities/styles and saved-card metadata are active compatibility code, not another selectable game mode.
+
 Publication complete: the full 37-card Revisit refresh is live as `3a7ff3c`, Render deployment `dep-dau54t893c1s73cp3kgg`, September 29 at 7:08:36 PM CDT. All 80 tests/typecheck/build passed locally and on Render; all 2,298 lossless files passed exact pixel/color checks; live bundle and six current-day asset hashes match. Previous pairs/saves are preserved. See docs/HOSTING.md. Do not regenerate or redeploy this completed milestone due to historical pending notes. Future publication requires new authorization.
 
 ## Revisit refresh — September 29, 2026

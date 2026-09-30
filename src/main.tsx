@@ -1,6 +1,5 @@
 import { lazy, StrictMode, Suspense } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App'
 import VersionThree from './v3/VersionThree'
 import { installCloudflareAnalytics } from './analytics/cloudflare'
 import './styles/global.css'
@@ -14,7 +13,7 @@ if (!root) {
 
 createRoot(root).render(
   <StrictMode>
-    {CollectionReview && new URLSearchParams(location.search).has('review') ? <Suspense fallback={<p>Loading review…</p>}><CollectionReview/></Suspense> : import.meta.env.DEV && new URLSearchParams(location.search).get('version') === '1' ? <App /> : <VersionThree />}
+    {CollectionReview && new URLSearchParams(location.search).has('review') ? <Suspense fallback={<p>Loading review…</p>}><CollectionReview/></Suspense> : <VersionThree />}
   </StrictMode>,
 )
 

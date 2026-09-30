@@ -1,5 +1,9 @@
 # Dreamerie game design
 
+## Permanent game mode — September 29, 2026
+
+The current daily spot-the-difference game is the sole mode going forward. Retire social rooms, card dealing/selection, simulated players, Dream Weeks and their scoring logic from main; archived branches retain those experiments. This is a code/asset cleanup, not a change in gameplay: exactly five confirmations total, two-minute unpausable deadline, misses/repeats count, circle-overlap hits, accuracy first and whole-second time only for ties. All saved collection attempts and 558 resolvable card IDs remain compatible. Historical mode descriptions below are design history only.
+
 ## Revisit refresh — September 29, 2026
 
 37 selected scenes have versioned replacements, occupying the same 35 ordinary positions and two holiday dates. Current count remains 383; all 175 historical IDs remain resolvable (558 total). Saved attempts always retain their original card, geometry, confirmations, deadline and result. Richer art changes search content only: exactly five confirmed guesses, circle-overlap hits, duplicate prevention, unpausable two-minute timer, accuracy-first comparison, whole-second time and streak/share rules remain unchanged.

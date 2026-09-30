@@ -1,12 +1,9 @@
 import { useId } from 'react'
-import { landscapeDream, sampleEdits } from './landscapeDream'
 import type { LandscapeDream } from './landscapeCollection'
 import { changedArtwork, originalArtwork } from '../v3/artworkDelivery'
 
-const sample = { ...landscapeDream, edits: sampleEdits }
-
 // Only authored regions use edited pixels; incidental generation drift is excluded.
-export function LandscapeArtwork({ changed, dream = sample, viewBox = '0 0 1672 941' }: { changed: boolean; dream?: LandscapeDream; viewBox?: string }) {
+export function LandscapeArtwork({ changed, dream, viewBox = '0 0 1672 941' }: { changed: boolean; dream: LandscapeDream; viewBox?: string }) {
   const clip = useId().replaceAll(':', '')
   return <svg viewBox={viewBox} className="dream-image" aria-hidden="true">
     <image href={originalArtwork(dream)} width="1672" height="941" preserveAspectRatio="none"/>
@@ -15,8 +12,8 @@ export function LandscapeArtwork({ changed, dream = sample, viewBox = '0 0 1672 
       const placement = changedArtwork(dream, edit)
       const key = `${clip}-${id}`, x = box.left * 1672, y = box.top * 941, w = box.width * 1672, h = box.height * 941
       // Fade just the patch boundary, never the painting detail. No pixels outside
-      // the authored region are changed. The published sample stays untouched.
-      const feather = dream.id === sample.id ? 0 : Math.min(edgeFade ?? 4, w / 6, h / 6)
+      // the authored region are changed.
+      const feather = Math.min(edgeFade ?? 4, w / 6, h / 6)
       return <g key={id}>
         <defs>
           <clipPath id={key}>{maskPath ? <path d={maskPath}/> : <rect x={x} y={y} width={w} height={h}/>}</clipPath>

@@ -1,5 +1,6 @@
 // Authored from docs/artwork/V2_PLAYABLE_AUDIT.json. Preserve published IDs and geometry.
 import type { Difference, DifferenceBox, DifferenceDifficulty } from '../game/dailyRecall.ts'
+import { DAILY_SESSION_NAMESPACE } from '../game/dailySession.ts'
 
 export interface LandscapeEdit {
   readonly id: string
@@ -153,4 +154,4 @@ export function landscapeForDay(day: number): LandscapeDream {
   if (!Number.isSafeInteger(day)) throw new Error('Invalid dream day')
   return landscapeCollection[((day - 1) % landscapeCollection.length + landscapeCollection.length) % landscapeCollection.length]
 }
-export const LANDSCAPE_SESSION_OPTIONS = { namespace: 'dreamerie:v2:daily-collection:v1', aspectRatio: LANDSCAPE_ASPECT }
+export const LANDSCAPE_SESSION_OPTIONS = { namespace: DAILY_SESSION_NAMESPACE, aspectRatio: LANDSCAPE_ASPECT }
