@@ -142,11 +142,12 @@ export function DreamCanvas({ children, label, onTap, onExpand, view = RESTING_V
   </button>
 }
 
-export function DreamViewer({ children, title, onClose, onTap, status, action, simpleZoom = false, fitAspectRatio }: {
+export function DreamViewer({ children, title, onClose, onTap, pendingPoint, status, action, simpleZoom = false, fitAspectRatio }: {
   children: ReactNode
   title: string
   onClose: () => void
   onTap?: (point: Point) => void
+  pendingPoint?: Point | null
   status?: ReactNode
   action?: ReactNode
   simpleZoom?: boolean
@@ -177,7 +178,7 @@ export function DreamViewer({ children, title, onClose, onTap, status, action, s
       <div className="viewer-artwork">
         <button className="viewer-close" autoFocus aria-label="Close image viewer" onClick={onClose}>×</button>
         <DreamCanvas label={simpleZoom ? `${title}. Click to ${view.scale > 1 ? 'zoom out' : 'zoom in'}.` : `${title}. ${onTap ? 'Tap to place a guess. ' : ''}Pinch or scroll to zoom; drag to explore.`}
-          fitAspectRatio={fitAspectRatio} view={view} onView={setView} onTap={simpleZoom ? (point) => setView(view.scale > 1 ? RESTING_VIEW : zoomAt(view, 2, point)) : onTap} selectable={!simpleZoom && Boolean(onTap)}>
+          fitAspectRatio={fitAspectRatio} pendingPoint={pendingPoint} view={view} onView={setView} onTap={simpleZoom ? (point) => setView(view.scale > 1 ? RESTING_VIEW : zoomAt(view, 2, point)) : onTap} selectable={!simpleZoom && Boolean(onTap)}>
           {children}
         </DreamCanvas>
       </div>

@@ -1,5 +1,9 @@
 # DREAMERIE
 
+## Local launch-readiness pass — September 29, 2026
+
+Publication approved, verification pending: clearer artwork loading/retry, quiet share cancellation and manual-copy fallback, expanded-image keyboard selection continuity, result focus, singular guess wording and basic link metadata. All 90 tests and build/typecheck pass; gameplay, artwork and saves are unchanged. Dependency auditing succeeds using Windows' trusted certificates with TLS verification enabled and reports zero known vulnerabilities. See [the launch checklist](docs/LAUNCH_READINESS.md) for verified browser checks and remaining real-phone/support/privacy checks; live publication will be recorded in docs/HOSTING.md after verification.
+
 ## Current application
 
 **Live:** cleanup release `e68a177` is on main and deployed at https://dreamerie.onrender.com. All 80 tests, typecheck/build, asset checks and live saved-result verification passed. Render now tracks main; deployments remain manual.

@@ -10,7 +10,7 @@ html:has(.v2-app) { scrollbar-gutter: stable; }
 .v2-hint-toggle { width: 44px; height: 44px; border: 1px solid #c8bee633; border-radius: 50%; color: var(--moon); background: transparent; cursor: pointer; }
 .v2-welcome { max-width: 50rem; margin: auto; text-align: center; }
 .v2-preview { display: block; width: min(100%, 40rem, max(12rem, calc((100dvh - 22rem) * 1.7768))); margin: .8rem auto; padding: 0; border: 0; background: none; cursor: zoom-in; }
-.v2-preview img { display: block; width: 100%; border-radius: .65rem; }
+.v2-preview img { display: block; width: 100%; height: auto; border-radius: .65rem; }
 .v2-app .viewer-artwork { width: min(100cqw, calc((100cqh - 3.25rem) * 1.7768)); height: min(56.2835cqw, calc(100cqh - 3.25rem)); }
 .v2-poem { color: #c4bbd5; font: italic clamp(.9rem, 2vw, 1.15rem)/1.7 Georgia, serif; }
 .v2-welcome h1 { font: 400 clamp(1.5rem, 4vw, 2.2rem) Georgia, serif; margin: 1.3rem 0 .6rem; }

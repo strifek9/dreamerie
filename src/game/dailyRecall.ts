@@ -58,6 +58,11 @@ export function getRemainingGuesses(state: RecallState): number {
   return Math.max(0, GAME_CONFIG.maxGuesses - state.confirmed.length)
 }
 
+export function remainingGuessLabel(state: RecallState): string {
+  const count = getRemainingGuesses(state)
+  return `${count} ${count === 1 ? 'guess' : 'guesses'} left`
+}
+
 export function findDifference(
   point: Point,
   foundDifferenceIds: readonly string[],
