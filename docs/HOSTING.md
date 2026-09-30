@@ -1,5 +1,13 @@
 # Hosted Dreamerie playtest
 
+## Launch-readiness reliability pass — LIVE, September 29, 2026
+
+Owner-approved release `83a40783de666e6990f06baa9d696552094446d6` is committed/pushed on main and live at https://dreamerie.onrender.com. Exact-commit deploy `dep-dau61f5g1s2s73bjfkcg` on existing Static Site `srv-data2gvpn0mc73bgfhc0` reports **Deploy succeeded | Live**, duration 2m02s; site-live log: September 29 at 8:09:09 PM CDT. All 90 tests and typecheck/build passed locally and again on Render. Local secure dependency audit reports zero known vulnerabilities using Windows' trusted certificate store; TLS verification stayed enabled and no persistent settings were changed.
+
+After brief CDN propagation, the public page serves the verified `index-B3U8ZrCM.js` / `index-D73TnmoS.css` and new Open Graph text. Reload preserves Daily Dream #6's 4/5 · 2:00 result, two-day current/best streak and two completed dreams. Image enlargement, 125% zoom, close, Copy and Home/View result work; copied text includes the clean live URL and unchanged score/streak. No browser errors, new hosted attempt or storage reset. No artwork, catalogue, rules, hosting configuration, V2 or private/legacy-resource changes. The existing large-chunk advisory remains nonblocking.
+
+This documentation-only follow-up records completed verification and needs no application redeployment. Real-phone testing and owner-selected support/privacy information remain on docs/LAUNCH_READINESS.md; publication of this reliability pass is not a claim that those broader launch tasks are finished. Future release work requires new authorization.
+
 ## Permanent-mode cleanup — LIVE, September 29, 2026
 
 Release `e68a1771d9274e3d56ecf0d2306ae77f24c46f7c` is committed/pushed on main and live at https://dreamerie.onrender.com. Existing Static Site `srv-data2gvpn0mc73bgfhc0` now builds from main with Auto-Deploy still Off; build command, publish directory, plan and other services are unchanged. Exact-commit deploy `dep-dau5i86gekts73d23qhg` succeeded in 1m59s; site-live log: September 29, 7:36:38 PM CDT. Render repeated all 80 tests and typecheck/build successfully.

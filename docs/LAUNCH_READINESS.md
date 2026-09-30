@@ -1,6 +1,6 @@
 # Launch-readiness audit
 
-September 29, 2026. Changes on `main`, based on `4cb74bf`; the owner has explicitly approved commit, push and deployment. Publication verification is pending and will be recorded in docs/HOSTING.md. This is a bounded reliability pass, not a new game mode or app-installation project.
+September 29, 2026. Owner-approved release `83a4078` is committed, pushed on main and **live** via Render `dep-dau61f5g1s2s73bjfkcg`, September 29 at 8:09:09 PM CDT. All 90 tests/build passed on Render; exact live assets, controls and preserved saved score/streak were verified. See docs/HOSTING.md. This is a bounded reliability pass, not a new game mode or app-installation project. Remaining launch checks below are still outstanding.
 
 ## Assessment
 

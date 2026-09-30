@@ -1,8 +1,8 @@
 # Working on DREAMERIE
 
-## Local launch-readiness pass — September 29, 2026
+## Launch-readiness pass — LIVE, September 29, 2026
 
-The owner now explicitly authorized committing, pushing and deploying this launch-readiness pass to the existing Dreamerie Static Site from main. Loading/retry, share fallback/cancellation, keyboard selection/result-focus and metadata fixes pass all 90 tests and build/typecheck. The dependency check succeeds with Node's --use-system-ca option: zero known vulnerabilities, TLS verification retained and no permanent trust-setting change. See docs/LAUNCH_READINESS.md for remaining physical-phone and owner-selected support/privacy checks. Preserve current artwork, saves, rules, hosting settings and other services. Verify the exact deployed commit before recording publication complete. This is not authorization for a native app or broader infrastructure work.
+COMPLETE: owner-approved release `83a4078` is pushed on main and live via Render `dep-dau61f5g1s2s73bjfkcg` (September 29, 8:09:09 PM CDT). All 90 tests and typecheck/build passed locally and on Render; secure npm audit reports zero known vulnerabilities. Live bundle, image zoom/close, Copy, Home/View result and preserved 4/5 · 2:00 result/two-day streak are verified without errors or resetting a hosted attempt. See docs/HOSTING.md. Physical-phone and owner-selected support/privacy checks remain in docs/LAUNCH_READINESS.md. Preserve artwork, saves, rules, hosting settings and other services. Do not repeat this completed deployment; future publication needs new authorization.
 
 ## Permanent mode and maintenance — September 29, 2026
 
