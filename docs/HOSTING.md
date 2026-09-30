@@ -1,5 +1,13 @@
 # Hosted Dreamerie playtest
 
+## Revisit refresh — September 29, 2026, LIVE
+
+Owner-approved release `3a7ff3c0e1c8befe01c7b327721d21d77bc74ba7` is committed/pushed on `prototype/v3-dream-ritual` and live at https://dreamerie.onrender.com. Exact-commit deployment `dep-dau54t893c1s73cp3kgg` on existing Static Site `srv-data2gvpn0mc73bgfhc0` reports **Deploy succeeded | Live**, duration 2m23s, site-live log at 7:08:36 PM CDT. All 80 tests/typecheck/build passed locally and again on Render (Node 24.21.0). Existing chunk-size advisory is nonblocking. No hosting configuration/plan, V2, legacy resources or saved-state changes.
+
+Live bundle `index-Ch5mz8VN.js` /unchanged CSS `index-D5_t8gir.css` matches the release. Today's revised Dream 006 original and all five delivery crops were downloaded and matched the audit SHA-256 values. Hosted browser confirmed the revised native-resolution original loaded, Start enabled, preview expansion/close worked, the existing 1-day streak remained visible and there were no browser errors. No production round was started or storage cleared. Local phone-sized test completed five guesses with correct/duplicate/miss feedback and answer inspection. See docs/artwork/REVISIT_RELEASE.md for full validation and provenance. Physical touch/difficulty remain owner playtesting.
+
+This follow-up records live verification and does not require a new application deployment. Earlier pending-publication notes are historical. Prior full-year release `79abeeec404f19cbbd3cfe32012e0e2cd96cd78d` was verified live via `dep-dau2ifvavr4c73fef2ng` before this refresh.
+
 ## Landscape welcome and perfect recall — September 28, 2026, LIVE
 
 Owner-approved release `e2edd3699249d41139cf9e950f9947c744355f5a` is committed/pushed on `prototype/v3-dream-ritual` and live at https://dreamerie.onrender.com. Exact-commit deployment `dep-datbphvavr4c73ctojd0` on existing Static Site `srv-data2gvpn0mc73bgfhc0` reports **Deploy succeeded | Live**, 57.5 seconds, site-live log at 2:16:15 PM CDT. No hosting configuration, artwork, scoring, timer, share format or saved-state changes; suspended legacy resources and V2 remain untouched.

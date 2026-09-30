@@ -1,5 +1,7 @@
 # Revisit refresh release — September 29, 2026
 
+Published: `3a7ff3c0e1c8befe01c7b327721d21d77bc74ba7`; Render `dep-dau54t893c1s73cp3kgg` succeeded/live at 7:08:36 PM CDT. Exact live bundle and today's six new artwork hashes verified. See ../HOSTING.md. Publication instructions below describe the completed release procedure.
+
 Owner selected 37 Revisit cards: 35 ordinary scenes and October observance / Veterans Day. Scope is richer connected happenings and whimsical dynamics, not unrelated clutter or literal workshops everywhere. All 37 revised originals and counterparts were generated with the built-in image tool, then all 185 paired answer crops and 37 actual five-region composites were inspected. Several incomplete removals and mismatched descriptions were corrected before acceptance.
 
 ## Preservation and integration

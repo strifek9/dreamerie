@@ -2,6 +2,8 @@
 
 ## Revisited artwork refresh — September 29, 2026
 
+**Live:** `3a7ff3c` is committed, pushed and deployed at https://dreamerie.onrender.com. All 80 tests and build/typecheck passed locally and on Render; live artwork hashes and preview controls were verified. See [release verification](docs/HOSTING.md).
+
 37 owner-selected cards now have richer, more dynamic scenes and complete five-difference counterparts: 35 regular cards and two holiday cards. All 185 paired answer crops and 37 actual composites were visually checked. The daily collection stays at 365 regular +18 holiday cards. New `revisit-dream-*` IDs retain the previous versions for saved attempts; 558 current/historical IDs resolve without resetting guesses, deadlines or streaks.
 
 Native masters: `public/artwork/v3/collection-revisit-v1/`. Exact prompts, reviewed geometry, correction sources and hashes: `docs/artwork/REVISIT_PROVENANCE.json`. Older masters remain untouched. Run `npm run dev`, then preview `?dream=revisit-dream-006`, `?dream=revisit-dream-344` or `?dream=revisit-dream-veterans`; these overrides are development-only. Validate with `npm test`, `npm run build`, `node scripts/validateLandscapeCollection.mjs` and `python scripts/prepareArtworkDeliveryV1.py --check`. Publication status is recorded in docs/HOSTING.md.

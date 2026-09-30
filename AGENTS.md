@@ -1,5 +1,7 @@
 # Working on DREAMERIE
 
+Publication complete: the full 37-card Revisit refresh is live as `3a7ff3c`, Render deployment `dep-dau54t893c1s73cp3kgg`, September 29 at 7:08:36 PM CDT. All 80 tests/typecheck/build passed locally and on Render; all 2,298 lossless files passed exact pixel/color checks; live bundle and six current-day asset hashes match. Previous pairs/saves are preserved. See docs/HOSTING.md. Do not regenerate or redeploy this completed milestone due to historical pending notes. Future publication requires new authorization.
+
 ## Revisit refresh — September 29, 2026
 
 Owner selected 37 Revisit cards (35 ordinary +2 holidays) and authorized commit, push and deployment AFTER the full refresh. All 37 redesigned originals, full five-region composites and 185 paired answer crops passed visual review. Versioned runtime IDs are `revisit-dream-*`; previous 37 painted IDs/pixels/geometry remain resolvable. Current rotation is still 365 +18, with 558 total resolvable IDs. No changes to storage, timing, streaks, scoring, V2 or hosting plans. Metadata/prompts/corrections/hashes: docs/artwork/REVISIT_PROVENANCE.json; native masters: public/artwork/v3/collection-revisit-v1/. Publish only after tests/build/lossless and affected browser checks pass; verify exact commit on existing Static Site srv-data2gvpn0mc73bgfhc0.
