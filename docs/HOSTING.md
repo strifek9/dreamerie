@@ -1,5 +1,13 @@
 # Hosted Dreamerie playtest
 
+## Permanent-mode cleanup — LIVE, September 29, 2026
+
+Release `e68a1771d9274e3d56ecf0d2306ae77f24c46f7c` is committed/pushed on main and live at https://dreamerie.onrender.com. Existing Static Site `srv-data2gvpn0mc73bgfhc0` now builds from main with Auto-Deploy still Off; build command, publish directory, plan and other services are unchanged. Exact-commit deploy `dep-dau5i86gekts73d23qhg` succeeded in 1m59s; site-live log: September 29, 7:36:38 PM CDT. Render repeated all 80 tests and typecheck/build successfully.
+
+Live bundle `index-fHPEvRXf.js` matches the local build; CSS `index-D5_t8gir.css` is unchanged. Reload preserved the existing Daily Dream #6 result (4/5 · 2:00), two-day current/best streak and two completed dreams. Live expansion/close and Home/View result worked, with no browser errors and no new attempt or storage reset. Offline check confirmed all 2,298 retained delivery files are pixel-exact against their masters. No artwork was regenerated or recompressed.
+
+The cleanup is complete. Removed code and 527 unused images remain recoverable from `74a3589` and the preserved prototype branches; private databases/backups and the suspended legacy service/disk remain untouched. The following release-candidate notes are historical. This documentation-only verification does not need a new application deployment; further releases require authorization.
+
 ## Permanent-mode cleanup — release candidate, September 29, 2026
 
 The owner authorized merging the approved V3 history into main, removing unused images and legacy-rule code, then committing, pushing and deploying. Main was fast-forwarded from 4952a01 to 74a3589 without rewriting history; all prototype branches remain. The cleanup removes 94 obsolete code/test/script files, 527 unused images (424,282,481 bytes), and four direct social-server dependencies (40 installed packages including transitives). Actual databases, private backups, legacy disk/service and the separate V2 site are untouched. Recover removed files from 74a3589; image ledger: docs/artwork/RETIRED_ASSETS_20260929.json.

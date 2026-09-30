@@ -2,6 +2,8 @@
 
 ## Current application
 
+**Live:** cleanup release `e68a177` is on main and deployed at https://dreamerie.onrender.com. All 80 tests, typecheck/build, asset checks and live saved-result verification passed. Render now tracks main; deployments remain manual.
+
 Dreamerie is a daily spot-the-difference game: two paintings, two minutes, five confirmed guesses. The approved V3 interface is now the only game mode on `main`. `npm run dev` starts it locally; `npm test` runs current-game regression tests; `npm run build` type-checks and builds the static site. `npm start` optionally serves an existing build, without a database or room API.
 
 The retired social/weekly game and portrait comparison UI are preserved in Git (`prototype/social-dreams`, `prototype/version-1`, and pre-cleanup commit `74a3589`), not shipped as unused application code. No private databases or backups were changed. Older milestone notes below describe development history, not current setup instructions.

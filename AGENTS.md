@@ -2,6 +2,8 @@
 
 ## Permanent mode and maintenance — September 29, 2026
 
+COMPLETE: cleanup release `e68a177` is pushed on main and live via Render `dep-dau5i86gekts73d23qhg` (September 29, 7:36:38 PM CDT). Production now tracks main with manual deploys retained. All 80 tests/typecheck/build passed locally and on Render; all 2,298 retained delivery files passed exact-pixel verification. Live saved 4/5 · 2:00 result and two-day streak survived reload, and enlargement/close worked without browser errors. Do not repeat this completed deployment; future publication requires new approval. Details: docs/HOSTING.md.
+
 The owner confirmed the current daily spot-the-difference game is the permanent direction and explicitly authorized removing unused legacy social/portrait code, committing, pushing, merging into main and deploying this cleanup. Main now contains the V3 history. Older milestones below are historical, not instructions to restore retired modes or deploy old branches.
 
 - Preserve the current UI, five confirmed guesses total, misses/repeats consuming guesses, circle-overlap hit detection, unpausable two-minute deadline, accuracy-first/whole-second time comparison, sharing and streaks.
