@@ -1,5 +1,9 @@
 # Dreamerie Daily Dream Recall Prototype Plan
 
+## Revisit refresh — September 29, 2026
+
+All 37 owner-selected originals and complete counterparts have been generated, integrated and visually checked (37 actual composites /185 paired answer crops). Preserve earlier versions and publish the complete refresh only after regression, native-pixel delivery and browser checks. Owner explicitly authorized commit, push and deployment to the existing dreamerie Static Site after completion. Scope excludes unrelated UI/gameplay/infrastructure changes. Physical-device touch feel and subjective clue difficulty remain human playtest feedback.
+
 ## Full-year expansion — September 29, 2026
 
 All 245 new regular pairs are generated, visually reviewed and integrated, bringing the current catalogue to 365 regular +18 holiday pairs. Dream 214 was replaced at the owner's request; rejected art remains backup-only. All 1,225 new answer crops and 245 full composites have passed visual review. All 79 tests, typecheck/build, legacy validation and 2,298-file lossless pixel checks pass. Complete phone-sized gameplay on the replacement verified marking without submission, confirmation, duplicate/miss consumption, fifth-guess results, enlargement and paired answer inspection. Physical touch and difficulty calibration remain human playtests.

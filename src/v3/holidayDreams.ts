@@ -1,8 +1,9 @@
 import { legacyHolidayDreams, type HolidayDream } from './legacyHolidayDreams.ts'
+import { revisitedCollection, revisitIds } from './revisitedCollection.generated.ts'
 export type { HolidayDream } from './legacyHolidayDreams.ts'
 
 // New painted puzzles have distinct IDs so earlier attempts retain their artwork and geometry.
-export const holidayDreams: readonly HolidayDream[] = [
+export const publishedHolidayDreams: readonly HolidayDream[] = [
   {
     "id": "holiday-painted-halloween",
     "holiday": "halloween",
@@ -1366,6 +1367,12 @@ export const holidayDreams: readonly HolidayDream[] = [
   }
 ]
 
+export const supersededHolidayDreams = publishedHolidayDreams.filter(card => revisitIds[card.id])
+export const holidayDreams: readonly HolidayDream[] = publishedHolidayDreams.map(card => {
+  const revised = revisitedCollection.find(dream => dream.id === revisitIds[card.id])
+  return revised ? { ...card, ...revised } : card
+})
+
 export function holidayDetails(id: string): HolidayDream | undefined {
-  return holidayDreams.find(dream => dream.id === id) ?? legacyHolidayDreams.find(dream => dream.id === id)
+  return holidayDreams.find(dream => dream.id === id) ?? publishedHolidayDreams.find(dream => dream.id === id) ?? legacyHolidayDreams.find(dream => dream.id === id)
 }

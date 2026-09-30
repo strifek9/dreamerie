@@ -1,5 +1,6 @@
 import type { LandscapeDream } from '../v2/landscapeCollection.ts'
 import { yearExpansion } from './yearExpansion.generated.ts'
+import { revisitedCollection, revisitIds } from './revisitedCollection.generated.ts'
 
 // Versioned IDs preserve saved rounds against the original, immutable catalogue.
 // All 120 pairs and 600 answer crops were visually reviewed before selection.
@@ -127,7 +128,10 @@ const originalPaintedCollection: readonly LandscapeDream[] = [
 ]
 
 // Append only: existing IDs, ordering, geometry and saved attempts remain immutable.
-export const paintedCollection: readonly LandscapeDream[] = [...originalPaintedCollection, ...yearExpansion]
+export const publishedPaintedCollection: readonly LandscapeDream[] = [...originalPaintedCollection, ...yearExpansion]
+export const supersededPaintedCollection = publishedPaintedCollection.filter(card => revisitIds[card.id])
+export const paintedCollection: readonly LandscapeDream[] = publishedPaintedCollection.map(card =>
+  revisitedCollection.find(revised => revised.id === revisitIds[card.id]) ?? card)
 
 export function paintedForDay(day: number): LandscapeDream {
   if (!Number.isSafeInteger(day)) throw new Error('Invalid dream day')

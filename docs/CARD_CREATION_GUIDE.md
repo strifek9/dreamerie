@@ -1,5 +1,9 @@
 # Dreamerie card creation guide
 
+## Revisit density clarification — September 29, 2026
+
+The owner wants selected sparse/boring scenes to gain more interesting things going on: connected secondary actions, imaginative relationships, discoveries and movement. Do not interpret “busier” as a mandate for workshops, jobs, unrelated props, microscopic clutter or wall-to-wall detail. Keep one readable impossible premise and the established grain-free painterly finish. Preserve identity unless replacement is explicitly requested. Rebuild all five clues with each redesigned original; inspect the actual clipped composite and every paired answer crop. Version new IDs/assets and preserve published pairs for saved attempts. This complete 37-card refresh is authorized for commit/push/deploy after validation.
+
 Publication scope update (September 28, 2026): the owner authorized commit, push and deployment after the full painted collection was complete. All 120 ordinary and 18 holiday pairs are now complete and validated, committed as `04f739e`. Older no-publication / unfinished-batch notes below are historical. Keep the approved art safeguards and preserve old assets and intermediate drafts; future artwork changes still need their own scope authorization.
 
 ## Latest refinement: keep the presidential card; vary the storytelling

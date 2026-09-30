@@ -43,7 +43,7 @@ export default function VersionThree() {
 
 function Round({ dream, day, playtest, onNew }: { dream: LandscapeDream; day: number; playtest: boolean; onNew: () => void }) {
   const holiday = holidayDetails(dream.id)
-  const verseId = dream.id.replace(/^painted-/, '')
+  const verseId = dream.id.replace(/^(painted-|revisit-)/, '')
   const verse = holiday?.verse ?? yearVerses[verseId] ?? verseForDream(verseId)
   const differences = useMemo(() => differencesFor(dream), [dream])
   const { phase, recall, result, recallLeft, pendingSide, dispatch, storageError, busy } = useDailySession(day, dream.id, differences, playtest, LANDSCAPE_SESSION_OPTIONS)

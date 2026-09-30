@@ -2,7 +2,9 @@ import assert from 'node:assert/strict'
 import test from 'node:test'
 import { readFileSync } from 'node:fs'
 import { createHash } from 'node:crypto'
-import { paintedCollection, paintedForDay } from '../src/v3/paintedCollection.ts'
+import { paintedCollection, paintedForDay, publishedPaintedCollection, supersededPaintedCollection } from '../src/v3/paintedCollection.ts'
+import { revisitedCollection, revisitIds } from '../src/v3/revisitedCollection.generated.ts'
+import { supersededHolidayDreams } from '../src/v3/holidayDreams.ts'
 import { currentDreams, playableDreams, dreamForDate } from '../src/v3/dailyDream.ts'
 import { differencesFor, landscapeCollection, LANDSCAPE_SESSION_OPTIONS } from '../src/v2/landscapeCollection.ts'
 import { verseForDream } from '../src/v2/dreamVerses.ts'
@@ -13,11 +15,50 @@ import { yearExpansion, yearVerses } from '../src/v3/yearExpansion.generated.ts'
 
 const audit = JSON.parse(readFileSync(new URL('../docs/artwork/ORDINARY_PAINTED_PROVENANCE.json', import.meta.url), 'utf8'))
 
+test('37 revisited pairs match inspected sources and preserve all superseded saved attempts', () => {
+  const review = JSON.parse(readFileSync(new URL('../docs/artwork/REVISIT_PROVENANCE.json', import.meta.url), 'utf8'))
+  assert.equal(revisitedCollection.length, 37)
+  assert.equal(supersededPaintedCollection.length, 35)
+  assert.equal(supersededHolidayDreams.length, 2)
+  for (const card of revisitedCollection) {
+    const plan = review.cards.find((p: { id: string }) => p.id === card.id)
+    assert.equal(plan.qa.fullComposite, 'passed')
+    assert.equal(plan.qa.fiveAnswerCrops, 'passed')
+    assert.equal(card.edits.length, 5)
+    assert.equal(revisitIds[plan.previousId], card.id)
+    assert.ok(currentDreams.some(current => current.id === card.id))
+    card.edits.forEach((edit, index) => {
+      const expected = plan.edits[index]
+      assert.equal(edit.label, expected.label)
+      assert.equal(edit.source?.split('/').at(-1), expected.source?.split('/').at(-1))
+      assert.deepEqual(edit.box, {left:expected.box[0]/1672,top:expected.box[1]/941,width:expected.box[2]/1672,height:expected.box[3]/941})
+    })
+  }
+  for (const record of review.assets) {
+    const png = readFileSync(new URL(`../public/artwork/v3/collection-revisit-v1/${record.file}`, import.meta.url))
+    assert.equal(createHash('sha256').update(png).digest('hex'), record.sha256)
+    assert.equal(png.readUInt32BE(16), record.width)
+    assert.equal(png.readUInt32BE(20), record.height)
+  }
+  for (const old of [...supersededPaintedCollection, ...supersededHolidayDreams]) {
+    assert.ok(!currentDreams.includes(old))
+    assert.equal(playableDreams.find(card => card.id === old.id), old)
+    const differences = differencesFor(old)
+    let saved = changeSession(null, {type:'start'}, old.id, differences, 1000, old.aspectRatio)
+    saved = changeSession(saved, {type:'mark',point:differences[0],side:'original'}, old.id, differences, 2000, old.aspectRatio)
+    saved = changeSession(saved, {type:'confirm',point:differences[0],side:'original',expectedCount:0}, old.id, differences, 2000, old.aspectRatio)
+    const raw = JSON.stringify(saved)
+    assert.equal(dreamForDate(new Date(2026,10,11), raw), old)
+    assert.deepEqual(sessionSnapshot(saved,differences,121000,old.aspectRatio).result,{accuracy:1,elapsedSeconds:120,reason:'time'})
+    assert.equal(JSON.stringify(saved),raw)
+  }
+})
+
 test('all 245 expansion pairs match reviewed geometry, corrections, verses and native master hashes', () => {
   const expansion = JSON.parse(readFileSync(new URL('../docs/artwork/YEAR_EXPANSION_PROVENANCE.json', import.meta.url), 'utf8'))
   assert.equal(yearExpansion.length, 245)
   assert.equal(expansion.cards.length, 245)
-  assert.deepEqual(paintedCollection.slice(120), yearExpansion)
+  assert.deepEqual(publishedPaintedCollection.slice(120), yearExpansion)
   const paths = new Set<string>()
   for (const [i, card] of yearExpansion.entries()) {
     assert.equal(card.id, `painted-dream-${i + 121}`)
@@ -76,7 +117,7 @@ test('120 painted pairs match reviewed metadata and immutable asset checksums', 
   assert.equal(paintedCollection.length, 365)
   assert.equal(audit.cards.length, 120)
   const paths = new Set<string>()
-  for (const card of paintedCollection.slice(0, 120)) {
+  for (const card of publishedPaintedCollection.slice(0, 120)) {
     const reviewed = audit.cards.find((c: { id: string }) => `painted-${c.id}` === card.id)
     assert.equal(reviewed.qa.fullComposite, 'passed')
     assert.equal(reviewed.qa.fiveAnswerCrops, 'passed')
@@ -159,11 +200,12 @@ test('painted duplicates consume guesses, expiry cannot pause, and accuracy alwa
 
 test('painted rotation preserves order and every old saved round keeps its own artwork and deadline', () => {
   assert.equal(currentDreams.length, 383)
-  assert.equal(playableDreams.length, 521)
+  assert.equal(playableDreams.length, 558)
   assert.equal(LANDSCAPE_SESSION_OPTIONS.namespace, 'dreamerie:v2:daily-collection:v1')
   for (const [index, card] of landscapeCollection.entries()) {
-    assert.equal(paintedForDay(index + 1).id, `painted-${card.id}`)
-    assert.equal(paintedForDay(index + 366).id, `painted-${card.id}`)
+    const expectedId = revisitIds[`painted-${card.id}`] ?? `painted-${card.id}`
+    assert.equal(paintedForDay(index + 1).id, expectedId)
+    assert.equal(paintedForDay(index + 366).id, expectedId)
     assert.ok(!currentDreams.includes(card))
     const differences = differencesFor(card)
     const saved = changeSession(null, { type: 'start' }, card.id, differences, 1000, card.aspectRatio)

@@ -1,5 +1,12 @@
 # Working on DREAMERIE
 
+## Revisit refresh — September 29, 2026
+
+Owner selected 37 Revisit cards (35 ordinary +2 holidays) and authorized commit, push and deployment AFTER the full refresh. All 37 redesigned originals, full five-region composites and 185 paired answer crops passed visual review. Versioned runtime IDs are `revisit-dream-*`; previous 37 painted IDs/pixels/geometry remain resolvable. Current rotation is still 365 +18, with 558 total resolvable IDs. No changes to storage, timing, streaks, scoring, V2 or hosting plans. Metadata/prompts/corrections/hashes: docs/artwork/REVISIT_PROVENANCE.json; native masters: public/artwork/v3/collection-revisit-v1/. Publish only after tests/build/lossless and affected browser checks pass; verify exact commit on existing Static Site srv-data2gvpn0mc73bgfhc0.
+
+Latest density direction: richer scenes mean more interesting connected happenings, secondary discoveries, whimsical relationships and movement—not literal workshops everywhere, unrelated prop piles, grain or maximal clutter. Preserve the scene's core impossible idea and varied composition. Earlier full-year milestone is complete at 79abeeec404f19cbbd3cfe32012e0e2cd96cd78d, deploy dep-dau2ifvavr4c73fef2ng; historical restrictions below do not override this explicit refresh authorization.
+
+
 ## Full-year expansion — current release scope, September 29, 2026
 
 Owner approved all 245 remaining ordinary pairs (121–365), then commit/push/deploy the complete validated collection to the existing `dreamerie.onrender.com` Static Site, branch `prototype/v3-dream-ritual`. No partial publication, plan changes, legacy-service resumption or V2 deployment. Current catalogue: 365 regular +18 holiday pairs; 138 legacy IDs remain resolvable (521 total). New work appends IDs without altering old pixels/geometry/storage/deadlines/streaks. Regular rotation now wraps after 365 days; holiday overrides do not shift it. Saved attempts take priority.

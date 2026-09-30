@@ -1,5 +1,10 @@
 # Dreamerie art direction
 
+## Revisit density clarification — September 29, 2026
+
+For the 37 owner-selected Revisit cards, add connected visual happenings, secondary discoveries, expressive movement and whimsical interactions while retaining the original scene's identity. “Busier” means more things going on, not literal occupations/workshops or clutter in every picture. Use enough narrative detail to reward searching, balanced with clear silhouettes and calm areas. Keep varied viewpoints, subjects, emotions and clean visible brushwork. All 37 redesigned pairs and 185 actual answer crops have been inspected; untouched cards and historical versions remain preserved.
+
+
 ## Full-year selected artwork — September 29, 2026
 
 365 regular originals and 18 holiday pairs now use the approved varied, visibly painted, grain-free direction. The additional 245 pairs retain their owner-approved originals, with five individually reviewed theme-fitting changes each. Dream 214 replaces the rejected grey-tentacle teapot with The Laundry of Borrowed Shadows: expressive wool creatures washing and hanging shadows in a magical laundrette. The teapot remains backup-only. Preserve expressive nonphotoreal characters, varied subjects/viewpoints/moods/density, coherent impossible relationships and no demographic stereotypes. Do not default to scenic landscapes, people, moons, flowers or birds. Continue following CARD_CREATION_GUIDE.md; append new versioned files rather than overwriting published artwork.

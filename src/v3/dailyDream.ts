@@ -1,14 +1,14 @@
 import { parseSession } from '../game/dailySession.ts'
 import { landscapeCollection, landscapeDay, type LandscapeDream } from '../v2/landscapeCollection.ts'
-import { paintedCollection, paintedForDay } from './paintedCollection.ts'
+import { paintedCollection, paintedForDay, supersededPaintedCollection } from './paintedCollection.ts'
 import { holidayForDate } from './holidayCalendar.ts'
-import { holidayDreams } from './holidayDreams.ts'
+import { holidayDreams, supersededHolidayDreams } from './holidayDreams.ts'
 import { legacyHolidayDreams } from './legacyHolidayDreams.ts'
 
 // Holiday cards never enter or reorder the ordinary rotation.
 export const currentDreams: readonly LandscapeDream[] = [...paintedCollection, ...holidayDreams]
 // Legacy IDs are resolvable for saved attempts, not part of review or new-day rotation.
-export const playableDreams: readonly LandscapeDream[] = [...currentDreams, ...landscapeCollection, ...legacyHolidayDreams]
+export const playableDreams: readonly LandscapeDream[] = [...currentDreams, ...landscapeCollection, ...legacyHolidayDreams, ...supersededPaintedCollection, ...supersededHolidayDreams]
 
 export function dreamForDate(date: Date, savedAttempt: string | null = null): LandscapeDream {
   const holiday = holidayForDate(date)

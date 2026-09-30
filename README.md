@@ -1,5 +1,12 @@
 # DREAMERIE
 
+## Revisited artwork refresh — September 29, 2026
+
+37 owner-selected cards now have richer, more dynamic scenes and complete five-difference counterparts: 35 regular cards and two holiday cards. All 185 paired answer crops and 37 actual composites were visually checked. The daily collection stays at 365 regular +18 holiday cards. New `revisit-dream-*` IDs retain the previous versions for saved attempts; 558 current/historical IDs resolve without resetting guesses, deadlines or streaks.
+
+Native masters: `public/artwork/v3/collection-revisit-v1/`. Exact prompts, reviewed geometry, correction sources and hashes: `docs/artwork/REVISIT_PROVENANCE.json`. Older masters remain untouched. Run `npm run dev`, then preview `?dream=revisit-dream-006`, `?dream=revisit-dream-344` or `?dream=revisit-dream-veterans`; these overrides are development-only. Validate with `npm test`, `npm run build`, `node scripts/validateLandscapeCollection.mjs` and `python scripts/prepareArtworkDeliveryV1.py --check`. Publication status is recorded in docs/HOSTING.md.
+
+
 ## Full-year collection — September 29, 2026
 
 The current V3 catalogue contains **365 ordinary dreams plus 18 holiday specials**, each with exactly five reviewed differences. The new 245 pairs are appended after the original 120; existing artwork, IDs, answer geometry, saved guesses, streaks and deadlines are preserved. Regular artwork wraps after 365 absolute puzzle days; holidays replace their date without shifting the sequence. An already-started saved card still wins over the schedule.
