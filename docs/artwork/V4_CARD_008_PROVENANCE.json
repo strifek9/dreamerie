@@ -1,0 +1,26 @@
+{
+  "status": "unreleased editorial proof; not production-approved",
+  "cardId": "v4-dream-008",
+  "useCase": "precise-object-edit",
+  "tool": "built-in image_gen",
+  "input": "/artwork/v3/collection-painted-v1/dream-008-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-008-original-v4.png",
+    "sha256": "EA1C45D49F9179E81F551F021A6F2331133366C2E27F84CBCD041260FC9CE898",
+    "prompt": "Bit-identical copy of the published Version 3 original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-008-altered-source-v4.png",
+    "sha256": "61F6A23C395E22C81D3C0F05AC13614D85AC957F55F48ABA34F74D7B8538B386",
+    "prompt": "Use case: precise-object-edit. Image 1 is the edit target, a 1672x941 painted giant red mitten opening onto a miniature snowy pine forest, a black rabbit with yellow scarf, a blue tipped cup pouring snowflakes, a hanging red star and an acorn on a stump. Preserve composition, positions, colors, lighting and matte brushwork. Only five local differences: (1) The rabbit's yellow scarf wraps once around the mitten's near thumb edge, with a continuous woven scarf and no extra fabric. (2) At the mitten opening, one snow-covered pine leans outward and overlaps the red knit cuff instead of remaining behind it. (3) The hanging red star's string loops around its branch twice before descending to the star, without moving the star. (4) The blue cup's stream of snowflakes curls through its gold handle before falling, not simply toward the ground. (5) The acorn's cap has a tiny rooted evergreen sprout emerging from the center, painted like the miniature forest. Make all five real and visually distinct; no unrelated edits, pasted edges, global repaint, text or watermark.",
+    "usedRegions": [
+      "scarf-around-mitten",
+      "pine-through-cuff",
+      "star-twine",
+      "snow-handle",
+      "acorn-pine"
+    ]
+  },
+  "refinedSources": [],
+  "notes": "Only these five source regions are composited against the bit-identical Version 3 original. The scarf end visibly drapes over the mitten thumb but does not encircle it, so the player label reflects the actual painting. Desktop and phone-size full pairs and all five paired answer crops were visually inspected in the production-like feathered compositor: no obvious broken join, and each change is present. Human touch and difficulty testing remain; not production-approved."
+}

@@ -1,0 +1,46 @@
+{
+  "status": "unreleased editorial proof; not production-approved",
+  "cardId": "v4-dream-015",
+  "useCase": "precise-object-edit",
+  "tool": "built-in image_gen",
+  "input": "/artwork/v3/collection-painted-v1/dream-015-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-015-original-v4.png",
+    "sha256": "5484D522DA1B40EABFDD0DF22493D3649DB9B636BAD0F1B69A62AB74B9465235",
+    "prompt": "Bit-identical copy of the published Version 3 original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-015-altered-source-v4.png",
+    "sha256": "FB156774F039E1A5526763E34C2B28E8CB419EC48B6CB3524B2EBF0ED44B6228",
+    "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 edit target, a grain-free painterly rooftop where a badger hangs moon-shaped laundry above a copper basin of night sky with basket, lantern and watering can. Preserve composition and all unmentioned details. Make ONLY five theme-fitting localized changes: (1) The badger's raised paw grips its wooden clothespin from behind rather than in front, with natural fingers and one pin. (2) The large central full-moon laundry disc is draped over the clothesline, so its upper edge is hidden behind the line instead of hanging entirely below it; maintain the same moon and pin. (3) The copper basin's reflection shows the middle hanging moon as a crescent rather than a full moon while water remains calm. (4) The white embroidered towel in the basket loops over the woven rim once rather than simply lying across it, with continuous cloth. (5) The rightmost blue watering can's gold handle threads behind its spout instead of crossing the front, preserving one handle and spout. No extra moons, global repaint, colored smudges, text or watermark.",
+    "usedRegions": ["crescent-in-basin", "towel-around-basket-rim"],
+    "rejectedRegions": ["badger-paw-pin", "moon-drape", "watering-handle"]
+  },
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-015-moon-fold-source-v4.png",
+      "sha256": "CD04B1D99F47CFD91F951E7923A73BDD8D3B2B9FAD714957940D99FE3A6CCC6B",
+      "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 matte Dreamerie painting of a badger hanging glowing moon-shaped laundry on a rooftop line. Change ONLY the LARGE FULL-MOON cloth at center-right, above the copper basin: its top edge now folds OVER the clothesline once and hangs down on both sides like a thick luminous towel, rather than hanging wholly beneath the line by a clothespin. Keep the same round illuminated moon cloth and one existing clothespin attached at top, its position and size nearly identical, and keep neighboring moons, badger, line, sky and all else unchanged. Make continuous fabric and believable folds, not an extra moon or broken circle. No text or watermark.",
+      "usedRegions": ["moon-folds-over-line"]
+    },
+    {
+      "path": "/artwork/v4/collection/dream-015-paw-source-v4.png",
+      "sha256": "342FE005627450CBD770631242EAFE0CC0AD8D5D2BBC7C89D58EFCBAC60C82A0",
+      "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 matte Dreamerie painting of a badger hanging glowing moon-shaped laundry on a rooftop line. Change ONLY the badger's RAISED near paw and the one WOODEN CLOTHESPIN it touches near the middle of the line: the paw now grips the pin from BEHIND the clothesline rather than from the front, with the line passing cleanly in front of the paw and an anatomically correct single paw and single pin. Preserve the black fur, claw count, posture, other pins, hanging moons, basin, basket, watering can and all else exactly. No disembodied fingers, added pins, text or watermark.",
+      "usedRegions": ["paw-behind-clothespin"]
+    },
+    {
+      "path": "/artwork/v4/collection/dream-015-vine-pin-source-v4.png",
+      "sha256": "117875295FE0ABC3F2DA969AA987EEDBA062219BA9D904797579B96CC133166E",
+      "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 matte Dreamerie painting of a badger hanging glowing moon-shaped laundry on a rooftop line. Change ONLY the potted trailing FLOWER VINE at the UPPER-RIGHT corner: one existing green vine tendril grows toward the clothesline and curls once around the rightmost WOODEN CLOTHESPIN beside it, visibly continuous from its terracotta pot and naturally clasping that pin. Keep the pin attached to the same line, keep all blossoms and the pot in place, and leave all moon laundry, badger, basket, copper basin, watering can and sky unchanged. This is a plant-and-laundry relationship, not an extra detached vine or a green scribble. Preserve the painterly style, no text or watermark.",
+      "usedRegions": ["vine-around-clothespin"]
+    }
+  ],
+  "rejectedSource": {
+    "path": "artwork-review/v4-batch-20261002/dream-015-rejected-watering-can-source-v4.png",
+    "sha256": "FF8E65B1A019CF600187AED85A99E193E469627AAC4E4AA7308E21C1EAABCD08",
+    "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 matte Dreamerie rooftop painting with a badger hanging moon-shaped laundry, copper basin and small BLUE WATERING CAN at lower right. Change ONLY the watering can: its dark curved handle now threads BEHIND the short spout near their crossing instead of sitting in front, preserving one intact handle, one attached spout and the same blue can body. This should read as a real overlap and be legible when enlarged, not a detached handle, extra pipe or colored patch. Leave the copper basin, flowers, moons, badger and all else unchanged. No text or watermark.",
+    "reason": "The altered handle/spout overlap was not legible even in the answer crop."
+  },
+  "notes": "Only five selected nonoverlapping clips are shown. Desktop and phone-size full pairs and all five paired answer crops were visually inspected; no obvious broken joins. The watering-can trial was rejected as indistinct, replaced by a continuous trailing vine winding around the final pin. Touch/zoom playtesting and difficulty calibration remain pending."
+}

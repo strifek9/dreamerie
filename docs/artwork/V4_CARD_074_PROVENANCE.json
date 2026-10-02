@@ -1,0 +1,36 @@
+{
+  "status": "unreleased editorial proof; not production-approved",
+  "cardId": "v4-dream-074",
+  "useCase": "precise-object-edit",
+  "tool": "built-in image_gen",
+  "input": "/artwork/v3/collection-painted-v1/dream-074-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-074-original-v4.png",
+    "sha256": "05BFA194B2366250F36DDA508FDC4F4CC1B3AAA000F8F335127CB8921C22E5A0",
+    "prompt": "Use case: precise-object-edit. Input image 1 is the existing Dreamerie painting The Folded Horizon. Make this airy paper-mountain scene slightly more alive and imaginative while preserving its original bold paper-folded mountains standing on a coral-red dresser, small window and door, wooden ladder, blue origami crane with white paper tail, moon, clouds, brass drawer knob, wide composition, palette and grain-free painted texture. Add an integrated secondary story in the paper landscape: a tiny stitched train of three paper carriages emerges from the green door and disappears into a crease on the next paper mountain; thin real shadows show where its paper wheels touch the mountain fold. A narrow paper path continues from the ladder toward that crease, linking existing elements. Keep the forms readable and more active without cluttering the sky or adding random objects, flowers, people, moons or birds. Same high-resolution matte painterly finish with flowing brushwork, no speckles, photorealism, text, arrows, circles, split panels or watermark. Output a single enriched original painting, not a finished altered pair."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-074-altered-source-v4.png",
+    "sha256": "9833B9899056D53367405FE7E36EFA254031C054865616C7A7EA54BE54E948D1",
+    "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 matte-painted wide Dreamerie scene The Folded Horizon: cream paper mountains on a coral dresser under a vivid blue sky, a blue origami crane, a tiny colored train, a gold ladder, red little window, and one loose triangular paper scrap. Create its ALTERED spot-the-difference counterpart with exactly FIVE localized, physically coherent changes and nothing else. (1 EASY) In the blue origami crane at upper right, its two pointed folded wings now angle DOWN like a resting bird instead of up, while its neck, body, perch and long streaming white paper tail remain connected and in place. (2 MEDIUM) In the tiny train descending from the green door, swap ONLY the red locomotive body at the bottom and blue carriage body at top, preserving car positions, small wheels, track, shadows and ochre middle carriage; the color order becomes blue, ochre, red. (3 HARD) At the top of the gold ladder leaning on the right paper mountain, its uppermost rung and rails now tuck BEHIND the mountain's forward paper fold instead of sitting across the front; the lower ladder and contacts remain plausible. (4 VERY HARD) Within the small red-framed window on the left paper mountain, the thin inner mullion changes from a straight vertical bar to a delicate diagonal crossing the same panes; keep the entire window frame and paper wall. (5 EXTREMELY HARD) On the lone folded triangular paper scrap on the coral dresser at lower right, reverse the small central crease direction and fold highlight so it seems folded from the opposite side; keep the triangle's footprint and floor shadow. All edits must be visibly realized at native resolution rather than paint discoloration; no new objects, no moved mountain folds, no extra birds or moons, no text, no random grain or repaint drift. Match the original elegant matte hand-painted brushwork exactly.",
+    "usedRegions": [
+      "crane-wings",
+      "train-order",
+      "ladder-fold",
+      "window-mullion"
+    ]
+  },
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-074-scrap-source-v4.png",
+      "sha256": "6D43A1D0AE4DBD0D992E8847A2168771FE664144733103944A1C69482FF10C32",
+      "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 matte-painted Dreamerie painting The Folded Horizon. Make ONE small but real localized change to the lone cream-white triangular folded-paper scrap on the coral tabletop at the far lower right, around x1440-1600 and y790-880. In this altered view its narrow LEFT tip curls UP from the tabletop like a page corner, revealing a little shaded ivory underside and casting a small coherent curled-tip shadow beneath it. Keep the paper scrap's overall footprint, right point, color, size, original place and the red tabletop. The curl should have real folded-paper geometry and a clear silhouette when zoomed, not a color smudge. Do not change any other object: mountains, sky, crane, train, ladder, window, moon, clouds, dresser and knob stay exactly as in Image 1. Preserve the clean matte painted brushwork, no grain, random decorations, text or borders.",
+      "usedRegions": [
+        "curled-scrap"
+      ]
+    }
+  ],
+  "rejectedCandidate": {
+    "description": "The first all-five source barely changed the loose paper scrap, so a targeted edit is used for that clue."
+  }
+}

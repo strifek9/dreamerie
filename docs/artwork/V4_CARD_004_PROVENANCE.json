@@ -1,0 +1,48 @@
+{
+  "status": "unreleased editorial proof; not production-approved",
+  "cardId": "v4-dream-004",
+  "useCase": "precise-object-edit",
+  "tool": "built-in image_gen",
+  "input": "/artwork/v3/collection-painted-v1/dream-004-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-004-original-v4.png",
+    "sha256": "A3D3C671626F68A6B1E3D094BF928910C3A83757A1CC8C26A98AC5BA3D8219E3",
+    "prompt": "Bit-identical copy of the published Version 3 original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-004-altered-source-v4.png",
+    "sha256": "2BF124D28EB3747D14E428EEBECFEC0843ACE5693F0880F2922526CFDE14C020",
+    "prompt": "Use case: precise-object-edit. Image 1 is the exact Dreamerie seaside-door painting, native 1672x941 landscape. The open teal door at left frames an impossible ocean. Change ONLY the water's contact with the NEAREST STONE THRESHOLD at the doorway's bottom, roughly x345–625,y645–735: one small cobalt wave curls out of the door and splashes across the near edge of a single pale threshold stone, with a clean physically coherent white foam edge and wet highlight. Keep the rest of the stepping stones clearly visible; do not flood the whole area. Retain the door and arch geometry, girl, flying fish, three fence gulls, shoe, shell, sea, mountains, palette, brush texture, composition. No other changes, detached water, text, watermark or grain.",
+    "usedRegions": ["wave-crosses-threshold"]
+  },
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-004-gull-shoe-source-v4.png",
+      "sha256": "679D03A1953DC0F1C0B15A5FA7D54F551EDDF2D491AFBD5D17F03C10B8263A1A",
+      "prompt": "Use case: precise-object-edit. Asset type: Dreamerie V4 difference source, exact 1672x941 PNG. Image 1 is the original painterly seaside door, girl, flying ivory fish, three gulls on a fence, white shoe and purple shell. Preserve exact layout, matte brushwork and every unmentioned object. Make ONLY these three small but real localized changes: (1) The MIDDLE gull on the fence, around x1400,y500, lifts one wing over the near fence rail while its feet stay perched on it; one complete bird with natural anatomy, no head rotation. (2) On the foreground white shoe, around x1230,y735, a little violet ribbon threads UNDER the gold buckle and curls out on the other side of the existing white strap; no extra shoe, same silhouette. (3) On the foreground purple scallop shell, around x1400,y770, one of its central raised ribs forks into two near the shell hinge and rejoins near the outer rim, carved naturally into the shell rather than painted over it. Keep the rest pixel-close to the original. No other differences, detached details, people changes, text, watermark or grain.",
+      "usedRegions": ["gull-lifts-wing", "ribbon-under-shoe-buckle"]
+    },
+    {
+      "path": "/artwork/v4/collection/dream-004-wrist-ribbon-source-v4.png",
+      "sha256": "6F73351EE41C81443C19ADC8C5296756F6EABE522DF0E66CA682DC7E0E30C8E8",
+      "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 Dreamerie painting of a girl reaching toward a flying white fish tied with a plum ribbon. Change ONLY the interaction at her two raised hands below the fish, x945–1020,y260–345: loop the fish's existing plum ribbon ONCE around her LEFT raised wrist while her fingers still touch the fish's bow; draw one continuous ribbon with a believable overlap and shadow, no extra or missing fingers, no altered arm position. The long plum tails and fish should remain attached and visually continuous outside this small region. Preserve her face, hands, dress, fish, sky, door, shoreline, fence gulls, shoe, shell, colors, visible brushstrokes, framing, and native 1672x941 resolution. No other edits, detached fabric, text, watermark or grain.",
+      "usedRegions": ["fish-ribbon-wrist"]
+    },
+    {
+      "path": "/artwork/v4/collection/dream-004-shell-open-pearl-source-v4.png",
+      "sha256": "C1B50A71E87F8870FACEDBB005116CD1BD5EEECA1C31574C9D86B0627F2D91AB",
+      "prompt": "Use case: precise-object-edit. Exact native 1672x941 edit of Image 1. At the foreground PURPLE SCALLOP SHELL near x1350–1500,y715–850, alter only the shell's existing lower ivory hinge: let the two shell halves part just a finger-width, revealing a tiny ivory pearl sheltered INSIDE the dark crease immediately behind the hinge. The pearl must be physically nested and partially occluded by the purple shell lip, not sitting pasted on the outside purple ribs. Maintain the fan-shaped shell's silhouette and rib pattern, its painted shadows, the nearby shoe and gray rock, and all other artwork identical. A believable small opening and occlusion is essential. No detached props, no global repaint, no text, watermark, grain, or canvas size change.",
+      "usedRegions": ["shell-pearl"],
+      "actualRaster": "1671x941; the source composition matches the 1672x941 coordinate frame and the one-pixel width variance is preserved rather than resampling the master"
+    }
+  ],
+  "rejectedSources": [
+    {
+      "path": "artwork-review/v4-batch-20261002/dream-004-shell-pearl-source-v4.png",
+      "sha256": "663C73AF3AE329008EFDE8021B2D026A968280E9F9D0896EE02350BC253D6E5B",
+      "prompt": "Use case: precise-object-edit. Image 1 is the precise Dreamerie seaside-door painting. Output canvas must stay EXACTLY 1672 by 941 pixels. Change ONLY the purple scallop shell at lower right, near x1400 y780: between two of its central raised ribs, nestle ONE small luminous ivory pearl, round, about 16 source pixels wide, with the right brushstroke texture and tiny recessed shadow. The shell outline, ribs, hinge, and all other elements remain intact. Preserve original girl, flying white fish, door, sea, three fence gulls, shoe, mountains, palette, brushwork, framing and native dimensions. No other changes, detached marks, text, watermark or grain.",
+      "reason": "Pearl sat on the outside of the closed shell and looked pasted on."
+    }
+  ],
+  "notes": "Earlier multi-edit draft sources remain under artwork-review/v4-batch-20261002 and were rejected where the gull, shoe and shell changes were uncertain. Another first pearl source was 1670 pixels wide and was not integrated. The selected near-native sources were judged by the production-like five-region compositor: desktop and phone-size full pairs and all five paired answer crops were visually inspected. The generated wrist loop appears on the wrist nearest the right edge of the picture, which is described generically in the player label. The two nearby shoe/shell clues both appear in the enlarged answer crops; they remain separate nonoverlapping hit regions. Human difficulty and touch playtesting remain; this is not production-approved."
+}

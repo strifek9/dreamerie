@@ -1,0 +1,33 @@
+{
+  "status": "unreleased editorial proof; not production-approved",
+  "cardId": "v4-dream-001",
+  "useCase": "precise-object-edit",
+  "tool": "built-in image_gen",
+  "input": "/artwork/v3/collection-painted-v1/dream-001-painted-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-001-original-v4.png",
+    "sha256": "7F3CF828AF0E7057D2A282315CA3BC63A281D63BA3708D56A9772CA2BF87B093",
+    "prompt": "Bit-identical copy of the published Version 3 original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-001-altered-source-v4.png",
+    "sha256": "17016B5CA6F4DDC47B430BC49C260CEA80383400542EC82623141283B78376FA",
+    "prompt": "Use case: precise-object-edit. Asset type: Dreamerie Version 4 spot-the-difference source painting. Image 1 is the edit target: the painted orchard of hanging pear-clocks, sleeping fox on a scale, ladder, watering can and embroidered cloth. Preserve exactly the same 1672x941 composition, painterly matte brushwork, colors, lighting and all background scenery. Make ONLY these five localized, physically coherent changes: (1) The sleeping fox's white-tipped tail curls over the near rim of the brass scale pan instead of resting completely inside it, with convincing overlap and no extra tail. (2) At the center of the purple ladder, one horizontal rung runs behind the tree trunk rather than visibly in front of it, preserving the ladder's geometry. (3) In the largest hanging pear-clock, the long clock hand passes behind the little central gold star ornament while the short hand remains in front, with clean layered edges. (4) The middle falling water droplet from the teal watering can reflects a tiny upside-down silhouette of a hanging clock, within the existing drop rather than adding another. (5) On the lower-left embroidered cloth, the green sprig's stem threads under then over the ivory crescent-shaped seam at its edge, as a legible little embroidery crossing. Keep the motifs, count and locations of every other object unchanged. No additional differences, global repaint, new objects, discoloration patches, text, grain or watermark. Preserve brushwork and seamless joins.",
+    "usedRegions": ["fox-tail-scale-rim", "droplet-reflection", "embroidered-crossing"]
+  },
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-001-ladder-vine-source-v4.png",
+      "sha256": "5823CFF899EE1B82CC01DF756AB9722625679544D1AFB39AAF359FC98E7B4FA5",
+      "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672×941 edit target, a matte painted Dreamerie orchard with a purple ladder leaning on a pear-clock tree. Create ONE localized change only at the MIDDLE of the purple ladder, roughly x560–680,y300–430: a slim green tree vine that already trails nearby now curls once completely AROUND the ladder's middle horizontal rung, passing visibly in front, behind, then back in front, with one connected stem and two small leaves. The rung stays in its original location, straight and intact; no extra ladder, no detached vine. Keep every pear-clock, tree trunk, fox, brass scale, cloth, watering can, distant scenery, colors, brushwork and framing unchanged. This is a coherent spot-the-difference clue that should be legible at phone zoom. No other edit, background repaint, text, grain, watermark or blurred color patch.",
+      "usedRegions": ["vine-ladder-rung"]
+    },
+    {
+      "path": "/artwork/v4/collection/dream-001-clock-twig-source-v4.png",
+      "sha256": "DF281CE4F4307A2D6D029D16A439CAB65AC712ECF0D0CA11D10E6803C2A56D45",
+      "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672×941 edit target: Dreamerie's matte painted pear-clock orchard. Create ONE localized edit only, on the CLOCK FACE of the medium-size golden pear-clock hanging at upper center (clock face centered near image pixel x894,y207), not on the large clock at left. Its slender long minute hand should become a tiny dark branching twig with two small ivy leaves near the tip, still clearly attached to its original central clock pivot. Keep the short hand, numeral ticks, pear-clock case, flowers, branch, ladder, fox, scale, watering can, table and entire orchard unchanged. The changed hand must look like a believable painted physical detail, legible at native resolution and meaningful when compared side by side. No other edits, recolor patches, extra objects, text, grain, or watermark; preserve exact composition, colors, lighting and brushwork.",
+      "usedRegions": ["clock-hand-twig"]
+    }
+  ],
+  "notes": "The first clock-hand layering and rung-occlusion drafts were rejected as too ambiguous. This proof uses the separate leafy-hand and vine sources. Only five specified regions are composited. Desktop and phone-size composites and all five paired answer crops were visually checked without an obvious broken join. The final cloth clue label describes the visible stem crossing the lace hem rather than the original prompt's crescent seam. Actual touch playtesting and difficulty calibration remain; not production-approved."
+}

@@ -1,0 +1,36 @@
+{
+  "status": "unreleased editorial proof; not production-approved",
+  "cardId": "v4-dream-173",
+  "useCase": "precise-object-edit",
+  "tool": "built-in image_gen",
+  "input": "/artwork/v3/collection-year-v1/dream-173-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-173-original-v4.png",
+    "sha256": "9A2AE54AA9EDF4CDC96493DA70BD7397B380DDCF91D5F5AF7ECC99A38EA04B52",
+    "prompt": "Use case: precise-object-edit. Image 1 is the existing 1672x941 Dreamerie painting The Doorway of Missing Corners. Create a slightly richer, more alive ORIGINAL for a future spot-the-difference puzzle while preserving the strange paper-wood puzzle-person, the three floating imperfect chairs, peach-lit doorway, brass hinge and triangular key on the lower right stone ledge, deep navy and warm ivory palette, wide geometry, and crisp matte painted brushwork. Add only a connected story of missing corners: three small pale wooden jigsaw corner pieces float in an arc from the person's existing diamond-shaped empty chest toward the lit doorway, each at a different angle with matching perspective and soft shadows; one is partly tucked into the doorway's edge. Give the existing triangular key a delicate keyhole-shaped shadow on the stone ledge, echoing the missing-piece theme. Keep the spacious deep blue wall and the central quiet light; do not crowd it or turn it into a literal workshop. Preserve every existing chair, the person's face and limbs, scarf, all door edges, steps and hinge in the same places. This should be whimsical, unsettling but gentle and surreal, PG, with natural matte hand-painted texture free of speckled grain. Single high-resolution wide original painting only. No text, circles, markers, extra moons/flowers/birds or side-by-side layout."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-173-altered-source-v4.png",
+    "sha256": "BEDDDE5521F641EF29990591AD33CFF946BCFCAD828E04723DB6366C02876309",
+    "prompt": "Use case: precise-object-edit. Image 1 is the exact high-resolution matte-painted Dreamerie scene The Doorway of Missing Corners, with a wooden jigsaw person, floating imperfect chairs, glowing peach doorway, four floating wooden puzzle pieces, a brass hinge and a triangular key. Create its ALTERED spot-the-difference counterpart. Preserve the composition, perspective, color, material and every object except exactly FIVE well-defined localized changes. (1 EASY, wooden figure center-left) The long burgundy scarf now passes THROUGH the person's diamond-shaped empty chest and emerges on the other side, while the figure and scarf remain physically connected. (2 MEDIUM, top-right floating chair) Reverse the order of the navy and ivory stripes on its cushion, keeping the same two cushions and chair shape. (3 HARD, upper puzzle-piece arc inside doorway) The wooden puzzle piece nearest the right edge of the glowing doorway now fits INTO a matching notch on that doorway's edge instead of floating free, with a clean interlocked join; leave other floating pieces where they were. (4 VERY HARD, chair at upper center-left) Its rose cushion turns a quarter turn within the same chair, so the cushion's raised seam now runs front-to-back instead of side-to-side; no displacement of chair itself. (5 EXTREMELY HARD, triangular brass key on stone ledge at lower right) Its cast shadow changes from a rounded keyhole shape to a tiny triangular doorway silhouette, although the real key and ledge remain unchanged. Make the shadow soft and plausible. The altered image must read as the SAME painting except those changes, with clean integrated geometry, not blotches, no extra pieces, no model-wide redraw, no grain, no text, no random motifs.",
+    "usedRegions": [
+      "scarf-through-chest",
+      "striped-cushion",
+      "fitted-piece",
+      "key-shadow"
+    ]
+  },
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-173-cushion-source-v4.png",
+      "sha256": "2B7EC20DF2C60A2D118EEEBE46813C6C01B5652A750C6EAD0116E1E390C72D8D",
+      "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 Dreamerie painting The Doorway of Missing Corners. Make ONE coherent localized difference ONLY on the coral-pink cushion of the floating wooden chair at UPPER CENTER-LEFT (chair approximately x525-740, y40-235; its coral cushion x567-711,y128-182). On the cushion's center, embroider a single small dark-burgundy DIAMOND OUTLINE, the same proportions as the wooden person's missing diamond-shaped chest hole below, sewn along the existing cushion seams. It should look like believable stitched fabric at the existing size, not a sticker or printed icon, and be clearly visible when zoomed. Keep the chair wood, cushion silhouette, cushion folds and location unchanged. Do not edit the other two chairs, striped cushion, figure, scarf, puzzle pieces, doorway, hinge, key or any other object. Matte high-resolution painterly style with natural thread shading, no grain, no text, no borders.",
+      "usedRegions": [
+        "cushion-echo"
+      ]
+    }
+  ],
+  "rejectedCandidate": {
+    "description": "The floated chair seam-rotation attempt was not legible enough and appeared to affect the wrong chair; it was not selected."
+  }
+}

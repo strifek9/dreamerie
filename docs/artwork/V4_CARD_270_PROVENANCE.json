@@ -1,0 +1,41 @@
+{
+  "status": "unreleased editorial proof; not production-approved",
+  "cardId": "v4-dream-270",
+  "useCase": "precise-object-edit",
+  "tool": "built-in image_gen",
+  "input": "/artwork/v3/collection-year-v1/dream-270-replacement-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-270-original-v4.png",
+    "sha256": "21BB2AFD06920CE87B3C1AA09F6839DEBB8116AA99E13C07B672B47F77725F4A",
+    "prompt": "Bit-identical copy of the published Version 3 original; no regeneration or enrichment needed for this rich scene."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-270-altered-source-v4.png",
+    "sha256": "1A633E795D23A82712B638E7CACF6AE11BE59765BD346C12B89E5DAC70E64A90",
+    "prompt": "Use case: precise-object-edit. Image 1 is the exact high-resolution wide Dreamerie painting The Monster and the Timid Thunder, a gentle purple horned monster sitting with a tiny sleeping thundercloud inside an amber lampshade, an unplugged blue lamp base, a wall shadow, a folded yellow cloth, curtain and oval framed night sky. Create its ALTERED spot-the-difference counterpart with exactly FIVE coherent localized changes; preserve the composition and matte painted palette elsewhere. (1 EASY, broad dark wall behind monster at x1000-1450,y65-450) The monster's existing wall shadow changes gesture: its shadow hands now cradle the tiny cloud under the lampshade rather than grip the shade, yet the real monster arms stay fixed. Make the changed shadow a soft, believable silhouette, not a second painted monster. (2 MEDIUM, under the cloud x690-790,y540-665) The tiny amber lightning bolt emitted by the cloud now curls back UP into the lampshade like a shy thread instead of pointing down toward the monster's lap; keep cloud and shade untouched. (3 HARD, lower right x1250-1580,y780-870) The black lamp cord now passes UNDER the blue-and-gold rug's border for a short stretch and emerges before the unplugged plug, rather than lying fully on top; preserve cord, plug, rug geometry and shadows. (4 VERY HARD, oval framed night sky x1540-1670,y45-305) Reverse the position order of the three brightest little stars, keeping the clouds and frame unchanged. (5 EXTREMELY HARD, folded ochre cloth at x980-1210,y790-925) Reverse the order of its small dark embroidered triangles along the near hem so the alternating high-low sequence starts low-high, while cloth folds, color, position and lighting remain intact. Every change should be actual scene geometry or legible pattern, not color smudging. Maintain clean visible brushwork without speckle grain. No extra objects, text, circles, border or changes to expressions/anatomy.",
+    "usedRegions": [
+      "shadow-cloud",
+      "shy-lightning",
+      "cloth-hem"
+    ]
+  },
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-270-stars-source-v4.png",
+      "sha256": "4D365E9F3049F190027EA85CCF4E47A2527E6483E9FC933BCCA1392EB41CC108",
+      "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 Dreamerie painting The Monster and the Timid Thunder. Make ONE localized hard spot-the-difference change inside the small oval gold-framed night-sky painting at the extreme upper-right edge of the scene, x1540-1672,y40-310. Keep its gold frame, purple cloud, sky colors and the SMALL delicate scale of its stars. In the altered view the three brightest tiny gold stars form a DESCENDING diagonal from upper left to lower right instead of the original rising layout; each remains a tiny pinprick star with the same glow, only their arrangement changes. Do not enlarge them into chunky five-point stickers and do not add or remove stars. Keep every other object, monster, shadow, lamp, cloth, wall and window untouched. Exact matte painterly style; no grain, text, circles, border or unrelated edits.",
+      "usedRegions": [
+        "framed-stars"
+      ]
+    },
+    {
+      "path": "/artwork/v4/collection/dream-270-cord-source-v4.png",
+      "sha256": "A9494E7712C774C7E108773DCDBBBB58B6BF3FF5BC8263FE58BA2B13701BFB44",
+      "prompt": "Use case: precise-object-edit. Image 1 is the exact Dreamerie painting The Monster and the Timid Thunder, 1672x941. Change ONLY the black electrical cord of the blue lamp at the lower-right, roughly x1290-1600,y760-855. The cable currently lies visibly across the patterned blue-and-gold rug, going from the lamp base to the unplugged plug. In the altered view it dives UNDER a short section of the rug's pale FRINGE near x1450-1500 and re-emerges toward the same plug, with two continuous visible cable segments on either side. The rug fringe gently lifts at that one spot with correct contact shadow; keep the plug, lamp base and entire rug border in place. The change must be a clear occlusion/contact relationship on inspection, not an erased or broken wire. Keep all other scene content unchanged: monster, shadow, cloud, lightning, lampshade, cloth, framed sky. Same clean matte painted texture, no grain, added props, text or borders.",
+      "usedRegions": [
+        "cord-under-fringe"
+      ]
+    }
+  ],
+  "notes": "The first all-five trial's stars were too chunky and its cord crossing insufficiently distinct; both regions use targeted refinements clipped into the unchanged V3 original. Desktop and 390-pixel artwork composites were visually checked without obvious clipped joins. Actual touch/zoom playtesting and subjective difficulty calibration remain; this is not production-approved."
+}

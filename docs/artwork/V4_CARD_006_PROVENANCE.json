@@ -1,0 +1,58 @@
+{
+  "status": "unreleased editorial proof; not production-approved",
+  "cardId": "v4-dream-006",
+  "useCase": "precise-object-edit",
+  "tool": "built-in image_gen",
+  "input": "/artwork/v3/collection-revisit-v1/006-dynamic-original-v2.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-006-original-v4.png",
+    "sha256": "95F52E7A2E89ECBF7F43520BEFD2558DD822378E461956FDAC36B1B16A503320",
+    "prompt": "Bit-identical copy of the published Version 3 original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-006-altered-source-v4.png",
+    "sha256": "A8C5E31DD171A203E84A538CB14B562A8BD87BFB55EE5850D40CB4C696E5399E",
+    "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 edit target, a grain-free matte Dreamerie painting: an immense ivory shirt becomes a landscape around a red sunset sea, a toy sailboat at a buttonhole, paper fox with blue thread, striped chair cloth, feather and water pooled inside the cuff. Preserve the original framing and all unmentioned painting. Create five distinct, localized changes only: (1) The toy sailboat's bow now crosses OVER the ivory rim of its buttonhole rather than remaining inside, with a believable paper/cloth overlap. (2) The blue thread from the boat passes BEHIND the lower buttonhole rim before emerging toward the paper fox, continuous and untangled. (3) The paper fox's folded tail slips beneath the loose thread instead of over it, retaining fox anatomy. (4) The blue-and-ivory striped cloth on the chair has its middle stripe sequence reversed, not merely recolored or removed. (5) In the water caught in the shirt cuff, the small dark pebble reflects a tiny image of the boat's triangular sail, preserving the water and pebble. Each clue must remain visually legible and integrate with the scene. No other edits, duplicated parts, text, watermark or grain.",
+    "usedRegions": ["pebble-sail-reflection"]
+  },
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-006-chair-fold-source-v4.png",
+      "sha256": "D1A5B79FAF0D9184573A6CBAD5CA494A1F0BD480526D440E20C0DFCB6BBAC5F5",
+      "prompt": "Use case: precise-object-edit. Edit the attached Dreamerie painting as the exact spatial target, preserving its 1672×941 wide composition and matte brushwork. Focus ONLY on the little blue-and-ivory striped cloth draped over the purple chair at lower left. In the altered dream, fold one lower corner of that cloth back on itself so its hidden underside reveals a small stitched copper-orange star; the fold must have a real continuous cloth edge, believable painted shadow and perspective. Keep chair, cloth size, stripes, fringe, paper fox, blue thread, shirt landscape, sea, hand, and every other pixel as close to the original as possible. This is one subtle but clearly realized difference, not a discoloration. No extra object, writing, circles, labels, grain, watermark, or repainted rest of scene.",
+      "usedRegions": ["chair-cloth-fold"]
+    },
+    {
+      "path": "/artwork/v4/collection/dream-006-needle-source-v4.png",
+      "sha256": "CB33AB28FFDBE5E47827456F37B3555E76B9062B007156F31D86230A27C213DE",
+      "prompt": "Use case: precise-object-edit. Asset type: Dreamerie V4 spot-the-difference source. Image 1 is the exact wide matte painting of a giant ivory shirt-landscape, red sea and little sailboat with blue tether. Preserve all composition and surrounding marks. Change ONLY the LOWER large oval buttonhole on the left placket, below the sailboat: add a small warm-copper sewing needle visibly tucked THROUGH the ivory stitched rim at the buttonhole's lower-right edge, with its pointed end disappearing behind the cloth and its eye still visible. The existing blue boat-to-fox thread must remain continuous, in the exact original route through the buttonhole, with no breaks or recoloring. This should look like a real tiny needle held in the cloth, not an isolated pasted prop. All other details identical, no noise, circle, text or watermark.",
+      "usedRegions": ["needle-at-buttonhole"]
+    },
+    {
+      "path": "/artwork/v4/collection/dream-006-pennant-source-v4.png",
+      "sha256": "6F680067E06E1D6D8B725D0BC68CB39336C8E03E1F71441788D0D414B344EB8F",
+      "prompt": "Use case: precise-object-edit. Asset type: Dreamerie V4 spot-the-difference counterpart source. Image 1 is the exact painted 1672×941 edit target: the immense ivory shirt landscape with a small red-and-cream sailboat beside an upper buttonhole, a fox, cuff pool and golden hand. Change ONLY the little boat's red pennant at the TOP of its mast: instead of waving away from the mast, its loose red fabric curls once AROUND the upper mast and then unfurls to the right. Keep the pennant and mast continuous, with realistic painted overlap and a tiny shadow. Keep sail stripes, boat hull, buttonhole rim, blue thread, whole shirt and all else in their exact places. This must read as a localized relationship change, not a red smudge or added bow. Preserve warm matte brushwork, no grain, no text, no watermark.",
+      "usedRegions": ["pennant-around-mast"]
+    },
+    {
+      "path": "/artwork/v4/collection/dream-006-cuff-button-source-v4.png",
+      "sha256": "D4D8E43FD87D323E5587AFB6A959BDAC1C2BE3D96991FFC06F2ADD17CDC73ED4",
+      "prompt": "Use case: precise-object-edit. Asset type: Dreamerie V4 spot-the-difference source. Image 1 is the exact wide grain-free matte painting of a giant ivory shirt as landscape around a sunset sea. Change ONLY the dark round button on the far-right rolled cuff beside its little pool: the pale crossing thread sewn on its face now forms one small curling ocean-wave stitch, using the SAME pale thread, still attached through the button's holes. Keep the button's size, circle, dark material and location exactly unchanged, and keep cuff, water, pebbles, sea, shirt, boat, fox and hand untouched. The alteration must be a physically coherent stitched motif visible on close inspection, not a glowing symbol, discoloration or added object. No text, labels, noise, circles or watermark.",
+      "usedRegions": ["cuff-button-wave"]
+    }
+  ],
+  "rejected": [
+    {
+      "path": "artwork-review/v4-batch-20261002/dream-006-buttonhole-thread-rejected-v4.png",
+      "sha256": "F8EC9AE065BCB2373628E5035EC318616F25E97D103E12584407359843B2DBB5",
+      "reason": "The requested occlusion is too subtle in the output; it did not improve the lower-buttonhole clue. Exact prompt is in artwork-review/v4-batch-20261002/provenance-c.json."
+    },
+    {
+      "path": "artwork-review/v4-batch-20261002/dream-006-feather-rejected-v4.png",
+      "sha256": "894EA2849A14EBACA8D720CA32A4AC8833A325DB5BEC8313AD1902CD3A8992F1",
+      "prompt": "Use case: precise-object-edit. Asset type: Dreamerie V4 spot-the-difference source. Image 1 is the exact 1672×941 matte painted dream of a giant ivory shirt framing a sunset sea. A floating golden hand at upper right holds a blue feather. Preserve the entire scene and hand anatomy. Change ONLY the little blue feather: make its lowest narrow vane curl forward and pass IN FRONT OF the hand's near index finger, while the feather shaft stays between the same fingers and all fingers remain natural. One coherent blue feather and one hand, not duplicate feathers, no severed finger. The blue vane's new overlap should be legible in a small localized clip; keep the feather silhouette, shaft, hand, shirt, sky and all else as aligned to the original as possible. Do not add unrelated objects or symbols. No grain, text, circle or watermark.",
+      "reason": "The finger/feather overlap scarcely changed and is not a definite puzzle difference."
+    }
+  ],
+  "notes": "The first composite was rejected: the all-five source made a visibly disconnected blue thread by the lower buttonhole and repainted the boat. The selected revision uses five nonoverlapping regions across separate targeted sources; only the isolated pebble-sail reflection comes from the initial all-five source. Desktop and phone-size pairs plus all five answer crops were visually inspected on 2026-10-02. The copper needle also touches a short segment of blue thread within its one region, so further human playtesting should judge whether this reads as one coherent clue. The cuff button output resembles a curled stitch more than a clean wave, so the label was adjusted. Do not production-approve or publish."
+}

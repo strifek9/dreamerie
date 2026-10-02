@@ -1,5 +1,9 @@
 # Working on DREAMERIE
 
+## Version 4 harder dreams — active, September 30, 2026
+
+The owner authorized a full current-card difficulty revision, selective enrichment of sparse paintings, and commit/push/deployment after the complete Version 4 collection is playable and validated. Work on `feature/v4-harder-dreams`; current Version 3 on `main` and Render remains stable until the final release. There are 383 current cards / 1,915 clues. Keep published IDs and artwork for saved attempts, original game rules and the generous overlap circle. Do not publish a partial V4 or treat generated full-frame concept edits as finished clues. The owner rejected the umbrella handle example; preserve the liked chessboard handoff direction. See `docs/V4_DIFFICULTY.md` and `docs/CARD_CREATION_GUIDE.md`.
+
 ## Launch-readiness pass — LIVE, September 29, 2026
 
 COMPLETE: owner-approved release `83a4078` is pushed on main and live via Render `dep-dau61f5g1s2s73bjfkcg` (September 29, 8:09:09 PM CDT). All 90 tests and typecheck/build passed locally and on Render; secure npm audit reports zero known vulnerabilities. Live bundle, image zoom/close, Copy, Home/View result and preserved 4/5 · 2:00 result/two-day streak are verified without errors or resetting a hosted attempt. See docs/HOSTING.md. Physical-phone and owner-selected support/privacy checks remain in docs/LAUNCH_READINESS.md. Preserve artwork, saves, rules, hosting settings and other services. Do not repeat this completed deployment; future publication needs new authorization.

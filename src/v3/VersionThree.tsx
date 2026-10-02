@@ -17,6 +17,7 @@ import { streakShareLine } from '../game/playStats'
 import { PlayStats } from './PlayStats'
 import { usePlayStats } from './usePlayStats'
 import { originalArtwork } from './artworkDelivery'
+import { v4PreviewDreams } from '../v4/previewDreams'
 import { useArtworkLoading } from './useArtworkLoading'
 import '../v2/versionTwo.css'
 import './versionThree.css'
@@ -28,6 +29,7 @@ export default function VersionThree() {
   const [date] = useState(() => new Date())
   const today = landscapeDay(date)
   const requested = import.meta.env.DEV ? new URLSearchParams(location.search).get('dream') : null
+  const selectedPreview = import.meta.env.DEV ? v4PreviewDreams.find(card => card.id === requested) : undefined
   const selected = playableDreams.find(card => card.id === requested)
   const [index, setIndex] = useState(() => {
     if (selected) return playableDreams.indexOf(selected)
@@ -38,14 +40,14 @@ export default function VersionThree() {
       return playableDreams.indexOf(dreamForDate(date))
     }
   })
-  const playtest = Boolean(selected) || run > 0
-  const dream = playableDreams[index]
-  return <Round key={`${dream.id}-${run}`} dream={dream} day={playtest ? index + 1 : today} playtest={playtest} onNew={() => { setIndex(value => (value + 1) % currentDreams.length); setRun(value => value + 1) }}/>
+  const playtest = Boolean(selected || selectedPreview) || run > 0
+  const dream = selectedPreview && run === 0 ? selectedPreview : playableDreams[index]
+  return <Round key={`${dream.id}-${run}`} dream={dream} day={playtest ? (selectedPreview && run === 0 ? currentDreams.length + 1 : index + 1) : today} playtest={playtest} onNew={() => { setIndex(value => (value + 1) % currentDreams.length); setRun(value => value + 1) }}/>
 }
 
 function Round({ dream, day, playtest, onNew }: { dream: LandscapeDream; day: number; playtest: boolean; onNew: () => void }) {
   const holiday = holidayDetails(dream.id)
-  const verseId = dream.id.replace(/^(painted-|revisit-)/, '')
+  const verseId = dream.id.replace(/^(painted-|revisit-|v4-)/, '')
   const verse = holiday?.verse ?? yearVerses[verseId] ?? verseForDream(verseId)
   const differences = useMemo(() => differencesFor(dream), [dream])
   const { phase, recall, result, recallLeft, pendingSide, dispatch, storageError, busy } = useDailySession(day, dream.id, differences, playtest, LANDSCAPE_SESSION_OPTIONS)

@@ -1,0 +1,47 @@
+{
+  "status": "unreleased editorial proof; not production-approved",
+  "cardId": "v4-dream-007",
+  "useCase": "precise-object-edit",
+  "tool": "built-in image_gen",
+  "input": "/artwork/v3/collection-painted-v1/dream-007-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-007-original-v4.png",
+    "sha256": "1A95E6B81A5E77E89B2D7312703DCD5F8A881737763D36EEDC0F8379BD35F0D2",
+    "prompt": "Bit-identical copy of the published Version 3 original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-007-altered-source-v4.png",
+    "sha256": "9BCC1933145F9C1244134D8A17CAF306F4192760C475C2996200C0D8D5F540F8",
+    "prompt": "Use case: precise-object-edit. Asset type: Dreamerie Version 4 spot-the-difference source painting. Image 1 is the edit target: a blue whale carrying a glass conservatory, orange trees, teapot, suspended goldfish bowl and flowering branches. Preserve the 1672x941 framing, original painterly matte finish, colors, lighting and every unmentioned detail. Make ONLY five distinct localized, believable changes: (1) The whale's near pectoral fin curls up and partly cradles the hanging goldfish bowl without breaking the bowl or whale anatomy, a clear new relationship. (2) A thin stream from the hanging teapot lands inside the conservatory's open roof vent rather than onto the wisteria, with one continuous stream and the rest unchanged. (3) The conservatory's red entrance door stands slightly ajar and the nearest rail passes behind it rather than across it. (4) The goldfish's tail in the suspended bowl curls around the bowl's inner painted moon reflection, not through the glass; keep one fish. (5) On the top orange tree, the three closest fruit stems braid into one short shared stem instead of separate stems, with natural branch structure. No extra edits, model-wide repaint, blur spots, text, grain or watermark.",
+    "usedRegions": ["teapot-over-roof", "door-ajar"]
+  },
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-007-tree-stems-source-v4.png",
+      "sha256": "44BE93BF96C9584B7AB9666DB5310EDA4CB6040BDE95F7AB08C8B68A4B86C08C",
+      "prompt": "Use case: precise-object-edit. Image 1 is the exact edit target, a 1672x941 painterly blue whale carrying a glass conservatory and orange tree. Change ONLY the top orange tree's three closest oranges: their short stems braid together into a single shared stem where they join the branch, all three fruits remaining in precisely their original locations, with natural painterly branch detail. Keep the whale, glass house, doorway, teapot, goldfish bowl and all other scenery unchanged; no extra changes, no text or watermark.",
+      "usedRegions": ["orange-stems-braid"]
+    },
+    {
+      "path": "/artwork/v4/collection/dream-007-tail-fish-source-v4.png",
+      "sha256": "0FF22D7643A62889F32CA9A796F5A69A24B9CC837E0A7AD4E4136DC2305E4164",
+      "prompt": "Use case: precise-object-edit. Asset type: Dreamerie V4 spot-the-difference source. Image 1 is the exact 1672×941 grain-free matte painted target: a blue flying whale carries a glass conservatory, with a small crescent moon and golden star painted on the whale's night-blue raised tail. Preserve whale anatomy, tail outline, brushwork, golden star, crescent, clouds, fishbowl, tree, teapot and whole composition. Make ONE localized change INSIDE the dark-blue crescent-moon patch on the whale's tail: a tiny orange goldfish silhouette appears swimming through the OPEN CENTER of the crescent, rendered as a flat painted motif following the curved tail surface, not a real fish floating outside it. Keep the original crescent and star intact and the new fish separated from the star. The motif must be distinct enough to see when zoomed, with no extra marks elsewhere, no text, labels, circles, grain or watermark.",
+      "usedRegions": ["tail-moon-fish"]
+    },
+    {
+      "path": "/artwork/v4/collection/dream-007-bowl-crescent-source-v4.png",
+      "sha256": "3A1CE565B1AAC24C8114E997778B380A04D3FD44DD8974BDCD5ADB0BB4D030D8",
+      "prompt": "Use case: precise-object-edit. Asset type: Dreamerie V4 spot-the-difference source. Image 1 is the exact 1672×941 painted target: a blue flying whale with a hanging round GLASS bowl at lower left containing one orange goldfish. Preserve the original whale fins and bowl glass perfectly: the whale must NOT touch, cradle or enter the bowl, and all orange branches remain fixed. Change ONLY the faint PALE reflection painted on the INSIDE back of the glass bowl behind the fish: shape that reflection into a clear slim ivory crescent moon, with the goldfish still in front and unchanged. The crescent should read as a reflective image within the bowl, not a new solid object or an extra fish. No other changes to conservatory, teapot, whale, sky or landscape; maintain the same matte brushwork and alignment, no text, rings, labels, grain or watermark.",
+      "usedRegions": ["moon-in-fishbowl"]
+    }
+  ],
+  "rejected": [
+    {
+      "path": "artwork-review/v4-batch-20261002/dream-007-fin-rejected-v4.png",
+      "sha256": "F2256C5FE6D12489BEA5FE7269EA46ABC9A3AE93E56B908189D6FDE5BBD2087D",
+      "prompt": "Use case: precise-object-edit. Asset type: Dreamerie V4 spot-the-difference counterpart source. Image 1 is the EXACT 1672×941 painted original: a flying blue whale carries a glass conservatory; a separate hanging round glass bowl holds one orange goldfish at lower left. Keep the fishbowl, fish, moonlike pale strokes on its glass, nearby orange branches and whale anatomy exactly as drawn. Change ONLY the whale's broad near pectoral fin BELOW the hanging fishbowl: bend the leftmost outer tip upward a little so the tip gently supports the OUTSIDE underside of the glass bowl, as if cradling it. The contact must be at the bowl's lower outer edge with coherent silhouette and shading; no fin may cut through the glass or fish. Keep the base of the fin joined naturally to the whale. Do not move or change the bowl, its fish, orange tree, conservatory, teapot, face, tail, sky or scenery. Matte flowing paint with no noise, extra object, text, circle or watermark.",
+      "reason": "The fin required a huge hit region and answer crop that exposed unrelated clues; it was replaced by a smaller bowl crescent clue."
+    }
+  ],
+  "notes": "Original painting is rich enough without enrichment. Five bounded candidate edits were inspected as full desktop and phone-size pairs plus all five paired answer crops on 2026-10-02. A first composite used the all-five source's bowl/fin together and was rejected when the fin appeared to enter the glass; the targeted bowl source preserves the fin. The tree-stem source yields a visible central braid, though actual player difficulty remains untested. Do not production-approve or publish."
+}

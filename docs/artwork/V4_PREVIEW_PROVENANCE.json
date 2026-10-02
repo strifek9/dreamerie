@@ -1,0 +1,34 @@
+{
+  "status": "unreleased editorial proof; not production-approved",
+  "cardId": "v4-dream-002",
+  "useCase": "precise-object-edit",
+  "tool": "built-in image_gen",
+  "input": "/artwork/v3/collection-painted-v1/dream-002-original-v2.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-002-original-v4.png",
+    "sha256": "A4183A257B60BDA89899FEC02A0F843D5D8AD4F031C2786A7EEE6C9378F464BC",
+    "prompt": "Use case: precise-object-edit. Input image 1 is the edit target, the existing high-resolution wide Dreamerie painting The Seamstress of Rain. Make this particular scene more alive and fantastical while keeping the same recognizable heron seamstress standing in a shallow lavender lake, needle stitching a peach cloud, distant lake, lily pads, closed parasol on the salmon rock, blue thread spool floating, green stool, pastel palette, and visibly painted matte grain-free brushwork. Add only a few connected secondary happenings that belong to her sewing activity: three folded paper fish riding the arc of the loose white thread just above the water, one lily pad quietly stitched along its edge, and a small untied seam in the cloud showing a sliver of darker twilight behind it. Integrate them naturally in their local areas and vary their scale so the painting invites discovery without becoming cluttered. Keep the main heron and cloud silhouettes, all existing props and the original composition in place. Avoid new people, extra moons, random decorations, photorealism, canvas texture, noise, speckles, captions, puzzle markers, borders and watermarks. Output one coherent high-resolution wide original painting for a future five-difference Dreamerie puzzle, no side-by-side layout."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-002-altered-source-v4.png",
+    "sha256": "36238C33FAEB5D73C1ACEC591E6AF81C02A1E7D7DBE407CD16FB6FF0E80CDD79",
+    "prompt": "Create the ALTERED counterpart for this exact Dreamerie spot-the-difference painting. Preserve the input image at exactly the same composition, viewpoint, palette, brushwork, framing, geometry and resolution. Do not redraw or move anything except these FIVE carefully localized differences. (1) On the heron's burgundy shawl, reorder its three large ivory round patches so the middle patch becomes a small ivory crescent facing right; preserve the garment seams and shading. (2) On the three hanging folded-paper fish to the right of the heron's beak and wing, swap the coral fish at top and ochre fish at bottom, keeping their exact silhouettes and their thread connected; silver stays center. (3) On the lavender cloud seam in the upper middle-right sky, replace a small run of straight white stitches near the midpoint with a neat cross-stitch zigzag of equal scale; preserve cloud edges. (4) On the folded striped parasol in the lower-right foreground, move only the small burgundy ribbon knot at its narrow handle end from the outside of the fold to the adjacent fold, with the tie still physically wrapped around the fabric; do not alter the curved gold handle or its connection. (5) On the green lily pad with white stitching below the hanging fish, change the short sequence of four stitches at its left edge to point diagonally the opposite way, while keeping the lily pad, thread and water untouched. All five changes must feel handcrafted, logically integrated, and visible at original resolution. No other differences, no blur, no grain, no text, no arbitrary color patches."
+  },
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-002-fish-source-v4.png",
+      "sha256": "5D6BCB8CE1C240C2E93A49B34AADA1D507676C621C48A2E6E21D1057B8A959EA",
+      "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 Dreamerie painting The Seamstress of Rain. Make ONE localized spot-the-difference change to the three folded-paper fish hanging vertically from the heron's white thread near the middle-right of the picture. Keep each fish at its EXACT current position, exact folded-paper silhouette, scale, eyes, orientation, and attached thread. Change only the painted paper colors so the TOP fish becomes warm ochre-gold, the MIDDLE stays cool silver-gray, and the BOTTOM becomes coral-pink. The initial order is coral, silver, ochre; the altered order must be ochre, silver, coral. Do not move fish, thread, needle, cloud, lily pads, water, or any object. Preserve matte high-resolution painterly brushwork, matching highlights and fold shadows. No other edits, no color halos, no blur, grain, extra fish, text, border, or watermark."
+    },
+    {
+      "path": "/artwork/v4/collection/dream-002-bow-source-v4.png",
+      "sha256": "31750BB673BA8236D8B36DB9F9F243DDF7F011FE3619423031B7D31395EFD72A",
+      "prompt": "Use case: precise-object-edit. Image 1 is the edit target, the 1672x941 Dreamerie painting The Seamstress of Rain. Make ONE coherent, localized change in the lower-right foreground parasol: the larger burgundy fabric bow tied around its green-and-ivory striped body near the middle now crosses and knots over the adjacent ivory stripe instead of the green stripe. The bow must remain correctly wrapped around the folded fabric, with a physically plausible shadow and two ribbon tails; keep the curved gold handle, the smaller bow at the left tip, all seams, ribs, rock, water, and every other object unchanged. Match existing matte painterly brushwork, not a pasted patch. No other changes, no grain, no new objects, no text, no borders. This is a very hard but fair spot-the-difference clue, not a visibly disconnected handle."
+    },
+    {
+      "path": "/artwork/v4/collection/dream-002-lily-source-v4.png",
+      "sha256": "2A13AF158CE3EB67AC4A06153AD48CFE06DE11FACFE9593F2B06795AB26C01B5",
+      "prompt": "Use case: precise-object-edit. Image 1 is the edit target, the 1672x941 Dreamerie painting The Seamstress of Rain. Make ONE coherent, localized change on the stitched lily pad directly below the hanging paper fish, near the lower center of the image. On its left curved edge only, turn the existing short white slanted sewing stitches into four distinct white X-shaped cross-stitches at the same physical scale and following the leaf rim. Keep the pad's green silhouette, white thread entering it, neighboring lily pads, ripples, sky, heron, parasol, and every other element completely unchanged. The stitches should read as intentional hand embroidery, not white specks, and remain visible when zoomed. Match clean matte painterly brushwork; no grain, no random decorations, no text, no borders."
+    }
+  ]
+}

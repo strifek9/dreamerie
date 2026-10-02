@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dreamerie · unreleased V4 art review</title>
+<style>
+  :root { color-scheme: dark; font-family: Georgia, serif; background: #0d0c1d; color: #f8efdf; }
+  body { margin: 0; padding: 20px; }
+  h1 { font-size: clamp(22px, 3vw, 34px); font-weight: 400; text-align: center; margin: 8px 0; }
+  .notice { text-align: center; opacity: .75; font: 13px/1.4 system-ui, sans-serif; margin: 0 0 18px; }
+  .controls { display: flex; justify-content: center; gap: 16px; align-items: center; margin-bottom: 18px; font: 14px system-ui, sans-serif; }
+  select, button { background: #22213b; color: #fff3dd; border: 1px solid #726e8a; border-radius: 8px; padding: 7px 12px; }
+  .pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; max-width: 1800px; margin: auto; }
+  figure { margin: 0; }
+  figcaption { text-align: center; padding-bottom: 7px; }
+  svg { display: block; width: 100%; height: auto; border-radius: 8px; }
+  ol { max-width: 760px; margin: 24px auto; line-height: 1.6; }
+  .answers { max-width: 1200px; margin: 42px auto; }
+  .answers h2 { text-align: center; font-weight: 400; }
+  .answer { margin: 24px 0; }
+  .answer h3 { font-size: 16px; font-weight: 400; margin: 0 0 10px; }
+  .answer-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .answer-pair svg { max-height: 480px; }
+  .phone .pair { display: block; width: min(390px, 100%); }
+  .phone figure { margin-bottom: 20px; }
+  @media (max-width: 700px) { .pair { display: block; } figure { margin-bottom: 20px; } .answer-pair { gap: 8px; } }
+</style>
+<h1 id="title"></h1>
+<p class="notice">Unreleased V4 editorial preview. This page is available in development only; the live daily rotation is unchanged.</p>
+<div class="controls"><label>Card <select id="card"></select></label><button id="size" type="button">Phone-size art</button><label><input id="outlines" type="checkbox"> Show clue regions</label></div>
+<main id="review"><div class="pair" id="pair"></div><ol id="clues"></ol><section class="answers" aria-labelledby="answers-title"><h2 id="answers-title">Paired answer crops</h2><div id="crops"></div></section></main>
+<script type="module">
+  import { v4PreviewDreams } from './src/v4/previewDreams.ts'
+  import { answerCrop } from './src/v3/dreamRitual.ts'
+  const ns = 'http://www.w3.org/2000/svg'
+  const params = new URLSearchParams(location.search)
+  const select = document.querySelector('#card')
+  const review = document.querySelector('#review')
+  const pair = document.querySelector('#pair')
+  const clues = document.querySelector('#clues')
+  const crops = document.querySelector('#crops')
+  const outlines = document.querySelector('#outlines')
+  let artworkSequence = 0
+  for (const dream of v4PreviewDreams) {
+    const option = document.createElement('option')
+    option.value = dream.id
+    option.textContent = `${dream.id} · ${dream.title}`
+    select.append(option)
+  }
+  select.value = v4PreviewDreams.some(dream => dream.id === params.get('dream')) ? params.get('dream') : v4PreviewDreams[0].id
+  function svgElement(name, attrs = {}) {
+    const node = document.createElementNS(ns, name)
+    for (const [key, value] of Object.entries(attrs)) node.setAttribute(key, String(value))
+    return node
+  }
+  function image(path) { return svgElement('image', { href: path, width: 1672, height: 941 }) }
+  function panel(caption, svg) {
+    const figure = document.createElement('figure')
+    const label = document.createElement('figcaption')
+    label.textContent = caption
+    figure.append(label, svg)
+    return figure
+  }
+  function draw() {
+    const dream = v4PreviewDreams.find(item => item.id === select.value)
+    document.querySelector('#title').textContent = dream.title
+    function artwork(changed, viewBox = '0 0 1672 941', showOutlines = false) {
+      const svg = svgElement('svg', { viewBox, role: 'img' })
+      if (!changed) { svg.append(image(dream.original)); return svg }
+      const defs = svgElement('defs')
+      svg.append(defs, image(dream.original))
+      const sequence = artworkSequence++
+      dream.edits.forEach((edit, index) => {
+        const id = `review-${sequence}-clip-${index}`
+        const clip = svgElement('clipPath', { id })
+        const x = edit.box.left * 1672, y = edit.box.top * 941
+        const width = edit.box.width * 1672, height = edit.box.height * 941
+        if (edit.maskPath) clip.append(svgElement('path', { d: edit.maskPath }))
+        else clip.append(svgElement('rect', { x, y, width, height }))
+        defs.append(clip)
+        const layer = image(edit.source ?? dream.altered)
+        layer.setAttribute('clip-path', `url(#${id})`)
+        const feather = Math.min(edit.edgeFade ?? 4, width / 6, height / 6)
+        if (feather > 0) {
+          const gx = svgElement('linearGradient', { id: `${id}-x` })
+          gx.append(svgElement('stop', { 'stop-color': 'white', 'stop-opacity': 0 }), svgElement('stop', { offset: feather / width, 'stop-color': 'white' }), svgElement('stop', { offset: 1 - feather / width, 'stop-color': 'white' }), svgElement('stop', { offset: 1, 'stop-color': 'white', 'stop-opacity': 0 }))
+          const gy = svgElement('linearGradient', { id: `${id}-y`, x2: 0, y2: 1 })
+          gy.append(svgElement('stop', { 'stop-color': 'white', 'stop-opacity': 0 }), svgElement('stop', { offset: feather / height, 'stop-color': 'white' }), svgElement('stop', { offset: 1 - feather / height, 'stop-color': 'white' }), svgElement('stop', { offset: 1, 'stop-color': 'white', 'stop-opacity': 0 }))
+          const my = svgElement('mask', { id: `${id}-my`, maskUnits: 'userSpaceOnUse', x, y, width, height })
+          my.append(svgElement('rect', { x, y, width, height, fill: `url(#${id}-y)` }))
+          const mx = svgElement('mask', { id: `${id}-mx`, maskUnits: 'userSpaceOnUse', x, y, width, height })
+          mx.append(svgElement('rect', { x, y, width, height, fill: `url(#${id}-x)`, mask: `url(#${id}-my)` }))
+          defs.append(gx, gy, my, mx)
+          layer.setAttribute('mask', `url(#${id}-mx)`)
+        }
+        svg.append(layer)
+        if (showOutlines) svg.append(svgElement('rect', { x, y, width, height, fill: 'none', stroke: '#f6cc64', 'stroke-width': 3 }))
+      })
+      return svg
+    }
+    pair.replaceChildren(panel('The Dream', artwork(false)), panel('The Memory', artwork(true, '0 0 1672 941', outlines.checked)))
+    clues.replaceChildren(...dream.edits.map(edit => {
+      const item = document.createElement('li')
+      item.textContent = edit.label
+      return item
+    }))
+    crops.replaceChildren(...dream.edits.map((edit, index) => {
+      const crop = answerCrop(edit.box)
+      const viewBox = `${crop.x} ${crop.y} ${crop.width} ${crop.height}`
+      const article = document.createElement('article')
+      article.className = 'answer'
+      const heading = document.createElement('h3')
+      heading.textContent = `${index + 1}. ${edit.label}`
+      const cropPair = document.createElement('div')
+      cropPair.className = 'answer-pair'
+      cropPair.append(panel('The Dream', artwork(false, viewBox)), panel('The Memory', artwork(true, viewBox)))
+      article.append(heading, cropPair)
+      return article
+    }))
+    params.set('dream', dream.id)
+    history.replaceState(null, '', `${location.pathname}?${params}`)
+  }
+  select.addEventListener('change', draw)
+  outlines.addEventListener('change', draw)
+  document.querySelector('#size').addEventListener('click', event => {
+    review.classList.toggle('phone')
+    event.currentTarget.textContent = review.classList.contains('phone') ? 'Desktop-size art' : 'Phone-size art'
+  })
+  draw()
+</script>
+</html>

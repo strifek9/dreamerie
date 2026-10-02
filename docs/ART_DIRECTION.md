@@ -1,5 +1,9 @@
 # Dreamerie art direction
 
+## Version 4: richer scenes, more surprising clues — September 30, 2026
+
+Review all 383 current dream cards. Enrich selected spare paintings with a few connected happenings that deepen their existing impossible premise; leave expressive negative space where it serves the mood. The original should remain coherent, painterly, varied and grain-free. New differences should diversify attention, action, sequence, connection, occlusion and reflections alongside occasional subtle color and pattern changes. A difficult clue must still be a definite visible alteration with convincing anatomy, contact and shadows. The owner liked the chessboard handoff, found the nested photograph interesting but somewhat easy, and rejected the washer umbrella handle because it no longer fit its object. Use that feedback when choosing and inspecting edits. `docs/V4_DIFFICULTY.md` records the full audit and release gate; current Version 3 artwork remains live.
+
 ## Revisit density clarification — September 29, 2026
 
 For the 37 owner-selected Revisit cards, add connected visual happenings, secondary discoveries, expressive movement and whimsical interactions while retaining the original scene's identity. “Busier” means more things going on, not literal occupations/workshops or clutter in every picture. Use enough narrative detail to reward searching, balanced with clear silhouettes and calm areas. Keep varied viewpoints, subjects, emotions and clean visible brushwork. All 37 redesigned pairs and 185 actual answer crops have been inspected; untouched cards and historical versions remain preserved.

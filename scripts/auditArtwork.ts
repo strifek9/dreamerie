@@ -2,6 +2,7 @@ import { readdirSync, statSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { playableDreams } from '../src/v3/dailyDream.ts'
 import { artworkDelivery } from '../src/v3/artworkDelivery.generated.ts'
+import { v4PreviewDreams } from '../src/v4/previewDreams.ts'
 
 // Audit only; deletion is deliberately not part of this tool. Historical saved
 // rounds need their PNG masters even when they are no longer in the daily deck.
@@ -13,6 +14,7 @@ function collect(value: unknown): void {
 }
 collect(playableDreams)
 collect(artworkDelivery)
+collect(v4PreviewDreams)
 
 export function artworkFiles(directory = '/artwork'): string[] {
   return readdirSync(new URL(`../public${directory}/`, import.meta.url), { withFileTypes: true })

@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "batch": "2026-10-02-a",
+  "generationMode": "built-in image_gen",
+  "publicationStatus": "nonshipping-drafts",
+  "entries": [
+    {
+      "cardId": "dream-001",
+      "originalPath": "D:\\Dreamerie\\public\\artwork\\v3\\collection-painted-v1\\dream-001-painted-v1.png",
+      "initial": {
+        "path": "artwork-review/v4-batch-20261002/dream-001-initial-source-v4.png",
+        "sha256": "17016b5ca6f4ddc47b430bc49c260cea80383400542ec82623141283b78376fa",
+        "prompt": "Use case: precise-object-edit. Asset type: Dreamerie Version 4 spot-the-difference source painting. Image 1 is the edit target: the painted orchard of hanging pear-clocks, sleeping fox on a scale, ladder, watering can and embroidered cloth. Preserve exactly the same 1672x941 composition, painterly matte brushwork, colors, lighting and all background scenery. Make ONLY these five localized, physically coherent changes: (1) The sleeping fox's white-tipped tail curls over the near rim of the brass scale pan instead of resting completely inside it, with convincing overlap and no extra tail. (2) At the center of the purple ladder, one horizontal rung runs behind the tree trunk rather than visibly in front of it, preserving the ladder's geometry. (3) In the largest hanging pear-clock, the long clock hand passes behind the little central gold star ornament while the short hand remains in front, with clean layered edges. (4) The middle falling water droplet from the teal watering can reflects a tiny upside-down silhouette of a hanging clock, within the existing drop rather than adding another. (5) On the lower-left embroidered cloth, the green sprig's stem threads under then over the ivory crescent-shaped seam at its edge, as a legible little embroidery crossing. Keep the motifs, count and locations of every other object unchanged. No additional differences, global repaint, new objects, discoloration patches, text, grain or watermark. Preserve brushwork and seamless joins."
+      },
+      "refinement": {
+        "path": "artwork-review/v4-batch-20261002/dream-001-refine-source-v4.png",
+        "sha256": "3e6dbce132196d204a3f04bad8e4f3d6cefea5fe3c2ba4040aab7f685e42581b",
+        "prompt": "Use case: precise-object-edit. Image 1 is the exact edit target, a 1672x941 painterly orchard of hanging clock-pears. Change ONLY the hands on the large left clock: the long black hand threads behind the tiny central gold star-like hub and then re-emerges, while the short black hand passes in front of that hub. This must read as a clean layering difference at native zoom, not simply hands pointing at another time. Keep the clock face, numerals, rim, pear, entire surrounding orchard and all other pixels/composition as close as possible. No global repaint, added motifs or text."
+      },
+      "assessment": "Initial source visibly changes fox tail, ladder, a water droplet and cloth embroidery; clock layering remains too subtle. Needs five-region composite and answer-crop QA.",
+      "status": "draft-not-playable"
+    },
+    {
+      "cardId": "dream-003",
+      "originalPath": "D:\\Dreamerie\\public\\artwork\\v3\\collection-painted-v1\\dream-003-original-v2.png",
+      "initial": {
+        "path": "artwork-review/v4-batch-20261002/dream-003-initial-source-v4.png",
+        "sha256": "4c9171d098ce211dde16ac4566ba4b7fc7b6a5840d0f4890d6c1685a3914e42a",
+        "prompt": "Use case: precise-object-edit. Asset type: Dreamerie Version 4 spot-the-difference source painting. Image 1 is the edit target, the painted train emerging beneath a blue moon-patterned pillow in a desert with cactus, suitcase, bench and station bell. Preserve its exact 1672x941 framing, grain-free painterly brushwork, palette, geometry and all unmentioned content. Make ONLY five localized coherent changes: (1) The locomotive's white steam plume tucks under the blue pillow edge rather than crossing visibly over it, with clean occlusion. (2) The station bell's golden clapper hangs outside the left rim rather than centered beneath it, still joined to the bell. (3) The first maroon carriage's row of glowing windows changes its visual order to dark-glow-glow-dark instead of the existing glow-glow-glow arrangement; retain the carriage structure and window count where possible. (4) The teal suitcase's leather handle loops behind its right brass attachment instead of in front, with continuous leather and hardware. (5) One ivory floral motif on the pillow has its petals arranged in a clockwise spiral instead of the simple starburst, still painted as part of the existing pillow fabric. These must be actual realized edits, not soft color spots. No extra differences, no model-wide changes, no text or watermark."
+      },
+      "refinement": {
+        "path": "artwork-review/v4-batch-20261002/dream-003-refine-source-v4.png",
+        "sha256": "c6580ae3d2f0f60ed340988fed67337dce6f1f476f4efc3337327155997f038c",
+        "prompt": "Use case: precise-object-edit. Image 1 is the exact edit target, a 1672x941 painted train emerging under a blue pillow with a teal suitcase foreground. Make only TWO localized differences: (1) A single white plume of steam from the locomotive chimney curls up, crosses behind the lower blue pillow edge and re-emerges above it, continuous and physically connected, leaving the train structure intact. (2) The brown leather suitcase handle passes behind its right brass mounting plate rather than lying over the plate; the handle and plate remain continuous and plausible. Preserve every other shape, train window, pillow motif, landscape, palette, painterly brushstroke and lighting. No unrelated edits, no text or watermark."
+      },
+      "assessment": "Steam/pillow source and initial bell, carriage-window and pillow changes are promising; suitcase-handle clue remains unproven. Needs further localized edit and QA.",
+      "status": "draft-not-playable"
+    },
+    {
+      "cardId": "dream-004",
+      "originalPath": "D:\\Dreamerie\\public\\artwork\\v3\\collection-painted-v1\\dream-004-original-v1.png",
+      "initial": {
+        "path": "artwork-review/v4-batch-20261002/dream-004-initial-source-v4.png",
+        "sha256": "c8920a3008b1fda672c4eadb84bc04d9f014e0e9079ec21e6f2942cb7c8ff822",
+        "prompt": "Use case: precise-object-edit. Asset type: Dreamerie Version 4 spot-the-difference source painting. Image 1 is the edit target: a girl with a floating ribboned fish near an open sea-door, fence birds, shoe and purple shell. Preserve same 1672x941 painted composition, brushstroke style, palette, lighting and all unmentioned objects. Change ONLY five definite localized details: (1) The fish's plum ribbon loops once around the girl's raised right wrist before bowing at the fish, with a single continuous believable ribbon and no tangled fingers. (2) At the open teal door's threshold, one cresting wave overlaps the first stone step instead of stopping behind the door opening, with painterly water and a natural edge. (3) On the fence, the middle gull perches facing left instead of right, keeping its position and size. (4) The white shoe's strap passes under its gold buckle bar instead of over it, with clear leather/hardware layering. (5) The purple shell's central pair of ribs cross near the base rather than running parallel, without changing its outer silhouette. No added objects, no disconnected anatomy, no blanket recoloring, no other changes, grain or watermark."
+      },
+      "refinement": {
+        "path": "artwork-review/v4-batch-20261002/dream-004-refine-source-v4.png",
+        "sha256": "db823ebb3ce9ed189042ede9d76c7a841617d4e00abe0bc4626ecdb2b9c30a97",
+        "prompt": "Use case: precise-object-edit. Image 1 is the exact edit target, a 1672x941 painterly sea-door scene with girl, fish, three gulls on fence, white shoe and purple shell. Make ONLY three localized differences, not a full repaint: (1) The middle gull's orange feet are partly hidden behind the foreground wooden fence rail instead of clearly over it; gull still perches naturally, same position and head direction. (2) The white shoe's ivory strap threads UNDER the center bar of its gold buckle, with believable leather overlap and no duplicate strap. (3) In the nearby purple shell, the two central raised ribs cross each other just above the pale base, while all outer ribs and shell silhouette stay unchanged. Preserve the girl's hands, fish, ribbon, door, waves and all other scenery exactly. No extra changes, no text or watermark."
+      },
+      "assessment": "Ribbon/wrist and threshold wave are clear; gull, shoe and shell refinements are not yet dependable at phone size. Not playable.",
+      "status": "draft-not-playable"
+    },
+    {
+      "cardId": "dream-005",
+      "originalPath": "D:\\Dreamerie\\public\\artwork\\v3\\collection-painted-v1\\dream-005-original-v1.png",
+      "initial": {
+        "path": "artwork-review/v4-batch-20261002/dream-005-initial-source-v4.png",
+        "sha256": "1cadc0c4f98e5584bae459ccc11f2f8c76ccdcf59438e5bbe6122352e621ec4c",
+        "prompt": "Use case: precise-object-edit. Asset type: Dreamerie Version 4 spot-the-difference source painting. Image 1 is the edit target: a walking yellow cottage on striped legs crossing a pink stream, with bird, snail and green umbrella. Preserve exact 1672x941 composition, matte brushwork, whimsical lighting, all positions and all unmentioned content. Make ONLY five coherent localized differences: (1) The cottage's left bootlace crosses over its toe and forms a visible tied bow where it had a plain upper, integrated with the existing boot. (2) The pink stream's narrow upper ribbon passes behind the little stone bridge rather than in front of its near arch, with a continuous stream path. (3) The teal bird atop the chimney turns its head to look down at the house while its feet remain planted, preserving one head and neck. (4) On the green umbrella, the middle ivory dot is now a stitched hollow ring in the fabric, retaining the other two solid dots. (5) The snail's shell spiral runs counterclockwise rather than clockwise, retaining the same shell and snail. No other differences, no pasted or detached edges, no unrelated props, text, grain or watermark."
+      },
+      "refinement": {
+        "path": "artwork-review/v4-batch-20261002/dream-005-refine-source-v4.png",
+        "sha256": "68531e1bd09a23db26a69b02a22bacb569b23d6786ddc37a854eb25a46f24d7b",
+        "prompt": "Use case: precise-object-edit. Image 1 is the exact edit target, a 1672x941 painterly yellow walking cottage with pink stream, stone bridge, snail and green umbrella. Make ONLY two localized changes: (1) Near the left side of the stone bridge, the narrow pink ribbon of water clearly passes THROUGH the left arch opening and behind the front stone pier instead of crossing over the front masonry; continuity and perspective must be impeccable. (2) At lower left, the snail's spiral shell reverses its winding direction while keeping the same shell size, warm brown color, highlights and snail anatomy. Preserve every other object, bird, boot, umbrella, painting style and lighting. No disconnected fragments, no unrelated changes, text, grain or watermark."
+      },
+      "assessment": "Boot lace, bird gaze and umbrella ring are clear; bridge refinement is promising; snail spiral still unproven. Not playable.",
+      "status": "draft-not-playable"
+    },
+    {
+      "cardId": "dream-007",
+      "originalPath": "D:\\Dreamerie\\public\\artwork\\v3\\collection-painted-v1\\dream-007-original-v1.png",
+      "initial": {
+        "path": "artwork-review/v4-batch-20261002/dream-007-initial-source-v4.png",
+        "sha256": "9bcc1933145f9c1244134d8a17caf306f4192760c475c2996200c0d8d5f540f8",
+        "prompt": "Use case: precise-object-edit. Asset type: Dreamerie Version 4 spot-the-difference source painting. Image 1 is the edit target: a blue whale carrying a glass conservatory, orange trees, teapot, suspended goldfish bowl and flowering branches. Preserve the 1672x941 framing, original painterly matte finish, colors, lighting and every unmentioned detail. Make ONLY five distinct localized, believable changes: (1) The whale's near pectoral fin curls up and partly cradles the hanging goldfish bowl without breaking the bowl or whale anatomy, a clear new relationship. (2) A thin stream from the hanging teapot lands inside the conservatory's open roof vent rather than onto the wisteria, with one continuous stream and the rest unchanged. (3) The conservatory's red entrance door stands slightly ajar and the nearest rail passes behind it rather than across it. (4) The goldfish's tail in the suspended bowl curls around the bowl's inner painted moon reflection, not through the glass; keep one fish. (5) On the top orange tree, the three closest fruit stems braid into one short shared stem instead of separate stems, with natural branch structure. No extra edits, model-wide repaint, blur spots, text, grain or watermark."
+      },
+      "refinement": {
+        "path": "artwork-review/v4-batch-20261002/dream-007-refine-source-v4.png",
+        "sha256": "44be93bf96c9584b7ab9666db5310eda4cb6040bde95f7ab08c8b68a4b86c08c",
+        "prompt": "Use case: precise-object-edit. Image 1 is the exact edit target, a 1672x941 painterly blue whale carrying a glass conservatory and orange tree. Change ONLY the top orange tree's three closest oranges: their short stems braid together into a single shared stem where they join the branch, all three fruits remaining in precisely their original locations, with natural painterly branch detail. Keep the whale, glass house, doorway, teapot, goldfish bowl and all other scenery unchanged; no extra changes, no text or watermark."
+      },
+      "assessment": "Initial source shows whale fin cradling bowl, teapot stream, door, bowl moon and tree stems; source may still create unwanted repaint within broad clips. Needs full composite and phone QA before playable.",
+      "status": "draft-not-playable"
+    }
+  ]
+}

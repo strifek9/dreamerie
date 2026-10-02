@@ -1,0 +1,26 @@
+{
+  "status": "unreleased editorial proof; not production-approved",
+  "cardId": "v4-dream-017",
+  "useCase": "precise-object-edit",
+  "tool": "built-in image_gen",
+  "input": "/artwork/v3/collection-painted-v1/dream-017-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-017-original-v4.png",
+    "sha256": "C65B9254E9E407FA745C1FFCBF6A8C658CE06B4DF0D98104232DBCE42C7221AD",
+    "prompt": "Bit-identical copy of the published Version 3 original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-017-altered-source-v4.png",
+    "sha256": "F28F75888BD22B334427D76648B9E1432F76B763AFD8C81195901261156FBBE7",
+    "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 edit target, a deer whose antlers carry miniature autumn trees inside a flooded room, with open window to spring blossoms, frog on rock, red antler ribbon and floating orange leaves. Preserve original deer anatomy, room, water, palette and matte painted finish. Make only five localized differences: (1) The red ribbon winds once AROUND the near white antler branch instead of hanging entirely in front; continuous ribbon. (2) One flowering spring twig through the open window now crosses in front of the purple window sash rather than behind it, with a natural join. (3) In the shallow water beside the frog's rock, the frog's reflection briefly wears a tiny silhouette of the deer's branched antlers while the real frog is unchanged. (4) The little crescent in the left wall picture is reflected upside down in the glass of its own oval frame, keeping the original crescent. (5) A floating orange leaf at lower center folds its stem under its own curled edge, making a miniature boat shape without changing location or count. No extra trees, duplicate limbs, unrelated edits, text or watermark.",
+    "usedRegions": [
+      "ribbon-around-antler",
+      "blossom-over-sash",
+      "frog-reflection",
+      "second-crescent",
+      "leaf-boat"
+    ]
+  },
+  "refinedSources": [],
+  "notes": "The second crescent is a realized output variation from the prompted upside-down reflection, labeled by what the image actually shows. All five answer crops and desktop/phone-size paired composites were visually checked on 2026-10-02; no obvious joins or anatomy breaks. Human touch-target and difficulty review remains; not production-approved."
+}

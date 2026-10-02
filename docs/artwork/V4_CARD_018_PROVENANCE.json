@@ -1,0 +1,39 @@
+{
+  "status": "unreleased editorial draft; visual QA incomplete; not production-approved",
+  "cardId": "v4-dream-018",
+  "tool": "built-in image_gen",
+  "input": "/artwork/v3/collection-revisit-v1/018-dynamic-original-v2.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-018-original-v4.png",
+    "sha256": "AACFC7D89BF0BC77D03231D9A0CB02FC3A0221418AA56331D68BF7BEF8F35FAF",
+    "prompt": "Bit-identical copy of the published Version 3 original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-018-altered-source-v4.png",
+    "sha256": "96249F2890044564F92917790F5549770FC229B5515C5C8814EA07981F079FD1",
+    "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 matte painting of impossible white stairs in a coral sky, a teal door on the landing, brass rail threaded through a keyhole, rooted hanging plant, red shoe, glowing footprints and personified blue book. Preserve exact perspective, architecture, palette, brushwork and all unmentioned content. Make only five localized differences: (1) The brass handrail enters the teal door's keyhole from the other side and emerges toward the viewer, with one smooth unbroken rail and no broken door. (2) The plant's thickest root now loops around the nearest white step before descending, one continuous root. (3) The red shoe's loose white lace crosses over one glowing footprint on the upper stair, visibly continuous. (4) The blue book's trailing red scarf passes under the stair above it instead of over the front edge, preserving book arms and scarf. (5) The middle floating gold stepping stone has its visible bright face on its underside rather than its upper surface, keeping its location and scale. No additional changes, detached pieces, text or watermark.",
+    "usedRegions": ["rail-through-keyhole", "plant-root-around-step"],
+    "rejectedRegions": ["shoe-lace-through-footprint", "book-scarf-around-stair", "floating-stone-tilts"]
+  },
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-018-shoe-lace-source-v4.png",
+      "sha256": "F6778145A19BE8E544DF6433757A38ADB96C4083F67FAF6B63417595C6C6B0AB",
+      "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 matte Dreamerie painting of floating white stairs in a coral sky, a RED OXFORD SHOE at upper-left and glowing GOLD FOOTPRINTS down the stair steps. Change ONLY the shoe's long loose WHITE LACE: its free end now threads through the nearest glowing footprint one step below the shoe, looping once across that footprint before dangling naturally. Keep the red shoe in its exact place and keep the footprint shape, stair perspective, other footprints, floating stones, door, plant, handrail and blue book unchanged. Show continuous lace crossing the luminous mark, not a loose unrelated white squiggle or discolored spot. No text, watermark or grain.",
+      "usedRegions": ["shoe-lace-through-footprint"]
+    },
+    {
+      "path": "/artwork/v4/collection/dream-018-book-scarf-source-v4.png",
+      "sha256": "E6F9E74350B847DDEA7A11C735E01CA59D6E0FE22E74D6A179C422E82EB9D9A1",
+      "prompt": "Use case: precise-object-edit. Edit this exact 1672x941 Dreamerie matte painting as a localized source. Change ONLY the personified BLUE BOOK beneath the left floating stair at lower-middle: its long red scarf now loops once around the narrow stone stair immediately above its head before trailing left, continuous from the book's neck and visibly woven around the step edge. Preserve the book's limbs, gold crescent, original pose and scale, stair perspective, landscape, and every other object. An actual clever wrapping relationship, not a red color stain. No text, watermark or grain.",
+      "usedRegions": ["book-scarf-around-stair"]
+    },
+    {
+      "path": "/artwork/v4/collection/dream-018-tilted-stone-source-v4.png",
+      "sha256": "13C96800A20865405587EB522436488C17C6CC689DD009B93918277FDC748DA2",
+      "prompt": "Use case: precise-object-edit. Edit this exact 1672x941 Dreamerie matte painting as a localized source. Change ONLY the MIDDLE of the five small floating gold stepping stones near the upper center (the third stone in sequence, roughly x650-720, y75-110). In the altered version that one stone tilts about 45 degrees to reveal its glowing UNDERSIDE, while its neighbors remain level and positions unchanged. Preserve stone thickness, perspective, sunlit sky, stair architecture, door, shoe, plant, personified book and every other pixel as closely as possible. One clearly realized geometric clue, not a flat discoloration. No text, watermark or grain.",
+      "usedRegions": ["floating-stone-tilts"]
+    }
+  ],
+  "notes": "Generated five-clue composition has not yet passed full desktop/phone and paired answer-crop review; difficulty labels are provisional."
+}

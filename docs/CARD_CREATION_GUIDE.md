@@ -1,5 +1,9 @@
 # Dreamerie card creation guide
 
+## Version 4 difficulty direction — September 30, 2026
+
+The owner wants every current card reviewed for overly predictable clues, with selected sparse originals made more alive and fantastical. A card should invite noticing who acts on whom, where a thing connects or passes, what a reflection depicts, or how an established pattern's order changes. Near colors may be used thoughtfully, but neither color swaps nor missing parts should dominate. The proposed five-clue mix is one easy, one medium, one hard and two extremely hard; treat those labels as hypotheses until phone-size human playtests confirm them. Preserve the current generous guess-circle overlap; harder discovery must not mean harder tapping. Keep one coherent painted dream, meaningful negative space, five definite localized changes, and stable published card IDs. See `docs/V4_DIFFICULTY.md` for the full audit and release gate. The previous umbrella-handle concept was rejected because its geometry felt disconnected; do not reproduce that failure.
+
 ## Revisit density clarification — September 29, 2026
 
 The owner wants selected sparse/boring scenes to gain more interesting things going on: connected secondary actions, imaginative relationships, discoveries and movement. Do not interpret “busier” as a mandate for workshops, jobs, unrelated props, microscopic clutter or wall-to-wall detail. Keep one readable impossible premise and the established grain-free painterly finish. Preserve identity unless replacement is explicitly requested. Rebuild all five clues with each redesigned original; inspect the actual clipped composite and every paired answer crop. Version new IDs/assets and preserve published pairs for saved attempts. This complete 37-card refresh is authorized for commit/push/deploy after validation.

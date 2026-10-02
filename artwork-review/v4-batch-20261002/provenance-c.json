@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "batch": "001-020-c",
+  "generationMode": "built-in image_gen",
+  "publicationStatus": "nonshipping-drafts",
+  "entries": [
+    {
+      "cardId": "dream-006",
+      "originalPath": "D:\\Dreamerie\\public\\artwork\\v3\\collection-revisit-v1\\006-dynamic-original-v2.png",
+      "generated": {
+        "role": "altered-draft",
+        "path": "artwork-review/v4-batch-20261002/dream-006-initial-source-v4.png",
+        "sha256": "a8c5e31dd171a203e84a538cb14b562a8bd87bfb55ee5850d40cb4c696e5399e",
+        "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 edit target, a grain-free matte Dreamerie painting: an immense ivory shirt becomes a landscape around a red sunset sea, a toy sailboat at a buttonhole, paper fox with blue thread, striped chair cloth, feather and water pooled inside the cuff. Preserve the original framing and all unmentioned painting. Create five distinct, localized changes only: (1) The toy sailboat's bow now crosses OVER the ivory rim of its buttonhole rather than remaining inside, with a believable paper/cloth overlap. (2) The blue thread from the boat passes BEHIND the lower buttonhole rim before emerging toward the paper fox, continuous and untangled. (3) The paper fox's folded tail slips beneath the loose thread instead of over it, retaining fox anatomy. (4) The blue-and-ivory striped cloth on the chair has its middle stripe sequence reversed, not merely recolored or removed. (5) In the water caught in the shirt cuff, the small dark pebble reflects a tiny image of the boat's triangular sail, preserving the water and pebble. Each clue must remain visually legible and integrate with the scene. No other edits, duplicated parts, text, watermark or grain."
+      },
+      "assessment": "Boat, thread and cuff-pool changes are visible; chair-stripe and fox-tail crossing need closer checks. Full-frame source must be clipped. A separate chair-fold source is promising. A targeted lower-buttonhole edit was rejected as too visually subtle. Card remains nonplayable.",
+      "iterations": [
+        {
+          "role": "chair-fold-candidate",
+          "path": "artwork-review/v4-batch-20261002/dream-006-chair-fold-source-v4.png",
+          "sha256": "D1A5B79FAF0D9184573A6CBAD5CA494A1F0BD480526D440E20C0DFCB6BBAC5F5",
+          "prompt": "Use case: precise-object-edit. Edit the attached Dreamerie painting as the exact spatial target, preserving its 1672×941 wide composition and matte brushwork. Focus ONLY on the little blue-and-ivory striped cloth draped over the purple chair at lower left. In the altered dream, fold one lower corner of that cloth back on itself so its hidden underside reveals a small stitched copper-orange star; the fold must have a real continuous cloth edge, believable painted shadow and perspective. Keep chair, cloth size, stripes, fringe, paper fox, blue thread, shirt landscape, sea, hand, and every other pixel as close to the original as possible. This is one subtle but clearly realized difference, not a discoloration. No extra object, writing, circles, labels, grain, watermark, or repainted rest of scene."
+        },
+        {
+          "role": "rejected-buttonhole-thread",
+          "path": "artwork-review/v4-batch-20261002/dream-006-buttonhole-thread-rejected-v4.png",
+          "sha256": "F8EC9AE065BCB2373628E5035EC318616F25E97D103E12584407359843B2DBB5",
+          "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672×941 Dreamerie painted target: a giant ivory shirt-landscape framing a red sea, little paper sailboat by upper buttonhole, blue thread passing to a paper fox, striped cloth on a chair, and a feather-bearing golden hand. Preserve the composition, color, brushwork and ALL unmentioned details. Change ONLY the blue thread at the LOWER buttonhole midway down the left shirt placket: the thread should visibly pass UNDER the near ivory buttonhole rim and reappear on the other side, with a small convincing cloth-over-thread occlusion. Do not remove the buttonhole or alter the boat, fox, sea, chair, cuff, hand, or anything else. The geometry should be the only clue; no recolor, discolored patch, extra object, text, circle, watermark or grain. Keep the canvas exactly aligned for a localized composite."
+        }
+      ],
+      "status": "draft-not-playable"
+    },
+    {
+      "cardId": "dream-012",
+      "originalPath": "D:\\Dreamerie\\artwork-review\\v4-batch-20261002\\dream-012-enriched-original-source-v4.png",
+      "generated": {
+        "role": "altered-draft",
+        "path": "artwork-review/v4-batch-20261002/dream-012-initial-source-v4.png",
+        "sha256": "b76dc21f5e1df51cab1ca644aa45a710ada11a0f4947adcb86b01586e66760e1",
+        "prompt": "Use case: precise-object-edit. Edit the attached image as the EXACT target, a 1672×941 matte, grain-free painted Dreamerie desert scene. Keep the faceless plum tailor, orange floating scissors, sky thread, pink ironing board, iron, blue cloth river, three paper boats, striped sock on stool, sand and distant mountains in their same positions. Create the ALTERED counterpart with exactly five localized, actual changes that feel woven into this particular dream: (1) The nearest large blue paper boat at lower right has its folded bow tucked UNDER the ivory sky-thread where they cross, rather than resting over the thread; keep boat and thread continuous. (2) The orange floating scissors' pale thread loops once THROUGH the upper finger hole before trailing into the sky; keep scissors anatomy intact. (3) The small blue fabric offcut nearest the center curls around the cloth river's edge instead of floating apart from it. (4) The striped sock draped over the wooden stool twists so its blue stripes spiral around the cuff rather than running straight across; one intact sock. (5) The faint giant scissor shadow on the sand crosses over the blue cloth river in one place instead of remaining solely on the sand, with coherent direction from the airborne scissors. Make differences legible on phone-size cards without adding labels, circles, patches, discoloration, unrelated objects, duplicate props, disconnected anatomy, texture grain or watermark. Preserve the original camera, composition, brushwork, color, and all unmentioned parts as closely as possible."
+      },
+      "assessment": "Initial counterpart produced all five requested areas, but the boat-thread crossing and scissor shadow need exact semantic and clipped-composite QA; not playable yet.",
+      "status": "draft-not-playable"
+    },
+    {
+      "cardId": "dream-012",
+      "originalPath": "D:\\Dreamerie\\public\\artwork\\v3\\collection-painted-v1\\dream-012-original-v1.png",
+      "generated": {
+        "role": "enriched-original",
+        "path": "artwork-review/v4-batch-20261002/dream-012-enriched-original-source-v4.png",
+        "sha256": "02b06da29bc4c32c2d22d358b2038ee2c32072f6a644750908858905f7ec7beb",
+        "prompt": "Use case: precise-object-edit. Image 1 is the edit target for an enriched ORIGINAL Dreamerie painting, not an altered spot-the-difference counterpart. The scene shows a faceless deep-plum velvet tailor ironing a long blue cloth river across a pink ironing board in a pale desert, with floating orange scissors and a stool with striped socks. Preserve the figure, pose, scissors, iron, board, river of cloth, stool and distant mountains; preserve 1672x941 framing, warm sky, matte visible brushwork and grain-free finish. Enrich the sparse center/right in a scene-connected, fantastical way: a few small cloth offcuts lift from the blue river as folded paper boats and sail gently along it; one long pale thread from the floating scissors curves through the sky toward the cloth river; a faint giant scissor shadow falls across the sand where it makes sense. Keep generous desert negative space and avoid unrelated props or a workshop. This is ONE consistent original scene for a future five-clue puzzle; do not create a second image or any difference markers, text or watermark."
+      },
+      "assessment": "Enriched-original candidate only. Paper boats, thread and scissor shadow appear coherent, but the original and a five-clue counterpart require separate review.",
+      "status": "draft-not-playable"
+    },
+    {
+      "cardId": "dream-014",
+      "originalPath": "D:\\Dreamerie\\public\\artwork\\v3\\collection-painted-v1\\dream-014-original-v1.png",
+      "generated": {
+        "role": "altered-draft",
+        "path": "artwork-review/v4-batch-20261002/dream-014-initial-source-v4.png",
+        "sha256": "9c242c2a6d4f39a1608c3895f4e8247e0c87fe7d9b1b3e881d76de9a37ab4dc6",
+        "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 edit target, a matte painted older fictional woman selling cracked stone balloons in a pink plaza with a tree, chair, arches and folded paper bird. Preserve her dignified stylized identity, pose and clothes, the original composition, palette and brushwork. Make only five coherent localized differences: (1) The largest stone balloon's existing crack parts slightly to show a sliver of warm sunset light THROUGH the stone, maintaining its balloon silhouette. (2) One balloon string passes behind the woman's blue right coat sleeve before joining her fist, a continuous string. (3) The tree's long pavement shadow includes one small stone-balloon silhouette tied to a twig, while the real tree remains unchanged. (4) The paper bird on the ground has one folded wing tucked under its body instead of pointing outward, retaining one bird. (5) On the empty yellow chair, the near back slat passes behind the top rail rather than in front, a believable join. No unrelated edits, misplaced hands, text, grain or watermark."
+      },
+      "assessment": "Stone-balloon crack/light and tree-shadow balloon read clearly. String, paper bird and chair slat need targeted source checks or refinements.",
+      "status": "draft-not-playable"
+    },
+    {
+      "cardId": "dream-015",
+      "originalPath": "D:\\Dreamerie\\public\\artwork\\v3\\collection-painted-v1\\dream-015-original-v1.png",
+      "generated": {
+        "role": "altered-draft",
+        "path": "artwork-review/v4-batch-20261002/dream-015-initial-source-v4.png",
+        "sha256": "fb156774f039e1a5526763e34c2b28e8cb419ec48b6cb3524b2ebf0ed44b6228",
+        "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 edit target, a grain-free painterly rooftop where a badger hangs moon-shaped laundry above a copper basin of night sky with basket, lantern and watering can. Preserve composition and all unmentioned details. Make ONLY five theme-fitting localized changes: (1) The badger's raised paw grips its wooden clothespin from behind rather than in front, with natural fingers and one pin. (2) The large central full-moon laundry disc is draped over the clothesline, so its upper edge is hidden behind the line instead of hanging entirely below it; maintain the same moon and pin. (3) The copper basin's reflection shows the middle hanging moon as a crescent rather than a full moon while water remains calm. (4) The white embroidered towel in the basket loops over the woven rim once rather than simply lying across it, with continuous cloth. (5) The rightmost blue watering can's gold handle threads behind its spout instead of crossing the front, preserving one handle and spout. No extra moons, global repaint, colored smudges, text or watermark."
+      },
+      "assessment": "Basin crescent reflection and basket towel changed, but the central hanging moon shifted in size substantially; paw/pin and watering-can clues need checking and likely refinement.",
+      "status": "draft-not-playable"
+    },
+    {
+      "cardId": "dream-016",
+      "originalPath": "D:\\Dreamerie\\public\\artwork\\v3\\collection-painted-v1\\dream-016-original-v1.png",
+      "generated": {
+        "role": "altered-draft",
+        "path": "artwork-review/v4-batch-20261002/dream-016-initial-source-v4.png",
+        "sha256": "a5121b5c25fd0a99e10c3858d1d369279714183e6d6107601bec09b786913393",
+        "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 edit target, a painted lavender teapot volcano among floating islands, pink cloud steam, a blue cherry, three blue goats on sugar-cube steps, and a wooden spoon. Preserve scenery, vivid palette and clean matte brushwork. Make only five specific localized differences: (1) The pink steam curling from the teapot's lid spirals around the blue cherry's stem before drifting away, without moving the cherry. (2) The teapot spout's small pink puff slips behind the spout rim rather than in front, continuous cloud. (3) The middle goat's front hoof rests on the sugar cube one step ABOVE its original cube, with one plausible leg and no duplicated hoof. (4) The near wooden spoon's heart-shaped cutout reverses direction within the spoon bowl, keeping one smooth heart opening and natural wood. (5) The teapot's ivory diamond motif overlaps the adjacent leaf-scroll motif instead of stopping before it, clean painted ornament layering. No other edits, broken anatomy, additional objects, text or watermark."
+      },
+      "assessment": "Cherry spiral and spout puff are clear; goat hoof, spoon cutout and teapot motif need localized checking or refinement.",
+      "status": "draft-not-playable"
+    },
+    {
+      "cardId": "dream-017",
+      "originalPath": "D:\\Dreamerie\\public\\artwork\\v3\\collection-painted-v1\\dream-017-original-v1.png",
+      "generated": {
+        "role": "altered-draft",
+        "path": "artwork-review/v4-batch-20261002/dream-017-initial-source-v4.png",
+        "sha256": "f28f75888bd22b334427d76648b9e1432f76b763afd8c81195901261156fbbe7",
+        "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 edit target, a deer whose antlers carry miniature autumn trees inside a flooded room, with open window to spring blossoms, frog on rock, red antler ribbon and floating orange leaves. Preserve original deer anatomy, room, water, palette and matte painted finish. Make only five localized differences: (1) The red ribbon winds once AROUND the near white antler branch instead of hanging entirely in front; continuous ribbon. (2) One flowering spring twig through the open window now crosses in front of the purple window sash rather than behind it, with a natural join. (3) In the shallow water beside the frog's rock, the frog's reflection briefly wears a tiny silhouette of the deer's branched antlers while the real frog is unchanged. (4) The little crescent in the left wall picture is reflected upside down in the glass of its own oval frame, keeping the original crescent. (5) A floating orange leaf at lower center folds its stem under its own curled edge, making a miniature boat shape without changing location or count. No extra trees, duplicate limbs, unrelated edits, text or watermark."
+      },
+      "assessment": "Ribbon, window blossom, frog reflection, picture crescent and leaf boat are visible in the generated source. Needs exact clipping and desktop/phone answer-crop QA before preview.",
+      "status": "draft-not-playable"
+    },
+    {
+      "cardId": "dream-018",
+      "originalPath": "D:\\Dreamerie\\public\\artwork\\v3\\collection-revisit-v1\\018-dynamic-original-v2.png",
+      "generated": {
+        "role": "altered-draft",
+        "path": "artwork-review/v4-batch-20261002/dream-018-initial-source-v4.png",
+        "sha256": "96249f2890044564f92917790f5549770fc229b5515c5c8814ea07981f079fd1",
+        "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 matte painting of impossible white stairs in a coral sky, a teal door on the landing, brass rail threaded through a keyhole, rooted hanging plant, red shoe, glowing footprints and personified blue book. Preserve exact perspective, architecture, palette, brushwork and all unmentioned content. Make only five localized differences: (1) The brass handrail enters the teal door's keyhole from the other side and emerges toward the viewer, with one smooth unbroken rail and no broken door. (2) The plant's thickest root now loops around the nearest white step before descending, one continuous root. (3) The red shoe's loose white lace crosses over one glowing footprint on the upper stair, visibly continuous. (4) The blue book's trailing red scarf passes under the stair above it instead of over the front edge, preserving book arms and scarf. (5) The middle floating gold stepping stone has its visible bright face on its underside rather than its upper surface, keeping its location and scale. No additional changes, detached pieces, text or watermark."
+      },
+      "assessment": "Handrail, roots, shoe lace, book scarf and floating-step lighting appear changed, but the rail altered broadly; verify composited joins and clue independence.",
+      "status": "draft-not-playable"
+    },
+    {
+      "cardId": "dream-019",
+      "originalPath": "D:\\Dreamerie\\public\\artwork\\v3\\collection-revisit-v1\\019-dynamic-original-v2.png",
+      "generated": {
+        "role": "altered-draft",
+        "path": "artwork-review/v4-batch-20261002/dream-019-initial-source-v4.png",
+        "sha256": "4884763e1d25cddad5cb1e7aededf2e13f22b24d90fe2656bb1d14617dee6d54",
+        "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 painting of a delighted child flying a copper kettle kite over a patchwork quilt landscape, a fox carrying a thread spool, picnic objects and a cloth-covered cottage door. Preserve all people/animal anatomy, kite flight, framing, palette and grain-free brushwork. Make only five distinct localized changes: (1) The long red ribbon on the kettle kite loops through its black handle once before streaming away, continuous fabric. (2) The fox's spool thread curls behind its near foreleg and reappears toward the kettle's kite string, while fox and spool remain intact. (3) The checkered napkin floating at upper right is now caught by one corner on a cloud curl, clean cloth/cloud overlap. (4) The stitched green quilt roof over the tiny glowing doorway folds back at its edge to reveal one hidden lavender square, keeping the doorway in place. (5) The small picnic pinwheel's red and yellow blades reverse their alternating order without changing blade count or location. No unrelated objects, disconnected joins, text or watermark."
+      },
+      "assessment": "Kettle ribbon, fox thread, napkin and quilt roof appear changed. Pinwheel ordering and thread continuity need a close inspection.",
+      "status": "draft-not-playable"
+    },
+    {
+      "cardId": "dream-020",
+      "originalPath": "D:\\Dreamerie\\public\\artwork\\v3\\collection-painted-v1\\dream-020-original-v1.png",
+      "generated": {
+        "role": "altered-draft",
+        "path": "artwork-review/v4-batch-20261002/dream-020-initial-source-v4.png",
+        "sha256": "102f9c0fa1cc46644eba3d960ffe2c3240d904ae8d051793a775b477859d7eee",
+        "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 matte Dreamerie painting of a winged white elephant wandering a glass-domed butterfly museum, brass cabinets, pearl cushion, arched star window and pale winged statue. Preserve painting, framing, elephant anatomy, lighting and all unmentioned objects. Make only five localized scene-fitting differences: (1) The elephant's nearest pale wing folds forward across the base of its trunk instead of remaining behind its shoulder, one anatomically continuous wing. (2) In the largest left glass dome, the blue eye-pattern butterfly wing's reflection appears on the opposite inner glass surface, while the real wing stays fixed. (3) The three pearls on the burgundy cushion exchange size order, largest now on the right, retaining three pearls. (4) The little gold crescent ornament on the left cabinet's lower panel threads behind the adjacent brass floral stem rather than in front, crisp relief detail. (5) The pale statue's near wing folds down to partly cover its raised arm, preserving one statue, pose and pedestal. No extra butterflies, detached body parts, global repaint, text, grain or watermark."
+      },
+      "assessment": "Pearls, dome reflection and statue changed. Elephant wing anatomy and fifth ornament clue need refinement before any preview.",
+      "status": "draft-not-playable"
+    }
+  ]
+}

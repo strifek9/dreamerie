@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "batch": "2026-10-02-b",
+  "generationMode": "built-in image_gen",
+  "publicationStatus": "nonshipping-drafts",
+  "entries": [
+    {
+      "cardId": "dream-008",
+      "originalPath": "D:\\Dreamerie\\public\\artwork\\v3\\collection-painted-v1\\dream-008-original-v1.png",
+      "initial": {
+        "path": "artwork-review/v4-batch-20261002/dream-008-initial-source-v4.png",
+        "sha256": "61f6a23c395e22c81d3c0f05ac13614d85ac957f55f48aba34f74d7b8538b386",
+        "prompt": "Use case: precise-object-edit. Image 1 is the edit target, a 1672x941 painted giant red mitten opening onto a miniature snowy pine forest, a black rabbit with yellow scarf, a blue tipped cup pouring snowflakes, a hanging red star and an acorn on a stump. Preserve composition, positions, colors, lighting and matte brushwork. Only five local differences: (1) The rabbit's yellow scarf wraps once around the mitten's near thumb edge, with a continuous woven scarf and no extra fabric. (2) At the mitten opening, one snow-covered pine leans outward and overlaps the red knit cuff instead of remaining behind it. (3) The hanging red star's string loops around its branch twice before descending to the star, without moving the star. (4) The blue cup's stream of snowflakes curls through its gold handle before falling, not simply toward the ground. (5) The acorn's cap has a tiny rooted evergreen sprout emerging from the center, painted like the miniature forest. Make all five real and visually distinct; no unrelated edits, pasted edges, global repaint, text or watermark."
+      },
+      "assessment": "All five requested motifs appear in the full generated source, with the scarf and pine edits most prominent. Needs five clipped composites, phone-size review, individual answer-crop and hit-region QA.",
+      "status": "draft-not-playable"
+    },
+    {
+      "cardId": "dream-009",
+      "originalPath": "D:\\Dreamerie\\public\\artwork\\v3\\collection-painted-v1\\dream-009-original-v1.png",
+      "initial": {
+        "path": "artwork-review/v4-batch-20261002/dream-009-initial-source-v4.png",
+        "sha256": "69b0233cd55196f3437f1b6ffe2dc128248a28f1afe59875b165bcb67c8d4800",
+        "prompt": "Use case: precise-object-edit. Image 1 is the edit target, a 1672x941 painterly orchestra of teal, yellow and pink smiling umbrellas playing violin, drum and trumpet beside a piano-key bridge. Preserve exact layout, characters, coherent instrument anatomy, palette and grain-free painted style. Only five local differences: (1) The teal violinist's bow runs behind its violin strings instead of across their front, remaining in its hand. (2) The yellow drummer's left stick passes beneath the yellow canopy rim before reaching the drum, as one continuous stick. (3) The pink trumpeter's tassel threads through the trumpet's flared bell and hangs from its inner lip, continuous cord. (4) Three adjacent black keys in the near half of the piano bridge reverse their long-short-long rhythm to short-long-short while remaining black piano keys. (5) The purple violin's small scroll has its curl wound the opposite direction, preserving neck and tuning pegs. No other changes, no detached parts, text or watermark."
+      },
+      "assessment": "Tassel and piano-key rhythm are clear; bow, stick and scroll changes need targeted verification or refinement. Not playable.",
+      "status": "draft-not-playable"
+    },
+    {
+      "cardId": "dream-010",
+      "originalPath": "D:\\Dreamerie\\public\\artwork\\v3\\collection-painted-v1\\dream-010-original-v1.png",
+      "initial": {
+        "path": "artwork-review/v4-batch-20261002/dream-010-initial-source-v4.png",
+        "sha256": "abda3a3a576b94bf19be100a026b2895aad9d779de3be26c73a969f1bdeae7ce",
+        "prompt": "Use case: precise-object-edit. Image 1 is the edit target, a 1672x941 painted indoor garden with ornate oval mirror, paper bird in its reflection, moth, purple watering can, framed crescent, candle and key on teal cushion. Preserve geometry, colors, all unmentioned details and matte brushwork. Make only five changes: (1) One paper-bird wing folds across and over the mirror's near brass rim while the rest of the bird remains reflected inside; paper geometry continuous. (2) The moth's lower left wing tucks behind the mirror frame instead of resting entirely in front, preserving one moth. (3) The watering can's spout touches the mirror surface and its reflected tip appears just inside the mirror at the same angle, without moving the can. (4) The silver key's toothed end slips under one raised fold of the teal cushion instead of lying fully on top, with plausible occlusion. (5) The framed gold crescent's lower tip passes in front of its little gold star instead of behind it, clean layered ornament. No extra elements, disconnected edges, global repaint, text or watermark."
+      },
+      "assessment": "Paper wing, watering can and cushion/key changes are apparent; moth and framed ornament layering need tighter verification; full source has a duplicated watering-can spout within the mirror and may need a tighter source. Not playable.",
+      "status": "draft-not-playable"
+    },
+    {
+      "cardId": "dream-011",
+      "originalPath": "D:\\Dreamerie\\public\\artwork\\v3\\collection-painted-v1\\dream-011-original-v1.png",
+      "initial": {
+        "path": "artwork-review/v4-batch-20261002/dream-011-initial-source-v4.png",
+        "sha256": "f7bbfc597a928b8dc419481012eefd13a4361446b5235d1f488a2cb05b5faabb",
+        "prompt": "Use case: precise-object-edit. Image 1 is the edit target, a 1672x941 magical painted library inside a giant shell beneath the sea: otter on ladder, books and bottled waves, open book, pearls and gold fish outside. Preserve framing, ocean, palette, matte brushwork and all unmentioned details. Only five coherent local changes: (1) A curling wave from the central bottle spills over its glass lip onto the edge of the adjacent book, one continuous miniature wave, no broken glass. (2) The otter's lower tail loops behind a ladder rung rather than in front, retaining one tail and sensible body. (3) One page of the open book folds over the quill's base, with the paper hiding the lowest feather edge rather than sitting behind it. (4) The three pearls along the near shell shelf exchange their size order: largest at right, smallest at left, same three positions. (5) One tiny golden fish at the upper-right blue water swims through the shell's outer curling lip, partly occluded by the shell edge, one fish. No other edits, recolor patches, text or watermark."
+      },
+      "assessment": "Pearl size order and upper fish are apparent; bottled wave placement and the otter/page occlusions need revision. Not playable.",
+      "status": "draft-not-playable"
+    },
+    {
+      "cardId": "dream-013",
+      "originalPath": "D:\\Dreamerie\\public\\artwork\\v3\\collection-painted-v1\\dream-013-original-v1.png",
+      "initial": {
+        "path": "artwork-review/v4-batch-20261002/dream-013-initial-source-v4.png",
+        "sha256": "ff55b0151fe0a6e7abea757fe8b5bf5fc3ace5039c8998319d746605a0b4ecaa",
+        "prompt": "Use case: precise-object-edit. Image 1 is the edit target, a 1672x941 painted strawberry lighthouse on a river island, a mouse sailor in a green leaf boat with a white sail, strawberry-shaped clouds and wooden pier. Preserve exact framing, cheerful palette, grain-free painterly brushwork and unmentioned details. Make only five local differences: (1) The mouse's white sail wraps partway around its wooden mast instead of billowing wholly away, continuous cloth. (2) The lighthouse's warm light beam passes behind one strawberry-shaped cloud, creating a clear occlusion rather than continuing straight over it. (3) The tiny gold door handle is on the other side of the green door while the door still fits its arch. (4) On the wooden pier, the near plank with a heart-cut post slips beneath the next plank rather than on top, a believable join. (5) The blue buttons on the mouse's yellow coat reverse their top-to-bottom order of size, retaining the same two buttons. No other edits, no disconnected objects, text or watermark."
+      },
+      "assessment": "Wrapped sail and lighthouse-beam/cloud edit are clear; door, pier and coat changes are too uncertain. Not playable.",
+      "status": "draft-not-playable"
+    }
+  ]
+}

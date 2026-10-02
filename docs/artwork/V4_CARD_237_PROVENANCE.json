@@ -1,0 +1,34 @@
+{
+  "status": "unreleased editorial proof; not production-approved",
+  "cardId": "v4-dream-237",
+  "useCase": "precise-object-edit",
+  "tool": "built-in image_gen",
+  "input": "/artwork/v3/collection-year-v1/dream-237-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-237-original-v4.png",
+    "sha256": "6CEB7DBAD1449D028CB859190A18FF618A626EA1587A3D32373AC157A5786280",
+    "prompt": "Use case: precise-object-edit. Input image 1 is Dreamerie's wide original painting The Bell Without a Sound. Enrich this unusually sparse still life while keeping its quiet uncanny identity and high-resolution clean painterly finish. Preserve the same fallen brass bell, dark plum velvet ribbon flowing from it, old books at left, blank folded card and painted bowl at right, tabletop and deep blue background. Have the velvet ribbon naturally unfurl into a few folded paper notes near its lower hanging end, as if the silent bell is trying to make visible music. Two of the paper notes perch on the rim of the existing bowl and one rests at the edge of the empty folded card, all small but legible and physically integrated; a restrained brass glint echoes the bell. Do not crowd the tabletop or add disconnected props. Preserve the original composition and solemn palette, visible broad brushwork, matte pigment, no grain, canvas noise, photorealism, shiny plastic, text, arrows, circles, comparison layout or watermark. Output one cohesive enriched original painting for future puzzle production."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-237-altered-source-v4.png",
+    "sha256": "7293D4DDB329CD04E9DBF62431C68894DDFA7C7DEA724920A8DD38AC78804987",
+    "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 high-resolution matte-painted Dreamerie scene The Bell Without a Sound: a fallen brass bell on a dark shelf, burgundy velvet ribbon spilling out, three cream folded paper music notes, a cream tent card, a blue painted bowl, old book spines. Create the ALTERED spot-the-difference counterpart with exactly FIVE localized coherent changes; keep every object in place otherwise. (1 EASY, bell center-left) The little round golden clapper inside the mouth of the fallen bell now hangs BELOW the rim by a short brass stem rather than being tucked just inside the velvet; preserve bell shape and ribbon path. (2 MEDIUM, cream folded card upper right-middle) The small paper note that perches on the tent card now slips through its top fold and peeks out from the INSIDE of the folded card; keep card in exactly the same location. (3 HARD, blue bowl upper right) The little paper note on the bowl's rim now hooks over the rim with its round head INSIDE the bowl while the stem stays outside; preserve bowl pattern and rim. (4 VERY HARD, burgundy ribbon center-right) At the ribbon's single lower loop just below the tabletop edge, the loose velvet strip threads UNDER the loop rather than crossing OVER it, with consistent lighting and an unbroken woven-looking path. (5 EXTREMELY HARD, tall blue book spine far left) The small embossed brass botanical motif reverses its inner leaf order left-to-right while retaining its outer silhouette, scale and book texture. Make each alteration real geometry or ordering, not discoloration. Maintain same moody palette, matte visible brushwork, no grain, no text, no new props, no extra notes, no wholesale redraw or loose parts.",
+    "usedRegions": [
+      "bell-clapper",
+      "card-note",
+      "bowl-note",
+      "ribbon-loop"
+    ]
+  },
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-237-book-source-v4.png",
+      "sha256": "8417D7C6E328FAD8B7890A1B3900CA4538F390548970D146BD657C9E566F1491",
+      "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 Dreamerie painting The Bell Without a Sound. Make ONE real, localized, zoom-worthy change on the tall dark-blue book spine at the far left, in its central antique-gold embossed botanical emblem around image x125-240, y75-245. Keep the emblem's large four-petal outline and gold ink, but change its INNER vine: the thin central stem now winds clockwise from the lower leaf into the upper petal where it used to wind counterclockwise. Make the reversed curl and leaf order legible at native resolution as proper gold embossing, not texture noise or a color blotch. Keep the book borders, titleless spine, adjacent maroon book, shelf, fallen bell, notes, ribbon, card, bowl and all other elements unchanged. Matte painted style, no extra text, no grain or unrelated edits.",
+      "usedRegions": [
+        "book-emblem"
+      ]
+    }
+  ],
+  "notes": "The all-five trial's book motif was not a distinct enough change; the selected localized edit opens the flower into a sunburst."
+}

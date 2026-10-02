@@ -1,0 +1,46 @@
+{
+  "status": "unreleased editorial proof; not production-approved",
+  "cardId": "v4-dream-013",
+  "useCase": "precise-object-edit",
+  "tool": "built-in image_gen",
+  "input": "/artwork/v3/collection-painted-v1/dream-013-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-013-original-v4.png",
+    "sha256": "F72754FAE4D2A513621E9ABF8B4186D5534FECC0273BED10375F9C2FB7310189",
+    "prompt": "Bit-identical copy of the published Version 3 original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-013-altered-source-v4.png",
+    "sha256": "FF55B0151FE0A6E7ABEA757FE8B5BF5FC3ACE5039C8998319D746605A0B4ECAA",
+    "prompt": "Use case: precise-object-edit. Image 1 is the edit target, a 1672x941 painted strawberry lighthouse on a river island, a mouse sailor in a green leaf boat with a white sail, strawberry-shaped clouds and wooden pier. Preserve exact framing, cheerful palette, grain-free painterly brushwork and unmentioned details. Make only five local differences: (1) The mouse's white sail wraps partway around its wooden mast instead of billowing wholly away, continuous cloth. (2) The lighthouse's warm light beam passes behind one strawberry-shaped cloud, creating a clear occlusion rather than continuing straight over it. (3) The tiny gold door handle is on the other side of the green door while the door still fits its arch. (4) On the wooden pier, the near plank with a heart-cut post slips beneath the next plank rather than on top, a believable join. (5) The blue buttons on the mouse's yellow coat reverse their top-to-bottom order of size, retaining the same two buttons. No other edits, no disconnected objects, text or watermark.",
+    "usedRegions": ["sail-around-mast", "cloud-crosses-beam"],
+    "rejectedRegions": ["door-handle-side", "pier-plank-order", "coat-button-size-order"]
+  },
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-013-leaf-bow-source-v4.png",
+      "sha256": "59E3CDBE16D975D606C20B89C3D401B5F240EFD3985DDE4F2CF152A352472FFB",
+      "prompt": "Use case: precise-object-edit. Edit Image 1, the exact 1672x941 Dreamerie strawberry lighthouse painting. Change ONLY the green LEAF BOAT beneath the mouse sailor: one existing prominent leaf vein at the pointed BOW curls up and OVER the outer green leaf rim before returning to the inside, like a living vine, while the boat remains the same one intact leaf and the mouse and white sail retain their same position. The vein must be connected, natural to the leaf and legible when enlarged, not a separate line or extra plant. Keep river, pier, tower and all else identical. No text or watermark.",
+      "usedRegions": ["leaf-bow-curl"]
+    },
+    {
+      "path": "/artwork/v4/collection/dream-013-window-source-v4.png",
+      "sha256": "8A1D8212A1E54F331318B4BA228440E8606BDC12AB478BE9B95928423B55BDFC",
+      "prompt": "Use case: precise-object-edit. Edit Image 1, the exact 1672x941 Dreamerie strawberry lighthouse painting. Change ONLY the small ROUND window in the strawberry lighthouse tower: the EXISTING two dark crossbars form an X diagonal instead of a +, still attached to the same round gold window frame and behind the glass, same warm lit panes. Keep the door, tower seeds, leaves, lantern, beam, clouds, river, mouse and pier unaltered. The bars should be clean believable window joinery, not painted marks. Preserve the matte vivid painterly style and all framing. No text or watermark.",
+      "usedRegions": ["window-diagonal-bars"]
+    },
+    {
+      "path": "/artwork/v4/collection/dream-013-heart-grain-source-v4.png",
+      "sha256": "B9C680167FEA19FE17609FB13DE3DE78FCB6F9EC3897A9B51E85D4D20FD9A42B",
+      "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 Dreamerie painted strawberry lighthouse and wooden pier. Edit ONLY the LARGE NEAR wooden pier post on the right edge that has an existing heart-shaped carved inlay. Keep the heart exactly in its original place and the same size, but make its INSIDE wood grain run HORIZONTALLY like a sideways wooden plank rather than vertically with the post. The carved outline stays dark and crisp, the heart remains fully wooden and inset flush, and all surrounding post wood grain remains vertical. This is a believable carpenter's inlaid heart made from cross-grain wood, not an opening, extra object, fish, paint patch or colored mark. Preserve pier perspective and all else exactly, matte painterly style, no text or watermark.",
+      "usedRegions": ["heart-cross-grain-inlay"]
+    }
+  ],
+  "rejectedSource": {
+    "path": "artwork-review/v4-batch-20261002/dream-013-rejected-heart-fish-source-v4.png",
+    "sha256": "F7690B472D4008F7EDF72731288BB92DA1965DF1A4A70B46121E2F25F89CAB42",
+    "prompt": "Use case: precise-object-edit. Edit Image 1, the exact 1672x941 Dreamerie strawberry lighthouse painting. Change ONLY the tall near wooden pier POST with the carved heart on the RIGHT edge of the picture: through the existing heart-shaped cutout, show a tiny blue river fish passing BEHIND the opening, its continuous body partly occluded by the carved wooden rim. Preserve the post's heart opening and wood grain, pier perspective and all other objects. This is one believable layered change in a magical river scene, not a pasted fish icon on the wood. No global repaint, extra fish outside the opening, text or watermark.",
+    "reason": "The original heart is an inlay, not a hole; the generated fish appeared pasted on the wood instead of behind it."
+  },
+  "notes": "Two earlier single-target coat-button and pier-plank trials left their intended changes too subtle or absent and were rejected. A fish-through-heart trial failed the physical plausibility check and was replaced with cross-grain wood in the heart inlay. The replacement grows the heart slightly, so its label describes the whole inlay change rather than grain alone. Only five separated source clips appear in The Memory. Desktop and phone-size full pairs and all five paired answer crops were visually inspected, including the final replacement. Touch/zoom playtesting and difficulty calibration remain pending."
+}

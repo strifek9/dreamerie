@@ -1,0 +1,26 @@
+{
+  "status": "unreleased editorial proof; not production-approved",
+  "cardId": "v4-dream-019",
+  "useCase": "precise-object-edit",
+  "tool": "built-in image_gen",
+  "input": "/artwork/v3/collection-revisit-v1/019-dynamic-original-v2.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-019-original-v4.png",
+    "sha256": "F9E8089C12AD26BE5E7B6EC2A6F9B3DF3BF8E9370EE9B475F95F5F8A1B2F417E",
+    "prompt": "Bit-identical copy of the published Version 3 original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-019-altered-source-v4.png",
+    "sha256": "4884763E1D25CDDAD5CB1E7AEDEDF2E13F22B24D90FE2656BB1D14617DEE6D54",
+    "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 painting of a delighted child flying a copper kettle kite over a patchwork quilt landscape, a fox carrying a thread spool, picnic objects and a cloth-covered cottage door. Preserve all people/animal anatomy, kite flight, framing, palette and grain-free brushwork. Make only five distinct localized changes: (1) The long red ribbon on the kettle kite loops through its black handle once before streaming away, continuous fabric. (2) The fox's spool thread curls behind its near foreleg and reappears toward the kettle's kite string, while fox and spool remain intact. (3) The checkered napkin floating at upper right is now caught by one corner on a cloud curl, clean cloth/cloud overlap. (4) The stitched green quilt roof over the tiny glowing doorway folds back at its edge to reveal one hidden lavender square, keeping the doorway in place. (5) The small picnic pinwheel's red and yellow blades reverse their alternating order without changing blade count or location. No unrelated objects, disconnected joins, text or watermark.",
+    "usedRegions": [
+      "ribbon-through-handle",
+      "fox-thread-loop",
+      "napkin-cloud",
+      "quilt-roof-fold",
+      "pinwheel-order"
+    ]
+  },
+  "refinedSources": [],
+  "notes": "Five candidate regions are isolated from the broad source. All five answer crops and desktop/phone-size paired composites were visually checked on 2026-10-02: the thread loops beneath the foreleg, the stitched roof reveals a lavender fold without displacing the doorway, and the pinwheel changes the colored blade order. Human touch-target and difficulty review remains; not production-approved."
+}

@@ -1,0 +1,40 @@
+{
+  "status": "unreleased editorial proof; not production-approved",
+  "cardId": "v4-dream-014",
+  "useCase": "precise-object-edit",
+  "tool": "built-in image_gen",
+  "input": "/artwork/v3/collection-painted-v1/dream-014-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-014-original-v4.png",
+    "sha256": "87E4D7A1FC4B4E6399B4D8B1D1418657486A883FF2CBB1F907ECD17C2411EADA",
+    "prompt": "Bit-identical copy of the published Version 3 original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-014-altered-source-v4.png",
+    "sha256": "9C242C2A6D4F39A1608C3895F4E8247E0C87FE7D9B1B3E881D76DE9A37AB4DC6",
+    "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 edit target, a matte painted older fictional woman selling cracked stone balloons in a pink plaza with a tree, chair, arches and folded paper bird. Preserve her dignified stylized identity, pose and clothes, the original composition, palette and brushwork. Make only five coherent localized differences: (1) The largest stone balloon's existing crack parts slightly to show a sliver of warm sunset light THROUGH the stone, maintaining its balloon silhouette. (2) One balloon string passes behind the woman's blue right coat sleeve before joining her fist, a continuous string. (3) The tree's long pavement shadow includes one small stone-balloon silhouette tied to a twig, while the real tree remains unchanged. (4) The paper bird on the ground has one folded wing tucked under its body instead of pointing outward, retaining one bird. (5) On the empty yellow chair, the near back slat passes behind the top rail rather than in front, a believable join. No unrelated edits, misplaced hands, text, grain or watermark.",
+    "usedRegions": ["light-through-stone-crack", "balloon-in-tree-shadow"],
+    "rejectedRegions": ["string-behind-sleeve", "paper-bird-fold", "chair-slat-join"]
+  },
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-014-bird-source-v4.png",
+      "sha256": "947789D7EA02AEBCEC6AABCDD9AC768D94991E72EC86A96A7168A34AA0BC798A",
+      "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 matte Dreamerie painting of a white-haired fictional woman holding cracked stone balloons in a pink plaza. Change ONLY the folded PAPER BIRD on the plaza floor near bottom-right: its existing BLUE right wing folds UNDER the white central body instead of jutting upward behind it, so only a smaller blue triangular tip peeks from beneath the bird. Keep one whole origami bird grounded in the exact same spot; preserve its other white folds, cast shadow, chair, balloons, woman, tree and all else. Show plausible crisp paper folds and no disconnected fragments, text or watermark.",
+      "usedRegions": ["bird-wing-under-fold"]
+    },
+    {
+      "path": "/artwork/v4/collection/dream-014-chair-source-v4.png",
+      "sha256": "C607734FFF3FC7E81FE8386FC078EE5A6623C6DB2058CF5D7D6CA4F6ED55E2D3",
+      "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 matte Dreamerie painting of a white-haired fictional woman with stone balloons and an empty yellow chair at right. Change ONLY the empty YELLOW CHAIR: the NEAR left vertical back slat now threads behind the top horizontal rail and re-emerges below it, an impossible but fully connected woven wooden join; do not add or remove any slat, shift the chair, change wood color or break its legs. Make this one small legible layered detail. Preserve the woman's pose, balloons, tree, shadow, paper bird and all else exactly. No text or watermark.",
+      "usedRegions": ["chair-slat-weaves-rail"]
+    },
+    {
+      "path": "/artwork/v4/collection/dream-014-cuff-source-v4.png",
+      "sha256": "68A19BD883D6BF9901470C1D82761DF93C885486EE56627C93C82D888E0B132A",
+      "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 matte Dreamerie painting of a white-haired fictional woman holding stone balloons in a pink plaza. Change ONLY the balloon strings directly at the woman's RAISED right hand: one existing thin string makes a SINGLE visible loop around her blue COAT CUFF before joining her fingers; it remains continuous from its balloon to her grasp, naturally passes in front of and then behind the cuff. Keep all other strings, fingers, sleeve, woman, balloons, plaza and background unchanged. Do not duplicate hands or strings. No text or watermark.",
+      "usedRegions": ["string-around-cuff"]
+    }
+  ],
+  "notes": "The initial paper bird, chair and sleeve changes were not distinct enough for isolated hit regions. Separate clasp-reflection trial read as a pink recolor, not a meaningful reflection, and was rejected. The source tree-shadow clue rendered two balloon-like silhouettes, and the chair slat visibly climbs over the rail rather than behind it; labels follow the selected art rather than intended prompt. Desktop and phone-size full pairs and all five answer crops were visually inspected with no obvious broken joins. Touch/zoom playtesting and difficulty calibration remain pending."
+}

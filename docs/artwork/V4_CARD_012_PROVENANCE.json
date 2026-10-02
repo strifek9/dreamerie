@@ -1,0 +1,34 @@
+{
+  "status": "unreleased editorial proof; not production-approved",
+  "cardId": "v4-dream-012",
+  "useCase": "precise-object-edit",
+  "tool": "built-in image_gen",
+  "input": "/artwork/v3/collection-painted-v1/dream-012-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-012-original-v4.png",
+    "sha256": "02B06DA29BC4C32C2D22D358B2038EE2C32072F6A644750908858905F7EC7BEB",
+    "prompt": "Use case: precise-object-edit. Image 1 is the edit target for an enriched ORIGINAL Dreamerie painting, not an altered spot-the-difference counterpart. The scene shows a faceless deep-plum velvet tailor ironing a long blue cloth river across a pink ironing board in a pale desert, with floating orange scissors and a stool with striped socks. Preserve the figure, pose, scissors, iron, board, river of cloth, stool and distant mountains; preserve 1672x941 framing, warm sky, matte visible brushwork and grain-free finish. Enrich the sparse center/right in a scene-connected, fantastical way: a few small cloth offcuts lift from the blue river as folded paper boats and sail gently along it; one long pale thread from the floating scissors curves through the sky toward the cloth river; a faint giant scissor shadow falls across the sand where it makes sense. Keep generous desert negative space and avoid unrelated props or a workshop. This is ONE consistent original scene for a future five-clue puzzle; do not create a second image or any difference markers, text or watermark."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-012-altered-source-v4.png",
+    "sha256": "B76DC21F5E1DF51CAB1CA644AA45A710ADA11A0F4947ADCB86B01586E66760E1",
+    "prompt": "Use case: precise-object-edit. Edit the attached image as the EXACT target, a 1672×941 matte, grain-free painted Dreamerie desert scene. Keep the faceless plum tailor, orange floating scissors, sky thread, pink ironing board, iron, blue cloth river, three paper boats, striped sock on stool, sand and distant mountains in their same positions. Create the ALTERED counterpart with exactly five localized, actual changes that feel woven into this particular dream: (1) The nearest large blue paper boat at lower right has its folded bow tucked UNDER the ivory sky-thread where they cross, rather than resting over the thread; keep boat and thread continuous. (2) The orange floating scissors' pale thread loops once THROUGH the upper finger hole before trailing into the sky; keep scissors anatomy intact. (3) The small blue fabric offcut nearest the center curls around the cloth river's edge instead of floating apart from it. (4) The striped sock draped over the wooden stool twists so its blue stripes spiral around the cuff rather than running straight across; one intact sock. (5) The faint giant scissor shadow on the sand crosses over the blue cloth river in one place instead of remaining solely on the sand, with coherent direction from the airborne scissors. Make differences legible on phone-size cards without adding labels, circles, patches, discoloration, unrelated objects, duplicate props, disconnected anatomy, texture grain or watermark. Preserve the original camera, composition, brushwork, color, and all unmentioned parts as closely as possible.",
+    "usedRegions": ["thread-through-scissors", "offcut-joins-river", "sock-stripes-spiral"],
+    "rejectedRegions": ["large-boat-under-thread", "scissor-shadow-crosses-river"]
+  },
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-012-cloth-hem-source-v4.png",
+      "sha256": "B4AC38B0AF41A262CC4EDD3952EC04A271841B61F48D04F1119795BDB2E15636",
+      "prompt": "Use case: precise-object-edit. Image 1 is the EXACT edit target, a 1672x941 matte painted Dreamerie desert tailor scene. Change ONLY the cloth river where it tumbles off the pink ironing board at center: its left edge folds BACK over itself once like a sewn fabric hem, a crisp believable turn of the same continuous blue fabric, instead of falling as one smooth uninterrupted edge. Keep river width, flow, all three paper boats, floating scraps, tailor and iron exactly as they are. The new hem must be legible at phone-size, not an isolated blue mark. No extra objects, discoloration, text, watermark or global repaint.",
+      "usedRegions": ["river-hem-fold"]
+    },
+    {
+      "path": "/artwork/v4/collection/dream-012-boat-fold-source-v4.png",
+      "sha256": "328E09FED4F2AD20CF044AD66DC0483047503889EEA6E722B3D5F8A1A0EB5712",
+      "prompt": "Use case: precise-object-edit. Image 1 is the EXACT edit target, a 1672x941 matte painted Dreamerie desert tailor scene. Change ONLY the small BLUE paper boat at the center of the cloth river, just below the pink ironing board: reverse the overlapping folds of its upright triangular paper sail, so its right flap lies OVER its left flap rather than UNDER. Preserve one intact folded paper boat in the exact location, its blue color, river ripples, the large right boat, tailor, scissors, thread, stool and sock. Make this a visible real paper-fold change, not a color patch or extra object. Preserve clean painterly brushwork, framing and all else. No text or watermark.",
+      "usedRegions": ["paper-boat-fold"]
+    }
+  ],
+  "notes": "The initial draft's changed long thread across the large boat and altered shadow required overbroad, mutually overlapping regions, so those were rejected. A separate shadow-closure trial did not actually close the shadow blades and was rejected. This candidate uses five separated, clipped changes from three sources. Desktop and phone-size full pairs and all five paired answer crops were visually inspected. The offcut clip leaves a tiny blue fleck in the desert; refine this before release. This is an editorial proof, not production approval. Touch/zoom playtesting and difficulty calibration remain pending."
+}

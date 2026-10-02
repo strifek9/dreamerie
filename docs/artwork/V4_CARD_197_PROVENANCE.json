@@ -1,0 +1,67 @@
+{
+  "status": "unreleased editorial proof; not production-approved",
+  "cardId": "v4-dream-197",
+  "useCase": "precise-object-edit",
+  "tool": "built-in image_gen",
+  "input": "/artwork/v3/collection-year-v1/dream-197-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-197-original-v4.png",
+    "sha256": "0440099C698F68B74DA3AB6010338B19CD45417970AECCED0AEAF6F159ED5E13",
+    "prompt": "Bit-identical copy of the published Version 3 original; the sparse watch scene remains a coherent deliberate still life, so no enrichment was selected."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-197-ribbon-clean-source-v4.png",
+    "sha256": "A4B31C20D2FFBE2B029EFD033E8F637073FCAA8BF5EE84A19841E68508ABE9B0",
+    "prompt": "Use case: precise-object-edit. Image 1 is a 1672x941 Dreamerie matte painting of an open watch and continuous ivory paper ribbon wrapping around a spoon handle. This is a CLEANUP of one accidental artifact only. On the dark plum velvet just ABOVE the central ribbon's final S-curve, near image coordinate x930,y615, there is a small floating pale ivory dash/sliver not connected to any object. REMOVE that stray dash completely and seamlessly restore the same underlying plum velvet brushwork. Keep the ONE continuous paper ribbon, its smooth loop around the silver spoon handle, the watch, chain, dial, ladder, spoon reflection, lighting and all other pixels/composition unchanged. Do not create a new mark, second ribbon, pasted shape or altered clue. Clean matte visible brushwork, no grain, text, border or circles.",
+    "usedRegions": [
+      "ribbon-around-spoon"
+    ]
+  },
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-197-chain-source-v4.png",
+      "sha256": "CACB17157986B02EE3B73818D1C75B086E94FC7349B95A6D1AE7EC58803D8596",
+      "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 Dreamerie painting The Hour That Fell Out. Make ONE localized relational change only where the BRASS CHAIN passes beside the watch's ROUND WINDING RING in upper center x770-1050,y0-265. Keep the watch, ring and chain's entry/exit paths fixed, especially where the chain leaves this rectangle toward the existing clasp at right. At one point beside the ring, a single chain link now threads THROUGH the ring's opening, with believable front/back occlusion and one continuous chain. Do not move the entire chain or attach it to the velvet. Leave the clasp free, unhooked and exactly where it was; do not alter the seam. Preserve watch dial, ivory paper ribbon, spoon, ladder, velvet, patina, palette, composition and everything else. No disconnected links, extra chain, text, circles, grain or border; crisp matte painterly details.",
+      "usedRegions": [
+        "chain-through-ring"
+      ]
+    },
+    {
+      "path": "/artwork/v4/collection/dream-197-reflection-source-v4.png",
+      "sha256": "9067E832BF652B187A6481F9BAB4E118A4A90F418B881E746E3D7FC4B6BB7839",
+      "prompt": "Use case: precise-object-edit. Image 1 is the exact high-resolution Dreamerie painting The Hour That Fell Out: an open brass pocket watch with ivory paper ribbon, silver spoon, velvet and ivory paper ladder. Make ONE localized, optically believable spot-the-difference change ONLY inside the tarnished silver spoon's OVAL BOWL at image x1110-1325,y505-670. The bowl's diffuse reflection now contains a small, softly curved reflection of the distinctive IVORY PAPER LADDER standing at right: two pale rails and three muted brass cross-rungs, following the spoon bowl's concave curvature and metallic highlights. It must read as a reflection, not a painted sticker, miniature ladder placed inside it, or arbitrary pale discoloration. Preserve the spoon shape and position, handle engraving, ribbon, watch, chain, ladder, velvet and all other parts exactly. Same matte visible brushwork, no grain, text, circles, outlines, new props or border.",
+      "usedRegions": [
+        "ladder-reflection"
+      ]
+    },
+    {
+      "path": "/artwork/v4/collection/dream-197-ladder-source-v4.png",
+      "sha256": "36617069B771BCBF6981AC38FA55FB63A82D66DC8597371C38AE0705634E003F",
+      "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 Dreamerie painting The Hour That Fell Out. Make ONE real, localized layering change in the small ivory PAPER LADDER at right, specifically its THIRD brass rung from the top around x1360-1450,y390-475. In the original, that rung sits visibly across the front of both cream paper rails. In the altered version, the rung crosses the LEFT rail normally but slips BEHIND the RIGHT ivory paper rail: the brass bar vanishes for the width of the right rail and its end peeks out past the rail, with clear over-under contact and appropriate shadow. Retain the same rung count, ladder path, cream paper curvature, widths, brass color, and all other rungs. Keep watch, chain, clasp, spoon, ribbon, velvet and lighting identical. Native-scale matte painterly brushwork; no disconnected parts, missing rung, new object, grain, text, marker, circle or border.",
+      "usedRegions": [
+        "rung-under-rail"
+      ]
+    },
+    {
+      "path": "/artwork/v4/collection/dream-197-dial-source-v4.png",
+      "sha256": "29C83782FBDB704F3D7CFF8FF2328FA5BF6DC9A1647B81B81ACF321E4C4282BA",
+      "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 Dreamerie painting The Hour That Fell Out. Make ONE localized, legible clock-face change only to the TWO brass hour-marker bars at the very top of the pocket-watch dial: noon at x585,y200-230 and one o'clock at x665,y215-245. In the original the noon marker is a short straight gold bar and the diagonal one-o'clock marker is about the same length. In the altered counterpart SWAP their relative lengths dramatically but elegantly: noon becomes a noticeably SHORT tiny brass dash, while the diagonal one-o'clock marker becomes about TWICE as long and points toward the center. Preserve the orientation, positions, brass metal, watch face, all other hour markers and central ivory paper ribbon. This is a two-part ordered pattern clue, not a missing marker or a discoloration. Do not repaint the whole dial; preserve patina, velvet, lid, chain, spoon, ladder and all else. Crisp native detail in matte brushwork; no text, numbers, circles, grain or border.",
+      "usedRegions": [
+        "hour-tick-order"
+      ]
+    }
+  ],
+  "rejectedTrial": {
+    "path": "artwork-review/v4-rejected/dream-197-altered-source-v4.png",
+    "sha256": "39B0C0D458B4E4CEB704017B0EA4200BBF570D8B510516A97AEFB2450EFDE3B3",
+    "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 wide Dreamerie matte-painted original called The Hour That Fell Out: an open patinated brass pocket watch resting in plum velvet, an ivory paper ribbon emerging from its central opening, that paper becoming a little ladder at right, a tarnished silver spoon, a brass chain and clasp. Create one ALTERED spot-the-difference source with exactly FIVE localized, physically coherent changes. Preserve the composition, camera, object silhouettes and all other details. (1 EASY, lower center-right x850-1150,y510-790) The ivory paper ribbon makes one clear loop AROUND the silver spoon's narrow handle before continuing its existing flow; keep the spoon in place and show correct over-under contact, no disconnected strip. (2 MEDIUM, crown ring upper center x750-990,y70-260) The watch's brass chain now passes THROUGH the round winding-crown ring once, with one continuous visible link on either side instead of floating behind it; preserve ring/crown shape. (3 HARD, paper ladder right x1300-1550,y420-610) The second-lowest metallic ladder rung passes BEHIND the right ivory paper rail, briefly disappearing under it, while the other rungs still sit on top; make the layering and contact unambiguous and keep the ladder's elegant shape. (4 VERY HARD, watch dial x360-810,y180-550) The noon and one-o'clock brass hour ticks swap their unequal lengths: the noon tick becomes short and the next clockwise tick becomes long, while all other markers and the central paper opening remain exactly in place. No missing or added ticks. (5 EXTREMELY HARD, upper-right x1050-1340,y105-310) The open chain clasp catches one thread of the plum velvet seam, rather than lying free, with a tiny taut seam stitch inside the clasp and convincing contact; keep chain and clasp otherwise unchanged. Keep clean visible brushwork, soft matte pigment, no grain, speckles, pasted-on extras, color blotches, text, border, circles, or image comparison layout. Make the five edits legible at native resolution and do not change unrelated areas.",
+    "reason": "The first playable composite revealed a pasted-looking ribbon fold at enlarged game size; its ladder and clock changes were also indistinct, and its clasp snag is an unwanted extra edit."
+  },
+  "rejectedRibbonSource": {
+    "path": "artwork-review/v4-rejected/dream-197-ribbon-source-v4.png",
+    "sha256": "5AF24C83270EEA52AF6A31E61B7E0EABBAE6FA4E2F84C72E49EC11531EE2D434",
+    "prompt": "Use case: precise-object-edit. Image 1 is the exact original 1672x941 Dreamerie painting The Hour That Fell Out: a single cream paper time-ribbon emerges from the pocket-watch dial, flows down and right, then descends beside a tarnished silver spoon. Change ONLY the FINAL FREE END of that existing paper ribbon near x760-1120,y510-830 so that it wraps one smooth continuous spiral around the narrow silver spoon HANDLE at x1010-1120,y680-785, then tucks its single tip neatly beneath the loop. Critical physical continuity: trace the same ONE strip from the watch to its tip without forks, duplicate ribbons, pointed wedges, floating fragments, flat cutout seams, or abrupt width changes. The spoon stays precisely where it is; the loop contacts the handle with believable shadow. Keep the ribbon's starting point at the watch and its upstream S-curve unchanged; keep the spoon bowl, watch, chain, paper ladder, velvet and all other details unchanged. This is a real over-under contact change, not a pasted shape. Same clean native matte brushwork, no grain, text, marker, border or unrelated edits.",
+    "reason": "Its clipped playable composite exposed a detached-looking ivory sliver from the old ribbon near the top mask edge."
+  },
+  "notes": "The selected ribbon source makes a single continuous loop around the spoon handle. The visual clip was expanded upward to cover the old ribbon fold; the detached sliver disappeared in enlarged gameplay. Desktop, phone-size and enlarged composites were visually checked without obvious joins. Actual touch/zoom playtesting and subjective difficulty calibration remain; this is not production-approved."
+}

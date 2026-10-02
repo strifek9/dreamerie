@@ -1,0 +1,40 @@
+{
+  "status": "unreleased editorial proof; not production-approved",
+  "cardId": "v4-dream-010",
+  "useCase": "precise-object-edit",
+  "tool": "built-in image_gen",
+  "input": "/artwork/v3/collection-painted-v1/dream-010-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-010-original-v4.png",
+    "sha256": "D544CF06F987E486CE4D8D93ED6FA6641E422E6C0B8F49627FCABD2D1F541BDA",
+    "prompt": "Bit-identical copy of the published Version 3 original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-010-altered-source-v4.png",
+    "sha256": "ABDA3A3A576B94BF19BE100A026B2895AAD9D779DE3BE26C73A969F1BDEAE7CE",
+    "prompt": "Use case: precise-object-edit. Image 1 is the edit target, a 1672x941 painted indoor garden with ornate oval mirror, paper bird in its reflection, moth, purple watering can, framed crescent, candle and key on teal cushion. Preserve geometry, colors, all unmentioned details and matte brushwork. Make only five changes: (1) One paper-bird wing folds across and over the mirror's near brass rim while the rest of the bird remains reflected inside; paper geometry continuous. (2) The moth's lower left wing tucks behind the mirror frame instead of resting entirely in front, preserving one moth. (3) The watering can's spout touches the mirror surface and its reflected tip appears just inside the mirror at the same angle, without moving the can. (4) The silver key's toothed end slips under one raised fold of the teal cushion instead of lying fully on top, with plausible occlusion. (5) The framed gold crescent's lower tip passes in front of its little gold star instead of behind it, clean layered ornament. No extra elements, disconnected edges, global repaint, text or watermark.",
+    "usedRegions": ["paper-wing-frame", "key-under-cushion"],
+    "rejectedRegions": ["watering-can-spout", "moth-behind-frame", "framed-star"]
+  },
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-010-can-reflection-source-v4.png",
+      "sha256": "C82D1E31F6656E144275C15BCA3F6A4C19E03686B64F880C4AB6DD959BA9490C",
+      "prompt": "Precise painted edit of Image 1, Dreamerie's ornate indoor garden with a magical mirror. Preserve the original watercolor-like matte brushwork, composition and all objects. Change ONLY the purple watering can at lower left: inside its visible open top, the water's small reflection shows an upside-down silhouette of the paper bird seen in the mirror. It must be a subtle but clearly painted reflection INSIDE the can's opening, conforming to the elliptical water surface, with no separate bird, no change to can silhouette, red handle or continuous single spout. Preserve all else exactly; no extra spout, no text, no watermark.",
+      "usedRegions": ["bird-in-water"]
+    },
+    {
+      "path": "/artwork/v4/collection/dream-010-window-vine-source-v4.png",
+      "sha256": "1CFA7375CFAF5D9249FC546281036B34E3B0035268C2E3FFDC13535EB2BCD298",
+      "prompt": "Precisely edit Image 1, preserving its original Dreamerie painted indoor-garden scene. Change ONLY the ivy vine on the LEFT window: route one continuous stem with its large golden-green heart-shaped leaf from behind to in FRONT of the horizontal dark window mullion around the upper-middle of the window, as if the ivy has quietly grown through it. Keep the leaf shape and neighboring leaves believable and unchanged; show a clear natural over/under crossing of the same vine and dark mullion. Preserve the mirror and paper bird, moth anatomy, watering can, cushion, framed moon, all other plants, colors, lighting and brushwork. No extra branches, detached leaves, text, or watermark.",
+      "usedRegions": ["window-vine-crossing"]
+    },
+    {
+      "path": "/artwork/v4/collection/dream-010-framed-star-source-v4.png",
+      "sha256": "10AE29D222AD375CB45E71E53E5DCDDC0CA8CC45BF47B808E576746AAF715C18",
+      "prompt": "Precisely edit Image 1. In the narrow dark-blue rectangular framed picture just right of the oval mirror, move the small GOLD EIGHT-POINT STAR upward so its upper two rays overlap the lower open tip of the GOLD CRESCENT; the star and crescent remain fully recognizable, painted onto the same blue framed panel. This is one connected layered-symbol change, not a color change. Preserve the butterfly/moth left of the picture exactly—two intact wings, no extra wing—and preserve the candle, plants, mirror, bird, watering can, cushion, lighting, original Dreamerie painted style, and all other details. No text or watermark.",
+      "usedRegions": ["framed-star"]
+    }
+  ],
+  "notes": "The initial source grew an extra disconnected spout; its moth edit made an apparent extra wing, and its star merely shifted slightly. None of those regions is composited. The retained bird wing and key plus targeted water reflection, window-vine crossing and touching framed symbols were inspected in desktop and phone-size pairs and five paired answer crops, with no obvious broken joins. Touch/zoom playtesting and difficulty calibration remain pending; not production-approved."
+}

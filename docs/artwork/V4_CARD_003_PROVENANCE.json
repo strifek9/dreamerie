@@ -1,0 +1,39 @@
+{
+  "status": "unreleased editorial proof; not production-approved",
+  "cardId": "v4-dream-003",
+  "useCase": "precise-object-edit",
+  "tool": "built-in image_gen",
+  "input": "/artwork/v3/collection-painted-v1/dream-003-original-v2.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-003-original-v4.png",
+    "sha256": "5099083C75FC412603B313B0CD06CD88AC2866F554E42A685AA2FBD16F2E20C8",
+    "prompt": "Bit-identical copy of the published Version 3 original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-003-altered-source-v4.png",
+    "sha256": "4C9171D098CE211DDE16AC4566BA4B7FC7B6A5840D0F4890D6C1685A3914E42A",
+    "prompt": "Use case: precise-object-edit. Asset type: Dreamerie Version 4 spot-the-difference source painting. Image 1 is the edit target, the painted train emerging beneath a blue moon-patterned pillow in a desert with cactus, suitcase, bench and station bell. Preserve its exact 1672x941 framing, grain-free painterly brushwork, palette, geometry and all unmentioned content. Make ONLY five localized coherent changes: (1) The locomotive's white steam plume tucks under the blue pillow edge rather than crossing visibly over it, with clean occlusion. (2) The station bell's golden clapper hangs outside the left rim rather than centered beneath it, still joined to the bell. (3) The first maroon carriage's row of glowing windows changes its visual order to dark-glow-glow-dark instead of the existing glow-glow-glow arrangement; retain the carriage structure and window count where possible. (4) The teal suitcase's leather handle loops behind its right brass attachment instead of in front, with continuous leather and hardware. (5) One ivory floral motif on the pillow has its petals arranged in a clockwise spiral instead of the simple starburst, still painted as part of the existing pillow fabric. These must be actual realized edits, not soft color spots. No extra differences, no model-wide changes, no text or watermark.",
+    "usedRegions": ["pillow-pinwheel", "carriage-window-order"]
+  },
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-003-steam-source-v4.png",
+      "sha256": "C6580AE3D2F0F60ED340988FED67337DCE6F1F476F4EFC3337327155997F038C",
+      "prompt": "Use case: precise-object-edit. Image 1 is the exact edit target, a 1672x941 painted train emerging under a blue pillow with a teal suitcase foreground. Make only TWO localized differences: (1) A single white plume of steam from the locomotive chimney curls up, crosses behind the lower blue pillow edge and re-emerges above it, continuous and physically connected, leaving the train structure intact. (2) The brown leather suitcase handle passes behind its right brass mounting plate rather than lying over the plate; the handle and plate remain continuous and plausible. Preserve every other shape, train window, pillow motif, landscape, palette, painterly brushstroke and lighting. No unrelated edits, no text or watermark.",
+      "usedRegions": ["steam-over-pillow"]
+    },
+    {
+      "path": "/artwork/v4/collection/dream-003-bell-source-v4.png",
+      "sha256": "13C85D146DCDA250E9C12F9D20AC6BD6CC34278F95AA729572B31866263FF589",
+      "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672×941 edit target, a Dreamerie train station painting. Make ONE localized physically coherent change to the two gold beads hanging below the BRASS STATION BELL at upper right. In the original they hang vertically below the bell. In the new version, both beads swing together to the LEFT of the bell on ONE continuous curved dark cord attached beneath the bell; the larger upper bead remains above the smaller lower bead, with no detached bead, cut-off ball or duplicate string. Keep the bell, bracket, roof, bench, cactus, train, pillow, suitcase, landscape and painterly finish otherwise identical. The full two-bead assembly and entire cord must fit within a compact crop around x1275–1430,y180–380. No other edit, no ghost bead at the old position, no unrelated repaint, text, grain or watermark.",
+      "usedRegions": ["bell-beads-swing-left"]
+    },
+    {
+      "path": "/artwork/v4/collection/dream-003-ticket-source-v4.png",
+      "sha256": "F332A9FEB48A0EED59D7233B0B5E239C38DA3065A79DEB6CB8BCDBB6FBE223D3",
+      "prompt": "Use case: precise-object-edit. Image 1 is the exact edit target, a 1672×941 matte Dreamerie painting of a toy train emerging beneath a blue embroidered pillow in the desert. Make ONE localized change on the teal suitcase handle in the lower-left foreground, roughly x425–690,y795–930: tuck a small cream paper train ticket through the existing dark leather handle's center loop so the ticket passes under the leather arch and emerges on the other side. The paper should be blank—no writing or symbols—and follow believable perspective and shadow. Keep the handle, brass mounts, suitcase edges and blue paint intact and in their original locations. Preserve train, pillow, bell, cactus, desert, sky, palette, brushwork and entire framing exactly. This must be a crisp actual relationship, not a color patch or disconnected pasted object. No other edit, extra ticket, text, grain or watermark.",
+      "usedRegions": ["ticket-through-handle"]
+    }
+  ],
+  "notes": "The generated steam flowed onto the pillow top rather than the requested behind/through routing; the player-facing clue describes the visible result. The suitcase-handle occlusion was rejected as unproven and replaced with a blank ticket through the handle. The initial bell source produced a detached bead in the paired answer crop and was rejected; this proof uses a separate corrected bell source. Only five specified regions are composited. Desktop and phone-size composites and all five paired answer crops were visually checked. The steam crop is near the carriage clue, so final human answer-inspection and difficulty testing remain; not production-approved."
+}

@@ -1,0 +1,43 @@
+{
+  "status": "unreleased editorial proof; not production-approved",
+  "cardId": "v4-dream-133",
+  "useCase": "precise-object-edit",
+  "tool": "built-in image_gen",
+  "input": "/artwork/v3/collection-year-v1/dream-133-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-133-original-v4.png",
+    "sha256": "87ED6953F447B8AF31537E1A9A3B806FC1683B96F472E4B27AEAB2627833807E",
+    "prompt": "Use case: precise-object-edit. Input image 1 is the existing original Dreamerie painting The Doorbell at the End of Sleep. Create a richer, more alive but still spare high-resolution wide ORIGINAL for a future puzzle. Preserve the enormous lilac door leaning on the dark floor with its closed sleeping eye, the brass chain, small green chair at left, pillow and bell-flower at right, green key on floor, golden doorway light, perspective, moody navy/lilac palette and elegant matte visibly painted brushwork free of grain. Add a connected dream event: five small paper envelopes emerge partway from the crack beneath the sleeping door and fold themselves into a loose path curving toward the fallen green key; their tiny pale edges catch the same doorway light, and their shadows should sit naturally on the floor. A single very faint second key-shaped shadow appears on the pillow, as though the sleeping door is dreaming of its key. Leave the dark surrounding wall calm and empty; no unrelated ornaments, no new people or animals, no extra moon/star motifs. Keep original objects recognizable and not covered. Make the scene whimsical and uncanny but PG. Single original painting only, no edited pair, captions, arrows, circles, grain, noise or watermark."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-133-altered-source-v4.png",
+    "sha256": "D3F5FA46ABC9E83FA4BAD3C573AE275C4A5DEA3F6FBACC24C11FF3C704D3C593",
+    "prompt": "Use case: precise-object-edit. Image 1 is the exact edit target: Dreamerie's 1672x941 matte-painted wide scene The Doorbell at the End of Sleep, with a giant fallen lilac door, sleeping eye, green chair, brass bell-flower, pillow, key and folded envelopes. Create its ALTERED spot-the-difference counterpart while preserving composition and all objects except FIVE authored localized changes. (1 EASY) In the large eye set into the door, lift the upper eyelid enough to reveal a narrow dark iris looking toward the golden doorway; preserve the surrounding circular frame. (2 MEDIUM) On the gold bell-flower stalk at upper right, change the single leaf so it curls inward toward the door instead of outward, but keep the stem connected and physically plausible. (3 HARD) In the trail of three clearly visible folded white envelopes at lower center, reverse the alternating flap orientation: the first and third now point right while the middle points left; keep each envelope exactly where it is and retain shadows. (4 VERY HARD) Mirror the key-shaped shadow on the pillow horizontally, so the tooth of the shadow points toward the fallen door; do not move or change the real green key on the floor. (5 EXTREMELY HARD) Reverse the order of the black and ivory diagonal stripes on the tiny block at far lower right, maintaining its same three-dimensional wedge shape and floor shadow. All five changes must be real and clean, not discoloration smudges. Keep the original scene's quiet uncanny mood, matte painterly brushwork, high resolution, no grain/noise, no extra props, no text, no border, no unrelated repainting.",
+    "usedRegions": [
+      "waking-eye",
+      "bell-flower-leaf",
+      "wedge-stripes"
+    ]
+  },
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-133-key-source-v4.png",
+      "sha256": "0ABCC2272B862D81B52C44F1307C2A71AD7297C9BAE5F748D67B02E43ACF5EF3",
+      "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 Dreamerie painting The Doorbell at the End of Sleep. Edit ONLY the small antique green key on the floor near the lower center-left, around image x 490-660, y 780-860. Keep its round bow, shaft, position, orientation and floor reflection identical. In the altered Dream, the teeth at the right tip of the key face UP instead of DOWN: flip only the little two-tooth bit across the horizontal shaft so the notches are clearly on the upper side, in the same dark green metal and painterly lighting. No extra key or detached pieces. Preserve every other object, shadow, envelope, door, chair, eye, flower, pillow and wedge. Matte hand-painted style, no grain, no text, no unrelated repainting.",
+      "usedRegions": [
+        "key-teeth"
+      ]
+    },
+    {
+      "path": "/artwork/v4/collection/dream-133-shadow-source-v4.png",
+      "sha256": "86E3EB6CFFE3E90B814A235EF89A4BF8DD45C2630D624FBD0E6BA87693066311",
+      "prompt": "Use case: precise-object-edit. Image 1 is the exact Dreamerie painting The Doorbell at the End of Sleep. Edit ONLY the gray key-shaped cast shadow on the large ivory pillow at right-center. In this altered dream the REAL green key on the floor remains untouched, but its soft shadow on the pillow takes the recognizable SILHOUETTE OF A TINY BELL WITH CLAPPER instead of a key: a rounded bell top, small lip, and a little clapper notch. Keep the shadow aligned to the pillow's folds and lighting, low-contrast but clearly identifiable when zoomed. Do not add a physical bell to the pillow, do not alter the brass bell-flower above it, and keep pillow, door, eye, envelopes, floor and all other elements unchanged. Matte hand-painted style, no hard sticker edge, no grain, no text, no unrelated changes.",
+      "usedRegions": [
+        "pillow-shadow"
+      ]
+    }
+  ],
+  "rejectedCandidate": {
+    "description": "Envelope flap-order change was barely visible, so it was not selected as a clue or used in the composite."
+  }
+}

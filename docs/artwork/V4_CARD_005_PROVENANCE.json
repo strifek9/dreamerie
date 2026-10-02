@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "cardId": "v4-dream-005",
+  "title": "The House That Walked Away",
+  "generationMode": "built-in image_gen",
+  "publicationStatus": "development-preview-only; not approved for production",
+  "original": {
+    "path": "/artwork/v4/collection/dream-005-original-v4.png",
+    "sha256": "602789F9B29F8372F4E10F748C9791F6AB3631A34319D72915E9E561FB4B9469",
+    "relationship": "Bit-identical copy of V3 dream-005-original-v1.png; V3 source untouched."
+  },
+  "sources": [
+    {
+      "path": "public/artwork/v4/collection/dream-005-altered-source-v4.png",
+      "sha256": "1CADC0C4F98E5584BAE459CCC11F2F8C76CCDCF59438E5BBE6122352E621EC4C",
+      "prompt": "Use case: precise-object-edit. Asset type: Dreamerie Version 4 spot-the-difference source painting. Image 1 is the edit target: a walking yellow cottage on striped legs crossing a pink stream, with bird, snail and green umbrella. Preserve exact 1672x941 composition, matte brushwork, whimsical lighting, all positions and all unmentioned content. Make ONLY five coherent localized differences: (1) The cottage's left bootlace crosses over its toe and forms a visible tied bow where it had a plain upper, integrated with the existing boot. (2) The pink stream's narrow upper ribbon passes behind the little stone bridge rather than in front of its near arch, with a continuous stream path. (3) The teal bird atop the chimney turns its head to look down at the house while its feet remain planted, preserving one head and neck. (4) On the green umbrella, the middle ivory dot is now a stitched hollow ring in the fabric, retaining the other two solid dots. (5) The snail's shell spiral runs counterclockwise rather than clockwise, retaining the same shell and snail. No other differences, no pasted or detached edges, no unrelated props, text, grain or watermark."
+    },
+    {
+      "path": "artwork-review/v4-batch-20261002/dream-005-refine-source-v4.png",
+      "sha256": "68531E1BD09A23DB26A69B02A22BACB569B23D6786DDC37A854EB25A46F24D7B",
+      "status": "rejected for visible rectangular joins in the preview crop",
+      "prompt": "Use case: precise-object-edit. Image 1 is the exact edit target, a 1672x941 painterly yellow walking cottage with pink stream, stone bridge, snail and green umbrella. Make ONLY two localized changes: (1) Near the left side of the stone bridge, the narrow pink ribbon of water clearly passes THROUGH the left arch opening and behind the front stone pier instead of crossing over the front masonry; continuity and perspective must be impeccable. (2) At lower left, the snail's spiral shell reverses its winding direction while keeping the same shell size, warm brown color, highlights and snail anatomy. Preserve every other object, bird, boot, umbrella, painting style and lighting. No disconnected fragments, no unrelated changes, text, grain or watermark."
+    },
+    {
+      "path": "public/artwork/v4/collection/dream-005-bridge-arch-source-v4.png",
+      "sha256": "235F021CD6F1356FE7B29354FD2476B9050BA5CE23C394BEC8815C8D4A828C56",
+      "prompt": "Use case: precise-object-edit. Edit the attached original 1672x941 walking-cottage painting. Change ONLY inside the LEFTMOST opening of the stone bridge (roughly x455–520,y485–570): in that existing arch opening, a narrow ribbon of the same pink dream-stream winds away into the distance behind the stone bridge, with painterly perspective and a continuous path that remains fully within the empty arch. Crucial: keep the foreground pink stream, bridge masonry, pier edge, rocks, railings, and everything outside that arch IDENTICAL to the original; do not repaint them at all. Make the stream a recognizable real form, not discoloration, and blend its edges with existing scenery. Same painterly texture. No other changes, text, or grain."
+    },
+    {
+      "path": "public/artwork/v4/collection/dream-005-snail-door-source-v4.png",
+      "sha256": "1CDB56EC77FAE663CEE27A741BA34789A4AE5078DB693859E19A4130AA985202",
+      "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672×941 edit target: a matte painted walking cottage beside a smiling snail. Create ONE localized, story-connected change inside the warm brown snail shell at lower left, about x135–225,y665–745. Within its existing spiral whorl, carve a miniature little purple cottage door with a tiny gold crescent handle, as if the snail also carries a home. The door is integrated into the shell's curved ridges and shadows, not a pasted icon; keep shell outer contour, spiral around it, snail body, eyes and smile intact. It should be clearly real when zoomed but small in the full painting. Preserve walking cottage, pink stream, bridge, bird, umbrella, flowers, colors, light and brushwork elsewhere exactly. No other edit, extra snail, disconnected prop, text, watermark or grain."
+    },
+    {
+      "path": "artwork-review/v4-batch-20261002/dream-005-umbrella-spiral-source-v4.png",
+      "sha256": "BDC8212145B4DAA6BF5EB3ADE1E5860B679A89D827490B792489A3B761DF9DA4",
+      "status": "rejected because the generated PNG is 1671 pixels wide, one pixel short of native resolution",
+      "prompt": "Use case: precise-object-edit. Edit the attached 1672x941 painted fantasy landscape faithfully. In the dark green umbrella at right, transform ONLY the MIDDLE of its three ivory polka dots (near x1513,y683) into a small ivory painted snail-shell spiral, like a whimsical motif repeating the living snail at lower left. Keep its position and outer approximate size, but make the spiral visibly formed by a curved dark-green channel and one ivory curling stroke, with the same painted texture and soft highlights as the other dots. The top and bottom ivory dots remain perfect circles. Do not make a selection ring or geometric target icon. Everything else—umbrella folds, handle, personified walking house, bird, bridge, snail, pink stream, sky, flowers, lighting, colors, brushwork, framing—must remain exactly identical. No other changes, no grain, no text."
+    },
+    {
+      "path": "public/artwork/v4/collection/dream-005-umbrella-spiral-source-v4b.png",
+      "sha256": "488068964A0D0283C8A2A21486D78EF997452D742688CCAF9AD5E9A2FB1614A9",
+      "prompt": "Use case: precise-object-edit. Produce an output PNG at EXACTLY 1672 pixels wide by 941 pixels high; do not resize or crop the image. Use Image 1 as the exact landscape edit target. Make ONLY the middle ivory dot on the green umbrella at lower right into a hand-painted ivory snail-shell spiral, with its dark-green channel integrated into the umbrella fabric. The top and bottom dots remain white circles. Keep the walking cottage, bird, bridge, pink stream, snail, landscape, painterly brushwork, framing, aspect ratio and every other element identical. No disconnected marks, no rings resembling UI selection, no text, no watermark, no grain. Native resolution is mandatory: 1672x941."
+    }
+  ],
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-005-altered-source-v4.png",
+    "sha256": "1CADC0C4F98E5584BAE459CCC11F2F8C76CCDCF59438E5BBE6122352E621EC4C"
+  },
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-005-bridge-arch-source-v4.png",
+      "sha256": "235F021CD6F1356FE7B29354FD2476B9050BA5CE23C394BEC8815C8D4A828C56"
+    },
+    {
+      "path": "/artwork/v4/collection/dream-005-snail-door-source-v4.png",
+      "sha256": "1CDB56EC77FAE663CEE27A741BA34789A4AE5078DB693859E19A4130AA985202"
+    },
+    {
+      "path": "/artwork/v4/collection/dream-005-umbrella-spiral-source-v4b.png",
+      "sha256": "488068964A0D0283C8A2A21486D78EF997452D742688CCAF9AD5E9A2FB1614A9"
+    }
+  ],
+  "review": {
+    "status": "preview-candidate; visually QA'd in paired answer crops and phone-size art; still needs human difficulty review",
+    "notes": [
+      "The first hollow umbrella ring was rejected as too much like a selection marker; the separate spiral source is used.",
+      "The first umbrella-spiral generation was one pixel narrower than native resolution and is preserved only in artwork-review; the native-resolution v4b source is used in the preview.",
+      "The generated reversed snail spiral was ambiguous; a coherent miniature house door replaced it.",
+      "The first bridge refinement created visible rectangular joins. A later source restricted the new pink ribbon to the leftmost arch, and the preview crop now mirrors production edge fading.",
+      "Only the five listed nonoverlapping boxes are composited into The Memory; source images are not full altered paintings.",
+      "Visual acceptance and player difficulty are not yet established. Do not mark production-approved because sources exist."
+    ]
+  }
+}

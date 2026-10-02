@@ -1,0 +1,27 @@
+{
+  "status": "unreleased editorial proof; not production-approved",
+  "cardId": "v4-dream-155",
+  "useCase": "precise-object-edit",
+  "tool": "built-in image_gen",
+  "input": "/artwork/v3/collection-year-v1/dream-155-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-155-original-v4.png",
+    "sha256": "85E957F2E522D7CBC4447A867C4A814B897ED48CEDDDD15FE2D8D8DF6E19975F",
+    "prompt": null,
+    "note": "Bit-identical copy of the published original; the quiet composition did not need enrichment."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-155-altered-source-v4.png",
+    "sha256": "E396149D26CDB693CD99F7D909DACFAC5F63296E2310E9ECF5E6ED53AEABE2A7",
+    "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 Dreamerie painting The Mountain's Lost Mitten. Create an ALTERED spot-the-difference counterpart from the SAME painting, preserving the sleeping gray mountain, giant red knitted mitten with white cuff, small suitcase, rock on the ice and the ghostlike mitten-shaped shadow. Make exactly FIVE coherent localized visual changes, no other redraw. (1 EASY) The mountain opens its LEFT sleepy eye a little, revealing a narrow dark iris looking toward the mitten; the right eye stays closed and rocky eyelids remain integrated. (2 MEDIUM) The loose red yarn tail from the mitten now reaches LEFT across the ice and loops ONCE through the small suitcase handle, with a realistic taut path and shadow; leave the suitcase body and mitten where they are. (3 HARD) In the small stitched suitcase label, replace its two mountain-peak illustration with a simple line-art silhouette of the red mitten, rendered in the same muted ink and still framed by the same label. (4 VERY HARD) The distant mitten-shaped shadow on the ice at far right now points its thumb toward the LEFT instead of the right, while retaining shadow softness and direction of light. (5 EXTREMELY HARD) In the narrow ivory cuff around the real mitten, reverse the direction of the raised cable-knit chevrons in only one central row, keeping cuff thickness, knitting material and lighting. Every change must be a real object, mechanism or legible pattern, not a spot of discoloration. Keep the quiet surreal winter mood, matte clean painterly brushwork, high resolution, no grain, no extra objects or text.",
+    "usedRegions": [
+      "mountain-eye",
+      "yarn-to-case",
+      "case-label",
+      "shadow-thumb",
+      "cuff-knit"
+    ]
+  },
+  "refinedSources": [],
+  "notes": "The yarn is clipped with a narrow SVG mask spanning the thread while its hit region is centered on the suitcase handle. The isolated cuff-row attempt did not produce a reliably narrower change, so it was not selected. This proof needs touch/zoom difficulty playtesting before publication."
+}

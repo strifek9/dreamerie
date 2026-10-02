@@ -1,0 +1,54 @@
+{
+  "status": "unreleased editorial proof; not production-approved",
+  "cardId": "v4-dream-009",
+  "useCase": "precise-object-edit",
+  "tool": "built-in image_gen",
+  "input": "/artwork/v3/collection-painted-v1/dream-009-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-009-original-v4.png",
+    "sha256": "E8D3013F5DBC6FCDBB356877E6F63A359D17D3A72C1BAAF8094D6A7BE0944DE9",
+    "prompt": "Bit-identical copy of the published Version 3 original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-009-altered-source-v4.png",
+    "sha256": "69B0233CD55196F3437F1B6FFE2DC128248A28F1AFE59875B165BCB67C8D4800",
+    "prompt": "Use case: precise-object-edit. Image 1 is the edit target, a 1672x941 painterly orchestra of teal, yellow and pink smiling umbrellas playing violin, drum and trumpet beside a piano-key bridge. Preserve exact layout, characters, coherent instrument anatomy, palette and grain-free painted style. Only five local differences: (1) The teal violinist's bow runs behind its violin strings instead of across their front, remaining in its hand. (2) The yellow drummer's left stick passes beneath the yellow canopy rim before reaching the drum, as one continuous stick. (3) The pink trumpeter's tassel threads through the trumpet's flared bell and hangs from its inner lip, continuous cord. (4) Three adjacent black keys in the near half of the piano bridge reverse their long-short-long rhythm to short-long-short while remaining black piano keys. (5) The purple violin's small scroll has its curl wound the opposite direction, preserving neck and tuning pegs. No other changes, no detached parts, text or watermark.",
+    "usedRegions": ["trumpet-tassel", "piano-key-rhythm"],
+    "rejectedRegions": ["bow-behind-strings", "left-stick-under-rim", "violin-scroll"]
+  },
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-009-arch-note-refined-source-v4.png",
+      "sha256": "702717B3FEA37B903BE628AA257DD5ADAAB822D56746FE322925087DBB507A3D",
+      "prompt": "Edit Image 1, the exact Dreamerie painterly fantasy orchestra card. Preserve the original 1672:941 framing, painterly brushwork, every smiling umbrella, instrument, island, cloud, bridge, palette, and positions. Create only these THREE localized, coherent changes, with no other repainting: (1) On the yellow drummer at center, re-route its LEFT drumstick (the stick on the image-left side) so its continuous dark shaft passes visibly beneath the yellow umbrella canopy rim rather than in front of the rim, while the hand and soft white mallet tip remain attached and unchanged. Make the crossing legible. (2) On the purple violin under the teal umbrella, reverse the direction of the tiny carved spiral curl at the far right tip of its purple violin neck; keep the violin neck and black tuning pegs, only the scroll winding changes. Make the clockwise-vs-counterclockwise curl unambiguous. (3) On the pink flowered stone arch behind the teal umbrella, one thin dark vine hangs through the OPEN ARCH and forms two tiny eighth-note shapes, still a botanical vine attached above, naturally integrated with the arches and musical scene. Keep the rest of the vine and flowers unchanged. No new loose objects, no text, no watermarks. These must be real illustrated differences, not discolored patches.",
+      "usedRegions": ["arch-vine-notes"]
+    },
+    {
+      "path": "/artwork/v4/collection/dream-009-drum-spiral-source-v4.png",
+      "sha256": "C79D25F2A9E0FA959C7CC126B3A4061B47ADF32B315B05F6697928466C7A88A8",
+      "prompt": "Precise painted edit of Image 1, a whimsical Dreamerie orchestra. Preserve exact framing, color, brushwork, objects and scenery. Change ONLY the white star on the teal drum at image center: the star is now an embroidered white spiral of musical staff lines with a tiny five-point star at its inner end, stitched naturally into the same drum skin/shell and integrated behind the existing gold lacing, no pasted-on emblem. This is a real internal pattern reversal/connection, not a color blotch. Preserve drum outline, the smiling yellow umbrella, mallets, piano bridge, all other elements exactly. No other edits, no text, no watermark.",
+      "usedRegions": ["drum-spiral"]
+    },
+    {
+      "path": "/artwork/v4/collection/dream-009-mallet-source-v4.png",
+      "sha256": "890C810094FC1E74567CA429572A2938FF1EE21573FC4E069933A53DA537BCDC",
+      "prompt": "Precise edit of Image 1, a whimsical painted umbrella orchestra. Change only the YELLOW DRUMMER'S RIGHT-HAND MALLET (on image right of the yellow smiling umbrella): angle the continuous stick so its white soft tip gently touches the underside edge of the neighboring pink trumpeter umbrella, as though using that canopy as a cymbal. Keep the yellow drummer's hand attached to the same mallet, with one continuous straight shaft and natural perspective. Preserve both umbrella faces, all other instrument anatomy, trumpet, drum, piano, arch, sky, color and brushwork. The mallet's new interaction should be visible without adding a new prop. No other differences, no text or watermark.",
+      "usedRegions": ["mallet-pink-canopy"]
+    }
+  ],
+  "rejectedSources": [
+    {
+      "path": "artwork-review/v4-batch-20261002/dream-009-arch-note-rejected-v4.png",
+      "sha256": "C351E6E7649675DDFA2D26DF518C29811E535987DE68729FAE338DD9B616849C",
+      "prompt": "Edit Image 1 in its identical Dreamerie painterly style and exact framing. Change only the pink flowered stone arch behind the teal umbrella: a single attached vine hanging through the arch becomes a subtle connected pair of musical eighth notes made from leaves and vine, naturally botanical, with no detached pieces. Preserve the turquoise umbrella, flowers, stonework, characters, sky and every other detail exactly. No text or watermark.",
+      "reason": "The generated flowers formed a hanging arch rather than legible musical notes, so this source is retained only as a rejected trial."
+    },
+    {
+      "path": "C:/Users/Kou/.codex/generated_images/01a0bcb0-e299-75d3-a499-50cd08ef04ac/exec-abc5def3-3e93-4baa-a359-4a21aac33476.png",
+      "sha256": "F0AAE6F57766A48FAE746E6C1612ECC107F91C8AF5BC6E7E4DDBD4C872664042",
+      "prompt": "Precise edit of Image 1, the Dreamerie painterly umbrella orchestra. Change ONLY the four black tuning pegs and purple scroll at the RIGHTMOST end of the purple violin under the teal umbrella. Rearrange the four black tuning pegs so their spacing becomes a short-long-short rhythm (instead of the original paired arrangement), while every peg remains attached to the same purple neck, believable as a violin. Make the arrangement clearly different when enlarged but natural from normal viewing size. Preserve violin body, strings, player's bow, umbrella, characters, landscape, style and all other pixels/composition as closely as possible. No changes elsewhere, no extra elements, no text or watermark.",
+      "reason": "The output grew six pegs, violating the instrument anatomy; not used."
+    }
+  ],
+  "notes": "Only the five selected source regions are composited over the bit-identical published original. The initial bow, left stick and scroll were not sufficiently distinct; a separate six-peg violin trial violated anatomy. The flower-arch trial did not make actual notes. Desktop and phone-size full composites and all five answer crops were visually inspected after switching to the selected note vine; no obvious broken joins. Touch/zoom playtesting and difficulty calibration remain pending; this is a development proof, not a production-approved card."
+}
