@@ -1,0 +1,106 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-309",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-309-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-309-original-v4.png",
+    "sha256": "7179B9953881268011DA486804A0F75238C448621D80C0AC24BD06133F763C6B",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-309-altered-source-v4.png",
+    "sha256": "90FC9B8006408A4F980C0FE03E5E31AB610527353F03ED8F99F9C3E92E5AC528",
+    "prompt": "[{\"file\": \"preserve-prompt.json\", \"content\": {\"operation\": \"Original preservation assembly\", \"script\": \"preserve.py\", \"purpose\": \"Five detail regions only; original mug body/stars restored exact, bag strap/outline unaffected, all ladder/nightgown/curtains/slippers original exact.\"}}, {\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit EXACT1672x941 attached DREAMY bedroom painting with LADDER wearing striped nightgown. Five isolated ONE-object details:1) mustard THROW blanket hanging over chair RIGHT x1425,y614: lowerfreeend passes through its OWN loose overhand knot, sameupperdrape/chair exact.2) metal LATCH of wooden chest farRIGHT x1602,y695: hingedflatlatch swings OPEN to left revealing originalmountplate underneath, samechestbody exact.3) cream hanging BAG on LEFTwall x271,y268: goldcrescent embroidereddesign becomes a clean GOLD SPIRAL embroidery on samecloth/outline/strap exact.4) starpainted MUG lefttable x194,y609: ONLY its right HANDLE changes to a continuous FIGURE-EIGHT loop, originalmugbody/stars exact.5) warm LAMPSHADE leftx109,y478: ONLY its lowerRIGHThem corner x175,y531 rolls upward into a hollowfabriclip, restshade/lampbase/light unchanged. Original ladder/nightgown/buttons/bedding/slippers/pompoms/curtains originalEXACT. No newobjects, noobjectswaps/moves, no separate board/nail/tool changes, keep painterlystyle.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "preserve-prompt.json",
+      "content": {
+        "operation": "Original preservation assembly",
+        "script": "preserve.py",
+        "purpose": "Five detail regions only; original mug body/stars restored exact, bag strap/outline unaffected, all ladder/nightgown/curtains/slippers original exact."
+      }
+    },
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit EXACT1672x941 attached DREAMY bedroom painting with LADDER wearing striped nightgown. Five isolated ONE-object details:1) mustard THROW blanket hanging over chair RIGHT x1425,y614: lowerfreeend passes through its OWN loose overhand knot, sameupperdrape/chair exact.2) metal LATCH of wooden chest farRIGHT x1602,y695: hingedflatlatch swings OPEN to left revealing originalmountplate underneath, samechestbody exact.3) cream hanging BAG on LEFTwall x271,y268: goldcrescent embroidereddesign becomes a clean GOLD SPIRAL embroidery on samecloth/outline/strap exact.4) starpainted MUG lefttable x194,y609: ONLY its right HANDLE changes to a continuous FIGURE-EIGHT loop, originalmugbody/stars exact.5) warm LAMPSHADE leftx109,y478: ONLY its lowerRIGHThem corner x175,y531 rolls upward into a hollowfabriclip, restshade/lampbase/light unchanged. Original ladder/nightgown/buttons/bedding/slippers/pompoms/curtains originalEXACT. No newobjects, noobjectswaps/moves, no separate board/nail/tool changes, keep painterlystyle."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "The chair blanket's free end passes through its own knot.",
+      "box": {
+        "x": 1343,
+        "y": 608,
+        "width": 137,
+        "height": 200
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The chest latch swings open to the left.",
+      "box": {
+        "x": 1525,
+        "y": 649,
+        "width": 108,
+        "height": 100
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The hanging bag bears gold spiral embroidery.",
+      "box": {
+        "x": 241,
+        "y": 247,
+        "width": 70,
+        "height": 77
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "The mug's handle forms a continuous figure eight.",
+      "box": {
+        "x": 212,
+        "y": 568,
+        "width": 39,
+        "height": 76
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "The lampshade's lower right hem rolls into a hollow lip.",
+      "box": {
+        "x": 134,
+        "y": 484,
+        "width": 81,
+        "height": 63
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Five single artifact edits, no swaps. Hinge latch and blanket self knot plus rolled shade supply mechanisms/relationships. Entire source assembled over inventory original except five detail regions; original mug stars/body restored. Full/native five paired crops/390 pair inspected. Difficulty and root joins pending; mug handle and shade hem small but structural recognizable details.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

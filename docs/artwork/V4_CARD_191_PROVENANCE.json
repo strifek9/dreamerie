@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-191",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-191-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-191-original-v4.png",
+    "sha256": "9A3E823292E8A65FB5FFAB0BAC1A3503DDBFD43A85EBBA907A9E326CCDF4F056",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-191-altered-source-v4.png",
+    "sha256": "45CB9B8B9F9EE9FE67B66D02F1FA0D84D935C9E8CD2D0B8A32F59C91F3F85C89",
+    "prompt": "[{\"file\": \"prompt-refine.json\", \"content\": {\"prompt\": \"One targeted edit ONLY: upper-left tall hanging ivory mask has a black teardrop hole around native (478,187). Replace this black teardrop hole with a clearly black HEART-shaped hole of comparable size, ivory rim matching painting. Eye, mouth, entire mask silhouette and all else exactly preserved. Full original native1672x941 image, same framing/style. Do not edit any other object.\"}}, {\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit this exact painting, native 1672x941 framing and style preserved. Five localized single-object changes only: (1) seated blushing mask left eye near (790,325) opens into a round black eye hole; its right eye stays exactly original. (2) ONLY reflected mask mouth near (814,796) becomes a downward sad frown rather than smiling, reflected eyes and real mask stay original. (3) upper-left hanging mask black teardrop near (478,187) points downward rather than upward, same location and size. (4) green chair central tuft button near (844,183) becomes a diamond-shaped green button, same size/location. (5) hanging gold bow ABOVE chair right: ONLY its right free tail near (1036,96) curls upward into a small hook rather than hanging straight down; both bow loops and left tail stay original. Preserve everything else including anatomy, curtains, all other masks, chair structure, reflection and painterly lighting. Exactly five one-object clues; no paired swaps, added objects, or global restyling.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt-refine.json",
+      "content": {
+        "prompt": "One targeted edit ONLY: upper-left tall hanging ivory mask has a black teardrop hole around native (478,187). Replace this black teardrop hole with a clearly black HEART-shaped hole of comparable size, ivory rim matching painting. Eye, mouth, entire mask silhouette and all else exactly preserved. Full original native1672x941 image, same framing/style. Do not edit any other object."
+      }
+    },
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit this exact painting, native 1672x941 framing and style preserved. Five localized single-object changes only: (1) seated blushing mask left eye near (790,325) opens into a round black eye hole; its right eye stays exactly original. (2) ONLY reflected mask mouth near (814,796) becomes a downward sad frown rather than smiling, reflected eyes and real mask stay original. (3) upper-left hanging mask black teardrop near (478,187) points downward rather than upward, same location and size. (4) green chair central tuft button near (844,183) becomes a diamond-shaped green button, same size/location. (5) hanging gold bow ABOVE chair right: ONLY its right free tail near (1036,96) curls upward into a small hook rather than hanging straight down; both bow loops and left tail stay original. Preserve everything else including anatomy, curtains, all other masks, chair structure, reflection and painterly lighting. Exactly five one-object clues; no paired swaps, added objects, or global restyling."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "open-eye",
+      "label": "The seated mask opens one eye.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 758,
+        "y": 284,
+        "width": 61,
+        "height": 66
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "reflection-frown",
+      "label": "The reflected mask frowns.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 767,
+        "y": 765,
+        "width": 89,
+        "height": 72
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "heart-hole",
+      "label": "The hanging mask has a heart-shaped hole.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 451,
+        "y": 150,
+        "width": 54,
+        "height": 70
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "diamond-button",
+      "label": "The chair button becomes a diamond.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 819,
+        "y": 155,
+        "width": 50,
+        "height": 56
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "curled-tail",
+      "label": "The bow\u2019s right tail curls upward.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1021,
+        "y": 63,
+        "width": 45,
+        "height": 62
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five paired crops, full composite and 390-pixel stacked pair inspected. Single-object changes; difficulty hypotheses only. Root browser/hit QA and human fairness remain pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

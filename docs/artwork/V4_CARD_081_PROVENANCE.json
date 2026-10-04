@@ -1,0 +1,120 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-081",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-081-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-081-original-v4.png",
+    "sha256": "5AC3939DEA4B85D2B94231B10C421967209A5ED60AED79685F69A120ACCEAD09",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-081-altered-source-v4.png",
+    "sha256": "D54729ABFF8B31428E9E235C884119003039D8F0908DB50C0F7A26E8BBE5BA93",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise-object-edit of provided1672x941 Dreamerie umbrella repair shop illustration. Keep woman's face/hands/anatomy, cat, umbrellas and exact paintedgrainfreefinish unchanged. Five independent singleobject edits ONLY: 1 stitched darkblue trianglepatch on mainpurpleumbrella becomes rounded triangularshape with allthree corners gentlycurved, sameboundarybox655,437,154,173; keepgoldstitching coherent. 2 goldRIGHT scissor handleloop nearest bottomright becomes softly angular hexagonal loop instead of oval, box1161,796,132,63; preserve blades,pivot,leftloop. 3 creammoon emblem on bluemug farleft opens UP instead of right, bounds165,741,64,85; no mugchange. 4 lightningbolt INSIDEround bottle behind woman'sright shoulder centered1290,400 forks upward rather than downward, box1270,366,52,70; keepbottle/cloudunchanged. 5 top darkhole of redthreadspool becomes narrow horizontaloval instead of round hole, box850,689,43,23; preserve spoolbody/thread. No otherpixelchanges, no text/no grain/extraprops, oneobjectperclue.\"}}, {\"file\": \"spool-prompt.json\", \"content\": {\"prompt\": \"Preciseoneobjectedit of this native1672x941painting. ONLY alter the redthread winding on spool foregroundcenter (spoolbodyx839-910,y712-794): thread wraps in CLEAR diagonalcrisscross diamond crossings rather than original stackedhorizontal circles. Same red thread color and spooloutline, top/bottomwhiteflanges and loose-thread end unchanged. This is woundthread pattern/mechanismchange, not colorchange. Keep everyotherpixel/object exact. No text grain extraobjects.\"}}, {\"file\": \"bolt-prompt.json\", \"content\": {\"prompt\": \"Precise oneobjectedit of original1672x941. In smallroundstormbottle nearx1301,y384 thereareTWOwhite lightningbolts undercloud. Alter ONLYLEFT bolt aroundx1289,y404: it curls into smooth downward S instead of angularzigzag, stays insidebox1271,381,40,63. Preserve RIGHTbolt atx1330,y410 absolutely unchanged and cloud unchanged. No connectingforks; keep two separatebolts, changeonlyleftone. Everyotherimagepixel/object exact, nativepaintedfinish, no textgrain.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise-object-edit of provided1672x941 Dreamerie umbrella repair shop illustration. Keep woman's face/hands/anatomy, cat, umbrellas and exact paintedgrainfreefinish unchanged. Five independent singleobject edits ONLY: 1 stitched darkblue trianglepatch on mainpurpleumbrella becomes rounded triangularshape with allthree corners gentlycurved, sameboundarybox655,437,154,173; keepgoldstitching coherent. 2 goldRIGHT scissor handleloop nearest bottomright becomes softly angular hexagonal loop instead of oval, box1161,796,132,63; preserve blades,pivot,leftloop. 3 creammoon emblem on bluemug farleft opens UP instead of right, bounds165,741,64,85; no mugchange. 4 lightningbolt INSIDEround bottle behind woman'sright shoulder centered1290,400 forks upward rather than downward, box1270,366,52,70; keepbottle/cloudunchanged. 5 top darkhole of redthreadspool becomes narrow horizontaloval instead of round hole, box850,689,43,23; preserve spoolbody/thread. No otherpixelchanges, no text/no grain/extraprops, oneobjectperclue."
+      }
+    },
+    {
+      "file": "spool-prompt.json",
+      "content": {
+        "prompt": "Preciseoneobjectedit of this native1672x941painting. ONLY alter the redthread winding on spool foregroundcenter (spoolbodyx839-910,y712-794): thread wraps in CLEAR diagonalcrisscross diamond crossings rather than original stackedhorizontal circles. Same red thread color and spooloutline, top/bottomwhiteflanges and loose-thread end unchanged. This is woundthread pattern/mechanismchange, not colorchange. Keep everyotherpixel/object exact. No text grain extraobjects."
+      }
+    },
+    {
+      "file": "bolt-prompt.json",
+      "content": {
+        "prompt": "Precise oneobjectedit of original1672x941. In smallroundstormbottle nearx1301,y384 thereareTWOwhite lightningbolts undercloud. Alter ONLYLEFT bolt aroundx1289,y404: it curls into smooth downward S instead of angularzigzag, stays insidebox1271,381,40,63. Preserve RIGHTbolt atx1330,y410 absolutely unchanged and cloud unchanged. No connectingforks; keep two separatebolts, changeonlyleftone. Everyotherimagepixel/object exact, nativepaintedfinish, no textgrain."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The scissor right finger loop has an angular outline",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1163,
+        "y": 794,
+        "width": 134,
+        "height": 67
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The mug crescent opens upward",
+      "difficulty": "Medium",
+      "box": {
+        "x": 151,
+        "y": 736,
+        "width": 77,
+        "height": 84
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The spool thread crosses diagonally",
+      "difficulty": "Hard",
+      "box": {
+        "x": 835,
+        "y": 710,
+        "width": 81,
+        "height": 85
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "spool.png"
+    },
+    {
+      "id": "change-4",
+      "label": "Only the left bottle lightning curls in an S",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1266,
+        "y": 374,
+        "width": 44,
+        "height": 66
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "bolt.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The umbrella patch corners are rounded",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 656,
+        "y": 435,
+        "width": 156,
+        "height": 174
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker nativepair/fivepairedcrops/390stack inspected. Tinyspoolhole edit rejected replaceddiagonalthreadwinding. Initialbottle sourcemergedtwo bolts rejected; onlyleftbolt S-kink refined, rightbolt originalpixels independentlyverifiedexact. Five singleobjects/no swaps. Native/nonoverlap/exactoutside pass; root compositor/game and human difficulty pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

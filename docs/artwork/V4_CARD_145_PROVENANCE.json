@@ -1,0 +1,116 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-145",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-145-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-145-original-v4.png",
+    "sha256": "3F40192A8B4741583D27835AE1E2A3765F423ACFCB6C13E777F8B694C2FB403D",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-145-altered-source-v4.png",
+    "sha256": "CA533829626D53FAE91B356C6695E39A03D4EE0EB77A245F0D20269FEDAEC945",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact native1672x941 full dreamy painting with only five localized single-object changes: 1 creature's golden left eye closes into a curved dark eyelid, preserve blue right eye nose mouth. 2 tray's upright right rectangular handle at x1011y478 becomes a closed oval arch handle, same tray boundary slipper hands. 3 red toy car at lower right its front left door is visibly slightly open outward, same car wheels windows roof, no extra parts or changed separate objects. 4 brown stitched patch on creature's left sleeve near x410y628 becomes a heart outline instead of round oval, same brown material and stitches, sleeve folds unchanged. 5 foreground blue-and-white sock at x319y814: knitted stripes become a row of large blue diamond motifs on cream, same sock silhouette and position. Preserve slipper star, feet, bedcloth and all rest untouched.\", \"reference\": \"dream-145-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact native1672x941 full dreamy painting with only five localized single-object changes: 1 creature's golden left eye closes into a curved dark eyelid, preserve blue right eye nose mouth. 2 tray's upright right rectangular handle at x1011y478 becomes a closed oval arch handle, same tray boundary slipper hands. 3 red toy car at lower right its front left door is visibly slightly open outward, same car wheels windows roof, no extra parts or changed separate objects. 4 brown stitched patch on creature's left sleeve near x410y628 becomes a heart outline instead of round oval, same brown material and stitches, sleeve folds unchanged. 5 foreground blue-and-white sock at x319y814: knitted stripes become a row of large blue diamond motifs on cream, same sock silhouette and position. Preserve slipper star, feet, bedcloth and all rest untouched.",
+        "reference": "dream-145-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "closed-eye",
+      "label": "The creature closes its golden eye",
+      "difficulty": "Easy",
+      "box": {
+        "x": 537,
+        "y": 369,
+        "width": 111,
+        "height": 99
+      },
+      "edgeFade": 5
+    },
+    {
+      "id": "car-door",
+      "label": "The toy car door stands open",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1456,
+        "y": 725,
+        "width": 110,
+        "height": 129
+      },
+      "edgeFade": 5
+    },
+    {
+      "id": "sock-diamonds",
+      "label": "The sock has knitted diamonds",
+      "difficulty": "Hard",
+      "box": {
+        "x": 58,
+        "y": 730,
+        "width": 546,
+        "height": 153
+      },
+      "edgeFade": 5
+    },
+    {
+      "id": "tray-handle",
+      "label": "The tray handle is rounded",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 955,
+        "y": 439,
+        "width": 111,
+        "height": 80
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "heart-patch",
+      "label": "The sleeve patch is heart-shaped",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 362,
+        "y": 551,
+        "width": 117,
+        "height": 137
+      },
+      "edgeFade": 5
+    }
+  ],
+  "notes": {
+    "humanTimed": false,
+    "physicalPhone": false,
+    "notes": "Five single-object edits, eye action and open car door mechanism. Sock entire native silhouette captured, other objects excluded.",
+    "outsideRegionsExact": true,
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sourceHashes": {
+      "source.png": "ca533829626d53fae91b356c6695e39a03d4ee0eb77a245f0d20269fedaec945"
+    }
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

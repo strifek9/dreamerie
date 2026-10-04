@@ -1,0 +1,125 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-120",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-120-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-120-original-v4.png",
+    "sha256": "A87F6E5B9EF51AF623A560468908E40487DE46BD58E362A6CA56D8E5EF364C26",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-120-altered-source-v4.png",
+    "sha256": "AA498BFD14BC905A0ABE2A00DB85D943AAB424CC4F42E23BCBE3A97F64B1A0F3",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"Edit attached full original native1672x941 Last Lantern Before Morning painting with EXACTLY5 small bounded changes, keep all framing/anatomy/style and rest original.1 gold crescent finial at1040,46 becomes a gold open circular ring on unchanged top mount.2 coat clasp emblem at686,394 changes from little butterfly to HEART inside same gold disc.3 coral door handle's ONLY bottom hanging ring centered821,562 swings LEFT as though hinged, attached atoriginal upperend821,545, resthandle/girlhand/rose/backplate exact.4 large moth's ONLY RIGHT wing centered1150,440 folds upward into a narrower upright wing with its original blue eyespot still on that wing, LEFTwing/body/antennae untouched.5 dark leaf cutout at438,819 in coat hem stays sameleaf silhouette but its inner cream central vein now arcs to opposite side with branches pointing opposite, oneleaf internal pattern only. Clean continuous hinge/wing joins, no grain-only differences, no unrelated edits or swaps. Full same canvas.\"}}, {\"file\": \"prompt-refine.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"Edit ONLY attached original full1672x941painting: LARGE moth's RIGHT antenna, currently straight projecting from head near1128,407 toward1151,400, curls at its terminal into a clear small spiral hook instead of straight. Antenna remains attached to original head. Preserve moth BODY, both wings/blue spots and left antenna exactly original at their original coordinates. Only ONE antenna tip changes, no moved moth or wing. Keep everything else on full canvas exact. Crisp visible curved antenna silhouette, not grain or speck differences.\"}}, {\"file\": \"prompt-antenna-fork.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"ONLY ONE local object edit in full native1672x941attachedoriginalpainting. LARGE moth RIGHT antenna at1128,407 to1150,400: replace its dark rounded end with a connected bold forked Y-shaped terminal. Two little branches of SAME antenna join directly at existing endpoint1150,400. The straight shaft remains attached to original moth head; branches are continuous, not floating ornaments. Original body, both wings, left antenna, every other pixel/object preserved. No other changes, full originalframe.\"}}, {\"file\": \"prompt-small-moth-pose.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"ONLY ONE local edit attached full1672x941originalpainting: SMALL cream moth in lantern at995,477 (below and LEFT of biggest moth) turns to face opposite direction. Show this SAME small moth in side profile facing RIGHT with wings folded upright together, original location/scale ~45x42px, distinct wing-over-body silhouette. Preserve biggest moth with both blue eyespots, allothermoths/flowers/girl/lantern original. No duplication, one small moth changes its pose only. Native fullframe, connected anatomy, keep glowy painterlystyle.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "Edit attached full original native1672x941 Last Lantern Before Morning painting with EXACTLY5 small bounded changes, keep all framing/anatomy/style and rest original.1 gold crescent finial at1040,46 becomes a gold open circular ring on unchanged top mount.2 coat clasp emblem at686,394 changes from little butterfly to HEART inside same gold disc.3 coral door handle's ONLY bottom hanging ring centered821,562 swings LEFT as though hinged, attached atoriginal upperend821,545, resthandle/girlhand/rose/backplate exact.4 large moth's ONLY RIGHT wing centered1150,440 folds upward into a narrower upright wing with its original blue eyespot still on that wing, LEFTwing/body/antennae untouched.5 dark leaf cutout at438,819 in coat hem stays sameleaf silhouette but its inner cream central vein now arcs to opposite side with branches pointing opposite, oneleaf internal pattern only. Clean continuous hinge/wing joins, no grain-only differences, no unrelated edits or swaps. Full same canvas."
+      }
+    },
+    {
+      "file": "prompt-refine.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "Edit ONLY attached original full1672x941painting: LARGE moth's RIGHT antenna, currently straight projecting from head near1128,407 toward1151,400, curls at its terminal into a clear small spiral hook instead of straight. Antenna remains attached to original head. Preserve moth BODY, both wings/blue spots and left antenna exactly original at their original coordinates. Only ONE antenna tip changes, no moved moth or wing. Keep everything else on full canvas exact. Crisp visible curved antenna silhouette, not grain or speck differences."
+      }
+    },
+    {
+      "file": "prompt-antenna-fork.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "ONLY ONE local object edit in full native1672x941attachedoriginalpainting. LARGE moth RIGHT antenna at1128,407 to1150,400: replace its dark rounded end with a connected bold forked Y-shaped terminal. Two little branches of SAME antenna join directly at existing endpoint1150,400. The straight shaft remains attached to original moth head; branches are continuous, not floating ornaments. Original body, both wings, left antenna, every other pixel/object preserved. No other changes, full originalframe."
+      }
+    },
+    {
+      "file": "prompt-small-moth-pose.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "ONLY ONE local edit attached full1672x941originalpainting: SMALL cream moth in lantern at995,477 (below and LEFT of biggest moth) turns to face opposite direction. Show this SAME small moth in side profile facing RIGHT with wings folded upright together, original location/scale ~45x42px, distinct wing-over-body silhouette. Preserve biggest moth with both blue eyespots, allothermoths/flowers/girl/lantern original. No duplication, one small moth changes its pose only. Native fullframe, connected anatomy, keep glowy painterlystyle."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "ring-finial",
+      "label": "The lantern crescent finial becomes a ring.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 982,
+        "y": 0,
+        "width": 115,
+        "height": 96
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "heart-clasp",
+      "label": "The coat clasp carries a heart.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 668,
+        "y": 372,
+        "width": 36,
+        "height": 46
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "swinging-handle",
+      "label": "The coral handle's bottom loop swings left.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 779,
+        "y": 537,
+        "width": 57,
+        "height": 42
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "leaf-vein-pattern",
+      "label": "The coat leaf's vein pattern gains branches.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 396,
+        "y": 780,
+        "width": 76,
+        "height": 96
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "folded-moth",
+      "label": "The small moth folds its wings upright.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 966,
+        "y": 443,
+        "width": 65,
+        "height": 64
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Source generations and bounded composites inspected; five isolated objects. Difficulty labels are hypotheses. No human or physical-phone fairness validation.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

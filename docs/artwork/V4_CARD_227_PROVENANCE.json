@@ -1,0 +1,110 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-227",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-227-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-227-original-v4.png",
+    "sha256": "29B5C4FAA3917465E8472952184926A01D9DBA0B557841933686D2866F4A7E04",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-227-altered-source-v4.png",
+    "sha256": "42C91572BED828574B8752CC6AE2784C05AA65F47FF412C3C210CE1C25CDF2A2",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit this exact original painterly rabbit scene preserving original composition, anatomy, gentle lighting and all unchanged objects. Five localized single-object changes only: 1 the rabbit's visible eye closes in a gentle wink, keep eyelids and fur natural. 2 The lilac bow on the black magician hat changes into a neatly tied single-loop knot with one clear loop and two hanging tails; keep ribbon band unchanged. 3 The drawer's round brass knob becomes a heart-shaped brass knob same location and mounting. 4 The lower corner tip of the lilac cloth draped on left drawer folds upward into a small triangular flap; rest cloth unchanged. 5 On the paper stair at right, just the SECOND broad vertical riser below tabletop (near x1175 y673) gets one clear crescent-shaped recessed cutout centered on its face, all other paper steps stay exactly intact. No changing other objects, no added creatures or props. Keep every local edge seamless and scene fitting.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit this exact original painterly rabbit scene preserving original composition, anatomy, gentle lighting and all unchanged objects. Five localized single-object changes only: 1 the rabbit's visible eye closes in a gentle wink, keep eyelids and fur natural. 2 The lilac bow on the black magician hat changes into a neatly tied single-loop knot with one clear loop and two hanging tails; keep ribbon band unchanged. 3 The drawer's round brass knob becomes a heart-shaped brass knob same location and mounting. 4 The lower corner tip of the lilac cloth draped on left drawer folds upward into a small triangular flap; rest cloth unchanged. 5 On the paper stair at right, just the SECOND broad vertical riser below tabletop (near x1175 y673) gets one clear crescent-shaped recessed cutout centered on its face, all other paper steps stay exactly intact. No changing other objects, no added creatures or props. Keep every local edge seamless and scene fitting."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The rabbit closes its visible eye",
+      "difficulty": "Easy",
+      "box": {
+        "x": 695,
+        "y": 136,
+        "width": 59,
+        "height": 74
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The hat bow has one loop",
+      "difficulty": "Medium",
+      "box": {
+        "x": 925,
+        "y": 448,
+        "width": 70,
+        "height": 99
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The drawer knob forms a heart",
+      "difficulty": "Hard",
+      "box": {
+        "x": 511,
+        "y": 710,
+        "width": 101,
+        "height": 94
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The cloth corner folds upward",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 101,
+        "y": 681,
+        "width": 211,
+        "height": 185
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The paper riser has a crescent recess",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1161,
+        "y": 644,
+        "width": 62,
+        "height": 68
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "visually inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "nativePreflight": "source equals actual original size, five nonoverlapping boxes",
+    "difficulty": "hypotheses; human and browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

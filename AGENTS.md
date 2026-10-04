@@ -1,5 +1,9 @@
 # Working on DREAMERIE
 
+## Current authorized V4 expansion — October 4, 2026
+
+The owner explicitly authorized all356 remaining cards, superseding historical first-batch limits below. All356 new isolated proofs plus27 existing proofs have root technical QA. See docs/V4_EXPANSION_COMPLETE_20261004.md and docs/artwork/V4_EXPANSION_PROGRESS_20261004.json. Human timed difficulty, physical-phone and production selection/publication remain pending. Preserve ordinary383 daily/558 saved IDs and social branch; The owner now authorized commit/push and updating only the existing V4 playtest; main production still needs separate approval. Older readiness numbers below are historical snapshots.
+
 ## Version 4 technical review follow-up - October 4, 2026
 
 The three outstanding first-batch drafts (016, 018, 020) have desktop/phone composite and all five paired-crop QA. Corrections and remaining gates are in docs/V4_BATCH_REVIEW_20261004.md. All 93 tests/build, preview gate and complete V3 lossless checks pass; isolated mobile/desktop development and production browser flows pass. The 383-card release ledger remains pending. Technical review does not constitute human difficulty approval or a complete V4. No commit/push/merge/deployment occurred. Keep these proofs isolated while the first twenty receive human playtesting.
@@ -260,3 +264,7 @@ style(dreams): improve mobile card layout
 ## Model recommendations
 
 At milestone boundaries, flag when a stronger coding/reasoning model could materially help, using the checkpoints in [PROTOTYPE_PLAN.md](docs/PROTOTYPE_PLAN.md). Recommend the switch before beginning affected work, especially before decoy selection and the guessing/scoring state transitions. Explain the concrete benefit, verify current official model guidance when making product claims, and leave model selection to the user. Do not expand scope or change models automatically.
+
+## Remaining356 V4 revision — October4 2026, active authorization
+
+The user explicitly requested the same V4 treatment for ALL remaining356 cards (Sentinel_5108930678048191a953e5126c4c74c5), covering338ordinary and18holiday cards. This supersedes historical recommendations to wait for retain/revise decisions or stop after the first20 before authoring more. Preserve the existing27proofs and all published original assets/IDs, mainV3 and socialbranch. Author and technically validate resumable native localized-five-change proofs; accurate observed clues and relationship/action/order/mechanism variety are required. Technical acceptance is not human timed difficulty, physical-phone or production approval. Progress/ownership/counts: docs/artwork/V4_EXPANSION_PROGRESS_20261004.json. No commit/push/deploy of this newly authorized356-card work until separately requested. The earlier dedicated playtest remains at3883f412ae19cded1dc7d2bbaf1aa030d573a153. Root is sole integrator/ledgerwriter; parallel generation workers own isolated per-card output directories.

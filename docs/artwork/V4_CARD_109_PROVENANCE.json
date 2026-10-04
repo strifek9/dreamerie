@@ -1,0 +1,98 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-109",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-109-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-109-original-v4.png",
+    "sha256": "ABB25969470EDA8FF1FA69ED813F3A9FD2D5641357EF6EBC082549A3CA4A90EE",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-109-altered-source-v4.png",
+    "sha256": "4AEC9966FC477CAE7A344B86501743CD56D9EF1048A2881924F7328DE9C62B4D",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise edit attached penguinandmouse rowing KIWIboat pinksea painting. EXACT1672x941 frame animalanatomy/poses/objectpositions paintedpalette preserved. FIVE localizedone-object changes ONLY:1) bigFRONTBLUEPADDLE blade closestviewer cups into a shallow spoon-shaped hollowblade, samebluewood size/location shaftunchanged, visiblecurvedinteriorshadow coherentpaddle.2) greenTRIANGULARFLAG onrightmast: its freeflying tip rollsinto a hollowgreenfabric tube, sameflagmaterial/pole/cordunchanged noextraflag.3) goldBELL atboatbow: existing roundclapper stem curlsinto a small goldloop underbellrim instead ofstraightstem+roundball, ONE continuousclapper, bellbody/supportchainunchanged.4) mouse'spinkTAIL leftofbody: tail loops THROUGH ITS OWN curl into a small loose self-knot, same tailattached naturally no animalchanges.5) penguinredSCARF flyingtail farleft: fringestrands braidinto one smallplait atfreeend, clothbody/neckscarfposition unchanged. Eachdifferenceone artifactpart orinternalpattern. No kiwiSEEDswaps/no otherboatdetails changes/noextras/textmarkers. Fairnotmicrospecks.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise edit attached penguinandmouse rowing KIWIboat pinksea painting. EXACT1672x941 frame animalanatomy/poses/objectpositions paintedpalette preserved. FIVE localizedone-object changes ONLY:1) bigFRONTBLUEPADDLE blade closestviewer cups into a shallow spoon-shaped hollowblade, samebluewood size/location shaftunchanged, visiblecurvedinteriorshadow coherentpaddle.2) greenTRIANGULARFLAG onrightmast: its freeflying tip rollsinto a hollowgreenfabric tube, sameflagmaterial/pole/cordunchanged noextraflag.3) goldBELL atboatbow: existing roundclapper stem curlsinto a small goldloop underbellrim instead ofstraightstem+roundball, ONE continuousclapper, bellbody/supportchainunchanged.4) mouse'spinkTAIL leftofbody: tail loops THROUGH ITS OWN curl into a small loose self-knot, same tailattached naturally no animalchanges.5) penguinredSCARF flyingtail farleft: fringestrands braidinto one smallplait atfreeend, clothbody/neckscarfposition unchanged. Eachdifferenceone artifactpart orinternalpattern. No kiwiSEEDswaps/no otherboatdetails changes/noextras/textmarkers. Fairnotmicrospecks."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "The front blue paddle has a hollow cupped blade.",
+      "box": {
+        "x": 548,
+        "y": 590,
+        "width": 228,
+        "height": 209
+      },
+      "edgeFade": 5
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The flag's free end rolls into a tube.",
+      "box": {
+        "x": 1240,
+        "y": 329,
+        "width": 160,
+        "height": 109
+      },
+      "edgeFade": 5
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The scarf fringe braids into a plait.",
+      "box": {
+        "x": 447,
+        "y": 190,
+        "width": 169,
+        "height": 112
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "The mouse's tail threads through its own knot.",
+      "box": {
+        "x": 355,
+        "y": 424,
+        "width": 96,
+        "height": 107
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "The bell's clapper curls into a loop.",
+      "box": {
+        "x": 1144,
+        "y": 514,
+        "width": 56,
+        "height": 62
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Fullframe actualchanges matchobservedlabels: frontpaddlebowl, flagtiproll, scarffringebraid, mousetailownknot, bellclapperloop. No swaps/seedchanges. Eachoneobjectpart, joinedanatomy/shafts preserved. Rootfinalclippedpixel/joins QArequired; difficultyhypothesesonly.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

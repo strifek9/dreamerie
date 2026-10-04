@@ -1,0 +1,104 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-076",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-076-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-076-original-v4.png",
+    "sha256": "0169BE87AA842D434D7EDE8FBACCC287BE994C69C4D4A78282F8BC1F4B19AA5A",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-076-altered-source-v4.png",
+    "sha256": "1C40C9A04EA3335FBC3A648A906AFC23466CB58169FD619499A131937FA4E7B2",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"Precise-object-edit native1672x941 Dreamerie Velvet Moon Hotel attached. Preserve exactcomposition, buildings/birdanatomy/windows/flowers/stars/styles grainfreepaint. Exactlyfive SINGLEOBJECT localized changes:1 ONLY ivory crescentcushion on greenchair x1460,y497 closes into full ring-shapedcushion withcircular hole, samearea;2 ONLY clock's LONGminutehand x1270,y222 points straightDOWN instead UP, preservehourhandpointingupperright andclockface unchanged;3 ONLY curtain goldtassel cordknot x1545,y416 threads BEHIND its goldtieback cord rather thanover, samecurtain/rope/tasselposition;4 ONLY hanging lantern belowLEFT crescent atx551,y638 has its frontfastening turnedhorizontal like a sidewaysbrasspin, keepalllampglow/chain/bodyexact;5 ONLY bird's highest golden crest feather atx1170,y332 curls downward atits tip rather thanarchingup, allothercrestfeathersunchanged. Onechangedobject perclue, no independentobjectswap, no alteringmultiplefeathers/stars/windows. No newobjects/text/grain/crop/globalrestyle. Clean localjoined geometry.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "Precise-object-edit native1672x941 Dreamerie Velvet Moon Hotel attached. Preserve exactcomposition, buildings/birdanatomy/windows/flowers/stars/styles grainfreepaint. Exactlyfive SINGLEOBJECT localized changes:1 ONLY ivory crescentcushion on greenchair x1460,y497 closes into full ring-shapedcushion withcircular hole, samearea;2 ONLY clock's LONGminutehand x1270,y222 points straightDOWN instead UP, preservehourhandpointingupperright andclockface unchanged;3 ONLY curtain goldtassel cordknot x1545,y416 threads BEHIND its goldtieback cord rather thanover, samecurtain/rope/tasselposition;4 ONLY hanging lantern belowLEFT crescent atx551,y638 has its frontfastening turnedhorizontal like a sidewaysbrasspin, keepalllampglow/chain/bodyexact;5 ONLY bird's highest golden crest feather atx1170,y332 curls downward atits tip rather thanarchingup, allothercrestfeathersunchanged. Onechangedobject perclue, no independentobjectswap, no alteringmultiplefeathers/stars/windows. No newobjects/text/grain/crop/globalrestyle. Clean localjoined geometry."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "cushion-ring",
+      "label": "The chair's crescent cushion closes into a ring.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1416,
+        "y": 451,
+        "width": 87,
+        "height": 87
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "minute-hand",
+      "label": "The clock's long hand points downward.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1254,
+        "y": 188,
+        "width": 35,
+        "height": 120
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "crest-tip",
+      "label": "The bird's longest crest feather curls at its tip.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1210,
+        "y": 337,
+        "width": 70,
+        "height": 42
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "lantern-pin",
+      "label": "The hanging lantern has a sideways fastening pin.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 512,
+        "y": 608,
+        "width": 47,
+        "height": 35
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "tieback-loop",
+      "label": "The curtain tieback forms an extra loop.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1527,
+        "y": 379,
+        "width": 39,
+        "height": 58
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "SelectONLYlongcrestterminalfeather; notwholecrest. Lanternpin andtieback actualsource localizedmechanisms; labelsobserved. No humanvalidation. Exact published nativeoriginal1671x941 generatedsourcealso1671x941; noresizing. Rootnormalizeusing1671. Fullsource/finalworkercomposite/all5pairednativecrops/390stack inspected cleanjoins, 0outside5regionschanges, eachcluenonzero. Native1671x941 sourcehash1c40c9a04ea3335fbc3a648a906afc23466cb58169fd619499a131937fa4e7b2. Difficultyhypothesesonly.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

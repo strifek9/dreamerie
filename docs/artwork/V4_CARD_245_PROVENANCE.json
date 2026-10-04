@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-245",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-245-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-245-original-v4.png",
+    "sha256": "83D2F5792ADBFC8C9D76D429385F05E610308359ED4349541A7AC473E98C78A4",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-245-altered-source-v4.png",
+    "sha256": "7CAD52E844B772F845E6D123EBB719417C9CB32180A95BDA501E2D0B60F4B425",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit precisely original rainy train-station painting with three walking violin cases. Preserve legs/anatomy, positions, identities, station, style and framing. Exactly FIVE localized single-object changes: (1) RED case landscape rectangular sticker depicts a large arched bridge over its existing water instead of mountains, same sticker border; (2) GREEN case carrying leather handle swings outward LEFT from same attachments rather than hanging straight, preserve body and brass clasps; (3) BLACK case bottom circular blue wave emblem has its crest curl LEFT instead of RIGHT, same circle; (4) hanging large station CLOCK minute hand points horizontally right rather than vertically up, preserve other hand/dial; (5) brass treble-clef plaque on lower LEFT bow rack has its central clef curl open sideways rather than current loop, preserve plaque and floral branches. Five one-object internal/action changes, no object swaps, no specks, no multiple buttons.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit precisely original rainy train-station painting with three walking violin cases. Preserve legs/anatomy, positions, identities, station, style and framing. Exactly FIVE localized single-object changes: (1) RED case landscape rectangular sticker depicts a large arched bridge over its existing water instead of mountains, same sticker border; (2) GREEN case carrying leather handle swings outward LEFT from same attachments rather than hanging straight, preserve body and brass clasps; (3) BLACK case bottom circular blue wave emblem has its crest curl LEFT instead of RIGHT, same circle; (4) hanging large station CLOCK minute hand points horizontally right rather than vertically up, preserve other hand/dial; (5) brass treble-clef plaque on lower LEFT bow rack has its central clef curl open sideways rather than current loop, preserve plaque and floral branches. Five one-object internal/action changes, no object swaps, no specks, no multiple buttons."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "sticker",
+      "label": "The red case sticker shows an arched bridge.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 770,
+        "y": 485,
+        "width": 77,
+        "height": 76
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "handle",
+      "label": "The green case handle swings outward left.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1001,
+        "y": 414,
+        "width": 71,
+        "height": 165
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "clock",
+      "label": "The clock hands form a right angle.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 951,
+        "y": 110,
+        "width": 61,
+        "height": 74
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "clef",
+      "label": "The rack plaque clef has a broad round curl.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 423,
+        "y": 654,
+        "width": 34,
+        "height": 73
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "wave",
+      "label": "The black case wave crest curls inward.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1340,
+        "y": 616,
+        "width": 36,
+        "height": 39
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered compositor/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

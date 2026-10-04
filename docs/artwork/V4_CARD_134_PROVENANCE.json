@@ -1,0 +1,98 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-134",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-134-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-134-original-v4.png",
+    "sha256": "9BDEFC72094736B3565D290355BF781BD6758895F2080345A9B98052D74E6D03",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-134-altered-source-v4.png",
+    "sha256": "FAF621F61B2172F1752A3FC192F63D6E41D93DF8FCB8A6603576A224F2B2C5B1",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise edit attached theatrical MASK SHOP wooden mannequins painting, EXACT1672x941 sameframing colorspaint light allposes animals/scales/masks unchanged. FIVE isolated singleartifact changes:1) Gold LIDDED ROUND BOX lowerLEFT aroundx125,y620: its existing lid hinges upward attached onone side revealing darkinside, oneconnectedcontainer, preservebodyornament andnearbyvase.2) HAND MIRROR lowerleft x390 y720: replace straight spiderweb cracks with large continuous silver SPIRAL etchedwithin mirror face, same framehandle/position; no extraobject.3) rightmannequin BROWN SATCHEL flap x1230 y560: opens its own flap UP revealing satchel interior, samebodybelt/stitches, no mannequinbodyclothingchanges.4) RED mask long loose RED ribbon upperrightofmask x1081,y278: tie its OWN freeend into small clearlyreadable overhand knot, samecontinuous ribbon no maskposechanges.5) TEAL round STOOL top aroundx1300,y709: existing goldSUN centraldecoration becomes single bold goldCRESCENT paintedpattern, same seatshape/legs/allborderpaint. Each selectableartifactonechange; no separateobjectswap, no scalesbalancechange, no new text grain clutter.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise edit attached theatrical MASK SHOP wooden mannequins painting, EXACT1672x941 sameframing colorspaint light allposes animals/scales/masks unchanged. FIVE isolated singleartifact changes:1) Gold LIDDED ROUND BOX lowerLEFT aroundx125,y620: its existing lid hinges upward attached onone side revealing darkinside, oneconnectedcontainer, preservebodyornament andnearbyvase.2) HAND MIRROR lowerleft x390 y720: replace straight spiderweb cracks with large continuous silver SPIRAL etchedwithin mirror face, same framehandle/position; no extraobject.3) rightmannequin BROWN SATCHEL flap x1230 y560: opens its own flap UP revealing satchel interior, samebodybelt/stitches, no mannequinbodyclothingchanges.4) RED mask long loose RED ribbon upperrightofmask x1081,y278: tie its OWN freeend into small clearlyreadable overhand knot, samecontinuous ribbon no maskposechanges.5) TEAL round STOOL top aroundx1300,y709: existing goldSUN centraldecoration becomes single bold goldCRESCENT paintedpattern, same seatshape/legs/allborderpaint. Each selectableartifactonechange; no separateobjectswap, no scalesbalancechange, no new text grain clutter."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "The gold container's lid hinges open.",
+      "box": {
+        "x": 44,
+        "y": 502,
+        "width": 163,
+        "height": 196
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Medium",
+      "label": "A spiral replaces the cracks in the hand mirror.",
+      "box": {
+        "x": 308,
+        "y": 660,
+        "width": 167,
+        "height": 125
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The brown satchel's flap opens.",
+      "box": {
+        "x": 1200,
+        "y": 483,
+        "width": 90,
+        "height": 132
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "The mask ribbon ties itself into a knot.",
+      "box": {
+        "x": 1051,
+        "y": 209,
+        "width": 77,
+        "height": 157
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "A crescent replaces the sun on the stool.",
+      "box": {
+        "x": 1251,
+        "y": 686,
+        "width": 115,
+        "height": 39
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Actual five singleartifact edits: attachedgoldcontainerlid, samehandmirror internalpattern, connectedbagflap mechanism, SAMEredribbonownknot includingoldtailunion, stoolinternalgoldpattern. No twoindependentobject swaps. Goldcontainer regionnearvase requiresroot exactmaskjoin QA; stoolflattenedperspective39pxheight but115wide clear crescent. No human difficultyclaims.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

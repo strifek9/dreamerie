@@ -1,0 +1,118 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-257",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-257-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-257-original-v4.png",
+    "sha256": "B6CB5148EC49F275573B2E589E2AB2597500CD021A68AD15F1E73B7171F66851",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-257-altered-source-v4.png",
+    "sha256": "09B45C08A35325DACB8B73E1401FF4E145F78ED609E83265E945C196BBADCD9C",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact fullnative1672x941 pomegranate miniature theater painting FIVE single-object localized differences ONLY. 1 Brass hanging stage ring x732y250 becomes a heart-shaped open ring, same chain and position. 2 LEFT red curtain tassel hanging around x548y397 becomes a looped knot instead of long straight fringe, retain curtain cloth/tieback unchanged. 3 Closest LEFT red theater chair centered x593y651: seatback has a clearly embroidered small golden crescent instead of its tiny round gold stud, chair unchanged. 4 Right opera binocular viewer LEFT barrel x1388y314: open black aperture now covered by pearl-white cap, rest binocular exact. 5 Brass medal lower right x1350y837: central pomegranate emblem is replaced by a clear embossed tiny theatrical comedy smiling mask, outer rim inscription and ribbon unchanged. Preserve all other objects and entire frame/style.\", \"reference\": \"dream-257-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact fullnative1672x941 pomegranate miniature theater painting FIVE single-object localized differences ONLY. 1 Brass hanging stage ring x732y250 becomes a heart-shaped open ring, same chain and position. 2 LEFT red curtain tassel hanging around x548y397 becomes a looped knot instead of long straight fringe, retain curtain cloth/tieback unchanged. 3 Closest LEFT red theater chair centered x593y651: seatback has a clearly embroidered small golden crescent instead of its tiny round gold stud, chair unchanged. 4 Right opera binocular viewer LEFT barrel x1388y314: open black aperture now covered by pearl-white cap, rest binocular exact. 5 Brass medal lower right x1350y837: central pomegranate emblem is replaced by a clear embossed tiny theatrical comedy smiling mask, outer rim inscription and ribbon unchanged. Preserve all other objects and entire frame/style.",
+        "reference": "dream-257-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "lens-cap",
+      "label": "The left opera-glass barrel has a pearl-white cap.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1329,
+        "y": 290,
+        "width": 110,
+        "height": 47
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "curtain-loop",
+      "label": "A braided loop surrounds the left curtain tassel.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 521,
+        "y": 362,
+        "width": 46,
+        "height": 60
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "stage-heart",
+      "label": "The hanging stage ring becomes heart-shaped.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 704,
+        "y": 227,
+        "width": 55,
+        "height": 54
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "chair-moon",
+      "label": "The front center-left seatback bears a golden crescent.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 670,
+        "y": 624,
+        "width": 36,
+        "height": 40
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "medal-mask",
+      "label": "The medal bears a smiling theater mask.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1294,
+        "y": 789,
+        "width": 95,
+        "height": 93
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": {
+    "humanTimed": false,
+    "physicalPhone": false,
+    "notes": [
+      "Actual crescent appears on front center-left chair rather than specified farthest-left front chair. Medal center selection preserves original outer inscription."
+    ],
+    "outsideRegionsExact": true,
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sourceHashes": {
+      "source.png": "09b45c08a35325dacb8b73e1401ff4e145f78ed609e83265e945c196bbadcd9c"
+    }
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-097",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-097-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-097-original-v4.png",
+    "sha256": "75AAE794B4E142807B0A92BD31D4DD19F71290E1B39EEF6C7CE010B393F07B6B",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-097-altered-source-v4.png",
+    "sha256": "286CD14CC9ED4685450B770EA1951CFFD8C1281F8F6779950F12403489EB71F0",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise edit attached oceanwave BLUECLOTH overcreamwoodchest desert littlehouse painting. EXACT1672x941 framing positions palette brushwork preserved. FIVE localized one-object differences:1) small REDPAPERBOAT onchesttop: its frontbow folds inward forming a neatselfloop curledpaper tip, ONE continuousboat paper notextraobject, samearea/position.2) BLUECLOTH whiteHEMBORDER onlowerleft hangingedge nearx260,y800: onebordersection folds through ITS OWN loop into a looseclothselfknot withbluefabric/whiteedgecontinuous, preserve restclothwaves.3) littlehouse circularfrontwindow: sameglowingroundwindow but crossmullions become a spiralinggoldmullion insidecircle, houseallotherpartsroofdoorchimneyunchanged.4) silverchestlockplate lower-right: the existingroundkeyhole becomes an old-fashioned KEYHOLE silhouette withroundtop andsmallstem instead ofplainroundhole, sameplateengraveddiagonals untouched.5) ONE whitefoamy wavecrest paintedoncloth center-left nearx430,y460: foamcurves into a distinct closedcurl spiral instead ofbrokenfoamyline, keepbluewaveoutline andallotherwaves unchanged. No swaps/independentextraobjects, only eachartifact'sinternalpattern/pose, no newprops/textmarkers.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise edit attached oceanwave BLUECLOTH overcreamwoodchest desert littlehouse painting. EXACT1672x941 framing positions palette brushwork preserved. FIVE localized one-object differences:1) small REDPAPERBOAT onchesttop: its frontbow folds inward forming a neatselfloop curledpaper tip, ONE continuousboat paper notextraobject, samearea/position.2) BLUECLOTH whiteHEMBORDER onlowerleft hangingedge nearx260,y800: onebordersection folds through ITS OWN loop into a looseclothselfknot withbluefabric/whiteedgecontinuous, preserve restclothwaves.3) littlehouse circularfrontwindow: sameglowingroundwindow but crossmullions become a spiralinggoldmullion insidecircle, houseallotherpartsroofdoorchimneyunchanged.4) silverchestlockplate lower-right: the existingroundkeyhole becomes an old-fashioned KEYHOLE silhouette withroundtop andsmallstem instead ofplainroundhole, sameplateengraveddiagonals untouched.5) ONE whitefoamy wavecrest paintedoncloth center-left nearx430,y460: foamcurves into a distinct closedcurl spiral instead ofbrokenfoamyline, keepbluewaveoutline andallotherwaves unchanged. No swaps/independentextraobjects, only eachartifact'sinternalpattern/pose, no newprops/textmarkers."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "The cloth hem threads through its own knot.",
+      "box": {
+        "x": 109,
+        "y": 660,
+        "width": 200,
+        "height": 218
+      },
+      "edgeFade": 7
+    },
+    {
+      "difficulty": "Medium",
+      "label": "One end of the paper boat curls into a loop.",
+      "box": {
+        "x": 1459,
+        "y": 516,
+        "width": 77,
+        "height": 67
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Hard",
+      "label": "A foamy wave crest curls into a spiral.",
+      "box": {
+        "x": 470,
+        "y": 392,
+        "width": 147,
+        "height": 135
+      },
+      "edgeFade": 5
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "The chest lock has a keyhole-shaped opening.",
+      "box": {
+        "x": 1487,
+        "y": 772,
+        "width": 28,
+        "height": 48
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "An inner round mullion circles the small house window.",
+      "box": {
+        "x": 1102,
+        "y": 193,
+        "width": 35,
+        "height": 37
+      },
+      "edgeFade": 2
+    }
+  ],
+  "notes": "Fullframe observed. Largeclothhem selfknot andboatendselfloop cleanactions; wavefoam internalclothpattern, lockkeyhole singlemetalartifact, housewindowinternalmullion. Noobjects swaps/no tinyglints. Housewindowonly35x37 inspectablebuthighdifficulty; root QA actualcroppattern required. Clothknot changeslocalclothoutline/exposeswood asonepose; largebox capturesold/new locations. Rootfinalfeatherjoinsrequired. Pairedcrop verifies innerroundmullion added whilecrossstays; label correctedfromspiral toactualcircularpattern. All5crop/390pair QAviewed.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-fathers",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/holidays-painted-v1/fathers-original.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-fathers-original-v4.png",
+    "sha256": "8F6FDFB5117C0924651474C7EF87B292F4561DD90E456AF4F09DA6CAD7214364",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-fathers-altered-source-v4.png",
+    "sha256": "22B5441F36175037235F5E26C2FEB606494E2E1CCDFF3B65E324BC72273333D2",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit precisely this original Father's Day painting Dad's Kite Could Carry a Lake: warm father bear and cub, huge patchwork kite carrying lake/boat, quiet lakeside picnic. Preserve loving family theme, bear anatomy/faces/paws, original exact frame/style and kite premise. Exactly FIVE isolated single-object clues: (1) cub's existing cream heart-shaped CARD blue paw print becomes one bold blue five-point STAR print, card outline and cub paws exact; (2) enamel MUG at bottom left existing green pine print becomes one broad green OAK LEAF print, mug outline/handle exact; (3) father bear scarf's loose end hanging to the LEFT behind shoulder curls UP into an attached rolled loop at its existing lower tip, fringe elsewhere/body exact; (4) open TOOL TIN front brass clasp flips UP OPEN at its existing hinge instead of hanging down, tin/tools/kite miniature exact; (5) small boat INSIDE giant lake-kite its left white sail billows broadly to the LEFT instead of narrow taut triangle, same mast/right sail/blue flag/hull exact. Five single-object internal print/pose/mechanism changes, no two-object swaps, no other buttons/objects changed, no specks.\"}}, {\"file\": \"bird-prompt.json\", \"content\": {\"prompt\": \"Edit this exact isolated single white seagull original crop: same ONE bird body/head/white material/size, flap both attached wings into raised steep V position above body instead of nearly horizontal spread wings. Clear larger silhouette change, no second bird. Same sky exact, no clouds/objects added, original painted style.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit precisely this original Father's Day painting Dad's Kite Could Carry a Lake: warm father bear and cub, huge patchwork kite carrying lake/boat, quiet lakeside picnic. Preserve loving family theme, bear anatomy/faces/paws, original exact frame/style and kite premise. Exactly FIVE isolated single-object clues: (1) cub's existing cream heart-shaped CARD blue paw print becomes one bold blue five-point STAR print, card outline and cub paws exact; (2) enamel MUG at bottom left existing green pine print becomes one broad green OAK LEAF print, mug outline/handle exact; (3) father bear scarf's loose end hanging to the LEFT behind shoulder curls UP into an attached rolled loop at its existing lower tip, fringe elsewhere/body exact; (4) open TOOL TIN front brass clasp flips UP OPEN at its existing hinge instead of hanging down, tin/tools/kite miniature exact; (5) small boat INSIDE giant lake-kite its left white sail billows broadly to the LEFT instead of narrow taut triangle, same mast/right sail/blue flag/hull exact. Five single-object internal print/pose/mechanism changes, no two-object swaps, no other buttons/objects changed, no specks."
+      }
+    },
+    {
+      "file": "bird-prompt.json",
+      "content": {
+        "prompt": "Edit this exact isolated single white seagull original crop: same ONE bird body/head/white material/size, flap both attached wings into raised steep V position above body instead of nearly horizontal spread wings. Clear larger silhouette change, no second bird. Same sky exact, no clouds/objects added, original painted style."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "scarf",
+      "label": "Dad's loose scarf end curls upward.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 194,
+        "y": 369,
+        "width": 185,
+        "height": 215
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "card",
+      "label": "The cub card paw print becomes a star.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 809,
+        "y": 539,
+        "width": 54,
+        "height": 62
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "mug",
+      "label": "The mug pine print becomes an oak leaf.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 112,
+        "y": 688,
+        "width": 55,
+        "height": 62
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "sail",
+      "label": "The boat left sail billows outward.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1210,
+        "y": 93,
+        "width": 76,
+        "height": 66
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "bird",
+      "label": "The high seagull raises its wings.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1361,
+        "y": 8,
+        "width": 73,
+        "height": 47
+      },
+      "edgeFade": 1
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered compositor/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

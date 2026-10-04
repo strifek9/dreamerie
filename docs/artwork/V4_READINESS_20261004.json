@@ -19,9 +19,10 @@
     "humanDifficultyApprovals": 0,
     "physicalPhoneApprovals": 0,
     "productionApprovedV4Cards": 0,
-    "humanVisualArtworkApprovals": 3
+    "humanVisualArtworkApprovals": 1,
+    "historicalReviewedPairVisualArtworkApprovals": 3
   },
-  "interpretation": "383 pending decisions are not 383 known art-generation tasks. 27 source-ready proofs await human difficulty/physical-phone and selection decisions. The other 356 current V3 pairs need an editorial retain/revise decision; no evidence yet establishes which must be regenerated. All original/published cards remain available. A zero known technical raster blocker is limited to the reviewed proofs, not the whole pending collection.",
+  "interpretation": "Initial27-proof inventory retained as historical context. The user subsequently authorizedgeneration/revision ofallremaining356cards; latestsource/compositor/game completioncounts areinthe expansionprogressledger. Originalpublishedcards andall383release decisions remain unchanged.270 retains its reviewed-pair visualapproval; corrected074/197needfreshvisualreview. Human timed difficulty, physicalphone and productionselection remainpending.",
   "cards": [
     {
       "baselineId": "painted-dream-001",
@@ -815,6 +816,11 @@
       "physicalPhoneApproval": "pending",
       "productionApproval": "not approved",
       "visualArtworkAcceptance": {
+        "status": "pending for corrected local pair",
+        "reason": "Single-object fairness correction changes one reviewed clue; earlier approval retained for historical reviewed pair.",
+        "correctionAuthorization": "Sentinel_1aa3e822002c8191a74c51f233f72cbe"
+      },
+      "priorReviewedPairVisualArtworkAcceptance": {
         "status": "approved",
         "date": "2026-10-04",
         "scope": "artwork and authored changes in the reviewed A/B pair only",
@@ -1954,6 +1960,11 @@
       "physicalPhoneApproval": "pending",
       "productionApproval": "not approved",
       "visualArtworkAcceptance": {
+        "status": "pending for corrected local pair",
+        "reason": "Single-object fairness correction changes one reviewed clue; earlier approval retained for historical reviewed pair.",
+        "correctionAuthorization": "Sentinel_1aa3e822002c8191a74c51f233f72cbe"
+      },
+      "priorReviewedPairVisualArtworkAcceptance": {
         "status": "approved",
         "date": "2026-10-04",
         "scope": "artwork and authored changes in the reviewed A/B pair only",
@@ -3658,5 +3669,8 @@
       "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
       "humanDifficultyApproval": "pending"
     }
-  ]
+  ],
+  "snapshotScope": "Initial27-proof inventory; expansion progress supersedes proof counts. Current visual acceptance fields below distinguish prior reviewed pairs from the corrected local pair.",
+  "expansionProgress": "docs/artwork/V4_EXPANSION_PROGRESS_20261004.json",
+  "expansionAuthorization": "Sentinel_5108930678048191a953e5126c4c74c5: generate/revise all remaining356 pairs, including18holidays."
 }

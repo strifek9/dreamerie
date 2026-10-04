@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-205",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-205-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-205-original-v4.png",
+    "sha256": "FD0A36ACA53312B4597FA33D67303095F1E2DA592890EC495ACDC6D8C128FBFC",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-205-altered-source-v4.png",
+    "sha256": "5CE3D0A6F152199D70F346B27F45AB7E81059E0FC9D6C169C6DD344DD0A848E6",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Exact native1672x941 localizedpaintedpear winterroom edit. Preservepearshape texture redcloth sceneinterior allcomposition. Five singleobjects:1 openWOODDOOR keyholeatx1263y554 becomes crescentaperture insteadkeyhole, sameplatewood;2 goldenLEAF foregroundx1100y819 freeRIGHTTIP foldsUP into triangularflap insteadflatpoint, leafstemveinsrest unchanged;3 PEARwoodSTEM topx976y42 freeend curlsdownwardlikehook ratherstraightcut, samebasepear;4 INNERROOM windowx878y445 verticalcenterMULLION bendsS ratherstraightcross, outerwindow unchanged;5 cupfar-right REDSTRIPE one centralverticalstripex1526y350 becomesclearlyzigzag insteadstraightline, otherrimstripescupunchanged. No swaps extras globalchanges; exactlyfive oneobjectinternalpose/mechanism/patterns, preservepaintbrushfinish.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Exact native1672x941 localizedpaintedpear winterroom edit. Preservepearshape texture redcloth sceneinterior allcomposition. Five singleobjects:1 openWOODDOOR keyholeatx1263y554 becomes crescentaperture insteadkeyhole, sameplatewood;2 goldenLEAF foregroundx1100y819 freeRIGHTTIP foldsUP into triangularflap insteadflatpoint, leafstemveinsrest unchanged;3 PEARwoodSTEM topx976y42 freeend curlsdownwardlikehook ratherstraightcut, samebasepear;4 INNERROOM windowx878y445 verticalcenterMULLION bendsS ratherstraightcross, outerwindow unchanged;5 cupfar-right REDSTRIPE one centralverticalstripex1526y350 becomesclearlyzigzag insteadstraightline, otherrimstripescupunchanged. No swaps extras globalchanges; exactlyfive oneobjectinternalpose/mechanism/patterns, preservepaintbrushfinish."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The door plate has a crescent aperture",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1243,
+        "y": 515,
+        "width": 41,
+        "height": 79
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The leaf tip folds upward",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1145,
+        "y": 772,
+        "width": 126,
+        "height": 122
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The pear stem curls downward",
+      "difficulty": "Hard",
+      "box": {
+        "x": 900,
+        "y": 2,
+        "width": 132,
+        "height": 101
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The inner window mullion forms an S",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 851,
+        "y": 370,
+        "width": 52,
+        "height": 145
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The cup has a red zigzag stripe",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1542,
+        "y": 180,
+        "width": 57,
+        "height": 347
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "inspected",
+    "fivePairedCrops": "five single-object clues inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "difficulty": "hypotheses; parent browser and human playtest pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

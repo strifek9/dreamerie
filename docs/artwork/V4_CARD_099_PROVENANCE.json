@@ -1,0 +1,117 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-099",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-099-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-099-original-v4.png",
+    "sha256": "8EE60B9CAAB301BA221B416B3C20D00E05C22A7BDD3CBB61930EE77055809F29",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-099-altered-source-v4.png",
+    "sha256": "C122E463FA27E073F00A4671242F495FB162F607EEB01929D733A67020889019",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precisely edit original1672x941 Dreamerie underwater pearldiverumbrella painting; preserve woman's entireanatomy, clothesoutline, umbrellahandle/shaft geometry and frame/lighting/painterlyfinish. Exactlyfive independentobjects edited: 1 blue pearl inside umbrella (center984,217) reflects a tiny pale stoneARCH instead of its crescentgleam, box958,191,54,54; pearlcontourunchanged. 2 little gold crescent ornament near umbrella righttip (center1189,107) rotates90degrees to openUP, box1160,75,63,61, preserveattachment. 3 golden round cloakbrooch atcenter685,425 gains one diagonal dark fasteningpin/slit instead of plain center, box667,408,36,38; broochoutlineunchanged. 4 largeforeleftfan-shell atx16-178,y733-871 has curvedspiral ribs instead of straightradiatingribs, sameoutline, box11,729,172,148. 5 isolatedgoldkelpleaf beside woman'sLOWER RIGHTcloak atx739,y649 curls UP atits terminaltip instead of trailingdown, box711,620,61,72; keepbranchstem and allotherleaves. No otherchanges,no newobjects,text,grain or swaps.\"}}, {\"file\": \"hand-prompt-root.json\", \"content\": {\"tool\": \"built-in image_gen\", \"prompt\": \"Precise single-object edit of this attached crop of the Pearl Diver's Umbrella underwater painting. Change ONLY this one outstretched empty LEFT HAND into a relaxed CLOSED FIST: curl all four fingers into the palm with the thumb resting naturally over the fingers. Preserve exactly one anatomically coherent hand attached to the original wrist and forearm, original arm angle/position and skin color, original red-purple cloak sleeve and underwater lighting, painterly style and same crop framing. No extra fingers/objects, no changed sleeve, no markers or text. This is one hand pose action.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precisely edit original1672x941 Dreamerie underwater pearldiverumbrella painting; preserve woman's entireanatomy, clothesoutline, umbrellahandle/shaft geometry and frame/lighting/painterlyfinish. Exactlyfive independentobjects edited: 1 blue pearl inside umbrella (center984,217) reflects a tiny pale stoneARCH instead of its crescentgleam, box958,191,54,54; pearlcontourunchanged. 2 little gold crescent ornament near umbrella righttip (center1189,107) rotates90degrees to openUP, box1160,75,63,61, preserveattachment. 3 golden round cloakbrooch atcenter685,425 gains one diagonal dark fasteningpin/slit instead of plain center, box667,408,36,38; broochoutlineunchanged. 4 largeforeleftfan-shell atx16-178,y733-871 has curvedspiral ribs instead of straightradiatingribs, sameoutline, box11,729,172,148. 5 isolatedgoldkelpleaf beside woman'sLOWER RIGHTcloak atx739,y649 curls UP atits terminaltip instead of trailingdown, box711,620,61,72; keepbranchstem and allotherleaves. No otherchanges,no newobjects,text,grain or swaps."
+      }
+    },
+    {
+      "file": "hand-prompt-root.json",
+      "content": {
+        "tool": "built-in image_gen",
+        "prompt": "Precise single-object edit of this attached crop of the Pearl Diver's Umbrella underwater painting. Change ONLY this one outstretched empty LEFT HAND into a relaxed CLOSED FIST: curl all four fingers into the palm with the thumb resting naturally over the fingers. Preserve exactly one anatomically coherent hand attached to the original wrist and forearm, original arm angle/position and skin color, original red-purple cloak sleeve and underwater lighting, painterly style and same crop framing. No extra fingers/objects, no changed sleeve, no markers or text. This is one hand pose action."
+      }
+    }
+  ],
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-099-hand-native-source-source-v4.png",
+      "sha256": "B7C94A65150627802CBCB818008A27DEAD4DE71970CDEB3B61E748E9B4F2B837",
+      "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precisely edit original1672x941 Dreamerie underwater pearldiverumbrella painting; preserve woman's entireanatomy, clothesoutline, umbrellahandle/shaft geometry and frame/lighting/painterlyfinish. Exactlyfive independentobjects edited: 1 blue pearl inside umbrella (center984,217) reflects a tiny pale stoneARCH instead of its crescentgleam, box958,191,54,54; pearlcontourunchanged. 2 little gold crescent ornament near umbrella righttip (center1189,107) rotates90degrees to openUP, box1160,75,63,61, preserveattachment. 3 golden round cloakbrooch atcenter685,425 gains one diagonal dark fasteningpin/slit instead of plain center, box667,408,36,38; broochoutlineunchanged. 4 largeforeleftfan-shell atx16-178,y733-871 has curvedspiral ribs instead of straightradiatingribs, sameoutline, box11,729,172,148. 5 isolatedgoldkelpleaf beside woman'sLOWER RIGHTcloak atx739,y649 curls UP atits terminaltip instead of trailingdown, box711,620,61,72; keepbranchstem and allotherleaves. No otherchanges,no newobjects,text,grain or swaps.\"}}, {\"file\": \"hand-prompt-root.json\", \"content\": {\"tool\": \"built-in image_gen\", \"prompt\": \"Precise single-object edit of this attached crop of the Pearl Diver's Umbrella underwater painting. Change ONLY this one outstretched empty LEFT HAND into a relaxed CLOSED FIST: curl all four fingers into the palm with the thumb resting naturally over the fingers. Preserve exactly one anatomically coherent hand attached to the original wrist and forearm, original arm angle/position and skin color, original red-purple cloak sleeve and underwater lighting, painterly style and same crop framing. No extra fingers/objects, no changed sleeve, no markers or text. This is one hand pose action.\"}}]"
+    }
+  ],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The foreground shell ribs curl into a spiral",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1,
+        "y": 724,
+        "width": 187,
+        "height": 159
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-2",
+      "label": "The umbrella moon points upward",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1145,
+        "y": 73,
+        "width": 75,
+        "height": 64
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "closed-hand",
+      "label": "The diver closes her outstretched empty hand into a fist.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 298,
+        "y": 449,
+        "width": 107,
+        "height": 52
+      },
+      "edgeFade": 3,
+      "source": "hand-native-source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The blue pearl reflects a stone arch",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 953,
+        "y": 188,
+        "width": 60,
+        "height": 58
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-4",
+      "label": "The cloak brooch has a diagonal pin",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 665,
+        "y": 406,
+        "width": 40,
+        "height": 41
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": "Four worker full-source edits plus root built-in targeted hand pose. Generated crop resized to original135x75 coordinates then embedded in originalnative source. Rejected leaf generations are not selected. Root compositor/pixel/game QA pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-272",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-272-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-272-original-v4.png",
+    "sha256": "0E032F2FC0EBF234AF45AC705A4B864B5EDE2F634A8FF9BE22E29203A22551CB",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-272-altered-source-v4.png",
+    "sha256": "75F493B6FDFD94B02275DE5F906D91D1C57968410338BF981EFC451561F7977D",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit this exact full native1672x941 painted dragon in bread basket, FIVE isolated single-object changes only, preserve everything else. 1 Dragon's closed visible eye near x632y178 opens into clear dark amber eye; rest head unchanged. 2 Dragon raised forepaw near x705y490 curls its three visible claws inward into a clenched pose instead of dangling down, only that paw; chest other paw unchanged. 3 Flour loaf behind dragon on right x1060y328 has its scored X replaced by three parallel curved diagonal slashes, same flour surface/loaf silhouette. 4 Butter knife on right: single round rivet near x1597y425 becomes a crescent-shaped brass inlay, same wooden handle, blade, butter exact. 5 Flour tin upperright x1190y106: its dangling wooden handle end near x1313y51 turns its small oval hole into a heart-shaped hole, same handle silhouette and tin. Preserve original pastry ribbon, all bread positions, scene framing and painterly style.\", \"reference\": \"dream-272-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit this exact full native1672x941 painted dragon in bread basket, FIVE isolated single-object changes only, preserve everything else. 1 Dragon's closed visible eye near x632y178 opens into clear dark amber eye; rest head unchanged. 2 Dragon raised forepaw near x705y490 curls its three visible claws inward into a clenched pose instead of dangling down, only that paw; chest other paw unchanged. 3 Flour loaf behind dragon on right x1060y328 has its scored X replaced by three parallel curved diagonal slashes, same flour surface/loaf silhouette. 4 Butter knife on right: single round rivet near x1597y425 becomes a crescent-shaped brass inlay, same wooden handle, blade, butter exact. 5 Flour tin upperright x1190y106: its dangling wooden handle end near x1313y51 turns its small oval hole into a heart-shaped hole, same handle silhouette and tin. Preserve original pastry ribbon, all bread positions, scene framing and painterly style.",
+        "reference": "dream-272-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "dragon-eye",
+      "label": "The dragon opens its eye.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 580,
+        "y": 133,
+        "width": 105,
+        "height": 67
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "dragon-paw",
+      "label": "The raised forepaw curls toward the chest.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 664,
+        "y": 363,
+        "width": 123,
+        "height": 170
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "loaf-slashes",
+      "label": "The flour loaf has three parallel slashes.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 924,
+        "y": 238,
+        "width": 268,
+        "height": 223
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "tin-heart",
+      "label": "The tin handle hole becomes heart-shaped.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1296,
+        "y": 18,
+        "width": 40,
+        "height": 45
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "knife-moon",
+      "label": "The knife handle has a crescent inlay.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1571,
+        "y": 405,
+        "width": 37,
+        "height": 42
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": {
+    "humanTimed": false,
+    "physicalPhone": false,
+    "notes": [
+      "Five single-object differences; native full frame."
+    ],
+    "outsideRegionsExact": true,
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sourceHashes": {
+      "source.png": "75f493b6fdfd94b02275de5f906d91d1c57968410338bf981efc451561f7977d"
+    }
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

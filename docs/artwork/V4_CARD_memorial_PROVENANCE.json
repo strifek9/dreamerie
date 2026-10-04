@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-memorial",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/holidays-painted-v1/memorial-original.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-memorial-original-v4.png",
+    "sha256": "3A28299136D5549D906D97CF207FAD8585A1553A4EC7A61781FAB4142BD88B3C",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-memorial-altered-source-v4.png",
+    "sha256": "B989A8A0339D20F14348902164D155011DB42A7E4062197CCF1889B2616FB2E4",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit precisely this serene memorial remembrance lakeside original: empty carved wooden chair draped with cream embroidered shawl, keepsake box, candle lantern, luminous distant doorway, lilies. Preserve respectful remembrance theme and exact framing/painting. Exactly FIVE single-object localized changes: lantern TOP carrying ring becomes a diamond-shaped metal loop, same attachment and lantern body; keepsake BOX front brass clasp flips up open at its hinge, ribbon and pendant unchanged exact; chair back central oval aperture becomes a gently pointed gothic arch opening, all surrounding carved leaves unchanged; cream SHAWL its lower RIGHT corner rolls upward into an attached curl, embroidered branches and fringe elsewhere unchanged; large nearest WHITE water lily flower lower right has its central petal cluster folded inward into a compact closed cup, all other flowers and pads original exact. Five bounded objects, no swaps, no extra specks, preserve anatomy and scene premise.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit precisely this serene memorial remembrance lakeside original: empty carved wooden chair draped with cream embroidered shawl, keepsake box, candle lantern, luminous distant doorway, lilies. Preserve respectful remembrance theme and exact framing/painting. Exactly FIVE single-object localized changes: lantern TOP carrying ring becomes a diamond-shaped metal loop, same attachment and lantern body; keepsake BOX front brass clasp flips up open at its hinge, ribbon and pendant unchanged exact; chair back central oval aperture becomes a gently pointed gothic arch opening, all surrounding carved leaves unchanged; cream SHAWL its lower RIGHT corner rolls upward into an attached curl, embroidered branches and fringe elsewhere unchanged; large nearest WHITE water lily flower lower right has its central petal cluster folded inward into a compact closed cup, all other flowers and pads original exact. Five bounded objects, no swaps, no extra specks, preserve anatomy and scene premise."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "chair",
+      "label": "The chair opening becomes pointed.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 235,
+        "y": 163,
+        "width": 120,
+        "height": 184
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "shawl",
+      "label": "The shawl corner curls upward.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 535,
+        "y": 681,
+        "width": 143,
+        "height": 237
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "lily",
+      "label": "The nearest lily petals fold inward.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1349,
+        "y": 754,
+        "width": 123,
+        "height": 99
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "ring",
+      "label": "The lantern carrying ring becomes diamond-shaped.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 746,
+        "y": 208,
+        "width": 67,
+        "height": 64
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "clasp",
+      "label": "The keepsake clasp flips upward.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 653,
+        "y": 466,
+        "width": 39,
+        "height": 64
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered compositor/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

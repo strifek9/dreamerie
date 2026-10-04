@@ -1,0 +1,106 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-308",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-308-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-308-original-v4.png",
+    "sha256": "2CA532029FC5F3FC801381231FCD6A3876961B2AEF701D81815BB01314652CDE",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-308-altered-source-v4.png",
+    "sha256": "099090828CC4A32AC1E7C7366676128E72BE4A4D5ADC3B49DAD8B7DCCA62DEFD",
+    "prompt": "[{\"file\": \"preserve-prompt.json\", \"content\": {\"operation\": \"Original preservation assembly\", \"script\": \"preserve.py\", \"purpose\": \"Only five localized artifact edits; gear interior ellipse retains original toothed rim and location; leaf stem, record mechanism/lid artwork, loose screw and unrelated fabric original exact.\"}}, {\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact1672x941 painterly stilllife CLOCKWORK CHERRY musicbox painting. Five localized SINGLE-object edits only:1) large CLOSED LEFT redcherry aroundx590,y477: its bright white reflection becomes one clear CRESCENT reflection on SAME redskin/outline, no cherry move.2) large GREEN LEAF foregroundleft x263,y653: ONLY its broadfree tip aroundx134,y580 curls UP into hollowleaf tube, same stem/restofleaf.3) RED PEEL RIBBON rightedge: its lowestloop atx1571,y796 threads through its OWN loose knot, one continuous redpeel, remainingpeelshape same.4) loosegold GEAR bottomleft x175,y815: its internalspokes curve in a SPIRAL pattern, outertoothedrim/centerhole same, no move.5) GOLD WINDINGKEY uppercenter x827,y113: ONLY its RIGHT circularbowloop becomes OPEN CRESCENT (gap at outerright), leftbow/mount/shaft exact. All musicboxrecord/lid/cherryart/arms originalexact, no swaps/separateobject changes, preserve painterlytexture.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "preserve-prompt.json",
+      "content": {
+        "operation": "Original preservation assembly",
+        "script": "preserve.py",
+        "purpose": "Only five localized artifact edits; gear interior ellipse retains original toothed rim and location; leaf stem, record mechanism/lid artwork, loose screw and unrelated fabric original exact."
+      }
+    },
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact1672x941 painterly stilllife CLOCKWORK CHERRY musicbox painting. Five localized SINGLE-object edits only:1) large CLOSED LEFT redcherry aroundx590,y477: its bright white reflection becomes one clear CRESCENT reflection on SAME redskin/outline, no cherry move.2) large GREEN LEAF foregroundleft x263,y653: ONLY its broadfree tip aroundx134,y580 curls UP into hollowleaf tube, same stem/restofleaf.3) RED PEEL RIBBON rightedge: its lowestloop atx1571,y796 threads through its OWN loose knot, one continuous redpeel, remainingpeelshape same.4) loosegold GEAR bottomleft x175,y815: its internalspokes curve in a SPIRAL pattern, outertoothedrim/centerhole same, no move.5) GOLD WINDINGKEY uppercenter x827,y113: ONLY its RIGHT circularbowloop becomes OPEN CRESCENT (gap at outerright), leftbow/mount/shaft exact. All musicboxrecord/lid/cherryart/arms originalexact, no swaps/separateobject changes, preserve painterlytexture."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "The closed cherry's bright reflection forms a crescent.",
+      "box": {
+        "x": 437,
+        "y": 299,
+        "width": 176,
+        "height": 180
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The leaf's broad tip curls into a hollow tube.",
+      "box": {
+        "x": 75,
+        "y": 518,
+        "width": 237,
+        "height": 187
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The red peel threads through its own loop.",
+      "box": {
+        "x": 1425,
+        "y": 676,
+        "width": 247,
+        "height": 265
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "The loose gear's inner spokes curve into a spiral.",
+      "box": {
+        "x": 99,
+        "y": 774,
+        "width": 153,
+        "height": 88
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "The winding key's right bow opens into a crescent.",
+      "box": {
+        "x": 837,
+        "y": 51,
+        "width": 126,
+        "height": 133
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Five single artifacts, no object swaps. Reflection, leaf curling and peel loop relation supply varied grammar; key only one bow changes. Original gear outer teeth retained through interior ellipse. Entire source assembled original except five regions. Full frame/native five pairs/390 pair inspected. Difficulty hypotheses/root joins pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-337",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-337-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-337-original-v4.png",
+    "sha256": "8F54B49499D526CAEEA5A4F225265584B42205C003EBF9D7D7A41FD3B7B4C35D",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-337-altered-source-v4.png",
+    "sha256": "1B39760DC6FF6C4FF52DF7A7D3BE80CD514259746DB8BE86845F95E8AE244214",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact original1672x941 painting with five independent localized one-object differences only; preserve girl anatomy/frame/style and all others.1 red polkadot pitcher upperleft at11960: ONE pale dot on frontcenter becomes crescent, allotherdots exact.2 refrigerator brass lever native318285 points DOWN instead of right, same mountingbase.3 dustpan handle upper opening at805555 becomes triangular hole, same bluehandle silhouette.4 isolated foreground spiral shell at1333864 near opening becomes triangular cavity, outer shell exact.5 pinned sailboat picture at32153: ONLY mainsail flips orientation facing left instead of right; same mast, boat hull and postcard exact. No rearranged shells/starfish, no limb edits or multipleobjects.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact original1672x941 painting with five independent localized one-object differences only; preserve girl anatomy/frame/style and all others.1 red polkadot pitcher upperleft at11960: ONE pale dot on frontcenter becomes crescent, allotherdots exact.2 refrigerator brass lever native318285 points DOWN instead of right, same mountingbase.3 dustpan handle upper opening at805555 becomes triangular hole, same bluehandle silhouette.4 isolated foreground spiral shell at1333864 near opening becomes triangular cavity, outer shell exact.5 pinned sailboat picture at32153: ONLY mainsail flips orientation facing left instead of right; same mast, boat hull and postcard exact. No rearranged shells/starfish, no limb edits or multipleobjects."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "down-lever",
+      "label": "The refrigerator lever points downward.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 258,
+        "y": 266,
+        "width": 112,
+        "height": 83
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "blue-sail",
+      "label": "The postcard\u2019s right sail turns blue.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 293,
+        "y": 24,
+        "width": 55,
+        "height": 44
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "triangle-shell",
+      "label": "The spiral shell\u2019s opening becomes triangular.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1279,
+        "y": 846,
+        "width": 55,
+        "height": 49
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "crescent-dot",
+      "label": "One pitcher dot becomes a crescent.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 90,
+        "y": 54,
+        "width": 33,
+        "height": 32
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "triangle-handle",
+      "label": "The dustpan handle\u2019s hole becomes triangular.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 790,
+        "y": 542,
+        "width": 30,
+        "height": 28
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five paired crops, full composite and 390-pixel stacked pair inspected. Single-object changes; difficulty hypotheses only. Root browser/hit QA and human fairness remain pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

@@ -1,0 +1,414 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-108",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-108-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-108-original-v4.png",
+    "sha256": "8BECBC8900FEA186D6B393E340F021B5D36DF26A437C54864CED605C59CC1ED6",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-108-altered-source-v4.png",
+    "sha256": "EAB851EDD48D14AC38E1E38DE847101206963B0B7197D9641F9E3983035605BA",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise edit attached whitestag carryingbooks inantlers forestpainting. Preserve EXACT1672x941 framing allpositions palettepaintbrushwork deeranatomy/eyes/antlers. FIVE separatedsingle-object changes:1) deer's blueSTARSCARF freeTAIL lyingacross itsback: passes THROUGH itsOWN loose loop into visible self-knot near centerofbluefreecloth, preserve neckknot/allgoldstars/restanimal.2) FOREGROUNDlowestpurpleclosedbook lowerleft: ONLY goldclasp flipsopen onhinge showing latchunderneath, samehardwaremount/book unchanged.3) tallCORALredbook atUPPERLEFT antler: goldfoliage embossedmotif becomes gold TREEwithclearlycurledspiralroots (oneintegratedmotif), samecoverrectangle/border/bookposition.4) largestREDMUSHROOM rightforeground: cap's near-front EDGE curls upward exposinga clear rolledgill rim, onecontinuoussamecap, preservestem capoutlineoverall othermushrooms unchanged.5) goldCRESCENTpendant hanging fromrightantler: crescentROTATES edgeon into a thinoval goldenband/hoop, samechain/pendantposition; nonewpendants no alteredantler. No swaps, noextraclutter/textmarkers/missingparts, eachoneexistingartifactinternalpose.\"}}, {\"file\": \"repair-prompt.json\", \"content\": {\"operation\": \"Original + generated scarf silhouette union polygon selection, original outside exact within broad scarf box; preserve other four generated clues\", \"originalPolygon\": [[25, 88], [90, 135], [149, 178], [185, 171], [220, 176], [252, 202], [280, 222], [308, 226], [344, 218], [379, 232], [354, 249], [325, 257], [287, 259], [258, 246], [228, 229], [206, 219], [165, 218], [187, 249], [210, 268], [214, 292], [181, 295], [149, 287], [123, 270], [111, 246], [94, 225], [68, 215], [48, 194], [35, 162]], \"newPolygon\": [[153, 43], [210, 50], [266, 44], [299, 44], [313, 39], [323, 33], [334, 33], [350, 34], [361, 28], [393, 26], [426, 30], [445, 37], [421, 44], [378, 51], [368, 57], [389, 75], [443, 81], [470, 99], [482, 128], [494, 152], [522, 176], [552, 182], [586, 174], [614, 183], [633, 199], [638, 209], [617, 198], [598, 201], [569, 213], [550, 208], [521, 196], [497, 181], [472, 166], [449, 146], [427, 123], [407, 107], [378, 88], [360, 75], [350, 78], [336, 75], [322, 70], [308, 62], [281, 78], [259, 85], [241, 82], [217, 71], [186, 61]], \"offset\": [520, 520], \"dilation\": 2, \"feather\": 0.65}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise edit attached whitestag carryingbooks inantlers forestpainting. Preserve EXACT1672x941 framing allpositions palettepaintbrushwork deeranatomy/eyes/antlers. FIVE separatedsingle-object changes:1) deer's blueSTARSCARF freeTAIL lyingacross itsback: passes THROUGH itsOWN loose loop into visible self-knot near centerofbluefreecloth, preserve neckknot/allgoldstars/restanimal.2) FOREGROUNDlowestpurpleclosedbook lowerleft: ONLY goldclasp flipsopen onhinge showing latchunderneath, samehardwaremount/book unchanged.3) tallCORALredbook atUPPERLEFT antler: goldfoliage embossedmotif becomes gold TREEwithclearlycurledspiralroots (oneintegratedmotif), samecoverrectangle/border/bookposition.4) largestREDMUSHROOM rightforeground: cap's near-front EDGE curls upward exposinga clear rolledgill rim, onecontinuoussamecap, preservestem capoutlineoverall othermushrooms unchanged.5) goldCRESCENTpendant hanging fromrightantler: crescentROTATES edgeon into a thinoval goldenband/hoop, samechain/pendantposition; nonewpendants no alteredantler. No swaps, noextraclutter/textmarkers/missingparts, eachoneexistingartifactinternalpose."
+      }
+    },
+    {
+      "file": "repair-prompt.json",
+      "content": {
+        "operation": "Original + generated scarf silhouette union polygon selection, original outside exact within broad scarf box; preserve other four generated clues",
+        "originalPolygon": [
+          [
+            25,
+            88
+          ],
+          [
+            90,
+            135
+          ],
+          [
+            149,
+            178
+          ],
+          [
+            185,
+            171
+          ],
+          [
+            220,
+            176
+          ],
+          [
+            252,
+            202
+          ],
+          [
+            280,
+            222
+          ],
+          [
+            308,
+            226
+          ],
+          [
+            344,
+            218
+          ],
+          [
+            379,
+            232
+          ],
+          [
+            354,
+            249
+          ],
+          [
+            325,
+            257
+          ],
+          [
+            287,
+            259
+          ],
+          [
+            258,
+            246
+          ],
+          [
+            228,
+            229
+          ],
+          [
+            206,
+            219
+          ],
+          [
+            165,
+            218
+          ],
+          [
+            187,
+            249
+          ],
+          [
+            210,
+            268
+          ],
+          [
+            214,
+            292
+          ],
+          [
+            181,
+            295
+          ],
+          [
+            149,
+            287
+          ],
+          [
+            123,
+            270
+          ],
+          [
+            111,
+            246
+          ],
+          [
+            94,
+            225
+          ],
+          [
+            68,
+            215
+          ],
+          [
+            48,
+            194
+          ],
+          [
+            35,
+            162
+          ]
+        ],
+        "newPolygon": [
+          [
+            153,
+            43
+          ],
+          [
+            210,
+            50
+          ],
+          [
+            266,
+            44
+          ],
+          [
+            299,
+            44
+          ],
+          [
+            313,
+            39
+          ],
+          [
+            323,
+            33
+          ],
+          [
+            334,
+            33
+          ],
+          [
+            350,
+            34
+          ],
+          [
+            361,
+            28
+          ],
+          [
+            393,
+            26
+          ],
+          [
+            426,
+            30
+          ],
+          [
+            445,
+            37
+          ],
+          [
+            421,
+            44
+          ],
+          [
+            378,
+            51
+          ],
+          [
+            368,
+            57
+          ],
+          [
+            389,
+            75
+          ],
+          [
+            443,
+            81
+          ],
+          [
+            470,
+            99
+          ],
+          [
+            482,
+            128
+          ],
+          [
+            494,
+            152
+          ],
+          [
+            522,
+            176
+          ],
+          [
+            552,
+            182
+          ],
+          [
+            586,
+            174
+          ],
+          [
+            614,
+            183
+          ],
+          [
+            633,
+            199
+          ],
+          [
+            638,
+            209
+          ],
+          [
+            617,
+            198
+          ],
+          [
+            598,
+            201
+          ],
+          [
+            569,
+            213
+          ],
+          [
+            550,
+            208
+          ],
+          [
+            521,
+            196
+          ],
+          [
+            497,
+            181
+          ],
+          [
+            472,
+            166
+          ],
+          [
+            449,
+            146
+          ],
+          [
+            427,
+            123
+          ],
+          [
+            407,
+            107
+          ],
+          [
+            378,
+            88
+          ],
+          [
+            360,
+            75
+          ],
+          [
+            350,
+            78
+          ],
+          [
+            336,
+            75
+          ],
+          [
+            322,
+            70
+          ],
+          [
+            308,
+            62
+          ],
+          [
+            281,
+            78
+          ],
+          [
+            259,
+            85
+          ],
+          [
+            241,
+            82
+          ],
+          [
+            217,
+            71
+          ],
+          [
+            186,
+            61
+          ]
+        ],
+        "offset": [
+          520,
+          520
+        ],
+        "dilation": 2,
+        "feather": 0.65
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "The scarf\u2019s free tail crosses the deer\u2019s back.",
+      "box": {
+        "x": 531,
+        "y": 535,
+        "width": 635,
+        "height": 283
+      },
+      "edgeFade": 7
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The large mushroom cap rim rolls upward.",
+      "box": {
+        "x": 1356,
+        "y": 673,
+        "width": 276,
+        "height": 150
+      },
+      "edgeFade": 5
+    },
+    {
+      "difficulty": "Hard",
+      "label": "A tree with curled roots is embossed on the upper coral book.",
+      "box": {
+        "x": 287,
+        "y": 86,
+        "width": 131,
+        "height": 150
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "The foreground purple book clasp opens on its hinge.",
+      "box": {
+        "x": 466,
+        "y": 752,
+        "width": 63,
+        "height": 88
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "The antler's crescent pendant turns into a thin oval hoop.",
+      "box": {
+        "x": 916,
+        "y": 307,
+        "width": 83,
+        "height": 91
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": "Actualfullframe observed. Scarffreetail movedfromlowerdeerbody onto back withownloopknot; wideunionbox capturesoneartifactold/newpositions,no swaps, neckknot unchanged. Rootcanrequesttargetedrefineifwidefurarea incidentaldrift. Onecaprolledrim, oneembossedbookmotif, oneclaspaction, onependantorientation. Noextraselectableobjectsperclue. RootfinalnativejoinsQArequired. Difficultyhypothesesonly. Deterministic scarf footprint union mask restores original unrelated fur/background within former broad box. Original and new scarf silhouette only, including necessary replacement beneath original tail. Polygon dilation2px feather0.65px; inspect joins. Deterministic scarf footprint union mask restores original unrelated fur/background within former broad box. Original and new scarf silhouette only, including necessary replacement beneath original tail. Polygon dilation2px feather0.65px; inspect joins. Deterministic scarf footprint union mask restores original unrelated fur/background within former broad box. Original and new scarf silhouette only, including necessary replacement beneath original tail. Polygon dilation2px feather0.65px; inspect joins.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

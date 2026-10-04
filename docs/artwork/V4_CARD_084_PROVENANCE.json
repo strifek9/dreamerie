@@ -1,0 +1,98 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-084",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-084-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-084-original-v4.png",
+    "sha256": "5120C03A5F05DF7DEFFEE86AF94540D28BC84BE4E319220A08EA8B311256265A",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-084-altered-source-v4.png",
+    "sha256": "55B0E2391A5F80EA6175EB4B545D4735C240F7B6DBF7172CFD5D814ACF8257C9",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precisely edit attached whiteheron glassleaf conservatory painting. Preserve EXACT1672x941 framing allpositions heronanatomy brushwork colors. FIVE localizedsingleobject changes:1) pinkwateringcan lowerleft its creametched foliage motif becomes cream silhouetteof HERON standingwithlongbeak, sameengravedmaterial/size oncanbody; canshape/handlespoutunchanged.2) whiteHERON's longheadplume feathers behindneck braid THROUGH OWN plume loop into a neatloose knot midway, samefeathers singlebird, preserveheadeyesbeakbodylegs.3) bigwhitelily foregroundright: ONLY uppercentralpetal curls/rolls inward into a visible whitepetal tube, staysattached, other5petals stamens unchanged.4) large crackedterracottapot far-right: existing single blackrim crack forks into Y-shaped branch crack running downsamepotface, same rimandpot shape.5) circularbluewindow upperleft centralroundlatch becomes a curved tealhandle lever pointingupward againstverticalframebar, same mountlocationframe/crossbars/moon unchanged. Nootherchanges, no swaps between objects, no extras/markers/text. Visiblecoherent mechanisms/actions notnoise.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precisely edit attached whiteheron glassleaf conservatory painting. Preserve EXACT1672x941 framing allpositions heronanatomy brushwork colors. FIVE localizedsingleobject changes:1) pinkwateringcan lowerleft its creametched foliage motif becomes cream silhouetteof HERON standingwithlongbeak, sameengravedmaterial/size oncanbody; canshape/handlespoutunchanged.2) whiteHERON's longheadplume feathers behindneck braid THROUGH OWN plume loop into a neatloose knot midway, samefeathers singlebird, preserveheadeyesbeakbodylegs.3) bigwhitelily foregroundright: ONLY uppercentralpetal curls/rolls inward into a visible whitepetal tube, staysattached, other5petals stamens unchanged.4) large crackedterracottapot far-right: existing single blackrim crack forks into Y-shaped branch crack running downsamepotface, same rimandpot shape.5) circularbluewindow upperleft centralroundlatch becomes a curved tealhandle lever pointingupward againstverticalframebar, same mountlocationframe/crossbars/moon unchanged. Nootherchanges, no swaps between objects, no extras/markers/text. Visiblecoherent mechanisms/actions notnoise."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "A heron is engraved on the watering can.",
+      "box": {
+        "x": 90,
+        "y": 675,
+        "width": 160,
+        "height": 167
+      },
+      "edgeFade": 5
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The heron's long head plumes thread through their own knot.",
+      "box": {
+        "x": 535,
+        "y": 307,
+        "width": 93,
+        "height": 116
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The lily's upper petal rolls into a tube.",
+      "box": {
+        "x": 1330,
+        "y": 608,
+        "width": 83,
+        "height": 113
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "The pot's rim crack forks into branches.",
+      "box": {
+        "x": 1553,
+        "y": 593,
+        "width": 71,
+        "height": 147
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "A curved latch lever rises from the round window's center.",
+      "box": {
+        "x": 277,
+        "y": 135,
+        "width": 67,
+        "height": 89
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": "Fullframe observed. Feather-ownknot androlledpetal clearactionchanges, etchedcanmotif, potcrackpattern, windowlevermechanism. Everyselectedclueoneartifact/internalfeature, no swaps/adjacentobject edits. Rootpixel/compositor checksnecessary. Difficultyonlyhypothesis.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

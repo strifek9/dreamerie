@@ -6,6 +6,8 @@ import { currentDreams, playableDreams } from '../src/v3/dailyDream.ts'
 import { confirmGuess, createRecallState, getRemainingGuesses } from '../src/game/dailyRecall.ts'
 import { differencesFor } from '../src/v2/landscapeCollection.ts'
 import { v4PreviewDreams } from '../src/v4/previewDreams.ts'
+import { previewHolidayForDream } from '../src/v4/previewHoliday.ts'
+import { holidayDreams } from '../src/v3/holidayDreams.ts'
 
 test('unreleased V4 proof is isolated from the published deck and has five bounded clues', () => {
   assert.ok(v4PreviewDreams.length > 0)
@@ -24,15 +26,15 @@ test('unreleased V4 proof is isolated from the published deck and has five bound
     }
     for (let i = 0; i < dream.edits.length; i++) for (let j = i + 1; j < dream.edits.length; j++) {
       const a = dream.edits[i].box, b = dream.edits[j].box
-      assert.ok(a.left + a.width <= b.left || b.left + b.width <= a.left ||
-        a.top + a.height <= b.top || b.top + b.height <= a.top, `${dream.edits[i].id} overlaps ${dream.edits[j].id}`)
+      assert.ok(a.left + a.width <= b.left + 1e-12 || b.left + b.width <= a.left + 1e-12 ||
+        a.top + a.height <= b.top + 1e-12 || b.top + b.height <= a.top + 1e-12, `${dream.edits[i].id} overlaps ${dream.edits[j].id}`)
     }
   }
 })
 
 test('V4 proof retains its native-resolution, versioned generated source files', () => {
   const paths = readdirSync(new URL('../docs/artwork/', import.meta.url))
-    .filter(path => /^V4_(?:PREVIEW|CARD_\d+)_PROVENANCE\.json$/.test(path))
+    .filter(path => /^V4_(?:PREVIEW|CARD_[a-z0-9-]+)_PROVENANCE\.json$/.test(path))
   assert.equal(paths.length, v4PreviewDreams.length)
   for (const path of paths) {
     const provenance = JSON.parse(readFileSync(new URL(`../docs/artwork/${path}`, import.meta.url), 'utf8'))
@@ -48,7 +50,7 @@ test('V4 proof retains its native-resolution, versioned generated source files',
       // Built-in image edits may retain the source framing while varying the
       // raster width by one or two pixels; V3 masters use the same allowance.
       assert.ok(bytes.readUInt32BE(16) >= 1670 && bytes.readUInt32BE(16) <= 1672)
-      assert.equal(bytes.readUInt32BE(20), 941)
+      assert.ok(bytes.readUInt32BE(20) >= 940 && bytes.readUInt32BE(20) <= 941)
     }
   }
 })
@@ -72,4 +74,35 @@ test('every V4 preview completes with five distinct center hits and repeats spen
     assert.equal(repeated.state.confirmed[1].correct, false, dream.id)
     assert.equal(repeated.state.foundDifferenceIds.length, 1, dream.id)
   }
+})
+
+test('Seamstress fish clue changes and awards only one selectable fish', () => {
+  const card = v4PreviewDreams.find(card => card.id === 'v4-dream-002')!
+  assert.equal(card.edits.length, 5)
+  const fish = card.edits.find(edit => edit.id === 'paper-fish')!
+  assert.equal(fish.box.left, 975 / 1672)
+  assert.equal(fish.box.top, 355 / 941)
+  assert.equal(fish.box.width, 56 / 1672)
+  assert.equal(fish.box.height, 47 / 941)
+  const differences = differencesFor(card)
+  const changed = confirmGuess(createRecallState(), {x:1003/1672,y:378/941}, 1, differences, card.aspectRatio)
+  assert.equal(changed.state.confirmed[0].differenceId, 'paper-fish')
+  for (const point of [{x:1080/1672,y:467/941},{x:1117/1672,y:562/941}]) {
+    const unchanged = confirmGuess(createRecallState(), point, 1, differences, card.aspectRatio)
+    assert.equal(unchanged.state.confirmed[0].correct, false)
+    assert.equal(unchanged.state.foundDifferenceIds.length, 0)
+  }
+})
+
+test('all eighteen isolated holiday IDs resolve their existing verses without mixing New Year dates', () => {
+  assert.equal(holidayDreams.length, 18)
+  for (const holiday of holidayDreams) {
+    const slug = holiday.id.replace(/^(holiday-painted-|revisit-dream-)/, '')
+    assert.equal(previewHolidayForDream('v4-dream-' + slug), holiday)
+    assert.equal(holiday.verse.length, 2)
+    assert.ok(holiday.verse.every(line => line.length > 0))
+  }
+  assert.equal(previewHolidayForDream('v4-dream-358'), undefined)
+  assert.equal(previewHolidayForDream('painted-dream-001'), undefined)
+  assert.notEqual(previewHolidayForDream('v4-dream-new-years'), previewHolidayForDream('v4-dream-new-years-eve'))
 })

@@ -1,0 +1,108 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-174",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-174-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-174-original-v4.png",
+    "sha256": "674D6370425A4A268A499A0947F5D88C0F961925055A46B072E5C8FF5AE1A1BF",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-174-altered-source-v4.png",
+    "sha256": "92A3ED1A65FC84BABD3472B8930316337C18C35DBCD1D534B95B48459420F2F9",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit EXACT The Chef Who Stirred a Spiral native1672x941 preserve mantis anatomy/antennae/hands, spiralstaircase inpot, allstyle/frame. FIVE singleobject localizeddifferences: 1 wooden stirring spoon head x858660 its diamondhole becomes a crescent-shaped opening within835636..889693, outlinesame; 2 mantis round apron medallion x492311 reflects one tiny GOLD spiralstaircase insteadplain circle within472292..512332; 3 ONLY central lidwearing little creature at972323 its lid TOP ringhandle bends towardleft ratherupright, within947280..985312, lid and creature limbs exact; 4 ONLY rightmost tallwoodspatula inside orangeutensilpot x1612120 its ONE rightlongslot becomes a zigzag slot, within161759..1660145, leftslotunchanged; 5 ONLY lone counter creature bottomleft with copperlid x70701 its roundtop knob becomes a tapered conical knob, within47664..98698, lidbodyandsmallcreatureexact. No swaps, no multiobjectmerged, no grain/specks. Preserveallunrelateddetails.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit EXACT The Chef Who Stirred a Spiral native1672x941 preserve mantis anatomy/antennae/hands, spiralstaircase inpot, allstyle/frame. FIVE singleobject localizeddifferences: 1 wooden stirring spoon head x858660 its diamondhole becomes a crescent-shaped opening within835636..889693, outlinesame; 2 mantis round apron medallion x492311 reflects one tiny GOLD spiralstaircase insteadplain circle within472292..512332; 3 ONLY central lidwearing little creature at972323 its lid TOP ringhandle bends towardleft ratherupright, within947280..985312, lid and creature limbs exact; 4 ONLY rightmost tallwoodspatula inside orangeutensilpot x1612120 its ONE rightlongslot becomes a zigzag slot, within161759..1660145, leftslotunchanged; 5 ONLY lone counter creature bottomleft with copperlid x70701 its roundtop knob becomes a tapered conical knob, within47664..98698, lidbodyandsmallcreatureexact. No swaps, no multiobjectmerged, no grain/specks. Preserveallunrelateddetails."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The stirring spoon has a crescent opening",
+      "difficulty": "Easy",
+      "box": {
+        "x": 835,
+        "y": 628,
+        "width": 61,
+        "height": 68
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The apron medallion shows a gold stepped spiral",
+      "difficulty": "Medium",
+      "box": {
+        "x": 470,
+        "y": 290,
+        "width": 46,
+        "height": 44
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The central pot lid handle tilts left",
+      "difficulty": "Hard",
+      "box": {
+        "x": 941,
+        "y": 276,
+        "width": 49,
+        "height": 39
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "One tall spatula slot zigzags",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1605,
+        "y": 49,
+        "width": 58,
+        "height": 110
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The counter lid top knob is conical",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 47,
+        "y": 649,
+        "width": 52,
+        "height": 56
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390 stacked pair. Five single objects changed; anatomy/style/frame/corepremise retained. Unrelated drift excluded; five bounded nonoverlap boxes and outside exact original verified. Full generated source/prompt/hash retained. Difficulty estimates unvalidated; root compositor/game/human/physicalphone approval pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

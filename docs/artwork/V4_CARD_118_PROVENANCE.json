@@ -1,0 +1,110 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-118",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-revisit-v1/118-dynamic-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-118-original-v4.png",
+    "sha256": "E4312641A3B386961A98DF9856C688EFCB24889CD47E30645FE67DD935A94E8F",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-118-altered-source-v4.png",
+    "sha256": "66B16FCFCC561356AD675E7409785A9FC42E069C123A6F1F0C7EA62254BF8E6B",
+    "prompt": "[{\"file\": \"dynamic-prompt.json\", \"content\": {\"prompt\": \"Edit attached CURRENT WATERMELON BOAT scene: two mice GREEN LEAF main sail, snail highright on watermelonbridge, seededflame floating lamps. Preserve EXACT1672x941 framing/alloriginalobjects/positions/style. Five isolatedsingleartifact edits ONLY:1) largeGREEN LEAF SAIL x750 y230: paint a fine cream compass-rose decoration withinleafsurface, around150x150native, same leafveins/outline andsamegreencolor.2) hanging GOLD LANTERN leftofmast: open its own FRONT door outward onhinge withsame connectedframe/chain.3) leftmouse RED HAT FEATHER: tip curls inward into cleanrolledloop, baseandmouseexact.4) rightmouse RED polkadot SCARF freeEND: white dotpattern changes into linked-circle braid on SAME clothpositionshape, animalbody/fur unchanged.5) hanging GREEN TASSEL at boatfront right x1125 y560: its lowerfringe curls upward into single connected green loop (same tassel attachedgoldrings/top), no boat/water/flamelamp changes. No addedobjects/disappearingobjects/multipleobjectswaps, no seed-swaps orgrain.\"}}, {\"file\": \"native-repair-prompt.json\", \"content\": {\"operation\": \"Deterministic source resize 1672x941 to actual original1671x941, floor-left ceil-right coordinates; original untouched.\"}}, {\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise edit attached TWO MICE sailingwatermelonboat blue sail cloudwaterfalls painting. Preserve EXACT1672x941 framing allpositions/animalanatomy originalpalettepaint. FIVE localizedsingle-object changes:1) goldLANTERN leftofmast: opens itsFRONT door outward onhinge revealing warmglowinside, same frame/lampbody andchain, oneconnectedlanterndoor.2) BLUEsail center aroundx837,y245: stitched paleBLUE compass-rose embroidery appearswithincloth (flatpaintedstitches not physicalobject), areaabout110x110native, preserve sailoutline/allfolds.3) leftmouse's REDhatFEATHER: tip curls inwardinto a cleanrolledquill loop, keepbase attachedhat andallmouseunchanged.4) rightmouse's REDpolkadotSCARF FREEEND leftofbody: whiteDOTpattern weaves into a clear spiralinglinked chain pattern on SAME cloth, unchangedscarfposition/outline/animalfur.5) largeYELLOWflower foregroundlowerleft aroundx280,y875: ONLYuppercentralpetal curlsinto a hollowyellowpetaltube, otherpetalsleaves untouched. No seedobjectswaps,no fork/tasselchanges, no extras/textmarkers/grain. Meaningfulpose/mechanism/internalpatterns; eachclueoneartifact.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "dynamic-prompt.json",
+      "content": {
+        "prompt": "Edit attached CURRENT WATERMELON BOAT scene: two mice GREEN LEAF main sail, snail highright on watermelonbridge, seededflame floating lamps. Preserve EXACT1672x941 framing/alloriginalobjects/positions/style. Five isolatedsingleartifact edits ONLY:1) largeGREEN LEAF SAIL x750 y230: paint a fine cream compass-rose decoration withinleafsurface, around150x150native, same leafveins/outline andsamegreencolor.2) hanging GOLD LANTERN leftofmast: open its own FRONT door outward onhinge withsame connectedframe/chain.3) leftmouse RED HAT FEATHER: tip curls inward into cleanrolledloop, baseandmouseexact.4) rightmouse RED polkadot SCARF freeEND: white dotpattern changes into linked-circle braid on SAME clothpositionshape, animalbody/fur unchanged.5) hanging GREEN TASSEL at boatfront right x1125 y560: its lowerfringe curls upward into single connected green loop (same tassel attachedgoldrings/top), no boat/water/flamelamp changes. No addedobjects/disappearingobjects/multipleobjectswaps, no seed-swaps orgrain."
+      }
+    },
+    {
+      "file": "native-repair-prompt.json",
+      "content": {
+        "operation": "Deterministic source resize 1672x941 to actual original1671x941, floor-left ceil-right coordinates; original untouched."
+      }
+    },
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise edit attached TWO MICE sailingwatermelonboat blue sail cloudwaterfalls painting. Preserve EXACT1672x941 framing allpositions/animalanatomy originalpalettepaint. FIVE localizedsingle-object changes:1) goldLANTERN leftofmast: opens itsFRONT door outward onhinge revealing warmglowinside, same frame/lampbody andchain, oneconnectedlanterndoor.2) BLUEsail center aroundx837,y245: stitched paleBLUE compass-rose embroidery appearswithincloth (flatpaintedstitches not physicalobject), areaabout110x110native, preserve sailoutline/allfolds.3) leftmouse's REDhatFEATHER: tip curls inwardinto a cleanrolledquill loop, keepbase attachedhat andallmouseunchanged.4) rightmouse's REDpolkadotSCARF FREEEND leftofbody: whiteDOTpattern weaves into a clear spiralinglinked chain pattern on SAME cloth, unchangedscarfposition/outline/animalfur.5) largeYELLOWflower foregroundlowerleft aroundx280,y875: ONLYuppercentralpetal curlsinto a hollowyellowpetaltube, otherpetalsleaves untouched. No seedobjectswaps,no fork/tasselchanges, no extras/textmarkers/grain. Meaningfulpose/mechanism/internalpatterns; eachclueoneartifact."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "A compass rose is painted on the green leaf sail.",
+      "box": {
+        "x": 620,
+        "y": 146,
+        "width": 217,
+        "height": 231
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The lantern door swings outward.",
+      "box": {
+        "x": 462,
+        "y": 213,
+        "width": 131,
+        "height": 100
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The green tassel curls into a loop.",
+      "box": {
+        "x": 1094,
+        "y": 528,
+        "width": 106,
+        "height": 94
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "The hat feather curls inward.",
+      "box": {
+        "x": 341,
+        "y": 312,
+        "width": 80,
+        "height": 62
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "Linked circles weave across the red scarf.",
+      "box": {
+        "x": 681,
+        "y": 536,
+        "width": 109,
+        "height": 41
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "CURRENTinventory revisit original checkedactualnative1672x941. Earlier paintedreference generation/native repair REJECTED as wrongvariant, retainedprompt provenance only. New sourceagainstcurrentcorrectgreenleaf/snaillamps reference. Five observedsingleartifacts/internalpatterns; no swaps or animalfur relocation. Fullframe/fivecrops/390 inspected; root compositor joins and fairness pending, difficulty hypotheses.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

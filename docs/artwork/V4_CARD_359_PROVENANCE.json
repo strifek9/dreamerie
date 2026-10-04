@@ -1,0 +1,110 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-359",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-359-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-359-original-v4.png",
+    "sha256": "CC77AC374295855B5341B8D98CAC83DA80865B2BF67FA29926B7049C4219B046",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-359-altered-source-v4.png",
+    "sha256": "BA9436FDFB3A01ACB3638DA8780A3FB58EF3476DB2FFF0066CEB2CABC3C3A357",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact chandelier needing shoes painting locally, original anatomy of brass structure, four candles, four slippers, frame and style unchanged. Exactly five single localized targets: 1 LEFTMOST candle wick curls into a tight spiral at its top instead of bent line, candle body unchanged; 2 pale white slipper on far-right has its coral bow loosen into a simple tied knot with two trailing tails and no loops, shoe and brass leg unchanged; 3 small blue slipper at x620 y610 changes its central cream star motif to a cream crescent motif, shoe unchanged; 4 blue moon-and-stars hatbox at right x1590 y563 has ONLY its lid's front rim curl upward in a small open flap, box body moon/stars unchanged; 5 front checkered slipper's round brass side button near x927 y735 becomes a square brass button with round central hole, slipper unchanged. One object per clue, no paired swaps or extra objects. Keep local clean edges.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact chandelier needing shoes painting locally, original anatomy of brass structure, four candles, four slippers, frame and style unchanged. Exactly five single localized targets: 1 LEFTMOST candle wick curls into a tight spiral at its top instead of bent line, candle body unchanged; 2 pale white slipper on far-right has its coral bow loosen into a simple tied knot with two trailing tails and no loops, shoe and brass leg unchanged; 3 small blue slipper at x620 y610 changes its central cream star motif to a cream crescent motif, shoe unchanged; 4 blue moon-and-stars hatbox at right x1590 y563 has ONLY its lid's front rim curl upward in a small open flap, box body moon/stars unchanged; 5 front checkered slipper's round brass side button near x927 y735 becomes a square brass button with round central hole, slipper unchanged. One object per clue, no paired swaps or extra objects. Keep local clean edges."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The blue slipper star becomes a crescent",
+      "difficulty": "Easy",
+      "box": {
+        "x": 607,
+        "y": 572,
+        "width": 72,
+        "height": 66
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The white slipper bow becomes a loose knot",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1204,
+        "y": 635,
+        "width": 111,
+        "height": 98
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The hatbox lid rim lifts upward",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1520,
+        "y": 429,
+        "width": 152,
+        "height": 79
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The left candle wick curls into a spiral",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 522,
+        "y": 18,
+        "width": 61,
+        "height": 61
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The checked slipper button becomes square",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 907,
+        "y": 713,
+        "width": 43,
+        "height": 47
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "visually inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "nativePreflight": "source equals actual original size, five nonoverlapping boxes",
+    "difficulty": "hypotheses; human and browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-121",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-121-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-121-original-v4.png",
+    "sha256": "25F56199DFCA92A274E9F83A170FBE624D4B9CE65B63DF3B6E02773BE6C7F0B5",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-121-altered-source-v4.png",
+    "sha256": "1F724EE5B3A99BE7B3E24A659E028CA4516193D0C277782AF234423B9DE02530",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"Precise5 local edits of attached native1672x941 full original The Robot Who Misplaced Tuesday painting. Original anatomy/framing/impasto/scene preserved exactly.1 ONLY toy rabbit's LEFT ear at315,122 bends downward at tip into a floppy ear, other ear/head/ball/drawer unchanged.2 ONLY spinning top's upper red grip/stem at587,395 leans left instead right while still joined to top body at575,418; top body/color bands and robot fingers exact.3 chest door's brass lock keyhole at934,543 rotates ninety degrees so opening points sideways rather than vertical, preserve same lock plate/door.4 loose metal nut at862,860 retains outside contour but its hole becomes a crisp square rather than round.5 ONLY red toolbox front latch's lower clasp at1411,746 hinges outward/down into OPEN position, topmount/box/lid/handle unchanged. Single independently selectable object per change; no two-object swaps, no other edits. Full same original canvas.\"}}, {\"file\": \"prompt-refine.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"Single bounded edit ONLY attached full native1672x941painting: loose small metal hex nut sitting on tabletop at862,860, bottom center, hole is round currently. Its hole must become a clearly SQUARE dark opening with four straight edges and right-angle corners, visible on its top face. Preserve metal nut outer contour, tabletop, paper, robot, allotherobjects original. No other change, native full same frame. Square cavity unmistakable, not mere grain.\"}}, {\"file\": \"prompt-nut-pose.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"ONLY move ONE existing small metal hex NUT on tabletop centered862,860: tip it upright standing on its narrow EDGE like a little wheel, so round hole faces the viewer instead of looking upward. Same nut, samecenter861,858, approximately40pxwide40pxtall, same metal/shadowstyle. Existing lying nut replaced not duplicated. Every other object/pixel and full1672x941original frame preserved exactly. This is ONLYsingle nut pose edit.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "Precise5 local edits of attached native1672x941 full original The Robot Who Misplaced Tuesday painting. Original anatomy/framing/impasto/scene preserved exactly.1 ONLY toy rabbit's LEFT ear at315,122 bends downward at tip into a floppy ear, other ear/head/ball/drawer unchanged.2 ONLY spinning top's upper red grip/stem at587,395 leans left instead right while still joined to top body at575,418; top body/color bands and robot fingers exact.3 chest door's brass lock keyhole at934,543 rotates ninety degrees so opening points sideways rather than vertical, preserve same lock plate/door.4 loose metal nut at862,860 retains outside contour but its hole becomes a crisp square rather than round.5 ONLY red toolbox front latch's lower clasp at1411,746 hinges outward/down into OPEN position, topmount/box/lid/handle unchanged. Single independently selectable object per change; no two-object swaps, no other edits. Full same original canvas."
+      }
+    },
+    {
+      "file": "prompt-refine.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "Single bounded edit ONLY attached full native1672x941painting: loose small metal hex nut sitting on tabletop at862,860, bottom center, hole is round currently. Its hole must become a clearly SQUARE dark opening with four straight edges and right-angle corners, visible on its top face. Preserve metal nut outer contour, tabletop, paper, robot, allotherobjects original. No other change, native full same frame. Square cavity unmistakable, not mere grain."
+      }
+    },
+    {
+      "file": "prompt-nut-pose.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "ONLY move ONE existing small metal hex NUT on tabletop centered862,860: tip it upright standing on its narrow EDGE like a little wheel, so round hole faces the viewer instead of looking upward. Same nut, samecenter861,858, approximately40pxwide40pxtall, same metal/shadowstyle. Existing lying nut replaced not duplicated. Every other object/pixel and full1672x941original frame preserved exactly. This is ONLYsingle nut pose edit."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "floppy-ear",
+      "label": "The toy rabbit's left ear folds down.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 297,
+        "y": 97,
+        "width": 32,
+        "height": 47
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "leaning-grip",
+      "label": "The spinning top's red grip leans left.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 531,
+        "y": 369,
+        "width": 80,
+        "height": 58
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "turned-keyhole",
+      "label": "The chest lock opening turns sideways.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 918,
+        "y": 525,
+        "width": 32,
+        "height": 35
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "open-toolbox-latch",
+      "label": "The toolbox latch hinges open.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1374,
+        "y": 728,
+        "width": 62,
+        "height": 59
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "upright-nut",
+      "label": "The loose nut stands upright on its edge.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 828,
+        "y": 822,
+        "width": 65,
+        "height": 66
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Source generations and bounded composites inspected; five isolated objects. Difficulty labels are hypotheses. No human or physical-phone fairness validation.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-035",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-revisit-v1/035-dynamic-original-v2.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-035-original-v4.png",
+    "sha256": "E88A130B970354EE3F7DCA3EFDBF75C7A1648070DE95A8412AC3040615B4AFA6",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-035-altered-source-v4.png",
+    "sha256": "397DC976A4D67672DF45906378E189F506616435A725910EB34811398EA0EC84",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise localized edit of provided1672x941 dream painting, preserve entireframe, child anatomy/pose/stair/ocean/style. Exactly five edits:1 door star x1123,y109 becomes clearly recognizable crescent, within1099,78,49,66;2 toy sailboat sail x747,y445 now billows LEFT not right, same mast/base, within710,411,59,55;3 two blue balls on bootback x682,y650 now diagonally arranged with upper ball LEFT of lower ball (original vertically aligned), within661,627,39,67;4 folded striped towel inside shell x348,y726 has stripe ordering reversed on TOP fold only, within280,689,128,54, keeplowerfold;5 kite thin string x697,y163 to childhat now passes BEHIND paperhat rather than ending visibly on crown, localtransition x795-865,y281-335. Maintain each object natural connection. No extra props, no micrograin/specks/noise, same flowing painted finish. Fullaltered source.\"}}, {\"file\": \"towel-prompt.json\", \"content\": {\"prompt\": \"Precise edit this towelcrop. Keep exact foldedtowel silhouette shell background lowerfold unchanged. ONLY topfold fabric: blue/cream broadstripes currently run parallelstraight across surface. Replace topfold's middle BLUE stripe with a shallow zigzag path, broad blue stripe zigzags once at its center rather than straight. Same paintedcolors, noextraornaments, preservegrainfreepaintedfinish. Entirecropframe.\", \"crop\": [265, 683, 161, 79], \"resizeBackToNative\": true}}, {\"file\": \"hat-prompt.json\", \"content\": {\"prompt\": \"Precisely edit paperhatcrop: fold only CENTER triangular paperpeak DOWN toward front brim, so centerpapertriangle tip points DOWN intohat rather than up into sky. Keep sideuprightpeak/right and hullbrim, childface/hair/allanatomy background and kite stringexact. Broad readable changedpaperfold shadow, noextraobjects. Same paintedfinish, fullcrop.\", \"crop\": [796, 283, 75, 61], \"resizeBackToNative\": true}}, {\"file\": \"float-prompt.json\", \"content\": {\"prompt\": \"Only this singlebluefloat on yellowboot: change round bead into smooth diamond-shaped bluefloat, same center/size/color/light highlight/crop. Preserveyellowbootbackground and verticalcordconnections; noextraobjects/nootherchanges.\", \"crop\": [663, 624, 35, 33], \"resizeBackToNative\": true}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise localized edit of provided1672x941 dream painting, preserve entireframe, child anatomy/pose/stair/ocean/style. Exactly five edits:1 door star x1123,y109 becomes clearly recognizable crescent, within1099,78,49,66;2 toy sailboat sail x747,y445 now billows LEFT not right, same mast/base, within710,411,59,55;3 two blue balls on bootback x682,y650 now diagonally arranged with upper ball LEFT of lower ball (original vertically aligned), within661,627,39,67;4 folded striped towel inside shell x348,y726 has stripe ordering reversed on TOP fold only, within280,689,128,54, keeplowerfold;5 kite thin string x697,y163 to childhat now passes BEHIND paperhat rather than ending visibly on crown, localtransition x795-865,y281-335. Maintain each object natural connection. No extra props, no micrograin/specks/noise, same flowing painted finish. Fullaltered source."
+      }
+    },
+    {
+      "file": "towel-prompt.json",
+      "content": {
+        "prompt": "Precise edit this towelcrop. Keep exact foldedtowel silhouette shell background lowerfold unchanged. ONLY topfold fabric: blue/cream broadstripes currently run parallelstraight across surface. Replace topfold's middle BLUE stripe with a shallow zigzag path, broad blue stripe zigzags once at its center rather than straight. Same paintedcolors, noextraornaments, preservegrainfreepaintedfinish. Entirecropframe.",
+        "crop": [
+          265,
+          683,
+          161,
+          79
+        ],
+        "resizeBackToNative": true
+      }
+    },
+    {
+      "file": "hat-prompt.json",
+      "content": {
+        "prompt": "Precisely edit paperhatcrop: fold only CENTER triangular paperpeak DOWN toward front brim, so centerpapertriangle tip points DOWN intohat rather than up into sky. Keep sideuprightpeak/right and hullbrim, childface/hair/allanatomy background and kite stringexact. Broad readable changedpaperfold shadow, noextraobjects. Same paintedfinish, fullcrop.",
+        "crop": [
+          796,
+          283,
+          75,
+          61
+        ],
+        "resizeBackToNative": true
+      }
+    },
+    {
+      "file": "float-prompt.json",
+      "content": {
+        "prompt": "Only this singlebluefloat on yellowboot: change round bead into smooth diamond-shaped bluefloat, same center/size/color/light highlight/crop. Preserveyellowbootbackground and verticalcordconnections; noextraobjects/nootherchanges.",
+        "crop": [
+          663,
+          624,
+          35,
+          33
+        ],
+        "resizeBackToNative": true
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "door",
+      "label": "The door star becomes a crescent.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1099,
+        "y": 77,
+        "width": 48,
+        "height": 63
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "sail",
+      "label": "The toy boat's sail billows to the left of its mast.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 668,
+        "y": 408,
+        "width": 102,
+        "height": 62
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "hat",
+      "label": "The paper hat's central flap folds downward.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 806,
+        "y": 296,
+        "width": 49,
+        "height": 36
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "float",
+      "label": "The upper blue boot float becomes diamond-shaped.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 663,
+        "y": 624,
+        "width": 35,
+        "height": 33
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "towel",
+      "label": "The top towel's middle blue stripe bends into a zigzag.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 318,
+        "y": 696,
+        "width": 81,
+        "height": 47
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Single upper float shape changes; targeted refinement supersedes discarded twofloat relocation. Sail/hat fold relationship changes; root compositor QA pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

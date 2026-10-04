@@ -1,0 +1,116 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-343",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-revisit-v1/343-dynamic-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-343-original-v4.png",
+    "sha256": "861D9613CA8DC6A68114186F9964DA17841CE2BACDFF8B94A4D1DA974800AB21",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-343-altered-source-v4.png",
+    "sha256": "DF8F2CD5B3F2E117528477374A030A88ABDAACA909D6328F66C973B38C025BC8",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit this exact walnut bedroom painting locally; preserve doll identity anatomy, moth all wings, frame, furnishings and lighting. Exactly five single-object differences: 1 the lit lantern near x1123 y385 has its upper metal carrying loop curl into a spiral ring instead of ordinary arch, lantern body unchanged; 2 the small closed brown book on blue bed at x860 y432 opens its front cover upward partway, showing cream pages, bed unchanged; 3 the wooden door round knob near x1270 y363 becomes a crescent-shaped brass lever pointing up, door remains same; 4 the single tan shoulder bag hanging on back wall near x790 y308 has its front flap tip folded upward, strap unchanged; 5 the big tea cup lower-right x1534 y811 has its central painted blue flower motif become a blue six-point star motif, surrounding painted sprigs unchanged. No paired swaps or extra objects. Exactly five local single-object edits, keep clean believable joins and painterly finish.\"}}, {\"file\": \"prompt-b.json\", \"content\": {\"prompt\": \"Only one local edit in exact original: the TAN BAG HANGING ON BACK WALL above the bed, x788 y310 (NOT doll backpack). Open its leather front flap UPWARD at its top hinge, making flap stand visibly upright above the bag mouth, interior dark opening visible. Preserve entire long shoulder strap, bag body and gold button attachment; single bag changes state. All other scene details remain original exactly. Make one clear contiguous folded-back open flap, no new objects.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit this exact walnut bedroom painting locally; preserve doll identity anatomy, moth all wings, frame, furnishings and lighting. Exactly five single-object differences: 1 the lit lantern near x1123 y385 has its upper metal carrying loop curl into a spiral ring instead of ordinary arch, lantern body unchanged; 2 the small closed brown book on blue bed at x860 y432 opens its front cover upward partway, showing cream pages, bed unchanged; 3 the wooden door round knob near x1270 y363 becomes a crescent-shaped brass lever pointing up, door remains same; 4 the single tan shoulder bag hanging on back wall near x790 y308 has its front flap tip folded upward, strap unchanged; 5 the big tea cup lower-right x1534 y811 has its central painted blue flower motif become a blue six-point star motif, surrounding painted sprigs unchanged. No paired swaps or extra objects. Exactly five local single-object edits, keep clean believable joins and painterly finish."
+      }
+    },
+    {
+      "file": "prompt-b.json",
+      "content": {
+        "prompt": "Only one local edit in exact original: the TAN BAG HANGING ON BACK WALL above the bed, x788 y310 (NOT doll backpack). Open its leather front flap UPWARD at its top hinge, making flap stand visibly upright above the bag mouth, interior dark opening visible. Preserve entire long shoulder strap, bag body and gold button attachment; single bag changes state. All other scene details remain original exactly. Make one clear contiguous folded-back open flap, no new objects."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The book opens its front cover",
+      "difficulty": "Easy",
+      "box": {
+        "x": 800,
+        "y": 387,
+        "width": 122,
+        "height": 77
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The door knob becomes a crescent lever",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1236,
+        "y": 332,
+        "width": 71,
+        "height": 53
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The lantern carrying loop spirals inward",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1104,
+        "y": 307,
+        "width": 41,
+        "height": 47
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The hanging bag flap opens upward",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 750,
+        "y": 242,
+        "width": 88,
+        "height": 98
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The cup flower becomes a six-point star",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1468,
+        "y": 765,
+        "width": 104,
+        "height": 82
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "visually inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "nativePreflight": "source equals actual original size, five nonoverlapping boxes",
+    "difficulty": "hypotheses; human and browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

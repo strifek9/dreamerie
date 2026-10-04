@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-279",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-279-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-279-original-v4.png",
+    "sha256": "8E79E4463719630B2BD1BBDE7C89F49262A1127960E4FFC98E4241068DB8BA63",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-279-altered-source-v4.png",
+    "sha256": "3903F5504475A1A825AC7519A133DF556E2FF2F5BE3298152E32E827FA5753A2",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact original blue beetle carrying folded wooden road bridge across table chasm painting. Preserve beetle anatomy/legs/pose, original bridge structure and positions, tabletop, frame, style. Exactly FIVE one-object localized changes: (1) beetle UPPER antenna tip curls down into a connected hook rather than ending straight, lower antenna exact; (2) large brass paperclip at bottom LEFT its inner wire free end has a short curled hook, rest same wire; (3) single brass tack at far upper RIGHT its ROUND head becomes a broad HEXAGONAL head, same shaft/location; (4) gold strap over TOP folded bridge LEFT side gains a broad diagonal embossed chevron across its front face, same strap geometry; (5) main sloping road bridge at its middle has a clear continuous white chevron direction arrow instead of the single white rectangular dash there, preserve all other markings and structure. One object/one connected printed part each, no swapping adjacent rivets, no specks/grain.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact original blue beetle carrying folded wooden road bridge across table chasm painting. Preserve beetle anatomy/legs/pose, original bridge structure and positions, tabletop, frame, style. Exactly FIVE one-object localized changes: (1) beetle UPPER antenna tip curls down into a connected hook rather than ending straight, lower antenna exact; (2) large brass paperclip at bottom LEFT its inner wire free end has a short curled hook, rest same wire; (3) single brass tack at far upper RIGHT its ROUND head becomes a broad HEXAGONAL head, same shaft/location; (4) gold strap over TOP folded bridge LEFT side gains a broad diagonal embossed chevron across its front face, same strap geometry; (5) main sloping road bridge at its middle has a clear continuous white chevron direction arrow instead of the single white rectangular dash there, preserve all other markings and structure. One object/one connected printed part each, no swapping adjacent rivets, no specks/grain."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "tack",
+      "label": "The distant tack head becomes hexagonal.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1429,
+        "y": 228,
+        "width": 147,
+        "height": 154
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "antenna",
+      "label": "The beetle upper antenna tip hooks downward.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 753,
+        "y": 315,
+        "width": 57,
+        "height": 58
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "strap",
+      "label": "The left bridge strap has a chevron flap.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 353,
+        "y": 102,
+        "width": 65,
+        "height": 112
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "road",
+      "label": "The sloping road dash becomes a chevron.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1015,
+        "y": 318,
+        "width": 94,
+        "height": 68
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "clip",
+      "label": "The paperclip lower bend curls inward.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 371,
+        "y": 803,
+        "width": 53,
+        "height": 59
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered compositor/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

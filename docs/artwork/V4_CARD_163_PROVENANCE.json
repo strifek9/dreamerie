@@ -1,0 +1,108 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-163",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-163-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-163-original-v4.png",
+    "sha256": "2AA4C585562EF3DC84E343872C73125B359CD79371A85ADBEFFE390F197E4E9A",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-163-altered-source-v4.png",
+    "sha256": "0F42D500F7B3884F5D1B9CE03C63AD63A59C2BA35108B8AE6FDBEC573395B4A6",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit EXACT The Tail of the Queue native1672x941. Preserve waitingfantasycreatures anatomy and allcomposition. FIVE singleobject differences: 1 ONLY foremostleft creature's held round mintcard x179460 gets one blue oval window reflection insteadplainface within145425..210493; 2 wallclock ONLY long upward hand x128891 bends into an elbow shape keeping samepivot1269112 within126271..1307117, shortdownhandexact; 3 ONLY wall coatpeg gold crescent x49630 turns to openUP crescent sameobjectlocation within4700..52461; 4 ONLY center blackcreature mint rectangular card x845433 gets one diagonal cutout slit throughitscenter insteadplainface within816407..872457, hands/anatomy unchanged; 5 desk bell x1535800 top pushbutton becomes pointed conical top insteadround button, within1513751..1551790, bellbodyunchanged. Five localized distinctobjects no swaps, no microscopicgrain. Keep all creatures tails/limbs exactly.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit EXACT The Tail of the Queue native1672x941. Preserve waitingfantasycreatures anatomy and allcomposition. FIVE singleobject differences: 1 ONLY foremostleft creature's held round mintcard x179460 gets one blue oval window reflection insteadplainface within145425..210493; 2 wallclock ONLY long upward hand x128891 bends into an elbow shape keeping samepivot1269112 within126271..1307117, shortdownhandexact; 3 ONLY wall coatpeg gold crescent x49630 turns to openUP crescent sameobjectlocation within4700..52461; 4 ONLY center blackcreature mint rectangular card x845433 gets one diagonal cutout slit throughitscenter insteadplainface within816407..872457, hands/anatomy unchanged; 5 desk bell x1535800 top pushbutton becomes pointed conical top insteadround button, within1513751..1551790, bellbodyunchanged. Five localized distinctobjects no swaps, no microscopicgrain. Keep all creatures tails/limbs exactly."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The left round card has an oval blue reflection",
+      "difficulty": "Easy",
+      "box": {
+        "x": 144,
+        "y": 424,
+        "width": 68,
+        "height": 70
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The clock long hand bends into an elbow",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1262,
+        "y": 49,
+        "width": 47,
+        "height": 70
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The coat peg crescent points up",
+      "difficulty": "Hard",
+      "box": {
+        "x": 468,
+        "y": 0,
+        "width": 60,
+        "height": 63
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The center mint card has a diagonal slit",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 815,
+        "y": 403,
+        "width": 61,
+        "height": 62
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The desk bell pushbutton is pointed",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1513,
+        "y": 747,
+        "width": 39,
+        "height": 43
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390 stacked pair. Five separately changed objects; anatomy/corepremise maintained; unrelated drift excluded; outside boxes exact original. Full generated sources/prompts/hashes retained. Crop bridge refinement mapped to exact native crop with coordinates in prompt. Difficulty estimates unvalidated. Root compositor/game/human review pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-277",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-277-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-277-original-v4.png",
+    "sha256": "9DAC09DD13FC454D625144D8B7A724AFF0D7D1B7F64235DBFB3352C692F5DE7B",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-277-altered-source-v4.png",
+    "sha256": "75B486875DF0440053E07398B6038ACE9359E2C2062AEEE4B8C620C59BE74BD8",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact full native 1672x941 painterly peach observatory with telescope in hollow fruit. FIVE isolated SINGLE-object differences only: 1) foreground gold spoon/spork bowl x572y814 reflects a strong blue crescent in its metal face, outline exact; 2) telescope adjustment round brass wheel x462y380 has one diagonal crossbar inside aperture, same wheel and telescope; 3) mini ladder middle rung x697y464 arches upward shallowly, same endpoints/legs/other rungs; 4) small stool top x591y475 has a gold five-point star engraved in dark wood center, stool legs exact; 5) upright BLUE book spine x632y397 has a diagonal gold zigzag seam rather than current plain band, other books exact. Do not alter galaxy stars/peach anatomy/stone texture/plate frame. No other changes.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-277-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact full native 1672x941 painterly peach observatory with telescope in hollow fruit. FIVE isolated SINGLE-object differences only: 1) foreground gold spoon/spork bowl x572y814 reflects a strong blue crescent in its metal face, outline exact; 2) telescope adjustment round brass wheel x462y380 has one diagonal crossbar inside aperture, same wheel and telescope; 3) mini ladder middle rung x697y464 arches upward shallowly, same endpoints/legs/other rungs; 4) small stool top x591y475 has a gold five-point star engraved in dark wood center, stool legs exact; 5) upright BLUE book spine x632y397 has a diagonal gold zigzag seam rather than current plain band, other books exact. Do not alter galaxy stars/peach anatomy/stone texture/plate frame. No other changes.",
+        "reference": "D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-277-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The spoon reflects a blue crescent",
+      "difficulty": "Easy",
+      "box": {
+        "x": 528,
+        "y": 783,
+        "width": 91,
+        "height": 68
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The telescope wheel has crossed bars",
+      "difficulty": "Medium",
+      "box": {
+        "x": 446,
+        "y": 359,
+        "width": 42,
+        "height": 42
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The middle ladder rung arches upward",
+      "difficulty": "Hard",
+      "box": {
+        "x": 672,
+        "y": 451,
+        "width": 49,
+        "height": 25
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The stool top has a gold star",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 568,
+        "y": 457,
+        "width": 48,
+        "height": 25
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The blue book spine has a gold zigzag",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 622,
+        "y": 366,
+        "width": 25,
+        "height": 57
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390 stacked pair. Five independently selectable localized object clues. Native dimensions, five bounded nonoverlapping boxes and exact original pixels outside verified. Difficulty estimates unvalidated; root compositor/game, human difficulty and physical phone approval pending. Full prompt/source hash chain retained.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

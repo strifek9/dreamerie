@@ -1,0 +1,115 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-128",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-128-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-128-original-v4.png",
+    "sha256": "CB7E86A810EEAEE2431510D0690289A50F8B17DE38DA6EBE86BAE822D62D04A8",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-128-altered-source-v4.png",
+    "sha256": "F2FFB9890F33E394DB0FA5EF2F8559236A0EF2A19CE1E451FF7EEAB2CBA0F793",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Use case precise-object-edit. Edit this original Dreamerie painting into one matching spot-the-difference counterpart. Preserve exact entire landscape frame, library shelves/lightning storage, four-armed purple librarian anatomy and expression, painted grain-free style. Exactly FIVE localized single-object changes: 1 red desk bell lower-right has a tall conical bell body instead of rounded dome, same gold base. 2 the large gold key hanging at librarian right hip has its LOWER tooth pointing left instead of right, preserve upper bow/chain. 3 the lightning bolt emerging from the held teacup bends its LOWEST segment LEFT instead of right, cup unchanged. 4 the teal step stool TOP platform handhold becomes a distinct crescent-shaped slot instead of oval; lower steps untouched. 5 the white quill in front desk inkwell has its pale central shaft split into a clear Y fork near its upper third, outline/blue neighboring quill untouched. These are five separate coherent single-object clues; all other items remain original. No added specks, grain or arbitrary recoloring. Output one full-frame painted image same resolution.\"}}, {\"file\": \"quill-prompt.json\", \"content\": {\"prompt\": \"Precise single object edit of white quill in this crop. Preserve feather outer contour, barbs, pot rim/background and blue neighboring feather exactly. ONLY pale central shaft gains a clear pale Y-shaped branch at its upper middle, a substantial second shaft curving to the RIGHT inside the white vane over a third of feather length. The original main shaft stays. Natural painted internal fork structure, no added object, no microscopic specks. Output edited crop.\", \"nativeCrop\": [988, 787, 94, 133]}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Use case precise-object-edit. Edit this original Dreamerie painting into one matching spot-the-difference counterpart. Preserve exact entire landscape frame, library shelves/lightning storage, four-armed purple librarian anatomy and expression, painted grain-free style. Exactly FIVE localized single-object changes: 1 red desk bell lower-right has a tall conical bell body instead of rounded dome, same gold base. 2 the large gold key hanging at librarian right hip has its LOWER tooth pointing left instead of right, preserve upper bow/chain. 3 the lightning bolt emerging from the held teacup bends its LOWEST segment LEFT instead of right, cup unchanged. 4 the teal step stool TOP platform handhold becomes a distinct crescent-shaped slot instead of oval; lower steps untouched. 5 the white quill in front desk inkwell has its pale central shaft split into a clear Y fork near its upper third, outline/blue neighboring quill untouched. These are five separate coherent single-object clues; all other items remain original. No added specks, grain or arbitrary recoloring. Output one full-frame painted image same resolution."
+      }
+    },
+    {
+      "file": "quill-prompt.json",
+      "content": {
+        "prompt": "Precise single object edit of white quill in this crop. Preserve feather outer contour, barbs, pot rim/background and blue neighboring feather exactly. ONLY pale central shaft gains a clear pale Y-shaped branch at its upper middle, a substantial second shaft curving to the RIGHT inside the white vane over a third of feather length. The original main shaft stays. Natural painted internal fork structure, no added object, no microscopic specks. Output edited crop.",
+        "nativeCrop": [
+          988,
+          787,
+          94,
+          133
+        ]
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "bell",
+      "label": "The desk bell becomes conical.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1328,
+        "y": 678,
+        "width": 114,
+        "height": 108
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "lightning",
+      "label": "The teacup lightning bends its lowest segment left.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 335,
+        "y": 250,
+        "width": 174,
+        "height": 112
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "key",
+      "label": "The hanging key's lower teeth point left.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 934,
+        "y": 658,
+        "width": 62,
+        "height": 53
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "stool",
+      "label": "The stool's handhold becomes a crescent slot.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1174,
+        "y": 426,
+        "width": 65,
+        "height": 35
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "quill",
+      "label": "The white quill's shaft branches inside the vane.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1011,
+        "y": 811,
+        "width": 44,
+        "height": 61
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source and five native paired crops plus 390px stacked preview inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses only; root feathered composite and gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

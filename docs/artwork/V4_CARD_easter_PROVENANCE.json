@@ -1,0 +1,213 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-easter",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/holidays-painted-v1/easter-original.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-easter-original-v4.png",
+    "sha256": "94764C797B1688867444D9A2A2A5B18F6B48C07D5B03392862114AB1C862B60F",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-easter-altered-source-v4.png",
+    "sha256": "81B59250749E329A53EE5568D7B3428F59782F2FD4E6F4BF3E1E92298900BCDB",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit The Garden Inside the Egg original illustration, preserve EXACT native1672x941 frame, painterly spring Easter theme, children/rabbit/egg garden/enriched flowers unchanged except FIVE localized single-object changes. 1) The upright PURPLE polka-dot painted egg at lower foreground x1060 y816 width107 height125 has small cream crescent-moon marks instead of round white polka dots. Keep its shell shape, grass occlusion and all other eggs exact. 2) The cart's one visible wooden wheel changes its internal spokes to THREE broad spokes instead of many; rim, axle and cart unchanged, x1357 y780 width159 height151. 3) The tiny wooden egg-house door that the BOY touches swings nearly closed, still a slight narrow gap; same hinges/latch and size, x1361 y523 width62 height127. Keep boy's hand, boy body and egg-house exterior untouched. 4) The large purple bow tied on the GIRL'S basket changes its RIGHT loop to a folded inward loop; keep knot, left loop and both hanging tails identical, x254 y604 width50 height53. This is only one tied ribbon object, no other ribbon. 5) The rabbit closes its rightmost visible eye on right side of its face, x1007 y201 width34 height39; keep all face/ears/left eye untouched. No other changes, no text, no disappearing objects, no color swaps. Preserve holiday joy and native dimensions.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/holidays-painted-v1/easter-original.png\"}}, {\"file\": \"assembly.json\", \"content\": {\"source\": \"source.png\", \"output\": \"door-assembled.png\", \"polygons\": [[[1358, 540], [1366, 523], [1384, 519], [1402, 528], [1422, 551], [1422, 646], [1375, 649], [1358, 634]], [[1416, 646], [1417, 512], [1425, 486], [1441, 468], [1459, 466], [1476, 478], [1487, 497], [1492, 643]]], \"operation\": \"Exact-original-backed door old/new union footprints; preserve boy and all unrelated scene; no scaling.\", \"oldDoorContourRestore\": [1358, 529, 1428, 651]}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit The Garden Inside the Egg original illustration, preserve EXACT native1672x941 frame, painterly spring Easter theme, children/rabbit/egg garden/enriched flowers unchanged except FIVE localized single-object changes. 1) The upright PURPLE polka-dot painted egg at lower foreground x1060 y816 width107 height125 has small cream crescent-moon marks instead of round white polka dots. Keep its shell shape, grass occlusion and all other eggs exact. 2) The cart's one visible wooden wheel changes its internal spokes to THREE broad spokes instead of many; rim, axle and cart unchanged, x1357 y780 width159 height151. 3) The tiny wooden egg-house door that the BOY touches swings nearly closed, still a slight narrow gap; same hinges/latch and size, x1361 y523 width62 height127. Keep boy's hand, boy body and egg-house exterior untouched. 4) The large purple bow tied on the GIRL'S basket changes its RIGHT loop to a folded inward loop; keep knot, left loop and both hanging tails identical, x254 y604 width50 height53. This is only one tied ribbon object, no other ribbon. 5) The rabbit closes its rightmost visible eye on right side of its face, x1007 y201 width34 height39; keep all face/ears/left eye untouched. No other changes, no text, no disappearing objects, no color swaps. Preserve holiday joy and native dimensions.",
+        "reference": "D:/Dreamerie/public/artwork/v3/holidays-painted-v1/easter-original.png"
+      }
+    },
+    {
+      "file": "assembly.json",
+      "content": {
+        "source": "source.png",
+        "output": "door-assembled.png",
+        "polygons": [
+          [
+            [
+              1358,
+              540
+            ],
+            [
+              1366,
+              523
+            ],
+            [
+              1384,
+              519
+            ],
+            [
+              1402,
+              528
+            ],
+            [
+              1422,
+              551
+            ],
+            [
+              1422,
+              646
+            ],
+            [
+              1375,
+              649
+            ],
+            [
+              1358,
+              634
+            ]
+          ],
+          [
+            [
+              1416,
+              646
+            ],
+            [
+              1417,
+              512
+            ],
+            [
+              1425,
+              486
+            ],
+            [
+              1441,
+              468
+            ],
+            [
+              1459,
+              466
+            ],
+            [
+              1476,
+              478
+            ],
+            [
+              1487,
+              497
+            ],
+            [
+              1492,
+              643
+            ]
+          ]
+        ],
+        "operation": "Exact-original-backed door old/new union footprints; preserve boy and all unrelated scene; no scaling.",
+        "oldDoorContourRestore": [
+          1358,
+          529,
+          1428,
+          651
+        ]
+      }
+    }
+  ],
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-easter-door-assembled-source-v4.png",
+      "sha256": "5B7B2BB104C9C7C70E0441E13ED58516DB5735A6DD0D90FFDFF62461F49E9CC5",
+      "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit The Garden Inside the Egg original illustration, preserve EXACT native1672x941 frame, painterly spring Easter theme, children/rabbit/egg garden/enriched flowers unchanged except FIVE localized single-object changes. 1) The upright PURPLE polka-dot painted egg at lower foreground x1060 y816 width107 height125 has small cream crescent-moon marks instead of round white polka dots. Keep its shell shape, grass occlusion and all other eggs exact. 2) The cart's one visible wooden wheel changes its internal spokes to THREE broad spokes instead of many; rim, axle and cart unchanged, x1357 y780 width159 height151. 3) The tiny wooden egg-house door that the BOY touches swings nearly closed, still a slight narrow gap; same hinges/latch and size, x1361 y523 width62 height127. Keep boy's hand, boy body and egg-house exterior untouched. 4) The large purple bow tied on the GIRL'S basket changes its RIGHT loop to a folded inward loop; keep knot, left loop and both hanging tails identical, x254 y604 width50 height53. This is only one tied ribbon object, no other ribbon. 5) The rabbit closes its rightmost visible eye on right side of its face, x1007 y201 width34 height39; keep all face/ears/left eye untouched. No other changes, no text, no disappearing objects, no color swaps. Preserve holiday joy and native dimensions.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/holidays-painted-v1/easter-original.png\"}}, {\"file\": \"assembly.json\", \"content\": {\"source\": \"source.png\", \"output\": \"door-assembled.png\", \"polygons\": [[[1358, 540], [1366, 523], [1384, 519], [1402, 528], [1422, 551], [1422, 646], [1375, 649], [1358, 634]], [[1416, 646], [1417, 512], [1425, 486], [1441, 468], [1459, 466], [1476, 478], [1487, 497], [1492, 643]]], \"operation\": \"Exact-original-backed door old/new union footprints; preserve boy and all unrelated scene; no scaling.\", \"oldDoorContourRestore\": [1358, 529, 1428, 651]}}]"
+    }
+  ],
+  "authoredRegions": [
+    {
+      "id": "wheel-three",
+      "label": "The cart wheel has three spokes.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1352,
+        "y": 776,
+        "width": 165,
+        "height": 159
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "egg-crescents",
+      "label": "The purple egg bears cream crescents.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1053,
+        "y": 812,
+        "width": 112,
+        "height": 129
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "door-closes",
+      "label": "The wooden egg-house door swings toward the opening.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1353,
+        "y": 463,
+        "width": 144,
+        "height": 190
+      },
+      "edgeFade": 4,
+      "source": "door-assembled.png"
+    },
+    {
+      "id": "rabbit-wink",
+      "label": "The rabbit closes its rightmost eye.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1005,
+        "y": 201,
+        "width": 37,
+        "height": 40
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "bow-fold",
+      "label": "The basket bow's right loop folds inward.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 251,
+        "y": 602,
+        "width": 55,
+        "height": 61
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": {
+    "humanTimed": false,
+    "physicalPhone": false,
+    "notes": [
+      "Easter theme preserved. Door realized a taller frontal pose toward opening; full original/generated door footprint selected with original-backed mask preserving neighboring child."
+    ],
+    "outsideRegionsExact": true,
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sourceHashes": {
+      "source.png": "81b59250749e329a53ee5568d7b3428f59782f2fd4e6f4bf3e1e92298900bcdb",
+      "door-assembled.png": "5b7b2bb104c9c7c70e0441e13ed58516db5735a6dd0d90ffdff62461f49e9cc5"
+    },
+    "allTenPairsNonoverlap": true,
+    "fullFrameAndFivePairedCropsViewed": true,
+    "mobile390CompositeViewed": true
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

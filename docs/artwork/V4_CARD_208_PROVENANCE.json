@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-208",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-208-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-208-original-v4.png",
+    "sha256": "7BB526CD251A6B1A36E3FFF1F1962104645F4307689E211FAD2FB0E967938E33",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-208-altered-source-v4.png",
+    "sha256": "BBF9C8C6D632510250CFB509101ED122BA4BDDD19C392A03ED52701CBAEC31B1",
+    "prompt": "[{\"file\": \"prompt-refine.json\", \"content\": {\"prompt\": \"Single targeted edit ONLY to wooden gold lightning-bolt prop lying on stage lower center. Its far-right pointed tip near native(1149,886) bends UPWARD into a short upright hook rather than flat pointed end, modify last90pixels only (x1077..1175,y819..906), main zigzag body left untouched. It is same single connected solid prop, coherent beveled painted wood and grounding shadow. Preserve full native1672x941 image, all other objects and anatomy/style exact. Do not alter cloud/drops or anything else.\"}}, {\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Preserve this exact1672x941 painting and anatomy/frame, change FIVE isolated single objects only. 1 cloud puppet ONLY its smiling mouth at(917,286) becomes round surprised O, eyes and cheeks exact. 2 knee patch at(628,697) becomes dark blue-and-cream checkerboard internal fabric pattern, patch edge/stitches exact. 3 rope spool central hole at(328,660) becomes clearly SQUARE instead of oval, rest spool and rope exact. 4 lantern upper carrying handle near(233,90) tips sideways LEFT instead of upright, single handle attached to same cap. 5 ONLY cloud leftmost GOLD hanging drop near(800,363) swings LEFT on its same string, gold drop moves to(782,356), string tilts from original attachment(800,337); every OTHER drop and string exact. Each clue one selectable object, no paired swap, no multiple changed stars. Preserve scenery, clothing, hands, wooden crossbar, curtain rings, lightning prop, light/style.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt-refine.json",
+      "content": {
+        "prompt": "Single targeted edit ONLY to wooden gold lightning-bolt prop lying on stage lower center. Its far-right pointed tip near native(1149,886) bends UPWARD into a short upright hook rather than flat pointed end, modify last90pixels only (x1077..1175,y819..906), main zigzag body left untouched. It is same single connected solid prop, coherent beveled painted wood and grounding shadow. Preserve full native1672x941 image, all other objects and anatomy/style exact. Do not alter cloud/drops or anything else."
+      }
+    },
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Preserve this exact1672x941 painting and anatomy/frame, change FIVE isolated single objects only. 1 cloud puppet ONLY its smiling mouth at(917,286) becomes round surprised O, eyes and cheeks exact. 2 knee patch at(628,697) becomes dark blue-and-cream checkerboard internal fabric pattern, patch edge/stitches exact. 3 rope spool central hole at(328,660) becomes clearly SQUARE instead of oval, rest spool and rope exact. 4 lantern upper carrying handle near(233,90) tips sideways LEFT instead of upright, single handle attached to same cap. 5 ONLY cloud leftmost GOLD hanging drop near(800,363) swings LEFT on its same string, gold drop moves to(782,356), string tilts from original attachment(800,337); every OTHER drop and string exact. Each clue one selectable object, no paired swap, no multiple changed stars. Preserve scenery, clothing, hands, wooden crossbar, curtain rings, lightning prop, light/style."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "checker-patch",
+      "label": "The knee patch carries a checkerboard.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 581,
+        "y": 657,
+        "width": 95,
+        "height": 81
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "surprised-cloud",
+      "label": "The cloud\u2019s mouth forms an O.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 891,
+        "y": 267,
+        "width": 48,
+        "height": 39
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "hook-lightning",
+      "label": "The lightning prop\u2019s tip bends upward.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1032,
+        "y": 796,
+        "width": 143,
+        "height": 112
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "square-spool",
+      "label": "The rope spool has a square center hole.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 294,
+        "y": 646,
+        "width": 71,
+        "height": 24
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "tilted-handle",
+      "label": "The lantern\u2019s handle tips left.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 187,
+        "y": 62,
+        "width": 66,
+        "height": 55
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five paired crops, full composite and 390-pixel stacked pair inspected. Single-object changes; difficulty hypotheses only. Root browser/hit QA and human fairness remain pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

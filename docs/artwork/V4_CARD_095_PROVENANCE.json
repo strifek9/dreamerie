@@ -1,0 +1,104 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-095",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-095-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-095-original-v4.png",
+    "sha256": "1AF1BC9255C56F71C2A823568533EF152787B2DC65C057A6FCABF52BE18AF034",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-095-altered-source-v4.png",
+    "sha256": "BF5C2095B10041F047D994D63DA963C2921FA605806CE38FD16A0106870B20BA",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise edit attached penguin playingorangetuba bypond painting. Keep EXACT1672x941 frame allpositions animalanatomy existingpaintpalette. FIVE one-object localizeddifferences:1) large cutorange tubaBELL innerfruitsegments curlinto a clear radialSPIRAL fan rather thanstraight spokes, preserve outerbell/rind/silhouette.2) ONLY CENTERSQUARE goldvalvecap oninstrument: flips open likehingedsquarelid revealingdarkinsetunder it, remainconnected onhinge atsamevalve, other2roundvalvecaps EXACT unchanged.3) pinkHEART emblem onpenguin'sredvest becomes a pinkleaf silhouette withcentralvein, same motifposition/size, vestotherpartsunchanged.4) creamstool lowerleft its roundgreen seatopening becomes a crescent-shaped opening, same overallarea/seat/legs unchanged.5) ONLY closestlarge green lily pad inpond lower-rightaroundx1393,y755: its rightedge rolls into a visible hollowgreenleaf tube whileotherpadflat andstem intact, no otherpads changed. Strong intentionalpatterns/mechanisms/actions, no swaps independentobjects, no textmarkers/extraclutter.\"}}, {\"file\": \"refine-prompt.json\", \"content\": {\"prompt\": \"Preciselyedit existingstonebridge archinthiscroponly. Preserveexactframing bridgeouterstoneandtoprailing foliage andwater. Incenterofsinglearch opening show a SINGLE small lowered wooden PORTCULLIS gate halfway down, with4verticalwoodbars andonehorizontalcrossbeam attachedinsidestonearch, leavingbottomwatergap. Clearly functioningoneintegratedbridgegate, no otherbridgeparts changed, noextraboats/props/text. Painterlywarmwoodmatchingstoneandforest.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise edit attached penguin playingorangetuba bypond painting. Keep EXACT1672x941 frame allpositions animalanatomy existingpaintpalette. FIVE one-object localizeddifferences:1) large cutorange tubaBELL innerfruitsegments curlinto a clear radialSPIRAL fan rather thanstraight spokes, preserve outerbell/rind/silhouette.2) ONLY CENTERSQUARE goldvalvecap oninstrument: flips open likehingedsquarelid revealingdarkinsetunder it, remainconnected onhinge atsamevalve, other2roundvalvecaps EXACT unchanged.3) pinkHEART emblem onpenguin'sredvest becomes a pinkleaf silhouette withcentralvein, same motifposition/size, vestotherpartsunchanged.4) creamstool lowerleft its roundgreen seatopening becomes a crescent-shaped opening, same overallarea/seat/legs unchanged.5) ONLY closestlarge green lily pad inpond lower-rightaroundx1393,y755: its rightedge rolls into a visible hollowgreenleaf tube whileotherpadflat andstem intact, no otherpads changed. Strong intentionalpatterns/mechanisms/actions, no swaps independentobjects, no textmarkers/extraclutter."
+      }
+    },
+    {
+      "file": "refine-prompt.json",
+      "content": {
+        "prompt": "Preciselyedit existingstonebridge archinthiscroponly. Preserveexactframing bridgeouterstoneandtoprailing foliage andwater. Incenterofsinglearch opening show a SINGLE small lowered wooden PORTCULLIS gate halfway down, with4verticalwoodbars andonehorizontalcrossbeam attachedinsidestonearch, leavingbottomwatergap. Clearly functioningoneintegratedbridgegate, no otherbridgeparts changed, noextraboats/props/text. Painterlywarmwoodmatchingstoneandforest."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "The orange bell's segments curl into a spiral.",
+      "box": {
+        "x": 737,
+        "y": 39,
+        "width": 181,
+        "height": 348
+      },
+      "edgeFade": 6
+    },
+    {
+      "difficulty": "Medium",
+      "label": "A wooden gate lowers inside the bridge arch.",
+      "box": {
+        "x": 1246,
+        "y": 523,
+        "width": 168,
+        "height": 66
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The large lily pad on the right rolls into a tube.",
+      "box": {
+        "x": 1325,
+        "y": 733,
+        "width": 178,
+        "height": 59
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "The stool seat has a crescent-shaped opening.",
+      "box": {
+        "x": 86,
+        "y": 668,
+        "width": 85,
+        "height": 40
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "Leaf veins branch inside the vest's heart emblem.",
+      "box": {
+        "x": 418,
+        "y": 465,
+        "width": 74,
+        "height": 65
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Fullframe inspected. Initialcenter-valve edit rejectedbecause unchangedadjacentcapswithin67px guessradius; allvalves restoredoriginalrect638303146x148byteexact. Replacedwith isolatedbridgegate via builtin cropgeneration. Actualvestheartshapeunchanged,onlyleafveins appear. Singleorangespiral, gateonejoinedmechanism, singlepadroll, stoolinternalhole andheartinternalpattern. Rootfinalnativecomposite/joins checksrequired. Difficultyhypothesesonly.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

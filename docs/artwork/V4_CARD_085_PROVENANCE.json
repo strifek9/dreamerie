@@ -1,0 +1,98 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-085",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-revisit-v1/085-dynamic-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-085-original-v4.png",
+    "sha256": "AC3F0A775C5E091685C5F54D4F8772F457BCA2F720441FE650BC33E608CF0BC2",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-085-altered-source-v4.png",
+    "sha256": "8F7A4BA14153656914BED08A437A72AC6BB27272433AF5B58C79D28104339849",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Preciselyedit attached lavendercoat hanging inpeachroom greenchair painting. Preserve EXACT native1672x941 framing/colors/brushwork/objectpositions. FIVE single-object local edits:1) greenchair back's circularhole becomes a clear oldfashioned KEYHOLE-shaped cutout withroundtop andshortnarrowstem, samecenter,size roughlyoriginalhole, allchairlegs/frame unchanged.2) coatLEFTrolledcuff atx706,446: cuffcloth threads through ITS OWN loose loop forming a small fabricself-knot onoutercuff, samepurplematerial nootherbutton/coatshapechanges.3) coatRIGHTpocket containingmoon: upperPOCKET LIP folds/rolls outward into a doublelayered purplecuff aroundrim, preservemoon EXACT shape/glow/position and pocketoutline/body.4) goldwallHOOK/hanger topcenter: hookstem curls into a continuous small figure-eight loop instead ofplain simplecurve, samehangingwoodhanger unchanged, physicallyconnected.5) redcross STITCH nearcoatlower-righthem changes into one continuous red stitchedheart-outline (not tinyiconstamp), areaabout50x45native, samecloth redthread hue. No swaps/multipleobjects changedperclue. Eachchangedartifact/feature needsoneindependentguess. Noextras/labels/text/markers.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Preciselyedit attached lavendercoat hanging inpeachroom greenchair painting. Preserve EXACT native1672x941 framing/colors/brushwork/objectpositions. FIVE single-object local edits:1) greenchair back's circularhole becomes a clear oldfashioned KEYHOLE-shaped cutout withroundtop andshortnarrowstem, samecenter,size roughlyoriginalhole, allchairlegs/frame unchanged.2) coatLEFTrolledcuff atx706,446: cuffcloth threads through ITS OWN loose loop forming a small fabricself-knot onoutercuff, samepurplematerial nootherbutton/coatshapechanges.3) coatRIGHTpocket containingmoon: upperPOCKET LIP folds/rolls outward into a doublelayered purplecuff aroundrim, preservemoon EXACT shape/glow/position and pocketoutline/body.4) goldwallHOOK/hanger topcenter: hookstem curls into a continuous small figure-eight loop instead ofplain simplecurve, samehangingwoodhanger unchanged, physicallyconnected.5) redcross STITCH nearcoatlower-righthem changes into one continuous red stitchedheart-outline (not tinyiconstamp), areaabout50x45native, samecloth redthread hue. No swaps/multipleobjects changedperclue. Eachchangedartifact/feature needsoneindependentguess. Noextras/labels/text/markers."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "The chair back has a keyhole-shaped opening.",
+      "box": {
+        "x": 455,
+        "y": 568,
+        "width": 68,
+        "height": 87
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The left coat cuff threads through its own knot.",
+      "box": {
+        "x": 661,
+        "y": 382,
+        "width": 98,
+        "height": 111
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The moon pocket's lip folds outward.",
+      "box": {
+        "x": 920,
+        "y": 414,
+        "width": 103,
+        "height": 42
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "A red heart is stitched near the coat hem.",
+      "box": {
+        "x": 921,
+        "y": 669,
+        "width": 61,
+        "height": 52
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "The coat hook curls into a figure-eight loop.",
+      "box": {
+        "x": 842,
+        "y": 12,
+        "width": 50,
+        "height": 74
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Fullsource observed. Samecuffselfknot, samepocketrolledlip, chaironeinternalcutout, coatredthreadonepattern, hangerhookownloop. No swaps. Moon originalrectangle93234479x70 restoredbitexact andexcludedlipbox starts414. Hookbaseball moveswithin samewallhookartifact aspartofmechanism; ifrootdeemsindependentball preservebaseoriginalormotifredo. Difficultyhypothesesonly. RootfinalclipQArequired.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

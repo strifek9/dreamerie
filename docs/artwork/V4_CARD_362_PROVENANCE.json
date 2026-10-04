@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-362",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-362-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-362-original-v4.png",
+    "sha256": "38258C0A0055DE9D877C06B3A42D9BED9486FD8CA55DDD383F683AB8A9F7B995",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-362-altered-source-v4.png",
+    "sha256": "07628A744FB9B93ED8AD43B334178B31ABE33EC7DC56F09FC25B3B3C10BED7D3",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact original girl sewing patterned tiled floor over purple hidden moon-garden. Preserve girl anatomy/hands/thread/pose, tiled-floor sewing and hidden moon premise, framing/style. Exactly FIVE localized single-object changes: (1) large scissors LEFT nearer lower finger ring becomes an angular diamond ring, other ring/blades exact; (2) isolated lower LEFT CHISEL wooden handle has a broad single spiral carved groove, same outline/ferrule/blade; (3) purple hidden-garden MOON inside opening at lower center has a clear crescent smile carved across its face rather than plain glowing disk, same outer disk/branches; (4) upper LEFT STOOL cloth its lower dangling tip folds into a clearly attached curled loop, same cloth/stool; (5) cabinet TOP RIGHT brass round knob becomes a horizontal lever pointing LEFT at same mounting, all cabinet exact. Single-object mechanism/action/internal pattern per clue, no spool swaps/pin edits/no tiny grain.\"}}, {\"file\": \"moon-prompt.json\", \"content\": {\"prompt\": \"Edit exactly original glowing moon DISK crop. Add ONLY one broad engraved crescent-shaped SMILE INSIDE the existing circular glowing disk, entirely within its round outline. Same existing ONE moon, exact disk size/location/pale orange material; surrounding purple glow/background exact. Do NOT add a separate crescent/object or shrink original disk. Clear dark orange smile line across lower half of disk only.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact original girl sewing patterned tiled floor over purple hidden moon-garden. Preserve girl anatomy/hands/thread/pose, tiled-floor sewing and hidden moon premise, framing/style. Exactly FIVE localized single-object changes: (1) large scissors LEFT nearer lower finger ring becomes an angular diamond ring, other ring/blades exact; (2) isolated lower LEFT CHISEL wooden handle has a broad single spiral carved groove, same outline/ferrule/blade; (3) purple hidden-garden MOON inside opening at lower center has a clear crescent smile carved across its face rather than plain glowing disk, same outer disk/branches; (4) upper LEFT STOOL cloth its lower dangling tip folds into a clearly attached curled loop, same cloth/stool; (5) cabinet TOP RIGHT brass round knob becomes a horizontal lever pointing LEFT at same mounting, all cabinet exact. Single-object mechanism/action/internal pattern per clue, no spool swaps/pin edits/no tiny grain."
+      }
+    },
+    {
+      "file": "moon-prompt.json",
+      "content": {
+        "prompt": "Edit exactly original glowing moon DISK crop. Add ONLY one broad engraved crescent-shaped SMILE INSIDE the existing circular glowing disk, entirely within its round outline. Same existing ONE moon, exact disk size/location/pale orange material; surrounding purple glow/background exact. Do NOT add a separate crescent/object or shrink original disk. Clear dark orange smile line across lower half of disk only."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "ring",
+      "label": "The lower scissors ring becomes angular.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 93,
+        "y": 553,
+        "width": 111,
+        "height": 69
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "groove",
+      "label": "The chisel handle has a spiral groove.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 211,
+        "y": 650,
+        "width": 119,
+        "height": 114
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "lever",
+      "label": "The cabinet knob becomes a left lever.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1310,
+        "y": 21,
+        "width": 104,
+        "height": 57
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "cloth",
+      "label": "The stool cloth dangling tip curls into a loop.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 240,
+        "y": 154,
+        "width": 63,
+        "height": 62
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "moon",
+      "label": "The hidden moon disk has a crescent smile.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 696,
+        "y": 721,
+        "width": 85,
+        "height": 53
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered compositor/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

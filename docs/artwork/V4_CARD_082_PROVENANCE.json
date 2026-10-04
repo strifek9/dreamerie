@@ -1,0 +1,114 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-082",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-revisit-v1/082-dynamic-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-082-original-v4.png",
+    "sha256": "3DE2903FC78A2B8EB3279A852C75FFEC13CFAA9709251EB2B44C66835A35F0C1",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-082-altered-source-v4.png",
+    "sha256": "06A42231E5CAEA4FF5A4B176D97E59298F7AB18F856E1C86FCDC8B2E524456AF",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise object edit on provided original1672x941 Dreamerie shadowscreen blue shoes painting. Preserve exact framing, sleepingpaper-cat, woman's shadowsilhouette anatomy, shoesandallribbons, roomstyle unchanged. Five independent singleobject localized edits ONLY: 1 foregroundLEFTshoe silver buckle becomes oval instead of rectangular, samepositioncenter693,727 box648,696,91,64; shoeoutlineunchanged. 2 white glove on little LEFTtable has its rightmost thumb curled inward/up instead of pointing down, only449,388,29,54; preserve fourotherfingers andplacement. 3 hat SHADOW on rightwall has a tallstraight cylindricalcrown instead of roundedlow crown, box1404,68,97,74; preserve brimanddanglingribbonshadow. 4 umbrella SHADOW canopy above woman has CURVEDfanribs rather than straightradiatingribs, canopybox844,17,256,170; preserve canopyoutlineandshaft. 5 LEFTgold clasp tab on smallgreenbox onlefttable points diagonallyleft instead of straightdown, box428,344,21,28; leaveotherclasps unchanged. No actualobjectsadded no textgrain no swaps; each clue ONLYoneobject.\"}}, {\"file\": \"shoehorn-prompt.json\", \"content\": {\"prompt\": \"Precisely edit ONEobject in this originalnative1672x941 painting. Gold shoehorn resting on littlelefttable beside greenbox ends atx577,y383. Its spoonlike rightTIP should curl UPWARD into a gentlehook rather than liehorizontal. Entirechange must fit536,354,59,52; preserve shoehornleftshaft connecting totool, table/box/whiteglove exactlysame. No additionaltools no broken geometry, nativepainting style unchanged. Everyotherpixel/object identical.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise object edit on provided original1672x941 Dreamerie shadowscreen blue shoes painting. Preserve exact framing, sleepingpaper-cat, woman's shadowsilhouette anatomy, shoesandallribbons, roomstyle unchanged. Five independent singleobject localized edits ONLY: 1 foregroundLEFTshoe silver buckle becomes oval instead of rectangular, samepositioncenter693,727 box648,696,91,64; shoeoutlineunchanged. 2 white glove on little LEFTtable has its rightmost thumb curled inward/up instead of pointing down, only449,388,29,54; preserve fourotherfingers andplacement. 3 hat SHADOW on rightwall has a tallstraight cylindricalcrown instead of roundedlow crown, box1404,68,97,74; preserve brimanddanglingribbonshadow. 4 umbrella SHADOW canopy above woman has CURVEDfanribs rather than straightradiatingribs, canopybox844,17,256,170; preserve canopyoutlineandshaft. 5 LEFTgold clasp tab on smallgreenbox onlefttable points diagonallyleft instead of straightdown, box428,344,21,28; leaveotherclasps unchanged. No actualobjectsadded no textgrain no swaps; each clue ONLYoneobject."
+      }
+    },
+    {
+      "file": "shoehorn-prompt.json",
+      "content": {
+        "prompt": "Precisely edit ONEobject in this originalnative1672x941 painting. Gold shoehorn resting on littlelefttable beside greenbox ends atx577,y383. Its spoonlike rightTIP should curl UPWARD into a gentlehook rather than liehorizontal. Entirechange must fit536,354,59,52; preserve shoehornleftshaft connecting totool, table/box/whiteglove exactlysame. No additionaltools no broken geometry, nativepainting style unchanged. Everyotherpixel/object identical."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The front shoe buckle is oval",
+      "difficulty": "Easy",
+      "box": {
+        "x": 648,
+        "y": 694,
+        "width": 90,
+        "height": 65
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The hat shadow has a tall cylindrical crown",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1404,
+        "y": 62,
+        "width": 105,
+        "height": 92
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The shadow umbrella ribs curve across its canopy",
+      "difficulty": "Hard",
+      "box": {
+        "x": 842,
+        "y": 14,
+        "width": 262,
+        "height": 178
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The shoehorn tip curves upward",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 531,
+        "y": 340,
+        "width": 64,
+        "height": 62
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "horn.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The glove thumb is shorter and bends inward",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 450,
+        "y": 385,
+        "width": 34,
+        "height": 60
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker nativepair/fivepairedcrops/390stack inspected. Tinyclasp edit rejected and replaced by larger shoehornhook. Five separatelyselectable singleobjects, shoe/ribbon/cat/figure anatomy retained. Native/nonoverlap/exactoutside pixels verified; root compositor/game and human difficulty pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

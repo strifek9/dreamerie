@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-christmas",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/holidays-painted-v1/christmas-original.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-christmas-original-v4.png",
+    "sha256": "72995A5FC0B44D2DDC7C31769E2A61FA0412226C2B13E1752398A51661F9FE34",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-christmas-altered-source-v4.png",
+    "sha256": "9073AA5B827F33DF50375BDEAA12D73BCB7614399C721F8FA592B106724AD9D7",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact original1672x941 Christmas painting preserving theme/frame/style/elf anatomy with exactly FIVE localized single-object changes.1 sleeping cat in middle chair at928518 ONLY one visible eye opens, other eye/head/body original.2 tiny floating blue whale at777431 ONLY existing eye closes into curved eyelid, whale silhouette unchanged.3 white Christmas stocking near1496345 tree motif becomes a gold crescent motif, same stocking exact.4 foreground red mug at1629690 existing WHITE TREE motif flips upside-down, same mug/handle/liquid exact.5 large hanging lantern above fireplace native1501200 internal candle flame becomes pointed STAR-shaped glow instead of flame, same one flame no extra stars outside lantern. No traincarriage swaps, no grouped presents, no moved decorations. All otheroriginalexact.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact original1672x941 Christmas painting preserving theme/frame/style/elf anatomy with exactly FIVE localized single-object changes.1 sleeping cat in middle chair at928518 ONLY one visible eye opens, other eye/head/body original.2 tiny floating blue whale at777431 ONLY existing eye closes into curved eyelid, whale silhouette unchanged.3 white Christmas stocking near1496345 tree motif becomes a gold crescent motif, same stocking exact.4 foreground red mug at1629690 existing WHITE TREE motif flips upside-down, same mug/handle/liquid exact.5 large hanging lantern above fireplace native1501200 internal candle flame becomes pointed STAR-shaped glow instead of flame, same one flame no extra stars outside lantern. No traincarriage swaps, no grouped presents, no moved decorations. All otheroriginalexact."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "awake-cat",
+      "label": "The sleeping cat opens one eye.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 922,
+        "y": 509,
+        "width": 25,
+        "height": 21
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "closed-whale",
+      "label": "The floating whale closes its eye.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 781,
+        "y": 416,
+        "width": 26,
+        "height": 24
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "crescent-stocking",
+      "label": "The white stocking bears a crescent.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1465,
+        "y": 312,
+        "width": 53,
+        "height": 77
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "inverted-tree",
+      "label": "The red mug\u2019s tree points downward.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1612,
+        "y": 657,
+        "width": 60,
+        "height": 82
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "star-flame",
+      "label": "The lantern\u2019s flame forms a star.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1484,
+        "y": 166,
+        "width": 28,
+        "height": 47
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five paired crops, full composite and 390-pixel stacked pair inspected. Single-object changes; difficulty hypotheses only. Root browser/hit QA and human fairness remain pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

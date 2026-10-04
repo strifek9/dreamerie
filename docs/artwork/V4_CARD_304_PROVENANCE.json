@@ -1,0 +1,119 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-304",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-304-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-304-original-v4.png",
+    "sha256": "9F054D6152A591DB08C3B57A5CA04DF35E90713FCEB5733D39555437B4C8A0AE",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-304-altered-source-v4.png",
+    "sha256": "BA303501B89260CA7E1A8228A144BC62D6DBA732F96D2D841D8B0F2864A842FB",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact fullnative1672x941 dreamy turtle umbrella stand hallway painting FIVE isolated single-object differences ONLY. 1 Turtle near x615y584 closes visible eye into gentle eyelid, all body pattern/head mouth exact. 2 Large golden ring door knocker left x132y292 rotates its hanging ring UPWARD to horizontal raised pose, same shell mounting plate and rest door unchanged. 3 Tall center purple miniature umbrella HANDLE shaped door near x809y91: its purple door closes across glowing stair opening, retains arch silhouette/door handle/decorations and umbrella beneath unchanged. 4 Center cream folded umbrella near x918y278: pleats twist diagonally into spiral folds instead of vertical folds, same color,width,tips,position. 5 Center-front turtle shell ceramic panel near x976y670: its purple lotus motif becomes a purple tulip with three distinct upright petals, green stem/panel outline exact. Every other object unchanged. No other umbrellas/doors altered, preserve reflections/full framing/style.\", \"reference\": \"dream-304-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact fullnative1672x941 dreamy turtle umbrella stand hallway painting FIVE isolated single-object differences ONLY. 1 Turtle near x615y584 closes visible eye into gentle eyelid, all body pattern/head mouth exact. 2 Large golden ring door knocker left x132y292 rotates its hanging ring UPWARD to horizontal raised pose, same shell mounting plate and rest door unchanged. 3 Tall center purple miniature umbrella HANDLE shaped door near x809y91: its purple door closes across glowing stair opening, retains arch silhouette/door handle/decorations and umbrella beneath unchanged. 4 Center cream folded umbrella near x918y278: pleats twist diagonally into spiral folds instead of vertical folds, same color,width,tips,position. 5 Center-front turtle shell ceramic panel near x976y670: its purple lotus motif becomes a purple tulip with three distinct upright petals, green stem/panel outline exact. Every other object unchanged. No other umbrellas/doors altered, preserve reflections/full framing/style.",
+        "reference": "dream-304-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "knocker-raised",
+      "label": "The door knocker ring is raised horizontally.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 53,
+        "y": 154,
+        "width": 159,
+        "height": 274
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "mini-door",
+      "label": "The tall purple miniature door is closed.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 763,
+        "y": 26,
+        "width": 110,
+        "height": 151
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "umbrella-twist",
+      "label": "The cream umbrella has spiral folds.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 859,
+        "y": 192,
+        "width": 118,
+        "height": 164
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "turtle-eye",
+      "label": "The turtle closes its eye.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 582,
+        "y": 559,
+        "width": 58,
+        "height": 48
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "shell-tulip",
+      "label": "The left-front shell panel bears a tulip.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 807,
+        "y": 588,
+        "width": 95,
+        "height": 112
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": {
+    "humanTimed": false,
+    "physicalPhone": false,
+    "notes": [
+      "Tulip realized on left-front panel, actual label and selection reflect that.",
+      "Knocker box includes original cast-shadow footprint to avoid dangling-shadow remnant."
+    ],
+    "outsideRegionsExact": true,
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sourceHashes": {
+      "source.png": "ba303501b89260ca7e1a8228a144bc62d6dba732f96d2d841d8b0f2864a842fb"
+    }
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

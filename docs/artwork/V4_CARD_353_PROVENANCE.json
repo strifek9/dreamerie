@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-353",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-revisit-v1/353-dynamic-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-353-original-v4.png",
+    "sha256": "D96C59DABDF05B3FB0C852D57F5A79788B53B297EED5082A8B23E1906D0D5640",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-353-altered-source-v4.png",
+    "sha256": "5304F8DA9580511CB796B50C6EFE5D313D13D63E672127EC311E414B5F8DD9E9",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact native1672x941 painterly apple floating above shadow garden with tiny paper mouse climbing rope ladder. Five isolated ONE-object edits:1 wooden spoon bowl x1326y603 has broad gold crescent inlay/reflection inside, outline exact;2 ONE lowest ladder rung x394y753 curves upward into smooth arch endpoints identical and ropes exact, other rungs unchanged;3 single dangling leaf tip droplet x191y336 has a blue crescent reflection, droplet outline exact;4 cabinet knob at x1132y906 front face has a clear engraved gold star, edge exact;5 single RIGHT round endcap on MIDDLE rung x463y670 has a clear X groove, rung body/ropes exact. Preserve all mouse anatomy/scarf/tail, apple, garden swing, leaf veins, other droplets, bowl and frame. No other changes.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/collection-revisit-v1/353-dynamic-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact native1672x941 painterly apple floating above shadow garden with tiny paper mouse climbing rope ladder. Five isolated ONE-object edits:1 wooden spoon bowl x1326y603 has broad gold crescent inlay/reflection inside, outline exact;2 ONE lowest ladder rung x394y753 curves upward into smooth arch endpoints identical and ropes exact, other rungs unchanged;3 single dangling leaf tip droplet x191y336 has a blue crescent reflection, droplet outline exact;4 cabinet knob at x1132y906 front face has a clear engraved gold star, edge exact;5 single RIGHT round endcap on MIDDLE rung x463y670 has a clear X groove, rung body/ropes exact. Preserve all mouse anatomy/scarf/tail, apple, garden swing, leaf veins, other droplets, bowl and frame. No other changes.",
+        "reference": "D:/Dreamerie/public/artwork/v3/collection-revisit-v1/353-dynamic-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The wooden spoon has a gold crescent inlay",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1214,
+        "y": 550,
+        "width": 184,
+        "height": 99
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The lowest ladder rung arches upward",
+      "difficulty": "Medium",
+      "box": {
+        "x": 334,
+        "y": 714,
+        "width": 115,
+        "height": 61
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The cabinet knob has a gold star",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1090,
+        "y": 873,
+        "width": 72,
+        "height": 67
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The hanging water drop has a blue reflection",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 176,
+        "y": 317,
+        "width": 29,
+        "height": 38
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "One middle rung endcap has an X groove",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 449,
+        "y": 653,
+        "width": 29,
+        "height": 31
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390 stacked pair. Five independently selectable localized object clues. Native dimensions, five bounded nonoverlapping boxes and exact original pixels outside verified. Difficulty estimates unvalidated; root compositor/game, human difficulty and physical phone approval pending. Full prompt/source hash chain retained.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

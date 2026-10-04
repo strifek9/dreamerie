@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-324",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-324-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-324-original-v4.png",
+    "sha256": "83E96EE0E9208A4716321D94DD4E98476E4F1A5DCA34DE93AA1F9E94704AA08E",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-324-altered-source-v4.png",
+    "sha256": "AFABFDE2E9EDCB8DC205B88B060346347BC3D0796308C6D3512FA0887C7281F0",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact native 1672x941 painterly girl holding sleeping quilt dragon image. Five single-object isolated changes: 1 dragon's visible closed eye x832y249 opens showing one gentle golden eye; preserve whole dragon anatomy and girl. 2 mug handle x272y681 curls inward into a spiral, mug body exact. 3 chest pull ring x107y660 becomes triangular loop attached to same mount, chest exact. 4 front left bedpost cap x324y222 gains a strong blue crescent reflection, post exact. 5 one left braid tie at x487y482 has clear small gold X stitching, other tie/hair exact. Preserve scene, all quilt patterns, fingers, outlines and paint style. No other changes.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-324-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact native 1672x941 painterly girl holding sleeping quilt dragon image. Five single-object isolated changes: 1 dragon's visible closed eye x832y249 opens showing one gentle golden eye; preserve whole dragon anatomy and girl. 2 mug handle x272y681 curls inward into a spiral, mug body exact. 3 chest pull ring x107y660 becomes triangular loop attached to same mount, chest exact. 4 front left bedpost cap x324y222 gains a strong blue crescent reflection, post exact. 5 one left braid tie at x487y482 has clear small gold X stitching, other tie/hair exact. Preserve scene, all quilt patterns, fingers, outlines and paint style. No other changes.",
+        "reference": "D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-324-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The dragon opens its visible eye",
+      "difficulty": "Easy",
+      "box": {
+        "x": 800,
+        "y": 202,
+        "width": 65,
+        "height": 79
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The mug handle curls inward",
+      "difficulty": "Medium",
+      "box": {
+        "x": 255,
+        "y": 656,
+        "width": 44,
+        "height": 55
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The chest pull becomes triangular",
+      "difficulty": "Hard",
+      "box": {
+        "x": 80,
+        "y": 632,
+        "width": 57,
+        "height": 54
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The bedpost cap reflects a blue crescent",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 295,
+        "y": 198,
+        "width": 37,
+        "height": 38
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The inner braid tie has gold X stitching",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 638,
+        "y": 414,
+        "width": 34,
+        "height": 30
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390 stacked pair. Five independently selectable localized object clues. Native dimensions, five bounded nonoverlapping boxes and exact original pixels outside verified. Difficulty estimates unvalidated; root compositor/game, human difficulty and physical phone approval pending. Full prompt/source hash chain retained.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

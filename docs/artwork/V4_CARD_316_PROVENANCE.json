@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-316",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-316-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-316-original-v4.png",
+    "sha256": "7E1DFA3F62E07FEAAD5ACC0D56D022E892F104A62BFB5B23EBB87D5E967DA778",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-316-altered-source-v4.png",
+    "sha256": "50B26E8FAE675BC6DD44F02E458B39303E6380B56DF4F38BEF44CB86F489536F",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact original1672x941 painting only FIVE one-object local clues, all others original style/frame/anatomy.1 hippo's left visible eye native772179 closes gently, head unchanged.2 conductor spoon bowl native66556 becomes a round circular ladle bowl instead of elongated oval, same stem.3 hippo bowtie native823377 gains ONE pale crescent motif on its LEFT wing, knot/right wing original.4 bottom drawer brass knob native813911 becomes a square rounded knob, same center.5 chopping board tiny round hanging hole native474189 becomes a triangular cutout, same board silhouette. Do not change cups, utensils, lids, animals limbs or other objects.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact original1672x941 painting only FIVE one-object local clues, all others original style/frame/anatomy.1 hippo's left visible eye native772179 closes gently, head unchanged.2 conductor spoon bowl native66556 becomes a round circular ladle bowl instead of elongated oval, same stem.3 hippo bowtie native823377 gains ONE pale crescent motif on its LEFT wing, knot/right wing original.4 bottom drawer brass knob native813911 becomes a square rounded knob, same center.5 chopping board tiny round hanging hole native474189 becomes a triangular cutout, same board silhouette. Do not change cups, utensils, lids, animals limbs or other objects."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "closed-eye",
+      "label": "The hippo closes one eye.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 748,
+        "y": 156,
+        "width": 47,
+        "height": 38
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "round-spoon",
+      "label": "The conductor\u2019s spoon becomes a round ladle.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 622,
+        "y": 15,
+        "width": 91,
+        "height": 86
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "crescent-bow",
+      "label": "The bow tie\u2019s left wing bears a crescent.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 764,
+        "y": 340,
+        "width": 51,
+        "height": 64
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "square-knob",
+      "label": "The drawer knob becomes square.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 776,
+        "y": 877,
+        "width": 75,
+        "height": 64
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "triangle-hole",
+      "label": "The chopping board\u2019s hanging hole becomes triangular.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 459,
+        "y": 167,
+        "width": 29,
+        "height": 35
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five paired crops, full composite and 390-pixel stacked pair inspected. Single-object changes; difficulty hypotheses only. Root browser/hit QA and human fairness remain pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

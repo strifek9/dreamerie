@@ -1,0 +1,110 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-226",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-226-replacement-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-226-original-v4.png",
+    "sha256": "D0C2D7BAD39D06A19C1C5558CEF1FA96AB1BD3D6FBA87E50CA98E0A749B2E272",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-226-altered-source-v4.png",
+    "sha256": "826BD33EEB596DB9D4C454A9575310D0E6B6A53C1FB29B8678269393CD32A629",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit the referenced original painting locally only, preserve frame, dreamy painterly textures and all unchanged objects. Exactly five single-object changes: 1 the broad green leaf at upper center folds its top point downward into a visible curled tip while stem stays where it is. 2 The brass door knob held by potato root changes from circular round knob into a square brass knob with soft corners, same connection/root unchanged. 3 The curtain tassel inside doorway: its lower hanging fringe is tied into a compact round knot instead of straight fringe, rope and curtain unchanged. 4 The blue plate at far left gets a clear small V-shaped pouring notch cut in its upper-right rim near x280 y570, rest plate unchanged. 5 On the blank paper ticket on floor, the thin red inner border has a small inward diamond-shaped notch at its top center instead of a continuous straight segment, ticket and other border corners unchanged. Each edit localized to one object, no two-object swaps or extra changes; keep the potato entirely untouched except leaf.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit the referenced original painting locally only, preserve frame, dreamy painterly textures and all unchanged objects. Exactly five single-object changes: 1 the broad green leaf at upper center folds its top point downward into a visible curled tip while stem stays where it is. 2 The brass door knob held by potato root changes from circular round knob into a square brass knob with soft corners, same connection/root unchanged. 3 The curtain tassel inside doorway: its lower hanging fringe is tied into a compact round knot instead of straight fringe, rope and curtain unchanged. 4 The blue plate at far left gets a clear small V-shaped pouring notch cut in its upper-right rim near x280 y570, rest plate unchanged. 5 On the blank paper ticket on floor, the thin red inner border has a small inward diamond-shaped notch at its top center instead of a continuous straight segment, ticket and other border corners unchanged. Each edit localized to one object, no two-object swaps or extra changes; keep the potato entirely untouched except leaf."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The leaf tip curls downward",
+      "difficulty": "Easy",
+      "box": {
+        "x": 699,
+        "y": 31,
+        "width": 121,
+        "height": 153
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The door knob has a square grip",
+      "difficulty": "Medium",
+      "box": {
+        "x": 855,
+        "y": 238,
+        "width": 67,
+        "height": 91
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The curtain tassel has a rounded fringe",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1117,
+        "y": 271,
+        "width": 61,
+        "height": 96
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The plate rim has a pouring notch",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 219,
+        "y": 511,
+        "width": 78,
+        "height": 72
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The ticket border dips into a V",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 470,
+        "y": 708,
+        "width": 45,
+        "height": 37
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "visually inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "nativePreflight": "source equals actual original size, five nonoverlapping boxes",
+    "difficulty": "hypotheses; human and browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

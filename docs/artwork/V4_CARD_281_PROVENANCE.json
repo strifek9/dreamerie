@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-281",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-281-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-281-original-v4.png",
+    "sha256": "286B1BEFF1F1046D2B19D86FD08922FFF9515582EFB1D373D1DDEA398D0605E1",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-281-altered-source-v4.png",
+    "sha256": "6149AB5CD8E700981797E1C241183785A6C696F85D48E3B0EF90B0421B7AF19E",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Native1672x941 exactpainting five single-object changes only. 1 acrobat HEAD red mitten ONLY thumb near825115 curls DOWNWARD rather than upright/right, same red mitten/anatomy. 2 acrobat REDlowerleg mitten internal white snowflake near766415 becomes a white crescentmoon, same mitten otherknit exact. 3 blue thread spool near691743 winding changes from horizontal rows to bold diagonal helical winding, same spoolshape/wood discs original. 4 chest FRONTcentral brass latch near205543 lower opening becomes HEART-shaped instead of dark round opening, exactotherlatches/chest. 5 blue mitten on CHAIR near1318530 ONLY its cream wristmost zigzag pattern becomes straight horizontal stripe, other upperzigzags exact. No swaps, oneobject internalpose/pattern each; preserve all anatomy, yarnball, chair, rug, curtains/style/framing/light.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Native1672x941 exactpainting five single-object changes only. 1 acrobat HEAD red mitten ONLY thumb near825115 curls DOWNWARD rather than upright/right, same red mitten/anatomy. 2 acrobat REDlowerleg mitten internal white snowflake near766415 becomes a white crescentmoon, same mitten otherknit exact. 3 blue thread spool near691743 winding changes from horizontal rows to bold diagonal helical winding, same spoolshape/wood discs original. 4 chest FRONTcentral brass latch near205543 lower opening becomes HEART-shaped instead of dark round opening, exactotherlatches/chest. 5 blue mitten on CHAIR near1318530 ONLY its cream wristmost zigzag pattern becomes straight horizontal stripe, other upperzigzags exact. No swaps, oneobject internalpose/pattern each; preserve all anatomy, yarnball, chair, rug, curtains/style/framing/light."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "crescent-leg",
+      "label": "The red leg mitten bears a crescent.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 723,
+        "y": 374,
+        "width": 79,
+        "height": 82
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "curled-thumb",
+      "label": "The head mitten\u2019s thumb curls downward.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 798,
+        "y": 81,
+        "width": 65,
+        "height": 81
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "diagonal-spool",
+      "label": "The spool\u2019s winding runs diagonally.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 599,
+        "y": 654,
+        "width": 185,
+        "height": 190
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "heart-latch",
+      "label": "The chest\u2019s central latch has a heart opening.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 179,
+        "y": 508,
+        "width": 49,
+        "height": 78
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "straight-band",
+      "label": "The chair mitten\u2019s lowest band straightens.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1260,
+        "y": 540,
+        "width": 123,
+        "height": 49
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five paired crops, full composite and 390-pixel stacked pair inspected. Single-object changes; difficulty hypotheses only. Root browser/hit QA and human fairness remain pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

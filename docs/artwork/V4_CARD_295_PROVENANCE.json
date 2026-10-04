@@ -1,0 +1,122 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-295",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-revisit-v1/295-dynamic-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-295-original-v4.png",
+    "sha256": "15C29642C596E552B80C2F378EA79F41F365C40D35CDD4761158C7DD0B174DF5",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-295-altered-source-v4.png",
+    "sha256": "3D45F169F59DA3D57B4F4977F278EB802AE250C8445429B3F0CB8E334CCD98C1",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact full native 1672x941 painterly pear staircase with tiny lantern traveler and cup. FIVE separate isolated SINGLE-object changes only: 1) coffee in right cup x1352y572 reflects bright blue crescent, cup/pear peel exact; 2) foreground brass key head x193y808 central small opening becomes triangular instead of round, other holes/shaft exact; 3) brass trunk front handle x526y687 arches upward instead of down, same anchors and trunk/flowers; 4) candlestick base x154y635 has a gold star engraved on front polished foot surface, candle/flame exact; 5) tiny pear window's ONE lower horizontal crossbar x846y194 curves upward as shallow arch, same endpoints/other bars and traveler anatomy exact. Preserve pear/continuous staircase/frame. No other edits.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/collection-revisit-v1/295-dynamic-original-v1.png\"}}, {\"file\": \"key-prompt.json\", \"content\": {\"prompt\": \"Edit exact close crop of ornate gold key head on wood table. Keep original crop framing and key silhouette/shaft/other holes exact. ONLY lowest large oval hole centered crop x49y50 becomes a sharply TRIANGULAR dark aperture occupying same hole area. Triangle vertices near (32,57),(65,57),(49,38), one opening. All remaining 3 holes exact; preserve metal lighting.\", \"nativeCrop\": [137, 765, 119, 81], \"reference\": \"key-ref.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact full native 1672x941 painterly pear staircase with tiny lantern traveler and cup. FIVE separate isolated SINGLE-object changes only: 1) coffee in right cup x1352y572 reflects bright blue crescent, cup/pear peel exact; 2) foreground brass key head x193y808 central small opening becomes triangular instead of round, other holes/shaft exact; 3) brass trunk front handle x526y687 arches upward instead of down, same anchors and trunk/flowers; 4) candlestick base x154y635 has a gold star engraved on front polished foot surface, candle/flame exact; 5) tiny pear window's ONE lower horizontal crossbar x846y194 curves upward as shallow arch, same endpoints/other bars and traveler anatomy exact. Preserve pear/continuous staircase/frame. No other edits.",
+        "reference": "D:/Dreamerie/public/artwork/v3/collection-revisit-v1/295-dynamic-original-v1.png"
+      }
+    },
+    {
+      "file": "key-prompt.json",
+      "content": {
+        "prompt": "Edit exact close crop of ornate gold key head on wood table. Keep original crop framing and key silhouette/shaft/other holes exact. ONLY lowest large oval hole centered crop x49y50 becomes a sharply TRIANGULAR dark aperture occupying same hole area. Triangle vertices near (32,57),(65,57),(49,38), one opening. All remaining 3 holes exact; preserve metal lighting.",
+        "nativeCrop": [
+          137,
+          765,
+          119,
+          81
+        ],
+        "reference": "key-ref.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The coffee reflects a blue crescent",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1364,
+        "y": 555,
+        "width": 58,
+        "height": 29
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The trunk handle has a wider curved grip",
+      "difficulty": "Medium",
+      "box": {
+        "x": 449,
+        "y": 646,
+        "width": 115,
+        "height": 58
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The candlestick foot has a gold star",
+      "difficulty": "Hard",
+      "box": {
+        "x": 116,
+        "y": 621,
+        "width": 49,
+        "height": 48
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "One key opening becomes triangular",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 162,
+        "y": 798,
+        "width": 50,
+        "height": 31
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "refined-native.png"
+    },
+    {
+      "id": "change-5",
+      "label": "One pear window crossbar arches upward",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 821,
+        "y": 187,
+        "width": 46,
+        "height": 23
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390 stacked pair. Five independently selectable localized object clues. Native dimensions, five bounded nonoverlapping boxes and exact original pixels outside verified. Difficulty estimates unvalidated; root compositor/game, human difficulty and physical phone approval pending. Full prompt/source hash chain retained. Correct inventory revisit dynamic-original-v1 used. Key crop selected only inside single lowest aperture; other holes exact outside box.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

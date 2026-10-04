@@ -1,0 +1,128 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-104",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-revisit-v1/104-dynamic-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-104-original-v4.png",
+    "sha256": "5C2B6019CE14AC3C0CC59064B5CC276E71B652B910A62CE6595BC9FCCBF63370",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-104-altered-source-v4.png",
+    "sha256": "43138ACACA7AA306726E2CA2D78196F91EDABA9FA635DCD000346CAD39DA5382",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit precisely FIVEsingleobject localizeddetails on this1672x941 painterlyDoorwayFallingFeathers. Preservefullframe/characteranatomy/pose/floatingcloth/dreamcore/allotherfeathers.1 redround doorknobx1018,y431 becomes redhexagon knob, samegoldplate (x1000,410,42,46).2 stool TOPFRONT crossbar x279,y622 slopes upwardtowardRIGHT ratherthanlevel, keepstoollegsjoints/perspective sane (x202,598,153,52).3 ONE largepaperboat in lowerRIGHTforeground x1383,y802: central uprightfoldedpaperpeak folds DOWN intohull ratherthanup, keephull/featherinside/otherboats exact (x1350,770,83,58).4 cream mug on stool atx256,y575 its RIGHTsmallhandle passesbehind sidewall ratherthanvisibleopenhandle, keepLEFTmainhandle/body/sprig exact, onehandleconnection (x273,543,37,58).5 large loosebluefeatherinforeBOTTOMcenter x668,y797 has internalshaft curvedtoLEFT insteadstraightthroughvane, preservefeatheroutline/color/shadow, within615,756,114,89. Nootherclues/no colorswaps/specks/grain. Exactlyfiveboundedchanges.\"}}, {\"file\": \"boat-prompt.json\", \"content\": {\"prompt\": \"PrecisecropeditONLY bluepaperboat FRONTside paintedpattern: currently frontpanel onRIGHT shows faintthree-dot birdlike mark. Replace this singlepaintmark withclear lightblueoutlined SPIRAL aboutsamewidth fillingmiddleofFRONTbluepaperpanel. No newobjects, keep boatfolds/points/feather/whitepeak/water background exactly. Same mattebluepaint/brushedfinish,noextraornaments. Fullcroponecounterpart.\", \"crop\": [1314, 755, 133, 84], \"resizeBackToNative\": true}}, {\"file\": \"feather-prompt.json\", \"content\": {\"prompt\": \"PreciseeditONLY main largebluefeather's LIGHTBLUE centralshaft. Within LOWER-RIGHT half, splitshaft into Y fork: frommidshaft add one clearLIGHTBLUE secondarybranch arcing UPtofeatheruppervane, whileoriginalmainshaft stays totherightendpoint. Thicknaturalpaintline, branchlengthaboutquarterfeatherlength. PreserveEXACT mainfeatheroutline/bodyallbarbs/upperquill/pinkgroundshadow/otherlittlefeather atcroptop. Nootherobjects orgrain. Onecounterpartcrop.\", \"nativeCrop\": [586, 730, 175, 125]}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit precisely FIVEsingleobject localizeddetails on this1672x941 painterlyDoorwayFallingFeathers. Preservefullframe/characteranatomy/pose/floatingcloth/dreamcore/allotherfeathers.1 redround doorknobx1018,y431 becomes redhexagon knob, samegoldplate (x1000,410,42,46).2 stool TOPFRONT crossbar x279,y622 slopes upwardtowardRIGHT ratherthanlevel, keepstoollegsjoints/perspective sane (x202,598,153,52).3 ONE largepaperboat in lowerRIGHTforeground x1383,y802: central uprightfoldedpaperpeak folds DOWN intohull ratherthanup, keephull/featherinside/otherboats exact (x1350,770,83,58).4 cream mug on stool atx256,y575 its RIGHTsmallhandle passesbehind sidewall ratherthanvisibleopenhandle, keepLEFTmainhandle/body/sprig exact, onehandleconnection (x273,543,37,58).5 large loosebluefeatherinforeBOTTOMcenter x668,y797 has internalshaft curvedtoLEFT insteadstraightthroughvane, preservefeatheroutline/color/shadow, within615,756,114,89. Nootherclues/no colorswaps/specks/grain. Exactlyfiveboundedchanges."
+      }
+    },
+    {
+      "file": "boat-prompt.json",
+      "content": {
+        "prompt": "PrecisecropeditONLY bluepaperboat FRONTside paintedpattern: currently frontpanel onRIGHT shows faintthree-dot birdlike mark. Replace this singlepaintmark withclear lightblueoutlined SPIRAL aboutsamewidth fillingmiddleofFRONTbluepaperpanel. No newobjects, keep boatfolds/points/feather/whitepeak/water background exactly. Same mattebluepaint/brushedfinish,noextraornaments. Fullcroponecounterpart.",
+        "crop": [
+          1314,
+          755,
+          133,
+          84
+        ],
+        "resizeBackToNative": true
+      }
+    },
+    {
+      "file": "feather-prompt.json",
+      "content": {
+        "prompt": "PreciseeditONLY main largebluefeather's LIGHTBLUE centralshaft. Within LOWER-RIGHT half, splitshaft into Y fork: frommidshaft add one clearLIGHTBLUE secondarybranch arcing UPtofeatheruppervane, whileoriginalmainshaft stays totherightendpoint. Thicknaturalpaintline, branchlengthaboutquarterfeatherlength. PreserveEXACT mainfeatheroutline/bodyallbarbs/upperquill/pinkgroundshadow/otherlittlefeather atcroptop. Nootherobjects orgrain. Onecounterpartcrop.",
+        "nativeCrop": [
+          586,
+          730,
+          175,
+          125
+        ]
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "knob",
+      "label": "The red doorknob becomes hexagonal.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1000,
+        "y": 410,
+        "width": 42,
+        "height": 46
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "rail",
+      "label": "The stool's lower right rail slopes upward.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 244,
+        "y": 690,
+        "width": 105,
+        "height": 97
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "feather",
+      "label": "The blue feather's shaft branches into a fork.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 634,
+        "y": 773,
+        "width": 103,
+        "height": 63
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "handle",
+      "label": "The mug's small right handle disappears.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 273,
+        "y": 543,
+        "width": 37,
+        "height": 56
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "boat",
+      "label": "The paper boat's front-panel pattern becomes a spiral.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1387,
+        "y": 790,
+        "width": 48,
+        "height": 42
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five selected paired crops and 390px stacked pair inspected. All ten box pairs checked nonoverlapping. Difficulty order is a hypothesis; root feathered compositor and gameplay gate remain authoritative.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-028",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-028-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-028-original-v4.png",
+    "sha256": "800890723746A8AC570FD0399517815E0199C7B947209D1DCE1AC2B6F555D84A",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-028-altered-source-v4.png",
+    "sha256": "3D58335749EFEFDDD3AD97932F73D027EBAF32E9C2E3D675D844C718966D4CF0",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise edit attached painted swan-house harbor, native1672x941 framing/positions/style/anatomy unchanged. FIVE separated local differences ONLY:1) frontforeground large goldtrunk blue bow: one blue ribbon tail weaves THROUGH existing frontmetal latch loop instead of falling freely, preserve bow/latchbelievableconnections.2) gold mooringring on nearwoodpost lowcenter-right: braidedrope passes THROUGH roundhole under heart emblem and emerges onto post, instead of looping outside; keep ringheart andropecontinuous.3) teal housefront door circularwindow: radial spoke layout becomes concentricgold rings with NOspokes, same perimeter/centerlocation.4) red flag goldstar now depicts a golden key pointingright, motif paintedflat on fabric, preserve flagfolds.5) reflection in water just rightbelow swan body: clearly reflect a small archedglowing window SHAPE in existing goldripple patch even though above is blank featheredge; subtle butinspectable, not wholewaterchange. Keep allotherobjects intact, no labels/watermarks/missingparts, realisticjoins and controlled painterlyfinish.\"}}, {\"file\": \"refine-prompt.json\", \"content\": {\"prompt\": \"Edit precisely this blue bow goldtrunk crop. Preserveall goldtrunkandmetal latch EXACT same shape/position/appearance. Change ONLY right BLUE RIBBON TAIL: instead of hangingstraight, tail folds into a visible small self-knot loop atmidheight, itsfreeend passes THROUGH its OWN blue loop then danglesdown. Entire knot muststay inside narrowstrip occupiedbyribbon(left of metal latch). Keep lefttail unchanged, bowtop unchanged. No ribboncontactwithmetal, noextrahardware, no background changes. Native painterlybluefolds plausible singlecontinuoustail with cleanover-underconnection.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise edit attached painted swan-house harbor, native1672x941 framing/positions/style/anatomy unchanged. FIVE separated local differences ONLY:1) frontforeground large goldtrunk blue bow: one blue ribbon tail weaves THROUGH existing frontmetal latch loop instead of falling freely, preserve bow/latchbelievableconnections.2) gold mooringring on nearwoodpost lowcenter-right: braidedrope passes THROUGH roundhole under heart emblem and emerges onto post, instead of looping outside; keep ringheart andropecontinuous.3) teal housefront door circularwindow: radial spoke layout becomes concentricgold rings with NOspokes, same perimeter/centerlocation.4) red flag goldstar now depicts a golden key pointingright, motif paintedflat on fabric, preserve flagfolds.5) reflection in water just rightbelow swan body: clearly reflect a small archedglowing window SHAPE in existing goldripple patch even though above is blank featheredge; subtle butinspectable, not wholewaterchange. Keep allotherobjects intact, no labels/watermarks/missingparts, realisticjoins and controlled painterlyfinish."
+      }
+    },
+    {
+      "file": "refine-prompt.json",
+      "content": {
+        "prompt": "Edit precisely this blue bow goldtrunk crop. Preserveall goldtrunkandmetal latch EXACT same shape/position/appearance. Change ONLY right BLUE RIBBON TAIL: instead of hangingstraight, tail folds into a visible small self-knot loop atmidheight, itsfreeend passes THROUGH its OWN blue loop then danglesdown. Entire knot muststay inside narrowstrip occupiedbyribbon(left of metal latch). Keep lefttail unchanged, bowtop unchanged. No ribboncontactwithmetal, noextrahardware, no background changes. Native painterlybluefolds plausible singlecontinuoustail with cleanover-underconnection."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "A gold key is painted on the flag",
+      "box": {
+        "x": 702,
+        "y": 83,
+        "width": 116,
+        "height": 70
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The rope passes through the mooring ring and drops down the post",
+      "box": {
+        "x": 738,
+        "y": 628,
+        "width": 113,
+        "height": 200
+      },
+      "edgeFade": 6
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The right blue ribbon tail threads through its own loop.",
+      "box": {
+        "x": 225,
+        "y": 703,
+        "width": 40,
+        "height": 132
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "Concentric rings replace the door window's radial spokes",
+      "box": {
+        "x": 716,
+        "y": 426,
+        "width": 62,
+        "height": 63
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "An arched window is reflected in the water below the swan",
+      "box": {
+        "x": 1080,
+        "y": 650,
+        "width": 76,
+        "height": 79
+      },
+      "edgeFade": 5
+    }
+  ],
+  "notes": "Full generated frame inspected. Relationship changes connect blue tail with latch and braided rope with ring. Reflection is unmistakably arched window in existing gold ripple patch; intentionally dreamlike. Original preserved, final root compositor must verify rope fade onto existing post/foreground leaf and ribbon joining original bow. Fairness repair: right ribbon tail self-loop only; original metal latch restored exact, all adjacent objects preserved. Tightbox ends265, metal starts~267. Original broad ribbon edit discarded. Refined native crop verified.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-264",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-264-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-264-original-v4.png",
+    "sha256": "CC63AE7FC5575B4E72AC8A00D0A2CFA31941041C115C59A7B6297259F5C8A82C",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-264-altered-source-v4.png",
+    "sha256": "74EFBC594526BC185048F3F8894402D11C845AA5F8281982F30069B18A86EE38",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precisely edit original baby elephant trying glass slippers beside upholstered chair. Preserve elephant anatomy/expression/trunk and feet, shoes' outlines/core premise, chair and room painting/style. Exactly FIVE one-object localized changes: (1) elephant neck bow RIGHT loop folds down into a curled attached loop instead of current upright triangle, preserve knot/left loop/tails; (2) glass slipper under FAR RIGHT chair leg has its heel support become a clear twisting spiral glass column instead of straight heel, rest of slipper/chairleg exact; (3) gold JEWELRY BOX on far upper-left dresser its central front floral clasp flips up open, same box; (4) foreground HAIRBRUSH oval back has a clear embossed gold crescent replacing current floral motif, brush outline/bristles exact; (5) loose BLUE ribbon across lower middle floor its single folded intersection is threaded OVER rather than UNDER itself, same ribbon ends/background. Each existing object/connected internal part only, no paired swaps, no pearl/stud changes, no grain.\"}}, {\"file\": \"ribbon-prompt.json\", \"content\": {\"prompt\": \"Edit exact blue ribbon original crop. ONLY central arched blue ribbon fold changes: put a clearly visible large tied OVERHAND KNOT into the existing ribbon at the crown of this arch, continuous same one blue ribbon. A single loose knot with a rounded loop and visible strand passing through, same two ribbon tails leaving crop edges. Preserve floor carpet background and ribbon color/painted style. No extra ribbon/object or tiny texture change.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precisely edit original baby elephant trying glass slippers beside upholstered chair. Preserve elephant anatomy/expression/trunk and feet, shoes' outlines/core premise, chair and room painting/style. Exactly FIVE one-object localized changes: (1) elephant neck bow RIGHT loop folds down into a curled attached loop instead of current upright triangle, preserve knot/left loop/tails; (2) glass slipper under FAR RIGHT chair leg has its heel support become a clear twisting spiral glass column instead of straight heel, rest of slipper/chairleg exact; (3) gold JEWELRY BOX on far upper-left dresser its central front floral clasp flips up open, same box; (4) foreground HAIRBRUSH oval back has a clear embossed gold crescent replacing current floral motif, brush outline/bristles exact; (5) loose BLUE ribbon across lower middle floor its single folded intersection is threaded OVER rather than UNDER itself, same ribbon ends/background. Each existing object/connected internal part only, no paired swaps, no pearl/stud changes, no grain."
+      }
+    },
+    {
+      "file": "ribbon-prompt.json",
+      "content": {
+        "prompt": "Edit exact blue ribbon original crop. ONLY central arched blue ribbon fold changes: put a clearly visible large tied OVERHAND KNOT into the existing ribbon at the crown of this arch, continuous same one blue ribbon. A single loose knot with a rounded loop and visible strand passing through, same two ribbon tails leaving crop edges. Preserve floor carpet background and ribbon color/painted style. No extra ribbon/object or tiny texture change."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "heel",
+      "label": "The right glass slipper heel twists into a spiral.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1217,
+        "y": 566,
+        "width": 59,
+        "height": 112
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "bow",
+      "label": "The elephant right bow loop curls downward.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 663,
+        "y": 327,
+        "width": 65,
+        "height": 90
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "box",
+      "label": "The jewelry box lid flips open.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 181,
+        "y": 28,
+        "width": 81,
+        "height": 45
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "brush",
+      "label": "The brush back has a gold crescent.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1472,
+        "y": 701,
+        "width": 79,
+        "height": 46
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "ribbon",
+      "label": "The blue ribbon arch has an overhand knot.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 811,
+        "y": 802,
+        "width": 205,
+        "height": 120
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered compositor/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

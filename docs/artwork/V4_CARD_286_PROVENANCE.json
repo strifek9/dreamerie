@@ -1,0 +1,116 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-286",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-286-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-286-original-v4.png",
+    "sha256": "B1299F8D1F405A92EA83B327F4A04B1C0B708A9B9FBCB8D5522024F51A7D855C",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-286-altered-source-v4.png",
+    "sha256": "EB904EE6CBC04501DBDD09D3258A732EEC8EE7275ACD14428CDA3167F5451FC5",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact original sleepy stool painting locally only. Preserve cozy painterly frame, four stool legs and socks, chair and everything else. Five single-object targets: 1 The stool's small center mouth near x980 y269 opens into a round yawning mouth with dark interior, both sleepy eyes unchanged. 2 The striped sock on the far RIGHT stool leg near x1155 y518 has its top cuff folded downward into a broad doubled cuff; same sock stripes below, other three socks unchanged. 3 White mug on left table: its handle opens at the upper-right joint into a C-shaped hook, mug body and drink unchanged. 4 Wooden button on folded chair cushion at bottom-left near x344 y815 has its four sewing holes form a diamond-shaped aperture instead, button outer circle unchanged. 5 The green floor lamp shade near top-right has a small broad V-shaped notch cut into its rightmost lower rim near x1382 y137, remaining shade and light unchanged. Exactly five targets, no color/position/order swaps, no extra objects. Preserve connections and clean local edges.\"}}, {\"file\": \"prompt-b.json\", \"content\": {\"prompt\": \"Change ONLY the round brown wooden button centered at x344 y816 on the strap around the folded cushion at BOTTOM LEFT. Replace its four tiny sewing holes with ONE LARGE dark diamond-shaped central aperture about 17 pixels wide, visibly unmistakable, carved through same button. Keep round outer rim and brown color, size and position, cushion/strap intact. Every other object unchanged. Exactly one localized object internal pattern change, matching painterly finish.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact original sleepy stool painting locally only. Preserve cozy painterly frame, four stool legs and socks, chair and everything else. Five single-object targets: 1 The stool's small center mouth near x980 y269 opens into a round yawning mouth with dark interior, both sleepy eyes unchanged. 2 The striped sock on the far RIGHT stool leg near x1155 y518 has its top cuff folded downward into a broad doubled cuff; same sock stripes below, other three socks unchanged. 3 White mug on left table: its handle opens at the upper-right joint into a C-shaped hook, mug body and drink unchanged. 4 Wooden button on folded chair cushion at bottom-left near x344 y815 has its four sewing holes form a diamond-shaped aperture instead, button outer circle unchanged. 5 The green floor lamp shade near top-right has a small broad V-shaped notch cut into its rightmost lower rim near x1382 y137, remaining shade and light unchanged. Exactly five targets, no color/position/order swaps, no extra objects. Preserve connections and clean local edges."
+      }
+    },
+    {
+      "file": "prompt-b.json",
+      "content": {
+        "prompt": "Change ONLY the round brown wooden button centered at x344 y816 on the strap around the folded cushion at BOTTOM LEFT. Replace its four tiny sewing holes with ONE LARGE dark diamond-shaped central aperture about 17 pixels wide, visibly unmistakable, carved through same button. Keep round outer rim and brown color, size and position, cushion/strap intact. Every other object unchanged. Exactly one localized object internal pattern change, matching painterly finish."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The stool mouth opens in a yawn",
+      "difficulty": "Easy",
+      "box": {
+        "x": 954,
+        "y": 248,
+        "width": 57,
+        "height": 46
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The right sock cuff folds downward",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1080,
+        "y": 446,
+        "width": 88,
+        "height": 81
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The mug handle opens into a hook",
+      "difficulty": "Hard",
+      "box": {
+        "x": 274,
+        "y": 249,
+        "width": 45,
+        "height": 42
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The lamp rim has a V notch",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1341,
+        "y": 101,
+        "width": 76,
+        "height": 63
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The cushion button has a diamond aperture",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 319,
+        "y": 791,
+        "width": 51,
+        "height": 53
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "visually inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "nativePreflight": "source equals actual original size, five nonoverlapping boxes",
+    "difficulty": "hypotheses; human and browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

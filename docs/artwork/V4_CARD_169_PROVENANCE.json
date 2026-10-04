@@ -1,0 +1,104 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-169",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-169-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-169-original-v4.png",
+    "sha256": "3F1FBE96327B2D1FA229D342241C50C5DA5123E505CC9DA19A4686E66D85C8E3",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-169-altered-source-v4.png",
+    "sha256": "CBD50C87D38B5EBE7712CCEFBE7F74CAB5B49FF5E26B2A9FADAD384285E0AFB5",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"Five isolated edits ONLY attached original fullnative1672x941 The Camel's Last Hump painting; preserve anatomy/fur/framing/style and allotherobjects.1 clock at423,79 ONLY long minute hand currently points UP to12 now points DOWN to6, short hand pointing lower-right and thinsecondhandexact.2 furry hump's brass lock plate at1224,598: ONLYkeyhole rotates sideways horizontal insteadvertical, sameplate/furstraps unchanged.3 LEFTforeground teal suitcase side handle at185,797 folds outward LEFT about existing upper hinge185,749 insteadof vertically downward, sameonecontinuoushandle, suitcase/corners/straps exact.4 ONLY right boot on furryhump centered1282,752, its TOE tip at1314,744 curls sharply UP like an elfboot, restboot/leg/leftboot unchanged.5 orange hanging luggage tag at1055,586 becomes HEART-shaped ratherthan triangle, originalstrap/hole/location/color unchanged. Single existingobject/internalfeature perclue, no swaps/unrelatedchanges/crop. Full originalcanvas.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "Five isolated edits ONLY attached original fullnative1672x941 The Camel's Last Hump painting; preserve anatomy/fur/framing/style and allotherobjects.1 clock at423,79 ONLY long minute hand currently points UP to12 now points DOWN to6, short hand pointing lower-right and thinsecondhandexact.2 furry hump's brass lock plate at1224,598: ONLYkeyhole rotates sideways horizontal insteadvertical, sameplate/furstraps unchanged.3 LEFTforeground teal suitcase side handle at185,797 folds outward LEFT about existing upper hinge185,749 insteadof vertically downward, sameonecontinuoushandle, suitcase/corners/straps exact.4 ONLY right boot on furryhump centered1282,752, its TOE tip at1314,744 curls sharply UP like an elfboot, restboot/leg/leftboot unchanged.5 orange hanging luggage tag at1055,586 becomes HEART-shaped ratherthan triangle, originalstrap/hole/location/color unchanged. Single existingobject/internalfeature perclue, no swaps/unrelatedchanges/crop. Full originalcanvas."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "minute-hand-down",
+      "label": "The clock's long minute hand points down.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 409,
+        "y": 40,
+        "width": 31,
+        "height": 94
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "sideways-keyhole",
+      "label": "The hump lock's keyhole turns sideways.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1210,
+        "y": 580,
+        "width": 36,
+        "height": 31
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "outward-suitcase-handle",
+      "label": "The suitcase handle folds outward.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 161,
+        "y": 723,
+        "width": 107,
+        "height": 123
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "curled-right-boot",
+      "label": "The hump's right boot toe curls upward.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1280,
+        "y": 699,
+        "width": 51,
+        "height": 70
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "heart-tag",
+      "label": "The luggage tag becomes a heart.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1023,
+        "y": 541,
+        "width": 66,
+        "height": 84
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Source generations and bounded composites inspected; five isolated objects. Difficulty labels are hypotheses. No human or physical-phone fairness validation.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

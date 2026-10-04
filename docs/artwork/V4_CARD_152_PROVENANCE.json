@@ -1,0 +1,116 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-152",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-152-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-152-original-v4.png",
+    "sha256": "8B1FF8FE3A4695C86A45D96320D194E736D99C7487A0DE24FB4097A9EB2977E2",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-152-altered-source-v4.png",
+    "sha256": "AA312CD9839824BF6F08006242F9015A7B3A081A792FDEED3B091C537F518755",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Editexact1672x941 paintedmothboat cave. Preserve mothbodyfacelimbswing/anatomy canoe cavernrings compositionpaint. Exactlyfive localizedoneobjectdifferences:1 woodenOAR blade holex861y672 becomes STARaperture insteadtinykeyhole, sameblade;2 largecanoeBELL clapperx642y576 swingsLEFT withinmouth insteadcenter, samebellropecrack;3 moth coat rectangularGRAYPATCH x450y427 changesinternalstitches into cleardiagonalX seam ratherthanplainfill, samepatchoutlinecoat;4 lantern smalltopHOOK x121y259 becomesclosedmetaleyelet insteadopenhook, lanternbodyunchanged;5 moth RIGHTANTENNA feather narrowtip nearx512y35 foldsDOWN ratherthanstraightup, otherantennawing unchanged. Singleobjectchanges only no swaps noextras noflippedframe. Physical connections mustremaincoherent.\"}}, {\"file\": \"prompt-b.json\", \"content\": {\"prompt\": \"Edit this exactcrop ofgoldhook andattachedsmallbelllink. ONEchange tolargeupperhook curvedtip: close itsopenCgap onLEFT into continuous roundedgoldloop joinedback tostem. Keep stemposition, hooktopcurve, lower smalloval belllink/location entirelyunchanged andbackgroundunchanged. Do not removeor relocatethehook orbell. Simpleclear closure bridge only.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Editexact1672x941 paintedmothboat cave. Preserve mothbodyfacelimbswing/anatomy canoe cavernrings compositionpaint. Exactlyfive localizedoneobjectdifferences:1 woodenOAR blade holex861y672 becomes STARaperture insteadtinykeyhole, sameblade;2 largecanoeBELL clapperx642y576 swingsLEFT withinmouth insteadcenter, samebellropecrack;3 moth coat rectangularGRAYPATCH x450y427 changesinternalstitches into cleardiagonalX seam ratherthanplainfill, samepatchoutlinecoat;4 lantern smalltopHOOK x121y259 becomesclosedmetaleyelet insteadopenhook, lanternbodyunchanged;5 moth RIGHTANTENNA feather narrowtip nearx512y35 foldsDOWN ratherthanstraightup, otherantennawing unchanged. Singleobjectchanges only no swaps noextras noflippedframe. Physical connections mustremaincoherent."
+      }
+    },
+    {
+      "file": "prompt-b.json",
+      "content": {
+        "prompt": "Edit this exactcrop ofgoldhook andattachedsmallbelllink. ONEchange tolargeupperhook curvedtip: close itsopenCgap onLEFT into continuous roundedgoldloop joinedback tostem. Keep stemposition, hooktopcurve, lower smalloval belllink/location entirelyunchanged andbackgroundunchanged. Do not removeor relocatethehook orbell. Simpleclear closure bridge only."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The oar blade aperture becomes a star",
+      "difficulty": "Easy",
+      "box": {
+        "x": 835,
+        "y": 643,
+        "width": 53,
+        "height": 55
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The large bell clapper swings left",
+      "difficulty": "Medium",
+      "box": {
+        "x": 557,
+        "y": 527,
+        "width": 106,
+        "height": 66
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The coat patch has a diagonal cross seam",
+      "difficulty": "Hard",
+      "box": {
+        "x": 416,
+        "y": 388,
+        "width": 78,
+        "height": 87
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The right antenna bends downward",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 484,
+        "y": 10,
+        "width": 144,
+        "height": 157
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The suspension hook tip closes into a loop",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 108,
+        "y": 244,
+        "width": 29,
+        "height": 24
+      },
+      "edgeFade": 2
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "visually inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "nativePreflight": "source equals actual original size, five nonoverlapping boxes",
+    "difficulty": "hypotheses; human and browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

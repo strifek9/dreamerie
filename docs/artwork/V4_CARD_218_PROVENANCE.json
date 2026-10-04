@@ -1,0 +1,235 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-218",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-218-original-v2.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-218-original-v4.png",
+    "sha256": "0A58CE03975E435411B3C256410C0BD4D38EF023EF44D62A386A47994688015A",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-218-altered-source-v4.png",
+    "sha256": "1D05CDCDE24DFD4EFC710D981B79306388DBE30D68C52741311040E2C69C3215",
+    "prompt": "[{\"file\": \"preserve-prompt.json\", \"content\": {\"operation\": \"Original scissors handles/lowerblade/pivot byteexact; generated upperblade silhouette only; originalredtoycar exact; original face/collar outsidebowtie silhouette exact\", \"upperBladePolygon\": [[516, 819], [535, 812], [679, 766], [687, 767], [654, 787], [552, 827], [539, 845], [517, 843]], \"goldPivotEllipse\": [521, 825, 539, 840], \"toyCarRectangle\": [1445, 840, 1635, 941], \"bowtiePolygon\": [[478, 370], [504, 372], [523, 385], [556, 399], [582, 399], [607, 408], [640, 387], [679, 358], [714, 356], [730, 399], [705, 416], [650, 437], [624, 445], [589, 474], [560, 458], [555, 434], [529, 416], [500, 405], [485, 391]], \"bowtieRestoredBox\": [476, 348, 738, 479], \"bladeEdgeFeather\": 0.45}}, {\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit attached elderly BARBER combing mannequin road-network hair painting CURRENT ORIGINAL-v2. Preserve EXACT1672x941 framing allhuman/mannequin faces/hands/hair ROADS/CARS originalEXACT (no carswaps). FIVE singleartifact localized edits:1) gold COMB heldnearx840,y363: its thick farRIGHT topend curls into a hollow gold rolledtube, same attachedcomb spine/teeth/hand andotherend exact.2) GOLD lid of large GREEN jar lowerRIGHT x1574,y790: existing lid hinges upward attachedside exposing darkjarinside, same jarbody andRED TOY CAR originalexact.3) GOLD steel SCISSORS onredcloth lowercenter x532,y831: ONLY UPPER steel blade pivots UPWARD aroundsamecentralpivot forming clearlyopen scissors; LOWER blade andTWO GOLD handles stay EXACTpositions, no secondblade swap.4) large hanging GOLD LAMP dome upperRIGHT x1600,y137: one large darkTEAL crescent engraving on same dome surface, existing lampoutline/bulb exact.5) barber's BURGUNDY BOWTIE x590,y421: its yellow circlepattern becomes a clear elegant goldbraided chain motif on SAMEclothshape/position, same collar/face/body. No newobjects/text/grain, no motion/alteration toanycars/roads/cat.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "preserve-prompt.json",
+      "content": {
+        "operation": "Original scissors handles/lowerblade/pivot byteexact; generated upperblade silhouette only; originalredtoycar exact; original face/collar outsidebowtie silhouette exact",
+        "upperBladePolygon": [
+          [
+            516,
+            819
+          ],
+          [
+            535,
+            812
+          ],
+          [
+            679,
+            766
+          ],
+          [
+            687,
+            767
+          ],
+          [
+            654,
+            787
+          ],
+          [
+            552,
+            827
+          ],
+          [
+            539,
+            845
+          ],
+          [
+            517,
+            843
+          ]
+        ],
+        "goldPivotEllipse": [
+          521,
+          825,
+          539,
+          840
+        ],
+        "toyCarRectangle": [
+          1445,
+          840,
+          1635,
+          941
+        ],
+        "bowtiePolygon": [
+          [
+            478,
+            370
+          ],
+          [
+            504,
+            372
+          ],
+          [
+            523,
+            385
+          ],
+          [
+            556,
+            399
+          ],
+          [
+            582,
+            399
+          ],
+          [
+            607,
+            408
+          ],
+          [
+            640,
+            387
+          ],
+          [
+            679,
+            358
+          ],
+          [
+            714,
+            356
+          ],
+          [
+            730,
+            399
+          ],
+          [
+            705,
+            416
+          ],
+          [
+            650,
+            437
+          ],
+          [
+            624,
+            445
+          ],
+          [
+            589,
+            474
+          ],
+          [
+            560,
+            458
+          ],
+          [
+            555,
+            434
+          ],
+          [
+            529,
+            416
+          ],
+          [
+            500,
+            405
+          ],
+          [
+            485,
+            391
+          ]
+        ],
+        "bowtieRestoredBox": [
+          476,
+          348,
+          738,
+          479
+        ],
+        "bladeEdgeFeather": 0.45
+      }
+    },
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit attached elderly BARBER combing mannequin road-network hair painting CURRENT ORIGINAL-v2. Preserve EXACT1672x941 framing allhuman/mannequin faces/hands/hair ROADS/CARS originalEXACT (no carswaps). FIVE singleartifact localized edits:1) gold COMB heldnearx840,y363: its thick farRIGHT topend curls into a hollow gold rolledtube, same attachedcomb spine/teeth/hand andotherend exact.2) GOLD lid of large GREEN jar lowerRIGHT x1574,y790: existing lid hinges upward attachedside exposing darkjarinside, same jarbody andRED TOY CAR originalexact.3) GOLD steel SCISSORS onredcloth lowercenter x532,y831: ONLY UPPER steel blade pivots UPWARD aroundsamecentralpivot forming clearlyopen scissors; LOWER blade andTWO GOLD handles stay EXACTpositions, no secondblade swap.4) large hanging GOLD LAMP dome upperRIGHT x1600,y137: one large darkTEAL crescent engraving on same dome surface, existing lampoutline/bulb exact.5) barber's BURGUNDY BOWTIE x590,y421: its yellow circlepattern becomes a clear elegant goldbraided chain motif on SAMEclothshape/position, same collar/face/body. No newobjects/text/grain, no motion/alteration toanycars/roads/cat."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "Gold chains replace the bowtie's circle pattern.",
+      "box": {
+        "x": 476,
+        "y": 348,
+        "width": 259,
+        "height": 131
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The large green jar's lid hinges open.",
+      "box": {
+        "x": 1444,
+        "y": 639,
+        "width": 228,
+        "height": 199
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Hard",
+      "label": "Only the upper scissors blade pivots open.",
+      "box": {
+        "x": 514,
+        "y": 758,
+        "width": 222,
+        "height": 114
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "A teal crescent is painted on the hanging lamp.",
+      "box": {
+        "x": 1570,
+        "y": 83,
+        "width": 92,
+        "height": 95
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "The comb's far end rolls into a hollow tube.",
+      "box": {
+        "x": 883,
+        "y": 273,
+        "width": 76,
+        "height": 88
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Correct CURRENTinventory original-v2 native1672x941. Fiveobservedsingleartifact changes. Scissors ONLY newupperblade silhouette selected, original handles/lowerblade/pivot restored byteexact. Redtoycar restored originalexact, no car/road swaps. Bowtiepattern includesonecontinuousneckband/bow samecloth; original face/collar pixels outsideexplicitbowtie silhouette restored exact withinregion. Lamp actualpaintedcrescent notreflection. Comb ownfarend roll. Fullframe/five nativepairs/390 inspected; rootjoins/fairness pending, difficulty hypothesesonly.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

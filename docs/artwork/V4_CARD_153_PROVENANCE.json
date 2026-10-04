@@ -1,0 +1,104 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-153",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-153-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-153-original-v4.png",
+    "sha256": "EFFD2C161F6FD1C43B54F0E3848D6848389EF6E27364F6878E5E28B420C12173",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-153-altered-source-v4.png",
+    "sha256": "A4854ECF054CB86B6BAA32B47AFB0BC2436FF822BA716DF4D4CF3810C4C5196B",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise edit attached tiny ROBOTS AND BEES bluehexagonal iceworkshop painting. EXACT1672x941 sameframing oilpaintpalette allrobots/bees/cubes unchanged. FIVE singleartifact changes only:1) big BLACK toolBOX HANDLE lowerleft x170 y700: samehandle curls into continuous oval self-loop arch, same base mounts/boxposition; no lid/latchchanges.2) upperRIGHT metal SPATULA BLADE x1490 y230 in utensilpot: tip curls outward into a hollow rolledmetal tube, same attachedshaft and other utensils exact.3) golden SWITCH LEVER nearbottomleft x478 y751: its own existing shaft curls at top into a connected small gold loop instead of straightroundknob, unchangedbaseplate/screws.4) overhead GOLD hanging LAMP dome x1440 y88: replace its roundbrightreflection with clearlypainted glowing CRESCENT reflection on same dome, same outline/illumination.5) UPPER round CONTROL DIAL on machine rightside x1294 y317: existing single diagonalbar becomes a crisp three-spoke propeller pointer inside SAME intactcircular metalrim; lowerdial exact. No wholeanimal/artifact swaps, no disappearing cubes/new clutter/text/grain.\"}}, {\"file\": \"refine-prompt.json\", \"content\": {\"prompt\": \"Edit this exact cropped black toolboxhandle. Make existing black U bridgehandle into a CLOSED elongated OVAL RING handle with a clearlyvisible lower black connecting bar, one continuous hollowoval aboutsamewidth mountedon SAMEtwo gold mounts. Holeinsideringshowsoriginalyellowboxsurface. Keep exactframing/body/metal mounts/background. This singlehandle internalgeometrychange must unmistakablyclosedloop, not just a roundedU.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise edit attached tiny ROBOTS AND BEES bluehexagonal iceworkshop painting. EXACT1672x941 sameframing oilpaintpalette allrobots/bees/cubes unchanged. FIVE singleartifact changes only:1) big BLACK toolBOX HANDLE lowerleft x170 y700: samehandle curls into continuous oval self-loop arch, same base mounts/boxposition; no lid/latchchanges.2) upperRIGHT metal SPATULA BLADE x1490 y230 in utensilpot: tip curls outward into a hollow rolledmetal tube, same attachedshaft and other utensils exact.3) golden SWITCH LEVER nearbottomleft x478 y751: its own existing shaft curls at top into a connected small gold loop instead of straightroundknob, unchangedbaseplate/screws.4) overhead GOLD hanging LAMP dome x1440 y88: replace its roundbrightreflection with clearlypainted glowing CRESCENT reflection on same dome, same outline/illumination.5) UPPER round CONTROL DIAL on machine rightside x1294 y317: existing single diagonalbar becomes a crisp three-spoke propeller pointer inside SAME intactcircular metalrim; lowerdial exact. No wholeanimal/artifact swaps, no disappearing cubes/new clutter/text/grain."
+      }
+    },
+    {
+      "file": "refine-prompt.json",
+      "content": {
+        "prompt": "Edit this exact cropped black toolboxhandle. Make existing black U bridgehandle into a CLOSED elongated OVAL RING handle with a clearlyvisible lower black connecting bar, one continuous hollowoval aboutsamewidth mountedon SAMEtwo gold mounts. Holeinsideringshowsoriginalyellowboxsurface. Keep exactframing/body/metal mounts/background. This singlehandle internalgeometrychange must unmistakablyclosedloop, not just a roundedU."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "The toolbox handle becomes a closed oval ring.",
+      "box": {
+        "x": 89,
+        "y": 636,
+        "width": 163,
+        "height": 105
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The spatula blade's tip rolls into a tube.",
+      "box": {
+        "x": 1430,
+        "y": 168,
+        "width": 108,
+        "height": 165
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The gold switch lever forms a loop.",
+      "box": {
+        "x": 451,
+        "y": 676,
+        "width": 61,
+        "height": 112
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "A crescent is reflected in the hanging lamp.",
+      "box": {
+        "x": 1382,
+        "y": 48,
+        "width": 66,
+        "height": 95
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "The upper control dial has a three-spoke pointer.",
+      "box": {
+        "x": 1257,
+        "y": 282,
+        "width": 84,
+        "height": 77
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Correct currentinventory original/year variant checked. Firsthandle roundedU too similar; targetedrefinement nowoneclosedovalring. Spatula rolledtip, singleswitchownloop, domereflection, one upperdialinternalpointer. Lowerdial unchanged, all robots bees cubes retained. No swaps. Fullframe plusfivepairs/mobile inspected; root joins QA pending; difficulty onlyhypothesis.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

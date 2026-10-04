@@ -1,0 +1,129 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-275",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-275-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-275-original-v4.png",
+    "sha256": "8B4649F34BAAE1F4D70548D8A4399D4904EA2B04DAED454BA778DF487A0CF3D6",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-275-altered-source-v4.png",
+    "sha256": "AC2B2AF88393040FCD414939A854C0B74372A05EA0F36CB352A37C04B34E8D0F",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact full native 1672x941 painterly cello emitting a scarf of silence in music room. FIVE isolated single-object edits: 1) rectangular rosin amber surface x371y810 reflects a bright blue crescent, case/body exact; 2) gold medallion on bow frog x252y675 becomes a gold diamond instead of oval, same bow; 3) LEFT case clasp at x1323y457 has its curved U hook crossing diagonally instead of vertical, same clasp plate and case exact; 4) one cello bridge central cutout x559y299 becomes a triangular aperture instead of current curved slot, strings and bridge outline exact; 5) chair's middle front horizontal brace x1121y464 curves upward into shallow arch, endpoints/legs/other braces exact. Keep cello soundholes, anatomy, scarves/fringe, geometry and style exact. No other edits.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-275-original-v1.png\"}}, {\"file\": \"bridge-prompt.json\", \"content\": {\"prompt\": \"Edit exact crop of cello bridge: wood bar with strings over central cutout. Preserve original crop framing and every string position and bridge external contour. Only central horizontal rounded opening near crop x63 y26 becomes a clearly triangular dark cutout in same wood, triangle about15x9pixels at this crop scale. No new objects, other slots exact.\", \"nativeCrop\": [500, 270, 113, 51], \"reference\": \"bridge-ref.png\"}}, {\"file\": \"scarf-prompt.json\", \"content\": {\"prompt\": \"Edit exact native full frame cello and chair painting. Only one localized difference: embroider a gold five-point star, 32 pixels across, centered x1183 y281 within the blue scarf draped over chair front. Preserve exact scarf outline and EVERY fringe/tassel, folds around patch. All cello strings/bridge, other scarf on floor and objects exact. 1672x941 painterly style.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-275-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact full native 1672x941 painterly cello emitting a scarf of silence in music room. FIVE isolated single-object edits: 1) rectangular rosin amber surface x371y810 reflects a bright blue crescent, case/body exact; 2) gold medallion on bow frog x252y675 becomes a gold diamond instead of oval, same bow; 3) LEFT case clasp at x1323y457 has its curved U hook crossing diagonally instead of vertical, same clasp plate and case exact; 4) one cello bridge central cutout x559y299 becomes a triangular aperture instead of current curved slot, strings and bridge outline exact; 5) chair's middle front horizontal brace x1121y464 curves upward into shallow arch, endpoints/legs/other braces exact. Keep cello soundholes, anatomy, scarves/fringe, geometry and style exact. No other edits.",
+        "reference": "D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-275-original-v1.png"
+      }
+    },
+    {
+      "file": "bridge-prompt.json",
+      "content": {
+        "prompt": "Edit exact crop of cello bridge: wood bar with strings over central cutout. Preserve original crop framing and every string position and bridge external contour. Only central horizontal rounded opening near crop x63 y26 becomes a clearly triangular dark cutout in same wood, triangle about15x9pixels at this crop scale. No new objects, other slots exact.",
+        "nativeCrop": [
+          500,
+          270,
+          113,
+          51
+        ],
+        "reference": "bridge-ref.png"
+      }
+    },
+    {
+      "file": "scarf-prompt.json",
+      "content": {
+        "prompt": "Edit exact native full frame cello and chair painting. Only one localized difference: embroider a gold five-point star, 32 pixels across, centered x1183 y281 within the blue scarf draped over chair front. Preserve exact scarf outline and EVERY fringe/tassel, folds around patch. All cello strings/bridge, other scarf on floor and objects exact. 1672x941 painterly style.",
+        "reference": "D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-275-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The rosin surface reflects a blue crescent",
+      "difficulty": "Easy",
+      "box": {
+        "x": 340,
+        "y": 789,
+        "width": 60,
+        "height": 35
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The left case clasp turns diagonally",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1289,
+        "y": 438,
+        "width": 51,
+        "height": 53
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "One chair brace arches upward",
+      "difficulty": "Hard",
+      "box": {
+        "x": 974,
+        "y": 371,
+        "width": 106,
+        "height": 40
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The chair scarf has gold star embroidery",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1178,
+        "y": 250,
+        "width": 60,
+        "height": 60
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "scarf.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The bow frog medallion becomes a diamond",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 240,
+        "y": 662,
+        "width": 23,
+        "height": 30
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390 stacked pair. Five independently selectable localized object clues. Native dimensions, five bounded nonoverlapping boxes and exact original pixels outside verified. Difficulty estimates unvalidated; root compositor/game, human difficulty and physical phone approval pending. Full prompt/source hash chain retained. Rejected bridge crop shifted strings and was not selected; original cello strings/bridge unchanged. Scarf star replaces fifth clue, all fringes preserved.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

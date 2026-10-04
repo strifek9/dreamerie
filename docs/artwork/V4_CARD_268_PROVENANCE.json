@@ -1,0 +1,110 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-268",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-268-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-268-original-v4.png",
+    "sha256": "FCFD325D1963A72F878565F609B1B38FD205FAB7BBCA13F1C5512D3D97D50AB8",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-268-altered-source-v4.png",
+    "sha256": "F9E71A32D3BFEE4F2FCC86E5CDC2725F6E7CC383EB2382476295287DDC1979D1",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact original painting locally only; preserve cobbler face/hands/anatomy, transparent shoes, painterly style/frame. Exactly five independently bounded single-object edits: 1 On the FRONTMOST transparent shoe at lower right near x1328 y755, its toe curls upward into a modest pointed slipper tip; heel and other shoes unchanged. 2 The cobbler's viewer-left round eye near x801 y175 closes into a gentle wink, other eye unchanged. 3 The wooden awl handle lying across counter near x762 y689 has a broad crescent-shaped carved recess on its top face, metal spike unchanged. 4 The thread spool lower center near x1000 y805 has its right end cap become a five-pointed star-shaped cap, thread and loose string unchanged. 5 The leftmost hanging glass footprint upper-right near x1158 y174 has a clear single diamond-shaped recessed heel mark inside its heel near x1167 y238, toes and outline unchanged. Five distinct targets, no swaps/additional differences, no global redraw. Keep all local mechanisms connected.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact original painting locally only; preserve cobbler face/hands/anatomy, transparent shoes, painterly style/frame. Exactly five independently bounded single-object edits: 1 On the FRONTMOST transparent shoe at lower right near x1328 y755, its toe curls upward into a modest pointed slipper tip; heel and other shoes unchanged. 2 The cobbler's viewer-left round eye near x801 y175 closes into a gentle wink, other eye unchanged. 3 The wooden awl handle lying across counter near x762 y689 has a broad crescent-shaped carved recess on its top face, metal spike unchanged. 4 The thread spool lower center near x1000 y805 has its right end cap become a five-pointed star-shaped cap, thread and loose string unchanged. 5 The leftmost hanging glass footprint upper-right near x1158 y174 has a clear single diamond-shaped recessed heel mark inside its heel near x1167 y238, toes and outline unchanged. Five distinct targets, no swaps/additional differences, no global redraw. Keep all local mechanisms connected."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The foremost glass shoe curls its toe upward",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1180,
+        "y": 736,
+        "width": 156,
+        "height": 140
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The cobbler closes one eye",
+      "difficulty": "Medium",
+      "box": {
+        "x": 771,
+        "y": 149,
+        "width": 55,
+        "height": 45
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The awl handle has a carved crescent",
+      "difficulty": "Hard",
+      "box": {
+        "x": 716,
+        "y": 655,
+        "width": 125,
+        "height": 61
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The spool end cap forms a star",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1006,
+        "y": 758,
+        "width": 78,
+        "height": 98
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The hanging footprint has a diamond heel mark",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1143,
+        "y": 210,
+        "width": 46,
+        "height": 62
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "visually inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "nativePreflight": "source equals actual original size, five nonoverlapping boxes",
+    "difficulty": "hypotheses; human and browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

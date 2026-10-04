@@ -1,0 +1,168 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-241",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-241-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-241-original-v4.png",
+    "sha256": "2B5D15CC1CF688F728C7B57942D3D6107EDB475B1CCED0A98492D01CFCCA6D38",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-241-altered-source-v4.png",
+    "sha256": "D723BDAEDE1B9499B8813DEAB14052D9D34E014AF9B69A2B93D2CC87213E9293",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit attached giant APRICOT spiralSTAIRWELL miniaturegirl painting. EXACT1672x941 framing allhuman/anatomy/apricot/stairstructure andpositions originalexact. FIVE isolated SINGLE artifact changes:1) large APRICOT PIT upperleft x282,y152: one broad clear SPIRAL groove carvedinto its existing roughbrown surface, samepitshape/ridges/location; no fruitchange.2) BLUE WHITE striped NAPKIN lowerhangingtip x920,y815: its OWN danglingEND threads through one looseoverhand knot, same upperdrape/stripes, preserveapricot/stairs.3) WOOD LADDER RIGHT: ONLY central rung aroundx1098,y443 hinges UP at itsRIGHT end aroundleftpivot, samewoodplank attachedleftside; neighboringrungs/tworails originalEXACT, no swaps/new ladderparts.4) GOLD KEY rightonwoodtable: its decorative QUATREFOIL BOW x1608,y518 becomes onecontinuous goldring with large CRESCENT-shaped opening, samekeyshaft/teeth/position.5) LARGE CREAM COFFEE CUP upperright x1480,y146: blueLEAF branch paint motif becomes a clear blue compass-rose emblem on samecupbody, same outline/coffee/handle. No addedindependentobjects, no grain/text, no differentobjects swappings.\"}}, {\"file\": \"rung-preserve-prompt.json\", \"content\": {\"operation\": \"Original adjacent ladderrails/background restored outside old/new ONErung silhouette union\", \"oldRung\": [[1072, 421], [1077, 419], [1144, 452], [1144, 463], [1139, 470], [1070, 432]], \"newRung\": [[1069, 426], [1074, 421], [1131, 404], [1139, 406], [1145, 418], [1074, 436], [1070, 435]], \"dilation\": 2, \"feather\": 0.5}}, {\"file\": \"rung-refine-prompt.json\", \"content\": {\"prompt\": \"Edit this EXACT cropped WOOD LADDER centralrung. Only ONE visible cross-RUNG woodplank pivots UP around its LEFT attachedend: keep LEFT end atcurrentposition, raise FREE RIGHT end distinctly towardupperRIGHT so plank slopes UP toRIGHT instead of originalDOWN toRIGHT. Keep bothlong LADDER RAILS/boltpositions/stairs/background originalEXACT. Clearly hinge-lifted woodplank, no secondrung/rail movement, no extra hardware/objects. Samecropframing/paintstyle.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit attached giant APRICOT spiralSTAIRWELL miniaturegirl painting. EXACT1672x941 framing allhuman/anatomy/apricot/stairstructure andpositions originalexact. FIVE isolated SINGLE artifact changes:1) large APRICOT PIT upperleft x282,y152: one broad clear SPIRAL groove carvedinto its existing roughbrown surface, samepitshape/ridges/location; no fruitchange.2) BLUE WHITE striped NAPKIN lowerhangingtip x920,y815: its OWN danglingEND threads through one looseoverhand knot, same upperdrape/stripes, preserveapricot/stairs.3) WOOD LADDER RIGHT: ONLY central rung aroundx1098,y443 hinges UP at itsRIGHT end aroundleftpivot, samewoodplank attachedleftside; neighboringrungs/tworails originalEXACT, no swaps/new ladderparts.4) GOLD KEY rightonwoodtable: its decorative QUATREFOIL BOW x1608,y518 becomes onecontinuous goldring with large CRESCENT-shaped opening, samekeyshaft/teeth/position.5) LARGE CREAM COFFEE CUP upperright x1480,y146: blueLEAF branch paint motif becomes a clear blue compass-rose emblem on samecupbody, same outline/coffee/handle. No addedindependentobjects, no grain/text, no differentobjects swappings."
+      }
+    },
+    {
+      "file": "rung-preserve-prompt.json",
+      "content": {
+        "operation": "Original adjacent ladderrails/background restored outside old/new ONErung silhouette union",
+        "oldRung": [
+          [
+            1072,
+            421
+          ],
+          [
+            1077,
+            419
+          ],
+          [
+            1144,
+            452
+          ],
+          [
+            1144,
+            463
+          ],
+          [
+            1139,
+            470
+          ],
+          [
+            1070,
+            432
+          ]
+        ],
+        "newRung": [
+          [
+            1069,
+            426
+          ],
+          [
+            1074,
+            421
+          ],
+          [
+            1131,
+            404
+          ],
+          [
+            1139,
+            406
+          ],
+          [
+            1145,
+            418
+          ],
+          [
+            1074,
+            436
+          ],
+          [
+            1070,
+            435
+          ]
+        ],
+        "dilation": 2,
+        "feather": 0.5
+      }
+    },
+    {
+      "file": "rung-refine-prompt.json",
+      "content": {
+        "prompt": "Edit this EXACT cropped WOOD LADDER centralrung. Only ONE visible cross-RUNG woodplank pivots UP around its LEFT attachedend: keep LEFT end atcurrentposition, raise FREE RIGHT end distinctly towardupperRIGHT so plank slopes UP toRIGHT instead of originalDOWN toRIGHT. Keep bothlong LADDER RAILS/boltpositions/stairs/background originalEXACT. Clearly hinge-lifted woodplank, no secondrung/rail movement, no extra hardware/objects. Samecropframing/paintstyle."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "A spiral groove winds across the apricot pit.",
+      "box": {
+        "x": 165,
+        "y": 52,
+        "width": 264,
+        "height": 204
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The blue napkin's loose tip ties itself into a knot.",
+      "box": {
+        "x": 832,
+        "y": 664,
+        "width": 235,
+        "height": 277
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Hard",
+      "label": "A compass rose replaces the cup's blue leaf motif.",
+      "box": {
+        "x": 1330,
+        "y": 40,
+        "width": 240,
+        "height": 200
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "The key's bow becomes an open crescent.",
+      "box": {
+        "x": 1531,
+        "y": 450,
+        "width": 141,
+        "height": 125
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "One ladder rung hinges upward at its free end.",
+      "box": {
+        "x": 1062,
+        "y": 395,
+        "width": 93,
+        "height": 81
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Correct inventory/yearnative1672x941. First fullgeneration failed centralrung (unchanged); targeted singlecropreference refinement raisesonerung; adjacentrails/background restored outside explicitold/new plankmask. Other4 observed: pitspiral carvedgroove, onebluecloth ownknot old/newunion, cupflatcompasspaint, samekeybow openCrescent notnegativehole (accuratelabel). No swaps. Clothsourcehangingtip nowreachesnativebottomedge; originalendsy925, new941; fullunionbox preservesframing. Root silhouettejoins/nativefairness pending; difficulty hypotheses.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

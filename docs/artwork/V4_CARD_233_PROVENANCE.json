@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-233",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-233-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-233-original-v4.png",
+    "sha256": "DDCDB19A5A48846D2391930223430ABFB52170BE86B5F4BEEEA691EEA380B3D5",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-233-altered-source-v4.png",
+    "sha256": "EEAD6E04844986B3D7D4BE3ED48B14E36B2014405D8442CC339FFDA8DBCF00C6",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact full 1672x941 painterly red tent camping indoors with upside-down furnished room. Five separate single-object changes only: 1) RIGHT foreground striped slipper x402y790 has a sewn gold crescent on its navy toe, LEFT slipper identical; 2) upper bookshelf clock x434y123 has its long hand bent in an elbow, short hand and lower clock exact; 3) hanging brass pullchain ball x1099y563 reflects a blue crescent, same ball outline and chain; 4) white blue-spotted suspended mug x1006y337 has its handle curled inward into a small spiral instead of simple loop, same mug body and spots; 5) top tent entrance wooden toggle x858y64 has a diagonal slit across its center, rope/endcaps exact. Preserve frame, room geometry, chairs, tents and all tassels. No other edits.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-233-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact full 1672x941 painterly red tent camping indoors with upside-down furnished room. Five separate single-object changes only: 1) RIGHT foreground striped slipper x402y790 has a sewn gold crescent on its navy toe, LEFT slipper identical; 2) upper bookshelf clock x434y123 has its long hand bent in an elbow, short hand and lower clock exact; 3) hanging brass pullchain ball x1099y563 reflects a blue crescent, same ball outline and chain; 4) white blue-spotted suspended mug x1006y337 has its handle curled inward into a small spiral instead of simple loop, same mug body and spots; 5) top tent entrance wooden toggle x858y64 has a diagonal slit across its center, rope/endcaps exact. Preserve frame, room geometry, chairs, tents and all tassels. No other edits.",
+        "reference": "D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-233-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The right slipper has a gold crescent",
+      "difficulty": "Easy",
+      "box": {
+        "x": 424,
+        "y": 775,
+        "width": 59,
+        "height": 48
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The suspended mug handle curls inward",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1022,
+        "y": 315,
+        "width": 31,
+        "height": 44
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The upper clock hand bends in an elbow",
+      "difficulty": "Hard",
+      "box": {
+        "x": 414,
+        "y": 104,
+        "width": 34,
+        "height": 33
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The tent toggle has a diagonal slit",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 836,
+        "y": 51,
+        "width": 46,
+        "height": 30
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The pullchain ball reflects a blue crescent",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1084,
+        "y": 548,
+        "width": 30,
+        "height": 32
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390 stacked pair. Five separately selectable single-object clues. Native dimensions, five bounded nonoverlapping boxes and exact original pixels outside verified. Difficulty estimates unvalidated; root compositor/game, human difficulty and physical phone approval pending. Full prompts/source hash chain retained. Generated left slipper crescent excluded; only right slipper selected.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

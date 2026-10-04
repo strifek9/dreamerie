@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-077",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-077-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-077-original-v4.png",
+    "sha256": "A394129E292484EE2A08B16DB32E9FDBE9AC65BBAE717DBA151AC611646F9A54",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-077-altered-source-v4.png",
+    "sha256": "E90A90C6336A81733B3C77925CD2C8064418B3E07863320BE5608EF2FE6103AD",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"EditONLYfive localizedsingleobjectdetails inprovided1672x941painteddream entireframe unchanged:1 redumbrellaHANDLEforegroundx181,y761 roundsquarecurve becomes angular squaredcornerbend, samehandle length/brassend/position (x125,724,126,104);2 hugehourglass base goldcoin dial x908,y770 slottedline turns HORIZONTAL rather than diagonal within885,744,42,48;3 yellowboot single TOPLOOP of lacedbow x1290,y712 now folds UNDER verticalstraightlace rather thanover, preserveotherrunninglace/bootshape (x1250,667,81,78);4 GREENumbrellainsidehourglass RIGHT triangularcanopy panel x761,y574 develops rounded/scallopedloweredge insteadoneplaincurve, within733,530,74,104, keep poleotherpanels;5 smallwhitepebble lowerRIGHT blue circularmark x1533,y851 becomes recognizable blue crescent within1518,837,34,27. No extras, no grain/noise; noobjecttrades; onlyonepanel/onebowloop/onepaintmark/dialslot/onehandlebend. Fullnativeframe.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "EditONLYfive localizedsingleobjectdetails inprovided1672x941painteddream entireframe unchanged:1 redumbrellaHANDLEforegroundx181,y761 roundsquarecurve becomes angular squaredcornerbend, samehandle length/brassend/position (x125,724,126,104);2 hugehourglass base goldcoin dial x908,y770 slottedline turns HORIZONTAL rather than diagonal within885,744,42,48;3 yellowboot single TOPLOOP of lacedbow x1290,y712 now folds UNDER verticalstraightlace rather thanover, preserveotherrunninglace/bootshape (x1250,667,81,78);4 GREENumbrellainsidehourglass RIGHT triangularcanopy panel x761,y574 develops rounded/scallopedloweredge insteadoneplaincurve, within733,530,74,104, keep poleotherpanels;5 smallwhitepebble lowerRIGHT blue circularmark x1533,y851 becomes recognizable blue crescent within1518,837,34,27. No extras, no grain/noise; noobjecttrades; onlyonepanel/onebowloop/onepaintmark/dialslot/onehandlebend. Fullnativeframe."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "handle",
+      "label": "The red umbrella handle bends into squared corners.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 122,
+        "y": 723,
+        "width": 124,
+        "height": 90
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "canopy",
+      "label": "The right umbrella panel has a scalloped lower edge.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 731,
+        "y": 527,
+        "width": 77,
+        "height": 112
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "dial",
+      "label": "The hourglass dial slot turns horizontal.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 882,
+        "y": 741,
+        "width": 54,
+        "height": 57
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "bow",
+      "label": "The boot's right bow loop narrows behind the crossing lace.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1250,
+        "y": 666,
+        "width": 84,
+        "height": 81
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "pebble",
+      "label": "The pebble's blue mark becomes a crescent.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1517,
+        "y": 835,
+        "width": 36,
+        "height": 31
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Actualbootbow observedrightloopnarrows behindcrossinglace, notinitialrequestedtoploopclaim. Five independent objects/oneobjectinternalmechanism each. Source fullframe/nativebowcrop inspected; fivecrops/mobile preparing.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

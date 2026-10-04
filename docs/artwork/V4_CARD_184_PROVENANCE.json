@@ -1,0 +1,108 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-184",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-184-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-184-original-v4.png",
+    "sha256": "6879F18BCC7D9D9B59B308E57C09848A6352BB7B30EB9F05FB46A097C93E8B0C",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-184-altered-source-v4.png",
+    "sha256": "481DFA36CAB6FC405AE2171A3865AFA710F21A3D12AF6257537719796CD169DD",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit EXACT The Braid That Held the Bridge native1672x941, seated womanbraidbridge carryingwalkingletters. Preserve woman/hair/braidphysics/sceneframe/style. FIVEsingleobject edits: 1 ONLY firstleft walking envelope bluewaxseal x798403 gains a clearly raised GOLDcrescent impression insteadrounddot within781385..815423; 2 ONLY secondwalking envelope center1000486 its own tied bow becomes a figureeight knot insteaddoubleloop within984463..1030520, envelopelegs exact; 3 ONLY thirdwalking envelope goldseal x1254501 reflects a blue archedwindow insteadplainbrownseal within1237480..1270523; 4 ONLY topmost white lacingstrap on woman'sfrontboot x415738 runs diagonally upward ratherhorizontal, within391719..447750, otherlaces/bootshape exact; 5 woman's upperarm badge x289216 has a single flowerstem curling right insteadstraight vertical stem within276210..308241, preserveupperleaves/badgeoutline. No twoobjectswaps, no grain/specks or anatominjury; allothersoriginal.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit EXACT The Braid That Held the Bridge native1672x941, seated womanbraidbridge carryingwalkingletters. Preserve woman/hair/braidphysics/sceneframe/style. FIVEsingleobject edits: 1 ONLY firstleft walking envelope bluewaxseal x798403 gains a clearly raised GOLDcrescent impression insteadrounddot within781385..815423; 2 ONLY secondwalking envelope center1000486 its own tied bow becomes a figureeight knot insteaddoubleloop within984463..1030520, envelopelegs exact; 3 ONLY thirdwalking envelope goldseal x1254501 reflects a blue archedwindow insteadplainbrownseal within1237480..1270523; 4 ONLY topmost white lacingstrap on woman'sfrontboot x415738 runs diagonally upward ratherhorizontal, within391719..447750, otherlaces/bootshape exact; 5 woman's upperarm badge x289216 has a single flowerstem curling right insteadstraight vertical stem within276210..308241, preserveupperleaves/badgeoutline. No twoobjectswaps, no grain/specks or anatominjury; allothersoriginal."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The first envelope wax seal has a crescent",
+      "difficulty": "Easy",
+      "box": {
+        "x": 775,
+        "y": 379,
+        "width": 50,
+        "height": 49
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The second envelope bow turns sideways",
+      "difficulty": "Medium",
+      "box": {
+        "x": 974,
+        "y": 463,
+        "width": 68,
+        "height": 63
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The third seal reflects a blue arched window",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1234,
+        "y": 479,
+        "width": 40,
+        "height": 47
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "An extra white strap crosses the upper boot",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 392,
+        "y": 690,
+        "width": 54,
+        "height": 34
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The arm badge flower stem curls right",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 276,
+        "y": 210,
+        "width": 38,
+        "height": 33
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker inspected native pair, five paired crops and 390 stacked pair. Five single-object differences; unrelated drift excluded. Exact native size, five bounded nonoverlap boxes and outside pixels exact original verified. Difficulty estimates unvalidated; root game/compositor/human/physicalphone review pending. Full AI sources/prompts/hashes retained. Initial generator changed multiple boot straps; selected box isolates ONLY the new upper white strap. All existing lower straps remain exact original.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

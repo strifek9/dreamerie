@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-221",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-221-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-221-original-v4.png",
+    "sha256": "C65F5DFF62A440A5AF655B837ED4044B13BA91F5B93470C4F276C44D9CCCB9AB",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-221-altered-source-v4.png",
+    "sha256": "34B2F2D6A3E7AAB5D399537A62726677CC9A07228D0EE2B23301A9737A6A3BE1",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact native full 1672x941 painterly ballerina balancing on copper ribbon staircase in dark green theatre. Preserve anatomy and ribbon geometry. Exactly five localized single-object changes: 1) rightmost dark green floor cushion x1532y822 reflects a small sewn GOLD CRESCENT on its velvet center, keep tassels and rope exact; 2) ONE horizontal wooden stool brace x140 y730 curves upward in a shallow arch, same endpoints and other wood exact; 3) flower-headed gold hairpin on floor x337y860 has a heart-shaped head instead of flower, shaft exact; 4) dancer's waist bow loop on RIGHT x627y289 curls inward as one loop, left loop/tails exact; 5) standing pink shoe toe x733 y695 has a dark diagonal seam instead of vertical central seam, anatomy and ribbons exact. No other edits.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-221-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact native full 1672x941 painterly ballerina balancing on copper ribbon staircase in dark green theatre. Preserve anatomy and ribbon geometry. Exactly five localized single-object changes: 1) rightmost dark green floor cushion x1532y822 reflects a small sewn GOLD CRESCENT on its velvet center, keep tassels and rope exact; 2) ONE horizontal wooden stool brace x140 y730 curves upward in a shallow arch, same endpoints and other wood exact; 3) flower-headed gold hairpin on floor x337y860 has a heart-shaped head instead of flower, shaft exact; 4) dancer's waist bow loop on RIGHT x627y289 curls inward as one loop, left loop/tails exact; 5) standing pink shoe toe x733 y695 has a dark diagonal seam instead of vertical central seam, anatomy and ribbons exact. No other edits.",
+        "reference": "D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-221-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The cushion has a sewn gold crescent",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1564,
+        "y": 754,
+        "width": 65,
+        "height": 70
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The stool brace arches upward",
+      "difficulty": "Medium",
+      "box": {
+        "x": 87,
+        "y": 710,
+        "width": 105,
+        "height": 49
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The right waist bow loop turns sideways",
+      "difficulty": "Hard",
+      "box": {
+        "x": 612,
+        "y": 258,
+        "width": 41,
+        "height": 54
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The standing shoe has a diagonal seam",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 710,
+        "y": 667,
+        "width": 47,
+        "height": 52
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The hairpin head becomes a heart",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 319,
+        "y": 842,
+        "width": 41,
+        "height": 35
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390 stacked pair. Five separately selectable single-object clues. Five bounded nonoverlapping boxes, exact native size, and original pixels outside boxes verified. Difficulty estimates unvalidated; root compositor/game, human difficulty and physical phone approval pending. Full prompts and source hash chain retained.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

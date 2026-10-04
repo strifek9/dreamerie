@@ -1,0 +1,98 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-156",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-156-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-156-original-v4.png",
+    "sha256": "69D66EBDAF804FA5CDCF7FA399812708DDA0022B790302074BA954735B3D4F29",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-156-altered-source-v4.png",
+    "sha256": "76E71245740143FC53F89EE7222B190F122D15C6E389EB33D042A51AC4D80029",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit attached OPOSSUM FAMILY floating tablecloth kitchen oilpainting. EXACT1672x941 originalframing all animals furniture bowls spoons exact. FIVE isolated ONE-artifact edits:1) FLOATING WHITE tablecloth frontmost hanging corner x1290,y377: its final80nativepixels curl into hollowrolledcloth tube, same connectedcloth no rest ofcloth/tableware moves.2) ORANGE TOWEL hanging over RIGHT chair aroundx1332,y593: its lower danglingEND threads through itsOWN looseoverhand knot aroundy630; sameupperdrape/cloth attachedchair, no chair alteration.3) darkGREEN PITCHER floorright x1460 y760: its OWN greenhandle onright curls into continuous figureeight doubleloop attachedsame pitcher, samebody/position.4) SILVER SERVICE BELL onwoodtable x1198 y540: bell's own dome hinges slightly OPEN upward revealing darkinside onblackbase, stilloneconnectedbell no extraobject, samecenterposition.5) frontwooden CHAIR hasGREEN metal triangularbrace: ONLY the LOWER horizontalgreenbar aroundx1117,y782 arches upward into a smoothgreenbow, preserving its twoendrivetsandother2diagonalbars originalexact. Don't swap components, no disappearobjects/new clutter grain. Eachclueonechangedartifact only.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit attached OPOSSUM FAMILY floating tablecloth kitchen oilpainting. EXACT1672x941 originalframing all animals furniture bowls spoons exact. FIVE isolated ONE-artifact edits:1) FLOATING WHITE tablecloth frontmost hanging corner x1290,y377: its final80nativepixels curl into hollowrolledcloth tube, same connectedcloth no rest ofcloth/tableware moves.2) ORANGE TOWEL hanging over RIGHT chair aroundx1332,y593: its lower danglingEND threads through itsOWN looseoverhand knot aroundy630; sameupperdrape/cloth attachedchair, no chair alteration.3) darkGREEN PITCHER floorright x1460 y760: its OWN greenhandle onright curls into continuous figureeight doubleloop attachedsame pitcher, samebody/position.4) SILVER SERVICE BELL onwoodtable x1198 y540: bell's own dome hinges slightly OPEN upward revealing darkinside onblackbase, stilloneconnectedbell no extraobject, samecenterposition.5) frontwooden CHAIR hasGREEN metal triangularbrace: ONLY the LOWER horizontalgreenbar aroundx1117,y782 arches upward into a smoothgreenbow, preserving its twoendrivetsandother2diagonalbars originalexact. Don't swap components, no disappearobjects/new clutter grain. Eachclueonechangedartifact only."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "The floating tablecloth's front corner rolls into a tube.",
+      "box": {
+        "x": 1218,
+        "y": 304,
+        "width": 188,
+        "height": 107
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The chair towel's loose end ties into a knot.",
+      "box": {
+        "x": 1288,
+        "y": 568,
+        "width": 84,
+        "height": 129
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The pitcher handle forms a figure eight.",
+      "box": {
+        "x": 1504,
+        "y": 651,
+        "width": 74,
+        "height": 141
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "The service bell's dome hinges open.",
+      "box": {
+        "x": 1155,
+        "y": 494,
+        "width": 80,
+        "height": 83
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "The chair\u2019s lower crossbar bows upward and turns green.",
+      "box": {
+        "x": 1035,
+        "y": 756,
+        "width": 167,
+        "height": 64
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Correct current inventory/year1672x941. Actual five observed singleartifact edits; lowerchairbrace onlyonebar curve, other2 diagonals samepositions. NO swaps. Generation also knots separatecabinet towel farRIGHT (unrequested) OUTSIDE all selectedregions; must remain originalexact via root localizedcompositor, not integrate fullgeneratedframe. Floatingclothcornerunion andchairtowel old/newfootprints clean nativepairedobserved; pitcherhandle only; bellconnectedmechanism. Rootjoins/fairness pending, difficultieshypothesesonly. Actualoriginal lowercrossbar isWOOD, notgreen aspromptassumed; generatedsamebar changesmaterialgreen aswell asarch. Accurateobservedlabel corrected.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

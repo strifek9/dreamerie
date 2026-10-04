@@ -1,0 +1,110 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-269",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-269-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-269-original-v4.png",
+    "sha256": "B2A5E3DF1E0DD9AD5BF6C037EA056C7DD6C32195C0F3005FC029CE17F7053432",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-269-altered-source-v4.png",
+    "sha256": "9A1472631259A15AC6A7935D0CC22F7F8708EE024AB5C43BCBACF6C3F3194D41",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit original accordion painting locally, preserve frame and painterly style and endless-room illusion. Exactly five single-object clues: 1 Red pendant lampshade inside foremost room near x800 y302 tilts clearly to the right as if swinging, remains attached to its original vertical cord. 2 Oval mirror on left interior wall near x592 y327 reflects one warm golden crescent moon instead of its pale blue window patch, mirror frame unchanged. 3 The red upholstered back of the foremost little chair near x793 y449 has a single broad cream spiral embroidered in its center, chair frame/seat unchanged. 4 The unlit white candle at far right has its top black wick curling into a small hooked spiral instead of pointing straight up, wax unchanged. 5 Just the uppermost cream bass button at x1314 y338 on right accordion panel becomes a square cream button, all other buttons unchanged. Five single targets, no paired swaps, no global changes. Keep coherent geometry and local edges.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit original accordion painting locally, preserve frame and painterly style and endless-room illusion. Exactly five single-object clues: 1 Red pendant lampshade inside foremost room near x800 y302 tilts clearly to the right as if swinging, remains attached to its original vertical cord. 2 Oval mirror on left interior wall near x592 y327 reflects one warm golden crescent moon instead of its pale blue window patch, mirror frame unchanged. 3 The red upholstered back of the foremost little chair near x793 y449 has a single broad cream spiral embroidered in its center, chair frame/seat unchanged. 4 The unlit white candle at far right has its top black wick curling into a small hooked spiral instead of pointing straight up, wax unchanged. 5 Just the uppermost cream bass button at x1314 y338 on right accordion panel becomes a square cream button, all other buttons unchanged. Five single targets, no paired swaps, no global changes. Keep coherent geometry and local edges."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The chair back bears a spiral",
+      "difficulty": "Easy",
+      "box": {
+        "x": 771,
+        "y": 418,
+        "width": 43,
+        "height": 57
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The pendant tilts sideways",
+      "difficulty": "Medium",
+      "box": {
+        "x": 768,
+        "y": 240,
+        "width": 82,
+        "height": 84
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The mirror reflects a crescent",
+      "difficulty": "Hard",
+      "box": {
+        "x": 580,
+        "y": 298,
+        "width": 25,
+        "height": 54
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The candle wick curls into a loop",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1573,
+        "y": 124,
+        "width": 35,
+        "height": 49
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The top bass button becomes square",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1298,
+        "y": 323,
+        "width": 31,
+        "height": 34
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "visually inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "nativePreflight": "source equals actual original size, five nonoverlapping boxes",
+    "difficulty": "hypotheses; human and browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

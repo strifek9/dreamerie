@@ -1,0 +1,110 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-284",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-284-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-284-original-v4.png",
+    "sha256": "C820C344022C71D1DC8FA2CF16BC84030A245191BAE27803256736AB2589D6D2",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-284-altered-source-v4.png",
+    "sha256": "C3E3FF1EBE09186A01F874B06EF816D49C2B57E133972CD1B27B275B4DF8CE07",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact original rabbit-and-mirror painting locally, preserve style, frame, rabbit anatomy/identity and all unchanged objects. Exactly five independently selectable single-object changes: 1 ONLY the purple book held by reflected rabbit in mirror becomes OPEN, showing two pale cream pages spread in a V while staying held at same place; reflected hands and rabbit unchanged. 2 The REAL rabbit's mouth near x553 y385 curves into a small visible contented smile instead of its flat line, other face unchanged. 3 Foreground hairbrush's cream bristle tips curl toward the RIGHT instead of hanging straight down, wooden/gold brush body unchanged. 4 The crown-shaped finial on small green trinket jar at x719 y554 becomes an open circular gold ring finial, jar lid/body unchanged. 5 The gold oval pendant hanging far left bears a broad crescent-and-dot motif instead of its plant twig carving, pendant outline/chain unchanged. Five targets, no swaps/no extra objects; preserve seamless local painting and reflection geometry.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact original rabbit-and-mirror painting locally, preserve style, frame, rabbit anatomy/identity and all unchanged objects. Exactly five independently selectable single-object changes: 1 ONLY the purple book held by reflected rabbit in mirror becomes OPEN, showing two pale cream pages spread in a V while staying held at same place; reflected hands and rabbit unchanged. 2 The REAL rabbit's mouth near x553 y385 curves into a small visible contented smile instead of its flat line, other face unchanged. 3 Foreground hairbrush's cream bristle tips curl toward the RIGHT instead of hanging straight down, wooden/gold brush body unchanged. 4 The crown-shaped finial on small green trinket jar at x719 y554 becomes an open circular gold ring finial, jar lid/body unchanged. 5 The gold oval pendant hanging far left bears a broad crescent-and-dot motif instead of its plant twig carving, pendant outline/chain unchanged. Five targets, no swaps/no extra objects; preserve seamless local painting and reflection geometry."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The reflected rabbit opens the book",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1157,
+        "y": 295,
+        "width": 190,
+        "height": 172
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The real rabbit mouth smiles",
+      "difficulty": "Medium",
+      "box": {
+        "x": 513,
+        "y": 350,
+        "width": 69,
+        "height": 52
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The brush bristle tips curl",
+      "difficulty": "Hard",
+      "box": {
+        "x": 938,
+        "y": 766,
+        "width": 212,
+        "height": 79
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The jar finial forms a ring",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 691,
+        "y": 514,
+        "width": 54,
+        "height": 60
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The pendant bears a crescent motif",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 104,
+        "y": 210,
+        "width": 43,
+        "height": 73
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "visually inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "nativePreflight": "source equals actual original size, five nonoverlapping boxes",
+    "difficulty": "hypotheses; human and browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-350",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-350-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-350-original-v4.png",
+    "sha256": "BD8C218F2480299A49DF1485D3C8F304BC27ECCE24C2F56FDD957AAAD88C3E23",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-350-altered-source-v4.png",
+    "sha256": "94173D2158B871822856DCCEA8CA9E17BC346D635A7D2EDD06E831A08AF016BC",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit this original The Teaspoon's Long Journey illustration. Preserve exact native1672x941 framing, painterly pastel style, all objects and enriched scene. Exactly FIVE separate localized single-object differences: 1) The station bench backrest tilts backward noticeably, same seat legs and red slats, one bench only, at x1390 y250 width175 height122; leave roof/posts unchanged. 2) In the large silver spoon's bowl only, add a clear engraved crescent moon to its central interior at x207 y350 width145 height68, leave its rim and shape unchanged. 3) Change the central arch opening of the spoon handle's bridge architecture from rounded to pointed Gothic arch, at x806 y232 width197 height147; same supports and metal handle, don't change neighboring arches. This is one spoon's internal architecture. 4) The ceramic lid's round knob has a blue spiral decorating its front instead of the current diffuse blue fleck marks, x1490 y541 width95 height68, keep knob shape and lid identical. 5) The folded blue towel's upper right curled fold rolls outward and upward slightly, x465 y741 width153 height133; one cloth only, keep stripes, remaining folds and surrounding sugar bowl unchanged. Nothing else changes, no sugar cubes removed or moved, no general redraw, no new objects or text. Exactly these five small bounded edits.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-350-original-v1.png\"}}, {\"file\": \"assembly.json\", \"content\": {\"kind\": \"original-backed single-cloth polygon\", \"source\": \"source.png\", \"output\": \"towel-assembled.png\", \"polygon\": [[0, 514], [68, 551], [225, 607], [288, 670], [359, 707], [488, 724], [587, 745], [626, 779], [636, 829], [609, 887], [550, 941], [0, 941]], \"operation\": \"Paste generated pixels within polygon onto exact original; no scale; no change to bowl.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit this original The Teaspoon's Long Journey illustration. Preserve exact native1672x941 framing, painterly pastel style, all objects and enriched scene. Exactly FIVE separate localized single-object differences: 1) The station bench backrest tilts backward noticeably, same seat legs and red slats, one bench only, at x1390 y250 width175 height122; leave roof/posts unchanged. 2) In the large silver spoon's bowl only, add a clear engraved crescent moon to its central interior at x207 y350 width145 height68, leave its rim and shape unchanged. 3) Change the central arch opening of the spoon handle's bridge architecture from rounded to pointed Gothic arch, at x806 y232 width197 height147; same supports and metal handle, don't change neighboring arches. This is one spoon's internal architecture. 4) The ceramic lid's round knob has a blue spiral decorating its front instead of the current diffuse blue fleck marks, x1490 y541 width95 height68, keep knob shape and lid identical. 5) The folded blue towel's upper right curled fold rolls outward and upward slightly, x465 y741 width153 height133; one cloth only, keep stripes, remaining folds and surrounding sugar bowl unchanged. Nothing else changes, no sugar cubes removed or moved, no general redraw, no new objects or text. Exactly these five small bounded edits.",
+        "reference": "D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-350-original-v1.png"
+      }
+    },
+    {
+      "file": "assembly.json",
+      "content": {
+        "kind": "original-backed single-cloth polygon",
+        "source": "source.png",
+        "output": "towel-assembled.png",
+        "polygon": [
+          [
+            0,
+            514
+          ],
+          [
+            68,
+            551
+          ],
+          [
+            225,
+            607
+          ],
+          [
+            288,
+            670
+          ],
+          [
+            359,
+            707
+          ],
+          [
+            488,
+            724
+          ],
+          [
+            587,
+            745
+          ],
+          [
+            626,
+            779
+          ],
+          [
+            636,
+            829
+          ],
+          [
+            609,
+            887
+          ],
+          [
+            550,
+            941
+          ],
+          [
+            0,
+            941
+          ]
+        ],
+        "operation": "Paste generated pixels within polygon onto exact original; no scale; no change to bowl."
+      }
+    }
+  ],
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-350-towel-assembled-source-v4.png",
+      "sha256": "52DF0A08C68C2F74361D2D82ED912602327EA1ECC773F66EE3ECA1104013D143",
+      "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit this original The Teaspoon's Long Journey illustration. Preserve exact native1672x941 framing, painterly pastel style, all objects and enriched scene. Exactly FIVE separate localized single-object differences: 1) The station bench backrest tilts backward noticeably, same seat legs and red slats, one bench only, at x1390 y250 width175 height122; leave roof/posts unchanged. 2) In the large silver spoon's bowl only, add a clear engraved crescent moon to its central interior at x207 y350 width145 height68, leave its rim and shape unchanged. 3) Change the central arch opening of the spoon handle's bridge architecture from rounded to pointed Gothic arch, at x806 y232 width197 height147; same supports and metal handle, don't change neighboring arches. This is one spoon's internal architecture. 4) The ceramic lid's round knob has a blue spiral decorating its front instead of the current diffuse blue fleck marks, x1490 y541 width95 height68, keep knob shape and lid identical. 5) The folded blue towel's upper right curled fold rolls outward and upward slightly, x465 y741 width153 height133; one cloth only, keep stripes, remaining folds and surrounding sugar bowl unchanged. Nothing else changes, no sugar cubes removed or moved, no general redraw, no new objects or text. Exactly these five small bounded edits.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-350-original-v1.png\"}}, {\"file\": \"assembly.json\", \"content\": {\"kind\": \"original-backed single-cloth polygon\", \"source\": \"source.png\", \"output\": \"towel-assembled.png\", \"polygon\": [[0, 514], [68, 551], [225, 607], [288, 670], [359, 707], [488, 724], [587, 745], [626, 779], [636, 829], [609, 887], [550, 941], [0, 941]], \"operation\": \"Paste generated pixels within polygon onto exact original; no scale; no change to bowl.\"}}]"
+    }
+  ],
+  "authoredRegions": [
+    {
+      "id": "towel-roll",
+      "label": "The towel's upper fold rolls outward.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 0,
+        "y": 506,
+        "width": 638,
+        "height": 435
+      },
+      "edgeFade": 4,
+      "source": "towel-assembled.png"
+    },
+    {
+      "id": "bench-tilt",
+      "label": "The station bench backrest reclines.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1390,
+        "y": 253,
+        "width": 177,
+        "height": 119
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "spoon-moon",
+      "label": "The spoon bowl has a crescent engraving.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 222,
+        "y": 322,
+        "width": 158,
+        "height": 97
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "arch-point",
+      "label": "The central spoon-handle arch becomes pointed.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 804,
+        "y": 228,
+        "width": 197,
+        "height": 148
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "knob-spiral",
+      "label": "The lid knob bears a blue spiral.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1492,
+        "y": 541,
+        "width": 94,
+        "height": 68
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": {
+    "humanTimed": false,
+    "physicalPhone": false,
+    "notes": [
+      "Full towel silhouette polygon assembled against original to preserve neighboring bowl; actual unfolded roll exceeds planned small fold. Raw source retained."
+    ],
+    "outsideRegionsExact": true,
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sourceHashes": {
+      "towel-assembled.png": "52df0a08c68c2f74361d2d82ed912602327ea1ecc773f66ee3eca1104013d143",
+      "source.png": "94173d2158b871822856dccea8ca9e17bc346d635a7d2edd06e831a08af016bc"
+    },
+    "allTenPairsNonoverlap": true,
+    "fullFrameAndFivePairedCropsViewed": true,
+    "mobile390CompositeViewed": true
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

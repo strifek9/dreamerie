@@ -1,0 +1,96 @@
+{
+  "status": "unreleased technical proof; full-pair/five-crop desktop/mobile QA passed; native original/outside-region pixels exact;5/5mobilegame; human difficulty pending",
+  "cardId": "v4-dream-022",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-022-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-022-original-v4.png",
+    "sha256": "B24CD73C7DC62BD3AB53EBAB2FB67F99CC342FF7825D0F1D44348DD75D1A7F99",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-022-altered-source-v4.png",
+    "sha256": "D199FB2B6A540D2D14A56798B3B9C5A3B9F60E59331E1ED83F62FF228EC1C7B8",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Use case: precise-object-edit. Edit the attached painted Snail Observatory image. Preserve EXACT same 1672x941 framing, all object positions, sunset, snail anatomy, painterly textures and colors. Produce full frame with only these FIVE local changes, no markers or text: 1) observatory blue door gold triangular emblem now points DOWN instead of up, retaining its gold thickness and tiny dark central hole. 2) telescope's circular gold front lens becomes a gold-rimmed six-sided hexagonal lens, same location and size, barrel unchanged. 3) on the far left foreground terracotta pot, change its single round loop handle into a neatly attached squared angular loop handle, same terracotta material and location. 4) left glowing observatory window: retain arched frame and all panes but move its middle horizontal gold crossbar noticeably lower, so upper panes taller than lower panes; no extra panes. 5) three pale rounded stones on lower right path: change ONLY middle stone's top crack/speck into a clear small curved crescent groove, same stone shape, hue and shading. Keep all flowers, snail eyes, spiral shell, leaves and landscape untouched. Edits should be deliberate relational/structural differences, readable with careful phone inspection, clean joins; avoid extra clutter, extra stars, changed snail anatomy, painting-wide redraw, watermark or labels.\", \"tool\": \"builtin imagegen\"}}, {\"file\": \"window-prompt.json\", \"content\": {\"prompt\": \"Precisely edit this small painted glowing arched observatory window crop. Keep exact framing, window perimeter, surroundings, leaves, blue boards and painterly colors. Change the central vertical gold mullion into a diagonal gold mullion running from upper-left inside arch to lower-right corner. Keep both horizontal gold crossbars unchanged. This is a deliberately diagonally divided window rather than a normal upright grid. No additional details or text; output same rectangular crop.\"}}, {\"file\": \"refine-prompt.json\", \"content\": {\"prompt\": \"Precise localized edit of attached Snail Observatory painted image, preserve native1672x941 full framing/style/allpositions. Only THREE edits: (1) far-left foreground terracotta pot KEEP its existing rounded loop handle unbroken and anatomically identical; grow ONE believable continuous green leafy vine from plant beside pot, threading visibly THROUGH hollow handle (one segment behind upper handle, vine coming forward through central hole, dangling down). No new extra handles. (2) Telescope at top: KEEP its circular golden front rim and blue barrel EXACT shape. Inside round lens replace plain pale glow with a clearly drawn pale crescent moon REFLECTION, warm dark amber around crescent. (3) Middle of three pale path stones bottom-right: carve one substantial curved crescent GROOVE sweeping across most upper face of stone, clearly incised warm brown shading (not pasted moon icon), no stone shapechange. Preserve otherstones, flowers, sky, snail anatomy, windows and door untouched. Nolabels/markers, noextraobjects beyond vineandgroove.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Use case: precise-object-edit. Edit the attached painted Snail Observatory image. Preserve EXACT same 1672x941 framing, all object positions, sunset, snail anatomy, painterly textures and colors. Produce full frame with only these FIVE local changes, no markers or text: 1) observatory blue door gold triangular emblem now points DOWN instead of up, retaining its gold thickness and tiny dark central hole. 2) telescope's circular gold front lens becomes a gold-rimmed six-sided hexagonal lens, same location and size, barrel unchanged. 3) on the far left foreground terracotta pot, change its single round loop handle into a neatly attached squared angular loop handle, same terracotta material and location. 4) left glowing observatory window: retain arched frame and all panes but move its middle horizontal gold crossbar noticeably lower, so upper panes taller than lower panes; no extra panes. 5) three pale rounded stones on lower right path: change ONLY middle stone's top crack/speck into a clear small curved crescent groove, same stone shape, hue and shading. Keep all flowers, snail eyes, spiral shell, leaves and landscape untouched. Edits should be deliberate relational/structural differences, readable with careful phone inspection, clean joins; avoid extra clutter, extra stars, changed snail anatomy, painting-wide redraw, watermark or labels.",
+        "tool": "builtin imagegen"
+      }
+    },
+    {
+      "file": "window-prompt.json",
+      "content": {
+        "prompt": "Precisely edit this small painted glowing arched observatory window crop. Keep exact framing, window perimeter, surroundings, leaves, blue boards and painterly colors. Change the central vertical gold mullion into a diagonal gold mullion running from upper-left inside arch to lower-right corner. Keep both horizontal gold crossbars unchanged. This is a deliberately diagonally divided window rather than a normal upright grid. No additional details or text; output same rectangular crop."
+      }
+    },
+    {
+      "file": "refine-prompt.json",
+      "content": {
+        "prompt": "Precise localized edit of attached Snail Observatory painted image, preserve native1672x941 full framing/style/allpositions. Only THREE edits: (1) far-left foreground terracotta pot KEEP its existing rounded loop handle unbroken and anatomically identical; grow ONE believable continuous green leafy vine from plant beside pot, threading visibly THROUGH hollow handle (one segment behind upper handle, vine coming forward through central hole, dangling down). No new extra handles. (2) Telescope at top: KEEP its circular golden front rim and blue barrel EXACT shape. Inside round lens replace plain pale glow with a clearly drawn pale crescent moon REFLECTION, warm dark amber around crescent. (3) Middle of three pale path stones bottom-right: carve one substantial curved crescent GROOVE sweeping across most upper face of stone, clearly incised warm brown shading (not pasted moon icon), no stone shapechange. Preserve otherstones, flowers, sky, snail anatomy, windows and door untouched. Nolabels/markers, noextraobjects beyond vineandgroove."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "A crescent groove is carved across the middle pale path stone",
+      "box": {
+        "x": 1180,
+        "y": 765,
+        "width": 115,
+        "height": 77
+      },
+      "edgeFade": 5
+    },
+    {
+      "difficulty": "Medium",
+      "label": "A crescent reflection glows inside the telescope lens",
+      "box": {
+        "x": 678,
+        "y": 24,
+        "width": 61,
+        "height": 78
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The gold triangle on the door points downward",
+      "box": {
+        "x": 586,
+        "y": 212,
+        "width": 60,
+        "height": 58
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "The window's middle mullion runs diagonally",
+      "box": {
+        "x": 459,
+        "y": 198,
+        "width": 63,
+        "height": 82
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "A leafy vine threads through the pot's round handle",
+      "box": {
+        "x": 88,
+        "y": 642,
+        "width": 250,
+        "height": 299
+      },
+      "edgeFade": 7
+    }
+  ],
+  "notes": "Full refined native source and five paired crops inspected. Vine continuous through preserved round handle; new vine branches are part of one authored relationship. Circular telescope rim preserved with crescent reflection. Larger middle-stone crescent reads as carved depression. Window diagonal and triangle retained from prior clean localized edits. Difficulty ordering estimated, not human-tested. Root must inspect final vine feather boundaries; expanded vine box captures visible lower foliage, top must naturally blend into existing pot plant. Full generated source has incidental drift: only authored regions may be integrated. Root compositor review passed: vine continuous and naturally blended, five actual changes. Ordered large stone groove first, obscured vine/handle relationship last; difficulty hypotheses require human calibration."
+}

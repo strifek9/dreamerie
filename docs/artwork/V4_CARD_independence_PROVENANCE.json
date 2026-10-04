@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-independence",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/holidays-painted-v1/independence-original.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-independence-original-v4.png",
+    "sha256": "C40C2984AAD4CB5C76450E96F37D1D6F837E3E048C2F25F52F831E7B98B080A7",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-independence-altered-source-v4.png",
+    "sha256": "5281D2193CF9051C70256827096122BCC8B05BE461911FFF12E12294C23329BF",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact native1672x941 painterly Independence Day family picnic fireworks beside lake. FIVE isolated ONE-object changes:1 lantern FRONT upper lattice between x124y610 and x170y690 gains one diagonal brass crossbar, flame/frame exact;2 glass lemonade pitcher handle x650y682 curls inward into spiral, pitcher/lemon slices exact;3 picnic basket clasp round tongue at x461y675 has clear X groove, straps/basket exact;4 ONE rightmost red-striped cup front x704y726 gains a painted blue star on its existing white stripe, all other cups exact;5 FOREGROUND dock center post top x512y799 reflects a broad gold crescent, post/rope exact. Preserve people/dog anatomy, fireworks and national theme/colors, all fish, flags and frame. No extra changes.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/holidays-painted-v1/independence-original.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact native1672x941 painterly Independence Day family picnic fireworks beside lake. FIVE isolated ONE-object changes:1 lantern FRONT upper lattice between x124y610 and x170y690 gains one diagonal brass crossbar, flame/frame exact;2 glass lemonade pitcher handle x650y682 curls inward into spiral, pitcher/lemon slices exact;3 picnic basket clasp round tongue at x461y675 has clear X groove, straps/basket exact;4 ONE rightmost red-striped cup front x704y726 gains a painted blue star on its existing white stripe, all other cups exact;5 FOREGROUND dock center post top x512y799 reflects a broad gold crescent, post/rope exact. Preserve people/dog anatomy, fireworks and national theme/colors, all fish, flags and frame. No extra changes.",
+        "reference": "D:/Dreamerie/public/artwork/v3/holidays-painted-v1/independence-original.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The lantern has crossed diagonal lattice bars",
+      "difficulty": "Easy",
+      "box": {
+        "x": 123,
+        "y": 610,
+        "width": 41,
+        "height": 90
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The pitcher handle curls inward",
+      "difficulty": "Medium",
+      "box": {
+        "x": 632,
+        "y": 649,
+        "width": 40,
+        "height": 66
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The front post top has a gold ring reflection",
+      "difficulty": "Hard",
+      "box": {
+        "x": 467,
+        "y": 778,
+        "width": 91,
+        "height": 32
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The rightmost cup has a blue star",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 689,
+        "y": 711,
+        "width": 29,
+        "height": 27
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The picnic basket clasp has an X groove",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 451,
+        "y": 661,
+        "width": 24,
+        "height": 32
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390 stacked pair. Five independently selectable localized object clues. Native dimensions, five bounded nonoverlapping boxes and exact original pixels outside verified. Difficulty estimates unvalidated; root compositor/game, human difficulty and physical phone approval pending. Full prompt/source hash chain retained.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

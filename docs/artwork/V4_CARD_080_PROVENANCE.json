@@ -1,0 +1,114 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-080",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-revisit-v1/080-dynamic-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-080-original-v4.png",
+    "sha256": "F9ADB09B5A2B348A90343E9CD0E0B0E851F7E88DAB9AB77F41305C0AE8E60CEC",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-080-altered-source-v4.png",
+    "sha256": "B13923D25E1DC30E62DA5AC1B979AE97A4481CD4A03E700BE5AB8F0D81CBB879",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise object edits original1672x941 Dreamerie desert snowdrawerpainting. Keep all originalsubjects, drawerinterior/carpet snowriver and anatomy/painterlyfinish exact. Five independent singleobject edits: 1 orange lizard tail TIP curls into closedloop at upperend instead of pointingup, only1354,362,40,77; retain tailbase/body. 2 rightmost RED sled runner frontcurl turns outward/right instead of inwardleft, region967,509,45,45; other runnerunchanged andattached. 3 silver thermos lid vertical reflected stripe becomes a softly curvedwave reflection, region230,438,70,47; no lidcontourchange. 4 white snowflake motif on yellow knitted mitten UNDERlizard atcenter1310,465 becomes an outlineddiamond motif, bounds1282,441,40,62; mitten/lizardunchanged. 5 red topdrawerknob becomes gently facetedhexagon samepositioncenter668,216 size46x46, region640,188,59,59. No otheredits, no textgrainor extraproperties; no twoobject swaps.\"}}, {\"file\": \"mitten-prompt.json\", \"content\": {\"prompt\": \"Preciseoneobject edit. In this original1672x941 painting, yellow knitted mitten UNDERorange lizard has a white snowflake atfar-right cuff center1301,465. Replace ONLY that whitesnowflake with ONE white hollowdiamond embroidered motif. Nativebox1278,435,46,65, clearlydiamondoutline,no starbranches. Keep mittenknit, lizardentireanatomy, tail,stool exact. Everyotherpixel unchanged. No textgrainnewobjects.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise object edits original1672x941 Dreamerie desert snowdrawerpainting. Keep all originalsubjects, drawerinterior/carpet snowriver and anatomy/painterlyfinish exact. Five independent singleobject edits: 1 orange lizard tail TIP curls into closedloop at upperend instead of pointingup, only1354,362,40,77; retain tailbase/body. 2 rightmost RED sled runner frontcurl turns outward/right instead of inwardleft, region967,509,45,45; other runnerunchanged andattached. 3 silver thermos lid vertical reflected stripe becomes a softly curvedwave reflection, region230,438,70,47; no lidcontourchange. 4 white snowflake motif on yellow knitted mitten UNDERlizard atcenter1310,465 becomes an outlineddiamond motif, bounds1282,441,40,62; mitten/lizardunchanged. 5 red topdrawerknob becomes gently facetedhexagon samepositioncenter668,216 size46x46, region640,188,59,59. No otheredits, no textgrainor extraproperties; no twoobject swaps."
+      }
+    },
+    {
+      "file": "mitten-prompt.json",
+      "content": {
+        "prompt": "Preciseoneobject edit. In this original1672x941 painting, yellow knitted mitten UNDERorange lizard has a white snowflake atfar-right cuff center1301,465. Replace ONLY that whitesnowflake with ONE white hollowdiamond embroidered motif. Nativebox1278,435,46,65, clearlydiamondoutline,no starbranches. Keep mittenknit, lizardentireanatomy, tail,stool exact. Everyotherpixel unchanged. No textgrainnewobjects."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The lizard tail tip curls into a loop",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1337,
+        "y": 356,
+        "width": 52,
+        "height": 121
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The top drawer knob has a faceted outline",
+      "difficulty": "Medium",
+      "box": {
+        "x": 638,
+        "y": 187,
+        "width": 61,
+        "height": 61
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The thermos lid reflection forms a wave",
+      "difficulty": "Hard",
+      "box": {
+        "x": 228,
+        "y": 434,
+        "width": 73,
+        "height": 49
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The mitten snowflake becomes a hollow diamond",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1285,
+        "y": 437,
+        "width": 39,
+        "height": 66
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "mitten.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The right sled runner curls outward",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 963,
+        "y": 495,
+        "width": 65,
+        "height": 64
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker fullpair/fivepairedcrops/390stack inspected. Firstmittenrequestfailedandrejected, targeteddiamondused. Tailcurl continuous and sledrunner attached; five separateobjects. Native/nonoverlap/exactoutsidepixels verified; root compositor/game and human difficulty pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

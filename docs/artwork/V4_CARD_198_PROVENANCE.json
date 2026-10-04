@@ -1,0 +1,120 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-198",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-198-original-v4.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-198-original-v4.png",
+    "sha256": "C120C5076DB7F8EB5EA27EFD67716BEE6C077E88ABAF54644526523000292EBE",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-198-altered-source-v4.png",
+    "sha256": "440CFABC066DC250AEE28CCC45751A2206E3A9B75F12AAFAE93C0A000A1E98DA",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit EXACT Skateboarder and the Borrowed Horizon native1672x941 ORIGINALv4 youngster skatingorangepeel city. Preserve allhuman/hand/limbs/anatomy/frame/style/corepremise. FIVE distinct singleobjects: 1 ONLY nearestfront orange skateboardwheel x1002678 changes innerhub to clearlyvisible spiralspokes while outerwheel exact, within982653..1028707; 2 ONLY largefrontknee pad emblem x883357 diamondoutline becomes ONE gold crescent reflectedsymbol, within864336..904380, other kneepadexact; 3 ONLY farupperright streetlamp glass globe x1568157 reflects a vivid orange curvedhorizon insteadplainwhite, within1533133..1597180, lampshapeexact; 4 ONLY upperleft balconycat its tailtip x286128 curls UP in an openhook insteadhangingdown, within264103..304147, catbody/anatomyexact; 5 ONLY nearestshoe lacebow onrightshoe x1066534 its ONE upperloop tilts upright ratherflat sideways, within1023507..1082551, otherloop/laces/shoeexact. No twoobjectsunderoneguess,no swaps,no tinygrain.\"}}, {\"file\": \"bow-prompt.json\", \"content\": {\"prompt\": \"Exactcrop rightblue skate shoe laces. ONLY ONE bowloop leftof central knot (cropx26y39) turns UPRIGHT into a tall oval loop reaching cropy10 instead flat horizontal loop. Keep SAME loopattached to SAME knot; rightloop andallotherlaces/shoe/legexact. Oneinternalbowlooppose, noextra lace. Same135x90 framing.\", \"nativeCrop\": [990, 495, 135, 90]}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit EXACT Skateboarder and the Borrowed Horizon native1672x941 ORIGINALv4 youngster skatingorangepeel city. Preserve allhuman/hand/limbs/anatomy/frame/style/corepremise. FIVE distinct singleobjects: 1 ONLY nearestfront orange skateboardwheel x1002678 changes innerhub to clearlyvisible spiralspokes while outerwheel exact, within982653..1028707; 2 ONLY largefrontknee pad emblem x883357 diamondoutline becomes ONE gold crescent reflectedsymbol, within864336..904380, other kneepadexact; 3 ONLY farupperright streetlamp glass globe x1568157 reflects a vivid orange curvedhorizon insteadplainwhite, within1533133..1597180, lampshapeexact; 4 ONLY upperleft balconycat its tailtip x286128 curls UP in an openhook insteadhangingdown, within264103..304147, catbody/anatomyexact; 5 ONLY nearestshoe lacebow onrightshoe x1066534 its ONE upperloop tilts upright ratherflat sideways, within1023507..1082551, otherloop/laces/shoeexact. No twoobjectsunderoneguess,no swaps,no tinygrain."
+      }
+    },
+    {
+      "file": "bow-prompt.json",
+      "content": {
+        "prompt": "Exactcrop rightblue skate shoe laces. ONLY ONE bowloop leftof central knot (cropx26y39) turns UPRIGHT into a tall oval loop reaching cropy10 instead flat horizontal loop. Keep SAME loopattached to SAME knot; rightloop andallotherlaces/shoe/legexact. Oneinternalbowlooppose, noextra lace. Same135x90 framing.",
+        "nativeCrop": [
+          990,
+          495,
+          135,
+          90
+        ]
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The nearest wheel has spiral spokes",
+      "difficulty": "Easy",
+      "box": {
+        "x": 978,
+        "y": 653,
+        "width": 53,
+        "height": 55
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The front knee pad has a gold crescent",
+      "difficulty": "Medium",
+      "box": {
+        "x": 861,
+        "y": 327,
+        "width": 52,
+        "height": 57
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The streetlamp globe reflects an orange horizon",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1533,
+        "y": 133,
+        "width": 67,
+        "height": 56
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The balcony cat tail curls up",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 262,
+        "y": 69,
+        "width": 45,
+        "height": 79
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The left shoe bow loop stands upright",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 995,
+        "y": 497,
+        "width": 51,
+        "height": 58
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "refined-native.png"
+    }
+  ],
+  "notes": "Worker inspected nativepair, fivepairedcrops and 390stackedpair. Five separate object clues; anatomy/style/corepremise preserved. Unrelated drift excluded; exact native dimensions, five bounded nonoverlap boxes and outside original exact verified. Difficulty estimates unvalidated; root game/compositor/human/physicalphone pending. Full prompts/hash/source outputs retained. Required original-v4 used. Left bowloop targeted; rightloop outside selectedbox.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

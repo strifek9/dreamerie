@@ -1,0 +1,116 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-189",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-189-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-189-original-v4.png",
+    "sha256": "17DAE178B9C2764A3DB193DF6D1A2827FD0557CE21C301A8D996458387B718D6",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-189-altered-source-v4.png",
+    "sha256": "4C6561F8A51EDDC06426E97B5306CBECB841F25CEA00E2A541C6BA0123EB7B9E",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exactly full native1672x941 painting, five localized single-object differences. 1 red bicycle pedal at x755y587 rotates its own red platform into upright vertical orientation instead of horizontal; crank and bicycle frame unchanged. 2 left stone character near x268y458 closes its nearer large eye into dark curved eyelid; other eye mouth hat arms unchanged. 3 mint mug at bottom left x44y784: red circular polka dots become clear red diamond motifs, same mug body handle chair table. 4 green door at far upper left its round brass knocker near x54y87 becomes a single heart-shaped knocker ring, same mounting plate door. 5 golden bicycle bell near x1174y173: engraved clear crescent on bell dome, same dome mount handlebar. Preserve other stone character, bricks spokes roads fountain and all entire scene original.\", \"reference\": \"dream-189-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exactly full native1672x941 painting, five localized single-object differences. 1 red bicycle pedal at x755y587 rotates its own red platform into upright vertical orientation instead of horizontal; crank and bicycle frame unchanged. 2 left stone character near x268y458 closes its nearer large eye into dark curved eyelid; other eye mouth hat arms unchanged. 3 mint mug at bottom left x44y784: red circular polka dots become clear red diamond motifs, same mug body handle chair table. 4 green door at far upper left its round brass knocker near x54y87 becomes a single heart-shaped knocker ring, same mounting plate door. 5 golden bicycle bell near x1174y173: engraved clear crescent on bell dome, same dome mount handlebar. Preserve other stone character, bricks spokes roads fountain and all entire scene original.",
+        "reference": "dream-189-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "pedal-up",
+      "label": "The red bicycle pedal stands upright",
+      "difficulty": "Easy",
+      "box": {
+        "x": 712,
+        "y": 513,
+        "width": 87,
+        "height": 103
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "stone-eye",
+      "label": "The left stone closes one eye",
+      "difficulty": "Medium",
+      "box": {
+        "x": 244,
+        "y": 435,
+        "width": 38,
+        "height": 41
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "mug-diamonds",
+      "label": "The mug has red diamond motifs",
+      "difficulty": "Hard",
+      "box": {
+        "x": 0,
+        "y": 743,
+        "width": 80,
+        "height": 101
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "knocker-heart",
+      "label": "The green door has a heart knocker",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 21,
+        "y": 53,
+        "width": 59,
+        "height": 68
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "bell-moon",
+      "label": "The bicycle bell carries a crescent",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1162,
+        "y": 146,
+        "width": 37,
+        "height": 37
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": {
+    "humanTimed": false,
+    "physicalPhone": false,
+    "notes": "Five one-object edits. Pedal mechanism and stone eye action. Native original preserved.",
+    "outsideRegionsExact": true,
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sourceHashes": {
+      "source.png": "4c6561f8a51eddc06426e97b5306cbecb841f25cea00e2a541c6ba0123eb7b9e"
+    }
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

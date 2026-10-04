@@ -1,0 +1,111 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-171",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-171-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-171-original-v4.png",
+    "sha256": "9C3D2E3CC105723F138C9BC331DEC458B06D35AD5C02D05A891A90EAE6C242C3",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-171-altered-source-v4.png",
+    "sha256": "AF7A20A4E63BEA7E1C72F40EB1BC927A22B47ADB3E8C5CFA1D728D22FDC41676",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"Exactly5 isolated edits ONLY attached full original1672x941 The Orchestra of Unopened Letters painting. Preserve papercharacters/hands/anatomy/instruments/composition/impasto exact.1 centerconductor redwaxseal at904,339 keepsroundredseal but embossedrose becomes a clear five-point STAR.2 conductor's raised RIGHT whiteglove at1105,220 changes from openpalm to pointing ONE indexfinger upward, other fingersfolded, wrist/arm exact.3 cello-player's ONLY lower-left curled woodscroll at416,580 reverses its curl direction, curlingoutward LEFT ratherthan inwardRIGHT, remaining instrument/body/bow original andconnected.4 gold fountainpen NIB at831,85 heldaboveconductor has its slit opened into a visible small fork at tip, two goldtiphalves separated slightly while hole/handle/ribbon and remainderpen original.5 percussionist's ONLY RIGHT mallet creamroundhead at1523,153 becomes a small diamond-shaped creamhead, samehandle/othermallet/drums exact. Oneobjectinternalfeature perclue, no swaps/mergedobjects, cleanjoins, nograinonlyvariation/newprops/crop. Fullsamecanvas.\"}}, {\"file\": \"prompt-refine.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"ONE mechanical edit ONLY attached full native1672x941 Orchestra of Unopened Letterspainting. Foreground brass pipe/valve assembly at bottomRIGHT: ONLY its front small round brass outlet cap centered1519,716 hinges OPEN DOWNWARD, revealingdarkroundport at original1519,716 and capdangling connected by lower hinge at1519,728. Samecap nowvisible belowport near1519,749. Preserveouterpumpbody/tophandwheel/nearbyenvelopes and everyotherobject original. Connectedhinge/cleanrimgeometry; existingcap notduplicated. Full originalsameframe/style; nootheredits.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "Exactly5 isolated edits ONLY attached full original1672x941 The Orchestra of Unopened Letters painting. Preserve papercharacters/hands/anatomy/instruments/composition/impasto exact.1 centerconductor redwaxseal at904,339 keepsroundredseal but embossedrose becomes a clear five-point STAR.2 conductor's raised RIGHT whiteglove at1105,220 changes from openpalm to pointing ONE indexfinger upward, other fingersfolded, wrist/arm exact.3 cello-player's ONLY lower-left curled woodscroll at416,580 reverses its curl direction, curlingoutward LEFT ratherthan inwardRIGHT, remaining instrument/body/bow original andconnected.4 gold fountainpen NIB at831,85 heldaboveconductor has its slit opened into a visible small fork at tip, two goldtiphalves separated slightly while hole/handle/ribbon and remainderpen original.5 percussionist's ONLY RIGHT mallet creamroundhead at1523,153 becomes a small diamond-shaped creamhead, samehandle/othermallet/drums exact. Oneobjectinternalfeature perclue, no swaps/mergedobjects, cleanjoins, nograinonlyvariation/newprops/crop. Fullsamecanvas."
+      }
+    },
+    {
+      "file": "prompt-refine.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "ONE mechanical edit ONLY attached full native1672x941 Orchestra of Unopened Letterspainting. Foreground brass pipe/valve assembly at bottomRIGHT: ONLY its front small round brass outlet cap centered1519,716 hinges OPEN DOWNWARD, revealingdarkroundport at original1519,716 and capdangling connected by lower hinge at1519,728. Samecap nowvisible belowport near1519,749. Preserveouterpumpbody/tophandwheel/nearbyenvelopes and everyotherobject original. Connectedhinge/cleanrimgeometry; existingcap notduplicated. Full originalsameframe/style; nootheredits."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "star-wax-seal",
+      "label": "The wax seal carries an embossed star.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 873,
+        "y": 305,
+        "width": 66,
+        "height": 67
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "pointing-glove",
+      "label": "The conductor points one finger upward.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1063,
+        "y": 188,
+        "width": 78,
+        "height": 82
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "open-valve-cover",
+      "label": "The brass valve's front cover hangs open.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1470,
+        "y": 654,
+        "width": 92,
+        "height": 153
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "diamond-mallet",
+      "label": "The right mallet has a diamond-shaped head.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1500,
+        "y": 137,
+        "width": 95,
+        "height": 117
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "forked-pen-nib",
+      "label": "The fountain pen nib splits into two tips.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 798,
+        "y": 47,
+        "width": 63,
+        "height": 80
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Source generations and bounded composites inspected; five isolated objects. Difficulty labels are hypotheses. No human or physical-phone fairness validation.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

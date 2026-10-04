@@ -1,0 +1,116 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-146",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-146-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-146-original-v4.png",
+    "sha256": "7A762AE2695510938CC8017F183C9E3BA123EE1E22B6DD9D55B9D08F19094024",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-146-altered-source-v4.png",
+    "sha256": "85BD05613F6AF630963089160908CD07B2CCCC6DD1FBAA0554AC60673591BC8A",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact native full1672x941 painting, only five localized one-object differences. 1 central dancer's outstretched upper hand near x959 y242: fingers closed into a gentle fist rather than spread, preserve forearm pose joint and costume. 2 Gold winding key held by foreground harlequin at left near x194 y573: its two loop holes merge into single oval hole within one oval key bow, same shaft and hand. 3 red shoe nearest viewer on lower-right pedestal at x1480 y731: its ankle strap unbuckled with short strap tip lifted, other shoe and trailing long ribbon untouched. 4 large golden ribbon sculpture at x616 y269: bottom terminal curl curls inward to left instead of outward right, preserve rest of ribbon pedestal and miniature nearby dancer. 5 candelabra-like gold sculpture on center-right pedestal near x1138y459: central spherical hub has clear crescent engraving, same arms balls stand. Preserve all framing, museum, dolls and ribbons unchanged otherwise.\", \"reference\": \"dream-146-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact native full1672x941 painting, only five localized one-object differences. 1 central dancer's outstretched upper hand near x959 y242: fingers closed into a gentle fist rather than spread, preserve forearm pose joint and costume. 2 Gold winding key held by foreground harlequin at left near x194 y573: its two loop holes merge into single oval hole within one oval key bow, same shaft and hand. 3 red shoe nearest viewer on lower-right pedestal at x1480 y731: its ankle strap unbuckled with short strap tip lifted, other shoe and trailing long ribbon untouched. 4 large golden ribbon sculpture at x616 y269: bottom terminal curl curls inward to left instead of outward right, preserve rest of ribbon pedestal and miniature nearby dancer. 5 candelabra-like gold sculpture on center-right pedestal near x1138y459: central spherical hub has clear crescent engraving, same arms balls stand. Preserve all framing, museum, dolls and ribbons unchanged otherwise.",
+        "reference": "dream-146-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "ribbon-curl",
+      "label": "The gold ribbon curls inward at the bottom",
+      "difficulty": "Easy",
+      "box": {
+        "x": 525,
+        "y": 246,
+        "width": 177,
+        "height": 153
+      },
+      "edgeFade": 5
+    },
+    {
+      "id": "hand-fist",
+      "label": "The central dancer closes its hand",
+      "difficulty": "Medium",
+      "box": {
+        "x": 930,
+        "y": 224,
+        "width": 61,
+        "height": 44
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "key-oval",
+      "label": "The harlequin key has one oval loop",
+      "difficulty": "Hard",
+      "box": {
+        "x": 164,
+        "y": 526,
+        "width": 54,
+        "height": 96
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "shoe-strap",
+      "label": "The rear red shoe strap is unbuckled",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1424,
+        "y": 640,
+        "width": 62,
+        "height": 65
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "hub-crescent",
+      "label": "The gold sculpture hub carries a crescent",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1118,
+        "y": 443,
+        "width": 40,
+        "height": 43
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": {
+    "humanTimed": false,
+    "physicalPhone": false,
+    "notes": "Unbuckled strap realized on rear/left shoe instead of planned front shoe; accurately labelled actual selected object. Fist action and strap mechanism; five separate objects.",
+    "outsideRegionsExact": true,
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sourceHashes": {
+      "source.png": "85bd05613f6af630963089160908cd07b2cccc6dd1fbaa0554ac60673591bc8a"
+    }
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

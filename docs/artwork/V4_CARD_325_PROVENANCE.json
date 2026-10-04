@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-325",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-325-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-325-original-v4.png",
+    "sha256": "A2F5CFD01465F42549176C1A3CAAFE0FE283C623589C9D6C8898AB024D6B9E1E",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-325-altered-source-v4.png",
+    "sha256": "C076D9889FDF7B7A8A15CF5A94399F36F48D7BFA90D3D647E586BA1DEE1F3092",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact native 1672x941 painterly purple squid operating brass switchboard and shell telephones. Five isolated single-object changes: 1 foreground blue shell inner bowl x1360y738 gains one broad gold crescent reflection, shell/cable exact; 2 lantern FRONT lattice between x74y446 and x155y530 gains ONE diagonal brass crossbar, rest lantern exact; 3 nearest lever brass ball at x361y598 becomes a triangular hollow loop atop SAME vertical shaft, all other levers exact; 4 one top-right EMPTY socket at x1242y134 has single diagonal brass bar across opening, socket rim and others exact; 5 lower-right panel round bolt x1297y630 gains clear X slot. Preserve squid anatomy/suckers, cables, plugs, shell outlines and scene paint texture. No extra changes.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-325-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact native 1672x941 painterly purple squid operating brass switchboard and shell telephones. Five isolated single-object changes: 1 foreground blue shell inner bowl x1360y738 gains one broad gold crescent reflection, shell/cable exact; 2 lantern FRONT lattice between x74y446 and x155y530 gains ONE diagonal brass crossbar, rest lantern exact; 3 nearest lever brass ball at x361y598 becomes a triangular hollow loop atop SAME vertical shaft, all other levers exact; 4 one top-right EMPTY socket at x1242y134 has single diagonal brass bar across opening, socket rim and others exact; 5 lower-right panel round bolt x1297y630 gains clear X slot. Preserve squid anatomy/suckers, cables, plugs, shell outlines and scene paint texture. No extra changes.",
+        "reference": "D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-325-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The front blue shell reflects a gold crescent",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1292,
+        "y": 672,
+        "width": 76,
+        "height": 115
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The lantern has a diagonal lattice bar",
+      "difficulty": "Medium",
+      "box": {
+        "x": 80,
+        "y": 479,
+        "width": 75,
+        "height": 66
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The nearest lever has a triangular loop",
+      "difficulty": "Hard",
+      "box": {
+        "x": 333,
+        "y": 568,
+        "width": 58,
+        "height": 59
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The top-right socket has a diagonal bar",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1222,
+        "y": 111,
+        "width": 42,
+        "height": 49
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The corner pivot bolt has an X slot",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1299,
+        "y": 563,
+        "width": 40,
+        "height": 41
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390 stacked pair. Five independently selectable localized object clues. Native dimensions, five bounded nonoverlapping boxes and exact original pixels outside verified. Difficulty estimates unvalidated; root compositor/game, human difficulty and physical phone approval pending. Full prompt/source hash chain retained.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-040",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-040-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-040-original-v4.png",
+    "sha256": "7C2F953358219E80608A0A0A67CB6AEF5E9AB2CC6D83302B1ABBD777239D7D64",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-040-altered-source-v4.png",
+    "sha256": "A03FF63CEE1EF17218B8998BF164EDBACE39741D1C2385A2A71689FE69033802",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit the full original landscape1672x941 porcelain horse painting for spot difference. Preserve framing,pose,painterlytexture,palette and all objects. Make EXACTLYfive localized changes: (1) three raindrops hanging under caged cloud become upside-down droplets with points down and rounded tops, samepositions; (2) gold fivepoint star on open cage door rotates so a point faces down rather than up, same size/center; (3) two navy reins across lower horse neck intertwine once with clear over-under crossing instead of parallelcurves, retain continuous endpoints; (4) silver diamond buckle on saddle strap becomes square orientation rather than diamond, same center/material; (5) blue floral vine on raised frontleg near knee has its three prominent leaves face toward hoof instead of toward chest, same stem andlocation. Nootherchanges, no text, no extra objects. Retain composition exactly.\"}}, {\"file\": \"refine-prompt.json\", \"content\": {\"prompt\": \"Edit exact full1672x941 originalpainting with ONLY two singleobjectchanges. 1) white hanging bridle tassel under horsejaw at x1180 y495 becomes a clearly twisted white braid ending in short fringe, samebounds top attachment andsize. 2) horse blue floral neckpattern at x1005 y345: bend ONLY the prominent small leaf pointing up-right on its stem to point down-right instead, retain its attachedstem and nearbyflowers. Allotherobjects includingreins unchanged EXACTLY. Landscapefullframe, no crop, no text.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit the full original landscape1672x941 porcelain horse painting for spot difference. Preserve framing,pose,painterlytexture,palette and all objects. Make EXACTLYfive localized changes: (1) three raindrops hanging under caged cloud become upside-down droplets with points down and rounded tops, samepositions; (2) gold fivepoint star on open cage door rotates so a point faces down rather than up, same size/center; (3) two navy reins across lower horse neck intertwine once with clear over-under crossing instead of parallelcurves, retain continuous endpoints; (4) silver diamond buckle on saddle strap becomes square orientation rather than diamond, same center/material; (5) blue floral vine on raised frontleg near knee has its three prominent leaves face toward hoof instead of toward chest, same stem andlocation. Nootherchanges, no text, no extra objects. Retain composition exactly."
+      }
+    },
+    {
+      "file": "refine-prompt.json",
+      "content": {
+        "prompt": "Edit exact full1672x941 originalpainting with ONLY two singleobjectchanges. 1) white hanging bridle tassel under horsejaw at x1180 y495 becomes a clearly twisted white braid ending in short fringe, samebounds top attachment andsize. 2) horse blue floral neckpattern at x1005 y345: bend ONLY the prominent small leaf pointing up-right on its stem to point down-right instead, retain its attachedstem and nearbyflowers. Allotherobjects includingreins unchanged EXACTLY. Landscapefullframe, no crop, no text."
+      }
+    }
+  ],
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-040-refine-source-v4.png",
+      "sha256": "96612B50B038375FA7D29255DAA33A236CF90E449D3E44094FA6B9239A39F9C0",
+      "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit the full original landscape1672x941 porcelain horse painting for spot difference. Preserve framing,pose,painterlytexture,palette and all objects. Make EXACTLYfive localized changes: (1) three raindrops hanging under caged cloud become upside-down droplets with points down and rounded tops, samepositions; (2) gold fivepoint star on open cage door rotates so a point faces down rather than up, same size/center; (3) two navy reins across lower horse neck intertwine once with clear over-under crossing instead of parallelcurves, retain continuous endpoints; (4) silver diamond buckle on saddle strap becomes square orientation rather than diamond, same center/material; (5) blue floral vine on raised frontleg near knee has its three prominent leaves face toward hoof instead of toward chest, same stem andlocation. Nootherchanges, no text, no extra objects. Retain composition exactly.\"}}, {\"file\": \"refine-prompt.json\", \"content\": {\"prompt\": \"Edit exact full1672x941 originalpainting with ONLY two singleobjectchanges. 1) white hanging bridle tassel under horsejaw at x1180 y495 becomes a clearly twisted white braid ending in short fringe, samebounds top attachment andsize. 2) horse blue floral neckpattern at x1005 y345: bend ONLY the prominent small leaf pointing up-right on its stem to point down-right instead, retain its attachedstem and nearbyflowers. Allotherobjects includingreins unchanged EXACTLY. Landscapefullframe, no crop, no text.\"}}]"
+    }
+  ],
+  "authoredRegions": [
+    {
+      "id": "braided-tassel",
+      "label": "The hanging white tassel becomes a twisted braid.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1160,
+        "y": 442,
+        "width": 48,
+        "height": 124
+      },
+      "edgeFade": 5,
+      "source": "refine.png"
+    },
+    {
+      "id": "center-drop",
+      "label": "The middle raindrop points downward.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 744,
+        "y": 253,
+        "width": 31,
+        "height": 60
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "star-turn",
+      "label": "The cage-door star points downward.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 866,
+        "y": 168,
+        "width": 68,
+        "height": 79
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "square-buckle",
+      "label": "The saddle buckle sits square instead of diagonally.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 860,
+        "y": 445,
+        "width": 53,
+        "height": 54
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "neck-leaf",
+      "label": "The lower blue neck leaf points right instead of down.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1035,
+        "y": 364,
+        "width": 42,
+        "height": 30
+      },
+      "edgeFade": 3,
+      "source": "refine.png"
+    }
+  ],
+  "notes": {
+    "humanTimed": false,
+    "physicalPhone": false,
+    "notes": "Only centerdrop selected; neighboringdrops original. Excluded reins swap and other sourcechanges.",
+    "outsideRegionsExact": true,
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sourceHashes": {
+      "refine.png": "96612b50b038375fa7d29255daa33a236cf90e449d3e44094fa6b9239a39f9c0",
+      "source.png": "a03ff63cee1ef17218b8998bf164edbace39741d1c2385a2a71689fe69033802"
+    },
+    "visualSelfReview": "Full source, five selected paired crops and 390px composite inspected; one independently selectable changed object per region."
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

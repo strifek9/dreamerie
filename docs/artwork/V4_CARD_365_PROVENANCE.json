@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-365",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-365-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-365-original-v4.png",
+    "sha256": "D928C974FADC2979A937E41CBA7F525877793985273C4758A40E5F1A5DEFE427",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-365-altered-source-v4.png",
+    "sha256": "3B70E9543ADBD2CA1B8F4EA7A1D2F135F46C71FCA5C0D0910A4B944DAED54279",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit this exact original1672x941 painting preserving frame/room/style. Exactly FIVE localized single-object differences:1 framed moon picture native550110 full circle becomes crescent, same picture.2 isolated envelope lower-right native1403805 flap opens upright into triangular raised flap, same envelope base/location.3 foreground toy sailboat at200665 ONLY right triangular sail gains ONE dark teal star motif, all other sails/mast/hull exact.4 large foreground door brass knob at786382 becomes square-rounded brass knob, same position/lockplate original.5 far-right chest front latch native1524641 existing keyhole becomes heart shaped, same latch dimensions and allotherchest original. No chair/ribbon swaps or distantobjects merged; all remaining original exact.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit this exact original1672x941 painting preserving frame/room/style. Exactly FIVE localized single-object differences:1 framed moon picture native550110 full circle becomes crescent, same picture.2 isolated envelope lower-right native1403805 flap opens upright into triangular raised flap, same envelope base/location.3 foreground toy sailboat at200665 ONLY right triangular sail gains ONE dark teal star motif, all other sails/mast/hull exact.4 large foreground door brass knob at786382 becomes square-rounded brass knob, same position/lockplate original.5 far-right chest front latch native1524641 existing keyhole becomes heart shaped, same latch dimensions and allotherchest original. No chair/ribbon swaps or distantobjects merged; all remaining original exact."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "crescent-moon",
+      "label": "The framed moon becomes a crescent.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 515,
+        "y": 79,
+        "width": 60,
+        "height": 64
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "open-envelope",
+      "label": "The envelope\u2019s flap opens upright.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1306,
+        "y": 733,
+        "width": 179,
+        "height": 110
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "star-sail",
+      "label": "The toy boat\u2019s right sail bears a star.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 218,
+        "y": 650,
+        "width": 33,
+        "height": 46
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "square-knob",
+      "label": "The foreground door knob becomes square.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 767,
+        "y": 359,
+        "width": 43,
+        "height": 50
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "heart-keyhole",
+      "label": "The chest latch has a heart-shaped keyhole.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1506,
+        "y": 635,
+        "width": 32,
+        "height": 32
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five paired crops, full composite and 390-pixel stacked pair inspected. Single-object changes; difficulty hypotheses only. Root browser/hit QA and human fairness remain pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

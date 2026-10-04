@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-311",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-311-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-311-original-v4.png",
+    "sha256": "A3C44AAC42509FF64C084485014C6478E77127835DA16C35130499FC9EC71300",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-311-altered-source-v4.png",
+    "sha256": "BFD6C8933551A77F768C30E43C447A2CCC101FC7CFE3BD009D155CA8F64F4468",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact native full 1672x941 painterly caterpillar living inside glass thimble houses. FIVE isolated SINGLE-object changes only: 1) foreground brass button x1436y787 reflects blue crescent on its LEFT inner metal face, holes/thread exact; 2) gold curtain tieback knob x386y414 has a triangular dark opening instead of round central shape, curtains/tie exact; 3) large brass latch between central and right houses x895y418 central round pin has clear X slot, other latch parts exact; 4) single green leaf inside LEFT glass house x129y407 has a curving gold S vein down its central surface, leaf outline and glass exact; 5) purple cushion inside right-middle glass house x1155y535 has a small gold star embroidery on its upper-left fabric, stitches/outline exact. Preserve caterpillar anatomy/antennae/face and entire glass geometry; no other edits.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-311-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact native full 1672x941 painterly caterpillar living inside glass thimble houses. FIVE isolated SINGLE-object changes only: 1) foreground brass button x1436y787 reflects blue crescent on its LEFT inner metal face, holes/thread exact; 2) gold curtain tieback knob x386y414 has a triangular dark opening instead of round central shape, curtains/tie exact; 3) large brass latch between central and right houses x895y418 central round pin has clear X slot, other latch parts exact; 4) single green leaf inside LEFT glass house x129y407 has a curving gold S vein down its central surface, leaf outline and glass exact; 5) purple cushion inside right-middle glass house x1155y535 has a small gold star embroidery on its upper-left fabric, stitches/outline exact. Preserve caterpillar anatomy/antennae/face and entire glass geometry; no other edits.",
+        "reference": "D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-311-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The brass button reflects a blue crescent",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1294,
+        "y": 726,
+        "width": 75,
+        "height": 97
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The left leaf has a gold S vein",
+      "difficulty": "Medium",
+      "box": {
+        "x": 73,
+        "y": 265,
+        "width": 83,
+        "height": 254
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The purple cushion has gold star embroidery",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1032,
+        "y": 453,
+        "width": 60,
+        "height": 56
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The curtain knob has a triangular opening",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 363,
+        "y": 387,
+        "width": 42,
+        "height": 40
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The large latch pin has an X slot",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 873,
+        "y": 396,
+        "width": 40,
+        "height": 40
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390 stacked pair. Five independently selectable localized object clues. Native dimensions, five bounded nonoverlapping boxes and exact original pixels outside verified. Difficulty estimates unvalidated; root compositor/game, human difficulty and physical phone approval pending. Full prompt/source hash chain retained.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

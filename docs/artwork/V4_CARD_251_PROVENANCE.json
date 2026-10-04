@@ -1,0 +1,110 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-251",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-251-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-251-original-v4.png",
+    "sha256": "C16EBF199E806F925A93695DF06645257A2E4612F3B9304FF1759AA5A3E5F508",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-251-altered-source-v4.png",
+    "sha256": "46984E0531D72C3080161843AD087794B45AD868D46B3241FE7FF5A20F1D8518",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact original painterly lobster painting with exactly five localized independently selectable single-object changes. Preserve lobster anatomy, repaired ceramics, original frame/style. 1 Lobster's nearer lower visible eye at x541 y149 closes in a gentle wink; farther upper eye unchanged. 2 Ceramic cup handle at x585 y323 opens at its top into a C-shaped hook rather than closed loop; cup body, holding claws unchanged. 3 The brass shell-shaped spoon in foreground has a broad heart-shaped pierced hole centered in its bowl near x600 y815, rest spoon unchanged. 4 The scallop shell emblem on blue tin at right has its central fan ribs curl into one spiral motif, whole shell silhouette/tin unchanged. 5 The painted blue sailboat on paper napkin bottom-right has its right-hand sail bowed concave inward instead of straight triangular, mast/other sail/boat hull unchanged. Each single target, no two-object swaps or other details. Keep clean local texture.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact original painterly lobster painting with exactly five localized independently selectable single-object changes. Preserve lobster anatomy, repaired ceramics, original frame/style. 1 Lobster's nearer lower visible eye at x541 y149 closes in a gentle wink; farther upper eye unchanged. 2 Ceramic cup handle at x585 y323 opens at its top into a C-shaped hook rather than closed loop; cup body, holding claws unchanged. 3 The brass shell-shaped spoon in foreground has a broad heart-shaped pierced hole centered in its bowl near x600 y815, rest spoon unchanged. 4 The scallop shell emblem on blue tin at right has its central fan ribs curl into one spiral motif, whole shell silhouette/tin unchanged. 5 The painted blue sailboat on paper napkin bottom-right has its right-hand sail bowed concave inward instead of straight triangular, mast/other sail/boat hull unchanged. Each single target, no two-object swaps or other details. Keep clean local texture."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The nearer lobster eye winks",
+      "difficulty": "Easy",
+      "box": {
+        "x": 502,
+        "y": 123,
+        "width": 72,
+        "height": 65
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The cup handle opens into a hook",
+      "difficulty": "Medium",
+      "box": {
+        "x": 581,
+        "y": 281,
+        "width": 56,
+        "height": 76
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The spoon bowl has a heart aperture",
+      "difficulty": "Hard",
+      "box": {
+        "x": 568,
+        "y": 789,
+        "width": 69,
+        "height": 59
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The tin shell ribs curl into a spiral",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1524,
+        "y": 472,
+        "width": 100,
+        "height": 111
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The napkin sail bows inward",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1411,
+        "y": 820,
+        "width": 63,
+        "height": 79
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "visually inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "nativePreflight": "source equals actual original size, five nonoverlapping boxes",
+    "difficulty": "hypotheses; human and browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

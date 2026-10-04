@@ -1,0 +1,115 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-071",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-071-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-071-original-v4.png",
+    "sha256": "0F74278E5BE69316CC1BA16FAF7D5D3EAA2B2EDE789C0EDD5583E7B12C3EF7F2",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-071-altered-source-v4.png",
+    "sha256": "E04B892B90B2154A136D21FF3ECDAC456E0FFA210A222F240007418D80918221",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precisely edit attached Dreameriepainting native1672x941. Preserve entirecomposition, bluefreestandingdoor, desertreflection/water/clouds/flower/lighting/paint. Exactly five single-objectlocalizedchanges:1 red rounddoorknobx893y347 becomes a facetedreddiamond, sameposition;2 brassmail-slot hangingflapx823y401 is CLOSED flatagainst door rather than juttingout, samehousing;3 whitecrescent inupperdoorpanelx817y204 faces LEFT instead ofright (reverse crescentinternalorientation), preservepaint;4 top brasshingex706y145 is a FOLDEDhinge withone narrowgoldleaf angledforward towardright, insteadoftwoflatrectangularleaves; doorframe/pinposition remains;5 sandytrackINSIDE doorreflection atx819y847 bendsLEFT aroundsamebush instead ofright, preserveallreflectionrocks/cacti anddoorboundary. Keepfive boundedloci, no otherobjects move/change, no swaps.\"}}, {\"file\": \"prompt-b.json\", \"content\": {\"prompt\": \"Precise goldhinge detail edit. Keep bluepainteddooredges, hingeoutergoldrectangle, ALLfour screwpositions unchanged. ONLY central dark seam between two hinge leaves should run DIAGONALLY from topLEFT ofgoldrectangle to bottomRIGHT instead ofvertically. This singlehinge uses an angledcentral joint. Definite visible darkjoin fullheight, retainpaintstyle andframe.\"}}, {\"file\": \"prompt-c.json\", \"content\": {\"prompt\": \"Edit attached reflecteddesertcrop only the sandytrack marked by two darkbrown wheel-rut rows. It currently slopes downRIGHT. Reroute SAMEsingletrack into gentle bend downLEFT, beginning at SAMEuppercenter point then bending towardlowerleft. Retain surroundingbushleft, terraincolors/reflectionedges andallothergroundfeatures unchanged. Painterly distinct two parallelrut rows, nottext/no newobjects.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precisely edit attached Dreameriepainting native1672x941. Preserve entirecomposition, bluefreestandingdoor, desertreflection/water/clouds/flower/lighting/paint. Exactly five single-objectlocalizedchanges:1 red rounddoorknobx893y347 becomes a facetedreddiamond, sameposition;2 brassmail-slot hangingflapx823y401 is CLOSED flatagainst door rather than juttingout, samehousing;3 whitecrescent inupperdoorpanelx817y204 faces LEFT instead ofright (reverse crescentinternalorientation), preservepaint;4 top brasshingex706y145 is a FOLDEDhinge withone narrowgoldleaf angledforward towardright, insteadoftwoflatrectangularleaves; doorframe/pinposition remains;5 sandytrackINSIDE doorreflection atx819y847 bendsLEFT aroundsamebush instead ofright, preserveallreflectionrocks/cacti anddoorboundary. Keepfive boundedloci, no otherobjects move/change, no swaps."
+      }
+    },
+    {
+      "file": "prompt-b.json",
+      "content": {
+        "prompt": "Precise goldhinge detail edit. Keep bluepainteddooredges, hingeoutergoldrectangle, ALLfour screwpositions unchanged. ONLY central dark seam between two hinge leaves should run DIAGONALLY from topLEFT ofgoldrectangle to bottomRIGHT instead ofvertically. This singlehinge uses an angledcentral joint. Definite visible darkjoin fullheight, retainpaintstyle andframe."
+      }
+    },
+    {
+      "file": "prompt-c.json",
+      "content": {
+        "prompt": "Edit attached reflecteddesertcrop only the sandytrack marked by two darkbrown wheel-rut rows. It currently slopes downRIGHT. Reroute SAMEsingletrack into gentle bend downLEFT, beginning at SAMEuppercenter point then bending towardlowerleft. Retain surroundingbushleft, terraincolors/reflectionedges andallothergroundfeatures unchanged. Painterly distinct two parallelrut rows, nottext/no newobjects."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The mail-slot flap lies closed against the door",
+      "difficulty": "Easy",
+      "box": {
+        "x": 769,
+        "y": 363,
+        "width": 98,
+        "height": 57
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The doorknob is faceted",
+      "difficulty": "Medium",
+      "box": {
+        "x": 874,
+        "y": 329,
+        "width": 40,
+        "height": 37
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The door crescent faces the other way",
+      "difficulty": "Hard",
+      "box": {
+        "x": 774,
+        "y": 149,
+        "width": 78,
+        "height": 104
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The reflected track curves to the left",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 773,
+        "y": 824,
+        "width": 130,
+        "height": 62
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The upper hinge has a diagonal central joint",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 687,
+        "y": 117,
+        "width": 43,
+        "height": 65
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full nativecomposite/source/fivepaired crops/390stack inspected. Initialhinge/pathrequests unchanged: builtin crops refined angledhingejoint and reflectedtrackleftturn. Track composited via old/new brownrut union R>1.65G,R>2B,5pxdilate/1blur preservesneighborbush. Allfive observed singleobjectdifferences; originaloutsideunion unchanged. No brokenjoinsdetected, no humantiming/physicalphoneapproval; root runtimeQArequired.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

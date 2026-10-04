@@ -1,0 +1,104 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-170",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-170-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-170-original-v4.png",
+    "sha256": "209A7DA46E1D1F7A0013B7F3786E5114C8D5449BCBFA60933D61F3020899EACB",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-170-altered-source-v4.png",
+    "sha256": "6E5ADF9B7F547B46A77E109FAA02BFC49BB2E3FCD77F4972F9ACB49A793CF13E",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"Five deliberate one-object edits ONLY attached fullnative1672x941original The Lighthouse in the Fingertip painting. Keep gloveanatomy/stitching/lighting/frame/paint exact.1 blue cuff button at157,500 keeps samebutton but cream sewn X rotates into upright PLUScross.2 lighthouse front window at1040,126 retains glass/frame but internal straight crossbar becomes diagonal X.3 ONLY red sailboat pennant at1144,380 points LEFT of mast insteadright, sameflag/mast/sail/hull unchanged.4 brass thimble's flared BOTTOMbase at357,814 changes from round rim to clearly hexagonal flange while top/body/perforations original.5 ONLY singleupper-left blue thread oval loop on tabletop near113,757 becomes a compact FIGURE-EIGHTdoubleloop made of SAME continuous thread, ends connect back to originalthreadroutes, surrounding loose thread paths/table/thimble unchanged. Exactlyone object/internalpattern perclue no swaps; connectedgeometry, no grain-only variations/unrelatededits. Full samecanvas.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "Five deliberate one-object edits ONLY attached fullnative1672x941original The Lighthouse in the Fingertip painting. Keep gloveanatomy/stitching/lighting/frame/paint exact.1 blue cuff button at157,500 keeps samebutton but cream sewn X rotates into upright PLUScross.2 lighthouse front window at1040,126 retains glass/frame but internal straight crossbar becomes diagonal X.3 ONLY red sailboat pennant at1144,380 points LEFT of mast insteadright, sameflag/mast/sail/hull unchanged.4 brass thimble's flared BOTTOMbase at357,814 changes from round rim to clearly hexagonal flange while top/body/perforations original.5 ONLY singleupper-left blue thread oval loop on tabletop near113,757 becomes a compact FIGURE-EIGHTdoubleloop made of SAME continuous thread, ends connect back to originalthreadroutes, surrounding loose thread paths/table/thimble unchanged. Exactlyone object/internalpattern perclue no swaps; connectedgeometry, no grain-only variations/unrelatededits. Full samecanvas."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "upright-button-stitch",
+      "label": "The cuff button stitches form a plus sign.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 120,
+        "y": 453,
+        "width": 77,
+        "height": 85
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "left-pennant",
+      "label": "The boat pennant points left.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1085,
+        "y": 355,
+        "width": 84,
+        "height": 43
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "figure-eight-thread",
+      "label": "The blue thread loop forms a figure eight.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 0,
+        "y": 703,
+        "width": 218,
+        "height": 111
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "hexagonal-thimble-base",
+      "label": "The thimble base becomes hexagonal.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 258,
+        "y": 778,
+        "width": 194,
+        "height": 69
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "diagonal-window-braces",
+      "label": "The lighthouse window gains diagonal braces.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1011,
+        "y": 94,
+        "width": 61,
+        "height": 68
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Source generations and bounded composites inspected; five isolated objects. Difficulty labels are hypotheses. No human or physical-phone fairness validation.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

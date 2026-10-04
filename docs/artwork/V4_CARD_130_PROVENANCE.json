@@ -1,0 +1,115 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-130",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-130-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-130-original-v4.png",
+    "sha256": "05CB274D9A3342D838C1839812378F5C7A334163DE933719C56A8231995443BE",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-130-altered-source-v4.png",
+    "sha256": "17223D7BA0592A2CF190E20F9EE63212AA4DDE48AE20E0BB32C0C31D492F145D",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Use case precise-object-edit. Keep this exact wide painted Dreamerie scene: playful ninja tiptoeing above sleeping animals hidden under floor panels; anatomical proportions, shadows, environment and all animals untouched. Exactly FIVE localized single-object changes: 1 ninja red bow's LEFT loop narrows and turns sideways into an elongated folded loop; rest of bow untouched. 2 loose blue floor-panel floral emblem at RIGHT has its TOP petal curled downward toward flower center instead of pointing up, preserve other three petals and panel. 3 brass ring pull on upper-right wooden chest becomes a DROP-SHAPED pointed loop rather than circle, same attachmentplate unchanged. 4 the held cream floor hatch immediately beneath ninja RIGHT hand opens at a shallower angle, same hinge/animal/ninja hand endpoints; change only top raised corner and hatch plane within immediate original hatch area. 5 small gold waist bell has a HORIZONTAL slit opening instead of vertical keyhole cutout, same body/light. Exactly five meaningful changes, no independent animals changed, no color swapping, no grain/specks. Preserve full original frame, grain-free flowing brushwork. Return one matching image.\"}}, {\"file\": \"broom-prompt.json\", \"content\": {\"prompt\": \"Precise edit of ONLY the broom BRISTLE HEAD shadow in this crop. The dark bristle fan currently hangs downward with long straight fringes. Curl ONLY its LOWER fringed ends UP and toward the RIGHT into a distinct sweeping hooked tuft, as if soft broom bristles bend during sweeping. Keep upper shaft, hand shadow, binding rings, neighboring character shadow, wall paint and floor skirting exactly unchanged. Same dark blue shadow material, one coherent broom-shadow part. Preserve native painted style, no specks. Return one cropped edited counterpart.\", \"nativeCrop\": [395, 236, 107, 172]}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Use case precise-object-edit. Keep this exact wide painted Dreamerie scene: playful ninja tiptoeing above sleeping animals hidden under floor panels; anatomical proportions, shadows, environment and all animals untouched. Exactly FIVE localized single-object changes: 1 ninja red bow's LEFT loop narrows and turns sideways into an elongated folded loop; rest of bow untouched. 2 loose blue floor-panel floral emblem at RIGHT has its TOP petal curled downward toward flower center instead of pointing up, preserve other three petals and panel. 3 brass ring pull on upper-right wooden chest becomes a DROP-SHAPED pointed loop rather than circle, same attachmentplate unchanged. 4 the held cream floor hatch immediately beneath ninja RIGHT hand opens at a shallower angle, same hinge/animal/ninja hand endpoints; change only top raised corner and hatch plane within immediate original hatch area. 5 small gold waist bell has a HORIZONTAL slit opening instead of vertical keyhole cutout, same body/light. Exactly five meaningful changes, no independent animals changed, no color swapping, no grain/specks. Preserve full original frame, grain-free flowing brushwork. Return one matching image."
+      }
+    },
+    {
+      "file": "broom-prompt.json",
+      "content": {
+        "prompt": "Precise edit of ONLY the broom BRISTLE HEAD shadow in this crop. The dark bristle fan currently hangs downward with long straight fringes. Curl ONLY its LOWER fringed ends UP and toward the RIGHT into a distinct sweeping hooked tuft, as if soft broom bristles bend during sweeping. Keep upper shaft, hand shadow, binding rings, neighboring character shadow, wall paint and floor skirting exactly unchanged. Same dark blue shadow material, one coherent broom-shadow part. Preserve native painted style, no specks. Return one cropped edited counterpart.",
+        "nativeCrop": [
+          395,
+          236,
+          107,
+          172
+        ]
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "bow",
+      "label": "The red bow's left loop folds sideways.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 647,
+        "y": 191,
+        "width": 85,
+        "height": 87
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "broom",
+      "label": "The broom shadow fringes curl upward.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 403,
+        "y": 283,
+        "width": 98,
+        "height": 113
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "petal",
+      "label": "The floor emblem's upper petal curls inward.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1450,
+        "y": 413,
+        "width": 52,
+        "height": 66
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "ring",
+      "label": "The chest pull becomes a pointed loop.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1518,
+        "y": 246,
+        "width": 62,
+        "height": 60
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "bell",
+      "label": "The waist bell has a horizontal opening.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 703,
+        "y": 338,
+        "width": 49,
+        "height": 46
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses only. Root feathered compositor and game QA pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

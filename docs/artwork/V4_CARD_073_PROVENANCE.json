@@ -1,0 +1,104 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-073",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-073-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-073-original-v4.png",
+    "sha256": "027CB896F0A7CF11301A4181DB504FB5FBC33C17F3B0AB3E0137CB004B51A82C",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-073-altered-source-v4.png",
+    "sha256": "549CB45EE2A286C3FF34B07DF247712FB13DE15E738ADEDCF0B8BB365E99DECE",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"Precise-object-edit Dreamerie Garden of Spectacles attached. Native1672x941 unchangedwideframe, painterlygrainfree. Preserve allobjects, rabbitanatomy, flowers, spectacles, moths, water except FIVEsingleobject localized changes:1 ONLY stone bench heart-shaped cutout x1214,y688 becomes diamond cutout, sameholecenter;2 ONLY fountain's central waterjet x1074,y480 arcs LEFT rather than falling straight down, basebasinoriginal;3 ONLY large bronze spectacle hinge on left atx370,y270 swings its hinge tongue INWARD toward lens rather than hangingoutward, retain goldjoint connected and frame unchanged;4 ONLY gold spiral carving on roundstone right x1565,y608 curls opposite way at its central endpoint, stoneoutershapeoriginal;5 ONLY rabbit's blue tie knot x1276,y480 passes UNDER collar band rather than OVER, keep rabbit/collarrest/tieoutsideknot exact. No swaps ofindependentobjects, no severalchangeson distanttargets or microscopicnoise, one changedobject perclue. No addedtext/newprops/no crop/restyle.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "Precise-object-edit Dreamerie Garden of Spectacles attached. Native1672x941 unchangedwideframe, painterlygrainfree. Preserve allobjects, rabbitanatomy, flowers, spectacles, moths, water except FIVEsingleobject localized changes:1 ONLY stone bench heart-shaped cutout x1214,y688 becomes diamond cutout, sameholecenter;2 ONLY fountain's central waterjet x1074,y480 arcs LEFT rather than falling straight down, basebasinoriginal;3 ONLY large bronze spectacle hinge on left atx370,y270 swings its hinge tongue INWARD toward lens rather than hangingoutward, retain goldjoint connected and frame unchanged;4 ONLY gold spiral carving on roundstone right x1565,y608 curls opposite way at its central endpoint, stoneoutershapeoriginal;5 ONLY rabbit's blue tie knot x1276,y480 passes UNDER collar band rather than OVER, keep rabbit/collarrest/tieoutsideknot exact. No swaps ofindependentobjects, no severalchangeson distanttargets or microscopicnoise, one changedobject perclue. No addedtext/newprops/no crop/restyle."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "bench-cutout",
+      "label": "The bench's heart cutout becomes a diamond.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1180,
+        "y": 663,
+        "width": 67,
+        "height": 60
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "collar-knot",
+      "label": "The rabbit's collar turns white.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1245,
+        "y": 466,
+        "width": 75,
+        "height": 47
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "fountain-jet",
+      "label": "The fountain jet arches to the left.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 936,
+        "y": 431,
+        "width": 153,
+        "height": 153
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "hinge",
+      "label": "The spectacle hinge folds inward.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 342,
+        "y": 202,
+        "width": 62,
+        "height": 111
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "spiral",
+      "label": "The stone's spiral curls in the opposite direction.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1507,
+        "y": 562,
+        "width": 95,
+        "height": 80
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": "Observed source neckwear now white collar over tieknot; labelactual notpresumed. No humanvalidation. Fullsource+workercomposite+all5pairedcrops+390stack inspected.0outside5regionschangesverified,fivecluesnonzero. Sourcehash549cb45ee2a286c3ff34b07df247712fb13de15e738adedcf0b8bb365e99dece. Difficultyhypothesesonly.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

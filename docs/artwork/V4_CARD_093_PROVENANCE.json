@@ -1,0 +1,118 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-093",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-093-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-093-original-v4.png",
+    "sha256": "E59A40F08B752DBEBD810324B38EB8FC35FE899834F00CC2A9EC7D7FF0930FC3",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-093-altered-source-v4.png",
+    "sha256": "CA277BF4F6132774930AE768927E297EDCF9212CEF45AE530689F85016DAAE3E",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"Precise-object-edit Dreamerie Paper Swan's Tailor attached native1672x941. Preserve exact composition, swan/rabbitanatomy, folds, cloth/props/lights, grainfreepainting. Exactlyfive SINGLEOBJECT localchanges:1 ONLY thimble's engraved goldstar x538,y791 becomes a goldcrescent engraving, bodyunchanged;2 ONLY scissors on table x645,y844 closes its two blades together rather than open, SAME pivot/handles/restposition;3 ONLY red sewingthread atintersectionwithpaperfold x689,y382 passes BEHIND thatonefold instead infront, preserveallotherthread/stitchedsegments/paper exact;4 ONLY blue thread spool onLEFT x178,y674 reverses its prominentmiddle diagonalwinding seam from / to backslash, preservewoodrims, threadelsewhereoriginal;5 ONLY swan's black eye x1263,y161 opens into a small darkalmond with tinygoldcatchlight rather than narrowclosed slit, no movinghead/beak. No independentobjectswaps, no changingeveryseam, no extraobjects/text/crop/globalrestyle. Five distinctdefinitive changes, cleanrealistic joins/mechanics, nativeinspectable.\"}}, {\"file\": \"prompt-refine.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"Precise LOCAL three edits of attachednative1672x941 Paper Swan Tailor. Allotheroriginalpixels/objects/anatomy/paper/paint untouched.1 ONLY scissors UPPERthumb handle ring atx715,y823 rotates fromflat oval into UPRIGHTvertical oval, maintainingits originalgoldattachment atx677,y837; lowerhandle/blades/pivot remainoriginal.2 ONLY blue spool's ONE central winding stripe atx173,y665 becomes a broad HORIZONTALblue threadwrap crossing itsfront, insteaddiagonalwrap, retain allotherwindings/woodrims/outlineoriginal.3 ONLY REDsewing thread endpoint at paperwingfoldvertexx800,y337 loops AROUND thatfoldtip, clearly showing smallredlooparound thevertex rather than endingstraight, preservepaperedge/otherstitches exact. EachchangesONE localobject/continuousstringpattern, no swaps/separateobjects. Cleanconnectedgoldhandle/threadjoins,no micrograin/text,newprops/restyle,crop. Editsnativeinspectable.\"}}, {\"file\": \"prompt-refine-full.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"Edit ONLY the attached full-frame native 1672x941 original illustration, retain composition precisely. Three bounded modifications: upper scissors thumb ring centered715,823 becomes upright oval while its attachment at677,837 stays connected and blades/lower ring untouched. One broad central winding on the blue spool centered173,665 becomes a horizontal blue thread band instead of diagonal, leave neighboring windings and rims unchanged. Red sewing thread endpoint at paper wing point800,337 forms a little red loop around that paper point; paper folds and other stitching exact. No other edits. Output full original canvas, not a contact sheet.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "Precise-object-edit Dreamerie Paper Swan's Tailor attached native1672x941. Preserve exact composition, swan/rabbitanatomy, folds, cloth/props/lights, grainfreepainting. Exactlyfive SINGLEOBJECT localchanges:1 ONLY thimble's engraved goldstar x538,y791 becomes a goldcrescent engraving, bodyunchanged;2 ONLY scissors on table x645,y844 closes its two blades together rather than open, SAME pivot/handles/restposition;3 ONLY red sewingthread atintersectionwithpaperfold x689,y382 passes BEHIND thatonefold instead infront, preserveallotherthread/stitchedsegments/paper exact;4 ONLY blue thread spool onLEFT x178,y674 reverses its prominentmiddle diagonalwinding seam from / to backslash, preservewoodrims, threadelsewhereoriginal;5 ONLY swan's black eye x1263,y161 opens into a small darkalmond with tinygoldcatchlight rather than narrowclosed slit, no movinghead/beak. No independentobjectswaps, no changingeveryseam, no extraobjects/text/crop/globalrestyle. Five distinctdefinitive changes, cleanrealistic joins/mechanics, nativeinspectable."
+      }
+    },
+    {
+      "file": "prompt-refine.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "Precise LOCAL three edits of attachednative1672x941 Paper Swan Tailor. Allotheroriginalpixels/objects/anatomy/paper/paint untouched.1 ONLY scissors UPPERthumb handle ring atx715,y823 rotates fromflat oval into UPRIGHTvertical oval, maintainingits originalgoldattachment atx677,y837; lowerhandle/blades/pivot remainoriginal.2 ONLY blue spool's ONE central winding stripe atx173,y665 becomes a broad HORIZONTALblue threadwrap crossing itsfront, insteaddiagonalwrap, retain allotherwindings/woodrims/outlineoriginal.3 ONLY REDsewing thread endpoint at paperwingfoldvertexx800,y337 loops AROUND thatfoldtip, clearly showing smallredlooparound thevertex rather than endingstraight, preservepaperedge/otherstitches exact. EachchangesONE localobject/continuousstringpattern, no swaps/separateobjects. Cleanconnectedgoldhandle/threadjoins,no micrograin/text,newprops/restyle,crop. Editsnativeinspectable."
+      }
+    },
+    {
+      "file": "prompt-refine-full.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "Edit ONLY the attached full-frame native 1672x941 original illustration, retain composition precisely. Three bounded modifications: upper scissors thumb ring centered715,823 becomes upright oval while its attachment at677,837 stays connected and blades/lower ring untouched. One broad central winding on the blue spool centered173,665 becomes a horizontal blue thread band instead of diagonal, leave neighboring windings and rims unchanged. Red sewing thread endpoint at paper wing point800,337 forms a little red loop around that paper point; paper folds and other stitching exact. No other edits. Output full original canvas, not a contact sheet."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "open-eye",
+      "label": "The paper swan opens its golden eye.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1244,
+        "y": 137,
+        "width": 41,
+        "height": 45
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "thimble-crescent",
+      "label": "The thimble carries a crescent instead of a star.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 508,
+        "y": 759,
+        "width": 59,
+        "height": 66
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "upright-handle",
+      "label": "The upper scissors handle stands upright.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 675,
+        "y": 777,
+        "width": 78,
+        "height": 69
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "horizontal-wrap",
+      "label": "One spool winding runs horizontally.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 118,
+        "y": 642,
+        "width": 112,
+        "height": 24
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "thread-loop",
+      "label": "The sewing thread loops around the paper point.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 786,
+        "y": 306,
+        "width": 37,
+        "height": 37
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Source generations and bounded composites inspected; five isolated objects. Difficulty labels are hypotheses. No human or physical-phone fairness validation.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

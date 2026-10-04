@@ -1,0 +1,107 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-332",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-332-original-v2.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-332-original-v4.png",
+    "sha256": "BEE463D3D6C3F28FC7AB421350019598BFC941B1F60EFF29569411D7D4222AD7",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-332-altered-source-v4.png",
+    "sha256": "6323EB2314E705639A1165AD0FBEE8ECEC830E3445D88F6385BD127C10D89BC6",
+    "prompt": "[{\"file\": \"preserve-prompt.json\", \"content\": {\"operation\": \"Original preservation assembly\", \"script\": \"preserve.py\", \"purpose\": \"Only five localized edits. One moving scissor blade union with original left blade/pivot/handles and nearby hanging brush restored; original boy/press/luminous ribbon preserved except apron flat motif. Foreground resting brush original exact.\", \"scriptSHA256\": \"90384f5f069738eadb7fff057d9656dee6ccaac356d93ee69f34e5fe24f9c678\"}}, {\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact1672x941 attached painting of BOY using BOOKPRESS on luminous silence ribbon. Preserve all boy anatomy/face/hands and ENTIRE bookpress/luminous ribbon exact. FIVE isolated SINGLE-object changes:1) inkBOWL lowerLEFT aroundx249,y780: inside its darkbowl frontface appears a clear pale CRESCENT reflection, samebowl outline/rim.2) bluewhite stained CLOTH foreground bottomleft x417,y850: its farRIGHT freeend threads through its OWN looseoverhand knot, brushes restingovercloth originalexact.3) wallSCISSORS upperRIGHT x1368,y220: ONLY RIGHT lowerBLADE pivots outward to right, leftblade/twohandles/centerpivot originalexact; oneblade movement.4) BOY'S APRON frontlower centerx584,y677: add a clearly stitched gold COMPASS ROSE design on the same flatblue apron fabric, originaloutline/ties/folds exact.5) large ceramic BRUSH JAR leftforeground x88,y728: ONLY its RIGHT rimcorner atx152,y629 curls outward into a hollowceramiclip, originalallbrushes andjarpaint/body exact. No extraobjects, noobjectswaps or separateobjectchanges, painterly originaltexture.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "preserve-prompt.json",
+      "content": {
+        "operation": "Original preservation assembly",
+        "script": "preserve.py",
+        "purpose": "Only five localized edits. One moving scissor blade union with original left blade/pivot/handles and nearby hanging brush restored; original boy/press/luminous ribbon preserved except apron flat motif. Foreground resting brush original exact.",
+        "scriptSHA256": "90384f5f069738eadb7fff057d9656dee6ccaac356d93ee69f34e5fe24f9c678"
+      }
+    },
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact1672x941 attached painting of BOY using BOOKPRESS on luminous silence ribbon. Preserve all boy anatomy/face/hands and ENTIRE bookpress/luminous ribbon exact. FIVE isolated SINGLE-object changes:1) inkBOWL lowerLEFT aroundx249,y780: inside its darkbowl frontface appears a clear pale CRESCENT reflection, samebowl outline/rim.2) bluewhite stained CLOTH foreground bottomleft x417,y850: its farRIGHT freeend threads through its OWN looseoverhand knot, brushes restingovercloth originalexact.3) wallSCISSORS upperRIGHT x1368,y220: ONLY RIGHT lowerBLADE pivots outward to right, leftblade/twohandles/centerpivot originalexact; oneblade movement.4) BOY'S APRON frontlower centerx584,y677: add a clearly stitched gold COMPASS ROSE design on the same flatblue apron fabric, originaloutline/ties/folds exact.5) large ceramic BRUSH JAR leftforeground x88,y728: ONLY its RIGHT rimcorner atx152,y629 curls outward into a hollowceramiclip, originalallbrushes andjarpaint/body exact. No extraobjects, noobjectswaps or separateobjectchanges, painterly originaltexture."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "The apron bears stitched gold compass embroidery.",
+      "box": {
+        "x": 560,
+        "y": 531,
+        "width": 151,
+        "height": 158
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The stained cloth's free end threads through its own knot.",
+      "box": {
+        "x": 434,
+        "y": 786,
+        "width": 163,
+        "height": 126
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Hard",
+      "label": "Only the scissors' right blade pivots outward.",
+      "box": {
+        "x": 1327,
+        "y": 184,
+        "width": 143,
+        "height": 196
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "A crescent reflects on the dark ink bowl.",
+      "box": {
+        "x": 204,
+        "y": 764,
+        "width": 62,
+        "height": 58
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "The brush jar's right rim curls into a hollow lip.",
+      "box": {
+        "x": 131,
+        "y": 603,
+        "width": 60,
+        "height": 65
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Exact inventory original-v2. Five one-artifact regions; original boy/press/ribbon unchanged except apron surface motif. Scissor left blade/pivot/handles restored; hanging wall brush restored original so new blade passes behind it. Foreground brush unchanged. Full/native pairs/390 comparison inspected; root joins and human difficulty pending. Reflection/rim details small at390.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-051",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-051-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-051-original-v4.png",
+    "sha256": "67888809997FBB3FB5ACC0983EA854AE928310809001EC7A0FC35C2E8D861B3A",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-051-altered-source-v4.png",
+    "sha256": "64EC77E8A8C5549D7B1C21BF3AD71CF0E53E1117819C2E6BE919E39C5BDE6EC6",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"Precise-object-edit Dreamerie Umbrella's Shadow attached. Keep exact1672x941 originalwide scene, umbrella anatomy/handleUNCHANGED, chair, beach, all independent shells, shadowbody intact. Exactlyfive localized SINGLEOBJECT changes:1 ONLY birdshadow's beak x1002y650 bends DOWN like hooked beak instead straight pointedright, same shadowhead/eye/body;2 ONLY central parasol strap goldbuckle x1238y234 has fastener pin horizontally across square rather than existinground knob, keepstrap andcanopyexact;3 ONLY chair front crossbrace x1470y655 attaches diagonally rising toRIGHT rather than horizontal betweenfrontlegs, chairlegs andcushionoriginalexact, clean beam joins;4 ONLY large conchshell x161y715 turns its hollow opening toward RIGHT instead upperleft, same shellbody footprint;5 ONLY foreground fan shell x303y824 has central ridge curl gently left while other ridges andshellsilhouette unchanged. One independentlyselectable object perchange; no swaps or removingmanyobjects. No addedprops/text/grain/globalrestyle. Five definite native-inspectable localizeddifferences, preserve painting brushwork.\"}}, {\"file\": \"prompt-refine.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"Precise local edit of native1672x941 beach umbrella painting. ONLY foreground scallop fan shell at x303,y823: alter ONE central coral groove into a pronounced single S-curve running from apex toward bottom instead straight ray. Preserve shell silhouette, every other ridge, surrounding sand, allobjects andwholeframe exactly. Curvedgroove should be broadclean coral line about5pxwide visible on zoom, matte painted samepalette, not microscopic grain. One selectable object one difference, no changingother shells.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "Precise-object-edit Dreamerie Umbrella's Shadow attached. Keep exact1672x941 originalwide scene, umbrella anatomy/handleUNCHANGED, chair, beach, all independent shells, shadowbody intact. Exactlyfive localized SINGLEOBJECT changes:1 ONLY birdshadow's beak x1002y650 bends DOWN like hooked beak instead straight pointedright, same shadowhead/eye/body;2 ONLY central parasol strap goldbuckle x1238y234 has fastener pin horizontally across square rather than existinground knob, keepstrap andcanopyexact;3 ONLY chair front crossbrace x1470y655 attaches diagonally rising toRIGHT rather than horizontal betweenfrontlegs, chairlegs andcushionoriginalexact, clean beam joins;4 ONLY large conchshell x161y715 turns its hollow opening toward RIGHT instead upperleft, same shellbody footprint;5 ONLY foreground fan shell x303y824 has central ridge curl gently left while other ridges andshellsilhouette unchanged. One independentlyselectable object perchange; no swaps or removingmanyobjects. No addedprops/text/grain/globalrestyle. Five definite native-inspectable localizeddifferences, preserve painting brushwork."
+      }
+    },
+    {
+      "file": "prompt-refine.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "Precise local edit of native1672x941 beach umbrella painting. ONLY foreground scallop fan shell at x303,y823: alter ONE central coral groove into a pronounced single S-curve running from apex toward bottom instead straight ray. Preserve shell silhouette, every other ridge, surrounding sand, allobjects andwholeframe exactly. Curvedgroove should be broadclean coral line about5pxwide visible on zoom, matte painted samepalette, not microscopic grain. One selectable object one difference, no changingother shells."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "shadow-beak",
+      "label": "The bird shadow's beak hooks downward.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 959,
+        "y": 631,
+        "width": 101,
+        "height": 76
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "conch-mouth",
+      "label": "The conch shell's opening turns toward the viewer.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 103,
+        "y": 673,
+        "width": 117,
+        "height": 83
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "chair-brace",
+      "label": "The chair's side brace slopes upward instead of downward.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1358,
+        "y": 632,
+        "width": 99,
+        "height": 49
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "strap-pin",
+      "label": "The umbrella buckle has a horizontal fastening pin.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1216,
+        "y": 212,
+        "width": 45,
+        "height": 43
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "fan-ridge",
+      "label": "The fan shell's central groove curves like an S.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 283,
+        "y": 784,
+        "width": 43,
+        "height": 79
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Targetedrefinement replaces unrealizedfanridge withclearlyrealizedSgroove. ChaironlyONEsidebrace selected; unchangedfrontbrace restoredoriginal. Singleobject edits, no human validation. Fullsource/finalworkercomposite/5nativepairedcrops/390pair inspected cleanjoins. Pixeloutside5regions zero, eachcluenonzero. Finalsource SHA25664ec77e8a8c5549d7b1c21bf3ad71cf0e53e1117819c2e6be919e39c5bde6ec6. No human orphysicalphonevalidation.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

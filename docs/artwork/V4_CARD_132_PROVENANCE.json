@@ -1,0 +1,98 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-132",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-132-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-132-original-v4.png",
+    "sha256": "40496B75C63DB3CF88C678FACBC8FC17FA83A21145C0570F8A70BE72FA6427BB",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-132-altered-source-v4.png",
+    "sha256": "28A00E018D86A302441A27C398262523681937E6942DF535C63F54B8B284DD41",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit attached gentle black dragon mending ceramics painting. EXACT1672x941 framing painterlycolors all dragon anatomy/furniture unchanged. Five isolated SINGLE artifact changes:1 Empty white gold-rimmed foreground PLATE x1120 y753: paint a large elegant cobalt-blue spiral following insideceramicfloor, singlecontinuous 3turnpattern not physicalobject.2 Large upright rightwhiteMUG x1525 y530: its existing white handle x1640 y497 curls into a continuous doubleloop figure-eight integratedsamehandle, do notchange mugcracks/art.3 RED thread freeEND on floor x660 y845: form a clean overhand selfKNOT near its end, SAME connected single thread no extra string/spoolchange.4 Large tealGLASS BOTTLE x1550 y310: change its existing mirrorhighlight into unmistakable small golden CRESCENT moonreflection on glass belly (flatsurfacereflection not object), samebottle outline/neck.5 foreground white triangular BLUE-striped SHARD x885 y827: singleblueband becomes two connected wavy braided strands paintedwithin same shard. Preserve all other objects exact. No object swaps no grain specks no unnecessary extras.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit attached gentle black dragon mending ceramics painting. EXACT1672x941 framing painterlycolors all dragon anatomy/furniture unchanged. Five isolated SINGLE artifact changes:1 Empty white gold-rimmed foreground PLATE x1120 y753: paint a large elegant cobalt-blue spiral following insideceramicfloor, singlecontinuous 3turnpattern not physicalobject.2 Large upright rightwhiteMUG x1525 y530: its existing white handle x1640 y497 curls into a continuous doubleloop figure-eight integratedsamehandle, do notchange mugcracks/art.3 RED thread freeEND on floor x660 y845: form a clean overhand selfKNOT near its end, SAME connected single thread no extra string/spoolchange.4 Large tealGLASS BOTTLE x1550 y310: change its existing mirrorhighlight into unmistakable small golden CRESCENT moonreflection on glass belly (flatsurfacereflection not object), samebottle outline/neck.5 foreground white triangular BLUE-striped SHARD x885 y827: singleblueband becomes two connected wavy braided strands paintedwithin same shard. Preserve all other objects exact. No object swaps no grain specks no unnecessary extras."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "A blue spiral is painted inside the plate.",
+      "box": {
+        "x": 991,
+        "y": 706,
+        "width": 279,
+        "height": 70
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The large mug handle forms a figure eight.",
+      "box": {
+        "x": 1590,
+        "y": 418,
+        "width": 82,
+        "height": 191
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The red thread ties itself into a knot.",
+      "box": {
+        "x": 665,
+        "y": 827,
+        "width": 81,
+        "height": 57
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "A crescent is reflected in the teal bottle.",
+      "box": {
+        "x": 1505,
+        "y": 299,
+        "width": 74,
+        "height": 75
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "The blue stripe on the loose shard becomes a braid.",
+      "box": {
+        "x": 798,
+        "y": 788,
+        "width": 127,
+        "height": 58
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Observed five exact singleartifact changes: plate internalpattern, connected mughandle mechanism, one redthread knot, glassreflection, single shard internalpattern. Same nearby spool unaffected within threadbox. No swaps or animalbody relocation. Right handle box hits canvasedge legitimately originalhandle alsoedge. Root native seam QA pending; difficulties hypotheses only.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

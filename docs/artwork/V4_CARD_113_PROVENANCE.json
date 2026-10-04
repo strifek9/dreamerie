@@ -1,0 +1,120 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-113",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-revisit-v1/113-dynamic-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-113-original-v4.png",
+    "sha256": "2792340FF95CCD380B2A5064CF29F70B31381E5ABB8845CC0927BA857CD1A3EE",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-113-altered-source-v4.png",
+    "sha256": "C6C7D9418834DCB9CAA99D339E074467A20519502A4619C91E29E30717854270",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit this EXACT image The Mirror's Forgotten Handle at native1672x941: mint room, white tall mirror portal into red desert, wooden deer holding blue hat, two hanging gold keys, blue glove and open compact on floor. Preserve all frame/style/anatomy/corepremise. Exactly FIVE single-object localized differences: 1 gold medallion at top mirror x97448 reflects a tiny RED desert arch rather than current pale round glint, within94115..100877; 2 ONLY shorter right hanging key x499183 its ONE lower tooth bends upward rather than horizontal, within485154..519206, other key unchanged; 3 blue hat's coral band at858471 has a clearly visible dark zigzag seam instead plain band, within824448..901493, hat/deer unchanged; 4 ONLY white oval fingertip/button on blue glove x551833 has a crescent-shaped inset notch, within525816..579852, other glove exact; 5 gold sun motif inside opencompact x724848 turns into a clearly visible CRESCENT motif retaining same one ornament, within703827..748871. All other objects and scenery unchanged. Five bounded distinct objects, no distant object swaps. Beautiful painterly sharp clean image.\"}}, {\"file\": \"button-prompt.json\", \"content\": {\"prompt\": \"Edit this exact small crop of a blue glove with ONE white oval button lying on it. Keep crop framing and glove unchanged. Change ONLY the existing white oval button into a white crescent by cutting a clearly visible semicircular notch into its RIGHT edge; same position, same material. No other objects. Return same90x65 framing.\", \"nativeCrop\": [510, 800, 90, 65]}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit this EXACT image The Mirror's Forgotten Handle at native1672x941: mint room, white tall mirror portal into red desert, wooden deer holding blue hat, two hanging gold keys, blue glove and open compact on floor. Preserve all frame/style/anatomy/corepremise. Exactly FIVE single-object localized differences: 1 gold medallion at top mirror x97448 reflects a tiny RED desert arch rather than current pale round glint, within94115..100877; 2 ONLY shorter right hanging key x499183 its ONE lower tooth bends upward rather than horizontal, within485154..519206, other key unchanged; 3 blue hat's coral band at858471 has a clearly visible dark zigzag seam instead plain band, within824448..901493, hat/deer unchanged; 4 ONLY white oval fingertip/button on blue glove x551833 has a crescent-shaped inset notch, within525816..579852, other glove exact; 5 gold sun motif inside opencompact x724848 turns into a clearly visible CRESCENT motif retaining same one ornament, within703827..748871. All other objects and scenery unchanged. Five bounded distinct objects, no distant object swaps. Beautiful painterly sharp clean image."
+      }
+    },
+    {
+      "file": "button-prompt.json",
+      "content": {
+        "prompt": "Edit this exact small crop of a blue glove with ONE white oval button lying on it. Keep crop framing and glove unchanged. Change ONLY the existing white oval button into a white crescent by cutting a clearly visible semicircular notch into its RIGHT edge; same position, same material. No other objects. Return same90x65 framing.",
+        "nativeCrop": [
+          510,
+          800,
+          90,
+          65
+        ]
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The medallion reflects a red desert arch",
+      "difficulty": "Easy",
+      "box": {
+        "x": 941,
+        "y": 15,
+        "width": 67,
+        "height": 65
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The shorter key tooth bends upward",
+      "difficulty": "Medium",
+      "box": {
+        "x": 486,
+        "y": 154,
+        "width": 38,
+        "height": 52
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The compact sun becomes a crescent ornament",
+      "difficulty": "Hard",
+      "box": {
+        "x": 701,
+        "y": 827,
+        "width": 49,
+        "height": 45
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The hat band has a zigzag seam",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 824,
+        "y": 448,
+        "width": 77,
+        "height": 45
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The white glove tip has a crescent notch",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 525,
+        "y": 816,
+        "width": 55,
+        "height": 37
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "refined-native.png"
+    }
+  ],
+  "notes": "Worker inspected native pair, five paired crops and 390 stacked pair. Five single objects; unrelated drift excluded; outside pixels exact original. Crop refinements resized only to exact original crop dimensions, full generated crop preserved with coordinates in prompt. Difficulty estimates unvalidated. Root game/compositor/human review pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

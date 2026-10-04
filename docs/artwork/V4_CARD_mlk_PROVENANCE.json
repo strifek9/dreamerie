@@ -1,0 +1,110 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-mlk",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/holidays-painted-v1/mlk-original.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-mlk-original-v4.png",
+    "sha256": "536954EF058BD0C5BEE4C23E179B30AC5F8D15CC116DF6A94AE0DB8A72F88111",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-mlk-altered-source-v4.png",
+    "sha256": "636E2CD5636206E8FC41FA4F2173C3DF4E4938B8C45E1309DCFF86A4B668A736",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact MLK symbolic bridge-we-make-together painting locally. Preserve all equal black/white PAPER CUTOUT figures holding hands EXACTLY, bridge ribbon, doors, twilight and theme of togetherness. Five single-object targets only: 1 teal paper boat lower-center-right x1130 y720 has its raised central triangular paper fold tip bent forward into a hooked fold, hull position/water unchanged. 2 lantern upper-left x285 y248 has its top carrying ring curl into an open spiral hook, lantern body/star unchanged. 3 right scroll-house teal door's round brass knob x1489 y269 becomes a small horizontal crescent brass lever, door unchanged. 4 large red thread spool at upper-left has its top core round hole x106 y109 become a heart-shaped core aperture, rest spool/thread unchanged. 5 single brass paperclip on lower-right scroll at x1580 y610 has its INNER loop end bend upward and out, making visibly open inner loop, outer loop remains original. No extra objects or multiple-object swaps. Five localized clean edits only, preserve original painterly composition.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact MLK symbolic bridge-we-make-together painting locally. Preserve all equal black/white PAPER CUTOUT figures holding hands EXACTLY, bridge ribbon, doors, twilight and theme of togetherness. Five single-object targets only: 1 teal paper boat lower-center-right x1130 y720 has its raised central triangular paper fold tip bent forward into a hooked fold, hull position/water unchanged. 2 lantern upper-left x285 y248 has its top carrying ring curl into an open spiral hook, lantern body/star unchanged. 3 right scroll-house teal door's round brass knob x1489 y269 becomes a small horizontal crescent brass lever, door unchanged. 4 large red thread spool at upper-left has its top core round hole x106 y109 become a heart-shaped core aperture, rest spool/thread unchanged. 5 single brass paperclip on lower-right scroll at x1580 y610 has its INNER loop end bend upward and out, making visibly open inner loop, outer loop remains original. No extra objects or multiple-object swaps. Five localized clean edits only, preserve original painterly composition."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The boat's central fold bends forward",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1101,
+        "y": 659,
+        "width": 81,
+        "height": 88
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The teal door knob becomes a crescent lever",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1462,
+        "y": 246,
+        "width": 57,
+        "height": 42
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The paperclip opens at its upper end",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1531,
+        "y": 551,
+        "width": 114,
+        "height": 74
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The lantern carrying ring spirals inward",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 250,
+        "y": 140,
+        "width": 63,
+        "height": 63
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The spool core aperture becomes a heart",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 71,
+        "y": 93,
+        "width": 65,
+        "height": 32
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "visually inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "nativePreflight": "source equals actual original size, five nonoverlapping boxes",
+    "difficulty": "hypotheses; human and browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

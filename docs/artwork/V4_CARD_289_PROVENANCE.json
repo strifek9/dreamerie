@@ -1,0 +1,112 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-289",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-289-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-289-original-v4.png",
+    "sha256": "6BE79D678CB4CB8FD7C0CB1DC55E208402B8120CA890DED2C7FD5E70261E6136",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-289-altered-source-v4.png",
+    "sha256": "A1F17CED3C1E7468669DA77BD8F07EB51D9BBD9791A0B1F2EE7950FAA95D1A9D",
+    "prompt": "[{\"file\": \"preserve-prompt.json\", \"content\": {\"operation\": \"Original preservation assembly\", \"script\": \"preserve.py\", \"purpose\": \"Mask hanging blanket union; wall coil lower knot only so hook/uppercoil exact; metal rim only so scissors exact; crate front carving excludes loose red rope and yarn; rug corner only. Gorilla and winding rope/stairs wholly original exact.\", \"maskFeatherPixels\": 0.45, \"scriptSHA256\": \"84ccb6ff4e832654b43874335d74d3560101781d324d1019d2bc39939258c625\", \"refinements\": [\"Expanded old blanket silhouette to eliminate cloth edge ghost.\", \"Restored original nearby white yarn ball through its silhouette to prevent separate yarn change.\"]}}, {\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit EXACT1672x941 painterly GORILLA windingorange rope in workshop. All gorilla anatomy/face/hands/feet, centralorange ropeball andstairrope originalEXACT. FIVE isolated SINGLE-object changes:1) striped hanging BENCH BLANKET bottomleft x160,y701: its freeLOWEREND passes through its OWN overhand knot, sameuppercloth/bench, no secondcloth.2) ORANGE ropecoil hangingLEFTWALL x207,y197: bottomend threads THROUGH its own existing coil to form one visibly continuous loose knot, top wallhook exact; do not change giantgorillarope.3) pale METAL TOOL TIN leftcounter x50,y348: ONLY its right pouring rim corner aroundx103,y321 curls out into a hollowrolled metal lip; original tools/scissors andcanbody exact.4) wooden CRATE on lowerRIGHT x1495,y717: on its SINGLE frontboard add a large clear carved SPIRAL groove, sameboardedges/nails/yarnballs exact.5) FLOORRUG lowercenter x839,y877: ONLY frontLEFTcorner curls UP into a hollowrolled fabriclip revealing underside, same greenwhiteorange rugpattern/allotheredge exact. No extra objects, no separateobject swaps/moves, no yarnball colorchanges, no gorilla fur/face changes. Keep painting texture and 5 localized changes readable.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "preserve-prompt.json",
+      "content": {
+        "operation": "Original preservation assembly",
+        "script": "preserve.py",
+        "purpose": "Mask hanging blanket union; wall coil lower knot only so hook/uppercoil exact; metal rim only so scissors exact; crate front carving excludes loose red rope and yarn; rug corner only. Gorilla and winding rope/stairs wholly original exact.",
+        "maskFeatherPixels": 0.45,
+        "scriptSHA256": "84ccb6ff4e832654b43874335d74d3560101781d324d1019d2bc39939258c625",
+        "refinements": [
+          "Expanded old blanket silhouette to eliminate cloth edge ghost.",
+          "Restored original nearby white yarn ball through its silhouette to prevent separate yarn change."
+        ]
+      }
+    },
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit EXACT1672x941 painterly GORILLA windingorange rope in workshop. All gorilla anatomy/face/hands/feet, centralorange ropeball andstairrope originalEXACT. FIVE isolated SINGLE-object changes:1) striped hanging BENCH BLANKET bottomleft x160,y701: its freeLOWEREND passes through its OWN overhand knot, sameuppercloth/bench, no secondcloth.2) ORANGE ropecoil hangingLEFTWALL x207,y197: bottomend threads THROUGH its own existing coil to form one visibly continuous loose knot, top wallhook exact; do not change giantgorillarope.3) pale METAL TOOL TIN leftcounter x50,y348: ONLY its right pouring rim corner aroundx103,y321 curls out into a hollowrolled metal lip; original tools/scissors andcanbody exact.4) wooden CRATE on lowerRIGHT x1495,y717: on its SINGLE frontboard add a large clear carved SPIRAL groove, sameboardedges/nails/yarnballs exact.5) FLOORRUG lowercenter x839,y877: ONLY frontLEFTcorner curls UP into a hollowrolled fabriclip revealing underside, same greenwhiteorange rugpattern/allotheredge exact. No extra objects, no separateobject swaps/moves, no yarnball colorchanges, no gorilla fur/face changes. Keep painting texture and 5 localized changes readable."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "The bench blanket's hanging end passes through its own knot.",
+      "box": {
+        "x": 97,
+        "y": 571,
+        "width": 172,
+        "height": 317
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The hanging wall rope threads through its own coil in a knot.",
+      "box": {
+        "x": 168,
+        "y": 194,
+        "width": 78,
+        "height": 129
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The crate's wooden front bears a carved spiral.",
+      "box": {
+        "x": 1447,
+        "y": 673,
+        "width": 111,
+        "height": 107
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "The rug's left corner rolls up to reveal its underside.",
+      "box": {
+        "x": 715,
+        "y": 815,
+        "width": 436,
+        "height": 126
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "The tool tin's right rim curls into a hollow spout.",
+      "box": {
+        "x": 92,
+        "y": 312,
+        "width": 64,
+        "height": 52
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Five single artifact changes, no object swaps. Full generation had incidental fur and central rope drift; assembly uses original exact throughout gorilla, winding rope, stairs, hooks, tools and yarnballs. Hanging blanket explicit old/new footprint preserves bench outsidecloth; crate spiral excludes loose rope. Full/native five pairs/390 pair inspected. Difficulty guesses and root joins pending; tin spout is small at phone width.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

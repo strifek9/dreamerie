@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-265",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-265-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-265-original-v4.png",
+    "sha256": "A5BB650B95D5A97BCFB7C73A8ADF4066EA5AA2F4B9AF58EADFD17F9F0F5A0E58",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-265-altered-source-v4.png",
+    "sha256": "8A1CC558A5E66A53C45EB53D85DF587A3B011A7B67EAB6008F0002BE49434BC8",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Preserve exactnative1672x941 painting/anatomy/style. Five single-object changes only: 1 seamstress ONLY mouth near1065230 opens into small delighted O, allface/eyes exact. 2 thimble near410696 top central surface bears CROSS-shaped holes pattern rather than many round holes, sides unchanged. 3 ONE scissors pivot cap near227796 gains diagonal X recessed slot instead of smooth gold, scissorsbothblades/handles exact. 4 black thread spool front hole near450581 becomes square instead of round, spool/thread exact. 5 lamp illuminatedbulb near375217 changes from round bulb to pointed candle-flame shape with same warm light, lampshade exact. All other objects, hands, shadow cloth and quilt exact. No swaps or distant clues merged.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Preserve exactnative1672x941 painting/anatomy/style. Five single-object changes only: 1 seamstress ONLY mouth near1065230 opens into small delighted O, allface/eyes exact. 2 thimble near410696 top central surface bears CROSS-shaped holes pattern rather than many round holes, sides unchanged. 3 ONE scissors pivot cap near227796 gains diagonal X recessed slot instead of smooth gold, scissorsbothblades/handles exact. 4 black thread spool front hole near450581 becomes square instead of round, spool/thread exact. 5 lamp illuminatedbulb near375217 changes from round bulb to pointed candle-flame shape with same warm light, lampshade exact. All other objects, hands, shadow cloth and quilt exact. No swaps or distant clues merged."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "open-smile",
+      "label": "The seamstress opens her smile.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1028,
+        "y": 210,
+        "width": 71,
+        "height": 53
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "pointed-bulb",
+      "label": "The lamp\u2019s bulb has a pointed flame shape.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 324,
+        "y": 173,
+        "width": 112,
+        "height": 88
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "square-spool",
+      "label": "The spool has a square center hole.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 433,
+        "y": 561,
+        "width": 33,
+        "height": 42
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "cross-thimble",
+      "label": "The thimble\u2019s top has a cross-shaped opening.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 391,
+        "y": 657,
+        "width": 38,
+        "height": 22
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "slotted-pivot",
+      "label": "The scissors\u2019 pivot has an X slot.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 209,
+        "y": 781,
+        "width": 35,
+        "height": 24
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five paired crops, full composite and 390-pixel stacked pair inspected. Single-object changes; difficulty hypotheses only. Root browser/hit QA and human fairness remain pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

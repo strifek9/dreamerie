@@ -1,0 +1,104 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-096",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-096-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-096-original-v4.png",
+    "sha256": "49455617198B32B957A02197393C35A2849AD0099B939481D7CE73FFC091C79A",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-096-altered-source-v4.png",
+    "sha256": "F4F179C0F7D5CB0802A713ABAF2F0E24BEC4F2D0849CD2ED277FADBA01FF0743",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise edit attached giantwhitelily clockpalace andwhite deer sunsetpond painting. Preserve EXACT1672x941framing allpositions/palette/painterlystyle deeranatomy. FIVE single-objectlocalized changes:1) blue circularCLOCKFACE: its fine goldradial zodiac-like pattern becomes a continuous goldSPIRAL pattern windingfromcenter outward; preserve faceperimeter andred/goldclockHANDS EXACT sameposes.2) goldfrontgate belowclock: middleDIAMOND latch plate opensoutwardas a smallhinged diamondflap, sameplate outline atsamecenter withvisiblehinge, preservegatebars.3) goldRING hangingfromdeer'sfar-rightantler: ring threads through ITS OWN loop making a clearly continuous goldfigureeight, preserveantler EXACT untouched.4) upper-right lilyPETAL with existingcrescentbite attip: thissamepetaltip curls inward into a visiblehollowrolledpetal tube instead ofthebite, preserve restplant/clock background.5) ONLY largeforeground lilypad lowerleft-centeraroundx450,y805: its existingradialveins curl into a SPIRAL arrangement, samepadoutline notsize/colorchange, otherpadsunchanged. No swaps/nootherobjects changedperclue. No newprops/grain/text/markers.\"}}, {\"file\": \"refine-prompt.json\", \"content\": {\"prompt\": \"Preciselyeditthisgold gatecroponly centerDIAMOND latch. Preserveframing everyvertical/horizontalbar andforest exact. The gold diamondplate opens UPWARD on its topcorner hinge like a smallflap, revealing darkdiamond recess directlybehind; ONEplate andonehinge. It shouldlookstrongly angled towardviewer ratherthan lyingflat, platesizeaboutsame; retain originalgatebarpositions. Noextraobjects/text.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise edit attached giantwhitelily clockpalace andwhite deer sunsetpond painting. Preserve EXACT1672x941framing allpositions/palette/painterlystyle deeranatomy. FIVE single-objectlocalized changes:1) blue circularCLOCKFACE: its fine goldradial zodiac-like pattern becomes a continuous goldSPIRAL pattern windingfromcenter outward; preserve faceperimeter andred/goldclockHANDS EXACT sameposes.2) goldfrontgate belowclock: middleDIAMOND latch plate opensoutwardas a smallhinged diamondflap, sameplate outline atsamecenter withvisiblehinge, preservegatebars.3) goldRING hangingfromdeer'sfar-rightantler: ring threads through ITS OWN loop making a clearly continuous goldfigureeight, preserveantler EXACT untouched.4) upper-right lilyPETAL with existingcrescentbite attip: thissamepetaltip curls inward into a visiblehollowrolledpetal tube instead ofthebite, preserve restplant/clock background.5) ONLY largeforeground lilypad lowerleft-centeraroundx450,y805: its existingradialveins curl into a SPIRAL arrangement, samepadoutline notsize/colorchange, otherpadsunchanged. No swaps/nootherobjects changedperclue. No newprops/grain/text/markers."
+      }
+    },
+    {
+      "file": "refine-prompt.json",
+      "content": {
+        "prompt": "Preciselyeditthisgold gatecroponly centerDIAMOND latch. Preserveframing everyvertical/horizontalbar andforest exact. The gold diamondplate opens UPWARD on its topcorner hinge like a smallflap, revealing darkdiamond recess directlybehind; ONEplate andonehinge. It shouldlookstrongly angled towardviewer ratherthan lyingflat, platesizeaboutsame; retain originalgatebarpositions. Noextraobjects/text."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "The upper lily petal tip rolls inward into a tube.",
+      "box": {
+        "x": 919,
+        "y": 97,
+        "width": 126,
+        "height": 185
+      },
+      "edgeFade": 5
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The antler's gold ring threads into a figure-eight loop.",
+      "box": {
+        "x": 1460,
+        "y": 368,
+        "width": 50,
+        "height": 85
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Hard",
+      "label": "Concentric rings circle the clock face.",
+      "box": {
+        "x": 498,
+        "y": 211,
+        "width": 136,
+        "height": 140
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "The gate's diamond latch opens on its hinge.",
+      "box": {
+        "x": 615,
+        "y": 424,
+        "width": 49,
+        "height": 53
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "The foreground lily pad veins curl into a spiral.",
+      "box": {
+        "x": 373,
+        "y": 779,
+        "width": 201,
+        "height": 47
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": "Fullsourceobserved. Actualclockpattern concentricrings notrequestedspiral; handssemanticposespreserved. Initialgateflapmissing ->targetrefined diamondopens. Petaltiproll oneplantpart, deerattachedring selfloop ringonlydeeranatomyunchanged; onepadinternalspiral. Allindependentfeaturesoneartifact each,no swaps. Rootgatepixeljoins/handmasks QArequired. Difficultyhypothesesonly.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

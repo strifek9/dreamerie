@@ -1,0 +1,108 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-172",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-172-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-172-original-v4.png",
+    "sha256": "1D2C1C1E798FA05C75766CEF7DE2FC69291331710697E53C5199D8324E7153E5",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-172-altered-source-v4.png",
+    "sha256": "7E19E15D402075182BE4D7170A41B97F0AF88FF55C9BE2B1D6C0CD35AE0B3565",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit EXACT The Sloth Who Hurried Slowly at native1672x941. Preserve sloth and snail anatomy, style, frame. FIVE distinct single-object edits: 1 foreground brassbell top knob x98618 changes from round ball to a flat crosswise barhandle, within70600..129658 bellbodyunchanged; 2 scarf brasssquare clasp x487332 gets diagonal connecting thread between its SAME twoholes insteadhorizontal thread, within459310..516351, holes/claspoutlineexact; 3 ONLY frontmost green slipper redpatch at689693 gets ONE gold crescent embroidered centrally, within653664..724721; 4 snail hourglass ONLY thin falling sandstream bends into a gentle S curve ratherstraight between chambers, within1167631..1209703, chamberssand/outlineexact; 5 chair cushion roundbutton upperleft x103204 gains a bold diagonal slit rather its two existingroundholes, within832183..124229, cushionoutlineunchanged. Do not change distantobjects underoneclue, no swap, no grain/specks.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit EXACT The Sloth Who Hurried Slowly at native1672x941. Preserve sloth and snail anatomy, style, frame. FIVE distinct single-object edits: 1 foreground brassbell top knob x98618 changes from round ball to a flat crosswise barhandle, within70600..129658 bellbodyunchanged; 2 scarf brasssquare clasp x487332 gets diagonal connecting thread between its SAME twoholes insteadhorizontal thread, within459310..516351, holes/claspoutlineexact; 3 ONLY frontmost green slipper redpatch at689693 gets ONE gold crescent embroidered centrally, within653664..724721; 4 snail hourglass ONLY thin falling sandstream bends into a gentle S curve ratherstraight between chambers, within1167631..1209703, chamberssand/outlineexact; 5 chair cushion roundbutton upperleft x103204 gains a bold diagonal slit rather its two existingroundholes, within832183..124229, cushionoutlineunchanged. Do not change distantobjects underoneclue, no swap, no grain/specks."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The brass bell has a crosswise bar handle",
+      "difficulty": "Easy",
+      "box": {
+        "x": 42,
+        "y": 603,
+        "width": 112,
+        "height": 58
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The slipper patch has a crescent embroidery",
+      "difficulty": "Medium",
+      "box": {
+        "x": 653,
+        "y": 664,
+        "width": 73,
+        "height": 60
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The hourglass falling stream curves like an S",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1167,
+        "y": 627,
+        "width": 43,
+        "height": 79
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The scarf clasp thread slopes diagonally",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 459,
+        "y": 310,
+        "width": 58,
+        "height": 43
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The cushion button has a diagonal slot",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 81,
+        "y": 181,
+        "width": 46,
+        "height": 51
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390 stacked pair. Five single objects changed; anatomy/style/frame/corepremise retained. Unrelated drift excluded; five bounded nonoverlap boxes and outside exact original verified. Full generated source/prompt/hash retained. Difficulty estimates unvalidated; root compositor/game/human/physicalphone approval pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

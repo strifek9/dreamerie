@@ -1,0 +1,134 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-358",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-358-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-358-original-v4.png",
+    "sha256": "1D1E8A2026EB9616AAB14D2A03B139DB42903E62D45C9D805B6F812093BAFB39",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-358-altered-source-v4.png",
+    "sha256": "D0FE8BEF62EC34FCD7E2EE8488B7AC4A576E10D0ED2B009FE62D812BEC638A93",
+    "prompt": "[{\"file\": \"ball-refine-prompt.json\", \"content\": {\"prompt\": \"Edit THIS exact182x247 crop. ONLY the ONE large GOLD STAR in LOWER LEFT of blueball centeredx70,y174 becomes a GOLD SPIRAL emblem in EXACTsame location/footprint aboutx40\u00e2\u20ac\u201c108,y141\u00e2\u20ac\u201c202. Every OTHER star (top, upperleft, leftedge), balloutline andchestcloth/brassstraps originalEXACT. Do not add/move any extra star. Keep originalpaintedstyle. Single object's surface motif changes, noadditionaldifferences.\"}}, {\"file\": \"final-preserve-prompt.json\", \"content\": {\"operation\": \"Final five artifact assembly\", \"script\": \"preserve-final.py\", \"rejected\": \"preserve.py soundhole/string assembly rejected for aliasing, not used in final source.\", \"purpose\": \"Three targeted crop sources provide clean ribbon knot, exactly one ballstar spiral, and mandolin wood compass away from strings. Original dancer/shadows/otherstars/soundhole/strings retained.\", \"scriptSHA256\": \"b4a707981289d02899363c703111b431e5693b1f00d492e57317d62813e4ff19\"}}, {\"file\": \"preserve-prompt.json\", \"content\": {\"operation\": \"Original preservation assembly\", \"script\": \"preserve.py\", \"purpose\": \"Initial fullgen ribbon knot failed, ball added star; localized original crop refinements replace only original one goldstar and ribbon freeend. Entire person/shadows exact original. Restore original bright string pixels inside old mandolin hole ellipse; other strings original outside detail.\"}}, {\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact1672x941 painting THEATER DANCER with TWO LEFT SHADOWS. ENTIRE dancer face/body/hands/clothes/shoes and BOTH shadows exactoriginal. Five isolated SINGLE artifacts:1) BLUE RIBBON on floorforeground aroundx358,y854: freeend threads through its OWN looseoverhand knot, sameoriginalcloth/restfloor.2) LEFT woodenCHEST brassLATCH x231,y577: its hingedflatlatch swings OPEN to LEFT, otherwood/cloth/hat/bell originalexact.3) GOLD CURTAIN TASSEL upperLEFT aroundx80,y389: ONLY bottom fringe bunch passes through its OWN loose loop, samecord/topknob/curtain.4) BLUE STAR BALL right x1486,y648: ONLY its LARGE lowerleftgoldstar aroundx1476,y676 becomes one GOLD SPIRAL painted emblem, allotherstars/ballshape unchanged.5) MANDOLIN bottomLEFT aroundx165,y779: ONLY oval black SOUNDHOLE aroundx173,y765 becomes a clean CRESCENT shaped hole, all originalstrings/stringpath/bridge/bodyoutline andpaintedornament EXACT. No swaps/newobjects, no candleflamechanges, noanatomy/face/shadowchanges. Preserve style/framing.\"}}, {\"file\": \"ribbon-refine-prompt.json\", \"content\": {\"prompt\": \"Edit this346x115 crop of one BLUE GOLD patterned loose RIBBON on theaterfloor. ONLY its freeRIGHT end threads THROUGH its OWN looseoverhand knot aroundx228,y62, with one clearlycontinuous believable bluefabric knot. Originalleftdrape/middle arch/paintedstarpattern same; allwoodfloor/mandolin corner untouched. Keep entire cloth footprint insidecrop, no extra ribbons. Singleclothrelationship only.\"}}, {\"file\": \"wood-refine-prompt.json\", \"content\": {\"prompt\": \"Edit ONLY this221x142 mandolin crop. ALL strings/soundhole/bridge/bodyoutline/black rightornament exactoriginal. On the blank WOODEN LEFT FRONT FACE below strings, centered at localx55,y72, carve ONE clear shallow COMPASS ROSE emblem approximatelyx25\u00e2\u20ac\u201c85,y48\u00e2\u20ac\u201c95. Keep incision wholly on wood, no strings or soundhole overlaps. Single localized wooden surface pattern, no otherchanges; preserve existingpaintedgrain.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "ball-refine-prompt.json",
+      "content": {
+        "prompt": "Edit THIS exact182x247 crop. ONLY the ONE large GOLD STAR in LOWER LEFT of blueball centeredx70,y174 becomes a GOLD SPIRAL emblem in EXACTsame location/footprint aboutx40\u00e2\u20ac\u201c108,y141\u00e2\u20ac\u201c202. Every OTHER star (top, upperleft, leftedge), balloutline andchestcloth/brassstraps originalEXACT. Do not add/move any extra star. Keep originalpaintedstyle. Single object's surface motif changes, noadditionaldifferences."
+      }
+    },
+    {
+      "file": "final-preserve-prompt.json",
+      "content": {
+        "operation": "Final five artifact assembly",
+        "script": "preserve-final.py",
+        "rejected": "preserve.py soundhole/string assembly rejected for aliasing, not used in final source.",
+        "purpose": "Three targeted crop sources provide clean ribbon knot, exactly one ballstar spiral, and mandolin wood compass away from strings. Original dancer/shadows/otherstars/soundhole/strings retained.",
+        "scriptSHA256": "b4a707981289d02899363c703111b431e5693b1f00d492e57317d62813e4ff19"
+      }
+    },
+    {
+      "file": "preserve-prompt.json",
+      "content": {
+        "operation": "Original preservation assembly",
+        "script": "preserve.py",
+        "purpose": "Initial fullgen ribbon knot failed, ball added star; localized original crop refinements replace only original one goldstar and ribbon freeend. Entire person/shadows exact original. Restore original bright string pixels inside old mandolin hole ellipse; other strings original outside detail."
+      }
+    },
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact1672x941 painting THEATER DANCER with TWO LEFT SHADOWS. ENTIRE dancer face/body/hands/clothes/shoes and BOTH shadows exactoriginal. Five isolated SINGLE artifacts:1) BLUE RIBBON on floorforeground aroundx358,y854: freeend threads through its OWN looseoverhand knot, sameoriginalcloth/restfloor.2) LEFT woodenCHEST brassLATCH x231,y577: its hingedflatlatch swings OPEN to LEFT, otherwood/cloth/hat/bell originalexact.3) GOLD CURTAIN TASSEL upperLEFT aroundx80,y389: ONLY bottom fringe bunch passes through its OWN loose loop, samecord/topknob/curtain.4) BLUE STAR BALL right x1486,y648: ONLY its LARGE lowerleftgoldstar aroundx1476,y676 becomes one GOLD SPIRAL painted emblem, allotherstars/ballshape unchanged.5) MANDOLIN bottomLEFT aroundx165,y779: ONLY oval black SOUNDHOLE aroundx173,y765 becomes a clean CRESCENT shaped hole, all originalstrings/stringpath/bridge/bodyoutline andpaintedornament EXACT. No swaps/newobjects, no candleflamechanges, noanatomy/face/shadowchanges. Preserve style/framing."
+      }
+    },
+    {
+      "file": "ribbon-refine-prompt.json",
+      "content": {
+        "prompt": "Edit this346x115 crop of one BLUE GOLD patterned loose RIBBON on theaterfloor. ONLY its freeRIGHT end threads THROUGH its OWN looseoverhand knot aroundx228,y62, with one clearlycontinuous believable bluefabric knot. Originalleftdrape/middle arch/paintedstarpattern same; allwoodfloor/mandolin corner untouched. Keep entire cloth footprint insidecrop, no extra ribbons. Singleclothrelationship only."
+      }
+    },
+    {
+      "file": "wood-refine-prompt.json",
+      "content": {
+        "prompt": "Edit ONLY this221x142 mandolin crop. ALL strings/soundhole/bridge/bodyoutline/black rightornament exactoriginal. On the blank WOODEN LEFT FRONT FACE below strings, centered at localx55,y72, carve ONE clear shallow COMPASS ROSE emblem approximatelyx25\u00e2\u20ac\u201c85,y48\u00e2\u20ac\u201c95. Keep incision wholly on wood, no strings or soundhole overlaps. Single localized wooden surface pattern, no otherchanges; preserve existingpaintedgrain."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "The floor ribbon's free end threads through its own knot.",
+      "box": {
+        "x": 417,
+        "y": 843,
+        "width": 172,
+        "height": 64
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The curtain tassel's fringe passes through its own loop.",
+      "box": {
+        "x": 43,
+        "y": 335,
+        "width": 70,
+        "height": 102
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Hard",
+      "label": "One lower gold star on the ball becomes a spiral emblem.",
+      "box": {
+        "x": 1439,
+        "y": 637,
+        "width": 83,
+        "height": 87
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "The mandolin wooden face bears an incised compass rose.",
+      "box": {
+        "x": 118,
+        "y": 768,
+        "width": 57,
+        "height": 55
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "The left chest's latch swings open.",
+      "box": {
+        "x": 40,
+        "y": 540,
+        "width": 72,
+        "height": 50
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Five single artifacts; initial fullgen ribbon missed knot/ball added star, replaced by exact original-crop refinements. Soundhole edit rejected due string aliasing; final fifth clue uses localized carved wooden compass below strings from original instrument crop. Entire person/shadows, otherballstars, original soundhole/strings/bridge retained outside wooden emblem mask. Native five pairs/390 inspected; smallmandolin/chest features locatable, rootjoin/difficulty pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

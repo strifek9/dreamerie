@@ -1,0 +1,115 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-110",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-revisit-v1/110-dynamic-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-110-original-v4.png",
+    "sha256": "2DE847213E74BCB89D6AD5378BC5635AD3717B6B2E3CB16C1AC1BC8B47E4EBF3",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-110-altered-source-v4.png",
+    "sha256": "4E6CC049D055C5FEB0499528593543C8146F249F260EA46FBE0D4ED09E37AC51",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exactnative1672x941 fulloriginal StaircaseintheSleeve oilpainting. Five isolated singleobject changes only: 1) hanginggoldpocketwatch atx993y142 has BOTHhands pointDOWN toward six instead ofupwardV, face/frame/ticks unchanged. 2) flyingwhiteorigami bird beside stairs x951y449 folds its wings DOWN instead ofup, samecenter/body/tealneckscarf untouched. 3) purplechair atleft has threevertical backslats instead of twohorizontalrails, outerframe/legs/seat/ropeunchanged. 4) ONLY roundhole on yellow slippertoe near1010,796 becomes clear keyhole-shapedopening, same sizearoundhole/slipperoutline. 5) bluewhitecloth over slipperrightedge has diagonallyarranged diamondchecks instead ofsquarechecks, folds/bounds same, cushion/boatunchanged. Nootheredits/newobjects/text/crop, nativefullframe.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exactnative1672x941 fulloriginal StaircaseintheSleeve oilpainting. Five isolated singleobject changes only: 1) hanginggoldpocketwatch atx993y142 has BOTHhands pointDOWN toward six instead ofupwardV, face/frame/ticks unchanged. 2) flyingwhiteorigami bird beside stairs x951y449 folds its wings DOWN instead ofup, samecenter/body/tealneckscarf untouched. 3) purplechair atleft has threevertical backslats instead of twohorizontalrails, outerframe/legs/seat/ropeunchanged. 4) ONLY roundhole on yellow slippertoe near1010,796 becomes clear keyhole-shapedopening, same sizearoundhole/slipperoutline. 5) bluewhitecloth over slipperrightedge has diagonallyarranged diamondchecks instead ofsquarechecks, folds/bounds same, cushion/boatunchanged. Nootheredits/newobjects/text/crop, nativefullframe."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "chair-slats",
+      "label": "The purple chair has upright back slats.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 232,
+        "y": 501,
+        "width": 121,
+        "height": 143
+      },
+      "edgeFade": 5
+    },
+    {
+      "id": "bird-wings",
+      "label": "The paper bird lowers its wings.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 886,
+        "y": 397,
+        "width": 146,
+        "height": 101
+      },
+      "edgeFade": 5
+    },
+    {
+      "id": "diamond-cloth",
+      "label": "The slipper's blue cloth has diamond checks.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1155,
+        "y": 760,
+        "width": 143,
+        "height": 91
+      },
+      "edgeFade": 5
+    },
+    {
+      "id": "watch-hand",
+      "label": "The pocket watch's long hand points downward.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 957,
+        "y": 108,
+        "width": 66,
+        "height": 67
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "slipper-keyhole",
+      "label": "The slipper toe has a keyhole-shaped opening.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 978,
+        "y": 775,
+        "width": 56,
+        "height": 48
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": {
+    "humanTimed": false,
+    "physicalPhone": false,
+    "notes": "Realizedwatchlonghanddown, shortleft, labeledactualnotbothdown.",
+    "outsideRegionsExact": true,
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sourceHashes": {
+      "source.png": "4e6cc049d055c5feb0499528593543c8146f249f260ea46fbe0d4ed09e37ac51"
+    }
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

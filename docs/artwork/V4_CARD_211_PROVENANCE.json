@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-211",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-211-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-211-original-v4.png",
+    "sha256": "C593E62DF255A3DD1B9C7640C65D0A939A00BE463B9DDDE1E48D010D4E1B4CDD",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-211-altered-source-v4.png",
+    "sha256": "F2E67D98333FE3BDD432725B0EEB40BB72D5A173EE5AD28C187A6905F927CAE4",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise five-difference edit of original painted bowing metal robot on empty theater stage with coat-hanger audience and applauding shadows. Keep original frame, robot anatomy/pose/identity, every audience chair/shadow and grain-free brushwork. Exactly FIVE localized one-object parts: 1 robot's small head antenna tilts LEFT with its same gold ball tip instead of leaning right; head/face/body unchanged. 2 CENTER tan script booklet on floor has its LOWER-RIGHT cover corner curled upward revealing underside, other papers exact. 3 front RIGHT hanger (over chair around1400,450) has its hook tip curl farther into a CLOSED loop, all other hangers original. 4 thick gold curtain tie at far LEFT: central rope crossing changes so the diagonal strand passes UNDER the horizontal loop instead of over, same entire knot/cord strands/shape. 5 overhead stage spotlight LOWER rectangular metal barn-door flap folds UP toward lamp opening, only this lower flap changes, remaining lamp panels/beam exact. Five definite localized clues, no two-object swaps, no changed audience hands/shadows, no specks/grain. Return one matching full frame.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise five-difference edit of original painted bowing metal robot on empty theater stage with coat-hanger audience and applauding shadows. Keep original frame, robot anatomy/pose/identity, every audience chair/shadow and grain-free brushwork. Exactly FIVE localized one-object parts: 1 robot's small head antenna tilts LEFT with its same gold ball tip instead of leaning right; head/face/body unchanged. 2 CENTER tan script booklet on floor has its LOWER-RIGHT cover corner curled upward revealing underside, other papers exact. 3 front RIGHT hanger (over chair around1400,450) has its hook tip curl farther into a CLOSED loop, all other hangers original. 4 thick gold curtain tie at far LEFT: central rope crossing changes so the diagonal strand passes UNDER the horizontal loop instead of over, same entire knot/cord strands/shape. 5 overhead stage spotlight LOWER rectangular metal barn-door flap folds UP toward lamp opening, only this lower flap changes, remaining lamp panels/beam exact. Five definite localized clues, no two-object swaps, no changed audience hands/shadows, no specks/grain. Return one matching full frame."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "antenna",
+      "label": "The robot antenna tilts left.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 591,
+        "y": 113,
+        "width": 82,
+        "height": 61
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "paper",
+      "label": "The middle booklet's cover corner curls upward.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 691,
+        "y": 763,
+        "width": 94,
+        "height": 61
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "hanger",
+      "label": "The far-right hanger hook coils closed.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1610,
+        "y": 400,
+        "width": 62,
+        "height": 63
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "rope",
+      "label": "The curtain tie diagonal strand passes under its loop.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 20,
+        "y": 142,
+        "width": 106,
+        "height": 111
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "light",
+      "label": "The spotlight's lower flap folds upward.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 224,
+        "y": 108,
+        "width": 114,
+        "height": 69
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered compositor/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

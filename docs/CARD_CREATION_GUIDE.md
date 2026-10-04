@@ -82,3 +82,7 @@ Before every generation batch, read this guide and inspect representative existi
 - Poems remain brief, original, clearly rhyming and allude to shifting dreams without spoiling answers. Record exact prompts and source provenance.
 
 Keep the interface and rules simple. Richness belongs in the artwork, not extra modes, ornament layers or complicated scoring.
+
+## One selectable changed object per difference — October4 user correction
+
+The user rejected the Seamstress paper-fish color swap: two independently selectable changed fish cannot count as one guess (Sentinel_1aa3e822002c8191a74c51f233f72cbe). Prefer changing one object and preserving the others exactly. Do not hide two color/position/size swaps under one wide hit box. A single object's internal pattern/pose may change coherently; judge whether a player sees separate selectable changed objects. Audit actual composites, not labels alone. Keep exactly five real differences and generous circle-overlap rules; shrink/localize the selected artwork region or choose another isolated target rather than merging distant objects.

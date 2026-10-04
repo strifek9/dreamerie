@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-223",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-223-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-223-original-v4.png",
+    "sha256": "40ECEC51F1F5CE77798E71A1D001E91C2A610037A9F0E2838AD655EF72A503D0",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-223-altered-source-v4.png",
+    "sha256": "3B14ED8E194E0A029278643F45624D366F2C7C7144E18AD2996A840494C2AD18",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Preserve exact painting native1672x941 composition/anatomy/style, FIVE localized one-object changes only: 1 pink eraser silver retaining band near(1465,423) becomes a single broad band with bold zigzag engraved groove rather than two straight grooves, eraser exact. 2 miniature wooden ladder near(737,451) ONLY third rung from BOTTOM at(701,516) bends into downward U arch instead of straight, both rails and other rungs unchanged. 3 tallest paper mountain summit near(855,88) becomes two close forked points separated by V notch, only upper 70pixels, rest mountain untouched. 4 pink shaving curl at(1533,654) winds opposite direction inward, single continuous shaving same position,size and material. 5 ONE binder clip on upper-right dish near(1355,47) ONLY its front silver/brass wire handle folds DOWN toward dish, clip body and other handle unchanged. No separate-object swaps; all cup/books/plants/pencil/drawing other details original.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Preserve exact painting native1672x941 composition/anatomy/style, FIVE localized one-object changes only: 1 pink eraser silver retaining band near(1465,423) becomes a single broad band with bold zigzag engraved groove rather than two straight grooves, eraser exact. 2 miniature wooden ladder near(737,451) ONLY third rung from BOTTOM at(701,516) bends into downward U arch instead of straight, both rails and other rungs unchanged. 3 tallest paper mountain summit near(855,88) becomes two close forked points separated by V notch, only upper 70pixels, rest mountain untouched. 4 pink shaving curl at(1533,654) winds opposite direction inward, single continuous shaving same position,size and material. 5 ONE binder clip on upper-right dish near(1355,47) ONLY its front silver/brass wire handle folds DOWN toward dish, clip body and other handle unchanged. No separate-object swaps; all cup/books/plants/pencil/drawing other details original."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "zigzag-band",
+      "label": "The eraser\u2019s band carries a zigzag groove.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1395,
+        "y": 339,
+        "width": 193,
+        "height": 204
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "forked-summit",
+      "label": "The tallest mountain summit forks.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 804,
+        "y": 62,
+        "width": 117,
+        "height": 126
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "curled-shaving",
+      "label": "The pink shaving curls inward.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1445,
+        "y": 581,
+        "width": 195,
+        "height": 158
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "arched-rung",
+      "label": "One ladder rung bows downward.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 687,
+        "y": 484,
+        "width": 48,
+        "height": 46
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "folded-clip",
+      "label": "The binder clip\u2019s front handle folds down.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1279,
+        "y": 0,
+        "width": 131,
+        "height": 113
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five paired crops, full composite and 390-pixel stacked pair inspected. Single-object changes; difficulty hypotheses only. Root browser/hit QA and human fairness remain pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-348",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-348-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-348-original-v4.png",
+    "sha256": "711BD6C94DD1C07E81BEAA454F0E1BDADBC4BC1424B229D4EBBC7C1C8DA2BCF0",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-348-altered-source-v4.png",
+    "sha256": "F8DEA72AF48B4B907007976034FB3B59B8ABC5507BE38EDC454533C86AA840F8",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact original1672x941 painting preserving cutealien anatomy/style/frame. FIVE LOCAL single-object differences only:1 alien LEFT eye native508335 closes gently, other eye original.2 lunchbox latch native798653 turns sideways horizontal instead of vertical, same onehardware.3 waterbottle planet emblem native1521747 ONLY existing ring rotates to vertical orbit, planet unchanged.4 backpack brass buckle native164119 inner opening becomes diamond instead of rectangular, original strap/body.5 round purple ball upper-right at1514115 gets pale STAR motif on its visible frontpurple hemisphere, existing band exact. Allotherobjects original, no multiple swaps or additions.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact original1672x941 painting preserving cutealien anatomy/style/frame. FIVE LOCAL single-object differences only:1 alien LEFT eye native508335 closes gently, other eye original.2 lunchbox latch native798653 turns sideways horizontal instead of vertical, same onehardware.3 waterbottle planet emblem native1521747 ONLY existing ring rotates to vertical orbit, planet unchanged.4 backpack brass buckle native164119 inner opening becomes diamond instead of rectangular, original strap/body.5 round purple ball upper-right at1514115 gets pale STAR motif on its visible frontpurple hemisphere, existing band exact. Allotherobjects original, no multiple swaps or additions."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "closed-eye",
+      "label": "The alien closes one eye.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 628,
+        "y": 196,
+        "width": 98,
+        "height": 112
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "vertical-orbit",
+      "label": "The bottle planet\u2019s ring turns vertical.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1471,
+        "y": 676,
+        "width": 110,
+        "height": 127
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "star-ball",
+      "label": "The ball bears a pale star.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1425,
+        "y": 40,
+        "width": 99,
+        "height": 105
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "sideways-latch",
+      "label": "The latch\u2019s top plate becomes a horizontal bar.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 768,
+        "y": 626,
+        "width": 67,
+        "height": 60
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "diamond-buckle",
+      "label": "The backpack buckle\u2019s opening becomes a diamond.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 132,
+        "y": 80,
+        "width": 67,
+        "height": 78
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five paired crops, full composite and 390-pixel stacked pair inspected. Single-object changes; difficulty hypotheses only. Root browser/hit QA and human fairness remain pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

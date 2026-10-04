@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-328",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-328-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-328-original-v4.png",
+    "sha256": "25E30F2D4A8C3EFE5B4ECA6F9B2E42275AC80C1B8D39C40DA12DDF95B0FEB876",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-328-altered-source-v4.png",
+    "sha256": "47CEECB4DFC5F240F3A5697D5075E56813BFF7EEF639D07E26ADA6918AF8CE19",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact original elderly clockmaker folding glowing golden afternoon ribbon into clock case painting. Preserve her face/anatomy/hands/light-ribbon core premise, table tools, frame and style. Exactly FIVE single-object localized changes: (1) LARGE white ceramic tool mug LEFT handle curls inward into a broad spiral, body/tools exact; (2) hanging isolated gold PENDULUM on back RIGHT wall has a broad embossed crescent centered on its disk, same disk/chain; (3) foreground loose CLOCK LID its central lifting finial becomes a broad square loop instead of round stacked knob, same lid/disk; (4) far-right HOURGLASS top wooden plate underside has an attached lip folded upward at LEFT edge, preserve pillars/glass/sand; (5) pair of brass TWEEZERS on purple cloth at lower RIGHT its upper single arm bends into a hook at terminal tip, other arm/base exact. Five one-object mechanisms/internal pattern each, no loose gear swaps/no grain or tiny dots.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact original elderly clockmaker folding glowing golden afternoon ribbon into clock case painting. Preserve her face/anatomy/hands/light-ribbon core premise, table tools, frame and style. Exactly FIVE single-object localized changes: (1) LARGE white ceramic tool mug LEFT handle curls inward into a broad spiral, body/tools exact; (2) hanging isolated gold PENDULUM on back RIGHT wall has a broad embossed crescent centered on its disk, same disk/chain; (3) foreground loose CLOCK LID its central lifting finial becomes a broad square loop instead of round stacked knob, same lid/disk; (4) far-right HOURGLASS top wooden plate underside has an attached lip folded upward at LEFT edge, preserve pillars/glass/sand; (5) pair of brass TWEEZERS on purple cloth at lower RIGHT its upper single arm bends into a hook at terminal tip, other arm/base exact. Five one-object mechanisms/internal pattern each, no loose gear swaps/no grain or tiny dots."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "cup",
+      "label": "The tool mug handle curls into a spiral.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 252,
+        "y": 606,
+        "width": 93,
+        "height": 110
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "pendulum",
+      "label": "The wall pendulum disk has a crescent relief.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1270,
+        "y": 211,
+        "width": 77,
+        "height": 85
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "loop",
+      "label": "The loose clock lid has a square lifting loop.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1008,
+        "y": 730,
+        "width": 69,
+        "height": 70
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "hourglass",
+      "label": "The hourglass top plate left lip curls up.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1503,
+        "y": 373,
+        "width": 73,
+        "height": 60
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "tweezers",
+      "label": "The tweezers joined end opens into a hook.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1220,
+        "y": 749,
+        "width": 85,
+        "height": 61
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered compositor/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

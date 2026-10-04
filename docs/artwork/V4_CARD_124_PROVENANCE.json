@@ -1,0 +1,116 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-124",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-124-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-124-original-v4.png",
+    "sha256": "31A462CBAB1F7F9BB02916164968FC8CFC13EA5EF3E47C6EA4C63D6BE099496C",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-124-altered-source-v4.png",
+    "sha256": "4A1BAB8B192265601BEC48C103DD03D407668E3D0AF1530D7F481810DDF6CD9D",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Exact native1672x941 localizedpainting edit preserve friendlymonster anatomy/hands/face, piano music ribbons catroomlighting andeverythingelse. Five singleobjectdifferences:1 bluecatballatx478y845 changes goldSTAR motif to goldcrescent, sameball;2 metronome metalPENDULUMx462y194 leans LEFT insteadright fromsamefixedbottompivotx447y238, samebody;3 small modelboat SAILx542y247 is foldeddown to a shorttriangle ratherthantalltriangle, sameboat/mast;4 red SOCK hangingonmonsterhornx994y129 has connectedheel flapfoldedoutward towardright insteadstraightprofile, samesockstripes/horn;5 right stuffedRABBIT neckbluebowx1404y793 has rightlooseendcurled into aloop ratherthan hangingdown, samebowknotandleftend. Fiveobjectonly; no swaps, noextraobjects, noglobalregeneration. Clear physicalconnectedchanges notgrain.\"}}, {\"file\": \"prompt-b.json\", \"content\": {\"prompt\": \"Edit this exact small painted model sailboat crop. ONE sail object change: the big cream sail on RIGHT side of mast has its upper pointed half folded DOWNWARD, making a short folded triangular sail with a visible folded diagonal edge, leaving the tall mast exposed above it. Keep LEFT small sail, red hull, mast/crosspiece and background/piano exactly intact. Do not swap sail positions or change two sails. Clear connected paper/fabric fold; same painterlyfinish.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Exact native1672x941 localizedpainting edit preserve friendlymonster anatomy/hands/face, piano music ribbons catroomlighting andeverythingelse. Five singleobjectdifferences:1 bluecatballatx478y845 changes goldSTAR motif to goldcrescent, sameball;2 metronome metalPENDULUMx462y194 leans LEFT insteadright fromsamefixedbottompivotx447y238, samebody;3 small modelboat SAILx542y247 is foldeddown to a shorttriangle ratherthantalltriangle, sameboat/mast;4 red SOCK hangingonmonsterhornx994y129 has connectedheel flapfoldedoutward towardright insteadstraightprofile, samesockstripes/horn;5 right stuffedRABBIT neckbluebowx1404y793 has rightlooseendcurled into aloop ratherthan hangingdown, samebowknotandleftend. Fiveobjectonly; no swaps, noextraobjects, noglobalregeneration. Clear physicalconnectedchanges notgrain."
+      }
+    },
+    {
+      "file": "prompt-b.json",
+      "content": {
+        "prompt": "Edit this exact small painted model sailboat crop. ONE sail object change: the big cream sail on RIGHT side of mast has its upper pointed half folded DOWNWARD, making a short folded triangular sail with a visible folded diagonal edge, leaving the tall mast exposed above it. Keep LEFT small sail, red hull, mast/crosspiece and background/piano exactly intact. Do not swap sail positions or change two sails. Clear connected paper/fabric fold; same painterlyfinish."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The ball has a crescent motif",
+      "difficulty": "Easy",
+      "box": {
+        "x": 453,
+        "y": 814,
+        "width": 66,
+        "height": 63
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The metronome pendulum leans left",
+      "difficulty": "Medium",
+      "box": {
+        "x": 392,
+        "y": 138,
+        "width": 100,
+        "height": 106
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The model boat right sail folds down",
+      "difficulty": "Hard",
+      "box": {
+        "x": 536,
+        "y": 219,
+        "width": 30,
+        "height": 64
+      },
+      "edgeFade": 1
+    },
+    {
+      "id": "change-4",
+      "label": "The hanging sock heel folds outward",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 964,
+        "y": 86,
+        "width": 91,
+        "height": 96
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The toy rabbit bow end curls into a loop",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1395,
+        "y": 781,
+        "width": 59,
+        "height": 43
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "five single-object clues inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "refinement": "right sail target crop, masked cream silhouette union to preserve neighboring left sail/background",
+    "difficulty": "hypotheses; human playtest and parent browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

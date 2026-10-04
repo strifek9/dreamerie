@@ -1,0 +1,120 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-273",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-273-replacement-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-273-original-v4.png",
+    "sha256": "4CEA370A811E5AB38977985321DB69A4BBE50DC5B7BDFF3E2C2C88F3AD97713F",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-273-altered-source-v4.png",
+    "sha256": "6C0EFEA74F1DE0A95735B9A45088E1C6B0EC8C05377AF63077BE3103049D0AFC",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact native1672x941 dreamy piano crossing hall painting, FIVE isolated single-object changes only. 1 Fish jumping from piano near x944y166 closes its mouth into smooth lip line, rest fish eye/body/fins identical. 2 Hanging white piano key charm near x1010y106: its black inset key becomes a small heart-shaped black inset instead of long straight strip, same whitekey silhouette, chain exact. 3 Open score book atop piano near x1203y288: right page curls backward at upper-right corner, same book size/writing and left page exact. 4 Piano bench cushion bottomright x1565y662: broad pale stripes become three same-colored diamond motifs across same green cushion, framelegs exact. 5 Front-most large snail-shell wheel near x850y752: spiral center curls counterclockwise instead of clockwise, retain outer shell outline/ribs/reflection and gold mount exact. Preserve all other objects, water, floor, reflections, architecture and full framing.\", \"reference\": \"dream-273-replacement-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact native1672x941 dreamy piano crossing hall painting, FIVE isolated single-object changes only. 1 Fish jumping from piano near x944y166 closes its mouth into smooth lip line, rest fish eye/body/fins identical. 2 Hanging white piano key charm near x1010y106: its black inset key becomes a small heart-shaped black inset instead of long straight strip, same whitekey silhouette, chain exact. 3 Open score book atop piano near x1203y288: right page curls backward at upper-right corner, same book size/writing and left page exact. 4 Piano bench cushion bottomright x1565y662: broad pale stripes become three same-colored diamond motifs across same green cushion, framelegs exact. 5 Front-most large snail-shell wheel near x850y752: spiral center curls counterclockwise instead of clockwise, retain outer shell outline/ribs/reflection and gold mount exact. Preserve all other objects, water, floor, reflections, architecture and full framing.",
+        "reference": "dream-273-replacement-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "bench-diamonds",
+      "label": "The bench cushion has pale diamond motifs.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1390,
+        "y": 577,
+        "width": 282,
+        "height": 148
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "page-curl",
+      "label": "The score's upper-right page corner curls backward.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1220,
+        "y": 225,
+        "width": 55,
+        "height": 49
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "fish-mouth",
+      "label": "The fish narrows its open mouth.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 944,
+        "y": 134,
+        "width": 34,
+        "height": 47
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "key-heart",
+      "label": "The hanging piano key bears a black heart.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 990,
+        "y": 72,
+        "width": 43,
+        "height": 76
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "shell-coil",
+      "label": "The front shell wheel has a tighter central coil.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 770,
+        "y": 711,
+        "width": 101,
+        "height": 120
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": {
+    "humanTimed": false,
+    "physicalPhone": false,
+    "notes": [
+      "Spiral reversal unrealized; tighter central coil is observed label. Book selected corner only to preserve original remaining score.",
+      "Generated1671x941 retained raw-generated.png; native source uses original rightmost column without scaling."
+    ],
+    "outsideRegionsExact": true,
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sourceHashes": {
+      "source.png": "6c0efea74f1de0a95735b9a45088e1c6b0ec8c05377af63077be3103049d0afc"
+    },
+    "rawSourceSha256": "58df4deb819a26d9953d943aec9d0610a8f5ed363ea2ab455bab5f1808cd9b3a"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

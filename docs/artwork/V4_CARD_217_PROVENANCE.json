@@ -1,0 +1,118 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-217",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-217-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-217-original-v4.png",
+    "sha256": "70659C0AF52F7F3BAFF876E08E6A91F96BF7B6A772E4251C4846273E66E6E654",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-217-altered-source-v4.png",
+    "sha256": "E11FC41E1AD93417B048B160CB1831408184084241FE6D9E062F77A1401D1CD7",
+    "prompt": "[{\"file\": \"fish-preserve-prompt.json\", \"content\": {\"operation\": \"Original fishlip/head edge andunchanged rear goldspeaker restored byteexact; keepfrontspeaker hingemechanism\", \"rectangles\": [[865, 285, 904, 337], [429, 186, 597, 283]]}}, {\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit attached VINTAGE PURPLE rotary TELEPHONE withturquoiseFISH receiver andempty glassfishbowl painting. EXACT1672x941 framing allobjectpositions/fish anatomy originalexact. FIVE isolated SINGLE-artifact changes:1) glass FISHBOWL right x1280 y460: its existing bright WINDOW reflection onupperRIGHT glass becomes one large paleCRESCENT reflection, same bowloutline/rim emptyglass.2) gold circular rotary DIAL centralblankdisk x718 y541: a clear incised goldSPIRAL appears within blankcenterdisk, preserving10fingerholes/rim/pointer.3) GOLD liddedCONTAINER lowerLEFT x66 y716: existing lid hinges OPEN attachedone side, preservebody and otherobjects/marbles.4) PURPLE velvet cloth foregroundLOWERRIGHT x1420 y828: its loosecorner passes through itsOWN overhand selfknot, same restcloth/drapeposition, no bowl/table alteration.5) FISH receiver FRONT gold perforated SPEAKER disc beneathfishmouth x799 y320: its owngoldfaceplate hinges DOWNWARD slightly attachedonleft revealingdarkcavityinside earpiece, oneconnected phone-speaker mechanism. Fishface/mouth/eye/scales/fins untouched, secondrear earpiece untouched. No two-object swaps, no newobjects/text/grain.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "fish-preserve-prompt.json",
+      "content": {
+        "operation": "Original fishlip/head edge andunchanged rear goldspeaker restored byteexact; keepfrontspeaker hingemechanism",
+        "rectangles": [
+          [
+            865,
+            285,
+            904,
+            337
+          ],
+          [
+            429,
+            186,
+            597,
+            283
+          ]
+        ]
+      }
+    },
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit attached VINTAGE PURPLE rotary TELEPHONE withturquoiseFISH receiver andempty glassfishbowl painting. EXACT1672x941 framing allobjectpositions/fish anatomy originalexact. FIVE isolated SINGLE-artifact changes:1) glass FISHBOWL right x1280 y460: its existing bright WINDOW reflection onupperRIGHT glass becomes one large paleCRESCENT reflection, same bowloutline/rim emptyglass.2) gold circular rotary DIAL centralblankdisk x718 y541: a clear incised goldSPIRAL appears within blankcenterdisk, preserving10fingerholes/rim/pointer.3) GOLD liddedCONTAINER lowerLEFT x66 y716: existing lid hinges OPEN attachedone side, preservebody and otherobjects/marbles.4) PURPLE velvet cloth foregroundLOWERRIGHT x1420 y828: its loosecorner passes through itsOWN overhand selfknot, same restcloth/drapeposition, no bowl/table alteration.5) FISH receiver FRONT gold perforated SPEAKER disc beneathfishmouth x799 y320: its owngoldfaceplate hinges DOWNWARD slightly attachedonleft revealingdarkcavityinside earpiece, oneconnected phone-speaker mechanism. Fishface/mouth/eye/scales/fins untouched, secondrear earpiece untouched. No two-object swaps, no newobjects/text/grain."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "A crescent replaces the fishbowl's window reflection.",
+      "box": {
+        "x": 1363,
+        "y": 292,
+        "width": 177,
+        "height": 235
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The front receiver's faceplate hinges open.",
+      "box": {
+        "x": 730,
+        "y": 276,
+        "width": 153,
+        "height": 130
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The gold container's lid hinges open.",
+      "box": {
+        "x": 0,
+        "y": 538,
+        "width": 189,
+        "height": 300
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "The purple cloth's loose corner ties into a knot.",
+      "box": {
+        "x": 1380,
+        "y": 769,
+        "width": 191,
+        "height": 172
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "A spiral is engraved into the dial's center disk.",
+      "box": {
+        "x": 664,
+        "y": 496,
+        "width": 111,
+        "height": 96
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Correct inventory/yearnative1672x941. Actualfive singleartifacts: onebowlreflection, onefrontspeakerhingedfaceplate, goldcontainerlid, onecloth selfknot, centraldial internalpattern. Fingerholes/rearreceiver untouched; rearreceiverandfishlip exactoriginal pixels restored via fish-preserve.py. No object swaps orfishanatomychange. Goldcontainer/cloth legitimatelyclippedatnativeedges originalalso. Root exactjoins pending; difficultieshypotheses.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

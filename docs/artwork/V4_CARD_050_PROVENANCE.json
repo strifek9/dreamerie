@@ -1,0 +1,118 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-050",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-050-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-050-original-v4.png",
+    "sha256": "A47C6AF56CC2AF62758BEEA9F8E737650717D0F64282782DC4B5F0D109E70701",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-050-altered-source-v4.png",
+    "sha256": "1CBFE140F7CFE82FC3B875DF050F919838C243D53654BCEA671C4D96DC4D8C0E",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"Precise-object-edit attached Dreamerie River in the Piano. Preserve exact1672x941 widepainted frame, all objects, scenery, keys, flowers, swanbody, style/grainfree. Exactly five separate SINGLEOBJECT edits:1 piano front golden crescent emblem x771y574 closes into full circular ring samegold,size;2 ONLY swan head/neck x1091y395 turns backward to look RIGHT over its shoulder instead looking LEFT, body/wings/otherobjects remain exact;3 ONLY long left blue ribbon tail x645y472 passes BEHIND musicstand lower brass rail rather than infront, keep stand exact and ribbon elsewhere same;4 ONLY middle footpedal x756y891 bends upward at its tip, other two pedals original unchanged no swap;5 ONLY small gold medallion centered on bench front apron x567y878 changes from four-lobed rounded motif into diamondwithtinycirclecenter, wood/neighborornaments exact. No independentobject swaps or several changedobjects counted asone. Exactlyfive edits; no addedobjects, text, grain, globalrestyleorframingchange. Keep clean connected mechanics and native inspectable detail.\"}}, {\"file\": \"prompt-refine.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"Edit attached piano painting only ONE localized thing: on dark angled piano lid support strut near RIGHTEDGE at approximatelyx1490,y381 in1672x941 image, add a small attached brass hinge/collar embracing the strut. Strut runs diagonallydownright; collar should wrap behind and infront of rod with coherent mechanical connection, width~35px height~45px. Preserve rod direction, all piano/body andflowers/window/background original exact. This localized supportjoint changes from plainrod to brassclasp, one independentlyselectable object. Everythingelse unchanged, preserve exact1672x941 frame and brushwork, no grain/text.\"}}, {\"file\": \"prompt-head-refine.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"ONLY ONE TINY LOCAL EDIT to attached native1672x941 piano painting: white swan's HEAD atx1090,y377 currently blackface/orangebill pointsLEFT. Turn ONLY ITS HEAD to lookRIGHT over its shoulder, same headcenter/size, orangebill atx1119,y379 instead1076,y384. Preserve the curved neck below y400 EXACTLY and entire swanbody/wings/tail position EXACTLY; DO NOT reverse/move the entire bird. Retain head anatomically connected to SAME original neck andbody. Edit limited x1067..1135 y354..403. Keep everythingelse pixelaligned unchanged, fullframe1672x941, painterly no grain/no text.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "Precise-object-edit attached Dreamerie River in the Piano. Preserve exact1672x941 widepainted frame, all objects, scenery, keys, flowers, swanbody, style/grainfree. Exactly five separate SINGLEOBJECT edits:1 piano front golden crescent emblem x771y574 closes into full circular ring samegold,size;2 ONLY swan head/neck x1091y395 turns backward to look RIGHT over its shoulder instead looking LEFT, body/wings/otherobjects remain exact;3 ONLY long left blue ribbon tail x645y472 passes BEHIND musicstand lower brass rail rather than infront, keep stand exact and ribbon elsewhere same;4 ONLY middle footpedal x756y891 bends upward at its tip, other two pedals original unchanged no swap;5 ONLY small gold medallion centered on bench front apron x567y878 changes from four-lobed rounded motif into diamondwithtinycirclecenter, wood/neighborornaments exact. No independentobject swaps or several changedobjects counted asone. Exactlyfive edits; no addedobjects, text, grain, globalrestyleorframingchange. Keep clean connected mechanics and native inspectable detail."
+      }
+    },
+    {
+      "file": "prompt-refine.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "Edit attached piano painting only ONE localized thing: on dark angled piano lid support strut near RIGHTEDGE at approximatelyx1490,y381 in1672x941 image, add a small attached brass hinge/collar embracing the strut. Strut runs diagonallydownright; collar should wrap behind and infront of rod with coherent mechanical connection, width~35px height~45px. Preserve rod direction, all piano/body andflowers/window/background original exact. This localized supportjoint changes from plainrod to brassclasp, one independentlyselectable object. Everythingelse unchanged, preserve exact1672x941 frame and brushwork, no grain/text."
+      }
+    },
+    {
+      "file": "prompt-head-refine.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "ONLY ONE TINY LOCAL EDIT to attached native1672x941 piano painting: white swan's HEAD atx1090,y377 currently blackface/orangebill pointsLEFT. Turn ONLY ITS HEAD to lookRIGHT over its shoulder, same headcenter/size, orangebill atx1119,y379 instead1076,y384. Preserve the curved neck below y400 EXACTLY and entire swanbody/wings/tail position EXACTLY; DO NOT reverse/move the entire bird. Retain head anatomically connected to SAME original neck andbody. Edit limited x1067..1135 y354..403. Keep everythingelse pixelaligned unchanged, fullframe1672x941, painterly no grain/no text."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "ring",
+      "label": "The piano's crescent closes into a ring.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 739,
+        "y": 532,
+        "width": 72,
+        "height": 79
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "swan-head",
+      "label": "The swan looks right over its shoulder.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1068,
+        "y": 351,
+        "width": 80,
+        "height": 72
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "ribbon-weave",
+      "label": "The ribbon tail passes behind the music stand's rail.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 611,
+        "y": 438,
+        "width": 84,
+        "height": 127
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "strut-clasp",
+      "label": "A brass clasp wraps around the piano's lid support.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1421,
+        "y": 169,
+        "width": 60,
+        "height": 55
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "bench-medallion",
+      "label": "The bench's front medallion becomes a diamond.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 550,
+        "y": 856,
+        "width": 37,
+        "height": 42
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": "Rejected initial middlepedal (unchangedneighborfalsepositives), replacedwithstrutclasp. Rejected initialwholebird (bodytruncation), targeted head-onlyrefine nowselected. No decoupledpaint/hit region; all5straightboundedboxes. No humanvalidation. Targetedhead-onlysource solved bodyjoin. Expandedleft-tailregion removesleftoveroriginalbluefragment, righttailoriginalunchanged. Finalfullcomposite/5pairedcrops/390 inspected. Zerooutside5boxeschanges, allcluesnonzero. Finalsourcehash1cbfe140f7cfe82fc3b875df050f919838c243d53654bcea671c4d96dc4d8c0e. Rootneighborcenterchecks pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

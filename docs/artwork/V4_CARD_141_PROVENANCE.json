@@ -1,0 +1,133 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-141",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-141-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-141-original-v4.png",
+    "sha256": "1B8015033DB5C4EE3A9C2C576854F56468AEEC5DC7AD8A8043B9B9EE6FEFA44D",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-141-altered-source-v4.png",
+    "sha256": "E9D7856A249B26FE07A685643D8512B41DE74E611E8704A865F07A05201D8D99",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact image The Chess Piece That Grew Tired, wooden horse chess knight asleep under patchwork blanket, sleeping cat, candle, mug. Native1672x941 preserve all anatomy/style/framing. FIVE single-object localized edits only: 1 horse's metal cheek LOOP x976286 gets one diagonal crossbar inside its loop, retaining loop outline and attachment, within925238..1022339; 2 ONLY upper blanket round button x1081652 becomes wooden toggle with TWO holes samecenter, within1055630..1107678, lowerbuttonexact; 3 one brass blanket hinge x1338645 its central hinge pin points diagonally right instead vertical while plates unchanged, within1321603..1357695; 4 red square blanket patch x958635 gets ONE clearly visible gold crescent embroidered centrally, within914591..1003697, keepotherstitches; 5 brown mug ontable x1461298 reflects small blue window arch onfrontface, within1440275..1491329, mughandle/outlineexact. Preserve unrelated objects, onephysicalobject perclue, no swaps, no grain/specks.\"}}, {\"file\": \"arm-prompt.json\", \"content\": {\"prompt\": \"Exact crop one wooden chair's far arm tip with red fabric draped over its top. Change ONLY its existing wood front face into a clearly carved crescent-shaped recess, about25x35px on the broad vertical frontface. Keep outline, sameonearmtip, fabric, lighting exact. Bold single crescent carve, no fine grain. Same100x100 framing.\", \"nativeCrop\": [410, 355, 100, 100], \"rejected\": \"hinge screw X too small\"}}, {\"file\": \"hinge-prompt.json\", \"content\": {\"prompt\": \"Edit exact small crop brass hinge attached to blanket. ONLY the uppermost LEFT screw head on left plate changes its round dark slit into clearly visible a bright X-shaped screw slot. This ONE screw at cropx34y43, ~12x12. All other screwheads, hinge pin, plates, blanket exact. Same100x115 framing. No new screw.\", \"nativeCrop\": [1290, 590, 100, 115]}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact image The Chess Piece That Grew Tired, wooden horse chess knight asleep under patchwork blanket, sleeping cat, candle, mug. Native1672x941 preserve all anatomy/style/framing. FIVE single-object localized edits only: 1 horse's metal cheek LOOP x976286 gets one diagonal crossbar inside its loop, retaining loop outline and attachment, within925238..1022339; 2 ONLY upper blanket round button x1081652 becomes wooden toggle with TWO holes samecenter, within1055630..1107678, lowerbuttonexact; 3 one brass blanket hinge x1338645 its central hinge pin points diagonally right instead vertical while plates unchanged, within1321603..1357695; 4 red square blanket patch x958635 gets ONE clearly visible gold crescent embroidered centrally, within914591..1003697, keepotherstitches; 5 brown mug ontable x1461298 reflects small blue window arch onfrontface, within1440275..1491329, mughandle/outlineexact. Preserve unrelated objects, onephysicalobject perclue, no swaps, no grain/specks."
+      }
+    },
+    {
+      "file": "arm-prompt.json",
+      "content": {
+        "prompt": "Exact crop one wooden chair's far arm tip with red fabric draped over its top. Change ONLY its existing wood front face into a clearly carved crescent-shaped recess, about25x35px on the broad vertical frontface. Keep outline, sameonearmtip, fabric, lighting exact. Bold single crescent carve, no fine grain. Same100x100 framing.",
+        "nativeCrop": [
+          410,
+          355,
+          100,
+          100
+        ],
+        "rejected": "hinge screw X too small"
+      }
+    },
+    {
+      "file": "hinge-prompt.json",
+      "content": {
+        "prompt": "Edit exact small crop brass hinge attached to blanket. ONLY the uppermost LEFT screw head on left plate changes its round dark slit into clearly visible a bright X-shaped screw slot. This ONE screw at cropx34y43, ~12x12. All other screwheads, hinge pin, plates, blanket exact. Same100x115 framing. No new screw.",
+        "nativeCrop": [
+          1290,
+          590,
+          100,
+          115
+        ]
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The cheek loop has a diagonal crossbar",
+      "difficulty": "Easy",
+      "box": {
+        "x": 925,
+        "y": 238,
+        "width": 98,
+        "height": 103
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The red blanket patch has a crescent embroidery",
+      "difficulty": "Medium",
+      "box": {
+        "x": 913,
+        "y": 589,
+        "width": 92,
+        "height": 109
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The upper blanket button becomes a two hole toggle",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1054,
+        "y": 629,
+        "width": 56,
+        "height": 52
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The mug reflects a blue arched window",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1438,
+        "y": 274,
+        "width": 56,
+        "height": 60
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The far chair arm tip has a carved crescent",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 430,
+        "y": 385,
+        "width": 53,
+        "height": 59
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "refined-native.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390 stacked pair. Five separately changed objects. Unrelated drift excluded, outside boxes exact original. Crop refinements resized to original crop only, coordinates recorded, full generated crop preserved. Difficulty estimates unvalidated. Root compositor/game/human review pending. Tiny hinge screw edit rejected; fifth clue replaced with broad chair arm crescent recess.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

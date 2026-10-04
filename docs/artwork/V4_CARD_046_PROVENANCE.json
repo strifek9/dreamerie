@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-046",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-046-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-046-original-v4.png",
+    "sha256": "FCD6BFDA797EF2CD68A454FA5A588C2FA3C66AEFBD2147D21BB843BC184C85AF",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-046-altered-source-v4.png",
+    "sha256": "08BDA13BE12374E1236111B9B6339800DFF03F0E867298400D8C61FA4F662F62",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit this attached Dreamerie painting precise-object-edit native1672x941, preserve allanimals anatomyexpressions, framing, painterlyfinish, light/background. Exactly5localized singleobjectchanges:1 large deer umbrella white starx938y100 replaced bywhitecrescent;2 deer red umbrella Jhandle x1046y449 becomes closed red ovalloop withopeninginside, retaining sameupperattachment/deerpaw;3 rabbit blue scarf loosefarleftend atx280y521 curlsUPWARD instead of pointing downleft, same scarf elsewhere;4 mouseoverallpocket yellow stitchedX atx1235y764 changes to yellow PLUS upright crossing, pocketunchanged;5 squirrel yellow scarf loose upperend x1485y614 curls DOWNWARD instead ofup, retainotherend andbody. Do not change separateobjects together, no swaps. Keep exacteachobjectposition exceptspecifiedinternalpose andcontour. No otherchanges.\"}}, {\"file\": \"prompt-b.json\", \"content\": {\"prompt\": \"Edit only redumbrella handle in attacheddetail. Change openJcurve into closed red D-shapedloop byextending thinredcurve fromtopright tip backto redshaft immediatelyBELOW the deer's fingers. KEEP brown deer gripping hand/fingers exactly unchanged visible infront ofhandle, sameanatomy. Keep frame/background/paint. Closedloop entirelyRIGHT/BELOW hand, don't shiftshaft or removehand.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit this attached Dreamerie painting precise-object-edit native1672x941, preserve allanimals anatomyexpressions, framing, painterlyfinish, light/background. Exactly5localized singleobjectchanges:1 large deer umbrella white starx938y100 replaced bywhitecrescent;2 deer red umbrella Jhandle x1046y449 becomes closed red ovalloop withopeninginside, retaining sameupperattachment/deerpaw;3 rabbit blue scarf loosefarleftend atx280y521 curlsUPWARD instead of pointing downleft, same scarf elsewhere;4 mouseoverallpocket yellow stitchedX atx1235y764 changes to yellow PLUS upright crossing, pocketunchanged;5 squirrel yellow scarf loose upperend x1485y614 curls DOWNWARD instead ofup, retainotherend andbody. Do not change separateobjects together, no swaps. Keep exacteachobjectposition exceptspecifiedinternalpose andcontour. No otherchanges."
+      }
+    },
+    {
+      "file": "prompt-b.json",
+      "content": {
+        "prompt": "Edit only redumbrella handle in attacheddetail. Change openJcurve into closed red D-shapedloop byextending thinredcurve fromtopright tip backto redshaft immediatelyBELOW the deer's fingers. KEEP brown deer gripping hand/fingers exactly unchanged visible infront ofhandle, sameanatomy. Keep frame/background/paint. Closedloop entirelyRIGHT/BELOW hand, don't shiftshaft or removehand."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The deer umbrella bears a crescent instead of a star",
+      "difficulty": "Easy",
+      "box": {
+        "x": 890,
+        "y": 44,
+        "width": 110,
+        "height": 104
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-2",
+      "label": "The deer's umbrella handle closes into a loop",
+      "difficulty": "Medium",
+      "box": {
+        "x": 985,
+        "y": 406,
+        "width": 102,
+        "height": 83
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-3",
+      "label": "The rabbit scarf's loose end curls upward",
+      "difficulty": "Hard",
+      "box": {
+        "x": 244,
+        "y": 456,
+        "width": 194,
+        "height": 111
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-4",
+      "label": "The squirrel scarf hangs as one broad downward fold",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1450,
+        "y": 598,
+        "width": 74,
+        "height": 91
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-5",
+      "label": "The mouse pocket has a plus-shaped stitch",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1212,
+        "y": 744,
+        "width": 43,
+        "height": 47
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": "Native full composite, full generated source, allfive paired crops and390px stack inspected. Initial handle source removed hand: rejected, targeted cropped builtin edit preserved visible original gripping anatomy and closedloop. Singleobject scarf internalposes, no twoobjectswap. Outside authoredunion pixels unchanged. Labels actualobserved; difficulties hypotheses, no physicalphone/humantiming approval.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

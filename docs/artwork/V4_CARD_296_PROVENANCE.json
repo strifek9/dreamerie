@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-296",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-296-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-296-original-v4.png",
+    "sha256": "5E386203F6B1537852369A961589CD3FC8D0C3EDF78C155B074CAAB3A87A2FF2",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-296-altered-source-v4.png",
+    "sha256": "B06FF646F74FCB4A6F30F271B6AB6C1864BF5659CEC899D937EE13B5EB927FB3",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact original plush centipede at lost-property shoe bench station painting. Preserve centipede anatomy/all legs/face, shoes' identities/order/positions, labels and frame/style. Exactly FIVE independent single-object changes: (1) centipede UPPER LEFT antenna stalk curls into a closed loop below its same orange pompom, other antenna exact; (2) YELLOW rain boot top rim has a clearly outward-folded cuff at front, same boot body/tag; (3) FAR RIGHT blue sneaker its existing top lace bow has one broad LEFT loop rather than current small crossing, other laces/shoe exact; (4) left large BLUE SUITCASE top carrying handle bows into an upright arch instead of flat horizontal, same attachments/case/tag; (5) isolated BROWN buckled boot side strap's gold rectangular buckle becomes rounded diamond-shaped, same strap/body/tag. No object swaps, no extra objects, no changes to nearby independent buttons or specks.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact original plush centipede at lost-property shoe bench station painting. Preserve centipede anatomy/all legs/face, shoes' identities/order/positions, labels and frame/style. Exactly FIVE independent single-object changes: (1) centipede UPPER LEFT antenna stalk curls into a closed loop below its same orange pompom, other antenna exact; (2) YELLOW rain boot top rim has a clearly outward-folded cuff at front, same boot body/tag; (3) FAR RIGHT blue sneaker its existing top lace bow has one broad LEFT loop rather than current small crossing, other laces/shoe exact; (4) left large BLUE SUITCASE top carrying handle bows into an upright arch instead of flat horizontal, same attachments/case/tag; (5) isolated BROWN buckled boot side strap's gold rectangular buckle becomes rounded diamond-shaped, same strap/body/tag. No object swaps, no extra objects, no changes to nearby independent buttons or specks."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "handle",
+      "label": "The suitcase handle arches upward.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 15,
+        "y": 230,
+        "width": 115,
+        "height": 68
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "antenna",
+      "label": "The left antenna stalk forms a loop.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 766,
+        "y": 198,
+        "width": 64,
+        "height": 53
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "cuff",
+      "label": "The yellow boot rim folds outward.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1105,
+        "y": 298,
+        "width": 105,
+        "height": 54
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "lace",
+      "label": "The sneaker top lace forms a broad left loop.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1507,
+        "y": 396,
+        "width": 75,
+        "height": 38
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "buckle",
+      "label": "The brown boot buckle tilts into a diamond.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1374,
+        "y": 404,
+        "width": 43,
+        "height": 46
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered compositor/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

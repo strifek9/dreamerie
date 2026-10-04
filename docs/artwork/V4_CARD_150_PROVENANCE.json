@@ -1,0 +1,110 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-150",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-150-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-150-original-v4.png",
+    "sha256": "67035AD243A59B8AB5B0176CA59E2414039E8018E0E0065968DBF16634AF4714",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-150-altered-source-v4.png",
+    "sha256": "8E57340C332E8FD4040F6EC278E4F2329E5CFA51222F1251558ADC6520E7669D",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact wide1672x941 paintedroom locally only. Five singleobject changes, allotherchairs/reflection remainoriginal:1 plainWHITECHAIR frontcenter rectangularbackhole x786y547 becomes roundhole, samebackframe;2 foregroundgoldKEY onleftplatex221y765 itsfarleft toothedbit has continuous roundedhook end insteadtwoforkteeth, samekeyshaftbowplate;3 reflectedBOAT top orangePENNANT x873y82 curlsUPWARD atfreelefttip insteadhangingwavyhorizontal, samepole sailboat/chairs;4 lower GOLDSTITCH onpinkblanketx1395y778 has one continuous U-shaped loop instead crossedX, upperstitchunchanged;5 cabinetgoldPITCHER atx1534y320 has downward-curvedspout instead upwardlip, samebodyhandle. Five localizedoneobject only no swaps no other reflectionchanges; preservepainting architecturecompositionlight.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact wide1672x941 paintedroom locally only. Five singleobject changes, allotherchairs/reflection remainoriginal:1 plainWHITECHAIR frontcenter rectangularbackhole x786y547 becomes roundhole, samebackframe;2 foregroundgoldKEY onleftplatex221y765 itsfarleft toothedbit has continuous roundedhook end insteadtwoforkteeth, samekeyshaftbowplate;3 reflectedBOAT top orangePENNANT x873y82 curlsUPWARD atfreelefttip insteadhangingwavyhorizontal, samepole sailboat/chairs;4 lower GOLDSTITCH onpinkblanketx1395y778 has one continuous U-shaped loop instead crossedX, upperstitchunchanged;5 cabinetgoldPITCHER atx1534y320 has downward-curvedspout instead upwardlip, samebodyhandle. Five localizedoneobject only no swaps no other reflectionchanges; preservepainting architecturecompositionlight."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The white chair back aperture is round",
+      "difficulty": "Easy",
+      "box": {
+        "x": 748,
+        "y": 502,
+        "width": 81,
+        "height": 88
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The key bit becomes a hook",
+      "difficulty": "Medium",
+      "box": {
+        "x": 154,
+        "y": 760,
+        "width": 53,
+        "height": 30
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The reflected pennant tip curls upward",
+      "difficulty": "Hard",
+      "box": {
+        "x": 799,
+        "y": 47,
+        "width": 151,
+        "height": 64
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The blanket lower stitch becomes a U loop",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1373,
+        "y": 757,
+        "width": 48,
+        "height": 57
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The pitcher spout bends downward",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1490,
+        "y": 266,
+        "width": 65,
+        "height": 68
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "visually inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "nativePreflight": "source equals actual original size, five nonoverlapping boxes",
+    "difficulty": "hypotheses; human and browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

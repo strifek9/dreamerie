@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-298",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-298-replacement-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-298-original-v4.png",
+    "sha256": "9B884999E4DA1ED977F592AECAD565A315F6DCD0DB15E0CE2905222E641E0523",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-298-altered-source-v4.png",
+    "sha256": "48DCA2C5C583812FE7C35564EEAF9BEB6B4450E683F4585E4661234C1D231EA0",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact original whimsical living chess pieces on their day off, preserving anatomy/positions/board/core premise and style. Exactly FIVE localized single-object clues: (1) cream KNIGHT left visible ear folds down forward as attached ear, face/mane/other ear exact; (2) cream KING reclining upper-left his crown cross has a clearly rounded circular opening cut into its center, rest cross/body exact; (3) upper-right standing cream ROOK wooden door knob becomes a substantial short lever pointing LEFT from same plate, door/hinges/body exact; (4) FRONT lower-middle single loose rust-colored chess tile has its upper RIGHT corner curled up as an attached wooden flap, same tile/body; (5) curved BOARD ramp lower-middle brass hinge has its central connecting pin bent into a visible raised arch, preserve four screws/hingeplates/ramp. One object internal/pose/mechanism each, no piece swaps/no grains.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact original whimsical living chess pieces on their day off, preserving anatomy/positions/board/core premise and style. Exactly FIVE localized single-object clues: (1) cream KNIGHT left visible ear folds down forward as attached ear, face/mane/other ear exact; (2) cream KING reclining upper-left his crown cross has a clearly rounded circular opening cut into its center, rest cross/body exact; (3) upper-right standing cream ROOK wooden door knob becomes a substantial short lever pointing LEFT from same plate, door/hinges/body exact; (4) FRONT lower-middle single loose rust-colored chess tile has its upper RIGHT corner curled up as an attached wooden flap, same tile/body; (5) curved BOARD ramp lower-middle brass hinge has its central connecting pin bent into a visible raised arch, preserve four screws/hingeplates/ramp. One object internal/pose/mechanism each, no piece swaps/no grains."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "ear",
+      "label": "The knight visible ear folds forward.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 551,
+        "y": 151,
+        "width": 91,
+        "height": 89
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "lever",
+      "label": "The rook door knob becomes a left lever.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1253,
+        "y": 245,
+        "width": 53,
+        "height": 30
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "tile",
+      "label": "The loose front tile corner curls up.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 743,
+        "y": 750,
+        "width": 116,
+        "height": 89
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "hinge",
+      "label": "The ramp hinge pin bows upward.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 979,
+        "y": 705,
+        "width": 86,
+        "height": 57
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "cross",
+      "label": "The king crown cross has a round opening.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 91,
+        "y": 31,
+        "width": 35,
+        "height": 36
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered compositor/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

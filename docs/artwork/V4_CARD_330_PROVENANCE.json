@@ -1,0 +1,122 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-330",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-330-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-330-original-v4.png",
+    "sha256": "E6C56BB3170D46E006959BCF411AA498D70E214C759B20F6937EABA6E3FEAF38",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-330-altered-source-v4.png",
+    "sha256": "D2F4EBA0287E9245B17AE3DACAE14CE81C928D5BE702EADEB7424839BC0AA0E8",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact native1672x941 dreamy goose turning crooked key painting FIVE single-object isolated changes only. 1 Goose eye near x1043y194 closes into eyelid, rest head/beak exact. 2 Brass key near x920y461: large ornate bow held in wing becomes one closed oval loop instead of two open curls, same grip/wing/key shaft and twisted shaft exact. 3 Hanging oval brass tag upperright x1530y354: engraved leaf emblem becomes an engraved feather, same oval outline rope position exact. 4 Small door's upper-right hinge x1340y449: its round rivet pattern changes to three stacked diamond rivets, same hingeoutline metal and door unchanged. 5 Burgundy braided hanging cord near x1524y179: braid opens into a clearly tied loop knot in its MIDDLE while retaining same upper/lower attachment points, brassring/tag exact. Preserve every other object, scarf, tree, foliage, feet, floor and framing.\", \"reference\": \"dream-330-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact native1672x941 dreamy goose turning crooked key painting FIVE single-object isolated changes only. 1 Goose eye near x1043y194 closes into eyelid, rest head/beak exact. 2 Brass key near x920y461: large ornate bow held in wing becomes one closed oval loop instead of two open curls, same grip/wing/key shaft and twisted shaft exact. 3 Hanging oval brass tag upperright x1530y354: engraved leaf emblem becomes an engraved feather, same oval outline rope position exact. 4 Small door's upper-right hinge x1340y449: its round rivet pattern changes to three stacked diamond rivets, same hingeoutline metal and door unchanged. 5 Burgundy braided hanging cord near x1524y179: braid opens into a clearly tied loop knot in its MIDDLE while retaining same upper/lower attachment points, brassring/tag exact. Preserve every other object, scarf, tree, foliage, feet, floor and framing.",
+        "reference": "dream-330-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "key-oval",
+      "label": "The key bow forms one closed oval.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 815,
+        "y": 340,
+        "width": 182,
+        "height": 223
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "cord-loop",
+      "label": "The hanging burgundy cord has a loop knot.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1480,
+        "y": 107,
+        "width": 75,
+        "height": 117
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "goose-eye",
+      "label": "The goose closes its eye.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1020,
+        "y": 173,
+        "width": 42,
+        "height": 49
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "tag-feather",
+      "label": "The brass tag bears a feather.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1497,
+        "y": 315,
+        "width": 67,
+        "height": 99
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "hinge-diamond",
+      "label": "The middle upper-hinge rivet is diamond shaped.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1322,
+        "y": 441,
+        "width": 32,
+        "height": 24
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": {
+    "humanTimed": false,
+    "physicalPhone": false,
+    "notes": [
+      "Five localized single-object edits. Raw key source selected; attempted grip restoration rejected for artifacts and retained only as unselected diagnostic.",
+      "Only the middle hinge rivet selected; upper and lower rivets preserved from original by localized assembly."
+    ],
+    "outsideRegionsExact": true,
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sourceHashes": {
+      "source.png": "d2f4eba0287e9245b17ae3dacae14ce81c928d5be702eadeb7424839bc0aa0e8"
+    },
+    "allTenPairsNonoverlap": true,
+    "fullFrameAndFivePairedCropsViewed": true,
+    "mobile390CompositeViewed": true
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

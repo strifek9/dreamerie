@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-149",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-149-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-149-original-v4.png",
+    "sha256": "B7E9BBCBFE8C4A15188519000F5D4FB1B88EC305DE5E15BF26E5878B030F922B",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-149-altered-source-v4.png",
+    "sha256": "204414A012E36E0ABAF8C0AAEB8DEA742EF62CF5619BBA539EE6E9078F92FB19",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit this full-frame painted upside-down kitchen Dreamerie scene with startled girl holding a kite while angry cookware floats near ceiling. Preserve all characters/anatomy, framing/style and every other prop. Exactly FIVE single-object localized differences: 1 kite printed sun's LEFT eye closes in a clear wink, same sun face/shape. 2 teal teapot spout at back-right stove curves DOWN at its very tip instead of pointing up, same kettle/body/handle. 3 hanging whisk at upper LEFT has its wire cage twisted into an hourglass waist at middle, preserve its handle/position. 4 small floating BLUE striped bowl just LEFT of rolling pin at ceiling (center around854,64) has broad blue V-chevron bands instead of horizontal stripes, all other bowls unchanged. 5 silver ladle's handle hanging on rightwall has a TRIANGULAR hole at upper tip instead of oval, same handle/body/angry face. Five separate independently selectable objects; no multiple-object swaps, no grain, no added specks. Output one full painted counterpart.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit this full-frame painted upside-down kitchen Dreamerie scene with startled girl holding a kite while angry cookware floats near ceiling. Preserve all characters/anatomy, framing/style and every other prop. Exactly FIVE single-object localized differences: 1 kite printed sun's LEFT eye closes in a clear wink, same sun face/shape. 2 teal teapot spout at back-right stove curves DOWN at its very tip instead of pointing up, same kettle/body/handle. 3 hanging whisk at upper LEFT has its wire cage twisted into an hourglass waist at middle, preserve its handle/position. 4 small floating BLUE striped bowl just LEFT of rolling pin at ceiling (center around854,64) has broad blue V-chevron bands instead of horizontal stripes, all other bowls unchanged. 5 silver ladle's handle hanging on rightwall has a TRIANGULAR hole at upper tip instead of oval, same handle/body/angry face. Five separate independently selectable objects; no multiple-object swaps, no grain, no added specks. Output one full painted counterpart."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "sun",
+      "label": "The kite sun winks and smiles.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 787,
+        "y": 521,
+        "width": 58,
+        "height": 61
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "whisk",
+      "label": "The whisk wires twist into an hourglass.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 392,
+        "y": 145,
+        "width": 156,
+        "height": 185
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "bowl",
+      "label": "The small floating bowl has chevron bands.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 813,
+        "y": 23,
+        "width": 88,
+        "height": 75
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "spout",
+      "label": "The teapot spout turns downward.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1172,
+        "y": 576,
+        "width": 39,
+        "height": 42
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "ladle",
+      "label": "The ladle handle has a triangular opening.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1514,
+        "y": 295,
+        "width": 32,
+        "height": 36
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered composite/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

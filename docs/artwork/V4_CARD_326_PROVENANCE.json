@@ -1,0 +1,115 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-326",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-326-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-326-original-v4.png",
+    "sha256": "8F01B7B6BE31B199B649C8ADA54C6D0BC3D9E4D14A393D5163B53DD0D646B393",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-326-altered-source-v4.png",
+    "sha256": "718756F02EA135E4FD43A9248383FD7544007B37F046C0CE0CDA0EF3ECD9D80A",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exactly original wooden chair woven seat holding a glass lake with toy sailboat, tiny bench on back rail. Preserve chair/lake/boat/bench core identities, frame and painted style. Exactly FIVE localized single-object changes: (1) tiny green BENCH seat plank bows upward at center in a gentle arch, back slats/legs exact; (2) ONLY boat's REFLECTED sail in water below hull curves inward deeply on its right edge, real sail/hull exact; (3) REAL boat sail gains one broad continuous diagonal seam stripe across its middle, reflected sail remains as separately specified; (4) loose red CHERRY at lower LEFT floor its stem curls into a connected closed loop instead of straight, cherry body/shadow exact; (5) gray PEBBLE on lower-left woven seat its white mineral vein forms a clear Y fork rather than single stripe, same stone shape. Five independent existing-object/depiction internal clues, no lily-pad swaps/no scattered marks/no grain.\"}}, {\"file\": \"bench-prompt.json\", \"content\": {\"prompt\": \"Edit exact tiny bench original crop. ONLY existing broad front SEAT plank arches noticeably UPWARD at its center into a broad curved plank, ends and all legs remain anchored. Two BACKREST slats remain exactly straight and unchanged. Same green bench, no new parts or screws, preserve wood background/style. Clear structural bent seat, not subtle paint.\"}}, {\"file\": \"reflection-prompt.json\", \"content\": {\"prompt\": \"Edit exact reflected sail on water crop. ONLY the cream reflected sail's RIGHT diagonal edge has a very clear deep CONCAVE semicircular curve cut inward into reflected triangle, then rejoins unchanged bottom tip. Real boat outsidecrop unchanged. Keep reflected mast line and lake ripples/frame exact, one reflected sail geometry change, no extra stripe or grain.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exactly original wooden chair woven seat holding a glass lake with toy sailboat, tiny bench on back rail. Preserve chair/lake/boat/bench core identities, frame and painted style. Exactly FIVE localized single-object changes: (1) tiny green BENCH seat plank bows upward at center in a gentle arch, back slats/legs exact; (2) ONLY boat's REFLECTED sail in water below hull curves inward deeply on its right edge, real sail/hull exact; (3) REAL boat sail gains one broad continuous diagonal seam stripe across its middle, reflected sail remains as separately specified; (4) loose red CHERRY at lower LEFT floor its stem curls into a connected closed loop instead of straight, cherry body/shadow exact; (5) gray PEBBLE on lower-left woven seat its white mineral vein forms a clear Y fork rather than single stripe, same stone shape. Five independent existing-object/depiction internal clues, no lily-pad swaps/no scattered marks/no grain."
+      }
+    },
+    {
+      "file": "bench-prompt.json",
+      "content": {
+        "prompt": "Edit exact tiny bench original crop. ONLY existing broad front SEAT plank arches noticeably UPWARD at its center into a broad curved plank, ends and all legs remain anchored. Two BACKREST slats remain exactly straight and unchanged. Same green bench, no new parts or screws, preserve wood background/style. Clear structural bent seat, not subtle paint."
+      }
+    },
+    {
+      "file": "reflection-prompt.json",
+      "content": {
+        "prompt": "Edit exact reflected sail on water crop. ONLY the cream reflected sail's RIGHT diagonal edge has a very clear deep CONCAVE semicircular curve cut inward into reflected triangle, then rejoins unchanged bottom tip. Real boat outsidecrop unchanged. Keep reflected mast line and lake ripples/frame exact, one reflected sail geometry change, no extra stripe or grain."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "cherry",
+      "label": "The cherry stem curls into a loop.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 154,
+        "y": 699,
+        "width": 49,
+        "height": 73
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "vein",
+      "label": "The pebble vein forms a Y fork.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 574,
+        "y": 627,
+        "width": 105,
+        "height": 73
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "sail",
+      "label": "The real sail has a diagonal seam stripe.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1023,
+        "y": 363,
+        "width": 56,
+        "height": 47
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "reflection",
+      "label": "The reflected sail right edge curves inward.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1024,
+        "y": 510,
+        "width": 58,
+        "height": 104
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "bench",
+      "label": "The tiny bench seat bows upward.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 451,
+        "y": 125,
+        "width": 176,
+        "height": 49
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered compositor/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

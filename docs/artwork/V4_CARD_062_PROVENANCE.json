@@ -1,0 +1,114 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-062",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-062-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-062-original-v4.png",
+    "sha256": "2D1E069C2286F09B28C9C75A165A80ED9F58A86629CD857E7E08F92F7335410E",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-062-altered-source-v4.png",
+    "sha256": "24BB3F9C606EBF905DB41D58D2A97C33594D58D6F114C16B35C6087A46301B18",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise-object-edit on provided original1672x941 underwater umbrella-jellyfish Dreamerie painting. Keep main umbrella/jellyfish shape, all tentacles, HANDLE/shaft EXACTLY unchanged, preserve fishbody anatomy/painterlygrainfree style. Exactlyfive singleobject edits: 1 bluefish upper dorsalfin folds toward its head (left) instead of sweeping right, confined1180,225,105,60; otherfinsunchanged. 2 largegoldcrescent on purple canopy atcenter888,229 points LEFT instead of right, box845,191,87,85, othermoonsunchanged. 3 pearl in lower-right pinkshell reflects a smallblue fish silhouette instead of round gleam, box1393,633,62,62; pearlshape/shellunchanged. 4 goldring under hanginglantern becomes openat bottomwith ends curlingapart like hook, box1436,257,49,49; lanternbodyunchanged. 5 littlepink shell charm hangingunderumbrellahandle displays a continuous curvedspiral groove rather than verticalridges, box568,567,54,54; pendantoutline unchanged. No otheredits,no text/no grain, no objectswaps.\"}}, {\"file\": \"moon-prompt.json\", \"content\": {\"prompt\": \"Change ONLYthe ONE largest golden crescent motif printed on purpleumbrella canopy centered886,227 inthisnative1672x941 original. ROTATE crescent90degrees so its pointedhorns face UP and the emblem looks like goldbowl instead of currentlyrightfacingcrescent. Samecenterandsize bounds847,190,82,81. Preserve all other moon motifs, canopygeometry/finish, wholejellyfish and image EXACTLY unchanged. No otheredits text grain or extras.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise-object-edit on provided original1672x941 underwater umbrella-jellyfish Dreamerie painting. Keep main umbrella/jellyfish shape, all tentacles, HANDLE/shaft EXACTLY unchanged, preserve fishbody anatomy/painterlygrainfree style. Exactlyfive singleobject edits: 1 bluefish upper dorsalfin folds toward its head (left) instead of sweeping right, confined1180,225,105,60; otherfinsunchanged. 2 largegoldcrescent on purple canopy atcenter888,229 points LEFT instead of right, box845,191,87,85, othermoonsunchanged. 3 pearl in lower-right pinkshell reflects a smallblue fish silhouette instead of round gleam, box1393,633,62,62; pearlshape/shellunchanged. 4 goldring under hanginglantern becomes openat bottomwith ends curlingapart like hook, box1436,257,49,49; lanternbodyunchanged. 5 littlepink shell charm hangingunderumbrellahandle displays a continuous curvedspiral groove rather than verticalridges, box568,567,54,54; pendantoutline unchanged. No otheredits,no text/no grain, no objectswaps."
+      }
+    },
+    {
+      "file": "moon-prompt.json",
+      "content": {
+        "prompt": "Change ONLYthe ONE largest golden crescent motif printed on purpleumbrella canopy centered886,227 inthisnative1672x941 original. ROTATE crescent90degrees so its pointedhorns face UP and the emblem looks like goldbowl instead of currentlyrightfacingcrescent. Samecenterandsize bounds847,190,82,81. Preserve all other moon motifs, canopygeometry/finish, wholejellyfish and image EXACTLY unchanged. No otheredits text grain or extras."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The canopy large crescent opens upward",
+      "difficulty": "Easy",
+      "box": {
+        "x": 844,
+        "y": 186,
+        "width": 91,
+        "height": 87
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "moon.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The fish upper fin folds into a rounded shape",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1176,
+        "y": 226,
+        "width": 108,
+        "height": 61
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The pearl reflects a blue fish",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1389,
+        "y": 628,
+        "width": 74,
+        "height": 74
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The lantern bottom ring opens into curled hooks",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1428,
+        "y": 252,
+        "width": 71,
+        "height": 61
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The hanging shell charm has a spiral groove",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 562,
+        "y": 563,
+        "width": 66,
+        "height": 66
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker full pair/five paired crops/390stack inspected. Firstmoon failed unchanged so targetedmoonrotation source used. Umbrellahandle untouched, fishfin attached, ring hooks coherent. Native/nonoverlap/exactoutsidepixels verified. Root compositor/game and humandifficulty pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

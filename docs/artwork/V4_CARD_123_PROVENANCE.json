@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-123",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-123-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-123-original-v4.png",
+    "sha256": "EDEB73288613C51F42F391AC7734D869827B9E5657F12908A2CB83CF6261E7DA",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-123-altered-source-v4.png",
+    "sha256": "0AC3C7760F46261DFBB12E2E519D6F6042F46EBBB31FBF29E6A34841F5E0183D",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise localized edit of this native1672x941 painted dream. Keep mermaid anatomy/face/pose, fabrics,thimble, lighting/style and all framing unchanged. Exactly5 independent oneobject clues:1 gold TRIANGULARCOMB heldatx689y310 changes itsinternalopen triangle to solidgoldplate withone crescentcutout, sameoutline/teeth/hand;2 upper-right wood SPOOL center aperture x1513y171 changes from squarehole to keyhole-shaped hole, samewoodspool andthread;3 large PEARL inleftshellx218y351 becomes pear-shaped drop, samegloss andshell/clasp;4 rightmost/uppermost thick mint STITCH crossing bluefabricx1482y575 bends into clear zigzag Z instead straight diagonal, endpoints stillconnectedsameholes, otherstitches unchanged;5 mermaid HAIR single loosecurl immediatelyleftofheadx621y155 formsoneclosedring instead danglingwavystrand, resthairunchanged. No swaps orextraobjects; five localized definite changes only.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise localized edit of this native1672x941 painted dream. Keep mermaid anatomy/face/pose, fabrics,thimble, lighting/style and all framing unchanged. Exactly5 independent oneobject clues:1 gold TRIANGULARCOMB heldatx689y310 changes itsinternalopen triangle to solidgoldplate withone crescentcutout, sameoutline/teeth/hand;2 upper-right wood SPOOL center aperture x1513y171 changes from squarehole to keyhole-shaped hole, samewoodspool andthread;3 large PEARL inleftshellx218y351 becomes pear-shaped drop, samegloss andshell/clasp;4 rightmost/uppermost thick mint STITCH crossing bluefabricx1482y575 bends into clear zigzag Z instead straight diagonal, endpoints stillconnectedsameholes, otherstitches unchanged;5 mermaid HAIR single loosecurl immediatelyleftofheadx621y155 formsoneclosedring instead danglingwavystrand, resthairunchanged. No swaps orextraobjects; five localized definite changes only."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The comb has a crescent cutout",
+      "difficulty": "Easy",
+      "box": {
+        "x": 652,
+        "y": 269,
+        "width": 68,
+        "height": 79
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The spool aperture becomes a keyhole",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1451,
+        "y": 92,
+        "width": 120,
+        "height": 172
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The pearl becomes a droplet",
+      "difficulty": "Hard",
+      "box": {
+        "x": 156,
+        "y": 309,
+        "width": 95,
+        "height": 98
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The upper fabric stitch bends into a zigzag",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1425,
+        "y": 509,
+        "width": 156,
+        "height": 121
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The loose hair curl forms a closed ring",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 619,
+        "y": 71,
+        "width": 44,
+        "height": 45
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "five single-object clues inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "difficulty": "hypotheses; human playtest and parent browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

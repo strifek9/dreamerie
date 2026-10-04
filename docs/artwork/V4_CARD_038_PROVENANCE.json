@@ -1,0 +1,111 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-038",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-038-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-038-original-v4.png",
+    "sha256": "44373DF60FAA6247630B883008B1E4D95CBD6DEBDB1E552C0898F8ED5AE5940E",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-038-altered-source-v4.png",
+    "sha256": "F91FB80C92363F54DE254335EFA9A39238484305E732DD9FD6F63FC4DFB57CE6",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"Precise-object-edit of attached Dreamerie The Mirror in the Dunes. EXACT1672x941 composition painterly grain-free finish, preserve landscape, sky, mirror frame and all objects. Exactly five localized intentional changes:1 moon inside mirror opens to RIGHT rather than LEFT by reversing crescent at x690 y360, same size;2 gold box latch x1110 y740 rotates hinge orientation: flap points horizontally right instead of downward, connected to same plate;3 lavender glove cuff x1370 y756 has strap pass UNDER existing loop rather than over, preserve hand anatomy;4 reflection wave bright trail inside mirror x603 y608 bends gently right rather than straight left, localized middle water only;5 small lavender scallop shell x610 y794 ridges converge toward its LEFT corner rather than right, same silhouette footprint. Only five changes. No added props, no grain, no labels, no cropping or wholeimage restyle. Accurate connected anatomy, subtle but definite and mobile inspectable.\"}}, {\"file\": \"prompt-refine.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"Edit only moon inside mirror. Retain all other pixels scene composition from attached image. Current crescent has bright RIGHT edge, opens LEFT. Reverse it: bright LEFT edge, dark hollow opening toward RIGHT. Same moon center x692,y359, boundingarea x666,y330,width54,height59 in1672x941. Draw clear elegant ivory crescent facing opposite direction. Absolutely nothing else changes. Wide original native1672x941.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "Precise-object-edit of attached Dreamerie The Mirror in the Dunes. EXACT1672x941 composition painterly grain-free finish, preserve landscape, sky, mirror frame and all objects. Exactly five localized intentional changes:1 moon inside mirror opens to RIGHT rather than LEFT by reversing crescent at x690 y360, same size;2 gold box latch x1110 y740 rotates hinge orientation: flap points horizontally right instead of downward, connected to same plate;3 lavender glove cuff x1370 y756 has strap pass UNDER existing loop rather than over, preserve hand anatomy;4 reflection wave bright trail inside mirror x603 y608 bends gently right rather than straight left, localized middle water only;5 small lavender scallop shell x610 y794 ridges converge toward its LEFT corner rather than right, same silhouette footprint. Only five changes. No added props, no grain, no labels, no cropping or wholeimage restyle. Accurate connected anatomy, subtle but definite and mobile inspectable."
+      }
+    },
+    {
+      "file": "prompt-refine.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "Edit only moon inside mirror. Retain all other pixels scene composition from attached image. Current crescent has bright RIGHT edge, opens LEFT. Reverse it: bright LEFT edge, dark hollow opening toward RIGHT. Same moon center x692,y359, boundingarea x666,y330,width54,height59 in1672x941. Draw clear elegant ivory crescent facing opposite direction. Absolutely nothing else changes. Wide original native1672x941."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "moon",
+      "label": "The reflected crescent faces the other way.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 658,
+        "y": 326,
+        "width": 72,
+        "height": 64
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "latch",
+      "label": "The box latch swings sideways.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1082,
+        "y": 713,
+        "width": 76,
+        "height": 52
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "strap",
+      "label": "The glove cuff strap crosses diagonally over the cuff.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1303,
+        "y": 704,
+        "width": 109,
+        "height": 77
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "reflection",
+      "label": "The bright reflected wave trail bends to the right.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 536,
+        "y": 563,
+        "width": 185,
+        "height": 112
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "shell",
+      "label": "The small shell has more closely spaced ribs.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 565,
+        "y": 755,
+        "width": 91,
+        "height": 78
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": "Full source, worker feather-clipped full pair, five paired native crops and 390px stacked pair inspected. Moon required targeted generation and assembled ONLY its authored region using prepare.py. Other four realized initialsource edits. Local single-object mechanism/strap/reflection clues; no multi-object swap. Final source SHA256 f91fb80c92363f54de254335efa9a39238484305e732dd9fd6f63fc4dfb57ce6. Difficulty hypotheses, no human or physical phone validation.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

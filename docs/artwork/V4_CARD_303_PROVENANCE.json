@@ -1,0 +1,133 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-303",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-303-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-303-original-v4.png",
+    "sha256": "E74B3BAC5CB8433792CE5D92A608499C66D2E41005DEC0E63D27E9B33DB24E44",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-303-altered-source-v4.png",
+    "sha256": "78797CAF33C84767EAD8E723A49DD3A4359F04CC9177753213ABA03560190C8A",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact fullnative1672x941 dreamy typewriter making mountains painting, FIVE localized single-object differences ONLY. 1 Typewriter return lever left near x410y252: long lever points horizontally LEFT instead of sloping downward, same hinge attachment around x474y146, rest typewriter exact. 2 Big coffee mug upperleft x229y83: handle has a clear heart-shaped opening instead of oval, body coffee unchanged. 3 Magnifying glass left x190y328: enlarged contour lines inside lens form a closed spiral instead of parallel bends, lens rim handle and underlying map OUTSIDE lens exact. 4 Sharpener bottomleft x184y824: its single round blade screw becomes a six-point star-shaped screwhead, sharpener body/blade/hole exact. 5 Frontmost RIGHT typewriter round key x848y714 becomes an engraved crescent moon instead of blank ivory top, key size/position and all other keys exact. No other edits. Preserve mountain paper topology, pens, floor/table, maps and framing.\", \"reference\": \"dream-303-original-v1.png\"}}, {\"file\": \"star-refine-prompt.json\", \"content\": {\"prompt\": \"Refine this exact fullnative1672x941 painting ONLY one localized detail. Brass pencil sharpener bottom-left has a tiny screw on its blade near x188 y815. Make that single screwhead a clearly visible six-point star-shaped brass screw, diameter18pixels, centered at x188y815. Preserve blade, sharpener case and every other pixel/scene object, including all existing heart mug, left-pointing lever, spiral magnifier, crescent key and mountain paper. Full frame.\", \"reference\": \"source.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact fullnative1672x941 dreamy typewriter making mountains painting, FIVE localized single-object differences ONLY. 1 Typewriter return lever left near x410y252: long lever points horizontally LEFT instead of sloping downward, same hinge attachment around x474y146, rest typewriter exact. 2 Big coffee mug upperleft x229y83: handle has a clear heart-shaped opening instead of oval, body coffee unchanged. 3 Magnifying glass left x190y328: enlarged contour lines inside lens form a closed spiral instead of parallel bends, lens rim handle and underlying map OUTSIDE lens exact. 4 Sharpener bottomleft x184y824: its single round blade screw becomes a six-point star-shaped screwhead, sharpener body/blade/hole exact. 5 Frontmost RIGHT typewriter round key x848y714 becomes an engraved crescent moon instead of blank ivory top, key size/position and all other keys exact. No other edits. Preserve mountain paper topology, pens, floor/table, maps and framing.",
+        "reference": "dream-303-original-v1.png"
+      }
+    },
+    {
+      "file": "star-refine-prompt.json",
+      "content": {
+        "prompt": "Refine this exact fullnative1672x941 painting ONLY one localized detail. Brass pencil sharpener bottom-left has a tiny screw on its blade near x188 y815. Make that single screwhead a clearly visible six-point star-shaped brass screw, diameter18pixels, centered at x188y815. Preserve blade, sharpener case and every other pixel/scene object, including all existing heart mug, left-pointing lever, spiral magnifier, crescent key and mountain paper. Full frame.",
+        "reference": "source.png"
+      }
+    }
+  ],
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-303-star-refine-source-v4.png",
+      "sha256": "7173D1BF867460052486CBBC4FC23F1AE54E98C4FEFF1FAEA794440A5C6DE1D6",
+      "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact fullnative1672x941 dreamy typewriter making mountains painting, FIVE localized single-object differences ONLY. 1 Typewriter return lever left near x410y252: long lever points horizontally LEFT instead of sloping downward, same hinge attachment around x474y146, rest typewriter exact. 2 Big coffee mug upperleft x229y83: handle has a clear heart-shaped opening instead of oval, body coffee unchanged. 3 Magnifying glass left x190y328: enlarged contour lines inside lens form a closed spiral instead of parallel bends, lens rim handle and underlying map OUTSIDE lens exact. 4 Sharpener bottomleft x184y824: its single round blade screw becomes a six-point star-shaped screwhead, sharpener body/blade/hole exact. 5 Frontmost RIGHT typewriter round key x848y714 becomes an engraved crescent moon instead of blank ivory top, key size/position and all other keys exact. No other edits. Preserve mountain paper topology, pens, floor/table, maps and framing.\", \"reference\": \"dream-303-original-v1.png\"}}, {\"file\": \"star-refine-prompt.json\", \"content\": {\"prompt\": \"Refine this exact fullnative1672x941 painting ONLY one localized detail. Brass pencil sharpener bottom-left has a tiny screw on its blade near x188 y815. Make that single screwhead a clearly visible six-point star-shaped brass screw, diameter18pixels, centered at x188y815. Preserve blade, sharpener case and every other pixel/scene object, including all existing heart mug, left-pointing lever, spiral magnifier, crescent key and mountain paper. Full frame.\", \"reference\": \"source.png\"}}]"
+    }
+  ],
+  "authoredRegions": [
+    {
+      "id": "lever-left",
+      "label": "The typewriter return lever points left.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 269,
+        "y": 130,
+        "width": 207,
+        "height": 188
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "mug-heart",
+      "label": "The coffee mug handle has a heart-shaped opening.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 42,
+        "y": 28,
+        "width": 115,
+        "height": 133
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "lens-spiral",
+      "label": "The magnified contour lines form a spiral.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 103,
+        "y": 267,
+        "width": 166,
+        "height": 137
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "key-moon",
+      "label": "A right-side key bears a crescent.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 865,
+        "y": 642,
+        "width": 56,
+        "height": 51
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "screw-star",
+      "label": "The brass sharpener screw has a star-shaped recess.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 173,
+        "y": 801,
+        "width": 31,
+        "height": 29
+      },
+      "edgeFade": 4,
+      "source": "star-refine.png"
+    }
+  ],
+  "notes": {
+    "humanTimed": false,
+    "physicalPhone": false,
+    "notes": [
+      "Actual crescent appears on right-side penultimate key, not frontmost requested key."
+    ],
+    "outsideRegionsExact": true,
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sourceHashes": {
+      "source.png": "78797caf33c84767ead8e723a49dd3a4359f04cc9177753213aba03560190c8a",
+      "star-refine.png": "7173d1bf867460052486cbbc4fc23f1ae54e98c4feff1faea794440a5c6de1d6"
+    }
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

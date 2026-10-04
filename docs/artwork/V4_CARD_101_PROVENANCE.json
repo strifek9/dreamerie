@@ -1,0 +1,115 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-101",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-101-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-101-original-v4.png",
+    "sha256": "F799D6515D1DDC9D90A29EBBF28C8DC0D1097C7B0DD639AF8D65339A4EC3A437",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-101-altered-source-v4.png",
+    "sha256": "15F422C3B6030CB79B6F1AF33BF1F03518F7FD29BB412F9045138D0B65FA1550",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precisely edit attached Dreameriepainting native1672x941. Preserve minttelephone body/receiver/branches/leaves/roomlight/framing/paint. Exactly5 localized single-objectchanges:1 rightmostlarge peachleaf x1224y710 folds its TIP UP into small curl ratherthandownright, sameleafstem/otherleaves;2 gold rotarydial fingerstop atx913y581 points INWARD towardcenter ratherthanoutwardright, samedialholes/plate;3 top receivergrille blackholes atx674y250 form a neat X-shapedpattern instead scatteredrows, same receiverface;4 blue cord FREEEND leadingtotassel passes UNDER thefrontcoiledloop atx348y772 instead over it, samecordloop/endpoint elsewhere;5 creamtassel atx430y842 has its lowerfringe folded into gentle upwardhook towardright ratherthanstraightfanningdown, samegoldcap. Fiveobjects/loci only, no swaps/additions/colorshift.\"}}, {\"file\": \"prompt-b.json\", \"content\": {\"prompt\": \"Precise localedit attachedbluephonecorddetail. Keeplargebluecoils positions/shape and GOLDcap bottomright unchanged. ONLY thin smoothblue cord segment between nearestcoil andgoldcap should form one small OPENLOOP curving toLEFT before reachingcap, instead ofstraightdiagonal. Visibleloop outside bigcoil near lowermiddle; coherentcontinuousbluewire, no addedobject. Samebackground/frame/style.\"}}, {\"file\": \"prompt-c.json\", \"content\": {\"prompt\": \"Precise creamrotarydialcrop: remove ONLYsmall circular raisedbump incenter andfillwith smoothflat cream paintedplate consistentwith surroundings. Preserve surroundinglighting/framing/edge andgoldcorner atbottomleft exactly. No newobject or circle.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precisely edit attached Dreameriepainting native1672x941. Preserve minttelephone body/receiver/branches/leaves/roomlight/framing/paint. Exactly5 localized single-objectchanges:1 rightmostlarge peachleaf x1224y710 folds its TIP UP into small curl ratherthandownright, sameleafstem/otherleaves;2 gold rotarydial fingerstop atx913y581 points INWARD towardcenter ratherthanoutwardright, samedialholes/plate;3 top receivergrille blackholes atx674y250 form a neat X-shapedpattern instead scatteredrows, same receiverface;4 blue cord FREEEND leadingtotassel passes UNDER thefrontcoiledloop atx348y772 instead over it, samecordloop/endpoint elsewhere;5 creamtassel atx430y842 has its lowerfringe folded into gentle upwardhook towardright ratherthanstraightfanningdown, samegoldcap. Fiveobjects/loci only, no swaps/additions/colorshift."
+      }
+    },
+    {
+      "file": "prompt-b.json",
+      "content": {
+        "prompt": "Precise localedit attachedbluephonecorddetail. Keeplargebluecoils positions/shape and GOLDcap bottomright unchanged. ONLY thin smoothblue cord segment between nearestcoil andgoldcap should form one small OPENLOOP curving toLEFT before reachingcap, instead ofstraightdiagonal. Visibleloop outside bigcoil near lowermiddle; coherentcontinuousbluewire, no addedobject. Samebackground/frame/style."
+      }
+    },
+    {
+      "file": "prompt-c.json",
+      "content": {
+        "prompt": "Precise creamrotarydialcrop: remove ONLYsmall circular raisedbump incenter andfillwith smoothflat cream paintedplate consistentwith surroundings. Preserve surroundinglighting/framing/edge andgoldcorner atbottomleft exactly. No newobject or circle."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The rightmost leaf tip curls upward",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1126,
+        "y": 658,
+        "width": 206,
+        "height": 122
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The tassel fringe curls upward",
+      "difficulty": "Medium",
+      "box": {
+        "x": 384,
+        "y": 805,
+        "width": 121,
+        "height": 79
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The rotary dial stop points inward",
+      "difficulty": "Hard",
+      "box": {
+        "x": 834,
+        "y": 536,
+        "width": 111,
+        "height": 74
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The upper receiver grille holes form an X",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 644,
+        "y": 220,
+        "width": 64,
+        "height": 58
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The cord forms a small loop before the tassel",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 318,
+        "y": 746,
+        "width": 78,
+        "height": 59
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Fullsource/nativecomposite/fivepairedcrops/390stack inspected. Initialcordunderpass unclear: replaced via builtin localized loopedit. Goldstop generation added extrabutton: removed via builtin creamdialcleanup. Allfive actuallabels observed, singleobjectinternalpose/pattern only. Cord/tassel authoredboxes touch atboundary but do not overlap; joinsclean. Outsideunion invariant pass. No humantiming/physicalphone approval,rootruntimeQArequired.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

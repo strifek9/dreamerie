@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-278",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-278-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-278-original-v4.png",
+    "sha256": "DD0B07D31D1557B6FF19D171BEC6B823124EA19994152BA4D91D02FECC2C0716",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-278-altered-source-v4.png",
+    "sha256": "18C4D4C735BA8F4C336393305B861B31668419884112A3ADEFFCAB2C2F67DCF5",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exactly original antique diver pouring sand from watering can in attic. Preserve diver anatomy/pose, flowing sand, can, rug, framing, painterly style and premise. Exactly five localized one-object changes: (1) helmet front circular viewport lattice becomes a bold X instead of rectangular grille, same rim; (2) model SHIP central large sail's lower corner curls visibly upward as attached canvas flap, keep all other sails and ship exact; (3) armillary globe middle golden ball has a broad engraved continuous spiral instead of plain surface, all surrounding rings exact; (4) glass jar at lower LEFT starfish TOP arm curls to the RIGHT instead of straight point, rest of same starfish/shells/jar exact; (5) loose lower RIGHT crate rope its central loop forms a clear overhand knot, same rope ends/buoy/crate. Exactly five one-object internal/action/relationship changes, no adjacent independent-object swaps, no grains/specks.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exactly original antique diver pouring sand from watering can in attic. Preserve diver anatomy/pose, flowing sand, can, rug, framing, painterly style and premise. Exactly five localized one-object changes: (1) helmet front circular viewport lattice becomes a bold X instead of rectangular grille, same rim; (2) model SHIP central large sail's lower corner curls visibly upward as attached canvas flap, keep all other sails and ship exact; (3) armillary globe middle golden ball has a broad engraved continuous spiral instead of plain surface, all surrounding rings exact; (4) glass jar at lower LEFT starfish TOP arm curls to the RIGHT instead of straight point, rest of same starfish/shells/jar exact; (5) loose lower RIGHT crate rope its central loop forms a clear overhand knot, same rope ends/buoy/crate. Exactly five one-object internal/action/relationship changes, no adjacent independent-object swaps, no grains/specks."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "grille",
+      "label": "The front helmet grille becomes an X.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 632,
+        "y": 99,
+        "width": 64,
+        "height": 62
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "sail",
+      "label": "The main sail lower corner folds upward.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1018,
+        "y": 211,
+        "width": 61,
+        "height": 71
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "globe",
+      "label": "The armillary center ball has a spiral.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1220,
+        "y": 331,
+        "width": 56,
+        "height": 61
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "starfish",
+      "label": "The starfish right arm curls upward.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 257,
+        "y": 657,
+        "width": 43,
+        "height": 56
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "rope",
+      "label": "The crate rope loop forms an overhand knot.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1517,
+        "y": 642,
+        "width": 121,
+        "height": 70
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered compositor/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

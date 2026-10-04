@@ -1,0 +1,115 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-148",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-148-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-148-original-v4.png",
+    "sha256": "BDC3E7092C1304C23A2EB03336145CAC59DF9D609EEDC3253DBA73EE9DC6CB31",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-148-altered-source-v4.png",
+    "sha256": "30D49AA360CC6DE45E0CB2530470D3FD9BC46E489488FA828D7AAD1FF98D7402",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precisely edit ONLY five separate localized objects/parts in this original painted underwater orange umbrella swimming toward a giant cuttlefish. Preserve original full frame, creature anatomy, eye, seaweed, brushwork and main premise. 1 umbrella wooden hook handle tip curves inward farther into a CLOSED spiral curl while same main curved handle remains. 2 LOWER of two pearl coat buttons on umbrella has a CROSS-shaped central hole instead of round holes, upper button untouched. 3 small gold anchor hanging below umbrella has ONLY its RIGHT fluke pointing DOWN instead of upward, same shank/leftfluke/chain. 4 one far-RIGHT outer cuttlefish tentacle terminal tip coils into a small closed loop instead of its open downward bend, all other tentacles unchanged. 5 white-orange scarf tail at far LEFT end twists so the broad orange stripe goes UNDER the white fabric fold at the tip; change only its end fold. Exactly five one-object changes, not trades between objects, no extra marine objects, no grain/specks. Return one matching full-frame counterpart.\"}}, {\"file\": \"cube-prompt.json\", \"content\": {\"prompt\": \"Change ONLY the dark round opening on the LEFT darker face of this gold cube umbrella ferrule into a clear TRIANGULAR recessed opening, large enough roughly same width and height. Preserve cube geometry, right face markings, upper orange fabric, loop at right and sea exactly. Single existing opening shape changes, no extra tiny marks. Same painted material and light. Return one matching crop.\", \"nativeCrop\": [296, 672, 66, 67]}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precisely edit ONLY five separate localized objects/parts in this original painted underwater orange umbrella swimming toward a giant cuttlefish. Preserve original full frame, creature anatomy, eye, seaweed, brushwork and main premise. 1 umbrella wooden hook handle tip curves inward farther into a CLOSED spiral curl while same main curved handle remains. 2 LOWER of two pearl coat buttons on umbrella has a CROSS-shaped central hole instead of round holes, upper button untouched. 3 small gold anchor hanging below umbrella has ONLY its RIGHT fluke pointing DOWN instead of upward, same shank/leftfluke/chain. 4 one far-RIGHT outer cuttlefish tentacle terminal tip coils into a small closed loop instead of its open downward bend, all other tentacles unchanged. 5 white-orange scarf tail at far LEFT end twists so the broad orange stripe goes UNDER the white fabric fold at the tip; change only its end fold. Exactly five one-object changes, not trades between objects, no extra marine objects, no grain/specks. Return one matching full-frame counterpart."
+      }
+    },
+    {
+      "file": "cube-prompt.json",
+      "content": {
+        "prompt": "Change ONLY the dark round opening on the LEFT darker face of this gold cube umbrella ferrule into a clear TRIANGULAR recessed opening, large enough roughly same width and height. Preserve cube geometry, right face markings, upper orange fabric, loop at right and sea exactly. Single existing opening shape changes, no extra tiny marks. Same painted material and light. Return one matching crop.",
+        "nativeCrop": [
+          296,
+          672,
+          66,
+          67
+        ]
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "handle",
+      "label": "The umbrella hook curls into a spiral.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 685,
+        "y": 145,
+        "width": 114,
+        "height": 120
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "tentacle",
+      "label": "The outer right tentacle tip coils closed.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1509,
+        "y": 636,
+        "width": 88,
+        "height": 88
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "anchor",
+      "label": "The anchor's right fluke points down.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 370,
+        "y": 781,
+        "width": 44,
+        "height": 83
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "scarf",
+      "label": "The scarf's left tip curls upward.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 53,
+        "y": 215,
+        "width": 94,
+        "height": 80
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "cube",
+      "label": "The gold ferrule opening becomes triangular.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 302,
+        "y": 704,
+        "width": 31,
+        "height": 33
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered composite/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

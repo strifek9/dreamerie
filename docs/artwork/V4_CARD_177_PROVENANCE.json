@@ -1,0 +1,131 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-177",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-177-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-177-original-v4.png",
+    "sha256": "B97E579B1AF61653D34E49F157285E4C18F7769A894FF079A93F203F5450B7CB",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-177-altered-source-v4.png",
+    "sha256": "E97EDD48F7D5081DAFD4062D98CAAC5C621B7EA2C7BFEED4CD7A90F47C7D4E0D",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact native full1672x941 painting with five localized one-object changes only: 1 giant plush rabbit upper right visible eye at x1110y101 opens into a gentle glossy dark oval, same rabbit head mouth ears. 2 brass winding key attached to sleeping blue robot at x1519y265: its two loop bow becomes a single circular ring bow, same shaft and robot. 3 miniature conductor's blue suitcase near x1100y548: handle is folded flat sideways instead of raised arch, preserve case body hand and conductor. 4 triangular warning sign near x1094y386: printed black tunnel icon becomes clearly a black steam locomotive silhouette, same triangle frame pole. 5 gray block resting on rails near x1177y743: top circular inset becomes a clearly crescent-shaped indentation, same block shape bolts and rails. All other objects identical, no toy carriage swaps or extra changes. Preserve dreamy original scene framing.\", \"reference\": \"dream-177-original-v1.png\"}}, {\"file\": \"refine-prompt.json\", \"content\": {\"prompt\": \"Preserve exact full native1672x941 painting. Only miniature blue suitcase held by conductor near x1095y548: replace its existing top raised handle with an obvious closed rounded gold handle resting flat against the suitcase FRONT blue face, not raised above the top. The conductor hand must remain exactly unchanged, blue case body same silhouette. Entire rest unchanged.\", \"reference\": \"source.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact native full1672x941 painting with five localized one-object changes only: 1 giant plush rabbit upper right visible eye at x1110y101 opens into a gentle glossy dark oval, same rabbit head mouth ears. 2 brass winding key attached to sleeping blue robot at x1519y265: its two loop bow becomes a single circular ring bow, same shaft and robot. 3 miniature conductor's blue suitcase near x1100y548: handle is folded flat sideways instead of raised arch, preserve case body hand and conductor. 4 triangular warning sign near x1094y386: printed black tunnel icon becomes clearly a black steam locomotive silhouette, same triangle frame pole. 5 gray block resting on rails near x1177y743: top circular inset becomes a clearly crescent-shaped indentation, same block shape bolts and rails. All other objects identical, no toy carriage swaps or extra changes. Preserve dreamy original scene framing.",
+        "reference": "dream-177-original-v1.png"
+      }
+    },
+    {
+      "file": "refine-prompt.json",
+      "content": {
+        "prompt": "Preserve exact full native1672x941 painting. Only miniature blue suitcase held by conductor near x1095y548: replace its existing top raised handle with an obvious closed rounded gold handle resting flat against the suitcase FRONT blue face, not raised above the top. The conductor hand must remain exactly unchanged, blue case body same silhouette. Entire rest unchanged.",
+        "reference": "source.png"
+      }
+    }
+  ],
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-177-refine-source-v4.png",
+      "sha256": "C69E97AEFE72101C83CCE031597AD5C96D3EE2EBC9DEE91BBB06F76E703A0BB7",
+      "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact native full1672x941 painting with five localized one-object changes only: 1 giant plush rabbit upper right visible eye at x1110y101 opens into a gentle glossy dark oval, same rabbit head mouth ears. 2 brass winding key attached to sleeping blue robot at x1519y265: its two loop bow becomes a single circular ring bow, same shaft and robot. 3 miniature conductor's blue suitcase near x1100y548: handle is folded flat sideways instead of raised arch, preserve case body hand and conductor. 4 triangular warning sign near x1094y386: printed black tunnel icon becomes clearly a black steam locomotive silhouette, same triangle frame pole. 5 gray block resting on rails near x1177y743: top circular inset becomes a clearly crescent-shaped indentation, same block shape bolts and rails. All other objects identical, no toy carriage swaps or extra changes. Preserve dreamy original scene framing.\", \"reference\": \"dream-177-original-v1.png\"}}, {\"file\": \"refine-prompt.json\", \"content\": {\"prompt\": \"Preserve exact full native1672x941 painting. Only miniature blue suitcase held by conductor near x1095y548: replace its existing top raised handle with an obvious closed rounded gold handle resting flat against the suitcase FRONT blue face, not raised above the top. The conductor hand must remain exactly unchanged, blue case body same silhouette. Entire rest unchanged.\", \"reference\": \"source.png\"}}]"
+    }
+  ],
+  "authoredRegions": [
+    {
+      "id": "rabbit-eye",
+      "label": "The giant rabbit opens its eye",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1079,
+        "y": 72,
+        "width": 60,
+        "height": 52
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "robot-key",
+      "label": "The robot key has one round loop",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1467,
+        "y": 212,
+        "width": 103,
+        "height": 102
+      },
+      "edgeFade": 5
+    },
+    {
+      "id": "sign-train",
+      "label": "The warning sign shows a locomotive",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1061,
+        "y": 357,
+        "width": 51,
+        "height": 52
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "case-handle",
+      "label": "The suitcase handle lies on its front",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1062,
+        "y": 512,
+        "width": 76,
+        "height": 64
+      },
+      "edgeFade": 4,
+      "source": "refine.png"
+    },
+    {
+      "id": "block-moon",
+      "label": "The rail block has a crescent inset",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1146,
+        "y": 710,
+        "width": 56,
+        "height": 50
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": {
+    "humanTimed": false,
+    "physicalPhone": false,
+    "notes": "One-object each; rabbit action and refined folded suitcase handle mechanism. Original carriages and robot eyes untouched.",
+    "outsideRegionsExact": true,
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sourceHashes": {
+      "source.png": "e97edd48f7d5081dafd4062d98caac5c621b7ea2c7bfeed4cd7a90f47c7d4e0d",
+      "refine.png": "c69e97aefe72101c83cce031597ad5c96d3ee2ebc9dee91bbb06f76e703a0bb7"
+    }
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

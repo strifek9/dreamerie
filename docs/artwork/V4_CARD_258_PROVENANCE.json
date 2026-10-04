@@ -1,0 +1,127 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-258",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-258-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-258-original-v4.png",
+    "sha256": "CD246A01B962D10AC8597E22F17F77D9F9CEA0F79B8E02C4EC160C3ADEB45A11",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-258-altered-source-v4.png",
+    "sha256": "E92F6CA3C7D11BB2098EE352C83F90E490E697BEC1057345BDC6BFBDF2377245",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit this exact native1672x941 warm dreamy boy walking tablecloth scene, FIVE localized single-object differences ONLY. 1 Dog at far left closes its visible eye near x148y451, other eye/body/collar unchanged. 2 White floral soup tureen x449y227 lid tilts slightly up on its RIGHT edge showing a dark gap, keep lid knob/color/pattern and tureen body handles exact. 3 Large wooden center-right dining chair near x937y355: replace its three narrow vertical back spindles with a single broad horizontal crossbar across SAME empty back area, outer posts top crest/seat unchanged. 4 Boy's front airborne shoe near x1480y728: shoe buckle unfastened and strap end raised, same shoe position/shape/sole. 5 Boy's sweater near x1370y293 center chest: knitted small embossed leaf motif whose veins form a clear spiral, same green yarn not bright patch; only this small existing knit area, no other clothing edits. Preserve all other scene objects, tablecloth, leash/collar, hands, plates and entire framing.\", \"reference\": \"dream-258-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit this exact native1672x941 warm dreamy boy walking tablecloth scene, FIVE localized single-object differences ONLY. 1 Dog at far left closes its visible eye near x148y451, other eye/body/collar unchanged. 2 White floral soup tureen x449y227 lid tilts slightly up on its RIGHT edge showing a dark gap, keep lid knob/color/pattern and tureen body handles exact. 3 Large wooden center-right dining chair near x937y355: replace its three narrow vertical back spindles with a single broad horizontal crossbar across SAME empty back area, outer posts top crest/seat unchanged. 4 Boy's front airborne shoe near x1480y728: shoe buckle unfastened and strap end raised, same shoe position/shape/sole. 5 Boy's sweater near x1370y293 center chest: knitted small embossed leaf motif whose veins form a clear spiral, same green yarn not bright patch; only this small existing knit area, no other clothing edits. Preserve all other scene objects, tablecloth, leash/collar, hands, plates and entire framing.",
+        "reference": "dream-258-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-258-chair-selected-source-v4.png",
+      "sha256": "333D03DEA59F27C1C0178ACDF9A2F249DEE1F221889622085417CF1DBE1AED43",
+      "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit this exact native1672x941 warm dreamy boy walking tablecloth scene, FIVE localized single-object differences ONLY. 1 Dog at far left closes its visible eye near x148y451, other eye/body/collar unchanged. 2 White floral soup tureen x449y227 lid tilts slightly up on its RIGHT edge showing a dark gap, keep lid knob/color/pattern and tureen body handles exact. 3 Large wooden center-right dining chair near x937y355: replace its three narrow vertical back spindles with a single broad horizontal crossbar across SAME empty back area, outer posts top crest/seat unchanged. 4 Boy's front airborne shoe near x1480y728: shoe buckle unfastened and strap end raised, same shoe position/shape/sole. 5 Boy's sweater near x1370y293 center chest: knitted small embossed leaf motif whose veins form a clear spiral, same green yarn not bright patch; only this small existing knit area, no other clothing edits. Preserve all other scene objects, tablecloth, leash/collar, hands, plates and entire framing.\", \"reference\": \"dream-258-original-v1.png\"}}]"
+    }
+  ],
+  "authoredRegions": [
+    {
+      "id": "chair-crossbar",
+      "label": "The chair back has a broad horizontal crossbar.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 840,
+        "y": 247,
+        "width": 179,
+        "height": 231
+      },
+      "edgeFade": 4,
+      "source": "chair-selected.png"
+    },
+    {
+      "id": "shoe-unfastened",
+      "label": "The raised shoe strap stands unfastened.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1442,
+        "y": 668,
+        "width": 58,
+        "height": 77
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "tureen-lid",
+      "label": "The tureen lid tilts open.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 372,
+        "y": 177,
+        "width": 157,
+        "height": 64
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "dog-wink",
+      "label": "The dog closes one eye.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 132,
+        "y": 437,
+        "width": 33,
+        "height": 33
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "sweater-leaf",
+      "label": "The sweater has a leaf motif with a curled stem.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1370,
+        "y": 237,
+        "width": 64,
+        "height": 82
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": {
+    "humanTimed": false,
+    "physicalPhone": false,
+    "notes": [
+      "Five single-object edits; actual chest leaf motif curls at stem rather than all veins.",
+      "Chair polygon selects internal back area while preserving original posts and tablecloth. Polygon [[895,255],[1010,255],[978,465],[848,469]]."
+    ],
+    "outsideRegionsExact": true,
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sourceHashes": {
+      "chair-selected.png": "333d03dea59f27c1c0178acdf9a2f249dee1f221889622085417cf1dbe1aed43",
+      "source.png": "e92f6ca3c7d11bb2098ee352c83f90e490e697bec1057345bdc6bfbdf2377245"
+    }
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

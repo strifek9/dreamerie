@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-087",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-087-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-087-original-v4.png",
+    "sha256": "CB1F54FC773C13954E831BDD569D26E74E61EBFF5ED83BC342D9A2D31868EF9E",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-087-altered-source-v4.png",
+    "sha256": "A14FA8C8DDE6A409D169B2BB4B72A4D34E833E45DDB745B21F425D4198E36BFC",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise Dreameriepainting edit native1672x941. Preserve girl's face/body/hair/dress, goldenframe/garden, lighting/brushwork/framing. Exactly5 single-objectlocalchanges:1 yellowgardenbirdbeak atx1239y251 OPENS as small clearV insteadclosed, birdanatomy/positionunchanged;2 gold butterfly bookclasp x944y842 has its two wings FOLDEDTOGETHER upright instead spreadflat, sameclaspstem/book;3 goldenreflection on gardenwater x1187y599 forms slim CRESCENT reflection instead flower/star-shapedpatch, surroundingwater/liliesunchanged;4 girl's pearl earring x646y447 becomes dangling TEARDROP pearl insteadround, sameear/hook;5 lamp shade lower goldbrown scallopedtrim aroundx204y403 has ANGULARzigzag points insteadroundedscallops, same lampshadeoutline/location elsewhere. Exactlyoneobject perclue, no swaps/additionalchanges; preservecleanpainterlyfinish.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise Dreameriepainting edit native1672x941. Preserve girl's face/body/hair/dress, goldenframe/garden, lighting/brushwork/framing. Exactly5 single-objectlocalchanges:1 yellowgardenbirdbeak atx1239y251 OPENS as small clearV insteadclosed, birdanatomy/positionunchanged;2 gold butterfly bookclasp x944y842 has its two wings FOLDEDTOGETHER upright instead spreadflat, sameclaspstem/book;3 goldenreflection on gardenwater x1187y599 forms slim CRESCENT reflection instead flower/star-shapedpatch, surroundingwater/liliesunchanged;4 girl's pearl earring x646y447 becomes dangling TEARDROP pearl insteadround, sameear/hook;5 lamp shade lower goldbrown scallopedtrim aroundx204y403 has ANGULARzigzag points insteadroundedscallops, same lampshadeoutline/location elsewhere. Exactlyoneobject perclue, no swaps/additionalchanges; preservecleanpainterlyfinish."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The lampshade trim has angular zigzags",
+      "difficulty": "Easy",
+      "box": {
+        "x": 54,
+        "y": 375,
+        "width": 320,
+        "height": 79
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The butterfly book clasp folds its wings together",
+      "difficulty": "Medium",
+      "box": {
+        "x": 912,
+        "y": 799,
+        "width": 68,
+        "height": 73
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "A crescent glows in the garden water reflection",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1146,
+        "y": 548,
+        "width": 83,
+        "height": 73
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The pearl earring is teardrop shaped",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 630,
+        "y": 423,
+        "width": 32,
+        "height": 45
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The garden bird opens its beak",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1224,
+        "y": 232,
+        "width": 34,
+        "height": 35
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full generatedsource/nativefeathercomposite/fivepairedcrops/390stack inspected. Five observedchanges exactlylabels. Birdbeak action, claspwingfoldmechanism andwaterreflection meaningfulsingle targets. Girlface/anatomy andearringhook preserved. Pixeloutsideunion unchanged; no brokenjoins detected. Difficulty hypotheses only,nophysicalphone/human timing approval; rootruntimeQArequired.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

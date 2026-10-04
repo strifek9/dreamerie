@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-168",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-168-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-168-original-v4.png",
+    "sha256": "6DB31CF423F8C49EF67CCDAC0CBA10142E9038410C82FC558596FDDB6252DD5A",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-168-altered-source-v4.png",
+    "sha256": "84AA90B1C190C060BEEE2071CDAB0F3CAA749D374B00361C4869BE2BAAF5F031",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precisely edit this original full-frame grain-free Dreamerie painting of a vintage diver exploring waves of unmade bedding. Preserve diver anatomy/pose, helmet/body, bunny identity, framing, fabric/lighting and all other props. Exactly FIVE separate localized single-object parts change: 1 diver helmet's small SIDE circular grille changes from horizontal/vertical bars to DIAGONAL crossed bars, ring unchanged. 2 stuffed bunny's far RIGHT horizontal ear bends downward into a curled folded loop near its tip, same ear base/head/other ear. 3 small toy ship's pale sail at bottom LEFT billows to the RIGHT in a curved fold rather than flat triangular sheet, mast/hull unchanged. 4 biggest floating wooden block at center-right has its printed BLUE leaping rabbit changed to a seated upright rabbit silhouette, same block geometry/redstar other face. 5 brown triangular sewn patch on upper-right duvet has its LOWER-edge stitches cross in an X zigzag pattern instead of single perpendicular stitch marks, top/left edge stitches and patch shape unchanged. Five independent one-object changes, no swaps or unrelated animal/anatomy drift, no noise or tiny random specks. One full-frame counterpart.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precisely edit this original full-frame grain-free Dreamerie painting of a vintage diver exploring waves of unmade bedding. Preserve diver anatomy/pose, helmet/body, bunny identity, framing, fabric/lighting and all other props. Exactly FIVE separate localized single-object parts change: 1 diver helmet's small SIDE circular grille changes from horizontal/vertical bars to DIAGONAL crossed bars, ring unchanged. 2 stuffed bunny's far RIGHT horizontal ear bends downward into a curled folded loop near its tip, same ear base/head/other ear. 3 small toy ship's pale sail at bottom LEFT billows to the RIGHT in a curved fold rather than flat triangular sheet, mast/hull unchanged. 4 biggest floating wooden block at center-right has its printed BLUE leaping rabbit changed to a seated upright rabbit silhouette, same block geometry/redstar other face. 5 brown triangular sewn patch on upper-right duvet has its LOWER-edge stitches cross in an X zigzag pattern instead of single perpendicular stitch marks, top/left edge stitches and patch shape unchanged. Five independent one-object changes, no swaps or unrelated animal/anatomy drift, no noise or tiny random specks. One full-frame counterpart."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "sail",
+      "label": "The toy ship's sail billows right.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 418,
+        "y": 588,
+        "width": 116,
+        "height": 113
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "ear",
+      "label": "The stuffed bunny's far ear curls downward.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1323,
+        "y": 327,
+        "width": 89,
+        "height": 68
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "block",
+      "label": "The block's blue rabbit sits upright.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 900,
+        "y": 481,
+        "width": 55,
+        "height": 76
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "grille",
+      "label": "The helmet side grille has diagonal bars.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 604,
+        "y": 244,
+        "width": 61,
+        "height": 58
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "patch",
+      "label": "The duvet patch's lower seam has crossed stitches.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1377,
+        "y": 161,
+        "width": 123,
+        "height": 80
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered composite/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

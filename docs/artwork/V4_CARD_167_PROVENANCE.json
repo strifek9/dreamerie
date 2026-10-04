@@ -1,0 +1,115 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-167",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-167-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-167-original-v4.png",
+    "sha256": "D48AAA0D775C0E8D09B08CF66C1271A6AF46716773D168843AF24B01267A3B77",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-167-altered-source-v4.png",
+    "sha256": "000F5653F192665A48109B075CAF193A1F83236914A82A53E8A903930FAF6328",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise single-frame edit of this original painted paper tiger gently holding a white cord attached to a tiny folded paper deer. Preserve full frame, both animal anatomies/identities, paper craft material and all background. Exactly FIVE localized single-object changes: 1 tiger tail TOP tip curls inward into a compact closed loop instead of open hooked end, same tail base/body. 2 tiny deer UPPER LEFT pointed ear folds DOWN sideways into a triangular flap, same head/other ear/body. 3 white cord halfway between deer and tiger mouth gains a clearly tied BOW KNOT with two small loops in the cord itself, preserve same cord path/end attachments. 4 brass paper-fastener just right of green spool has a TRIANGULAR aperture in its thin arm instead of round aperture; preserve gold folded head. 5 large brown button at bottom-right has one SINGLE cross-shaped cutout replacing its group of four holes, same button/rim. Five isolated coherent object-part differences, no object swaps, no specks or grain, no extra unrelated props. Return matching full landscape counterpart.\"}}, {\"file\": \"fastener-prompt.json\", \"content\": {\"prompt\": \"Edit ONLY large folded GOLD DIAMOND HEAD of this paper-fastener crop. Original convex pyramid with four triangular faces becomes a HOLLOW diamond frame: retain the same outer four points/outline, but fold the four gold faces inward to leave a large deep diamond-shaped open recess occupying center half of head, with clearly visible gold inner rim and dark cavity. Preserve thin flat arm to right, its existing hole, shadows/background/size/location exactly. One coherent gold fastener head structure changes, no added objects or grain. Return one painted crop.\", \"nativeCrop\": [552, 145, 147, 108]}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise single-frame edit of this original painted paper tiger gently holding a white cord attached to a tiny folded paper deer. Preserve full frame, both animal anatomies/identities, paper craft material and all background. Exactly FIVE localized single-object changes: 1 tiger tail TOP tip curls inward into a compact closed loop instead of open hooked end, same tail base/body. 2 tiny deer UPPER LEFT pointed ear folds DOWN sideways into a triangular flap, same head/other ear/body. 3 white cord halfway between deer and tiger mouth gains a clearly tied BOW KNOT with two small loops in the cord itself, preserve same cord path/end attachments. 4 brass paper-fastener just right of green spool has a TRIANGULAR aperture in its thin arm instead of round aperture; preserve gold folded head. 5 large brown button at bottom-right has one SINGLE cross-shaped cutout replacing its group of four holes, same button/rim. Five isolated coherent object-part differences, no object swaps, no specks or grain, no extra unrelated props. Return matching full landscape counterpart."
+      }
+    },
+    {
+      "file": "fastener-prompt.json",
+      "content": {
+        "prompt": "Edit ONLY large folded GOLD DIAMOND HEAD of this paper-fastener crop. Original convex pyramid with four triangular faces becomes a HOLLOW diamond frame: retain the same outer four points/outline, but fold the four gold faces inward to leave a large deep diamond-shaped open recess occupying center half of head, with clearly visible gold inner rim and dark cavity. Preserve thin flat arm to right, its existing hole, shadows/background/size/location exactly. One coherent gold fastener head structure changes, no added objects or grain. Return one painted crop.",
+        "nativeCrop": [
+          552,
+          145,
+          147,
+          108
+        ]
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "tail",
+      "label": "The tiger's tail tip curls into a closed loop.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1492,
+        "y": 39,
+        "width": 129,
+        "height": 148
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "cord",
+      "label": "The white cord gains a tied bow.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 719,
+        "y": 421,
+        "width": 105,
+        "height": 110
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "ear",
+      "label": "The paper deer's upper ear folds sideways.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 522,
+        "y": 419,
+        "width": 78,
+        "height": 85
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "button",
+      "label": "The brown button has one cross-shaped opening.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1404,
+        "y": 792,
+        "width": 103,
+        "height": 68
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "fastener",
+      "label": "The gold fastener head becomes a hollow diamond.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 564,
+        "y": 150,
+        "width": 81,
+        "height": 96
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered composite/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

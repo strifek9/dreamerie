@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-239",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-239-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-239-original-v4.png",
+    "sha256": "1EDC43C33FC9B2C32613F3319884C04575B788A4B63489F10C979A46469974DB",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-239-altered-source-v4.png",
+    "sha256": "8E3C26B20E21343FE8FD3FED955EDC2C9E228911E1EB034ABB752D69FD4BDCA0",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Exact1672x941 source painting preserved; FIVE single-object localized changes. 1 FRONT brass snail ONLY mouth at1061611 becomes round O instead of smile, eyes/facebody exact. 2 locomotive headlamp near713232 gains diagonal X brass guard inside lens, lamp ring exact. 3 FRONT snail wooden spool ONLY central axle end near932491 has square brass cap rather than round cap; allspool/wire untouched. 4 copper cowcatcher on locomotive near695503 ONLY central grill opening becomes horizontal louver across its existing vertical opening, otheropenings originalexact. 5 steaming chimney ONLY copper top rim near640128 becomes scalloped edge instead of smooth straight rim, steam/chimneyheight exact. No swaps or multiple carriages changes. Preserve rails, snails, train, room, anatomy style framing/light.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Exact1672x941 source painting preserved; FIVE single-object localized changes. 1 FRONT brass snail ONLY mouth at1061611 becomes round O instead of smile, eyes/facebody exact. 2 locomotive headlamp near713232 gains diagonal X brass guard inside lens, lamp ring exact. 3 FRONT snail wooden spool ONLY central axle end near932491 has square brass cap rather than round cap; allspool/wire untouched. 4 copper cowcatcher on locomotive near695503 ONLY central grill opening becomes horizontal louver across its existing vertical opening, otheropenings originalexact. 5 steaming chimney ONLY copper top rim near640128 becomes scalloped edge instead of smooth straight rim, steam/chimneyheight exact. No swaps or multiple carriages changes. Preserve rails, snails, train, room, anatomy style framing/light."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "surprised-snail",
+      "label": "The front snail\u2019s mouth forms an O.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1031,
+        "y": 590,
+        "width": 64,
+        "height": 46
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "cross-lamp",
+      "label": "The locomotive lamp gains an X guard.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 690,
+        "y": 207,
+        "width": 53,
+        "height": 55
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "louver-grille",
+      "label": "The cowcatcher\u2019s center has horizontal louvers.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 650,
+        "y": 443,
+        "width": 108,
+        "height": 108
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "square-axle",
+      "label": "The front spool\u2019s axle cap becomes square.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 907,
+        "y": 469,
+        "width": 52,
+        "height": 44
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "crown-rim",
+      "label": "The chimney rim has pointed scallops.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 581,
+        "y": 103,
+        "width": 119,
+        "height": 47
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five paired crops, full composite and 390-pixel stacked pair inspected. Single-object changes; difficulty hypotheses only. Root browser/hit QA and human fairness remain pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

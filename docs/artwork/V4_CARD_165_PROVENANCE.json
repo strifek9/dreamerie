@@ -1,0 +1,108 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-165",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-165-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-165-original-v4.png",
+    "sha256": "6638DCB64F7E816C0EEFCE29A55EC5E8F33ED66721C84816D62302400BA66CD1",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-165-altered-source-v4.png",
+    "sha256": "64F17EDDDC0AB977A26406E1EB298048E2D0AD626B8168F3E4E855E70F62FF7F",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit EXACT The Sphinx at the Vending Machine native1672x941, folded paper sphinx contemplating knottedobjects. Preserve creatureanatomy/style/framing. FIVEsingleobject localizedchanges: 1 vendingmachine REDroundbutton x1374333 becomes concave recessed dish ratherconvex dome, sameoutline/materialposition within1335295..1413378; 2 triangularcoinopening x1385595 gets ONE horizontal gold crossbar across itscenter instead openemptytriangle, within1337565..1429632; 3 graypebble in sphinxhand x753459 reflects a small bright triangular lamp silhouette insteadplainstone, within720439..788483, hand/anatomyexact; 4 ONEtopright decorativewall square patch x1387143 internally shows a curved S seam insteadstraight diagonalcross, keepwholepatchoutline andcolors within132493..1443197; 5 hanginglampcap x35979 gets ONE goldcrescent inlay onfrontface insteadplainteal within31653..39799, lampshapeunchanged. Noobjectswaps/twoobjectsunderoneclue, no microspecks. All knotobjectsunchanged.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit EXACT The Sphinx at the Vending Machine native1672x941, folded paper sphinx contemplating knottedobjects. Preserve creatureanatomy/style/framing. FIVEsingleobject localizedchanges: 1 vendingmachine REDroundbutton x1374333 becomes concave recessed dish ratherconvex dome, sameoutline/materialposition within1335295..1413378; 2 triangularcoinopening x1385595 gets ONE horizontal gold crossbar across itscenter instead openemptytriangle, within1337565..1429632; 3 graypebble in sphinxhand x753459 reflects a small bright triangular lamp silhouette insteadplainstone, within720439..788483, hand/anatomyexact; 4 ONEtopright decorativewall square patch x1387143 internally shows a curved S seam insteadstraight diagonalcross, keepwholepatchoutline andcolors within132493..1443197; 5 hanginglampcap x35979 gets ONE goldcrescent inlay onfrontface insteadplainteal within31653..39799, lampshapeunchanged. Noobjectswaps/twoobjectsunderoneclue, no microspecks. All knotobjectsunchanged."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The red vending button is concave",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1333,
+        "y": 294,
+        "width": 83,
+        "height": 87
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The triangular opening has a crossbar",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1337,
+        "y": 565,
+        "width": 94,
+        "height": 70
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The wall patch has a curved S seam",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1324,
+        "y": 92,
+        "width": 121,
+        "height": 107
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The lamp cap has a crescent inlay",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 316,
+        "y": 47,
+        "width": 83,
+        "height": 53
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The stone has a triangular reflection",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 719,
+        "y": 437,
+        "width": 70,
+        "height": 49
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390 stacked pair. Five separately changed objects; anatomy/corepremise maintained; unrelated drift excluded; outside boxes exact original. Full generated sources/prompts/hashes retained. Crop bridge refinement mapped to exact native crop with coordinates in prompt. Difficulty estimates unvalidated. Root compositor/game/human review pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-320",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-revisit-v1/320-dynamic-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-320-original-v4.png",
+    "sha256": "531C98DCDD94FE6F4238A09991B6F2B889852C53903BE07657924926D4435AFC",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-320-altered-source-v4.png",
+    "sha256": "7C18E2073D5B477E7617B903288107AEE8E3E025B71906328916FC714A256BE9",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit this exact original1672x941 dreamy painting. Exactly FIVE tiny localized single-object changes, all other original pixels/frame/style/anatomy preserved:1 tiny knitted sheep LEFT eye at462284 closes into curved stitched eyelid, right eye unchanged.2 origami fish at1160175 only its tail tip at967195 curls downward instead of pointing left/up; body/eye/fins exact.3 isolated lower-right cup front at1515820 gains a pale crescent motif among blue leaves, cup shape same.4 bottom drawer brass knob at672634 changes to square-rounded brass knob, original position.5 open book on chair at1475450 gains a small star embossed near lower-right of its blue front cover, all pages and old plant motif unchanged. One object each, no multiple swaps or additional props.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit this exact original1672x941 dreamy painting. Exactly FIVE tiny localized single-object changes, all other original pixels/frame/style/anatomy preserved:1 tiny knitted sheep LEFT eye at462284 closes into curved stitched eyelid, right eye unchanged.2 origami fish at1160175 only its tail tip at967195 curls downward instead of pointing left/up; body/eye/fins exact.3 isolated lower-right cup front at1515820 gains a pale crescent motif among blue leaves, cup shape same.4 bottom drawer brass knob at672634 changes to square-rounded brass knob, original position.5 open book on chair at1475450 gains a small star embossed near lower-right of its blue front cover, all pages and old plant motif unchanged. One object each, no multiple swaps or additional props."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "closed-eye",
+      "label": "The knitted sheep closes one eye.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 450,
+        "y": 273,
+        "width": 26,
+        "height": 25
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "curled-tail",
+      "label": "The paper fish\u2019s tail curls downward.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 946,
+        "y": 155,
+        "width": 141,
+        "height": 88
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "square-knob",
+      "label": "The open drawer\u2019s knob becomes square.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 627,
+        "y": 597,
+        "width": 75,
+        "height": 72
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "crescent-cup",
+      "label": "The cup bears a crescent.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1492,
+        "y": 790,
+        "width": 53,
+        "height": 56
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "star-book",
+      "label": "The book\u2019s blue cover bears a star.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1509,
+        "y": 438,
+        "width": 57,
+        "height": 54
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five paired crops, full composite and 390-pixel stacked pair inspected. Single-object changes; difficulty hypotheses only. Root browser/hit QA and human fairness remain pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

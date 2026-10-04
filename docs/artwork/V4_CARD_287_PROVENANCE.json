@@ -1,0 +1,106 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-287",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-287-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-287-original-v4.png",
+    "sha256": "DBD0F5BA8BAA36CFF8ACA8A001AEA29A45D52ACF734BB8CDD2D35EA3DEF811CB",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-287-altered-source-v4.png",
+    "sha256": "B33C3314A6B3389C9148954CAF5D0263EEBE1A6537FA3A2FE75CC03F67A415AC",
+    "prompt": "[{\"file\": \"preserve-prompt.json\", \"content\": {\"operation\": \"Original preservation assembly\", \"script\": \"preserve.py\", \"reason\": \"Retain only five artifact regions; restore original lantern candle/interior so no separate candle-flame change.\"}}, {\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit this exact painting of curly-haired BOY collecting miniature DOORS in a redwagon. Preserve native1672x941 composition/style/anatomy. FIVE isolated SINGLE-object edits only: (1) gold lantern foreground bottomleft: its FRONT GLASS DOOR hinges open to left, same frame/handle/candle. (2) patch on boy LEFT KNEE at x432,y602: existing tan square patch gains an embroidered dark SPIRAL internalpattern, same cloth outline. (3) LARGE wall door bronze knocker upperleft x64,y171: its hanging ring becomes a continuous twisted FIGURE EIGHT ring, original mountplate exact. (4) small mustard wooden door farRIGHT insidewagon x1280,y519: its heart cutout becomes a clean CRESCENT shaped cutout on same panel, no other doors altered. (5) ONLY boy's held blue miniature door WINDOW x686,y314: golden window divider changes from plus CROSS to a diagonal X lattice, same window/door/knob and hands exact. Do not alter any other doors/windows/handles, no swaps, no additional objects, no facial/anatomy differences. At least five clean visible localized edits.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "preserve-prompt.json",
+      "content": {
+        "operation": "Original preservation assembly",
+        "script": "preserve.py",
+        "reason": "Retain only five artifact regions; restore original lantern candle/interior so no separate candle-flame change."
+      }
+    },
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit this exact painting of curly-haired BOY collecting miniature DOORS in a redwagon. Preserve native1672x941 composition/style/anatomy. FIVE isolated SINGLE-object edits only: (1) gold lantern foreground bottomleft: its FRONT GLASS DOOR hinges open to left, same frame/handle/candle. (2) patch on boy LEFT KNEE at x432,y602: existing tan square patch gains an embroidered dark SPIRAL internalpattern, same cloth outline. (3) LARGE wall door bronze knocker upperleft x64,y171: its hanging ring becomes a continuous twisted FIGURE EIGHT ring, original mountplate exact. (4) small mustard wooden door farRIGHT insidewagon x1280,y519: its heart cutout becomes a clean CRESCENT shaped cutout on same panel, no other doors altered. (5) ONLY boy's held blue miniature door WINDOW x686,y314: golden window divider changes from plus CROSS to a diagonal X lattice, same window/door/knob and hands exact. Do not alter any other doors/windows/handles, no swaps, no additional objects, no facial/anatomy differences. At least five clean visible localized edits."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "The lantern's glass door opens to the left.",
+      "box": {
+        "x": 83,
+        "y": 681,
+        "width": 208,
+        "height": 213
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The knee patch bears an embroidered spiral.",
+      "box": {
+        "x": 390,
+        "y": 556,
+        "width": 91,
+        "height": 91
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The wall knocker's ring twists into a figure eight.",
+      "box": {
+        "x": 27,
+        "y": 105,
+        "width": 80,
+        "height": 135
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "The little mustard door has a crescent cutout.",
+      "box": {
+        "x": 1254,
+        "y": 491,
+        "width": 52,
+        "height": 63
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "The held blue door's window bars form a diagonal cross.",
+      "box": {
+        "x": 647,
+        "y": 263,
+        "width": 80,
+        "height": 100
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Five one-object regions, no multiobject swaps. Original lantern candle/interior restored because generation lit the candle as collateral. All other source pixels assembled from inventory original outside five regions. Full frame, native paired crops and 390 pair inspected; difficulty hypotheses and root joins pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

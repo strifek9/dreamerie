@@ -1,0 +1,116 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-157",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-157-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-157-original-v4.png",
+    "sha256": "59E8DD016B0806E78FFFCBB7E7F8831D38803FB12D286314111B8FDEF77D8A0F",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-157-altered-source-v4.png",
+    "sha256": "60720B7BF3F5F6747EA31C354CC48BA0AD7A98767DAF9E5C8D217BED950FC2BE",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact native full1672x941 painterly image with five localized differences, one independently selectable object each. 1 Red clothespin on chair top right near x1514y181: jaws open into visibly wide V rather than closed, same red pin attached at same place, feather unchanged. 2 Peacock actual eye near x1025y130 closes into curved dark eyelid; reflected portrait eye unchanged. 3 Blue thread spool in foreground near x998y838: thread winding becomes clear diagonal crisscross winding instead of horizontal stacked rings, same spool wooden rims and loose thread. 4 Mirror portrait in foreground near x445y782: reflected peacock beak is open slightly, keeping reflection eye/head/crest original; actual peacock beak unchanged. 5 Tall ceramic vase at far right x1638y552: add one clear broad spiral engraved groove around body instead of plain body, same vase silhouette color mouth and surroundings. All other objects, feather patterns, chair gems and palette original.\", \"reference\": \"dream-157-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact native full1672x941 painterly image with five localized differences, one independently selectable object each. 1 Red clothespin on chair top right near x1514y181: jaws open into visibly wide V rather than closed, same red pin attached at same place, feather unchanged. 2 Peacock actual eye near x1025y130 closes into curved dark eyelid; reflected portrait eye unchanged. 3 Blue thread spool in foreground near x998y838: thread winding becomes clear diagonal crisscross winding instead of horizontal stacked rings, same spool wooden rims and loose thread. 4 Mirror portrait in foreground near x445y782: reflected peacock beak is open slightly, keeping reflection eye/head/crest original; actual peacock beak unchanged. 5 Tall ceramic vase at far right x1638y552: add one clear broad spiral engraved groove around body instead of plain body, same vase silhouette color mouth and surroundings. All other objects, feather patterns, chair gems and palette original.",
+        "reference": "dream-157-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "clip-open",
+      "label": "The red clothespin opens wider",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1478,
+        "y": 133,
+        "width": 82,
+        "height": 88
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "peacock-eye",
+      "label": "The peacock closes its eye",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1003,
+        "y": 104,
+        "width": 38,
+        "height": 47
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "spool-cross",
+      "label": "The spool thread winds in crosses",
+      "difficulty": "Hard",
+      "box": {
+        "x": 949,
+        "y": 799,
+        "width": 98,
+        "height": 84
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "mirror-beak",
+      "label": "The reflected beak is open",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 438,
+        "y": 776,
+        "width": 44,
+        "height": 52
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "vase-spiral",
+      "label": "The vase has a spiral groove",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1579,
+        "y": 477,
+        "width": 93,
+        "height": 196
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": {
+    "humanTimed": false,
+    "physicalPhone": false,
+    "notes": "Five separate objects; clothespin mechanism and differing beak reflection plus eye action. Native original1672x941 unchanged.",
+    "outsideRegionsExact": true,
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sourceHashes": {
+      "source.png": "60720b7bf3f5f6747ea31c354cc48ba0ad7a98767daf9e5c8d217bed950fc2be"
+    }
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

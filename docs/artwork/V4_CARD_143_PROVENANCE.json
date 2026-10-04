@@ -1,0 +1,108 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-143",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-143-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-143-original-v4.png",
+    "sha256": "BFF32FFD0C4336646A5BB31B84413060FB0521AE9129C230A681497D245ED85F",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-143-altered-source-v4.png",
+    "sha256": "EAD153F5BE303AEBAA61A3D8255A44308FC287780B0A9281D603E3A005D5294F",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact Castle Inside the Sandwich image native1672x941. Preserve entire dream premise, mouseanatomy/style/framing. FIVE localized single-object differences: 1 ONLY gold triangular flag outline on olive x122427 turns into a curved hollow pennant outline flying LEFT insteadright, within11710..125766, pole/oliveunchanged; 2 ONLY blue archedwindow insideleftcastle wall x843326 its central verticalmullion becomes diagonal acrossglass, retainingarchedoutline within824289..862366; 3 ONLY foremostleft castlechair x872467 its red back panel has ONE diamond tuft inset insteadplain upholstery within851412..893468, otherchairunchanged; 4 ONE goldleft lettucecurtain tie x682393 becomes a visibly twisted rope pattern insteadsmoothbar, within651373..721414, lettuceexact; 5 ONLY goldnapkinring foregroundright x1495748 reflects a small blue crescent on itsfrontmetalsurface ratherplain glint, within1437702..1543804, ringoutline/napkinunchanged. No swaps or multipleobjects merged. No grain/microspecks.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact Castle Inside the Sandwich image native1672x941. Preserve entire dream premise, mouseanatomy/style/framing. FIVE localized single-object differences: 1 ONLY gold triangular flag outline on olive x122427 turns into a curved hollow pennant outline flying LEFT insteadright, within11710..125766, pole/oliveunchanged; 2 ONLY blue archedwindow insideleftcastle wall x843326 its central verticalmullion becomes diagonal acrossglass, retainingarchedoutline within824289..862366; 3 ONLY foremostleft castlechair x872467 its red back panel has ONE diamond tuft inset insteadplain upholstery within851412..893468, otherchairunchanged; 4 ONE goldleft lettucecurtain tie x682393 becomes a visibly twisted rope pattern insteadsmoothbar, within651373..721414, lettuceexact; 5 ONLY goldnapkinring foregroundright x1495748 reflects a small blue crescent on itsfrontmetalsurface ratherplain glint, within1437702..1543804, ringoutline/napkinunchanged. No swaps or multipleobjects merged. No grain/microspecks."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The olive flag flies left with a curved edge",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1090,
+        "y": 0,
+        "width": 179,
+        "height": 94
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The blue castle window has a diagonal mullion",
+      "difficulty": "Medium",
+      "box": {
+        "x": 824,
+        "y": 289,
+        "width": 40,
+        "height": 79
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The left lettuce curtain tie is braided",
+      "difficulty": "Hard",
+      "box": {
+        "x": 646,
+        "y": 370,
+        "width": 80,
+        "height": 48
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The left throne back has a diamond inset",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 851,
+        "y": 412,
+        "width": 43,
+        "height": 58
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The napkin ring reflects a blue crescent",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1546,
+        "y": 717,
+        "width": 87,
+        "height": 100
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390 stacked pair. Five separately changed objects. Unrelated drift excluded, outside boxes exact original. Crop refinements resized to original crop only, coordinates recorded, full generated crop preserved. Difficulty estimates unvalidated. Root compositor/game/human review pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

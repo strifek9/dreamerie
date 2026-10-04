@@ -1,0 +1,110 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-300",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-300-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-300-original-v4.png",
+    "sha256": "E437190A3580913E02AB6A9C681013D2C9D199765EA0593DFEDA87BCC3859787",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-300-altered-source-v4.png",
+    "sha256": "76B216F8C1F7010AEF2027886F5CE24486500EA7B9FB46B3BA02ABD9B7426437",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact original painting locally with five single-object targets only. Preserve dreamy painted book hallway, objects, light, frame. 1 Brass round knob on nearest BLUE hallway door near x645 y413 becomes a hinged hanging brass pull ring attached at same mount, door panel unchanged. 2 The nearest LEFT wall-sconce flame near x708 y251 bends clearly sideways to the right like a hooked tongue, sconce holder/wall unchanged. 3 LEFT spectacle lens in foreground near x621 y723 contains a pale reflected crescent moon in its upper center, lens frame and right lens unchanged. 4 Brass wax-stamp face lower-right near x1413 y830 has a clear engraved spiral motif instead of twig carving, stamp outer face/handle and wax seal unchanged. 5 Brass key resting on closed blue book bottom-left has its three-lobed bow near x155 y714 become a heart-shaped bow with open heart interior, shaft/teeth/book untouched. No swaps or extra differences; clean localized scene-fitting edits.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact original painting locally with five single-object targets only. Preserve dreamy painted book hallway, objects, light, frame. 1 Brass round knob on nearest BLUE hallway door near x645 y413 becomes a hinged hanging brass pull ring attached at same mount, door panel unchanged. 2 The nearest LEFT wall-sconce flame near x708 y251 bends clearly sideways to the right like a hooked tongue, sconce holder/wall unchanged. 3 LEFT spectacle lens in foreground near x621 y723 contains a pale reflected crescent moon in its upper center, lens frame and right lens unchanged. 4 Brass wax-stamp face lower-right near x1413 y830 has a clear engraved spiral motif instead of twig carving, stamp outer face/handle and wax seal unchanged. 5 Brass key resting on closed blue book bottom-left has its three-lobed bow near x155 y714 become a heart-shaped bow with open heart interior, shaft/teeth/book untouched. No swaps or extra differences; clean localized scene-fitting edits."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The blue door has a hanging pull ring",
+      "difficulty": "Easy",
+      "box": {
+        "x": 617,
+        "y": 385,
+        "width": 47,
+        "height": 79
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The nearest left flame bends sideways",
+      "difficulty": "Medium",
+      "box": {
+        "x": 695,
+        "y": 219,
+        "width": 62,
+        "height": 57
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The left lens reflects a crescent",
+      "difficulty": "Hard",
+      "box": {
+        "x": 595,
+        "y": 665,
+        "width": 55,
+        "height": 56
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The stamp face bears a spiral",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1364,
+        "y": 778,
+        "width": 79,
+        "height": 106
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The key bow forms a heart",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 101,
+        "y": 679,
+        "width": 107,
+        "height": 73
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "visually inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "nativePreflight": "source equals actual original size, five nonoverlapping boxes",
+    "difficulty": "hypotheses; human and browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

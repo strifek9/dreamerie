@@ -1,0 +1,122 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-323",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-revisit-v1/323-dynamic-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-323-original-v4.png",
+    "sha256": "2A029331DF98030DFFDC6B360DC53C645359F6340D642013AC6565792E2EA8FD",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-323-altered-source-v4.png",
+    "sha256": "68A4BBCBFCBAB5F55BAD7D655077F2FF91A69335624C83BDD5D94AF90D95533F",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit this exact native 1672x941 painterly lemon pouring rain into frog leaf boat still life. Five isolated ONE-object differences only: 1 spoon bowl x1175y678 has strong blue crescent reflection, rim and handle exact; 2 wooden lemon door inner face x824y289 gains clear carved gold star; 3 jar lid top face x1210y290 has one diagonal gold crossbar across its inner oval, outer lid and jar exact; 4 large water droplet on foreground leaf x354y756 has white crescent reflection instead of round highlight, smaller other droplet exact; 5 lower brass door hinge pin x778y313 gains X groove, upper hinge exact. Preserve frog anatomy, sugar cubes, water stream, leaf boat, ribbon, composition, paint style and every other object. No extra changes.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/collection-revisit-v1/323-dynamic-original-v1.png\"}}, {\"file\": \"hinge-prompt.json\", \"content\": {\"prompt\": \"Edit this exact small native crop of lower brass hinge on wooden lemon door with water stream at left. Change ONLY central hinge pin face from plain dark vertical slot to a very clear engraved X slot. Same pin, brass plate, fasteners, door and stream positions. Preserve painterly colors and all other pixels as closely as possible.\", \"reference\": \"hinge-crop.png\", \"nativeCrop\": [750, 290, 802, 337]}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit this exact native 1672x941 painterly lemon pouring rain into frog leaf boat still life. Five isolated ONE-object differences only: 1 spoon bowl x1175y678 has strong blue crescent reflection, rim and handle exact; 2 wooden lemon door inner face x824y289 gains clear carved gold star; 3 jar lid top face x1210y290 has one diagonal gold crossbar across its inner oval, outer lid and jar exact; 4 large water droplet on foreground leaf x354y756 has white crescent reflection instead of round highlight, smaller other droplet exact; 5 lower brass door hinge pin x778y313 gains X groove, upper hinge exact. Preserve frog anatomy, sugar cubes, water stream, leaf boat, ribbon, composition, paint style and every other object. No extra changes.",
+        "reference": "D:/Dreamerie/public/artwork/v3/collection-revisit-v1/323-dynamic-original-v1.png"
+      }
+    },
+    {
+      "file": "hinge-prompt.json",
+      "content": {
+        "prompt": "Edit this exact small native crop of lower brass hinge on wooden lemon door with water stream at left. Change ONLY central hinge pin face from plain dark vertical slot to a very clear engraved X slot. Same pin, brass plate, fasteners, door and stream positions. Preserve painterly colors and all other pixels as closely as possible.",
+        "reference": "hinge-crop.png",
+        "nativeCrop": [
+          750,
+          290,
+          802,
+          337
+        ]
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The spoon bowl reflects a blue crescent",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1110,
+        "y": 646,
+        "width": 132,
+        "height": 51
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The lemon door has a carved gold star",
+      "difficulty": "Medium",
+      "box": {
+        "x": 795,
+        "y": 258,
+        "width": 51,
+        "height": 69
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The jar lid has a diagonal gold bar",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1180,
+        "y": 274,
+        "width": 100,
+        "height": 27
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The large water drop has a crescent reflection",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 332,
+        "y": 744,
+        "width": 42,
+        "height": 23
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The lower hinge pin has an X slot",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 768,
+        "y": 304,
+        "width": 22,
+        "height": 19
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "refined-native.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390 stacked pair. Five independently selectable localized object clues. Native dimensions, five bounded nonoverlapping boxes and exact original pixels outside verified. Difficulty estimates unvalidated; root compositor/game, human difficulty and physical phone approval pending. Full prompt/source hash chain retained.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

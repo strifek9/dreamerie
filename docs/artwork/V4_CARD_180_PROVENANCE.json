@@ -1,0 +1,115 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-180",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-180-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-180-original-v4.png",
+    "sha256": "AB6F96EBEF781A5E55B5102279FB528BADB5CD6369D3E920FE7CEAAE5F61B132",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-180-altered-source-v4.png",
+    "sha256": "D1E94FCA0B3EDFF40585D506ECB8068AF44C0F360733C4F67CD5C39F85D798CA",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Exact native1672x941 localizedpaintingedit paperfanfairground. Preserveallanimalsanatomy bookfan scenerypropcolors. Exactlyfive singleobjectdifferences:1 redplayingCARD lowerleftx425y778 centraldiamondmotif becomescrescent, border/cardunchanged;2 WHITE carouselRABBIT x736y311 its RIGHTUPPERlongEAR foldsdownatmidpoint ratherstraightup, facebodyotherearunchanged;3 balancingTIGHTROPEMOUSE upperrightx1121y191 tailcurvesUPWARD intohook insteadleftdownU, bodyarmsropeunchanged;4 fanbottom goldBLUEGEM x856y794 becomes ROUNDbluegem withsamegoldsetting, samefanhingetassel;5 upperFERRISWHEEL bucketx480y373 its goldhandlebar opensCgap nearleft insteadclosedovalrim, bucketbodyseatsandwheelunchanged. Five objectonly no swaps noglobalregen noextras physicalconnections maintained.\"}}, {\"file\": \"prompt-b.json\", \"content\": {\"prompt\": \"EditexactpaintedFerriswheelbucketcrop. Singlebucket internalpatternchange: onfront TEAL panel replacecurrenttinygold diamond/star MOTIF with oneclear GOLD horizontalCHEVRON V wide enough tosee. Samebucketbody/rim redandtealpanels seats support pole backgroundunchanged. Only motif onfrontcenterpanel changes notwholebucket or otherobjects.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Exact native1672x941 localizedpaintingedit paperfanfairground. Preserveallanimalsanatomy bookfan scenerypropcolors. Exactlyfive singleobjectdifferences:1 redplayingCARD lowerleftx425y778 centraldiamondmotif becomescrescent, border/cardunchanged;2 WHITE carouselRABBIT x736y311 its RIGHTUPPERlongEAR foldsdownatmidpoint ratherstraightup, facebodyotherearunchanged;3 balancingTIGHTROPEMOUSE upperrightx1121y191 tailcurvesUPWARD intohook insteadleftdownU, bodyarmsropeunchanged;4 fanbottom goldBLUEGEM x856y794 becomes ROUNDbluegem withsamegoldsetting, samefanhingetassel;5 upperFERRISWHEEL bucketx480y373 its goldhandlebar opensCgap nearleft insteadclosedovalrim, bucketbodyseatsandwheelunchanged. Five objectonly no swaps noglobalregen noextras physicalconnections maintained."
+      }
+    },
+    {
+      "file": "prompt-b.json",
+      "content": {
+        "prompt": "EditexactpaintedFerriswheelbucketcrop. Singlebucket internalpatternchange: onfront TEAL panel replacecurrenttinygold diamond/star MOTIF with oneclear GOLD horizontalCHEVRON V wide enough tosee. Samebucketbody/rim redandtealpanels seats support pole backgroundunchanged. Only motif onfrontcenterpanel changes notwholebucket or otherobjects."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The card motif becomes a crescent",
+      "difficulty": "Easy",
+      "box": {
+        "x": 396,
+        "y": 751,
+        "width": 62,
+        "height": 56
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The fan hinge gem becomes round",
+      "difficulty": "Medium",
+      "box": {
+        "x": 824,
+        "y": 767,
+        "width": 62,
+        "height": 61
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The carousel rabbit ear bends downward",
+      "difficulty": "Hard",
+      "box": {
+        "x": 684,
+        "y": 223,
+        "width": 55,
+        "height": 57
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The tightrope mouse tail curls upward",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1024,
+        "y": 193,
+        "width": 94,
+        "height": 65
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The upper wheel bucket has a gold chevron",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 460,
+        "y": 363,
+        "width": 34,
+        "height": 28
+      },
+      "edgeFade": 2
+    }
+  ],
+  "notes": {
+    "fullComposite": "inspected",
+    "fivePairedCrops": "five single-object clues inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "difficulty": "hypotheses; parent browser and human playtest pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

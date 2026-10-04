@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-306",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-306-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-306-original-v4.png",
+    "sha256": "FBFCC5F9BEAC99633A35346AD462AB4264A283E3DACC712478271873E78F9200",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-306-altered-source-v4.png",
+    "sha256": "BBEF56D896D9FA1F109D894F4B07F2032EAB407E9B7A603F094FFFD270F8A62B",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exactly original elderly fisherman using horseshoe magnet to lift patterned floor tile over sky hole. Preserve man anatomy/expression/hands, rod/line/magnet/tile premise and painted style/frame. Exactly FIVE single-object localized changes: (1) hanging magnet its UPPER curved red bridge bends into a squared flat-topped U instead of round U, same two blue tips/line/tile; (2) foreground CUP its cream handle curls into an inward spiral inside existing handle, cup body/diamonds exact; (3) lower foreground HAMMER metal claw points UP as a hook instead of current sideways claw, wooden handle/rest exact; (4) isolated LEFT door brass knocker ring becomes a broad hexagonal ring at same mounting, rest door exact; (5) front-most bucket tile's printed four-petal flower becomes a bold continuous five-point star, same tile border/orientation/all other tiles. One existing object's mechanism/shape/pattern each, no swaps/no grain/no new objects.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exactly original elderly fisherman using horseshoe magnet to lift patterned floor tile over sky hole. Preserve man anatomy/expression/hands, rod/line/magnet/tile premise and painted style/frame. Exactly FIVE single-object localized changes: (1) hanging magnet its UPPER curved red bridge bends into a squared flat-topped U instead of round U, same two blue tips/line/tile; (2) foreground CUP its cream handle curls into an inward spiral inside existing handle, cup body/diamonds exact; (3) lower foreground HAMMER metal claw points UP as a hook instead of current sideways claw, wooden handle/rest exact; (4) isolated LEFT door brass knocker ring becomes a broad hexagonal ring at same mounting, rest door exact; (5) front-most bucket tile's printed four-petal flower becomes a bold continuous five-point star, same tile border/orientation/all other tiles. One existing object's mechanism/shape/pattern each, no swaps/no grain/no new objects."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "magnet",
+      "label": "The magnet bridge becomes flat-topped.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1009,
+        "y": 434,
+        "width": 98,
+        "height": 83
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "claw",
+      "label": "The hammer claw hooks upward.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 548,
+        "y": 724,
+        "width": 81,
+        "height": 96
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "cup",
+      "label": "The cup handle curls into a spiral.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 306,
+        "y": 662,
+        "width": 71,
+        "height": 88
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "knocker",
+      "label": "The door knocker ring becomes hexagonal.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 144,
+        "y": 42,
+        "width": 82,
+        "height": 80
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "tile",
+      "label": "The bucket tile flower becomes a star.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 742,
+        "y": 344,
+        "width": 88,
+        "height": 86
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered compositor/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

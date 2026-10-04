@@ -1,0 +1,98 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-066",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-066-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-066-original-v4.png",
+    "sha256": "05426A2B7B3F13A5307AB0E9E100621A3F00EAB644BF0BF5A71AE9DD2BDF4E4B",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-066-altered-source-v4.png",
+    "sha256": "E4203CF7AA33ABB6F9F468B88D794BB13527479B2DCBC5C3B386BB380A9D642F",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Preciselyedit attached raccoon paddlingbanana boat giantpinkflower painting. EXACT1672x941 framing/objectpositions/animalanatomy/brushwork/colors unchanged. FIVE single-object edits:1) blue fallenPETAL onlower-rightpinkflower folds into a small paperboat-like shape with TWO raised sides, madeof SAMEbluepetal, keep sameplacement no addedboat.2) raccoon'sredHATTASSEL strands weave into a clear loosebraidedselfloop then dangle, same cap/cord, no changedanimal.3) paddle's underwaterbottom woodtip becomes a slightly broadened curvedSCOOP-shaped blade instead of narrowstraightend, coherent continuouspaddlewatercontact, restshaft/pawsunchanged.4) goldlantern leftfrontglass: its warmglowingreflection shows a pale CRESCENT silhouette inside mainpane instead ofplainwindowcrosslight, keepmetalframe andpaneoutline unchanged.5) banana's RIGHTblackbowtip gains a clear small heart-shaped openhole cutinto blacktip (onebananafeature), preserve outsideblacktip/bananashell/motion. No swaps, eachclueoneobject notmultiple separatelyselectablethings. No color-onlydifferences, noextras/text/markers.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Preciselyedit attached raccoon paddlingbanana boat giantpinkflower painting. EXACT1672x941 framing/objectpositions/animalanatomy/brushwork/colors unchanged. FIVE single-object edits:1) blue fallenPETAL onlower-rightpinkflower folds into a small paperboat-like shape with TWO raised sides, madeof SAMEbluepetal, keep sameplacement no addedboat.2) raccoon'sredHATTASSEL strands weave into a clear loosebraidedselfloop then dangle, same cap/cord, no changedanimal.3) paddle's underwaterbottom woodtip becomes a slightly broadened curvedSCOOP-shaped blade instead of narrowstraightend, coherent continuouspaddlewatercontact, restshaft/pawsunchanged.4) goldlantern leftfrontglass: its warmglowingreflection shows a pale CRESCENT silhouette inside mainpane instead ofplainwindowcrosslight, keepmetalframe andpaneoutline unchanged.5) banana's RIGHTblackbowtip gains a clear small heart-shaped openhole cutinto blacktip (onebananafeature), preserve outsideblacktip/bananashell/motion. No swaps, eachclueoneobject notmultiple separatelyselectablethings. No color-onlydifferences, noextras/text/markers."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "The blue petal folds into a little boat.",
+      "box": {
+        "x": 1282,
+        "y": 656,
+        "width": 166,
+        "height": 111
+      },
+      "edgeFade": 5
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The red hat tassel threads through its own loop.",
+      "box": {
+        "x": 461,
+        "y": 271,
+        "width": 84,
+        "height": 98
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The paddle ends in a broad curved blade.",
+      "box": {
+        "x": 544,
+        "y": 646,
+        "width": 137,
+        "height": 133
+      },
+      "edgeFade": 5
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "A crescent glows inside the lantern pane.",
+      "box": {
+        "x": 185,
+        "y": 425,
+        "width": 57,
+        "height": 65
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "A pale heart appears on the banana's black tip.",
+      "box": {
+        "x": 1051,
+        "y": 373,
+        "width": 34,
+        "height": 33
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Fullframe observed. Single bluepetal folded, same tasselselfloop, singlepaddle broadblade, same lanternpane light, singlebanana-tip motif. Initialsource removedlanterncrossbars: originalvertical/horizontalmetalcross restoredbyteexact by deterministicrectangle masks; onlyglowpatternchanges now. Actual heart reads paintedpaleheart, notconfirmedopening: observedlabel avoids holeclaim. No swaps. Rootfinalcompositor QA required.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

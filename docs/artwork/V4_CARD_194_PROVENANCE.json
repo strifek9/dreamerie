@@ -1,0 +1,98 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-194",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-194-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-194-original-v4.png",
+    "sha256": "9AAF28DA1DFFE3AC563BB760ED891345B369B9F4179EF0560B6D5436A41E920C",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-194-altered-source-v4.png",
+    "sha256": "57CC7117913B46902BCA2BBF929FE7DE86F8D482385BB7DDF214B06015AB4F3C",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit attached BLUE SNEAKER miniature apartment city on yellowtable painting. EXACT1672x941 originalframing allobjects/lightingpaint unchanged. FIVE isolated singleartifact changes:1) cream RUBBER TOE CAP lowerleft x405,y709: one large elegant cobalt-blue spiral paintedWITHIN toe cap surface, same capoutline/shine, no shoe/laces motion.2) long cream SHOELACE danglingright acrossfloor: its OWN looseend aroundx1055,y739 forms clear overhand selfKNOT beforemetal aglet, same route fromupper eyelet/aglet position, no otherlaces change.3) cream COFFEE MUG HANDLE upperleft x274,y75: existing handle curls into continuous figure-eight doubleloop attachedsame mug, mugbody/coffee untouched.4) cream RECTANGULAR CLOTH PATCH onupper shoe tongue x696,y89: ONE upperRIGHT corner folds outward exposing darkercloth underside, samepatchstitching andallrestshoe unchanged.5) RED WHITE striped TOWEL draped rooftop right x1023,y209: lowerdanglingEND threads through itsOWN smallknot, same towelstripes/upperdrape, rooftopchair/rail exact. No object swaps, no newclutter, no text/grain; eachchangedartifact localized and distinct.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit attached BLUE SNEAKER miniature apartment city on yellowtable painting. EXACT1672x941 originalframing allobjects/lightingpaint unchanged. FIVE isolated singleartifact changes:1) cream RUBBER TOE CAP lowerleft x405,y709: one large elegant cobalt-blue spiral paintedWITHIN toe cap surface, same capoutline/shine, no shoe/laces motion.2) long cream SHOELACE danglingright acrossfloor: its OWN looseend aroundx1055,y739 forms clear overhand selfKNOT beforemetal aglet, same route fromupper eyelet/aglet position, no otherlaces change.3) cream COFFEE MUG HANDLE upperleft x274,y75: existing handle curls into continuous figure-eight doubleloop attachedsame mug, mugbody/coffee untouched.4) cream RECTANGULAR CLOTH PATCH onupper shoe tongue x696,y89: ONE upperRIGHT corner folds outward exposing darkercloth underside, samepatchstitching andallrestshoe unchanged.5) RED WHITE striped TOWEL draped rooftop right x1023,y209: lowerdanglingEND threads through itsOWN smallknot, same towelstripes/upperdrape, rooftopchair/rail exact. No object swaps, no newclutter, no text/grain; eachchangedartifact localized and distinct."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "A blue spiral is painted on the shoe's rubber toe.",
+      "box": {
+        "x": 272,
+        "y": 618,
+        "width": 278,
+        "height": 188
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The mug handle forms a figure eight.",
+      "box": {
+        "x": 236,
+        "y": 0,
+        "width": 109,
+        "height": 164
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The loose shoelace knots itself near its metal tip.",
+      "box": {
+        "x": 1047,
+        "y": 736,
+        "width": 144,
+        "height": 133
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "The rooftop towel's loose end ties into a knot.",
+      "box": {
+        "x": 993,
+        "y": 153,
+        "width": 69,
+        "height": 177
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "The tongue patch's upper-right corner folds outward.",
+      "box": {
+        "x": 717,
+        "y": 35,
+        "width": 64,
+        "height": 105
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Correct inventory/yearoriginal1672x941. Actual5localizedsingleartifacts. Toeinternalpaint, one mughandle continuousfigure8, single connectedloose lace ownknotincludingattachedmetalaglet, onerooftoptowel selfknot old/newunion, onefabricpatch cornerfold. No object swaps. Cuphandle legitimatelytouchescrop toporiginalalso. Source retainsallotherobjectpositions. Root nativejoinQA pending, difficulty hypothesesonly.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

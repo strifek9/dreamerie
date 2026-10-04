@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-247",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-247-original-v2.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-247-original-v4.png",
+    "sha256": "8807FB6996942047A7473FE08137FF99F0BDAD73E3E9269727D0BD34C3A324BC",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-247-altered-source-v4.png",
+    "sha256": "5A03C720B3D40E506B11B5262AE170623C3ED3553FA10CC690E9B011005207A4",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact full native 1672x941 walrus holding paper fan with icy staircase, no anatomy/style/composition changes. FIVE isolated single-object changes only: 1) single fish biscuit at x1086y817 mouth opens into an upward curved smile, same fish eye/scales/tail; 2) compass red needle x1513y752 bends in an elbow toward right, blue needle/face/rim exact; 3) compass winding loop x1604y727 reflects a blue crescent inside its gold surface, same loop silhouette; 4) RIGHT bow loop at fan hinge x947y733 stands upward instead of downward, LEFT loop/knot/tails exact; 5) small wrapped parcel x151y816 has one diagonal crossing blue cord instead of its central straight blue cord, same parcel and other cord. Other objects unchanged. No editing walrus or staircase.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-247-original-v2.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact full native 1672x941 walrus holding paper fan with icy staircase, no anatomy/style/composition changes. FIVE isolated single-object changes only: 1) single fish biscuit at x1086y817 mouth opens into an upward curved smile, same fish eye/scales/tail; 2) compass red needle x1513y752 bends in an elbow toward right, blue needle/face/rim exact; 3) compass winding loop x1604y727 reflects a blue crescent inside its gold surface, same loop silhouette; 4) RIGHT bow loop at fan hinge x947y733 stands upward instead of downward, LEFT loop/knot/tails exact; 5) small wrapped parcel x151y816 has one diagonal crossing blue cord instead of its central straight blue cord, same parcel and other cord. Other objects unchanged. No editing walrus or staircase.",
+        "reference": "D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-247-original-v2.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The fish biscuit mouth opens in a smile",
+      "difficulty": "Easy",
+      "box": {
+        "x": 958,
+        "y": 803,
+        "width": 55,
+        "height": 40
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The fan bow gains an upright loop",
+      "difficulty": "Medium",
+      "box": {
+        "x": 937,
+        "y": 633,
+        "width": 66,
+        "height": 79
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The compass red needle bends in an elbow",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1482,
+        "y": 741,
+        "width": 65,
+        "height": 33
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The parcel cord crosses diagonally",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 77,
+        "y": 776,
+        "width": 144,
+        "height": 92
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The compass winding loop reflects blue",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1576,
+        "y": 704,
+        "width": 57,
+        "height": 52
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390 stacked pair. Five independently selectable localized object clues. Native dimensions, five bounded nonoverlapping boxes and exact original pixels outside verified. Difficulty estimates unvalidated; root compositor/game, human difficulty and physical phone approval pending. Full prompt/source hash chain retained. Correct inventory original-v2 used. Winding loop reflection and red needle mechanism are separate bounded compass components; root fairness review pending. Existing lower bow loop unchanged outside selected upper-loop box.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

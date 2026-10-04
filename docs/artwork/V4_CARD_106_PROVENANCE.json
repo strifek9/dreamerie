@@ -1,0 +1,127 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-106",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-106-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-106-original-v4.png",
+    "sha256": "9523C26C0D329E1928797A92EA60AF02349C6D7D9557AC4C6F41CCD6AA8908DC",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-106-altered-source-v4.png",
+    "sha256": "F380F9EA7F5E52A1A7FE62E9C26EB52B3C76330AADFB85FB5383E3615C123840",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Editexactlyfivelocalizedsingleobjectdetails provided1672x941 honeybearballoonpainting, preserveframe/corepremise/anatomy/pose/expressions/style/alluntargetedobjects.1 basket FRONTblueheart x644,y613 its pointturnsUP androundlobesDOWN (x602,573,91,85), oneprintedmotifonly.2 basket goldRECTpadlock x720,y562 becomes roundgoldpadlock, stillhooks overbasket rim/strap samecenter (x701,528,38,53).3 honey SMALLER LOWERdrop on balloon x645,y221 grows a tinycurledhook at its tip insteadroundedtip, preservebigupperdrop/the rest ofballoon (x620,179,47,72).4 scarf leftFREEtail atx397,y456 passes UNDER leftsuspensionrope instead overit, localcrossing x431,429,59,70, scarf/rim/bearbody exact elsewhere.5 ONLY leftgoldleafpennant atx861,y274 on string has veinpattern turninto TWOparallel longitudinalveins ratherthanonecentral branchingvein, preserveleafoutline/otherleaf/pennantstring (x826,222,73,116). No swaps/multipleobjectsperclue/noextras/nograinnoise. Fullcounterpartnative.\"}}, {\"file\": \"heart-prompt.json\", \"content\": {\"prompt\": \"Edit this cropped painted basket detail. Turn ONLY the blue painted heart upside down: sharp heart point must face TOP, two rounded lobes must face BOTTOM with the notch between lobes at the bottom middle. Same center, size, blue paint material and weathering, preserve brown basket weave and all surrounding geometry exactly. Clearly inverted heart, not an unchanged heart. Return one edited crop.\", \"nativeCrop\": [598, 570, 101, 92]}}, {\"file\": \"crossing-prompt.json\", \"content\": {\"prompt\": \"Edit ONLY the crossing of the white scarf with the central brown suspension rope in this crop. The original rope currently goes in FRONT of the white scarf. Reverse this single crossing: WHITE SCARF must now pass IN FRONT of the brown rope, with a continuous broad white cloth band occluding the rope where they intersect. Rope above and below crossing stays in same exact position. Preserve scarf shape, paint style, background and every other object. Do not add or remove rope or scarf.\", \"nativeCrop\": [460, 425, 70, 85]}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Editexactlyfivelocalizedsingleobjectdetails provided1672x941 honeybearballoonpainting, preserveframe/corepremise/anatomy/pose/expressions/style/alluntargetedobjects.1 basket FRONTblueheart x644,y613 its pointturnsUP androundlobesDOWN (x602,573,91,85), oneprintedmotifonly.2 basket goldRECTpadlock x720,y562 becomes roundgoldpadlock, stillhooks overbasket rim/strap samecenter (x701,528,38,53).3 honey SMALLER LOWERdrop on balloon x645,y221 grows a tinycurledhook at its tip insteadroundedtip, preservebigupperdrop/the rest ofballoon (x620,179,47,72).4 scarf leftFREEtail atx397,y456 passes UNDER leftsuspensionrope instead overit, localcrossing x431,429,59,70, scarf/rim/bearbody exact elsewhere.5 ONLY leftgoldleafpennant atx861,y274 on string has veinpattern turninto TWOparallel longitudinalveins ratherthanonecentral branchingvein, preserveleafoutline/otherleaf/pennantstring (x826,222,73,116). No swaps/multipleobjectsperclue/noextras/nograinnoise. Fullcounterpartnative."
+      }
+    },
+    {
+      "file": "heart-prompt.json",
+      "content": {
+        "prompt": "Edit this cropped painted basket detail. Turn ONLY the blue painted heart upside down: sharp heart point must face TOP, two rounded lobes must face BOTTOM with the notch between lobes at the bottom middle. Same center, size, blue paint material and weathering, preserve brown basket weave and all surrounding geometry exactly. Clearly inverted heart, not an unchanged heart. Return one edited crop.",
+        "nativeCrop": [
+          598,
+          570,
+          101,
+          92
+        ]
+      }
+    },
+    {
+      "file": "crossing-prompt.json",
+      "content": {
+        "prompt": "Edit ONLY the crossing of the white scarf with the central brown suspension rope in this crop. The original rope currently goes in FRONT of the white scarf. Reverse this single crossing: WHITE SCARF must now pass IN FRONT of the brown rope, with a continuous broad white cloth band occluding the rope where they intersect. Rope above and below crossing stays in same exact position. Preserve scarf shape, paint style, background and every other object. Do not add or remove rope or scarf.",
+        "nativeCrop": [
+          460,
+          425,
+          70,
+          85
+        ]
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "heart",
+      "label": "The blue basket heart points upward.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 602,
+        "y": 573,
+        "width": 91,
+        "height": 85
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "lock",
+      "label": "The basket padlock becomes round.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 696,
+        "y": 535,
+        "width": 49,
+        "height": 54
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "scarf",
+      "label": "The scarf passes in front of the suspension rope.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 472,
+        "y": 448,
+        "width": 43,
+        "height": 53
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "drop",
+      "label": "The lower honey drop curls into a hook.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 620,
+        "y": 179,
+        "width": 56,
+        "height": 76
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "leaf",
+      "label": "The left leaf pennant has two parallel veins.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 826,
+        "y": 222,
+        "width": 73,
+        "height": 116
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five selected paired crops and 390px stacked pair inspected. All ten box pairs checked nonoverlapping. Difficulty order is a hypothesis; root feathered compositor and gameplay gate remain authoritative.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

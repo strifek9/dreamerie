@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-349",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-349-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-349-original-v4.png",
+    "sha256": "DC5E6ACE84CA5D42F22EB29DAA7BD1A9D498ABA19C2BA9EF20D2DB24D2570B72",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-349-altered-source-v4.png",
+    "sha256": "BEAFDC1F381DD78A4BB92462F61E3D829B1521C2CE89EF4914E7ED5C03C1105D",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact original1672x941 painting with FIVE localized independent one-object differences only. Preserve sparrow anatomy/frame/style/allotherobjects.1 sparrow eye native755136 closes into curved eyelid.2 vertical wooden clamp handle at1542200 gains a carved crescent motif centered front, handle shape original.3 clamp existing round rivet native1596498 becomes hexagonal bolt same position.4 isolated LEFTMOST foreground wood shaving native909792 coils into angular square loop instead of rounded curl, same one shaving; other shavings exact.5 blue paint jar front near111590 gains small pale STAR painted on FRONT among blue paint, jar silhouette/rim original. Never change brush/chisel/otherwaves or multiple shavings.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact original1672x941 painting with FIVE localized independent one-object differences only. Preserve sparrow anatomy/frame/style/allotherobjects.1 sparrow eye native755136 closes into curved eyelid.2 vertical wooden clamp handle at1542200 gains a carved crescent motif centered front, handle shape original.3 clamp existing round rivet native1596498 becomes hexagonal bolt same position.4 isolated LEFTMOST foreground wood shaving native909792 coils into angular square loop instead of rounded curl, same one shaving; other shavings exact.5 blue paint jar front near111590 gains small pale STAR painted on FRONT among blue paint, jar silhouette/rim original. Never change brush/chisel/otherwaves or multiple shavings."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "closed-eye",
+      "label": "The sparrow closes its eye.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 734,
+        "y": 115,
+        "width": 43,
+        "height": 41
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "angular-shaving",
+      "label": "The leftmost shaving coils into an angular loop.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 829,
+        "y": 729,
+        "width": 143,
+        "height": 132
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "star-jar",
+      "label": "The paint jar bears a pale star.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 95,
+        "y": 570,
+        "width": 87,
+        "height": 108
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "crescent-handle",
+      "label": "The clamp handle bears a carved crescent.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1504,
+        "y": 140,
+        "width": 88,
+        "height": 111
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "hex-rivet",
+      "label": "The clamp rivet becomes hexagonal.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1568,
+        "y": 466,
+        "width": 58,
+        "height": 58
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five paired crops, full composite and 390-pixel stacked pair inspected. Single-object changes; difficulty hypotheses only. Root browser/hit QA and human fairness remain pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

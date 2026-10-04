@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-243",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-243-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-243-original-v4.png",
+    "sha256": "221F951D8D21C85FA9A93B8E9C42E59A8BC75F07DB4F37764FA66EB040A2F9CD",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-243-altered-source-v4.png",
+    "sha256": "0A7E6D8ED85700DD869D2E1FB328ADB16680D17CFFD0C3FB5DBDC9E5E554D399",
+    "prompt": "[{\"file\": \"preserve-prompt.json\", \"content\": {\"operation\": \"Deterministic original preservation\", \"script\": \"preserve.py\", \"purpose\": \"Select only five single artifact edits from generated source over exact inventory original; preserve cotton balls, mirror frame, cloud and bib clips, trolley spoons and unaffected tile.\", \"featherPixels\": 0.45, \"scriptSHA256\": \"ce0144c72e6f8e1ac549cee41b1997206a24d584a2b0e6769913204ff62a8974\", \"towelCorrection\": \"Include complete old cloth footprint to avoid original hanging edge ghost.\"}}, {\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit attached CLOUD PATIENT dentalchair +woman dentist +floatingCEILINGtile painting. EXACT1672x941 framing allhuman/cloudanatomy/eyes/hands/furniture originalEXACT. FIVE isolated SINGLE-artifact edits:1) GLASS COTTON JAR onLEFT counter x48,y456: its existing GLASS LID hinges OPEN attachedone side, samejarbody/allcottonballs untouched.2) GOLD oval COUNTER MIRROR x243,y400: replace reflectedcloudsky insideglass with a clear paleCRESCENT reflection on duskyglass, exactsameframe/stand/shape.3) PURPLE WHITE striped TOWEL hangingfrontofRIGHT trolley aroundx1257,y748: lowerfreeEND threads through itsOWN looseoverhand knot, sameupperdrape/stripes andtray/spoons exact.4) CLOUD PATIENT BIB centerx788,y516: its purpleSTRIPEpattern becomes a clean woven purpleDIAMOND lattice on SAME bibcloth/outline/clippositions, cloudbody/face exact.5) hanging speckledCEILING TILE uppercenter: ONLY its RIGHT corner aroundx928,y153 curlsDOWN into a hollowrolledtile lip, connectedsame tile, originalothercorners/speckles/ceilinghole exact. No newobjects/disappearances/swaps, no spoon positions changed, no grain/clutter.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "preserve-prompt.json",
+      "content": {
+        "operation": "Deterministic original preservation",
+        "script": "preserve.py",
+        "purpose": "Select only five single artifact edits from generated source over exact inventory original; preserve cotton balls, mirror frame, cloud and bib clips, trolley spoons and unaffected tile.",
+        "featherPixels": 0.45,
+        "scriptSHA256": "ce0144c72e6f8e1ac549cee41b1997206a24d584a2b0e6769913204ff62a8974",
+        "towelCorrection": "Include complete old cloth footprint to avoid original hanging edge ghost."
+      }
+    },
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit attached CLOUD PATIENT dentalchair +woman dentist +floatingCEILINGtile painting. EXACT1672x941 framing allhuman/cloudanatomy/eyes/hands/furniture originalEXACT. FIVE isolated SINGLE-artifact edits:1) GLASS COTTON JAR onLEFT counter x48,y456: its existing GLASS LID hinges OPEN attachedone side, samejarbody/allcottonballs untouched.2) GOLD oval COUNTER MIRROR x243,y400: replace reflectedcloudsky insideglass with a clear paleCRESCENT reflection on duskyglass, exactsameframe/stand/shape.3) PURPLE WHITE striped TOWEL hangingfrontofRIGHT trolley aroundx1257,y748: lowerfreeEND threads through itsOWN looseoverhand knot, sameupperdrape/stripes andtray/spoons exact.4) CLOUD PATIENT BIB centerx788,y516: its purpleSTRIPEpattern becomes a clean woven purpleDIAMOND lattice on SAME bibcloth/outline/clippositions, cloudbody/face exact.5) hanging speckledCEILING TILE uppercenter: ONLY its RIGHT corner aroundx928,y153 curlsDOWN into a hollowrolledtile lip, connectedsame tile, originalothercorners/speckles/ceilinghole exact. No newobjects/disappearances/swaps, no spoon positions changed, no grain/clutter."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "The cotton jar's glass lid is hinged open.",
+      "box": {
+        "x": 0,
+        "y": 320,
+        "width": 120,
+        "height": 96
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The oval mirror reflects a crescent.",
+      "box": {
+        "x": 192,
+        "y": 327,
+        "width": 108,
+        "height": 137
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The hanging trolley towel ties through its own knot.",
+      "box": {
+        "x": 1183,
+        "y": 640,
+        "width": 190,
+        "height": 267
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "The patient's bib has a purple diamond lattice.",
+      "box": {
+        "x": 668,
+        "y": 441,
+        "width": 244,
+        "height": 154
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "The ceiling tile's right corner curls into a hollow lip.",
+      "box": {
+        "x": 832,
+        "y": 58,
+        "width": 132,
+        "height": 137
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Five single artifacts; no swapped objects. Generated source assembled over exact original with masks selecting jar lid only (cotton retained), mirror glass only (frame retained), bib surface only (cloud/clips retained), hanging towel footprint and one tile corner. Full frame, five native crop pairs and 390px pair inspected. Difficulty ordering is a hypothesis; root compositor joins and human difficulty remain pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

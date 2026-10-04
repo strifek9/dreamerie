@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-315",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-315-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-315-original-v4.png",
+    "sha256": "4D353FAB3D330613B257E67769A7FA430CBEE53E391F141A0D4669293259F5C5",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-315-altered-source-v4.png",
+    "sha256": "E5D0F4E4EB6C7FC927D9AC58367B4D6DE28026CE251085FA2243C96637C1B249",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit this exact original1672x941 painting, preserve original composition and brushwork. Exactly FIVE independent localized changes, all others original:1 loose coral button at976804 gains a dark star motif engraved on its FRONT rim below holes, preserve holes.2 scissors existing pivot round rivet at400680 becomes hexagonal brass bolt with clear straight edges.3 spool front inner opening at242311 becomes diamond hole, preserve surrounding spool.4 ONLY UPPER scissors handle opening at210612 gains one transverse metal crossbar within that same handle; lower handle unchanged.5 ONLY ribbon free-end lower-right edge at1435810 folds UP into a small triangular hem flap, keep tunnel/other ribbons original. One object per change, no multiple swaps, no extra objects.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit this exact original1672x941 painting, preserve original composition and brushwork. Exactly FIVE independent localized changes, all others original:1 loose coral button at976804 gains a dark star motif engraved on its FRONT rim below holes, preserve holes.2 scissors existing pivot round rivet at400680 becomes hexagonal brass bolt with clear straight edges.3 spool front inner opening at242311 becomes diamond hole, preserve surrounding spool.4 ONLY UPPER scissors handle opening at210612 gains one transverse metal crossbar within that same handle; lower handle unchanged.5 ONLY ribbon free-end lower-right edge at1435810 folds UP into a small triangular hem flap, keep tunnel/other ribbons original. One object per change, no multiple swaps, no extra objects."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "diamond-opening",
+      "label": "The spool\u2019s inner opening becomes a diamond.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 193,
+        "y": 230,
+        "width": 92,
+        "height": 165
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "handle-bar",
+      "label": "The upper scissors handle gains a crossbar.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 168,
+        "y": 569,
+        "width": 79,
+        "height": 75
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "raised-hem",
+      "label": "The ribbon\u2019s far-right hem folds upward.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1510,
+        "y": 647,
+        "width": 153,
+        "height": 126
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "star-button",
+      "label": "The loose button bears an engraved star.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 941,
+        "y": 831,
+        "width": 59,
+        "height": 39
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "hex-pivot",
+      "label": "The scissors pivot becomes a hexagonal bolt.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 365,
+        "y": 659,
+        "width": 62,
+        "height": 41
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five paired crops, full composite and 390-pixel stacked pair inspected. Single-object changes; difficulty hypotheses only. Root browser/hit QA and human fairness remain pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

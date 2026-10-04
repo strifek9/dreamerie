@@ -1,0 +1,118 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-290",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-290-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-290-original-v4.png",
+    "sha256": "864DA7F6BDE408FFB2E023A9130D9E796D2D7626C3CAA00743BE72F1B1813C10",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-290-altered-source-v4.png",
+    "sha256": "F15215828D70E12A120B7E510375ACC3964C2FA90968C46960AF9FA66767D709",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact fullnative1672x941 dreamy red curtain crystal-eye painting, FIVE local single-object differences ONLY. 1 Curved gold rod tip top right x1371y197: open spiral becomes a closed oval ring, rest entire long rod exact. 2 Large LEFT golden curtain tassel x85y499: straight fringes tie into three clear broad hanging loops, retain upper round beads and cord exact. 3 Gold cylindrical curtain weight bottom right x1385y798: its lid is tilted slightly ajar showing dark gap along right lip, retain round knob, cylinder size/position exact. 4 Smaller RIGHT gold tassel x1594y678: fringe becomes a single thick braided strand instead of many loose straight strands, retain upper bead/cord exact. 5 IN CRYSTAL ONLY, stage reflected RIGHT red curtain at x986y441: tie this single red side curtain into gathered knot halfway up; reflected left curtain, blue stage backdrop,lights,floor,glassrim all exact. No other edits. Preserve painterly texture and full composition.\", \"reference\": \"dream-290-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact fullnative1672x941 dreamy red curtain crystal-eye painting, FIVE local single-object differences ONLY. 1 Curved gold rod tip top right x1371y197: open spiral becomes a closed oval ring, rest entire long rod exact. 2 Large LEFT golden curtain tassel x85y499: straight fringes tie into three clear broad hanging loops, retain upper round beads and cord exact. 3 Gold cylindrical curtain weight bottom right x1385y798: its lid is tilted slightly ajar showing dark gap along right lip, retain round knob, cylinder size/position exact. 4 Smaller RIGHT gold tassel x1594y678: fringe becomes a single thick braided strand instead of many loose straight strands, retain upper bead/cord exact. 5 IN CRYSTAL ONLY, stage reflected RIGHT red curtain at x986y441: tie this single red side curtain into gathered knot halfway up; reflected left curtain, blue stage backdrop,lights,floor,glassrim all exact. No other edits. Preserve painterly texture and full composition.",
+        "reference": "dream-290-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "left-loops",
+      "label": "The left tassel fringe forms braided loops.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 0,
+        "y": 370,
+        "width": 195,
+        "height": 283
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "weight-open",
+      "label": "The curtain weight lid stands ajar.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1307,
+        "y": 635,
+        "width": 196,
+        "height": 120
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "rod-ring",
+      "label": "The brass rod tip becomes a closed ring.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1307,
+        "y": 124,
+        "width": 130,
+        "height": 146
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "right-braid",
+      "label": "The right tassel fringe becomes one thick braid.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1530,
+        "y": 570,
+        "width": 142,
+        "height": 224
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "reflection-knot",
+      "label": "The reflected right stage curtain is tied back.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 925,
+        "y": 359,
+        "width": 101,
+        "height": 164
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": {
+    "humanTimed": false,
+    "physicalPhone": false,
+    "notes": [
+      "Five single-object differences, including one reflected curtain."
+    ],
+    "outsideRegionsExact": true,
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sourceHashes": {
+      "source.png": "f15215828d70e12a120b7e510375acc3964c2fa90968c46960af9fa66767d709"
+    }
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

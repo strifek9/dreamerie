@@ -1,0 +1,121 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-mothers",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/holidays-painted-v1/mothers-original.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-mothers-original-v4.png",
+    "sha256": "38EA4CD3530DFF8446ADE8F392454CF7D31A72B32E642FA7AA3A9CCECCE8EA31",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-mothers-altered-source-v4.png",
+    "sha256": "FB8F8160665049BF96A5E84ACDC09CDEB75CB24159069C0653A9D134111E4F1A",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit The Home Inside Her Card original Mother's Day illustration. Preserve EXACT native1672x941 framing, warm painterly home, mother's and child's faces/hands/body and all enriched Mother's Day hearts/flowers/gifts. Exactly FIVE localized single-object differences: 1) The sleeping cat on LEFT windowsill opens ONLY its rightmost visible eye, keep other eye shut and face/fur/pose identical; region x178 y491 width28 height25. 2) The floating miniature house's ONE red front door (x835 y252 width41 height74) swings slightly ajar to the RIGHT, preserving heart cutout and door shape, hinges, red paint; keep house walls/steps/window/fence unchanged. Change only one door. 3) The breakfast teacup's HANDLE becomes heart shaped rather than round; same attachments, ceramic body/blue floral paint/coffee identical (x763 y600 width60 height61). 4) The pink bow on the foreground wrapped present folds its LEFT loop inward into a narrow upright loop instead of the wide horizontal loop; keep central knot, right loop, ribbon tails, flower sprigs and tag all identical. Region x896 y714 width85 height63. 5) The red jam heart on the toast curls into ONE clear continuous red jam spiral of similar size/location; keep toast crust/crumb and plate untouched, x482 y634 width101 height41. No text, no other changes, no extra objects, no colors swapped. Five clean bounded one-object clues.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/holidays-painted-v1/mothers-original.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit The Home Inside Her Card original Mother's Day illustration. Preserve EXACT native1672x941 framing, warm painterly home, mother's and child's faces/hands/body and all enriched Mother's Day hearts/flowers/gifts. Exactly FIVE localized single-object differences: 1) The sleeping cat on LEFT windowsill opens ONLY its rightmost visible eye, keep other eye shut and face/fur/pose identical; region x178 y491 width28 height25. 2) The floating miniature house's ONE red front door (x835 y252 width41 height74) swings slightly ajar to the RIGHT, preserving heart cutout and door shape, hinges, red paint; keep house walls/steps/window/fence unchanged. Change only one door. 3) The breakfast teacup's HANDLE becomes heart shaped rather than round; same attachments, ceramic body/blue floral paint/coffee identical (x763 y600 width60 height61). 4) The pink bow on the foreground wrapped present folds its LEFT loop inward into a narrow upright loop instead of the wide horizontal loop; keep central knot, right loop, ribbon tails, flower sprigs and tag all identical. Region x896 y714 width85 height63. 5) The red jam heart on the toast curls into ONE clear continuous red jam spiral of similar size/location; keep toast crust/crumb and plate untouched, x482 y634 width101 height41. No text, no other changes, no extra objects, no colors swapped. Five clean bounded one-object clues.",
+        "reference": "D:/Dreamerie/public/artwork/v3/holidays-painted-v1/mothers-original.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "jam-spiral",
+      "label": "The toast jam forms a spiral.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 482,
+        "y": 634,
+        "width": 101,
+        "height": 41
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "cup-heart",
+      "label": "The teacup handle forms a heart.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 766,
+        "y": 598,
+        "width": 61,
+        "height": 65
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "door-ajar",
+      "label": "The floating house's heart door opens slightly.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 832,
+        "y": 250,
+        "width": 48,
+        "height": 79
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "bow-fold",
+      "label": "The gift bow's left loop folds inward.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 896,
+        "y": 709,
+        "width": 85,
+        "height": 69
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "cat-awake",
+      "label": "The cat opens its leftmost eye.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 150,
+        "y": 484,
+        "width": 33,
+        "height": 29
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": {
+    "humanTimed": false,
+    "physicalPhone": false,
+    "notes": [
+      "Mother's Day theme preserved. Actual cat opens leftmost eye instead of requested rightmost; label/box follow realized output."
+    ],
+    "outsideRegionsExact": true,
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sourceHashes": {
+      "source.png": "fb8f8160665049bf96a5e84acdc09cdeb75cb24159069c0653a9d134111e4f1a"
+    },
+    "allTenPairsNonoverlap": true,
+    "fullFrameAndFivePairedCropsViewed": true,
+    "mobile390CompositeViewed": true
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-114",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-114-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-114-original-v4.png",
+    "sha256": "7FE57E2F25D7976BA1E8FFE088A81C583F396A7C0FC7A1BE6D60E2A85F81CDEA",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-114-altered-source-v4.png",
+    "sha256": "F5A8B7352B994F7367B12DB59E968610B5BC52420761D18FA64EC1360F6A4C01",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit this EXACT Orchard of Lantern Birds image at1672x941. Five isolated single-object differences only: 1 largest left bird its beak visibly opens downward (same head, continuous beak) within51575..572122; 2 round pendant pearl x445490 reflects a miniature pink blossom insteadplainwhitegleam, within417460..474520; 3 middle bird doorway star x869309 becomes a crescent opening LEFT, within850285..890336; 4 chair FRONT LEFT curled wooden arm tip x1297690 becomes an inward spiral curl, within1269673..1322724, chairandrabbitunchanged; 5 ONLY round lily pad near x955779 has one V-shaped radial notch pointing toward pond top instead existing notch toward lowerright, within891766..1012799, otherpadsunchanged. Preserve anatomy, painterly dream scene, framing and every unrelated object. No swaps/twoobjects per clue, no fine speckles.\"}}, {\"file\": \"pad-prompt.json\", \"content\": {\"prompt\": \"Edit this exact crop of ONE lily pad on pond. Preserve its outline position and neighboring pond. Rotate the notch of this SAME one pad: remove current slit pointing toward lower right and create ONE clearly visible V-shaped notch pointing toward upper left. One object changed, no new pads. Return same150x62 framing.\", \"nativeCrop\": [880, 748, 150, 62]}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit this EXACT Orchard of Lantern Birds image at1672x941. Five isolated single-object differences only: 1 largest left bird its beak visibly opens downward (same head, continuous beak) within51575..572122; 2 round pendant pearl x445490 reflects a miniature pink blossom insteadplainwhitegleam, within417460..474520; 3 middle bird doorway star x869309 becomes a crescent opening LEFT, within850285..890336; 4 chair FRONT LEFT curled wooden arm tip x1297690 becomes an inward spiral curl, within1269673..1322724, chairandrabbitunchanged; 5 ONLY round lily pad near x955779 has one V-shaped radial notch pointing toward pond top instead existing notch toward lowerright, within891766..1012799, otherpadsunchanged. Preserve anatomy, painterly dream scene, framing and every unrelated object. No swaps/twoobjects per clue, no fine speckles."
+      }
+    },
+    {
+      "file": "pad-prompt.json",
+      "content": {
+        "prompt": "Edit this exact crop of ONE lily pad on pond. Preserve its outline position and neighboring pond. Rotate the notch of this SAME one pad: remove current slit pointing toward lower right and create ONE clearly visible V-shaped notch pointing toward upper left. One object changed, no new pads. Return same150x62 framing.",
+        "nativeCrop": [
+          880,
+          748,
+          150,
+          62
+        ]
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The largest bird opens its beak",
+      "difficulty": "Easy",
+      "box": {
+        "x": 515,
+        "y": 75,
+        "width": 58,
+        "height": 54
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The pearl reflects a pink blossom",
+      "difficulty": "Medium",
+      "box": {
+        "x": 417,
+        "y": 460,
+        "width": 57,
+        "height": 61
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The bird doorway star becomes a crescent",
+      "difficulty": "Hard",
+      "box": {
+        "x": 850,
+        "y": 285,
+        "width": 41,
+        "height": 52
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The chair arm tip curls into a spiral",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1269,
+        "y": 673,
+        "width": 55,
+        "height": 52
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The lily pad has an upper left notch",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 891,
+        "y": 757,
+        "width": 122,
+        "height": 44
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "refined-native.png"
+    }
+  ],
+  "notes": "Worker inspected native pair, five paired crops and 390 stacked pair. Five single objects; unrelated drift excluded; outside pixels exact original. Crop refinements resized only to exact original crop dimensions, full generated crop preserved with coordinates in prompt. Difficulty estimates unvalidated. Root game/compositor/human review pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

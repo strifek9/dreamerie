@@ -1,0 +1,110 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-252",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-252-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-252-original-v4.png",
+    "sha256": "C1CB6BF70DD8F8499209A6A3AC960EF215850C8DD0ABB15C60D04C87CB3DF084",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-252-altered-source-v4.png",
+    "sha256": "D6D38CEF312AA1A9AB82323C5ECE00FDBB9056EB9DE8EDE262A08FB0E332A87D",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit the referenced original painting locally preserving warm painterly style, baker/cat anatomy, all transparent square bubbles and composition. Exactly five single-object differences: 1 The cat's visible viewer-left eye near x386 y266 closes in a wink, its other eye unchanged. 2 The brass sprayer on counter left-center has its curved spout near x469 y598 curl back into a tight upward-facing hook, bottle and pump unchanged. 3 The hanging metal whisk at upper-right near x1230 y199 has its wire cage twist into a clear spiral/helix arrangement instead of straight balloon ribs; handle/location unchanged. 4 The square metal pastry cutter on countertop near x615 y727 gets one broad V-shaped notch cut in the top edge of its FRONT wall, other three walls unchanged. 5 The nearer blue oven mitt at far right has just one gold stitched diamond at center of its lattice replaced by a clear small spiral coil stitch, rest lattice unchanged. Five separately locatable objects, no swaps, no extra edits or global redraw.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit the referenced original painting locally preserving warm painterly style, baker/cat anatomy, all transparent square bubbles and composition. Exactly five single-object differences: 1 The cat's visible viewer-left eye near x386 y266 closes in a wink, its other eye unchanged. 2 The brass sprayer on counter left-center has its curved spout near x469 y598 curl back into a tight upward-facing hook, bottle and pump unchanged. 3 The hanging metal whisk at upper-right near x1230 y199 has its wire cage twist into a clear spiral/helix arrangement instead of straight balloon ribs; handle/location unchanged. 4 The square metal pastry cutter on countertop near x615 y727 gets one broad V-shaped notch cut in the top edge of its FRONT wall, other three walls unchanged. 5 The nearer blue oven mitt at far right has just one gold stitched diamond at center of its lattice replaced by a clear small spiral coil stitch, rest lattice unchanged. Five separately locatable objects, no swaps, no extra edits or global redraw."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The cat closes its nearer eye",
+      "difficulty": "Easy",
+      "box": {
+        "x": 360,
+        "y": 250,
+        "width": 48,
+        "height": 36
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The sprayer spout curls into a hook",
+      "difficulty": "Medium",
+      "box": {
+        "x": 439,
+        "y": 571,
+        "width": 60,
+        "height": 51
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The whisk wires form a helix",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1197,
+        "y": 149,
+        "width": 70,
+        "height": 105
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The cutter rim has a V notch",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 569,
+        "y": 684,
+        "width": 62,
+        "height": 57
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The mitt has a spiral stitch",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1582,
+        "y": 582,
+        "width": 47,
+        "height": 44
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "visually inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "nativePreflight": "source equals actual original size, five nonoverlapping boxes",
+    "difficulty": "hypotheses; human and browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-182",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-revisit-v1/182-dynamic-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-182-original-v4.png",
+    "sha256": "4BFCC01A6AEBA722ABB587FD5B172E39C650B10FA3CE34A800593052CA9A0AA7",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-182-altered-source-v4.png",
+    "sha256": "ACA77D74E0BCAA78A279CEEF312EFA56E48ECFE5087ACFF8BA67C13CEA48230D",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit EXACT Footprints in the Fishing Net native1672x941 current seaside creature collecting glowing footprint pools innet. Preserve creature anatomy/netphysics/frame/style. FIVE distinctsingleobject changes: 1 ONLY isolatedupperleft footprintpool's reflection x174153 shows a golden ringedplanet insteadsmallstars, within150133..202173, footprintoutlineexact; 2 ONLY middleleft footprintpool x422357 reflectedmoon points UP insteadright, within407339..443373, poolothersexact; 3 green thermos x1478336 its silvercap gets a continuous curved carryinghook bentRIGHT from capinsteadplaincap, within1462241..1523297, bodyexact; 4 ONLY crab's nearestforeclaw x1484696 is OPEN pincers insteadclosed, within1456673..1535730, crabotherlimbs/shellunchanged; 5 ONLY one large rockin creatureRIGHTcoat pocket x1163371 has one clear diagonal gold seam acrossitsfrontsurface, within1139337..1192404, pocket/anatomyexact. No distant object swaps or micrograin/specks. Preserveeveryunrelatedobject.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit EXACT Footprints in the Fishing Net native1672x941 current seaside creature collecting glowing footprint pools innet. Preserve creature anatomy/netphysics/frame/style. FIVE distinctsingleobject changes: 1 ONLY isolatedupperleft footprintpool's reflection x174153 shows a golden ringedplanet insteadsmallstars, within150133..202173, footprintoutlineexact; 2 ONLY middleleft footprintpool x422357 reflectedmoon points UP insteadright, within407339..443373, poolothersexact; 3 green thermos x1478336 its silvercap gets a continuous curved carryinghook bentRIGHT from capinsteadplaincap, within1462241..1523297, bodyexact; 4 ONLY crab's nearestforeclaw x1484696 is OPEN pincers insteadclosed, within1456673..1535730, crabotherlimbs/shellunchanged; 5 ONLY one large rockin creatureRIGHTcoat pocket x1163371 has one clear diagonal gold seam acrossitsfrontsurface, within1139337..1192404, pocket/anatomyexact. No distant object swaps or micrograin/specks. Preserveeveryunrelatedobject."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The far footprint reflects a ringed planet",
+      "difficulty": "Easy",
+      "box": {
+        "x": 150,
+        "y": 133,
+        "width": 55,
+        "height": 43
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The middle reflected crescent is larger",
+      "difficulty": "Medium",
+      "box": {
+        "x": 397,
+        "y": 337,
+        "width": 48,
+        "height": 43
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The thermos cap has a curved carrying hook",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1462,
+        "y": 234,
+        "width": 91,
+        "height": 66
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The nearest crab claw is open",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1456,
+        "y": 670,
+        "width": 82,
+        "height": 64
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The pocket stone has a gold diagonal seam",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1130,
+        "y": 331,
+        "width": 69,
+        "height": 91
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker inspected native pair, five paired crops and 390 stacked pair. Five single-object differences; unrelated drift excluded. Exact native size, five bounded nonoverlap boxes and outside pixels exact original verified. Difficulty estimates unvalidated; root game/compositor/human/physicalphone review pending. Full AI sources/prompts/hashes retained.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

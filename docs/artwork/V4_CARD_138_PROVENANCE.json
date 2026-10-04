@@ -1,0 +1,104 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-138",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-138-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-138-original-v4.png",
+    "sha256": "F25E2305EF13BEEBED5DEE42B435BA32215E986C2C23EBDC3229C7AE2643DBBD",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-138-altered-source-v4.png",
+    "sha256": "BD97E3EA4206BD3B0BED6C1325E478B315EADE608F45994F2BAAA39A25883029",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"Edit attached full native1672x941 original The Marble That Held a Grudge illustration. Exactly5 localized changes of single objects/components:1 ONLY mouth on green face inside marble at805,573 changes angry frown into a clear gentle smile, eyes/nose/brows/marble storm/waves unchanged.2 red toy bridge's ONE middle upright railing post at483,262 leans diagonally to RIGHT while connected to same top/bottom rails; every other post/rail remainsoriginal.3 wooden wheel's central metal axle cap at370,689 gains a horizontal screwdriver slot instead of round centre, surrounding wood/spokes exact.4 gold washer on foreground tabletop at1410,851 retains outercircle but innerhole becomes triangular with three clear corners.5 green chest brass latch at1545,170 hinges outward OPEN at lower end, topmount/chestunchanged. No other edits, dominoes/pencil/anatomy/framing/style exact. Full samecanvas.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "Edit attached full native1672x941 original The Marble That Held a Grudge illustration. Exactly5 localized changes of single objects/components:1 ONLY mouth on green face inside marble at805,573 changes angry frown into a clear gentle smile, eyes/nose/brows/marble storm/waves unchanged.2 red toy bridge's ONE middle upright railing post at483,262 leans diagonally to RIGHT while connected to same top/bottom rails; every other post/rail remainsoriginal.3 wooden wheel's central metal axle cap at370,689 gains a horizontal screwdriver slot instead of round centre, surrounding wood/spokes exact.4 gold washer on foreground tabletop at1410,851 retains outercircle but innerhole becomes triangular with three clear corners.5 green chest brass latch at1545,170 hinges outward OPEN at lower end, topmount/chestunchanged. No other edits, dominoes/pencil/anatomy/framing/style exact. Full samecanvas."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "smiling-marble",
+      "label": "The face inside the marble smiles.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 764,
+        "y": 542,
+        "width": 100,
+        "height": 52
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "leaning-bridge-post",
+      "label": "One middle bridge post leans diagonally.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 466,
+        "y": 216,
+        "width": 55,
+        "height": 85
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "slotted-wheel-cap",
+      "label": "The wheel axle cap gains a screw slot.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 340,
+        "y": 661,
+        "width": 56,
+        "height": 56
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "triangle-washer",
+      "label": "The gold washer has a triangular hole.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1351,
+        "y": 819,
+        "width": 117,
+        "height": 62
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "open-chest-latch",
+      "label": "The chest latch hinges open.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1480,
+        "y": 158,
+        "width": 109,
+        "height": 105
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Source generations and bounded composites inspected; five isolated objects. Difficulty labels are hypotheses. No human or physical-phone fairness validation.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

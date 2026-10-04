@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-222",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-222-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-222-original-v4.png",
+    "sha256": "D56C6EF097C6F5BF2CF7D688FCB544EFFD8D2C8B7ABEFEC2992E029D4C554F47",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-222-altered-source-v4.png",
+    "sha256": "1161BFBADF6EBD65ECEAD045DC8B686ACB191C5A2DFA0939E67E20A6CDC9C257",
+    "prompt": "[{\"file\": \"prompt-refine.json\", \"content\": {\"prompt\": \"ONE targeted edit only: tiny ceramic mug on side table inside turtle shell around native(1086,397). Rotate SAME mug so it has ONE handle on LEFT near1064, and no handle whatsoever on RIGHT at1101 (restore original wood wall background there). Same ceramic mug size and green motif, one handle only. Lamp exact, entire rest image original exact, native1672x941 framing/style.\"}}, {\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact native1672x941 painting with FIVE bounded SINGLE-object changes: 1 turtle ONLY its visible right eye near(438,268) closes into a curved slit, anatomy/head exact. 2 cardboard moving box front handle near(1514,694) becomes a vertical oval opening instead of horizontal, same one handle location, box unchanged. 3 shell hatch brass lock keyhole near(1174,135) becomes a horizontal keyhole instead of vertical, lock/latch otherparts original. 4 ONLY mug on interior side table near(1087,398) has its handle on LEFT instead of right, same mug unchangedbody, remove original right handle cleanly. 5 room circular window near(992,270) has diagonal X muntin instead of upright +; same window ring/glass. All other details original, no swaps or separate objects combined. Preserve frame, shell geometry, furnishings, staircase, textures/style/light.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt-refine.json",
+      "content": {
+        "prompt": "ONE targeted edit only: tiny ceramic mug on side table inside turtle shell around native(1086,397). Rotate SAME mug so it has ONE handle on LEFT near1064, and no handle whatsoever on RIGHT at1101 (restore original wood wall background there). Same ceramic mug size and green motif, one handle only. Lamp exact, entire rest image original exact, native1672x941 framing/style."
+      }
+    },
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact native1672x941 painting with FIVE bounded SINGLE-object changes: 1 turtle ONLY its visible right eye near(438,268) closes into a curved slit, anatomy/head exact. 2 cardboard moving box front handle near(1514,694) becomes a vertical oval opening instead of horizontal, same one handle location, box unchanged. 3 shell hatch brass lock keyhole near(1174,135) becomes a horizontal keyhole instead of vertical, lock/latch otherparts original. 4 ONLY mug on interior side table near(1087,398) has its handle on LEFT instead of right, same mug unchangedbody, remove original right handle cleanly. 5 room circular window near(992,270) has diagonal X muntin instead of upright +; same window ring/glass. All other details original, no swaps or separate objects combined. Preserve frame, shell geometry, furnishings, staircase, textures/style/light."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "closed-eye",
+      "label": "The turtle closes its eye.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 392,
+        "y": 235,
+        "width": 87,
+        "height": 68
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "upright-handle",
+      "label": "The moving box\u2019s handle stands vertically.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1450,
+        "y": 640,
+        "width": 121,
+        "height": 96
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "turned-mug",
+      "label": "The mug\u2019s handle turns to the left.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1049,
+        "y": 378,
+        "width": 64,
+        "height": 37
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "diagonal-window",
+      "label": "The room window\u2019s bars form an X.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 966,
+        "y": 235,
+        "width": 51,
+        "height": 67
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "sideways-keyhole",
+      "label": "The hatch lock\u2019s keyhole turns sideways.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1149,
+        "y": 113,
+        "width": 51,
+        "height": 47
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five paired crops, full composite and 390-pixel stacked pair inspected. Single-object changes; difficulty hypotheses only. Root browser/hit QA and human fairness remain pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-342",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-342-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-342-original-v4.png",
+    "sha256": "AEF5B29BC2364477FE0FF5579041FBE7FA47F0D5B4CECCA10EFC5B66D53C6196",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-342-altered-source-v4.png",
+    "sha256": "792D3E534830FCFC0656B249A1673716ADD412624B3C5D87AB2BFBD0CBD5F402",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact tailor of crumpled distance painting locally. Preserve man's anatomy expression hands all objects and painterly scene. Exactly five separate single-object changes: 1 the hanging green lamp's visible glowing bulb near x111 y163 becomes a pointed teardrop-shaped bulb (same lamp shade and light); 2 large foreground scissors near x360 y829 open their upper blade upward visibly at same brass hinge, lower blade and handles stay, no other scissors change; 3 on nearest paper-road fold near x451 y708, change ONE cream road dash into a small painted curved directional arrow pointing left, other dashes unchanged; 4 the large green spool lying lower-left near x249 y888 has its near end's round center hole become a square aperture, rest spool unchanged; 5 the coral fabric loose roll at lower-right x1510 y863 has its exposed triangular top flap tip curl upward like a small wave, rest roll unchanged. No swaps, no extra objects, exactly five targets. Keep original frame and clean localized edits.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact tailor of crumpled distance painting locally. Preserve man's anatomy expression hands all objects and painterly scene. Exactly five separate single-object changes: 1 the hanging green lamp's visible glowing bulb near x111 y163 becomes a pointed teardrop-shaped bulb (same lamp shade and light); 2 large foreground scissors near x360 y829 open their upper blade upward visibly at same brass hinge, lower blade and handles stay, no other scissors change; 3 on nearest paper-road fold near x451 y708, change ONE cream road dash into a small painted curved directional arrow pointing left, other dashes unchanged; 4 the large green spool lying lower-left near x249 y888 has its near end's round center hole become a square aperture, rest spool unchanged; 5 the coral fabric loose roll at lower-right x1510 y863 has its exposed triangular top flap tip curl upward like a small wave, rest roll unchanged. No swaps, no extra objects, exactly five targets. Keep original frame and clean localized edits."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The lamp bulb has a pointed tip",
+      "difficulty": "Easy",
+      "box": {
+        "x": 86,
+        "y": 145,
+        "width": 52,
+        "height": 65
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The foreground scissors open upward",
+      "difficulty": "Medium",
+      "box": {
+        "x": 347,
+        "y": 722,
+        "width": 257,
+        "height": 188
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The road dash bends into a direction arrow",
+      "difficulty": "Hard",
+      "box": {
+        "x": 641,
+        "y": 627,
+        "width": 65,
+        "height": 71
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The green spool has a square aperture",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 291,
+        "y": 864,
+        "width": 54,
+        "height": 71
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The fabric roll flap tip curls upward",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1394,
+        "y": 754,
+        "width": 212,
+        "height": 155
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "visually inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "nativePreflight": "source equals actual original size, five nonoverlapping boxes",
+    "difficulty": "hypotheses; human and browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

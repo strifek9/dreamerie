@@ -1,0 +1,118 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-329",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-329-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-329-original-v4.png",
+    "sha256": "B98E9E764433B60EEDF018BB1F708D83E25F5F877DD6A5934B54A0AE29C10F9A",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-329-altered-source-v4.png",
+    "sha256": "0E66D8947ABEB3340D31EFBC210DCBE9169E192559D8F635351CC99DB5AFB45F",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact fullnative1672x941 dreamy shell listening to gramophone painting FIVE single-object localized differences only. 1 Gramophone crank rightfront x1535y647: wooden grip points UP instead of down/right, same axle and box exact. 2 Record atop gramophone x1377y504: center paper label becomes a cream crescent instead of solid cream oval label, record position/grooves/spindle exact. 3 Ear symbol on cream sail x645y211: same orange ear drawn reversed left-right, cloth/mast/shape exact. 4 Stool under large shell x426y817: single front horizontal rung is twisted into rope-like spiral wooden carving instead of smooth wood; all legs/seat/other rungs exact. 5 Small orange-striped shell on gramophone table near x1355y798: orange stripes become a continuous orange spiral along shell instead of separate broad stripes, same shelloutline position. Preserve every other object, horns, keyboard, large shell and full framing/style.\", \"reference\": \"dream-329-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact fullnative1672x941 dreamy shell listening to gramophone painting FIVE single-object localized differences only. 1 Gramophone crank rightfront x1535y647: wooden grip points UP instead of down/right, same axle and box exact. 2 Record atop gramophone x1377y504: center paper label becomes a cream crescent instead of solid cream oval label, record position/grooves/spindle exact. 3 Ear symbol on cream sail x645y211: same orange ear drawn reversed left-right, cloth/mast/shape exact. 4 Stool under large shell x426y817: single front horizontal rung is twisted into rope-like spiral wooden carving instead of smooth wood; all legs/seat/other rungs exact. 5 Small orange-striped shell on gramophone table near x1355y798: orange stripes become a continuous orange spiral along shell instead of separate broad stripes, same shelloutline position. Preserve every other object, horns, keyboard, large shell and full framing/style.",
+        "reference": "dream-329-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "crank-up",
+      "label": "The gramophone crank grip points upward.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1462,
+        "y": 550,
+        "width": 143,
+        "height": 153
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "ear-reversed",
+      "label": "The orange ear symbol faces the other way.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 590,
+        "y": 109,
+        "width": 119,
+        "height": 213
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "rung-twist",
+      "label": "The stool's front rung has spiral carving.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 395,
+        "y": 816,
+        "width": 199,
+        "height": 77
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "record-moon",
+      "label": "The record's center label becomes a crescent.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1321,
+        "y": 481,
+        "width": 104,
+        "height": 38
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "shell-spiral",
+      "label": "The little shell bears an orange spiral.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1301,
+        "y": 757,
+        "width": 111,
+        "height": 80
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": {
+    "humanTimed": false,
+    "physicalPhone": false,
+    "notes": [
+      "Five localized single-object changes."
+    ],
+    "outsideRegionsExact": true,
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sourceHashes": {
+      "source.png": "0e66d8947abeb3340d31efbc210dcbe9169e192559d8f635351cc99db5afb45f"
+    }
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

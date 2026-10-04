@@ -1,0 +1,118 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-215",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-215-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-215-original-v4.png",
+    "sha256": "485A012460351FD1E212A87434C327B462B1C018E681BC74E89D8653D363676D",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-215-altered-source-v4.png",
+    "sha256": "DDA6594FFB33488FA1895119F04EF774221026FE76C57E9D5080516DC29BFC39",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit this exact full1672x941 native painting of dice bedrooms, preserve every object except FIVE single-object local differences. 1 Upper-left tiny sleeper black head at x813y295 opens its two white eyes into round circles instead of closed crescent eyelids; other sleepers untouched. 2 Top-center bedside lamp x909y234 shade becomes a scalloped bell-shaped lower rim, only this lamp shade, base/books exact. 3 Red blanket lower-left bed x851y620 embroidered golden tiny stars become golden crescent moon pattern, blanket color/outline exact. 4 Teacup handle atop lower-middle bedside cabinet x924y484 points LEFT instead of right, same cup body and saucer retain positions, other objects exact. 5 Top-left bed wooden footboard x835y437 adds a clear centered heart-shaped cutout in the wood plank, posts/blanket exact. Five isolated edits no collateral, style and framing exact.\", \"reference\": \"dream-215-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit this exact full1672x941 native painting of dice bedrooms, preserve every object except FIVE single-object local differences. 1 Upper-left tiny sleeper black head at x813y295 opens its two white eyes into round circles instead of closed crescent eyelids; other sleepers untouched. 2 Top-center bedside lamp x909y234 shade becomes a scalloped bell-shaped lower rim, only this lamp shade, base/books exact. 3 Red blanket lower-left bed x851y620 embroidered golden tiny stars become golden crescent moon pattern, blanket color/outline exact. 4 Teacup handle atop lower-middle bedside cabinet x924y484 points LEFT instead of right, same cup body and saucer retain positions, other objects exact. 5 Top-left bed wooden footboard x835y437 adds a clear centered heart-shaped cutout in the wood plank, posts/blanket exact. Five isolated edits no collateral, style and framing exact.",
+        "reference": "dream-215-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "sleeper-awake",
+      "label": "The upper-left sleeper opens its eyes.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 782,
+        "y": 280,
+        "width": 58,
+        "height": 28
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "cup-handle",
+      "label": "The bedside cup handle points left.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 892,
+        "y": 465,
+        "width": 52,
+        "height": 42
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "footboard-heart",
+      "label": "The upper-left footboard has a heart cutout.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 759,
+        "y": 405,
+        "width": 140,
+        "height": 57
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "blanket-moons",
+      "label": "Crescent moons appear in the red blanket embroidery.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 780,
+        "y": 550,
+        "width": 148,
+        "height": 143
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "lamp-scallop",
+      "label": "The upper bedside lampshade has a scalloped rim.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 880,
+        "y": 200,
+        "width": 57,
+        "height": 55
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": {
+    "humanTimed": false,
+    "physicalPhone": false,
+    "notes": [
+      "Embroidery retains small stars alongside added moons; actual label reflects realized pattern."
+    ],
+    "outsideRegionsExact": true,
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sourceHashes": {
+      "source.png": "dda6594ffb33488fa1895119f04ef774221026fe76c57e9d5080516dc29bfc39"
+    }
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-088",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-088-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-088-original-v4.png",
+    "sha256": "228B62D6BFA97E8029B20A4EB92D3B6A6EC6DBC16B78FC44B4168966C6667716",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-088-altered-source-v4.png",
+    "sha256": "B551960BC4E94E490ADBD98FC0D7B60B911A2690A5DABA95D989460547434E05",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise Dreameriepainting edit native1672x941. Preserve spoolriver desert, all framing/brushwork/lighting andobjects. Exactly5 single-objectlocalizeddifferences:1 blue squarepatch onforegroundrockx1486y816 becomes a bluecircle, sameposition/color/rock;2 giantpurple glove WHITE THUMB atx291y729 bendsUPWARD rather thanrests straightout onground, gloveotherfingers/cuff stayexact;3 gold bentneedle righttipx309y836 closes into one small goldloop insteadopenhook, retainentireshaft/eye unchanged;4 spool redface centralholex441y146 becomes KEYHOLE opening (roundupperhole+smallnarrowstemdown) insteadoval, samefaceandspool;5 goldsunreflection in river UNDERbridge atx1121y452 curls into one tiny left-facingCRESCENT patch insteadstraightzigzagsegment, water/bridgeunchanged. Singleobjectchanges only, no swaps orbackgroundchanges.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise Dreameriepainting edit native1672x941. Preserve spoolriver desert, all framing/brushwork/lighting andobjects. Exactly5 single-objectlocalizeddifferences:1 blue squarepatch onforegroundrockx1486y816 becomes a bluecircle, sameposition/color/rock;2 giantpurple glove WHITE THUMB atx291y729 bendsUPWARD rather thanrests straightout onground, gloveotherfingers/cuff stayexact;3 gold bentneedle righttipx309y836 closes into one small goldloop insteadopenhook, retainentireshaft/eye unchanged;4 spool redface centralholex441y146 becomes KEYHOLE opening (roundupperhole+smallnarrowstemdown) insteadoval, samefaceandspool;5 goldsunreflection in river UNDERbridge atx1121y452 curls into one tiny left-facingCRESCENT patch insteadstraightzigzagsegment, water/bridgeunchanged. Singleobjectchanges only, no swaps orbackgroundchanges."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The blue rock patch is round",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1450,
+        "y": 783,
+        "width": 81,
+        "height": 77
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-2",
+      "label": "The glove's white thumb bends upward",
+      "difficulty": "Medium",
+      "box": {
+        "x": 209,
+        "y": 613,
+        "width": 139,
+        "height": 166
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-3",
+      "label": "The spool opening is keyhole shaped",
+      "difficulty": "Hard",
+      "box": {
+        "x": 417,
+        "y": 99,
+        "width": 46,
+        "height": 96
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-4",
+      "label": "The bent needle tip forms a closed loop",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 256,
+        "y": 797,
+        "width": 88,
+        "height": 69
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-5",
+      "label": "A crescent appears in the river reflection under the bridge",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1079,
+        "y": 426,
+        "width": 79,
+        "height": 49
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": "Full generatedsource/nativefeathercomposite/fivepairedcrops/390stack inspected. Allfive observed oneobjectchanges; gloveonewhite thumb pose whileotherfingers intact; needleloop shaft joinsclean; crescentreflectioninsidebridge avoidsstone changes. Originaloutsideunion unchanged. No brokenjoins detected. Difficulty hypotheses/nohumantiming orphysicalphoneapproval; rootruntimeQArequired.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-125",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-125-original-v2.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-125-original-v4.png",
+    "sha256": "FEA4A50559289218C478A899B8E6D5D9432CD72A184E09834A33FB0543C1F7B7",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-125-altered-source-v4.png",
+    "sha256": "ED9A90FC2B259D82554A4C5E3FB5319FE22CD5643A9057D82DDE829FE5C4D53D",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact native full frame 1672x941 painting preserving every scene object. Five localized one-object differences: 1 blue door on far right unfolded landscape stands slightly ajar inward, preserve door frame road and scenery; 2 foreground cowboy hat braided band becomes a row of closed oval rope loops (same band on same hat), preserve hat silhouette; 3 hobbyhorse head at left its visible eye closes to a clear curved eyelid, preserve head and bridle; 4 silver belt buckle on man's waist: replace internal ornate engraving with a clear crescent moon motif, same square buckle and belt; 5 canteen screw cap at left x260 y490 leans diagonally to right as partly unscrewed, preserve canteen body leather straps and background. No other changed objects. Painterly dusty dreamy western style unchanged.\", \"reference\": \"dream-125-original-v2.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact native full frame 1672x941 painting preserving every scene object. Five localized one-object differences: 1 blue door on far right unfolded landscape stands slightly ajar inward, preserve door frame road and scenery; 2 foreground cowboy hat braided band becomes a row of closed oval rope loops (same band on same hat), preserve hat silhouette; 3 hobbyhorse head at left its visible eye closes to a clear curved eyelid, preserve head and bridle; 4 silver belt buckle on man's waist: replace internal ornate engraving with a clear crescent moon motif, same square buckle and belt; 5 canteen screw cap at left x260 y490 leans diagonally to right as partly unscrewed, preserve canteen body leather straps and background. No other changed objects. Painterly dusty dreamy western style unchanged.",
+        "reference": "dream-125-original-v2.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "door-ajar",
+      "label": "The blue door stands ajar",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1473,
+        "y": 509,
+        "width": 71,
+        "height": 119
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "hat-loops",
+      "label": "The hat band has closed loops",
+      "difficulty": "Medium",
+      "box": {
+        "x": 233,
+        "y": 722,
+        "width": 244,
+        "height": 57
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "canteen-cap",
+      "label": "The canteen cap tilts sideways",
+      "difficulty": "Hard",
+      "box": {
+        "x": 235,
+        "y": 467,
+        "width": 60,
+        "height": 51
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "horse-eye",
+      "label": "The hobbyhorse eye is closed",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 300,
+        "y": 297,
+        "width": 30,
+        "height": 22
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "buckle-moon",
+      "label": "The buckle carries a crescent",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 502,
+        "y": 384,
+        "width": 57,
+        "height": 58
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": {
+    "humanTimed": false,
+    "physicalPhone": false,
+    "notes": "Five single-object edits; ajar door and tilted cap mechanisms.",
+    "outsideRegionsExact": true,
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sourceHashes": {
+      "source.png": "ed9a90fc2b259d82554a4c5e3fb5319fe22cd5643a9057d82dde829fe5c4d53d"
+    }
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

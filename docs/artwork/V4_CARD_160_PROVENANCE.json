@@ -1,0 +1,115 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-160",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-160-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-160-original-v4.png",
+    "sha256": "59F4AB47D8E4E2F5FB4A64D1D709C6A3EC50168B62ED08D2705A38741B9E8CEC",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-160-altered-source-v4.png",
+    "sha256": "00AB809122B86B2B5D136EC60437A4EF6A366A09311364DEBFE11BFFEA264F02",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise native1672x941 localpaintingedit keep allmuseum exhibits glass architecturepeopleanatomy layout unchanged. Exactlyfive singleobjectchanges:1 foregroundgoldVALVEWHEEL x1047y741 has curvedthree spokes insteadstraightspokes, samecenter/rim;2 RIGHT CLOCK blackHAND x1606y605 pointsUP-LEFT fromsamepivotx1580y635 insteadUP-RIGHT, clockface/ticks unchanged;3 floating TEACUP x1105y502 its RIGHTHANDLE becomesopenC withgapbottom, cupbodystreamsaucerunchanged;4 elderlywoman orangeBAG goldROUNDCLASP x309y599 becomesdiamondshapedclasp, samebagstrap;5 top-right OPENBOOK x1489y83 one upperrightpage tip foldsDOWN makingtriangleflap, bookspineotherpagesunchanged. Oneobjecteach no swaps noextraobjects noglobalrepaint. Atleasttwo mechanism/pose clues.\"}}, {\"file\": \"prompt-b.json\", \"content\": {\"prompt\": \"Editexactpaintedcupcrop: singleRIGHTHANDLE opens nearitsBOTTOM, clearC hook attachedonlyatuppercup edge curvingrightdown thenendingfree. Keepcupbodytealrim saucerwaterribbons andbackgroundexact. Do notmoveorremovehandle; obviousbottomgaponlyoneobject.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise native1672x941 localpaintingedit keep allmuseum exhibits glass architecturepeopleanatomy layout unchanged. Exactlyfive singleobjectchanges:1 foregroundgoldVALVEWHEEL x1047y741 has curvedthree spokes insteadstraightspokes, samecenter/rim;2 RIGHT CLOCK blackHAND x1606y605 pointsUP-LEFT fromsamepivotx1580y635 insteadUP-RIGHT, clockface/ticks unchanged;3 floating TEACUP x1105y502 its RIGHTHANDLE becomesopenC withgapbottom, cupbodystreamsaucerunchanged;4 elderlywoman orangeBAG goldROUNDCLASP x309y599 becomesdiamondshapedclasp, samebagstrap;5 top-right OPENBOOK x1489y83 one upperrightpage tip foldsDOWN makingtriangleflap, bookspineotherpagesunchanged. Oneobjecteach no swaps noextraobjects noglobalrepaint. Atleasttwo mechanism/pose clues."
+      }
+    },
+    {
+      "file": "prompt-b.json",
+      "content": {
+        "prompt": "Editexactpaintedcupcrop: singleRIGHTHANDLE opens nearitsBOTTOM, clearC hook attachedonlyatuppercup edge curvingrightdown thenendingfree. Keepcupbodytealrim saucerwaterribbons andbackgroundexact. Do notmoveorremovehandle; obviousbottomgaponlyoneobject."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The valve wheel spokes curve",
+      "difficulty": "Easy",
+      "box": {
+        "x": 982,
+        "y": 674,
+        "width": 132,
+        "height": 142
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The clock hand points upper left",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1548,
+        "y": 558,
+        "width": 99,
+        "height": 97
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The cup handle opens at the bottom",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1136,
+        "y": 466,
+        "width": 27,
+        "height": 48
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The bag clasp becomes a diamond",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 289,
+        "y": 575,
+        "width": 40,
+        "height": 46
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The open book page tip folds down",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1514,
+        "y": 32,
+        "width": 41,
+        "height": 69
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "inspected",
+    "fivePairedCrops": "five single-object clues inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "difficulty": "hypotheses; parent browser and human playtest pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

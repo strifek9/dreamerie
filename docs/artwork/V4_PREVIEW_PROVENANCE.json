@@ -30,5 +30,13 @@
       "sha256": "2A13AF158CE3EB67AC4A06153AD48CFE06DE11FACFE9593F2B06795AB26C01B5",
       "prompt": "Use case: precise-object-edit. Image 1 is the edit target, the 1672x941 Dreamerie painting The Seamstress of Rain. Make ONE coherent, localized change on the stitched lily pad directly below the hanging paper fish, near the lower center of the image. On its left curved edge only, turn the existing short white slanted sewing stitches into four distinct white X-shaped cross-stitches at the same physical scale and following the leaf rim. Keep the pad's green silhouette, white thread entering it, neighboring lily pads, ripples, sky, heron, parasol, and every other element completely unchanged. The stitches should read as intentional hand embroidery, not white specks, and remain visible when zoomed. Match clean matte painterly brushwork; no grain, no random decorations, no text, no borders."
     }
-  ]
+  ],
+  "fairnessCorrection": {
+    "date": "2026-10-04",
+    "authorization": "Sentinel_1aa3e822002c8191a74c51f233f72cbe",
+    "affectedVersion": "v4-dream-002 only; V3 has no fish swap",
+    "repair": "Select only the existing generated gold broad face on the TOP fish. Middle and bottom fish retain published-original pixels; restrict visual clip/hitbox to975,355,56,47; exact5clues, generous circle unchanged. Broad-face wording follows the selected patch; do not claim the whole tail changes.",
+    "humanApproval": "pending after correction",
+    "status": "root native/full pair/five crops and actual browser five hits/inspection/Escape/layouts/reload passed; unchanged other fish negative-hit regression passed"
+  }
 }

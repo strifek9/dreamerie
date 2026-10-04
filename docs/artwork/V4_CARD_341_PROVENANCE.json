@@ -1,0 +1,110 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-341",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-revisit-v1/341-dynamic-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-341-original-v4.png",
+    "sha256": "74C037D351009A2BD8C6F6A37AEEB87AE62DD5CDA209C53AB74A045B4BC765D8",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-341-altered-source-v4.png",
+    "sha256": "C20BADD84768A6DB8352AC024ED145FBE8A90CC66C11116B25DA96246D3FB0C9",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact jellyfish dry umbrella scene locally. Preserve identity, paper seahorse anatomy, jellyfish and all scenery original. Exactly five one-object changes: 1 the lone pebble inside large floating bubble at upper-right x1326 y178 becomes a heart-shaped pebble, bubble unchanged; 2 paper seahorse's raised hand at x1126 y306 curls its fingertips into a gentle closed fist rather than pointing, arm/body/scarf unchanged; 3 the scallop shell on stool lower-left x120 y612 folds its front rim upward slightly as though closing, contents and stool unchanged; 4 the potted plant vase at x1287 y750 gains a clear painted crescent-shaped pale glaze motif on its front, no plant change; 5 the loose chair scarf front lower fringe at x1498 y838 has ONLY its leftmost fringe strand curl into a connected hook, all other strands unchanged. No two-object swaps, no extra objects, no global redraw. Five bounded separate targets, clean anatomy and joins.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact jellyfish dry umbrella scene locally. Preserve identity, paper seahorse anatomy, jellyfish and all scenery original. Exactly five one-object changes: 1 the lone pebble inside large floating bubble at upper-right x1326 y178 becomes a heart-shaped pebble, bubble unchanged; 2 paper seahorse's raised hand at x1126 y306 curls its fingertips into a gentle closed fist rather than pointing, arm/body/scarf unchanged; 3 the scallop shell on stool lower-left x120 y612 folds its front rim upward slightly as though closing, contents and stool unchanged; 4 the potted plant vase at x1287 y750 gains a clear painted crescent-shaped pale glaze motif on its front, no plant change; 5 the loose chair scarf front lower fringe at x1498 y838 has ONLY its leftmost fringe strand curl into a connected hook, all other strands unchanged. No two-object swaps, no extra objects, no global redraw. Five bounded separate targets, clean anatomy and joins."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The bubble carries a heart-shaped pebble",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1290,
+        "y": 149,
+        "width": 66,
+        "height": 59
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The paper seahorse closes its raised hand",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1091,
+        "y": 284,
+        "width": 61,
+        "height": 49
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The scallop rim lifts upward",
+      "difficulty": "Hard",
+      "box": {
+        "x": 44,
+        "y": 575,
+        "width": 153,
+        "height": 79
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The vase has a crescent glaze motif",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1253,
+        "y": 714,
+        "width": 80,
+        "height": 81
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "One chair-scarf fringe tip curls into a hook",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1429,
+        "y": 784,
+        "width": 36,
+        "height": 63
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "visually inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "nativePreflight": "source equals actual original size, five nonoverlapping boxes",
+    "difficulty": "hypotheses; human and browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

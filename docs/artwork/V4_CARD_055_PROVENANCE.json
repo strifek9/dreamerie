@@ -1,0 +1,98 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-055",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-055-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-055-original-v4.png",
+    "sha256": "14FF9076E718DDD8CD4EB95D85114C278DE4C9DB2FA38EC8940B7417E52ABBFF",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-055-altered-source-v4.png",
+    "sha256": "638B34B123A8B005778BFFDC2454BBE0242E0EBE7CA1A013888D20C4EC23DE85",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit attached whimsical children ridingblue turtle leafkites painting. Preserve EXACT1672x941framing ALLcharacters/anatomy/positions palettepaint texture. FIVE localized single-object changes ONLY:1) large seashell on turtle's gardenback centerlower changes from fan-shaped scallop shell into elegant coiled spiral conch shell, same area/size orangecreamstripes plausiblegroundcontact.2) turtle's GREENSCARF rightfreeend loops through its OWN greenloop once, forming a cleanloose self-knot near rightside; retain neckknot andturtleanatomy.3) standing girl's white sweater painted crescent emblem becomes simple creamwhite CLOUD outlinedblue (no otherclothes changes), same motifscale.4) small dog onright: its existing redtongue curls UP towarditsownnose instead of hangingdown, preserve eyes nose muzzlelegsanatomy, onlytongue pose.5) big REDleafkite upperright: change ONLY its innercentralgoldvein into a graceful spiralcurvingmidrib, preserve leafsilhouette, frame string andallothers. Eachregion ONE object changed; no swaps between separately selectable objects. No otherchanges, no newpropsmarkers/text.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit attached whimsical children ridingblue turtle leafkites painting. Preserve EXACT1672x941framing ALLcharacters/anatomy/positions palettepaint texture. FIVE localized single-object changes ONLY:1) large seashell on turtle's gardenback centerlower changes from fan-shaped scallop shell into elegant coiled spiral conch shell, same area/size orangecreamstripes plausiblegroundcontact.2) turtle's GREENSCARF rightfreeend loops through its OWN greenloop once, forming a cleanloose self-knot near rightside; retain neckknot andturtleanatomy.3) standing girl's white sweater painted crescent emblem becomes simple creamwhite CLOUD outlinedblue (no otherclothes changes), same motifscale.4) small dog onright: its existing redtongue curls UP towarditsownnose instead of hangingdown, preserve eyes nose muzzlelegsanatomy, onlytongue pose.5) big REDleafkite upperright: change ONLY its innercentralgoldvein into a graceful spiralcurvingmidrib, preserve leafsilhouette, frame string andallothers. Eachregion ONE object changed; no swaps between separately selectable objects. No otherchanges, no newpropsmarkers/text."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "A coiled conch shell replaces the fan-shaped shell.",
+      "box": {
+        "x": 513,
+        "y": 510,
+        "width": 191,
+        "height": 124
+      },
+      "edgeFade": 6
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The turtle's scarf knot loops through itself.",
+      "box": {
+        "x": 1168,
+        "y": 620,
+        "width": 125,
+        "height": 117
+      },
+      "edgeFade": 5
+    },
+    {
+      "difficulty": "Hard",
+      "label": "A cloud is drawn on the girl's sweater.",
+      "box": {
+        "x": 719,
+        "y": 234,
+        "width": 68,
+        "height": 54
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "The red leaf kite's central gold vein curls into a spiral.",
+      "box": {
+        "x": 1048,
+        "y": 50,
+        "width": 135,
+        "height": 93
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "The dog's tongue curls upward toward its nose.",
+      "box": {
+        "x": 1003,
+        "y": 416,
+        "width": 43,
+        "height": 40
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Actualfullframe inspected. Shellsingleobjectreplacement; scarfself-loop singleobject; sweatermotif singlepattern; kitesingleinternalvein; dogtongueaction sameanimal. No twoobjectswap. Allcharacters preserved. Scarf source changed neckknot rather thanrequestedfree-endloop; observedlabel reflectsactual. Difficultyhypothesesonly.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

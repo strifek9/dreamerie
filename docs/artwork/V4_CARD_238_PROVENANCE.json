@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-238",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-238-replacement-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-238-original-v4.png",
+    "sha256": "34C8B60C977D82442B3E6B5194EBA9E198C8408FB233BAA0F81D470DBAE7F858",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-238-altered-source-v4.png",
+    "sha256": "1E02E52CA9A6798B9F1C017C74ED2B1C290FE5164E65A5291D9A8BCC66B0870F",
+    "prompt": "[{\"file\": \"prompt-refine.json\", \"content\": {\"prompt\": \"TWO targeted single-object edits only. Computer mouse SCROLL WHEEL at native(1366,494): rotate its long axis 90degrees, so it lies across mouse seam, upper-left to lower-right becomes LOWER-LEFT to UPPER-RIGHT visibly; same single lavender wheel, remove oldwheel cleanly. Red powerstrip rocker switch around(131,256): replace its TWO printed white circle symbols with a SINGLE large white lightning bolt centered on red face (one switch's internal pattern). Keep switchposition exact. Rest of image all original unchanged. Fullnative1672x941 painting.\"}}, {\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Preserve exact native1672x941 painting, five single-object changes only. 1 eel ONLY visible eye at1190441 closes into curved slit; head anatomy exact. 2 mouse scroll wheel near1363491 turns perpendicular horizontal rather than diagonal along mouse, same one wheel and mousebody untouched. 3 red powerstrip rocker switch ONLY internal position tips opposite end down (top end depressed rather than bottom), both printed circles original. 4 ONE bottom foreground copper paperclip at574789: its outer free end spiral becomes angular square spiral instead of round, inner oval loop unchanged, single continuous wire. 5 empty CENTER powerstrip socket near320337 ONLY its long upper slot becomes horizontal instead of diagonalvertical, remainingtwo holes exact. No swaps, exact otherobjects/cordcoils/style/lighting.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt-refine.json",
+      "content": {
+        "prompt": "TWO targeted single-object edits only. Computer mouse SCROLL WHEEL at native(1366,494): rotate its long axis 90degrees, so it lies across mouse seam, upper-left to lower-right becomes LOWER-LEFT to UPPER-RIGHT visibly; same single lavender wheel, remove oldwheel cleanly. Red powerstrip rocker switch around(131,256): replace its TWO printed white circle symbols with a SINGLE large white lightning bolt centered on red face (one switch's internal pattern). Keep switchposition exact. Rest of image all original unchanged. Fullnative1672x941 painting."
+      }
+    },
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Preserve exact native1672x941 painting, five single-object changes only. 1 eel ONLY visible eye at1190441 closes into curved slit; head anatomy exact. 2 mouse scroll wheel near1363491 turns perpendicular horizontal rather than diagonal along mouse, same one wheel and mousebody untouched. 3 red powerstrip rocker switch ONLY internal position tips opposite end down (top end depressed rather than bottom), both printed circles original. 4 ONE bottom foreground copper paperclip at574789: its outer free end spiral becomes angular square spiral instead of round, inner oval loop unchanged, single continuous wire. 5 empty CENTER powerstrip socket near320337 ONLY its long upper slot becomes horizontal instead of diagonalvertical, remainingtwo holes exact. No swaps, exact otherobjects/cordcoils/style/lighting."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "closed-eye",
+      "label": "The eel closes its eye.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1167,
+        "y": 417,
+        "width": 53,
+        "height": 44
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "bolt-switch",
+      "label": "The rocker switch carries a lightning symbol.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 92,
+        "y": 214,
+        "width": 79,
+        "height": 87
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "turned-wheel",
+      "label": "The mouse wheel turns across the seam.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1323,
+        "y": 457,
+        "width": 91,
+        "height": 77
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "square-spiral",
+      "label": "The paperclip\u2019s outer curl becomes square.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 579,
+        "y": 779,
+        "width": 94,
+        "height": 91
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "sideways-socket",
+      "label": "The center socket\u2019s slots form a sideways pattern.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 282,
+        "y": 303,
+        "width": 81,
+        "height": 83
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five paired crops, full composite and 390-pixel stacked pair inspected. Single-object changes; difficulty hypotheses only. Root browser/hit QA and human fairness remain pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

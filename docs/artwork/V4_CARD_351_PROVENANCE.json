@@ -1,0 +1,121 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-351",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-351-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-351-original-v4.png",
+    "sha256": "EC0DDA4B30DCD6D7729BA6A6460CE38B8AEA03AC18BCF0D5BEB0CB5C055EEA6E",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-351-altered-source-v4.png",
+    "sha256": "D7E39D1AA739B3C9E24AF7A4F1016C78FB22F6A05DD74D90A8252558FABBDF5E",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit supplied original The Child Who Wore the Hallway, preserve exact native1672x941 composition, painterly style, child face/hands/body and beautiful enriched scene. Exactly FIVE localized differences, each only one object or one object's internal element: 1) On the child's RIGHT cardboard outer panel, the little painted window has its two shutters closed, making one dark teal closed shutter face with central seam and NO glass panes. Keep triangular roof and brown frame identical (x965 y414 width59 height110). 2) The red umbrella in the stand retains exact fabric body and shaft, but its wooden curved hook handle curls into a complete circular loop rather than an open hook (x1371 y298 width seventy height eighty). Keep coat/stand/background unchanged. 3) The painted SUN symbol on LEFT cardboard upper panel has gently wavy rays instead of its straight rays, same circular sun center and warm brown paint, x570 y262 width83 height110; one sun decal. 4) The hanging iron key's bow at upper right becomes a heart shape instead of its round oval loop; retain hook suspending it and key shaft/teeth exactly, x1379 y81 width49 height47. 5) The satchel's single brass buckle at lower left becomes a diamond frame instead of rectangular loop, preserving strap, bag, other hardware and pin location (x95 y620 width34 height37). Do not move any other objects, no new words, no changes to the child's appearance, stair scarf, cardboard moon, inner tiny hallway lights/windows/doors, boots or floor. Exactly five bounded differences.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-351-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit supplied original The Child Who Wore the Hallway, preserve exact native1672x941 composition, painterly style, child face/hands/body and beautiful enriched scene. Exactly FIVE localized differences, each only one object or one object's internal element: 1) On the child's RIGHT cardboard outer panel, the little painted window has its two shutters closed, making one dark teal closed shutter face with central seam and NO glass panes. Keep triangular roof and brown frame identical (x965 y414 width59 height110). 2) The red umbrella in the stand retains exact fabric body and shaft, but its wooden curved hook handle curls into a complete circular loop rather than an open hook (x1371 y298 width seventy height eighty). Keep coat/stand/background unchanged. 3) The painted SUN symbol on LEFT cardboard upper panel has gently wavy rays instead of its straight rays, same circular sun center and warm brown paint, x570 y262 width83 height110; one sun decal. 4) The hanging iron key's bow at upper right becomes a heart shape instead of its round oval loop; retain hook suspending it and key shaft/teeth exactly, x1379 y81 width49 height47. 5) The satchel's single brass buckle at lower left becomes a diamond frame instead of rectangular loop, preserving strap, bag, other hardware and pin location (x95 y620 width34 height37). Do not move any other objects, no new words, no changes to the child's appearance, stair scarf, cardboard moon, inner tiny hallway lights/windows/doors, boots or floor. Exactly five bounded differences.",
+        "reference": "D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-351-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "window-shut",
+      "label": "The right cardboard window shutters close.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 963,
+        "y": 413,
+        "width": 64,
+        "height": 111
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "umbrella-loop",
+      "label": "The umbrella handle curls into a complete loop.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1370,
+        "y": 298,
+        "width": 79,
+        "height": 87
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "sun-waves",
+      "label": "The painted sun has wavy rays.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 566,
+        "y": 259,
+        "width": 89,
+        "height": 121
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "key-heart",
+      "label": "The hanging key bow is heart shaped.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1377,
+        "y": 78,
+        "width": 54,
+        "height": 52
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "buckle-diamond",
+      "label": "The satchel buckle is diamond shaped.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 88,
+        "y": 607,
+        "width": 49,
+        "height": 52
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": {
+    "humanTimed": false,
+    "physicalPhone": false,
+    "notes": [
+      "Five localized single-object edits. Child and unrelated scene retained through bounded assembly."
+    ],
+    "outsideRegionsExact": true,
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sourceHashes": {
+      "source.png": "d7e39d1aa739b3c9e24af7a4f1016c78fb22f6a05dd74d90a8252558fabbdf5e"
+    },
+    "allTenPairsNonoverlap": true,
+    "fullFrameAndFivePairedCropsViewed": true,
+    "mobile390CompositeViewed": true
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

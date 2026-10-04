@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-024",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-024-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-024-original-v4.png",
+    "sha256": "1441C51BD469E00762FCE307C9A359D0FC8CA7BC3A0F58105053F7A0975C24AB",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-024-altered-source-v4.png",
+    "sha256": "9A75095E570F267E3C532E81149683BAFCAF54939FB13E991C38CA83E99C21AE",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit target is the attached Dreamerie painting. Precise-object-edit. Keep exact 1672x941 framing, all brushwork, fox anatomy, white origami boat, background, lighting and composition. Make exactly five local differences: (1) at blue paper star near x1132 y699, fold its top point downward rather than upward, retaining a coherent star; (2) red thread beside spool at x410 y652 should pass through spool bottom's center opening rather than curl around its outside left edge, preserve nearby thread; (3) the small central bridge arch around x1270 y396 should be filled with a turquoise waterfall curtain rather than an empty dark arch, retaining stone supports; (4) at fox right paw grasping paper apex near x617 y449 change paper fold so one narrow white flap lies over the paw's bottom fingertips rather than paw sitting entirely over paper; (5) orange diamond in table front x770 y815 should have diagonal dark/light split reversed left-right. Changes bounded to those areas with clean intact joins. Do not move anything globally, add objects/text, alter face or restyle.\"}}, {\"file\": \"prompt-b.json\", \"content\": {\"prompt\": \"Edit attached painting only one feature: diamond-shaped inlay at native x775,y816 on teal table front. Its orange triangular half currently LEFT and dark teal half RIGHT. Reverse the materials: dark teal LEFT half and bright orange RIGHT half, retain diamond outline/location/size and paintedstyle. Keep entire rest of image exactly unchanged. Native1672x941.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit target is the attached Dreamerie painting. Precise-object-edit. Keep exact 1672x941 framing, all brushwork, fox anatomy, white origami boat, background, lighting and composition. Make exactly five local differences: (1) at blue paper star near x1132 y699, fold its top point downward rather than upward, retaining a coherent star; (2) red thread beside spool at x410 y652 should pass through spool bottom's center opening rather than curl around its outside left edge, preserve nearby thread; (3) the small central bridge arch around x1270 y396 should be filled with a turquoise waterfall curtain rather than an empty dark arch, retaining stone supports; (4) at fox right paw grasping paper apex near x617 y449 change paper fold so one narrow white flap lies over the paw's bottom fingertips rather than paw sitting entirely over paper; (5) orange diamond in table front x770 y815 should have diagonal dark/light split reversed left-right. Changes bounded to those areas with clean intact joins. Do not move anything globally, add objects/text, alter face or restyle."
+      }
+    },
+    {
+      "file": "prompt-b.json",
+      "content": {
+        "prompt": "Edit attached painting only one feature: diamond-shaped inlay at native x775,y816 on teal table front. Its orange triangular half currently LEFT and dark teal half RIGHT. Reverse the materials: dark teal LEFT half and bright orange RIGHT half, retain diamond outline/location/size and paintedstyle. Keep entire rest of image exactly unchanged. Native1672x941."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The bridge's middle arch carries a falling curtain of water",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1222,
+        "y": 353,
+        "width": 72,
+        "height": 99
+      },
+      "edgeFade": 5
+    },
+    {
+      "id": "change-2",
+      "label": "The left paper star has a long downward-pointing fold",
+      "difficulty": "Medium",
+      "box": {
+        "x": 884,
+        "y": 651,
+        "width": 99,
+        "height": 81
+      },
+      "edgeFade": 5
+    },
+    {
+      "id": "change-3",
+      "label": "The red thread loops beneath the spool instead of around its left side",
+      "difficulty": "Hard",
+      "box": {
+        "x": 313,
+        "y": 593,
+        "width": 135,
+        "height": 104
+      },
+      "edgeFade": 5
+    },
+    {
+      "id": "change-4",
+      "label": "A raised paper flap peaks above the fox's gripping paw",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 570,
+        "y": 419,
+        "width": 81,
+        "height": 79
+      },
+      "edgeFade": 5
+    },
+    {
+      "id": "change-5",
+      "label": "The table diamond's orange and dark halves trade sides",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 741,
+        "y": 785,
+        "width": 66,
+        "height": 65
+      },
+      "edgeFade": 5
+    }
+  ],
+  "notes": "Full generated source, five actual feather-composite paired crops and390px stacked pair visually inspected. Allfive observedchanges matchlabels, no brokenjoins detected; original preserved and outside authoredbox union pixels unchanged by script. Difficulty labels assistant hypotheses, no human timing/physicalphone approval. Root final compositor QA remains required.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

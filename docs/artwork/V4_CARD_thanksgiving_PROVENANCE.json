@@ -1,0 +1,209 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-thanksgiving",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/holidays-painted-v1/thanksgiving-original.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-thanksgiving-original-v4.png",
+    "sha256": "5D9199C9D4B01A192917C88D91EF2355CBC3849ED551DA28C6354C91E99155F6",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-thanksgiving-altered-source-v4.png",
+    "sha256": "6C956CE3F9697899630859B85E5A82F4948D8D392A401DC8E7C1FD9E895122E3",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit The Turkeys' Harvest Feast original illustration. Preserve EXACT native1672x941 full frame, painterly warmth, Thanksgiving autumn/turkey family feast theme and every unrelated object. Make exactly FIVE localized changes, one independently selectable object each: 1) The youngest turkey on right closes its one visible eye (x1225 y305 width forty height48), keep turkey face/body identical. 2) The GOLD SPOON resting in the cranberry bowl changes pose: its handle rises steeply upward toward the upper right while bowl end stays nestled at same cranberry position. Only spoon changes, not berries/bowl/jug, bounded x1089 y537 width91 height88. 3) The gravy boat floating on the foreground stream changes only its HANDLE from oval loop to heart-shaped loop, keep boat body and gravy unchanged, x512 y669 width44 height51. 4) The ONE central upright leaf-shaped pastry decoration on pumpkin pie curls its upper tip downward toward right; keep its root and the four surrounding pastry leaves exact, x838 y571 width51 height59. 5) Grandma turkey's small gold brooch on her chest changes from flower rosette to a small six-pointed star brooch, same size/location x388 y334 width39 height40. Do not change any other turkeys, leaves, plates, cutlery, decorations, tiny landscape or house. No text. Five clear bounded edits, no color swaps, no extra objects or disappearance.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/holidays-painted-v1/thanksgiving-original.png\"}}, {\"file\": \"assembly.json\", \"content\": {\"source\": \"source.png\", \"output\": \"spoon-assembled.png\", \"operation\": \"Paste generated spoon union footprint on exact original; no scale\", \"polygon\": [[1080, 600], [1098, 588], [1120, 554], [1129, 536], [1146, 536], [1148, 550], [1130, 578], [1140, 574], [1161, 565], [1177, 565], [1180, 579], [1168, 587], [1140, 597], [1124, 610], [1108, 624], [1080, 625]], \"oldHandleBackgroundRestore\": [1115, 565, 1189, 599]}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit The Turkeys' Harvest Feast original illustration. Preserve EXACT native1672x941 full frame, painterly warmth, Thanksgiving autumn/turkey family feast theme and every unrelated object. Make exactly FIVE localized changes, one independently selectable object each: 1) The youngest turkey on right closes its one visible eye (x1225 y305 width forty height48), keep turkey face/body identical. 2) The GOLD SPOON resting in the cranberry bowl changes pose: its handle rises steeply upward toward the upper right while bowl end stays nestled at same cranberry position. Only spoon changes, not berries/bowl/jug, bounded x1089 y537 width91 height88. 3) The gravy boat floating on the foreground stream changes only its HANDLE from oval loop to heart-shaped loop, keep boat body and gravy unchanged, x512 y669 width44 height51. 4) The ONE central upright leaf-shaped pastry decoration on pumpkin pie curls its upper tip downward toward right; keep its root and the four surrounding pastry leaves exact, x838 y571 width51 height59. 5) Grandma turkey's small gold brooch on her chest changes from flower rosette to a small six-pointed star brooch, same size/location x388 y334 width39 height40. Do not change any other turkeys, leaves, plates, cutlery, decorations, tiny landscape or house. No text. Five clear bounded edits, no color swaps, no extra objects or disappearance.",
+        "reference": "D:/Dreamerie/public/artwork/v3/holidays-painted-v1/thanksgiving-original.png"
+      }
+    },
+    {
+      "file": "assembly.json",
+      "content": {
+        "source": "source.png",
+        "output": "spoon-assembled.png",
+        "operation": "Paste generated spoon union footprint on exact original; no scale",
+        "polygon": [
+          [
+            1080,
+            600
+          ],
+          [
+            1098,
+            588
+          ],
+          [
+            1120,
+            554
+          ],
+          [
+            1129,
+            536
+          ],
+          [
+            1146,
+            536
+          ],
+          [
+            1148,
+            550
+          ],
+          [
+            1130,
+            578
+          ],
+          [
+            1140,
+            574
+          ],
+          [
+            1161,
+            565
+          ],
+          [
+            1177,
+            565
+          ],
+          [
+            1180,
+            579
+          ],
+          [
+            1168,
+            587
+          ],
+          [
+            1140,
+            597
+          ],
+          [
+            1124,
+            610
+          ],
+          [
+            1108,
+            624
+          ],
+          [
+            1080,
+            625
+          ]
+        ],
+        "oldHandleBackgroundRestore": [
+          1115,
+          565,
+          1189,
+          599
+        ]
+      }
+    }
+  ],
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-thanksgiving-spoon-assembled-source-v4.png",
+      "sha256": "7BF4B970B46DE42ECDFF887F7D42593B29A45A9FBA52D852720DEC052756218A",
+      "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit The Turkeys' Harvest Feast original illustration. Preserve EXACT native1672x941 full frame, painterly warmth, Thanksgiving autumn/turkey family feast theme and every unrelated object. Make exactly FIVE localized changes, one independently selectable object each: 1) The youngest turkey on right closes its one visible eye (x1225 y305 width forty height48), keep turkey face/body identical. 2) The GOLD SPOON resting in the cranberry bowl changes pose: its handle rises steeply upward toward the upper right while bowl end stays nestled at same cranberry position. Only spoon changes, not berries/bowl/jug, bounded x1089 y537 width91 height88. 3) The gravy boat floating on the foreground stream changes only its HANDLE from oval loop to heart-shaped loop, keep boat body and gravy unchanged, x512 y669 width44 height51. 4) The ONE central upright leaf-shaped pastry decoration on pumpkin pie curls its upper tip downward toward right; keep its root and the four surrounding pastry leaves exact, x838 y571 width51 height59. 5) Grandma turkey's small gold brooch on her chest changes from flower rosette to a small six-pointed star brooch, same size/location x388 y334 width39 height40. Do not change any other turkeys, leaves, plates, cutlery, decorations, tiny landscape or house. No text. Five clear bounded edits, no color swaps, no extra objects or disappearance.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/holidays-painted-v1/thanksgiving-original.png\"}}, {\"file\": \"assembly.json\", \"content\": {\"source\": \"source.png\", \"output\": \"spoon-assembled.png\", \"operation\": \"Paste generated spoon union footprint on exact original; no scale\", \"polygon\": [[1080, 600], [1098, 588], [1120, 554], [1129, 536], [1146, 536], [1148, 550], [1130, 578], [1140, 574], [1161, 565], [1177, 565], [1180, 579], [1168, 587], [1140, 597], [1124, 610], [1108, 624], [1080, 625]], \"oldHandleBackgroundRestore\": [1115, 565, 1189, 599]}}]"
+    }
+  ],
+  "authoredRegions": [
+    {
+      "id": "spoon-raised",
+      "label": "The cranberry spoon handle rises steeply.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1075,
+        "y": 532,
+        "width": 119,
+        "height": 97
+      },
+      "edgeFade": 4,
+      "source": "spoon-assembled.png"
+    },
+    {
+      "id": "gravy-heart",
+      "label": "The gravy boat handle forms a heart.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 510,
+        "y": 666,
+        "width": 48,
+        "height": 55
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "pastry-curl",
+      "label": "The central pastry leaf curls its tip.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 836,
+        "y": 570,
+        "width": 54,
+        "height": 60
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "young-eye",
+      "label": "The youngest turkey closes its eye.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1221,
+        "y": 303,
+        "width": 48,
+        "height": 47
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "brooch-star",
+      "label": "Grandma's brooch is a six-pointed star.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 387,
+        "y": 331,
+        "width": 41,
+        "height": 45
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": {
+    "humanTimed": false,
+    "physicalPhone": false,
+    "notes": [
+      "Thanksgiving theme preserved. Spoon original-backed footprint assembly preserves cranberry bowl and neighboring jug."
+    ],
+    "outsideRegionsExact": true,
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sourceHashes": {
+      "spoon-assembled.png": "7bf4b970b46de42ecdff887f7d42593b29a45a9fba52d852720dec052756218a",
+      "source.png": "6c956ce3f9697899630859b85e5a82f4948d8d392a401dc8e7c1fd9e895122e3"
+    },
+    "allTenPairsNonoverlap": true,
+    "fullFrameAndFivePairedCropsViewed": true,
+    "mobile390CompositeViewed": true
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

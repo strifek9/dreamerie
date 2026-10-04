@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-339",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-339-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-339-original-v4.png",
+    "sha256": "D4FE2C64667A1DA41C64833DF152D92CBABB4F0E9D4E2F0A0DF5190E95A0044F",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-339-altered-source-v4.png",
+    "sha256": "EEDE703653329B24195C2407B1ED9F9038CD4E1755BB56611031DF055FD6DBB1",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact native1672x941 painterly rope footbridge inside broken biscuit still life. Five isolated ONE-object edits:1 spoon bowl x1539y562 reflects broad blue crescent, outline exact;2 ONE central bridge plank at x784y466 has a clearly carved gold star on top face, otherplanks exact;3 FRONT LEFT bridge post top x485y339 has triangular notch cut into its top face, shaft ropes unchanged;4 ONE blue painted stem inside saucer at x1120y95 becomes curly S instead of straight, attached leaves stay identical;5 ONE large biscuit hole on left half x333y361 becomes filled by single diagonal baked dough bar across its opening, hole rim exact. Preserve ALL bridge ropes, biscuit silhouette, crumbs, table and teacup. No other changes.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-339-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact native1672x941 painterly rope footbridge inside broken biscuit still life. Five isolated ONE-object edits:1 spoon bowl x1539y562 reflects broad blue crescent, outline exact;2 ONE central bridge plank at x784y466 has a clearly carved gold star on top face, otherplanks exact;3 FRONT LEFT bridge post top x485y339 has triangular notch cut into its top face, shaft ropes unchanged;4 ONE blue painted stem inside saucer at x1120y95 becomes curly S instead of straight, attached leaves stay identical;5 ONE large biscuit hole on left half x333y361 becomes filled by single diagonal baked dough bar across its opening, hole rim exact. Preserve ALL bridge ropes, biscuit silhouette, crumbs, table and teacup. No other changes.",
+        "reference": "D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-339-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The spoon bowl has a blue curved reflection",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1448,
+        "y": 565,
+        "width": 178,
+        "height": 98
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "One bridge plank has a carved gold star",
+      "difficulty": "Medium",
+      "box": {
+        "x": 716,
+        "y": 442,
+        "width": 43,
+        "height": 39
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The painted saucer stem curls into an S",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1085,
+        "y": 99,
+        "width": 96,
+        "height": 105
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "One biscuit hole is crossed by a dough bar",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 300,
+        "y": 337,
+        "width": 83,
+        "height": 62
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The front-left bridge post has a triangular notch",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 472,
+        "y": 329,
+        "width": 27,
+        "height": 27
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390 stacked pair. Five independently selectable localized object clues. Native dimensions, five bounded nonoverlapping boxes and exact original pixels outside verified. Difficulty estimates unvalidated; root compositor/game, human difficulty and physical phone approval pending. Full prompt/source hash chain retained.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

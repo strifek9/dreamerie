@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-105",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-105-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-105-original-v4.png",
+    "sha256": "9D398EF830ED99B4A601C835F0FACFCD95ACA6834870FD7B9BDEB4CB3A80A0E7",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-105-altered-source-v4.png",
+    "sha256": "38C5B424CA0BB02759A3B076919597D08B42B7602560094C5DD17F1868E37241",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Preciselyeditfive isolated singleobjectdetails provided1672x941 seahorsecarousel painting; preserveallanimalanatomy/poses/corepremise/fullframe/grainfreepaintstyle.1 goldfrontshell-lock atx890,y793 has keyholebecome horizontal slot ratherthanroundkeyhole (x868,771,44,41).2 largeCENTRAL creamseahorse's curledTAIL x860,y615 unwinds onehalfturn, so tip curlsOUTRIGHT ratherthaninside (x811,579,90,86); preservebody/legs/coral/Pole.3 BIGLEFT goldlantern atx704,y326 has its metal lattice form THREE horizontalbars insteadcrossingdiamonds, keepglass/color/cap/hangingchain (x674,294,62, sixtyheight), onlylanterninternalframework.4 central seahorse saddleprintedBUTTERFLY upperpanelx896,y480 folds ONErightwing inward againstbody ratherthanbothspread, preservesaddleoutline/coral (x862,443,59,62).5 isolatedPEARL insideSMALLshell lowerRIGHT x1509,y842 becomes teardrop pointUP ratherthanorb, preserveitscap/shell/background (x1475,811,68, sixtyheight). Nootherpearls/lanterns/seahorses/stars change, no objectswaps/noextraobjects.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Preciselyeditfive isolated singleobjectdetails provided1672x941 seahorsecarousel painting; preserveallanimalanatomy/poses/corepremise/fullframe/grainfreepaintstyle.1 goldfrontshell-lock atx890,y793 has keyholebecome horizontal slot ratherthanroundkeyhole (x868,771,44,41).2 largeCENTRAL creamseahorse's curledTAIL x860,y615 unwinds onehalfturn, so tip curlsOUTRIGHT ratherthaninside (x811,579,90,86); preservebody/legs/coral/Pole.3 BIGLEFT goldlantern atx704,y326 has its metal lattice form THREE horizontalbars insteadcrossingdiamonds, keepglass/color/cap/hangingchain (x674,294,62, sixtyheight), onlylanterninternalframework.4 central seahorse saddleprintedBUTTERFLY upperpanelx896,y480 folds ONErightwing inward againstbody ratherthanbothspread, preservesaddleoutline/coral (x862,443,59,62).5 isolatedPEARL insideSMALLshell lowerRIGHT x1509,y842 becomes teardrop pointUP ratherthanorb, preserveitscap/shell/background (x1475,811,68, sixtyheight). Nootherpearls/lanterns/seahorses/stars change, no objectswaps/noextraobjects."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "tail",
+      "label": "The central seahorse's tail curls farther to the right.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 801,
+        "y": 576,
+        "width": 145,
+        "height": 88
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "lantern",
+      "label": "The left large lantern has horizontal bands instead of diamond lattice.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 671,
+        "y": 291,
+        "width": 68,
+        "height": 67
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "pearl",
+      "label": "The pearl in the small shell becomes a teardrop.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1474,
+        "y": 795,
+        "width": 70,
+        "height": 78
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "saddle",
+      "label": "The central saddle's pattern becomes a butterfly motif.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 851,
+        "y": 442,
+        "width": 75,
+        "height": 70
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "lock",
+      "label": "The shell lock has a horizontal slot instead of a keyhole.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 870,
+        "y": 775,
+        "width": 42,
+        "height": 40
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Allfiveactualsingleobjectchanges sourceviewed. Saddleoriginalabstractpattern => actualbutterflymotif, no falseclaimoriginalwasbutterfly. Centraltaillargerloop passesinfrontofpole naturally (onebodypart). Otheranimals/pearls unchanged via finalclips.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

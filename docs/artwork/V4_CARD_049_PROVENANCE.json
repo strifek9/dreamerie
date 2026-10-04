@@ -1,0 +1,104 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-049",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-049-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-049-original-v4.png",
+    "sha256": "03C030C9A8FFAC0D8FF8D0CFCEE90B22C477355A995BAF82169EB9B9456AB5DF",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-049-altered-source-v4.png",
+    "sha256": "4EE95F790C0F5167D8DF5AAEEB8083BD2E4446299BBC3A27387E7AE2B1E5DDEC",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"Precise-object-edit target Dreamerie Strawberry Post Office attached. Preserve exact1672x941 original composition, hedgehog anatomy/action, strawberryhouse, all independentletters/flowers/props intact. Exactly five localized changes:1 ONLY white star painted on redmailbag front x606y592 becomes ivory crescent, samearea;2 ONLY goldbell clapper below bell x359y388 now angles RIGHT instead straight down, bellbody unchanged;3 ONLY door brass knocker ring atx405y497 opens its hinge gap at lower-right instead top, same goldringposition,size;4 ONLY large floatingcream envelope in cloudx1031y264 changes flap fold: pointed triangularflap now folds UP from bottom instead DOWN from top, keepsealheart and entireouterenvelope untouched;5 ONLY foreground greenquill nib atx163y830 curls gently upward, still attached samefeatherstem, restfeather andtable unchanged. One independently selectable object perchange. No swaps of independentobjects, no multiplemissingitems, no texturegrain. No otherchanges, globalstyling/crop/framingexact.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "Precise-object-edit target Dreamerie Strawberry Post Office attached. Preserve exact1672x941 original composition, hedgehog anatomy/action, strawberryhouse, all independentletters/flowers/props intact. Exactly five localized changes:1 ONLY white star painted on redmailbag front x606y592 becomes ivory crescent, samearea;2 ONLY goldbell clapper below bell x359y388 now angles RIGHT instead straight down, bellbody unchanged;3 ONLY door brass knocker ring atx405y497 opens its hinge gap at lower-right instead top, same goldringposition,size;4 ONLY large floatingcream envelope in cloudx1031y264 changes flap fold: pointed triangularflap now folds UP from bottom instead DOWN from top, keepsealheart and entireouterenvelope untouched;5 ONLY foreground greenquill nib atx163y830 curls gently upward, still attached samefeatherstem, restfeather andtable unchanged. One independently selectable object perchange. No swaps of independentobjects, no multiplemissingitems, no texturegrain. No otherchanges, globalstyling/crop/framingexact."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "bag-moon",
+      "label": "The mailbag's star becomes a crescent.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 569,
+        "y": 551,
+        "width": 80,
+        "height": 78
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "bell-clapper",
+      "label": "The bell's clapper leans to the right.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 340,
+        "y": 373,
+        "width": 62,
+        "height": 40
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "envelope-flap",
+      "label": "The cloud envelope's flap folds closed.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 954,
+        "y": 206,
+        "width": 159,
+        "height": 111
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "knocker-hinge",
+      "label": "The door knocker's hinge tilts right.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 379,
+        "y": 451,
+        "width": 43,
+        "height": 42
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "quill-nib",
+      "label": "The quill nib curls upward.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 133,
+        "y": 802,
+        "width": 63,
+        "height": 48
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Observed actual knocker hinge tilts rather than clear ring-gap relocation; accurately relabeled. No human validation. Full generatedsource, worker feathered composite, all5pairedcrops and390stack inspected. Zero outside-regionchanges in workercomposite, 5nonzero cluecounts pixel-validation.json. Sourcehash4ee95f790c0f5167d8df5aaeeb8083bd2e4446299bbc3a27387e7ae2b1e5ddec. Atleast2single-objectmechanisms (bellclapper, knockerhinge) plus envelopeflap, no independentobjectswaps.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

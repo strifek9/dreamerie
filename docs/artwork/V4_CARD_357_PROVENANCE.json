@@ -1,0 +1,106 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-357",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-357-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-357-original-v4.png",
+    "sha256": "3D87F8A496ED0156663D1890C8583451E5EE13AFEB35C710A863B8E754A2739C",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-357-altered-source-v4.png",
+    "sha256": "46BBF78F6570EB937BDF41A7851490EDF1406869FD895DB9E15412F28BAAE3A6",
+    "prompt": "[{\"file\": \"preserve-prompt.json\", \"content\": {\"operation\": \"Original preservation assembly\", \"script\": \"preserve.py\", \"purpose\": \"One doorleaf only, original rightleaf restored. Single lamp interior ellipse, all otherfixtures unchanged. Slice rind mask and original seedinterior restoration. Glass reflection and actual lowercloth upperfold curl only.\"}}, {\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact1672x941 attached painting CUCUMBER long illuminated CORRIDOR on paintedplate. Five SINGLE artifact details, no otherseeds/door/window changes:1) FAR PURPLE DOUBLE DOOR atcorridorend aroundx1175,y231: ONLY LEFT doorleaf swings inward OPEN, rightleaf/outerframe exact.2) nearest OVAL WALL LAMP aroundx753,y560: its creamglowingface becomes a luminous CRESCENT inside SAME ovalrim/fixture, no otherlamps altered.3) creamviolet TABLECLOTH bottomLEFT: ONLY freerightlowercorner x336,y863 rolls upward into hollowfabriccurl, all floralprint/restcloth exact.4) drinking GLASS upperLEFT x205,y143: frontglasssurface carries one clear pale CRESCENT reflection, samefluting/rim/shape.5) ONLY nearest CUCUMBER SLICE lowerRIGHT x1592,y697: its LEFT outer greenRIND edge aroundx1516,y678 peels up into a hollowcurled rindlip, ALL seedinterior/otherslices exact. No swaps or positions, no wholesale cucumber repaint, preserve originalpaintedtexture andframing.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "preserve-prompt.json",
+      "content": {
+        "operation": "Original preservation assembly",
+        "script": "preserve.py",
+        "purpose": "One doorleaf only, original rightleaf restored. Single lamp interior ellipse, all otherfixtures unchanged. Slice rind mask and original seedinterior restoration. Glass reflection and actual lowercloth upperfold curl only."
+      }
+    },
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact1672x941 attached painting CUCUMBER long illuminated CORRIDOR on paintedplate. Five SINGLE artifact details, no otherseeds/door/window changes:1) FAR PURPLE DOUBLE DOOR atcorridorend aroundx1175,y231: ONLY LEFT doorleaf swings inward OPEN, rightleaf/outerframe exact.2) nearest OVAL WALL LAMP aroundx753,y560: its creamglowingface becomes a luminous CRESCENT inside SAME ovalrim/fixture, no otherlamps altered.3) creamviolet TABLECLOTH bottomLEFT: ONLY freerightlowercorner x336,y863 rolls upward into hollowfabriccurl, all floralprint/restcloth exact.4) drinking GLASS upperLEFT x205,y143: frontglasssurface carries one clear pale CRESCENT reflection, samefluting/rim/shape.5) ONLY nearest CUCUMBER SLICE lowerRIGHT x1592,y697: its LEFT outer greenRIND edge aroundx1516,y678 peels up into a hollowcurled rindlip, ALL seedinterior/otherslices exact. No swaps or positions, no wholesale cucumber repaint, preserve originalpaintedtexture andframing."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "The lower cloth's upper fold rolls into a hollow curl.",
+      "box": {
+        "x": 293,
+        "y": 620,
+        "width": 153,
+        "height": 189
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Medium",
+      "label": "A crescent reflects on the drinking glass.",
+      "box": {
+        "x": 211,
+        "y": 50,
+        "width": 78,
+        "height": 122
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Hard",
+      "label": "Only the far purple door's left leaf swings open.",
+      "box": {
+        "x": 1123,
+        "y": 175,
+        "width": 55,
+        "height": 117
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "The nearest wall lamp glows as a crescent.",
+      "box": {
+        "x": 726,
+        "y": 507,
+        "width": 54,
+        "height": 101
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "The nearest cucumber slice's left rind curls into a hollow lip.",
+      "box": {
+        "x": 1497,
+        "y": 571,
+        "width": 105,
+        "height": 178
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Five isolated artifacts, no seed/door swaps. Original right doorleaf and slice seedinterior outside curled rind footprint preserved; other corridorfixtures/walls/floor and slices exact outside artifacts. Generated cloth curl landed on lowercloth upperfold rather than requested lowerright corner; actual label records this. Full/native5pairs/390 inspected. Door/lamp small but structurally locatable; difficulty/root joins pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

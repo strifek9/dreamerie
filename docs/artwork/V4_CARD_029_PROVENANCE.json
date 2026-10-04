@@ -1,0 +1,98 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-029",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-029-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-029-original-v4.png",
+    "sha256": "08992F227D99A23B8C34FB09A7AB78864E3FC73255075F7DBA8CF49DC85A3544",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-029-altered-source-v4.png",
+    "sha256": "5776E811F8C41F9E4CB7E56E96C00854B749A176E417E25752CF7625EFD53C52",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise five-local-edits version of attached painted fishfloating orange room, preserve EXACT1672x941 framing palette brushwork objectpositions. FIVE differences:1) largest central orangefish cream crescent mark becomes cream silhouetteof a small openDOOR with roundedtop, decorationonbody not realhole; same mark area.2) blue cushion on lavenderchair: middle tassel cord loops THROUGH adjacent righttassel goldbead and hangsback towardcenter, continuousbluecord plausible connection, preserveall3tassels andchairanatomy.3) teacup left table: visible delicate tea stream curls FROM cup interior UP into a tiny airborne fish silhouette just above cup, contained nearcup within100px, painted golden tea material, no splashesrandomclutter.4) goldenwindowlatch squareplate atcenter-right: samehardware now its lever hooks OVER verticalgreenframe rail instead of centeredroundbutton, cleanmechanism integration.5) smallest yellowfish group upperrightnearwindow: reverse horizontal orderdirection of ONLY lowestyellowfish, facingleft instead ofright, preservefishsize/position and allotherfish. No changed otherfish/furniture/leaves/lighting; no text markerswatermark. Two-minute fair five definite locatable relationship/mechanism/orderchanges rather than tiny specks.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise five-local-edits version of attached painted fishfloating orange room, preserve EXACT1672x941 framing palette brushwork objectpositions. FIVE differences:1) largest central orangefish cream crescent mark becomes cream silhouetteof a small openDOOR with roundedtop, decorationonbody not realhole; same mark area.2) blue cushion on lavenderchair: middle tassel cord loops THROUGH adjacent righttassel goldbead and hangsback towardcenter, continuousbluecord plausible connection, preserveall3tassels andchairanatomy.3) teacup left table: visible delicate tea stream curls FROM cup interior UP into a tiny airborne fish silhouette just above cup, contained nearcup within100px, painted golden tea material, no splashesrandomclutter.4) goldenwindowlatch squareplate atcenter-right: samehardware now its lever hooks OVER verticalgreenframe rail instead of centeredroundbutton, cleanmechanism integration.5) smallest yellowfish group upperrightnearwindow: reverse horizontal orderdirection of ONLY lowestyellowfish, facingleft instead ofright, preservefishsize/position and allotherfish. No changed otherfish/furniture/leaves/lighting; no text markerswatermark. Two-minute fair five definite locatable relationship/mechanism/orderchanges rather than tiny specks."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "An open door is painted on the large orange fish",
+      "box": {
+        "x": 778,
+        "y": 180,
+        "width": 108,
+        "height": 141
+      },
+      "edgeFade": 5
+    },
+    {
+      "difficulty": "Medium",
+      "label": "A curling tea stream rises from the cup",
+      "box": {
+        "x": 70,
+        "y": 496,
+        "width": 105,
+        "height": 74
+      },
+      "edgeFade": 5
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The middle tassel cord loops through the right gold bead",
+      "box": {
+        "x": 482,
+        "y": 597,
+        "width": 81,
+        "height": 55
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "A curved gold latch lever extends across the window frame joint",
+      "box": {
+        "x": 1439,
+        "y": 225,
+        "width": 80,
+        "height": 65
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "The lowest small yellow fish near the window faces left",
+      "box": {
+        "x": 1047,
+        "y": 219,
+        "width": 91,
+        "height": 40
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": "Fullframe inspected. Actual tea curls upward toward small fish; label avoids unsupported continuous metamorphosis. Tassel cord visibly links middle/right bead. Curved latch crosses framejoint. Imagegen also reversed next fish above lowest: unintendedsourcechange outside authoredbox must be excluded by root compositor. Only lowestfish selected. Difficulty estimated. Fairness audit: tea region reduced to stream+cup ONLY; neighboring fish remains original exactly. No two-object swap selected.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

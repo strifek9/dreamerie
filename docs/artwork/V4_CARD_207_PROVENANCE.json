@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-207",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-207-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-207-original-v4.png",
+    "sha256": "E9726113A258EB3E1A2C7F4BF81AC3B23D4AF90A542471ADDEC7E708A85A482C",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-207-altered-source-v4.png",
+    "sha256": "D4427189BE4B7902E911EC1F0F1AA012E3B26116F8A28DBC2DB80BD4F1FC63F5",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exactly this painting native1672x941 and preserve all except FIVE localized single-object changes: 1 resting gold button ONLY its smiling mouth near (435,365) becomes small black round O, both closed eyes exact. 2 bottom wall button ONLY mouth near (1239,803) turns into a smiling upward crescent, both eyes exact. 3 drinks straw at (112,422) has upper elbow bending RIGHT instead of left; vertical stem stays same from (140,451) down. 4 hand fan ONLY its cream/teal radial stripe pattern becomes horizontal cream/teal bands across the pleats, outer shape and hand unchanged. 5 round silver screw on opening LEFT rim near (817,339) has a CROSS recessed slot instead of its current diagonal slot; screw outer ring exact. No swaps, no second altered objects per clue. Keep robot anatomy, chair, umbrella, all wall buttons, corridor, lighting and painterly style exact.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exactly this painting native1672x941 and preserve all except FIVE localized single-object changes: 1 resting gold button ONLY its smiling mouth near (435,365) becomes small black round O, both closed eyes exact. 2 bottom wall button ONLY mouth near (1239,803) turns into a smiling upward crescent, both eyes exact. 3 drinks straw at (112,422) has upper elbow bending RIGHT instead of left; vertical stem stays same from (140,451) down. 4 hand fan ONLY its cream/teal radial stripe pattern becomes horizontal cream/teal bands across the pleats, outer shape and hand unchanged. 5 round silver screw on opening LEFT rim near (817,339) has a CROSS recessed slot instead of its current diagonal slot; screw outer ring exact. No swaps, no second altered objects per clue. Keep robot anatomy, chair, umbrella, all wall buttons, corridor, lighting and painterly style exact."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "surprised-rest",
+      "label": "The resting button\u2019s mouth forms an O.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 401,
+        "y": 351,
+        "width": 69,
+        "height": 37
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "smiling-wall",
+      "label": "The bottom wall button smiles.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1219,
+        "y": 771,
+        "width": 54,
+        "height": 54
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "right-straw",
+      "label": "The straw\u2019s elbow turns right.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 75,
+        "y": 395,
+        "width": 117,
+        "height": 58
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "banded-fan",
+      "label": "The fan\u2019s stripes run across its pleats.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 494,
+        "y": 198,
+        "width": 220,
+        "height": 134
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "cross-screw",
+      "label": "The rim screw has a cross-shaped slot.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 794,
+        "y": 307,
+        "width": 49,
+        "height": 67
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five paired crops, full composite and 390-pixel stacked pair inspected. Single-object changes; difficulty hypotheses only. Root browser/hit QA and human fairness remain pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

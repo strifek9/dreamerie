@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-253",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-253-replacement-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-253-original-v4.png",
+    "sha256": "ACB0DB235296213D109B526E58C7D894C94F464B7BB0684913228EB9E48AD030",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-253-altered-source-v4.png",
+    "sha256": "BD0008746DBC98602B5726B12AF1FE9E83A1C6537E62D67F741930BDC73B4D84",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Preserve exact1672x941 painting, anatomy/style/frame. FIVE single-object localized changes only. 1 dragon ONLY leftmost visible eye near847205 closes into gentle curved slit, other eye original. 2 large red wax seal near885624 internal embossed leafy twig becomes a single embossed crescent moon, same seal rim/material. 3 INSIDE envelope orange armchair ONLY pillow near1233346 turns diamond orientation rather than square, same ONE pillow no otherchairchange. 4 brass leaf letter opener lower-right ONLY terminal tip near1103902 bends UPWARD into short curved hook, remainder leaf unchanged. 5 brass round stamp on LEFT near184390 ONLY engraved twig tilts HORIZONTAL rather than upright, same engravedsinglemotif and disk. No multiple-object swaps, no distantchanges combined. All other image details exact.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Preserve exact1672x941 painting, anatomy/style/frame. FIVE single-object localized changes only. 1 dragon ONLY leftmost visible eye near847205 closes into gentle curved slit, other eye original. 2 large red wax seal near885624 internal embossed leafy twig becomes a single embossed crescent moon, same seal rim/material. 3 INSIDE envelope orange armchair ONLY pillow near1233346 turns diamond orientation rather than square, same ONE pillow no otherchairchange. 4 brass leaf letter opener lower-right ONLY terminal tip near1103902 bends UPWARD into short curved hook, remainder leaf unchanged. 5 brass round stamp on LEFT near184390 ONLY engraved twig tilts HORIZONTAL rather than upright, same engravedsinglemotif and disk. No multiple-object swaps, no distantchanges combined. All other image details exact."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "closed-eye",
+      "label": "The dragon closes one eye.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 815,
+        "y": 178,
+        "width": 61,
+        "height": 49
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "crescent-seal",
+      "label": "The wax seal bears a crescent.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 822,
+        "y": 565,
+        "width": 131,
+        "height": 123
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "diamond-pillow",
+      "label": "The armchair pillow turns to a diamond.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1195,
+        "y": 313,
+        "width": 65,
+        "height": 55
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "sideways-twig",
+      "label": "The stamp\u2019s engraved twig lies sideways.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 143,
+        "y": 325,
+        "width": 88,
+        "height": 126
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "hooked-opener",
+      "label": "The letter opener\u2019s lower tip curls upward.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1076,
+        "y": 833,
+        "width": 150,
+        "height": 99
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five paired crops, full composite and 390-pixel stacked pair inspected. Single-object changes; difficulty hypotheses only. Root browser/hit QA and human fairness remain pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

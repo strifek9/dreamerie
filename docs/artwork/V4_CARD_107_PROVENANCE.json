@@ -1,0 +1,98 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-107",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-revisit-v1/107-dynamic-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-107-original-v4.png",
+    "sha256": "3CF2A98C03C321AE64458BDB76C7466DE436198E65F766BFC949084E9AE518B7",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-107-altered-source-v4.png",
+    "sha256": "9B7993B086AEA245DBF9579DB38A9B9D344A279ABFFD436EF140D9007C554989",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise edit attached lavendercurtains showingocean mintchair skyroom painting. EXACT1672x941framing allpositions stylepalette unchanged. FIVE separatedsingleobject edits:1) RED curtain tie ribbon atleft: one longtail loops THROUGH ITS OWN redloop formingcleanselfknot nearmiddle oftail, samecloth/attachment noextrabows.2) mintchair's WHITEseatstripe: folds through itsOWN loosewhiteclothloop into a small visible knot atopseat, preservechairwood/seatcushionoutline.3) BLUEfloorTILE lower-right: opensupwards as ONE hingedblueflap showing darkerblue recess below, samefootprint/location andtilematerial, no newobjectinside.4) oceanbetween twoCENTRAL curtainpanels aroundx690,y530: ONE foamybluewave crest curlsinto clear spiralbreakingwave, nootherwaves/curtainchanges.5) whitecurtainframe LEFTfoot bottomleft: its existingarchedcutout becomes a roundedkeyhole-shaped cutout withnarrowbottomstem, preservefootoutline andpost. Eachclueoneobject/internalpattern, no swaps/additionalprops/textmarkers/noise.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise edit attached lavendercurtains showingocean mintchair skyroom painting. EXACT1672x941framing allpositions stylepalette unchanged. FIVE separatedsingleobject edits:1) RED curtain tie ribbon atleft: one longtail loops THROUGH ITS OWN redloop formingcleanselfknot nearmiddle oftail, samecloth/attachment noextrabows.2) mintchair's WHITEseatstripe: folds through itsOWN loosewhiteclothloop into a small visible knot atopseat, preservechairwood/seatcushionoutline.3) BLUEfloorTILE lower-right: opensupwards as ONE hingedblueflap showing darkerblue recess below, samefootprint/location andtilematerial, no newobjectinside.4) oceanbetween twoCENTRAL curtainpanels aroundx690,y530: ONE foamybluewave crest curlsinto clear spiralbreakingwave, nootherwaves/curtainchanges.5) whitecurtainframe LEFTfoot bottomleft: its existingarchedcutout becomes a roundedkeyhole-shaped cutout withnarrowbottomstem, preservefootoutline andpost. Eachclueoneobject/internalpattern, no swaps/additionalprops/textmarkers/noise."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "The blue floor tile opens on a hinge.",
+      "box": {
+        "x": 1400,
+        "y": 755,
+        "width": 210,
+        "height": 146
+      },
+      "edgeFade": 5
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The red curtain ribbon threads through its own knot.",
+      "box": {
+        "x": 175,
+        "y": 438,
+        "width": 135,
+        "height": 221
+      },
+      "edgeFade": 5
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The chair seat's white band threads through its own knot.",
+      "box": {
+        "x": 1265,
+        "y": 610,
+        "width": 155,
+        "height": 76
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "A wave between the central curtains curls into a spiral.",
+      "box": {
+        "x": 672,
+        "y": 442,
+        "width": 96,
+        "height": 119
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "The left frame foot has a keyhole-shaped cutout.",
+      "box": {
+        "x": 270,
+        "y": 706,
+        "width": 43,
+        "height": 72
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Fullsource observed, fiveseparateoneobjectfeatures. Tilehingemechanism; ribbonsameclothselfknot; chairbandsamefabricselfknot; singlewaveinternaloceanpattern; footoneinternalcutout. No swaps. Rootcentralcurtainwave boundary needsnativefeatherocclusionQA. Difficultyhypothesesonly.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

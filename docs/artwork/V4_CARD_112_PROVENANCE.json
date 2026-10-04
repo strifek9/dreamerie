@@ -1,0 +1,124 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-112",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-112-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-112-original-v4.png",
+    "sha256": "1F32DD22391C091AC8A68279FFAB797A6277572F943510381A3E5FC13F8C2B23",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-112-altered-source-v4.png",
+    "sha256": "BF81762911B22DECDD4227D6CBAB91E7C138B80F77BE9335476C3CB57049C50D",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit this exact full-frame native 1672x941 dreamy painting with only five localized single-object differences. Keep all framing, colors and surrounding objects original. 1) The red ribbon bow on fox tail: tie it into one visible closed figure-eight knot rather than current four loops and dangling ends, preserving same location and tail. 2) The fox's nearer left visible eye at x662 y332 opens into one cheerful black oval with highlight; other eye and mouth unchanged. 3) The green picnic mug at lower right: its handle projects on its RIGHT side instead of LEFT, same mug body and white star, no extra handle. 4) The left swing-rope attachment knot near x478 y150: replace existing wrapped knot with a clearly closed rope loop knot, keeping rope continuous and lemon unchanged. 5) The large yellow flower at lower left near x205 y797: keep its five petals and silhouette, add distinct curved concentric dark golden veins within petals instead of simple straight veins. No changes to other objects or texture noise.\", \"reference\": \"dream-112-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit this exact full-frame native 1672x941 dreamy painting with only five localized single-object differences. Keep all framing, colors and surrounding objects original. 1) The red ribbon bow on fox tail: tie it into one visible closed figure-eight knot rather than current four loops and dangling ends, preserving same location and tail. 2) The fox's nearer left visible eye at x662 y332 opens into one cheerful black oval with highlight; other eye and mouth unchanged. 3) The green picnic mug at lower right: its handle projects on its RIGHT side instead of LEFT, same mug body and white star, no extra handle. 4) The left swing-rope attachment knot near x478 y150: replace existing wrapped knot with a clearly closed rope loop knot, keeping rope continuous and lemon unchanged. 5) The large yellow flower at lower left near x205 y797: keep its five petals and silhouette, add distinct curved concentric dark golden veins within petals instead of simple straight veins. No changes to other objects or texture noise.",
+        "reference": "dream-112-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-112-mug-selected-source-v4.png",
+      "sha256": "4E38D1E96A1E3AFDB351A7486C024D7FB72A4B0DA1C37F06FF053C5653CD937C",
+      "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit this exact full-frame native 1672x941 dreamy painting with only five localized single-object differences. Keep all framing, colors and surrounding objects original. 1) The red ribbon bow on fox tail: tie it into one visible closed figure-eight knot rather than current four loops and dangling ends, preserving same location and tail. 2) The fox's nearer left visible eye at x662 y332 opens into one cheerful black oval with highlight; other eye and mouth unchanged. 3) The green picnic mug at lower right: its handle projects on its RIGHT side instead of LEFT, same mug body and white star, no extra handle. 4) The left swing-rope attachment knot near x478 y150: replace existing wrapped knot with a clearly closed rope loop knot, keeping rope continuous and lemon unchanged. 5) The large yellow flower at lower left near x205 y797: keep its five petals and silhouette, add distinct curved concentric dark golden veins within petals instead of simple straight veins. No changes to other objects or texture noise.\", \"reference\": \"dream-112-original-v1.png\"}}]"
+    }
+  ],
+  "authoredRegions": [
+    {
+      "id": "tail-bow",
+      "label": "The tail ribbon has two loops",
+      "difficulty": "Easy",
+      "box": {
+        "x": 430,
+        "y": 447,
+        "width": 126,
+        "height": 174
+      },
+      "edgeFade": 5
+    },
+    {
+      "id": "mug-handle",
+      "label": "The mug handle is on the right",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1354,
+        "y": 672,
+        "width": 165,
+        "height": 100
+      },
+      "edgeFade": 5,
+      "source": "mug-selected.png"
+    },
+    {
+      "id": "rope-loop",
+      "label": "The left rope knot has a closed loop",
+      "difficulty": "Hard",
+      "box": {
+        "x": 429,
+        "y": 88,
+        "width": 72,
+        "height": 108
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "fox-eye",
+      "label": "The fox's right eye is open",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 699,
+        "y": 290,
+        "width": 39,
+        "height": 44
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "flower-veins",
+      "label": "The yellow flower has curved veins",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 116,
+        "y": 706,
+        "width": 175,
+        "height": 178
+      },
+      "edgeFade": 5
+    }
+  ],
+  "notes": {
+    "humanTimed": false,
+    "physicalPhone": false,
+    "notes": "Generated eye opened on right rather than planned nearer eye: accurate observed label. Mug-selected preserves original white star via original rectangle (1416,692)-(1477,755), retaining only handle mechanism edit. Five separate objects; rope knot and mug handle mechanisms. Final star restoration uses 9px feather over (1407,685,79,79), replacing initial hard rectangle.",
+    "outsideRegionsExact": true,
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sourceHashes": {
+      "source.png": "bf81762911b22decdd4227d6cbab91e7c138b80f77be9335476c3cb57049c50d",
+      "mug-selected.png": "4e38d1e96a1e3afdb351a7486c024d7fb72a4b0da1c37f06ff053c5653cd937c"
+    }
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-023",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-revisit-v1/023-dynamic-original-v2.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-023-original-v4.png",
+    "sha256": "D877FBE9CA96762D31B96E8BB33C4CAD297698F3FC8BD164579436FE0D3D6D8E",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-023-altered-source-v4.png",
+    "sha256": "74C380DF7354B39C1CA1BA4D737A2554AFFA4EFB6935AE797B17DD68D6086D74",
+    "prompt": "[{\"file\": \"knot-full-prompt.json\", \"content\": {\"prompt\": \"Edit ONLY the rope coil on far lower right rock (native rectangle x1510 y630 width162 height90 in1672x941 image): replace single oval coiled rope with a clear compact figure-eight knot showing two adjacent oval loops and a central crossing. Rope still attaches from left and rests on same rock. Preserve everything else exactly, painterly texture, lighting, framing. No text. Output full same1672x941 image. Edit target is the full landscape original image most recently displayed, NOT a collage. Full landscape output.\", \"method\": \"builtin-imagegen\", \"reference\": \"original native landscape\", \"selected\": true}}, {\"file\": \"knot-prompt.json\", \"content\": {\"prompt\": \"Edit ONLY the rope coil on far lower right rock (native rectangle x1510 y630 width162 height90 in1672x941 image): replace single oval coiled rope with a clear compact figure-eight knot showing two adjacent oval loops and a central crossing. Rope still attaches from left and rests on same rock. Preserve everything else exactly, painterly texture, lighting, framing. No text. Output full same1672x941 image.\"}}, {\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit this exact landscape oil-painting game card, The Pocket of Rain. Preserve framing and every object's position, coat, sky, sea, rocks, palette, brushwork. Five localized intentional changes ONLY: 1) orange striped sock dangling left cuff curls its toe rightward rather than left, keep cuff attachment. 2) small lighthouse left cuff red roof becomes a clearly flat blue-green domed roof, keep tower. 3) boat on central waterfall: replace its three horizontal interior bench planks with one clean lengthwise center bench running bow to stern, maintain hull and location. 4) crab on right rock grasps the diagonal rope with its RIGHT raised claw instead of left: rope must continue seamlessly through raised right claw, left claw lowered, same crab body/eyes/legs. 5) lowest purple coat button has a vertical slit instead of its tiny circular center indentation, no color or size change. No other changes, no text/markers. Output same 1672x941 native framing.\", \"method\": \"builtin-imagegen\", \"reference\": \"D:/Dreamerie/public/artwork/v3/collection-revisit-v1/023-dynamic-original-v2.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "knot-full-prompt.json",
+      "content": {
+        "prompt": "Edit ONLY the rope coil on far lower right rock (native rectangle x1510 y630 width162 height90 in1672x941 image): replace single oval coiled rope with a clear compact figure-eight knot showing two adjacent oval loops and a central crossing. Rope still attaches from left and rests on same rock. Preserve everything else exactly, painterly texture, lighting, framing. No text. Output full same1672x941 image. Edit target is the full landscape original image most recently displayed, NOT a collage. Full landscape output.",
+        "method": "builtin-imagegen",
+        "reference": "original native landscape",
+        "selected": true
+      }
+    },
+    {
+      "file": "knot-prompt.json",
+      "content": {
+        "prompt": "Edit ONLY the rope coil on far lower right rock (native rectangle x1510 y630 width162 height90 in1672x941 image): replace single oval coiled rope with a clear compact figure-eight knot showing two adjacent oval loops and a central crossing. Rope still attaches from left and rests on same rock. Preserve everything else exactly, painterly texture, lighting, framing. No text. Output full same1672x941 image."
+      }
+    },
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit this exact landscape oil-painting game card, The Pocket of Rain. Preserve framing and every object's position, coat, sky, sea, rocks, palette, brushwork. Five localized intentional changes ONLY: 1) orange striped sock dangling left cuff curls its toe rightward rather than left, keep cuff attachment. 2) small lighthouse left cuff red roof becomes a clearly flat blue-green domed roof, keep tower. 3) boat on central waterfall: replace its three horizontal interior bench planks with one clean lengthwise center bench running bow to stern, maintain hull and location. 4) crab on right rock grasps the diagonal rope with its RIGHT raised claw instead of left: rope must continue seamlessly through raised right claw, left claw lowered, same crab body/eyes/legs. 5) lowest purple coat button has a vertical slit instead of its tiny circular center indentation, no color or size change. No other changes, no text/markers. Output same 1672x941 native framing.",
+        "method": "builtin-imagegen",
+        "reference": "D:/Dreamerie/public/artwork/v3/collection-revisit-v1/023-dynamic-original-v2.png"
+      }
+    }
+  ],
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-023-knot-full-source-v4.png",
+      "sha256": "25C0FE290DC990D9C1D6FB0E11B3C8E056E087F105584227D8B369E369EDAC99",
+      "prompt": "[{\"file\": \"knot-full-prompt.json\", \"content\": {\"prompt\": \"Edit ONLY the rope coil on far lower right rock (native rectangle x1510 y630 width162 height90 in1672x941 image): replace single oval coiled rope with a clear compact figure-eight knot showing two adjacent oval loops and a central crossing. Rope still attaches from left and rests on same rock. Preserve everything else exactly, painterly texture, lighting, framing. No text. Output full same1672x941 image. Edit target is the full landscape original image most recently displayed, NOT a collage. Full landscape output.\", \"method\": \"builtin-imagegen\", \"reference\": \"original native landscape\", \"selected\": true}}, {\"file\": \"knot-prompt.json\", \"content\": {\"prompt\": \"Edit ONLY the rope coil on far lower right rock (native rectangle x1510 y630 width162 height90 in1672x941 image): replace single oval coiled rope with a clear compact figure-eight knot showing two adjacent oval loops and a central crossing. Rope still attaches from left and rests on same rock. Preserve everything else exactly, painterly texture, lighting, framing. No text. Output full same1672x941 image.\"}}, {\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit this exact landscape oil-painting game card, The Pocket of Rain. Preserve framing and every object's position, coat, sky, sea, rocks, palette, brushwork. Five localized intentional changes ONLY: 1) orange striped sock dangling left cuff curls its toe rightward rather than left, keep cuff attachment. 2) small lighthouse left cuff red roof becomes a clearly flat blue-green domed roof, keep tower. 3) boat on central waterfall: replace its three horizontal interior bench planks with one clean lengthwise center bench running bow to stern, maintain hull and location. 4) crab on right rock grasps the diagonal rope with its RIGHT raised claw instead of left: rope must continue seamlessly through raised right claw, left claw lowered, same crab body/eyes/legs. 5) lowest purple coat button has a vertical slit instead of its tiny circular center indentation, no color or size change. No other changes, no text/markers. Output same 1672x941 native framing.\", \"method\": \"builtin-imagegen\", \"reference\": \"D:/Dreamerie/public/artwork/v3/collection-revisit-v1/023-dynamic-original-v2.png\"}}]"
+    }
+  ],
+  "authoredRegions": [
+    {
+      "id": "sock-turn",
+      "label": "The striped sock points its toe to the right.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 505,
+        "y": 188,
+        "width": 143,
+        "height": 175
+      },
+      "edgeFade": 7,
+      "source": "source.png"
+    },
+    {
+      "id": "lighthouse-dome",
+      "label": "The lighthouse has a teal dome instead of a red pointed roof.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 597,
+        "y": 58,
+        "width": 73,
+        "height": 80
+      },
+      "edgeFade": 5,
+      "source": "source.png"
+    },
+    {
+      "id": "boat-bench",
+      "label": "A lengthwise bench replaces the boat\u2019s crosswise benches.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 839,
+        "y": 498,
+        "width": 201,
+        "height": 173
+      },
+      "edgeFade": 7,
+      "source": "source.png"
+    },
+    {
+      "id": "rope-eight",
+      "label": "The rope coil forms two loops with a crossing in the middle.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1490,
+        "y": 620,
+        "width": 182,
+        "height": 105
+      },
+      "edgeFade": 7,
+      "source": "knot-full.png"
+    },
+    {
+      "id": "button-slit",
+      "label": "The lowest purple button has a vertical slit.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 853,
+        "y": 384,
+        "width": 51,
+        "height": 58
+      },
+      "edgeFade": 5,
+      "source": "source.png"
+    }
+  ],
+  "notes": "Initial crab claw swap not implemented and excluded. Intermediate knot collage rejected; final native landscape knot source selected.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

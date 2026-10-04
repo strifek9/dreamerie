@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-312",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-312-original-v2.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-312-original-v4.png",
+    "sha256": "0E7C2B9A76EC061FC3830DD53F4432813573422912181CFCB9723E5B0CBE09CB",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-312-altered-source-v4.png",
+    "sha256": "8A23F0911367F83342F73B65678BD55C93FFBAFE39ADE55DD9C70AB99606D523",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact native full 1672x941 painterly tired bent door resting on red cushion wearing heart wooden mitten. FIVE isolated single-object differences only: 1) wooden mitten's heart motif x860y520 becomes a dark crescent, mitten shape exact; 2) brass door-knocker pivot cap x895y362 reflects blue crescent on polished round surface, ring shape exact; 3) right mug handle x1607y346 curls inward into spiral instead of simple C loop, mug body/bands exact; 4) upper brass hinge center pin x1091y225 has a clear diagonal X groove, other hinge parts exact; 5) single front LEFT slipper's outer red vamp x231y706 has a small gold zigzag sewn seam, other slipper/whitefur/all other stitches exact. Door outline/style/frame, all tassels exact. No other edits.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-312-original-v2.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact native full 1672x941 painterly tired bent door resting on red cushion wearing heart wooden mitten. FIVE isolated single-object differences only: 1) wooden mitten's heart motif x860y520 becomes a dark crescent, mitten shape exact; 2) brass door-knocker pivot cap x895y362 reflects blue crescent on polished round surface, ring shape exact; 3) right mug handle x1607y346 curls inward into spiral instead of simple C loop, mug body/bands exact; 4) upper brass hinge center pin x1091y225 has a clear diagonal X groove, other hinge parts exact; 5) single front LEFT slipper's outer red vamp x231y706 has a small gold zigzag sewn seam, other slipper/whitefur/all other stitches exact. Door outline/style/frame, all tassels exact. No other edits.",
+        "reference": "D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-312-original-v2.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The wooden mitten motif becomes a crescent",
+      "difficulty": "Easy",
+      "box": {
+        "x": 833,
+        "y": 493,
+        "width": 57,
+        "height": 58
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The mug handle curls inward",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1583,
+        "y": 307,
+        "width": 60,
+        "height": 83
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The knocker pivot reflects a blue crescent",
+      "difficulty": "Hard",
+      "box": {
+        "x": 882,
+        "y": 340,
+        "width": 40,
+        "height": 46
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The front slipper has a gold zigzag seam",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 202,
+        "y": 676,
+        "width": 83,
+        "height": 67
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The upper hinge pin has an X groove",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1076,
+        "y": 204,
+        "width": 30,
+        "height": 40
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390 stacked pair. Five independently selectable localized object clues. Native dimensions, five bounded nonoverlapping boxes and exact original pixels outside verified. Difficulty estimates unvalidated; root compositor/game, human difficulty and physical phone approval pending. Full prompt/source hash chain retained.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

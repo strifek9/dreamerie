@@ -1,0 +1,115 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-070",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-070-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-070-original-v4.png",
+    "sha256": "4C590F4E1B4E33EC5D96F18CD19D7967128CB2A4ECC847FF388BB7D3BB2227CE",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-070-altered-source-v4.png",
+    "sha256": "0CBA4BF0E791D0501451ECD8207EB2613CC6F5D0C5529605BE20C289252A9A46",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise Dreameriepainting edit native1672x941. Preserve owlface/anatomy, map, lighting, room andframe/brushwork. Exactly5 localized ONEOBJECT differences:1 red waxseal atx396y805 carries gold crescent instead of gold star;2 compassblue needle atx1477y705 rotates clockwise90degrees to point upperRIGHT rather than upperleft, preserve dial/ticks/goldcase;3 lamp flame atx1404y231 curlsLEFT instead ofright/straight, chimney unchanged;4 rolledmap rightedge x1307y537 scroll curls outwards in reverse spiral direction, samepaperroll position;5 map river waterfallx1158y729 flows behind the dark rock x1090y789 instead ofinfront, retainrockshape andlocation, onlywaterocclusionchanges andretain coherentconnectedstream. No extrachanges, no swaps, singleobjects only.\"}}, {\"file\": \"prompt-b.json\", \"content\": {\"prompt\": \"Edit this paperroll opening crop ONLY inner paper curl. Keepexact outerroundroll perimeter/location/papercolors/browninterior/lighting/background. Replace inner roundedcoil with one angular SQUARE spiral of thinparchment, visibly90degree bends rather thanroundcoil. No newobject, retainpaperattachment, sameframing andpaintfinish.\"}}, {\"file\": \"prompt-c.json\", \"content\": {\"prompt\": \"Edit attached painted waterfallcrop ONLY flowpose. Change central cascading water into one clearly curled UPWARD hookedwave at center-right, crest lifting backtoward mapedge rather than allwater fallingstraightdown. Keep same watercolorsandconnectedflow; originalpaperlip top, rocksright/bottom andwoodtable EXACTLYsame positions/shapes, no additions. Singlewaterflowpose change, clean coherent foamcurve, sameframe.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise Dreameriepainting edit native1672x941. Preserve owlface/anatomy, map, lighting, room andframe/brushwork. Exactly5 localized ONEOBJECT differences:1 red waxseal atx396y805 carries gold crescent instead of gold star;2 compassblue needle atx1477y705 rotates clockwise90degrees to point upperRIGHT rather than upperleft, preserve dial/ticks/goldcase;3 lamp flame atx1404y231 curlsLEFT instead ofright/straight, chimney unchanged;4 rolledmap rightedge x1307y537 scroll curls outwards in reverse spiral direction, samepaperroll position;5 map river waterfallx1158y729 flows behind the dark rock x1090y789 instead ofinfront, retainrockshape andlocation, onlywaterocclusionchanges andretain coherentconnectedstream. No extrachanges, no swaps, singleobjects only."
+      }
+    },
+    {
+      "file": "prompt-b.json",
+      "content": {
+        "prompt": "Edit this paperroll opening crop ONLY inner paper curl. Keepexact outerroundroll perimeter/location/papercolors/browninterior/lighting/background. Replace inner roundedcoil with one angular SQUARE spiral of thinparchment, visibly90degree bends rather thanroundcoil. No newobject, retainpaperattachment, sameframing andpaintfinish."
+      }
+    },
+    {
+      "file": "prompt-c.json",
+      "content": {
+        "prompt": "Edit attached painted waterfallcrop ONLY flowpose. Change central cascading water into one clearly curled UPWARD hookedwave at center-right, crest lifting backtoward mapedge rather than allwater fallingstraightdown. Keep same watercolorsandconnectedflow; originalpaperlip top, rocksright/bottom andwoodtable EXACTLYsame positions/shapes, no additions. Singlewaterflowpose change, clean coherent foamcurve, sameframe."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The wax seal bears a crescent",
+      "difficulty": "Easy",
+      "box": {
+        "x": 344,
+        "y": 759,
+        "width": 116,
+        "height": 92
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-2",
+      "label": "The compass's blue needle points to the upper right",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1408,
+        "y": 650,
+        "width": 134,
+        "height": 110
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-3",
+      "label": "The lamp flame curls to the left",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1352,
+        "y": 172,
+        "width": 76,
+        "height": 109
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-4",
+      "label": "The map waterfall curls upward into a crest",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1108,
+        "y": 650,
+        "width": 111,
+        "height": 133
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-5",
+      "label": "The paper roll contains an angular square spiral",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1283,
+        "y": 509,
+        "width": 52,
+        "height": 52
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": "Full source/nativecomposite/fivepairedcrops/390stack inspected. Scroll and waterfallinitialrequests unclear: rejected/refined with builtin crops. Finalwaterbox excludesrocks; changedonly watercrest. Internalcompassneedlepose and singleflamepose/scrollcurl mechanism; noobjectswap. Pixeloutsideunion unchanged. No brokenjoinsdetected; rootruntimeQA/human difficulty pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

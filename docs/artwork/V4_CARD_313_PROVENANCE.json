@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-313",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-313-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-313-original-v4.png",
+    "sha256": "F2532E7A240D935987B284E726715D3D76C16E4A74E9241C795558243954FF46",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-313-altered-source-v4.png",
+    "sha256": "9FE092637AE14029C4F93A1CBDCC1256C8D13548AD2FEEC9142A2D160C085A22",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact full native 1672x941 painterly violinist playing cardboard violin in paper rain. FIVE isolated single-object edits only: 1) foreground metal tub front face x1100y856 reflects strong blue crescent, rim/handles/raindrops exact; 2) ONE overalls strap button on left at x424y487 has a clear X groove, other button/clothing/hands exact; 3) left trunk brass clasp at x50y753 hook now slopes diagonally left rather than vertical, plate/trunk exact; 4) small cardboard tape roll on left table x81y495 central hollow opening has one diagonal cardboard crossbar, outer roll/other papers exact; 5) single paper boat on right table x1546y574 front panel has a painted gold star, all paper folds/outline exact. Preserve ALL musician anatomy/instrument/strings, individual rain/drop shapes and scene frame.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-313-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact full native 1672x941 painterly violinist playing cardboard violin in paper rain. FIVE isolated single-object edits only: 1) foreground metal tub front face x1100y856 reflects strong blue crescent, rim/handles/raindrops exact; 2) ONE overalls strap button on left at x424y487 has a clear X groove, other button/clothing/hands exact; 3) left trunk brass clasp at x50y753 hook now slopes diagonally left rather than vertical, plate/trunk exact; 4) small cardboard tape roll on left table x81y495 central hollow opening has one diagonal cardboard crossbar, outer roll/other papers exact; 5) single paper boat on right table x1546y574 front panel has a painted gold star, all paper folds/outline exact. Preserve ALL musician anatomy/instrument/strings, individual rain/drop shapes and scene frame.",
+        "reference": "D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-313-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The metal tub reflects a blue crescent",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1005,
+        "y": 812,
+        "width": 180,
+        "height": 82
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The paper boat has a gold star",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1537,
+        "y": 550,
+        "width": 45,
+        "height": 51
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The trunk clasp tilts to the right",
+      "difficulty": "Hard",
+      "box": {
+        "x": 32,
+        "y": 734,
+        "width": 46,
+        "height": 62
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The tape roll opening has a crossbar",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 45,
+        "y": 465,
+        "width": 65,
+        "height": 25
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The left strap button has an X groove",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 405,
+        "y": 471,
+        "width": 34,
+        "height": 35
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390 stacked pair. Five independently selectable localized object clues. Native dimensions, five bounded nonoverlapping boxes and exact original pixels outside verified. Difficulty estimates unvalidated; root compositor/game, human difficulty and physical phone approval pending. Full prompt/source hash chain retained.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

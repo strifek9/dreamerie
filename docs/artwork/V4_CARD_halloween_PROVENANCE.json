@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-halloween",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/holidays-painted-v1/halloween-original.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-halloween-original-v4.png",
+    "sha256": "890919ED7A6593EDFECF822CAF423915418BA72C6901104B2FC9B47928E636FD",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-halloween-altered-source-v4.png",
+    "sha256": "96B57B19B2161FA2D1A51B1DA5823593CCF9B2C6DF1534E8617D7F81BD990C20",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact original1672x941 Halloween painting preserving theme/anatomy/frame/style with five local independent one-object changes ONLY.1 ghost mouth native420367 closes into small round O mouth, eyes/originalbody unchanged.2 existing large gold STAR on witchhat native768433 changes into gold crescent, otherstars original.3 frontdoor gold ring knocker native212357 becomes square-rounded ring, attachments same.4 robot costume round side brass panel native1014563 gains X-slot engraving centered, existing shape original.5 isolated black cat on road native1330367 ONLY its tail tip at1281324 curls downward instead of upright, body/othercats exact. No pumpkinswaps/childlimbs/door changes outsideobjects; everythingelseoriginal.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact original1672x941 Halloween painting preserving theme/anatomy/frame/style with five local independent one-object changes ONLY.1 ghost mouth native420367 closes into small round O mouth, eyes/originalbody unchanged.2 existing large gold STAR on witchhat native768433 changes into gold crescent, otherstars original.3 frontdoor gold ring knocker native212357 becomes square-rounded ring, attachments same.4 robot costume round side brass panel native1014563 gains X-slot engraving centered, existing shape original.5 isolated black cat on road native1330367 ONLY its tail tip at1281324 curls downward instead of upright, body/othercats exact. No pumpkinswaps/childlimbs/door changes outsideobjects; everythingelseoriginal."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "round-mouth",
+      "label": "The ghost\u2019s mouth forms a small O.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 399,
+        "y": 349,
+        "width": 42,
+        "height": 38
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "curled-tail",
+      "label": "The road cat\u2019s tail tip curls downward.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1262,
+        "y": 303,
+        "width": 48,
+        "height": 66
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "crescent-hat",
+      "label": "The witch\u2019s hat bears a crescent.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 742,
+        "y": 400,
+        "width": 59,
+        "height": 69
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "square-knocker",
+      "label": "The door knocker becomes square.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 167,
+        "y": 307,
+        "width": 95,
+        "height": 97
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "cross-panel",
+      "label": "The robot\u2019s brass side panel has an X slot.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 995,
+        "y": 546,
+        "width": 38,
+        "height": 41
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five paired crops, full composite and 390-pixel stacked pair inspected. Single-object changes; difficulty hypotheses only. Root browser/hit QA and human fairness remain pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

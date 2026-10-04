@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-228",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-228-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-228-original-v4.png",
+    "sha256": "6EE589B7371813B9563DF11BF09F5D009E2C0E1C3BA0CADB9898AD60B2801C60",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-228-altered-source-v4.png",
+    "sha256": "766AB010E2D93E05AAC174B8305450E420679E67BAD5463BCF8EA35B190CE5B2",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precisely edit this original full painted clockwork orange orchard inside lunchbox, preserving beetle anatomy/pose, framing, all fruit/spoon-tree identities, color/style and premise. Exactly FIVE localized single-object parts: 1 largest LEFT hanging orange's brass gear has CURVED swept spokes instead of straight radial spokes, same ring/fruit. 2 RIGHT pear's external gold winding key turns DIAGONALLY DOWN from its same attachment instead of horizontal to right, same pear/body/other keys. 3 FRONT central lunchbox latch flips its clasp UP into an OPEN position, same hinge/plates/handle. 4 beetle's windup key UPPER circular opening becomes a triangular aperture, lower hole and outer key silhouette untouched. 5 TOP silver spoon leaf above central-left orange has a clear diagonal window-pane reflection instead of its current rounded bright reflection, same spoon contour and branch. Five independent one-object changes, no fruit color/size swaps, no specks/grain, no extra props. Return one full counterpart.\"}}, {\"file\": \"key-prompt.json\", \"content\": {\"prompt\": \"Edit this exact original crop. Change ONLY this single pear winding key: its connected figure-eight brass head becomes a single broad rounded diamond-shaped bow with one centered diamond aperture. Preserve shaft, pear contour, leaves, background and painting exactly. Clearly one object transformed, no second key, same scale and position.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precisely edit this original full painted clockwork orange orchard inside lunchbox, preserving beetle anatomy/pose, framing, all fruit/spoon-tree identities, color/style and premise. Exactly FIVE localized single-object parts: 1 largest LEFT hanging orange's brass gear has CURVED swept spokes instead of straight radial spokes, same ring/fruit. 2 RIGHT pear's external gold winding key turns DIAGONALLY DOWN from its same attachment instead of horizontal to right, same pear/body/other keys. 3 FRONT central lunchbox latch flips its clasp UP into an OPEN position, same hinge/plates/handle. 4 beetle's windup key UPPER circular opening becomes a triangular aperture, lower hole and outer key silhouette untouched. 5 TOP silver spoon leaf above central-left orange has a clear diagonal window-pane reflection instead of its current rounded bright reflection, same spoon contour and branch. Five independent one-object changes, no fruit color/size swaps, no specks/grain, no extra props. Return one full counterpart."
+      }
+    },
+    {
+      "file": "key-prompt.json",
+      "content": {
+        "prompt": "Edit this exact original crop. Change ONLY this single pear winding key: its connected figure-eight brass head becomes a single broad rounded diamond-shaped bow with one centered diamond aperture. Preserve shaft, pear contour, leaves, background and painting exactly. Clearly one object transformed, no second key, same scale and position."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "gear",
+      "label": "The left orange gear has swept curved spokes.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 435,
+        "y": 250,
+        "width": 100,
+        "height": 100
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "key",
+      "label": "The pear winding key has a diamond bow.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1368,
+        "y": 274,
+        "width": 74,
+        "height": 76
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "latch",
+      "label": "The lunchbox clasp flips open.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 620,
+        "y": 640,
+        "width": 87,
+        "height": 173
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "beetle-key",
+      "label": "The beetle key upper opening becomes triangular.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 986,
+        "y": 326,
+        "width": 47,
+        "height": 54
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "reflection",
+      "label": "The upper spoon reflects window panes.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 610,
+        "y": 50,
+        "width": 126,
+        "height": 76
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered compositor/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

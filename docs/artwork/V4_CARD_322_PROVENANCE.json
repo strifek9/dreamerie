@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-322",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-322-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-322-original-v4.png",
+    "sha256": "7F9A02223E717C8D8F27E184EFFD3CC496E374779BA3ECB4916EA8321EA0B189",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-322-altered-source-v4.png",
+    "sha256": "8867F7104D05BE40592BA05B6057D87E7681D12D658C995B8D51A1F48A0A3BA9",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit this exact original1672x941 painting preserving brushwork/composition/anatomy. Exactly FIVE one-object localized differences:1 stone mason's left visible eye native714238 closes gently; other eye exact.2 hanging bucket at1510135 gains small pale crescent engraving on FRONT metal surface, towel/rim unchanged.3 existing bench metal pivot round head at186506 changes into hexagonal head, no bench edit.4 isolated right stone mallet head near1350646 gains carved STAR on its FRONT face, handle/head shape original.5 existing opening of tall upright stone slab at1281195 changes from oval hole to triangular cutout in same center; outer slab original. All other original objects exact; no rearranging stones or brick swaps.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit this exact original1672x941 painting preserving brushwork/composition/anatomy. Exactly FIVE one-object localized differences:1 stone mason's left visible eye native714238 closes gently; other eye exact.2 hanging bucket at1510135 gains small pale crescent engraving on FRONT metal surface, towel/rim unchanged.3 existing bench metal pivot round head at186506 changes into hexagonal head, no bench edit.4 isolated right stone mallet head near1350646 gains carved STAR on its FRONT face, handle/head shape original.5 existing opening of tall upright stone slab at1281195 changes from oval hole to triangular cutout in same center; outer slab original. All other original objects exact; no rearranging stones or brick swaps."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "closed-eye",
+      "label": "The mason closes one eye.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 764,
+        "y": 172,
+        "width": 35,
+        "height": 42
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "triangle-cavity",
+      "label": "The slab\u2019s cavity forms a triangle.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1221,
+        "y": 121,
+        "width": 110,
+        "height": 155
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "crescent-bucket",
+      "label": "The hanging bucket bears a crescent.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1469,
+        "y": 118,
+        "width": 54,
+        "height": 60
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "star-mallet",
+      "label": "The mallet head bears a carved star.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1316,
+        "y": 624,
+        "width": 103,
+        "height": 69
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "hex-pivot",
+      "label": "The bench pivot becomes hexagonal.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 169,
+        "y": 490,
+        "width": 37,
+        "height": 31
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five paired crops, full composite and 390-pixel stacked pair inspected. Single-object changes; difficulty hypotheses only. Root browser/hit QA and human fairness remain pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

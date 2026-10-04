@@ -1,0 +1,144 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-352",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-352-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-352-original-v4.png",
+    "sha256": "A8FB3EE76045CD3D466D0B18C827800F55B935A259873553F80F7A7C754C6259",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-352-altered-source-v4.png",
+    "sha256": "04849B57C446D43D073A826A9A9D894A93F0EBDA71AFAF08A0B2B90EAC4E5034",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit original The Manta Ray's Curtains, exact full1672x941 painterly theater composition, preserve enriched scene, all stage seats, curtains, manta shape/body and lights. Exactly FIVE localized single-object differences: 1) The piano lid's large black triangular top surface gains a clear gold crescent inlay inside it, x256 y445 width90 height55; retain lid contour/hinges/prop and piano exactly. 2) The red cushion on the RIGHT wooden stool tilts gently upward on its LEFT side rather than sitting flat; keep stool legs and wooden seat ring perfectly original, change only upholstered red cushion, x1198 y574 width98 height38. 3) The manta ray closes its one visible small eye at x901 y175 width43 height40, keep face and cephalic fins shape unchanged. 4) The music stand's openwork floral pattern inside its rectangular music tray becomes an openwork crescent shape, retain exact tray frame and stand/legs at x1322 y496 width117 height67. 5) The lowest tassel on far RIGHT curtain, centered x1568 y447, has a single looped braid replacing its straight fringe; same attachment, cord, gold color, one tassel only. Region x1547 y397 width46 height82. Keep other tassels completely untouched. No other changes, no text, no added objects, no lights removed or changed, no colors swapped.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-352-original-v1.png\"}}, {\"file\": \"cushion-refine-prompt.json\", \"content\": {\"prompt\": \"Refine this supplied edited theater illustration only ONE object: the red upholstered cushion on the RIGHT wooden stool at x1203 y587 width88 height20. Curl the cushion's LEFT end clearly upward into a lifted flap reaching y565, while the cushion's RIGHT half stays seated at its existing height. Make a clear localized 20-pixel-high curled red flap, continuous upholstered fabric with same red seams. Keep wooden seat ring and all stool legs completely identical; do not enlarge or move the stool. Keep all other pixels and edits unchanged, including manta's shut eye, piano gold crescent, music stand crescent, right loop tassel, curtains/lights. Fullnative1672x941 composition unchanged.\", \"reference\": \"source.png\"}}, {\"file\": \"assembly.json\", \"content\": {\"source\": \"cushion-refine.png\", \"output\": \"cushion-assembled.png\", \"operation\": \"Exact original-backed source, paste only refined cushion rectangle [1199,574,1292,605], preserving all wooden stool pixels below y605. No scaling.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit original The Manta Ray's Curtains, exact full1672x941 painterly theater composition, preserve enriched scene, all stage seats, curtains, manta shape/body and lights. Exactly FIVE localized single-object differences: 1) The piano lid's large black triangular top surface gains a clear gold crescent inlay inside it, x256 y445 width90 height55; retain lid contour/hinges/prop and piano exactly. 2) The red cushion on the RIGHT wooden stool tilts gently upward on its LEFT side rather than sitting flat; keep stool legs and wooden seat ring perfectly original, change only upholstered red cushion, x1198 y574 width98 height38. 3) The manta ray closes its one visible small eye at x901 y175 width43 height40, keep face and cephalic fins shape unchanged. 4) The music stand's openwork floral pattern inside its rectangular music tray becomes an openwork crescent shape, retain exact tray frame and stand/legs at x1322 y496 width117 height67. 5) The lowest tassel on far RIGHT curtain, centered x1568 y447, has a single looped braid replacing its straight fringe; same attachment, cord, gold color, one tassel only. Region x1547 y397 width46 height82. Keep other tassels completely untouched. No other changes, no text, no added objects, no lights removed or changed, no colors swapped.",
+        "reference": "D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-352-original-v1.png"
+      }
+    },
+    {
+      "file": "cushion-refine-prompt.json",
+      "content": {
+        "prompt": "Refine this supplied edited theater illustration only ONE object: the red upholstered cushion on the RIGHT wooden stool at x1203 y587 width88 height20. Curl the cushion's LEFT end clearly upward into a lifted flap reaching y565, while the cushion's RIGHT half stays seated at its existing height. Make a clear localized 20-pixel-high curled red flap, continuous upholstered fabric with same red seams. Keep wooden seat ring and all stool legs completely identical; do not enlarge or move the stool. Keep all other pixels and edits unchanged, including manta's shut eye, piano gold crescent, music stand crescent, right loop tassel, curtains/lights. Fullnative1672x941 composition unchanged.",
+        "reference": "source.png"
+      }
+    },
+    {
+      "file": "assembly.json",
+      "content": {
+        "source": "cushion-refine.png",
+        "output": "cushion-assembled.png",
+        "operation": "Exact original-backed source, paste only refined cushion rectangle [1199,574,1292,605], preserving all wooden stool pixels below y605. No scaling."
+      }
+    }
+  ],
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-352-cushion-assembled-source-v4.png",
+      "sha256": "7EF4AF4C28B1DC0E3DC9CAD386FE98614C822FA1F710C97F3B79B6A60C45F5CD",
+      "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit original The Manta Ray's Curtains, exact full1672x941 painterly theater composition, preserve enriched scene, all stage seats, curtains, manta shape/body and lights. Exactly FIVE localized single-object differences: 1) The piano lid's large black triangular top surface gains a clear gold crescent inlay inside it, x256 y445 width90 height55; retain lid contour/hinges/prop and piano exactly. 2) The red cushion on the RIGHT wooden stool tilts gently upward on its LEFT side rather than sitting flat; keep stool legs and wooden seat ring perfectly original, change only upholstered red cushion, x1198 y574 width98 height38. 3) The manta ray closes its one visible small eye at x901 y175 width43 height40, keep face and cephalic fins shape unchanged. 4) The music stand's openwork floral pattern inside its rectangular music tray becomes an openwork crescent shape, retain exact tray frame and stand/legs at x1322 y496 width117 height67. 5) The lowest tassel on far RIGHT curtain, centered x1568 y447, has a single looped braid replacing its straight fringe; same attachment, cord, gold color, one tassel only. Region x1547 y397 width46 height82. Keep other tassels completely untouched. No other changes, no text, no added objects, no lights removed or changed, no colors swapped.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-352-original-v1.png\"}}, {\"file\": \"cushion-refine-prompt.json\", \"content\": {\"prompt\": \"Refine this supplied edited theater illustration only ONE object: the red upholstered cushion on the RIGHT wooden stool at x1203 y587 width88 height20. Curl the cushion's LEFT end clearly upward into a lifted flap reaching y565, while the cushion's RIGHT half stays seated at its existing height. Make a clear localized 20-pixel-high curled red flap, continuous upholstered fabric with same red seams. Keep wooden seat ring and all stool legs completely identical; do not enlarge or move the stool. Keep all other pixels and edits unchanged, including manta's shut eye, piano gold crescent, music stand crescent, right loop tassel, curtains/lights. Fullnative1672x941 composition unchanged.\", \"reference\": \"source.png\"}}, {\"file\": \"assembly.json\", \"content\": {\"source\": \"cushion-refine.png\", \"output\": \"cushion-assembled.png\", \"operation\": \"Exact original-backed source, paste only refined cushion rectangle [1199,574,1292,605], preserving all wooden stool pixels below y605. No scaling.\"}}]"
+    }
+  ],
+  "authoredRegions": [
+    {
+      "id": "cushion-curl",
+      "label": "The stool cushion's left end curls upward.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1195,
+        "y": 570,
+        "width": 103,
+        "height": 40
+      },
+      "edgeFade": 4,
+      "source": "cushion-assembled.png"
+    },
+    {
+      "id": "stand-moon",
+      "label": "The music tray has a crescent openwork motif.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1320,
+        "y": 492,
+        "width": 121,
+        "height": 74
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "tassel-loop",
+      "label": "The far-right curtain tassel forms a braided loop.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1544,
+        "y": 393,
+        "width": 51,
+        "height": 85
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "piano-moon",
+      "label": "The piano lid has a gold crescent inlay.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 279,
+        "y": 470,
+        "width": 57,
+        "height": 45
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "manta-eye",
+      "label": "The manta closes its eye.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 898,
+        "y": 176,
+        "width": 47,
+        "height": 40
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": {
+    "humanTimed": false,
+    "physicalPhone": false,
+    "notes": [
+      "First subtle cushion tilt rejected; targeted curled end refinement selected. Original wooden stool restored completely below y605; all unrelated pixels original-backed."
+    ],
+    "outsideRegionsExact": true,
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sourceHashes": {
+      "cushion-assembled.png": "7ef4af4c28b1dc0e3dc9cad386fe98614c822fa1f710c97f3b79b6a60c45f5cd",
+      "source.png": "04849b57c446d43d073a826a9a9d894a93f0ebda71afaf08a0b2b90eac4e5034"
+    },
+    "allTenPairsNonoverlap": true,
+    "fullFrameAndFivePairedCropsViewed": true,
+    "mobile390CompositeViewed": true
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

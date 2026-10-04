@@ -1,0 +1,115 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-210",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-210-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-210-original-v4.png",
+    "sha256": "2D4CBB72AAD0F3C4EDC29D9E8A368924D26E648894BA533E6EECF95B71ECC7A6",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-210-altered-source-v4.png",
+    "sha256": "8F3BD624E313C4CDBC5EA40268DF747F9E825B71C1512991230543039D029692",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise five-object counterpart of this original full-frame painted library beneath opening chessboard. Preserve original frame/lighting, architecture, all books and pawn positions. Exactly FIVE localized single-object parts: 1 CENTRAL TOP pawn glass globe light has a crescent-shaped inner glow instead of round flame, same glass sphere/base. 2 tall ivory ROOK frontmost crown tooth bends inward toward its hollow center like a folded stone lip, other crown teeth/body exact. 3 small globe deep library lower-left has its gold equator band tilted DIAGONALLY instead of nearly horizontal across sphere, preserve blue sphere/other meridian bands. 4 gold clasp on large teal BOOK at bottom-right swings OPEN to the LEFT away from its loop, same book binding/other books unchanged. 5 brass hinge on LOWER-LEFT corner of central raised dark chessboard lid has a SQUARE hinge pin head instead of round cap; preserve hinge leaves/lid. Five independent one-object clues, no multiple-object swaps or color-only changes, no grain or specks. Return one full painting.\"}}, {\"file\": \"rung-prompt.json\", \"content\": {\"prompt\": \"Precisely edit ONLY wooden ladder rung spanning center of this crop. Keep its two end attachments at EXACT original positions between unchanged rails/fittings. Bow its central span visibly UP into a smooth connected shallow ARCH, same rung width/thickness/material; underside curves upward too, not an added second rung. One coherent load-bearing rung bending, no disconnection. Preserve side rails, gold hinges/fasteners, background and all other parts exactly. Grain-free painted wood, no microscopic noise. Return one matching crop.\", \"nativeCrop\": [1033, 356, 118, 71]}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise five-object counterpart of this original full-frame painted library beneath opening chessboard. Preserve original frame/lighting, architecture, all books and pawn positions. Exactly FIVE localized single-object parts: 1 CENTRAL TOP pawn glass globe light has a crescent-shaped inner glow instead of round flame, same glass sphere/base. 2 tall ivory ROOK frontmost crown tooth bends inward toward its hollow center like a folded stone lip, other crown teeth/body exact. 3 small globe deep library lower-left has its gold equator band tilted DIAGONALLY instead of nearly horizontal across sphere, preserve blue sphere/other meridian bands. 4 gold clasp on large teal BOOK at bottom-right swings OPEN to the LEFT away from its loop, same book binding/other books unchanged. 5 brass hinge on LOWER-LEFT corner of central raised dark chessboard lid has a SQUARE hinge pin head instead of round cap; preserve hinge leaves/lid. Five independent one-object clues, no multiple-object swaps or color-only changes, no grain or specks. Return one full painting."
+      }
+    },
+    {
+      "file": "rung-prompt.json",
+      "content": {
+        "prompt": "Precisely edit ONLY wooden ladder rung spanning center of this crop. Keep its two end attachments at EXACT original positions between unchanged rails/fittings. Bow its central span visibly UP into a smooth connected shallow ARCH, same rung width/thickness/material; underside curves upward too, not an added second rung. One coherent load-bearing rung bending, no disconnection. Preserve side rails, gold hinges/fasteners, background and all other parts exactly. Grain-free painted wood, no microscopic noise. Return one matching crop.",
+        "nativeCrop": [
+          1033,
+          356,
+          118,
+          71
+        ]
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "bulb",
+      "label": "The upper pawn light becomes a crescent.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 666,
+        "y": 16,
+        "width": 76,
+        "height": 75
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "rook",
+      "label": "The rook's front crown tooth folds inward.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1084,
+        "y": 151,
+        "width": 40,
+        "height": 60
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "globe",
+      "label": "The library globe gains a diagonal gold brace.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 429,
+        "y": 592,
+        "width": 90,
+        "height": 90
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "clasp",
+      "label": "The teal book clasp swings open.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1440,
+        "y": 573,
+        "width": 119,
+        "height": 66
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "rung",
+      "label": "The top ladder rung bows upward.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1052,
+        "y": 381,
+        "width": 75,
+        "height": 45
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered compositor/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

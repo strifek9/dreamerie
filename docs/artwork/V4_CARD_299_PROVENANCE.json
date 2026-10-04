@@ -1,0 +1,110 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-299",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-299-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-299-original-v4.png",
+    "sha256": "85C4B685ED17BD27D8578065783C206227FEF404BFD52A117DDA1447ADA1A7A8",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-299-altered-source-v4.png",
+    "sha256": "0FC140DAD98C4A087E4006229C4F8DB83EDF64DB05C5B299BDAC5B7BBBBCAC9A",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact original alligator knitted-river painting locally, preserve anatomy/frame/painterly textures and all yarn objects. Exactly five single-object targets: 1 The alligator's larger nearer eye near x561 y137 closes in a gentle wink, farther eye untouched. 2 The FRONT bridge handrail nearest viewer across x1080-1310 y560 curls its left end into a small loop while rail remains connected to same post; other rail and posts unchanged. 3 The iron hanging latch on wooden chest at right near x1487 y360 rotates open sideways while still attached at its top pivot, latch plate unchanged. 4 The upper of TWO wooden knitting needles across floor bottom-left has its round end knob near x620 y812 become a broad five-pointed wooden star cap; other needle unchanged. 5 The toy sailboat at far right has just its RIGHT sail bow inward into a crescent-like curved sail instead of straight triangle; left sail/mast/hull unchanged. No paired swaps, no new objects, no global redraw; five localized scene fitting edits with clean connections.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact original alligator knitted-river painting locally, preserve anatomy/frame/painterly textures and all yarn objects. Exactly five single-object targets: 1 The alligator's larger nearer eye near x561 y137 closes in a gentle wink, farther eye untouched. 2 The FRONT bridge handrail nearest viewer across x1080-1310 y560 curls its left end into a small loop while rail remains connected to same post; other rail and posts unchanged. 3 The iron hanging latch on wooden chest at right near x1487 y360 rotates open sideways while still attached at its top pivot, latch plate unchanged. 4 The upper of TWO wooden knitting needles across floor bottom-left has its round end knob near x620 y812 become a broad five-pointed wooden star cap; other needle unchanged. 5 The toy sailboat at far right has just its RIGHT sail bow inward into a crescent-like curved sail instead of straight triangle; left sail/mast/hull unchanged. No paired swaps, no new objects, no global redraw; five localized scene fitting edits with clean connections."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The alligator closes its nearer eye",
+      "difficulty": "Easy",
+      "box": {
+        "x": 520,
+        "y": 110,
+        "width": 73,
+        "height": 58
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The bridge handrail end curls into a loop",
+      "difficulty": "Medium",
+      "box": {
+        "x": 948,
+        "y": 505,
+        "width": 84,
+        "height": 65
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The chest latch swings sideways",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1464,
+        "y": 325,
+        "width": 100,
+        "height": 98
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The upper needle has a star end cap",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 591,
+        "y": 764,
+        "width": 82,
+        "height": 85
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The toy boat's right sail curves",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1594,
+        "y": 518,
+        "width": 78,
+        "height": 155
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "visually inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "nativePreflight": "source equals actual original size, five nonoverlapping boxes",
+    "difficulty": "hypotheses; human and browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

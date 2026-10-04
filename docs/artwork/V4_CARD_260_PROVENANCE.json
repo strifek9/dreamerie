@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-260",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-260-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-260-original-v4.png",
+    "sha256": "E71F900B703BA6ED7E710990CEAB6DDBE63B6A586BF9407D4FB5C8344E971636",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-260-altered-source-v4.png",
+    "sha256": "684666EFB0BB950D512057BA390381DE9391AA75B4FCA2DC43CF51820930E8B6",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact native 1672x941 painterly green bell pepper hollow bell with seed-clapper and workshop. FIVE isolated single-object edits: 1) brass small bell on table x1087y846 reflects strong blue crescent inside polished metal face, same bell/rope; 2) hanging antique key x1482y157 round bow opening now contains one diagonal brass bar, same key teeth/shaft; 3) bowl's painted central green leaf motif x215y805 curls inward into spiral leaf stem, same bowl seeds/other leaves exact; 4) stool cushion x1395y569 has a short gold zigzag sewn seam at center of its pink fabric, same cushion edges/stool; 5) picture's wooden pin head x1180y54 has a clear X slot instead of current simple head, picture unchanged. Pepper anatomy and all individual seeds exact, no other changes.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-260-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact native 1672x941 painterly green bell pepper hollow bell with seed-clapper and workshop. FIVE isolated single-object edits: 1) brass small bell on table x1087y846 reflects strong blue crescent inside polished metal face, same bell/rope; 2) hanging antique key x1482y157 round bow opening now contains one diagonal brass bar, same key teeth/shaft; 3) bowl's painted central green leaf motif x215y805 curls inward into spiral leaf stem, same bowl seeds/other leaves exact; 4) stool cushion x1395y569 has a short gold zigzag sewn seam at center of its pink fabric, same cushion edges/stool; 5) picture's wooden pin head x1180y54 has a clear X slot instead of current simple head, picture unchanged. Pepper anatomy and all individual seeds exact, no other changes.",
+        "reference": "D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-260-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The key bow has a diagonal crossbar",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1443,
+        "y": 122,
+        "width": 78,
+        "height": 66
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The bell interior reflects a blue crescent",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1040,
+        "y": 849,
+        "width": 79,
+        "height": 50
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The bowl motif stem curls inward",
+      "difficulty": "Hard",
+      "box": {
+        "x": 189,
+        "y": 774,
+        "width": 58,
+        "height": 63
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The stool cushion has a gold zigzag seam",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1360,
+        "y": 531,
+        "width": 70,
+        "height": 85
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The picture pin has an X slot",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1158,
+        "y": 34,
+        "width": 42,
+        "height": 42
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390 stacked pair. Five independently selectable localized object clues. Native dimensions, five bounded nonoverlapping boxes and exact original pixels outside verified. Difficulty estimates unvalidated; root compositor/game, human difficulty and physical phone approval pending. Full prompt/source hash chain retained.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

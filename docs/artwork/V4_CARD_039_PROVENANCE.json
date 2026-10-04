@@ -1,0 +1,104 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-039",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-039-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-039-original-v4.png",
+    "sha256": "ED2934C45ED19D84F191D5E3810A6B3C27EEE21333EE2CD71F27DDD7A849EB82",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-039-altered-source-v4.png",
+    "sha256": "8E0A7435CBA09707600F9CA5EAEDF2C27B1E5A20BBF6BD3BE71AAB98A4DEF27A",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"Precise-object-edit attached Dreamerie The Apricot Airship. Preserve exact1672x941 full frame, mouse anatomy/expression, fruit, basket, rice terraces, painterly grain-free finish. Only five changes in separate localized areas:1 leaf hole at x792 y108 becomes diamond instead of heart, same size;2 paper star front basket x515 y617 has its folds meet at an offset point above-left instead of center, keep outer five-point silhouette;3 far left red tied pennant x210 y364 now wraps OVER its rope instead of going behind at attachment nearx332y335, clear connected fabric;4 middle tassel hanging below basket x477 y719 is tied with a bow around its neck instead of simple knot, preserve hanging strands;5 small stone bridge at x1420y766 reflection under arch shows TWO neighboring light arch openings instead of one reflection, alter only water beneath bridge, keep real bridge identical. No other changes, no added props or text, no restyle, retain originalframe/native1672x941. Real localized edit geometry, no broken joins, fivechanges mobile-inspectable.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "Precise-object-edit attached Dreamerie The Apricot Airship. Preserve exact1672x941 full frame, mouse anatomy/expression, fruit, basket, rice terraces, painterly grain-free finish. Only five changes in separate localized areas:1 leaf hole at x792 y108 becomes diamond instead of heart, same size;2 paper star front basket x515 y617 has its folds meet at an offset point above-left instead of center, keep outer five-point silhouette;3 far left red tied pennant x210 y364 now wraps OVER its rope instead of going behind at attachment nearx332y335, clear connected fabric;4 middle tassel hanging below basket x477 y719 is tied with a bow around its neck instead of simple knot, preserve hanging strands;5 small stone bridge at x1420y766 reflection under arch shows TWO neighboring light arch openings instead of one reflection, alter only water beneath bridge, keep real bridge identical. No other changes, no added props or text, no restyle, retain originalframe/native1672x941. Real localized edit geometry, no broken joins, fivechanges mobile-inspectable."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "hole",
+      "label": "The leaf's heart-shaped opening becomes a diamond.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 762,
+        "y": 75,
+        "width": 64,
+        "height": 70
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "bow",
+      "label": "The middle basket tassel is tied with a bow.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 441,
+        "y": 671,
+        "width": 76,
+        "height": 85
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "pennant",
+      "label": "The red pennant folds over its rope attachment.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 299,
+        "y": 292,
+        "width": 62,
+        "height": 63
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "star",
+      "label": "The paper star's folds meet above and left of center.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 474,
+        "y": 577,
+        "width": 86,
+        "height": 81
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "bridge",
+      "label": "The stone bridge arch splits into two openings.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1378,
+        "y": 743,
+        "width": 86,
+        "height": 62
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": "Full source, clipped full pair, all five native paired crops and 390px stacked pair inspected. Five separate single-object/local edits. Bridge generation changed actual bridge arch rather than intended reflection: accepted and accurately relabeled. Star fold shift subtle but inspectable at native crop. Source SHA256 8e0a7435cba09707600f9ca5eaedf2c27b1e5a20bbf6bd3be71aab98a4def27a. No human fairness or physical phone validation.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

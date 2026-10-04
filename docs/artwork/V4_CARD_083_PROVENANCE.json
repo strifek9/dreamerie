@@ -1,0 +1,104 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-083",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-083-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-083-original-v4.png",
+    "sha256": "8D62FAFB268E0554A16C7502050928C43F33006D3E60FFC6759107E698701463",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-083-altered-source-v4.png",
+    "sha256": "C7692D414D0F063EA52FA77E2B4C6540F36B5743EE3DE37A7B6AE0266FAD1660",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise edit attached hedgehogtelescope pancakeplanet painting. Preserve EXACT1672x941 frame allpositions/animalanatomy palettepaintfinish. FIVE single-object localized changes ONLY:1) yellowBUTTERPAT atop pancakes opens into a folded accordion-like threepleated butter slab, coherent butter material same footprintheight moderate, nootherfoodchanges.2) strawberry leftofbutter: seeds arrange into clearcurvingSPIRAL rather than scattered rows, sameberryoutline leaves/shading, ONLY strawberrypattern.3) telescope round bluefrontlens contains a pale distinct reflected pancake-stack SILHOUETTE withthree horizontaltiers instead of plainblueglints, roundrim unchanged no extra telescopeparts.4) BIGPINKplanet's golden syrupRING upperright: ONE ringsegment atfar-right loops THROUGH ITSELF forming a clearly continuous goldenfigure-eight bend, sameplanet unchanged, keeprestofring/drips.5) goldenFORK-shaped scarf end atleft ofhedgehog: central fork tine hooks/curls inward into smallloop instead ofstraight, preserveother2tinesandhandle scarfanimalposition. Nochanges independentobjects perclue; no swaps/color-only/missingparts/text/markers. Eacheditbelongsone existing objectinternal form/action.\"}}, {\"file\": \"refine-prompt.json\", \"content\": {\"prompt\": \"Edit ONLYbutterpat inthiscrop. OnecontinuousyellowBUTTERsheet rolls into a small scroll curl withone visible spiralend, samebutter overallfootprint atcenter. ONE CONNECTED object, no separate slices/blocks. Creamyellowbuttermaterial softfolds, plausiblecontactwithsyrupbelow. Keep EXACT cropframing surroundingpancake/syrup animalunchanged. Noextraobjects/text.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise edit attached hedgehogtelescope pancakeplanet painting. Preserve EXACT1672x941 frame allpositions/animalanatomy palettepaintfinish. FIVE single-object localized changes ONLY:1) yellowBUTTERPAT atop pancakes opens into a folded accordion-like threepleated butter slab, coherent butter material same footprintheight moderate, nootherfoodchanges.2) strawberry leftofbutter: seeds arrange into clearcurvingSPIRAL rather than scattered rows, sameberryoutline leaves/shading, ONLY strawberrypattern.3) telescope round bluefrontlens contains a pale distinct reflected pancake-stack SILHOUETTE withthree horizontaltiers instead of plainblueglints, roundrim unchanged no extra telescopeparts.4) BIGPINKplanet's golden syrupRING upperright: ONE ringsegment atfar-right loops THROUGH ITSELF forming a clearly continuous goldenfigure-eight bend, sameplanet unchanged, keeprestofring/drips.5) goldenFORK-shaped scarf end atleft ofhedgehog: central fork tine hooks/curls inward into smallloop instead ofstraight, preserveother2tinesandhandle scarfanimalposition. Nochanges independentobjects perclue; no swaps/color-only/missingparts/text/markers. Eacheditbelongsone existing objectinternal form/action."
+      }
+    },
+    {
+      "file": "refine-prompt.json",
+      "content": {
+        "prompt": "Edit ONLYbutterpat inthiscrop. OnecontinuousyellowBUTTERsheet rolls into a small scroll curl withone visible spiralend, samebutter overallfootprint atcenter. ONE CONNECTED object, no separate slices/blocks. Creamyellowbuttermaterial softfolds, plausiblecontactwithsyrupbelow. Keep EXACT cropframing surroundingpancake/syrup animalunchanged. Noextraobjects/text."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "The large planet's syrup ring threads into its own loop.",
+      "box": {
+        "x": 1483,
+        "y": 105,
+        "width": 169,
+        "height": 112
+      },
+      "edgeFade": 5
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The butter pat rolls into a single scroll.",
+      "box": {
+        "x": 446,
+        "y": 337,
+        "width": 132,
+        "height": 84
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The strawberry seeds follow a spiral.",
+      "box": {
+        "x": 278,
+        "y": 298,
+        "width": 122,
+        "height": 108
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "One fork tine curls inward.",
+      "box": {
+        "x": 206,
+        "y": 165,
+        "width": 95,
+        "height": 97
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "A pancake stack reflects inside the telescope lens.",
+      "box": {
+        "x": 807,
+        "y": 119,
+        "width": 26,
+        "height": 66
+      },
+      "edgeFade": 2
+    }
+  ],
+  "notes": "Fullsource inspected. Initialbutter splitmultiplepats rejected peroneobjectrule; targetrefinement now ONE connectedscrollbutter. Ring selfloop, strawberrysingleinternalpattern, forkoneinternalpose, telescopeoneinternalreflection. No swaps. Lens narrow26x66 meaningfultieredpancakereflection inspectable; rootcanrejectifphoneunfair. Nativeboxonly selectiveintegration. Fullpair/crops/390 QA below.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

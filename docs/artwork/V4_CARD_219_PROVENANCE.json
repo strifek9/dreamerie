@@ -1,0 +1,123 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-219",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-219-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-219-original-v4.png",
+    "sha256": "5DA9F09B3D40F7EC2A409008D0461CE754A87369910984A72BC18962C0377CAE",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-219-altered-source-v4.png",
+    "sha256": "8C62C473D27D53C90BFC2958A7DADC72C201F596C50161D6498DF494DB2D79B3",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit this exact 1672x941 painterly snowy scene of snowman walking with long red knitted scarf warming flowers. Preserve exact composition, snowman anatomy, branches and style. Make ONLY five separate localized changes: (1) the white heart knitted patch on RIGHT mitten at x1350 y329 becomes white crescent, same mitten; (2) single coal button at x1100 y329 now has a clearly engraved X groove; (3) carrot nose x1284 y112 bends gently upward at its tip as one carrot, no second carrot; (4) the single hanging white snowdrop blossom at x511 y738 in nearest scarf loop faces upward instead of downward, same one flower and continuous stem, other flowers exact; (5) house window at x1550 y260 has a warm orange crescent reflection inside its glass. No changes to other objects. Native full frame.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-219-original-v1.png\"}}, {\"file\": \"refine-prompt.json\", \"content\": {\"prompt\": \"Edit this exact full native snowman snowy sunset illustration. ONLY two changes: the single red berry at x115 y203 in upper-left branches has a strong white crescent reflection on its glossy red surface, same berry silhouette/position/stem; the tiny house window at x1550 y262 glows amber-orange inside the same rectangular opening. Preserve all other frame pixels/style including snowman flowers and scarf. 1672x941.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-219-original-v1.png\"}}, {\"file\": \"scarf-prompt.json\", \"content\": {\"prompt\": \"Keep exact native full frame snowman winter scarf painting. One localized alteration only: embroider a clearly readable small GOLD FIVE-POINT STAR into the red scarf's vertical hanging section centered x1030 y389, star width36 height36. It is sewn inside existing scarf fabric, does not alter fabric outline or other objects. All flowers, berries, snowman and scenery exact.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-219-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit this exact 1672x941 painterly snowy scene of snowman walking with long red knitted scarf warming flowers. Preserve exact composition, snowman anatomy, branches and style. Make ONLY five separate localized changes: (1) the white heart knitted patch on RIGHT mitten at x1350 y329 becomes white crescent, same mitten; (2) single coal button at x1100 y329 now has a clearly engraved X groove; (3) carrot nose x1284 y112 bends gently upward at its tip as one carrot, no second carrot; (4) the single hanging white snowdrop blossom at x511 y738 in nearest scarf loop faces upward instead of downward, same one flower and continuous stem, other flowers exact; (5) house window at x1550 y260 has a warm orange crescent reflection inside its glass. No changes to other objects. Native full frame.",
+        "reference": "D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-219-original-v1.png"
+      }
+    },
+    {
+      "file": "refine-prompt.json",
+      "content": {
+        "prompt": "Edit this exact full native snowman snowy sunset illustration. ONLY two changes: the single red berry at x115 y203 in upper-left branches has a strong white crescent reflection on its glossy red surface, same berry silhouette/position/stem; the tiny house window at x1550 y262 glows amber-orange inside the same rectangular opening. Preserve all other frame pixels/style including snowman flowers and scarf. 1672x941.",
+        "reference": "D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-219-original-v1.png"
+      }
+    },
+    {
+      "file": "scarf-prompt.json",
+      "content": {
+        "prompt": "Keep exact native full frame snowman winter scarf painting. One localized alteration only: embroider a clearly readable small GOLD FIVE-POINT STAR into the red scarf's vertical hanging section centered x1030 y389, star width36 height36. It is sewn inside existing scarf fabric, does not alter fabric outline or other objects. All flowers, berries, snowman and scenery exact.",
+        "reference": "D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-219-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The mitten patch is a crescent",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1328,
+        "y": 307,
+        "width": 44,
+        "height": 51
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The carrot tip bends upward",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1254,
+        "y": 87,
+        "width": 67,
+        "height": 43
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "One berry has a larger white reflection",
+      "difficulty": "Hard",
+      "box": {
+        "x": 100,
+        "y": 187,
+        "width": 34,
+        "height": 35
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "refined-native.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The coal button has an X groove",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1080,
+        "y": 309,
+        "width": 40,
+        "height": 40
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The scarf has a gold star embroidery",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1024,
+        "y": 271,
+        "width": 46,
+        "height": 46
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "scarf.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390 stacked pair. Five separately selectable single-object clues. Five bounded nonoverlapping boxes, exact native size, and original pixels outside boxes verified. Difficulty estimates unvalidated; root compositor/game, human difficulty and physical phone approval pending. Full prompts and source hash chain retained. Flower-pose source alteration and tiny house window excluded; isolated berry reflection and scarf embroidery selected instead.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

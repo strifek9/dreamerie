@@ -1,0 +1,110 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-318",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-318-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-318-original-v4.png",
+    "sha256": "4A208210B3EB8826C68EA4ADE60ADF3CBCB6928B3B0F18E5D37340DD413ED2B3",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-318-altered-source-v4.png",
+    "sha256": "487B91C7A35EDBBEE54F13C951B195A8235B41E359BA01C1936816389C13A002",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit this exact umbrella made of windowpanes painting locally. Preserve original composition, brass ribs, glass rain, lighting and painterly style. Exactly five one-object changes: 1 the golden crescent moon visible in upper center-left glass pane becomes a golden five-point star in same place; 2 the single little paper boat in lower-right pane tilts its bow upward as if climbing a wave, keep water/ripples unchanged; 3 the umbrella wooden J handle at bottom center curls its free tip inward to form a tight spiral, shaft unchanged; 4 the small curtain tie brass round button at x985 y337 becomes a heart shaped brass clasp, curtain unchanged; 5 the one fallen leaf at x1074 y829 has its pointed right end folded back visibly over itself, other leaves untouched. No paired swaps, extra changes, or globally redrawn scene. Keep edits contained to these five separate targets.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit this exact umbrella made of windowpanes painting locally. Preserve original composition, brass ribs, glass rain, lighting and painterly style. Exactly five one-object changes: 1 the golden crescent moon visible in upper center-left glass pane becomes a golden five-point star in same place; 2 the single little paper boat in lower-right pane tilts its bow upward as if climbing a wave, keep water/ripples unchanged; 3 the umbrella wooden J handle at bottom center curls its free tip inward to form a tight spiral, shaft unchanged; 4 the small curtain tie brass round button at x985 y337 becomes a heart shaped brass clasp, curtain unchanged; 5 the one fallen leaf at x1074 y829 has its pointed right end folded back visibly over itself, other leaves untouched. No paired swaps, extra changes, or globally redrawn scene. Keep edits contained to these five separate targets."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The pane moon becomes a star",
+      "difficulty": "Easy",
+      "box": {
+        "x": 612,
+        "y": 141,
+        "width": 79,
+        "height": 88
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The paper boat lifts its bow",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1041,
+        "y": 499,
+        "width": 95,
+        "height": 69
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The umbrella handle tip spirals inward",
+      "difficulty": "Hard",
+      "box": {
+        "x": 588,
+        "y": 705,
+        "width": 98,
+        "height": 103
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The curtain clasp becomes a heart",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 954,
+        "y": 317,
+        "width": 52,
+        "height": 43
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The fallen leaf tip folds backward",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 987,
+        "y": 794,
+        "width": 156,
+        "height": 66
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "visually inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "nativePreflight": "source equals actual original size, five nonoverlapping boxes",
+    "difficulty": "hypotheses; human and browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

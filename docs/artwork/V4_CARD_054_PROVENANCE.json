@@ -1,0 +1,116 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-054",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-054-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-054-original-v4.png",
+    "sha256": "8797BA4D64ED57C301F73F31E352975E78EF03278C92D6D8A770B6FF75F808D4",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-054-altered-source-v4.png",
+    "sha256": "A232DBBF86AAE56F21B875BBCE0F9F1094A664E379C2CC651332E898736A16FF",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise five localizedsingle-object edits ofprovided1672x941 LostSockArchipelago dreampainting. Preserveentireframe/floatinggiantsock/corecomposition/style. Fivechanges ONLY:1 foregroundstarfish x1327,y804 bends top arm to hookedright ratherthanpointedstraightup (x1306,783,45,43);2 boat mainRIGHT triangularsail x354,y596 billows into convexcurve RIGHTinsteadstraighttauttriangle, keepmast/leftsail/hull (x334,529,54,114);3 sockwindowupperleft x627,y113 adds a slanted diagonal shutter INSIDEwindow partiallyclosed ratherthanopen, preservesrectangulargoldframe (x605,87,49,60);4 ladder ONErung at x616,y364 bends shallowupwardarch ratherthanstraightcrossbar, bothuprightsunchanged (x590,348,56,33);5 large sockheel grey patch's internal stitchpattern atx728,y351 becomes clearly concentricoffsetspiral insteadradiatingstraightstitches (x650,285,147,135), samepatchsilhouette/color/boundaries. Noextraobjects, nootherladderrungs/sails changes, nograin/specks, nativepainterlyfinish.\"}}, {\"file\": \"sun-prompt.json\", \"content\": {\"prompt\": \"Edit ONLY sun'scenter in thiscrop: yellow solid sun becomes a glowing gold RING with a large clean circular hole through center showing warmpeachsky behind. Outer sunedge sameposition/diameter, allforeground pinkclouds preserved exactly overring. Ringwidearound20percentofdiameter, noextraobjects/nootherchanges/grainfreepainterlysurface. Fullcrop.\", \"crop\": [261, 356, 144, 126], \"resizeBackToNative\": true}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise five localizedsingle-object edits ofprovided1672x941 LostSockArchipelago dreampainting. Preserveentireframe/floatinggiantsock/corecomposition/style. Fivechanges ONLY:1 foregroundstarfish x1327,y804 bends top arm to hookedright ratherthanpointedstraightup (x1306,783,45,43);2 boat mainRIGHT triangularsail x354,y596 billows into convexcurve RIGHTinsteadstraighttauttriangle, keepmast/leftsail/hull (x334,529,54,114);3 sockwindowupperleft x627,y113 adds a slanted diagonal shutter INSIDEwindow partiallyclosed ratherthanopen, preservesrectangulargoldframe (x605,87,49,60);4 ladder ONErung at x616,y364 bends shallowupwardarch ratherthanstraightcrossbar, bothuprightsunchanged (x590,348,56,33);5 large sockheel grey patch's internal stitchpattern atx728,y351 becomes clearly concentricoffsetspiral insteadradiatingstraightstitches (x650,285,147,135), samepatchsilhouette/color/boundaries. Noextraobjects, nootherladderrungs/sails changes, nograin/specks, nativepainterlyfinish."
+      }
+    },
+    {
+      "file": "sun-prompt.json",
+      "content": {
+        "prompt": "Edit ONLY sun'scenter in thiscrop: yellow solid sun becomes a glowing gold RING with a large clean circular hole through center showing warmpeachsky behind. Outer sunedge sameposition/diameter, allforeground pinkclouds preserved exactly overring. Ringwidearound20percentofdiameter, noextraobjects/nootherchanges/grainfreepainterlysurface. Fullcrop.",
+        "crop": [
+          261,
+          356,
+          144,
+          126
+        ],
+        "resizeBackToNative": true
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "sun",
+      "label": "The sun becomes a glowing ring.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 270,
+        "y": 368,
+        "width": 121,
+        "height": 112
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "patch",
+      "label": "The sock's heel patch has spiral stitches.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 647,
+        "y": 285,
+        "width": 153,
+        "height": 135
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "sail",
+      "label": "The boat's right sail billows outward.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 335,
+        "y": 531,
+        "width": 68,
+        "height": 112
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "shutter",
+      "label": "A slanted shutter closes part of the sock's window.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 604,
+        "y": 89,
+        "width": 46,
+        "height": 47
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "starfish",
+      "label": "The starfish curls its upper arm to the right.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1307,
+        "y": 780,
+        "width": 45,
+        "height": 49
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Fiveindependentobjectchanges. Unfulfilledladderbend rejected; sunring targetedcrop substitute. Allotherrungsoriginalunchanged. Fullpair/fivecrop/390QA pending rootfeather/gameQA.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

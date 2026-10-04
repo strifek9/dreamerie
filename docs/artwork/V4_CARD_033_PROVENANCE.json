@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-033",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-033-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-033-original-v4.png",
+    "sha256": "1E8544DE3C9E5922E6EBE3F7CA2FF1E70581CE57E70A8008768329BAAE970777",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-033-altered-source-v4.png",
+    "sha256": "FB81AED7940128A38F8AF93731181E8A951C466179A9594F1B215336D579D15C",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Use case precise-object-edit. Preserve this exact wide1672x941 Dreamerie raccoon marmalade-space painting, anatomy brushwork and corepremise. Five separate single-object edits only: 1 cup handle green spiral curls outward at its upper tip instead of inward, x1260 y484 width99 height99; retain cupbody. 2 raccoon scarf crescent moon emblem reversed to face left, x502 y388 width67 height63; retain scarfoutline. 3 floating spoon bowl contains a crescent-shaped blue reflection instead of mottled gold/blue patch, x995 y296 width84 height70; retain bowloutline/dripping marmalade. 4 one blueberry nearest right on plated toast now has a clear cross-shaped calyx instead of five-pointedstar, x353 y642 width55 height55; otherblueberriesunchanged. 5 the jar lid tied string forms a small figure-eight loop instead of simple single loop on right edge, x273 y441 width48 height49. No other changes, no extra objects, no text grain specks; keep backgrounds exact.\"}}, {\"file\": \"berry-prompt.json\", \"content\": {\"prompt\": \"Change exactly one tiny object in this original1672x941painting. On plate foreground left, three blueberries sit on toast. Change ONLY the RIGHTMOST BLUEBERRY's dark star-shaped calyx on top (berry center378,671) into a clearly hollow round circular dimple. Keep berry outline position size and all other blueberries EXACTLY unchanged. Dark circle must be readable on the berry, not extra small randomgrain. Preserve all other image pixels, exact framing, painterlyfinish. No text.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Use case precise-object-edit. Preserve this exact wide1672x941 Dreamerie raccoon marmalade-space painting, anatomy brushwork and corepremise. Five separate single-object edits only: 1 cup handle green spiral curls outward at its upper tip instead of inward, x1260 y484 width99 height99; retain cupbody. 2 raccoon scarf crescent moon emblem reversed to face left, x502 y388 width67 height63; retain scarfoutline. 3 floating spoon bowl contains a crescent-shaped blue reflection instead of mottled gold/blue patch, x995 y296 width84 height70; retain bowloutline/dripping marmalade. 4 one blueberry nearest right on plated toast now has a clear cross-shaped calyx instead of five-pointedstar, x353 y642 width55 height55; otherblueberriesunchanged. 5 the jar lid tied string forms a small figure-eight loop instead of simple single loop on right edge, x273 y441 width48 height49. No other changes, no extra objects, no text grain specks; keep backgrounds exact."
+      }
+    },
+    {
+      "file": "berry-prompt.json",
+      "content": {
+        "prompt": "Change exactly one tiny object in this original1672x941painting. On plate foreground left, three blueberries sit on toast. Change ONLY the RIGHTMOST BLUEBERRY's dark star-shaped calyx on top (berry center378,671) into a clearly hollow round circular dimple. Keep berry outline position size and all other blueberries EXACTLY unchanged. Dark circle must be readable on the berry, not extra small randomgrain. Preserve all other image pixels, exact framing, painterlyfinish. No text."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The cup handle curls outward at its top",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1234,
+        "y": 470,
+        "width": 140,
+        "height": 133
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-2",
+      "label": "The scarf crescent faces left",
+      "difficulty": "Medium",
+      "box": {
+        "x": 478,
+        "y": 386,
+        "width": 92,
+        "height": 65
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-3",
+      "label": "The right blueberry calyx is a hollow circle",
+      "difficulty": "Hard",
+      "box": {
+        "x": 357,
+        "y": 642,
+        "width": 42,
+        "height": 34
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-4",
+      "label": "The spoon reflects a blue crescent",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 993,
+        "y": 296,
+        "width": 88,
+        "height": 68
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-5",
+      "label": "The jar string loop opens into a broader oval",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 275,
+        "y": 439,
+        "width": 49,
+        "height": 45
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": "Worker full native pair, five paired crops and390stack inspected. Failed first berry edit rejected; targeted circularcalyx source used. Five independent object details, original outside regions exact verified. Difficulty hypotheses only; root compositor/game and human tests pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

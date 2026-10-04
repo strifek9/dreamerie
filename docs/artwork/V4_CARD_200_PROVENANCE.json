@@ -1,0 +1,139 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-200",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-200-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-200-original-v4.png",
+    "sha256": "9BABE9DA117DEBEE02683B12298B63B34F908AD82A7E1A6A0341866FE9B8410C",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-200-altered-source-v4.png",
+    "sha256": "EA8110AD9CB3CD9318E7C661A8B72EB33ABD65B09F87DB42D10AAC5200A40A54",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit EXACT Lighthouse Keeper's Missing Stair native1672x941, keeperholdingbelt to floatingrowboat, lighthouse spiralstairs. Preserve keeperanatomy,hands,strap,boat/stairphysics/frame/style. FIVE separateobjectdifferences: 1 ONLY boatpaintedbow spiralemblem x1156678 winds oppositedirection samecolor/size within1124650..1188710; 2 ONLY cushion insideboat x947509 has one clear diagonal blue seam acrossfrontsurface insteadplainfabric within906490..982534; 3 ONLY upperwindow x1119169 centralhorizontalcrossbar slopes diagonally upwardright insteadhorizontal within1104149..1132190, windowoutlineexact; 4 ONLY lampmount's brassroundendcap x1549213 reflects a darkblue crescent insteadplainmetalglint within1531194..1572234; 5 ONLY keeperLEFTcoat cuff roundbutton x164310 changes its circularhole to a visible crossed X slit, within149295..181326, cuff/handexact. All unrelatedparts unchanged, no multipleobject swaps,no grain/specks.\"}}, {\"file\": \"spiral-prompt.json\", \"content\": {\"prompt\": \"Exactcrop paintedwoodboatbow has ONE largebrownspiralpaintedsymbol. Change ONLY thisonepaintedsymbol into a clear brown FISH silhouette with samecenterandapprox60x50nativeextent. Keep boatwood/chippedpaint/backgroundexact. Oneobject'spaintpattern. Same100x100 framing.\", \"nativeCrop\": [1110, 629, 100, 100]}}, {\"file\": \"window-prompt.json\", \"content\": {\"prompt\": \"Exactcrop lighthouse narrowwindow. Change ONLY LOWER visible horizontal wooden crossbar (cropx40y118) into a clearly upward curved ARCH crossbar, stilltouchbothwindowedges. Otherupperbar/windowframe/glassexact. Strongcurve~15nativepxhigh, onecrossbarmechanismshape. Same80x160 framing.\", \"nativeCrop\": [1080, 85, 80, 160]}}, {\"file\": \"window-v2-prompt.json\", \"content\": {\"prompt\": \"Edit this EXACT FULL lighthousekeeper scene at1672x941. ONLY narrow upperwindow crossbar atx1114 y199: change this SAME existing LOWERhorizontalcrossbar to an upward curved ARCH bar whileKEEPING endpoints atsamepositions (leftx1105y192 rightx1131y206). Centerarch rises tox1118y179. Keep uppercrossbar atx1125y122 and allwindowframe glassunchanged. ONEmechanismbar only. Preserve entire keeperboat/lighthouse anatomy/composition/stylepixels. No moved window, no missing bar, no newscene.\", \"rejected\": \"window.png crop shifted bar and was not selected\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit EXACT Lighthouse Keeper's Missing Stair native1672x941, keeperholdingbelt to floatingrowboat, lighthouse spiralstairs. Preserve keeperanatomy,hands,strap,boat/stairphysics/frame/style. FIVE separateobjectdifferences: 1 ONLY boatpaintedbow spiralemblem x1156678 winds oppositedirection samecolor/size within1124650..1188710; 2 ONLY cushion insideboat x947509 has one clear diagonal blue seam acrossfrontsurface insteadplainfabric within906490..982534; 3 ONLY upperwindow x1119169 centralhorizontalcrossbar slopes diagonally upwardright insteadhorizontal within1104149..1132190, windowoutlineexact; 4 ONLY lampmount's brassroundendcap x1549213 reflects a darkblue crescent insteadplainmetalglint within1531194..1572234; 5 ONLY keeperLEFTcoat cuff roundbutton x164310 changes its circularhole to a visible crossed X slit, within149295..181326, cuff/handexact. All unrelatedparts unchanged, no multipleobject swaps,no grain/specks."
+      }
+    },
+    {
+      "file": "spiral-prompt.json",
+      "content": {
+        "prompt": "Exactcrop paintedwoodboatbow has ONE largebrownspiralpaintedsymbol. Change ONLY thisonepaintedsymbol into a clear brown FISH silhouette with samecenterandapprox60x50nativeextent. Keep boatwood/chippedpaint/backgroundexact. Oneobject'spaintpattern. Same100x100 framing.",
+        "nativeCrop": [
+          1110,
+          629,
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "file": "window-prompt.json",
+      "content": {
+        "prompt": "Exactcrop lighthouse narrowwindow. Change ONLY LOWER visible horizontal wooden crossbar (cropx40y118) into a clearly upward curved ARCH crossbar, stilltouchbothwindowedges. Otherupperbar/windowframe/glassexact. Strongcurve~15nativepxhigh, onecrossbarmechanismshape. Same80x160 framing.",
+        "nativeCrop": [
+          1080,
+          85,
+          80,
+          160
+        ]
+      }
+    },
+    {
+      "file": "window-v2-prompt.json",
+      "content": {
+        "prompt": "Edit this EXACT FULL lighthousekeeper scene at1672x941. ONLY narrow upperwindow crossbar atx1114 y199: change this SAME existing LOWERhorizontalcrossbar to an upward curved ARCH bar whileKEEPING endpoints atsamepositions (leftx1105y192 rightx1131y206). Centerarch rises tox1118y179. Keep uppercrossbar atx1125y122 and allwindowframe glassunchanged. ONEmechanismbar only. Preserve entire keeperboat/lighthouse anatomy/composition/stylepixels. No moved window, no missing bar, no newscene.",
+        "rejected": "window.png crop shifted bar and was not selected"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The boat bow spiral becomes a painted fish",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1118,
+        "y": 645,
+        "width": 78,
+        "height": 64
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "refined-native.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The boat cushion has a blue seam",
+      "difficulty": "Medium",
+      "box": {
+        "x": 906,
+        "y": 482,
+        "width": 101,
+        "height": 54
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "One window crossbar arches upward",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1095,
+        "y": 178,
+        "width": 47,
+        "height": 49
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "window-v2.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The brass lamp mount reflects a blue crescent",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1528,
+        "y": 192,
+        "width": 47,
+        "height": 47
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The coat cuff button has an X slot",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 149,
+        "y": 295,
+        "width": 34,
+        "height": 34
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker inspected nativepair, fivepairedcrops and 390stackedpair. Five separate object clues; anatomy/style/corepremise preserved. Unrelated drift excluded; exact native dimensions, five bounded nonoverlap boxes and outside original exact verified. Difficulty estimates unvalidated; root game/compositor/human/physicalphone pending. Full prompts/hash/source outputs retained. Rejected crop window.png shifted crossbar; use full-native window-v2.png instead.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

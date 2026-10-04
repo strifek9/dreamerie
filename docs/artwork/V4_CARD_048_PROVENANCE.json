@@ -1,0 +1,115 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-048",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-048-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-048-original-v4.png",
+    "sha256": "A18F0BF7358E7DF9E06CEA3450EBCD798E5A81FBD46696198A63C7FE4F9A4081",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-048-altered-source-v4.png",
+    "sha256": "091CC2FBA58C1F930DB8AD631580CAE96EFFA5A0D078B846329D2A1AB42F5BBF",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise localizededit to attached Dreamerie painting native1672x941. Preserve statuehand anatomy/gesture, framing, sky/seascape, moon/reflection, allrocks, colorsbrushwork. Exactlyfive SINGLEOBJECT changes:1 blue square pedestal inset nearx859y726 becomes downward-pointing blue triangle within samepanelarea;2 key teeth atx1218y856 point upward rather than down, samekeyshaft/disc/crescent;3 red stone ring atx644y208 has faceted triangular ruby instead of round ruby, samegoldband;4 white wristband atx811y503 has its RIGHT END curl outward into small loop atx882y500, sameband otherwise, wrist unchanged;5 red ribbon attachedkey atx1379y796 now tied around longkeySHAFT nearx1270y829 instead ofsmallright eyelet: retainoriginal key/eyelet/crescentexact, move ONLYribbon's attachmentloop andclosestsegment, trailingredribbon toframe stays. No otherchanges, no separateobjectswaps.\"}}, {\"file\": \"prompt-b.json\", \"content\": {\"prompt\": \"Preciseedit attached painted key shaftcrop. Retain exact diagonalshaftposition fromlowerlefttoupperright, cylinderallcolorsedges/background. Change ONLYkey's small toothblock: it currently extendsdownfromshaft; move it toUPPERside ofshaft withsame sizeandnotchshape. Do not shift, straighten or rotatewholekeyshaft. Preserveallotherpixels/framing.\"}}, {\"file\": \"prompt-c.json\", \"content\": {\"prompt\": \"Edit ONLY redribbon in attachedgoldkeycrop. KEEP ALLKEY exactlyunchanged includingthe little circular GOLD EYELET onright ofkeydisc; it mustremain visiblysamegoldcircle evenafterribbon moves. Remove ribbonloopfromeyelet andtie redribbon aroundlongshaft LEFTofkeydisc withvisibleknot, trailingribbonpassesunderkeydisc andexitsrightedgeat samepoint. Do not move,rotatekey,change teeth or removegoldmetaleyelet; preservecrescentengravingandframe/background. Only redribbon object alters.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise localizededit to attached Dreamerie painting native1672x941. Preserve statuehand anatomy/gesture, framing, sky/seascape, moon/reflection, allrocks, colorsbrushwork. Exactlyfive SINGLEOBJECT changes:1 blue square pedestal inset nearx859y726 becomes downward-pointing blue triangle within samepanelarea;2 key teeth atx1218y856 point upward rather than down, samekeyshaft/disc/crescent;3 red stone ring atx644y208 has faceted triangular ruby instead of round ruby, samegoldband;4 white wristband atx811y503 has its RIGHT END curl outward into small loop atx882y500, sameband otherwise, wrist unchanged;5 red ribbon attachedkey atx1379y796 now tied around longkeySHAFT nearx1270y829 instead ofsmallright eyelet: retainoriginal key/eyelet/crescentexact, move ONLYribbon's attachmentloop andclosestsegment, trailingredribbon toframe stays. No otherchanges, no separateobjectswaps."
+      }
+    },
+    {
+      "file": "prompt-b.json",
+      "content": {
+        "prompt": "Preciseedit attached painted key shaftcrop. Retain exact diagonalshaftposition fromlowerlefttoupperright, cylinderallcolorsedges/background. Change ONLYkey's small toothblock: it currently extendsdownfromshaft; move it toUPPERside ofshaft withsame sizeandnotchshape. Do not shift, straighten or rotatewholekeyshaft. Preserveallotherpixels/framing."
+      }
+    },
+    {
+      "file": "prompt-c.json",
+      "content": {
+        "prompt": "Edit ONLY redribbon in attachedgoldkeycrop. KEEP ALLKEY exactlyunchanged includingthe little circular GOLD EYELET onright ofkeydisc; it mustremain visiblysamegoldcircle evenafterribbon moves. Remove ribbonloopfromeyelet andtie redribbon aroundlongshaft LEFTofkeydisc withvisibleknot, trailingribbonpassesunderkeydisc andexitsrightedgeat samepoint. Do not move,rotatekey,change teeth or removegoldmetaleyelet; preservecrescentengravingandframe/background. Only redribbon object alters."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The pedestal inset is a downward-pointing triangle",
+      "difficulty": "Easy",
+      "box": {
+        "x": 797,
+        "y": 669,
+        "width": 117,
+        "height": 114
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The key's teeth point above its shaft",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1187,
+        "y": 817,
+        "width": 66,
+        "height": 64
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The wristband's end curls into a loop",
+      "difficulty": "Hard",
+      "box": {
+        "x": 849,
+        "y": 459,
+        "width": 75,
+        "height": 70
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The red ribbon is tied around the key shaft",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1255,
+        "y": 765,
+        "width": 417,
+        "height": 128
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The ring has a triangular red gemstone",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 617,
+        "y": 178,
+        "width": 69,
+        "height": 61
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Fullnative feathercomposite, allfivepaired crops and390pxstack inspected. Initial fullframekey rotated/eyelet disappeared: rejected. Two builtin croprefinements supply up-pointingteeth atoriginaldiagonalshaft and ribbon attachmentwithintactgold eyelet. Select ribbon over original via redpixelunion (R>1.8G,R>1.4B), dilate9px blur1px,30px horizontal sourceblend avoids tailseam. Key/stonepedestal/background outside5boxes unchanged; separate nonoverlapping teeth/ribbon targets. No brokenjoins detected final; root runtimecompositor andsingleobject auditrequired. Difficulty hypotheses,no human timing/physicalphoneapproval.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

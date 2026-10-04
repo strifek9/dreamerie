@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-255",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-255-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-255-original-v4.png",
+    "sha256": "618BDFD7A1A8E2B7E9968E82F06059ACAE02EAD9F24A48F37B383EDE3E6B5750",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-255-altered-source-v4.png",
+    "sha256": "17D887E1903AF957EDDBC18F5F523AE86B2675F35BDC393BA67A8A31A406FDE6",
+    "prompt": "[{\"file\": \"prompt-refine.json\", \"content\": {\"prompt\": \"ONE targeted edit only: tall blue book spine just right of brass clock, gold eight-point star centered native(493,169). Replace this SINGLE internal gold star emblem with a large embossed gold CRESCENT MOON of similar height~140px, matching worn gold paint and spine style. All book borders, other books, mouse/toolpouches and every other image detail unchanged. Fullnative1672x941 painting frame preserved.\"}}, {\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exactnative1672x941 painting preserve anatomy/frame/style. FIVE isolated single-object changes only: 1 mouse ONLY visible eye near484405 closes in curved slit. 2 mouse brass winding key ONLY upper hole near276444 becomes triangle instead of round, lower hole exact. 3 left FRONT cart wheel near678690 ONLY hub has cross-shaped recessed slot, original spokes/rim untouched. 4 ONE metal wrench in mouse rightmost toolpouch near359565 has its open U jaw closed to hexagonal ring jaw, same tool shaft/location, neighboring screwdriver exact. 5 gold acorn engraving on brass cup near1352628 points UPWARD rather than down (acorn cap moves tobottom with pointednutup), same single internal engraved motif. All other objects including featherrope bothwheels/clock/books exact. No twoobjectswaps/groupedclues.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt-refine.json",
+      "content": {
+        "prompt": "ONE targeted edit only: tall blue book spine just right of brass clock, gold eight-point star centered native(493,169). Replace this SINGLE internal gold star emblem with a large embossed gold CRESCENT MOON of similar height~140px, matching worn gold paint and spine style. All book borders, other books, mouse/toolpouches and every other image detail unchanged. Fullnative1672x941 painting frame preserved."
+      }
+    },
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exactnative1672x941 painting preserve anatomy/frame/style. FIVE isolated single-object changes only: 1 mouse ONLY visible eye near484405 closes in curved slit. 2 mouse brass winding key ONLY upper hole near276444 becomes triangle instead of round, lower hole exact. 3 left FRONT cart wheel near678690 ONLY hub has cross-shaped recessed slot, original spokes/rim untouched. 4 ONE metal wrench in mouse rightmost toolpouch near359565 has its open U jaw closed to hexagonal ring jaw, same tool shaft/location, neighboring screwdriver exact. 5 gold acorn engraving on brass cup near1352628 points UPWARD rather than down (acorn cap moves tobottom with pointednutup), same single internal engraved motif. All other objects including featherrope bothwheels/clock/books exact. No twoobjectswaps/groupedclues."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "closed-eye",
+      "label": "The mouse closes its eye.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 458,
+        "y": 389,
+        "width": 47,
+        "height": 31
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "upright-acorn",
+      "label": "The cup\u2019s engraved acorn points upward.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1320,
+        "y": 589,
+        "width": 63,
+        "height": 77
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "triangle-key",
+      "label": "The winding key\u2019s upper hole becomes triangular.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 250,
+        "y": 413,
+        "width": 53,
+        "height": 52
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "crescent-book",
+      "label": "The blue book\u2019s star becomes a crescent.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 421,
+        "y": 90,
+        "width": 143,
+        "height": 172
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "cross-hub",
+      "label": "One cart wheel\u2019s hub has a cross-shaped slot.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 661,
+        "y": 672,
+        "width": 41,
+        "height": 37
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five paired crops, full composite and 390-pixel stacked pair inspected. Single-object changes; difficulty hypotheses only. Root browser/hit QA and human fairness remain pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

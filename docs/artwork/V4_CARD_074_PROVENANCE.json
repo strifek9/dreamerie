@@ -28,6 +28,11 @@
       "usedRegions": [
         "curled-scrap"
       ]
+    },
+    {
+      "path": "/artwork/v4/collection/dream-074-single-object-source-v4b.png",
+      "sha256": "9B52ED5FD249F7132DB78D53BDAFD2BAD5F9BB26891264E30E7369A9847E8937",
+      "prompt": "[{\"tool\": \"existing built-in imagegen source reuse; deterministic localized selection\", \"inputOriginal\": \"D:\\\\Dreamerie\\\\public\\\\artwork\\\\v4\\\\collection\\\\dream-074-original-v4.png\", \"inputSource\": \"D:\\\\Dreamerie\\\\public\\\\artwork\\\\v4\\\\collection\\\\dream-074-altered-source-v4.png\", \"inputSourceSha256\": \"9833b9899056d53367405fe7e36efa254031c054865616c7a7ea54be54e948d1\", \"operation\": \"Copy only x1020,y476,w22,h35 from previously generated red rear carriage into byte-identical original with2pxedgefade. All other train pixels preserved original. No new generation.\"}]"
     }
   ],
   "rejectedCandidate": {
@@ -41,5 +46,22 @@
     "scope": "technical visual review only",
     "findings": "All five changes present, continuous localized clips: folded crane, red/blue train order, ladder paper fold, diagonal window bar and curled scrap.",
     "record": "docs/V4_BATCH_REVIEW_20261004.md"
-  }
+  },
+  "singleObjectFairnessCorrection": {
+    "authorization": "Sentinel_1aa3e822002c8191a74c51f233f72cbe",
+    "date": "2026-10-04",
+    "existingEditId": "train-order",
+    "label": "The rear blue carriage has a red side panel.",
+    "nativeBox": {
+      "x": 1020,
+      "y": 476,
+      "width": 22,
+      "height": 40
+    },
+    "qa": "Reuses generated red rear carriage only inside native side-panel polygon; source outside polygon original exact. Other four clues preserved. Unchanged middle carriage center952,544 distance73.54px exceeds66.88px radius; engine further. Native crop inspected; fullpair and390 QA complete. No human validation.",
+    "status": "root native pixels/full pair/five crops and actual browser five hits/inspection/Escape/layouts/reload passed; human difficulty pending",
+    "priorHumanVisualAcceptance": "applies to the previously reviewed pair; revised fifth clue pending fresh review",
+    "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\private-074-export-validation.json"
+  },
+  "retiredGeneratedSources": []
 }

@@ -1,0 +1,123 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-236",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-236-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-236-original-v4.png",
+    "sha256": "5FAEC6DFF1D23E731D510CEBA1A149A229475CA2D6D271E5352B784DB79F5466",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-236-altered-source-v4.png",
+    "sha256": "441AC76A1BD28147934F6650B2D680DF551417C267C71CD4271573C79A67A26C",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit the exact original painting locally; preserve child identity/anatomy, paper boat, all other objects, style and frame. Exactly five single-object changes: 1 Child's visible viewer-left eye near x626 y202 opens into a natural dark eye looking at the folded paper; other eye unchanged. 2 The golden chimney on the toy train locomotive near x345 y419 bends at its top into a short right-facing spout, train body unchanged. 3 Stuffed puppy's viewer-right floppy brown ear near x255 y607 folds upward into a curled flap instead of hanging down; other ear unchanged. 4 In the small sailboat drawing on wall top-center, the main orange triangular sail has a broad crescent-shaped opening in its center; boat, mast and other sail unchanged. 5 The green wooden cube on rug near x483 y750 has one diamond-shaped recessed hole centered in its top face; cube position and other faces unchanged. Five targets only, no swaps or new props, no global redraw.\"}}, {\"file\": \"prompt-b.json\", \"content\": {\"prompt\": \"Edit ONLY the child's brass overalls strap button at viewer-left near x635 y300 in the referenced original. Change its round shape into a small clearly five-pointed golden star button, same position and size. Preserve the other button, child's anatomy, face, clothing, all toys and every other pixel/composition as close as possible. One localized object only, dreamy painterly style unchanged.\", \"result\": \"button shape did not materially change; unused\"}}, {\"file\": \"prompt-c.json\", \"content\": {\"prompt\": \"Make ONE definite visible localized edit in the original painting: the red wooden toy cube on the rug at pixel x389 y558 (immediately above the dinosaur head and right of small blue cube) has a large dark circular drilled aperture centered on its FRONT RIGHT red face. Hole diameter about 22 pixels, visibly recessed with painted inner shading. Keep cube square, same size/color/position, top face and other face unchanged. Leave every other object and child's appearance unchanged. Only one cube's internal face detail, no paired change.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit the exact original painting locally; preserve child identity/anatomy, paper boat, all other objects, style and frame. Exactly five single-object changes: 1 Child's visible viewer-left eye near x626 y202 opens into a natural dark eye looking at the folded paper; other eye unchanged. 2 The golden chimney on the toy train locomotive near x345 y419 bends at its top into a short right-facing spout, train body unchanged. 3 Stuffed puppy's viewer-right floppy brown ear near x255 y607 folds upward into a curled flap instead of hanging down; other ear unchanged. 4 In the small sailboat drawing on wall top-center, the main orange triangular sail has a broad crescent-shaped opening in its center; boat, mast and other sail unchanged. 5 The green wooden cube on rug near x483 y750 has one diamond-shaped recessed hole centered in its top face; cube position and other faces unchanged. Five targets only, no swaps or new props, no global redraw."
+      }
+    },
+    {
+      "file": "prompt-b.json",
+      "content": {
+        "prompt": "Edit ONLY the child's brass overalls strap button at viewer-left near x635 y300 in the referenced original. Change its round shape into a small clearly five-pointed golden star button, same position and size. Preserve the other button, child's anatomy, face, clothing, all toys and every other pixel/composition as close as possible. One localized object only, dreamy painterly style unchanged.",
+        "result": "button shape did not materially change; unused"
+      }
+    },
+    {
+      "file": "prompt-c.json",
+      "content": {
+        "prompt": "Make ONE definite visible localized edit in the original painting: the red wooden toy cube on the rug at pixel x389 y558 (immediately above the dinosaur head and right of small blue cube) has a large dark circular drilled aperture centered on its FRONT RIGHT red face. Hole diameter about 22 pixels, visibly recessed with painted inner shading. Keep cube square, same size/color/position, top face and other face unchanged. Leave every other object and child's appearance unchanged. Only one cube's internal face detail, no paired change."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The puppy's right ear folds upward",
+      "difficulty": "Easy",
+      "box": {
+        "x": 205,
+        "y": 521,
+        "width": 88,
+        "height": 119
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The train chimney bends sideways",
+      "difficulty": "Medium",
+      "box": {
+        "x": 329,
+        "y": 387,
+        "width": 54,
+        "height": 52
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The wall sail bears a crescent opening",
+      "difficulty": "Hard",
+      "box": {
+        "x": 852,
+        "y": 16,
+        "width": 55,
+        "height": 48
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The green cube has a diamond recess",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 455,
+        "y": 710,
+        "width": 58,
+        "height": 36
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The red cube has a circular side aperture",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 389,
+        "y": 542,
+        "width": 28,
+        "height": 37
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "visually inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "nativePreflight": "source equals actual original size, five nonoverlapping boxes",
+    "difficulty": "hypotheses; human and browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

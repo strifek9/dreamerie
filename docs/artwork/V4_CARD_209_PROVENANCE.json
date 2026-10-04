@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-209",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-209-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-209-original-v4.png",
+    "sha256": "49E571F036C7476B61FEB5DF6F833B4926B56B60A26D4D81F2FADCCDD3CAB2B2",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-209-altered-source-v4.png",
+    "sha256": "1B63AE424D8B7649CF0A26F4C5A313C117851F5C5CEF756682F674CC74E154F6",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit this exact native1672x940 dreamy painting, composition and all details preserved except FIVE bounded single-object changes. 1 ONLY white ceramic jug handle left near(231,453) becomes a squared rectangular loop instead of round, same jug/body untouched. 2 ONLY right drawer brass hanging ring at(1516,842) swings UPWARD to rest above its attachment rather than below, fixed round backing plate unchanged, no other hardware changed. 3 ONLY lamp pull-chain bead at(1606,319) becomes a little brass STAR instead of ball, chain stays same. 4 ONLY reflected white door within right spectacle lens near(1081,274) has its single doorknob on LEFT side rather than right side, entire real scene and glasses exact; one knob moved not pair swap. 5 ONLY large blue jar lid central round finial near(1408,464) becomes a small pointed brass cone, lid/body and small left jar exact. Preserve glasses, reflection boundaries, comb, chairs, architecture, fruit, table and painterly lighting.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit this exact native1672x940 dreamy painting, composition and all details preserved except FIVE bounded single-object changes. 1 ONLY white ceramic jug handle left near(231,453) becomes a squared rectangular loop instead of round, same jug/body untouched. 2 ONLY right drawer brass hanging ring at(1516,842) swings UPWARD to rest above its attachment rather than below, fixed round backing plate unchanged, no other hardware changed. 3 ONLY lamp pull-chain bead at(1606,319) becomes a little brass STAR instead of ball, chain stays same. 4 ONLY reflected white door within right spectacle lens near(1081,274) has its single doorknob on LEFT side rather than right side, entire real scene and glasses exact; one knob moved not pair swap. 5 ONLY large blue jar lid central round finial near(1408,464) becomes a small pointed brass cone, lid/body and small left jar exact. Preserve glasses, reflection boundaries, comb, chairs, architecture, fruit, table and painterly lighting."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "square-handle",
+      "label": "The jug\u2019s handle becomes a squared loop.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 190,
+        "y": 395,
+        "width": 75,
+        "height": 100
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "raised-ring",
+      "label": "The right drawer ring swings upward.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1471,
+        "y": 767,
+        "width": 74,
+        "height": 111
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "cone-finial",
+      "label": "The large jar\u2019s lid has a pointed finial.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1384,
+        "y": 442,
+        "width": 48,
+        "height": 49
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "star-bead",
+      "label": "The lamp\u2019s pull bead becomes a star.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1585,
+        "y": 298,
+        "width": 41,
+        "height": 41
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "reflected-knob",
+      "label": "The reflected door\u2019s knob moves left.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1032,
+        "y": 263,
+        "width": 47,
+        "height": 35
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five paired crops, full composite and 390-pixel stacked pair inspected. Single-object changes; difficulty hypotheses only. Root browser/hit QA and human fairness remain pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-282",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-282-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-282-original-v4.png",
+    "sha256": "B6800F6B7FBC364F919886FE022A92F49CD7E9EC5DD0CCE3FC0152738F519D90",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-282-altered-source-v4.png",
+    "sha256": "F4764FCB2C3AFE5F36F730B20E9B30517BC5FBAE170B9360BE0437A5995ECF1B",
+    "prompt": "[{\"file\": \"prompt-refine.json\", \"content\": {\"prompt\": \"ONE targeted edit only: plain domed BRASS button upper-left atnative(207,135), attached anchor cord. Its center gets a bold embossed fivepoint star engraved into same wornbrass surface, size~55px. Buttonrim/cable/anchor/allotherobjects exact original, fullnative1672x941 painting.\"}}, {\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Native1672x941 exactpainting FIVE single-object localized changes. 1 sailor ONLY dark scarf free tail left of head near917334 points UPWARD instead of left, otherclothes/hat/anatomy exact. 2 triangular cream sail ONLY internal cloth panel gets one bold navy crescent near1127249, shape/rigging exact. 3 brass anchor ONLY its lower-right fluke tip near436550 curls DOWN rather than upright, mainanchor and leftfluke original. 4 steering wheel ONLY central brass hub near1008394 has square cap instead ofround, spokes/handexact. 5 upper-right bronze sewnbutton near152794 ONLY blue crossing thread forms plus + instead of diagonal X, same buttonfourholes exact. No swaps, allotherbutton holes/swirls/rope/lighting/style unchanged.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt-refine.json",
+      "content": {
+        "prompt": "ONE targeted edit only: plain domed BRASS button upper-left atnative(207,135), attached anchor cord. Its center gets a bold embossed fivepoint star engraved into same wornbrass surface, size~55px. Buttonrim/cable/anchor/allotherobjects exact original, fullnative1672x941 painting."
+      }
+    },
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Native1672x941 exactpainting FIVE single-object localized changes. 1 sailor ONLY dark scarf free tail left of head near917334 points UPWARD instead of left, otherclothes/hat/anatomy exact. 2 triangular cream sail ONLY internal cloth panel gets one bold navy crescent near1127249, shape/rigging exact. 3 brass anchor ONLY its lower-right fluke tip near436550 curls DOWN rather than upright, mainanchor and leftfluke original. 4 steering wheel ONLY central brass hub near1008394 has square cap instead ofround, spokes/handexact. 5 upper-right bronze sewnbutton near152794 ONLY blue crossing thread forms plus + instead of diagonal X, same buttonfourholes exact. No swaps, allotherbutton holes/swirls/rope/lighting/style unchanged."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "crescent-sail",
+      "label": "The sail bears a navy crescent.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1074,
+        "y": 220,
+        "width": 82,
+        "height": 111
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "raised-scarf",
+      "label": "The sailor\u2019s scarf tail lifts upward.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 878,
+        "y": 269,
+        "width": 72,
+        "height": 78
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "turned-fluke",
+      "label": "The anchor\u2019s right fluke curls outward.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 387,
+        "y": 503,
+        "width": 91,
+        "height": 192
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "square-wheel",
+      "label": "The wheel\u2019s central cap becomes square.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 991,
+        "y": 377,
+        "width": 35,
+        "height": 37
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "star-button",
+      "label": "The brass button bears a raised star.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 153,
+        "y": 88,
+        "width": 104,
+        "height": 94
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five paired crops, full composite and 390-pixel stacked pair inspected. Single-object changes; difficulty hypotheses only. Root browser/hit QA and human fairness remain pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

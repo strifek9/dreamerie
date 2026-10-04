@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-102",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-102-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-102-original-v4.png",
+    "sha256": "92E6C41D867FDD2E5068E22B181EA44B426219D7B277D38398762D575DB6B841",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-102-altered-source-v4.png",
+    "sha256": "CF8482F9936931551FD45A9DD6CA021B3293E7E60E49D8ED8F52405DD1B2C619",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise Dreameriepainting edit native1672x941. Preserve womananatomy/face/hands/instrument, moonfishbody/fins, gardenmoon/night/brushwork/framing. Exactly5 singleobject localizeddifferences:1 fish mouthx1511y604 opens as calm smallO insteadthinclosedlip, samefishhead/expression;2 violin-case goldclasp x821y401 opens withtopflap lifted upward, samecasebody/hingebase;3 peachribbon FARLEFTtip x288y111 curlsinto one loop pointingupward instead straightstreamingtip, sameother ribbonpath;4 small gold crescent painted onfishTAIL atx425y372 becomes a goldfivepointstar, tailoutlinepatternelsewhereunchanged;5 roundwhite pearl hairclipx984y146 becomes FACETEDdiamond pearl, sameclipstem/hair. Singleobject each, no swaps/globalchanges; clean consistent paintedfinish.\"}}, {\"file\": \"prompt-b.json\", \"content\": {\"prompt\": \"Precise hairornamentcrop edit. Change ONLY white ROUNDpearl into distinct white TEARDROP pearl withpoint DOWN, samecenter andupperedge, tip extendsdown slightly. Preserve goldclipstem, hairallstrands andlight/paint/framing EXACT. Smoothsamepearlymaterial, strongdefinitesilhouettechange, notfacetsorcolor.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise Dreameriepainting edit native1672x941. Preserve womananatomy/face/hands/instrument, moonfishbody/fins, gardenmoon/night/brushwork/framing. Exactly5 singleobject localizeddifferences:1 fish mouthx1511y604 opens as calm smallO insteadthinclosedlip, samefishhead/expression;2 violin-case goldclasp x821y401 opens withtopflap lifted upward, samecasebody/hingebase;3 peachribbon FARLEFTtip x288y111 curlsinto one loop pointingupward instead straightstreamingtip, sameother ribbonpath;4 small gold crescent painted onfishTAIL atx425y372 becomes a goldfivepointstar, tailoutlinepatternelsewhereunchanged;5 roundwhite pearl hairclipx984y146 becomes FACETEDdiamond pearl, sameclipstem/hair. Singleobject each, no swaps/globalchanges; clean consistent paintedfinish."
+      }
+    },
+    {
+      "file": "prompt-b.json",
+      "content": {
+        "prompt": "Precise hairornamentcrop edit. Change ONLY white ROUNDpearl into distinct white TEARDROP pearl withpoint DOWN, samecenter andupperedge, tip extendsdown slightly. Preserve goldclipstem, hairallstrands andlight/paint/framing EXACT. Smoothsamepearlymaterial, strongdefinitesilhouettechange, notfacetsorcolor."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The violin case is open",
+      "difficulty": "Easy",
+      "box": {
+        "x": 681,
+        "y": 309,
+        "width": 227,
+        "height": 154
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The fish tail bears a gold star",
+      "difficulty": "Medium",
+      "box": {
+        "x": 386,
+        "y": 314,
+        "width": 82,
+        "height": 104
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The ribbon's far-left tip curls into a loop",
+      "difficulty": "Hard",
+      "box": {
+        "x": 250,
+        "y": 49,
+        "width": 264,
+        "height": 105
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The fish opens its mouth",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1474,
+        "y": 563,
+        "width": 73,
+        "height": 110
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The pearl hair ornament is teardrop shaped",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 969,
+        "y": 131,
+        "width": 31,
+        "height": 36
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source/nativefeathercomposite/fivepairedcrops/390stack inspected. Actualcaseentirelidopen (onecaseinternalmechanism) labelupdatedaccordingly. Initialpearlfacetrequest tooambiguous: builtin cropreplacedteardropornament. Allfive observedtargets singleobjects, faces/poses preserved; outsideunion unchanged. No brokenjoinsdetected. Difficulty hypotheses, nohumantiming/physicalphoneapproval; rootruntimeQArequired.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

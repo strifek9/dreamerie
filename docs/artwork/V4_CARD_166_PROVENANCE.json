@@ -1,0 +1,139 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-166",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-166-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-166-original-v4.png",
+    "sha256": "D3B0E619C5078EA1C9F20B48964215AF4FD3A7631188B6ECD0576189A7792607",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-166-altered-source-v4.png",
+    "sha256": "54B0D31030803D1379EDACA11200672CAAD913EC122C3599400F44C8AA8C7889",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise Dreamerie counterpart edit, same full-frame hallway parade of empty raincoats carrying raincloths, preserve original identities/anatomy/reflections/frame/style. Exactly FIVE localized changes: 1 FRONT red coat's gold belt buckle inner tongue points UP vertically instead of horizontal; buckle frame/coat exact. 2 BLUE coat's MIDDLE gold toggle turns DIAGONAL down-right across its same two loops, other toggles untouched. 3 YELLOW coat's RIGHT planted green boot has one large pale crescent on its upper front instead of the few round spots there; boot shape and other boot unchanged. 4 foreground circular floor drain lattice changes to clearly parallel straight bars inside same round rim. 5 small GOLD umbrella stand at far LEFT: ONLY its RIGHTMOST canopy panel curls upward at outer tip instead of drooping, preserve smiling stand/body and other canopy panels. Five independently selectable single objects/parts, no multi-object swaps or blanket color changes, no extra specks. All other painted scene elements exact original. Return one full frame.\"}}, {\"file\": \"lamp-prompt.json\", \"content\": {\"prompt\": \"Edit ONLY gold ceiling lamp's outer shade contour in this crop: change rounded dome shade into a distinct straight-sided truncated CONE with a broad flared lower rim and flat narrow upper shoulder. Same yellow gold material, position, overall size, white bulb and hanging socket/background unchanged. Do not change bulb brightness or add details. Single shade structural shape change, same painted style. Return one matching crop.\", \"nativeCrop\": [1402, 10, 98, 66]}}, {\"file\": \"hood-prompt.json\", \"content\": {\"prompt\": \"Precise single-object internal seam edit. Keep this red raincoat hood contour/material/lighting/background exactly. ONLY existing curved stitched seam across upper crown/rim changes from spaced straight dash stitches into a clearly continuous CHAIN of small interlocking loop stitches following the SAME curved seam. Loop pattern visibly larger and legible, pale warm red thread, not grain or scattered noise. Do not add patches, buttons or new fabric folds. One coherent seam pattern change, outer hood/opening exact. Return one matching crop.\", \"nativeCrop\": [395, 40, 189, 104]}}, {\"file\": \"bluehood-prompt.json\", \"content\": {\"prompt\": \"Change ONLY the blue hood's inner RIGHT rim in this crop. Fold a distinct triangular flap of that same blue rim INWARD into the dark hood opening, attached at its original right edge, so the flap points LEFT across the opening. About one third of crop width and one third of crop height, clearly an inward folded cloth flap. Preserve external silhouette, rest of seam, wall/frame/background, all other coat anatomy and painted style exactly. One coherent cloth fold relationship, no new separate ornament. Output one matching crop.\", \"nativeCrop\": [837, 91, 105, 99]}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise Dreamerie counterpart edit, same full-frame hallway parade of empty raincoats carrying raincloths, preserve original identities/anatomy/reflections/frame/style. Exactly FIVE localized changes: 1 FRONT red coat's gold belt buckle inner tongue points UP vertically instead of horizontal; buckle frame/coat exact. 2 BLUE coat's MIDDLE gold toggle turns DIAGONAL down-right across its same two loops, other toggles untouched. 3 YELLOW coat's RIGHT planted green boot has one large pale crescent on its upper front instead of the few round spots there; boot shape and other boot unchanged. 4 foreground circular floor drain lattice changes to clearly parallel straight bars inside same round rim. 5 small GOLD umbrella stand at far LEFT: ONLY its RIGHTMOST canopy panel curls upward at outer tip instead of drooping, preserve smiling stand/body and other canopy panels. Five independently selectable single objects/parts, no multi-object swaps or blanket color changes, no extra specks. All other painted scene elements exact original. Return one full frame."
+      }
+    },
+    {
+      "file": "lamp-prompt.json",
+      "content": {
+        "prompt": "Edit ONLY gold ceiling lamp's outer shade contour in this crop: change rounded dome shade into a distinct straight-sided truncated CONE with a broad flared lower rim and flat narrow upper shoulder. Same yellow gold material, position, overall size, white bulb and hanging socket/background unchanged. Do not change bulb brightness or add details. Single shade structural shape change, same painted style. Return one matching crop.",
+        "nativeCrop": [
+          1402,
+          10,
+          98,
+          66
+        ]
+      }
+    },
+    {
+      "file": "hood-prompt.json",
+      "content": {
+        "prompt": "Precise single-object internal seam edit. Keep this red raincoat hood contour/material/lighting/background exactly. ONLY existing curved stitched seam across upper crown/rim changes from spaced straight dash stitches into a clearly continuous CHAIN of small interlocking loop stitches following the SAME curved seam. Loop pattern visibly larger and legible, pale warm red thread, not grain or scattered noise. Do not add patches, buttons or new fabric folds. One coherent seam pattern change, outer hood/opening exact. Return one matching crop.",
+        "nativeCrop": [
+          395,
+          40,
+          189,
+          104
+        ]
+      }
+    },
+    {
+      "file": "bluehood-prompt.json",
+      "content": {
+        "prompt": "Change ONLY the blue hood's inner RIGHT rim in this crop. Fold a distinct triangular flap of that same blue rim INWARD into the dark hood opening, attached at its original right edge, so the flap points LEFT across the opening. About one third of crop width and one third of crop height, clearly an inward folded cloth flap. Preserve external silhouette, rest of seam, wall/frame/background, all other coat anatomy and painted style exactly. One coherent cloth fold relationship, no new separate ornament. Output one matching crop.",
+        "nativeCrop": [
+          837,
+          91,
+          105,
+          99
+        ]
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "canopy",
+      "label": "The umbrella stand's right canopy tip curls upward.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 139,
+        "y": 312,
+        "width": 58,
+        "height": 61
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "drain",
+      "label": "The floor drain has parallel bars.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1328,
+        "y": 674,
+        "width": 135,
+        "height": 41
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "bluehood",
+      "label": "The blue hood rim folds inward.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 858,
+        "y": 127,
+        "width": 50,
+        "height": 54
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "hood",
+      "label": "The red hood seam has chain stitches.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 432,
+        "y": 41,
+        "width": 129,
+        "height": 103
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "lamp",
+      "label": "The ceiling lamp shade becomes straight-sided.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1410,
+        "y": 16,
+        "width": 83,
+        "height": 48
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered composite/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

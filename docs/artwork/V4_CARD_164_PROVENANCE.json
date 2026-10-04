@@ -1,0 +1,120 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-164",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-164-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-164-original-v4.png",
+    "sha256": "C6A1B21762DFE9E55AAEC688FE57872C2528D45A2ABCF5B0AAAF7D6FCC75960E",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-164-altered-source-v4.png",
+    "sha256": "54B6DF3672F7194B548FC6187D27396E9CD798B969659643028CD9CE74B90BD5",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit EXACT Violin That Grew Quiet native1672x941 violin with giant wood ear, scarf andbow. Preserve corepremiseallframingstylegeometry. FIVE localized singleobject edits: 1 wooden violinbridge center883317 ONE large oval opening becomes a roundedsquare opening within876296..911344, other bridgeholesunchanged; 2 ONLY upperright tuningpeg round blackhead x297135 becomes a clearly winged butterfly-shaped tuningkey, within271109..323160, pegshaft/stringsunchanged; 3 ONLY right bow frog's silver medallion at1420690 changes roundcircle to a dark centered crescent inset, within1402672..1445708, frogoutlineunchanged; 4 blue rosinbox LID decorativegold circle at1530515 becomes a clear diagonal goldbar acrosssamecircle, within1506488..1562544; 5 exposedamberrosin inside openbox x1432520 reflects a small pale EAR silhouette rather currentglint, within1391507..1464538. Boxlid and rosinareseparateobjects/clues physicallyadjacent but boxesnonoverlap chooseprecisely. Allscarf/fringes/earanatomystringsoriginalexact. No microspecks.\"}}, {\"file\": \"bridge-prompt.json\", \"content\": {\"prompt\": \"Exactcrop wooden violinbridge with severalholesandstrings. ONLY the LARGE central ovalhole (cropx46y58) becomes a rounded SQUARE hole of sameouterbounds. Otherholes, strings, bridgeoutline unchanged. Strong clearfour corners ~18x24 native. Same80x110 framing.\", \"nativeCrop\": [845, 260, 80, 110]}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit EXACT Violin That Grew Quiet native1672x941 violin with giant wood ear, scarf andbow. Preserve corepremiseallframingstylegeometry. FIVE localized singleobject edits: 1 wooden violinbridge center883317 ONE large oval opening becomes a roundedsquare opening within876296..911344, other bridgeholesunchanged; 2 ONLY upperright tuningpeg round blackhead x297135 becomes a clearly winged butterfly-shaped tuningkey, within271109..323160, pegshaft/stringsunchanged; 3 ONLY right bow frog's silver medallion at1420690 changes roundcircle to a dark centered crescent inset, within1402672..1445708, frogoutlineunchanged; 4 blue rosinbox LID decorativegold circle at1530515 becomes a clear diagonal goldbar acrosssamecircle, within1506488..1562544; 5 exposedamberrosin inside openbox x1432520 reflects a small pale EAR silhouette rather currentglint, within1391507..1464538. Boxlid and rosinareseparateobjects/clues physicallyadjacent but boxesnonoverlap chooseprecisely. Allscarf/fringes/earanatomystringsoriginalexact. No microspecks."
+      }
+    },
+    {
+      "file": "bridge-prompt.json",
+      "content": {
+        "prompt": "Exactcrop wooden violinbridge with severalholesandstrings. ONLY the LARGE central ovalhole (cropx46y58) becomes a rounded SQUARE hole of sameouterbounds. Otherholes, strings, bridgeoutline unchanged. Strong clearfour corners ~18x24 native. Same80x110 framing.",
+        "nativeCrop": [
+          845,
+          260,
+          80,
+          110
+        ]
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "One tuning key has butterfly wings",
+      "difficulty": "Easy",
+      "box": {
+        "x": 259,
+        "y": 94,
+        "width": 82,
+        "height": 78
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The rosin reflects an ear silhouette",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1391,
+        "y": 507,
+        "width": 71,
+        "height": 31
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The rosin lid has a diagonal gold stripe",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1464,
+        "y": 472,
+        "width": 130,
+        "height": 109
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The bow frog medallion becomes a crescent",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1402,
+        "y": 672,
+        "width": 44,
+        "height": 37
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The large bridge hole is rounded square",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 873,
+        "y": 294,
+        "width": 40,
+        "height": 51
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "refined-native.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390 stacked pair. Five separately changed objects; anatomy/corepremise maintained; unrelated drift excluded; outside boxes exact original. Full generated sources/prompts/hashes retained. Crop bridge refinement mapped to exact native crop with coordinates in prompt. Difficulty estimates unvalidated. Root compositor/game/human review pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

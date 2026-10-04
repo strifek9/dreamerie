@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-204",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-204-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-204-original-v4.png",
+    "sha256": "1EE74D1E4D232B5C052AE760528879FA4D5768B39B9285EA52D0FEC064CA0DB8",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-204-altered-source-v4.png",
+    "sha256": "74614F6E9A6E701AE9B5A10E13AC62B3212F691377017F8443F5C91EC30FE88D",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Exact native1672x941 paintedviolinistmirror preciseedit preservewomanfacehandsanatomy violinbow posture mirrorpainting allpinknotes. Exactly5 localizedoneobjectclues:1 LEFTSHIRT cuffbuttonx89y766 itscentralholepattern becomesoneverticalslot insteadtwotinyholes, buttonoutline unchanged;2 foregroundVIOLIN LEFT f-holex554y524 closesintonarrowS-shapedloop insteadopenshape, samewoodbodystrings/bow;3 MIRRORREFLECTED woman's LEFT visibleeye nearx980y267 closeswink ratheropen, reflectedright eye realeyesunchanged;4 LEFTJAR farthestRIGHT PAINTBRUSH x180y281 bristlesbendDOWN intoclearcurledtip insteadpointup, shaftjarotherbrushesunchanged;5 lower-right paintBOWL x1320y861 goldrim rightside turnsopenpouringspout notch insteadplainroundrim, bowlbodypaintunchanged. No swaps noextraobjects noglobalrepaint. Five semanticoneobjectvariations.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Exact native1672x941 paintedviolinistmirror preciseedit preservewomanfacehandsanatomy violinbow posture mirrorpainting allpinknotes. Exactly5 localizedoneobjectclues:1 LEFTSHIRT cuffbuttonx89y766 itscentralholepattern becomesoneverticalslot insteadtwotinyholes, buttonoutline unchanged;2 foregroundVIOLIN LEFT f-holex554y524 closesintonarrowS-shapedloop insteadopenshape, samewoodbodystrings/bow;3 MIRRORREFLECTED woman's LEFT visibleeye nearx980y267 closeswink ratheropen, reflectedright eye realeyesunchanged;4 LEFTJAR farthestRIGHT PAINTBRUSH x180y281 bristlesbendDOWN intoclearcurledtip insteadpointup, shaftjarotherbrushesunchanged;5 lower-right paintBOWL x1320y861 goldrim rightside turnsopenpouringspout notch insteadplainroundrim, bowlbodypaintunchanged. No swaps noextraobjects noglobalrepaint. Five semanticoneobjectvariations."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The violin left sound hole curls into a spiral",
+      "difficulty": "Easy",
+      "box": {
+        "x": 514,
+        "y": 493,
+        "width": 75,
+        "height": 49
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The reflected face winks",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1027,
+        "y": 218,
+        "width": 51,
+        "height": 36
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The brush bristles curl downward",
+      "difficulty": "Hard",
+      "box": {
+        "x": 158,
+        "y": 222,
+        "width": 54,
+        "height": 73
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The paint bowl rim has a pouring notch",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1249,
+        "y": 826,
+        "width": 131,
+        "height": 63
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The cuff button has a vertical slot",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 74,
+        "y": 747,
+        "width": 34,
+        "height": 35
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "inspected",
+    "fivePairedCrops": "five single-object clues inspected; complete original extents included",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "difficulty": "hypotheses; parent browser and human playtest pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-043",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-revisit-v1/043-dynamic-original-v2.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-043-original-v4.png",
+    "sha256": "0CAA407D0C805F266B1F817882F1B20ACE81AEF2C50F95E4696257BB341861C6",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-043-altered-source-v4.png",
+    "sha256": "3F3DF9F8784700A93838F4F1967C4FB9659D7393F5CC3DD3FAFECCDB470F7F8D",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise-object-edit of provided1672x941 otter lemonboat Dreamerie painting. Preserve exact framing, otter anatomy, fish fountains, rope, all original brushwork and composition. Five single-object localized changes only: 1 crab's rightmost large front claw at x1458 y532 closes its pincers instead of open; retain arm and otherclaw, region1420,510,90,61. 2 white heart painted on green boatbucket becomes a downward-pointing white heart, region799,507,57,53; do not alter bucket. 3 blue heart painted on tiny picnic teacup becomes a blue crescent, region1525,528,40,36; retain cup/handles. 4 purple oarblade's central groove curves into a gentle S instead of straight diagonal groove, region500,626,66,78; retain blade outline. 5 one dangling pink leaf on vine to RIGHT of fish, centered1622,201, rotates to point upward instead of down, region1607,184,31,35. All otherpixels unchanged, no addedprops no grain no text. No pair swaps, only one independently selectable object per edit.\"}}, {\"file\": \"refine-prompt.json\", \"content\": {\"prompt\": \"Precise-object-edit of original1672x941 painting. Change ONLYtwo details. 1 crab on rightbank: close the LOWER RIGHT frontclaw (center1456,535), join pincer tips leaving no gap, same size/location/anatomy. Keep otherclawopen. 2 WHITEheart emblem on GREENbucket inboat center826,530 must rotate180degrees, heartpointUP and lobesBOTTOM. Same emblem sizewhitepaint, bucketbodyandhandleunchanged. All elseexact unchanged, no newprops no restyle no text. Both edits bold unambiguous but localized.\"}}, {\"file\": \"claw-prompt.json\", \"content\": {\"prompt\": \"Edit ONE object in this full original1672x941 painting: the brightred crab lower-right front claw on riverbank, centered1456,535. Turn this whole single claw upright, its two tips now point UP at sky instead of diagonally down-left. Keep claw attached naturally to existing crab arm. Keep second claw left holdingrope EXACTLYsame. Crabbodyeyeslegsunchanged. Entireclaw and uppernew tips must fit x1421-1494,y495-567. Everyotherobject/image unchanged. Strong clear pose change, not tinytexture. Native1672x941, preserve painterlygrainfree finish.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise-object-edit of provided1672x941 otter lemonboat Dreamerie painting. Preserve exact framing, otter anatomy, fish fountains, rope, all original brushwork and composition. Five single-object localized changes only: 1 crab's rightmost large front claw at x1458 y532 closes its pincers instead of open; retain arm and otherclaw, region1420,510,90,61. 2 white heart painted on green boatbucket becomes a downward-pointing white heart, region799,507,57,53; do not alter bucket. 3 blue heart painted on tiny picnic teacup becomes a blue crescent, region1525,528,40,36; retain cup/handles. 4 purple oarblade's central groove curves into a gentle S instead of straight diagonal groove, region500,626,66,78; retain blade outline. 5 one dangling pink leaf on vine to RIGHT of fish, centered1622,201, rotates to point upward instead of down, region1607,184,31,35. All otherpixels unchanged, no addedprops no grain no text. No pair swaps, only one independently selectable object per edit."
+      }
+    },
+    {
+      "file": "refine-prompt.json",
+      "content": {
+        "prompt": "Precise-object-edit of original1672x941 painting. Change ONLYtwo details. 1 crab on rightbank: close the LOWER RIGHT frontclaw (center1456,535), join pincer tips leaving no gap, same size/location/anatomy. Keep otherclawopen. 2 WHITEheart emblem on GREENbucket inboat center826,530 must rotate180degrees, heartpointUP and lobesBOTTOM. Same emblem sizewhitepaint, bucketbodyandhandleunchanged. All elseexact unchanged, no newprops no restyle no text. Both edits bold unambiguous but localized."
+      }
+    },
+    {
+      "file": "claw-prompt.json",
+      "content": {
+        "prompt": "Edit ONE object in this full original1672x941 painting: the brightred crab lower-right front claw on riverbank, centered1456,535. Turn this whole single claw upright, its two tips now point UP at sky instead of diagonally down-left. Keep claw attached naturally to existing crab arm. Keep second claw left holdingrope EXACTLYsame. Crabbodyeyeslegsunchanged. Entireclaw and uppernew tips must fit x1421-1494,y495-567. Everyotherobject/image unchanged. Strong clear pose change, not tinytexture. Native1672x941, preserve painterlygrainfree finish."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The crab right front claw points upward",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1424,
+        "y": 430,
+        "width": 91,
+        "height": 138
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "claw.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The bucket emblem forms an upward three-lobed shape",
+      "difficulty": "Medium",
+      "box": {
+        "x": 799,
+        "y": 506,
+        "width": 56,
+        "height": 54
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "refine.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The picnic cup emblem is a crescent",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1525,
+        "y": 528,
+        "width": 37,
+        "height": 35
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The paddle central groove curves in an S",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 491,
+        "y": 610,
+        "width": 88,
+        "height": 103
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The small upper branch leaf is pink and points upward",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1372,
+        "y": 28,
+        "width": 38,
+        "height": 39
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker full native pair, five paired crops and390stack inspected. First claw pose requests failed and rejected; final uprightclaw source accepted, arm attachment continuous. Five independently selectable objects, no swaps. Native/nonoverlap/exactoutsidepixels verified. Root compositor/game and human difficulty tests pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

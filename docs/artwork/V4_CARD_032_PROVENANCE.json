@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-032",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-032-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-032-original-v4.png",
+    "sha256": "7479A4505E3056E35B39BE2586A85BFBB11593EAD25820EF320F92215B4975F7",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-032-altered-source-v4.png",
+    "sha256": "F56E21A894C172CDCA603FA6E1302298FFD6B252BA4D0A735A2EC5B53B9F7DDD",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Use case precise-object-edit. Preserve exact wide1672x941 Dreamerie glove holding miniature sea/desert painting. Exactlyfive local edits: 1 boat's red sail changes from triangle to gently curved hooked top, same mast and hull, x888 y262 width97 height133. 2 white ladder rung at x1550 y493 tilts diagonally downward instead of horizontal; retain ladder rails x1536 y472 width55 height57. 3 brass cuff dial dark pointer rotates to point down-left instead of upper-left, exact existing dial x668 y698 width67 height54. 4 small distant central stone peak at x1165 y714 becomes two adjoining arches like a stone bridge instead of solid mound, x1130 y696 width110 height49. 5 tiny boat pennant at masttop flies left instead of right, x925 y251 width33 height26. Preserve anatomy/hand, all composition contours lighting and painterly grainfreefinish. No text or extra objects; localized bounded changes only.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Use case precise-object-edit. Preserve exact wide1672x941 Dreamerie glove holding miniature sea/desert painting. Exactlyfive local edits: 1 boat's red sail changes from triangle to gently curved hooked top, same mast and hull, x888 y262 width97 height133. 2 white ladder rung at x1550 y493 tilts diagonally downward instead of horizontal; retain ladder rails x1536 y472 width55 height57. 3 brass cuff dial dark pointer rotates to point down-left instead of upper-left, exact existing dial x668 y698 width67 height54. 4 small distant central stone peak at x1165 y714 becomes two adjoining arches like a stone bridge instead of solid mound, x1130 y696 width110 height49. 5 tiny boat pennant at masttop flies left instead of right, x925 y251 width33 height26. Preserve anatomy/hand, all composition contours lighting and painterly grainfreefinish. No text or extra objects; localized bounded changes only."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The small stone mound becomes a double arch bridge",
+      "difficulty": "Easy",
+      "box": {
+        "x": 977,
+        "y": 620,
+        "width": 166,
+        "height": 71
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-2",
+      "label": "The red sail bulges outward instead of forming a straight triangle",
+      "difficulty": "Medium",
+      "box": {
+        "x": 884,
+        "y": 280,
+        "width": 100,
+        "height": 120
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-3",
+      "label": "The upper white ladder rung slopes down toward the right",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1548,
+        "y": 479,
+        "width": 39,
+        "height": 23
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-4",
+      "label": "The brass cuff dial pointer turns toward the lower left",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 670,
+        "y": 700,
+        "width": 61,
+        "height": 52
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-5",
+      "label": "The boat pennant flies left instead of right",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 898,
+        "y": 250,
+        "width": 56,
+        "height": 28
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": "Worker native pair/five paired crops/390stack inspected. Upper rung only tilted; lower rung pixels retained. Five separate nonoverlapping object details. Source unrelated drift excluded, original outside regions exact by construction. Root compositor/game QA and human difficulty pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

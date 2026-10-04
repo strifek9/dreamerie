@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-340",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-340-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-340-original-v4.png",
+    "sha256": "545B02B612BC6C6BC7C91BF70D66BB21757980EA3204E92FC74A254D23EAFA2D",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-340-altered-source-v4.png",
+    "sha256": "D62688956E6BA5733AB21945540BAE7140DA0608E0A12626D0D4D428CF1B4C87",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact native1672x941 painterly friendly purple monster holding blanket ceiling fort. FIVE isolated ONE-object changes:1 chair cushion top x595y608 gains one gold star embroidery, preserve folds/edges;2 mug handle x293y509 curls inward into spiral, mug body exact;3 FRONT horizontal chair brace x522y756 bends upward into smooth arch retaining same endpoints, other legs/braces exact;4 lantern top cap x87y328 reflects broad blue crescent, rest lantern exact;5 chest clasp lower tongue x1310y691 tilts diagonally right instead of vertical, mount and trunk exact. Preserve monster anatomy, gloves fingers, ceiling, all fringe and ladder outlines, painterly style/frame. No extra changes.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-340-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact native1672x941 painterly friendly purple monster holding blanket ceiling fort. FIVE isolated ONE-object changes:1 chair cushion top x595y608 gains one gold star embroidery, preserve folds/edges;2 mug handle x293y509 curls inward into spiral, mug body exact;3 FRONT horizontal chair brace x522y756 bends upward into smooth arch retaining same endpoints, other legs/braces exact;4 lantern top cap x87y328 reflects broad blue crescent, rest lantern exact;5 chest clasp lower tongue x1310y691 tilts diagonally right instead of vertical, mount and trunk exact. Preserve monster anatomy, gloves fingers, ceiling, all fringe and ladder outlines, painterly style/frame. No extra changes.",
+        "reference": "D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-340-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The chair cushion has gold star embroidery",
+      "difficulty": "Easy",
+      "box": {
+        "x": 590,
+        "y": 570,
+        "width": 66,
+        "height": 37
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The mug handle curls inward",
+      "difficulty": "Medium",
+      "box": {
+        "x": 281,
+        "y": 485,
+        "width": 39,
+        "height": 42
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The front chair brace arches upward",
+      "difficulty": "Hard",
+      "box": {
+        "x": 471,
+        "y": 706,
+        "width": 113,
+        "height": 66
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The lantern cap reflects a blue crescent",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 50,
+        "y": 330,
+        "width": 84,
+        "height": 38
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The chest clasp tongue tilts to the right",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1291,
+        "y": 669,
+        "width": 55,
+        "height": 61
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390 stacked pair. Five independently selectable localized object clues. Native dimensions, five bounded nonoverlapping boxes and exact original pixels outside verified. Difficulty estimates unvalidated; root compositor/game, human difficulty and physical phone approval pending. Full prompt/source hash chain retained.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

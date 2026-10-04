@@ -1,0 +1,121 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-244",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-244-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-244-original-v4.png",
+    "sha256": "CF68413807E702A75697AA8012B8122E21EE55E8E53EC072F288341EF61187E4",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-244-altered-source-v4.png",
+    "sha256": "50D59B6A2166F502B2171ECC1BF3856F346C017F7E3C10C9568AFE88B14C5EA3",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precisely edit original painted girl beside dresser drawers filled with ocean waves. Preserve girl anatomy, expression, hands, all waves, lighthouse room and style. Exactly FIVE one-object localized clues: (1) TOP drawer LEFT brass shell pull hangs upside down from same mounting, all other pulls exact; (2) dresser RIGHT side golden seahorse tail uncurls into a distinct outward hook instead of inward spiral, same head/body; (3) toy sailboat RIGHT triangular sail billows inward in a concave curve, same mast/hull/left sail; (4) compass on bottom LEFT book its needle points diagonally RIGHT instead of current direction, all rings/body exact; (5) chair blanket's single large crescent moon at far right has its opening face LEFT instead of RIGHT, same position/scale/other stars. Exactly five separate objects, no swaps, specks or arbitrary color changes.\"}}, {\"file\": \"horse-prompt.json\", \"content\": {\"prompt\": \"Edit exactly this gold seahorse ornament crop. Keep upper head, body and wooden background exact. Change ONLY connected lower tail: instead of coiling to the LEFT, it extends down then curls outward to the RIGHT in a broad hook. Clearly opposite tail curling direction, same single seahorse ornament. No extra ornament or texture edits.\"}}, {\"file\": \"moon-prompt.json\", \"content\": {\"prompt\": \"Edit only this exact original crescent moon printed on navy blanket. Reverse crescent orientation horizontally: gold crescent opening now faces LEFT, solid gold spine on RIGHT. Same native size/location and painterly gold fabric texture, preserve surrounding blanket folds and specks/stars exactly. One printed moon object changes orientation.\"}}, {\"file\": \"needle-prompt.json\", \"content\": {\"prompt\": \"Edit this original compass crop only. Its thin central compass needle becomes one bold clearly triangular BLACK arrow pointing LEFT across cream dial from same pivot. Preserve every compass case, ring, tick marking, brass outline, book background exact. Single needle internal change large visible triangularhead, no secondneedle.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precisely edit original painted girl beside dresser drawers filled with ocean waves. Preserve girl anatomy, expression, hands, all waves, lighthouse room and style. Exactly FIVE one-object localized clues: (1) TOP drawer LEFT brass shell pull hangs upside down from same mounting, all other pulls exact; (2) dresser RIGHT side golden seahorse tail uncurls into a distinct outward hook instead of inward spiral, same head/body; (3) toy sailboat RIGHT triangular sail billows inward in a concave curve, same mast/hull/left sail; (4) compass on bottom LEFT book its needle points diagonally RIGHT instead of current direction, all rings/body exact; (5) chair blanket's single large crescent moon at far right has its opening face LEFT instead of RIGHT, same position/scale/other stars. Exactly five separate objects, no swaps, specks or arbitrary color changes."
+      }
+    },
+    {
+      "file": "horse-prompt.json",
+      "content": {
+        "prompt": "Edit exactly this gold seahorse ornament crop. Keep upper head, body and wooden background exact. Change ONLY connected lower tail: instead of coiling to the LEFT, it extends down then curls outward to the RIGHT in a broad hook. Clearly opposite tail curling direction, same single seahorse ornament. No extra ornament or texture edits."
+      }
+    },
+    {
+      "file": "moon-prompt.json",
+      "content": {
+        "prompt": "Edit only this exact original crescent moon printed on navy blanket. Reverse crescent orientation horizontally: gold crescent opening now faces LEFT, solid gold spine on RIGHT. Same native size/location and painterly gold fabric texture, preserve surrounding blanket folds and specks/stars exactly. One printed moon object changes orientation."
+      }
+    },
+    {
+      "file": "needle-prompt.json",
+      "content": {
+        "prompt": "Edit this original compass crop only. Its thin central compass needle becomes one bold clearly triangular BLACK arrow pointing LEFT across cream dial from same pivot. Preserve every compass case, ring, tick marking, brass outline, book background exact. Single needle internal change large visible triangularhead, no secondneedle."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "pull",
+      "label": "The top left shell pull hangs upside down.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 934,
+        "y": 206,
+        "width": 70,
+        "height": 57
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "horse",
+      "label": "The seahorse tail curls to the right.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1539,
+        "y": 226,
+        "width": 51,
+        "height": 62
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "sail",
+      "label": "The model boat right sail curves inward.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1198,
+        "y": 0,
+        "width": 47,
+        "height": 78
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "needle",
+      "label": "The compass needle has a bold left arrowhead.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 118,
+        "y": 745,
+        "width": 64,
+        "height": 33
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "moon",
+      "label": "The chair blanket moon opens left.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1592,
+        "y": 513,
+        "width": 42,
+        "height": 47
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered compositor/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

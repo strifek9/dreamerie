@@ -1,0 +1,104 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-131",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-131-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-131-original-v4.png",
+    "sha256": "A25DE2B1F8844A4799CF2FA587D629B4058D7B67859B4028EB82E7D7B4A1153A",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-131-altered-source-v4.png",
+    "sha256": "C14B1B2306B5A411B37A4E5354D32EAF030FE55DE375BE5C08653692BCE6E0CF",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit attached ornate wooden dollhouse cabinet cutaway painting EXACT1672x941. Preserve framing, all animals furniture rooms and warm painterly style. Exactly FIVE isolated single artifact edits: 1 LARGE RED oven mitten hanging middle room x1025 y380: its white grid becomes clear diagonal braided lattice on SAME red mitten shape. 2 GOLD questionmark bathtub faucet x725 y80: curl its upper end into a complete inward spiral loop still one connected faucet, unchanged water/tub. 3 rightmost TOP drawer large GOLD circular pull x1545 y110: its lower end curls inward forming a self-coiled single handle, same mount/circle. 4 GREEN star-painted nursery treasure chest x993 y790: open its existing front gold latch outward on hinge, same chest outline/star paints. 5 toy ELEPHANT trunk x692 y765: trunk curls into a clean closed loop, same elephant body wheels. Each change single selectable artifact; no swaps no added objects no grain. Keep all else exact.\"}}, {\"file\": \"refine-prompt.json\", \"content\": {\"prompt\": \"Edit this exact cropped red hanging OVEN MITTEN painting. Replace its WHITE GRID stitch pattern with ONE LARGE continuous ivory stitched SPIRAL spanning whole red palm, 3 turns, clearly legible. Keep exact mitten shape thumb redcolor hangingloop surroundingbackground unchanged. Singleartifact internalpattern change; no lattice/grid left. Samecropframing.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit attached ornate wooden dollhouse cabinet cutaway painting EXACT1672x941. Preserve framing, all animals furniture rooms and warm painterly style. Exactly FIVE isolated single artifact edits: 1 LARGE RED oven mitten hanging middle room x1025 y380: its white grid becomes clear diagonal braided lattice on SAME red mitten shape. 2 GOLD questionmark bathtub faucet x725 y80: curl its upper end into a complete inward spiral loop still one connected faucet, unchanged water/tub. 3 rightmost TOP drawer large GOLD circular pull x1545 y110: its lower end curls inward forming a self-coiled single handle, same mount/circle. 4 GREEN star-painted nursery treasure chest x993 y790: open its existing front gold latch outward on hinge, same chest outline/star paints. 5 toy ELEPHANT trunk x692 y765: trunk curls into a clean closed loop, same elephant body wheels. Each change single selectable artifact; no swaps no added objects no grain. Keep all else exact."
+      }
+    },
+    {
+      "file": "refine-prompt.json",
+      "content": {
+        "prompt": "Edit this exact cropped red hanging OVEN MITTEN painting. Replace its WHITE GRID stitch pattern with ONE LARGE continuous ivory stitched SPIRAL spanning whole red palm, 3 turns, clearly legible. Keep exact mitten shape thumb redcolor hangingloop surroundingbackground unchanged. Singleartifact internalpattern change; no lattice/grid left. Samecropframing."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "A continuous spiral is stitched into the oven mitten.",
+      "box": {
+        "x": 969,
+        "y": 298,
+        "width": 123,
+        "height": 171
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The treasure chest lid opens.",
+      "box": {
+        "x": 914,
+        "y": 726,
+        "width": 153,
+        "height": 109
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The top drawer pull coils inward.",
+      "box": {
+        "x": 1481,
+        "y": 46,
+        "width": 128,
+        "height": 123
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "The bathtub faucet curls into a spiral.",
+      "box": {
+        "x": 687,
+        "y": 24,
+        "width": 78,
+        "height": 87
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "The toy elephant's trunk curls into a loop.",
+      "box": {
+        "x": 674,
+        "y": 743,
+        "width": 48,
+        "height": 53
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Actual source chest entirelid opens instead of requested latch-only; one chest mechanism counts one object. Other four observed singleartifact edits. No object swaps. Original path collection-year-v1. Elephant smaller mobile clue requires root fairness review; no human difficulty validation. Initial mitten lattice too similar to original; targeted spiral replacement inspected.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

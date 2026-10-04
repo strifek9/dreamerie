@@ -1,0 +1,142 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-069",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-069-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-069-original-v4.png",
+    "sha256": "51550EFEE3C40533353C6C032A4FC0A8B70C2EB996AF3323772222B408716631",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-069-altered-source-v4.png",
+    "sha256": "19331DC7E77A33C99FFEA7E2E26AB9B64755922BC044F083D9CE5A76BB299B33",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact full native1672x941 SunflowerFerrisWheel original oilillustration. Five localized SINGLE-objectdifferences: 1) upperright GREEN gondola's teal hingeddoor swings CLOSED across rightfrontopening instead ofopenoutward, sameframe andmouse unchanged; 2) yellow baseballcap wornby TOPLEFT mouse faces BACKWARD with brim extendingleftbehindear ratherthanrightoverface, head/ears/bluescarfunchanged; 3) centralblue sunflowerhub creamheart points UP instead ofdown, samecenter/sizecolor; 4) bigforeground greenleaf lowerleft has a star-shapedhole instead ofroundhole atx214y806, sameleaf; 5) nearest largepink steppingstone bottomright has an engraved spiral groove on its top, sameflatstonebounds/pinkcolor/grass. No other changes, no letters/text,newobjects; retain fullframe/colorspositions.\"}}, {\"file\": \"refine-prompt.json\", \"content\": {\"prompt\": \"Edit exactfull1672x941 original SunflowerFerrisWheel, TWOlocalized details ONLY. TOPLEFT mouse wears yellow baseballcap backward: ONE brim extends LEFT behind itsleftpinkear, REMOVE originalforwardbrim toRIGHT aboveface, showroundedclothcap aboveforehead instead. Head ears face poseunchanged. CENTRALBLUE flowerhub creamheart replaced by creamcrescent curvedarcwithtwo pointedtipsfacingUP, sameglyphsize center. Rest scene exactoriginal fullframe nootheredits,text,newobjects.\"}}, {\"file\": \"hand-prompt.json\", \"content\": {\"prompt\": \"One localized singleobject poseedit full1672x941 SunflowerFerrisWheel originalpainting: TOPLEFT mouse's raised pink hand toRIGHT of face(center430,115) changes fromfive spread fingers waving to CLOSED FIST, samewrist/armposition. Keep samehead/hat/ears/scarf/gondola, no otherchanges. Fulloriginal landscape output,painterlystyle,no text.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact full native1672x941 SunflowerFerrisWheel original oilillustration. Five localized SINGLE-objectdifferences: 1) upperright GREEN gondola's teal hingeddoor swings CLOSED across rightfrontopening instead ofopenoutward, sameframe andmouse unchanged; 2) yellow baseballcap wornby TOPLEFT mouse faces BACKWARD with brim extendingleftbehindear ratherthanrightoverface, head/ears/bluescarfunchanged; 3) centralblue sunflowerhub creamheart points UP instead ofdown, samecenter/sizecolor; 4) bigforeground greenleaf lowerleft has a star-shapedhole instead ofroundhole atx214y806, sameleaf; 5) nearest largepink steppingstone bottomright has an engraved spiral groove on its top, sameflatstonebounds/pinkcolor/grass. No other changes, no letters/text,newobjects; retain fullframe/colorspositions."
+      }
+    },
+    {
+      "file": "refine-prompt.json",
+      "content": {
+        "prompt": "Edit exactfull1672x941 original SunflowerFerrisWheel, TWOlocalized details ONLY. TOPLEFT mouse wears yellow baseballcap backward: ONE brim extends LEFT behind itsleftpinkear, REMOVE originalforwardbrim toRIGHT aboveface, showroundedclothcap aboveforehead instead. Head ears face poseunchanged. CENTRALBLUE flowerhub creamheart replaced by creamcrescent curvedarcwithtwo pointedtipsfacingUP, sameglyphsize center. Rest scene exactoriginal fullframe nootheredits,text,newobjects."
+      }
+    },
+    {
+      "file": "hand-prompt.json",
+      "content": {
+        "prompt": "One localized singleobject poseedit full1672x941 SunflowerFerrisWheel originalpainting: TOPLEFT mouse's raised pink hand toRIGHT of face(center430,115) changes fromfive spread fingers waving to CLOSED FIST, samewrist/armposition. Keep samehead/hat/ears/scarf/gondola, no otherchanges. Fulloriginal landscape output,painterlystyle,no text."
+      }
+    }
+  ],
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-069-refine-source-v4.png",
+      "sha256": "30AC63E6F665E7F614D78729B39DAF75FBFBBC6C278B748A3DDBAD3981F7D60D",
+      "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact full native1672x941 SunflowerFerrisWheel original oilillustration. Five localized SINGLE-objectdifferences: 1) upperright GREEN gondola's teal hingeddoor swings CLOSED across rightfrontopening instead ofopenoutward, sameframe andmouse unchanged; 2) yellow baseballcap wornby TOPLEFT mouse faces BACKWARD with brim extendingleftbehindear ratherthanrightoverface, head/ears/bluescarfunchanged; 3) centralblue sunflowerhub creamheart points UP instead ofdown, samecenter/sizecolor; 4) bigforeground greenleaf lowerleft has a star-shapedhole instead ofroundhole atx214y806, sameleaf; 5) nearest largepink steppingstone bottomright has an engraved spiral groove on its top, sameflatstonebounds/pinkcolor/grass. No other changes, no letters/text,newobjects; retain fullframe/colorspositions.\"}}, {\"file\": \"refine-prompt.json\", \"content\": {\"prompt\": \"Edit exactfull1672x941 original SunflowerFerrisWheel, TWOlocalized details ONLY. TOPLEFT mouse wears yellow baseballcap backward: ONE brim extends LEFT behind itsleftpinkear, REMOVE originalforwardbrim toRIGHT aboveface, showroundedclothcap aboveforehead instead. Head ears face poseunchanged. CENTRALBLUE flowerhub creamheart replaced by creamcrescent curvedarcwithtwo pointedtipsfacingUP, sameglyphsize center. Rest scene exactoriginal fullframe nootheredits,text,newobjects.\"}}, {\"file\": \"hand-prompt.json\", \"content\": {\"prompt\": \"One localized singleobject poseedit full1672x941 SunflowerFerrisWheel originalpainting: TOPLEFT mouse's raised pink hand toRIGHT of face(center430,115) changes fromfive spread fingers waving to CLOSED FIST, samewrist/armposition. Keep samehead/hat/ears/scarf/gondola, no otherchanges. Fulloriginal landscape output,painterlystyle,no text.\"}}]"
+    },
+    {
+      "path": "/artwork/v4/collection/dream-069-hand-source-v4.png",
+      "sha256": "F6E6C34AE3B815721D275215008B9D7127D33CDFE847179C1244CB449E369995",
+      "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact full native1672x941 SunflowerFerrisWheel original oilillustration. Five localized SINGLE-objectdifferences: 1) upperright GREEN gondola's teal hingeddoor swings CLOSED across rightfrontopening instead ofopenoutward, sameframe andmouse unchanged; 2) yellow baseballcap wornby TOPLEFT mouse faces BACKWARD with brim extendingleftbehindear ratherthanrightoverface, head/ears/bluescarfunchanged; 3) centralblue sunflowerhub creamheart points UP instead ofdown, samecenter/sizecolor; 4) bigforeground greenleaf lowerleft has a star-shapedhole instead ofroundhole atx214y806, sameleaf; 5) nearest largepink steppingstone bottomright has an engraved spiral groove on its top, sameflatstonebounds/pinkcolor/grass. No other changes, no letters/text,newobjects; retain fullframe/colorspositions.\"}}, {\"file\": \"refine-prompt.json\", \"content\": {\"prompt\": \"Edit exactfull1672x941 original SunflowerFerrisWheel, TWOlocalized details ONLY. TOPLEFT mouse wears yellow baseballcap backward: ONE brim extends LEFT behind itsleftpinkear, REMOVE originalforwardbrim toRIGHT aboveface, showroundedclothcap aboveforehead instead. Head ears face poseunchanged. CENTRALBLUE flowerhub creamheart replaced by creamcrescent curvedarcwithtwo pointedtipsfacingUP, sameglyphsize center. Rest scene exactoriginal fullframe nootheredits,text,newobjects.\"}}, {\"file\": \"hand-prompt.json\", \"content\": {\"prompt\": \"One localized singleobject poseedit full1672x941 SunflowerFerrisWheel originalpainting: TOPLEFT mouse's raised pink hand toRIGHT of face(center430,115) changes fromfive spread fingers waving to CLOSED FIST, samewrist/armposition. Keep samehead/hat/ears/scarf/gondola, no otherchanges. Fulloriginal landscape output,painterlystyle,no text.\"}}]"
+    }
+  ],
+  "authoredRegions": [
+    {
+      "id": "closed-gondola-door",
+      "label": "The upper-right gondola's door swings closed.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 862,
+        "y": 164,
+        "width": 124,
+        "height": 138
+      },
+      "edgeFade": 5
+    },
+    {
+      "id": "hub-crescent",
+      "label": "The sunflower hub has a crescent instead of a heart.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 538,
+        "y": 323,
+        "width": 112,
+        "height": 100
+      },
+      "edgeFade": 5,
+      "source": "refine.png"
+    },
+    {
+      "id": "closed-fist",
+      "label": "The top-left mouse closes its waving hand into a fist.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 403,
+        "y": 91,
+        "width": 48,
+        "height": 48
+      },
+      "edgeFade": 4,
+      "source": "hand.png"
+    },
+    {
+      "id": "stone-spiral",
+      "label": "The nearest pink stone has an engraved spiral.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1290,
+        "y": 800,
+        "width": 335,
+        "height": 99
+      },
+      "edgeFade": 5
+    },
+    {
+      "id": "star-leaf-hole",
+      "label": "The foreground leaf has a star-shaped hole.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 180,
+        "y": 771,
+        "width": 68,
+        "height": 77
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": {
+    "humanTimed": false,
+    "physicalPhone": false,
+    "notes": "Initialhat hadtwo brims andheartinversionfailed; rejected thosepatches, targetedbackwardcap+hubcrescent refinementselected. Backwardhatrefinement shiftsadjacentbluefeather; rejectedhatentirely and selectedhandposeinstead.",
+    "outsideRegionsExact": true,
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sourceHashes": {
+      "source.png": "19331dc7e77a33c99ffea7e2e26ab9b64755922bc044f083d9ce5a76bb299b33",
+      "refine.png": "30ac63e6f665e7f614d78729b39daf75fbfbbc6c278b748a3ddbad3981f7d60d",
+      "hand.png": "f6e6c34ae3b815721d275215008b9d7127d33cdfe847179c1244cb449e369995"
+    }
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

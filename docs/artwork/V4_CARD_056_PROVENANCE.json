@@ -1,0 +1,98 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-056",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-056-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-056-original-v4.png",
+    "sha256": "03798B3EF739CAB4399F78C2D8F2D50E3965512C66408DA7DF036DB289CC8ACC",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-056-altered-source-v4.png",
+    "sha256": "D49088275C837FACB56E6334D6788D170FD2F68870DA10A0164181E447F46214",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise edit attached sleepingfox forestlantern painting. EXACT native1672x941 frame, samepainting style palette objectpositions foxanatomy preserved. FIVE localizedsingleobjectdifferences ONLY:1) left foreground goldlantern interior landscape's river now flows UP a tiny steppedwaterfall staircase instead ofsmoothwindingstream, still entirelyINSIDE thislanternpane, preserve trees/perimeter.2) turquoisefoxscarf near lower-right its loose fringe threads braid into oneplait before spreadingagain atends, visibly3strandsover-under, preserve maincloth/fox.3) salmonpinkdoor oflargeleftrear lantern: existing brass knob's handle changes to a curved gold hook that curls OVER itsownbase, same mountlocation cleanmechanism, preservedoorpanelmotifs.4) largest rightpurplelantern roof crescent: crescent paintedmoon becomes a cream silhouette of an arched bridge withthinlegs, same motifarea, preservepurplepanels andgoldframe.5) ONLY rightmostacorn on smallrighttable: its cap's repeateddiamondscales follow a spiral arrangement instead oforderedrows, visible goldcurvingpattern, keep nutbody capoutline stem andother2acorns EXACT. No swaps/twoobjectchanges. No newprops/text/markers/missingparts/grain.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise edit attached sleepingfox forestlantern painting. EXACT native1672x941 frame, samepainting style palette objectpositions foxanatomy preserved. FIVE localizedsingleobjectdifferences ONLY:1) left foreground goldlantern interior landscape's river now flows UP a tiny steppedwaterfall staircase instead ofsmoothwindingstream, still entirelyINSIDE thislanternpane, preserve trees/perimeter.2) turquoisefoxscarf near lower-right its loose fringe threads braid into oneplait before spreadingagain atends, visibly3strandsover-under, preserve maincloth/fox.3) salmonpinkdoor oflargeleftrear lantern: existing brass knob's handle changes to a curved gold hook that curls OVER itsownbase, same mountlocation cleanmechanism, preservedoorpanelmotifs.4) largest rightpurplelantern roof crescent: crescent paintedmoon becomes a cream silhouette of an arched bridge withthinlegs, same motifarea, preservepurplepanels andgoldframe.5) ONLY rightmostacorn on smallrighttable: its cap's repeateddiamondscales follow a spiral arrangement instead oforderedrows, visible goldcurvingpattern, keep nutbody capoutline stem andother2acorns EXACT. No swaps/twoobjectchanges. No newprops/text/markers/missingparts/grain."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "An arched bridge is painted on the purple lantern roof.",
+      "box": {
+        "x": 1067,
+        "y": 231,
+        "width": 126,
+        "height": 73
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Medium",
+      "label": "A stepped waterfall flows inside the left lantern.",
+      "box": {
+        "x": 206,
+        "y": 617,
+        "width": 127,
+        "height": 130
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The scarf fringe threads into a braid.",
+      "box": {
+        "x": 1086,
+        "y": 774,
+        "width": 204,
+        "height": 113
+      },
+      "edgeFade": 5
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "A round pull ring hangs from the pink door handle.",
+      "box": {
+        "x": 678,
+        "y": 362,
+        "width": 38,
+        "height": 46
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "The rightmost acorn cap scales curl into a spiral.",
+      "box": {
+        "x": 1541,
+        "y": 523,
+        "width": 73,
+        "height": 83
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": "Observed fullframe. Single scarf braid action, single enclosed painted waterfall mechanism, doorpull samehardwareobject, roofmotif andacorncap singlepatterns. No swaps. Imagegen removed innerpurplelantern moon outside selectedroofbox: rootmustexclude. Actual handle is a hanging roundpull rather thanrequestedhook; labelaccurate. Capspiral unclear; labelroundedscales pending cropinspection. Pairedcrop inspection confirms deliberate spiralcap arrangement, stronger thaninitialfullframe impression. All5pairedcrops and390pair viewed.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

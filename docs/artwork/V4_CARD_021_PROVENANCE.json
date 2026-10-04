@@ -1,0 +1,88 @@
+{
+  "status": "unreleased technical proof; full compositor and five paired crops desktop/mobile inspected; native original exact; outside authored regions unchanged;5/5touch round; human difficulty pending",
+  "cardId": "v4-dream-021",
+  "tool": "built-in image_gen",
+  "input": "/artwork/v3/collection-painted-v1/dream-021-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-021-original-v4.png",
+    "sha256": "C39D3FB153158761A03B5B46BDC1235285DD892DEC3B0133037E90167B2EA1F1",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-021-altered-source-v4.png",
+    "sha256": "0F121989ADD55F94DD02FA5903A0A717ADD17B639F730E54696A267723157E91",
+    "prompt": "Edit target: attached native 1672x941 Dreamerie hedgehog sunset bakery painting. Use precise-object-edit. Preserve original painting style, framing, camera, all anatomy, architecture, lighting and unrelated pixels. Make ONLY five localized intentional differences: 1) oven tray front right metal rim bends into one small downward rolled lip around x1340,y538 rather than straight, continuous believable metal; 2) the golden oven knob around x1390,y148 gains a clearly visible slender crescent-shaped dark engraving instead of its plain round center, same knob edges; 3) left foreground rolling pin's white band around x420,y761 becomes a neatly tied blue string crossing diagonally around the pin, not disappearance; 4) one thin cherry stem on front tart around x640,y777 curls into a closed loop above the center cherry instead of standing straight, preserve exactly three cherries and all other stems; 5) apron pocket blue crescent around x923,y621 rotates to face upward like a bowl instead of opening to upper-right, same size and color, keep pocket seams. All differences localized within their named objects, no global repaint, no extra limbs or disconnected joins, no text, outlines, numbers, markers or watermark. Return one full landscape painting at original native framing. This source will be clipped to precisely those five regions, so leave surrounds unchanged."
+  },
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "rolling-pin-tie",
+      "label": "A blue string bow wraps the rolling pin instead of its white band.",
+      "difficulty": "Easy",
+      "nativeBox": [
+        350,
+        704,
+        130,
+        128
+      ],
+      "edgeFade": 8
+    },
+    {
+      "id": "oven-knob-crescent",
+      "label": "The golden oven knob carries a dark crescent engraving.",
+      "difficulty": "Medium",
+      "nativeBox": [
+        1333,
+        102,
+        99,
+        102
+      ],
+      "edgeFade": 8
+    },
+    {
+      "id": "tray-rolled-lip",
+      "label": "The baking tray's right rim curls downward.",
+      "difficulty": "Hard",
+      "nativeBox": [
+        1323,
+        508,
+        68,
+        76
+      ],
+      "edgeFade": 6
+    },
+    {
+      "id": "cherry-stem-loop",
+      "label": "The middle cherry's stem curls into a loop.",
+      "difficulty": "Very hard",
+      "nativeBox": [
+        581,
+        724,
+        134,
+        116
+      ],
+      "edgeFade": 6
+    },
+    {
+      "id": "apron-crescent-up",
+      "label": "The apron crescent opens upward like a bowl.",
+      "difficulty": "Dreamlike",
+      "nativeBox": [
+        888,
+        586,
+        77,
+        71
+      ],
+      "edgeFade": 7
+    }
+  ],
+  "notes": "Cherry-stem clip widened to encompass continuous stem topology and remove original-source fragment. Human difficulty and physical-phone testing pending.",
+  "visualReview": {
+    "date": "2026-10-04",
+    "desktopWidth": 1440,
+    "phoneWidth": 390,
+    "pairedCrops": 5,
+    "technicalAcceptance": "passed",
+    "humanDifficulty": "pending"
+  }
+}

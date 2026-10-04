@@ -1,0 +1,110 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-labor",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/holidays-painted-v1/labor-original.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-labor-original-v4.png",
+    "sha256": "30C19DD8504E1E1382859CC689AFC8ADE82C27BA9D64BA259644D63A8869ED54",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-labor-altered-source-v4.png",
+    "sha256": "652A477EFE18518D56DCC2FC8F23FA1EEF3E8CA0C13F35D7A4C60EDB142354C4",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact Labor Day friendly robot workshop painting locally; preserve robots' anatomy, smiles, work/rest theme, instruments, food, town and clock scene. Exactly five single-object edits: 1 the LARGE orange robot's wrench UPPER open jaw at x382 y493 closes into a complete silver ring jaw, wrench shaft and lower jaw unchanged; 2 hanging brass crane hook at upper-right x1333 y185 opens its closed circular loop into a clear C-shaped hook with gap on right, keep same top attachment and pulley block unchanged; 3 central teal robot helmet's small gold gear badge near x741 y315 becomes a gold crescent badge, helmet otherwise unchanged; 4 tiny wheeled cream robot's viewer-left glowing eye at x1055 y549 changes to a flat closed wink, viewer-right eye and smile unchanged; 5 only lower-right red toolbox's FRONT brass latch at x1454 y765 rotates sideways into horizontal closed latch, toolbox handle/other hardware unchanged. Five separate targets, no multiple-object swaps/no extra objects. Exact painterly frame, clean connected mechanical edits.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact Labor Day friendly robot workshop painting locally; preserve robots' anatomy, smiles, work/rest theme, instruments, food, town and clock scene. Exactly five single-object edits: 1 the LARGE orange robot's wrench UPPER open jaw at x382 y493 closes into a complete silver ring jaw, wrench shaft and lower jaw unchanged; 2 hanging brass crane hook at upper-right x1333 y185 opens its closed circular loop into a clear C-shaped hook with gap on right, keep same top attachment and pulley block unchanged; 3 central teal robot helmet's small gold gear badge near x741 y315 becomes a gold crescent badge, helmet otherwise unchanged; 4 tiny wheeled cream robot's viewer-left glowing eye at x1055 y549 changes to a flat closed wink, viewer-right eye and smile unchanged; 5 only lower-right red toolbox's FRONT brass latch at x1454 y765 rotates sideways into horizontal closed latch, toolbox handle/other hardware unchanged. Five separate targets, no multiple-object swaps/no extra objects. Exact painterly frame, clean connected mechanical edits."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The wrench upper jaw closes into a ring",
+      "difficulty": "Easy",
+      "box": {
+        "x": 337,
+        "y": 448,
+        "width": 91,
+        "height": 105
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The crane hook opens at its right side",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1293,
+        "y": 132,
+        "width": 76,
+        "height": 93
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The teal helmet gear badge becomes a crescent",
+      "difficulty": "Hard",
+      "box": {
+        "x": 722,
+        "y": 293,
+        "width": 39,
+        "height": 43
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The cream robot's right eye winks",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1076,
+        "y": 535,
+        "width": 36,
+        "height": 35
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The red toolbox front latch turns sideways",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1428,
+        "y": 739,
+        "width": 53,
+        "height": 53
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "visually inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "nativePreflight": "source equals actual original size, five nonoverlapping boxes",
+    "difficulty": "hypotheses; human and browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

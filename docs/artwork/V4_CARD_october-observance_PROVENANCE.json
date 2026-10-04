@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-october-observance",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-revisit-v1/october-observance-dynamic-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-october-observance-original-v4.png",
+    "sha256": "B2E414B19D4D3332892AA77CEC2877B3066BDBDA5D6EE214B5BDE2288C6FBA1F",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-october-observance-altered-source-v4.png",
+    "sha256": "EA0F767EF52698C71198597D36272478A2237695B7999D04642BAE40CDD7BE83",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit precisely this original The River Inside a Leaf: gigantic autumn leaf carries winding living river and paper people, boat, watering can, open seed specimen box. Preserve autumn/nature observance and original premise/framing/style/all figures. Exactly FIVE isolated single-object changes: OPEN SEED BOX lid large engraved leaf motif becomes a broad engraved acorn motif centered in SAME lid, outline/hardware exact; small river BOAT its existing white sail billows to the LEFT of same mast rather than right, hull/mast/water exact; bottom foreground WOODEN MUG attached handle becomes an angular triangular handle instead of rounded arch, mug body/drink exact; COPPER WATERING CAN existing side spout terminates in a flared perforated watering rose attached in same position and pours same water stream, rest can/handle exact; seed box FRONT brass latch flips up open at its hinge rather than flat closed, surrounding wood/seeds exact. No independent seed changes, no paper person changes, no swaps, five single-object mechanism/pose/ornament clues.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit precisely this original The River Inside a Leaf: gigantic autumn leaf carries winding living river and paper people, boat, watering can, open seed specimen box. Preserve autumn/nature observance and original premise/framing/style/all figures. Exactly FIVE isolated single-object changes: OPEN SEED BOX lid large engraved leaf motif becomes a broad engraved acorn motif centered in SAME lid, outline/hardware exact; small river BOAT its existing white sail billows to the LEFT of same mast rather than right, hull/mast/water exact; bottom foreground WOODEN MUG attached handle becomes an angular triangular handle instead of rounded arch, mug body/drink exact; COPPER WATERING CAN existing side spout terminates in a flared perforated watering rose attached in same position and pours same water stream, rest can/handle exact; seed box FRONT brass latch flips up open at its hinge rather than flat closed, surrounding wood/seeds exact. No independent seed changes, no paper person changes, no swaps, five single-object mechanism/pose/ornament clues."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "lid",
+      "label": "The seed-box lid motif becomes an acorn.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 44,
+        "y": 550,
+        "width": 216,
+        "height": 107
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "sail",
+      "label": "The boat sail billows left.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 939,
+        "y": 228,
+        "width": 82,
+        "height": 99
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "rose",
+      "label": "The can spout has a perforated watering rose.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 375,
+        "y": 418,
+        "width": 77,
+        "height": 76
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "handle",
+      "label": "The mug handle becomes triangular.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 628,
+        "y": 732,
+        "width": 63,
+        "height": 85
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "latch",
+      "label": "The seed box latch flips upward.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 312,
+        "y": 753,
+        "width": 57,
+        "height": 56
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered compositor/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-196",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-196-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-196-original-v4.png",
+    "sha256": "EC01FF92D4B7EFDF318379AC2C99E745E3BF4AD9A72204EA2B5CFD189D9E6763",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-196-altered-source-v4.png",
+    "sha256": "7FABCBC0BB7B3CB9D8FB386A524E199E1200FAF883878A7DFB1864A80E6B0447",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit attached frightened BLUE FURRY MONSTER holdingpinkballoon against shadow bedroom painting. EXACT1672x941 framing allmonsterface/bodyfur/anatomy/shadow originalEXACT. FIVE isolated ONE-artifact changes:1) main PINK BALLOON x700 y235: originalwhitesquare reflections become a single large paleCRESCENT reflection on same balloon, preservepinkoutline/knot/string.2) PINK CREAM knitted SOCK hanging leftbedrail x139 y615: lowerfoot-end ties into its OWN clearoverhand knot aroundy625, same upperstripes/drape, preservebedframe.3) PURPLE POLKADOT CLOTH PATCH sewnonmonster'sleft thigh x330 y621: ONE upperRIGHT corner foldsoutward exposing darkfabricunderside, samepatchpolkadots/stitches, preserveallfur outsideexactpatch.4) BLUE YARN loosefreeend onfloor bottomleft x303,y879: tied into a clearlyreadable blueoverhand selfKNOT around60x45native, samecontinuous existing threadroute/spool, no newstrings.5) pinkround BALL onfloor far-right nextblanket x1508,y806: its whitepatchpattern becomes one continuous whiteSPIRAL paintedon SAMEball, unchangedballoutline/blanket. No multipleobject swaps, no disappearing objects, no body shifts or broadfur repaint, no grain.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit attached frightened BLUE FURRY MONSTER holdingpinkballoon against shadow bedroom painting. EXACT1672x941 framing allmonsterface/bodyfur/anatomy/shadow originalEXACT. FIVE isolated ONE-artifact changes:1) main PINK BALLOON x700 y235: originalwhitesquare reflections become a single large paleCRESCENT reflection on same balloon, preservepinkoutline/knot/string.2) PINK CREAM knitted SOCK hanging leftbedrail x139 y615: lowerfoot-end ties into its OWN clearoverhand knot aroundy625, same upperstripes/drape, preservebedframe.3) PURPLE POLKADOT CLOTH PATCH sewnonmonster'sleft thigh x330 y621: ONE upperRIGHT corner foldsoutward exposing darkfabricunderside, samepatchpolkadots/stitches, preserveallfur outsideexactpatch.4) BLUE YARN loosefreeend onfloor bottomleft x303,y879: tied into a clearlyreadable blueoverhand selfKNOT around60x45native, samecontinuous existing threadroute/spool, no newstrings.5) pinkround BALL onfloor far-right nextblanket x1508,y806: its whitepatchpattern becomes one continuous whiteSPIRAL paintedon SAMEball, unchangedballoutline/blanket. No multipleobject swaps, no disappearing objects, no body shifts or broadfur repaint, no grain."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "A crescent is reflected in the pink balloon.",
+      "box": {
+        "x": 626,
+        "y": 124,
+        "width": 92,
+        "height": 160
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The hanging sock ties itself into a knot.",
+      "box": {
+        "x": 70,
+        "y": 521,
+        "width": 137,
+        "height": 187
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The loose blue yarn ties itself into a knot.",
+      "box": {
+        "x": 226,
+        "y": 847,
+        "width": 83,
+        "height": 65
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "The sewn patch's upper-right corner folds outward.",
+      "box": {
+        "x": 336,
+        "y": 541,
+        "width": 68,
+        "height": 77
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "A white spiral is painted on the pink floor ball.",
+      "box": {
+        "x": 1446,
+        "y": 731,
+        "width": 139,
+        "height": 164
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": "Correct currentinventory/year1672x941. Five actualsingleartifacts: balloonreflection, connectedhanging sock ownknot, samebluefloor yarnknot (actualatx264 notprompt303), onepurplepatch cornerfold withnarrowregion avoidsbodyrepaint, pinkfloorball pattern. No multipleobjects swaps; originalballoonwhitehighlights replaceallwithinselectedreflectionbox. Root fur/blanketboundary maskjoins QA required; physical difficulty unvalidated.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

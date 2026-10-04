@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-079",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-079-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-079-original-v4.png",
+    "sha256": "28241CACEF0029842D06ACB1F894A2640C9A28E3480279AEE26F5BF56493CE12",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-079-altered-source-v4.png",
+    "sha256": "B522726812DC524AD18B33992AD601360D3890F247BBF9DBAFD0181D21DE7AAB",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise five localizedsingleobject edits in this1672x941 HarpOfBranches painting preservewholeframe/dreamstyle/corepremise/anatomy.1 Fox mouth x383,y427 opens into slight singinggap ratherthanclosed smile, preserve muzzle/head (x354,402,56,49).2 hanging brassacorn atx1092,y160 rotates upside-down pointUP insteadpointDOWN; keepchain same ends connectednewcapbottom (x1065,124,54,71).3 redbow RIGHTLONG trailingribbon x1064,y269 now curls into a CLOSEDsmall loop atlowerend insteadforkedpoint, within998,182,124,191 preserveotherlefttail/treetrunk.4 prominent foreRIGHT lotusflower x1450,y827 reflects a CLOSEDbud insteadopenpetals inwater justbelow itself x1414,861,79,52, keepactualaboveflowerunchanged.5 harp's bottomWOODENscroll x675,y572 now has its curledgroove winding opposite direction, within640,531,82,64; keepverticalstrings touchingwood andallothergrooves. Noextrastars/flowers/waterspecks, preserveotherpetals/strings/ribbons/foxposeexact, grainfreemattepainterlybrushfinish.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise five localizedsingleobject edits in this1672x941 HarpOfBranches painting preservewholeframe/dreamstyle/corepremise/anatomy.1 Fox mouth x383,y427 opens into slight singinggap ratherthanclosed smile, preserve muzzle/head (x354,402,56,49).2 hanging brassacorn atx1092,y160 rotates upside-down pointUP insteadpointDOWN; keepchain same ends connectednewcapbottom (x1065,124,54,71).3 redbow RIGHTLONG trailingribbon x1064,y269 now curls into a CLOSEDsmall loop atlowerend insteadforkedpoint, within998,182,124,191 preserveotherlefttail/treetrunk.4 prominent foreRIGHT lotusflower x1450,y827 reflects a CLOSEDbud insteadopenpetals inwater justbelow itself x1414,861,79,52, keepactualaboveflowerunchanged.5 harp's bottomWOODENscroll x675,y572 now has its curledgroove winding opposite direction, within640,531,82,64; keepverticalstrings touchingwood andallothergrooves. Noextrastars/flowers/waterspecks, preserveotherpetals/strings/ribbons/foxposeexact, grainfreemattepainterlybrushfinish."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "scroll",
+      "label": "The harp's lower frame curls into an upright scroll.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 643,
+        "y": 483,
+        "width": 85,
+        "height": 114
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "ribbon",
+      "label": "The right ribbon tail curls into a closed loop.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1019,
+        "y": 263,
+        "width": 97,
+        "height": 110
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "mouth",
+      "label": "The fox opens its mouth to sing.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 353,
+        "y": 402,
+        "width": 60,
+        "height": 53
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "acorn",
+      "label": "The hanging acorn points upward.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1065,
+        "y": 119,
+        "width": 57,
+        "height": 77
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "reflection",
+      "label": "A closed bud appears beneath the nearest right lotus.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1412,
+        "y": 858,
+        "width": 83,
+        "height": 56
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": "Observedlowerframescroll becomesupright rather thanrequestedinternalgroove reversal; metadata honest. Fullsourceinspected andnoextraselectedobjects. Rootactualfeather/wood-stringjoinQA pending.Original lowerlotus crop shows stem/leaf, notdistinctopenflowerreflection; observednewclosedbud labeldoesnotclaimreflection. Ribbonclip tightened to actualchangedendloop only263-373; acornends196, gap67nativepx, nointersection andacorncenter155 is108pxfromribbonbox (>67px).",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

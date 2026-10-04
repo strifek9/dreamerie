@@ -1,0 +1,131 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-158",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-158-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-158-original-v4.png",
+    "sha256": "F90F850769B08ADD6DCA1C46F220850D91198E5AD5C6176AE292B2B5FCBCBED1",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-158-altered-source-v4.png",
+    "sha256": "990B55D3A81E730392D7C53CFC4969FD201672678C65C271CA4E47B130A56C4E",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact native full1672x941 dreamy painting, only five localized single-object edits. 1 central red chair at x785y523: backrest has a single wide vertical slat instead of two narrow slats, same seat legs and outline. 2 red kitchen saucepan at x736y383: lid tilts open slightly to right with dark opening underneath, same pot body handle stove untouched. 3 bathroom green towel hanging over tub rim near x1199y516: lower hem has clearly knotted loop fringe rather than straight hem, same towel position and folds tub unchanged. 4 cream coffee mug on dining table near x886y455: add visible handle on right side (currently plain cup), same mug body and book/table. 5 round gold elevator call button on far left x113y373: center round inset becomes a crescent engraving, same button mount size and red wall. Preserve all scene, no other objects changed or swaps.\", \"reference\": \"dream-158-original-v1.png\"}}, {\"file\": \"refine-prompt.json\", \"content\": {\"prompt\": \"Preserve exact full1672x941 picture. Only red saucepan on stove at x737 y383: lift its own lid sharply diagonally so lid sits at a 40 degree slant above pot opening, connected at right rim; visible dark gap between lid and pot. Pot body handle stove unchanged. No new separate objects, no changes elsewhere.\", \"reference\": \"source.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact native full1672x941 dreamy painting, only five localized single-object edits. 1 central red chair at x785y523: backrest has a single wide vertical slat instead of two narrow slats, same seat legs and outline. 2 red kitchen saucepan at x736y383: lid tilts open slightly to right with dark opening underneath, same pot body handle stove untouched. 3 bathroom green towel hanging over tub rim near x1199y516: lower hem has clearly knotted loop fringe rather than straight hem, same towel position and folds tub unchanged. 4 cream coffee mug on dining table near x886y455: add visible handle on right side (currently plain cup), same mug body and book/table. 5 round gold elevator call button on far left x113y373: center round inset becomes a crescent engraving, same button mount size and red wall. Preserve all scene, no other objects changed or swaps.",
+        "reference": "dream-158-original-v1.png"
+      }
+    },
+    {
+      "file": "refine-prompt.json",
+      "content": {
+        "prompt": "Preserve exact full1672x941 picture. Only red saucepan on stove at x737 y383: lift its own lid sharply diagonally so lid sits at a 40 degree slant above pot opening, connected at right rim; visible dark gap between lid and pot. Pot body handle stove unchanged. No new separate objects, no changes elsewhere.",
+        "reference": "source.png"
+      }
+    }
+  ],
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-158-refine-source-v4.png",
+      "sha256": "6BB2BF8F640317F835091EC903F8BFEA1BEFCD718DF82990CD49A1D8E59DF515",
+      "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact native full1672x941 dreamy painting, only five localized single-object edits. 1 central red chair at x785y523: backrest has a single wide vertical slat instead of two narrow slats, same seat legs and outline. 2 red kitchen saucepan at x736y383: lid tilts open slightly to right with dark opening underneath, same pot body handle stove untouched. 3 bathroom green towel hanging over tub rim near x1199y516: lower hem has clearly knotted loop fringe rather than straight hem, same towel position and folds tub unchanged. 4 cream coffee mug on dining table near x886y455: add visible handle on right side (currently plain cup), same mug body and book/table. 5 round gold elevator call button on far left x113y373: center round inset becomes a crescent engraving, same button mount size and red wall. Preserve all scene, no other objects changed or swaps.\", \"reference\": \"dream-158-original-v1.png\"}}, {\"file\": \"refine-prompt.json\", \"content\": {\"prompt\": \"Preserve exact full1672x941 picture. Only red saucepan on stove at x737 y383: lift its own lid sharply diagonally so lid sits at a 40 degree slant above pot opening, connected at right rim; visible dark gap between lid and pot. Pot body handle stove unchanged. No new separate objects, no changes elsewhere.\", \"reference\": \"source.png\"}}]"
+    }
+  ],
+  "authoredRegions": [
+    {
+      "id": "chair-slat",
+      "label": "The chair has one wide back slat",
+      "difficulty": "Easy",
+      "box": {
+        "x": 744,
+        "y": 466,
+        "width": 50,
+        "height": 57
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "pot-lid",
+      "label": "The saucepan lid tilts open",
+      "difficulty": "Medium",
+      "box": {
+        "x": 717,
+        "y": 347,
+        "width": 37,
+        "height": 48
+      },
+      "edgeFade": 3,
+      "source": "refine.png"
+    },
+    {
+      "id": "towel-fringe",
+      "label": "The towel hem has knotted fringe",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1154,
+        "y": 521,
+        "width": 88,
+        "height": 51
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "mug-handle",
+      "label": "The table mug has a right handle",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 872,
+        "y": 436,
+        "width": 43,
+        "height": 36
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "call-crescent",
+      "label": "The left elevator button has a crescent",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 92,
+        "y": 343,
+        "width": 44,
+        "height": 59
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": {
+    "humanTimed": false,
+    "physicalPhone": false,
+    "notes": "Five one-object changes; pot lid mechanism and knotted towel attachment. Full native original preserved.",
+    "outsideRegionsExact": true,
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sourceHashes": {
+      "source.png": "990b55d3a81e730392d7c53cfc4969fd201672678c65c271ca4e47b130a56c4e",
+      "refine.png": "6bb2bf8f640317f835091ec903f8bfea1befcd718df82990cd49a1d8e59df515"
+    }
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

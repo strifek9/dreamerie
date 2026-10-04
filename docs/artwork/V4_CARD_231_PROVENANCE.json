@@ -1,0 +1,122 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-231",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-revisit-v1/231-dynamic-original-v2.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-231-original-v4.png",
+    "sha256": "4088FB7B4A3FE5E6DCADF3FFA29907AEE68F4A19EEB3B61511BC3F886EB8319D",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-231-altered-source-v4.png",
+    "sha256": "39F0DF8545F3786BDA8C1A06DCAA8A20DEE9AAD582F7F2FA283CB2044D00130D",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact native 1672x941 lemon reclining on deckchair with peel parasol catching water arc in glass, seaside towel scene. Exactly FIVE localized separate-object changes, rest identical: (1) single paper boat main triangular sail x241y699 bulges toward RIGHT as curved sail, hull and waves exact; (2) spoon bowl x1265y694 has a clear blue crescent reflection only in exposed metal LEFT of sandals, sandals exact; (3) chair hinge screw x417y427 has a diagonal X slot, same screw; (4) LEFT yellow sandal x1324y689 strap curves sideways as a single continuous strap on same sandal, RIGHT sandal exact; (5) small bowl plant painted purple leaf motif x100y232 now has an inward curled stem, other physical leaves exact. Preserve lemon anatomy, stream, chair and core premise.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/collection-revisit-v1/231-dynamic-original-v2.png\"}}, {\"file\": \"screw-prompt.json\", \"content\": {\"prompt\": \"Edit exact crop of wooden deckchair hinge. Preserve exact crop framing and wood anatomy. Only the single dark round screw head centered near x31 y34 now has a clear engraved pale X groove across its metal face. Same screw circle, same position, all surrounding wood exact. Single object internal pattern.\", \"nativeCrop\": [385, 395, 65, 67], \"reference\": \"screw-ref.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact native 1672x941 lemon reclining on deckchair with peel parasol catching water arc in glass, seaside towel scene. Exactly FIVE localized separate-object changes, rest identical: (1) single paper boat main triangular sail x241y699 bulges toward RIGHT as curved sail, hull and waves exact; (2) spoon bowl x1265y694 has a clear blue crescent reflection only in exposed metal LEFT of sandals, sandals exact; (3) chair hinge screw x417y427 has a diagonal X slot, same screw; (4) LEFT yellow sandal x1324y689 strap curves sideways as a single continuous strap on same sandal, RIGHT sandal exact; (5) small bowl plant painted purple leaf motif x100y232 now has an inward curled stem, other physical leaves exact. Preserve lemon anatomy, stream, chair and core premise.",
+        "reference": "D:/Dreamerie/public/artwork/v3/collection-revisit-v1/231-dynamic-original-v2.png"
+      }
+    },
+    {
+      "file": "screw-prompt.json",
+      "content": {
+        "prompt": "Edit exact crop of wooden deckchair hinge. Preserve exact crop framing and wood anatomy. Only the single dark round screw head centered near x31 y34 now has a clear engraved pale X groove across its metal face. Same screw circle, same position, all surrounding wood exact. Single object internal pattern.",
+        "nativeCrop": [
+          385,
+          395,
+          65,
+          67
+        ],
+        "reference": "screw-ref.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The paper boat sail bulges right",
+      "difficulty": "Easy",
+      "box": {
+        "x": 187,
+        "y": 623,
+        "width": 160,
+        "height": 143
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The spoon bowl reflects a blue arc",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1175,
+        "y": 607,
+        "width": 54,
+        "height": 108
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The left sandal strap curls sideways",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1286,
+        "y": 649,
+        "width": 60,
+        "height": 72
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The bowl motif stem curls inward",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 16,
+        "y": 184,
+        "width": 56,
+        "height": 105
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The chair hinge screw has an X groove",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 401,
+        "y": 414,
+        "width": 27,
+        "height": 31
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "refined-native.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390 stacked pair. Five separately selectable single-object clues. Native dimensions, five bounded nonoverlapping boxes and exact original pixels outside verified. Difficulty estimates unvalidated; root compositor/game, human difficulty and physical phone approval pending. Full prompts/source hash chain retained. Correct inventory revisit dynamic-original-v2 used. Other sandal unchanged outside target box.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

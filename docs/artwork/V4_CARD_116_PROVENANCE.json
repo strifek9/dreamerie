@@ -1,0 +1,147 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-116",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-revisit-v1/116-dynamic-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-116-original-v4.png",
+    "sha256": "34FD742AC709ED1BF902DDC2065AF28EB1CD6A8861F18B23D7D01B5E77010B62",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-116-altered-source-v4.png",
+    "sha256": "7E9DEE4E21DFB6803865D4413BF7620647FFD5CDBBA0D162E59BE613BC9D213E",
+    "prompt": "[{\"file\": \"chair-refine-prompt.json\", \"content\": {\"prompt\": \"Edit exact cropped goldchair with BLUEcloth drapedoverLEFT back. Preserve EXACT bluecloth andchairseat/backgroundpositions. ONLY RIGHTMOST golden curved rail (notleft one undercloth) bends into a distinct smooth inward spiral loop mid-height in open space toRIGHT ofcloth. One connectedmetalrail topandbase unchanged, continuous believablegoldanatomy. Do not change BLUEcloth anypixels, left rail, seat. No extra object. Same cropframing.\"}}, {\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise edit attached invertedmintumbrella pouringwater intobowl peacharchedhall painting. Preserve EXACT1672x941 framing allpositions softpaintpalette. FIVE single-objectlocalized edits:1) flowingWATERSTREAM center: twists into ONE continuous double-turn HELICAL ribbon ofwater rather thanplainstraightstream, samewater path/endpoints umbrella/bowl unchanged, noextrastreams.2) goldCHAIR backrest left: its innergoldmetal loop threads through ITS OWN smooth loop into a clear smallselfcrossing twist midway, ONEcontinuous bentchairback frame preserve seat/legs.3) REDumbrellaHANDLE above canopy: its hook changes to a clear heart-shaped crook withcontinuousredstem attachedsameway, no disconnectedhandle/extraarms, sameoverallsize.4) bowl WHITEband atbasecenter: follows a visibly BRAIDED flowing pattern aroundbowl instead ofstraightstripe, samebandmaterial bowlshape/position unchanged.5) goldSQUAREbuckle onumbrella strap atx839,y380: flipsOPEN onits smallhinge exposing mintstrapsunder, samebuckleconnected onepiece, preserve umbrella canopypanels/strap. No swaps/extraneousprops/textmarkers/noise. Definite structural andmechanismchanges fairinspection.\"}}, {\"file\": \"restore-prompt.json\", \"content\": {\"operation\": \"Restore exact current inventory originalboat silhouette and overlapping chairbluecloth over generated source; retain waterhelix/chairgoldtwist\", \"reference\": \"D:/Dreamerie/public/artwork/v3/collection-revisit-v1/116-dynamic-original-v1.png\", \"boatPolygon\": [[804, 518], [827, 523], [831, 509], [842, 522], [864, 496], [861, 534], [860, 540], [821, 550]], \"maskDilation\": 1, \"maskFeather\": 0.35}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "chair-refine-prompt.json",
+      "content": {
+        "prompt": "Edit exact cropped goldchair with BLUEcloth drapedoverLEFT back. Preserve EXACT bluecloth andchairseat/backgroundpositions. ONLY RIGHTMOST golden curved rail (notleft one undercloth) bends into a distinct smooth inward spiral loop mid-height in open space toRIGHT ofcloth. One connectedmetalrail topandbase unchanged, continuous believablegoldanatomy. Do not change BLUEcloth anypixels, left rail, seat. No extra object. Same cropframing."
+      }
+    },
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise edit attached invertedmintumbrella pouringwater intobowl peacharchedhall painting. Preserve EXACT1672x941 framing allpositions softpaintpalette. FIVE single-objectlocalized edits:1) flowingWATERSTREAM center: twists into ONE continuous double-turn HELICAL ribbon ofwater rather thanplainstraightstream, samewater path/endpoints umbrella/bowl unchanged, noextrastreams.2) goldCHAIR backrest left: its innergoldmetal loop threads through ITS OWN smooth loop into a clear smallselfcrossing twist midway, ONEcontinuous bentchairback frame preserve seat/legs.3) REDumbrellaHANDLE above canopy: its hook changes to a clear heart-shaped crook withcontinuousredstem attachedsameway, no disconnectedhandle/extraarms, sameoverallsize.4) bowl WHITEband atbasecenter: follows a visibly BRAIDED flowing pattern aroundbowl instead ofstraightstripe, samebandmaterial bowlshape/position unchanged.5) goldSQUAREbuckle onumbrella strap atx839,y380: flipsOPEN onits smallhinge exposing mintstrapsunder, samebuckleconnected onepiece, preserve umbrella canopypanels/strap. No swaps/extraneousprops/textmarkers/noise. Definite structural andmechanismchanges fairinspection."
+      }
+    },
+    {
+      "file": "restore-prompt.json",
+      "content": {
+        "operation": "Restore exact current inventory originalboat silhouette and overlapping chairbluecloth over generated source; retain waterhelix/chairgoldtwist",
+        "reference": "D:/Dreamerie/public/artwork/v3/collection-revisit-v1/116-dynamic-original-v1.png",
+        "boatPolygon": [
+          [
+            804,
+            518
+          ],
+          [
+            827,
+            523
+          ],
+          [
+            831,
+            509
+          ],
+          [
+            842,
+            522
+          ],
+          [
+            864,
+            496
+          ],
+          [
+            861,
+            534
+          ],
+          [
+            860,
+            540
+          ],
+          [
+            821,
+            550
+          ]
+        ],
+        "maskDilation": 1,
+        "maskFeather": 0.35
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "The falling water twists into a helical ribbon.",
+      "box": {
+        "x": 782,
+        "y": 442,
+        "width": 101,
+        "height": 276
+      },
+      "edgeFade": 5
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The chair\u2019s right gold rail curls inward.",
+      "box": {
+        "x": 366,
+        "y": 512,
+        "width": 51,
+        "height": 149
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The umbrella handle forms a heart-shaped crook.",
+      "box": {
+        "x": 826,
+        "y": 15,
+        "width": 106,
+        "height": 108
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "The bowl's white band weaves into a braid.",
+      "box": {
+        "x": 750,
+        "y": 722,
+        "width": 173,
+        "height": 48
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "The umbrella strap end opens outward.",
+      "box": {
+        "x": 807,
+        "y": 364,
+        "width": 90,
+        "height": 47
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Actualsource viewed; oneconnectedhelicalstream, continuousgoldchairback twist, heartcrookconnectedredstem(no disconnectedumbrella), bowlband braid, actualstrapENDopensoutwardwithgoldedgedminttail whilecenterbuckle stays. Accurateobservedlabel strapnotbuckle. No swaps. Rootnativejoinchecksrequired. Difficultyonlyhypothesis. Correct inventory revisit reference. Restored original paperboat exactsilhouette over changedwater and original chairbluecloth pixels insidechair edit, retaining otherfiveclues. Original untouched. Correct inventory revisit reference. Restored original paperboat exactsilhouette over changedwater and original chairbluecloth pixels insidechair edit, retaining otherfiveclues. Original untouched. Cloth/leftchair restored originalexact entire oldchairregion; targetedcurrentref refinement clips only rightgoldrail x366..417. All bluecloth preserved.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

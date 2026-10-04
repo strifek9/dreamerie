@@ -1,0 +1,121 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-025",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-025-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-025-original-v4.png",
+    "sha256": "8439387FA792DC84A30BD4FB0EC3ED7081AD1D95947F0A7E6078B33631783B4A",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-025-altered-source-v4.png",
+    "sha256": "100CCD47B8C9313907D21C0C4619F98DDB35865DD8C403B94BCC158D6F58FD76",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit attached Dreamerie painting, native1672x941 precise-object-edit. Keep original raccoon anatomy/face/clothes, instruments/appletrees, colors, framing, brushwork and all other elements. Exactly five localchanges: 1 gold heart suspended on left large violin at x302y325 becomes upside-down (pointup); 2 watering spout water stream around x370y709 now curls upward as coherent arch before landing, rather than falling diagonally downleft; 3 central orchard violin at x803y491 invert its right f-hole so curved scroll opens outward instead of inward, samewood; 4 strawhat band around x617y460 should pass across outside of right raccoon ear rather than behind it, ear intact; 5 basket front gold fourpoint emblem at x1453y820 becomes two gold crescents facing eachother, samebadge. Tight isolatedchanges only, don't addglobaldetail.\"}}, {\"file\": \"prompt-b.json\", \"content\": {\"prompt\": \"Precise local painted violin crop edit. Retain exact framing, orange wood, violin right outer contour and blue green background. ONLY reverse dark curved f-hole horizontally INSIDE violin wood: upper round curl should open toward right rather than left, lower curl towardleft rather thanright. Keep its same size and verticalposition. Do not mirror entireimage or change violinoutline. Nativecrop47x66 can outputlarger sameaspect then resized.\"}}, {\"file\": \"prompt-c.json\", \"content\": {\"prompt\": \"Edit attached small violin detail. Replace ONLY the entire black f-shaped soundhole with ONE narrow straight dark vertical soundhole, an elongated simple oval slot without any curls. Remove both scrolls; retain orange painted wood and violin contour, exact framing and background. This is deliberate strange straight soundhole, not normal f-hole.\"}}, {\"file\": \"prompt-d.json\", \"content\": {\"prompt\": \"Edit this crop of raccoon ear under straw hat. Keep ear EXACTLY rounded same outline/size/material, hat and white ribbon native painted finish. ONLY change spatial overlap: extend the WHITE HAT RIBBON diagonally downward-right ACROSS THE MIDDLE OF THE BLACK EAR, ribbon clearly lies in front, black ear visible above AND below it. Retain hatbrim elsewhere. No earshape/anatomychanges. Samecropframing.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit attached Dreamerie painting, native1672x941 precise-object-edit. Keep original raccoon anatomy/face/clothes, instruments/appletrees, colors, framing, brushwork and all other elements. Exactly five localchanges: 1 gold heart suspended on left large violin at x302y325 becomes upside-down (pointup); 2 watering spout water stream around x370y709 now curls upward as coherent arch before landing, rather than falling diagonally downleft; 3 central orchard violin at x803y491 invert its right f-hole so curved scroll opens outward instead of inward, samewood; 4 strawhat band around x617y460 should pass across outside of right raccoon ear rather than behind it, ear intact; 5 basket front gold fourpoint emblem at x1453y820 becomes two gold crescents facing eachother, samebadge. Tight isolatedchanges only, don't addglobaldetail."
+      }
+    },
+    {
+      "file": "prompt-b.json",
+      "content": {
+        "prompt": "Precise local painted violin crop edit. Retain exact framing, orange wood, violin right outer contour and blue green background. ONLY reverse dark curved f-hole horizontally INSIDE violin wood: upper round curl should open toward right rather than left, lower curl towardleft rather thanright. Keep its same size and verticalposition. Do not mirror entireimage or change violinoutline. Nativecrop47x66 can outputlarger sameaspect then resized."
+      }
+    },
+    {
+      "file": "prompt-c.json",
+      "content": {
+        "prompt": "Edit attached small violin detail. Replace ONLY the entire black f-shaped soundhole with ONE narrow straight dark vertical soundhole, an elongated simple oval slot without any curls. Remove both scrolls; retain orange painted wood and violin contour, exact framing and background. This is deliberate strange straight soundhole, not normal f-hole."
+      }
+    },
+    {
+      "file": "prompt-d.json",
+      "content": {
+        "prompt": "Edit this crop of raccoon ear under straw hat. Keep ear EXACTLY rounded same outline/size/material, hat and white ribbon native painted finish. ONLY change spatial overlap: extend the WHITE HAT RIBBON diagonally downward-right ACROSS THE MIDDLE OF THE BLACK EAR, ribbon clearly lies in front, black ear visible above AND below it. Retain hatbrim elsewhere. No earshape/anatomychanges. Samecropframing."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The violin's gold heart hangs point upward",
+      "difficulty": "Easy",
+      "box": {
+        "x": 254,
+        "y": 263,
+        "width": 98,
+        "height": 122
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The water stream rises in an arch before falling",
+      "difficulty": "Medium",
+      "box": {
+        "x": 310,
+        "y": 613,
+        "width": 173,
+        "height": 197
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The basket clasp bears two facing crescents instead of a star",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1422,
+        "y": 780,
+        "width": 62,
+        "height": 80
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The hat ribbon crosses in front of the raccoon's right ear",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 640,
+        "y": 440,
+        "width": 77,
+        "height": 85
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The middle violin's right sound hole is a straight slot",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 813,
+        "y": 458,
+        "width": 30,
+        "height": 57
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five feather-composite paired crops and390px stacked pair inspected; no broken joins detected, outside box union bit-identical to original. Two failed initial requests refined using builtin local crops: soundhole straight slot and ribbon passing over original rounded ear. All five labels observed; each clue targets one object/internalfeature, no two-object swap. Water action includes its nozzle in one bounded connected locus. Difficulty hypotheses only; root final compositor QA and human timing pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

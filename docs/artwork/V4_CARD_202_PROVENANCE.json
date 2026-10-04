@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-202",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-202-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-202-original-v4.png",
+    "sha256": "D2000516244B4672C84083AFB1908CED76C06D8C034741997BF5BFE84C9392C4",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-202-altered-source-v4.png",
+    "sha256": "2704EA9DDA55CE12A5474B186D11CBB38BF9285A675AD0A50098F16967A50AC4",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Exact native1672x941 localizedpaintededit snailhouse. Preserve snailanatomyfaceeyes shell doors interiorsfloor mosslighting. Exactlyfive SINGLEOBJECTchanges:1 roundrearWINDOW atx399y416 fourstraightmullion cross becomes onecurvedS-shapedmullion, sameroundframeglass;2 ONLYMIDDLEorangeDOOR knob atx803y561 becomeshollowgoldRINGpull rather solidball, sameotherdoors;3 snailpurpleSCARF freeendfar-rightx1578y528 foldsUPWARD into pointedflap ratherflatstream, scarfneckbandunchanged;4 snail RIGHTlongantenna x1407y252 bendsitsTIPdown intohook whilebase/head otherantenna unchanged;5 hanging BAG claspx1267y572 has crescentcutout insteadrectangularrecess, samebagstrapbody. No two-objectswaps noextras noglobalregeneration. Clearphysicalsingle-target edits only.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Exact native1672x941 localizedpaintededit snailhouse. Preserve snailanatomyfaceeyes shell doors interiorsfloor mosslighting. Exactlyfive SINGLEOBJECTchanges:1 roundrearWINDOW atx399y416 fourstraightmullion cross becomes onecurvedS-shapedmullion, sameroundframeglass;2 ONLYMIDDLEorangeDOOR knob atx803y561 becomeshollowgoldRINGpull rather solidball, sameotherdoors;3 snailpurpleSCARF freeendfar-rightx1578y528 foldsUPWARD into pointedflap ratherflatstream, scarfneckbandunchanged;4 snail RIGHTlongantenna x1407y252 bendsitsTIPdown intohook whilebase/head otherantenna unchanged;5 hanging BAG claspx1267y572 has crescentcutout insteadrectangularrecess, samebagstrapbody. No two-objectswaps noextras noglobalregeneration. Clearphysicalsingle-target edits only."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The round window mullion forms an S",
+      "difficulty": "Easy",
+      "box": {
+        "x": 351,
+        "y": 352,
+        "width": 100,
+        "height": 122
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The middle door knob becomes a ring pull",
+      "difficulty": "Medium",
+      "box": {
+        "x": 783,
+        "y": 540,
+        "width": 34,
+        "height": 44
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The scarf free end folds upward",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1412,
+        "y": 326,
+        "width": 232,
+        "height": 303
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The right antenna tip bends downward",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1367,
+        "y": 187,
+        "width": 111,
+        "height": 117
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The bag clasp becomes a crescent",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1247,
+        "y": 546,
+        "width": 48,
+        "height": 48
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "inspected",
+    "fivePairedCrops": "five single-object clues inspected; scarf fringe extent included",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "difficulty": "hypotheses; parent browser and human playtest pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

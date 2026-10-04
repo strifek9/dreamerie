@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-364",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-364-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-364-original-v4.png",
+    "sha256": "1F1E710046DF85A946D52FF976F65E2BD75D874B1DCF73F8DB2F4522D7934B2E",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-364-altered-source-v4.png",
+    "sha256": "969563290F048820B4BF1C6E36207B090A0004214024995CCE5D83A3E8B16DAF",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit precisely original open wooden cupboard glowing folded warm light on shelf, dark blue room. Preserve cupboard/light/core premise/frame/style. Exactly FIVE single-object localized differences: (1) bottom DRAWER white ceramic knob's blue floral print becomes a clear broad crescent emblem, round outline/gold center exact; (2) upper shelf JEWELRY BOX its front central gold floral relief becomes a broad heart relief, leaves/box exact; (3) loose FLOOR wool SOCK its upper cuff is folded outward into a clearly rolled attached cuff, rest sock/heel/toe exact; (4) cream LACE handkerchief hanging over drawer RIGHT corner has its dangling lower tip curled into an attached loop, all remaining lace/drawer exact; (5) far RIGHT wooden chest front brass clasp flips UP OPEN at existing hinge instead of hanging closed, chest body exact. Each single object connected/mechanism pattern, no knob swaps/no scattered changes/no grain.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit precisely original open wooden cupboard glowing folded warm light on shelf, dark blue room. Preserve cupboard/light/core premise/frame/style. Exactly FIVE single-object localized differences: (1) bottom DRAWER white ceramic knob's blue floral print becomes a clear broad crescent emblem, round outline/gold center exact; (2) upper shelf JEWELRY BOX its front central gold floral relief becomes a broad heart relief, leaves/box exact; (3) loose FLOOR wool SOCK its upper cuff is folded outward into a clearly rolled attached cuff, rest sock/heel/toe exact; (4) cream LACE handkerchief hanging over drawer RIGHT corner has its dangling lower tip curled into an attached loop, all remaining lace/drawer exact; (5) far RIGHT wooden chest front brass clasp flips UP OPEN at existing hinge instead of hanging closed, chest body exact. Each single object connected/mechanism pattern, no knob swaps/no scattered changes/no grain."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "knob",
+      "label": "The drawer knob has a crescent print.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 844,
+        "y": 572,
+        "width": 77,
+        "height": 78
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "heart",
+      "label": "The jewelry box relief becomes a heart.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 815,
+        "y": 92,
+        "width": 61,
+        "height": 56
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "cuff",
+      "label": "The wool sock cuff folds outward.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 326,
+        "y": 654,
+        "width": 156,
+        "height": 89
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "lace",
+      "label": "The lace tip curls into a loop.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1039,
+        "y": 575,
+        "width": 56,
+        "height": 64
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "clasp",
+      "label": "The chest clasp flips open.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1560,
+        "y": 438,
+        "width": 59,
+        "height": 133
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered compositor/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

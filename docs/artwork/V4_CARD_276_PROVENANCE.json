@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-276",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-276-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-276-original-v4.png",
+    "sha256": "B1EB92D1D92B212F4E9C37E8CB99616D36647FAE5653786E9EF47D6258FBEFD8",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-276-altered-source-v4.png",
+    "sha256": "104D6094A94293D51FCCF90F730CA9F7FAB5853EDF64BE266AD26203BDFA1F74",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact native full 1672x941 painterly porcupine opening tiny trunk door with key. FIVE localized single-object differences only: 1) uppermost hanging round gold key head x382y165 has blue crescent reflection on metal, same key/loop/quills; 2) middle clover-shaped hanging key x254y286 central opening becomes a triangular cutout, other lobes and shaft exact; 3) single trunk upper-right brass rivet x1577y376 has an X groove in its face; 4) foreground leather key fob x1367y883 has a gold zigzag sewn seam through leather right of its brass button, keyring/button exact; 5) trunk leather carrying handle x1324y276 curves upward into a tighter narrow arch, anchors/other metal fittings exact. Preserve porcupine paws quills/anatomy, key in paw and open door. No other edits.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-276-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact native full 1672x941 painterly porcupine opening tiny trunk door with key. FIVE localized single-object differences only: 1) uppermost hanging round gold key head x382y165 has blue crescent reflection on metal, same key/loop/quills; 2) middle clover-shaped hanging key x254y286 central opening becomes a triangular cutout, other lobes and shaft exact; 3) single trunk upper-right brass rivet x1577y376 has an X groove in its face; 4) foreground leather key fob x1367y883 has a gold zigzag sewn seam through leather right of its brass button, keyring/button exact; 5) trunk leather carrying handle x1324y276 curves upward into a tighter narrow arch, anchors/other metal fittings exact. Preserve porcupine paws quills/anatomy, key in paw and open door. No other edits.",
+        "reference": "D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-276-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The carrying handle forms a narrower arch",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1180,
+        "y": 224,
+        "width": 279,
+        "height": 112
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The top key reflects a blue crescent",
+      "difficulty": "Medium",
+      "box": {
+        "x": 381,
+        "y": 130,
+        "width": 35,
+        "height": 61
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The clover key has a triangular opening",
+      "difficulty": "Hard",
+      "box": {
+        "x": 232,
+        "y": 270,
+        "width": 40,
+        "height": 49
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The leather key fob has a gold zigzag seam",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1388,
+        "y": 859,
+        "width": 45,
+        "height": 58
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "One trunk rivet has an X groove",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1509,
+        "y": 430,
+        "width": 32,
+        "height": 40
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390 stacked pair. Five independently selectable localized object clues. Native dimensions, five bounded nonoverlapping boxes and exact original pixels outside verified. Difficulty estimates unvalidated; root compositor/game, human difficulty and physical phone approval pending. Full prompt/source hash chain retained.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-137",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-137-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-137-original-v4.png",
+    "sha256": "006F6500261482D8E6DF3C78A310C463EC8B2019A55B824AEA9FF2D837FFF613",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-137-altered-source-v4.png",
+    "sha256": "F163DC611704D2668AB1C586470F10EBA275B068746268C378292B0AA79BDD5F",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Exact native1672x941 paintingedit preserve octopus anatomytentaclesface filmset allweather props frame style. Five singleobjectdifferences:1 FRONTREDbutton x651y802 itsfourroundholes change tooneverticallongslot, onlyredbutton greenyellowunchanged;2 suspended metalTRIANGLE atx841y499 bendsfromtriangle into continuousSQUARE loop samechainconnection, onlythistriangle notlefttriangle;3 octopus redBOWTIE x579y365 rightfabricwing foldsdownward while knotleftwing unchanged;4 lowerleft stageLIGHT x137y783 centralgoldroundlight face hasaclear crescentdarkshutter acrossitsrightside insteadfullroundglow, outerhousingunchanged;5 BLUECUP onupperkitchentablex1015y334 HANDLE turns intoopenC hook insteadclosedloop, cupbodyunchanged. Onlyfive oneobjectlocalizeddefinite clues no swaps noglobalchanges noextraobjects.\"}}, {\"file\": \"prompt-b.json\", \"content\": {\"prompt\": \"Edit exact tinybluecup crop. ONLY right cup handle changes: open the bottom of its closedoval loop, leaving aC-shaped hook attached atupperright cup rim and curvingoutwarddown then endingfree nearbottomright. Keep left cuphandle/body/color/tablebackground unchanged. Single handleinternalmechanism cleargap atbottom, no wholecupregeneration.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Exact native1672x941 paintingedit preserve octopus anatomytentaclesface filmset allweather props frame style. Five singleobjectdifferences:1 FRONTREDbutton x651y802 itsfourroundholes change tooneverticallongslot, onlyredbutton greenyellowunchanged;2 suspended metalTRIANGLE atx841y499 bendsfromtriangle into continuousSQUARE loop samechainconnection, onlythistriangle notlefttriangle;3 octopus redBOWTIE x579y365 rightfabricwing foldsdownward while knotleftwing unchanged;4 lowerleft stageLIGHT x137y783 centralgoldroundlight face hasaclear crescentdarkshutter acrossitsrightside insteadfullroundglow, outerhousingunchanged;5 BLUECUP onupperkitchentablex1015y334 HANDLE turns intoopenC hook insteadclosedloop, cupbodyunchanged. Onlyfive oneobjectlocalizeddefinite clues no swaps noglobalchanges noextraobjects."
+      }
+    },
+    {
+      "file": "prompt-b.json",
+      "content": {
+        "prompt": "Edit exact tinybluecup crop. ONLY right cup handle changes: open the bottom of its closedoval loop, leaving aC-shaped hook attached atupperright cup rim and curvingoutwarddown then endingfree nearbottomright. Keep left cuphandle/body/color/tablebackground unchanged. Single handleinternalmechanism cleargap atbottom, no wholecupregeneration."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The red button holes become a single slot",
+      "difficulty": "Easy",
+      "box": {
+        "x": 626,
+        "y": 772,
+        "width": 58,
+        "height": 57
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The suspended triangle becomes a square",
+      "difficulty": "Medium",
+      "box": {
+        "x": 793,
+        "y": 460,
+        "width": 94,
+        "height": 84
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The bow tie right wing folds downward",
+      "difficulty": "Hard",
+      "box": {
+        "x": 584,
+        "y": 334,
+        "width": 35,
+        "height": 56
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The left stage lamp shutter covers the right side",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 126,
+        "y": 716,
+        "width": 77,
+        "height": 150
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The blue cup right handle opens",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1022,
+        "y": 326,
+        "width": 15,
+        "height": 23
+      },
+      "edgeFade": 1
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "visually inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "nativePreflight": "source equals actual original size, five nonoverlapping boxes",
+    "difficulty": "hypotheses; human and browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

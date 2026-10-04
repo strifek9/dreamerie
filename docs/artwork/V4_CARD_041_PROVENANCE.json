@@ -1,0 +1,129 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-041",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-041-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-041-original-v4.png",
+    "sha256": "5692357443452EFE1B40EA8EAC6D4136CD6811B8B5C3B189E448D21B63CA3F93",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-041-altered-source-v4.png",
+    "sha256": "728F2B1E27B459780728BC89675C0676516A1A1754202A99AAEC86B574DEC412",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact full landscape1672x941 painterly clockmaker birdnest. Preserve framing,palette,allobjectpositions except ONLYfive single-objectchanges: 1) brass windingkey lower right trianglehandle becomes circular ringhandle, shaftsunchanged; 2) BLUE face central pear-shaped watch moon crescent opens LEFT rather thanright, maintain allmarkers; 3) red roundwatch longest minutehand points to numeralVI atbottom instead of upperright, allotherhands/numerals unchanged; 4) blue ribbon looseend at lowercenter curls into one compact loop ratherthan trailing splitfork, preserve continuousattachment acrossrock; 5) one cream egg on RIGHT in nest has a clean wavy brownline aroundshell instead of scatteredflecks; lefegg unchanged. Noextraedits,text,crops; keep original fullscene.\"}}, {\"file\": \"refine-prompt.json\", \"content\": {\"prompt\": \"Make ONE tiny localized but obvious semanticedit in fulloriginal1672x941 landscape: on BLUE FACE pear-shapedwatch atcenterx731 y535, mirror only gold crescent moon horizontally: gold arc on RIGHT and dark concave opening to LEFT, points facing LEFT. Keeppositions,size,goldcolor, nearbyticks exactlyunchanged. Allotherobjects unchanged incl creamwatchmoon and lidmoon. Output fulloriginal landscape.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact full landscape1672x941 painterly clockmaker birdnest. Preserve framing,palette,allobjectpositions except ONLYfive single-objectchanges: 1) brass windingkey lower right trianglehandle becomes circular ringhandle, shaftsunchanged; 2) BLUE face central pear-shaped watch moon crescent opens LEFT rather thanright, maintain allmarkers; 3) red roundwatch longest minutehand points to numeralVI atbottom instead of upperright, allotherhands/numerals unchanged; 4) blue ribbon looseend at lowercenter curls into one compact loop ratherthan trailing splitfork, preserve continuousattachment acrossrock; 5) one cream egg on RIGHT in nest has a clean wavy brownline aroundshell instead of scatteredflecks; lefegg unchanged. Noextraedits,text,crops; keep original fullscene."
+      }
+    },
+    {
+      "file": "refine-prompt.json",
+      "content": {
+        "prompt": "Make ONE tiny localized but obvious semanticedit in fulloriginal1672x941 landscape: on BLUE FACE pear-shapedwatch atcenterx731 y535, mirror only gold crescent moon horizontally: gold arc on RIGHT and dark concave opening to LEFT, points facing LEFT. Keeppositions,size,goldcolor, nearbyticks exactlyunchanged. Allotherobjects unchanged incl creamwatchmoon and lidmoon. Output fulloriginal landscape."
+      }
+    }
+  ],
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-041-refine-source-v4.png",
+      "sha256": "25E866E836FCB102568004B3D0260E5B8FA032B142EEE1FEC1A13CDA324A8255",
+      "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact full landscape1672x941 painterly clockmaker birdnest. Preserve framing,palette,allobjectpositions except ONLYfive single-objectchanges: 1) brass windingkey lower right trianglehandle becomes circular ringhandle, shaftsunchanged; 2) BLUE face central pear-shaped watch moon crescent opens LEFT rather thanright, maintain allmarkers; 3) red roundwatch longest minutehand points to numeralVI atbottom instead of upperright, allotherhands/numerals unchanged; 4) blue ribbon looseend at lowercenter curls into one compact loop ratherthan trailing splitfork, preserve continuousattachment acrossrock; 5) one cream egg on RIGHT in nest has a clean wavy brownline aroundshell instead of scatteredflecks; lefegg unchanged. Noextraedits,text,crops; keep original fullscene.\"}}, {\"file\": \"refine-prompt.json\", \"content\": {\"prompt\": \"Make ONE tiny localized but obvious semanticedit in fulloriginal1672x941 landscape: on BLUE FACE pear-shapedwatch atcenterx731 y535, mirror only gold crescent moon horizontally: gold arc on RIGHT and dark concave opening to LEFT, points facing LEFT. Keeppositions,size,goldcolor, nearbyticks exactlyunchanged. Allotherobjects unchanged incl creamwatchmoon and lidmoon. Output fulloriginal landscape.\"}}]"
+    }
+  ],
+  "authoredRegions": [
+    {
+      "id": "ring-key",
+      "label": "The loose winding key has a round handle.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1220,
+        "y": 747,
+        "width": 146,
+        "height": 120
+      },
+      "edgeFade": 6
+    },
+    {
+      "id": "ribbon-loop",
+      "label": "The loose ribbon end curls into a loop.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 831,
+        "y": 735,
+        "width": 305,
+        "height": 160
+      },
+      "edgeFade": 7
+    },
+    {
+      "id": "watch-hands",
+      "label": "The red watch hands point up and down.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 475,
+        "y": 474,
+        "width": 137,
+        "height": 144
+      },
+      "edgeFade": 5
+    },
+    {
+      "id": "egg-wave",
+      "label": "The right egg has a wavy brown stripe.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 673,
+        "y": 578,
+        "width": 88,
+        "height": 78
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "watch-moon",
+      "label": "The blue watch's crescent opens to the left.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 700,
+        "y": 505,
+        "width": 57,
+        "height": 56
+      },
+      "edgeFade": 4,
+      "source": "refine.png"
+    }
+  ],
+  "notes": {
+    "humanTimed": false,
+    "physicalPhone": false,
+    "notes": "One object per region; moonrefinement selected only onblueface, othermoons original.",
+    "outsideRegionsExact": true,
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sourceHashes": {
+      "source.png": "728f2b1e27b459780728bc89675c0676516a1a1754202a99aaec86b574dec412",
+      "refine.png": "25e866e836fcb102568004b3d0260e5b8fa032b142eee1fec1a13cda324a8255"
+    }
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

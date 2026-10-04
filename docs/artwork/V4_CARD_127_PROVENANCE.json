@@ -1,0 +1,124 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-127",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-127-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-127-original-v4.png",
+    "sha256": "84E3A7896A321F29BBDE204395E69240E48881225C0BBDEB179AC63C2806AEFD",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-127-altered-source-v4.png",
+    "sha256": "9E83D40F3AAE7D10427C04DE4F35DCED45E1F08D0776B0E8F582D51103DBE2B3",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit this exact native full frame 1672x941 painting, five localized single-object differences only: 1 blue slipper offered by girl near x671 y565 its heel opening is tied closed by one small blue loop strap, keep slipper white star, sole, girl's fingers original. 2 bronze bunny figurine on books at far right near x1540 y452: fold its two ears down backward against same bunny head rather than upright, same body and books. 3 purple hanging scarf at left near x313 y529: fringe becomes a row of closed hanging loops rather than straight tassels, preserve scarf shape and adjacent gold coat. 4 gold round front door knob at x131 y365: face has a vertical keyhole engraving, same round knob plate door. 5 oval black cat portrait at top near x931 y49: cat's tail curves to its LEFT instead of right, same cat silhouette face oval frame and wall. No other changes; dreamy warm painted style and original staircase intact.\", \"reference\": \"dream-127-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit this exact native full frame 1672x941 painting, five localized single-object differences only: 1 blue slipper offered by girl near x671 y565 its heel opening is tied closed by one small blue loop strap, keep slipper white star, sole, girl's fingers original. 2 bronze bunny figurine on books at far right near x1540 y452: fold its two ears down backward against same bunny head rather than upright, same body and books. 3 purple hanging scarf at left near x313 y529: fringe becomes a row of closed hanging loops rather than straight tassels, preserve scarf shape and adjacent gold coat. 4 gold round front door knob at x131 y365: face has a vertical keyhole engraving, same round knob plate door. 5 oval black cat portrait at top near x931 y49: cat's tail curves to its LEFT instead of right, same cat silhouette face oval frame and wall. No other changes; dreamy warm painted style and original staircase intact.",
+        "reference": "dream-127-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-127-slipper-selected-source-v4.png",
+      "sha256": "8BD69834830F837E07A9D3BF1E94D723341BCBD2CEBDAB5AB842C96CFD64D89C",
+      "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit this exact native full frame 1672x941 painting, five localized single-object differences only: 1 blue slipper offered by girl near x671 y565 its heel opening is tied closed by one small blue loop strap, keep slipper white star, sole, girl's fingers original. 2 bronze bunny figurine on books at far right near x1540 y452: fold its two ears down backward against same bunny head rather than upright, same body and books. 3 purple hanging scarf at left near x313 y529: fringe becomes a row of closed hanging loops rather than straight tassels, preserve scarf shape and adjacent gold coat. 4 gold round front door knob at x131 y365: face has a vertical keyhole engraving, same round knob plate door. 5 oval black cat portrait at top near x931 y49: cat's tail curves to its LEFT instead of right, same cat silhouette face oval frame and wall. No other changes; dreamy warm painted style and original staircase intact.\", \"reference\": \"dream-127-original-v1.png\"}}]"
+    }
+  ],
+  "authoredRegions": [
+    {
+      "id": "scarf-loops",
+      "label": "The scarf fringe forms closed loops",
+      "difficulty": "Easy",
+      "box": {
+        "x": 280,
+        "y": 478,
+        "width": 63,
+        "height": 77
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "bunny-ears",
+      "label": "The bronze bunny folds its ears back",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1503,
+        "y": 424,
+        "width": 65,
+        "height": 53
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "slipper-strap",
+      "label": "The slipper has a loop strap",
+      "difficulty": "Hard",
+      "box": {
+        "x": 627,
+        "y": 543,
+        "width": 89,
+        "height": 52
+      },
+      "edgeFade": 3,
+      "source": "slipper-selected.png"
+    },
+    {
+      "id": "knob-keyhole",
+      "label": "The door knob has a keyhole",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 110,
+        "y": 346,
+        "width": 40,
+        "height": 40
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "portrait-tail",
+      "label": "The painted cat has a raised curved tail",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 943,
+        "y": 26,
+        "width": 23,
+        "height": 45
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "humanTimed": false,
+    "physicalPhone": false,
+    "notes": "Tail direction prompt did not realize; original cat has no raised tail and generated portrait adds raised tail at right, accurately labelled. Five one-object edits; bunny pose and slipper strap action/mechanism. Original slipper star decoration restored with 4px feather (678,553,27,28); entire slipper edit remains within original box.",
+    "outsideRegionsExact": true,
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sourceHashes": {
+      "source.png": "9e83d40f3aae7d10427c04de4f35dced45e1f08d0776b0e8f582d51103dbe2b3",
+      "slipper-selected.png": "8bd69834830f837e07a9d3bf1e94d723341bcbd2cebdab5ab842c96cfd64d89c"
+    }
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

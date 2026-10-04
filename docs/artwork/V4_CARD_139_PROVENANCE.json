@@ -1,0 +1,118 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-139",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-139-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-139-original-v4.png",
+    "sha256": "988CDC0F0B17C9DE79E0313A98FBB3B80D2EEFDF5E15149DC796BCB930B29AA4",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-139-altered-source-v4.png",
+    "sha256": "61F378EAE78F4466E52D2EE74760B098440D849A478B64A305C5D53C8DF95DE8",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"Exactly5 small local changes to attached full native1672x941 original The Seam Between Two Rooms. Preserve people/anatomy/hands/scene/zipper teeth and paintstyle.1 LEFT brass zipper pull's bottom circular eyelet centered578,365 becomes HEART-shaped opening inside samepull, upper pull unchanged.2 RIGHT brass zipper pull's bottom tab at1070,377 swings LEFT about existing upper hinge1032,300 rather than hanging down; rightman'shands and entire zipper teeth exact, sameonepull connected.3 ONLY LEFT blue-and-white mug at287,373: its handle curls inward over mug rim instead of outside to right, mugbody/pattern/table original.4 sleeping orange-and-white cat on LEFTbed: ONLY visible eye at95,480 opens into a small dark alert eye, face/ears/body exact.5 ONLY center flower motif on foreground red cushion at1262,850 becomes five-point golden STAR, other flower motifs/cushion outline unchanged. Each one object or internalfeature, no swaps, no other edits. Full originalcanvas.\"}}, {\"file\": \"prompt-refine.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"ONLY ONE local edit of attached fullnative1672x941originalpainting: LEFT bedside blue-and-white mug centered282,372 beside woman'sbed. Its right-side cream handle currently round oval at303,371 must become a sharply TRIANGULAR loop with straight sides and pointed corner to RIGHT. Same endpoints attached to original mugbody at293,357 and293,382. Keep mugbody/rim/bluepattern/table/plants and allother scene EXACToriginal. Rightman'smug unchanged. Only one existing handle outline changes, full same canvas.\"}}, {\"file\": \"prompt-lampshade.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"ONLY oneobject change on attachedfull1672x941originalpainting: RIGHT room cream lampshade at1497,371 retains exactconicaloutline/color/topbottomedges but its fabric pleats run DIAGONALLY from upperleft to lowerright instead of straight vertical. Clearly visible bold diagonal parallel ribs across sameone shade, not colorchange. Lampbase/pole/table/rightmug/books and allotherobjects original. Fullframe/style retained; noother edits.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "Exactly5 small local changes to attached full native1672x941 original The Seam Between Two Rooms. Preserve people/anatomy/hands/scene/zipper teeth and paintstyle.1 LEFT brass zipper pull's bottom circular eyelet centered578,365 becomes HEART-shaped opening inside samepull, upper pull unchanged.2 RIGHT brass zipper pull's bottom tab at1070,377 swings LEFT about existing upper hinge1032,300 rather than hanging down; rightman'shands and entire zipper teeth exact, sameonepull connected.3 ONLY LEFT blue-and-white mug at287,373: its handle curls inward over mug rim instead of outside to right, mugbody/pattern/table original.4 sleeping orange-and-white cat on LEFTbed: ONLY visible eye at95,480 opens into a small dark alert eye, face/ears/body exact.5 ONLY center flower motif on foreground red cushion at1262,850 becomes five-point golden STAR, other flower motifs/cushion outline unchanged. Each one object or internalfeature, no swaps, no other edits. Full originalcanvas."
+      }
+    },
+    {
+      "file": "prompt-refine.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "ONLY ONE local edit of attached fullnative1672x941originalpainting: LEFT bedside blue-and-white mug centered282,372 beside woman'sbed. Its right-side cream handle currently round oval at303,371 must become a sharply TRIANGULAR loop with straight sides and pointed corner to RIGHT. Same endpoints attached to original mugbody at293,357 and293,382. Keep mugbody/rim/bluepattern/table/plants and allother scene EXACToriginal. Rightman'smug unchanged. Only one existing handle outline changes, full same canvas."
+      }
+    },
+    {
+      "file": "prompt-lampshade.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "ONLY oneobject change on attachedfull1672x941originalpainting: RIGHT room cream lampshade at1497,371 retains exactconicaloutline/color/topbottomedges but its fabric pleats run DIAGONALLY from upperleft to lowerright instead of straight vertical. Clearly visible bold diagonal parallel ribs across sameone shade, not colorchange. Lampbase/pole/table/rightmug/books and allotherobjects original. Fullframe/style retained; noother edits."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "heart-eyelet",
+      "label": "The left zipper pull has a heart-shaped eyelet.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 557,
+        "y": 341,
+        "width": 48,
+        "height": 47
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "sideways-pull",
+      "label": "The right zipper pull swings to the left.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 916,
+        "y": 263,
+        "width": 184,
+        "height": 171
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "open-cat-eyes",
+      "label": "The cat opens its eyes.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 72,
+        "y": 462,
+        "width": 41,
+        "height": 24
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "cushion-star",
+      "label": "The red cushion carries a gold star.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1220,
+        "y": 838,
+        "width": 50,
+        "height": 51
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "diagonal-shade-pleats",
+      "label": "The lampshade pleats run diagonally.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1406,
+        "y": 307,
+        "width": 183,
+        "height": 126
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Source generations and bounded composites inspected; five isolated objects. Difficulty labels are hypotheses. No human or physical-phone fairness validation.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

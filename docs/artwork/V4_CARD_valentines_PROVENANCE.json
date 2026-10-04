@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-valentines",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/holidays-painted-v1/valentines-original.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-valentines-original-v4.png",
+    "sha256": "B05069BAE9E292859A13323A6B3D35EDD729201F15BC18A6E102A9A11CECC301",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-valentines-altered-source-v4.png",
+    "sha256": "25B7431C424EF738CDFAAA3974E14537DA55011F6C5761D2E78109DA20532161",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact native1672x941 painterly Valentine's lovers holding hands over heart path sky. FIVE isolated ONE-object changes:1 foreground heart gift box front red face below bow x276y762 gains gold star embroidery among existing vines, outline/ribbon exact;2 brass heart-shaped key bow at x401y782 gains one diagonal brass bar across central opening, shaft exact;3 wax heart seal on LEFT floating envelope x425y174 reflects broad blue crescent, envelope/right seal exact;4 woman's ONE visible front boot heel at x645y520 curves into hook inward, boot body/feet exact;5 man's coat single lower brass button x810y281 gains clear X groove, clothing/hands exact. Preserve anatomy, all hearts, mountains, tree shadow, framing and dreamy paint style; no extra changes.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/holidays-painted-v1/valentines-original.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact native1672x941 painterly Valentine's lovers holding hands over heart path sky. FIVE isolated ONE-object changes:1 foreground heart gift box front red face below bow x276y762 gains gold star embroidery among existing vines, outline/ribbon exact;2 brass heart-shaped key bow at x401y782 gains one diagonal brass bar across central opening, shaft exact;3 wax heart seal on LEFT floating envelope x425y174 reflects broad blue crescent, envelope/right seal exact;4 woman's ONE visible front boot heel at x645y520 curves into hook inward, boot body/feet exact;5 man's coat single lower brass button x810y281 gains clear X groove, clothing/hands exact. Preserve anatomy, all hearts, mountains, tree shadow, framing and dreamy paint style; no extra changes.",
+        "reference": "D:/Dreamerie/public/artwork/v3/holidays-painted-v1/valentines-original.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The gift box has a gold star",
+      "difficulty": "Easy",
+      "box": {
+        "x": 214,
+        "y": 734,
+        "width": 35,
+        "height": 34
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The key bow has a diagonal bar",
+      "difficulty": "Medium",
+      "box": {
+        "x": 373,
+        "y": 759,
+        "width": 56,
+        "height": 40
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The left wax seal has a blue reflection",
+      "difficulty": "Hard",
+      "box": {
+        "x": 413,
+        "y": 163,
+        "width": 24,
+        "height": 23
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "One boot heel curls inward",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 637,
+        "y": 508,
+        "width": 23,
+        "height": 28
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The coat gains a button with an X groove",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 814,
+        "y": 233,
+        "width": 21,
+        "height": 23
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390 stacked pair. Five independently selectable localized object clues. Native dimensions, five bounded nonoverlapping boxes and exact original pixels outside verified. Difficulty estimates unvalidated; root compositor/game, human difficulty and physical phone approval pending. Full prompt/source hash chain retained.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

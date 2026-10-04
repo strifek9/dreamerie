@@ -1,0 +1,118 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-213",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-213-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-213-original-v4.png",
+    "sha256": "C670FA0BF213DCF00CFB21D577F5FCE217AD325CD60FA49EEBA6577ED000B62F",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-213-altered-source-v4.png",
+    "sha256": "A2A4D2833852ABE4506FCCD0222D3CADCA83CBEF2BB9DA6CDE903AC3880066C3",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit this exact dreamy painted scene, preserve full native 1672x941 composition, style and every object except FIVE localized single-object differences. 1 Cat on left stair closes its visible golden eyes (one cat facial pose); keep body/tail unchanged. 2 Upper hooked free tip of stair railing at x175 y180 becomes a closed oval loop instead of spiral, retain rest rail. 3 Child's front/right boot side pull tab at x850 y800 becomes a heart-shaped open tab instead of round hole, boot otherwise exact. 4 Window latch upper right at x1340 y136 rotates its horizontal lever upward, same latch only; all window unchanged. 5 Circular water ripple near x1034 y636 inside carried puddle becomes a distinct little spiral instead of concentric rings, retain entire water silhouette and reflected buildings. No other differences. No other objects moved/repainted. Full frame.\", \"reference\": \"dream-213-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit this exact dreamy painted scene, preserve full native 1672x941 composition, style and every object except FIVE localized single-object differences. 1 Cat on left stair closes its visible golden eyes (one cat facial pose); keep body/tail unchanged. 2 Upper hooked free tip of stair railing at x175 y180 becomes a closed oval loop instead of spiral, retain rest rail. 3 Child's front/right boot side pull tab at x850 y800 becomes a heart-shaped open tab instead of round hole, boot otherwise exact. 4 Window latch upper right at x1340 y136 rotates its horizontal lever upward, same latch only; all window unchanged. 5 Circular water ripple near x1034 y636 inside carried puddle becomes a distinct little spiral instead of concentric rings, retain entire water silhouette and reflected buildings. No other differences. No other objects moved/repainted. Full frame.",
+        "reference": "dream-213-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "cat-eyes",
+      "label": "The cat closes its eyes.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 210,
+        "y": 333,
+        "width": 58,
+        "height": 36
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "rail-loop",
+      "label": "The railing tip forms a closed oval.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 156,
+        "y": 144,
+        "width": 53,
+        "height": 62
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "latch-up",
+      "label": "The window latch points upward.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1300,
+        "y": 65,
+        "width": 67,
+        "height": 92
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "boot-heart",
+      "label": "The boot tab has a heart-shaped opening.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 835,
+        "y": 775,
+        "width": 40,
+        "height": 45
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "water-spiral",
+      "label": "The puddle ripple curls into a spiral.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 977,
+        "y": 605,
+        "width": 112,
+        "height": 59
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": {
+    "humanTimed": false,
+    "physicalPhone": false,
+    "notes": [
+      "Five single-object edits; full frame and localized QA reviewed."
+    ],
+    "outsideRegionsExact": true,
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sourceHashes": {
+      "source.png": "a2a4d2833852abe4506fccd0222d3cadca83cbef2bb9da6cde903ac3880066c3"
+    }
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

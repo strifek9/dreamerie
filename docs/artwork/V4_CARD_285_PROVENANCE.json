@@ -1,0 +1,110 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-285",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-285-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-285-original-v4.png",
+    "sha256": "B20F4BC8464199A8453F8E2E5A02D0E362A950C4E9ADCD9B31B1E2693AF64E04",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-285-altered-source-v4.png",
+    "sha256": "F36D4256F8B3A96733109B12C07783F8B089A54C064591D728DA80E4BEF3DA0C",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact original mechanical swan laundry painting locally, preserve frame, swan anatomy and all laundry/water boats. Five single-object changes: 1 Visible large brass gear in swan wing near x496 y319 has internal spokes curved into a pinwheel, gear rim/teeth and all other gears unchanged. 2 Wooden clothespin on NEAREST lower-right sailboat near x1445 y702 has its upper jaws clearly open apart into a wider V, its lower clamped end stays holding same sail, other boat pins unchanged. 3 The bottom corner of coral towel draped over far-left laundry basket near x227 y709 folds upward into a triangular flap; rest towel and basket untouched. 4 The white detergent bottle on far-left countertop near x122 y227 has a crescent-shaped orange label rather than solid orange oval, bottle outline/handle/cap unchanged. 5 The laundry cart's visible wheel at right near x1525 y605 has a broad brass spiral hub insert instead of its plain gray circular hub, outer rubber wheel/cart unchanged. No swaps, no other targets, seamless local painterly edits.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact original mechanical swan laundry painting locally, preserve frame, swan anatomy and all laundry/water boats. Five single-object changes: 1 Visible large brass gear in swan wing near x496 y319 has internal spokes curved into a pinwheel, gear rim/teeth and all other gears unchanged. 2 Wooden clothespin on NEAREST lower-right sailboat near x1445 y702 has its upper jaws clearly open apart into a wider V, its lower clamped end stays holding same sail, other boat pins unchanged. 3 The bottom corner of coral towel draped over far-left laundry basket near x227 y709 folds upward into a triangular flap; rest towel and basket untouched. 4 The white detergent bottle on far-left countertop near x122 y227 has a crescent-shaped orange label rather than solid orange oval, bottle outline/handle/cap unchanged. 5 The laundry cart's visible wheel at right near x1525 y605 has a broad brass spiral hub insert instead of its plain gray circular hub, outer rubber wheel/cart unchanged. No swaps, no other targets, seamless local painterly edits."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The swan gear has curved spokes",
+      "difficulty": "Easy",
+      "box": {
+        "x": 465,
+        "y": 270,
+        "width": 82,
+        "height": 111
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The nearest clothespin jaws open wider",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1410,
+        "y": 631,
+        "width": 92,
+        "height": 128
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The coral towel hem folds upward",
+      "difficulty": "Hard",
+      "box": {
+        "x": 137,
+        "y": 594,
+        "width": 171,
+        "height": 170
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The detergent label forms a crescent",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 97,
+        "y": 213,
+        "width": 44,
+        "height": 61
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The cart wheel has a spiral brass hub",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1495,
+        "y": 579,
+        "width": 59,
+        "height": 51
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "visually inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "nativePreflight": "source equals actual original size, five nonoverlapping boxes",
+    "difficulty": "hypotheses; human and browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

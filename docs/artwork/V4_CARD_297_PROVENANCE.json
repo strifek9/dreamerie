@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-297",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-revisit-v1/297-dynamic-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-297-original-v4.png",
+    "sha256": "77E6AC3FA6D90D4E32B321BFA180148567516A227BCCD537132D6C347B6C038A",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-297-altered-source-v4.png",
+    "sha256": "B74078135258479CFD1D94B1884AD9E96015E8CC9155A04ECA849BACD82E3E05",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit precisely original giant inward compass with paper lizard on needle and river pouring from map into glass bottle. Preserve all scene identity, lizard anatomy/pose, map/river continuity, compass, framing/style. Exactly FIVE independent single-object localized clues: (1) paper lizard TAIL curls DOWN instead of UP at its far right tip, all body/feet exact; (2) small wooden door inside compass at TOP has its round gold knob replaced with a short LEFT-facing lever, door/rest exact; (3) loose brass KEY at bottom RIGHT its round ring bow becomes a clear rounded DIAMOND opening, shaft/teeth exact; (4) loose gold CRESCENT at bottom LEFT has a broad three-part engraved diagonal stripe pattern on its face, same geometry/hole exact; (5) compass TOP external carrying ring becomes a clean HEXAGONAL ring at same position/scale, stem/blue rope exact. Five one-object connected/ internal changes, no strap plate swaps/no unrelated marks.\"}}, {\"file\": \"neck-prompt.json\", \"content\": {\"prompt\": \"Edit exact glass bottle neck crop. ONLY bottle mouth rim's RIGHT side is drawn outward into a prominent attached triangular POURING SPOUT, like pitcher lip. Keep river stream exact, left rim and bottle neck/body exact, glass reflections/style/background exact. One bottle rim mechanism transformation, clearly broad triangular lip about one-third mouth diameter on right, no separate object.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit precisely original giant inward compass with paper lizard on needle and river pouring from map into glass bottle. Preserve all scene identity, lizard anatomy/pose, map/river continuity, compass, framing/style. Exactly FIVE independent single-object localized clues: (1) paper lizard TAIL curls DOWN instead of UP at its far right tip, all body/feet exact; (2) small wooden door inside compass at TOP has its round gold knob replaced with a short LEFT-facing lever, door/rest exact; (3) loose brass KEY at bottom RIGHT its round ring bow becomes a clear rounded DIAMOND opening, shaft/teeth exact; (4) loose gold CRESCENT at bottom LEFT has a broad three-part engraved diagonal stripe pattern on its face, same geometry/hole exact; (5) compass TOP external carrying ring becomes a clean HEXAGONAL ring at same position/scale, stem/blue rope exact. Five one-object connected/ internal changes, no strap plate swaps/no unrelated marks."
+      }
+    },
+    {
+      "file": "neck-prompt.json",
+      "content": {
+        "prompt": "Edit exact glass bottle neck crop. ONLY bottle mouth rim's RIGHT side is drawn outward into a prominent attached triangular POURING SPOUT, like pitcher lip. Keep river stream exact, left rim and bottle neck/body exact, glass reflections/style/background exact. One bottle rim mechanism transformation, clearly broad triangular lip about one-third mouth diameter on right, no separate object."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "ring",
+      "label": "The compass carrying ring becomes hexagonal.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 407,
+        "y": 0,
+        "width": 205,
+        "height": 137
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "tail",
+      "label": "The paper lizard tail curls downward.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 799,
+        "y": 476,
+        "width": 144,
+        "height": 106
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "key",
+      "label": "The loose key bow becomes diamond-shaped.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1142,
+        "y": 663,
+        "width": 128,
+        "height": 102
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "crescent",
+      "label": "The loose crescent has diagonal engraved stripes.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 75,
+        "y": 716,
+        "width": 126,
+        "height": 113
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "spout",
+      "label": "The bottle mouth has a right pouring lip.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1494,
+        "y": 522,
+        "width": 67,
+        "height": 61
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered compositor/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

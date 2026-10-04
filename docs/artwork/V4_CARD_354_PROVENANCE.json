@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-354",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-354-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-354-original-v4.png",
+    "sha256": "16D6B5C5BB37B56474AB69635C82594567909027FB9A7B38C75F2144754728E6",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-354-altered-source-v4.png",
+    "sha256": "B20142B0D752BB4A638ABC4994FE6F3C37CAD6BB6E6FBBBC427B47D7FB4A8D12",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact native1672x941 painterly anthropomorphic yellow knitted key trying purple knitted keyhole in wooden door. FIVE isolated ONE-object edits:1 key's mouth x916y411 changes from frown into gentle smile, eyes/hands/body exact;2 wooden spool front face x183y651 gains one diagonal wooden crossbar through hollow center, outer spool/yarn exact;3 upper BIG brass hinge screw at x1408y197 reflects a strong blue crescent, other screws exact;4 key handle ring yellow FRONT fabric surface at x620y522 gains single embroidered purple star, outlines exact;5 lower BIG brass hinge screw at x1406y410 has a clear X slot, rest hinge exact. Preserve yarn weave, key/hand/feet anatomy, basket loops, every yarn rope position, style/frame. No extra changes.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-354-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact native1672x941 painterly anthropomorphic yellow knitted key trying purple knitted keyhole in wooden door. FIVE isolated ONE-object edits:1 key's mouth x916y411 changes from frown into gentle smile, eyes/hands/body exact;2 wooden spool front face x183y651 gains one diagonal wooden crossbar through hollow center, outer spool/yarn exact;3 upper BIG brass hinge screw at x1408y197 reflects a strong blue crescent, other screws exact;4 key handle ring yellow FRONT fabric surface at x620y522 gains single embroidered purple star, outlines exact;5 lower BIG brass hinge screw at x1406y410 has a clear X slot, rest hinge exact. Preserve yarn weave, key/hand/feet anatomy, basket loops, every yarn rope position, style/frame. No extra changes.",
+        "reference": "D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-354-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The knitted key smiles",
+      "difficulty": "Easy",
+      "box": {
+        "x": 886,
+        "y": 399,
+        "width": 49,
+        "height": 32
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The spool opening has a wooden crossbar",
+      "difficulty": "Medium",
+      "box": {
+        "x": 160,
+        "y": 611,
+        "width": 60,
+        "height": 95
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The key handle has purple star embroidery",
+      "difficulty": "Hard",
+      "box": {
+        "x": 562,
+        "y": 414,
+        "width": 81,
+        "height": 94
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The upper hinge screw has a blue reflection",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1380,
+        "y": 171,
+        "width": 44,
+        "height": 49
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The lower hinge screw has an X slot",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1380,
+        "y": 380,
+        "width": 47,
+        "height": 57
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390 stacked pair. Five independently selectable localized object clues. Native dimensions, five bounded nonoverlapping boxes and exact original pixels outside verified. Difficulty estimates unvalidated; root compositor/game, human difficulty and physical phone approval pending. Full prompt/source hash chain retained.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

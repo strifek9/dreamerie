@@ -1,0 +1,130 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-091",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-revisit-v1/091-dynamic-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-091-original-v4.png",
+    "sha256": "B31300DAEAED4213A7D61A883441EDC9FD04F78C7840AFD169CE21B220D8E6D9",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-091-altered-source-v4.png",
+    "sha256": "8A0E57E8F12EF1EC44DE6CEC9161D3A38419601F992C5077477BE90407AAC8F8",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exactfullnative1672x941 RoomattheEndoftheRibbon oilpainting. Five isolated singleobject edits ONLY, positions/frame/style unchanged: 1) largefloatinggoldkey aboveclimber has handle shapedas two-loop figure-eight instead ofclover, sameboundsstem/teeth/tetherunchanged; 2) blue scarf trailing LEFT frompaperclimber curlsinto one loop instead oftwo longstreamers, same neckwrap/body/ladder unchanged; 3) yellow chair inroom has ONEhorizontal slat acrossback instead ofverticalslats, sameframe/seat/book untouched; 4) rug danglingfringe atfront roomedge becomes knottedloops instead ofstraight goldtassels, rugpattern/outlineladderunchanged; 5) ONLYwater reflection ofGREENdoor belowroom is ajar with visiblewarmgoldopening instead ofclosedflatgreen; realdoor/otherreflectionobjects/water unchanged. No text,newobjects,crop, preserveoriginals.\"}}, {\"file\": \"star-refine-prompt.json\", \"content\": {\"prompt\": \"Preserve this exact full-frame native 1672x941 image. Only correct the tiny decoration on the GREEN DOOR IN THE WATER REFLECTION, near x1101 y823 at bottom: it must be a crisp gold FIVE-POINT STAR, matching the gold five-point star attached to the real green door above. Current reflected decoration looks like three lobes, replace that decoration with star. Preserve reflected door's ajar angle, green panels, every other pixel/scene object. Do not modify real door or other scene.\", \"reference\": \"source.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exactfullnative1672x941 RoomattheEndoftheRibbon oilpainting. Five isolated singleobject edits ONLY, positions/frame/style unchanged: 1) largefloatinggoldkey aboveclimber has handle shapedas two-loop figure-eight instead ofclover, sameboundsstem/teeth/tetherunchanged; 2) blue scarf trailing LEFT frompaperclimber curlsinto one loop instead oftwo longstreamers, same neckwrap/body/ladder unchanged; 3) yellow chair inroom has ONEhorizontal slat acrossback instead ofverticalslats, sameframe/seat/book untouched; 4) rug danglingfringe atfront roomedge becomes knottedloops instead ofstraight goldtassels, rugpattern/outlineladderunchanged; 5) ONLYwater reflection ofGREENdoor belowroom is ajar with visiblewarmgoldopening instead ofclosedflatgreen; realdoor/otherreflectionobjects/water unchanged. No text,newobjects,crop, preserveoriginals."
+      }
+    },
+    {
+      "file": "star-refine-prompt.json",
+      "content": {
+        "prompt": "Preserve this exact full-frame native 1672x941 image. Only correct the tiny decoration on the GREEN DOOR IN THE WATER REFLECTION, near x1101 y823 at bottom: it must be a crisp gold FIVE-POINT STAR, matching the gold five-point star attached to the real green door above. Current reflected decoration looks like three lobes, replace that decoration with star. Preserve reflected door's ajar angle, green panels, every other pixel/scene object. Do not modify real door or other scene.",
+        "reference": "source.png"
+      }
+    }
+  ],
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-091-star-refine-source-v4.png",
+      "sha256": "46A34806BF57FD5653E7629F8785EE9DE118FED873C67EDE4FEB4B20A36A1A7D",
+      "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exactfullnative1672x941 RoomattheEndoftheRibbon oilpainting. Five isolated singleobject edits ONLY, positions/frame/style unchanged: 1) largefloatinggoldkey aboveclimber has handle shapedas two-loop figure-eight instead ofclover, sameboundsstem/teeth/tetherunchanged; 2) blue scarf trailing LEFT frompaperclimber curlsinto one loop instead oftwo longstreamers, same neckwrap/body/ladder unchanged; 3) yellow chair inroom has ONEhorizontal slat acrossback instead ofverticalslats, sameframe/seat/book untouched; 4) rug danglingfringe atfront roomedge becomes knottedloops instead ofstraight goldtassels, rugpattern/outlineladderunchanged; 5) ONLYwater reflection ofGREENdoor belowroom is ajar with visiblewarmgoldopening instead ofclosedflatgreen; realdoor/otherreflectionobjects/water unchanged. No text,newobjects,crop, preserveoriginals.\"}}, {\"file\": \"star-refine-prompt.json\", \"content\": {\"prompt\": \"Preserve this exact full-frame native 1672x941 image. Only correct the tiny decoration on the GREEN DOOR IN THE WATER REFLECTION, near x1101 y823 at bottom: it must be a crisp gold FIVE-POINT STAR, matching the gold five-point star attached to the real green door above. Current reflected decoration looks like three lobes, replace that decoration with star. Preserve reflected door's ajar angle, green panels, every other pixel/scene object. Do not modify real door or other scene.\", \"reference\": \"source.png\"}}]"
+    }
+  ],
+  "authoredRegions": [
+    {
+      "id": "key-eight",
+      "label": "The floating key has a two-loop handle.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 723,
+        "y": 410,
+        "width": 90,
+        "height": 99
+      },
+      "edgeFade": 5
+    },
+    {
+      "id": "climber-scarf",
+      "label": "The paper climber's scarf curls into a loop.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 646,
+        "y": 583,
+        "width": 157,
+        "height": 89
+      },
+      "edgeFade": 5
+    },
+    {
+      "id": "reflected-door",
+      "label": "The door's reflection stands ajar.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1027,
+        "y": 763,
+        "width": 101,
+        "height": 119
+      },
+      "edgeFade": 5,
+      "source": "star-refine.png"
+    },
+    {
+      "id": "rug-loops",
+      "label": "The room rug has looped fringe.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 874,
+        "y": 563,
+        "width": 186,
+        "height": 93
+      },
+      "edgeFade": 5
+    },
+    {
+      "id": "chair-slats",
+      "label": "The chair back has two upright slats instead of three.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1166,
+        "y": 395,
+        "width": 71,
+        "height": 69
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": {
+    "humanTimed": false,
+    "physicalPhone": false,
+    "notes": "Chairhorizontalpatterndidnotrealize; observed2slats labeled. Unrelatedgiantblue ribbon andnewreflectedscarf fromgeneration excludedentirely. Reflected gold star corrected by localized generated refinement, other four edits unchanged.",
+    "outsideRegionsExact": true,
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sourceHashes": {
+      "source.png": "8a0e57e8f12ef1ec44de6cec9161d3a38419601f992c5077477be90407aac8f8",
+      "star-refine.png": "46a34806bf57fd5653e7629f8785ee9de118fed873c67ede4feb4b20a36a1a7d"
+    }
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

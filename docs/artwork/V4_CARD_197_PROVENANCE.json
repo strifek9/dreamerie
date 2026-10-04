@@ -43,12 +43,9 @@
       ]
     },
     {
-      "path": "/artwork/v4/collection/dream-197-dial-source-v4.png",
-      "sha256": "29C83782FBDB704F3D7CFF8FF2328FA5BF6DC9A1647B81B81ACF321E4C4282BA",
-      "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 Dreamerie painting The Hour That Fell Out. Make ONE localized, legible clock-face change only to the TWO brass hour-marker bars at the very top of the pocket-watch dial: noon at x585,y200-230 and one o'clock at x665,y215-245. In the original the noon marker is a short straight gold bar and the diagonal one-o'clock marker is about the same length. In the altered counterpart SWAP their relative lengths dramatically but elegantly: noon becomes a noticeably SHORT tiny brass dash, while the diagonal one-o'clock marker becomes about TWICE as long and points toward the center. Preserve the orientation, positions, brass metal, watch face, all other hour markers and central ivory paper ribbon. This is a two-part ordered pattern clue, not a missing marker or a discoloration. Do not repaint the whole dial; preserve patina, velvet, lid, chain, spoon, ladder and all else. Crisp native detail in matte brushwork; no text, numbers, circles, grain or border.",
-      "usedRegions": [
-        "hour-tick-order"
-      ]
+      "path": "/artwork/v4/collection/dream-197-single-object-source-v4b.png",
+      "sha256": "706E17CEBD870925C7B6F161C5F3264894825AEA06DFAC751A05FD39DC4C453A",
+      "prompt": "\"Selected existing generated dial source patch; no new raster generation\""
     }
   ],
   "rejectedTrial": {
@@ -72,5 +69,31 @@
     "scope": "technical visual review only",
     "findings": "All five changes present. The earlier clean ribbon source remains continuous around the spoon with no detached sliver. Chain/ring, spoon reflection, rung occlusion and clock tick edits remain distinct.",
     "record": "docs/V4_BATCH_REVIEW_20261004.md"
-  }
+  },
+  "singleObjectFairnessCorrection": {
+    "authorization": "Sentinel_1aa3e822002c8191a74c51f233f72cbe",
+    "date": "2026-10-04",
+    "existingEditId": "hour-tick-order",
+    "label": "The noon tick on the watch face is shorter.",
+    "nativeBox": {
+      "x": 576,
+      "y": 198,
+      "width": 21,
+      "height": 41
+    },
+    "qa": "One selected tick only; all source pixels outside21x41 copied original exact. Last difficulty estimated; phone inspection needed.",
+    "status": "root native pixels/full pair/five crops and actual browser five hits/inspection/Escape/layouts/reload passed; human difficulty pending",
+    "priorHumanVisualAcceptance": "applies to the previously reviewed pair; revised fifth clue pending fresh review",
+    "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\private-197-export-validation.json"
+  },
+  "retiredGeneratedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-197-dial-source-v4.png",
+      "sha256": "29C83782FBDB704F3D7CFF8FF2328FA5BF6DC9A1647B81B81ACF321E4C4282BA",
+      "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 Dreamerie painting The Hour That Fell Out. Make ONE localized, legible clock-face change only to the TWO brass hour-marker bars at the very top of the pocket-watch dial: noon at x585,y200-230 and one o'clock at x665,y215-245. In the original the noon marker is a short straight gold bar and the diagonal one-o'clock marker is about the same length. In the altered counterpart SWAP their relative lengths dramatically but elegantly: noon becomes a noticeably SHORT tiny brass dash, while the diagonal one-o'clock marker becomes about TWICE as long and points toward the center. Preserve the orientation, positions, brass metal, watch face, all other hour markers and central ivory paper ribbon. This is a two-part ordered pattern clue, not a missing marker or a discoloration. Do not repaint the whole dial; preserve patina, velvet, lid, chain, spoon, ladder and all else. Crisp native detail in matte brushwork; no text, numbers, circles, grain or border.",
+      "usedRegions": [
+        "hour-tick-order"
+      ]
+    }
+  ]
 }

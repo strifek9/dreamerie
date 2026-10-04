@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-047",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-047-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-047-original-v4.png",
+    "sha256": "52DB59A93C815791323C7FB51971AE0566295353037B53033875ECFB1870A0BB",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-047-altered-source-v4.png",
+    "sha256": "E3EA9A8F62AFACB3359B1B09FE985BA0E040288DF69B70B234980764A8C290DD",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precisely edit attached Dreamerie painting native1672x941. Preserve framing, whaleanatomy, mood, brushwork, light and allobjects. Exactlyfive isolated SINGLEOBJECT changes:1 whale closedeye nearx994y459 opens as small darkalmond withgentlecalm pupil sameposition;2 jug left handle atx367y759 becomes open curvedhook instead ofclosedloop, jugbodyunchanged;3 chest lock blackkeyhole atx1345y796 rotates90degrees tohorizontal orientation within gold triangularlock, sameoutline;4 whale red ribbon long LEFT trailingtail atx659y524 threads BEHIND the upper blue pectoral fin instead ofinfront, show coherentredsegment exiting below fin;onlyribbonocclusion changes, finunchanged;5 armillarysphere outer tilted goldring atx174y445 passes BEHIND centraluprightgoldring atcrossing rather than overfront, preserveotherintersections, sphereandstar unchanged. No otherdetail/movement or color changes. Don't change separateobjects for oneguess.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precisely edit attached Dreamerie painting native1672x941. Preserve framing, whaleanatomy, mood, brushwork, light and allobjects. Exactlyfive isolated SINGLEOBJECT changes:1 whale closedeye nearx994y459 opens as small darkalmond withgentlecalm pupil sameposition;2 jug left handle atx367y759 becomes open curvedhook instead ofclosedloop, jugbodyunchanged;3 chest lock blackkeyhole atx1345y796 rotates90degrees tohorizontal orientation within gold triangularlock, sameoutline;4 whale red ribbon long LEFT trailingtail atx659y524 threads BEHIND the upper blue pectoral fin instead ofinfront, show coherentredsegment exiting below fin;onlyribbonocclusion changes, finunchanged;5 armillarysphere outer tilted goldring atx174y445 passes BEHIND centraluprightgoldring atcrossing rather than overfront, preserveotherintersections, sphereandstar unchanged. No otherdetail/movement or color changes. Don't change separateobjects for oneguess."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The whale's eye is open",
+      "difficulty": "Easy",
+      "box": {
+        "x": 956,
+        "y": 431,
+        "width": 67,
+        "height": 56
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-2",
+      "label": "The jug's left handle curls into an open hook",
+      "difficulty": "Medium",
+      "box": {
+        "x": 338,
+        "y": 731,
+        "width": 45,
+        "height": 61
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-3",
+      "label": "The chest keyhole lies horizontally",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1325,
+        "y": 781,
+        "width": 39,
+        "height": 40
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-4",
+      "label": "The whale ribbon loops behind the upper fin",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 410,
+        "y": 421,
+        "width": 469,
+        "height": 222
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-5",
+      "label": "The armillary sphere's upright ring crosses in front of its tilted ring",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 84,
+        "y": 366,
+        "width": 184,
+        "height": 178
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": "Full generated source/native feather composite/fivepaired crops/390px stack inspected. Ribbon box contains entire moved single-ribbon tail and preservedfin; armillary changes internalring occlusion/orientation within one mechanism, no separateobjectswap. Allfive observed labels exact, original outsideunion unchanged. No brokenjoins detected; root runtimecompositor QA required. Difficulty hypotheses only, no humantiming/physicalphoneapproval.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

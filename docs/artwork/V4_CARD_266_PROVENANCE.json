@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-266",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-266-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-266-original-v4.png",
+    "sha256": "F55FC95F1398CA4DD879D2838B4C3E29385F51E174527C8312922ECE8003CA5E",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-266-altered-source-v4.png",
+    "sha256": "2EE05E6D92542C6B13C4D6C757FAB3602C8E0BBC91F7E0AFDA3673BEA7F1A5F7",
+    "prompt": "[{\"file\": \"prompt-refine.json\", \"content\": {\"prompt\": \"ONE targeted edit only: small BLUE/GOLD striped marble on table foreground near native(463,813), left of bluehouse and right of keytray. Its gold stripe winds into a clearly visible spiral around sphere instead of parallel diagonal bands. Same SINGLE marble size/silhouette/position/painted material, groundedshadow exact. All other objects unchanged including dial/fingerstop/key/house/lantern/city. Fullnative1672x941 composition/style.\"}}, {\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Native1672x941 painting five localized single-object clues only: 1 telephone rotary dial ONE goldcenter disk near407435 gains bold engraved spiral internal motif; surrounding fingerholes exact. 2 telephone metal fingerstop near500481 curls UPWARD instead of down, same attachedone part. 3 far-right hanging lantern near1585373 ONLY its glowingfront glass gains X crossbrace, silhouette/chain exact. 4 foreground little blue house on papers near1022790 ONLY its right doorway near1057835 becomes round arched CIRCULAR porthole instead of tall arch, same housewalloriginal. 5 brass key in left tray near168785 ONLY its upper bow opening becomes triangular instead of round, other hole/shaft unchanged. No swaps; telephonecord/city/marbles/lighting/style allotheroriginalexact.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt-refine.json",
+      "content": {
+        "prompt": "ONE targeted edit only: small BLUE/GOLD striped marble on table foreground near native(463,813), left of bluehouse and right of keytray. Its gold stripe winds into a clearly visible spiral around sphere instead of parallel diagonal bands. Same SINGLE marble size/silhouette/position/painted material, groundedshadow exact. All other objects unchanged including dial/fingerstop/key/house/lantern/city. Fullnative1672x941 composition/style."
+      }
+    },
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Native1672x941 painting five localized single-object clues only: 1 telephone rotary dial ONE goldcenter disk near407435 gains bold engraved spiral internal motif; surrounding fingerholes exact. 2 telephone metal fingerstop near500481 curls UPWARD instead of down, same attachedone part. 3 far-right hanging lantern near1585373 ONLY its glowingfront glass gains X crossbrace, silhouette/chain exact. 4 foreground little blue house on papers near1022790 ONLY its right doorway near1057835 becomes round arched CIRCULAR porthole instead of tall arch, same housewalloriginal. 5 brass key in left tray near168785 ONLY its upper bow opening becomes triangular instead of round, other hole/shaft unchanged. No swaps; telephonecord/city/marbles/lighting/style allotheroriginalexact."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "spiral-dial",
+      "label": "The telephone dial\u2019s center bears a spiral.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 348,
+        "y": 384,
+        "width": 107,
+        "height": 108
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "raised-stop",
+      "label": "The dial\u2019s finger stop curls upward.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 465,
+        "y": 430,
+        "width": 79,
+        "height": 81
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "braced-lantern",
+      "label": "The hanging lantern gains an X brace.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1553,
+        "y": 339,
+        "width": 57,
+        "height": 67
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "round-door",
+      "label": "The little house\u2019s right opening becomes round.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1040,
+        "y": 806,
+        "width": 39,
+        "height": 40
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "triangle-key",
+      "label": "The key\u2019s bow becomes triangular.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 137,
+        "y": 751,
+        "width": 84,
+        "height": 66
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five paired crops, full composite and 390-pixel stacked pair inspected. Single-object changes; difficulty hypotheses only. Root browser/hit QA and human fairness remain pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

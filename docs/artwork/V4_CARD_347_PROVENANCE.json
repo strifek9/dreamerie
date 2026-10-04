@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-347",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-347-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-347-original-v4.png",
+    "sha256": "7F9D60D90715DEBA1A5908B10C279FFFA14A63CF05F1648967C7B2315E98FC61",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-347-altered-source-v4.png",
+    "sha256": "0F7598711D161796A52B57981655CDB812FD7BCEE26D51B7DA85DCB94B80A145",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact original1672x941 painting preserving frame/style/snail anatomy except precisely five localized single-object differences.1 ONLY snail RIGHT antenna tip native1078331 bends downward into hooked tip, other antenna exactly original.2 drum front membrane native435402 gains a subtle dark teal crescent painted in center, membrane/drum shape same.3 hanging velvet weight at1237270 gains stitched pale STAR motif centered front, rope/weight original.4 isolated brass jingle bell leftbottom at211643: existing round sound hole becomes triangular while long slit remains original.5 existing clear water droplet in brass tray at1536795 becomes a pointed upright teardrop shape instead of round dome, same one droplet position/reflection. No altered drum strings, leaves, tassel or other props.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact original1672x941 painting preserving frame/style/snail anatomy except precisely five localized single-object differences.1 ONLY snail RIGHT antenna tip native1078331 bends downward into hooked tip, other antenna exactly original.2 drum front membrane native435402 gains a subtle dark teal crescent painted in center, membrane/drum shape same.3 hanging velvet weight at1237270 gains stitched pale STAR motif centered front, rope/weight original.4 isolated brass jingle bell leftbottom at211643: existing round sound hole becomes triangular while long slit remains original.5 existing clear water droplet in brass tray at1536795 becomes a pointed upright teardrop shape instead of round dome, same one droplet position/reflection. No altered drum strings, leaves, tassel or other props."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "hooked-antenna",
+      "label": "The snail\u2019s right antenna curls downward.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 994,
+        "y": 311,
+        "width": 107,
+        "height": 116
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "crescent-drum",
+      "label": "The drumhead bears a teal crescent.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 404,
+        "y": 322,
+        "width": 62,
+        "height": 159
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "star-weight",
+      "label": "The velvet weight bears a stitched star.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1191,
+        "y": 219,
+        "width": 91,
+        "height": 94
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "pointed-drop",
+      "label": "The water droplet rises into a point.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1505,
+        "y": 752,
+        "width": 68,
+        "height": 70
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "triangle-bell",
+      "label": "The bell\u2019s sound hole becomes triangular.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 216,
+        "y": 598,
+        "width": 46,
+        "height": 55
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five paired crops, full composite and 390-pixel stacked pair inspected. Single-object changes; difficulty hypotheses only. Root browser/hit QA and human fairness remain pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

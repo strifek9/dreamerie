@@ -1,0 +1,116 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-250",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-250-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-250-original-v4.png",
+    "sha256": "34AC6B82B5ED354A8E091E78146D23D506CEAB4F710EC77B26FB110AD44211FF",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-250-altered-source-v4.png",
+    "sha256": "7D6372ECDC6F3CEFDC84416248E3DA5EDBDEBEA76DEBD61E8B711C299CB5D31E",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit the exact original dreamy underwater elevator painting locally, preserve lighting/frame/style and everything else. Five single-object localized changes: 1 The TOP nearest brass pulley wheel centered x800 y65 has its internal spokes curved like a pinwheel rather than straight radial spokes; outer wheel/hub/ropes unchanged, other wheel unchanged. 2 One ladder rung at x1030 y501 bows upward into an arch instead of straight, both side ropes and all other rungs unchanged. 3 The right elevator glass door's small brass handle near x882 y548 curls into a closed circular loop, left handle unchanged. 4 The large transparent bubble left of elevator near x677 y454 changes into a teardrop-shaped bubble pointing down, other bubbles unchanged. 5 The brass mooring bollard on far right ledge has a single broad triangular recessed notch on its top cap, body and rope coils unchanged. Exactly five targets, no swaps, no global regeneration, preserve believable connected mechanisms.\"}}, {\"file\": \"prompt-b.json\", \"content\": {\"prompt\": \"Change ONLY the brass mooring bollard on far-right foreground ledge: its smooth rounded cap at x1538 y687 becomes a hollow circular brass ring with a LARGE dark oval opening in its center, outer rim same width. Clearly open empty hole about 30 pixels across. Keep bollard cylindrical body, rope coils, ledge and every other object unchanged. Local painterly edit, same original frame.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit the exact original dreamy underwater elevator painting locally, preserve lighting/frame/style and everything else. Five single-object localized changes: 1 The TOP nearest brass pulley wheel centered x800 y65 has its internal spokes curved like a pinwheel rather than straight radial spokes; outer wheel/hub/ropes unchanged, other wheel unchanged. 2 One ladder rung at x1030 y501 bows upward into an arch instead of straight, both side ropes and all other rungs unchanged. 3 The right elevator glass door's small brass handle near x882 y548 curls into a closed circular loop, left handle unchanged. 4 The large transparent bubble left of elevator near x677 y454 changes into a teardrop-shaped bubble pointing down, other bubbles unchanged. 5 The brass mooring bollard on far right ledge has a single broad triangular recessed notch on its top cap, body and rope coils unchanged. Exactly five targets, no swaps, no global regeneration, preserve believable connected mechanisms."
+      }
+    },
+    {
+      "file": "prompt-b.json",
+      "content": {
+        "prompt": "Change ONLY the brass mooring bollard on far-right foreground ledge: its smooth rounded cap at x1538 y687 becomes a hollow circular brass ring with a LARGE dark oval opening in its center, outer rim same width. Clearly open empty hole about 30 pixels across. Keep bollard cylindrical body, rope coils, ledge and every other object unchanged. Local painterly edit, same original frame."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The near pulley has curved spokes",
+      "difficulty": "Easy",
+      "box": {
+        "x": 770,
+        "y": 7,
+        "width": 72,
+        "height": 111
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "A ladder rung arches upward",
+      "difficulty": "Medium",
+      "box": {
+        "x": 994,
+        "y": 417,
+        "width": 65,
+        "height": 45
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The right door handle closes into a loop",
+      "difficulty": "Hard",
+      "box": {
+        "x": 854,
+        "y": 521,
+        "width": 35,
+        "height": 49
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The left bubble becomes leaf-shaped",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 655,
+        "y": 427,
+        "width": 44,
+        "height": 74
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The bollard cap is hollow",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1499,
+        "y": 664,
+        "width": 78,
+        "height": 48
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "visually inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "nativePreflight": "source equals actual original size, five nonoverlapping boxes",
+    "difficulty": "hypotheses; human and browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

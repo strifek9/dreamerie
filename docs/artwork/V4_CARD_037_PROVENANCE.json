@@ -1,0 +1,111 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-037",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-037-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-037-original-v4.png",
+    "sha256": "5237F4F619E707C62FC8F637B71717C43B9C8E3E09DBBFD1188C7F3FD3A97177",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-037-altered-source-v4.png",
+    "sha256": "0A8CF331FB190BF02F98ADCF75573FDC67681D3E8F203BEA99EE9CBA2EDBE967",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"Precise-object-edit. Edit attached Dreamerie painting, retain exact 1672x941 wide frame, whale anatomy, all brushwork and objects unchanged except five localized changes: 1 left book cover gold crescent moon becomes complete gold circular ring, same center and size; 2 bottom red bookmark at x690 y840 now passes UNDER rather than OVER the descending red ribbon at their crossing, clean weave; 3 middle candle flame on right x1428 y492 leans left instead of straight up, retain wick and candle; 4 large ivory cup right x1580 y760: upper curl of handle now connects to cup ABOVE its current connection, making two distinct handle loops but anatomically coherent cup; 5 gold leaf spray on whale cheek immediately above eye at x1218 y292 reverse the alternating leaf order on either side of its stem, keep stem and neighboring eye untouched. Only these five changes, no new text, no global restyle, no crops, no grain. Local changes must be large and clean enough to inspect on phone. Do not move any other features.\"}}, {\"file\": \"prompt-refine.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"Edit target attached native1672x941 whale-book painting. ONLY ONE LOCAL CHANGE: gold leaf ornament above whale's eye: lowest gold leaf pointing LEFT at approximatelyx1191y295, whose footprint x1179y284 to1207y307, becomes a single gold curled spiral tendril instead of pointed leaf. Retain connecting stem identical, all other leaves of that spray identical, same goldpaint. Single leaf shape only; no other independently selectable object changes, no reordering multiple leaves. Preserve entire frame, anatomy, exact scene/styling and allotherpixels unchanged. Clean definite curledspiral, no micrograin.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "Precise-object-edit. Edit attached Dreamerie painting, retain exact 1672x941 wide frame, whale anatomy, all brushwork and objects unchanged except five localized changes: 1 left book cover gold crescent moon becomes complete gold circular ring, same center and size; 2 bottom red bookmark at x690 y840 now passes UNDER rather than OVER the descending red ribbon at their crossing, clean weave; 3 middle candle flame on right x1428 y492 leans left instead of straight up, retain wick and candle; 4 large ivory cup right x1580 y760: upper curl of handle now connects to cup ABOVE its current connection, making two distinct handle loops but anatomically coherent cup; 5 gold leaf spray on whale cheek immediately above eye at x1218 y292 reverse the alternating leaf order on either side of its stem, keep stem and neighboring eye untouched. Only these five changes, no new text, no global restyle, no crops, no grain. Local changes must be large and clean enough to inspect on phone. Do not move any other features."
+      }
+    },
+    {
+      "file": "prompt-refine.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "Edit target attached native1672x941 whale-book painting. ONLY ONE LOCAL CHANGE: gold leaf ornament above whale's eye: lowest gold leaf pointing LEFT at approximatelyx1191y295, whose footprint x1179y284 to1207y307, becomes a single gold curled spiral tendril instead of pointed leaf. Retain connecting stem identical, all other leaves of that spray identical, same goldpaint. Single leaf shape only; no other independently selectable object changes, no reordering multiple leaves. Preserve entire frame, anatomy, exact scene/styling and allotherpixels unchanged. Clean definite curledspiral, no micrograin."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "ring",
+      "label": "The book-cover crescent closes into a ring.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 275,
+        "y": 496,
+        "width": 164,
+        "height": 183
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "handle",
+      "label": "The cup handle's upper curl closes into an extra loop.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1506,
+        "y": 652,
+        "width": 104,
+        "height": 130
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "flame",
+      "label": "The tall candle flame leans left.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1405,
+        "y": 469,
+        "width": 40,
+        "height": 59
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "bookmark",
+      "label": "The bookmark folds over itself at the bottom crossing.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 593,
+        "y": 803,
+        "width": 176,
+        "height": 58
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "leaf-curl",
+      "label": "One gold leaf above the whale's eye curls into a spiral.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1034,
+        "y": 325,
+        "width": 54,
+        "height": 35
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Single-leaf fairness refinement: generator selected ornament above eye rather than cheek spray. Only top leaf curl bounding box selected from refine; all surrounding leaves original exact. prepare-final.py builds original plus four initial authored regions and one refined leaf. Worker fullpair/crop/mobile and root compositor checks pending; no human validation. Inspected final worker full composite, five paired crops, 390 stack; no broken joins. Zero pixel changes outside five authored regions verified, each region nonzero. Final SHA256 0a8cf331fb190bf02f98adcf75573fdc67681d3e8f203bea99ee9cba2edbe967.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

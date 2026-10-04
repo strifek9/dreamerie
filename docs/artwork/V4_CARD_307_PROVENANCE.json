@@ -1,0 +1,115 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-307",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-307-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-307-original-v4.png",
+    "sha256": "33D89E3485E55F36AF326747A98FFB82C90C96E00EF587462A74CB641C9C42EC",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-307-altered-source-v4.png",
+    "sha256": "FBFD7476386D402C3520D32B51D38FA544C6705009B70074D6F2C3C57661572C",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact original wolf packing streams of wind into purple suitcase at station painting. Preserve wolf anatomy/expression/paws/fur, wind, suitcase/core scene framing/style. Exactly FIVE localized one-object differences: (1) suitcase CENTRAL large gold strap buckle internal tongue bends into a hooked upward curve instead of straight, frame/strap exact; (2) upright LEFT water bottle metal carrying handle folds diagonally LEFT from same attachment instead of upright oval, bottle/lid exact; (3) loose SINGLE orange leaf on lower RIGHT floor its tip curls into an attached spiral, rest leaf/veins exact; (4) wool scarf on left bench its LOWER central fringed end is tied in one broad overhand knot, same scarf top/other fringe threads exact; (5) tall RIGHT suitcase hanging paper luggage tag lower corner folds upward into a clearly attached triangular flap, same tag hole/cord/case. Five single-object mechanism/action folds only, no swaps or nearby stud changes, no grain.\"}}, {\"file\": \"buckle-prompt.json\", \"content\": {\"prompt\": \"Edit exact suitcase buckle original crop. ONLY brass buckle outer rectangular frame becomes a clearly OCTAGONAL frame with broad diagonal-cut corners, same overall size/location, leather strap holes/tongue/wind exact. A single buckle shape internal mechanism change, preserve entire crop background and style.\"}}, {\"file\": \"wind-prompt.json\", \"content\": {\"prompt\": \"Edit exact top wind-ribbon curl original crop. Keep its broad connected upper stream and station background exact. ONLY existing inward-curled terminal tip (lower middle) closes into a clearly visible circular LOOP of translucent wind connected to same stream, instead of current open hook. Same one stream, no new separate wisps/objects, preserve original painterly semi-transparent white wind style.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact original wolf packing streams of wind into purple suitcase at station painting. Preserve wolf anatomy/expression/paws/fur, wind, suitcase/core scene framing/style. Exactly FIVE localized one-object differences: (1) suitcase CENTRAL large gold strap buckle internal tongue bends into a hooked upward curve instead of straight, frame/strap exact; (2) upright LEFT water bottle metal carrying handle folds diagonally LEFT from same attachment instead of upright oval, bottle/lid exact; (3) loose SINGLE orange leaf on lower RIGHT floor its tip curls into an attached spiral, rest leaf/veins exact; (4) wool scarf on left bench its LOWER central fringed end is tied in one broad overhand knot, same scarf top/other fringe threads exact; (5) tall RIGHT suitcase hanging paper luggage tag lower corner folds upward into a clearly attached triangular flap, same tag hole/cord/case. Five single-object mechanism/action folds only, no swaps or nearby stud changes, no grain."
+      }
+    },
+    {
+      "file": "buckle-prompt.json",
+      "content": {
+        "prompt": "Edit exact suitcase buckle original crop. ONLY brass buckle outer rectangular frame becomes a clearly OCTAGONAL frame with broad diagonal-cut corners, same overall size/location, leather strap holes/tongue/wind exact. A single buckle shape internal mechanism change, preserve entire crop background and style."
+      }
+    },
+    {
+      "file": "wind-prompt.json",
+      "content": {
+        "prompt": "Edit exact top wind-ribbon curl original crop. Keep its broad connected upper stream and station background exact. ONLY existing inward-curled terminal tip (lower middle) closes into a clearly visible circular LOOP of translucent wind connected to same stream, instead of current open hook. Same one stream, no new separate wisps/objects, preserve original painterly semi-transparent white wind style."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "scarf",
+      "label": "The bench scarf end forms an overhand knot.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 146,
+        "y": 473,
+        "width": 106,
+        "height": 82
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "wind",
+      "label": "The upper wind tip closes into a loop.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1350,
+        "y": 252,
+        "width": 99,
+        "height": 81
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "leaf",
+      "label": "The loose right leaf stem curls into a spiral.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1269,
+        "y": 749,
+        "width": 65,
+        "height": 69
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "tag",
+      "label": "The luggage tag lower corner folds upward.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1572,
+        "y": 475,
+        "width": 46,
+        "height": 51
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "buckle",
+      "label": "The central strap buckle frame becomes octagonal.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 882,
+        "y": 560,
+        "width": 81,
+        "height": 74
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered compositor/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

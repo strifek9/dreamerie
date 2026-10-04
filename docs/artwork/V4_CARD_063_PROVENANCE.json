@@ -1,0 +1,108 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-063",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-063-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-063-original-v4.png",
+    "sha256": "684FF8461FC836FFFA238AFFE79B6CD17BCFD8D457E39EA1FEB5A93854784875",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-063-altered-source-v4.png",
+    "sha256": "E4F02CA97164EB14E2CE2038A866183FE5447A07FCE37BB720AFAAC168C23698",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise object edits to original1672x941 Dreamerie biscuit train painting. Preserve wide framing, train structure/mouse anatomy, wavecomposition and painterlyfinish. Exactlyfive singleobject changes: 1 round front locomotive biscuit face has a downward frown instead of upwardsmile, onlymouth x1055,351,48,42; keep eyes and holes. 2 small LEFT blue cabwindow horizontal centralmullion becomes diagonal rising to right, region607,272,67,55; retain outerframe. 3 frontmostgoldwheel center hub reflects a crescent-shaped gleam instead of round dot, region756,446,35,35; keepwheelbody/spokes. 4 whiteglint painted in pinkspoon bowl atfarbottomright becomes a gentle curledspiral instead of long crescent glint, region1408,728,158,94; preserve spoonoutline. 5 white bow on mouse left ear has a blue diagonal stitching line on ONLYits upper-right petal, region805,217,35,38; retainbowshape andotherpetals. All otherpixels unchanged, no grain no text no newobjects no twoobject swaps.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise object edits to original1672x941 Dreamerie biscuit train painting. Preserve wide framing, train structure/mouse anatomy, wavecomposition and painterlyfinish. Exactlyfive singleobject changes: 1 round front locomotive biscuit face has a downward frown instead of upwardsmile, onlymouth x1055,351,48,42; keep eyes and holes. 2 small LEFT blue cabwindow horizontal centralmullion becomes diagonal rising to right, region607,272,67,55; retain outerframe. 3 frontmostgoldwheel center hub reflects a crescent-shaped gleam instead of round dot, region756,446,35,35; keepwheelbody/spokes. 4 whiteglint painted in pinkspoon bowl atfarbottomright becomes a gentle curledspiral instead of long crescent glint, region1408,728,158,94; preserve spoonoutline. 5 white bow on mouse left ear has a blue diagonal stitching line on ONLYits upper-right petal, region805,217,35,38; retainbowshape andotherpetals. All otherpixels unchanged, no grain no text no newobjects no twoobject swaps."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The locomotive biscuit mouth frowns",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1050,
+        "y": 346,
+        "width": 54,
+        "height": 49
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The cab window crossbar rises diagonally",
+      "difficulty": "Medium",
+      "box": {
+        "x": 608,
+        "y": 258,
+        "width": 67,
+        "height": 73
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The spoon bowl gleam curls into a spiral",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1313,
+        "y": 698,
+        "width": 133,
+        "height": 90
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The mouse bow upper petal has a blue seam",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 804,
+        "y": 214,
+        "width": 37,
+        "height": 35
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The front gold wheel hub gleam forms a crescent",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 753,
+        "y": 444,
+        "width": 38,
+        "height": 40
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker native pair/five paired crops/390stack inspected; native original and generated source both1671x941 (published063exception), noresizing. Originaloutsidepixels exact verified. Root compositor/game and human difficulty pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

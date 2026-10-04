@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-327",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-327-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-327-original-v4.png",
+    "sha256": "C38FDB266BE61127E622FC9A7FEFE173EB42E56A6F24C3C439970C6FE80120A9",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-327-altered-source-v4.png",
+    "sha256": "34CD724201E15EE5C54C0F220F49D63C4CB45A3F39E13467CBB8EC102925E452",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precisely edit original warm bear tucking patchwork blanket over wooden staircase painting. Preserve bear anatomy/eyes/face/paws, quilt/stair premise, frame and style. Exactly FIVE localized single-object changes: (1) large stair newel TOP ball becomes an acorn-shaped finial with attached tapered upper tip, same base/post; (2) LEFT door brass knob becomes a short horizontal lever pointing LEFT, same mounting/door; (3) hanging BLUE striped scarf LOWER end folds into one broad overhand knot, upper scarf/hook/adjacent coat exact; (4) small house NIGHTLIGHT at lower RIGHT its roof is curved into an arched attached roof instead of pointed triangular gable, body/windows/cord exact; (5) isolated cream quilt patch near LOWER middle at x760 y735 has a clearly diagonal X stitch joining its interior instead of parallel vertical seams, same patch shape/color and all neighbors exact. Existing single-object connected parts/internal pattern each, no slipper swaps/no tiny grain.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precisely edit original warm bear tucking patchwork blanket over wooden staircase painting. Preserve bear anatomy/eyes/face/paws, quilt/stair premise, frame and style. Exactly FIVE localized single-object changes: (1) large stair newel TOP ball becomes an acorn-shaped finial with attached tapered upper tip, same base/post; (2) LEFT door brass knob becomes a short horizontal lever pointing LEFT, same mounting/door; (3) hanging BLUE striped scarf LOWER end folds into one broad overhand knot, upper scarf/hook/adjacent coat exact; (4) small house NIGHTLIGHT at lower RIGHT its roof is curved into an arched attached roof instead of pointed triangular gable, body/windows/cord exact; (5) isolated cream quilt patch near LOWER middle at x760 y735 has a clearly diagonal X stitch joining its interior instead of parallel vertical seams, same patch shape/color and all neighbors exact. Existing single-object connected parts/internal pattern each, no slipper swaps/no tiny grain."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "finial",
+      "label": "The stair finial becomes an acorn.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1168,
+        "y": 136,
+        "width": 106,
+        "height": 114
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "scarf",
+      "label": "The blue scarf middle forms an overhand knot.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 209,
+        "y": 299,
+        "width": 90,
+        "height": 95
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "lever",
+      "label": "The left door knob becomes a left lever.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 27,
+        "y": 347,
+        "width": 88,
+        "height": 49
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "roof",
+      "label": "The house nightlight roof arches.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1380,
+        "y": 550,
+        "width": 86,
+        "height": 59
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "stitch",
+      "label": "The cream quilt patch has an X stitch.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 744,
+        "y": 575,
+        "width": 75,
+        "height": 78
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered compositor/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

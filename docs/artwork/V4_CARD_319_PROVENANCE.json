@@ -1,0 +1,110 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-319",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-319-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-319-original-v4.png",
+    "sha256": "6574715EFB5E3B5D9C64B94EA42B30886860C8B63282AE4B6C7B7BAE5720D0F4",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-319-altered-source-v4.png",
+    "sha256": "58071DF2CFE672D76424F71EBC93754AB1EE3DAC6DD92D4E1F24E8C91DAF910F",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact starfish and five gloves original locally, preserve five gloves, starfish anatomy, painting and composition. Exactly five single-object changes: 1 starfish mouth changes from small sad frown into clear smile, eyes unchanged; 2 single soap bar on upper-right dish has its upper-right corner folded inward like soft wax, dish bubbles unchanged; 3 the coral ribbon bow on white lace glove turns into a neat tied knot with two short tails and NO bow loops, glove unchanged; 4 the blue star sewn patch on red mitten becomes a blue crescent sewn patch in same place, mitten unchanged; 5 the one wooden clothespin at bottom-right opens its jaws visibly while still clamped onto same teal cord at hinge, one pin only, cord unchanged. No swaps between gloves, no multiple object changes. No extra objects. Keep all edits bounded locally and contours clean.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact starfish and five gloves original locally, preserve five gloves, starfish anatomy, painting and composition. Exactly five single-object changes: 1 starfish mouth changes from small sad frown into clear smile, eyes unchanged; 2 single soap bar on upper-right dish has its upper-right corner folded inward like soft wax, dish bubbles unchanged; 3 the coral ribbon bow on white lace glove turns into a neat tied knot with two short tails and NO bow loops, glove unchanged; 4 the blue star sewn patch on red mitten becomes a blue crescent sewn patch in same place, mitten unchanged; 5 the one wooden clothespin at bottom-right opens its jaws visibly while still clamped onto same teal cord at hinge, one pin only, cord unchanged. No swaps between gloves, no multiple object changes. No extra objects. Keep all edits bounded locally and contours clean."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The starfish mouth smiles",
+      "difficulty": "Easy",
+      "box": {
+        "x": 832,
+        "y": 285,
+        "width": 76,
+        "height": 38
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The soap corner folds inward",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1241,
+        "y": 301,
+        "width": 141,
+        "height": 113
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The lace glove bow has flattened loops",
+      "difficulty": "Hard",
+      "box": {
+        "x": 523,
+        "y": 580,
+        "width": 177,
+        "height": 114
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The mitten patch becomes a crescent",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 787,
+        "y": 583,
+        "width": 112,
+        "height": 119
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The clothespin jaws open",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1445,
+        "y": 751,
+        "width": 170,
+        "height": 190
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "visually inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "nativePreflight": "source equals actual original size, five nonoverlapping boxes",
+    "difficulty": "hypotheses; human and browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

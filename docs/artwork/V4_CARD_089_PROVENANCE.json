@@ -1,0 +1,115 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-089",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-089-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-089-original-v4.png",
+    "sha256": "8BA418D03536343F87241C93235259D85FC71205C8BA9630938F619472F265CF",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-089-altered-source-v4.png",
+    "sha256": "D9E3393ED5E989FE2EDFF5D201B17169236B422667B5C0C4B1776C5C48C15A06",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exactfull1672x941 original RaspberryRocket painting. Five bounded singleobjectdifferences ONLY: 1) mouse's visibleleft eye nearx875y197 OPEN withbrowniris instead of closed, allotherface/head unchanged. 2) red scarf trailing toleft curls into ONE large loop instead oflongtwo windblownends; neckwrapunchanged, sameapprox x620-820y235-315 bounds. 3) round BLUE porthole reflects a clear creamcrescent moon openingup instead ofcloudreflection, same blueglass/frame/bolts. 4) white rocketNOSECONE atupperright contains one goldspiral stripe windingalongcone instead ofplainwhite/redtip, samecone silhouette andredtip. 5) ONLYlarge foreground goldleaffin atx717y537 has veins in repeatedcurvedloops instead ofstraightbranchingveins, sameoutline/color/attachment. Otherfins exactunchanged. Noobjectrelocation,noaddedobjects,text,crop. Preserve colors/style/fullframe.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exactfull1672x941 original RaspberryRocket painting. Five bounded singleobjectdifferences ONLY: 1) mouse's visibleleft eye nearx875y197 OPEN withbrowniris instead of closed, allotherface/head unchanged. 2) red scarf trailing toleft curls into ONE large loop instead oflongtwo windblownends; neckwrapunchanged, sameapprox x620-820y235-315 bounds. 3) round BLUE porthole reflects a clear creamcrescent moon openingup instead ofcloudreflection, same blueglass/frame/bolts. 4) white rocketNOSECONE atupperright contains one goldspiral stripe windingalongcone instead ofplainwhite/redtip, samecone silhouette andredtip. 5) ONLYlarge foreground goldleaffin atx717y537 has veins in repeatedcurvedloops instead ofstraightbranchingveins, sameoutline/color/attachment. Otherfins exactunchanged. Noobjectrelocation,noaddedobjects,text,crop. Preserve colors/style/fullframe."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "scarf-loop",
+      "label": "The red scarf curls into a loop.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 596,
+        "y": 199,
+        "width": 224,
+        "height": 126
+      },
+      "edgeFade": 6
+    },
+    {
+      "id": "moon-reflection",
+      "label": "The porthole reflects a cream crescent instead of clouds.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1003,
+        "y": 301,
+        "width": 145,
+        "height": 139
+      },
+      "edgeFade": 5
+    },
+    {
+      "id": "nose-bands",
+      "label": "The nose cone has gold bands.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1193,
+        "y": 168,
+        "width": 171,
+        "height": 179
+      },
+      "edgeFade": 5
+    },
+    {
+      "id": "mouse-eye",
+      "label": "The mouse opens its left eye.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 851,
+        "y": 179,
+        "width": 45,
+        "height": 41
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "fin-veins",
+      "label": "The foreground leaf fin's veins curve into loops.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 597,
+        "y": 421,
+        "width": 248,
+        "height": 228
+      },
+      "edgeFade": 5
+    }
+  ],
+  "notes": {
+    "humanTimed": false,
+    "physicalPhone": false,
+    "notes": "Actualcrescentopensleft andnosehasbands, labelreflectsrealizedsource; othersfins original.",
+    "outsideRegionsExact": true,
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sourceHashes": {
+      "source.png": "d9e3393ed5e989fe2edff5d201b17169236b422667b5c0c4b1776c5c48c15a06"
+    }
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

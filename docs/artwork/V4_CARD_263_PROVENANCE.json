@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-263",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-263-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-263-original-v4.png",
+    "sha256": "704E6C80D03AC74FD4F6C39DFAA393BDD2B682A99A54EBE88BC9912CB3D2DB7D",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-263-altered-source-v4.png",
+    "sha256": "77A5C403B97FFCAC1F358576245552742DD06F8F876B5FCF817CCF3F1CE8604C",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact original envelope postage stamp unfolds into staircase into tiny purple room painting. Preserve entire premise, proportions, staircase, table/envelope/room style. Exactly FIVE localized one-object changes: (1) large red WAX SEAL embossed leaf branch curls into a spiral stem instead of straight diagonal stem, same wax shape/leaves; (2) large PAPERCLIP inner free end hooks upward into a short curl, same rest of single wire clip; (3) tiny room red ARMCHAIR left armrest curls outward as a single attached wooden scroll, chair body/other arm exact; (4) INK bottle black lid top has a clear broad embossed crescent ridge instead of plain round top, bottle shape exact; (5) lower middle visible STAIR tread bows upward in a gentle arch instead of straight edge, only this connected tread, all other steps unchanged. One existing object/connected internal part per clue, no extra objects, color-only edits or grain.\"}}, {\"file\": \"stair-prompt.json\", \"content\": {\"prompt\": \"Edit exact original paper staircase crop. ONLY middle long paper stair tread (the central light cream horizontal step across image, immediately above the bottom step) has its exposed front lip bow upward at center into a clear broad arch. Keep its two ends attached at same positions. All OTHER tread edges, orange doorway, purple wall and lighting exact. One connected paper step's edge bends; no added object, no removal.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact original envelope postage stamp unfolds into staircase into tiny purple room painting. Preserve entire premise, proportions, staircase, table/envelope/room style. Exactly FIVE localized one-object changes: (1) large red WAX SEAL embossed leaf branch curls into a spiral stem instead of straight diagonal stem, same wax shape/leaves; (2) large PAPERCLIP inner free end hooks upward into a short curl, same rest of single wire clip; (3) tiny room red ARMCHAIR left armrest curls outward as a single attached wooden scroll, chair body/other arm exact; (4) INK bottle black lid top has a clear broad embossed crescent ridge instead of plain round top, bottle shape exact; (5) lower middle visible STAIR tread bows upward in a gentle arch instead of straight edge, only this connected tread, all other steps unchanged. One existing object/connected internal part per clue, no extra objects, color-only edits or grain."
+      }
+    },
+    {
+      "file": "stair-prompt.json",
+      "content": {
+        "prompt": "Edit exact original paper staircase crop. ONLY middle long paper stair tread (the central light cream horizontal step across image, immediately above the bottom step) has its exposed front lip bow upward at center into a clear broad arch. Keep its two ends attached at same positions. All OTHER tread edges, orange doorway, purple wall and lighting exact. One connected paper step's edge bends; no added object, no removal."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "seal",
+      "label": "The wax seal branch stem curls into a spiral.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 176,
+        "y": 234,
+        "width": 63,
+        "height": 64
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "clip",
+      "label": "The paperclip inner end curls upward.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 291,
+        "y": 687,
+        "width": 48,
+        "height": 47
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "chair",
+      "label": "The tiny chair right arm ends in a scroll.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 817,
+        "y": 582,
+        "width": 58,
+        "height": 47
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "lid",
+      "label": "The ink bottle lid has a crescent ridge.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1477,
+        "y": 0,
+        "width": 188,
+        "height": 83
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "stair",
+      "label": "The paper stair front lip bows upward.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1056,
+        "y": 607,
+        "width": 131,
+        "height": 58
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered compositor/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-094",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-revisit-v1/094-dynamic-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-094-original-v4.png",
+    "sha256": "F5AF3656F8B34CA2AB673BAD07BB4FE560F492303738B76C10AB24F3248C240F",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-094-altered-source-v4.png",
+    "sha256": "571E4FFCCCA9CC2D22CCBB754DA837BDB40A342A5632674F551590DEF2AEAE3B",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"Precise-object-edit Dreamerie Ladder That Became Rain attached native1672x941. Preserve wholecomposition, child's anatomy/paperhat/clothes/hands, ladder, cloud/water/window/plants/props, mattegrainfreebrushwork. ONLY five localized SINGLEOBJECT edits:1 ONLY hanginggoldpendant diskx1367,y198 becomes diamond-shapedpendant, samegoldmaterial/size, cordunchanged;2 ONLY BLUE ladderrung x819,y392 slopes upwardtoRIGHT instead horizontal, otherladderrungs/rails originalexact;3 ONLY wateringcan's thin goldhandle x943,y142 hooks aroundRIGHTladderupright rather thancurvingfree toitsright, maintaincanbody/hand unchanged, handlecoherentconnectedgoldwire;4 ONLY reflected stairway's lowest RIGHTrailing upright atx991,y892 passes BEHIND lowest reflectedstep insteadinfront, keeprest reflection/foregroundvine exact;5 ONLY blueband atTOP redrainbootx1308,y558 angles diagonallydownright rather than straightacross, bootbody/shapeoriginalexact. One independentlyselectable object each, no swaps ofseparateparts or changingothersteps/rungs/objects. No addedtext/newprops/micrograin, noframing/restyle. Cleanconnectedjoins,definite nativeinspectable differences.\"}}, {\"file\": \"prompt-refine.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"Edit attached native1672x941 original full painting. ONLY ONE lowest stair-reflection handrail terminal at989,889 changes: instead of a straight upright ending at the water edge, its bottom tip curls into a clear open clockwise spiral hook at986,889. Keep the rest of rail, every step, water and nearby vine exactly original. Connected rail geometry with an unmistakable medium-scale hooked termination. Single contiguous object internal shape modification, no added separate object. Full-frame unchanged elsewhere.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "Precise-object-edit Dreamerie Ladder That Became Rain attached native1672x941. Preserve wholecomposition, child's anatomy/paperhat/clothes/hands, ladder, cloud/water/window/plants/props, mattegrainfreebrushwork. ONLY five localized SINGLEOBJECT edits:1 ONLY hanginggoldpendant diskx1367,y198 becomes diamond-shapedpendant, samegoldmaterial/size, cordunchanged;2 ONLY BLUE ladderrung x819,y392 slopes upwardtoRIGHT instead horizontal, otherladderrungs/rails originalexact;3 ONLY wateringcan's thin goldhandle x943,y142 hooks aroundRIGHTladderupright rather thancurvingfree toitsright, maintaincanbody/hand unchanged, handlecoherentconnectedgoldwire;4 ONLY reflected stairway's lowest RIGHTrailing upright atx991,y892 passes BEHIND lowest reflectedstep insteadinfront, keeprest reflection/foregroundvine exact;5 ONLY blueband atTOP redrainbootx1308,y558 angles diagonallydownright rather than straightacross, bootbody/shapeoriginalexact. One independentlyselectable object each, no swaps ofseparateparts or changingothersteps/rungs/objects. No addedtext/newprops/micrograin, noframing/restyle. Cleanconnectedjoins,definite nativeinspectable differences."
+      }
+    },
+    {
+      "file": "prompt-refine.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "Edit attached native1672x941 original full painting. ONLY ONE lowest stair-reflection handrail terminal at989,889 changes: instead of a straight upright ending at the water edge, its bottom tip curls into a clear open clockwise spiral hook at986,889. Keep the rest of rail, every step, water and nearby vine exactly original. Connected rail geometry with an unmistakable medium-scale hooked termination. Single contiguous object internal shape modification, no added separate object. Full-frame unchanged elsewhere."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "pendant-diamond",
+      "label": "The hanging gold disc becomes a diamond.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1326,
+        "y": 144,
+        "width": 81,
+        "height": 107
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "sloping-rung",
+      "label": "The blue ladder rung slopes upward to the right.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 775,
+        "y": 349,
+        "width": 96,
+        "height": 62
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "hooked-handle",
+      "label": "The watering-can handle hooks around the ladder rail.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 875,
+        "y": 112,
+        "width": 91,
+        "height": 51
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "sloping-boot-band",
+      "label": "The boot band slopes down to the right.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1267,
+        "y": 538,
+        "width": 82,
+        "height": 45
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "reflection-curl",
+      "label": "The reflected handrail ends in a spiral curl.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 945,
+        "y": 860,
+        "width": 64,
+        "height": 57
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Source generations and bounded composites inspected; five isolated objects. Difficulty labels are hypotheses. No human or physical-phone fairness validation.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

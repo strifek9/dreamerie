@@ -1,0 +1,110 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-301",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-301-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-301-original-v4.png",
+    "sha256": "A578AD464C8B9FA31ED82541853122E9D2EAA865F6CD0B41A0FFE660385CA7A2",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-301-altered-source-v4.png",
+    "sha256": "A0F91D496522FB5374006B03BA469358810488F822063BFFAD86DCC826246269",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact original goblin porcelain-balloon painting locally. Preserve goblin identity/anatomy, original framing/style and cracked floating cup/ribbon connections. Exactly five independently selectable single-object edits: 1 Goblin red hat's pointed tip at upper-left near x308 y218 curls UP into a small hooked tip instead of drooping left, rest hat unchanged. 2 Floating cup handle at upper-right near x1364 y167 has a clear gap at its TOP joint, becoming an open C-shaped handle; cup body/crack/ribbon unchanged. 3 Goblin's RIGHT boot near x932 y825 has its curled toe unroll into a straight pointed toe directed right, same foot/leg unchanged; left boot untouched. 4 The round vest button at x640 y595 has a single broad diamond-shaped hole instead of tiny sewing holes, outer button unchanged. 5 The white FRONT quarter of round patchwork floor cushion at lower right near x1438 y771 has its bottom corner rolled upward into a small soft folded flap, other cushion panels unchanged. Five single targets, no swaps/no extra objects/global regeneration. Clean connected local geometry.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact original goblin porcelain-balloon painting locally. Preserve goblin identity/anatomy, original framing/style and cracked floating cup/ribbon connections. Exactly five independently selectable single-object edits: 1 Goblin red hat's pointed tip at upper-left near x308 y218 curls UP into a small hooked tip instead of drooping left, rest hat unchanged. 2 Floating cup handle at upper-right near x1364 y167 has a clear gap at its TOP joint, becoming an open C-shaped handle; cup body/crack/ribbon unchanged. 3 Goblin's RIGHT boot near x932 y825 has its curled toe unroll into a straight pointed toe directed right, same foot/leg unchanged; left boot untouched. 4 The round vest button at x640 y595 has a single broad diamond-shaped hole instead of tiny sewing holes, outer button unchanged. 5 The white FRONT quarter of round patchwork floor cushion at lower right near x1438 y771 has its bottom corner rolled upward into a small soft folded flap, other cushion panels unchanged. Five single targets, no swaps/no extra objects/global regeneration. Clean connected local geometry."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The hat tip curls upward",
+      "difficulty": "Easy",
+      "box": {
+        "x": 272,
+        "y": 161,
+        "width": 399,
+        "height": 204
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The porcelain handle opens into a hook",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1305,
+        "y": 95,
+        "width": 103,
+        "height": 109
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The right boot toe straightens",
+      "difficulty": "Hard",
+      "box": {
+        "x": 882,
+        "y": 794,
+        "width": 126,
+        "height": 63
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The vest button has a clover aperture",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 619,
+        "y": 570,
+        "width": 49,
+        "height": 54
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The white cushion corner folds outward",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1397,
+        "y": 751,
+        "width": 140,
+        "height": 78
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "visually inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "nativePreflight": "source equals actual original size, five nonoverlapping boxes",
+    "difficulty": "hypotheses; human and browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

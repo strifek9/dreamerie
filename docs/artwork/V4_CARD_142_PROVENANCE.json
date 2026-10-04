@@ -1,0 +1,120 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-142",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-142-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-142-original-v4.png",
+    "sha256": "2DC21585B6B17E9AF4CB182E21F71480B0B97758184B6E708134F0AD53E41F37",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-142-altered-source-v4.png",
+    "sha256": "26ABA0CCCEAC03488FD81EDCCAB5D9E609081BAD2091304905FE896069A49F20",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact The Gardener of Broken Machines scene, elderly gardener tending machine plant, toaster, pots with paper flowers. Native1672x941 preserve anatomy/style/framing. FIVE single-object changes only: 1 large top wheel x1168140 gets curved spiral spokes insteadfour straight spokes, same rim/hub, within109048..1240224; 2 toasterfront lever x937618 points diagonally DOWN to right ratherhorizontal, continuousbelievableattachment within897595..979649; 3 ONLY foremostleft large teal screwdriver handle x542755 has one broad diagonal groove insteadstraight long inset groove, within469726..611780, metalshaftunchanged; 4 ONLY redfrontapronpatch x717514 becomes a gold zigzag embroidered central pattern, within683482..750548, outline/stitchesunchanged; 5 ONLY smallmostfront loose silverwasher x987870 changes circularhole to triangularhole, sameoutlineandposition within962853..1012886; allotherwashers exact. No object swaps, no tinygrain/specks, unrelatedobjectsunchanged.\"}}, {\"file\": \"washer-prompt.json\", \"content\": {\"prompt\": \"Exact smallcrop of ONE foreground silver washer on wooden workbench, other washerspartialat edges. Change ONLY fullyvisible centralforemost washer: its dark circular central hole becomes a clearly visible TRIANGULAR hole. Keep outer ovaloutline, position, scale. Otherwashers/backgroundexact. Same73x57 framing.\", \"nativeCrop\": [950, 844, 73, 57]}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact The Gardener of Broken Machines scene, elderly gardener tending machine plant, toaster, pots with paper flowers. Native1672x941 preserve anatomy/style/framing. FIVE single-object changes only: 1 large top wheel x1168140 gets curved spiral spokes insteadfour straight spokes, same rim/hub, within109048..1240224; 2 toasterfront lever x937618 points diagonally DOWN to right ratherhorizontal, continuousbelievableattachment within897595..979649; 3 ONLY foremostleft large teal screwdriver handle x542755 has one broad diagonal groove insteadstraight long inset groove, within469726..611780, metalshaftunchanged; 4 ONLY redfrontapronpatch x717514 becomes a gold zigzag embroidered central pattern, within683482..750548, outline/stitchesunchanged; 5 ONLY smallmostfront loose silverwasher x987870 changes circularhole to triangularhole, sameoutlineandposition within962853..1012886; allotherwashers exact. No object swaps, no tinygrain/specks, unrelatedobjectsunchanged."
+      }
+    },
+    {
+      "file": "washer-prompt.json",
+      "content": {
+        "prompt": "Exact smallcrop of ONE foreground silver washer on wooden workbench, other washerspartialat edges. Change ONLY fullyvisible centralforemost washer: its dark circular central hole becomes a clearly visible TRIANGULAR hole. Keep outer ovaloutline, position, scale. Otherwashers/backgroundexact. Same73x57 framing.",
+        "nativeCrop": [
+          950,
+          844,
+          73,
+          57
+        ]
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The large wheel has spiral spokes",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1090,
+        "y": 48,
+        "width": 153,
+        "height": 179
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The toaster lever slopes down to the right",
+      "difficulty": "Medium",
+      "box": {
+        "x": 897,
+        "y": 595,
+        "width": 91,
+        "height": 92
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The apron patch has a gold zigzag embroidery",
+      "difficulty": "Hard",
+      "box": {
+        "x": 683,
+        "y": 482,
+        "width": 68,
+        "height": 67
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The screwdriver handle has a diagonal groove",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 469,
+        "y": 726,
+        "width": 143,
+        "height": 55
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The foremost washer has a triangular hole",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 964,
+        "y": 854,
+        "width": 45,
+        "height": 28
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "refined-native.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390 stacked pair. Five separately changed objects. Unrelated drift excluded, outside boxes exact original. Crop refinements resized to original crop only, coordinates recorded, full generated crop preserved. Difficulty estimates unvalidated. Root compositor/game/human review pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

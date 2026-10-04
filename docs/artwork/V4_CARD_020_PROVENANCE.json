@@ -38,6 +38,11 @@
       "usedRegions": [
         "crescent-through-leaves"
       ]
+    },
+    {
+      "path": "/artwork/v4/collection/dream-020-single-object-source-v4b.png",
+      "sha256": "959EF94A7F802D6724EF295A48F06895C2AF41A59702905C82FA41B3B30D11FA",
+      "prompt": "[{\"prompt\": \"Preciselyedit goldbutterfly emblem on darkcabinetcropprovided. ONLY this ONE emblem changesposture: tiltwholegoldbutterfly 35degrees CLOCKWISE (headpoints upperright, tail lowerleft). Samecenter/samegoldbody/fourwings/samesize; gracefullynaturalemblemshape. Keepallcornergoldleafscrolls/background/planktexturedpainting EXACTLY unchanged. Noextraemblem orprops; fullcrop.\", \"crop\": [1344, 584, 131, 113], \"resizeBackToNative\": true}]"
     }
   ],
   "notes": "October 4: inspected the actual five-region composite and all five paired answer crops at 1440px desktop and 390px phone layout. Five center-hit confirmations complete a 5/5 preview round; zoom/result persistence flows exercised separately. Human difficulty calibration and physical-phone playtesting remain pending. All five changes are visible: dome reflection, pearl order, statue wing, elephant wing/saddle overlap and cabinet crescent. No new raster source was needed.",
@@ -48,5 +53,21 @@
     "phoneWidth": 390,
     "pairedCrops": 5,
     "record": "docs/V4_BATCH_REVIEW_20261004.md"
+  },
+  "singleObjectFairnessCorrection": {
+    "authorization": "Sentinel_1aa3e822002c8191a74c51f233f72cbe",
+    "date": "2026-10-04",
+    "existingEditId": "pearl-size-order",
+    "label": "The cabinet's gold butterfly emblem tilts diagonally.",
+    "nativeBox": {
+      "x": 1344,
+      "y": 584,
+      "width": 131,
+      "height": 102
+    },
+    "qa": "Supersedes microscopic finialdraft. Single131x102cabinet butterflyemblem posturechange. All3pearlsoriginalexact. Existingother4clues unchanged. Native/fullpair/390QA passed; rootfeather/gameQA pending.",
+    "status": "root native pixels/full pair/five crops and actual browser five hits/inspection/Escape/layouts/reload passed; human difficulty pending",
+    "priorHumanVisualAcceptance": "applies to the previously reviewed pair; revised fifth clue pending fresh review",
+    "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\private-020-export-validation.json"
   }
 }

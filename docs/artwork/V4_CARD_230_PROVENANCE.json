@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-230",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-230-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-230-original-v4.png",
+    "sha256": "CF6A86C551A7E86EF3E32640D68C63764C95C1A4E3B42C7CC75ED9CFA2307881",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-230-altered-source-v4.png",
+    "sha256": "34083A1E9428E5D205B7E0A9195FE8B9023F1A81B9EB4466099C84ACF20DF7C0",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact original painting of copper deep-sea diver at bedroom door with ocean streaming through keyhole. Preserve diver anatomy, suit, copper helmet, fish stream, keyhole and framing/style/premise. Exactly five independent single-object localized changes: (1) helmet LEFT circular side viewport internal grille becomes a bold X crossed grille instead of rectangular lattice, same rim; (2) bedroom bedside green lampshade lower right edge curls upward as attached fabric flap, same lamp/stem; (3) large brass bedroom door knob face gains a broad radial SUN engraving, same outline/backplate/keyhole; (4) helmet TOP vent cap its circular opening becomes clearly hexagonal internally, same base; (5) front glove wrist brass band seam clasp flips up open at top, preserve fingers/glove and neighboring band. Keep each one object, no scattered multiple changes, no tiny marks/no color-only differences. All else unchanged.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact original painting of copper deep-sea diver at bedroom door with ocean streaming through keyhole. Preserve diver anatomy, suit, copper helmet, fish stream, keyhole and framing/style/premise. Exactly five independent single-object localized changes: (1) helmet LEFT circular side viewport internal grille becomes a bold X crossed grille instead of rectangular lattice, same rim; (2) bedroom bedside green lampshade lower right edge curls upward as attached fabric flap, same lamp/stem; (3) large brass bedroom door knob face gains a broad radial SUN engraving, same outline/backplate/keyhole; (4) helmet TOP vent cap its circular opening becomes clearly hexagonal internally, same base; (5) front glove wrist brass band seam clasp flips up open at top, preserve fingers/glove and neighboring band. Keep each one object, no scattered multiple changes, no tiny marks/no color-only differences. All else unchanged."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "grille",
+      "label": "The helmet side grille forms an X.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 670,
+        "y": 145,
+        "width": 112,
+        "height": 143
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "knob",
+      "label": "The door knob has a sun engraving.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1218,
+        "y": 121,
+        "width": 71,
+        "height": 98
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "clasp",
+      "label": "The wrist clasp flips up open.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 517,
+        "y": 585,
+        "width": 62,
+        "height": 65
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "lamp",
+      "label": "The lampshade right edge curls upward.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 374,
+        "y": 142,
+        "width": 40,
+        "height": 35
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "vent",
+      "label": "The helmet top vent becomes hexagonal.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 938,
+        "y": 25,
+        "width": 83,
+        "height": 62
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered compositor/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

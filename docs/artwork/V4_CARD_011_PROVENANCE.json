@@ -13,28 +13,63 @@
     "path": "/artwork/v4/collection/dream-011-altered-source-v4.png",
     "sha256": "F7BBFC597A928B8DC419481012EEFD13A4361446B5235D1F488A2CB05B5FAABB",
     "prompt": "Use case: precise-object-edit. Image 1 is the edit target, a 1672x941 magical painted library inside a giant shell beneath the sea: otter on ladder, books and bottled waves, open book, pearls and gold fish outside. Preserve framing, ocean, palette, matte brushwork and all unmentioned details. Only five coherent local changes: (1) A curling wave from the central bottle spills over its glass lip onto the edge of the adjacent book, one continuous miniature wave, no broken glass. (2) The otter's lower tail loops behind a ladder rung rather than in front, retaining one tail and sensible body. (3) One page of the open book folds over the quill's base, with the paper hiding the lowest feather edge rather than sitting behind it. (4) The three pearls along the near shell shelf exchange their size order: largest at right, smallest at left, same three positions. (5) One tiny golden fish at the upper-right blue water swims through the shell's outer curling lip, partly occluded by the shell edge, one fish. No other edits, recolor patches, text or watermark.",
-    "usedRegions": ["pearl-order", "fish-through-shell"],
-    "rejectedRegions": ["bottled-wave-on-book", "tail-behind-rung", "page-over-quill"]
+    "usedRegions": [
+      "pearl-order",
+      "fish-through-shell"
+    ],
+    "rejectedRegions": [
+      "bottled-wave-on-book",
+      "tail-behind-rung",
+      "page-over-quill"
+    ]
   },
   "refinedSources": [
     {
       "path": "/artwork/v4/collection/dream-011-compass-source-v4.png",
       "sha256": "FE3253D738EE94A062122E939698F4E3008FF08E048A65DEE3CD5008107DAD3B",
       "prompt": "Precise edit of Image 1, the Dreamerie painted underwater shell library. Change ONLY the tiny gold compass-rose emblem on the red upright book at the left-middle of the bookcase: its needle/longest point now aims diagonally toward the blue wave bottle immediately to its right instead of pointing upward. Keep the SAME red book, gold cover lines, emblem size and carved/pained gold style; this is a coherent directional change in the existing compass, not a new object or recolor. Preserve all bottles and their unbroken glass, the otter, ladder, pearls, fish, shell, open book, lighting, framing and painterly style exactly. No waves escape a closed bottle. No text or watermark.",
-      "usedRegions": ["compass-toward-wave"]
+      "usedRegions": [
+        "compass-toward-wave"
+      ]
     },
     {
       "path": "/artwork/v4/collection/dream-011-armillary-source-v4.png",
       "sha256": "644BCB84420E123F79EE93395A3700B81A6ECCDEF353324952087632BDF88F11",
       "prompt": "Precise edit of Image 1, Dreamerie's painterly underwater shell library. Change ONLY the small gold armillary sphere on its stand behind the otter, right of the ladder: rotate its single inner tilted ring to the opposite diagonal while the outer circular hoops, stand, and gold bearings remain physically connected and unchanged. The result must be visibly different on enlargement but look like one functioning antique armillary, not disconnected metal. Preserve all bottles, otter, ladder, book, pearls, fish, shell, composition and matte painterly style. No other objects, text or watermark.",
-      "usedRegions": ["armillary-inner-ring"]
+      "usedRegions": [
+        "armillary-inner-ring"
+      ]
     },
     {
       "path": "/artwork/v4/collection/dream-011-book-diagram-source-v4.png",
       "sha256": "6D67FA32C670F311063220A972E66959C5D11BC9B024E2039DD3527FC96270FA",
       "prompt": "Precise edit of Image 1, Dreamerie's painterly underwater shell library. Change ONLY ONE small illustration on the LEFT page of the open book near the bottom center-right of the shell-library: an existing ink drawing of a spiral shell becomes an ink drawing of a tiny curled otter tail, using the SAME dark sepia engraved-line style and similar size inside its existing page panel. Keep page geometry, printed margins, other diagrams and every other object exactly unchanged. The changed diagram must remain legible when enlarged, natural to the book, not a pasted symbol. No extra page, no text, no watermark.",
-      "usedRegions": ["book-tail-diagram"]
+      "usedRegions": [
+        "book-tail-diagram"
+      ]
+    },
+    {
+      "path": "/artwork/v4/collection/dream-011-single-object-source-v4b.png",
+      "sha256": "0E76781EE625F9D1C3CAD000E68BF0EE2A07867AE57058135507A5F41E99F82A",
+      "prompt": "[{\"prompt\": \"Preciselyedit this silver scallop-shell cabinetbadge. Only badgechanges: its central broad upright flutedpetal becomes a heart-shaped central lobe with clear notch at TOP and samemetallicrib running downcenter. All sideflutes/wood/base remainexact; same silhouetteexcept central topnotch. Grainfreepaintedfinish, fullcrop, noextrabadges.\", \"input\": \"ref.png\", \"tool\": \"built-in image_gen\", \"reason\": \"Pearl separation below67pxguessradius; replaces invalid multipearlclue with isolatedsingleobject.\"}]"
     }
   ],
-  "notes": "The first wave trial escaped through a closed bottle, the tail trial read as a possible extra tail, and the quill/page edit did not visibly match its prompt; all three regions were rejected. Only five selected nonoverlapping source clips are shown. Desktop and phone-size full pairs and all five paired answer crops were visually inspected with no obvious broken join. The book illustration reads as a curled otter rather than only its tail, so the label follows the final art. Touch/zoom playtesting and difficulty calibration remain pending."
+  "notes": "The first wave trial escaped through a closed bottle, the tail trial read as a possible extra tail, and the quill/page edit did not visibly match its prompt; all three regions were rejected. Only five selected nonoverlapping source clips are shown. Desktop and phone-size full pairs and all five paired answer crops were visually inspected with no obvious broken join. The book illustration reads as a curled otter rather than only its tail, so the label follows the final art. Touch/zoom playtesting and difficulty calibration remain pending.",
+  "singleObjectFairnessCorrection": {
+    "authorization": "Sentinel_1aa3e822002c8191a74c51f233f72cbe",
+    "date": "2026-10-04",
+    "existingEditId": "pearl-order",
+    "label": "The cabinet's silver shell badge has a heart-shaped central lobe.",
+    "nativeBox": {
+      "x": 784,
+      "y": 710,
+      "width": 78,
+      "height": 58
+    },
+    "qa": "Original pearls all preserved bitexact in source. Close pearl spacing makes67pxcircle award adjacentunchangedcenters; isolatedsingleobject replacement. Native/fullpair/390visual QA; other4clues importedunchanged for draftQA; root feather/browser checks pending.",
+    "status": "root native pixels/full pair/five crops and actual browser five hits/inspection/Escape/layouts/reload passed; human difficulty pending",
+    "priorHumanVisualAcceptance": "applies to the previously reviewed pair; revised fifth clue pending fresh review",
+    "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\private-011-export-validation.json"
+  },
+  "retiredGeneratedSources": []
 }

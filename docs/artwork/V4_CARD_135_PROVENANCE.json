@@ -1,0 +1,110 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-135",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-135-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-135-original-v4.png",
+    "sha256": "E0A98D43C824442F7EB308C09EB5622CC6A6AE181C2EAE22B6339D8F4954E209",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-135-altered-source-v4.png",
+    "sha256": "88356003C9A804B0DC0EE8518250FE784C8696573D09C818D3CB52FC611B45F3",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact native1672x941 painting preserve wrestler handsfaceanatomy tangledribbons snailchair andalloriginalstyle. Five localized SINGLEOBJECTchanges:1 snail's wooden TWO-PRONGFORK atx1235y651 has tinesclosedinto roundedeyeletloop insteadUopen, attachedsamehandle, snailhand unchanged;2 round goldBELTBUCKLE x774y549 has centralcrescentcutout insteadroundsolidface, rimunchanged;3 LEFTBOOT goldLACING atx302y684 is parallel horizontalbar lacing insteadcrossedX, sameeyelets andboot;4 snail RIGHT antenna atx1350y618 curlsdown atits tip insteadstraightdiagonal, snailbodyotherantenna unchanged;5 wrestler cream KNEEPATCH atx437y500 has centered diagonal teal stripe ratherthanplaincreamdiamond, onlyonepatch resttrousers unchanged. No twoobjectswaps noaddedprops noglobalchanges. Five bounded visibledefinite clues only.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact native1672x941 painting preserve wrestler handsfaceanatomy tangledribbons snailchair andalloriginalstyle. Five localized SINGLEOBJECTchanges:1 snail's wooden TWO-PRONGFORK atx1235y651 has tinesclosedinto roundedeyeletloop insteadUopen, attachedsamehandle, snailhand unchanged;2 round goldBELTBUCKLE x774y549 has centralcrescentcutout insteadroundsolidface, rimunchanged;3 LEFTBOOT goldLACING atx302y684 is parallel horizontalbar lacing insteadcrossedX, sameeyelets andboot;4 snail RIGHT antenna atx1350y618 curlsdown atits tip insteadstraightdiagonal, snailbodyotherantenna unchanged;5 wrestler cream KNEEPATCH atx437y500 has centered diagonal teal stripe ratherthanplaincreamdiamond, onlyonepatch resttrousers unchanged. No twoobjectswaps noaddedprops noglobalchanges. Five bounded visibledefinite clues only."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The wooden fork closes into an eyelet",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1191,
+        "y": 525,
+        "width": 92,
+        "height": 284
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The buckle has a crescent aperture",
+      "difficulty": "Medium",
+      "box": {
+        "x": 735,
+        "y": 506,
+        "width": 81,
+        "height": 92
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The boot lace forms parallel bars",
+      "difficulty": "Hard",
+      "box": {
+        "x": 219,
+        "y": 608,
+        "width": 150,
+        "height": 143
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The snail's right antenna curls downward",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1334,
+        "y": 601,
+        "width": 47,
+        "height": 53
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The knee patch gains a diagonal stripe",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 355,
+        "y": 442,
+        "width": 153,
+        "height": 142
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "visually inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "nativePreflight": "source equals actual original size, five nonoverlapping boxes",
+    "difficulty": "hypotheses; human and browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

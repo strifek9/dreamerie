@@ -1,0 +1,98 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-065",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-065-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-065-original-v4.png",
+    "sha256": "4BC260FF628B0D47D3418EDB126508BD1208C8187C51D6149360DD8975E8B844",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-065-altered-source-v4.png",
+    "sha256": "DECAC32EC8BCD4041309DD3CC63D4A7D020296098E51766A9FA873E9D9423402",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise edit attached giantblueboot clouds saltflat painting, preserve EXACT1672x941 frame compositions/style allobjectspositions. FIVE localized ONEobject changes:1) white bootlace bow: rightbowloop becomes a visibly twisted loop with freetail threaded THROUGH itsOWN rightloop before hanging, clean continuoussame shoelace; preserve leftloop/eyelets.2) red stitchedheelpatch: opens outwardas a little hinged redflap showing darkbluebootunderneath, same redmaterial/location goldstitches, onlypatch changes, no newthinginside.3) gold wateringcan foreground: its longspout bends DOWNWARD withroundsprinklerhead pointingatground instead ofangled upward; keepcanbody/handle unchanged,continuousconnection credible.4) purpleladder right: middle intact rung below existingbreak becomes a gently archedrung instead of straightbar, same ladderrails/break unchanged.5) white spiral paintedon foregroundleftblue rock becomes a white simple stitched-looking LADDER motif with3rungs same markingarea, rockshapeunchanged. Nootherchanges/clutter, no swaps independentobjects, nocolor-only, no newwindow/text/markers/watermark.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise edit attached giantblueboot clouds saltflat painting, preserve EXACT1672x941 frame compositions/style allobjectspositions. FIVE localized ONEobject changes:1) white bootlace bow: rightbowloop becomes a visibly twisted loop with freetail threaded THROUGH itsOWN rightloop before hanging, clean continuoussame shoelace; preserve leftloop/eyelets.2) red stitchedheelpatch: opens outwardas a little hinged redflap showing darkbluebootunderneath, same redmaterial/location goldstitches, onlypatch changes, no newthinginside.3) gold wateringcan foreground: its longspout bends DOWNWARD withroundsprinklerhead pointingatground instead ofangled upward; keepcanbody/handle unchanged,continuousconnection credible.4) purpleladder right: middle intact rung below existingbreak becomes a gently archedrung instead of straightbar, same ladderrails/break unchanged.5) white spiral paintedon foregroundleftblue rock becomes a white simple stitched-looking LADDER motif with3rungs same markingarea, rockshapeunchanged. Nootherchanges/clutter, no swaps independentobjects, nocolor-only, no newwindow/text/markers/watermark."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "The red boot patch opens like a hinged flap.",
+      "box": {
+        "x": 1244,
+        "y": 500,
+        "width": 131,
+        "height": 129
+      },
+      "edgeFade": 5
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The watering can's spout bends downward.",
+      "box": {
+        "x": 1280,
+        "y": 702,
+        "width": 124,
+        "height": 148
+      },
+      "edgeFade": 5
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The right shoelace loop threads through itself.",
+      "box": {
+        "x": 942,
+        "y": 326,
+        "width": 124,
+        "height": 268
+      },
+      "edgeFade": 5
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "A white ladder is painted on the foreground rock.",
+      "box": {
+        "x": 206,
+        "y": 744,
+        "width": 72,
+        "height": 88
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "One intact purple ladder rung arches upward.",
+      "box": {
+        "x": 1427,
+        "y": 503,
+        "width": 82,
+        "height": 44
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source inspected; hingedheelpatch, samewateringcan bentconnectedspout, same shoelacerightselfloop, single rockpattern andsingle ladderrung. No swaps; existing brokenladderrail preserved/excluded. Oneclueperobjectfeature: patch andlace separatedonboot. Source wateringcanbody originalexceptincidentaldrift excludedaspossible; rootfinalclip checksrequired.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

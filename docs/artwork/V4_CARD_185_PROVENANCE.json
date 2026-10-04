@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-185",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-185-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-185-original-v4.png",
+    "sha256": "E8752ED5D646C9D298EFCFD668C7A7D600A900BC0784A2F96A559FC3EB7ABCD5",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-185-altered-source-v4.png",
+    "sha256": "E080567E0FA57486E6C5DBA350F3E9A9B8E17F46521CDF2868367813E3C0D84B",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise five-change counterpart of original painted red kite swallowing wind on chimney roof. Preserve full frame, kite identity/face structure, blue wind coil, roof, weather vanes and all scene/style. Exactly FIVE isolated single-object parts: 1 kite LEFT eye closes into a clear wink, other eye/eyebrows/mouth unchanged. 2 top-right weather vane's metal arrowhead LOWER triangular barb curls upward inward like bent metal, same upper edge/tip/shaft unchanged. 3 chimney cap front openings have slanting DIAGONAL gold supports instead of vertical supports, same cap rims/cylinder. 4 wooden white-thread spool at right has clearly CROSS-WOUND diagonal thread wraps instead of parallel vertical wraps, same spool ends/tail/location. 5 white patch on kite LEFT cheek has its LOWER-RIGHT paper/fabric corner curled upward showing a small shadowed underside, same patch rest/outline/stitches. Five definite localized one-object differences, no swaps or extra unrelated marks, no specks/grain. Return one matching full-frame counterpart.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise five-change counterpart of original painted red kite swallowing wind on chimney roof. Preserve full frame, kite identity/face structure, blue wind coil, roof, weather vanes and all scene/style. Exactly FIVE isolated single-object parts: 1 kite LEFT eye closes into a clear wink, other eye/eyebrows/mouth unchanged. 2 top-right weather vane's metal arrowhead LOWER triangular barb curls upward inward like bent metal, same upper edge/tip/shaft unchanged. 3 chimney cap front openings have slanting DIAGONAL gold supports instead of vertical supports, same cap rims/cylinder. 4 wooden white-thread spool at right has clearly CROSS-WOUND diagonal thread wraps instead of parallel vertical wraps, same spool ends/tail/location. 5 white patch on kite LEFT cheek has its LOWER-RIGHT paper/fabric corner curled upward showing a small shadowed underside, same patch rest/outline/stitches. Five definite localized one-object differences, no swaps or extra unrelated marks, no specks/grain. Return one matching full-frame counterpart."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "eye",
+      "label": "The kite's left eye closes in a wink.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 595,
+        "y": 192,
+        "width": 112,
+        "height": 59
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "arrow",
+      "label": "The weather arrow's lower barb curls upward.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1188,
+        "y": 139,
+        "width": 109,
+        "height": 79
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "cap",
+      "label": "The chimney cap supports slant diagonally.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 924,
+        "y": 311,
+        "width": 201,
+        "height": 82
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "spool",
+      "label": "The spool thread is cross-wound.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1190,
+        "y": 501,
+        "width": 105,
+        "height": 87
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "patch",
+      "label": "The kite patch's right corner curls upward.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 485,
+        "y": 351,
+        "width": 63,
+        "height": 77
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered compositor/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

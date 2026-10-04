@@ -1,0 +1,110 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-360",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-360-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-360-original-v4.png",
+    "sha256": "AD28EB463910307148DB1491B170F7E7392994170190FF7943437986723AE21E",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-360-altered-source-v4.png",
+    "sha256": "20142448BDB9BED7D21A69AF39AEF154B4117DC1DF69F19EF9571725E98D586F",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact badger folded winter painting locally with five separate SINGLE OBJECT edits. Preserve badger anatomy/fur/posture, snow, room and all other original details. 1 On wooden storage box upper-right x1176 y122, painted black pine tree emblem becomes a black crescent moon emblem, same paint style. 2 Metal scoop on dresser at x1357 y236 has its front bowl rim rolled inward into a clear curled lip, handle/body unchanged. 3 Only viewer-left black boot at x64 y555 has its top lace tied into a broad bow over tongue, rest boot and other boot unchanged. 4 The large open snow drawer front near x805 y590 has its brass half-cup pull rotate upward into an upright arched pull, same mounting spot, drawer unchanged, all other pulls untouched. 5 On hanging pale striped towel at lower-right x1505 y860, its upper loose corner flips outward into a triangular fold, stripes and bucket unchanged. Exactly five targets, no paired swaps/new objects, clean contour joins.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact badger folded winter painting locally with five separate SINGLE OBJECT edits. Preserve badger anatomy/fur/posture, snow, room and all other original details. 1 On wooden storage box upper-right x1176 y122, painted black pine tree emblem becomes a black crescent moon emblem, same paint style. 2 Metal scoop on dresser at x1357 y236 has its front bowl rim rolled inward into a clear curled lip, handle/body unchanged. 3 Only viewer-left black boot at x64 y555 has its top lace tied into a broad bow over tongue, rest boot and other boot unchanged. 4 The large open snow drawer front near x805 y590 has its brass half-cup pull rotate upward into an upright arched pull, same mounting spot, drawer unchanged, all other pulls untouched. 5 On hanging pale striped towel at lower-right x1505 y860, its upper loose corner flips outward into a triangular fold, stripes and bucket unchanged. Exactly five targets, no paired swaps/new objects, clean contour joins."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The box pine emblem becomes a crescent",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1142,
+        "y": 65,
+        "width": 73,
+        "height": 109
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The snow drawer pull stands upright",
+      "difficulty": "Medium",
+      "box": {
+        "x": 745,
+        "y": 520,
+        "width": 109,
+        "height": 119
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The left boot top lace forms a broad bow",
+      "difficulty": "Hard",
+      "box": {
+        "x": 6,
+        "y": 477,
+        "width": 109,
+        "height": 91
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The scoop rim curls inward",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1253,
+        "y": 158,
+        "width": 59,
+        "height": 53
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The striped towel corner folds outward",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1398,
+        "y": 763,
+        "width": 188,
+        "height": 127
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "visually inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "nativePreflight": "source equals actual original size, five nonoverlapping boxes",
+    "difficulty": "hypotheses; human and browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-361",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-361-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-361-original-v4.png",
+    "sha256": "85D9F2F5C0D77F4CEE4736B4B1230B974C1A26F1A94A17341E49E6BC7FFB6847",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-361-altered-source-v4.png",
+    "sha256": "D19D53C1D86739FE00C56A0007456C954B9550D9B2FDEE61FFE11A6FF1F3B013",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact peach-colored echo horn painting locally. Preserve horn, peach scarf cloth flow, table and all original objects. Exactly five independent single-object changes: 1 blue tassel's closed cord loop at x173 y628 becomes an open hooked cord end with a visible gap at its top-right, tassel unchanged; 2 the largest brass binder clip at x571 y640 has its single upright ring handle tipped sideways flat against the top of that SAME clip, other two clips unchanged; 3 the horn's round mounting adjustment knob at x78 y418 becomes a six-lobed brass gear knob with same central screw, mount unchanged; 4 the peach scarf's large foreground triangular loose corner near x1282 y830 folds upward into a small visible curled flap, remainder cloth and all fringe strands unchanged; 5 ONE brass leaf motif on horn's lower-right interior near x944 y330 becomes a small spiral vine curl, rest engraved design unchanged. Five separate targets, no swapping multiple objects, no extra objects or global redraw.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact peach-colored echo horn painting locally. Preserve horn, peach scarf cloth flow, table and all original objects. Exactly five independent single-object changes: 1 blue tassel's closed cord loop at x173 y628 becomes an open hooked cord end with a visible gap at its top-right, tassel unchanged; 2 the largest brass binder clip at x571 y640 has its single upright ring handle tipped sideways flat against the top of that SAME clip, other two clips unchanged; 3 the horn's round mounting adjustment knob at x78 y418 becomes a six-lobed brass gear knob with same central screw, mount unchanged; 4 the peach scarf's large foreground triangular loose corner near x1282 y830 folds upward into a small visible curled flap, remainder cloth and all fringe strands unchanged; 5 ONE brass leaf motif on horn's lower-right interior near x944 y330 becomes a small spiral vine curl, rest engraved design unchanged. Five separate targets, no swapping multiple objects, no extra objects or global redraw."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The horn mounting knob becomes a gear",
+      "difficulty": "Easy",
+      "box": {
+        "x": 39,
+        "y": 374,
+        "width": 81,
+        "height": 89
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The tassel cord opens into a hook",
+      "difficulty": "Medium",
+      "box": {
+        "x": 110,
+        "y": 597,
+        "width": 121,
+        "height": 64
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The right binder clip ring folds flat",
+      "difficulty": "Hard",
+      "box": {
+        "x": 514,
+        "y": 592,
+        "width": 107,
+        "height": 81
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The scarf corner rolls outward",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1273,
+        "y": 629,
+        "width": 151,
+        "height": 245
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The horn leaf motif curls into a spiral",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 910,
+        "y": 303,
+        "width": 73,
+        "height": 81
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "visually inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "nativePreflight": "source equals actual original size, five nonoverlapping boxes",
+    "difficulty": "hypotheses; human and browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

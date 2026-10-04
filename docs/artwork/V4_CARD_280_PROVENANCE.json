@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-280",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-280-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-280-original-v4.png",
+    "sha256": "BC77D78794F95A22D09C29AD32D399289D44863985FB7E22801E13B8030E4BF3",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-280-altered-source-v4.png",
+    "sha256": "165BCB947599B1C816B683E72D340979230AE80FFB9E1669D0D527E5D48DC838",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact original vintage mint refrigerator with red jelly volcano inside. Preserve volcano, all food identities, appliance framing, composition and painterly style. Exactly FIVE localized one-object differences: (1) RIGHT middle green casserole pot lid's handle becomes one upright semicircular loop rather than short flat tab, same pot/lid; (2) volcano front central dripping red jelly at plate edge curls into a connected closed loop instead of hanging straight, preserve rest volcano/plate; (3) LEFT countertop small white sugar pot RED cherry finial becomes heart-shaped, same lid/ceramic body; (4) LEFT utensil holder teal SPATULA's three straight internal slots become three gently CURVED parallel slots, same spatula outline/other utensils exact; (5) bottom RIGHT cheese wedge's largest round hole becomes a clearly triangular opening, same cheese/otherholes exact. Five existing objects internal/relationship/mechanism changes, no object swaps, no color-only or grain.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact original vintage mint refrigerator with red jelly volcano inside. Preserve volcano, all food identities, appliance framing, composition and painterly style. Exactly FIVE localized one-object differences: (1) RIGHT middle green casserole pot lid's handle becomes one upright semicircular loop rather than short flat tab, same pot/lid; (2) volcano front central dripping red jelly at plate edge curls into a connected closed loop instead of hanging straight, preserve rest volcano/plate; (3) LEFT countertop small white sugar pot RED cherry finial becomes heart-shaped, same lid/ceramic body; (4) LEFT utensil holder teal SPATULA's three straight internal slots become three gently CURVED parallel slots, same spatula outline/other utensils exact; (5) bottom RIGHT cheese wedge's largest round hole becomes a clearly triangular opening, same cheese/otherholes exact. Five existing objects internal/relationship/mechanism changes, no object swaps, no color-only or grain."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "flow",
+      "label": "The front jelly flow curls into a closed loop.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 812,
+        "y": 532,
+        "width": 169,
+        "height": 101
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "handle",
+      "label": "The green casserole lid has an upright loop.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1060,
+        "y": 354,
+        "width": 69,
+        "height": 44
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "spatula",
+      "label": "The teal spatula slots curve.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 35,
+        "y": 89,
+        "width": 71,
+        "height": 85
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "cherry",
+      "label": "The sugar pot red finial becomes a heart.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 196,
+        "y": 377,
+        "width": 45,
+        "height": 39
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "cheese",
+      "label": "The cheese front hole becomes triangular.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1003,
+        "y": 736,
+        "width": 51,
+        "height": 47
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered compositor/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

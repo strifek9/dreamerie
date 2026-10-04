@@ -1,0 +1,107 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-334",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-334-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-334-original-v4.png",
+    "sha256": "C6320E1DF7F2B6661C52FEC89EC3251CAAE664365A76227C1CFA4553FE18FC0C",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-334-altered-source-v4.png",
+    "sha256": "30DF7DD18C16E66162FE38890EE64FE37FF6264F2FF19FCDE1A0489F71E535D4",
+    "prompt": "[{\"file\": \"preserve-prompt.json\", \"content\": {\"operation\": \"Original preservation assembly\", \"script\": \"preserve.py\", \"purpose\": \"All glass drops/puddles original exact; five artifact edits only. Preserve freestanding glass drop beside latch and key leftloop/stem. Envelope curl silhouette excludes original stains/waxseal; bowl reflection selects interior only.\", \"scriptSHA256\": \"277c76b2201133ad4bb014c9a0715e491bc1a619836f4cf734448a3326c10bc8\"}}, {\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit EXACT1672x941 attached stilllife BOX OF UNFALLEN RAIN crystalteardrops in velvetcompartments. Preserve ALL crystal drops individually byte/pose exact; no changes in any drop or puddle outline/location. FIVE single-artifact changes:1) BOX brassfront LOCK LATCH x799,y521: its centralhingedlatch swings OPEN to LEFT revealing keyholeplate, same boxwood/othermounts; free glassdrop infront EXACT.2) CRIMSON CLOTH foreground lowercenter aroundx679,y811: ONLY its freerightend passes through its OWN looseoverhand knot, same cloth/bowlunderneath exact.3) GOLDKEY lyingright x1474,y592: ONLY RIGHT outerbow loop opens into a cleanCRESCENT gap, sameleftbow/stem/teeth exact.4) cream ENVELOPE bottomright: ONLY upperLEFT freecorner x985,y787 rolls upward into hollowpapercurl, waxseal/waterstains/othercorners exact.5) SMALL BLUE BOWL bottomLEFT x267,y802: in its existing WATER PUDDLE an ivory CRESCENT REFLECTION appears; exactsamepuddleoutline/bowlrim/body. No swaps, no separate wetstain/glassdrop changes, originalpaintedtexture.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "preserve-prompt.json",
+      "content": {
+        "operation": "Original preservation assembly",
+        "script": "preserve.py",
+        "purpose": "All glass drops/puddles original exact; five artifact edits only. Preserve freestanding glass drop beside latch and key leftloop/stem. Envelope curl silhouette excludes original stains/waxseal; bowl reflection selects interior only.",
+        "scriptSHA256": "277c76b2201133ad4bb014c9a0715e491bc1a619836f4cf734448a3326c10bc8"
+      }
+    },
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit EXACT1672x941 attached stilllife BOX OF UNFALLEN RAIN crystalteardrops in velvetcompartments. Preserve ALL crystal drops individually byte/pose exact; no changes in any drop or puddle outline/location. FIVE single-artifact changes:1) BOX brassfront LOCK LATCH x799,y521: its centralhingedlatch swings OPEN to LEFT revealing keyholeplate, same boxwood/othermounts; free glassdrop infront EXACT.2) CRIMSON CLOTH foreground lowercenter aroundx679,y811: ONLY its freerightend passes through its OWN looseoverhand knot, same cloth/bowlunderneath exact.3) GOLDKEY lyingright x1474,y592: ONLY RIGHT outerbow loop opens into a cleanCRESCENT gap, sameleftbow/stem/teeth exact.4) cream ENVELOPE bottomright: ONLY upperLEFT freecorner x985,y787 rolls upward into hollowpapercurl, waxseal/waterstains/othercorners exact.5) SMALL BLUE BOWL bottomLEFT x267,y802: in its existing WATER PUDDLE an ivory CRESCENT REFLECTION appears; exactsamepuddleoutline/bowlrim/body. No swaps, no separate wetstain/glassdrop changes, originalpaintedtexture."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "The crimson cloth's end passes through its own knot.",
+      "box": {
+        "x": 541,
+        "y": 688,
+        "width": 347,
+        "height": 253
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The box's brass latch swings open to the left.",
+      "box": {
+        "x": 636,
+        "y": 444,
+        "width": 219,
+        "height": 148
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The envelope's upper left corner curls upward.",
+      "box": {
+        "x": 888,
+        "y": 656,
+        "width": 356,
+        "height": 144
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "A crescent reflects inside the bowl's water puddle.",
+      "box": {
+        "x": 275,
+        "y": 782,
+        "width": 57,
+        "height": 55
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "The key's right bow opens into a crescent gap.",
+      "box": {
+        "x": 1594,
+        "y": 563,
+        "width": 57,
+        "height": 90
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Five one-artifact changes, no glassdrop/puddle swaps. Original assembly retains every drop, freestanding drop restored beside latch. Key leftloop/stem exact outside rightbow edit. Envelope curl mask avoids original wetstains/waxseal; small bowl reflection interior only. Full/native five pairs/390 comparison inspected. Difficulty hypotheses/root joins pending; reflection/keygap small locatable features.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

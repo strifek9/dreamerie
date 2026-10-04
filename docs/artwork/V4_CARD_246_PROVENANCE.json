@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-246",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-246-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-246-original-v4.png",
+    "sha256": "5E3EEDD90AEF12A768996A08C6599F0BD2E822376DB054FC35938D018330FD8F",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-246-altered-source-v4.png",
+    "sha256": "7B301E1A23F7DEA7E2E0EFC98D36A16681FC32218B924AF2C384436C865B4F34",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precisely edit original girl lending her mirror reflection to wooden mannequin. Preserve girl's face/anatomy/hands and real expression, mannequin anatomy/pose, mirror frame, all room identity/style. Exactly five single-object localized edits: (1) REFLECTED girl's mouth in mirror becomes a clear gentle open smile showing a narrow row of white teeth, real mouth unchanged; (2) top LEFT foreground green book printed gold crescent faces opposite direction, all stars/book exact; (3) large vanity SILVER lidded jar central ornamental relief becomes a bold heart instead of current fleur ornament, jar shape/finial exact; (4) hanging GOLD crescent at upper RIGHT curls with tips opening LEFT rather than RIGHT, string/location exact; (5) foreground silver HAIRBRUSH handle engraved central vine becomes a clear continuous interlaced braid pattern, preserve brush head/bristles/handle outline. One object's internal pattern/reflection each, no stud/pearl edits or swaps, no micrograin.\"}}, {\"file\": \"moon-prompt.json\", \"content\": {\"prompt\": \"Edit this exact hanging golden crescent original crop. Flip ONLY crescent charm horizontally: opening faces LEFT, gold solid spine on RIGHT. Keep top attachment/string and wooden background exact, same size/location, painterly material. Opposite crescent direction visibly, no other changes.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precisely edit original girl lending her mirror reflection to wooden mannequin. Preserve girl's face/anatomy/hands and real expression, mannequin anatomy/pose, mirror frame, all room identity/style. Exactly five single-object localized edits: (1) REFLECTED girl's mouth in mirror becomes a clear gentle open smile showing a narrow row of white teeth, real mouth unchanged; (2) top LEFT foreground green book printed gold crescent faces opposite direction, all stars/book exact; (3) large vanity SILVER lidded jar central ornamental relief becomes a bold heart instead of current fleur ornament, jar shape/finial exact; (4) hanging GOLD crescent at upper RIGHT curls with tips opening LEFT rather than RIGHT, string/location exact; (5) foreground silver HAIRBRUSH handle engraved central vine becomes a clear continuous interlaced braid pattern, preserve brush head/bristles/handle outline. One object's internal pattern/reflection each, no stud/pearl edits or swaps, no micrograin."
+      }
+    },
+    {
+      "file": "moon-prompt.json",
+      "content": {
+        "prompt": "Edit this exact hanging golden crescent original crop. Flip ONLY crescent charm horizontally: opening faces LEFT, gold solid spine on RIGHT. Keep top attachment/string and wooden background exact, same size/location, painterly material. Opposite crescent direction visibly, no other changes."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "reflection",
+      "label": "The reflection smiles with visible teeth.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 899,
+        "y": 338,
+        "width": 57,
+        "height": 35
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "jar",
+      "label": "The silver jar relief becomes a heart.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 242,
+        "y": 326,
+        "width": 56,
+        "height": 52
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "book",
+      "label": "The top book crescent opens the other way.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 77,
+        "y": 707,
+        "width": 87,
+        "height": 48
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "charm",
+      "label": "The hanging crescent opens left.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1386,
+        "y": 128,
+        "width": 53,
+        "height": 68
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "brush",
+      "label": "The hairbrush handle has an interlaced braid.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 526,
+        "y": 839,
+        "width": 151,
+        "height": 47
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered compositor/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

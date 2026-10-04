@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-212",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-212-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-212-original-v4.png",
+    "sha256": "26A578350FC0CE3094A4AE4EDBF93CD0F814E0FC13B6115FFB6085D5A9A387D2",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-212-altered-source-v4.png",
+    "sha256": "288F511E959FF6F48724E7856FB16615C176CC8115D35C83AE4E9610273621D7",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise five-change counterpart of original painted giant cream moth at purple velvet door and reflected moth in warm mirror. Preserve same full frame, real/reflected moth identities/anatomy, core premise and brushed style. Exactly FIVE localized single-object parts: 1 REAL moth RIGHT feather antenna tip curls UP into an arc instead of extending straight right, preserve base/left antenna. 2 REAL moth LEFT wing's circular gold-ring eyespot becomes a gold CRESCENT opening to RIGHT around same dark center, rest of wing markings exact. 3 REFLECTED moth RIGHT wing's eyespot dark center becomes a distinct diamond shape inside SAME gold oval ring, reflected moth anatomy/other markings untouched. 4 gold door KNOB has fluted scalloped ridges around its rim instead of round smooth rim, same center/brass/mount. 5 upper pink cord knot on far-right velvet is tied into a clear CLOSED single loop with its long free strand passing UNDER the loop rather than simple loose stitching; same attachment/endpoints and lower cord exact. Five independently selectable object-part changes, no swaps, no stray grain/specks, preserve curtains/frame anatomy. Return matching full frame.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise five-change counterpart of original painted giant cream moth at purple velvet door and reflected moth in warm mirror. Preserve same full frame, real/reflected moth identities/anatomy, core premise and brushed style. Exactly FIVE localized single-object parts: 1 REAL moth RIGHT feather antenna tip curls UP into an arc instead of extending straight right, preserve base/left antenna. 2 REAL moth LEFT wing's circular gold-ring eyespot becomes a gold CRESCENT opening to RIGHT around same dark center, rest of wing markings exact. 3 REFLECTED moth RIGHT wing's eyespot dark center becomes a distinct diamond shape inside SAME gold oval ring, reflected moth anatomy/other markings untouched. 4 gold door KNOB has fluted scalloped ridges around its rim instead of round smooth rim, same center/brass/mount. 5 upper pink cord knot on far-right velvet is tied into a clear CLOSED single loop with its long free strand passing UNDER the loop rather than simple loose stitching; same attachment/endpoints and lower cord exact. Five independently selectable object-part changes, no swaps, no stray grain/specks, preserve curtains/frame anatomy. Return matching full frame."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "antenna",
+      "label": "The moth's right antenna curls upward.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 688,
+        "y": 112,
+        "width": 191,
+        "height": 149
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "spot",
+      "label": "The left wing eyespot ring opens to the right.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 277,
+        "y": 411,
+        "width": 130,
+        "height": 118
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "knob",
+      "label": "The door knob has a fluted rim.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1193,
+        "y": 400,
+        "width": 97,
+        "height": 92
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "cord",
+      "label": "The upper pink cord knot forms a closed loop.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1296,
+        "y": 268,
+        "width": 101,
+        "height": 95
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "reflection",
+      "label": "The reflected eyespot center becomes diamond-shaped.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1101,
+        "y": 466,
+        "width": 64,
+        "height": 101
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered compositor/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

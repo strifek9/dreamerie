@@ -1,0 +1,128 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-034",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-034-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-034-original-v4.png",
+    "sha256": "B945E08FF874F409FA166CB27A020CAF14DD2B1A01D05F81DCF184A7D95DB094",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-034-altered-source-v4.png",
+    "sha256": "A7F4260ADE8A9C2C961F307748AB89F8435129E62E349D33F795540EA944C06B",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit precisely this provided Dreamerie painting, same entire 1672x941 frame and all objects/style preserved. Exactly five localized authored differences: (1) heron's long beak opens into a clear narrow V, retaining head (x1130-1220 y38-85); (2) cottage round window crossbars rotate diagonal into X (x470-545 y252-333); (3) left large lily at x348 y380 gains its reflection as an inverted closed bud rather than open petals, only water below flower x319-397 y399-443; (4) middle front umbrella printed crescent at x870 y615 changes opening direction to face left, same size (x825-915 y575-661); (5) cottage door three gold latch ornaments change ordering: central fleur-de-lis lower than two sides instead of same row (x600-657 y307-343). No added stars/specks/texture, no crop, no unrelated drift, keep anatomy and umbrella geometry unchanged. Flowing grain-free painterly finish. Render full altered counterpart.\", \"tool\": \"built-in image_gen\", \"reference\": \"dream-034-original-v1.png\"}}, {\"file\": \"latch-prompt.json\", \"content\": {\"prompt\": \"Edit this tight doorcrop; same cropframe all woodtexture/door seams unchanged. Gold latch currentlythree goldshapes inhorizontal row: left arrow rightcenter cross rightarrow. Change only CENTRAL GOLD CROSS into a gold RING with circular central hole through which horizontal bar passes. Preserve horizontalbar andsidearrow ornaments unchanged, no newdecorations. Painted grainfree. Outputmatchingcrop.\", \"input\": \"door-ref.png\", \"originalCrop\": [590, 280, 74, 69], \"generated\": \"latch.png\", \"assembly\": \"resize to74x69 then paste onlynative596,308,65,36\"}}, {\"file\": \"silver-prompt.json\", \"content\": {\"prompt\": \"Preciseedit providedumbrella-lakepainting ONLY FRONTumbrella goldprintedcrescent centeredx868,y616 becomes COOL SILVERY-BLUE insteadgold. Preserve crescent EXACToiginalshape,size,openingdirection(left),position,paintedbrushstrokes. Preserve EVERYstar/leaf/pattern andallotherart exact. Same1672x941frame. One object'spaint/material only. No moonmovement/flip/newstar.\", \"input\": \"dream-034-original-v1.png\", \"selection\": \"ONLYoriginalcrescentcomponentmask; allsurroundingstar/leaforiginalpixels exact\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit precisely this provided Dreamerie painting, same entire 1672x941 frame and all objects/style preserved. Exactly five localized authored differences: (1) heron's long beak opens into a clear narrow V, retaining head (x1130-1220 y38-85); (2) cottage round window crossbars rotate diagonal into X (x470-545 y252-333); (3) left large lily at x348 y380 gains its reflection as an inverted closed bud rather than open petals, only water below flower x319-397 y399-443; (4) middle front umbrella printed crescent at x870 y615 changes opening direction to face left, same size (x825-915 y575-661); (5) cottage door three gold latch ornaments change ordering: central fleur-de-lis lower than two sides instead of same row (x600-657 y307-343). No added stars/specks/texture, no crop, no unrelated drift, keep anatomy and umbrella geometry unchanged. Flowing grain-free painterly finish. Render full altered counterpart.",
+        "tool": "built-in image_gen",
+        "reference": "dream-034-original-v1.png"
+      }
+    },
+    {
+      "file": "latch-prompt.json",
+      "content": {
+        "prompt": "Edit this tight doorcrop; same cropframe all woodtexture/door seams unchanged. Gold latch currentlythree goldshapes inhorizontal row: left arrow rightcenter cross rightarrow. Change only CENTRAL GOLD CROSS into a gold RING with circular central hole through which horizontal bar passes. Preserve horizontalbar andsidearrow ornaments unchanged, no newdecorations. Painted grainfree. Outputmatchingcrop.",
+        "input": "door-ref.png",
+        "originalCrop": [
+          590,
+          280,
+          74,
+          69
+        ],
+        "generated": "latch.png",
+        "assembly": "resize to74x69 then paste onlynative596,308,65,36"
+      }
+    },
+    {
+      "file": "silver-prompt.json",
+      "content": {
+        "prompt": "Preciseedit providedumbrella-lakepainting ONLY FRONTumbrella goldprintedcrescent centeredx868,y616 becomes COOL SILVERY-BLUE insteadgold. Preserve crescent EXACToiginalshape,size,openingdirection(left),position,paintedbrushstrokes. Preserve EVERYstar/leaf/pattern andallotherart exact. Same1672x941frame. One object'spaint/material only. No moonmovement/flip/newstar.",
+        "input": "dream-034-original-v1.png",
+        "selection": "ONLYoriginalcrescentcomponentmask; allsurroundingstar/leaforiginalpixels exact"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "beak",
+      "label": "The heron opens its beak.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1120,
+        "y": 34,
+        "width": 112,
+        "height": 58
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "window",
+      "label": "The round window crossbars form an X.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 470,
+        "y": 249,
+        "width": 76,
+        "height": 89
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "crescent",
+      "label": "The front-panel crescent becomes silvery blue.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 823,
+        "y": 580,
+        "width": 84,
+        "height": 80
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "reflection",
+      "label": "The left water lily reflects a closed bud.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 317,
+        "y": 399,
+        "width": 83,
+        "height": 49
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "latch",
+      "label": "The central door latch forms a ring around the bar.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 596,
+        "y": 308,
+        "width": 65,
+        "height": 36
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Finalisolatedsilvercrescent nativecrop visualQA. Rejecteddisplacedmoon/backgroundseam variants preservedunreferenced. Otherfourclues unchanged. Rootfeather/game QA pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-321",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-321-original-v2.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-321-original-v4.png",
+    "sha256": "10F8A529B517F41FAA44A98CD22C51C137AD961F01A40A41DD909BF49B82CCC8",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-321-altered-source-v4.png",
+    "sha256": "52D8AFD76B820F530A3B6CD8053E7B623E82C574834EB390FBF7E3C3C27D9C5A",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit this exact original1672x941 painting preserving frame, anatomy and style. Exactly FIVE localized single-object differences:1 fox LEFT eye near737217 closes gently; other eye unchanged.2 isolated luggage pendant at186380: existing engraved twig rotates horizontal, pendant shape same.3 passport tiny hanging lantern at915476 turns into rounded globular lantern same stem and position, no extra light.4 existing passport strap button at1375505 changes to a square brass button, strap shape exact.5 metal travel cup at1615595 gains a carved pale crescent motif on FRONT surface, cup/rim/location unchanged. All other original exact, no door swaps or multiple objects grouped.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit this exact original1672x941 painting preserving frame, anatomy and style. Exactly FIVE localized single-object differences:1 fox LEFT eye near737217 closes gently; other eye unchanged.2 isolated luggage pendant at186380: existing engraved twig rotates horizontal, pendant shape same.3 passport tiny hanging lantern at915476 turns into rounded globular lantern same stem and position, no extra light.4 existing passport strap button at1375505 changes to a square brass button, strap shape exact.5 metal travel cup at1615595 gains a carved pale crescent motif on FRONT surface, cup/rim/location unchanged. All other original exact, no door swaps or multiple objects grouped."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "closed-eye",
+      "label": "The fox closes one eye.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 832,
+        "y": 230,
+        "width": 72,
+        "height": 51
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "horizontal-twig",
+      "label": "The pendant\u2019s twig lies horizontally.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 147,
+        "y": 349,
+        "width": 84,
+        "height": 72
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "round-lantern",
+      "label": "The passport\u2019s lantern becomes round.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 886,
+        "y": 453,
+        "width": 53,
+        "height": 58
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "crescent-cup",
+      "label": "The travel cup bears a crescent.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1562,
+        "y": 546,
+        "width": 75,
+        "height": 83
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "square-button",
+      "label": "The passport strap\u2019s button becomes square.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1349,
+        "y": 485,
+        "width": 42,
+        "height": 42
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five paired crops, full composite and 390-pixel stacked pair inspected. Single-object changes; difficulty hypotheses only. Root browser/hit QA and human fairness remain pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

@@ -1,4 +1,4 @@
-import { readdirSync, statSync } from 'node:fs'
+import { readFileSync, readdirSync, statSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { playableDreams } from '../src/v3/dailyDream.ts'
 import { artworkDelivery } from '../src/v3/artworkDelivery.generated.ts'
@@ -15,6 +15,13 @@ function collect(value: unknown): void {
 collect(playableDreams)
 collect(artworkDelivery)
 collect(v4PreviewDreams)
+// Preserve generated sources from previously published V4 review pairs.
+for (const file of readdirSync(new URL('../docs/artwork/', import.meta.url))) {
+  if (/^V4_(?:PREVIEW|CARD_[a-z0-9-]+)_PROVENANCE\.json$/.test(file)) {
+    const provenance = JSON.parse(readFileSync(new URL('../docs/artwork/' + file, import.meta.url), 'utf8'))
+    collect(provenance.retiredGeneratedSources)
+  }
+}
 
 export function artworkFiles(directory = '/artwork'): string[] {
   return readdirSync(new URL(`../public${directory}/`, import.meta.url), { withFileTypes: true })

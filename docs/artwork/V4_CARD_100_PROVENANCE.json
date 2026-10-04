@@ -1,0 +1,108 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-100",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-revisit-v1/100-dynamic-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-100-original-v4.png",
+    "sha256": "73BD1BF8FB51CD0344D5635D43B5DD49DE71D0392605F39294B0703D67098A8D",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-100-altered-source-v4.png",
+    "sha256": "945EE2CE4513DC579571A18C24E76853FA0A7EC536877F1A9776F03FB5623158",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise-object-edit of native1672x941 Dreamerie giant sandalwindow painting. Preserve sandal/frame, crab anatomy/packageposition, ocean/umbrellaandallobjects style. Five independent singleobjects edited only: 1 gold buckle PIN atx405,268 rotates downward tocatchlowerstrap instead of pointupright/right, region381,244,59,59; preserve ovalbuckle/strap. 2 greenwindow openRIGHTshutter centralhorizontalmullion becomes diagonal risingright, region732,367,42,69; frame/shutteroutlineunchanged. 3 redstring BOW on crab'spaperpackage loops into figureeight instead of currentcrossbow, region480,681,112,71; preserve packageoutline/crabanatomy. 4 smallmugblueband on woodenstump right becomes a singleVERTICALblue stripe downfront rather than horizontalblueband, mugbodybox1304,623,43,39; handle/topunchanged. 5 ONLYfront-center yellowpanel on beachparasol atcenter1323,492 has a chevronfold crease instead of straightradialcrease, region1288,453,57,83; otherpanels/outlineunchanged. No textgrain additionalprops or objectswaps. Meaningfulboundedchanges, allotherpixels exact.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise-object-edit of native1672x941 Dreamerie giant sandalwindow painting. Preserve sandal/frame, crab anatomy/packageposition, ocean/umbrellaandallobjects style. Five independent singleobjects edited only: 1 gold buckle PIN atx405,268 rotates downward tocatchlowerstrap instead of pointupright/right, region381,244,59,59; preserve ovalbuckle/strap. 2 greenwindow openRIGHTshutter centralhorizontalmullion becomes diagonal risingright, region732,367,42,69; frame/shutteroutlineunchanged. 3 redstring BOW on crab'spaperpackage loops into figureeight instead of currentcrossbow, region480,681,112,71; preserve packageoutline/crabanatomy. 4 smallmugblueband on woodenstump right becomes a singleVERTICALblue stripe downfront rather than horizontalblueband, mugbodybox1304,623,43,39; handle/topunchanged. 5 ONLYfront-center yellowpanel on beachparasol atcenter1323,492 has a chevronfold crease instead of straightradialcrease, region1288,453,57,83; otherpanels/outlineunchanged. No textgrain additionalprops or objectswaps. Meaningfulboundedchanges, allotherpixels exact."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The buckle pin points down to the lower strap",
+      "difficulty": "Easy",
+      "box": {
+        "x": 379,
+        "y": 244,
+        "width": 61,
+        "height": 96
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The open shutter has a diagonal central bar",
+      "difficulty": "Medium",
+      "box": {
+        "x": 727,
+        "y": 365,
+        "width": 49,
+        "height": 77
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The parcel bow forms a figure eight",
+      "difficulty": "Hard",
+      "box": {
+        "x": 479,
+        "y": 673,
+        "width": 107,
+        "height": 57
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The mug has a vertical blue stripe",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1302,
+        "y": 615,
+        "width": 51,
+        "height": 48
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The front parasol panel has a chevron fold",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1285,
+        "y": 452,
+        "width": 60,
+        "height": 86
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390px stacked pair. Five separate object changes; unrelated drift excluded; outside boxes exact original. Difficulty estimates unvalidated. Root compositor/game and human review pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

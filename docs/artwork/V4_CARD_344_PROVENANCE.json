@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-344",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-revisit-v1/344-dynamic-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-344-original-v4.png",
+    "sha256": "73C987D6E40F7B46D3B77004EB91934E7587C9F2A00A5B0FC2610A6DB09A9FCD",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-344-altered-source-v4.png",
+    "sha256": "1E9DFBD393FD17142BC0E725B275FB7F4E8019FE5524437C9E298967C7958E69",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit EXACT original dynamic penguin reaching toward airborne orange warm blanket with smiling hot-water bottle beside basket. Preserve every character anatomy/pose/expression, cloth/rack/room premise and painting/style/frame. Exactly FIVE localized one-object clues: (1) upper LEFT jar SUN symbol its internal disk has a closed crescent-shaped smile instead of plain disk, same jar/rays; (2) blue SNOWFLAKE tin at left cabinet front snowflake emblem becomes a bold spiral snow swirl, same tin/handle; (3) smiling HOT-WATER BOTTLE lower-left neck stopper becomes a clear triangular handle opening rather than rectangular tab, rest character exact; (4) airborne ORANGE blanket its upper RIGHT tip curls into an attached closed loop, rest cloth/original wind exact; (5) penguin PURPLE scarf's LEFT trailing end folds into a clear overhand knot before its existing fringe, all penguin body/other scarf/wings exact. Five one-object internal/connected action changes, no mitten swaps/no cloth color changes/no grain.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit EXACT original dynamic penguin reaching toward airborne orange warm blanket with smiling hot-water bottle beside basket. Preserve every character anatomy/pose/expression, cloth/rack/room premise and painting/style/frame. Exactly FIVE localized one-object clues: (1) upper LEFT jar SUN symbol its internal disk has a closed crescent-shaped smile instead of plain disk, same jar/rays; (2) blue SNOWFLAKE tin at left cabinet front snowflake emblem becomes a bold spiral snow swirl, same tin/handle; (3) smiling HOT-WATER BOTTLE lower-left neck stopper becomes a clear triangular handle opening rather than rectangular tab, rest character exact; (4) airborne ORANGE blanket its upper RIGHT tip curls into an attached closed loop, rest cloth/original wind exact; (5) penguin PURPLE scarf's LEFT trailing end folds into a clear overhand knot before its existing fringe, all penguin body/other scarf/wings exact. Five one-object internal/connected action changes, no mitten swaps/no cloth color changes/no grain."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "stopper",
+      "label": "The hot-water bottle stopper becomes triangular.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 315,
+        "y": 525,
+        "width": 94,
+        "height": 78
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "scarf",
+      "label": "The penguin trailing scarf forms a knot.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 482,
+        "y": 442,
+        "width": 112,
+        "height": 100
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "cloth",
+      "label": "The airborne blanket right tip curls into a loop.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1292,
+        "y": 17,
+        "width": 53,
+        "height": 52
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "sun",
+      "label": "The jar sun disk has a smiling face.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 93,
+        "y": 84,
+        "width": 48,
+        "height": 46
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "snow",
+      "label": "The tin snowflake becomes a spiral swirl.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 102,
+        "y": 285,
+        "width": 68,
+        "height": 73
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered compositor/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

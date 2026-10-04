@@ -1,0 +1,111 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-140",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-140-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-140-original-v4.png",
+    "sha256": "E2E66886B23A2363BC0EACC987AA645A4F1D8811A78A32378C261567E9EC9CC0",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-140-altered-source-v4.png",
+    "sha256": "E2DF630FBE8DA616B645C7A6E572FAA9B3709018F768E14B42315538C8863AE8",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"ONLY5 local edits attached full native1672x941 original The Jellyfish Laundrette painting, maintain style/frame/everyotherobjectexact.1 pink central jellyfish mouth at733,254 becomes a round surprised O, eyes/head/anatomy unchanged.2 ONLY wooden clothespin perched atop that jellyfish at805,105: jaw ends OPEN wider about original spring hinge, samepinbody/blueend and head original.3 glass laundry bottle stopper at393,44 becomes a faceted diamond-shaped glass knob rather than sphere, bottle/neck/handle original.4 blue toe of foreground striped sock at285,850 gains ONE cream crescent motif, restsock/stripes/basket exact.5 ONLY UPPER RIGHT spoke of central smaller brass washer wheel at1004,404 curves into an arch instead of straight; sameendpointshub982,430 andrim1019,392, everyother spoke/rim/hub/washer exact. Exactlyone selectable object/component each, no swaps. Clear connected spring/spoke geometry; no incidental grain/restyle/newprops/crop. Full originalcanvas.\"}}, {\"file\": \"prompt-refine.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"One mechanical local edit ONLY of attachednative1672x941originalpainting. Center smaller brass washer wheel at982,430: its central axle screwcap changes from round dark hole to a clearly visible HORIZONTAL screwdriver slot across SAME gold circular cap. Preserve exactcapcontour, allspokes/rim/frame/water/jellyfish unchanged. No curved/brokenspokes. Everything else on fullcanvasoriginal. Slotbold inspectable ~14pxlong.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "ONLY5 local edits attached full native1672x941 original The Jellyfish Laundrette painting, maintain style/frame/everyotherobjectexact.1 pink central jellyfish mouth at733,254 becomes a round surprised O, eyes/head/anatomy unchanged.2 ONLY wooden clothespin perched atop that jellyfish at805,105: jaw ends OPEN wider about original spring hinge, samepinbody/blueend and head original.3 glass laundry bottle stopper at393,44 becomes a faceted diamond-shaped glass knob rather than sphere, bottle/neck/handle original.4 blue toe of foreground striped sock at285,850 gains ONE cream crescent motif, restsock/stripes/basket exact.5 ONLY UPPER RIGHT spoke of central smaller brass washer wheel at1004,404 curves into an arch instead of straight; sameendpointshub982,430 andrim1019,392, everyother spoke/rim/hub/washer exact. Exactlyone selectable object/component each, no swaps. Clear connected spring/spoke geometry; no incidental grain/restyle/newprops/crop. Full originalcanvas."
+      }
+    },
+    {
+      "file": "prompt-refine.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "One mechanical local edit ONLY of attachednative1672x941originalpainting. Center smaller brass washer wheel at982,430: its central axle screwcap changes from round dark hole to a clearly visible HORIZONTAL screwdriver slot across SAME gold circular cap. Preserve exactcapcontour, allspokes/rim/frame/water/jellyfish unchanged. No curved/brokenspokes. Everything else on fullcanvasoriginal. Slotbold inspectable ~14pxlong."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "surprised-mouth",
+      "label": "The pink jellyfish opens a surprised round mouth.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 716,
+        "y": 240,
+        "width": 31,
+        "height": 30
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "faceted-stopper",
+      "label": "The laundry bottle stopper becomes faceted.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 369,
+        "y": 23,
+        "width": 49,
+        "height": 40
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "sock-crescent",
+      "label": "The blue sock toe carries a cream crescent.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 265,
+        "y": 826,
+        "width": 47,
+        "height": 49
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "double-loop-spring",
+      "label": "The clothespin spring has two clear loops.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 788,
+        "y": 87,
+        "width": 34,
+        "height": 47
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "slotted-wheel-cap",
+      "label": "The smaller washer wheel cap has a screw slot.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 964,
+        "y": 413,
+        "width": 38,
+        "height": 36
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Source generations and bounded composites inspected; five isolated objects. Difficulty labels are hypotheses. No human or physical-phone fairness validation.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

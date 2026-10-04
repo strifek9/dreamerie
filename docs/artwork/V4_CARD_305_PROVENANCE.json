@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-305",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-305-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-305-original-v4.png",
+    "sha256": "BA7A8145C7AE3AD6F8B7A7BC0D64EE7AAFF654C3A50CCB3137485E6AF5700A19",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-305-altered-source-v4.png",
+    "sha256": "DD5119805D336232112F83816496460D98DE2FB3F3229F1DDE87B9FB5CD1342A",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact original hollow red onion containing empty ballroom, preserve architecture, chandelier, chair, onion identity, framing and painted style. Exactly FIVE localized single-object clues: (1) central CHAIR oval back upholstery becomes heart-shaped internally, same gold chair frame/seat/legs; (2) loose LOWER LEFT large onion peel its RIGHT tip curls into a clear attached spiral, rest peel exact; (3) chandelier LOWEST hanging glass pendant becomes a broad diamond-shaped pendant rather than teardrop, same chain/all other pendants; (4) ballroom FLOOR reflection directly below central chair has its reflected front leg curved into a distinct hook instead of straight, real chair legs exact; (5) far RIGHT onion ROOT bundle one longest rightward fiber curls into a closed loop at its tip, preserve all other root fibers/onion. Exactly five single-object parts/reflection changes, no pearl edits, no object swaps/no grain.\"}}, {\"file\": \"pearl-prompt.json\", \"content\": {\"prompt\": \"Edit exact original single pearl crop. ONLY pearl surface now has one broad shallow engraved spiral groove wrapping around its FRONT face, clearly visible ivory relief, same pearl round outline/size and iridescent painted highlights. Preserve floor/shadow/background exact. One pearl internal engraving change, no color or size change, no second pearl.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact original hollow red onion containing empty ballroom, preserve architecture, chandelier, chair, onion identity, framing and painted style. Exactly FIVE localized single-object clues: (1) central CHAIR oval back upholstery becomes heart-shaped internally, same gold chair frame/seat/legs; (2) loose LOWER LEFT large onion peel its RIGHT tip curls into a clear attached spiral, rest peel exact; (3) chandelier LOWEST hanging glass pendant becomes a broad diamond-shaped pendant rather than teardrop, same chain/all other pendants; (4) ballroom FLOOR reflection directly below central chair has its reflected front leg curved into a distinct hook instead of straight, real chair legs exact; (5) far RIGHT onion ROOT bundle one longest rightward fiber curls into a closed loop at its tip, preserve all other root fibers/onion. Exactly five single-object parts/reflection changes, no pearl edits, no object swaps/no grain."
+      }
+    },
+    {
+      "file": "pearl-prompt.json",
+      "content": {
+        "prompt": "Edit exact original single pearl crop. ONLY pearl surface now has one broad shallow engraved spiral groove wrapping around its FRONT face, clearly visible ivory relief, same pearl round outline/size and iridescent painted highlights. Preserve floor/shadow/background exact. One pearl internal engraving change, no color or size change, no second pearl."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "peel",
+      "label": "The left loose peel tip curls into a spiral.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 433,
+        "y": 735,
+        "width": 99,
+        "height": 90
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "chair",
+      "label": "The chair back upholstery becomes a heart.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 608,
+        "y": 504,
+        "width": 56,
+        "height": 63
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "pearl",
+      "label": "The left pearl front has a spiral groove.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1170,
+        "y": 749,
+        "width": 58,
+        "height": 62
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "root",
+      "label": "The longest right root tip curls into a loop.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1585,
+        "y": 557,
+        "width": 73,
+        "height": 51
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "reflection",
+      "label": "The chair reflected leg curls into a hook.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 653,
+        "y": 630,
+        "width": 41,
+        "height": 52
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered compositor/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

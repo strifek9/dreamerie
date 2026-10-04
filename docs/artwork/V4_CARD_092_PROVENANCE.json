@@ -1,0 +1,125 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-092",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-092-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-092-original-v4.png",
+    "sha256": "7948A4D0EC963C26CE10780C40F749E404E53C1220F1CFAB4AC410A43C6C7CFB",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-092-altered-source-v4.png",
+    "sha256": "366AFC5E7287E16519B5C34D0EF87B404BA37B754BC3C0F7ECF27A7D7D0E7653",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"Precise-object-edit Dreamerie Waffle Windmill attached. Preserve exactnativewideframe1672x941 paintedgrainfree, foxanatomy, scene/fruit/water/bridge/windmillbladecolors/placement. Only FIVE localized SINGLEOBJECT changes:1 ONLY round porthole bluewindow x715,y354 changes its woodcrossbar to a DIAGONALX rather thanvertical-horizontalplus, sameouterwindow;2 ONLY foregroundgiantstrawberry's one cream-ringed seedhole x281,y766 becomes cream diamond-ringed seedhole, allotherseeds untouched;3 ONLY windmilldoor's smallgold latch x730,y532 pointsDOWN from hinge ratherthanarchedUP, doorrestunchanged andgoldleverconnected;4 ONLY goldbell atLEFT of doorx695,y526 has itsclapper leanRIGHT instead straightdown, bellbodyoriginal;5 ONLY ONE near-tip square indentation ofBLUE upperrightwaffleblade centeredx911,y50 gains a diagonal raisedbar across itsinternal square, bladeoutergrid andothercells originalexact. One changedobject perclue; no swaps ofseparateobjects or changingseveralgridcells/seeds, no microscopicgrain. No newprops/text, noframe/restylechange. Cleanjoined actualmechanisms with inspectable localized shapes.\"}}, {\"file\": \"prompt-refine.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"Precise targeted edit attached1672x941 Waffle Windmill. ONLY TWO local SINGLEOBJECT changes:1 bigforeground strawberry's cream-ringed seedhole centeredx281,y767 changes itsoutercreamring from OVAL into clear DIAMOND, retain darkcenter, samepalette/size; allotherseeds/fruit intact.2 ONLY center of fox's basket FRONT horizontal wickerband atx1405,y536 now weaves UNDER its ONE central verticalwickerstrip instead OVER, obvious clean crossing atcenter, keepbasketoutline/allotherwickerstrands/basketfruit/fox exact. Preserve entireframe/painting/grainfree, allotherpixels unchanged. Do not editnearbydoorbell/latch, do notchangeeverybasketstrand. Onechangedobjectregion perclue.\"}}, {\"file\": \"prompt-mechanisms.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"Edit ONLY attached original full 1672x941 Waffle Windmill. Two small mechanical/relationship clues only: central gold axle cap at709,193 gains a bold single horizontal screwdriver slot across its face, preserving surrounding brown wheel spokes and cap contour. On fox's basket at1400,535, ONLY ONE central horizontal woven band now ducks underneath ONE vertical strand, making a clear interruption of that horizontal band by continuous vertical strand. All other basket strands, strawberry cargo and fox exact. Preserve everything else, native canvas and impasto. No contact sheet.\"}}, {\"file\": \"prompt-eye.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"ONLY local edit of attached1672x941 full original Waffle Windmill painting: fox's visible closed smiling eye centered1307,486 opens into a small expressive round dark brown eye with one highlight. Preserve surrounding fur, eyelid location, eyebrow, head outline, ears, muzzle and nose exactly. No other changes anywhere. Output full same frame, native paint style.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "Precise-object-edit Dreamerie Waffle Windmill attached. Preserve exactnativewideframe1672x941 paintedgrainfree, foxanatomy, scene/fruit/water/bridge/windmillbladecolors/placement. Only FIVE localized SINGLEOBJECT changes:1 ONLY round porthole bluewindow x715,y354 changes its woodcrossbar to a DIAGONALX rather thanvertical-horizontalplus, sameouterwindow;2 ONLY foregroundgiantstrawberry's one cream-ringed seedhole x281,y766 becomes cream diamond-ringed seedhole, allotherseeds untouched;3 ONLY windmilldoor's smallgold latch x730,y532 pointsDOWN from hinge ratherthanarchedUP, doorrestunchanged andgoldleverconnected;4 ONLY goldbell atLEFT of doorx695,y526 has itsclapper leanRIGHT instead straightdown, bellbodyoriginal;5 ONLY ONE near-tip square indentation ofBLUE upperrightwaffleblade centeredx911,y50 gains a diagonal raisedbar across itsinternal square, bladeoutergrid andothercells originalexact. One changedobject perclue; no swaps ofseparateobjects or changingseveralgridcells/seeds, no microscopicgrain. No newprops/text, noframe/restylechange. Cleanjoined actualmechanisms with inspectable localized shapes."
+      }
+    },
+    {
+      "file": "prompt-refine.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "Precise targeted edit attached1672x941 Waffle Windmill. ONLY TWO local SINGLEOBJECT changes:1 bigforeground strawberry's cream-ringed seedhole centeredx281,y767 changes itsoutercreamring from OVAL into clear DIAMOND, retain darkcenter, samepalette/size; allotherseeds/fruit intact.2 ONLY center of fox's basket FRONT horizontal wickerband atx1405,y536 now weaves UNDER its ONE central verticalwickerstrip instead OVER, obvious clean crossing atcenter, keepbasketoutline/allotherwickerstrands/basketfruit/fox exact. Preserve entireframe/painting/grainfree, allotherpixels unchanged. Do not editnearbydoorbell/latch, do notchangeeverybasketstrand. Onechangedobjectregion perclue."
+      }
+    },
+    {
+      "file": "prompt-mechanisms.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "Edit ONLY attached original full 1672x941 Waffle Windmill. Two small mechanical/relationship clues only: central gold axle cap at709,193 gains a bold single horizontal screwdriver slot across its face, preserving surrounding brown wheel spokes and cap contour. On fox's basket at1400,535, ONLY ONE central horizontal woven band now ducks underneath ONE vertical strand, making a clear interruption of that horizontal band by continuous vertical strand. All other basket strands, strawberry cargo and fox exact. Preserve everything else, native canvas and impasto. No contact sheet."
+      }
+    },
+    {
+      "file": "prompt-eye.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "ONLY local edit of attached1672x941 full original Waffle Windmill painting: fox's visible closed smiling eye centered1307,486 opens into a small expressive round dark brown eye with one highlight. Preserve surrounding fur, eyelid location, eyebrow, head outline, ears, muzzle and nose exactly. No other changes anywhere. Output full same frame, native paint style."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "window-cross",
+      "label": "The round window cross turns diagonally.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 676,
+        "y": 314,
+        "width": 77,
+        "height": 86
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "diamond-seed",
+      "label": "The cream-ringed strawberry seed becomes a diamond.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 250,
+        "y": 734,
+        "width": 58,
+        "height": 70
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "open-fox-eye",
+      "label": "The fox opens its eye.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1295,
+        "y": 470,
+        "width": 29,
+        "height": 29
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "slotted-axle",
+      "label": "The windmill axle cap has a horizontal screw slot.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 685,
+        "y": 174,
+        "width": 48,
+        "height": 47
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "waffle-brace",
+      "label": "One blue waffle cell gains a diagonal brace.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 884,
+        "y": 24,
+        "width": 51,
+        "height": 41
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Source generations and bounded composites inspected; five isolated objects. Difficulty labels are hypotheses. No human or physical-phone fairness validation.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

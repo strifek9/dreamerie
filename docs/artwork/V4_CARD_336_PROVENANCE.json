@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-336",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-336-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-336-original-v4.png",
+    "sha256": "5B3430646D4CD49F62323CCBD78C56456C53B1C5704BF482A94582D2D443EB3B",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-336-altered-source-v4.png",
+    "sha256": "DEC096897D24BEFC59E2B1CA3665838FC27E11EFC0CB3484D60738D527920BA1",
+    "prompt": "[{\"file\": \"prompt-refine.json\", \"content\": {\"prompt\": \"Exact original1672x941 painting. ONE localized change only: on ceramic pitcher far left, place a small dark teal crescent painted on blank cream patch centered native x68 y376, about30x38 pixels. Keep ALL existing leaf motifs exactly original unchanged, every leaf stem, handle, rim, entire scene identical. Crescent is an internal painted surface motif on same pitcher, no new separate object. All others original.\"}}, {\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact original1672x941 painting with precisely FIVE localized single-object changes, allotherframe/style original.1 right wooden rope spool front opening native1386740 becomes diamond hole instead of round; rest original.2 tiny window TOPRIGHT pane native982184 gains diagonal wooden brace ONLY within that pane, other3panes/window exact.3 teal chest front clasp native1504539 flips horizontal instead of vertical, SAME clasp onehardware and attachments.4 hanging rolled rug near805528 its spiral internal opening becomes triangular folded cavity; same circular outer roll/rug exact.5 ceramic pitcher LEFT front broad leaf motif near119557 rotates horizontal, allotherpaintedleaves original. No multipleleafswap, no rug rope edits, no new props.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt-refine.json",
+      "content": {
+        "prompt": "Exact original1672x941 painting. ONE localized change only: on ceramic pitcher far left, place a small dark teal crescent painted on blank cream patch centered native x68 y376, about30x38 pixels. Keep ALL existing leaf motifs exactly original unchanged, every leaf stem, handle, rim, entire scene identical. Crescent is an internal painted surface motif on same pitcher, no new separate object. All others original."
+      }
+    },
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact original1672x941 painting with precisely FIVE localized single-object changes, allotherframe/style original.1 right wooden rope spool front opening native1386740 becomes diamond hole instead of round; rest original.2 tiny window TOPRIGHT pane native982184 gains diagonal wooden brace ONLY within that pane, other3panes/window exact.3 teal chest front clasp native1504539 flips horizontal instead of vertical, SAME clasp onehardware and attachments.4 hanging rolled rug near805528 its spiral internal opening becomes triangular folded cavity; same circular outer roll/rug exact.5 ceramic pitcher LEFT front broad leaf motif near119557 rotates horizontal, allotherpaintedleaves original. No multipleleafswap, no rug rope edits, no new props."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "horizontal-clasp",
+      "label": "The chest clasp lies horizontally.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1437,
+        "y": 440,
+        "width": 169,
+        "height": 164
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "window-brace",
+      "label": "The window\u2019s upper-right pane gains a diagonal brace.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 959,
+        "y": 145,
+        "width": 48,
+        "height": 61
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "triangle-roll",
+      "label": "The hanging rug\u2019s inner fold becomes triangular.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 768,
+        "y": 481,
+        "width": 67,
+        "height": 99
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "diamond-spool",
+      "label": "The rope spool\u2019s opening becomes a diamond.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1355,
+        "y": 697,
+        "width": 61,
+        "height": 94
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "crescent-pitcher",
+      "label": "The pitcher bears a teal crescent.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 64,
+        "y": 397,
+        "width": 48,
+        "height": 55
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five paired crops, full composite and 390-pixel stacked pair inspected. Single-object changes; difficulty hypotheses only. Root browser/hit QA and human fairness remain pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

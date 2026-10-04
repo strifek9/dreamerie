@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-346",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-346-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-346-original-v4.png",
+    "sha256": "7587545D947A954A8C814EB6176ACDCA1D6C7835DA8C95E9AC78E61ECB2CB973",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-346-altered-source-v4.png",
+    "sha256": "8FDA43038A94DF2329A247A14D7939CBBF86CEE710CA197CDB27CBD8298709DE",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exactly original girl mending broken red glowing rainbow ladder rung with ribbon. Preserve girl face/anatomy/hands/pose, broken rung/core premise, frame/style and all other rainbow rungs. Exactly FIVE one-object localized differences: (1) girl's HAIR ribbon LEFT dangling tail curls into a clear attached spiral at tip, same headband/other tail/hair exact; (2) LEFT wooden tool CADDY carrying handle bows upward at center into an arch, same end joints/box/ribbons; (3) scissors on lower LEFT floor nearer bottom oval finger ring becomes a clear diamond-shaped ring, other ring/blades exact; (4) connected BLUE floor ribbon in lower-middle its central tall fold is tied into one broad overhand knot, same ribbon ends/otheryellow ribbons; (5) small cream BOWL at bottom middle has one bold blue continuous crescent motif on its FRONT instead of existing floral pattern, preserve bowl rim and all loose brass parts inside. Five one-object internal/action/mechanism clues; no buttons/swaps or grain.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exactly original girl mending broken red glowing rainbow ladder rung with ribbon. Preserve girl face/anatomy/hands/pose, broken rung/core premise, frame/style and all other rainbow rungs. Exactly FIVE one-object localized differences: (1) girl's HAIR ribbon LEFT dangling tail curls into a clear attached spiral at tip, same headband/other tail/hair exact; (2) LEFT wooden tool CADDY carrying handle bows upward at center into an arch, same end joints/box/ribbons; (3) scissors on lower LEFT floor nearer bottom oval finger ring becomes a clear diamond-shaped ring, other ring/blades exact; (4) connected BLUE floor ribbon in lower-middle its central tall fold is tied into one broad overhand knot, same ribbon ends/otheryellow ribbons; (5) small cream BOWL at bottom middle has one bold blue continuous crescent motif on its FRONT instead of existing floral pattern, preserve bowl rim and all loose brass parts inside. Five one-object internal/action/mechanism clues; no buttons/swaps or grain."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "handle",
+      "label": "The tool caddy handle arches upward.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 49,
+        "y": 465,
+        "width": 184,
+        "height": 58
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "hair",
+      "label": "The hair ribbon left tail curls into a spiral.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 421,
+        "y": 250,
+        "width": 70,
+        "height": 78
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "ring",
+      "label": "The nearer scissors ring becomes diamond-shaped.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 55,
+        "y": 766,
+        "width": 113,
+        "height": 56
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "knot",
+      "label": "The blue floor ribbon forms an overhand knot.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 178,
+        "y": 767,
+        "width": 169,
+        "height": 107
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "bowl",
+      "label": "The small bowl front has a blue crescent.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 448,
+        "y": 789,
+        "width": 53,
+        "height": 32
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered compositor/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

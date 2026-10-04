@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-201",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-201-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-201-original-v4.png",
+    "sha256": "F90C478F916FF38FBEC6C3A9FC7B2ED3D1FD5B735FC4A65C05DC9ACAC1A54565",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-201-altered-source-v4.png",
+    "sha256": "3A5BD8648D732B37FFEC8BD6AA38C8184AF51C05466FE55B5C3C203007726577",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise native1672x941 localizedpainting edit angryaccordionroom. Preserve accordionfaceeyeskeyboardallchairs anatomy composition. Five SINGLEOBJECTclues:1 beige BELLOWS PATCH atx977y488 has bold centereddiagonalX seam insteadplain, samepatch;2 STRAPBUCKLE leftx490y431 changes rectangularaperture to crescentaperture, sameoutergoldframe/leatherstrap;3 shelfWHITE TEACUP upperrightx1450y122 itsRIGHTHANDLE opensbottomCgap insteadclosedloop, samecupflowers/saucer;4 TABLEFORK farleftx131y438 tinescurvedUP asconnectedhook insteadstraight, sameforkshaft/table;5 accordion RIGHTFOOT foremostwoodtoe x987y805 rotatesupward toesbent insteadflat, onefootonlyleftfootunchanged. No swaps noextraobjects noglobalchanges, physicalconnections coherent.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise native1672x941 localizedpainting edit angryaccordionroom. Preserve accordionfaceeyeskeyboardallchairs anatomy composition. Five SINGLEOBJECTclues:1 beige BELLOWS PATCH atx977y488 has bold centereddiagonalX seam insteadplain, samepatch;2 STRAPBUCKLE leftx490y431 changes rectangularaperture to crescentaperture, sameoutergoldframe/leatherstrap;3 shelfWHITE TEACUP upperrightx1450y122 itsRIGHTHANDLE opensbottomCgap insteadclosedloop, samecupflowers/saucer;4 TABLEFORK farleftx131y438 tinescurvedUP asconnectedhook insteadstraight, sameforkshaft/table;5 accordion RIGHTFOOT foremostwoodtoe x987y805 rotatesupward toesbent insteadflat, onefootonlyleftfootunchanged. No swaps noextraobjects noglobalchanges, physicalconnections coherent."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The bellows patch has a cross seam",
+      "difficulty": "Easy",
+      "box": {
+        "x": 920,
+        "y": 433,
+        "width": 110,
+        "height": 113
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The right wooden foot curls upward",
+      "difficulty": "Medium",
+      "box": {
+        "x": 938,
+        "y": 737,
+        "width": 127,
+        "height": 110
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The strap buckle has a crescent aperture",
+      "difficulty": "Hard",
+      "box": {
+        "x": 458,
+        "y": 396,
+        "width": 66,
+        "height": 67
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The table fork tines curl upward",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 74,
+        "y": 397,
+        "width": 75,
+        "height": 53
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The shelf cup handle opens",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1471,
+        "y": 87,
+        "width": 45,
+        "height": 53
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "inspected",
+    "fivePairedCrops": "five single-object clues inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "difficulty": "hypotheses; parent browser and human playtest pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

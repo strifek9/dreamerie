@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-224",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-224-replacement-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-224-original-v4.png",
+    "sha256": "3BAF45946B1D22BE138EA72B93B07E28B538623B584AC1553CF49FC5372E43FA",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-224-altered-source-v4.png",
+    "sha256": "560A101F382DB6D04F386C6D6BF9ED19C0F39BB34C839E07B107A6AC63E1165F",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Exact native1672x941 painting, preserve all except FIVE independentlyselectable single-object clues: 1 giant blue paper whale ONLY black pupil near(370,289) becomes a horizontal slit, golden iris and whale original. 2 mechanical mouse ONLY continuous pink tail near(1231,519) curls inward opposite direction (curl faces RIGHT rather than left), unchanged attachment at(1180,573), coherent single tail. 3 brass blue-thread spool ONLY central hole at(876,716) becomes a STAR-shaped opening, spool/thread exact. 4 ONE hanging cathedral lantern inside whale near(950,300) tilts LEFT on its same short hanging chain, other lanterns architecture exact. 5 mouse red neck scarf ONLY free right end near(1174,482) points UPWARD rather than downward, knot/leftside unchanged. Native composition anatomy painterly style/light preserved. No multiple-object color/position swaps; all other objects originalexact.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Exact native1672x941 painting, preserve all except FIVE independentlyselectable single-object clues: 1 giant blue paper whale ONLY black pupil near(370,289) becomes a horizontal slit, golden iris and whale original. 2 mechanical mouse ONLY continuous pink tail near(1231,519) curls inward opposite direction (curl faces RIGHT rather than left), unchanged attachment at(1180,573), coherent single tail. 3 brass blue-thread spool ONLY central hole at(876,716) becomes a STAR-shaped opening, spool/thread exact. 4 ONE hanging cathedral lantern inside whale near(950,300) tilts LEFT on its same short hanging chain, other lanterns architecture exact. 5 mouse red neck scarf ONLY free right end near(1174,482) points UPWARD rather than downward, knot/leftside unchanged. Native composition anatomy painterly style/light preserved. No multiple-object color/position swaps; all other objects originalexact."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "slit-pupil",
+      "label": "The whale\u2019s pupil narrows to a slit.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 341,
+        "y": 267,
+        "width": 68,
+        "height": 46
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "curled-tail",
+      "label": "The mouse\u2019s tail curls inward.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1194,
+        "y": 445,
+        "width": 114,
+        "height": 144
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "star-spool",
+      "label": "The spool has a star-shaped center hole.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 846,
+        "y": 686,
+        "width": 60,
+        "height": 67
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "tilted-lantern",
+      "label": "One cathedral lantern tilts left.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 899,
+        "y": 219,
+        "width": 62,
+        "height": 109
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "raised-scarf",
+      "label": "The scarf\u2019s free end points upward.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1136,
+        "y": 436,
+        "width": 57,
+        "height": 73
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five paired crops, full composite and 390-pixel stacked pair inspected. Single-object changes; difficulty hypotheses only. Root browser/hit QA and human fairness remain pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

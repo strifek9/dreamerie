@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-192",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-192-original-v2.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-192-original-v4.png",
+    "sha256": "33466684A0441A80F4130C9ABD370A65A6B65B5A1E14C566006CF8D4E38FE0CF",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-192-altered-source-v4.png",
+    "sha256": "74B1B0FF1144F764CE1C3A2081F49151F14760F19146CD6AF2D6BE29859F70CD",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Preserve exact native 1672x941 painting, composition and all original details except FIVE isolated single-object edits. 1 Sunflower robot ONLY left eye near (582,207) opens as round black eye, right eye unchanged. 2 Clock left closed eye near (1055,337) opens into a large oval dark eye hole; right eye unchanged. 3 Oil can long pouring nozzle near (702,733) bends DOWNWARD instead of upward, same connected tube starting at (635,770), can body/handle original exact. 4 Bottom exposed brass cog near (774,481) has SQUARE central opening instead of round, teeth and neighboring gears exact. 5 Detached rectangular brass maintenance cover bottom foreground near (863,744): ONLY its top-right screw head near (911,672) changes from round slotted to hexagonal, all other screws exact. Keep all clock hands exact, anatomy/limbs, staircase, shadows, shelves, lighting and framing untouched. Each clue single independently selectable object; no swaps.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Preserve exact native 1672x941 painting, composition and all original details except FIVE isolated single-object edits. 1 Sunflower robot ONLY left eye near (582,207) opens as round black eye, right eye unchanged. 2 Clock left closed eye near (1055,337) opens into a large oval dark eye hole; right eye unchanged. 3 Oil can long pouring nozzle near (702,733) bends DOWNWARD instead of upward, same connected tube starting at (635,770), can body/handle original exact. 4 Bottom exposed brass cog near (774,481) has SQUARE central opening instead of round, teeth and neighboring gears exact. 5 Detached rectangular brass maintenance cover bottom foreground near (863,744): ONLY its top-right screw head near (911,672) changes from round slotted to hexagonal, all other screws exact. Keep all clock hands exact, anatomy/limbs, staircase, shadows, shelves, lighting and framing untouched. Each clue single independently selectable object; no swaps."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "clock-eye",
+      "label": "The clock opens one eye.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1009,
+        "y": 266,
+        "width": 88,
+        "height": 101
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "sunflower-eye",
+      "label": "The sunflower opens one eye.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 554,
+        "y": 174,
+        "width": 41,
+        "height": 48
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "down-nozzle",
+      "label": "The oil can\u2019s nozzle bends downward.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 631,
+        "y": 686,
+        "width": 145,
+        "height": 144
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "square-cog",
+      "label": "The lower cog has a square opening.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 749,
+        "y": 456,
+        "width": 46,
+        "height": 52
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "hex-screw",
+      "label": "The cover\u2019s upper-right screw becomes hexagonal.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 891,
+        "y": 652,
+        "width": 32,
+        "height": 34
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five paired crops, full composite and 390-pixel stacked pair inspected. Single-object changes; difficulty hypotheses only. Root browser/hit QA and human fairness remain pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

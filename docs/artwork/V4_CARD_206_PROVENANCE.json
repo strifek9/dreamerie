@@ -1,0 +1,110 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-206",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-206-original-v2.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-206-original-v4.png",
+    "sha256": "8DE6459A5E077E638DC9617538E3F60C2F18811E7B74F252D6AEB2454030177B",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-206-altered-source-v4.png",
+    "sha256": "D573D7B6701F9CACC0C5716452302F79B79CC3FF12B22ADAA253A62F5DF4E00F",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit the referenced original painting locally, preserve exact composition, faces, hands, anatomy, warm painterly style and all objects. Exactly five localized single-object differences: 1 the sleeping cat opens its visible left eye (viewer left eye) into a relaxed green slit, other eye stays closed. 2 The wooden umbrella hook at top center curls into a closed ring instead of its open hook, shaft unchanged. 3 The largest raindrop near lower center of the dark rainy umbrella panel becomes a small upward-pointing clear icicle, other drops untouched. 4 On the woman's large round cardigan button near left center, change its internal sewing thread into a clear X crossing, keep button same. 5 On the green jar lid at lower right, add one broad crescent-shaped recessed vent cutout within the lid top, jar untouched. No extra changes, no changed pairs, no global regeneration. Keep every edit clean and substantial, matching the painting.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit the referenced original painting locally, preserve exact composition, faces, hands, anatomy, warm painterly style and all objects. Exactly five localized single-object differences: 1 the sleeping cat opens its visible left eye (viewer left eye) into a relaxed green slit, other eye stays closed. 2 The wooden umbrella hook at top center curls into a closed ring instead of its open hook, shaft unchanged. 3 The largest raindrop near lower center of the dark rainy umbrella panel becomes a small upward-pointing clear icicle, other drops untouched. 4 On the woman's large round cardigan button near left center, change its internal sewing thread into a clear X crossing, keep button same. 5 On the green jar lid at lower right, add one broad crescent-shaped recessed vent cutout within the lid top, jar untouched. No extra changes, no changed pairs, no global regeneration. Keep every edit clean and substantial, matching the painting."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The cat opens one green eye",
+      "difficulty": "Easy",
+      "box": {
+        "x": 139,
+        "y": 620,
+        "width": 48,
+        "height": 36
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The umbrella handle closes into a ring",
+      "difficulty": "Medium",
+      "box": {
+        "x": 910,
+        "y": 104,
+        "width": 158,
+        "height": 179
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "A rain drop becomes a tapered icicle",
+      "difficulty": "Hard",
+      "box": {
+        "x": 868,
+        "y": 434,
+        "width": 38,
+        "height": 78
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The cardigan button has crossed thread",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 357,
+        "y": 439,
+        "width": 51,
+        "height": 54
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The jar lid has an oval vent",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1563,
+        "y": 526,
+        "width": 78,
+        "height": 31
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "visually inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "nativePreflight": "source equals actual original size, five nonoverlapping boxes",
+    "difficulty": "hypotheses; human and browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

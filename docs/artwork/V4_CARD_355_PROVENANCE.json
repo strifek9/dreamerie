@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-355",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-355-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-355-original-v4.png",
+    "sha256": "326E22761920FC52CFCC666E54641357CE3796C1D702D263FC47585BCD6640CB",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-355-altered-source-v4.png",
+    "sha256": "DD55FD6647BD0E4452D1C155E7DB94090303DA598399DA8A7ECADEBE190B3DF6",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact native1672x941 painterly copper robot bottling blue sigh in glass bottle workshop. Five isolated ONE-object edits:1 brass tray front face x908y861 reflects a broad blue crescent, tray rim and three corks exact;2 globe stand base front x315y745 gains engraved gold star, globe above exact;3 single compass/caliper hinge pivot on hanging tool x309y143 has a strong X slot, jaws positions exact;4 metal tongs large left oval handle opening x1152y846 has one diagonal steel crossbar through opening, other handle and shaft exact;5 chest latch loop x1477y781 becomes triangular loop attached to same mount, chest exact. Preserve robot anatomy/fingers/eyes, bottle/blue sigh, all tool and cork positions, frame/paint style. No other changes.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-355-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact native1672x941 painterly copper robot bottling blue sigh in glass bottle workshop. Five isolated ONE-object edits:1 brass tray front face x908y861 reflects a broad blue crescent, tray rim and three corks exact;2 globe stand base front x315y745 gains engraved gold star, globe above exact;3 single compass/caliper hinge pivot on hanging tool x309y143 has a strong X slot, jaws positions exact;4 metal tongs large left oval handle opening x1152y846 has one diagonal steel crossbar through opening, other handle and shaft exact;5 chest latch loop x1477y781 becomes triangular loop attached to same mount, chest exact. Preserve robot anatomy/fingers/eyes, bottle/blue sigh, all tool and cork positions, frame/paint style. No other changes.",
+        "reference": "D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-355-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The tray reflects a blue crescent",
+      "difficulty": "Easy",
+      "box": {
+        "x": 798,
+        "y": 829,
+        "width": 211,
+        "height": 64
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The chest latch has a triangular loop",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1445,
+        "y": 753,
+        "width": 60,
+        "height": 59
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The tongs handle has a diagonal crossbar",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1123,
+        "y": 828,
+        "width": 53,
+        "height": 28
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The globe stand has a gold star",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 292,
+        "y": 713,
+        "width": 37,
+        "height": 24
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The hanging caliper pivot has an X slot",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 297,
+        "y": 134,
+        "width": 27,
+        "height": 28
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390 stacked pair. Five independently selectable localized object clues. Native dimensions, five bounded nonoverlapping boxes and exact original pixels outside verified. Difficulty estimates unvalidated; root compositor/game, human difficulty and physical phone approval pending. Full prompt/source hash chain retained.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

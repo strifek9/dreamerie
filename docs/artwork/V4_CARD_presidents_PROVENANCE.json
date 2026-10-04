@@ -1,0 +1,110 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-presidents",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/holidays-painted-v1/presidents-original.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-presidents-original-v4.png",
+    "sha256": "EC369A46E0321694DD33CC742A8AD2B168C630644EE92EB8F4D8C05D7A00FA65",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-presidents-altered-source-v4.png",
+    "sha256": "54265B48DC2E56F228BBFD747FBCEC5B1F4D92EE52CD6A99F742C0CFB0836FD1",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact published Presidents' Day impossible library painting locally. Preserve ORIGINAL Washington/Lincoln wooden bookend faces, bodies and original architectural scene EXACTLY (no new political figures). Five single-object targets: 1 brass inkwell's round hinged lid at lower-left x118 y647 rotates downward halfway toward closing over ink mouth, keep lid connected to original hinge and inkwell body unchanged; 2 white quill's far-left feather tip near x318 y741 curls upward into a small hooked curl, remainder feather shaft/nib unchanged; 3 green desk lamp's dangling oval pull weight near x1572 y455 becomes a heart-shaped brass pull weight, chain unchanged; 4 the square brass bookmark plate near x1095 y675 has only its engraved laurel motif become an engraved crescent, plate/ribbon unchanged; 5 the gold leaf branch motif on leaning blue book beside left bookend at x453 y565 becomes a gold spiral vine motif, book unchanged. Five separate single-object changes, no swaps/additions, exact frame and painterly finish. Keep local clean contour joins.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact published Presidents' Day impossible library painting locally. Preserve ORIGINAL Washington/Lincoln wooden bookend faces, bodies and original architectural scene EXACTLY (no new political figures). Five single-object targets: 1 brass inkwell's round hinged lid at lower-left x118 y647 rotates downward halfway toward closing over ink mouth, keep lid connected to original hinge and inkwell body unchanged; 2 white quill's far-left feather tip near x318 y741 curls upward into a small hooked curl, remainder feather shaft/nib unchanged; 3 green desk lamp's dangling oval pull weight near x1572 y455 becomes a heart-shaped brass pull weight, chain unchanged; 4 the square brass bookmark plate near x1095 y675 has only its engraved laurel motif become an engraved crescent, plate/ribbon unchanged; 5 the gold leaf branch motif on leaning blue book beside left bookend at x453 y565 becomes a gold spiral vine motif, book unchanged. Five separate single-object changes, no swaps/additions, exact frame and painterly finish. Keep local clean contour joins."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The inkwell lid lowers toward closing",
+      "difficulty": "Easy",
+      "box": {
+        "x": 51,
+        "y": 592,
+        "width": 137,
+        "height": 116
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The white quill tip curls upward",
+      "difficulty": "Medium",
+      "box": {
+        "x": 299,
+        "y": 702,
+        "width": 141,
+        "height": 85
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The book's gold branch curls into a spiral",
+      "difficulty": "Hard",
+      "box": {
+        "x": 414,
+        "y": 502,
+        "width": 77,
+        "height": 112
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The bookmark plate bears a crescent",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1053,
+        "y": 638,
+        "width": 88,
+        "height": 78
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The lamp pull weight becomes a heart",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1550,
+        "y": 423,
+        "width": 44,
+        "height": 47
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "visually inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "nativePreflight": "source equals actual original size, five nonoverlapping boxes",
+    "difficulty": "hypotheses; human and browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

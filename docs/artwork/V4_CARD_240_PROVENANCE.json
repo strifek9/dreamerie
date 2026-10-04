@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-240",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-240-replacement-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-240-original-v4.png",
+    "sha256": "E312808A958A885A2487E15CB96123237603939AA428DBFA88C299BB938F7682",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-240-altered-source-v4.png",
+    "sha256": "78B356789EFB974D42BC5F6B3072AC1D1080F42A09358B02CF374A1B53DC6F2E",
+    "prompt": "[{\"file\": \"prompt-refine.json\", \"content\": {\"prompt\": \"One edit ONLY. Brass curtain ring held in raised kangaroo hand at native(834,172): clearly change its smooth circular/oval exposed curve into an angular SQUARE ring with visible straight right edge and sharp top-right/lower-right corners. Same brass thickness and approximate size, held behind same fingers, cloth passes through same one ring. Hand, cloth and all other image pixels same original painting. Fullnative1672x941 framing/style unchanged.\"}}, {\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Native1672x941 exactpainting five localized SINGLEobject changes, all else preserved. 1 kangaroo ONLY leftmost visible eye near611136 closes into curved happy slit, other eye original. 2 held brass curtain ring near836172 becomes angular hexagonal ring, hand/fingers/grip exact. 3 ONLY right theater chair inside pouch near686468 its cream upholstery tuft pattern becomes bold diamond lattice rather than individual round tufts, other chair exact. 4 hanging gold tassel near886609 ONLY fringe bends LEFT sideways rather than straight down, cap/cord exact. 5 wall lantern near270148 ONLY lower inner glass pane gains diagonal X metalbrace, lantern silhouette/light exact. No paired swaps or separateobjectmergedclues; preserve anatomy curtain landscape clothing style/framing.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt-refine.json",
+      "content": {
+        "prompt": "One edit ONLY. Brass curtain ring held in raised kangaroo hand at native(834,172): clearly change its smooth circular/oval exposed curve into an angular SQUARE ring with visible straight right edge and sharp top-right/lower-right corners. Same brass thickness and approximate size, held behind same fingers, cloth passes through same one ring. Hand, cloth and all other image pixels same original painting. Fullnative1672x941 framing/style unchanged."
+      }
+    },
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Native1672x941 exactpainting five localized SINGLEobject changes, all else preserved. 1 kangaroo ONLY leftmost visible eye near611136 closes into curved happy slit, other eye original. 2 held brass curtain ring near836172 becomes angular hexagonal ring, hand/fingers/grip exact. 3 ONLY right theater chair inside pouch near686468 its cream upholstery tuft pattern becomes bold diamond lattice rather than individual round tufts, other chair exact. 4 hanging gold tassel near886609 ONLY fringe bends LEFT sideways rather than straight down, cap/cord exact. 5 wall lantern near270148 ONLY lower inner glass pane gains diagonal X metalbrace, lantern silhouette/light exact. No paired swaps or separateobjectmergedclues; preserve anatomy curtain landscape clothing style/framing."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "closed-eye",
+      "label": "The kangaroo closes one eye.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 583,
+        "y": 107,
+        "width": 58,
+        "height": 50
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "swept-tassel",
+      "label": "The tassel\u2019s fringe sweeps left.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 812,
+        "y": 586,
+        "width": 107,
+        "height": 87
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "braced-lantern",
+      "label": "The wall lantern gains an X brace.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 239,
+        "y": 117,
+        "width": 53,
+        "height": 63
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "lattice-chair",
+      "label": "The right theater chair has a diamond lattice.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 657,
+        "y": 440,
+        "width": 58,
+        "height": 50
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "square-ring",
+      "label": "The held curtain ring becomes square.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 814,
+        "y": 133,
+        "width": 52,
+        "height": 72
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five paired crops, full composite and 390-pixel stacked pair inspected. Single-object changes; difficulty hypotheses only. Root browser/hit QA and human fairness remain pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

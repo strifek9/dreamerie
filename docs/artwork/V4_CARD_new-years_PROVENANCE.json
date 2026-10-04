@@ -1,0 +1,107 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-new-years",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/holidays-painted-v1/new-years-original.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-new-years-original-v4.png",
+    "sha256": "72FE4E2713FB15B23D4C3A15716383074FD9EC39C122E9186589091DCAA52056",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-new-years-altered-source-v4.png",
+    "sha256": "BCF55FA27DA3C46819EA9CCB8AD95A14348F71BDA4777778FB7B29D53EE82726",
+    "prompt": "[{\"file\": \"preserve-prompt.json\", \"content\": {\"operation\": \"Original preservation assembly\", \"script\": \"preserve.py\", \"purpose\": \"Five one-artifact changes only. Human foreground restored in front of open lantern; original inner glowinglight. Horn interior reflection ellipse retains rim/shaft, winterpage corner only preserves scene andothercalendarpanels, hat apex only preserves chair/blanket/otherhat. Allpeople/dog original elsewhere.\", \"scriptSHA256\": \"460a209858e8a5ea90b6e4e292e54c9c459b5432a243c6be306a1a53c55fd7f9\"}}, {\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit EXACT1672x941 attached NEW YEAR painting couple+dog on snowy porch and giant calendar flowingthrough seasons. PRESERVE ALL people/dog face/anatomy/hands/fur/clothing andholidaytheme exact. FIVE SINGLE object localized edits:1) GOLD PARTY HAT sitting on chair lowerLEFT x191,y747: ONLY pointed APEX aroundx193,y682 curls into a hollowrolled goldlip, samehatbody/position, doghat exact.2) WALL LANTERN above couple x451,y134: its FRONT GLASS DOOR hinges OPEN to LEFT, samehousing/hanger andinnerround glowinglight exact.3) gold DOOR KNOCKER upperLEFT x102,y134: hangingring becomes onecontinuous FIGURE-EIGHT loop, same mountplate/wreath exact.4) GOLD PARTY HORN bell nearwomanmouth x777,y299: a clear pale CRESCENT REFLECTION inside the SAME roundbell/rim, samehornstem/hand/face exact.5) FIRST WINTER CALENDAR PANEL: ONLY its UPPERRIGHT whitecorner aroundx754,y54 rolls UP into hollowpapercurl; exactperforation elsewhere andwinterforest/othersseasonpanels unchanged. No snow/tree/color swaps, no extraobjects, no facechanges, no dog/hat changes, paintedoriginalstyle.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "preserve-prompt.json",
+      "content": {
+        "operation": "Original preservation assembly",
+        "script": "preserve.py",
+        "purpose": "Five one-artifact changes only. Human foreground restored in front of open lantern; original inner glowinglight. Horn interior reflection ellipse retains rim/shaft, winterpage corner only preserves scene andothercalendarpanels, hat apex only preserves chair/blanket/otherhat. Allpeople/dog original elsewhere.",
+        "scriptSHA256": "460a209858e8a5ea90b6e4e292e54c9c459b5432a243c6be306a1a53c55fd7f9"
+      }
+    },
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit EXACT1672x941 attached NEW YEAR painting couple+dog on snowy porch and giant calendar flowingthrough seasons. PRESERVE ALL people/dog face/anatomy/hands/fur/clothing andholidaytheme exact. FIVE SINGLE object localized edits:1) GOLD PARTY HAT sitting on chair lowerLEFT x191,y747: ONLY pointed APEX aroundx193,y682 curls into a hollowrolled goldlip, samehatbody/position, doghat exact.2) WALL LANTERN above couple x451,y134: its FRONT GLASS DOOR hinges OPEN to LEFT, samehousing/hanger andinnerround glowinglight exact.3) gold DOOR KNOCKER upperLEFT x102,y134: hangingring becomes onecontinuous FIGURE-EIGHT loop, same mountplate/wreath exact.4) GOLD PARTY HORN bell nearwomanmouth x777,y299: a clear pale CRESCENT REFLECTION inside the SAME roundbell/rim, samehornstem/hand/face exact.5) FIRST WINTER CALENDAR PANEL: ONLY its UPPERRIGHT whitecorner aroundx754,y54 rolls UP into hollowpapercurl; exactperforation elsewhere andwinterforest/othersseasonpanels unchanged. No snow/tree/color swaps, no extraobjects, no facechanges, no dog/hat changes, paintedoriginalstyle."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "The wall lantern's glass door hinges open to the left.",
+      "box": {
+        "x": 371,
+        "y": 60,
+        "width": 144,
+        "height": 154
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The first winter calendar panel's upper right corner curls upward.",
+      "box": {
+        "x": 730,
+        "y": 8,
+        "width": 77,
+        "height": 116
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The chair's gold party hat tip curls into a hollow lip.",
+      "box": {
+        "x": 165,
+        "y": 668,
+        "width": 65,
+        "height": 77
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "The door knocker's ring forms a continuous figure eight.",
+      "box": {
+        "x": 72,
+        "y": 95,
+        "width": 63,
+        "height": 94
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "The party horn bell's inner reflection changes from a spiral to a crescent.",
+      "box": {
+        "x": 750,
+        "y": 268,
+        "width": 57,
+        "height": 59
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Authoritative holiday original1672x941. Five distinct single artifacts; theme/people/dog/seasons preserved by original assembly. Horn check verifies actual original spiral highlight versus generated crescent, not a missed target. Original outerrim/shaft and lantern light/human foreground restored. Paper/hat actual curled lip clean. Full/native five paired crops/390 comparison inspected; horn inner motif small but coherent on native, difficulty/root joins pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

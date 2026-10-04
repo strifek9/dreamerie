@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-juneteenth",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/holidays-painted-v1/juneteenth-original.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-juneteenth-original-v4.png",
+    "sha256": "3479951B9D263C692ADA66BA3B75266AAE4A3C21EFBD1B3DE12EBF16C92D1793",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-juneteenth-altered-source-v4.png",
+    "sha256": "97946ACBF82FA3E2E2F257E659507F016739988E4FF41F3DD11AC46059836B00",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit precisely this original Juneteenth dream celebrating freedom: red doorway opens into a brilliant boundless horizon, patchwork quilt path, kites, open treasure chest filled with sunlight. Preserve theme, framing, painterly style and core door/horizon. Exactly FIVE single-object localized changes: existing red door brass HANDLE curls upward at its terminal tip instead of downward, mounting plate exact; largest BLUE kite its central gold star has an open heart-shaped center motif instead, same kite outline/leaves/tail original; loose brass KEY lower left its clover ring bow becomes a diamond-shaped hollow bow, same shaft and teeth exact; lower chest front brass CLASP is flipped upward on its existing hinge into open position, chest/sunlight exact; QUILT foreground large blue square crescent emblem at x1100 y760 becomes a gold sun disc with short rays INSIDE this single existing patch, stitching/borders/quilt fabric exact. No key swaps, no extra objects, five single-object localized mechanism/internal motif clues.\"}}, {\"file\": \"clasp-prompt.json\", \"content\": {\"prompt\": \"Edit this exact crop of one brass chest latch: flip its existing hinged ornate hanging clasp UPWARD ABOVE its existing hinge, into an open position. Preserve exact ornate shape/material, one same latch, no second latch, no diamond replacement, no wood or chest edge changes. Old downward hanging clasp vacates original position naturally. Same exact camera/lighting/art style.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit precisely this original Juneteenth dream celebrating freedom: red doorway opens into a brilliant boundless horizon, patchwork quilt path, kites, open treasure chest filled with sunlight. Preserve theme, framing, painterly style and core door/horizon. Exactly FIVE single-object localized changes: existing red door brass HANDLE curls upward at its terminal tip instead of downward, mounting plate exact; largest BLUE kite its central gold star has an open heart-shaped center motif instead, same kite outline/leaves/tail original; loose brass KEY lower left its clover ring bow becomes a diamond-shaped hollow bow, same shaft and teeth exact; lower chest front brass CLASP is flipped upward on its existing hinge into open position, chest/sunlight exact; QUILT foreground large blue square crescent emblem at x1100 y760 becomes a gold sun disc with short rays INSIDE this single existing patch, stitching/borders/quilt fabric exact. No key swaps, no extra objects, five single-object localized mechanism/internal motif clues."
+      }
+    },
+    {
+      "file": "clasp-prompt.json",
+      "content": {
+        "prompt": "Edit this exact crop of one brass chest latch: flip its existing hinged ornate hanging clasp UPWARD ABOVE its existing hinge, into an open position. Preserve exact ornate shape/material, one same latch, no second latch, no diamond replacement, no wood or chest edge changes. Old downward hanging clasp vacates original position naturally. Same exact camera/lighting/art style."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "quilt",
+      "label": "The quilt crescent becomes a sun.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1032,
+        "y": 690,
+        "width": 152,
+        "height": 136
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "kite",
+      "label": "The blue kite star has a heart-shaped center.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1321,
+        "y": 116,
+        "width": 85,
+        "height": 80
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "key",
+      "label": "The key bow becomes diamond-shaped.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 295,
+        "y": 755,
+        "width": 93,
+        "height": 71
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "clasp",
+      "label": "The chest clasp flips upward.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 327,
+        "y": 624,
+        "width": 71,
+        "height": 91
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "handle",
+      "label": "The door handle curls upward.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 508,
+        "y": 362,
+        "width": 64,
+        "height": 63
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered compositor/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

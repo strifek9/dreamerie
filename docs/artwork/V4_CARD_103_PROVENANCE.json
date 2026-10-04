@@ -1,0 +1,116 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-103",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-103-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-103-original-v4.png",
+    "sha256": "6C3840999AC71B7865FE08970CD7D1253127808E21F125FFFB3B6C40964D3699",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-103-altered-source-v4.png",
+    "sha256": "840941C19E5DB79BD6F78324B8715B512CDA7087D7DA38EFAD89192002C5BB26",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise Dreameriepainting edit native1672x941. Preserve rabbitanatomy/face/pose, macaronflowers/sky/river, basketandpicnic, allframingbrushworkcolors. Exactly5 localized singleobjectdifferences:1 orangebuttersquare onbigyellowmacaronx1432y385 rotates into DIAMOND, samecream/macaron;2 cuphandle atx1438y801 opens into C-shapedHOOK withgap nearbottom ratherthanclosedloop, cupbodyunchanged;3 rabbit redscarf UPPERlooseend behindneck atx482y430 curlsDOWNWARD instead pointingup, sameknot/neckband andbody;4 FRONTpinkwaterfallatx958y643 curlsUPWARD into one foamywavecrest ratherthanstraightfall, rivercontinuous/rocksunchanged;5 basketclasp WHITEbuttonx1550y699 has ONEverticalblackslot insteadfourroundholes, samebutton/case. Five singleobjects only, no swaps/extras/globalchanges.\"}}, {\"file\": \"prompt-b.json\", \"content\": {\"prompt\": \"Edit this exact small painted crop. One change to the red scarf only: fold the TIP of the upper upright long scarf tail DOWNWARD into a clear triangular flap so the tail has a bent-down tip instead of its current sharp upward point. Keep the scarf knot, lower loose tail, blue rabbit fur/body and green background exactly intact. Preserve painted style, no added objects. This single scarf internal pose change must be obvious and clean.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise Dreameriepainting edit native1672x941. Preserve rabbitanatomy/face/pose, macaronflowers/sky/river, basketandpicnic, allframingbrushworkcolors. Exactly5 localized singleobjectdifferences:1 orangebuttersquare onbigyellowmacaronx1432y385 rotates into DIAMOND, samecream/macaron;2 cuphandle atx1438y801 opens into C-shapedHOOK withgap nearbottom ratherthanclosedloop, cupbodyunchanged;3 rabbit redscarf UPPERlooseend behindneck atx482y430 curlsDOWNWARD instead pointingup, sameknot/neckband andbody;4 FRONTpinkwaterfallatx958y643 curlsUPWARD into one foamywavecrest ratherthanstraightfall, rivercontinuous/rocksunchanged;5 basketclasp WHITEbuttonx1550y699 has ONEverticalblackslot insteadfourroundholes, samebutton/case. Five singleobjects only, no swaps/extras/globalchanges."
+      }
+    },
+    {
+      "file": "prompt-b.json",
+      "content": {
+        "prompt": "Edit this exact small painted crop. One change to the red scarf only: fold the TIP of the upper upright long scarf tail DOWNWARD into a clear triangular flap so the tail has a bent-down tip instead of its current sharp upward point. Keep the scarf knot, lower loose tail, blue rabbit fur/body and green background exactly intact. Preserve painted style, no added objects. This single scarf internal pose change must be obvious and clean."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The butter square turns into a diamond",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1386,
+        "y": 340,
+        "width": 97,
+        "height": 93
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The cup handle opens at the bottom",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1410,
+        "y": 764,
+        "width": 56,
+        "height": 76
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The upper scarf tail folds downward",
+      "difficulty": "Hard",
+      "box": {
+        "x": 442,
+        "y": 397,
+        "width": 85,
+        "height": 95
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The front waterfall curls into an upward wave crest",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 908,
+        "y": 575,
+        "width": 120,
+        "height": 148
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The basket button has one vertical slot",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1521,
+        "y": 673,
+        "width": 64,
+        "height": 58
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "visually inspected, five distinct single-object clues",
+    "mobile390": "stacked pair visually inspected; human fairness and device timing not measured",
+    "outsideBoxes": "pixel invariant passed",
+    "refinement": "upper scarf tip folded downward in targeted original crop",
+    "difficulty": "ordered hypotheses; parent game QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

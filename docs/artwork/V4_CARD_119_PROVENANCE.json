@@ -1,0 +1,104 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-119",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-revisit-v1/119-dynamic-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-119-original-v4.png",
+    "sha256": "9EF952EF916046E82D242504475FB57653A946A0F72A6B33576382E3DA6B962F",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-119-altered-source-v4.png",
+    "sha256": "694480C3518EDAB9A34A45D9A028C38D177F5BE747A1486F5DB402A5846B682A",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"Edit attached full original The Room Inside the Ribbon Knot illustration, exact native1672x941 composition, paint style/anatomy. Five bounded intentional changes ONLY: 1 round room window cross centered1064,311 rotates into diagonal X inside original round frame. 2 green chair seat centered966,433 retains cream stripes but those cream stripes become zigzag chevrons on SAME seat; chair legs/back exact. 3 traveler brown backpack flap centered445,560 folds upward OPEN on same bag, maintaining straps/body and traveler exact. 4 small gold lantern top hanging loop at881,429 tilts clearly sideways to the left rather than upright, keeping lantern body/dome/lighting unchanged. 5 only paper boat's RIGHT bow tip at1617,687 curls inward into a small hooked point, rest hull/ribbon/water unchanged. Each edit one object/internal pattern, no swaps, no edits beyond these5. No crop, text, new props, rearranging scene.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "Edit attached full original The Room Inside the Ribbon Knot illustration, exact native1672x941 composition, paint style/anatomy. Five bounded intentional changes ONLY: 1 round room window cross centered1064,311 rotates into diagonal X inside original round frame. 2 green chair seat centered966,433 retains cream stripes but those cream stripes become zigzag chevrons on SAME seat; chair legs/back exact. 3 traveler brown backpack flap centered445,560 folds upward OPEN on same bag, maintaining straps/body and traveler exact. 4 small gold lantern top hanging loop at881,429 tilts clearly sideways to the left rather than upright, keeping lantern body/dome/lighting unchanged. 5 only paper boat's RIGHT bow tip at1617,687 curls inward into a small hooked point, rest hull/ribbon/water unchanged. Each edit one object/internal pattern, no swaps, no edits beyond these5. No crop, text, new props, rearranging scene."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "diagonal-window",
+      "label": "The round window cross turns diagonally.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1007,
+        "y": 252,
+        "width": 96,
+        "height": 120
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "chevron-seat",
+      "label": "The chair seat stripes form chevrons.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 918,
+        "y": 418,
+        "width": 86,
+        "height": 29
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "open-backpack",
+      "label": "The traveler's backpack flap folds open.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 418,
+        "y": 541,
+        "width": 44,
+        "height": 43
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "tilted-loop",
+      "label": "The lantern hanging loop tilts sideways.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 856,
+        "y": 413,
+        "width": 31,
+        "height": 26
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "curled-bow",
+      "label": "The boat's right bow tip curls inward.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1596,
+        "y": 671,
+        "width": 38,
+        "height": 42
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Source generations and bounded composites inspected; five isolated objects. Difficulty labels are hypotheses. No human or physical-phone fairness validation.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

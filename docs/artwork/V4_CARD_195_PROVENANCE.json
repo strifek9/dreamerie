@@ -1,0 +1,116 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-195",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-195-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-195-original-v4.png",
+    "sha256": "4A82DF37DD48D6FEEEE234BB5C6E48BAAE17D5CBCA4C9A0D25C505FA78AD7878",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-195-altered-source-v4.png",
+    "sha256": "BC150FAD6F3DBC37121A3A45040C9EA86EC778A55CF621C55D36D9178CABBCF9",
+    "prompt": "[{\"file\": \"compass-repair-prompt.json\", \"content\": {\"operation\": \"Restore unchanged TEAL compass needle and goldcentralpin byteexact from original; only red upperneedle edited\", \"tealRegion\": [1245, 551, 1400, 633], \"goldPinEllipse\": [1281, 540, 1308, 566]}}, {\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit attached human CARTOGRAPHER ironing crumpled paper mountains painting. EXACT1672x941 framing, human hands/face/clothes andallpaper mountains originalexact. Five isolated SINGLE artifact changes:1) large TEAL IRON body x425 y455: its broadfrontside reflection becomes clearlypainted paleCRESCENT reflection, sameironoutline/handle/dial, no paper/handschanges.2) GOLD lidded paperweightbox lowerleft x283 y674: its existing lid hinges OPEN attachedone side, reveal darkinside, same roundbody.3) DARK TEAL CLOSED BOOK lowerleft x289 y842: its existing brown retaining STRAP acrossbook ties its OWN small overhand knot near x356,y873, same strap route/bookoutline.4) compass onpaper right x1293 y548: ONLY RED upper needle curls atitsTIP into a distinct continuous red loop, same needlebase/goldcentralpin. TEAL lower needle must remain EXACT originalposition/color/size, compassface/rim exact.5) GOLD HOURGLASS far-right x1607,y657: fallinggold sandstream twists into a clear continuous golden helix insideGLASS, unchangedframe/topbottom/glassshape. No multipleobjectswaps no grain/no extras. Singlepointer only; never rotate or recolor tealneedle.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "compass-repair-prompt.json",
+      "content": {
+        "operation": "Restore unchanged TEAL compass needle and goldcentralpin byteexact from original; only red upperneedle edited",
+        "tealRegion": [
+          1245,
+          551,
+          1400,
+          633
+        ],
+        "goldPinEllipse": [
+          1281,
+          540,
+          1308,
+          566
+        ]
+      }
+    },
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit attached human CARTOGRAPHER ironing crumpled paper mountains painting. EXACT1672x941 framing, human hands/face/clothes andallpaper mountains originalexact. Five isolated SINGLE artifact changes:1) large TEAL IRON body x425 y455: its broadfrontside reflection becomes clearlypainted paleCRESCENT reflection, sameironoutline/handle/dial, no paper/handschanges.2) GOLD lidded paperweightbox lowerleft x283 y674: its existing lid hinges OPEN attachedone side, reveal darkinside, same roundbody.3) DARK TEAL CLOSED BOOK lowerleft x289 y842: its existing brown retaining STRAP acrossbook ties its OWN small overhand knot near x356,y873, same strap route/bookoutline.4) compass onpaper right x1293 y548: ONLY RED upper needle curls atitsTIP into a distinct continuous red loop, same needlebase/goldcentralpin. TEAL lower needle must remain EXACT originalposition/color/size, compassface/rim exact.5) GOLD HOURGLASS far-right x1607,y657: fallinggold sandstream twists into a clear continuous golden helix insideGLASS, unchangedframe/topbottom/glassshape. No multipleobjectswaps no grain/no extras. Singlepointer only; never rotate or recolor tealneedle."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "A crescent is reflected in the iron's teal body.",
+      "box": {
+        "x": 346,
+        "y": 400,
+        "width": 173,
+        "height": 91
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The gold paperweight container's lid hinges open.",
+      "box": {
+        "x": 192,
+        "y": 574,
+        "width": 162,
+        "height": 168
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The book's retaining strap ties itself into a knot.",
+      "box": {
+        "x": 268,
+        "y": 846,
+        "width": 83,
+        "height": 73
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "The red compass needle curls into a loop.",
+      "box": {
+        "x": 1280,
+        "y": 471,
+        "width": 73,
+        "height": 82
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "The sand falls in a helix inside the hourglass.",
+      "box": {
+        "x": 1578,
+        "y": 621,
+        "width": 57,
+        "height": 95
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Correct currentinventory/yearnative1672x941. Actualfiveartifacts: ironreflection withoutbody/handmove, onegoldcontainerlid, onebookstrapownknot, ONLY redneedleloop, hourglass sandflow. TEAL needle + goldcentralpin restored byteexact fromoriginal via compass-repair.py; originallowercompassface restored. No twoobject swap. Hourglassstream57x95 meaningfulspiral but rootmobilefairness pending. Fullframe/pairedcrops/390 inspected; difficulty hypotheses.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-248",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-248-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-248-original-v4.png",
+    "sha256": "54414F9979E0D06A710AFB517CD1C2D163C75C17EBBFB780CC8371DA3B286AF1",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-248-altered-source-v4.png",
+    "sha256": "65DD7074AD11A788B38264686F08F260E8C432AA815ED9F4F2DEC5AAE3959608",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact native full painterly triangular patchwork workshop character sewing lost corners. Five isolated SINGLE-object changes: 1) golden thimble x574y498 has a triangular hollow opening instead of round, entire thimble remains same size; 2) freestanding GREEN THREAD SPOOL x1157y581 has its wooden top hole crossed by a single diagonal wooden bar, thread/other spools exact; 3) mug near x211y421 has a blue crescent reflection on coffee surface, mug unchanged; 4) scissor lower brass handle x743y730 becomes angular triangular loop rather than oval while remaining connected to hinge, upper handle/blades exact; 5) the single mint triangular patch on stool top x1188y326 has a sewn curved S seam across its fabric. Preserve character hands/face and every other item. 1672x941.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-248-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact native full painterly triangular patchwork workshop character sewing lost corners. Five isolated SINGLE-object changes: 1) golden thimble x574y498 has a triangular hollow opening instead of round, entire thimble remains same size; 2) freestanding GREEN THREAD SPOOL x1157y581 has its wooden top hole crossed by a single diagonal wooden bar, thread/other spools exact; 3) mug near x211y421 has a blue crescent reflection on coffee surface, mug unchanged; 4) scissor lower brass handle x743y730 becomes angular triangular loop rather than oval while remaining connected to hinge, upper handle/blades exact; 5) the single mint triangular patch on stool top x1188y326 has a sewn curved S seam across its fabric. Preserve character hands/face and every other item. 1672x941.",
+        "reference": "D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-248-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The lower scissor handle becomes triangular",
+      "difficulty": "Easy",
+      "box": {
+        "x": 685,
+        "y": 692,
+        "width": 139,
+        "height": 88
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The coffee reflects a blue crescent",
+      "difficulty": "Medium",
+      "box": {
+        "x": 164,
+        "y": 378,
+        "width": 86,
+        "height": 54
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The spool hole has a diagonal crossbar",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1136,
+        "y": 509,
+        "width": 43,
+        "height": 32
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The stool triangle has a zigzag seam",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1143,
+        "y": 288,
+        "width": 94,
+        "height": 86
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The thimble has a triangular cutout",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 548,
+        "y": 483,
+        "width": 45,
+        "height": 40
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390 stacked pair. Five independently selectable localized object clues. Native dimensions, five bounded nonoverlapping boxes and exact original pixels outside verified. Difficulty estimates unvalidated; root compositor/game, human difficulty and physical phone approval pending. Full prompt/source hash chain retained.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

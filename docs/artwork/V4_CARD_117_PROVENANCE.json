@@ -1,0 +1,98 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-117",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-117-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-117-original-v4.png",
+    "sha256": "A4D46FE1C34CBB52263854713EA12B7DC348FC6EC22ED00CEEF5B19F98CC2BB9",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-117-altered-source-v4.png",
+    "sha256": "19FA519EDE317E09B21178C667AFCE38572ADDBF8C74DB09D6C3DD3148296C29",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Preciselyedit foxwalkingforest of giant bluewhiteporcelainspoons painting. EXACT1672x941 framing allpositions/colors/painterlyfinish andfoxanatomy untouched. FIVE localizedone-objectchanges:1) BIGGEST foregroundRIGHT spoon bowl orangeCRESCENT motif becomes one orange KEY silhouette pointingdiagonallyup, samepaintedmotifarea bluefloralborderunchanged.2) largewhiteMUSHROOM lowerleft withnotch: onlycap'snotched upperedge rolls inward into a visible hollowcurl exposinggills, preserve stem/capoverallposition othermushroomunchanged.3) goldBELL hangingfromfoxscarf: itscap opens onlittlehinge likeoneconnected clam bell revealingdarkinterior/clapper, clearlytwoconnectedhalves SAMEbell no extra jewelry, slightlylargerinspectable max45x50native.4) mintSCARF freecloth lyingbehindfoxhead aroundx550,y399: whiteleafvine pattern weaves into a clear braided border instead ofsimplebranchpattern, preserveeveryclothfold/outline andallfur below no scarfrelocation.5) foregroundLEFT largeupright spoonaroundx410,y117: ONLYupperblueflowerpaintedpetals twistintosinglecurledSPIRAL pattern, keepflowercenter/bowlborder/lowerflower/stem unchanged. No swaps, eachclueexistingartifact internalpattern/pose, no newobjects/textmarkers/grain.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Preciselyedit foxwalkingforest of giant bluewhiteporcelainspoons painting. EXACT1672x941 framing allpositions/colors/painterlyfinish andfoxanatomy untouched. FIVE localizedone-objectchanges:1) BIGGEST foregroundRIGHT spoon bowl orangeCRESCENT motif becomes one orange KEY silhouette pointingdiagonallyup, samepaintedmotifarea bluefloralborderunchanged.2) largewhiteMUSHROOM lowerleft withnotch: onlycap'snotched upperedge rolls inward into a visible hollowcurl exposinggills, preserve stem/capoverallposition othermushroomunchanged.3) goldBELL hangingfromfoxscarf: itscap opens onlittlehinge likeoneconnected clam bell revealingdarkinterior/clapper, clearlytwoconnectedhalves SAMEbell no extra jewelry, slightlylargerinspectable max45x50native.4) mintSCARF freecloth lyingbehindfoxhead aroundx550,y399: whiteleafvine pattern weaves into a clear braided border instead ofsimplebranchpattern, preserveeveryclothfold/outline andallfur below no scarfrelocation.5) foregroundLEFT largeupright spoonaroundx410,y117: ONLYupperblueflowerpaintedpetals twistintosinglecurledSPIRAL pattern, keepflowercenter/bowlborder/lowerflower/stem unchanged. No swaps, eachclueexistingartifact internalpattern/pose, no newobjects/textmarkers/grain."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "An orange key is painted inside the large right spoon.",
+      "box": {
+        "x": 1345,
+        "y": 54,
+        "width": 167,
+        "height": 201
+      },
+      "edgeFade": 5
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The mushroom cap's notched edge rolls inward.",
+      "box": {
+        "x": 240,
+        "y": 629,
+        "width": 98,
+        "height": 113
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The scarf's pale vine pattern braids together.",
+      "box": {
+        "x": 458,
+        "y": 344,
+        "width": 246,
+        "height": 113
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "The bell opens on its hinge.",
+      "box": {
+        "x": 785,
+        "y": 498,
+        "width": 65,
+        "height": 73
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "The left spoon's upper flower curls into a spiral.",
+      "box": {
+        "x": 367,
+        "y": 78,
+        "width": 99,
+        "height": 90
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": "Fullsourceobserved. Scarfkeepsposition/outline; changescreamleafbraidpattern only, nofurrepaint intended. Hingedbell opensconnectedparts asoneartifact, notch caproll actualgills, orangespoonkeypattern, onespoonpaintedupperflowerspiral. No swaps. Rootfinalnativecomposite/feather QArequired,especiallymushroomnewedgeandbelltinymechanism. Difficultyhypothesesonly.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

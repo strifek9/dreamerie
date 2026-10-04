@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-220",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-220-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-220-original-v4.png",
+    "sha256": "A75DD9BAFDAA12CDA3F2BECBF97AE2931BD2B2ECDE5FFAFE453A9CB7FEDBC117",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-220-altered-source-v4.png",
+    "sha256": "D433D1A4101421DC04B203BE878F4E6584924ADEE8DD051525E629A12D841396",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact full-frame painterly scene: purple four-armed alien with stuck hiccup at lime-green bubble vending machine. Preserve anatomy/frame/style. Exactly five isolated single-object changes: 1) the large trapped bubble center x904 y490 reflects a clearly recognizable blue crescent in its center, same bubble same silhouette; 2) lever shaft x1180 y370 bends gently to RIGHT instead of left, same purple knob stays x1199 y264; 3) handheld brass coin x557 y534 has an engraved five-point star instead of current markings, same fingers exact; 4) round yellow pushbutton under raised fingertip x715 y358 has a diagonal groove, fingertip and button outline exact; 5) alien uppermost antenna tip x500 y290 curls inward to left as one continuous antenna, other antenna exact. No other changes, 1672x941.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-220-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact full-frame painterly scene: purple four-armed alien with stuck hiccup at lime-green bubble vending machine. Preserve anatomy/frame/style. Exactly five isolated single-object changes: 1) the large trapped bubble center x904 y490 reflects a clearly recognizable blue crescent in its center, same bubble same silhouette; 2) lever shaft x1180 y370 bends gently to RIGHT instead of left, same purple knob stays x1199 y264; 3) handheld brass coin x557 y534 has an engraved five-point star instead of current markings, same fingers exact; 4) round yellow pushbutton under raised fingertip x715 y358 has a diagonal groove, fingertip and button outline exact; 5) alien uppermost antenna tip x500 y290 curls inward to left as one continuous antenna, other antenna exact. No other changes, 1672x941.",
+        "reference": "D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-220-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The trapped bubble reflects a blue crescent",
+      "difficulty": "Easy",
+      "box": {
+        "x": 876,
+        "y": 404,
+        "width": 120,
+        "height": 124
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The vending lever curves right",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1156,
+        "y": 230,
+        "width": 101,
+        "height": 222
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The top antenna curls inward",
+      "difficulty": "Hard",
+      "box": {
+        "x": 473,
+        "y": 264,
+        "width": 48,
+        "height": 57
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The coin has an engraved star",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 530,
+        "y": 500,
+        "width": 59,
+        "height": 66
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The pushbutton has a diagonal groove",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 693,
+        "y": 324,
+        "width": 44,
+        "height": 63
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390 stacked pair. Five separately selectable single-object clues. Five bounded nonoverlapping boxes, exact native size, and original pixels outside boxes verified. Difficulty estimates unvalidated; root compositor/game, human difficulty and physical phone approval pending. Full prompts and source hash chain retained.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

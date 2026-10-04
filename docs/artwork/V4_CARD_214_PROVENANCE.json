@@ -1,0 +1,118 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-214",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-214-replacement-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-214-original-v4.png",
+    "sha256": "DFE32B6593A6015B77DE65D431C99A1C0ADB5F0E131007F35AADB34F95E5CE92",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-214-altered-source-v4.png",
+    "sha256": "1DEF2CCEDDBCDEE3BCD475539476433D05E6474BA2F1B22AC8073F2FF4B7AC4D",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact full native1672x941 dreamy laundry painting five isolated single-object differences ONLY. 1 Black CAT SHADOW hanging middle: tip of its curved tail forms a closed loop, only tail tip region x1140y325..420; retain body/eyes/whiskers and actual white cat. 2 Yellow soap box top left: crescent printed on front faces LEFT instead of right, box and lid exact. 3 Red washer dial x531y179: long raised handle now horizontal rather than vertical, rest dial exact. 4 White cat visible eye on viewer right x1190y610 closes in a curved eyelid; other eye remains open and rest face exact. 5 Purple creature apron front pocket: top edge becomes a clear curved scallop instead of straight/sloping, pocket remains same position,size,color and stitching. No others changed, preserve scene, characters, image framing, everything else.\", \"reference\": \"dream-214-replacement-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact full native1672x941 dreamy laundry painting five isolated single-object differences ONLY. 1 Black CAT SHADOW hanging middle: tip of its curved tail forms a closed loop, only tail tip region x1140y325..420; retain body/eyes/whiskers and actual white cat. 2 Yellow soap box top left: crescent printed on front faces LEFT instead of right, box and lid exact. 3 Red washer dial x531y179: long raised handle now horizontal rather than vertical, rest dial exact. 4 White cat visible eye on viewer right x1190y610 closes in a curved eyelid; other eye remains open and rest face exact. 5 Purple creature apron front pocket: top edge becomes a clear curved scallop instead of straight/sloping, pocket remains same position,size,color and stitching. No others changed, preserve scene, characters, image framing, everything else.",
+        "reference": "dream-214-replacement-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "shadow-tail",
+      "label": "The hanging cat shadow curls its tail into a loop.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1096,
+        "y": 311,
+        "width": 88,
+        "height": 226
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "dial-handle",
+      "label": "A horizontal handle crosses the washer dial.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 493,
+        "y": 142,
+        "width": 86,
+        "height": 74
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "cat-wink",
+      "label": "The white cat closes one eye.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1172,
+        "y": 589,
+        "width": 47,
+        "height": 38
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "pocket-scallop",
+      "label": "The apron pocket has a scalloped opening.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 801,
+        "y": 447,
+        "width": 101,
+        "height": 108
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "box-crescent",
+      "label": "The box crescent is larger and farther left.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 256,
+        "y": 39,
+        "width": 76,
+        "height": 68
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": {
+    "humanTimed": false,
+    "physicalPhone": false,
+    "notes": [
+      "Crescent did not reverse; realized difference is larger crescent."
+    ],
+    "outsideRegionsExact": true,
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sourceHashes": {
+      "source.png": "1def2cceddbcdee3bcd475539476433d05e6474ba2f1b22ac8073f2ff4b7ac4d"
+    }
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

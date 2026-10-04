@@ -1,0 +1,108 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-045",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-revisit-v1/045-dynamic-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-045-original-v4.png",
+    "sha256": "5A4D56DA66F52950B0256DD75483C6127423E5B100E9F6231CC8351443AFA0C3",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-045-altered-source-v4.png",
+    "sha256": "1FFA7763BD253B29B33BAB4E4C4B428137C882B1CCC137AA3F4AE8F0D51EF9E7",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise-object-edit of provided original1672x941 Dreamerie chairaboveindoor-rain painting. Preserve sleeping paper-cat anatomy, rain, framing/style and all surrounding pixels. Exactlyfive single-object localized edits: 1 round hole in yellow chairback becomes a rounded-square opening samecenter884,259 size58x59, restchairunchanged. 2 paper-cat tail resting on seat curls upward into a small upright hook at right instead of lying horizontally, bounds822,326,88,41; no secondtail, retaincatbody. 3 mug's blue handle on side table bends upward into a curled hook rather than closedoval, bounds1284,421,29,37; retain mugbody. 4 red band on uprightboot heel slants diagonally rather than horizontally, bounds1285,740,48,21; keepotherbootunchanged. 5 on tiny sailboat the creamRIGHTsail has one blue diagonal stitching seam running inside it instead of plainfabric, bounds438,683,36,65; unchangedmast,sailoutline,boatflag. No extraobjects no grain no text. Five separate independently clickable regions, no swaps.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise-object-edit of provided original1672x941 Dreamerie chairaboveindoor-rain painting. Preserve sleeping paper-cat anatomy, rain, framing/style and all surrounding pixels. Exactlyfive single-object localized edits: 1 round hole in yellow chairback becomes a rounded-square opening samecenter884,259 size58x59, restchairunchanged. 2 paper-cat tail resting on seat curls upward into a small upright hook at right instead of lying horizontally, bounds822,326,88,41; no secondtail, retaincatbody. 3 mug's blue handle on side table bends upward into a curled hook rather than closedoval, bounds1284,421,29,37; retain mugbody. 4 red band on uprightboot heel slants diagonally rather than horizontally, bounds1285,740,48,21; keepotherbootunchanged. 5 on tiny sailboat the creamRIGHTsail has one blue diagonal stitching seam running inside it instead of plainfabric, bounds438,683,36,65; unchangedmast,sailoutline,boatflag. No extraobjects no grain no text. Five separate independently clickable regions, no swaps."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The chair back opening is a rounded square",
+      "difficulty": "Easy",
+      "box": {
+        "x": 850,
+        "y": 223,
+        "width": 69,
+        "height": 70
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The paper cat tail curls upward behind its body",
+      "difficulty": "Medium",
+      "box": {
+        "x": 880,
+        "y": 294,
+        "width": 45,
+        "height": 61
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The mug handle curves upward into a hook",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1285,
+        "y": 408,
+        "width": 29,
+        "height": 49
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The upright boot red heel stripe slopes upward",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1273,
+        "y": 719,
+        "width": 63,
+        "height": 51
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The sail has a diagonal blue seam",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 434,
+        "y": 675,
+        "width": 50,
+        "height": 83
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker native pair/five paired crops/390stack inspected. Tail at rear of paper cat remains attached, no bodypose drift. Five independent details; original outside pixels exact verified. Root compositor/game and human difficulty pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

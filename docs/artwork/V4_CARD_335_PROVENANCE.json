@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-335",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-335-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-335-original-v4.png",
+    "sha256": "F54BBCCC5EA58C8E662B90B59C853E11826A81E729F59CABBD63B444A3656BEB",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-335-altered-source-v4.png",
+    "sha256": "1A79D6DB9DD9072AD48DEE12628533CF652923AC3315EE7D5FF86D258B72ED86",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit this exact original1672x941 painting with ONLY5 localized one-object differences preserving robot anatomy/style/frame/allothers.1 robot existing small mouth native672280 becomes open round O mouth.2 heart drawing on hanging paper native1166350 turns upside-down, same single heart/location/paper exact.3 existing front chest round screw at485378 has X screwdriver slot instead of existing holes, same screw circle.4 red thread spool far-right at1540620 inner top opening becomes square instead of oval, outer spool original.5 scissors existing pivot screw at598800 becomes raised hexagonal brass head, same position/other scissors exact. No paperfold reorder, tool swaps, extra objects or global changes.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit this exact original1672x941 painting with ONLY5 localized one-object differences preserving robot anatomy/style/frame/allothers.1 robot existing small mouth native672280 becomes open round O mouth.2 heart drawing on hanging paper native1166350 turns upside-down, same single heart/location/paper exact.3 existing front chest round screw at485378 has X screwdriver slot instead of existing holes, same screw circle.4 red thread spool far-right at1540620 inner top opening becomes square instead of oval, outer spool original.5 scissors existing pivot screw at598800 becomes raised hexagonal brass head, same position/other scissors exact. No paperfold reorder, tool swaps, extra objects or global changes."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "open-mouth",
+      "label": "The robot opens its mouth.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 654,
+        "y": 256,
+        "width": 43,
+        "height": 39
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "inverted-heart",
+      "label": "The drawn heart turns upside down.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1115,
+        "y": 303,
+        "width": 88,
+        "height": 101
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "square-spool",
+      "label": "The thread spool\u2019s opening becomes square.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1514,
+        "y": 606,
+        "width": 49,
+        "height": 23
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "cross-screw",
+      "label": "The chest screw has an X slot.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 462,
+        "y": 356,
+        "width": 47,
+        "height": 50
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "hex-pivot",
+      "label": "The scissors pivot becomes a hexagonal head.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 577,
+        "y": 787,
+        "width": 37,
+        "height": 26
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five paired crops, full composite and 390-pixel stacked pair inspected. Single-object changes; difficulty hypotheses only. Root browser/hit QA and human fairness remain pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

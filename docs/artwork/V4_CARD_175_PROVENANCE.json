@@ -1,0 +1,108 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-175",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-175-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-175-original-v4.png",
+    "sha256": "CEA0C932C13FF3E7AE2EF2F82ED361F12E7F299F120C64E04ABE6F60D830C64B",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-175-altered-source-v4.png",
+    "sha256": "2B5AA8D538F83E1A76AD1DC0A5B317EA42969343111FABDACA8BE29FDC3162C4",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit EXACT The Polar Bear's Warm Shadow native1672x941. Preserve bear anatomy, paws/knittinggeometry, warm scarfshadow, allcomposition/style. FIVE singleobject localizededits: 1 ONLY farleft knittingneedle round endknob x314411 becomes a broad diamond endcap, within291393..338434; 2 ONLY yarnbowlguide notch x202633 becomes a curved inwardhook guide insteadU-shaped notch, within174602..223665, yarnconnectioncontinuous same strand; 3 ONLY windowsill mug frontface x67179 reflects a gold crescent insteadplainwhiteceramic, within42154..91198, mugoutline/handlesexact; 4 ONLY smallcenter wallprint's roundmoon x1212125 becomes a crescent openingright, within1196108..1233144, printframeexact; 5 ONLY chair horizontal lowerbrace x1507443 develops one central arched opening cutthrough wood insteadsolidbrace, within1480425..1541460, chairposts/blanketunchanged. No twoobject swaps, no multiplefringe changes or tinygrain. Keep otherneedleandknittingexact.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit EXACT The Polar Bear's Warm Shadow native1672x941. Preserve bear anatomy, paws/knittinggeometry, warm scarfshadow, allcomposition/style. FIVE singleobject localizededits: 1 ONLY farleft knittingneedle round endknob x314411 becomes a broad diamond endcap, within291393..338434; 2 ONLY yarnbowlguide notch x202633 becomes a curved inwardhook guide insteadU-shaped notch, within174602..223665, yarnconnectioncontinuous same strand; 3 ONLY windowsill mug frontface x67179 reflects a gold crescent insteadplainwhiteceramic, within42154..91198, mugoutline/handlesexact; 4 ONLY smallcenter wallprint's roundmoon x1212125 becomes a crescent openingright, within1196108..1233144, printframeexact; 5 ONLY chair horizontal lowerbrace x1507443 develops one central arched opening cutthrough wood insteadsolidbrace, within1480425..1541460, chairposts/blanketunchanged. No twoobject swaps, no multiplefringe changes or tinygrain. Keep otherneedleandknittingexact."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "One knitting needle has a diamond end cap",
+      "difficulty": "Easy",
+      "box": {
+        "x": 291,
+        "y": 382,
+        "width": 57,
+        "height": 55
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The yarn bowl guide curls inward",
+      "difficulty": "Medium",
+      "box": {
+        "x": 166,
+        "y": 598,
+        "width": 61,
+        "height": 77
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The windowsill mug shows a gold crescent",
+      "difficulty": "Hard",
+      "box": {
+        "x": 42,
+        "y": 153,
+        "width": 53,
+        "height": 50
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The chair brace has an arched notch",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1473,
+        "y": 420,
+        "width": 77,
+        "height": 61
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The small wall print moon becomes a crescent",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1195,
+        "y": 106,
+        "width": 41,
+        "height": 41
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390 stacked pair. Five single objects changed; anatomy/style/frame/corepremise retained. Unrelated drift excluded; five bounded nonoverlap boxes and outside exact original verified. Full generated source/prompt/hash retained. Difficulty estimates unvalidated; root compositor/game/human/physicalphone approval pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

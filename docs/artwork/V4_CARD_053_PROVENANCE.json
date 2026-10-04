@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-053",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-053-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-053-original-v4.png",
+    "sha256": "18C5306CE2844C324560E3A90F4A4C747DB02428FC4B9A8AAFE8C1DBCFC3D3C3",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-053-altered-source-v4.png",
+    "sha256": "305FD3C8D065180B415B5FB4AA2169B0FF7BE702030B4E99911F1AA530F6BB3C",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Preciselyedit this1672x941 swanwardrobepainting FIVE independentlyselectableobjectchanges preservingframe/coreanatomy/pose/style:1 centralbluecrescent drawerhandle x575,y550 now opensDOWN not up, samehandleoneobject within532,507,84,82;2 small gold triangular vent bottomright cabinet x1233,y678 becomes upside-downtriangle pointeDOWN insteadUP within1205,646,55,57;3 single goldbow RIGHT trailingribbon on swanneck x943,y468 twists so its tip CURLS toleft rather thanstraightdown, within911,410,62,161, don'tchangeotherloop/tail;4 hanger supporting LEFT pinkcoat x552,y292 has its hook curlopenLEFT ratherthanRIGHT, within535,270,36,38, preservecoat/allotherhangers;5 farLEFT pearl-lamp at x305,y168 has roundwhite orb become tear-drop with tipUP, sameposition/color, within283,143,47,44. Nootherspheres/flowers/propschanged,noobjectswaps,noextraimages, nativepaintedgrainfreefinish.\"}}, {\"file\": \"refine-prompt.json\", \"content\": {\"prompt\": \"Refine ONLY blue wintercoat inside RIGHT swanwardrobe: its white fur collar at x1086,y376 currently opens atbottom in V. CLOSE bottomgap into continuous oval white fur collar ring acrosschest, onecoatmechanism, keepbluecoat/buttons/hem/otherclothes fixed. Everything else wholepainting EXACTLY preserved includingpriorfouredits. Full1672x941.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Preciselyedit this1672x941 swanwardrobepainting FIVE independentlyselectableobjectchanges preservingframe/coreanatomy/pose/style:1 centralbluecrescent drawerhandle x575,y550 now opensDOWN not up, samehandleoneobject within532,507,84,82;2 small gold triangular vent bottomright cabinet x1233,y678 becomes upside-downtriangle pointeDOWN insteadUP within1205,646,55,57;3 single goldbow RIGHT trailingribbon on swanneck x943,y468 twists so its tip CURLS toleft rather thanstraightdown, within911,410,62,161, don'tchangeotherloop/tail;4 hanger supporting LEFT pinkcoat x552,y292 has its hook curlopenLEFT ratherthanRIGHT, within535,270,36,38, preservecoat/allotherhangers;5 farLEFT pearl-lamp at x305,y168 has roundwhite orb become tear-drop with tipUP, sameposition/color, within283,143,47,44. Nootherspheres/flowers/propschanged,noobjectswaps,noextraimages, nativepaintedgrainfreefinish."
+      }
+    },
+    {
+      "file": "refine-prompt.json",
+      "content": {
+        "prompt": "Refine ONLY blue wintercoat inside RIGHT swanwardrobe: its white fur collar at x1086,y376 currently opens atbottom in V. CLOSE bottomgap into continuous oval white fur collar ring acrosschest, onecoatmechanism, keepbluecoat/buttons/hem/otherclothes fixed. Everything else wholepainting EXACTLY preserved includingpriorfouredits. Full1672x941."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "ribbon",
+      "label": "The swan's right bow tail curls upward at its tip.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 914,
+        "y": 410,
+        "width": 67,
+        "height": 164
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "collar",
+      "label": "The winter coat's fur collar closes into a ring.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1037,
+        "y": 331,
+        "width": 112,
+        "height": 81
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "handle",
+      "label": "The drawer's crescent handle becomes a symmetrical bowl.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 530,
+        "y": 504,
+        "width": 91,
+        "height": 88
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "vent",
+      "label": "The cabinet's triangular vent points downward.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1197,
+        "y": 642,
+        "width": 65,
+        "height": 64
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "lamp",
+      "label": "The upper pearl lamp gains a pointed tip.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 290,
+        "y": 131,
+        "width": 32,
+        "height": 28
+      },
+      "edgeFade": 2
+    }
+  ],
+  "notes": "Alloriginalcoatbuttons/body belowy412 preservedexact (restores alloriginalpixels and excludes newlygeneratedsmallbuttonartifacts). Collarfurclosure up toy411 only. Originalfurstola below412 remains; goldcoatbuttons retain original location/pixels. Rootfeather/gameQA pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

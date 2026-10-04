@@ -1,0 +1,124 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-188",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-188-original-v2.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-188-original-v4.png",
+    "sha256": "FAE9B75D9C15C7773FCB2730D767BEB4D01563DC2F421A10E91D907D58CEB47E",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-188-altered-source-v4.png",
+    "sha256": "D720B0FE4CF239ACEB500F3C9ACDA18C6D712CBB22612BA5CF273FDDF2A79A3A",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact native full1672x941 painting five localized one-object differences only. 1 Wooden clothespin at upper left x79y53: jaws spread visibly into V instead of closed, same hanging line and photographs. 2 Black timer on shelf upper right x1406y226: long white clock hand points horizontally right instead of upright, short hand and dial marks same. 3 cylindrical glass measuring vessel on left x112y540: inside its ONE glass body, measurement scale marks become diagonal slash marks instead of horizontal little bars, silhouette liquid colors original. 4 black camera at lower left its top round dial x155y651: engraved central indicator becomes clear crescent rather than tiny red straight indicator, entire same dial and camera. 5 dark amber bottle behind timer near x1339y92: screw cap tilts sharply left rather than level, same bottle body timer shelf. All other photographer faces hands miniature person pictures tray ripples and towels untouched. Native framing dreamy red darkroom style unchanged.\", \"reference\": \"dream-188-original-v2.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact native full1672x941 painting five localized one-object differences only. 1 Wooden clothespin at upper left x79y53: jaws spread visibly into V instead of closed, same hanging line and photographs. 2 Black timer on shelf upper right x1406y226: long white clock hand points horizontally right instead of upright, short hand and dial marks same. 3 cylindrical glass measuring vessel on left x112y540: inside its ONE glass body, measurement scale marks become diagonal slash marks instead of horizontal little bars, silhouette liquid colors original. 4 black camera at lower left its top round dial x155y651: engraved central indicator becomes clear crescent rather than tiny red straight indicator, entire same dial and camera. 5 dark amber bottle behind timer near x1339y92: screw cap tilts sharply left rather than level, same bottle body timer shelf. All other photographer faces hands miniature person pictures tray ripples and towels untouched. Native framing dreamy red darkroom style unchanged.",
+        "reference": "dream-188-original-v2.png"
+      }
+    }
+  ],
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-188-timer-selected-source-v4.png",
+      "sha256": "CDF007B464BDDB2968C61AFD90096A943A3FB6F42CDEB1616C7D1D0C4652B2BC",
+      "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact native full1672x941 painting five localized one-object differences only. 1 Wooden clothespin at upper left x79y53: jaws spread visibly into V instead of closed, same hanging line and photographs. 2 Black timer on shelf upper right x1406y226: long white clock hand points horizontally right instead of upright, short hand and dial marks same. 3 cylindrical glass measuring vessel on left x112y540: inside its ONE glass body, measurement scale marks become diagonal slash marks instead of horizontal little bars, silhouette liquid colors original. 4 black camera at lower left its top round dial x155y651: engraved central indicator becomes clear crescent rather than tiny red straight indicator, entire same dial and camera. 5 dark amber bottle behind timer near x1339y92: screw cap tilts sharply left rather than level, same bottle body timer shelf. All other photographer faces hands miniature person pictures tray ripples and towels untouched. Native framing dreamy red darkroom style unchanged.\", \"reference\": \"dream-188-original-v2.png\"}}]"
+    }
+  ],
+  "authoredRegions": [
+    {
+      "id": "clip-open",
+      "label": "The left clothespin opens wider",
+      "difficulty": "Easy",
+      "box": {
+        "x": 52,
+        "y": 1,
+        "width": 56,
+        "height": 109
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "timer-hand",
+      "label": "The timer's long hand points right",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1353,
+        "y": 176,
+        "width": 109,
+        "height": 104
+      },
+      "edgeFade": 5,
+      "source": "timer-selected.png"
+    },
+    {
+      "id": "bottle-cap",
+      "label": "The amber bottle cap tilts left",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1287,
+        "y": 57,
+        "width": 95,
+        "height": 83
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "glass-scale",
+      "label": "The glass vessel has diagonal scale marks",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 88,
+        "y": 469,
+        "width": 44,
+        "height": 164
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "camera-moon",
+      "label": "The camera dial carries a crescent",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 132,
+        "y": 634,
+        "width": 50,
+        "height": 34
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": {
+    "humanTimed": false,
+    "physicalPhone": false,
+    "notes": "Correct inventory v2 original. Five one-object clues; clothespin, cap and clock mechanisms. Clip box touches top edge, original frame retained. Timer repair preserves original full dial/red hands/hub; original upright white hand footprint (1401..1407,197..224) filled from adjacent original dial x+9, generated horizontal white hand pixels selected within (1409..1457,226..232). No other timer pixels generated. Timer repair preserves original full dial/red hands/hub; original upright white hand footprint (1401..1407,197..224) filled from adjacent original dial x+9, generated horizontal white hand pixels selected within (1409..1457,226..232). No other timer pixels generated.",
+    "outsideRegionsExact": true,
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sourceHashes": {
+      "source.png": "d720b0fe4cf239aceb500f3c9acda18c6d712cbb22612ba5cf273fddf2a79a3a",
+      "timer-selected.png": "cdf007b464bddb2968c61afd90096a943a3fb6f42cdeb1616c7d1d0c4652b2bc"
+    }
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

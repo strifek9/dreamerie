@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-161",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-161-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-161-original-v4.png",
+    "sha256": "48DE3D34AB6489F38EE4500E295734115FF1C3CB0BF8173D8E24E5CFC732E9EB",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-161-altered-source-v4.png",
+    "sha256": "A29DC20C43C1C758589527620095DD922FBAD54B25FADB63D92C34041D38A250",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise singleobjectedits exact1672x941 paintedhedgehog tailor. Preserve hedgehogfacehandsquills coatportraits allcompositionlightingstyle. Exactlyfivechanges:1 scissors x1130y814 bladesOPEN intoV insteadnearlyclosed, samepivot/handles/placement;2 PAPERCOAT upperrightlapel point atx874y301 foldsoutward triangularflap insteadflat, keep hand gemportraits untouched;3 FRONTlooseGOLDBOBBIN ontablex1055y862 has one diagonal longslot throughTOP face insteadsolidcap, rearbobbinunchanged;4 DOOR goldKNOB x1424y178 becomes hollowring pull insteadsolidroundknob, samemountdoor;5 LEFTSHOULDER portrait ofhedgehog x426y478 its pictured RIGHTEYE is closedwink ratherthanopen, restportraitframeandrealhedgehogeyesunchanged. No swaps noadditional props. Five singlelocal internalaction/mechanism/reflectionclues.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise singleobjectedits exact1672x941 paintedhedgehog tailor. Preserve hedgehogfacehandsquills coatportraits allcompositionlightingstyle. Exactlyfivechanges:1 scissors x1130y814 bladesOPEN intoV insteadnearlyclosed, samepivot/handles/placement;2 PAPERCOAT upperrightlapel point atx874y301 foldsoutward triangularflap insteadflat, keep hand gemportraits untouched;3 FRONTlooseGOLDBOBBIN ontablex1055y862 has one diagonal longslot throughTOP face insteadsolidcap, rearbobbinunchanged;4 DOOR goldKNOB x1424y178 becomes hollowring pull insteadsolidroundknob, samemountdoor;5 LEFTSHOULDER portrait ofhedgehog x426y478 its pictured RIGHTEYE is closedwink ratherthanopen, restportraitframeandrealhedgehogeyesunchanged. No swaps noadditional props. Five singlelocal internalaction/mechanism/reflectionclues."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The scissors blades open",
+      "difficulty": "Easy",
+      "box": {
+        "x": 943,
+        "y": 710,
+        "width": 196,
+        "height": 105
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The door knob becomes a ring pull",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1401,
+        "y": 141,
+        "width": 64,
+        "height": 92
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The upper paper lapel folds outward",
+      "difficulty": "Hard",
+      "box": {
+        "x": 830,
+        "y": 246,
+        "width": 130,
+        "height": 112
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The front bobbin cap has a slot",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1025,
+        "y": 834,
+        "width": 61,
+        "height": 55
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The left shoulder portrait winks",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 398,
+        "y": 471,
+        "width": 28,
+        "height": 21
+      },
+      "edgeFade": 2
+    }
+  ],
+  "notes": {
+    "fullComposite": "inspected",
+    "fivePairedCrops": "five single-object clues inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "difficulty": "hypotheses; parent browser and human playtest pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

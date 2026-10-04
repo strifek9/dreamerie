@@ -1,0 +1,110 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-162",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-162-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-162-original-v4.png",
+    "sha256": "7D289FC13DEEB5094BBC20DEB7EADEBE2C6E8D33DDC62DFE000ED8D071F713D3",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-162-altered-source-v4.png",
+    "sha256": "C49C94E6125612953BD9984FFEA1A7F99ADAE8F8B3DC0EE2AFC03DA0454CCF7D",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Editexact1672x941 paintedsoapbubble submarinebath. Preserve roboticfingers goldfittings submarinepassengers anatomy, bubbleworld lightingcomposition. Exactlyfive SINGLEOBJECTclues:1 soapbarlowerleft x169y731 embossedtwojoinedCIRCLES becomeone clearlydefinedspiral emblem, samebar/dish;2 submarine PERISCOPE topx772y328 mouthbendsDOWN insteadpointingleft, sameattachedbaseandhull;3 goldWINGEDFaucet upperrightx1299y81 wingTIP foldedDOWN insteadstraightleftspread, onefoldonly wingbasefittingunchanged;4 upperleft bubbleblower GOLDLOOP x532y230 becomesopenC atupperright insteadclosedoval, sameshaft/robotichand;5 BACK/RIGHT submarineporthole orangeFISH x840y474 opensitsmouth withclearVgap insteadclosedprofile, samefishbodytail/porthole andotherpassengersunchanged. No swaps noextras noglobal repaint. Exactlyfive bounded semantic differences.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Editexact1672x941 paintedsoapbubble submarinebath. Preserve roboticfingers goldfittings submarinepassengers anatomy, bubbleworld lightingcomposition. Exactlyfive SINGLEOBJECTclues:1 soapbarlowerleft x169y731 embossedtwojoinedCIRCLES becomeone clearlydefinedspiral emblem, samebar/dish;2 submarine PERISCOPE topx772y328 mouthbendsDOWN insteadpointingleft, sameattachedbaseandhull;3 goldWINGEDFaucet upperrightx1299y81 wingTIP foldedDOWN insteadstraightleftspread, onefoldonly wingbasefittingunchanged;4 upperleft bubbleblower GOLDLOOP x532y230 becomesopenC atupperright insteadclosedoval, sameshaft/robotichand;5 BACK/RIGHT submarineporthole orangeFISH x840y474 opensitsmouth withclearVgap insteadclosedprofile, samefishbodytail/porthole andotherpassengersunchanged. No swaps noextras noglobal repaint. Exactlyfive bounded semantic differences."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The soap emblem becomes a spiral",
+      "difficulty": "Easy",
+      "box": {
+        "x": 102,
+        "y": 672,
+        "width": 136,
+        "height": 130
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The periscope mouth bends downward",
+      "difficulty": "Medium",
+      "box": {
+        "x": 751,
+        "y": 294,
+        "width": 65,
+        "height": 72
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The faucet wing tip folds downward",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1186,
+        "y": 2,
+        "width": 156,
+        "height": 98
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The bubble blower loop opens",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 488,
+        "y": 175,
+        "width": 102,
+        "height": 107
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The orange fish opens its mouth",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 829,
+        "y": 455,
+        "width": 33,
+        "height": 37
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "visually inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "nativePreflight": "source equals actual original size, five nonoverlapping boxes",
+    "difficulty": "hypotheses; human and browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

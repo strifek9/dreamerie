@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-338",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-338-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-338-original-v4.png",
+    "sha256": "BEE2E88CD40FF7321092D81C87E35D229F63E18C4BF0F1EA6BA7EAB33C92152B",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-338-altered-source-v4.png",
+    "sha256": "74D4889C135156B0640D51BFD97844389E06D190DD2F5765DEEBB0AC2B6A9CE3",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact native1672x941 painterly chameleon holding transparent patchwork coat before mirror. FIVE isolated single-object edits:1 lower pink coat pocket x1208y626 gains gold star embroidery inside pocket, outlines exact;2 wooden hanger lower horizontal crossbar x1100y188 bows upward into a smooth arch while endpoints and hangerhook exact;3 upper coat button x1046y384 reflects blue crescent on left face, lower button exact;4 pink hanging purse front spiral x1582y405 becomes clear gold crescent motif instead of spiral, purse/strap exact;5 left mirror pivot knob x70y255 has clear X groove, mirror reflection exact. Preserve anatomy, every chameleon eye/finger/tail, transparent coat seams, scarves fringe, room frame/style. No other changes.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-338-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact native1672x941 painterly chameleon holding transparent patchwork coat before mirror. FIVE isolated single-object edits:1 lower pink coat pocket x1208y626 gains gold star embroidery inside pocket, outlines exact;2 wooden hanger lower horizontal crossbar x1100y188 bows upward into a smooth arch while endpoints and hangerhook exact;3 upper coat button x1046y384 reflects blue crescent on left face, lower button exact;4 pink hanging purse front spiral x1582y405 becomes clear gold crescent motif instead of spiral, purse/strap exact;5 left mirror pivot knob x70y255 has clear X groove, mirror reflection exact. Preserve anatomy, every chameleon eye/finger/tail, transparent coat seams, scarves fringe, room frame/style. No other changes.",
+        "reference": "D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-338-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The lower pink pocket has gold star embroidery",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1175,
+        "y": 596,
+        "width": 67,
+        "height": 69
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The hanger gains an arched crossbar",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1027,
+        "y": 144,
+        "width": 128,
+        "height": 49
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The upper coat button reflects a blue crescent",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1028,
+        "y": 365,
+        "width": 35,
+        "height": 40
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The purse motif becomes a gold crescent",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1540,
+        "y": 365,
+        "width": 76,
+        "height": 89
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The left mirror pivot has an X groove",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 49,
+        "y": 233,
+        "width": 43,
+        "height": 44
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390 stacked pair. Five independently selectable localized object clues. Native dimensions, five bounded nonoverlapping boxes and exact original pixels outside verified. Difficulty estimates unvalidated; root compositor/game, human difficulty and physical phone approval pending. Full prompt/source hash chain retained.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

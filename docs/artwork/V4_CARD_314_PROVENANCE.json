@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-314",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-314-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-314-original-v4.png",
+    "sha256": "58E9F6E157B7C2A00E4B1CE91BF61D4546CEFE82DFAD16B9157C058299DBC287",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-314-altered-source-v4.png",
+    "sha256": "D7169D1A19106AD4762DD1B1922BDA7D294F075D94FD90E0AFE194A3A3D5EB20",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit this exact original 1672x941 painting with exactly five local one-object differences. Preserve framing/anatomy/style and all other original pixels. 1 Seahorse eye at684170 closes into curved eyelid, no head change. 2 Inside watch hanging lampshade at1005486 gains a dark teal crescent painted on front, no lamp move. 3 Existing TOP plate in cupboard at900490 gains single dark star motif centered, other plates original. 4 Isolated shell on far-right rock at1515715: only its near opening folds into a triangular cavity instead of round spiral; outer shell silhouette original. 5 Watch's large brass hanging ring at984327 changes from round loop to a square-rounded loop, same attachments and crown original. Five bounded localized changes only; never alter multiple neighboring objects as one difference.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit this exact original 1672x941 painting with exactly five local one-object differences. Preserve framing/anatomy/style and all other original pixels. 1 Seahorse eye at684170 closes into curved eyelid, no head change. 2 Inside watch hanging lampshade at1005486 gains a dark teal crescent painted on front, no lamp move. 3 Existing TOP plate in cupboard at900490 gains single dark star motif centered, other plates original. 4 Isolated shell on far-right rock at1515715: only its near opening folds into a triangular cavity instead of round spiral; outer shell silhouette original. 5 Watch's large brass hanging ring at984327 changes from round loop to a square-rounded loop, same attachments and crown original. Five bounded localized changes only; never alter multiple neighboring objects as one difference."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "closed-eye",
+      "label": "The seahorse closes its eye.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 645,
+        "y": 137,
+        "width": 66,
+        "height": 68
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "square-ring",
+      "label": "The watch\u2019s hanging ring becomes square.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 932,
+        "y": 293,
+        "width": 104,
+        "height": 80
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "triangle-shell",
+      "label": "The shell\u2019s opening folds into a triangle.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1437,
+        "y": 683,
+        "width": 82,
+        "height": 81
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "crescent-lamp",
+      "label": "The lampshade bears a teal crescent.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 977,
+        "y": 463,
+        "width": 51,
+        "height": 49
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "star-plate",
+      "label": "The cupboard\u2019s top plate bears a star.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 877,
+        "y": 466,
+        "width": 49,
+        "height": 47
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five paired crops, full composite and 390-pixel stacked pair inspected. Single-object changes; difficulty hypotheses only. Root browser/hit QA and human fairness remain pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

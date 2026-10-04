@@ -1,0 +1,122 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-078",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-078-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-078-original-v4.png",
+    "sha256": "A0011AC898CAD3E3C5DB912D8DC5BC575A862CF876318D0E392861B63730A8B0",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-078-altered-source-v4.png",
+    "sha256": "BCAF9CAEE463C86052E201039DADD02F94CA90503A18C1D30B9CA58A2CE1C480",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Preciseedit onlyfivelocalizedsingleobjectdetails in provided1672x941 peachplanetarium painterlydream, preserveentireframe/squirrelbody/pose/telescope/corepremise.1 telescope RED hanginglenscap x1033,y424 becomes angularhexagonal insteadoval (x987,362,94,132), samehangingstrap;2 book foldedpaperpage corner x526,y705 foldsUP towardspine ratherthanflat triangularflap, within490,671,74,66;3 lantern WHITE starcutout x275,y585 becomes whitecrescentcutout, within258,559,40,51;4 telescope's leatherbelt silverrectangularbuckle x812,y530 becomes ROUNDsilverring threadedby SAMEbrownstrap, within793,507,35,45;5 nearRIGHT telescopehead only GOLDmoon emblem atx884,y319 reversesitsopening toLEFTinsteadofRIGHT, within860,281,52,62, keepalladjacentprintedstars exact. Noextras/unrelateddrift/grain/noise/objectswaps. Fivechanges, nativewholeframe.\"}}, {\"file\": \"refine-prompt.json\", \"content\": {\"prompt\": \"Refine this SAMEprovidedpainting atnative1672x941. THREEcorrections only:1 silvercircularbuckle must be LOWER ON verticalbrownstrap atx813,y530, originalrectbuckleposition; remove misplacedringatx813,y394 restoringstraightleather.2 foldedpaperflap ongreenbook atx525,y706 curlsUP visibly, with raisedpointedtip andarchedshadow/underside, notflattriangle lyingoncover. Within490-558,667-738.3 Printedgoldcrescent onblueTUBE atx884,y317 (NOT hangingceilingmoon,NOTskymoon) flips INPLACE toopenLEFT, sameposition/outline/size, allnearbyprintedstarsEXACT. Preservehexredlenscap/lanterncrescent priorchanges andallotherobjects/body/style. Fullframeonecounterpartnoextraimage.\"}}, {\"file\": \"moon-prompt.json\", \"content\": {\"prompt\": \"Edit thissinglehanginggoldcrescent ONLY. Rotate crescent shape90degrees clockwise so it opens DOWNWARD: pointedhorns bothpointDOWN, convexgoldbackformsarchingtop, concaveopeningfacesBOTTOM. Keepsamecenter/sameoverall80nativepxsize/goldpaint/cropbackground. Upperwhitehangingstring attachesnaturally toCENTREof curvedgoldbackatTOP, preservestring/endlooplocation. Nolettering/props/noextraimagepair. ONE alteredcrop.\", \"crop\": [385, 270, 97, 115], \"resizeBackToNative\": true}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Preciseedit onlyfivelocalizedsingleobjectdetails in provided1672x941 peachplanetarium painterlydream, preserveentireframe/squirrelbody/pose/telescope/corepremise.1 telescope RED hanginglenscap x1033,y424 becomes angularhexagonal insteadoval (x987,362,94,132), samehangingstrap;2 book foldedpaperpage corner x526,y705 foldsUP towardspine ratherthanflat triangularflap, within490,671,74,66;3 lantern WHITE starcutout x275,y585 becomes whitecrescentcutout, within258,559,40,51;4 telescope's leatherbelt silverrectangularbuckle x812,y530 becomes ROUNDsilverring threadedby SAMEbrownstrap, within793,507,35,45;5 nearRIGHT telescopehead only GOLDmoon emblem atx884,y319 reversesitsopening toLEFTinsteadofRIGHT, within860,281,52,62, keepalladjacentprintedstars exact. Noextras/unrelateddrift/grain/noise/objectswaps. Fivechanges, nativewholeframe."
+      }
+    },
+    {
+      "file": "refine-prompt.json",
+      "content": {
+        "prompt": "Refine this SAMEprovidedpainting atnative1672x941. THREEcorrections only:1 silvercircularbuckle must be LOWER ON verticalbrownstrap atx813,y530, originalrectbuckleposition; remove misplacedringatx813,y394 restoringstraightleather.2 foldedpaperflap ongreenbook atx525,y706 curlsUP visibly, with raisedpointedtip andarchedshadow/underside, notflattriangle lyingoncover. Within490-558,667-738.3 Printedgoldcrescent onblueTUBE atx884,y317 (NOT hangingceilingmoon,NOTskymoon) flips INPLACE toopenLEFT, sameposition/outline/size, allnearbyprintedstarsEXACT. Preservehexredlenscap/lanterncrescent priorchanges andallotherobjects/body/style. Fullframeonecounterpartnoextraimage."
+      }
+    },
+    {
+      "file": "moon-prompt.json",
+      "content": {
+        "prompt": "Edit thissinglehanginggoldcrescent ONLY. Rotate crescent shape90degrees clockwise so it opens DOWNWARD: pointedhorns bothpointDOWN, convexgoldbackformsarchingtop, concaveopeningfacesBOTTOM. Keepsamecenter/sameoverall80nativepxsize/goldpaint/cropbackground. Upperwhitehangingstring attachesnaturally toCENTREof curvedgoldbackatTOP, preservestring/endlooplocation. Nolettering/props/noextraimagepair. ONE alteredcrop.",
+        "crop": [
+          385,
+          270,
+          97,
+          115
+        ],
+        "resizeBackToNative": true
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "cap",
+      "label": "The red telescope cap becomes hexagonal.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 985,
+        "y": 361,
+        "width": 92,
+        "height": 132
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "moon",
+      "label": "The hanging crescent opens downward.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 395,
+        "y": 290,
+        "width": 83,
+        "height": 88
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "page",
+      "label": "The folded page corner curls up from the book.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 490,
+        "y": 666,
+        "width": 69,
+        "height": 73
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "lantern",
+      "label": "The lantern's star becomes a crescent.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 257,
+        "y": 558,
+        "width": 44,
+        "height": 53
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "buckle",
+      "label": "The telescope strap's square buckle becomes a ring.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 792,
+        "y": 505,
+        "width": 39,
+        "height": 47
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Unfulfilledprintedtube crescent reversal excluded; singleisolatedhangingpendantrotation chosen. Ringgeneratedwrongposition twice; deterministic translation52px to originalbuckleposition, onlyringcomponent transferred. Otherobject originalposition preserved. RootfeatherQA pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

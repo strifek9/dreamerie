@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-229",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-229-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-229-original-v4.png",
+    "sha256": "F6E368501EA73A70A1F836AF5B17A63EC2ED66525122B6881E4BB47166468B5F",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-229-altered-source-v4.png",
+    "sha256": "C79009DC435BD712A9F2F692DFF21C77CA525B39A1A1E389FA94271273529D90",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit the exact original full painting of two thoughtful blue and orange creatures holding a rug which contains a door. Preserve identities, expressions, anatomy, bookcase, room, rug premise and all framing. Exactly five localized one-object edits: (1) central rug-door round brass knob becomes a substantial horizontal oval lever pointing LEFT from same plate; (2) hanging tan tote bag's existing handle strap is visibly knotted into one loop at its midpoint, preserve bag body; (3) wooden chest behind rug its top carrying handle folds FLAT to the left against lid instead of arched upright, preserve chest; (4) blue creature upper arm patch retains shape and orange circle but printed blue triangle now points DOWN instead of UP; (5) framed abstract art on back wall lower gold triangle has a large rounded arch cutout within its bottom center, preserve frame and other shapes. One object per region, no swaps, no additional objects or microdetails. Preserve original painted style.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit the exact original full painting of two thoughtful blue and orange creatures holding a rug which contains a door. Preserve identities, expressions, anatomy, bookcase, room, rug premise and all framing. Exactly five localized one-object edits: (1) central rug-door round brass knob becomes a substantial horizontal oval lever pointing LEFT from same plate; (2) hanging tan tote bag's existing handle strap is visibly knotted into one loop at its midpoint, preserve bag body; (3) wooden chest behind rug its top carrying handle folds FLAT to the left against lid instead of arched upright, preserve chest; (4) blue creature upper arm patch retains shape and orange circle but printed blue triangle now points DOWN instead of UP; (5) framed abstract art on back wall lower gold triangle has a large rounded arch cutout within its bottom center, preserve frame and other shapes. One object per region, no swaps, no additional objects or microdetails. Preserve original painted style."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "lever",
+      "label": "The rug door knob becomes a left-facing lever.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 740,
+        "y": 467,
+        "width": 82,
+        "height": 49
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "patch",
+      "label": "The blue creature patch triangle points down.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 274,
+        "y": 263,
+        "width": 45,
+        "height": 42
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "tote",
+      "label": "The hanging tote handle is knotted.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1040,
+        "y": 157,
+        "width": 42,
+        "height": 42
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "art",
+      "label": "The framed gold triangle has an arched cutout.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1258,
+        "y": 211,
+        "width": 86,
+        "height": 45
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "chest",
+      "label": "The chest carrying handle folds flat.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 930,
+        "y": 383,
+        "width": 55,
+        "height": 35
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered compositor/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

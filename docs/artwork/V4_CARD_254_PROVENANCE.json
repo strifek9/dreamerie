@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-254",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-254-replacement-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-254-original-v4.png",
+    "sha256": "45F8C6555EA10F3EA031F7A3C085A454321DE67A2CF2181217F2606156B36E17",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-254-altered-source-v4.png",
+    "sha256": "019C1DF0091E78D73EC2A07E4C1904F01B55AB7F58424EA746887226D432DF83",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Exactnative1672x941 painting preserved. FIVE single-object localized edits only: 1 sock ferryman ONLY mouth near545235 opens into round O rather than smile, eyes/nose exact. 2 sock attached brass bell near411278 tilts UPWARD so opening faces upper-left rather than down, same bell attachment/ring. 3 RED loafer ONLY single tassel near788588 fringe sweeps RIGHT rather than down, knot and loaferbody exact. 4 boat FRONTcentral brass latch near528653 has a HEART-shaped lower keyhole instead of round/oval opening, same latch originalshape. 5 distant giant zipper pull near1332176 ONLY lower rounded rectangular hole becomes circular hole, rest zipper/pull exact. Preserve boat/shoes/oar/ropes/buttons/anatomy/style/frame/light. No object swaps or two changed objects grouped.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Exactnative1672x941 painting preserved. FIVE single-object localized edits only: 1 sock ferryman ONLY mouth near545235 opens into round O rather than smile, eyes/nose exact. 2 sock attached brass bell near411278 tilts UPWARD so opening faces upper-left rather than down, same bell attachment/ring. 3 RED loafer ONLY single tassel near788588 fringe sweeps RIGHT rather than down, knot and loaferbody exact. 4 boat FRONTcentral brass latch near528653 has a HEART-shaped lower keyhole instead of round/oval opening, same latch originalshape. 5 distant giant zipper pull near1332176 ONLY lower rounded rectangular hole becomes circular hole, rest zipper/pull exact. Preserve boat/shoes/oar/ropes/buttons/anatomy/style/frame/light. No object swaps or two changed objects grouped."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "surprised-mouth",
+      "label": "The ferryman\u2019s mouth forms an O.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 521,
+        "y": 221,
+        "width": 49,
+        "height": 53
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "sideways-bell",
+      "label": "The bell turns to face left.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 372,
+        "y": 221,
+        "width": 77,
+        "height": 99
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "swept-tassel",
+      "label": "The loafer\u2019s tassel sweeps right.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 751,
+        "y": 536,
+        "width": 131,
+        "height": 101
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "heart-latch",
+      "label": "The boat latch has a heart-shaped opening.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 493,
+        "y": 603,
+        "width": 68,
+        "height": 94
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "round-pull",
+      "label": "The distant zipper pull has a round opening.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1309,
+        "y": 189,
+        "width": 44,
+        "height": 43
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five paired crops, full composite and 390-pixel stacked pair inspected. Single-object changes; difficulty hypotheses only. Root browser/hit QA and human fairness remain pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

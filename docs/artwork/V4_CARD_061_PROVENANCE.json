@@ -1,0 +1,108 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-061",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-061-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-061-original-v4.png",
+    "sha256": "778F556E0286BDCD1F983728E1BED601F85C8F5C5A1EDFEAC55C0AA343B5848A",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-061-altered-source-v4.png",
+    "sha256": "243ED7237F14AD43DA99EFFF260C08F49CB3AB42486EC17A2A679E9A5EA38C82",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise-object-edit of provided native1672x941 Dreamerie sea under carpet painting. Keep framing, carpet, chair anatomy, room, light/style unchanged. Five independently clickable object edits ONLY: 1 creamcloud in wallpainting becomes a single spiral curled cloud in sameposition, x864 y43 width145 height105, preserve paintingframe/sky. 2 front chair stretcher runningbetween frontlegs at x239-367,y406-435 becomes diagonal rising to right, same woodenbarattached endpoints adjustinside region229,396,153,55; retain legs. 3 white pompom on foremostblue slipper becomes white rosette with a clearly curled spiralcenter, bounds1460,451,69,52; no slipperchange. 4 goldkey lower toothpattern changes so lowesttooth branches diagonally upward instead of perpendicular, bounds1477,249,56,34; keyshaft and othertooth unchanged. 5 redRIGHT sail on littleboat has crescent-shaped cutout near its uppermiddle instead of solidredfabric, bounds1193,574,41,61; preserve mast,outline,hull. No additional pixel changes, no text grain or extraobjects.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise-object-edit of provided native1672x941 Dreamerie sea under carpet painting. Keep framing, carpet, chair anatomy, room, light/style unchanged. Five independently clickable object edits ONLY: 1 creamcloud in wallpainting becomes a single spiral curled cloud in sameposition, x864 y43 width145 height105, preserve paintingframe/sky. 2 front chair stretcher runningbetween frontlegs at x239-367,y406-435 becomes diagonal rising to right, same woodenbarattached endpoints adjustinside region229,396,153,55; retain legs. 3 white pompom on foremostblue slipper becomes white rosette with a clearly curled spiralcenter, bounds1460,451,69,52; no slipperchange. 4 goldkey lower toothpattern changes so lowesttooth branches diagonally upward instead of perpendicular, bounds1477,249,56,34; keyshaft and othertooth unchanged. 5 redRIGHT sail on littleboat has crescent-shaped cutout near its uppermiddle instead of solidredfabric, bounds1193,574,41,61; preserve mast,outline,hull. No additional pixel changes, no text grain or extraobjects."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The painted cloud curls into a spiral",
+      "difficulty": "Easy",
+      "box": {
+        "x": 835,
+        "y": 0,
+        "width": 203,
+        "height": 158
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The chair front stretcher slopes upward",
+      "difficulty": "Medium",
+      "box": {
+        "x": 230,
+        "y": 388,
+        "width": 153,
+        "height": 68
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The slipper pompom becomes a spiral rosette",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1460,
+        "y": 445,
+        "width": 70,
+        "height": 60
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The key right tooth points diagonally upward",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1497,
+        "y": 238,
+        "width": 49,
+        "height": 52
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The right sail contains a crescent opening",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1192,
+        "y": 586,
+        "width": 40,
+        "height": 52
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker native pair/five paired crops/390stack inspected, chair stretcher attached, key geometry coherent, carpet preserved. Originaloutside pixels exact verified; root compositor/game and humandifficulty pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

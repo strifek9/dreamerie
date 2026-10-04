@@ -1,0 +1,108 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-199",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-199-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-199-original-v4.png",
+    "sha256": "945A6EC0997E13A4C353A6C50BD4198D56D33BDF99F272795BD833D5C0D2A9CE",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-199-altered-source-v4.png",
+    "sha256": "68E8965040F7E2A7A7119DDD43B5C9252FA5246216B7F540262B935432B57E64",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit EXACT Octagon That Wanted a Hug native1672x941 plushpurpleoctagonhugs two roundyellowfriends bluesquareholds heartloopmeasuringtape. Preserveanatomy/sceneframe/style. FIVE localizedsingleobjects: 1 ONLY purpleoctagon LEFT cheekembroideredspiral x609390 becomes a crescent embroidery sameposition within585366..634416, othercheekexact; 2 ONLY yellowLEFTfriend bluepatch's star x369685 becomes a diagonal sewnleaf pattern within348661..393713, patchoutlineexact; 3 ONLY blue squarefriend arm badge leaf x1543621 centralstem curls left insteadstraight within1520591..1570654, badgeoutlineunchanged; 4 ONLY measuringtapespoolwood endface x1290820 gets one diagonal crossbar acrosscentralhole insteadroundplainhole within1281789..1311853, spool/tapegeometryunchanged; 5 ONLY gold bead on purpleoctagon UPPERLEFT corner x371234 reflects a blueheart insteadwhitegleam within356217..388251, tasselunchanged. No multiplephysical tassels/droplets altered,no swaps,no grain.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit EXACT Octagon That Wanted a Hug native1672x941 plushpurpleoctagonhugs two roundyellowfriends bluesquareholds heartloopmeasuringtape. Preserveanatomy/sceneframe/style. FIVE localizedsingleobjects: 1 ONLY purpleoctagon LEFT cheekembroideredspiral x609390 becomes a crescent embroidery sameposition within585366..634416, othercheekexact; 2 ONLY yellowLEFTfriend bluepatch's star x369685 becomes a diagonal sewnleaf pattern within348661..393713, patchoutlineexact; 3 ONLY blue squarefriend arm badge leaf x1543621 centralstem curls left insteadstraight within1520591..1570654, badgeoutlineunchanged; 4 ONLY measuringtapespoolwood endface x1290820 gets one diagonal crossbar acrosscentralhole insteadroundplainhole within1281789..1311853, spool/tapegeometryunchanged; 5 ONLY gold bead on purpleoctagon UPPERLEFT corner x371234 reflects a blueheart insteadwhitegleam within356217..388251, tasselunchanged. No multiplephysical tassels/droplets altered,no swaps,no grain."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "One cheek spiral becomes a crescent embroidery",
+      "difficulty": "Easy",
+      "box": {
+        "x": 581,
+        "y": 358,
+        "width": 57,
+        "height": 62
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The left yellow friend patch has a sewn leaf",
+      "difficulty": "Medium",
+      "box": {
+        "x": 345,
+        "y": 654,
+        "width": 51,
+        "height": 65
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The blue friend badge leaf has wider branches",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1520,
+        "y": 591,
+        "width": 53,
+        "height": 66
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The measuring tape spool hole has a diagonal bar",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1281,
+        "y": 789,
+        "width": 32,
+        "height": 65
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "One corner bead reflects a blue heart",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 356,
+        "y": 217,
+        "width": 34,
+        "height": 35
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker inspected nativepair, fivepairedcrops and 390stackedpair. Five separate object clues; anatomy/style/corepremise preserved. Unrelated drift excluded; exact native dimensions, five bounded nonoverlap boxes and outside original exact verified. Difficulty estimates unvalidated; root game/compositor/human/physicalphone pending. Full prompts/hash/source outputs retained.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

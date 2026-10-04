@@ -1,0 +1,115 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-187",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-187-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-187-original-v4.png",
+    "sha256": "7BF51D3894148336F2FEB936165056865A64C5B51E8EE76D47860C52293E55DE",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-187-altered-source-v4.png",
+    "sha256": "A4A3F8F95B450362C6632A5D4CB8248851C4C494DF593D703E384183FA5863FC",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precisely edit this original full-frame painted sleeping copper dragon in matchbox beside warm fireplace shadow. Preserve dragon identity/anatomy/pose and main composition/style. Exactly FIVE separate localized object parts: 1 large upper dragon WING pale copper internal main rib branches into a clear Y inside the membrane, same outer wing contour/other ribs. 2 RED HEAD of match gently held by dragon curls downward into a hooked rounded tip instead of oval bulb; wooden shaft/paws/face unchanged. 3 small CAT SHADOW on fireplace mantel has its tail curled upward into a closed loop at its right side instead of resting down, same shadow head/body and fireplace. 4 foreground ceramic disk compass-star changes to a single clearly interconnected blue PINWHEEL motif with curved arms, same disk/color/material, no new separate objects. 5 small gold bell attached to ring on right table has a HORIZONTAL narrow opening instead of round hole, same bell/ring geometry. Exactly five coherent single-object changes, no two-object swaps, no anatomy drift, grain or specks. Return one matching full-frame painting.\"}}, {\"file\": \"corner-prompt.json\", \"content\": {\"prompt\": \"Single cardboard-box structural edit. Original vertical front corner edge at LEFT of this crop is straight. Peel/fold ONLY a roughly triangular section of its upper-middle cardboard corner layer OUT to the RIGHT across the broad brown front panel: a clear attached curled cardboard flap, pale cream underside, cast shadow on same panel. Approximately middle third of crop height and about half crop width, attached along left seam. Preserve outer box silhouette, rest of seam and tabletop/background exact. This is one folded part of existing box, no sticker, no detached new object, no grain/specks. Same matte painted cardboard. Return one matching crop.\", \"nativeCrop\": [627, 734, 111, 170]}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precisely edit this original full-frame painted sleeping copper dragon in matchbox beside warm fireplace shadow. Preserve dragon identity/anatomy/pose and main composition/style. Exactly FIVE separate localized object parts: 1 large upper dragon WING pale copper internal main rib branches into a clear Y inside the membrane, same outer wing contour/other ribs. 2 RED HEAD of match gently held by dragon curls downward into a hooked rounded tip instead of oval bulb; wooden shaft/paws/face unchanged. 3 small CAT SHADOW on fireplace mantel has its tail curled upward into a closed loop at its right side instead of resting down, same shadow head/body and fireplace. 4 foreground ceramic disk compass-star changes to a single clearly interconnected blue PINWHEEL motif with curved arms, same disk/color/material, no new separate objects. 5 small gold bell attached to ring on right table has a HORIZONTAL narrow opening instead of round hole, same bell/ring geometry. Exactly five coherent single-object changes, no two-object swaps, no anatomy drift, grain or specks. Return one matching full-frame painting."
+      }
+    },
+    {
+      "file": "corner-prompt.json",
+      "content": {
+        "prompt": "Single cardboard-box structural edit. Original vertical front corner edge at LEFT of this crop is straight. Peel/fold ONLY a roughly triangular section of its upper-middle cardboard corner layer OUT to the RIGHT across the broad brown front panel: a clear attached curled cardboard flap, pale cream underside, cast shadow on same panel. Approximately middle third of crop height and about half crop width, attached along left seam. Preserve outer box silhouette, rest of seam and tabletop/background exact. This is one folded part of existing box, no sticker, no detached new object, no grain/specks. Same matte painted cardboard. Return one matching crop.",
+        "nativeCrop": [
+          627,
+          734,
+          111,
+          170
+        ]
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "disk",
+      "label": "The ceramic disk has a curved pinwheel motif.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1181,
+        "y": 715,
+        "width": 192,
+        "height": 121
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "wing",
+      "label": "The dragon wing's rib branches into a Y.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 435,
+        "y": 174,
+        "width": 306,
+        "height": 209
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "match",
+      "label": "The held match head curls downward.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 979,
+        "y": 350,
+        "width": 80,
+        "height": 93
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "shadow",
+      "label": "The mantel cat shadow's tail curls upward.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1443,
+        "y": 22,
+        "width": 65,
+        "height": 99
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "box",
+      "label": "The matchbox corner folds out into a flap.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 636,
+        "y": 762,
+        "width": 85,
+        "height": 95
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, native paired crops and 390px pair inspected. All ten rectangles nonoverlapping; difficulty hypotheses only. Root feathered compositor/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

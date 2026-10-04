@@ -1,0 +1,107 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-333",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-333-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-333-original-v4.png",
+    "sha256": "D4AA57AAFB94E99511EDC5F2DCDB6299319B2B4123FDB12C67493E0756BB0F44",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-333-altered-source-v4.png",
+    "sha256": "FC08B4F08B19AEE7641E87E7B2E3663A3D9A4430E486E7C5D935465D3D266A23",
+    "prompt": "[{\"file\": \"preserve-prompt.json\", \"content\": {\"operation\": \"Original preservation assembly\", \"script\": \"preserve.py\", \"purpose\": \"Five isolated artifacts. Wicker handle and throw old/new footprint masks protect antelope/chair outside changed artifact. Sweater band surface only; original collar/sleeves/needles/yarnballs/buttons exact.\", \"scriptSHA256\": \"432e09a3b66f5b506b0b0afe6778bbc3057109f412ee3f34943db59cdc153ae4\"}}, {\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact1672x941 attached painting ANTELOPE knitting an unfinished greenpurple SWEATER. All antelope fur/body/face/eyes/ears/horns/hooves and needles/yarnballs ORIGINAL EXACT. Five SINGLE artifact localizedchanges:1) GREEN pillow on rightchair x1393,y562 gains clear GOLD stitched COMPASS ROSE on its frontsurface, samepillowshape/folds.2) purple THROW overchairback x1480,y335: ONLY lowerfront hangingend threads through its OWN looseoverhand knot, sameuppercloth/chair exact.3) cream patterned TABLE CLOTH bottomLEFT x205,y867: ONLY farRIGHT loosecorner aroundx320,y890 curls up into a hollowfabricroll, samepattern/restcloth exact.4) sweater frontwide PURPLE stitched band atx880,y645: existing diamondpattern becomes one continuous purple INTERLACED BRAID stitched band on SAMEgreencloth, originaloutline/collar/sleeves exact.5) wickerBASKET left x179,y576: ONLY its RIGHT curvedHANDLE aroundx307,y551 threads through its OWN woven looseknot, same rim/basketbody/all yarnballs exact. Noobjectswaps, nobutton/yarnballcolor/positionchanges, no newobjects. Preserve originalpaintedtexture.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "preserve-prompt.json",
+      "content": {
+        "operation": "Original preservation assembly",
+        "script": "preserve.py",
+        "purpose": "Five isolated artifacts. Wicker handle and throw old/new footprint masks protect antelope/chair outside changed artifact. Sweater band surface only; original collar/sleeves/needles/yarnballs/buttons exact.",
+        "scriptSHA256": "432e09a3b66f5b506b0b0afe6778bbc3057109f412ee3f34943db59cdc153ae4"
+      }
+    },
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact1672x941 attached painting ANTELOPE knitting an unfinished greenpurple SWEATER. All antelope fur/body/face/eyes/ears/horns/hooves and needles/yarnballs ORIGINAL EXACT. Five SINGLE artifact localizedchanges:1) GREEN pillow on rightchair x1393,y562 gains clear GOLD stitched COMPASS ROSE on its frontsurface, samepillowshape/folds.2) purple THROW overchairback x1480,y335: ONLY lowerfront hangingend threads through its OWN looseoverhand knot, sameuppercloth/chair exact.3) cream patterned TABLE CLOTH bottomLEFT x205,y867: ONLY farRIGHT loosecorner aroundx320,y890 curls up into a hollowfabricroll, samepattern/restcloth exact.4) sweater frontwide PURPLE stitched band atx880,y645: existing diamondpattern becomes one continuous purple INTERLACED BRAID stitched band on SAMEgreencloth, originaloutline/collar/sleeves exact.5) wickerBASKET left x179,y576: ONLY its RIGHT curvedHANDLE aroundx307,y551 threads through its OWN woven looseknot, same rim/basketbody/all yarnballs exact. Noobjectswaps, nobutton/yarnballcolor/positionchanges, no newobjects. Preserve originalpaintedtexture."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "The green pillow bears gold compass embroidery.",
+      "box": {
+        "x": 1265,
+        "y": 473,
+        "width": 226,
+        "height": 219
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The chair throw's end passes through its own knot.",
+      "box": {
+        "x": 1491,
+        "y": 389,
+        "width": 178,
+        "height": 217
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The table cloth's right corner rolls into a hollow tube.",
+      "box": {
+        "x": 268,
+        "y": 823,
+        "width": 114,
+        "height": 118
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "The sweater's purple stitched band forms an interlaced braid.",
+      "box": {
+        "x": 727,
+        "y": 574,
+        "width": 331,
+        "height": 141
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "The basket handle threads through its own woven knot.",
+      "box": {
+        "x": 141,
+        "y": 374,
+        "width": 118,
+        "height": 142
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Five single artifacts, no button/yarn swaps. Original antelope/needles/yarnballs/buttons kept exact outside artifact masks. Generated handle knot appears on upper curve rather than initial requested lower right; label follows actual. Full/native five pairs/390 comparison inspected; root joins/human difficulty pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

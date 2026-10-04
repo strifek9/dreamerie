@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-345",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-345-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-345-original-v4.png",
+    "sha256": "E6820C990027A5134BD329BA068BCCFFD67F7F4CD4AEB6C2070DA7BC02EF1767",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-345-altered-source-v4.png",
+    "sha256": "1E5591DFC5E655413E9F9C1162D0B2E13065C83EDCB1882AF9ADBE54C9D941F3",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precisely edit original giant blank measuring tape loop containing tiny sewing workshop. Preserve nested room premise, tape/objects identities/frame/style. Exactly FIVE localized one-object changes: (1) large right SCISSORS nearer lower-left finger ring becomes angular diamond-shaped instead of oval, other ring/blades/hinge exact; (2) isolated BRASS THIMBLE at left-middle its LOWER base collar gains a bold diagonal chevron relief, perforated dome/rest exact; (3) large top-right teal THREAD SPOOL its top wooden central hole becomes triangular instead of round, rim/thread exact; (4) tiny WORKSHOP green hanging LAMP above inner doorway its shade lower right edge curls up as attached metal lip, lamp/stem/bulb exact; (5) foreground RED awl wooden HANDLE has its central smooth surface carved into a broad single spiral groove, shaft/ferrule and handle outline exact. One object's internal mechanism/pattern each, no button-group edits/swaps, no grain.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precisely edit original giant blank measuring tape loop containing tiny sewing workshop. Preserve nested room premise, tape/objects identities/frame/style. Exactly FIVE localized one-object changes: (1) large right SCISSORS nearer lower-left finger ring becomes angular diamond-shaped instead of oval, other ring/blades/hinge exact; (2) isolated BRASS THIMBLE at left-middle its LOWER base collar gains a bold diagonal chevron relief, perforated dome/rest exact; (3) large top-right teal THREAD SPOOL its top wooden central hole becomes triangular instead of round, rim/thread exact; (4) tiny WORKSHOP green hanging LAMP above inner doorway its shade lower right edge curls up as attached metal lip, lamp/stem/bulb exact; (5) foreground RED awl wooden HANDLE has its central smooth surface carved into a broad single spiral groove, shaft/ferrule and handle outline exact. One object's internal mechanism/pattern each, no button-group edits/swaps, no grain."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "ring",
+      "label": "The nearer scissors ring becomes angular.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1358,
+        "y": 419,
+        "width": 202,
+        "height": 185
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "awl",
+      "label": "The awl handle has a spiral groove.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 108,
+        "y": 779,
+        "width": 288,
+        "height": 134
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "thimble",
+      "label": "The thimble base has chevron relief.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 292,
+        "y": 410,
+        "width": 136,
+        "height": 67
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "spool",
+      "label": "The thread spool top hole becomes triangular.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1420,
+        "y": 0,
+        "width": 98,
+        "height": 51
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "lamp",
+      "label": "The inner lamp shade right edge curls upward.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 895,
+        "y": 144,
+        "width": 35,
+        "height": 40
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered compositor/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

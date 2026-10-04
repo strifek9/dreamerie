@@ -1,0 +1,115 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-031",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-031-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-031-original-v4.png",
+    "sha256": "A927C81581E1174D75D6A8EABF84BE9D2DCCB8D7454F38E873474A55174FE1FB",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-031-altered-source-v4.png",
+    "sha256": "C2A1CE5AB30F24A424863306D3EC3E83731D06A6DEE136C753C8CBF13D4B71CB",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Use case: precise-object-edit. Edit the provided Dreamerie deer-and-lamps painting, retaining exact 1672x941 wide framing, matching painterly finish, no grain or text. Preserve deer anatomy and scene. Make exactly five bounded edits: (1) rightmost large lamp hanging crescent moon becomes a hollow golden diamond pendant, confined around x1530 y510 to1610 y625. (2) blue scarf upper left free tail now passes THROUGH a small branch fork rather than simply floating, confined x395 y290 to530 y420. (3) middle hanging golden globe below right lamp is linked by a curved horizontal chain to left globe instead of its original vertical chain, confined x1300 y395 to1400 y520; keep other globes. (4) gold diamond charm at deer's lower front legs becomes a small hollow upward triangle, confined x815 y754 to855 y814. (5) blue-gray left foreground lamp fringe's right half gold tassels curve inward toward center instead of straight down, confined x152 y526 to266 y606. Keep changes legible, all unrelated pixels/composition unchanged. No new props elsewhere, no watermark.\"}}, {\"file\": \"refine-prompt.json\", \"content\": {\"prompt\": \"Edit only two tiny bounded details in this provided native1672x941 Dreamerie painting; everything else identical, preserve exact deer's anatomy, scarf contour and position, lighting and painted brushwork. (1) gold tree embroidery in middle blue scarf at x710-780 y354-415: rotate just this tree motif upside down with trunk upward and branches dangling down. Do not move scarf or add trees. (2) hanging hollow diamond charm on deer ankle at x827-846 y777-801 becomes a hollow upward triangle in same position/size; retain ankle chain. No other edits. Native1672x941, no text/nograin.\"}}, {\"file\": \"flower-prompt.json\", \"content\": {\"prompt\": \"Precise object edit of this painting, identical1672x941 framing. Change ONLY ONE detail: the small dark blue flower pattern on the LEFT foreground cream lampshade, centered x147 y423, rotate its four petals to a diagonal X instead of current upright flower. Preserve stem and shade contour EXACTLY. Keep every other pixel subject geometry and composition unchanged. Maintain same painted grainfree finish, no text.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Use case: precise-object-edit. Edit the provided Dreamerie deer-and-lamps painting, retaining exact 1672x941 wide framing, matching painterly finish, no grain or text. Preserve deer anatomy and scene. Make exactly five bounded edits: (1) rightmost large lamp hanging crescent moon becomes a hollow golden diamond pendant, confined around x1530 y510 to1610 y625. (2) blue scarf upper left free tail now passes THROUGH a small branch fork rather than simply floating, confined x395 y290 to530 y420. (3) middle hanging golden globe below right lamp is linked by a curved horizontal chain to left globe instead of its original vertical chain, confined x1300 y395 to1400 y520; keep other globes. (4) gold diamond charm at deer's lower front legs becomes a small hollow upward triangle, confined x815 y754 to855 y814. (5) blue-gray left foreground lamp fringe's right half gold tassels curve inward toward center instead of straight down, confined x152 y526 to266 y606. Keep changes legible, all unrelated pixels/composition unchanged. No new props elsewhere, no watermark."
+      }
+    },
+    {
+      "file": "refine-prompt.json",
+      "content": {
+        "prompt": "Edit only two tiny bounded details in this provided native1672x941 Dreamerie painting; everything else identical, preserve exact deer's anatomy, scarf contour and position, lighting and painted brushwork. (1) gold tree embroidery in middle blue scarf at x710-780 y354-415: rotate just this tree motif upside down with trunk upward and branches dangling down. Do not move scarf or add trees. (2) hanging hollow diamond charm on deer ankle at x827-846 y777-801 becomes a hollow upward triangle in same position/size; retain ankle chain. No other edits. Native1672x941, no text/nograin."
+      }
+    },
+    {
+      "file": "flower-prompt.json",
+      "content": {
+        "prompt": "Precise object edit of this painting, identical1672x941 framing. Change ONLY ONE detail: the small dark blue flower pattern on the LEFT foreground cream lampshade, centered x147 y423, rotate its four petals to a diagonal X instead of current upright flower. Preserve stem and shade contour EXACTLY. Keep every other pixel subject geometry and composition unchanged. Maintain same painted grainfree finish, no text."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The hanging crescent becomes a hollow diamond",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1524,
+        "y": 514,
+        "width": 86,
+        "height": 106
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-2",
+      "label": "A curved chain links the three hanging globes",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1304,
+        "y": 384,
+        "width": 88,
+        "height": 133
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-3",
+      "label": "The scarf tree embroidery branches downward",
+      "difficulty": "Hard",
+      "box": {
+        "x": 574,
+        "y": 291,
+        "width": 74,
+        "height": 79
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-4",
+      "label": "The foreground shade flower petals form a balanced cross",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 106,
+        "y": 423,
+        "width": 62,
+        "height": 65
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-5",
+      "label": "The ankle charm is an upward triangle",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 817,
+        "y": 773,
+        "width": 39,
+        "height": 37
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": "Worker full-pair, five paired crops and390stack inspected. Five distinct object details; replaced multi-tassel edit with single flower. Scarf anatomy unchanged. Outside-region original pixels exact by construction. Final compositor/game QA remains root-owned; human difficulty/phone tests pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

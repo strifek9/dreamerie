@@ -1,0 +1,98 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-216",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-216-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-216-original-v4.png",
+    "sha256": "B07E3B43E3288C1FB1748CF97B0E77D37B77A4047921348620D8DB5EB5E50C9B",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-216-altered-source-v4.png",
+    "sha256": "AA1581418007EF0E3EAE658517280F2D521A9F023E10031930BFFCB4DA7A05F6",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit attached cowgirl fitting BROWN SADDLE on oceanWAVE inside stable painting. Preserve EXACT1672x941 framing all human anatomy/hands/face/animals/furniture/waterflow unchanged. FIVE localized SINGLE-artifact changes:1) GOLD WALL LANTERN upperright x1425,y80: existing front glassdoor hinges OPEN outward toleft, connectedlamp framechain unchanged.2) SADDLE METAL STIRRUP centerlower x807,y548: ONLY its brown/gold bottom footplate pivots downward onone hinge creating gap acrossbottom, same metal U arch/leatherstrap exact; one connected stirrupmechanism.3) RIGHT stall RED WHITE blanket lowerdanglingEND x1600,y758: its OWN fringe folds through a looseoverhand knot, same upperdrape/stripes, no stallwoodchanges.4) leftdoor's BLACK iron RING handle x258,y471: existing ring becomes a continuous figure-eight doubleloop belowSAMEmount/latch, other latchhardware originalexact.5) SADDLE large brown leather sideflap x832,y414: existing subtle floral tooling replaced by ONE clear incised spiral carvedinSAMEleather around75x90native, no saddleoutline/strapchanges. No objectswaps no extraobjects/text/grain, no broad repaint of water/human/animals.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit attached cowgirl fitting BROWN SADDLE on oceanWAVE inside stable painting. Preserve EXACT1672x941 framing all human anatomy/hands/face/animals/furniture/waterflow unchanged. FIVE localized SINGLE-artifact changes:1) GOLD WALL LANTERN upperright x1425,y80: existing front glassdoor hinges OPEN outward toleft, connectedlamp framechain unchanged.2) SADDLE METAL STIRRUP centerlower x807,y548: ONLY its brown/gold bottom footplate pivots downward onone hinge creating gap acrossbottom, same metal U arch/leatherstrap exact; one connected stirrupmechanism.3) RIGHT stall RED WHITE blanket lowerdanglingEND x1600,y758: its OWN fringe folds through a looseoverhand knot, same upperdrape/stripes, no stallwoodchanges.4) leftdoor's BLACK iron RING handle x258,y471: existing ring becomes a continuous figure-eight doubleloop belowSAMEmount/latch, other latchhardware originalexact.5) SADDLE large brown leather sideflap x832,y414: existing subtle floral tooling replaced by ONE clear incised spiral carvedinSAMEleather around75x90native, no saddleoutline/strapchanges. No objectswaps no extraobjects/text/grain, no broad repaint of water/human/animals."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "A spiral is tooled into the saddle's leather flap.",
+      "box": {
+        "x": 800,
+        "y": 342,
+        "width": 74,
+        "height": 113
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The wall lantern's front door hinges open.",
+      "box": {
+        "x": 1344,
+        "y": 44,
+        "width": 123,
+        "height": 106
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The right stall blanket's loose end ties into a knot.",
+      "box": {
+        "x": 1556,
+        "y": 722,
+        "width": 109,
+        "height": 207
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "The stirrup's footplate hinges downward.",
+      "box": {
+        "x": 761,
+        "y": 554,
+        "width": 89,
+        "height": 63
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "The door's ring handle forms a figure eight.",
+      "box": {
+        "x": 232,
+        "y": 434,
+        "width": 57,
+        "height": 99
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Correct inventory/yearnative1672x941. Actual5singleartifact edits: leatherinternaltooling, connectedlanterndoor, oneblanket ownknot/fringe oldnewunion, oneconnectedstirrup hingedfootplate, onecontinuousfoldedringhandle. Cowgirl/animal/waterbody positions unchanged in selectedregions; no swaps. No structuralcluecuttingnearhumanhand. Rootnativeblanket/doorhardware joins QA pending; difficulty hypothesesonly.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

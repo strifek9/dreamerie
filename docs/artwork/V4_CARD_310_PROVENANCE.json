@@ -1,0 +1,107 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-310",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-310-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-310-original-v4.png",
+    "sha256": "5E9F776D76C72CF45C00A62C9DB5BB1857ADFD3BDC68EEED9786304847C93D8B",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-310-altered-source-v4.png",
+    "sha256": "F1D18AF931FBD1640CA95564306369F43B70BFCF84DC2E4E01490259BC42130A",
+    "prompt": "[{\"file\": \"preserve-prompt.json\", \"content\": {\"operation\": \"Original preservation assembly\", \"script\": \"preserve.py\", \"purpose\": \"Only five one-artifact regions. Toy boat hull silhouette and original mast restored exact; apron pocket border and robot original; wave sea unchanged.\", \"scriptSHA256\": \"b71e353994a83a99b57a0e10bceae2c32e5507cff4bc21876e81c76cd2b0c9ca\"}}, {\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit EXACT1672x941 painting of cream ROBOT ironing OCEAN fabric with toyboats. Five single artifact localized edits only:1) METAL BUCKET upperLEFT x258,y187: its frontmetal face gains a clear pale CRESCENT REFLECTION, samebucketbody/handle/rim exact.2) ORANGE WHITE striped hanging LEFTwall towel x130,y220: ONLY its lowerfreeend passes through its own looseoverhand knot, sameupperdrape/hook/shelf exact.3) ROBOT'S CREAM APRON POCKET x596,y290: replace bluewavepaint with blueembroidered COMPASS ROSE, SAME pocketoutline/cloth/fasteners; allrobot body/face/hands exact.4) ONLY LARGE creamSAIL of LEFTMOST baskettoyboat x1287,y295: lowerhalfofsail folds down into a hollowaccordionpaperfan, same mast/flag/hull andother2boats originalexact.5) white waveprinted towel hanging over FRONT RIGHTBASKET x1577,y514: ONLY LOWERLEFT cloth corner x1542,y580 rolls upward into hollowfabriclip, same wavepattern/restofcloth/basket exact. No wave fabric changes, no swaps, no human/anatomy changes, no separate boat/flag/mast changes. Preserve original paintedtexture.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "preserve-prompt.json",
+      "content": {
+        "operation": "Original preservation assembly",
+        "script": "preserve.py",
+        "purpose": "Only five one-artifact regions. Toy boat hull silhouette and original mast restored exact; apron pocket border and robot original; wave sea unchanged.",
+        "scriptSHA256": "b71e353994a83a99b57a0e10bceae2c32e5507cff4bc21876e81c76cd2b0c9ca"
+      }
+    },
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit EXACT1672x941 painting of cream ROBOT ironing OCEAN fabric with toyboats. Five single artifact localized edits only:1) METAL BUCKET upperLEFT x258,y187: its frontmetal face gains a clear pale CRESCENT REFLECTION, samebucketbody/handle/rim exact.2) ORANGE WHITE striped hanging LEFTwall towel x130,y220: ONLY its lowerfreeend passes through its own looseoverhand knot, sameupperdrape/hook/shelf exact.3) ROBOT'S CREAM APRON POCKET x596,y290: replace bluewavepaint with blueembroidered COMPASS ROSE, SAME pocketoutline/cloth/fasteners; allrobot body/face/hands exact.4) ONLY LARGE creamSAIL of LEFTMOST baskettoyboat x1287,y295: lowerhalfofsail folds down into a hollowaccordionpaperfan, same mast/flag/hull andother2boats originalexact.5) white waveprinted towel hanging over FRONT RIGHTBASKET x1577,y514: ONLY LOWERLEFT cloth corner x1542,y580 rolls upward into hollowfabriclip, same wavepattern/restofcloth/basket exact. No wave fabric changes, no swaps, no human/anatomy changes, no separate boat/flag/mast changes. Preserve original paintedtexture."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "The striped wall towel's free end passes through its own knot.",
+      "box": {
+        "x": 75,
+        "y": 221,
+        "width": 110,
+        "height": 173
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The leftmost toy boat's sail folds into an accordion fan.",
+      "box": {
+        "x": 1233,
+        "y": 233,
+        "width": 131,
+        "height": 132
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The apron pocket bears a blue compass rose.",
+      "box": {
+        "x": 561,
+        "y": 260,
+        "width": 78,
+        "height": 65
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "A crescent reflects on the small metal bucket.",
+      "box": {
+        "x": 232,
+        "y": 178,
+        "width": 60,
+        "height": 59
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "The front basket towel's lower left corner curls upward.",
+      "box": {
+        "x": 1508,
+        "y": 520,
+        "width": 67,
+        "height": 84
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Five single artifact changes, no object swaps. Source original except five localized areas; robot/body/hands and entire ocean fabric exact. Original toy hull and mast restored; otherboats untouched. Original pocket border/cloth preserved outside motif. Full/native five pairs/390 pair inspected. Difficulty guesses/root joins pending; bucket reflection and cloth corner small at390 but clear structural motifs.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

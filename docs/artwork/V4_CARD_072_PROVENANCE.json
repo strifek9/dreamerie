@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-072",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-072-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-072-original-v4.png",
+    "sha256": "DFD53BE350A35DB6CA94533F45383B84FBCD857B947E9F045C05CBB45C4C1857",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-072-altered-source-v4.png",
+    "sha256": "C6BB633BCF8D8599F5C75C402190C0B65C70B09AE76BA82E22D0ABB405D34CA0",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit attached Dreameriepainting precise-object native1672x941. Preserve fruitcircus, allmice anatomy/poses/clothing, framing/paint/color/light. Exactly5 localized SINGLEOBJECT changes:1 blueflag atx510y277 droopsdownward instead ofpointinghorizontallyright, samepole stays;2 goldbell internalclapperx1339y268 tilts distinctlytoLEFT instead of hangingstraightdown, bellrim/bodyunchanged;3 redwhitehoop leftside atx1061y553 passes BEHIND flyingmouse's whitebelly rather than coveringfront, only hoopocclusionchanges, mousebodyposeunchanged;4 whitebow rightloopx1574y172 foldsDOWN ratherthanoutwardright, sameknot/leftloop/tails;5 circusdrum frontgreen triangularpanelx1125y763 pointsDOWN instead ofup, samegoldborders/drumshape. Do not moveanimals, restyle scene, alterotherobjects or swaps. Five definitesingleobject differencesonly.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit attached Dreameriepainting precise-object native1672x941. Preserve fruitcircus, allmice anatomy/poses/clothing, framing/paint/color/light. Exactly5 localized SINGLEOBJECT changes:1 blueflag atx510y277 droopsdownward instead ofpointinghorizontallyright, samepole stays;2 goldbell internalclapperx1339y268 tilts distinctlytoLEFT instead of hangingstraightdown, bellrim/bodyunchanged;3 redwhitehoop leftside atx1061y553 passes BEHIND flyingmouse's whitebelly rather than coveringfront, only hoopocclusionchanges, mousebodyposeunchanged;4 whitebow rightloopx1574y172 foldsDOWN ratherthanoutwardright, sameknot/leftloop/tails;5 circusdrum frontgreen triangularpanelx1125y763 pointsDOWN instead ofup, samegoldborders/drumshape. Do not moveanimals, restyle scene, alterotherobjects or swaps. Five definitesingleobject differencesonly."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The blue flag droops downward",
+      "difficulty": "Easy",
+      "box": {
+        "x": 423,
+        "y": 204,
+        "width": 211,
+        "height": 197
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-2",
+      "label": "The flying mouse passes in front of the hoop's left edge",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1039,
+        "y": 520,
+        "width": 63,
+        "height": 76
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-3",
+      "label": "The white bow's right loop folds downward",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1524,
+        "y": 132,
+        "width": 110,
+        "height": 134
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-4",
+      "label": "The bell's clapper leans to the left",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1298,
+        "y": 243,
+        "width": 65,
+        "height": 43
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-5",
+      "label": "The drum gold chevron dips at the center instead of rising",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1098,
+        "y": 727,
+        "width": 81,
+        "height": 76
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": "Full generatedsource/nativefeathercomposite/fivepairedcrops/390stack inspected. Fiveactualobserved changes: singleflagpose, hoopocclusion behind unchangedmouse, onebow rightloopfold, clappermechanismleanleft, drum internalchevron phase. Drumlabel corrected from requestedgreenpointorientation to observed goldchevron centerdip. No twoobjectswap, outsideboxunion pixelsunchanged, no brokenjoinsdetected. Difficulty hypotheses only,nohumantiming/physicalphoneapproval; root runtimeQArequired.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

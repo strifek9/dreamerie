@@ -1,0 +1,116 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-176",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-176-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-176-original-v4.png",
+    "sha256": "0B3FD94FF558CE816654A1F88222988D7620BE2EE4C2D932C9BB5C1DFEE6CF16",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-176-altered-source-v4.png",
+    "sha256": "D5697D8FE05C9A006A36D7F770C6E6423F89245E390D7DD4809BC17DDCF6796A",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact native full1672x941 dreamy painting, five localized independently selectable single-object differences. 1 wooden rocking chair at right: its wooden back support has ONE broad central upright instead of two narrow uprights, keep ceramic handle seated and rest chair original. 2 red-tipped silver sugar tongs at lower right: bring the two scalloped red jaws together CLOSED instead of wide open, same hinge and handles and tabletop. 3 silver teaspoon foreground: hole at far right end of spoon handle becomes clearly heart-shaped instead of oval, same spoon silhouette bowl and position. 4 green lidded ceramic jar at far left: lid knob tilts strongly diagonally left instead of upright, preserve lid rim jar silhouette all else. 5 sugar cube at lower middle x1030y710: shallow clear crescent indentation on front face, same cube shape white texture and reflection. Preserve cup saucer steam doorway cloth framing and painting style; no additional changes.\", \"reference\": \"dream-176-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact native full1672x941 dreamy painting, five localized independently selectable single-object differences. 1 wooden rocking chair at right: its wooden back support has ONE broad central upright instead of two narrow uprights, keep ceramic handle seated and rest chair original. 2 red-tipped silver sugar tongs at lower right: bring the two scalloped red jaws together CLOSED instead of wide open, same hinge and handles and tabletop. 3 silver teaspoon foreground: hole at far right end of spoon handle becomes clearly heart-shaped instead of oval, same spoon silhouette bowl and position. 4 green lidded ceramic jar at far left: lid knob tilts strongly diagonally left instead of upright, preserve lid rim jar silhouette all else. 5 sugar cube at lower middle x1030y710: shallow clear crescent indentation on front face, same cube shape white texture and reflection. Preserve cup saucer steam doorway cloth framing and painting style; no additional changes.",
+        "reference": "dream-176-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "chair-back",
+      "label": "The rocking chair has a tall wooden back",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1274,
+        "y": 325,
+        "width": 138,
+        "height": 208
+      },
+      "edgeFade": 5
+    },
+    {
+      "id": "tongs-closed",
+      "label": "The sugar tongs\u2019 jaws draw closer together.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1155,
+        "y": 673,
+        "width": 213,
+        "height": 138
+      },
+      "edgeFade": 5
+    },
+    {
+      "id": "jar-knob",
+      "label": "The jar lid knob tilts left",
+      "difficulty": "Hard",
+      "box": {
+        "x": 39,
+        "y": 22,
+        "width": 111,
+        "height": 76
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "spoon-heart",
+      "label": "The spoon handle hole is heart-shaped",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 808,
+        "y": 824,
+        "width": 84,
+        "height": 51
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "cube-dent",
+      "label": "The sugar cube has a curved indentation",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 968,
+        "y": 672,
+        "width": 77,
+        "height": 67
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": {
+    "humanTimed": false,
+    "physicalPhone": false,
+    "notes": "Tall chair back realized rather than planned replacement of uprights; label observed added back on one chair. Tongs closure/knob tilt mechanisms. Five single-object edits. Root QA observed narrowing rather than complete jaw closure; label corrected.",
+    "outsideRegionsExact": true,
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sourceHashes": {
+      "source.png": "d5697d8fe05c9a006a36d7f770c6e6423f89245e390d7dd4809bc17ddcf6796a"
+    }
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-026",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-026-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-026-original-v4.png",
+    "sha256": "D33243B26812A7948010025CFED306B9EB8E670701571B6FB197CB79674A2729",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-026-altered-source-v4.png",
+    "sha256": "DA4B414F9072ECCBB5CA0EFEC667A114141F718283FE5C1171CFD877A029D138",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise-object-edit of attached Dreamerie painting native1672x941. Preserve all composition, hat-house, pearlcountandpositions, colors, brushwork, furniture and desert. Exactlyfive SINGLEOBJECT localized changes: 1 chairback triangular cutoutx346y615 becomes downwardpointing triangle, sameouterchair; 2 circular blue housewindowx1036y533 replace perpendicular crossbars with X diagonal mullions within samecircle; 3 hatband middle pearl atx1128y347 should have ONE thin red string emerging from its top and looping around its lower edge, remainingpearls absolutelyunchanged; 4 long chairshadow atx550y803 should fork at farend into two taperedtips instead of single broadtip, onlyshadowtail andrestgroundunchanged; 5 tiny gold pinonhatbandx1270y401 rotate its shortcrossbar so it meets longstem atupperend instead ofmiddle, T rather thancross. No extraobjects, don't change two separateobjects in oneclue, preserveoriginalexact outsidefiveareas.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise-object-edit of attached Dreamerie painting native1672x941. Preserve all composition, hat-house, pearlcountandpositions, colors, brushwork, furniture and desert. Exactlyfive SINGLEOBJECT localized changes: 1 chairback triangular cutoutx346y615 becomes downwardpointing triangle, sameouterchair; 2 circular blue housewindowx1036y533 replace perpendicular crossbars with X diagonal mullions within samecircle; 3 hatband middle pearl atx1128y347 should have ONE thin red string emerging from its top and looping around its lower edge, remainingpearls absolutelyunchanged; 4 long chairshadow atx550y803 should fork at farend into two taperedtips instead of single broadtip, onlyshadowtail andrestgroundunchanged; 5 tiny gold pinonhatbandx1270y401 rotate its shortcrossbar so it meets longstem atupperend instead ofmiddle, T rather thancross. No extraobjects, don't change two separateobjects in oneclue, preserveoriginalexact outsidefiveareas."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The chair-back triangular opening points downward",
+      "difficulty": "Easy",
+      "box": {
+        "x": 323,
+        "y": 594,
+        "width": 42,
+        "height": 46
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The round window's crossbars meet diagonally",
+      "difficulty": "Medium",
+      "box": {
+        "x": 992,
+        "y": 489,
+        "width": 80,
+        "height": 88
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "A long open gap separates the rays of the chair shadow",
+      "difficulty": "Hard",
+      "box": {
+        "x": 440,
+        "y": 768,
+        "width": 910,
+        "height": 173
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "A red loop encircles the middle pearl",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1097,
+        "y": 309,
+        "width": 62,
+        "height": 68
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The hat-band pin has its crossbar at the top",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1245,
+        "y": 375,
+        "width": 46,
+        "height": 46
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full generated source, full native feather composite, five paired crops and390px stackedpair visually inspected. Singleobject targets only; middlepearl loop selected without generated adjoiningpearl loop. Shadow selected over original by union of old/new blue-shadow pixels (B-R>30, B-G>10) within authoredregion, preserving unrelated desertpixels. Gap extends muchfarther than original nearleg gap. Original bitidentical outside boxunion. Difficulty hypotheses only; no human timing/physicalphone approval. Root final compositor/crop QA required. Shadow selection mask dilated9px/blurred2px to capture complete painted edges; hard threshold firstattempt had halos and was rejected, final smooth composite/crops/mobile reinspected.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-136",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-136-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-136-original-v4.png",
+    "sha256": "295710FD3B899A3492E3B7D2FD37EAEA2F340A4D37875CE7700D10320300E126",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-136-altered-source-v4.png",
+    "sha256": "58A546104BF2D7ADF4D7D3555B62DEA1F505FAF42101489E9416ACA161DEB435",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise native1672x941 localizededit preserve astronautanatomy facehandspose icecube kitchenbathroom allpainting. Exactlyfive singleobjectdifferences:1 yellowSUBMARINE foremostroundwindow atx1433y455 becomes crescentwindow samehull otherwindowsunchanged;2 looseorangeGLOVE onfloorx944y770 bends its THUMBupward ratherthanstraightleftprofile, gloveotherfingersunchanged;3 copperTEAPOT floatingx835y284 its SPOUT curlsdown insteadpointsup, samebodylidhandle;4 SOAPBAR onleftdishx171y231 has onecentered diamondgroove onupperface insteadplain, samebaroutline;5 upside-down LADDER insideiceleftx699y166 one LOWESTrung bendsintoU insteadstraight, sametwo rails andother rungs. No twoobjectswaps no extras noglobalcolorchanges. Definite connected singleobject internalpose/mechanism changes.\"}}, {\"file\": \"prompt-b.json\", \"content\": {\"prompt\": \"Edit exact paintedcrop ofcopperteapot. ONEchange: spoutonright mustbend downward likecurvedgooseneck, with mouthpointingDOWN ratherthanup. Sameattachedspoutbase atbody rightx~88y63, rising thenhookingdown tip, solid copper continuous. Keep bodyhandlelid handbackground unchanged. Visible silhouette change only.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise native1672x941 localizededit preserve astronautanatomy facehandspose icecube kitchenbathroom allpainting. Exactlyfive singleobjectdifferences:1 yellowSUBMARINE foremostroundwindow atx1433y455 becomes crescentwindow samehull otherwindowsunchanged;2 looseorangeGLOVE onfloorx944y770 bends its THUMBupward ratherthanstraightleftprofile, gloveotherfingersunchanged;3 copperTEAPOT floatingx835y284 its SPOUT curlsdown insteadpointsup, samebodylidhandle;4 SOAPBAR onleftdishx171y231 has onecentered diamondgroove onupperface insteadplain, samebaroutline;5 upside-down LADDER insideiceleftx699y166 one LOWESTrung bendsintoU insteadstraight, sametwo rails andother rungs. No twoobjectswaps no extras noglobalcolorchanges. Definite connected singleobject internalpose/mechanism changes."
+      }
+    },
+    {
+      "file": "prompt-b.json",
+      "content": {
+        "prompt": "Edit exact paintedcrop ofcopperteapot. ONEchange: spoutonright mustbend downward likecurvedgooseneck, with mouthpointingDOWN ratherthanup. Sameattachedspoutbase atbody rightx~88y63, rising thenhookingdown tip, solid copper continuous. Keep bodyhandlelid handbackground unchanged. Visible silhouette change only."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The submarine front window becomes a crescent",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1405,
+        "y": 432,
+        "width": 41,
+        "height": 43
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The loose glove thumb points upward",
+      "difficulty": "Medium",
+      "box": {
+        "x": 883,
+        "y": 700,
+        "width": 65,
+        "height": 66
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The floating teapot spout bends downward",
+      "difficulty": "Hard",
+      "box": {
+        "x": 848,
+        "y": 257,
+        "width": 43,
+        "height": 65
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The soap has a diamond groove",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 140,
+        "y": 204,
+        "width": 69,
+        "height": 53
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The ladder lowest rung bends into a U",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 674,
+        "y": 206,
+        "width": 49,
+        "height": 38
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "visually inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "nativePreflight": "source equals actual original size, five nonoverlapping boxes",
+    "difficulty": "hypotheses; human and browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

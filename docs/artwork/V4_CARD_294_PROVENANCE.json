@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-294",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-294-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-294-original-v4.png",
+    "sha256": "DA75AE374654B2062AFD15FF3CF8C3E83B45CCF34A883DFB8D27B8873F66B693",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-294-altered-source-v4.png",
+    "sha256": "488265B30A3AAAE5FF97BEA8BA1C140EB2B2F91261B5028225040C153175F526",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact full native 1672x941 painterly girl pulling horizon with wooden rope reel at sunset. Five isolated SINGLE-object changes ONLY: 1) single spiral shell on sand x1376y853 now has a blue crescent reflection inside its rounded opening, outline exact; 2) starfish on right rock x1486y705 has a clear pale central spiral pattern inside its orange body, every arm exact; 3) ONE reel's low horizontal wooden crossbrace x650y617 curves upward in shallow arch between original endpoints, legs exact; 4) front reel axle metal cap x764y363 has a triangular dark slot instead of round central hole, reel/rope unchanged; 5) girl's red waist sash at x385y359 has a small gold zigzag embroidered on its folded bow fabric, no tassels/fringe or anatomy changes. Keep hands/feet/wave/horizon and original composition exact.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-294-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact full native 1672x941 painterly girl pulling horizon with wooden rope reel at sunset. Five isolated SINGLE-object changes ONLY: 1) single spiral shell on sand x1376y853 now has a blue crescent reflection inside its rounded opening, outline exact; 2) starfish on right rock x1486y705 has a clear pale central spiral pattern inside its orange body, every arm exact; 3) ONE reel's low horizontal wooden crossbrace x650y617 curves upward in shallow arch between original endpoints, legs exact; 4) front reel axle metal cap x764y363 has a triangular dark slot instead of round central hole, reel/rope unchanged; 5) girl's red waist sash at x385y359 has a small gold zigzag embroidered on its folded bow fabric, no tassels/fringe or anatomy changes. Keep hands/feet/wave/horizon and original composition exact.",
+        "reference": "D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-294-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The reel crossbrace arches upward",
+      "difficulty": "Easy",
+      "box": {
+        "x": 602,
+        "y": 578,
+        "width": 190,
+        "height": 55
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The shell opening reflects a blue arc",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1343,
+        "y": 838,
+        "width": 36,
+        "height": 35
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The starfish has a central spiral pattern",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1473,
+        "y": 691,
+        "width": 25,
+        "height": 27
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The waist sash has gold embroidery",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 361,
+        "y": 336,
+        "width": 40,
+        "height": 34
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The axle cap has a triangular slot",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 751,
+        "y": 347,
+        "width": 29,
+        "height": 29
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390 stacked pair. Five independently selectable localized object clues. Native dimensions, five bounded nonoverlapping boxes and exact original pixels outside verified. Difficulty estimates unvalidated; root compositor/game, human difficulty and physical phone approval pending. Full prompt/source hash chain retained. Actual original height is 940; preserved native height.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

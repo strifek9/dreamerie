@@ -1,0 +1,121 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-283",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-283-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-283-original-v4.png",
+    "sha256": "F3166003F0920DB9221EF0C7454716180DD448251FC520687F100D1AE6AA64DC",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-283-altered-source-v4.png",
+    "sha256": "19ACD36068A04A88F50B78AEEC1F70B4AD1317AAD495ED5B0537567720B9A717",
+    "prompt": "[{\"file\": \"prompt-refine-bowl.json\", \"content\": {\"prompt\": \"Edit this exact original painting preserving native 1672 by 941 frame, all anatomy, brushwork and objects. Make ONLY ONE tiny localized change: on the FRONT outside face of the teal ceramic bowl at far right, centered native x1550 y460, add a small carved pale crescent moon motif about 45 pixels tall. It belongs to the bowl surface and follows its curvature; no separate object. Preserve all melon slices, bowl rim, shape, nearby background, and every other part of the original EXACTLY. Do not change scrolls, cords, knife, seed, map, watermelon.\"}}, {\"file\": \"prompt-refine-map.json\", \"content\": {\"prompt\": \"Preserve this exact original painting at native1672x941. ONE LOCALIZED EDIT ONLY: inside the near circular rolled opening of the foreground map at native x1268 y830, change the inner paper spiral into a clearly triangular folded paper cavity. Keep the outer circular rim and complete outer silhouette of the rolled map EXACTLY original; do not unfurl, move, enlarge or change any paper edge. This is an internal fold only inside existing opening, triangle approximately45x48 pixels. Preserve all surrounding papers, rocks, knife, seed, bowls, cords, melon and brushwork exactly.\"}}, {\"file\": \"prompt-refine.json\", \"content\": {\"prompt\": \"TWO tiny targeted one-object edits, fullnative1672x941 exactpainting. 1 KNIFE existing silver circular rivet atnative(416,791), just at wooden handle's LEFT end next to blade, becomes a clearly fivepoint silver STAR at THAT SAME location. No added rivet or emblem farther right. 2 LOWER green cord tie around scroll atnative(548,281) (the THIRD row lower scroll, not uppercord near560218): ONLY its short free end curls into a square-shaped loop near(529,286) instead of loose curved bow, same lower cord and scroll. Upper independent tie stays exactly original, do not join ties or encircle multiple maps. All other details originalunchanged.\"}}, {\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Native1672x941 exact painting FIVE single-object localized changes only: 1 knife handle ONE round rivet near416791 becomes a brass star-shaped rivet, knifeothers exact. 2 loose SINGLE melon seed on cuttingboard near568610 turns UPRIGHT standing on edge rather than flat, same seed originalsize/position. 3 topmost left rolled map near537155 ONLY its rolled opening becomes triangular internal coil instead of round, othermaps exact. 4 GREEN tying cord around middleleft scroll near549260 becomes figure-eight loop instead of original tied loose loop, samecontinuouscord and scroll untouched. 5 foreground unfurled map near1284798 ONLY its terminalrolled paper flap curls outward opposite direction rather than inward, samepaper endpoint and allterrain/mountains preserved. No multiple scroll swaps or distant objects grouped. All bowls/watermelon/cloth/lighting/style/frame exact.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt-refine-bowl.json",
+      "content": {
+        "prompt": "Edit this exact original painting preserving native 1672 by 941 frame, all anatomy, brushwork and objects. Make ONLY ONE tiny localized change: on the FRONT outside face of the teal ceramic bowl at far right, centered native x1550 y460, add a small carved pale crescent moon motif about 45 pixels tall. It belongs to the bowl surface and follows its curvature; no separate object. Preserve all melon slices, bowl rim, shape, nearby background, and every other part of the original EXACTLY. Do not change scrolls, cords, knife, seed, map, watermelon."
+      }
+    },
+    {
+      "file": "prompt-refine-map.json",
+      "content": {
+        "prompt": "Preserve this exact original painting at native1672x941. ONE LOCALIZED EDIT ONLY: inside the near circular rolled opening of the foreground map at native x1268 y830, change the inner paper spiral into a clearly triangular folded paper cavity. Keep the outer circular rim and complete outer silhouette of the rolled map EXACTLY original; do not unfurl, move, enlarge or change any paper edge. This is an internal fold only inside existing opening, triangle approximately45x48 pixels. Preserve all surrounding papers, rocks, knife, seed, bowls, cords, melon and brushwork exactly."
+      }
+    },
+    {
+      "file": "prompt-refine.json",
+      "content": {
+        "prompt": "TWO tiny targeted one-object edits, fullnative1672x941 exactpainting. 1 KNIFE existing silver circular rivet atnative(416,791), just at wooden handle's LEFT end next to blade, becomes a clearly fivepoint silver STAR at THAT SAME location. No added rivet or emblem farther right. 2 LOWER green cord tie around scroll atnative(548,281) (the THIRD row lower scroll, not uppercord near560218): ONLY its short free end curls into a square-shaped loop near(529,286) instead of loose curved bow, same lower cord and scroll. Upper independent tie stays exactly original, do not join ties or encircle multiple maps. All other details originalunchanged."
+      }
+    },
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Native1672x941 exact painting FIVE single-object localized changes only: 1 knife handle ONE round rivet near416791 becomes a brass star-shaped rivet, knifeothers exact. 2 loose SINGLE melon seed on cuttingboard near568610 turns UPRIGHT standing on edge rather than flat, same seed originalsize/position. 3 topmost left rolled map near537155 ONLY its rolled opening becomes triangular internal coil instead of round, othermaps exact. 4 GREEN tying cord around middleleft scroll near549260 becomes figure-eight loop instead of original tied loose loop, samecontinuouscord and scroll untouched. 5 foreground unfurled map near1284798 ONLY its terminalrolled paper flap curls outward opposite direction rather than inward, samepaper endpoint and allterrain/mountains preserved. No multiple scroll swaps or distant objects grouped. All bowls/watermelon/cloth/lighting/style/frame exact."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "standing-seed",
+      "label": "The loose seed stands upright.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 529,
+        "y": 553,
+        "width": 83,
+        "height": 87
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "folded-map",
+      "label": "The foreground map\u2019s inner fold becomes triangular.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1223,
+        "y": 783,
+        "width": 80,
+        "height": 96
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "crescent-bowl",
+      "label": "The bowl bears a carved crescent.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1498,
+        "y": 407,
+        "width": 105,
+        "height": 94
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "square-loop",
+      "label": "The lower scroll\u2019s cord curls into a square loop.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 506,
+        "y": 262,
+        "width": 85,
+        "height": 47
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "star-rivet",
+      "label": "The knife\u2019s existing rivet becomes a silver star.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 387,
+        "y": 774,
+        "width": 60,
+        "height": 37
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five paired crops, full composite and 390-pixel stacked pair inspected. Single-object changes; difficulty hypotheses only. Root browser/hit QA and human fairness remain pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

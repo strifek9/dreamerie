@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-122",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-122-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-122-original-v4.png",
+    "sha256": "DF270678FD3E2A5CB212A1A1CFA4E0E4F4612FA4AB99207B3F28B19D62323C70",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-122-altered-source-v4.png",
+    "sha256": "45143A51645EC472A7EBE2B333B7DA4CC0188C124308DAF84C96266D3BF49668",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit this exact native1672x941 dream painting. Preserve ballroom, all shoes, shadows, anatomy, lighting and painted finish. Exactly five localized single-object changes:1 ivory lace FAN onchairleft x135y342 folds from wideopen semicircle to half-open narrowerfan, samepivot/location;2 wooden MUSICBOX CRANKHANDLE atfar-right x1594y523 rotates upward vertically while goldcrankconnector remains attached, sameonehandle;3 large foreground CREAMBOOT LACE looseend atx710y311 becomes clear closed loop rather than hanging straight strand, bootandrestlaces unchanged;4 LEFT foreground PURPLESHOE oval purplegem atx236y778 becomes teardrop gem within samepearlsetting, onlythisshoe notother;5 RIGHT foreground BLUESHOE goldheel atx1499y839 becomes curved inward heel instead straight, shoeupperunchanged. Five objects only no two-object swaps, no extra changes or regeneration.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit this exact native1672x941 dream painting. Preserve ballroom, all shoes, shadows, anatomy, lighting and painted finish. Exactly five localized single-object changes:1 ivory lace FAN onchairleft x135y342 folds from wideopen semicircle to half-open narrowerfan, samepivot/location;2 wooden MUSICBOX CRANKHANDLE atfar-right x1594y523 rotates upward vertically while goldcrankconnector remains attached, sameonehandle;3 large foreground CREAMBOOT LACE looseend atx710y311 becomes clear closed loop rather than hanging straight strand, bootandrestlaces unchanged;4 LEFT foreground PURPLESHOE oval purplegem atx236y778 becomes teardrop gem within samepearlsetting, onlythisshoe notother;5 RIGHT foreground BLUESHOE goldheel atx1499y839 becomes curved inward heel instead straight, shoeupperunchanged. Five objects only no two-object swaps, no extra changes or regeneration."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The lace fan folds narrower",
+      "difficulty": "Easy",
+      "box": {
+        "x": 12,
+        "y": 275,
+        "width": 237,
+        "height": 137
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The music-box crank handle points upward",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1480,
+        "y": 447,
+        "width": 165,
+        "height": 104
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The cream boot lace closes into a loop",
+      "difficulty": "Hard",
+      "box": {
+        "x": 678,
+        "y": 191,
+        "width": 88,
+        "height": 241
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The front purple shoe gem becomes a teardrop",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 211,
+        "y": 749,
+        "width": 44,
+        "height": 51
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The rear blue shoe heel curves inward",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1434,
+        "y": 723,
+        "width": 57,
+        "height": 80
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "five distinct single-object clues inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "difficulty": "hypotheses; human playtest and parent browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

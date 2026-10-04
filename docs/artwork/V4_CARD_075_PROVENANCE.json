@@ -1,0 +1,111 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-075",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-075-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-075-original-v4.png",
+    "sha256": "15993D28C62AFCD2EF74B5AC1925AA573061DB4609AFB4E56BDF0FA565DF086C",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-075-altered-source-v4.png",
+    "sha256": "87F17A8F40CA45FFF7916F55ADB155C78B3F46A52AF57D29C6F25DE5375342DB",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"Precise-object-edit native1672x941 Dreamerie Teaspoon Skiers attached. Preserveall penguins/anatomy/spoons/skis/snow/mug composition, painterlygrainfree finish. ONLYfive singleobject localized edits:1 ONLY goldenstar on mound atx1015,y345 becomes a folded FOURpoint star rather thanfivepoints, samecenter,size;2 ONLY foregroundlargepenguin redscarf atleftshoulderx530,y402 passes UNDER blackflipper instead overit, preserveflipper andscarfeverywhereelse;3 ONLY farRIGHT curledtip of largegreen ski x788,y704 curls DOWN instead up, retain wholeotherskiunchanged andattachment;4 ONLY mughandle's upperinnercorner atx1495,y691 gains a diagonal turquoise hinge/brace withinhandleopening, preserve outermug andallotherbargeometry;5 ONLY white woven pattern on foregroundred mitten x159,y740 becomes a continuous wavychain instead zigzag, mittenbody/thumb unchanged. No independentobjectswaps, onlyoneobjectchanges foreachclue, no changingotherpenguins/shapes/colors, no micrograin/text/crop/globalrestyle. Cleanconnected localized geometry.\"}}, {\"file\": \"prompt-tip-refine.json\", \"content\": {\"tool\": \"built-in imagegen\", \"prompt\": \"Precise ONE localized edit to attached native1672x941 painting. ONLY the inner curl/hollow at farRIGHTtip of LARGEforeground GREENski centeredx785,y697. Current green tip coils into rounded spiral; change ONLY INNER curl into a sharp TRIANGULAR spiral opening instead circular. Keep OUTERski silhouette, attachment, entire ski and other ski exactly original, preserve all penguins/props/fullframe. Localonlyx766..813 y675..720, oneobjectdetail, no changing entirecurl direction/movingorcuttingski. Clean native geometric hole visible on inspection, grainfreepaint.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "Precise-object-edit native1672x941 Dreamerie Teaspoon Skiers attached. Preserveall penguins/anatomy/spoons/skis/snow/mug composition, painterlygrainfree finish. ONLYfive singleobject localized edits:1 ONLY goldenstar on mound atx1015,y345 becomes a folded FOURpoint star rather thanfivepoints, samecenter,size;2 ONLY foregroundlargepenguin redscarf atleftshoulderx530,y402 passes UNDER blackflipper instead overit, preserveflipper andscarfeverywhereelse;3 ONLY farRIGHT curledtip of largegreen ski x788,y704 curls DOWN instead up, retain wholeotherskiunchanged andattachment;4 ONLY mughandle's upperinnercorner atx1495,y691 gains a diagonal turquoise hinge/brace withinhandleopening, preserve outermug andallotherbargeometry;5 ONLY white woven pattern on foregroundred mitten x159,y740 becomes a continuous wavychain instead zigzag, mittenbody/thumb unchanged. No independentobjectswaps, onlyoneobjectchanges foreachclue, no changingotherpenguins/shapes/colors, no micrograin/text/crop/globalrestyle. Cleanconnected localized geometry."
+      }
+    },
+    {
+      "file": "prompt-tip-refine.json",
+      "content": {
+        "tool": "built-in imagegen",
+        "prompt": "Precise ONE localized edit to attached native1672x941 painting. ONLY the inner curl/hollow at farRIGHTtip of LARGEforeground GREENski centeredx785,y697. Current green tip coils into rounded spiral; change ONLY INNER curl into a sharp TRIANGULAR spiral opening instead circular. Keep OUTERski silhouette, attachment, entire ski and other ski exactly original, preserve all penguins/props/fullframe. Localonlyx766..813 y675..720, oneobjectdetail, no changing entirecurl direction/movingorcuttingski. Clean native geometric hole visible on inspection, grainfreepaint."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "star",
+      "label": "The golden star has four points.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 922,
+        "y": 259,
+        "width": 193,
+        "height": 180
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "scarf",
+      "label": "The red scarf loops beneath the penguin's wing.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 504,
+        "y": 371,
+        "width": 101,
+        "height": 126
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "ski-tip",
+      "label": "The far green ski's inner curl becomes triangular.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 765,
+        "y": 671,
+        "width": 47,
+        "height": 56
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "handle-brace",
+      "label": "The mug handle has a diagonal brace.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1428,
+        "y": 681,
+        "width": 125,
+        "height": 120
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "mitten-pattern",
+      "label": "The large red mitten's white pattern becomes wavy.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 136,
+        "y": 698,
+        "width": 93,
+        "height": 91
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": "Rejecteddowncurledwhole-tipinitialedit due narrowpatcholdfragment andbroadhitboxunchangedotherski falsepositive. TargetedINNERcurl triangularholeonly nowselected. Outerfar-skiandotherwhole ski originalexact outside tinybox; large mittenONLYpattern changed, smallmittenoriginal. No humanvalidation. Finalsource/composite/5pairedcrops/390pair inspected cleanjoins.0outside5regionschanges,5nonzeroclues verified. Sourcehash87f17a8f40ca45fff7916f55adb155c78b3f46a52af57d29c6f25de5375342db. Otherunchanged ski tip approx688,742 nearesthitbox765,671,47x56 distance78.45px>66.88px radius; rootverifyactualcenter.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

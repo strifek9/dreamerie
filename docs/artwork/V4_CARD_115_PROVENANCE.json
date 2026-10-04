@@ -1,0 +1,132 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-115",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-115-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-115-original-v4.png",
+    "sha256": "2311A8D105A50FD3C3D5CD4526BDFC3C18B7AB8A9E199128CCD7CB6062A1E818",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-115-altered-source-v4.png",
+    "sha256": "68EF3AABE21B8A9BDC5ECA3049DAB292F15103DF34CD62D607835B86A3D88DE3",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit EXACT The Cherry Pie Moon image, native1672x941. Five single-object differences: 1 red cup's handle curls inward into a small spiral instead round D loop (within1340285..1400374) maintain cupconnection; 2 spoon bowl at1315482 reflects blue scarf star ratherthanplainwhiteglint, within1255447..1360513; 3 only foreground LEFT cherry's large green leaf at183577 has bite notch changed to HEART-shaped bite notch, within168571..240630, otherleafedgesunchanged; 4 squirrel's ONE upper left small paw at1039273 becomes gently curled inward (within993247..1071294), maintainanatomy, otherpaw exact; 5 ONLY one white star on scarf near1444250 becomes hollow outlined star insteadsolid (within1425230..1472269), reststars/scarffringesexact. Preserve original style, composition, anatomy, moon/pie/clouds. No independently separate objects swapped. No fine specks.\"}}, {\"file\": \"star-prompt.json\", \"content\": {\"prompt\": \"Edit this exact crop blue scarf. ONLY the ONE main complete ivory star at upper middle becomes HOLLOW outlined ivory five-point star, blue center matches scarf. Same position/outline, bold visible5pxoutline native. Allotherwhite fragments, scarf and backgroundunchanged. Return same65x60 framing.\", \"nativeCrop\": [1415, 219, 65, 60]}}, {\"file\": \"paw-prompt.json\", \"content\": {\"prompt\": \"Edit exact crop of orange squirrel's ONE front paw resting on pie. Keep wrist location, fur and all anatomy. Change SAME ONE paw from visible downward fingers into a CLOSED ROUND tucked fist with fingers curled UNDER, no visible hanging long finger lobes. Rounded top silhouette, natural continuous wrist. Leave otherpartscrop exact. Same100x70 framing.\", \"nativeCrop\": [980, 235, 100, 70]}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit EXACT The Cherry Pie Moon image, native1672x941. Five single-object differences: 1 red cup's handle curls inward into a small spiral instead round D loop (within1340285..1400374) maintain cupconnection; 2 spoon bowl at1315482 reflects blue scarf star ratherthanplainwhiteglint, within1255447..1360513; 3 only foreground LEFT cherry's large green leaf at183577 has bite notch changed to HEART-shaped bite notch, within168571..240630, otherleafedgesunchanged; 4 squirrel's ONE upper left small paw at1039273 becomes gently curled inward (within993247..1071294), maintainanatomy, otherpaw exact; 5 ONLY one white star on scarf near1444250 becomes hollow outlined star insteadsolid (within1425230..1472269), reststars/scarffringesexact. Preserve original style, composition, anatomy, moon/pie/clouds. No independently separate objects swapped. No fine specks."
+      }
+    },
+    {
+      "file": "star-prompt.json",
+      "content": {
+        "prompt": "Edit this exact crop blue scarf. ONLY the ONE main complete ivory star at upper middle becomes HOLLOW outlined ivory five-point star, blue center matches scarf. Same position/outline, bold visible5pxoutline native. Allotherwhite fragments, scarf and backgroundunchanged. Return same65x60 framing.",
+        "nativeCrop": [
+          1415,
+          219,
+          65,
+          60
+        ]
+      }
+    },
+    {
+      "file": "paw-prompt.json",
+      "content": {
+        "prompt": "Edit exact crop of orange squirrel's ONE front paw resting on pie. Keep wrist location, fur and all anatomy. Change SAME ONE paw from visible downward fingers into a CLOSED ROUND tucked fist with fingers curled UNDER, no visible hanging long finger lobes. Rounded top silhouette, natural continuous wrist. Leave otherpartscrop exact. Same100x70 framing.",
+        "nativeCrop": [
+          980,
+          235,
+          100,
+          70
+        ]
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The mug handle curls inward",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1340,
+        "y": 285,
+        "width": 61,
+        "height": 90
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The spoon reflects a blue star",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1255,
+        "y": 447,
+        "width": 106,
+        "height": 67
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The cherry leaf has a heart shaped notch",
+      "difficulty": "Hard",
+      "box": {
+        "x": 168,
+        "y": 571,
+        "width": 73,
+        "height": 60
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The squirrel front paw curls into a rounded fist",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 993,
+        "y": 247,
+        "width": 78,
+        "height": 48
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "paw-native.png"
+    },
+    {
+      "id": "change-5",
+      "label": "One scarf star becomes an outline",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1425,
+        "y": 219,
+        "width": 43,
+        "height": 49
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "refined-native.png"
+    }
+  ],
+  "notes": "Worker inspected native pair, five paired crops and 390 stacked pair. Five single objects; unrelated drift excluded; outside pixels exact original. Crop refinements resized only to exact original crop dimensions, full generated crop preserved with coordinates in prompt. Difficulty estimates unvalidated. Root game/compositor/human review pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-317",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-317-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-317-original-v4.png",
+    "sha256": "9BC508F13D5859DE7F1B71A6721BE30AD823D92921A2F0CF27C86A4DAA902D6B",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-317-altered-source-v4.png",
+    "sha256": "1118E79E073EC5687BAFB43955F15C92F8F6EDDB3012FF897273808ACFAD039F",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact original child-unties-stone-path painting locally, preserve child identity/anatomy, impossible knot, original scene/frame/style. Five single-object edits only: 1 Wagon's black rectangular pull-handle grip at x439 y51 becomes an oval closed loop grip, same pole attachment, wagon unchanged. 2 Foreground snail at lower-left has its head curl backward toward its shell as if looking behind, shell/body stay in same place, preserve snail anatomy. 3 Orange fallen leaf near x292 y724 has its rightmost pointed tip rolled upward into a small visible curled flap, rest leaf unchanged. 4 Nearest wagon wheel's red circular hub near x374 y476 becomes a five-pointed red star hub, rubber tire/cream wheel rim unchanged, all other wheel hubs unchanged. 5 The child's nearest LEFT boot (viewer-left at x590 y603) has upper laces tied into one clear broad bow over its tongue, rest boot and lower laces unchanged. Exactly five separately localized targets, no paired swaps/no extra objects. Keep clean local edges.\"}}, {\"file\": \"prompt-b.json\", \"content\": {\"prompt\": \"Edit this exact original painting with ONLY ONE local change. Foreground snail at x125 y780: change ONLY viewer-left antenna, whose original stalk is near x155 y744, to curl leftward/backward in a clear hooked arc ending above its shell. Preserve viewer-right antenna at x161 y745 EXACTLY, preserve snail head face body shell and eye EXACTLY. No extra antenna. All other objects and entire scene remain exactly original. One connected antenna curl only.\", \"rejected\": \"extra disconnected antenna\"}}, {\"file\": \"prompt-c.json\", \"content\": {\"prompt\": \"One localized edit only in this exact painting. Change the spiral pattern on the snail shell at lower-left x98 y779 into a clear heart-shaped nested groove pattern, same brown shell, same outline and body. Preserve snail head, both antennae, eye, body exactly original. No new objects. Everything else original unchanged. Only snail shell internal pattern changes.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact original child-unties-stone-path painting locally, preserve child identity/anatomy, impossible knot, original scene/frame/style. Five single-object edits only: 1 Wagon's black rectangular pull-handle grip at x439 y51 becomes an oval closed loop grip, same pole attachment, wagon unchanged. 2 Foreground snail at lower-left has its head curl backward toward its shell as if looking behind, shell/body stay in same place, preserve snail anatomy. 3 Orange fallen leaf near x292 y724 has its rightmost pointed tip rolled upward into a small visible curled flap, rest leaf unchanged. 4 Nearest wagon wheel's red circular hub near x374 y476 becomes a five-pointed red star hub, rubber tire/cream wheel rim unchanged, all other wheel hubs unchanged. 5 The child's nearest LEFT boot (viewer-left at x590 y603) has upper laces tied into one clear broad bow over its tongue, rest boot and lower laces unchanged. Exactly five separately localized targets, no paired swaps/no extra objects. Keep clean local edges."
+      }
+    },
+    {
+      "file": "prompt-b.json",
+      "content": {
+        "prompt": "Edit this exact original painting with ONLY ONE local change. Foreground snail at x125 y780: change ONLY viewer-left antenna, whose original stalk is near x155 y744, to curl leftward/backward in a clear hooked arc ending above its shell. Preserve viewer-right antenna at x161 y745 EXACTLY, preserve snail head face body shell and eye EXACTLY. No extra antenna. All other objects and entire scene remain exactly original. One connected antenna curl only.",
+        "rejected": "extra disconnected antenna"
+      }
+    },
+    {
+      "file": "prompt-c.json",
+      "content": {
+        "prompt": "One localized edit only in this exact painting. Change the spiral pattern on the snail shell at lower-left x98 y779 into a clear heart-shaped nested groove pattern, same brown shell, same outline and body. Preserve snail head, both antennae, eye, body exactly original. No new objects. Everything else original unchanged. Only snail shell internal pattern changes."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The wagon grip becomes an oval loop",
+      "difficulty": "Easy",
+      "box": {
+        "x": 385,
+        "y": 16,
+        "width": 111,
+        "height": 83
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The shell spiral becomes a heart groove",
+      "difficulty": "Medium",
+      "box": {
+        "x": 68,
+        "y": 749,
+        "width": 72,
+        "height": 58
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The fallen leaf tip curls upward",
+      "difficulty": "Hard",
+      "box": {
+        "x": 232,
+        "y": 679,
+        "width": 159,
+        "height": 90
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The nearest wheel has a star hub",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 343,
+        "y": 445,
+        "width": 56,
+        "height": 64
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The nearest boot has a broad lace bow",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 539,
+        "y": 532,
+        "width": 106,
+        "height": 99
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "visually inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "nativePreflight": "source equals actual original size, five nonoverlapping boxes",
+    "difficulty": "hypotheses; human and browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-052",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-052-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-052-original-v4.png",
+    "sha256": "26771D165C7B4F05CFD0C9E40BECEC920FD0E44FDA3C8FCF01632F934DAAC540",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-052-altered-source-v4.png",
+    "sha256": "027F095D54E558A0E9C775E315A52E9AD4EE414D7BB22018C9CF5479F22CFDEA",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise edit provided Dreameriepainting entire1672x941 framepreserved. Five independentlyselectable singleobject changes ONLY:1 large brass doorlock's white diamond keyhole x372,y242 becomes clear heart-shaped keyhole, sameplate;2 mouse overalls blue heart x621,y428 becomes upside-down heart, samecolor/size;3 trailing mouse pink tail LOOP at x494,y389 turns into angular squaredloop rather than roundcurve, within438,313,81,160 preservebody andgreenhose separately;4 wateringcan FRONTcentral white daisy x780,y395 gains a curved hookedstem down to x788,y425, preservingcanallotherflowers, oneprintrelationship;5 huge blue flowerpot gold crescent x1018,y672 now opensleft rather thanright, x974,630,73,85. Nootherflowers/stars/objects changes; noadjacenttwoobjectswaps; preservenativeframe/poses/style/grainfreepaint. Exactlyfiveboundedchanges.\"}}, {\"file\": \"heart-prompt.json\", \"content\": {\"prompt\": \"Edit only blueheartprinted onyellowcloth: TURNheart UPSIDEDOWN, pointatTOP, twinroundedlobesatBOTTOM andnotchatbottommiddle. Samebluepaint/samecenter/samepatchsize. Keepyellowclothfolds/background exactly fullcrop. Nootherchanges.\", \"crop\": [597, 404, 52, 54], \"resizeBackToNative\": true}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise edit provided Dreameriepainting entire1672x941 framepreserved. Five independentlyselectable singleobject changes ONLY:1 large brass doorlock's white diamond keyhole x372,y242 becomes clear heart-shaped keyhole, sameplate;2 mouse overalls blue heart x621,y428 becomes upside-down heart, samecolor/size;3 trailing mouse pink tail LOOP at x494,y389 turns into angular squaredloop rather than roundcurve, within438,313,81,160 preservebody andgreenhose separately;4 wateringcan FRONTcentral white daisy x780,y395 gains a curved hookedstem down to x788,y425, preservingcanallotherflowers, oneprintrelationship;5 huge blue flowerpot gold crescent x1018,y672 now opensleft rather thanright, x974,630,73,85. Nootherflowers/stars/objects changes; noadjacenttwoobjectswaps; preservenativeframe/poses/style/grainfreepaint. Exactlyfiveboundedchanges."
+      }
+    },
+    {
+      "file": "heart-prompt.json",
+      "content": {
+        "prompt": "Edit only blueheartprinted onyellowcloth: TURNheart UPSIDEDOWN, pointatTOP, twinroundedlobesatBOTTOM andnotchatbottommiddle. Samebluepaint/samecenter/samepatchsize. Keepyellowclothfolds/background exactly fullcrop. Nootherchanges.",
+        "crop": [
+          597,
+          404,
+          52,
+          54
+        ],
+        "resizeBackToNative": true
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "tail",
+      "label": "The mouse's tail curls into an angular loop.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 432,
+        "y": 309,
+        "width": 137,
+        "height": 179
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "moon",
+      "label": "The large pot's crescent opens to the left.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 946,
+        "y": 625,
+        "width": 111,
+        "height": 93
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "keyhole",
+      "label": "The door's diamond keyhole becomes a heart.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 343,
+        "y": 211,
+        "width": 47,
+        "height": 61
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "print",
+      "label": "The can's printed daisy grows a hooked stem.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 759,
+        "y": 377,
+        "width": 40,
+        "height": 57
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "heart",
+      "label": "The blue heart on the overalls points upward.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 599,
+        "y": 406,
+        "width": 48,
+        "height": 50
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native fullpair/fivecrop/390QA passed. Original hose exact via explicit preservationpolygon mask, including whitehighlight and boundaryrim. Tailremainsbehindhose. Rootfeather/gameQA pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

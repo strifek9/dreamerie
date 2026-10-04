@@ -1,0 +1,104 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-064",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-064-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-064-original-v4.png",
+    "sha256": "6FB58EFE1CA680B6C761ADCBFBFE318DA9D8CA8013EADD549D8627D7065BC2FD",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-064-altered-source-v4.png",
+    "sha256": "39301F785090D41497C2EE51DF6F7AC904B6AEC43353DF0F22C7A8FEF168A02D",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise edit attached bluehood woman carrying goldenbirdcages cherryblossom painting. EXACT native1672x941 frame/allpositions humananatomy/colors/painterlyfinish preserved. FIVE localized single-object changes:1) orange hanging birdcage atupperleft: its open DOOR swings INWARD into cage rather than outwardright, preserve cageoutline andattachment hinge, doornotmissing, clear inwardperspective visiblebars.2) woman's hood GOLDTASSEL leftofshoulder: loose strands braidthrough its OWN loop forming a small neatselfknot before dangling, preserve hood/woman.3) OVALgreenbrooch atneck: greenjewel contains clear pale crescent-shaped reflectedglint instead ofplainlightspot, preserve goldrim ovalshape.4) largestgoldcage heldatwoman'schest: central horizontalhoop becomes a gently WAVY braidedhoop instead of straightoval, continuoussamecage rails stay attached plausible, othercagesunchanged.5) oneBIG pale pink foregroundblossom lowerleft: goldstamens curveinto a clear spiral aroundcenter instead ofradiatingstraight, keepallfivepetals andotherflowers unchanged. Exactlyfive oneobjectclues, no swaps noextrabirds/newprops/text/watermark.\"}}, {\"file\": \"refine-prompt.json\", \"content\": {\"prompt\": \"Edit only greenovalbrooch center gemstone inattachedcrop. Preservegold beadedrim ovalshape cloakfabric EXACT. Replaceexistingwhitecornerglint with a distinct PALE CRESCENT reflection runningdowninsidegreenstone; greenstone remainsgreen andoval, crescent20percentstonewidth mostlyfullheight. No changeselsewhere/noextras/nolabels.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise edit attached bluehood woman carrying goldenbirdcages cherryblossom painting. EXACT native1672x941 frame/allpositions humananatomy/colors/painterlyfinish preserved. FIVE localized single-object changes:1) orange hanging birdcage atupperleft: its open DOOR swings INWARD into cage rather than outwardright, preserve cageoutline andattachment hinge, doornotmissing, clear inwardperspective visiblebars.2) woman's hood GOLDTASSEL leftofshoulder: loose strands braidthrough its OWN loop forming a small neatselfknot before dangling, preserve hood/woman.3) OVALgreenbrooch atneck: greenjewel contains clear pale crescent-shaped reflectedglint instead ofplainlightspot, preserve goldrim ovalshape.4) largestgoldcage heldatwoman'schest: central horizontalhoop becomes a gently WAVY braidedhoop instead of straightoval, continuoussamecage rails stay attached plausible, othercagesunchanged.5) oneBIG pale pink foregroundblossom lowerleft: goldstamens curveinto a clear spiral aroundcenter instead ofradiatingstraight, keepallfivepetals andotherflowers unchanged. Exactlyfive oneobjectclues, no swaps noextrabirds/newprops/text/watermark."
+      }
+    },
+    {
+      "file": "refine-prompt.json",
+      "content": {
+        "prompt": "Edit only greenovalbrooch center gemstone inattachedcrop. Preservegold beadedrim ovalshape cloakfabric EXACT. Replaceexistingwhitecornerglint with a distinct PALE CRESCENT reflection runningdowninsidegreenstone; greenstone remainsgreen andoval, crescent20percentstonewidth mostlyfullheight. No changeselsewhere/noextras/nolabels."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "The foreground blossom's stamens curl into a spiral.",
+      "box": {
+        "x": 222,
+        "y": 658,
+        "width": 139,
+        "height": 154
+      },
+      "edgeFade": 5
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The hanging cage door swings inward.",
+      "box": {
+        "x": 288,
+        "y": 201,
+        "width": 203,
+        "height": 145
+      },
+      "edgeFade": 5
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The hood tassel hangs from an open gold loop.",
+      "box": {
+        "x": 637,
+        "y": 299,
+        "width": 91,
+        "height": 109
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "The chest-held cage's horizontal hoop is braided.",
+      "box": {
+        "x": 962,
+        "y": 447,
+        "width": 166,
+        "height": 53
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "A crescent glint reflects inside the green brooch.",
+      "box": {
+        "x": 961,
+        "y": 318,
+        "width": 26,
+        "height": 34
+      },
+      "edgeFade": 2
+    }
+  ],
+  "notes": "Nativefullframe inspected. Initialbroochmissing refinesourcegeneratedbuiltin. Accurateobserved tassel is openloopattachment, notbraidedstrands. Singleobject internal flower/cage/tassel/brooch, no swaps. Cagehoop separatedfromothercages. Rootfinalclipped QA necessary; doorregion coversoldoutwards+newinwardsdoor asONEcagehingeddoor pose. Brooch last requiresinspection notnoise.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

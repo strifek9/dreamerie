@@ -1,0 +1,104 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-027",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-027-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-027-original-v4.png",
+    "sha256": "E0435388CD16E6738D03F70704BF44392CA9373572242CC946CD9996D96C4ADB",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-027-altered-source-v4.png",
+    "sha256": "96164317E85A245707F7E14F67C06FB33E75A93600D78DAFD30C8164A57CBB03",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit attached painted penguin citrus beach image preserving EXACT1672x941fullframing allpositions brushwork palette anatomy. Exactly FIVE local intentional changes: 1 red beachball: its large cream star decoration becomes painted cream silhouette of a small sailingboat with triangular sail (not newphysicalboat), same decoration scale. 2 glass held by penguin: redstriped straw bends OVER and hooks AROUND lemonwheel garnish at right rim, make continuous plausible straw passing in front then behind lemon, instead of current straight leftstraw; keepglasshand/fruit intact. 3 foreground lemonade pitcher: its existing round glass handle changes connection so a lemon slice threads through hollow handle halfway with visible rind across the hole; preserve pitcher outline, noadditionalhandle. 4 blue shovel right: its scoop contains a clearly drawn small seashell-shaped impression in sand adhered INSIDE scoop, same shovelshape andposition. 5 pair cutlemons ontray: change ONLY right cutlemon's central segment structure into three wide curvedfan sectors instead of many radialwedges, same rind andlocation. No extra scenechanges; avoid randomclutter, color-only differences, disappearance, text/markers/watermark.\"}}, {\"file\": \"refine-prompt.json\", \"content\": {\"prompt\": \"Editthis exactcrop lemononwoodtray. Preserve framing rind citrusyellow shape and tray. Change ONLY inner cutface: instead of many thin radialwedges, divide flesh into exactly THREE broad smoothly curved spiral fan sectors, clearly a segmented citrus interior with THREE creamcurvedpartitionlines startingcenter and sweepingto rind. Nochange otherlemon/tray/sand, noicon/text.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit attached painted penguin citrus beach image preserving EXACT1672x941fullframing allpositions brushwork palette anatomy. Exactly FIVE local intentional changes: 1 red beachball: its large cream star decoration becomes painted cream silhouette of a small sailingboat with triangular sail (not newphysicalboat), same decoration scale. 2 glass held by penguin: redstriped straw bends OVER and hooks AROUND lemonwheel garnish at right rim, make continuous plausible straw passing in front then behind lemon, instead of current straight leftstraw; keepglasshand/fruit intact. 3 foreground lemonade pitcher: its existing round glass handle changes connection so a lemon slice threads through hollow handle halfway with visible rind across the hole; preserve pitcher outline, noadditionalhandle. 4 blue shovel right: its scoop contains a clearly drawn small seashell-shaped impression in sand adhered INSIDE scoop, same shovelshape andposition. 5 pair cutlemons ontray: change ONLY right cutlemon's central segment structure into three wide curvedfan sectors instead of many radialwedges, same rind andlocation. No extra scenechanges; avoid randomclutter, color-only differences, disappearance, text/markers/watermark."
+      }
+    },
+    {
+      "file": "refine-prompt.json",
+      "content": {
+        "prompt": "Editthis exactcrop lemononwoodtray. Preserve framing rind citrusyellow shape and tray. Change ONLY inner cutface: instead of many thin radialwedges, divide flesh into exactly THREE broad smoothly curved spiral fan sectors, clearly a segmented citrus interior with THREE creamcurvedpartitionlines startingcenter and sweepingto rind. Nochange otherlemon/tray/sand, noicon/text."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "A sailboat is painted on the red beach ball",
+      "box": {
+        "x": 973,
+        "y": 596,
+        "width": 158,
+        "height": 146
+      },
+      "edgeFade": 5
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The striped straw curls over the lemon garnish",
+      "box": {
+        "x": 548,
+        "y": 332,
+        "width": 88,
+        "height": 97
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Hard",
+      "label": "A lemon slice passes through the pitcher's glass handle",
+      "box": {
+        "x": 348,
+        "y": 667,
+        "width": 82,
+        "height": 101
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "A shell-shaped impression appears inside the shovel scoop",
+      "box": {
+        "x": 1274,
+        "y": 780,
+        "width": 94,
+        "height": 76
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "The right lemon face divides into three curved fan sections",
+      "box": {
+        "x": 622,
+        "y": 744,
+        "width": 78,
+        "height": 61
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Fullframe and observed changes inspected; final paired crops/phone QA generated below. Hooked straw visually curls toward/over garnish; no fabricated behind occlusion claim. Lemon visibly threads pitcher handle. Shell motif is drawn inside scoop; label avoids nonexistent sand-depth claim. Three-sector lemon required separate crop refinement.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

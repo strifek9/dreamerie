@@ -1,0 +1,110 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-181",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-181-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-181-original-v4.png",
+    "sha256": "3538C3A09D9669B8A1EDFC1EA5F1861E5092F04184D481646AC570D1C0595651",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-181-altered-source-v4.png",
+    "sha256": "A86AB2545A18BB296BEF769D880415222F74F15939EC52C21F646896118D73C4",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Preciselyeditnative1672x941 purplethreeeyedhallway carpetpainting preservecreatureanatomyhands allframingrolledcarpethalllighting. Five singleobjectchanges:1 lionDOORKNOCKER ringatx333y215 has openCgap atbottom ratherthanclosedring, lionfaceplateunchanged;2 umbrella WOODHOOK upperrightx1584y295 bendsOUTWARDintoScurve ratherthaninwardC, sameattachedumbrellashaft fabric;3 purplecreature LEFTMOSTlonghead tendril freetipx429y232 curlsUP intohook insteaddownward, restheadeyes/other tendril unchanged;4 TOPRIGHT whiteSHOEonrackx198y531 has lacesarrangedparallelbars rathercrossedX, sameone shoe otherwhite shoeunchanged;5 frontdoor goldROUNDKNOB atx232y299 becomesdiamondfacetedshape, samegoldmountdoor. Exactlyfive oneobject clues no swaps noextras nodifferentcarpetimages.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Preciselyeditnative1672x941 purplethreeeyedhallway carpetpainting preservecreatureanatomyhands allframingrolledcarpethalllighting. Five singleobjectchanges:1 lionDOORKNOCKER ringatx333y215 has openCgap atbottom ratherthanclosedring, lionfaceplateunchanged;2 umbrella WOODHOOK upperrightx1584y295 bendsOUTWARDintoScurve ratherthaninwardC, sameattachedumbrellashaft fabric;3 purplecreature LEFTMOSTlonghead tendril freetipx429y232 curlsUP intohook insteaddownward, restheadeyes/other tendril unchanged;4 TOPRIGHT whiteSHOEonrackx198y531 has lacesarrangedparallelbars rathercrossedX, sameone shoe otherwhite shoeunchanged;5 frontdoor goldROUNDKNOB atx232y299 becomesdiamondfacetedshape, samegoldmountdoor. Exactlyfive oneobject clues no swaps noextras nodifferentcarpetimages."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The door knocker ring opens at the bottom",
+      "difficulty": "Easy",
+      "box": {
+        "x": 286,
+        "y": 174,
+        "width": 87,
+        "height": 88
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The umbrella handle bends into an S",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1539,
+        "y": 226,
+        "width": 92,
+        "height": 157
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The left head tendril curls upward",
+      "difficulty": "Hard",
+      "box": {
+        "x": 408,
+        "y": 93,
+        "width": 128,
+        "height": 168
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The right white shoe has parallel lacing",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 171,
+        "y": 498,
+        "width": 43,
+        "height": 33
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The door knob becomes faceted",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 217,
+        "y": 275,
+        "width": 40,
+        "height": 48
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "visually inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "nativePreflight": "source equals actual original size, five nonoverlapping boxes",
+    "difficulty": "hypotheses; human and browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

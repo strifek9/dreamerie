@@ -1,0 +1,114 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-098",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-098-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-098-original-v4.png",
+    "sha256": "FC8B3B39CF745EEA3476E8EFC5D9D71551D979C584A6017411AA221C7E03C31D",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-098-altered-source-v4.png",
+    "sha256": "CA8C33952AB2035364BCBE5748C905D32E8F6C4B84F959CEFD5221112311C34C",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precisely edit original1672x941 Dreamerie honeycomb railwaypainting, sameframing and paintedgrainfreefinish, miceanatomy/expressions/train/honeyarchitecture unchanged. Exactlyfive separate singleobjectchanges: 1 golden flag above middlecarriage has a rounded scalloped freeedge instead of forkedtwopoints, box1106,154,111,81, keepflagpole. 2 front locomotive goldenheadlamp reflects a smallblue CLOUDsilhouette instead of plainyellowshine, box481,132,47,52; lampoutlineunchanged. 3 foremost largewheel directlybelowdriver atcenter599,245 has curvedspiral spokes instead of straightspokes, box570,218,59,59; preservehub/connectingrod. 4 hoveringbee nearestforeground has ONLYits upper-right wing folded upward, bounds558,587,57,75; lowerwing/bodyunchanged. 5 big honeydroplet hangingfrom firstbridgearch atcenter460,419 ends in a gentleupcurl rather than straightdrop, box444,373,38,80; keepbridge/water/background. No otheredits, no text/grain, no swaps; one independentlyselectableobject perclue.\"}}, {\"file\": \"butterfly-prompt.json\", \"content\": {\"prompt\": \"Precisely edit ONLYthe small pink butterfly flying near upperLEFT atcenter407,99 inthis original1672x941painting. Paint ONE deepblue oval spot inside its visible pinkwing, about12x20px, withinwingoutline. Keep butterflyposition/anatomy/wingoutline exact, no otherwing changes. All otherpixels/objects unchanged, especially foregroundbee andallmice. Nativepaintedfinish, no text/grain. Onlyintentional isolatedwingpattern spot.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precisely edit original1672x941 Dreamerie honeycomb railwaypainting, sameframing and paintedgrainfreefinish, miceanatomy/expressions/train/honeyarchitecture unchanged. Exactlyfive separate singleobjectchanges: 1 golden flag above middlecarriage has a rounded scalloped freeedge instead of forkedtwopoints, box1106,154,111,81, keepflagpole. 2 front locomotive goldenheadlamp reflects a smallblue CLOUDsilhouette instead of plainyellowshine, box481,132,47,52; lampoutlineunchanged. 3 foremost largewheel directlybelowdriver atcenter599,245 has curvedspiral spokes instead of straightspokes, box570,218,59,59; preservehub/connectingrod. 4 hoveringbee nearestforeground has ONLYits upper-right wing folded upward, bounds558,587,57,75; lowerwing/bodyunchanged. 5 big honeydroplet hangingfrom firstbridgearch atcenter460,419 ends in a gentleupcurl rather than straightdrop, box444,373,38,80; keepbridge/water/background. No otheredits, no text/grain, no swaps; one independentlyselectableobject perclue."
+      }
+    },
+    {
+      "file": "butterfly-prompt.json",
+      "content": {
+        "prompt": "Precisely edit ONLYthe small pink butterfly flying near upperLEFT atcenter407,99 inthis original1672x941painting. Paint ONE deepblue oval spot inside its visible pinkwing, about12x20px, withinwingoutline. Keep butterflyposition/anatomy/wingoutline exact, no otherwing changes. All otherpixels/objects unchanged, especially foregroundbee andallmice. Nativepaintedfinish, no text/grain. Onlyintentional isolatedwingpattern spot."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The flag has a rounded fly edge",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1103,
+        "y": 150,
+        "width": 117,
+        "height": 87
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The front wheel has curved spiral spokes",
+      "difficulty": "Medium",
+      "box": {
+        "x": 569,
+        "y": 216,
+        "width": 64,
+        "height": 63
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The hanging honey drop curls right",
+      "difficulty": "Hard",
+      "box": {
+        "x": 440,
+        "y": 369,
+        "width": 58,
+        "height": 84
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The headlamp reflects a blue cloud",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 478,
+        "y": 130,
+        "width": 50,
+        "height": 54
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The butterfly wing has one blue oval spot",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 385,
+        "y": 73,
+        "width": 47,
+        "height": 54
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "butterfly.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390px stacked pair. Five separate object changes; unrelated drift excluded; outside boxes exact original. Difficulty estimates unvalidated. Root compositor/game and human review pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

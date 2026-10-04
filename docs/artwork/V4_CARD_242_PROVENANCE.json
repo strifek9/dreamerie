@@ -1,0 +1,182 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-242",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-242-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-242-original-v4.png",
+    "sha256": "EBCBB0CAE5DDCE9C22B33E2FE0E33C8E967B0E5CCAC6ECA68A7B2C2074FB09B3",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-242-altered-source-v4.png",
+    "sha256": "B5B48A5C2C7BD68DD0B8976625751F08E9797DAD58DF1A8D2DAA3F249DC4568F",
+    "prompt": "[{\"file\": \"band-preserve-prompt.json\", \"content\": {\"operation\": \"Restore rightcorkfoam/robotarm outside whiteband silhouette, preserve unchanged leftcorkband exactly\", \"whiteBandPolygon\": [[1121, 458], [1156, 465], [1156, 475], [1142, 484], [1123, 502], [1104, 527], [1086, 552], [1079, 575], [1075, 597], [1068, 621], [1044, 619], [1032, 602], [1033, 579], [1043, 551], [1054, 521], [1074, 489], [1099, 465]], \"bandDilation\": 1, \"bandFeather\": 0.5, \"leftUnchangedRectangle\": [573, 328, 721, 505]}}, {\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit attached ROBOT floating flooded bathroom withcorkarm floats painting. EXACT1672x941 framing allrobotface/body/anatomy/duck/floats/water/objectpositions unchanged. FIVE localized SINGLE-artifact changes:1) roundmetal DRAIN GRATE bottomleft x164,y787: wholeexisting roundcover hinges upward attachedLEFTedge revealingdarkdrainhole, samefloorcircleposition, one connecteddrainmechanism.2) white SOAP BAR bottomright x1530,y756: one large clean incisedSPIRAL groove on topface, samebaroutline/no movement.3) ORANGE TOWEL hangingonupperDOOR x1095,y155: onlyits lowerlooseend threads through itsOWN knot, sameupperdrape/colordoormount.4) ROBOT'S RIGHT corkfloat atx1090,y525 (viewer's right): onlyits whiteWRAP BAND changes to distinct wovenbraid pattern aroundSAME corkfloat, corkfoam/arms/leftfloatwhiteband originalEXACT.5) ornate CAST SILVER bathtub FRONT FOOT uppercenterleft x705,y237: its lowerdecorativecurl bendsinto a clear closedmetal loop, one connectedcastfoot same tubmount; OTHER bathtubfeet originalexact. No swaps, no duck/bodyface shifts, no extras/grain/text.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "band-preserve-prompt.json",
+      "content": {
+        "operation": "Restore rightcorkfoam/robotarm outside whiteband silhouette, preserve unchanged leftcorkband exactly",
+        "whiteBandPolygon": [
+          [
+            1121,
+            458
+          ],
+          [
+            1156,
+            465
+          ],
+          [
+            1156,
+            475
+          ],
+          [
+            1142,
+            484
+          ],
+          [
+            1123,
+            502
+          ],
+          [
+            1104,
+            527
+          ],
+          [
+            1086,
+            552
+          ],
+          [
+            1079,
+            575
+          ],
+          [
+            1075,
+            597
+          ],
+          [
+            1068,
+            621
+          ],
+          [
+            1044,
+            619
+          ],
+          [
+            1032,
+            602
+          ],
+          [
+            1033,
+            579
+          ],
+          [
+            1043,
+            551
+          ],
+          [
+            1054,
+            521
+          ],
+          [
+            1074,
+            489
+          ],
+          [
+            1099,
+            465
+          ]
+        ],
+        "bandDilation": 1,
+        "bandFeather": 0.5,
+        "leftUnchangedRectangle": [
+          573,
+          328,
+          721,
+          505
+        ]
+      }
+    },
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit attached ROBOT floating flooded bathroom withcorkarm floats painting. EXACT1672x941 framing allrobotface/body/anatomy/duck/floats/water/objectpositions unchanged. FIVE localized SINGLE-artifact changes:1) roundmetal DRAIN GRATE bottomleft x164,y787: wholeexisting roundcover hinges upward attachedLEFTedge revealingdarkdrainhole, samefloorcircleposition, one connecteddrainmechanism.2) white SOAP BAR bottomright x1530,y756: one large clean incisedSPIRAL groove on topface, samebaroutline/no movement.3) ORANGE TOWEL hangingonupperDOOR x1095,y155: onlyits lowerlooseend threads through itsOWN knot, sameupperdrape/colordoormount.4) ROBOT'S RIGHT corkfloat atx1090,y525 (viewer's right): onlyits whiteWRAP BAND changes to distinct wovenbraid pattern aroundSAME corkfloat, corkfoam/arms/leftfloatwhiteband originalEXACT.5) ornate CAST SILVER bathtub FRONT FOOT uppercenterleft x705,y237: its lowerdecorativecurl bendsinto a clear closedmetal loop, one connectedcastfoot same tubmount; OTHER bathtubfeet originalexact. No swaps, no duck/bodyface shifts, no extras/grain/text."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "The drain cover hinges open.",
+      "box": {
+        "x": 0,
+        "y": 542,
+        "width": 336,
+        "height": 341
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The hanging orange towel ties itself into a knot.",
+      "box": {
+        "x": 1041,
+        "y": 113,
+        "width": 116,
+        "height": 137
+      },
+      "edgeFade": 4
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The right cork float's white band becomes a braid.",
+      "box": {
+        "x": 1028,
+        "y": 449,
+        "width": 136,
+        "height": 179
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "A spiral groove is cut into the soap.",
+      "box": {
+        "x": 1472,
+        "y": 695,
+        "width": 130,
+        "height": 61
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "The bathtub's front foot curls into a closed loop.",
+      "box": {
+        "x": 674,
+        "y": 229,
+        "width": 72,
+        "height": 77
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Correct currentinventory/yearnative1672x941. Actualfive singleartifacts: same hingeddraincover, oneorangetowel ownknot, ONLY rightwhiteband braid with originalfoam/arm outsidebandsilhouette restored, soap topgroove, one castmetalfoot connectedloop. Unchanged leftcorkband restoredbyteexact. No swaps/robotface/duck changes in selectedregions. Drain mechanism changedfootprint broadbutoneobject; root nativejoints/fairness pending. Difficulties hypotheses.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

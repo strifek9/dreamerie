@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-147",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-147-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-147-original-v4.png",
+    "sha256": "0BC08DA701097D35AE4EA75897333290970E0F8637B932537578D948ABADB270",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-147-altered-source-v4.png",
+    "sha256": "9F9F9973EAF2FA5C947841F2A357CE9E6AB83A38497B2CCC6EA0418EEA0AC0AE",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precisely edit this original wide grain-free painted Dreamerie kitchen drawer containing an arctic sea and sleeping walrus on an ice tray. Preserve frame, walrus anatomy/core premise, all background and all other objects. Exactly FIVE localized single-object clues: 1 drawer gold ring pull becomes a squared loop with rounded corners instead of round ring, attachmentplate unchanged. 2 large metal fork at left has ONLY its RIGHTMOST tine curled inward into a hook; other three tines and fork handle exact. 3 walrus FRONT-RIGHT flipper at center-right curls its fingertip upward, same flipper base and body/face/tusks unchanged. 4 the nearest empty tray compartment in lower-right has a DIAGONAL internal dividing ridge from bottom-left to upper-right, only this compartment changes, tray others unchanged. 5 red oven mitt quilt pattern on its central area changes from diamond crossing stitches to parallel curved horizontal seams, same mitt shape/loop. No independent object swaps, no microscopic specks or color-only edits. Return one full frame counterpart.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precisely edit this original wide grain-free painted Dreamerie kitchen drawer containing an arctic sea and sleeping walrus on an ice tray. Preserve frame, walrus anatomy/core premise, all background and all other objects. Exactly FIVE localized single-object clues: 1 drawer gold ring pull becomes a squared loop with rounded corners instead of round ring, attachmentplate unchanged. 2 large metal fork at left has ONLY its RIGHTMOST tine curled inward into a hook; other three tines and fork handle exact. 3 walrus FRONT-RIGHT flipper at center-right curls its fingertip upward, same flipper base and body/face/tusks unchanged. 4 the nearest empty tray compartment in lower-right has a DIAGONAL internal dividing ridge from bottom-left to upper-right, only this compartment changes, tray others unchanged. 5 red oven mitt quilt pattern on its central area changes from diamond crossing stitches to parallel curved horizontal seams, same mitt shape/loop. No independent object swaps, no microscopic specks or color-only edits. Return one full frame counterpart."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "ring",
+      "label": "The drawer pull becomes a squared loop.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1187,
+        "y": 652,
+        "width": 122,
+        "height": 126
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "fork",
+      "label": "The fork's rightmost tine curls inward.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 499,
+        "y": 360,
+        "width": 53,
+        "height": 72
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "flipper",
+      "label": "The walrus's front flipper curls upward.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1006,
+        "y": 366,
+        "width": 98,
+        "height": 92
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "tray",
+      "label": "The front tray compartment gains a diagonal ridge.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 982,
+        "y": 461,
+        "width": 90,
+        "height": 58
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "mitt",
+      "label": "The oven mitt has parallel curved seams.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1343,
+        "y": 17,
+        "width": 287,
+        "height": 172
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered composite/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

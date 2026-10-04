@@ -1,0 +1,110 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-203",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-203-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-203-original-v4.png",
+    "sha256": "64CC54CA2185FE3698FFE38181326E0B40D0F4C3DCC16FC45D67C0121E083157",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-203-altered-source-v4.png",
+    "sha256": "854D65D8DEDAC55EE8E7E2A2E50ED29705F71762D4B217C640EF8175CA0F255C",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise native1672x941 localizededit paintedrobot sockapartments. Preserveallrobot anatomyhands allsockroomsfaceslights entirepainting. Exactlyfive oneobjectchanges:1 exteriorWOODLADDER left ONE MIDDLErung atx170y599 curvesintoU insteadstraightbar, sameendattachmentsrails other rungs;2 top YELLOWSOCK atx1199y333 its LEFTembroideredeyelash opensoneovaleye insteadclosedarc, rightembroideredeyeunchanged;3 smallplantPOT lowerleftx361y776 pawprintmotif becomesgoldcrescent insteadpawprint samepotplant;4 top-right ROBOT smallHEAD antenna goldball atx1373y120 bendsDOWNwithhooktip insteadstraightup, sameheadandbody;5 bottomcenter CREAM/PURPLESOCK atx826y564 onefrontdiamondmotif becomesvisible GOLDXcross seam ratherplaincreamdiamond, restknit/internalroom unchanged. No swaps noaddedobjects noglobal changes; fiveconnectedsemanticclues.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise native1672x941 localizededit paintedrobot sockapartments. Preserveallrobot anatomyhands allsockroomsfaceslights entirepainting. Exactlyfive oneobjectchanges:1 exteriorWOODLADDER left ONE MIDDLErung atx170y599 curvesintoU insteadstraightbar, sameendattachmentsrails other rungs;2 top YELLOWSOCK atx1199y333 its LEFTembroideredeyelash opensoneovaleye insteadclosedarc, rightembroideredeyeunchanged;3 smallplantPOT lowerleftx361y776 pawprintmotif becomesgoldcrescent insteadpawprint samepotplant;4 top-right ROBOT smallHEAD antenna goldball atx1373y120 bendsDOWNwithhooktip insteadstraightup, sameheadandbody;5 bottomcenter CREAM/PURPLESOCK atx826y564 onefrontdiamondmotif becomesvisible GOLDXcross seam ratherplaincreamdiamond, restknit/internalroom unchanged. No swaps noaddedobjects noglobal changes; fiveconnectedsemanticclues."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The middle ladder rung curves into a U",
+      "difficulty": "Easy",
+      "box": {
+        "x": 111,
+        "y": 554,
+        "width": 134,
+        "height": 75
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The yellow sock opens one embroidered eye",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1155,
+        "y": 320,
+        "width": 34,
+        "height": 45
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The plant pot has a crescent motif",
+      "difficulty": "Hard",
+      "box": {
+        "x": 338,
+        "y": 758,
+        "width": 45,
+        "height": 40
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The upper robot antenna bends downward",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1346,
+        "y": 106,
+        "width": 46,
+        "height": 48
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The cream sock diamond gains a gold cross seam",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 749,
+        "y": 758,
+        "width": 65,
+        "height": 78
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "visually inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "nativePreflight": "source equals actual original size, five nonoverlapping boxes",
+    "difficulty": "hypotheses; human and browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

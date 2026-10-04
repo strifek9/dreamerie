@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-262",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-262-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-262-original-v4.png",
+    "sha256": "05CD25E5B6ACA3CD2583B856D10365984A7C2E4256C20B80C22BE071112F37CE",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-262-altered-source-v4.png",
+    "sha256": "BCD336D41E0A704CAF37EFEBE236440ED1A936EA877D552D6FB8A7F91DE8E54D",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact original anthropomorphic grandfather clock full painting. Preserve all swallowed clock hands inside cabinet exactly, all anatomy, positions, framing and painted style. Exactly FIVE single-object localized differences: (1) main CLOCK LEFT eye closes in a clear wink, eyebrow/other eye exact; (2) angry GOLD pendulum's mouth changes to a small upward-curved smile, eyes/limbs/body exact; (3) loose wind-up key on floor at lower LEFT its UPPER round opening becomes triangular, lower opening and shaft exact; (4) main clock lower LEFT gold decorative spiral tip curves in opposite direction, same attached scroll/body; (5) curtain gold tie rope at far RIGHT has its diagonal strand pass OVER its central loop instead of under, same knot/tassel/curtain. One existing object's internal pattern or action per clue, no hand swaps/no scattered objects/no tiny grain.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact original anthropomorphic grandfather clock full painting. Preserve all swallowed clock hands inside cabinet exactly, all anatomy, positions, framing and painted style. Exactly FIVE single-object localized differences: (1) main CLOCK LEFT eye closes in a clear wink, eyebrow/other eye exact; (2) angry GOLD pendulum's mouth changes to a small upward-curved smile, eyes/limbs/body exact; (3) loose wind-up key on floor at lower LEFT its UPPER round opening becomes triangular, lower opening and shaft exact; (4) main clock lower LEFT gold decorative spiral tip curves in opposite direction, same attached scroll/body; (5) curtain gold tie rope at far RIGHT has its diagonal strand pass OVER its central loop instead of under, same knot/tassel/curtain. One existing object's internal pattern or action per clue, no hand swaps/no scattered objects/no tiny grain."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "wink",
+      "label": "The clock left eye closes in a wink.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 553,
+        "y": 156,
+        "width": 122,
+        "height": 100
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "smile",
+      "label": "The pendulum mouth becomes a smile.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1237,
+        "y": 631,
+        "width": 48,
+        "height": 31
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "key",
+      "label": "The floor key upper opening is triangular.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 112,
+        "y": 748,
+        "width": 65,
+        "height": 55
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "scroll",
+      "label": "The clock left scroll curls into a spiral.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 348,
+        "y": 617,
+        "width": 85,
+        "height": 123
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "rope",
+      "label": "The curtain rope crossing changes its weave.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1555,
+        "y": 324,
+        "width": 117,
+        "height": 83
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered compositor/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

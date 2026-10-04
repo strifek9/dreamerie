@@ -1,0 +1,106 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-356",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-356-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-356-original-v4.png",
+    "sha256": "99F1BB22DF51C27BD722AA8F1637794136F5B4602DB4E67959797DE27FD9C881",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-356-altered-source-v4.png",
+    "sha256": "63180C97EE8C1775CB4CFB5C5EBD732EC78434001DDE7AEFC3390B8144BC8F68",
+    "prompt": "[{\"file\": \"preserve-prompt.json\", \"content\": {\"operation\": \"Original preservation assembly\", \"script\": \"preserve.py\", \"purpose\": \"Five artifact regions; basket inner front only keepsrim/handle; bridge old/new silhouette keeps velvet elsewhere; stick outsidecarving exact; all otter/fur/face/tail/paws original exact.\"}}, {\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact1672x941 attached painting OTTER handling blueVELVET drywaterfall in wickerbasket. ENTIRE otter anatomy/fur/face/whiskers/paws/tail andbluevelvet EXACT original. FIVE isolated ONE-artifact changes:1) large wicker BASKET frontpanel x991,y723: its inner horizontalweave becomes a clean DIAMOND interlaced wickerweave on same curvedfront, originalrim/handle/outline exact.2) loose ROPECOIL foregroundleft x199,y765: its freeend threads through its OWN coil as one clear looseoverhand knot, same woodenstick underneath exact.3) miniature WOODBRIDGE on basket x1031,y483: ONLY centraldeck section hinges UP as a toyDRAWBRIDGE, originaltwoends/railposts remainingexact.4) long WOODSTICK foreground x381,y751: middlebark face bears a clear incised SPIRAL groove, same stickoutline/position, no rope changes there.5) large LEFT uprightROCK face x153,y502: add one clear large shallow CRESCENT incisedgroove on its stoneface, same outline/drippingwatermarks, nowater changes. No newobjects, no swappedobjects, no otter/velvet repaint. Native composition/paintedstyle.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "preserve-prompt.json",
+      "content": {
+        "operation": "Original preservation assembly",
+        "script": "preserve.py",
+        "purpose": "Five artifact regions; basket inner front only keepsrim/handle; bridge old/new silhouette keeps velvet elsewhere; stick outsidecarving exact; all otter/fur/face/tail/paws original exact."
+      }
+    },
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact1672x941 attached painting OTTER handling blueVELVET drywaterfall in wickerbasket. ENTIRE otter anatomy/fur/face/whiskers/paws/tail andbluevelvet EXACT original. FIVE isolated ONE-artifact changes:1) large wicker BASKET frontpanel x991,y723: its inner horizontalweave becomes a clean DIAMOND interlaced wickerweave on same curvedfront, originalrim/handle/outline exact.2) loose ROPECOIL foregroundleft x199,y765: its freeend threads through its OWN coil as one clear looseoverhand knot, same woodenstick underneath exact.3) miniature WOODBRIDGE on basket x1031,y483: ONLY centraldeck section hinges UP as a toyDRAWBRIDGE, originaltwoends/railposts remainingexact.4) long WOODSTICK foreground x381,y751: middlebark face bears a clear incised SPIRAL groove, same stickoutline/position, no rope changes there.5) large LEFT uprightROCK face x153,y502: add one clear large shallow CRESCENT incisedgroove on its stoneface, same outline/drippingwatermarks, nowater changes. No newobjects, no swappedobjects, no otter/velvet repaint. Native composition/paintedstyle."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "The basket's front panel has a diamond wicker weave.",
+      "box": {
+        "x": 655,
+        "y": 588,
+        "width": 605,
+        "height": 220
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Medium",
+      "label": "The loose rope threads through its own coil in a knot.",
+      "box": {
+        "x": 61,
+        "y": 694,
+        "width": 279,
+        "height": 127
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The miniature bridge's center deck hinges upward.",
+      "box": {
+        "x": 847,
+        "y": 368,
+        "width": 369,
+        "height": 189
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "The wooden stick bears an incised spiral.",
+      "box": {
+        "x": 392,
+        "y": 735,
+        "width": 119,
+        "height": 74
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "The left rock face bears a shallow crescent groove.",
+      "box": {
+        "x": 51,
+        "y": 441,
+        "width": 119,
+        "height": 140
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Five single artifacts, no swaps. Entire otter exactoriginal; velvet original outside toybridge old/new footprint, basket weave interior excludesrim/handle. Rope own knot and bridge hinge are strong relationships/mechanisms; others internalweave/incisions. Full/native five pairs/390 comparison inspected. Difficulty hypotheses/root joins pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

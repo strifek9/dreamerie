@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-086",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-086-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-086-original-v4.png",
+    "sha256": "91BA1CFF462B1E537987582E18B920014E403670D8241B035BE9A5F975811FDC",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-086-altered-source-v4.png",
+    "sha256": "363D0B6BB986B2A0847E7BA17674758310C7598AC12F649322B8B6C3EC2035B1",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precisely edit this Dreameriepainting native1672x941. Keep allrabbitanatomy/swingposes, fruit, ropes, water/clouds/paint and framing. Exactly5 singlelocalizedobjects:1 redball's ONEwhiteband atx1485y321 forms angularzigzag insteadstraightdiagonal, ballunchanged;2 white rabbit's yellowpaperhat tip x984y455 foldsDOWN into small triangularflap rather thanuprightsharpapex, preserveface/head;3 leafladder THIRD rungfromtop atx336y281 sags in shallowU downwardatmiddle, endpoints/rails fixed andallotherrungsunchanged;4 goldbellclapperx877y411 angles toRIGHT instead straightdown, bellbodyunchanged;5 smallfrogx1494y777 raisesits FRONTLEFT foreleg in greeting rather than rests onleaf, preservefrogbody/otherlimbs/leaf. No otherchanges, no swaps, onlyoneobject for eachdifference.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precisely edit this Dreameriepainting native1672x941. Keep allrabbitanatomy/swingposes, fruit, ropes, water/clouds/paint and framing. Exactly5 singlelocalizedobjects:1 redball's ONEwhiteband atx1485y321 forms angularzigzag insteadstraightdiagonal, ballunchanged;2 white rabbit's yellowpaperhat tip x984y455 foldsDOWN into small triangularflap rather thanuprightsharpapex, preserveface/head;3 leafladder THIRD rungfromtop atx336y281 sags in shallowU downwardatmiddle, endpoints/rails fixed andallotherrungsunchanged;4 goldbellclapperx877y411 angles toRIGHT instead straightdown, bellbodyunchanged;5 smallfrogx1494y777 raisesits FRONTLEFT foreleg in greeting rather than rests onleaf, preservefrogbody/otherlimbs/leaf. No otherchanges, no swaps, onlyoneobject for eachdifference."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The ball's white band zigzags",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1436,
+        "y": 270,
+        "width": 98,
+        "height": 103
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-2",
+      "label": "The ladder's third rung sags in the middle",
+      "difficulty": "Medium",
+      "box": {
+        "x": 267,
+        "y": 251,
+        "width": 144,
+        "height": 68
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-3",
+      "label": "The paper hat's tip folds downward",
+      "difficulty": "Hard",
+      "box": {
+        "x": 965,
+        "y": 441,
+        "width": 111,
+        "height": 98
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-4",
+      "label": "The frog raises one foreleg",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1449,
+        "y": 732,
+        "width": 85,
+        "height": 79
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "change-5",
+      "label": "The bell's clapper tilts to the right",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 855,
+        "y": 389,
+        "width": 41,
+        "height": 40
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": "Full source/nativefeathercomposite/fivepairedcrops/390stack inspected. Allfive observedsingleobjects changed aslabelled; ladderrungdeformation endpointsjoinclean, frogonlyoneforeleg pose, paperhat foldedmechanism, bellclapperpose. Originaloutsideunion unchanged; no brokenjoinsdetected. Difficulty hypotheses,nohumantiming/physicalphoneapproval; rootruntimeQArequired.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

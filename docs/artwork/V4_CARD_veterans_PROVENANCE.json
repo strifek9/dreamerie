@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-veterans",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-revisit-v1/veterans-dynamic-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-veterans-original-v4.png",
+    "sha256": "964275BA502655E21E64480DD26FD184A8E707D10125378555F2F70478986F1E",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-veterans-altered-source-v4.png",
+    "sha256": "0033065C8090F68D7B042844199DBA52E2225B377C79E66BD0FC8338B01DA9FB",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact original1672x941 painting preserving warm Veterans Long Way Home theme/frame/style/anatomy. Precisely FIVE localized single-object differences:1 puppy imageLEFT eye at1035347 closes gently, othereye/body exact.2 puppy round collar tag at1004476 becomes heart-shaped gold tag same attachment/location.3 hanging porch bell at1137128 only its brass clapper at1135175 swings LEFT, bell rope/tassel/cup original.4 lantern candle at1574816 flame forms a pointed star glow instead of ordinary flame; candle/lantern exact.5 plain front dog water bowl at241734 gains a teal crescent motif centered FRONT blank cream patch between leaves, all existingleaves original. No bootlace swaps, paths, blankets, plants or otherobjects changed.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact original1672x941 painting preserving warm Veterans Long Way Home theme/frame/style/anatomy. Precisely FIVE localized single-object differences:1 puppy imageLEFT eye at1035347 closes gently, othereye/body exact.2 puppy round collar tag at1004476 becomes heart-shaped gold tag same attachment/location.3 hanging porch bell at1137128 only its brass clapper at1135175 swings LEFT, bell rope/tassel/cup original.4 lantern candle at1574816 flame forms a pointed star glow instead of ordinary flame; candle/lantern exact.5 plain front dog water bowl at241734 gains a teal crescent motif centered FRONT blank cream patch between leaves, all existingleaves original. No bootlace swaps, paths, blankets, plants or otherobjects changed."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "closed-eye",
+      "label": "The puppy closes one eye.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1008,
+        "y": 328,
+        "width": 45,
+        "height": 35
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "left-clapper",
+      "label": "The porch bell\u2019s clapper swings left.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1091,
+        "y": 156,
+        "width": 57,
+        "height": 43
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "crescent-bowl",
+      "label": "The water bowl bears a teal crescent.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 209,
+        "y": 703,
+        "width": 62,
+        "height": 74
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "heart-tag",
+      "label": "The puppy\u2019s collar tag becomes a heart.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 978,
+        "y": 452,
+        "width": 44,
+        "height": 44
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "star-flame",
+      "label": "The lantern\u2019s candle flame forms a star.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1556,
+        "y": 765,
+        "width": 49,
+        "height": 58
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five paired crops, full composite and 390-pixel stacked pair inspected. Single-object changes; difficulty hypotheses only. Root browser/hit QA and human fairness remain pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

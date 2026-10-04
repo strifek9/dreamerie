@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-267",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-267-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-267-original-v4.png",
+    "sha256": "F325EBC48A9FD92C5D469CB72B878CEC5F0615353C45578EBEBD20BB27B38C40",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-267-altered-source-v4.png",
+    "sha256": "FCD1F3DCBA9606C9FAD5466D10D1ACA4E06A33612BBBA8516928F2E0494D0CD7",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Exactnative1672x941 painting FIVE singleobject localized clues only. 1 toad ONLY leftmost visible eye near819103 closes into curved slit, othereye exact. 2 crown ONLY front purple velvet panel near81452 carries small embroidered gold crescent motif, metalcrown exact. 3 bottommost porcelain bowl near833820 ONLY scalloped purple rimpattern becomes straight zigzag points, bowlshape exact. 4 silver spoon ONLY its oval bowl near1102797 becomes ROUND bowl rather than elongatedoval, same stem/handle untouched. 5 top cracked porcelain eggcup ONLY front purple leaf motif near750359 rotates clockwise90degrees into horizontalbranch, same cup/crack/goldrepair lines original. No twoobjects swapped, each internalpose/pattern or sameoneobject. Preserve anatomy, allbowls, cloth, chair, curtain, lighting/style.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Exactnative1672x941 painting FIVE singleobject localized clues only. 1 toad ONLY leftmost visible eye near819103 closes into curved slit, othereye exact. 2 crown ONLY front purple velvet panel near81452 carries small embroidered gold crescent motif, metalcrown exact. 3 bottommost porcelain bowl near833820 ONLY scalloped purple rimpattern becomes straight zigzag points, bowlshape exact. 4 silver spoon ONLY its oval bowl near1102797 becomes ROUND bowl rather than elongatedoval, same stem/handle untouched. 5 top cracked porcelain eggcup ONLY front purple leaf motif near750359 rotates clockwise90degrees into horizontalbranch, same cup/crack/goldrepair lines original. No twoobjects swapped, each internalpose/pattern or sameoneobject. Preserve anatomy, allbowls, cloth, chair, curtain, lighting/style."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "narrow-eye",
+      "label": "The toad\u2019s pupil narrows to a slit.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 791,
+        "y": 82,
+        "width": 55,
+        "height": 48
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "round-spoon",
+      "label": "The spoon\u2019s bowl becomes round.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1021,
+        "y": 727,
+        "width": 155,
+        "height": 149
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "horizontal-leaf",
+      "label": "The top cup\u2019s leaf motif lies horizontally.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 685,
+        "y": 301,
+        "width": 196,
+        "height": 115
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "zigzag-bowl",
+      "label": "The lowest bowl\u2019s border forms a zigzag.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 668,
+        "y": 787,
+        "width": 351,
+        "height": 51
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "crescent-crown",
+      "label": "The crown\u2019s velvet panel bears a crescent.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 806,
+        "y": 25,
+        "width": 42,
+        "height": 49
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Native source, five paired crops, full composite and 390-pixel stacked pair inspected. Single-object changes; difficulty hypotheses only. Root browser/hit QA and human fairness remain pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

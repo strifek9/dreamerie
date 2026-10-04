@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-288",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-revisit-v1/288-dynamic-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-288-original-v4.png",
+    "sha256": "F7AA630299D845AD583211168FDE979C229C9496BA95F849CA8E801F71C6DDA8",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-288-altered-source-v4.png",
+    "sha256": "9DC7228D7D3618E0F0020855062962D147F248D077E0526F03A2B667A29EFBB9",
+    "prompt": "[{\"file\": \"preserve-prompt.json\", \"content\": {\"operation\": \"Original preservation assembly\", \"script\": \"preserve.py\", \"purpose\": \"Tail silhouette union excludes separate bubbles; bowl reflection right of paperboat, other map area and jug body remain original exact.\", \"maskFeatherPixels\": 0.45, \"scriptSHA256\": \"05cdaf82c1cce734bfb558b8edd6f36c6c38fc49079d945d54d01eada68704bc\", \"refinement\": \"Upper old tail footprint completely selected to remove isolated original tip ghost; nearby original bubbles retained.\"}}, {\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit EXACT1672x941 attached painting with ORIGAMI BLUE WHALE leaping from measuringjug, tinypaper sailor on spoon, paperboat in bowl. FIVE ONLY SINGLE-object changes. 1) whale's TAIL FIN uppercenter x690,y77 folds into a downward pointing paper FAN shape, samewhale body/eye/head exact; onlytail changes.2) WATER SURFACE of bowl RIGHT aroundx1605,y512 carries a large cream CRESCENT REFLECTION to RIGHT of existing paperboat, boat/sailor/rope/bowlrim exact.3) FOREGROUND SEASHELL bottomright x1550,y745: existing orange-white ribs form a clear inset SPIRAL groove on same shell outline.4) MAP lowercenter: ONLY farLEFT folded corner aroundx865,y817 rolls UP into a hollow papercurl, same mapdrawing/compass allothercorners exact.5) JUG SPOUT farLEFTupperx233,y217: its pouringlip curls into a small hollowrolled ceramiclip, samejugbody/measuremarks/handle exact. Preserve watercolorpainted texture, all otherobjects exact, no newobjects, no swaps, no extra droplets, no separateobject moves.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "preserve-prompt.json",
+      "content": {
+        "operation": "Original preservation assembly",
+        "script": "preserve.py",
+        "purpose": "Tail silhouette union excludes separate bubbles; bowl reflection right of paperboat, other map area and jug body remain original exact.",
+        "maskFeatherPixels": 0.45,
+        "scriptSHA256": "05cdaf82c1cce734bfb558b8edd6f36c6c38fc49079d945d54d01eada68704bc",
+        "refinement": "Upper old tail footprint completely selected to remove isolated original tip ghost; nearby original bubbles retained."
+      }
+    },
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit EXACT1672x941 attached painting with ORIGAMI BLUE WHALE leaping from measuringjug, tinypaper sailor on spoon, paperboat in bowl. FIVE ONLY SINGLE-object changes. 1) whale's TAIL FIN uppercenter x690,y77 folds into a downward pointing paper FAN shape, samewhale body/eye/head exact; onlytail changes.2) WATER SURFACE of bowl RIGHT aroundx1605,y512 carries a large cream CRESCENT REFLECTION to RIGHT of existing paperboat, boat/sailor/rope/bowlrim exact.3) FOREGROUND SEASHELL bottomright x1550,y745: existing orange-white ribs form a clear inset SPIRAL groove on same shell outline.4) MAP lowercenter: ONLY farLEFT folded corner aroundx865,y817 rolls UP into a hollow papercurl, same mapdrawing/compass allothercorners exact.5) JUG SPOUT farLEFTupperx233,y217: its pouringlip curls into a small hollowrolled ceramiclip, samejugbody/measuremarks/handle exact. Preserve watercolorpainted texture, all otherobjects exact, no newobjects, no swaps, no extra droplets, no separateobject moves."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "difficulty": "Easy",
+      "label": "The origami whale's tail folds into a paper fan.",
+      "box": {
+        "x": 570,
+        "y": 7,
+        "width": 213,
+        "height": 179
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Medium",
+      "label": "A crescent reflects in the bowl's water beside the boat.",
+      "box": {
+        "x": 1530,
+        "y": 474,
+        "width": 142,
+        "height": 85
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Hard",
+      "label": "The shell's ribs wind into a spiral.",
+      "box": {
+        "x": 1420,
+        "y": 663,
+        "width": 230,
+        "height": 164
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Very hard",
+      "label": "The map's left corner rolls into a hollow curl.",
+      "box": {
+        "x": 813,
+        "y": 759,
+        "width": 227,
+        "height": 149
+      },
+      "edgeFade": 3
+    },
+    {
+      "difficulty": "Dreamlike",
+      "label": "The jug's spout curls into a hollow lip.",
+      "box": {
+        "x": 192,
+        "y": 154,
+        "width": 97,
+        "height": 128
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Correct inventory revisit dynamic original. Five independent artifact details; no separate object swaps. Whale tail explicit old/new silhouette mask preserves separate bubbles and body. Paperboat, sailor and rope kept original exact; water reflection lives to right. Other map areas/jug handle/body untouched. Full/native five paired crops/390 comparison inspected. Difficulty guesses and root joins pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

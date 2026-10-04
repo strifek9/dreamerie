@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-129",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-129-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-129-original-v4.png",
+    "sha256": "B41E64E829251A4B832C475BAE7F2E1AE0B800362482F8FCE8640D4E90FA7FB3",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-129-altered-source-v4.png",
+    "sha256": "D0BE47F748C333CAB18D5CB3D2BF58BB0182702265EB6F1FCA77B42302E805C5",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precisely edit this painted suitcase-home illustration, same full landscape frame, lighting, brushwork and all objects. Exactly FIVE separate single-object localized changes: 1 cushion blue bands become BLUE DIAGONAL chevron bands instead of horizontal, preserve cushion outline. 2 LEFT boot's loose outside lace forms a closed bow loop instead of long loose floor tail; RIGHT boot untouched. 3 only the LEFT suitcase brass lock keyhole changes from keyhole silhouette to HORIZONTAL narrow slot, right lock exact unchanged. 4 the small window vertical wooden mullion leans DIAGONALLY top-left to bottom-right instead of vertical, same endpoints area and window frame/horizontal bar. 5 loose brass floor key round bow becomes a hexagonal ring, same shaft and floor location. Preserve original cozy suitcase containing armchair, lamps, plants, blanket, anatomy/style/framing; do not move props or add specks. Return one matching counterpart, not a montage.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precisely edit this painted suitcase-home illustration, same full landscape frame, lighting, brushwork and all objects. Exactly FIVE separate single-object localized changes: 1 cushion blue bands become BLUE DIAGONAL chevron bands instead of horizontal, preserve cushion outline. 2 LEFT boot's loose outside lace forms a closed bow loop instead of long loose floor tail; RIGHT boot untouched. 3 only the LEFT suitcase brass lock keyhole changes from keyhole silhouette to HORIZONTAL narrow slot, right lock exact unchanged. 4 the small window vertical wooden mullion leans DIAGONALLY top-left to bottom-right instead of vertical, same endpoints area and window frame/horizontal bar. 5 loose brass floor key round bow becomes a hexagonal ring, same shaft and floor location. Preserve original cozy suitcase containing armchair, lamps, plants, blanket, anatomy/style/framing; do not move props or add specks. Return one matching counterpart, not a montage."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "cushion",
+      "label": "The cushion stripes form chevrons.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 842,
+        "y": 341,
+        "width": 145,
+        "height": 123
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "window",
+      "label": "The window mullion leans diagonally.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1115,
+        "y": 191,
+        "width": 68,
+        "height": 145
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "lace",
+      "label": "The left boot lace forms bow loops.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 263,
+        "y": 697,
+        "width": 151,
+        "height": 105
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "key",
+      "label": "The loose key's bow becomes hexagonal.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 623,
+        "y": 830,
+        "width": 62,
+        "height": 40
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "lock",
+      "label": "The left suitcase lock has a horizontal slot.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 880,
+        "y": 691,
+        "width": 55,
+        "height": 35
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source and five native paired crops plus 390px stacked preview inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses only; root feathered composite and gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

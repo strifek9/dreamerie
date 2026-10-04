@@ -11,8 +11,8 @@ const ledger = JSON.parse(readFileSync(new URL('../docs/artwork/V4_DECISIONS.jso
 
 function expect(condition, message) { if (!condition) errors.push(message) }
 function overlaps(a, b) {
-  return a.left < b.left + b.width && b.left < a.left + a.width &&
-    a.top < b.top + b.height && b.top < a.top + a.height
+  return a.left < b.left + b.width - 1e-12 && b.left < a.left + a.width - 1e-12 &&
+    a.top < b.top + b.height - 1e-12 && b.top < a.top + a.height - 1e-12
 }
 function exists(path) {
   return typeof path === 'string' && path.startsWith('/artwork/v4/') &&

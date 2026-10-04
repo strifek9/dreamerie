@@ -1,0 +1,109 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-232",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-232-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-232-original-v4.png",
+    "sha256": "74731AD94124F554C4A2A27FE2795D6B4DB6B7D477E997BC32DD61F14D602204",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-232-altered-source-v4.png",
+    "sha256": "B901AC53963F1DEEC67FBE904A707907B571D1530BEEAF89CD3B72EEB7AC91BD",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit this exact full native painterly red-haired kneeling postwoman opening shell envelope with luminous echo ribbon. Only FIVE separate-object edits: 1) brass round doorknob x385y210 reflects a clear BLUE CRESCENT inside its rounded surface, outline exact; 2) bag brass buckle x375y556 has its tongue diagonal down-left instead of vertical, same buckle frame/strap; 3) brass letterbox slot x239y227 has a diagonal inner brass crossbar in the aperture, outer frame exact; 4) right loop of red bow on stackedletters at x1594y490 turns upward, left bow loop and knot/tails/letters exact; 5) postwoman shirt cuff round button x610y496 has dark X-shaped groove, anatomy/clothing outline exact. Keep shell, hands, all glowing ribbon spirals, face, composition exact. 1672x941.\", \"reference\": \"D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-232-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit this exact full native painterly red-haired kneeling postwoman opening shell envelope with luminous echo ribbon. Only FIVE separate-object edits: 1) brass round doorknob x385y210 reflects a clear BLUE CRESCENT inside its rounded surface, outline exact; 2) bag brass buckle x375y556 has its tongue diagonal down-left instead of vertical, same buckle frame/strap; 3) brass letterbox slot x239y227 has a diagonal inner brass crossbar in the aperture, outer frame exact; 4) right loop of red bow on stackedletters at x1594y490 turns upward, left bow loop and knot/tails/letters exact; 5) postwoman shirt cuff round button x610y496 has dark X-shaped groove, anatomy/clothing outline exact. Keep shell, hands, all glowing ribbon spirals, face, composition exact. 1672x941.",
+        "reference": "D:/Dreamerie/public/artwork/v3/collection-year-v1/dream-232-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The letter slot has a diagonal crossbar",
+      "difficulty": "Easy",
+      "box": {
+        "x": 188,
+        "y": 202,
+        "width": 107,
+        "height": 49
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-2",
+      "label": "The doorknob reflects a blue crescent",
+      "difficulty": "Medium",
+      "box": {
+        "x": 371,
+        "y": 188,
+        "width": 37,
+        "height": 46
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-3",
+      "label": "The right ribbon bow loop points upward",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1594,
+        "y": 458,
+        "width": 53,
+        "height": 46
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-4",
+      "label": "The bag buckle tongue turns diagonally",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 353,
+        "y": 536,
+        "width": 43,
+        "height": 38
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    },
+    {
+      "id": "change-5",
+      "label": "The cuff button has an X slot",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 587,
+        "y": 472,
+        "width": 38,
+        "height": 39
+      },
+      "edgeFade": 4,
+      "nativeFullSource": "source.png"
+    }
+  ],
+  "notes": "Worker inspected full native pair, five paired crops and 390 stacked pair. Five separately selectable single-object clues. Native dimensions, five bounded nonoverlapping boxes and exact original pixels outside verified. Difficulty estimates unvalidated; root compositor/game, human difficulty and physical phone approval pending. Full prompts/source hash chain retained.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

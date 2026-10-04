@@ -1,0 +1,118 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-292",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-292-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-292-original-v4.png",
+    "sha256": "1CAEE08104309EB5987A00A74401A403DFC882F8D380662D047CD95BA1CDF7A6",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-292-altered-source-v4.png",
+    "sha256": "0D7FF2BD44AB6498AEEF43470D176121E46E2E7D0BC31FB85ACCBCD28DE7D952",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit this exact fullnative1672x941 painted silver fork branching into tied wooden twigs, FIVE local single-object differences ONLY. 1 Walnut on left tray near x134y389 cracks open along its length into a wide dark seam, keep same walnut silhouette/position; don't move nut halves. 2 Lowest PURPLE ribbon at twig knot x1159y393: its dangling free tail curls into a closed loop hanging below the knot instead of a straight downward tail, horizontal ribbon across branches unchanged. 3 Middle WHITE ribbon connecting twigs x1161y255: same connecting fabric strip twists into a clear corkscrew spiral along horizontal section, its knots and hanging white tail remain unchanged. 4 Top PINK ribbon right free tail near x1363y196 curls upward into a loop rather than hanging straight, knots and connecting pink strap unchanged. 5 Silver fork handle end lowerleft near x189y793: centered large engraved leaf flourish becomes engraved crescent moon, rest handle shape/rim scrolls exact. No other objects changed. Preserve fork/wood shapes, tray,towels,cup,lighting and framing.\", \"reference\": \"dream-292-original-v1.png\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit this exact fullnative1672x941 painted silver fork branching into tied wooden twigs, FIVE local single-object differences ONLY. 1 Walnut on left tray near x134y389 cracks open along its length into a wide dark seam, keep same walnut silhouette/position; don't move nut halves. 2 Lowest PURPLE ribbon at twig knot x1159y393: its dangling free tail curls into a closed loop hanging below the knot instead of a straight downward tail, horizontal ribbon across branches unchanged. 3 Middle WHITE ribbon connecting twigs x1161y255: same connecting fabric strip twists into a clear corkscrew spiral along horizontal section, its knots and hanging white tail remain unchanged. 4 Top PINK ribbon right free tail near x1363y196 curls upward into a loop rather than hanging straight, knots and connecting pink strap unchanged. 5 Silver fork handle end lowerleft near x189y793: centered large engraved leaf flourish becomes engraved crescent moon, rest handle shape/rim scrolls exact. No other objects changed. Preserve fork/wood shapes, tray,towels,cup,lighting and framing.",
+        "reference": "dream-292-original-v1.png"
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "walnut-crack",
+      "label": "The walnut opens along a dark seam.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 43,
+        "y": 320,
+        "width": 185,
+        "height": 142
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "purple-loop",
+      "label": "The purple ribbon tail forms a hanging loop.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1138,
+        "y": 405,
+        "width": 82,
+        "height": 121
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "white-twist",
+      "label": "The white ribbon twists into a corkscrew.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1100,
+        "y": 214,
+        "width": 145,
+        "height": 78
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "pink-loop",
+      "label": "The pink ribbon tail curls upward into a loop.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 1327,
+        "y": 91,
+        "width": 105,
+        "height": 156
+      },
+      "edgeFade": 4
+    },
+    {
+      "id": "fork-moon",
+      "label": "The fork handle has a crescent engraving.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 139,
+        "y": 717,
+        "width": 186,
+        "height": 132
+      },
+      "edgeFade": 4
+    }
+  ],
+  "notes": {
+    "humanTimed": false,
+    "physicalPhone": false,
+    "notes": [
+      "Three separate tied ribbon objects selected independently; all requested relationships realized."
+    ],
+    "outsideRegionsExact": true,
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sourceHashes": {
+      "source.png": "0d7ff2bd44ab6498aeef43470d176121e46e2e7d0bc31fb85accbcd28de7d952"
+    }
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-363",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-363-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-363-original-v4.png",
+    "sha256": "4FB80E382064599F9319CBB4B5BE507CB271E49E4606F83CB1CC952403C2237D",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-363-altered-source-v4.png",
+    "sha256": "932B0A5309B2FC2893480C79F696D60703731B2F89ABCFFD76375E03761763E7",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact original little green gecko hauling huge twine-bound envelope containing stone stairs. Preserve gecko anatomy/posture/limbs/core hauling premise, envelope framing/style. Exactly FIVE single-object localized clues: (1) gecko visible golden eye pupil becomes a horizontal slit instead of round dark pupil, iris/eyelid/body exact; (2) envelope large RED wax seal central embossed motif becomes a bold broad spiral rather than current faint motif, same wax outline; (3) lower LEFT loose brass KEY existing ring bow becomes a broad octagonal ring, shaft/teeth exact; (4) lower RIGHT blue-white TILE central printed flower becomes a clear blue crescent centered inside original ornamental border, tile outline/rest exact; (5) loose LEFT tabletop ROPE upper loop is tied into a prominent overhand knot at its crown, same rope ends/crossing/twine to envelope/gecko exact. One object's internal/action/mechanism per clue, no stair swaps/no grains or addedobjects.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact original little green gecko hauling huge twine-bound envelope containing stone stairs. Preserve gecko anatomy/posture/limbs/core hauling premise, envelope framing/style. Exactly FIVE single-object localized clues: (1) gecko visible golden eye pupil becomes a horizontal slit instead of round dark pupil, iris/eyelid/body exact; (2) envelope large RED wax seal central embossed motif becomes a bold broad spiral rather than current faint motif, same wax outline; (3) lower LEFT loose brass KEY existing ring bow becomes a broad octagonal ring, shaft/teeth exact; (4) lower RIGHT blue-white TILE central printed flower becomes a clear blue crescent centered inside original ornamental border, tile outline/rest exact; (5) loose LEFT tabletop ROPE upper loop is tied into a prominent overhand knot at its crown, same rope ends/crossing/twine to envelope/gecko exact. One object's internal/action/mechanism per clue, no stair swaps/no grains or addedobjects."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "seal",
+      "label": "The wax seal has a spiral relief.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1212,
+        "y": 338,
+        "width": 96,
+        "height": 105
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "tile",
+      "label": "The loose tile center flower becomes a crescent.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1379,
+        "y": 722,
+        "width": 219,
+        "height": 105
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "key",
+      "label": "The loose key bow becomes octagonal.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 0,
+        "y": 711,
+        "width": 188,
+        "height": 102
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "rope",
+      "label": "The tabletop rope loop has an overhand knot.",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 113,
+        "y": 442,
+        "width": 101,
+        "height": 59
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "eye",
+      "label": "The gecko eye pupil becomes a horizontal slit.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 374,
+        "y": 255,
+        "width": 46,
+        "height": 29
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Full source, five native paired crops and 390px pair inspected. All ten rectangle pairs nonoverlapping. Difficulty hypotheses; root feathered compositor/gameplay gates pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

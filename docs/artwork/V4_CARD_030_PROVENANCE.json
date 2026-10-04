@@ -1,0 +1,111 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-030",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-painted-v1/dream-030-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-030-original-v4.png",
+    "sha256": "FD055A5DBFFF7A8F132B660968FC7E7D30B17ECF11256E93A333B1F7FEF207CF",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-030-altered-source-v4.png",
+    "sha256": "8F65246C2815FC81AAE109062B18FE0320D4B2710428234FE7E5078AD21A64E8",
+    "prompt": "[{\"file\": \"prompt-v2.json\", \"content\": {\"tool\": \"built-in image_gen\", \"prompt\": \"Edit this exact Dreamerie painting at native 1672x941 framing. Preserve style, composition, characters and every unrelated object. Make five localized differences, each one changed object only: (1) the golden crescent medallion on front central terracotta pot at x650,y516 faces LEFT instead of right, same size; (2) a single thin green vine from neighboring foliage threads visibly THROUGH red watering-can handle at x205,y360, leaving can and handle geometry unchanged; (3) white star applique on child's yellow upper-back coat x508,y270 becomes a hollow five-point star of same size with yellow center, preserve coat seams; (4) on rightmost terracotta pot at x907,y397, only its glowing comet tail curls once around its OWN small green leaf stem, leaf original size and shape unchanged; (5) turtle opens its currently closed eye slightly at x1407,y506, preserve head/anatomy exactly. No other changed objects, no displaced neighboring stars/leaves, no removal of turtle scarf, no text or markers. Full landscape painting.\"}}, {\"file\": \"prompt-rose.json\", \"content\": {\"tool\": \"built-in image_gen\", \"prompt\": \"Edit ONLY watering can rose face in attached crop. Change arrangement of the dark nozzle holes from original scattered rows into one clear curved spiral of holes. Keep the SAME oval red nozzle rim, orientation, connecting red spout, original background/lighting/painting brush strokes. A single object internal-pattern change. No extra object, no text. Return same crop framing.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt-v2.json",
+      "content": {
+        "tool": "built-in image_gen",
+        "prompt": "Edit this exact Dreamerie painting at native 1672x941 framing. Preserve style, composition, characters and every unrelated object. Make five localized differences, each one changed object only: (1) the golden crescent medallion on front central terracotta pot at x650,y516 faces LEFT instead of right, same size; (2) a single thin green vine from neighboring foliage threads visibly THROUGH red watering-can handle at x205,y360, leaving can and handle geometry unchanged; (3) white star applique on child's yellow upper-back coat x508,y270 becomes a hollow five-point star of same size with yellow center, preserve coat seams; (4) on rightmost terracotta pot at x907,y397, only its glowing comet tail curls once around its OWN small green leaf stem, leaf original size and shape unchanged; (5) turtle opens its currently closed eye slightly at x1407,y506, preserve head/anatomy exactly. No other changed objects, no displaced neighboring stars/leaves, no removal of turtle scarf, no text or markers. Full landscape painting."
+      }
+    },
+    {
+      "file": "prompt-rose.json",
+      "content": {
+        "tool": "built-in image_gen",
+        "prompt": "Edit ONLY watering can rose face in attached crop. Change arrangement of the dark nozzle holes from original scattered rows into one clear curved spiral of holes. Keep the SAME oval red nozzle rim, orientation, connecting red spout, original background/lighting/painting brush strokes. A single object internal-pattern change. No extra object, no text. Return same crop framing."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "eye",
+      "label": "The turtle opens its eye.",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1377,
+        "y": 484,
+        "width": 101,
+        "height": 58
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "vine",
+      "label": "A vine threads through the watering can\u2019s handle.",
+      "difficulty": "Medium",
+      "box": {
+        "x": 157,
+        "y": 310,
+        "width": 102,
+        "height": 99
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "star",
+      "label": "The coat\u2019s white star has a hollow center.",
+      "difficulty": "Hard",
+      "box": {
+        "x": 474,
+        "y": 239,
+        "width": 70,
+        "height": 74
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "crescent",
+      "label": "The front pot\u2019s golden crescent opens to the left.",
+      "difficulty": "Very Hard",
+      "box": {
+        "x": 610,
+        "y": 495,
+        "width": 63,
+        "height": 45
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "rose",
+      "label": "The watering-can nozzle holes form a spiral.",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 287,
+        "y": 297,
+        "width": 59,
+        "height": 54
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": "Built-in generated full source plus targeted rose crop, resized only generated crop to original native coordinates. Deterministic five-region assembly. Original red can pixels preserved where vine does not occlude. Rejected initial fullsource and right-pot loop are not selected. Root native/crop/game QA pending.",
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

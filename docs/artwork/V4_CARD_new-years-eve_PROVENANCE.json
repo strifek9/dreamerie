@@ -1,0 +1,123 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-new-years-eve",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/holidays-painted-v1/new-years-eve-original.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-new-years-eve-original-v4.png",
+    "sha256": "CAA3F7F24C5914A31681AAB35C61486CEA8DAC0F4D9D31486399EC16EFB217CE",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-new-years-eve-altered-source-v4.png",
+    "sha256": "54A0A222E8AE43AFE6B76E66CBD30E40D4BF1B78C5A4F1C13D72A0DC6EA1CB2A",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Edit exact festive New Year's Eve midnight celebration painting locally, preserve all four creatures' anatomy, happy expressions, party scene, disco planet, frame and painterly style. Exactly five SINGLE TARGET differences: 1 gold star emblem on green DJ's viewer-left headphone earcup at x110 y429 becomes a gold crescent, earcup unchanged. 2 ONLY long minute hand of large clock rotates from twelve to one o'clock, short hour hand remains exactly pointing twelve, clock face untouched. 3 the blue creature's curled party horn terminal at x1251 y326 opens from closed spiral into a single open hook pointing upward, horn mouthpiece/striped shaft unchanged. 4 the champagne glass held by purple creature at x803 y409 changes only its oval foot at x810 y469 to a triangular glass foot, bowl/stem/contents unchanged. 5 ONLY the large gold star motif on orange creature's bow tie viewer-right wing near x962 y603 becomes a small gold crescent motif, rest bow tie patterns unchanged. No paired swaps, no extra objects. Five local edits with clean contours and exact composition.\"}}, {\"file\": \"prompt-b.json\", \"content\": {\"prompt\": \"Edit exact image only TWO local single-object changes. A: change only long slender clock hand pointing twelve: its top half curves RIGHT into a broad hooked arc while bottom half stays attached at center. Keep short broad clock hand near eleven-fifty-five EXACT, exactly TWO hands total, no new hand/no straight original long-hand remnant. B: Champagne glass held by purple creature (x802 y410), NOT glasses on table: make its glass foot at x810 y470 a clear square pedestal foot with angular corners, stem bowl liquid and hand unchanged. Rest scene identical original.\", \"note\": \"Clock repair selected; glass foot request not realized\"}}, {\"file\": \"prompt-c.json\", \"content\": {\"prompt\": \"ONE local edit only: purple round creature's striped party hat has a gold round spiky pompom at x599 y322. Replace only that pompom with a gold heart-shaped smooth padded ornament attached at same hat tip. Preserve hat striped cone and ALL other objects exactly. One object internal silhouette change, same scene and painted style.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Edit exact festive New Year's Eve midnight celebration painting locally, preserve all four creatures' anatomy, happy expressions, party scene, disco planet, frame and painterly style. Exactly five SINGLE TARGET differences: 1 gold star emblem on green DJ's viewer-left headphone earcup at x110 y429 becomes a gold crescent, earcup unchanged. 2 ONLY long minute hand of large clock rotates from twelve to one o'clock, short hour hand remains exactly pointing twelve, clock face untouched. 3 the blue creature's curled party horn terminal at x1251 y326 opens from closed spiral into a single open hook pointing upward, horn mouthpiece/striped shaft unchanged. 4 the champagne glass held by purple creature at x803 y409 changes only its oval foot at x810 y469 to a triangular glass foot, bowl/stem/contents unchanged. 5 ONLY the large gold star motif on orange creature's bow tie viewer-right wing near x962 y603 becomes a small gold crescent motif, rest bow tie patterns unchanged. No paired swaps, no extra objects. Five local edits with clean contours and exact composition."
+      }
+    },
+    {
+      "file": "prompt-b.json",
+      "content": {
+        "prompt": "Edit exact image only TWO local single-object changes. A: change only long slender clock hand pointing twelve: its top half curves RIGHT into a broad hooked arc while bottom half stays attached at center. Keep short broad clock hand near eleven-fifty-five EXACT, exactly TWO hands total, no new hand/no straight original long-hand remnant. B: Champagne glass held by purple creature (x802 y410), NOT glasses on table: make its glass foot at x810 y470 a clear square pedestal foot with angular corners, stem bowl liquid and hand unchanged. Rest scene identical original.",
+        "note": "Clock repair selected; glass foot request not realized"
+      }
+    },
+    {
+      "file": "prompt-c.json",
+      "content": {
+        "prompt": "ONE local edit only: purple round creature's striped party hat has a gold round spiky pompom at x599 y322. Replace only that pompom with a gold heart-shaped smooth padded ornament attached at same hat tip. Preserve hat striped cone and ALL other objects exactly. One object internal silhouette change, same scene and painted style."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The DJ earcup star becomes a crescent",
+      "difficulty": "Easy",
+      "box": {
+        "x": 81,
+        "y": 390,
+        "width": 72,
+        "height": 77
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The long clock hand bends into a hook",
+      "difficulty": "Medium",
+      "box": {
+        "x": 1014,
+        "y": 214,
+        "width": 88,
+        "height": 155
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The party horn spiral opens into a hook",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1209,
+        "y": 283,
+        "width": 75,
+        "height": 83
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The purple hat-tip ornament becomes a heart",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 571,
+        "y": 298,
+        "width": 57,
+        "height": 55
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "One bow-tie star becomes a crescent",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 946,
+        "y": 597,
+        "width": 33,
+        "height": 27
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "visually inspected",
+    "fivePairedCrops": "visually inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "nativePreflight": "source equals actual original size, five nonoverlapping boxes",
+    "difficulty": "hypotheses; human and browser QA pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}

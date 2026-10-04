@@ -1,0 +1,115 @@
+{
+  "status": "root native pixel/full-pair/five-crop and actual browser five-touch/inspection/layout/reload QA passed; human difficulty pending",
+  "cardId": "v4-dream-179",
+  "tool": "built-in image_gen; deterministic localized source assembly where documented",
+  "input": "/artwork/v3/collection-year-v1/dream-179-original-v1.png",
+  "original": {
+    "path": "/artwork/v4/collection/dream-179-original-v4.png",
+    "sha256": "07D901105D165189A5291788FF6963421D6EB57782947078DB4CF5E104EB69A4",
+    "prompt": "Bit-identical published original; no regeneration."
+  },
+  "alteredSource": {
+    "path": "/artwork/v4/collection/dream-179-altered-source-v4.png",
+    "sha256": "2209F7B417F55F3EA93F034AC03FD1BF661E586F7C14F3C6F3FC2940C751A60E",
+    "prompt": "[{\"file\": \"prompt.json\", \"content\": {\"prompt\": \"Precise localizedpaintingedit exact1672x941 crabsewingcase. Preserve crabeyesclawsanatomy needlethreadperspective roomgap allpaint. Exactly5 SINGLEOBJECTchanges:1 gold CASECLASP x1051y385 centerrectangularplate has crescentaperture ratherthanplainflatcenter, frameunchanged;2 foregroundwhiteBUTTONleftx89y538 has oneelongatedslot insteadfourholes, samebutton;3 threadSPOOLupperright x1294y138 threadwinding has continuousDIAGONALzigzag stripe insteadhorizontalstraightbands, samewoodspool;4 crab LEFT longANTENNA nearx650y136 freeend curlsUP into smallconnectedhook insteadopenarcdown, sameattachedbase andotherantenna;5 narrowred RIBBON tail overcaserimx1384y306 itslowerfreeedge foldsUP into pointedflap insteadflatstraighttongue, widerredribbonunchanged. No swaps noextras noglobalchanges; fivephysicalsingleobjects variedmechanism/action/pattern.\"}}, {\"file\": \"prompt-b.json\", \"content\": {\"prompt\": \"Singleobject preciseedit this paintedgoldpinhead crop. Change roundgoldhead into clearTEARDROPwithpointatTOP androundedbottom, samegoldmaterial sizecenter andattachedpinshaft. Backgroundunchanged. Nootherchanges.\"}}]"
+  },
+  "generationPromptChain": [
+    {
+      "file": "prompt.json",
+      "content": {
+        "prompt": "Precise localizedpaintingedit exact1672x941 crabsewingcase. Preserve crabeyesclawsanatomy needlethreadperspective roomgap allpaint. Exactly5 SINGLEOBJECTchanges:1 gold CASECLASP x1051y385 centerrectangularplate has crescentaperture ratherthanplainflatcenter, frameunchanged;2 foregroundwhiteBUTTONleftx89y538 has oneelongatedslot insteadfourholes, samebutton;3 threadSPOOLupperright x1294y138 threadwinding has continuousDIAGONALzigzag stripe insteadhorizontalstraightbands, samewoodspool;4 crab LEFT longANTENNA nearx650y136 freeend curlsUP into smallconnectedhook insteadopenarcdown, sameattachedbase andotherantenna;5 narrowred RIBBON tail overcaserimx1384y306 itslowerfreeedge foldsUP into pointedflap insteadflatstraighttongue, widerredribbonunchanged. No swaps noextras noglobalchanges; fivephysicalsingleobjects variedmechanism/action/pattern."
+      }
+    },
+    {
+      "file": "prompt-b.json",
+      "content": {
+        "prompt": "Singleobject preciseedit this paintedgoldpinhead crop. Change roundgoldhead into clearTEARDROPwithpointatTOP androundedbottom, samegoldmaterial sizecenter andattachedpinshaft. Backgroundunchanged. Nootherchanges."
+      }
+    }
+  ],
+  "refinedSources": [],
+  "authoredRegions": [
+    {
+      "id": "change-1",
+      "label": "The case clasp has a crescent aperture",
+      "difficulty": "Easy",
+      "box": {
+        "x": 1008,
+        "y": 349,
+        "width": 87,
+        "height": 67
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-2",
+      "label": "The loose white button has a single slot",
+      "difficulty": "Medium",
+      "box": {
+        "x": 34,
+        "y": 514,
+        "width": 112,
+        "height": 25
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-3",
+      "label": "The thread spool winding runs diagonally",
+      "difficulty": "Hard",
+      "box": {
+        "x": 1211,
+        "y": 60,
+        "width": 165,
+        "height": 183
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-4",
+      "label": "The left antenna tip curls upward",
+      "difficulty": "Very hard",
+      "box": {
+        "x": 597,
+        "y": 46,
+        "width": 272,
+        "height": 224
+      },
+      "edgeFade": 3
+    },
+    {
+      "id": "change-5",
+      "label": "The gold pin head becomes a teardrop",
+      "difficulty": "Dreamlike",
+      "box": {
+        "x": 1594,
+        "y": 83,
+        "width": 25,
+        "height": 29
+      },
+      "edgeFade": 3
+    }
+  ],
+  "notes": {
+    "fullComposite": "inspected",
+    "fivePairedCrops": "five single-object clues inspected",
+    "mobile390": "stacked pair inspected",
+    "outsideBoxes": "pixel invariant passed",
+    "difficulty": "hypotheses; parent browser and human playtest pending"
+  },
+  "rootQA": {
+    "nativePixels": "passed",
+    "outsideFiveRegions": "unchanged",
+    "allFiveActualCrops": "visually inspected",
+    "browserFiveTouchHits": "5/5",
+    "inspectionEscape": "passed",
+    "widths": [
+      320,
+      390,
+      844,
+      1440
+    ],
+    "previewReload": "fresh attempt by design",
+    "humanDifficulty": "pending"
+  }
+}
