@@ -28,8 +28,8 @@ export default function VersionThree() {
   const [run, setRun] = useState(0)
   const [date] = useState(() => new Date())
   const today = landscapeDay(date)
-  const requested = import.meta.env.DEV ? new URLSearchParams(location.search).get('dream') : null
-  const selectedPreview = import.meta.env.DEV ? v4PreviewDreams.find(card => card.id === requested) : undefined
+  const requested = (import.meta.env.DEV || import.meta.env.MODE === 'playtest') ? new URLSearchParams(location.search).get('dream') : null
+  const selectedPreview = (import.meta.env.DEV || import.meta.env.MODE === 'playtest') ? v4PreviewDreams.find(card => card.id === requested) : undefined
   const selected = playableDreams.find(card => card.id === requested)
   const [index, setIndex] = useState(() => {
     if (selected) return playableDreams.indexOf(selected)
@@ -140,7 +140,7 @@ function Round({ dream, day, playtest, onNew }: { dream: LandscapeDream; day: nu
     {expandedSide && !landing && <DreamViewer fitAspectRatio={dream.aspectRatio} title={expandedSide === 'original' ? 'The Dream' : 'The Memory'} pendingPoint={recall.pending} onClose={() => setExpandedSide(null)} onTap={result ? undefined : point => { void dispatch({ type: 'mark', point, side: expandedSide }) }} status={result ? <span>{result.accuracy}/5 · {formatClock(result.elapsedSeconds)}</span> : <span>{remainingGuessLabel(recall)} · {formatClock(recallLeft)} · timer running</span>} action={result ? revealAction : <><div className="v3-guess-action"><MemoryFragments guesses={recall.confirmed}/>{guessAction}</div><p className="v3-viewer-feedback" role="status">{guessFeedback(recall, differences, dream.aspectRatio)}</p></>}>{artwork(expandedSide)}</DreamViewer>}
     {hintOpen && <GameHint onClose={() => setHintOpen(false)} timeLeft={phase === 'play' ? recallLeft : undefined}/>}
     {result && !landing && answerIndex !== null && <AnswerInspection dream={dream} differences={differences} foundIds={recall.foundDifferenceIds} index={answerIndex} onSelect={setAnswerIndex} onClose={() => setAnswerIndex(null)}/>}
-    {import.meta.env.DEV && <div className="v2-dev"><button className="text-action" onClick={onNew}>New day (dev only)</button><a href="?review=1">Review all {currentDreams.length}</a><select aria-label="Preview a holiday" value={holiday?.id ?? ''} onChange={event => { if (event.target.value) location.assign(`?dream=${event.target.value}`) }}><option value="" disabled>Holiday previews</option>{holidayDreams.map(card => <option key={card.id} value={card.id}>{card.occasion}</option>)}</select><span>{dream.id}</span></div>}
+    {(import.meta.env.DEV || import.meta.env.MODE === 'playtest') && <div className="v2-dev"><button className="text-action" onClick={onNew}>New day (dev only)</button><a href={import.meta.env.MODE === 'playtest' ? '/v4-review.html' : '?review=1'}>{import.meta.env.MODE === 'playtest' ? 'V4 artwork review (answers)' : `Review all ${currentDreams.length}`}</a><select aria-label="Preview a V4 dream" value={dream.id.startsWith('v4-') ? dream.id : ''} onChange={event => { if (event.target.value) location.assign(`?dream=${event.target.value}`) }}><option value="" disabled>V4 previews</option>{v4PreviewDreams.map(card => <option key={card.id} value={card.id}>{card.title}</option>)}</select><select aria-label="Preview a holiday" value={holiday?.id ?? ''} onChange={event => { if (event.target.value) location.assign(`?dream=${event.target.value}`) }}><option value="" disabled>Holiday previews</option>{holidayDreams.map(card => <option key={card.id} value={card.id}>{card.occasion}</option>)}</select><span>{dream.id}</span></div>}
   </main>
 }
 

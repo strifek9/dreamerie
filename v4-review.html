@@ -8,7 +8,10 @@
   body { margin: 0; padding: 20px; }
   h1 { font-size: clamp(22px, 3vw, 34px); font-weight: 400; text-align: center; margin: 8px 0; }
   .notice { text-align: center; opacity: .75; font: 13px/1.4 system-ui, sans-serif; margin: 0 0 18px; }
-  .controls { display: flex; justify-content: center; gap: 16px; align-items: center; margin-bottom: 18px; font: 14px system-ui, sans-serif; }
+  .controls { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; align-items: center; margin-bottom: 18px; font: 14px system-ui, sans-serif; }
+  .controls label { display: flex; align-items: center; gap: 6px; min-width: 0; max-width: 100%; }
+  .controls label:first-child { flex: 0 1 520px; }
+  select { min-width: 0; width: 100%; text-overflow: ellipsis; }
   select, button { background: #22213b; color: #fff3dd; border: 1px solid #726e8a; border-radius: 8px; padding: 7px 12px; }
   .pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; max-width: 1800px; margin: auto; }
   figure { margin: 0; }
@@ -26,7 +29,7 @@
   @media (max-width: 700px) { .pair { display: block; } figure { margin-bottom: 20px; } .answer-pair { gap: 8px; } }
 </style>
 <h1 id="title"></h1>
-<p class="notice">Unreleased V4 editorial preview. This page is available in development only; the live daily rotation is unchanged.</p>
+<p class="notice">Unreleased V4 editorial preview. This page is available in development and dedicated playtest builds; the live daily rotation is unchanged.</p>
 <div class="controls"><label>Card <select id="card"></select></label><button id="size" type="button">Phone-size art</button><label><input id="outlines" type="checkbox"> Show clue regions</label></div>
 <main id="review"><div class="pair" id="pair"></div><ol id="clues"></ol><section class="answers" aria-labelledby="answers-title"><h2 id="answers-title">Paired answer crops</h2><div id="crops"></div></section></main>
 <script type="module">

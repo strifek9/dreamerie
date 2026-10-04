@@ -1,5 +1,5 @@
 {
-  "status": "unreleased editorial draft; visual QA incomplete; not production-approved",
+  "status": "unreleased editorial proof; desktop/phone composite and all five answer crops reviewed; human difficulty calibration pending; not production-approved",
   "cardId": "v4-dream-016",
   "tool": "built-in image_gen",
   "input": "/artwork/v3/collection-painted-v1/dream-016-original-v1.png",
@@ -12,8 +12,22 @@
     "path": "/artwork/v4/collection/dream-016-altered-source-v4.png",
     "sha256": "A5121B5C25FD0A99E10C3858D1D369279714183E6D6107601BEC09B786913393",
     "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 edit target, a painted lavender teapot volcano among floating islands, pink cloud steam, a blue cherry, three blue goats on sugar-cube steps, and a wooden spoon. Preserve scenery, vivid palette and clean matte brushwork. Make only five specific localized differences: (1) The pink steam curling from the teapot's lid spirals around the blue cherry's stem before drifting away, without moving the cherry. (2) The teapot spout's small pink puff slips behind the spout rim rather than in front, continuous cloud. (3) The middle goat's front hoof rests on the sugar cube one step ABOVE its original cube, with one plausible leg and no duplicated hoof. (4) The near wooden spoon's heart-shaped cutout reverses direction within the spoon bowl, keeping one smooth heart opening and natural wood. (5) The teapot's ivory diamond motif overlaps the adjacent leaf-scroll motif instead of stopping before it, clean painted ornament layering. No other edits, broken anatomy, additional objects, text or watermark.",
-    "usedRegions": ["cherry-steam-spiral", "spout-puff", "goat-climbs-sugar", "spoon-heart-turns", "diamond-scroll-overlap"]
+    "usedRegions": [
+      "cherry-steam-spiral",
+      "spout-puff",
+      "goat-climbs-sugar",
+      "spoon-heart-turns",
+      "diamond-scroll-overlap"
+    ]
   },
   "refinedSources": [],
-  "notes": "Full desktop pair inspected. Paired answer crops and phone-size full pair still require visual QA; difficulty labels are provisional."
+  "notes": "October 4: inspected the actual five-region composite and all five paired answer crops at 1440px desktop and 390px phone layout. Five center-hit confirmations complete a 5/5 preview round; zoom/result persistence flows exercised separately. Human difficulty calibration and physical-phone playtesting remain pending. Corrected the last clue label: the leafy scroll reaches across the ivory diamond, rather than the diamond moving across the scroll.",
+  "visualReview": {
+    "date": "2026-10-04",
+    "scope": "technical editorial review, not human difficulty approval",
+    "desktopWidth": 1440,
+    "phoneWidth": 390,
+    "pairedCrops": 5,
+    "record": "docs/V4_BATCH_REVIEW_20261004.md"
+  }
 }

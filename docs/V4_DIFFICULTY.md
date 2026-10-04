@@ -2,6 +2,14 @@
 
 Status: preproduction on `feature/v4-harder-dreams`. The owner requested a full audit of the 365 daily and 18 holiday cards, selective enrichment of sparse scenes, and harder and less predictable differences. On October 2 the owner separately authorized a work-in-progress commit and push as a checkpoint, not a V4 release or deployment. Version 3 remains on `main` and live.
 
+## October 4 technical review follow-up
+
+Cards 016, 018 and 020 now have desktop/phone full-composite and all five paired-crop visual QA. A localized bracket-spiral source replaces card 018's broken rail clip; card 016's label follows the observed ornament, and card 012's offcut feather no longer leaves a blue fleck. The review controls fit 320-1440px. All 93 tests, build, preview gate and 2,298-file lossless checks pass; isolated desktop/mobile browser persistence and confirmation flows pass. See [the technical review and remaining human/full-collection gates](V4_BATCH_REVIEW_20261004.md). These remain development-only proofs: 383 keep/revise decisions, human difficulty calibration and physical-phone checks are pending. No publication occurred.
+
+## Additional source-ready inventory - October 4
+
+The seven existing proofs 074/133/155/173/197/237/270 also passed desktop/phone full-pair and 35 paired-crop technical review plus mobile touch-event perfect rounds. Labels on 173/237 now describe the realized source art. All 27 proofs (135 clues) are source-ready for human review; none is production-approved. docs/artwork/V4_READINESS_20261004.json separates them from the 356 current cards without selected V4 proofs. The 383 keep/revise decisions remain pending; unknown retain/revise outcomes prevent an honest total of new-art tasks. Full details and reproducible evidence are in V4_BATCH_REVIEW_20261004.md.
+
 ## Inventory and direction
 
 On September 30, 2026, the current catalogue had 383 cards and exactly 1,915 authored clues. A wording audit found 626 color, 665 disappearance, 335 shape, 182 pattern, and only 3 relational clues. These categories overlap and are not difficulty measurements, but 322 cards have at least four clues in the color/disappearance/shape categories. This supports the owner's feedback that the puzzle grammar has become predictable.

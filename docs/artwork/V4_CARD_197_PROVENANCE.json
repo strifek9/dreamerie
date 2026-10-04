@@ -1,5 +1,5 @@
 {
-  "status": "unreleased editorial proof; not production-approved",
+  "status": "unreleased editorial proof; technical composite/crop review complete; human difficulty and physical-phone approval pending; not production-approved",
   "cardId": "v4-dream-197",
   "useCase": "precise-object-edit",
   "tool": "built-in image_gen",
@@ -63,5 +63,14 @@
     "prompt": "Use case: precise-object-edit. Image 1 is the exact original 1672x941 Dreamerie painting The Hour That Fell Out: a single cream paper time-ribbon emerges from the pocket-watch dial, flows down and right, then descends beside a tarnished silver spoon. Change ONLY the FINAL FREE END of that existing paper ribbon near x760-1120,y510-830 so that it wraps one smooth continuous spiral around the narrow silver spoon HANDLE at x1010-1120,y680-785, then tucks its single tip neatly beneath the loop. Critical physical continuity: trace the same ONE strip from the watch to its tip without forks, duplicate ribbons, pointed wedges, floating fragments, flat cutout seams, or abrupt width changes. The spoon stays precisely where it is; the loop contacts the handle with believable shadow. Keep the ribbon's starting point at the watch and its upstream S-curve unchanged; keep the spoon bowl, watch, chain, paper ladder, velvet and all other details unchanged. This is a real over-under contact change, not a pasted shape. Same clean native matte brushwork, no grain, text, marker, border or unrelated edits.",
     "reason": "Its clipped playable composite exposed a detached-looking ivory sliver from the old ribbon near the top mask edge."
   },
-  "notes": "The selected ribbon source makes a single continuous loop around the spoon handle. The visual clip was expanded upward to cover the old ribbon fold; the detached sliver disappeared in enlarged gameplay. Desktop, phone-size and enlarged composites were visually checked without obvious joins. Actual touch/zoom playtesting and subjective difficulty calibration remain; this is not production-approved."
+  "notes": "The selected ribbon source makes a single continuous loop around the spoon handle. The visual clip was expanded upward to cover the old ribbon fold; the detached sliver disappeared in enlarged gameplay. Desktop, phone-size and enlarged composites were visually checked without obvious joins. Actual touch/zoom playtesting and subjective difficulty calibration remain; this is not production-approved.",
+  "visualReview": {
+    "date": "2026-10-04",
+    "desktopWidth": 1440,
+    "phoneWidth": 390,
+    "pairedCrops": 5,
+    "scope": "technical visual review only",
+    "findings": "All five changes present. The earlier clean ribbon source remains continuous around the spoon with no detached sliver. Chain/ring, spoon reflection, rung occlusion and clock tick edits remain distinct.",
+    "record": "docs/V4_BATCH_REVIEW_20261004.md"
+  }
 }

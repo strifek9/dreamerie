@@ -1,5 +1,5 @@
 {
-  "status": "unreleased editorial proof; not production-approved",
+  "status": "unreleased editorial proof; technical composite/crop review complete; human difficulty and physical-phone approval pending; not production-approved",
   "cardId": "v4-dream-270",
   "useCase": "precise-object-edit",
   "tool": "built-in image_gen",
@@ -37,5 +37,14 @@
       ]
     }
   ],
-  "notes": "The first all-five trial's stars were too chunky and its cord crossing insufficiently distinct; both regions use targeted refinements clipped into the unchanged V3 original. Desktop and 390-pixel artwork composites were visually checked without obvious clipped joins. Actual touch/zoom playtesting and subjective difficulty calibration remain; this is not production-approved."
+  "notes": "The first all-five trial's stars were too chunky and its cord crossing insufficiently distinct; both regions use targeted refinements clipped into the unchanged V3 original. Desktop and 390-pixel artwork composites were visually checked without obvious clipped joins. Actual touch/zoom playtesting and subjective difficulty calibration remain; this is not production-approved.",
+  "visualReview": {
+    "date": "2026-10-04",
+    "desktopWidth": 1440,
+    "phoneWidth": 390,
+    "pairedCrops": 5,
+    "scope": "technical visual review only",
+    "findings": "All five changes present: cloud shadow, upward lightning, cord/fringe occlusion, diagonal stars and changed cloth hem. No obvious clipped joins in desktop/phone composites.",
+    "record": "docs/V4_BATCH_REVIEW_20261004.md"
+  }
 }

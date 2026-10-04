@@ -1,5 +1,11 @@
 # Working on DREAMERIE
 
+## Version 4 technical review follow-up - October 4, 2026
+
+The three outstanding first-batch drafts (016, 018, 020) have desktop/phone composite and all five paired-crop QA. Corrections and remaining gates are in docs/V4_BATCH_REVIEW_20261004.md. All 93 tests/build, preview gate and complete V3 lossless checks pass; isolated mobile/desktop development and production browser flows pass. The 383-card release ledger remains pending. Technical review does not constitute human difficulty approval or a complete V4. No commit/push/merge/deployment occurred. Keep these proofs isolated while the first twenty receive human playtesting.
+
+Additional existing proofs 074/133/155/173/197/237/270 also have full desktop/phone five-crop QA and successful mobile touch-event rounds. All 27 proofs are source-ready for human review; the other 356 cards need retain/revise decisions, not an assumed 356 regenerations. See docs/artwork/V4_READINESS_20261004.json. No new 021-040 batch or ledger approval was made.
+
 ## Version 4 harder dreams — active, September 30, 2026
 
 The owner authorized a full current-card difficulty revision, selective enrichment of sparse paintings, and commit/push/deployment after the complete Version 4 collection is playable and validated. Work on `feature/v4-harder-dreams`; current Version 3 on `main` and Render remains stable until the final release. There are 383 current cards / 1,915 clues. Keep published IDs and artwork for saved attempts, original game rules and the generous overlap circle. Do not publish a partial V4 or treat generated full-frame concept edits as finished clues. The owner rejected the umbrella handle example; preserve the liked chessboard handoff direction. See `docs/V4_DIFFICULTY.md` and `docs/CARD_CREATION_GUIDE.md`.

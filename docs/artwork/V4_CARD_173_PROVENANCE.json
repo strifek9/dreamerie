@@ -1,5 +1,5 @@
 {
-  "status": "unreleased editorial proof; not production-approved",
+  "status": "unreleased editorial proof; technical composite/crop review complete; human difficulty and physical-phone approval pending; not production-approved",
   "cardId": "v4-dream-173",
   "useCase": "precise-object-edit",
   "tool": "built-in image_gen",
@@ -32,5 +32,14 @@
   ],
   "rejectedCandidate": {
     "description": "The floated chair seam-rotation attempt was not legible enough and appeared to affect the wrong chair; it was not selected."
+  },
+  "visualReview": {
+    "date": "2026-10-04",
+    "desktopWidth": 1440,
+    "phoneWidth": 390,
+    "pairedCrops": 5,
+    "scope": "technical visual review only",
+    "findings": "All five changes present. Corrected two labels to the observed artwork: the floating puzzle piece turns flat against the doorway edge (not a proved interlock), and the key shadow becomes a hollow triangle (not a tiny doorway). No raster or hit-region changes.",
+    "record": "docs/V4_BATCH_REVIEW_20261004.md"
   }
 }

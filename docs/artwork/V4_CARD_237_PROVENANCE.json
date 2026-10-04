@@ -1,5 +1,5 @@
 {
-  "status": "unreleased editorial proof; not production-approved",
+  "status": "unreleased editorial proof; technical composite/crop review complete; human difficulty and physical-phone approval pending; not production-approved",
   "cardId": "v4-dream-237",
   "useCase": "precise-object-edit",
   "tool": "built-in image_gen",
@@ -30,5 +30,14 @@
       ]
     }
   ],
-  "notes": "The all-five trial's book motif was not a distinct enough change; the selected localized edit opens the flower into a sunburst."
+  "notes": "The all-five trial's book motif was not a distinct enough change; the selected localized edit opens the flower into a sunburst.",
+  "visualReview": {
+    "date": "2026-10-04",
+    "desktopWidth": 1440,
+    "phoneWidth": 390,
+    "pairedCrops": 5,
+    "scope": "technical visual review only",
+    "findings": "All five changes present. Corrected the book clue: the realized flower gains curled leaves above/below; it does not become a literal sunburst. Prompt remains historical provenance. No raster or hit-region changes.",
+    "record": "docs/V4_BATCH_REVIEW_20261004.md"
+  }
 }

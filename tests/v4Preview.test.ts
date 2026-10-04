@@ -3,6 +3,8 @@ import test from 'node:test'
 import { readFileSync, readdirSync } from 'node:fs'
 import { createHash } from 'node:crypto'
 import { currentDreams, playableDreams } from '../src/v3/dailyDream.ts'
+import { confirmGuess, createRecallState, getRemainingGuesses } from '../src/game/dailyRecall.ts'
+import { differencesFor } from '../src/v2/landscapeCollection.ts'
 import { v4PreviewDreams } from '../src/v4/previewDreams.ts'
 
 test('unreleased V4 proof is isolated from the published deck and has five bounded clues', () => {
@@ -48,5 +50,26 @@ test('V4 proof retains its native-resolution, versioned generated source files',
       assert.ok(bytes.readUInt32BE(16) >= 1670 && bytes.readUInt32BE(16) <= 1672)
       assert.equal(bytes.readUInt32BE(20), 941)
     }
+  }
+})
+
+test('every V4 preview completes with five distinct center hits and repeats spend a guess', () => {
+  for (const dream of v4PreviewDreams) {
+    const differences = differencesFor(dream)
+    let state = createRecallState()
+    const centers = differences.map(({ box }) => ({ x: box.left + box.width / 2, y: box.top + box.height / 2 }))
+    for (let i = 0; i < centers.length; i++) {
+      const next = confirmGuess(state, centers[i], i + 1, differences, dream.aspectRatio)
+      assert.equal(next.state.confirmed[i].differenceId, differences[i].id, dream.id)
+      assert.equal(next.result?.accuracy ?? null, i === 4 ? 5 : null, dream.id)
+      state = next.state
+    }
+    assert.equal(getRemainingGuesses(state), 0, dream.id)
+    assert.equal(confirmGuess(state, centers[0], 10, differences, dream.aspectRatio).state, state)
+    const first = confirmGuess(createRecallState(), centers[0], 1, differences, dream.aspectRatio)
+    const repeated = confirmGuess(first.state, centers[0], 2, differences, dream.aspectRatio)
+    assert.equal(repeated.state.confirmed.length, 2, dream.id)
+    assert.equal(repeated.state.confirmed[1].correct, false, dream.id)
+    assert.equal(repeated.state.foundDifferenceIds.length, 1, dream.id)
   }
 })

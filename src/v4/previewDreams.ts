@@ -539,7 +539,7 @@ export const v4PreviewDreams: readonly LandscapeDream[] = [{
       id: 'offcut-joins-river',
       label: 'A blue cloth offcut curls into the river instead of drifting free.',
       difficulty: 'Hard',
-      box: { left: 883 / 1672, top: 500 / 941, width: 143 / 1672, height: 83 / 941 },
+      box: { left: 883 / 1672, top: 500 / 941, width: 165 / 1672, height: 83 / 941 },
       edgeFade: 9,
     },
     {
@@ -734,7 +734,7 @@ export const v4PreviewDreams: readonly LandscapeDream[] = [{
     },
     {
       id: 'diamond-scroll-overlap',
-      label: "The teapot's diamond ornament overlaps its leafy scroll.",
+      label: "A leafy scroll reaches across the teapot's ivory diamond.",
       difficulty: 'Dreamlike',
       box: { left: 973 / 1672, top: 305 / 941, width: 270 / 1672, height: 236 / 941 },
       edgeFade: 11,
@@ -791,11 +791,12 @@ export const v4PreviewDreams: readonly LandscapeDream[] = [{
   aspectRatio: 1672 / 941,
   edits: [
     {
-      id: 'rail-through-keyhole',
-      label: 'The brass rail loops through the teal door’s keyhole.',
+      id: 'floating-stone-tilts',
+      label: 'One floating stepping stone tips to show its glowing underside.',
       difficulty: 'Easy',
-      box: { left: 778 / 1672, top: 198 / 941, width: 264 / 1672, height: 183 / 941 },
-      edgeFade: 11,
+      box: { left: 524 / 1672, top: 51 / 941, width: 136 / 1672, height: 80 / 941 },
+      source: '/artwork/v4/collection/dream-018-tilted-stone-source-v4.png',
+      edgeFade: 8,
     },
     {
       id: 'plant-root-around-step',
@@ -821,12 +822,12 @@ export const v4PreviewDreams: readonly LandscapeDream[] = [{
       edgeFade: 10,
     },
     {
-      id: 'floating-stone-tilts',
-      label: 'One floating stepping stone tips to show its glowing underside.',
+      id: 'rail-through-keyhole',
+      label: "The handrail's little brass spiral curls the other way.",
       difficulty: 'Dreamlike',
-      box: { left: 524 / 1672, top: 51 / 941, width: 136 / 1672, height: 80 / 941 },
-      source: '/artwork/v4/collection/dream-018-tilted-stone-source-v4.png',
-      edgeFade: 8,
+      box: { left: 782 / 1672, top: 295 / 941, width: 62 / 1672, height: 58 / 941 },
+      source: '/artwork/v4/collection/dream-018-rail-scroll-source-v4b.png',
+      edgeFade: 5,
     },
   ],
 }, {
@@ -1073,7 +1074,7 @@ export const v4PreviewDreams: readonly LandscapeDream[] = [{
     },
     {
       id: 'fitted-piece',
-      label: 'One floating puzzle piece fits into the doorway edge.',
+      label: 'One floating puzzle piece turns flat against the doorway edge.',
       difficulty: 'Hard',
       box: { left: 1098 / 1672, top: 201 / 941, width: 102 / 1672, height: 100 / 941 },
       edgeFade: 9,
@@ -1088,7 +1089,7 @@ export const v4PreviewDreams: readonly LandscapeDream[] = [{
     },
     {
       id: 'key-shadow',
-      label: "The triangular key's shadow resembles a tiny doorway.",
+      label: "The triangular key's shadow becomes a hollow triangle.",
       difficulty: 'Dreamlike',
       box: { left: 1342 / 1672, top: 833 / 941, width: 116 / 1672, height: 98 / 941 },
       edgeFade: 7,
@@ -1178,7 +1179,7 @@ export const v4PreviewDreams: readonly LandscapeDream[] = [{
     },
     {
       id: 'book-emblem',
-      label: "The blue book's embossed flower unfolds into a sunburst.",
+      label: "The blue book's embossed flower gains curled leaves above and below.",
       difficulty: 'Dreamlike',
       box: { left: 119 / 1672, top: 57 / 941, width: 135 / 1672, height: 209 / 941 },
       source: '/artwork/v4/collection/dream-237-book-source-v4.png',

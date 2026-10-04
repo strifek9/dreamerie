@@ -1,5 +1,5 @@
 {
-  "status": "unreleased editorial proof; not production-approved",
+  "status": "unreleased editorial proof; technical composite/crop review complete; human difficulty and physical-phone approval pending; not production-approved",
   "cardId": "v4-dream-155",
   "useCase": "precise-object-edit",
   "tool": "built-in image_gen",
@@ -23,5 +23,14 @@
     ]
   },
   "refinedSources": [],
-  "notes": "The yarn is clipped with a narrow SVG mask spanning the thread while its hit region is centered on the suitcase handle. The isolated cuff-row attempt did not produce a reliably narrower change, so it was not selected. This proof needs touch/zoom difficulty playtesting before publication."
+  "notes": "The yarn is clipped with a narrow SVG mask spanning the thread while its hit region is centered on the suitcase handle. The isolated cuff-row attempt did not produce a reliably narrower change, so it was not selected. This proof needs touch/zoom difficulty playtesting before publication.",
+  "visualReview": {
+    "date": "2026-10-04",
+    "desktopWidth": 1440,
+    "phoneWidth": 390,
+    "pairedCrops": 5,
+    "scope": "technical visual review only",
+    "findings": "All five changes present. The yarn mask spans its continuous route while its hit box stays by the handle; the cuff pattern is subtle and needs human difficulty calibration. No broken yarn joins observed in full/crop/phone comparisons.",
+    "record": "docs/V4_BATCH_REVIEW_20261004.md"
+  }
 }

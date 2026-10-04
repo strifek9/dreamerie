@@ -1,5 +1,5 @@
 {
-  "status": "unreleased editorial proof; not production-approved",
+  "status": "unreleased editorial proof; technical composite/crop review complete; human difficulty and physical-phone approval pending; not production-approved",
   "cardId": "v4-dream-074",
   "useCase": "precise-object-edit",
   "tool": "built-in image_gen",
@@ -32,5 +32,14 @@
   ],
   "rejectedCandidate": {
     "description": "The first all-five source barely changed the loose paper scrap, so a targeted edit is used for that clue."
+  },
+  "visualReview": {
+    "date": "2026-10-04",
+    "desktopWidth": 1440,
+    "phoneWidth": 390,
+    "pairedCrops": 5,
+    "scope": "technical visual review only",
+    "findings": "All five changes present, continuous localized clips: folded crane, red/blue train order, ladder paper fold, diagonal window bar and curled scrap.",
+    "record": "docs/V4_BATCH_REVIEW_20261004.md"
   }
 }

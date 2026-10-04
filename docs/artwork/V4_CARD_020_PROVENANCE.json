@@ -1,5 +1,5 @@
 {
-  "status": "unreleased editorial draft; visual QA incomplete; not production-approved",
+  "status": "unreleased editorial proof; desktop/phone composite and all five answer crops reviewed; human difficulty calibration pending; not production-approved",
   "cardId": "v4-dream-020",
   "tool": "built-in image_gen",
   "input": "/artwork/v3/collection-painted-v1/dream-020-original-v1.png",
@@ -12,22 +12,41 @@
     "path": "/artwork/v4/collection/dream-020-altered-source-v4.png",
     "sha256": "102F9C0FA1CC46644EBA3D960FFE2C3240D904AE8D051793A775B477859D7EEE",
     "prompt": "Use case: precise-object-edit. Image 1 is the exact 1672x941 matte Dreamerie painting of a winged white elephant wandering a glass-domed butterfly museum, brass cabinets, pearl cushion, arched star window and pale winged statue. Preserve painting, framing, elephant anatomy, lighting and all unmentioned objects. Make only five localized scene-fitting differences: (1) The elephant's nearest pale wing folds forward across the base of its trunk instead of remaining behind its shoulder, one anatomically continuous wing. (2) In the largest left glass dome, the blue eye-pattern butterfly wing's reflection appears on the opposite inner glass surface, while the real wing stays fixed. (3) The three pearls on the burgundy cushion exchange size order, largest now on the right, retaining three pearls. (4) The little gold crescent ornament on the left cabinet's lower panel threads behind the adjacent brass floral stem rather than in front, crisp relief detail. (5) The pale statue's near wing folds down to partly cover its raised arm, preserving one statue, pose and pedestal. No extra butterflies, detached body parts, global repaint, text, grain or watermark.",
-    "usedRegions": ["butterfly-reflection-in-dome", "pearl-size-order", "statue-folded-wing"],
-    "rejectedRegions": ["elephant-wing-over-saddle", "crescent-through-leaves"]
+    "usedRegions": [
+      "butterfly-reflection-in-dome",
+      "pearl-size-order",
+      "statue-folded-wing"
+    ],
+    "rejectedRegions": [
+      "elephant-wing-over-saddle",
+      "crescent-through-leaves"
+    ]
   },
   "refinedSources": [
     {
       "path": "/artwork/v4/collection/dream-020-wing-source-v4.png",
       "sha256": "01A0B42DDF4CC7A1CFA88DF3A638F84FFF6C7F9645F6FBA1F772D19A0DAC6ECC",
       "prompt": "Use case: precise-object-edit. Edit this exact 1672x941 matte Dreamerie painting. Change ONLY the white elephant's NEAR orange-and-ivory butterfly wing centered around x850-1030,y390-565: fold its lower lobe down across the elephant's crimson saddle edge, so the lobe physically overlaps the front of the cloth but the wing remains attached at the elephant's shoulder, with no extra wing or broken anatomy. Keep the elephant's trunk, ears, legs, far wing, saddle, glass domes, statue, flowers and every other part the same. This is a coherent wing/saddle overlap, not a color change. No text, watermark or grain.",
-      "usedRegions": ["elephant-wing-over-saddle"]
+      "usedRegions": [
+        "elephant-wing-over-saddle"
+      ]
     },
     {
       "path": "/artwork/v4/collection/dream-020-crescent-source-v4.png",
       "sha256": "A0B31DAC03AB8AFAE0D53829CBE45DE24FF9F5571A9DD032C2D82554661BCA9F",
       "prompt": "Use case: precise-object-edit. Edit this exact 1672x941 matte Dreamerie butterfly museum painting. Change ONLY the little gold CRESCENT on the dark teal lower panel of the large LEFT butterfly cabinet, roughly x485,y730: its pointed upper horn now hooks through the nearby upright carved GOLD LEAF stem on that same cabinet panel, making one continuous interlocked ornament in shallow brass relief. Retain the single crescent and cabinet trim; do not add another moon or alter butterflies, elephant, statue, pearls, arches or foliage. Make the topology clear upon zoom, subtle at normal size, no colored patch, text, watermark or grain.",
-      "usedRegions": ["crescent-through-leaves"]
+      "usedRegions": [
+        "crescent-through-leaves"
+      ]
     }
   ],
-  "notes": "Generated five-clue composition has not yet passed full desktop/phone and paired answer-crop review; difficulty labels are provisional."
+  "notes": "October 4: inspected the actual five-region composite and all five paired answer crops at 1440px desktop and 390px phone layout. Five center-hit confirmations complete a 5/5 preview round; zoom/result persistence flows exercised separately. Human difficulty calibration and physical-phone playtesting remain pending. All five changes are visible: dome reflection, pearl order, statue wing, elephant wing/saddle overlap and cabinet crescent. No new raster source was needed.",
+  "visualReview": {
+    "date": "2026-10-04",
+    "scope": "technical editorial review, not human difficulty approval",
+    "desktopWidth": 1440,
+    "phoneWidth": 390,
+    "pairedCrops": 5,
+    "record": "docs/V4_BATCH_REVIEW_20261004.md"
+  }
 }

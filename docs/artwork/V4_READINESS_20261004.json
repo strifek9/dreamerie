@@ -1,0 +1,3662 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-04",
+  "scope": "readiness inventory; does not change the release decision ledger",
+  "counts": {
+    "currentV3Cards": 383,
+    "publishedAndHistoricalIds": 558,
+    "regularCards": 365,
+    "holidayCards": 18,
+    "pendingReleaseDecisions": 383,
+    "sourceReadyV4ProofPairs": 27,
+    "sourceReadyV4Clues": 135,
+    "proofPairsReviewedOrRecheckedToday": 11,
+    "currentCardsWithoutSelectedV4Proof": 356,
+    "holidayV4Proofs": 0,
+    "originalsIdenticalToCurrentV3": 21,
+    "originalsVersionedForV4": 6,
+    "knownUnresolvedTechnicalRasterBlockers": 0,
+    "humanDifficultyApprovals": 0,
+    "physicalPhoneApprovals": 0,
+    "productionApprovedV4Cards": 0,
+    "humanVisualArtworkApprovals": 3
+  },
+  "interpretation": "383 pending decisions are not 383 known art-generation tasks. 27 source-ready proofs await human difficulty/physical-phone and selection decisions. The other 356 current V3 pairs need an editorial retain/revise decision; no evidence yet establishes which must be regenerated. All original/published cards remain available. A zero known technical raster blocker is limited to the reviewed proofs, not the whole pending collection.",
+  "cards": [
+    {
+      "baselineId": "painted-dream-001",
+      "title": "The Orchard of Sleeping Clocks",
+      "decision": "pending",
+      "v4Proof": "v4-dream-001",
+      "sourcePair": "five-region playable composite with all native sources",
+      "clueCount": 5,
+      "originalMatchesCurrentV3": true,
+      "nativeSourceBytes": 10355238,
+      "newArtRequirement": "no currently identified technical raster blocker; later human feedback may require refinement",
+      "technicalReview": "prior recorded first-batch full-pair/five-crop desktop/phone QA",
+      "humanDifficultyApproval": "pending",
+      "physicalPhoneApproval": "pending",
+      "productionApproval": "not approved"
+    },
+    {
+      "baselineId": "painted-dream-002",
+      "title": "The Seamstress of Rain",
+      "decision": "pending",
+      "v4Proof": "v4-dream-002",
+      "sourcePair": "five-region playable composite with all native sources",
+      "clueCount": 5,
+      "originalMatchesCurrentV3": false,
+      "nativeSourceBytes": 12066054,
+      "newArtRequirement": "no currently identified technical raster blocker; later human feedback may require refinement",
+      "technicalReview": "prior recorded first-batch full-pair/five-crop desktop/phone QA",
+      "humanDifficultyApproval": "pending",
+      "physicalPhoneApproval": "pending",
+      "productionApproval": "not approved"
+    },
+    {
+      "baselineId": "painted-dream-003",
+      "title": "The Train Beneath the Pillow",
+      "decision": "pending",
+      "v4Proof": "v4-dream-003",
+      "sourcePair": "five-region playable composite with all native sources",
+      "clueCount": 5,
+      "originalMatchesCurrentV3": true,
+      "nativeSourceBytes": 12080501,
+      "newArtRequirement": "no currently identified technical raster blocker; later human feedback may require refinement",
+      "technicalReview": "prior recorded first-batch full-pair/five-crop desktop/phone QA",
+      "humanDifficultyApproval": "pending",
+      "physicalPhoneApproval": "pending",
+      "productionApproval": "not approved"
+    },
+    {
+      "baselineId": "painted-dream-004",
+      "title": "An Ocean Behind the Door",
+      "decision": "pending",
+      "v4Proof": "v4-dream-004",
+      "sourcePair": "five-region playable composite with all native sources",
+      "clueCount": 5,
+      "originalMatchesCurrentV3": true,
+      "nativeSourceBytes": 12790840,
+      "newArtRequirement": "no currently identified technical raster blocker; later human feedback may require refinement",
+      "technicalReview": "prior recorded first-batch full-pair/five-crop desktop/phone QA",
+      "humanDifficultyApproval": "pending",
+      "physicalPhoneApproval": "pending",
+      "productionApproval": "not approved"
+    },
+    {
+      "baselineId": "painted-dream-005",
+      "title": "The House That Walked Away",
+      "decision": "pending",
+      "v4Proof": "v4-dream-005",
+      "sourcePair": "five-region playable composite with all native sources",
+      "clueCount": 5,
+      "originalMatchesCurrentV3": true,
+      "nativeSourceBytes": 13460877,
+      "newArtRequirement": "no currently identified technical raster blocker; later human feedback may require refinement",
+      "technicalReview": "prior recorded first-batch full-pair/five-crop desktop/phone QA",
+      "humanDifficultyApproval": "pending",
+      "physicalPhoneApproval": "pending",
+      "productionApproval": "not approved"
+    },
+    {
+      "baselineId": "revisit-dream-006",
+      "title": "The Unbuttoned Horizon",
+      "decision": "pending",
+      "v4Proof": "v4-dream-006",
+      "sourcePair": "five-region playable composite with all native sources",
+      "clueCount": 5,
+      "originalMatchesCurrentV3": true,
+      "nativeSourceBytes": 13925888,
+      "newArtRequirement": "no currently identified technical raster blocker; later human feedback may require refinement",
+      "technicalReview": "prior recorded first-batch full-pair/five-crop desktop/phone QA",
+      "humanDifficultyApproval": "pending",
+      "physicalPhoneApproval": "pending",
+      "productionApproval": "not approved"
+    },
+    {
+      "baselineId": "painted-dream-007",
+      "title": "The Whale's Conservatory",
+      "decision": "pending",
+      "v4Proof": "v4-dream-007",
+      "sourcePair": "five-region playable composite with all native sources",
+      "clueCount": 5,
+      "originalMatchesCurrentV3": true,
+      "nativeSourceBytes": 13219517,
+      "newArtRequirement": "no currently identified technical raster blocker; later human feedback may require refinement",
+      "technicalReview": "prior recorded first-batch full-pair/five-crop desktop/phone QA",
+      "humanDifficultyApproval": "pending",
+      "physicalPhoneApproval": "pending",
+      "productionApproval": "not approved"
+    },
+    {
+      "baselineId": "painted-dream-008",
+      "title": "A Pocket Full of Winter",
+      "decision": "pending",
+      "v4Proof": "v4-dream-008",
+      "sourcePair": "five-region playable composite with all native sources",
+      "clueCount": 5,
+      "originalMatchesCurrentV3": true,
+      "nativeSourceBytes": 5712114,
+      "newArtRequirement": "no currently identified technical raster blocker; later human feedback may require refinement",
+      "technicalReview": "prior recorded first-batch full-pair/five-crop desktop/phone QA",
+      "humanDifficultyApproval": "pending",
+      "physicalPhoneApproval": "pending",
+      "productionApproval": "not approved"
+    },
+    {
+      "baselineId": "painted-dream-009",
+      "title": "The Umbrella Orchestra",
+      "decision": "pending",
+      "v4Proof": "v4-dream-009",
+      "sourcePair": "five-region playable composite with all native sources",
+      "clueCount": 5,
+      "originalMatchesCurrentV3": true,
+      "nativeSourceBytes": 11913643,
+      "newArtRequirement": "no currently identified technical raster blocker; later human feedback may require refinement",
+      "technicalReview": "prior recorded first-batch full-pair/five-crop desktop/phone QA",
+      "humanDifficultyApproval": "pending",
+      "physicalPhoneApproval": "pending",
+      "productionApproval": "not approved"
+    },
+    {
+      "baselineId": "painted-dream-010",
+      "title": "The Garden in the Mirror",
+      "decision": "pending",
+      "v4Proof": "v4-dream-010",
+      "sourcePair": "five-region playable composite with all native sources",
+      "clueCount": 5,
+      "originalMatchesCurrentV3": true,
+      "nativeSourceBytes": 12919857,
+      "newArtRequirement": "no currently identified technical raster blocker; later human feedback may require refinement",
+      "technicalReview": "prior recorded first-batch full-pair/five-crop desktop/phone QA",
+      "humanDifficultyApproval": "pending",
+      "physicalPhoneApproval": "pending",
+      "productionApproval": "not approved"
+    },
+    {
+      "baselineId": "painted-dream-011",
+      "title": "The Library of Tides",
+      "decision": "pending",
+      "v4Proof": "v4-dream-011",
+      "sourcePair": "five-region playable composite with all native sources",
+      "clueCount": 5,
+      "originalMatchesCurrentV3": true,
+      "nativeSourceBytes": 12524733,
+      "newArtRequirement": "no currently identified technical raster blocker; later human feedback may require refinement",
+      "technicalReview": "prior recorded first-batch full-pair/five-crop desktop/phone QA",
+      "humanDifficultyApproval": "pending",
+      "physicalPhoneApproval": "pending",
+      "productionApproval": "not approved"
+    },
+    {
+      "baselineId": "painted-dream-012",
+      "title": "The Tailor of Shadows",
+      "decision": "pending",
+      "v4Proof": "v4-dream-012",
+      "sourcePair": "five-region playable composite with all native sources",
+      "clueCount": 5,
+      "originalMatchesCurrentV3": false,
+      "nativeSourceBytes": 8531831,
+      "newArtRequirement": "no currently identified technical raster blocker; later human feedback may require refinement",
+      "technicalReview": "2026-10-04 full pair, five paired crops, desktop and phone",
+      "humanDifficultyApproval": "pending",
+      "physicalPhoneApproval": "pending",
+      "productionApproval": "not approved"
+    },
+    {
+      "baselineId": "painted-dream-013",
+      "title": "The Strawberry Lighthouse",
+      "decision": "pending",
+      "v4Proof": "v4-dream-013",
+      "sourcePair": "five-region playable composite with all native sources",
+      "clueCount": 5,
+      "originalMatchesCurrentV3": true,
+      "nativeSourceBytes": 11957291,
+      "newArtRequirement": "no currently identified technical raster blocker; later human feedback may require refinement",
+      "technicalReview": "prior recorded first-batch full-pair/five-crop desktop/phone QA",
+      "humanDifficultyApproval": "pending",
+      "physicalPhoneApproval": "pending",
+      "productionApproval": "not approved"
+    },
+    {
+      "baselineId": "painted-dream-014",
+      "title": "The Quiet Balloon Seller",
+      "decision": "pending",
+      "v4Proof": "v4-dream-014",
+      "sourcePair": "five-region playable composite with all native sources",
+      "clueCount": 5,
+      "originalMatchesCurrentV3": true,
+      "nativeSourceBytes": 10699448,
+      "newArtRequirement": "no currently identified technical raster blocker; later human feedback may require refinement",
+      "technicalReview": "prior recorded first-batch full-pair/five-crop desktop/phone QA",
+      "humanDifficultyApproval": "pending",
+      "physicalPhoneApproval": "pending",
+      "productionApproval": "not approved"
+    },
+    {
+      "baselineId": "painted-dream-015",
+      "title": "The Moon's Laundry",
+      "decision": "pending",
+      "v4Proof": "v4-dream-015",
+      "sourcePair": "five-region playable composite with all native sources",
+      "clueCount": 5,
+      "originalMatchesCurrentV3": true,
+      "nativeSourceBytes": 12440133,
+      "newArtRequirement": "no currently identified technical raster blocker; later human feedback may require refinement",
+      "technicalReview": "prior recorded first-batch full-pair/five-crop desktop/phone QA",
+      "humanDifficultyApproval": "pending",
+      "physicalPhoneApproval": "pending",
+      "productionApproval": "not approved"
+    },
+    {
+      "baselineId": "painted-dream-016",
+      "title": "The Teapot Volcano",
+      "decision": "pending",
+      "v4Proof": "v4-dream-016",
+      "sourcePair": "five-region playable composite with all native sources",
+      "clueCount": 5,
+      "originalMatchesCurrentV3": true,
+      "nativeSourceBytes": 5058859,
+      "newArtRequirement": "no currently identified technical raster blocker; later human feedback may require refinement",
+      "technicalReview": "2026-10-04 full pair, five paired crops, desktop and phone",
+      "humanDifficultyApproval": "pending",
+      "physicalPhoneApproval": "pending",
+      "productionApproval": "not approved"
+    },
+    {
+      "baselineId": "painted-dream-017",
+      "title": "The Deer Who Carried Autumn",
+      "decision": "pending",
+      "v4Proof": "v4-dream-017",
+      "sourcePair": "five-region playable composite with all native sources",
+      "clueCount": 5,
+      "originalMatchesCurrentV3": true,
+      "nativeSourceBytes": 4980677,
+      "newArtRequirement": "no currently identified technical raster blocker; later human feedback may require refinement",
+      "technicalReview": "prior recorded first-batch full-pair/five-crop desktop/phone QA",
+      "humanDifficultyApproval": "pending",
+      "physicalPhoneApproval": "pending",
+      "productionApproval": "not approved"
+    },
+    {
+      "baselineId": "revisit-dream-018",
+      "title": "The Stairs That Forgot Up",
+      "decision": "pending",
+      "v4Proof": "v4-dream-018",
+      "sourcePair": "five-region playable composite with all native sources",
+      "clueCount": 5,
+      "originalMatchesCurrentV3": true,
+      "nativeSourceBytes": 13864154,
+      "newArtRequirement": "no currently identified technical raster blocker; later human feedback may require refinement",
+      "technicalReview": "2026-10-04 full pair, five paired crops, desktop and phone",
+      "humanDifficultyApproval": "pending",
+      "physicalPhoneApproval": "pending",
+      "productionApproval": "not approved"
+    },
+    {
+      "baselineId": "revisit-dream-019",
+      "title": "The Kettle Kite",
+      "decision": "pending",
+      "v4Proof": "v4-dream-019",
+      "sourcePair": "five-region playable composite with all native sources",
+      "clueCount": 5,
+      "originalMatchesCurrentV3": true,
+      "nativeSourceBytes": 5500523,
+      "newArtRequirement": "no currently identified technical raster blocker; later human feedback may require refinement",
+      "technicalReview": "prior recorded first-batch full-pair/five-crop desktop/phone QA",
+      "humanDifficultyApproval": "pending",
+      "physicalPhoneApproval": "pending",
+      "productionApproval": "not approved"
+    },
+    {
+      "baselineId": "painted-dream-020",
+      "title": "The Museum of Lost Wings",
+      "decision": "pending",
+      "v4Proof": "v4-dream-020",
+      "sourcePair": "five-region playable composite with all native sources",
+      "clueCount": 5,
+      "originalMatchesCurrentV3": true,
+      "nativeSourceBytes": 10353894,
+      "newArtRequirement": "no currently identified technical raster blocker; later human feedback may require refinement",
+      "technicalReview": "2026-10-04 full pair, five paired crops, desktop and phone",
+      "humanDifficultyApproval": "pending",
+      "physicalPhoneApproval": "pending",
+      "productionApproval": "not approved"
+    },
+    {
+      "baselineId": "painted-dream-021",
+      "title": "The Baker of Sunsets",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-022",
+      "title": "The Snail Observatory",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "revisit-dream-023",
+      "title": "The Pocket of Rain",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-024",
+      "title": "The Fox's Paper Moon",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-025",
+      "title": "The Violin Orchard",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-026",
+      "title": "The House Beneath the Hat",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-027",
+      "title": "The Penguin's Summer",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-028",
+      "title": "The Swan Station",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-029",
+      "title": "The Room of Slow Fish",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-030",
+      "title": "The Little Comet Gardener",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-031",
+      "title": "The Lampshade Forest",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-032",
+      "title": "The Glove That Held the Sea",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-033",
+      "title": "The Marmalade Planet",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-034",
+      "title": "The Umbrella Lake",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "revisit-dream-035",
+      "title": "The Last Stair at Sea",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-036",
+      "title": "The Rabbit's Cloud Picnic",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-037",
+      "title": "The Whale's Bookmark",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-038",
+      "title": "The Mirror in the Dunes",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-039",
+      "title": "The Apricot Airship",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-040",
+      "title": "The Porcelain Weather",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-041",
+      "title": "The Clockmaker's Nest",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "revisit-dream-042",
+      "title": "The Window That Walked",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "revisit-dream-043",
+      "title": "The Otter's Lemon Boat",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-044",
+      "title": "The Theatre of Moths",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "revisit-dream-045",
+      "title": "The Chair Above the Rain",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-046",
+      "title": "The Peach Umbrella Parade",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-047",
+      "title": "The Whale in the Attic",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-048",
+      "title": "The Handful of Horizons",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-049",
+      "title": "The Strawberry Post Office",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-050",
+      "title": "The River in the Piano",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-051",
+      "title": "The Umbrella's Shadow",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-052",
+      "title": "The Mouse Who Watered Stars",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-053",
+      "title": "The Swan's Secret Wardrobe",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-054",
+      "title": "The Lost Sock Archipelago",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-055",
+      "title": "The Tortoise's Kite Festival",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-056",
+      "title": "The Lantern Keeper's Fox",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-057",
+      "title": "The Door in the Pillow",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-058",
+      "title": "The Cherries That Rang",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-059",
+      "title": "The Library of Feathers",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "revisit-dream-060",
+      "title": "The Mountain in the Cupboard",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-061",
+      "title": "The Sea Beneath the Carpet",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-062",
+      "title": "The Umbrella Jellyfish",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-063",
+      "title": "The Biscuit Train",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-064",
+      "title": "The Keeper of Empty Birdcages",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-065",
+      "title": "The Cloud in the Shoe",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-066",
+      "title": "The Banana Gondola",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-067",
+      "title": "The Sleeping Constellation",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "revisit-dream-068",
+      "title": "The Hat Full of Rainbows",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-069",
+      "title": "The Sunflower Ferris Wheel",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-070",
+      "title": "The Mapmaker's Owl",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-071",
+      "title": "The Blue Door's Reflection",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-072",
+      "title": "The Pomegranate Circus",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-073",
+      "title": "The Garden of Spectacles",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-074",
+      "title": "The Folded Horizon",
+      "decision": "pending",
+      "v4Proof": "v4-dream-074",
+      "sourcePair": "five-region playable composite with all native sources",
+      "clueCount": 5,
+      "originalMatchesCurrentV3": false,
+      "nativeSourceBytes": 6165664,
+      "newArtRequirement": "no currently identified technical raster blocker; later human feedback may require refinement",
+      "technicalReview": "2026-10-04 full pair, five paired crops, desktop and phone",
+      "humanDifficultyApproval": "pending",
+      "physicalPhoneApproval": "pending",
+      "productionApproval": "not approved",
+      "visualArtworkAcceptance": {
+        "status": "approved",
+        "date": "2026-10-04",
+        "scope": "artwork and authored changes in the reviewed A/B pair only",
+        "messageIds": [
+          "Sentinel_233a3a26101881919061e4428f423fec"
+        ]
+      }
+    },
+    {
+      "baselineId": "painted-dream-075",
+      "title": "The Teaspoon Skiers",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-076",
+      "title": "The Velvet Moon Hotel",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-077",
+      "title": "The Umbrella Inside the Hourglass",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-078",
+      "title": "The Peach Pit Planetarium",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-079",
+      "title": "The Harp of Branches",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "revisit-dream-080",
+      "title": "The Drawer of Snow",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-081",
+      "title": "The Umbrella Repair Shop",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "revisit-dream-082",
+      "title": "The Shadow's Shoes",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-083",
+      "title": "The Pancake Observatory",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-084",
+      "title": "The Heron's Glasshouse",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "revisit-dream-085",
+      "title": "The Moon Behind the Coat",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-086",
+      "title": "The Pear-Slice Playground",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-087",
+      "title": "The Portrait That Dreamed",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-088",
+      "title": "The River's Thread",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-089",
+      "title": "The Raspberry Rocket",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-090",
+      "title": "The Badger's Fog Ferry",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "revisit-dream-091",
+      "title": "The Room at the End of the Ribbon",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-092",
+      "title": "The Waffle Windmill",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-093",
+      "title": "The Paper Swan's Tailor",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "revisit-dream-094",
+      "title": "The Ladder That Became Rain",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-095",
+      "title": "The Tangerine Tuba",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-096",
+      "title": "The Clock in the Lily",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-097",
+      "title": "The Folded Sea",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-098",
+      "title": "The Honeycomb Railway",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-099",
+      "title": "The Pearl Diver's Umbrella",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "revisit-dream-100",
+      "title": "The Window in the Sandal",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-101",
+      "title": "The Telephone That Grew Leaves",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-102",
+      "title": "The Violinist on the Moonfish",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-103",
+      "title": "The Macaron Meadow",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "revisit-dream-104",
+      "title": "The Doorway of Falling Feathers",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-105",
+      "title": "The Seahorse Carousel",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-106",
+      "title": "The Honey Bear's Balloon",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "revisit-dream-107",
+      "title": "The Curtain of Small Oceans",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-108",
+      "title": "The Stag's Velvet Library",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-109",
+      "title": "The Kiwi Rowing Club",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "revisit-dream-110",
+      "title": "The Staircase in the Sleeve",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-111",
+      "title": "The Cloud Collector's Bicycle",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-112",
+      "title": "The Lemon-Slice Swing",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "revisit-dream-113",
+      "title": "The Mirror's Forgotten Handle",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-114",
+      "title": "The Orchard of Lantern Birds",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-115",
+      "title": "The Cherry Pie Moon",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "revisit-dream-116",
+      "title": "The Umbrella at the End of the Hall",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-117",
+      "title": "The Fox and the Porcelain Forest",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "revisit-dream-118",
+      "title": "The Watermelon Gondoliers",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "revisit-dream-119",
+      "title": "The Room Inside the Ribbon Knot",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-120",
+      "title": "The Last Lantern Before Morning",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-121",
+      "title": "The Robot Who Misplaced Tuesday",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-122",
+      "title": "The Ballroom of Unworn Shoes",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-123",
+      "title": "The Sea in the Thimble",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-124",
+      "title": "The Monster's Quiet Lesson",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-125",
+      "title": "The Cowboy and the Folded Distance",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-126",
+      "title": "The Aquarium of Forgotten Passwords",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-127",
+      "title": "The Staircase That Was Afraid",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-128",
+      "title": "The Librarian of Thunder",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-129",
+      "title": "The Suitcase That Stayed Home",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-130",
+      "title": "The Ninja of Soft Footsteps",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-131",
+      "title": "The Elevator to the Bottom Drawer",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-132",
+      "title": "The Dragon Who Collected Apologies",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-133",
+      "title": "The Doorbell at the End of Sleep",
+      "decision": "pending",
+      "v4Proof": "v4-dream-133",
+      "sourcePair": "five-region playable composite with all native sources",
+      "clueCount": 5,
+      "originalMatchesCurrentV3": false,
+      "nativeSourceBytes": 7105668,
+      "newArtRequirement": "no currently identified technical raster blocker; later human feedback may require refinement",
+      "technicalReview": "2026-10-04 full pair, five paired crops, desktop and phone",
+      "humanDifficultyApproval": "pending",
+      "physicalPhoneApproval": "pending",
+      "productionApproval": "not approved"
+    },
+    {
+      "baselineId": "painted-dream-134",
+      "title": "The Market of Borrowed Faces",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-135",
+      "title": "The Wrestler and the Silk Knot",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-136",
+      "title": "The Astronaut's Bathwater",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-137",
+      "title": "The Octopus Who Rehearsed Tomorrow",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-138",
+      "title": "The Marble That Held a Grudge",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-139",
+      "title": "The Seam Between Two Rooms",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-140",
+      "title": "The Jellyfish Laundrette",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-141",
+      "title": "The Chess Piece That Grew Tired",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-142",
+      "title": "The Gardener of Broken Machines",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-143",
+      "title": "The Castle Inside the Sandwich",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-144",
+      "title": "The Coat That Remembered Winter",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-145",
+      "title": "The Polite Creature Under the Bed",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-146",
+      "title": "The Museum of Unfinished Dances",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-147",
+      "title": "The Iceberg in the Kitchen Drawer",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-148",
+      "title": "The Umbrella That Wanted to Swim",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-149",
+      "title": "The Kitchen of Upside-Down Tempers",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-150",
+      "title": "The Last Seat in the Mirror",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-151",
+      "title": "The Crocodile's Porcelain Smile",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-152",
+      "title": "The Ferryman of Echoes",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-153",
+      "title": "The Beekeeper of Static",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-154",
+      "title": "The Girl Who Carried the Ceiling",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-155",
+      "title": "The Mountain's Lost Mitten",
+      "decision": "pending",
+      "v4Proof": "v4-dream-155",
+      "sourcePair": "five-region playable composite with all native sources",
+      "clueCount": 5,
+      "originalMatchesCurrentV3": true,
+      "nativeSourceBytes": 4136879,
+      "newArtRequirement": "no currently identified technical raster blocker; later human feedback may require refinement",
+      "technicalReview": "2026-10-04 full pair, five paired crops, desktop and phone",
+      "humanDifficultyApproval": "pending",
+      "physicalPhoneApproval": "pending",
+      "productionApproval": "not approved"
+    },
+    {
+      "baselineId": "painted-dream-156",
+      "title": "The Dinner That Floated Away",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-157",
+      "title": "The Peacock Who Shed Colors",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-158",
+      "title": "The Sandwich Between Floors",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-159",
+      "title": "The Sock Puppet's Rebellion",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-160",
+      "title": "The Museum of Misplaced Gravity",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-161",
+      "title": "The Hedgehog's Unfinished Armor",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-162",
+      "title": "The Submarine in the Soap Bubble",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-163",
+      "title": "The Tail of the Queue",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-164",
+      "title": "The Violin That Grew Quiet",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-165",
+      "title": "The Sphinx at the Vending Machine",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-166",
+      "title": "The Raincoat's Indoor Parade",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-167",
+      "title": "The Paper Tiger's Gentle Bite",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-168",
+      "title": "The Diver of Unmade Beds",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-169",
+      "title": "The Camel's Last Hump",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-170",
+      "title": "The Lighthouse in the Fingertip",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-171",
+      "title": "The Orchestra of Unopened Letters",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-172",
+      "title": "The Sloth Who Hurried Slowly",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-173",
+      "title": "The Doorway of Missing Corners",
+      "decision": "pending",
+      "v4Proof": "v4-dream-173",
+      "sourcePair": "five-region playable composite with all native sources",
+      "clueCount": 5,
+      "originalMatchesCurrentV3": false,
+      "nativeSourceBytes": 5615938,
+      "newArtRequirement": "no currently identified technical raster blocker; later human feedback may require refinement",
+      "technicalReview": "2026-10-04 full pair, five paired crops, desktop and phone",
+      "humanDifficultyApproval": "pending",
+      "physicalPhoneApproval": "pending",
+      "productionApproval": "not approved"
+    },
+    {
+      "baselineId": "painted-dream-174",
+      "title": "The Chef Who Stirred a Spiral",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-175",
+      "title": "The Polar Bear's Warm Shadow",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-176",
+      "title": "The Teacup That Refused Its Handle",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-177",
+      "title": "The Railway of Sleeping Giants",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-178",
+      "title": "The Painter of Invisible Windows",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-179",
+      "title": "The Angler of Loose Buttons",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-180",
+      "title": "The Carnival Folded in a Fan",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-181",
+      "title": "The Alien Who Unrolled the Hallway",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "revisit-dream-182",
+      "title": "Footprints in the Fishing Net",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-183",
+      "title": "The Computer That Lost Its Marbles",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-184",
+      "title": "The Braid That Held the Bridge",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-185",
+      "title": "The Kite That Swallowed the Wind",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-186",
+      "title": "The Mermaid and the Silent Keys",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-187",
+      "title": "The Dragon in the Matchbox",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-188",
+      "title": "The Photographer Outside the Photograph",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-189",
+      "title": "The Bicycle That Pedaled Backwards",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-190",
+      "title": "The Weight of One Feather",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-191",
+      "title": "The Mask That Blushed Alone",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-192",
+      "title": "The Night Shift of the Sunflower",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-193",
+      "title": "The Girl Who Unzipped the Rain",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-194",
+      "title": "The City on the Tongue of a Shoe",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-195",
+      "title": "The Cartographer of Crumpled Air",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-196",
+      "title": "The Monster Who Feared Balloons",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-197",
+      "title": "The Hour That Fell Out",
+      "decision": "pending",
+      "v4Proof": "v4-dream-197",
+      "sourcePair": "five-region playable composite with all native sources",
+      "clueCount": 5,
+      "originalMatchesCurrentV3": true,
+      "nativeSourceBytes": 11698508,
+      "newArtRequirement": "no currently identified technical raster blocker; later human feedback may require refinement",
+      "technicalReview": "2026-10-04 full pair, five paired crops, desktop and phone",
+      "humanDifficultyApproval": "pending",
+      "physicalPhoneApproval": "pending",
+      "productionApproval": "not approved",
+      "visualArtworkAcceptance": {
+        "status": "approved",
+        "date": "2026-10-04",
+        "scope": "artwork and authored changes in the reviewed A/B pair only",
+        "messageIds": [
+          "Sentinel_5dad21deaac48191ae3c1f45ae97f8f4",
+          "Sentinel_233a3a26101881919061e4428f423fec"
+        ]
+      }
+    },
+    {
+      "baselineId": "painted-dream-198",
+      "title": "The Skateboarder and the Borrowed Horizon",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-199",
+      "title": "The Octagon That Wanted a Hug",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-200",
+      "title": "The Lighthouse Keeper's Missing Stair",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-201",
+      "title": "The Angry Accordion",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-202",
+      "title": "The Snail Who Outgrew the Spiral",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-203",
+      "title": "The Bedtime Bureau of Lost Socks",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-204",
+      "title": "The Violinist and the Unheard Color",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-205",
+      "title": "The Pear That Contained a Winter",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-206",
+      "title": "The Umbrella Repair of Dreams",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-207",
+      "title": "The Elevator Button's Day Off",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-208",
+      "title": "The Puppeteer of Gentle Thunder",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-209",
+      "title": "The Mirror That Needed Glasses",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-210",
+      "title": "The Library Beneath the Chessboard",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-211",
+      "title": "Applause for an Empty Stage",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-212",
+      "title": "The Moth Behind the Velvet Door",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-213",
+      "title": "Carrying Yesterday's Puddle",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-214",
+      "title": "The Laundry of Borrowed Shadows",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-215",
+      "title": "Where the Dice Sleep",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-216",
+      "title": "A Saddle for the Tide",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-217",
+      "title": "The Telephone That Wanted to Listen",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-218",
+      "title": "The Barber of Tangled Roads",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-219",
+      "title": "The Snowman's Warm Footsteps",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-220",
+      "title": "The Alien and the Stuck Hiccup",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-221",
+      "title": "The Staircase in the Ribbon",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-222",
+      "title": "The Turtle's Vacant Room",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-223",
+      "title": "The Eraser That Lost the Mountain",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-224",
+      "title": "The Cathedral of Small Repairs",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-225",
+      "title": "The Wardrobe's Winter Breath",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-226",
+      "title": "The Potato Who Held the Door",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-227",
+      "title": "The Rabbit Who Outgrew the Trick",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-228",
+      "title": "The Clockwork Orchard in a Lunchbox",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-229",
+      "title": "The Quietest Argument",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-230",
+      "title": "The Diver at the Keyhole",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "revisit-dream-231",
+      "title": "The Lemon's Long Afternoon",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-232",
+      "title": "The Postman of Unsent Echoes",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-233",
+      "title": "The Tent That Camped Indoors",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-234",
+      "title": "The Octopus and the Stubborn Knot",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-235",
+      "title": "The Long Way Around a Button",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-236",
+      "title": "The Child Who Folded the Afternoon",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-237",
+      "title": "The Bell Without a Sound",
+      "decision": "pending",
+      "v4Proof": "v4-dream-237",
+      "sourcePair": "five-region playable composite with all native sources",
+      "clueCount": 5,
+      "originalMatchesCurrentV3": false,
+      "nativeSourceBytes": 5575526,
+      "newArtRequirement": "no currently identified technical raster blocker; later human feedback may require refinement",
+      "technicalReview": "2026-10-04 full pair, five paired crops, desktop and phone",
+      "humanDifficultyApproval": "pending",
+      "physicalPhoneApproval": "pending",
+      "productionApproval": "not approved"
+    },
+    {
+      "baselineId": "painted-dream-238",
+      "title": "The Eel in the Extension Cord",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-239",
+      "title": "The Train That Waited for Its Tracks",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-240",
+      "title": "The Kangaroo's Spare Afternoon",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-241",
+      "title": "The Stairwell in the Apricot",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-242",
+      "title": "A Robot Learning to Float",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-243",
+      "title": "The Ceiling's Missing Tooth",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-244",
+      "title": "The Dresser of Unmade Waves",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-245",
+      "title": "The Violin Case Migration",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-246",
+      "title": "The Girl Who Lent Her Reflection",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-247",
+      "title": "The Walrus's Paper Fan",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-248",
+      "title": "The Workshop of Lost Corners",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-249",
+      "title": "The Blanket That Grew a Backbone",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-250",
+      "title": "The Last Drop of the Elevator",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-251",
+      "title": "The Lobster's Small Apology",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-252",
+      "title": "The Baker of Square Bubbles",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-253",
+      "title": "The Dragon's Unsent Letter",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-254",
+      "title": "The Sock Ferryman",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-255",
+      "title": "The Mouse and the Heavy Feather",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-256",
+      "title": "The Bathtub's Second Shore",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-257",
+      "title": "The Pomegranate's Private Theater",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-258",
+      "title": "The Boy Who Walked the Tablecloth",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-259",
+      "title": "The Cabinet of Borrowed Thunder",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-260",
+      "title": "The Bell Pepper's Silent Bell",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-261",
+      "title": "The Hermit Crab's Waiting Room",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-262",
+      "title": "The Clock That Ate Its Hands",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-263",
+      "title": "The Staircase on the Back of a Stamp",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-264",
+      "title": "The Elephant's Glass Slippers",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-265",
+      "title": "The Seamstress of Warm Shadows",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-266",
+      "title": "The Umbilical of the City",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-267",
+      "title": "The Toad's Porcelain Throne",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-268",
+      "title": "The Shoemaker of Empty Footsteps",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-269",
+      "title": "The Window in the Accordion",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-270",
+      "title": "The Monster and the Timid Thunder",
+      "decision": "pending",
+      "v4Proof": "v4-dream-270",
+      "sourcePair": "five-region playable composite with all native sources",
+      "clueCount": 5,
+      "originalMatchesCurrentV3": true,
+      "nativeSourceBytes": 7526622,
+      "newArtRequirement": "no currently identified technical raster blocker; later human feedback may require refinement",
+      "technicalReview": "2026-10-04 full pair, five paired crops, desktop and phone",
+      "humanDifficultyApproval": "pending",
+      "physicalPhoneApproval": "pending",
+      "productionApproval": "not approved",
+      "visualArtworkAcceptance": {
+        "status": "approved",
+        "date": "2026-10-04",
+        "scope": "artwork and authored changes in the reviewed A/B pair only",
+        "messageIds": [
+          "Sentinel_af13c72bac3c81918f02bd76349e3b62",
+          "Sentinel_233a3a26101881919061e4428f423fec"
+        ]
+      }
+    },
+    {
+      "baselineId": "painted-dream-271",
+      "title": "The Girl and the Unfinished Zebra",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-272",
+      "title": "The Dragon's Bread Basket",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-273",
+      "title": "The Piano That Crossed the Hall",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-274",
+      "title": "The Librarian of Pebble Voices",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-275",
+      "title": "The Cello's Broken Silence",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-276",
+      "title": "The Porcupine's Spare Keys",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-277",
+      "title": "The Peach Pit Observatory",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-278",
+      "title": "The Diver Who Watered the Attic",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-279",
+      "title": "The Beetle's Folded Bridge",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-280",
+      "title": "The Refrigerator's Small Volcano",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-281",
+      "title": "The Acrobat Made of Mittens",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-282",
+      "title": "The Sailor Inside the Shell Button",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-283",
+      "title": "The Melon of Folded Maps",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-284",
+      "title": "The Rabbit's Uncooperative Reflection",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-285",
+      "title": "The Mechanical Swan's Laundry",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-286",
+      "title": "The Stool That Needed a Rest",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-287",
+      "title": "The Boy Who Collected Doorways",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "revisit-dream-288",
+      "title": "The Whale in the Measuring Jug",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-289",
+      "title": "The Unwinding Gorilla",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-290",
+      "title": "The Curtain's One Good Eye",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-291",
+      "title": "The Baker's Floating Apron",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-292",
+      "title": "The Fork That Learned to Branch",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-293",
+      "title": "The Octopus's Invisible Suit",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-294",
+      "title": "The Girl Who Pulled the Horizon Closer",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "revisit-dream-295",
+      "title": "The Pear's Secret Stair",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-296",
+      "title": "The Lost Property of the Centipede",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "revisit-dream-297",
+      "title": "The Compass That Pointed Inward",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-298",
+      "title": "The Chessboard's Day Off",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-299",
+      "title": "The Alligator's Knitted River",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-300",
+      "title": "The Hallway That Hid in a Book",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-301",
+      "title": "The Goblin's Porcelain Balloon",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "revisit-dream-302",
+      "title": "The Girl and the Sleeping Weather",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-303",
+      "title": "The Mountain in the Typewriter",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-304",
+      "title": "The Turtle's Umbrella Stand",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-305",
+      "title": "The Onion's Empty Ballroom",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-306",
+      "title": "The Fisher of Loose Tiles",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-307",
+      "title": "The Wolf Who Packed the Wind",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-308",
+      "title": "The Clockwork Cherry",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-309",
+      "title": "The Ladder's Nightgown",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-310",
+      "title": "The Robot Who Ironed the Sea",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-311",
+      "title": "The Caterpillar's Glass House",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-312",
+      "title": "The Door That Grew Tired of Knocking",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-313",
+      "title": "The Violinist of Cardboard Rain",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-314",
+      "title": "The Seahorse's Pocket Watch",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-315",
+      "title": "The Spool at the End of the Tunnel",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-316",
+      "title": "The Hippo's Small Orchestra",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-317",
+      "title": "The Child Who Untied the Path",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-318",
+      "title": "The Umbrella Made of Windows",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-319",
+      "title": "The Starfish's Five Empty Gloves",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "revisit-dream-320",
+      "title": "The Drawer That Held Its Breath",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-321",
+      "title": "The Fox's Velvet Passport",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-322",
+      "title": "The Marble Mason's Soft Wall",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "revisit-dream-323",
+      "title": "The Lemon That Kept the Rain",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-324",
+      "title": "The Girl Who Borrowed a Dragon's Nap",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-325",
+      "title": "The Squid at the Switchboard",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-326",
+      "title": "The Chair's Glass Lake",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-327",
+      "title": "The Bear Who Tucked in the Stairs",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-328",
+      "title": "The Clockmaker's Loose Afternoon",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-329",
+      "title": "The Shell That Listened Back",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-330",
+      "title": "The Goose's Crooked Key",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-331",
+      "title": "The Elevator in the Cabbage",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-332",
+      "title": "The Boy Who Pressed the Silence",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-333",
+      "title": "The Antelope's Unfinished Sweater",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-334",
+      "title": "The Box of Unfallen Rain",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-335",
+      "title": "The Robot's Paper Heartbeat",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-336",
+      "title": "The Pineapple's Attic Window",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-337",
+      "title": "The Girl Who Swept Up the Tide",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-338",
+      "title": "The Chameleon's Spare Coat",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-339",
+      "title": "The Bridge Inside a Biscuit",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-340",
+      "title": "The Monster Who Held the Ceiling",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "revisit-dream-341",
+      "title": "The Jellyfish's Dry Umbrella",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-342",
+      "title": "The Tailor of Crumpled Distance",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "revisit-dream-343",
+      "title": "The Walnut's Moonless Night",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "revisit-dream-344",
+      "title": "The Penguin Who Sorted Warmth",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-345",
+      "title": "The Doorway in the Measuring Tape",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-346",
+      "title": "The Girl and the Broken Rainbow Ladder",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-347",
+      "title": "The Snail's Velvet Drum",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-348",
+      "title": "The Alien's Empty Picnic",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-349",
+      "title": "The Sparrow's Wooden Ocean",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-350",
+      "title": "The Teaspoon's Long Journey",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-351",
+      "title": "The Child Who Wore the Hallway",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-352",
+      "title": "The Manta Ray's Curtains",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "revisit-dream-353",
+      "title": "The Apple That Forgot to Fall",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-354",
+      "title": "The Locksmith's Soft Keyhole",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-355",
+      "title": "The Robot Who Bottled a Sigh",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-356",
+      "title": "The Otter's Dry Waterfall",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-357",
+      "title": "The Cucumber's Long Corridor",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-358",
+      "title": "The Dancer with Two Left Shadows",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-359",
+      "title": "The Chandelier That Needed Shoes",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-360",
+      "title": "The Badger's Folded Winter",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-361",
+      "title": "The Peach-Colored Echo",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-362",
+      "title": "The Girl Who Mended the Floor",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-363",
+      "title": "The Gecko's Heavy Envelope",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-364",
+      "title": "The Cupboard's Last Warm Light",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "painted-dream-365",
+      "title": "The Door We Left Ajar",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "holiday-painted-halloween",
+      "title": "The Street That Curled into Halloween",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "holiday-painted-christmas",
+      "title": "The Elves' First Presents",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "holiday-painted-valentines",
+      "title": "The Path Our Shadows Remember",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "holiday-painted-st-patricks",
+      "title": "The Staircase of Lucky Coins",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "holiday-painted-independence",
+      "title": "Fireworks Beneath the Water",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "holiday-painted-thanksgiving",
+      "title": "The Turkeys' Harvest Feast",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "holiday-painted-easter",
+      "title": "The Garden Inside the Egg",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "holiday-painted-mothers",
+      "title": "The Home Inside Her Card",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "holiday-painted-new-years",
+      "title": "The Year Unrolls at Dawn",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "holiday-painted-fathers",
+      "title": "Dad's Kite Could Carry a Lake",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "holiday-painted-labor",
+      "title": "The Workshop That Fixed Monday",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "holiday-painted-new-years-eve",
+      "title": "The Midnight Ball That Became a Planet",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "holiday-painted-mlk",
+      "title": "The Bridge We Make Together",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "holiday-painted-presidents",
+      "title": "The Library of Impossible Pages",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "holiday-painted-memorial",
+      "title": "The Light We Keep",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "holiday-painted-juneteenth",
+      "title": "The Door That Became the Horizon",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "revisit-dream-october-observance",
+      "title": "The River Inside a Leaf",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    },
+    {
+      "baselineId": "revisit-dream-veterans",
+      "title": "The Long Way Home",
+      "decision": "pending",
+      "v4Proof": null,
+      "sourcePair": "no selected V4 pair",
+      "newArtRequirement": "undecided: review current V3 pair; retaining it requires no new art, revising it requires a V4 pair",
+      "humanDifficultyApproval": "pending"
+    }
+  ]
+}
