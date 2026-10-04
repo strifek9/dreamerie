@@ -1,18 +1,21 @@
 import { parseSession } from '../game/dailySession.ts'
 import { landscapeCollection, landscapeDay, type LandscapeDream } from '../v2/landscapeCollection.ts'
-import { paintedCollection, paintedForDay, supersededPaintedCollection } from './paintedCollection.ts'
+import { paintedCollection, supersededPaintedCollection } from './paintedCollection.ts'
 import { holidayForDate } from './holidayCalendar.ts'
 import { holidayDreams, supersededHolidayDreams } from './holidayDreams.ts'
 import { legacyHolidayDreams } from './legacyHolidayDreams.ts'
+import { v4OrdinaryDreams, v4HolidayDreams, v4ForDay } from '../v4/releasedCollection.ts'
 
 // Holiday cards never enter or reorder the ordinary rotation.
-export const currentDreams: readonly LandscapeDream[] = [...paintedCollection, ...holidayDreams]
+export const v3CurrentDreams: readonly LandscapeDream[] = [...paintedCollection, ...holidayDreams]
+export const currentDreams: readonly LandscapeDream[] = [...v4OrdinaryDreams, ...v4HolidayDreams]
 // Legacy IDs are resolvable for saved attempts, not part of review or new-day rotation.
-export const playableDreams: readonly LandscapeDream[] = [...currentDreams, ...landscapeCollection, ...legacyHolidayDreams, ...supersededPaintedCollection, ...supersededHolidayDreams]
+export const v3PlayableDreams: readonly LandscapeDream[] = [...v3CurrentDreams, ...landscapeCollection, ...legacyHolidayDreams, ...supersededPaintedCollection, ...supersededHolidayDreams]
+export const playableDreams: readonly LandscapeDream[] = [...currentDreams, ...v3PlayableDreams]
 
 export function dreamForDate(date: Date, savedAttempt: string | null = null): LandscapeDream {
   const holiday = holidayForDate(date)
-  const scheduled = holidayDreams.find(dream => dream.holiday === holiday) ?? paintedForDay(landscapeDay(date))
+  const scheduled = v4HolidayDreams.find(dream => dream.holiday === holiday) ?? v4ForDay(landscapeDay(date))
   if (savedAttempt === null) return scheduled
 
   // If a holiday release arrives after somebody started today's ordinary card,

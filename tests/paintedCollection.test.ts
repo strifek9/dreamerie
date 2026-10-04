@@ -5,7 +5,7 @@ import { createHash } from 'node:crypto'
 import { paintedCollection, paintedForDay, publishedPaintedCollection, supersededPaintedCollection } from '../src/v3/paintedCollection.ts'
 import { revisitedCollection, revisitIds } from '../src/v3/revisitedCollection.generated.ts'
 import { supersededHolidayDreams } from '../src/v3/holidayDreams.ts'
-import { currentDreams, playableDreams, dreamForDate } from '../src/v3/dailyDream.ts'
+import { v3CurrentDreams as currentDreams, playableDreams, dreamForDate } from '../src/v3/dailyDream.ts'
 import { differencesFor, landscapeCollection, LANDSCAPE_SESSION_OPTIONS } from '../src/v2/landscapeCollection.ts'
 import { verseForDream } from '../src/v2/dreamVerses.ts'
 import { changeSession, sessionSnapshot } from '../src/game/dailySession.ts'
@@ -200,7 +200,7 @@ test('painted duplicates consume guesses, expiry cannot pause, and accuracy alwa
 
 test('painted rotation preserves order and every old saved round keeps its own artwork and deadline', () => {
   assert.equal(currentDreams.length, 383)
-  assert.equal(playableDreams.length, 558)
+  assert.equal(playableDreams.length, 941)
   assert.equal(LANDSCAPE_SESSION_OPTIONS.namespace, 'dreamerie:v2:daily-collection:v1')
   for (const [index, card] of landscapeCollection.entries()) {
     const expectedId = revisitIds[`painted-${card.id}`] ?? `painted-${card.id}`

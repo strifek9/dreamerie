@@ -2,7 +2,7 @@ import assert from 'node:assert/strict'
 import test from 'node:test'
 import { readFileSync } from 'node:fs'
 import { createHash } from 'node:crypto'
-import { currentDreams, playableDreams } from '../src/v3/dailyDream.ts'
+import { currentDreams, playableDreams, v3CurrentDreams } from '../src/v3/dailyDream.ts'
 import { artworkSources, changedArtwork, originalArtwork } from '../src/v3/artworkDelivery.ts'
 
 interface Asset {
@@ -11,7 +11,8 @@ interface Asset {
   sourceSha256: string; deliverySha256: string; rgbaSha256: string
 }
 const audit: { assets: Asset[]; cards: { id: string; sourceBytes: number; deliveryBytes: number }[];
-  sourceBytes: number; deliveryBytes: number } = JSON.parse(readFileSync(new URL('../docs/artwork/DELIVERY_LOSSLESS_V1.json', import.meta.url), 'utf8'))
+  sourceBytes: number; deliveryBytes: number } = JSON.parse(readFileSync(new URL('../docs/artwork/V4_DELIVERY_LOSSLESS_V1.json', import.meta.url), 'utf8'))
+const historicalAudit: { assets: Asset[] } = JSON.parse(readFileSync(new URL('../docs/artwork/DELIVERY_LOSSLESS_V1.json', import.meta.url), 'utf8'))
 const assets = new Map(audit.assets.map(asset => [asset.delivery, asset]))
 const bytes = (path: string) => readFileSync(new URL(`../public${path}`, import.meta.url))
 const hash = (value: Buffer) => createHash('sha256').update(value).digest('hex')
@@ -44,7 +45,7 @@ test('all 383 current cards preload only their full original and five lossless c
       assert.ok(left === 0 || box.left * asset.sourceWidth - left >= 32 - epsilon)
       assert.ok(top === 0 || box.top * asset.sourceHeight - top >= 32 - epsilon)
     }
-    urls.forEach(url => assert.match(url, /^\/artwork\/v3\/delivery-lossless-v1\/[a-z0-9-]+\.webp$/))
+    urls.forEach(url => assert.match(url, /^\/artwork\/v4\/delivery-lossless-v1\/[a-z0-9-]+\.webp$/))
     const total = audit.cards.find(card => card.id === dream.id)!
     assert.equal(total.deliveryBytes, urls.reduce((sum, url) => sum + assets.get(url)!.deliveryBytes, 0))
     assert.ok(total.deliveryBytes < total.sourceBytes, dream.id)
@@ -54,7 +55,7 @@ test('all 383 current cards preload only their full original and five lossless c
 
 test('delivery checksums match the pixel-verified audit and every file is native-resolution lossless WebP', () => {
   const checkedSources = new Set<string>()
-  for (const asset of audit.assets) {
+  for (const asset of [...historicalAudit.assets, ...audit.assets]) {
     if (!checkedSources.has(asset.source)) {
       const master = bytes(asset.source)
       assert.equal(hash(master), asset.sourceSha256, asset.source)
@@ -85,7 +86,7 @@ test('delivery checksums match the pixel-verified audit and every file is native
 
 test('legacy saved cards keep original sources and delivery selection never mutates puzzle data', () => {
   const snapshot = JSON.stringify(playableDreams)
-  const currentIds = new Set(currentDreams.map(card => card.id))
+  const currentIds = new Set([...currentDreams, ...v3CurrentDreams].map(card => card.id))
   for (const dream of playableDreams) {
     artworkSources(dream)
     if (currentIds.has(dream.id)) continue

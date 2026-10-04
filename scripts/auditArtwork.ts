@@ -2,6 +2,7 @@ import { readFileSync, readdirSync, statSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { playableDreams } from '../src/v3/dailyDream.ts'
 import { artworkDelivery } from '../src/v3/artworkDelivery.generated.ts'
+import { artworkDelivery as v4ArtworkDelivery } from '../src/v4/artworkDelivery.generated.ts'
 import { v4PreviewDreams } from '../src/v4/previewDreams.ts'
 
 // Audit only; deletion is deliberately not part of this tool. Historical saved
@@ -14,6 +15,7 @@ function collect(value: unknown): void {
 }
 collect(playableDreams)
 collect(artworkDelivery)
+collect(v4ArtworkDelivery)
 collect(v4PreviewDreams)
 // Preserve generated sources from previously published V4 review pairs.
 for (const file of readdirSync(new URL('../docs/artwork/', import.meta.url))) {

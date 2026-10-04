@@ -4,8 +4,8 @@ import { easterSunday, holidayForDate, type HolidayId } from '../src/v3/holidayC
 import { readFileSync } from 'node:fs'
 import { currentDreams, dreamForDate, playableDreams } from '../src/v3/dailyDream.ts'
 import { legacyHolidayDreams } from '../src/v3/legacyHolidayDreams.ts'
-import { paintedCollection, paintedForDay } from '../src/v3/paintedCollection.ts'
 import { holidayDreams } from '../src/v3/holidayDreams.ts'
+import { v4OrdinaryDreams, v4HolidayDreams, v4ForDay } from '../src/v4/releasedCollection.ts'
 import { differencesFor, landscapeDay, landscapeForDay, LANDSCAPE_SESSION_OPTIONS } from '../src/v2/landscapeCollection.ts'
 import { changeSession, parseSession, sessionSnapshot } from '../src/game/dailySession.ts'
 import { compareResults, findDifference } from '../src/game/dailyRecall.ts'
@@ -40,17 +40,17 @@ test('U.S. Thanksgiving is the fourth Thursday, not a fixed November date', () =
 
 test('holiday overrides never reorder or shift the ordinary daily rotation', () => {
   assert.equal(currentDreams.length, 383)
-  assert.equal(playableDreams.length, 558)
-  assert.equal(new Set(playableDreams.map(d => d.id)).size, 558)
-  assert.deepEqual(playableDreams.slice(0, 365), paintedCollection)
+  assert.equal(playableDreams.length, 941)
+  assert.equal(new Set(playableDreams.map(d => d.id)).size, 941)
+  assert.deepEqual(playableDreams.slice(0, 365), v4OrdinaryDreams)
   for (let day = 0; day < 366; day++) {
     const date = new Date(2028, 0, 1 + day, 12)
     const holiday = holidayForDate(date)
-    assert.equal(dreamForDate(date).id, holiday ? holidayDreams.find(card => card.holiday === holiday)!.id : paintedForDay(landscapeDay(date)).id)
+    assert.equal(dreamForDate(date).id, holiday ? v4HolidayDreams.find(card => card.holiday === holiday)!.id : v4ForDay(landscapeDay(date)).id)
   }
-  assert.equal(dreamForDate(new Date(2026, 9, 31)).id, 'holiday-painted-halloween')
-  assert.equal(dreamForDate(new Date(2026, 10, 26)).id, 'holiday-painted-thanksgiving')
-  assert.equal(dreamForDate(new Date(2026, 11, 25)).id, 'holiday-painted-christmas')
+  assert.equal(dreamForDate(new Date(2026, 9, 31)).id, 'v4-dream-halloween')
+  assert.equal(dreamForDate(new Date(2026, 10, 26)).id, 'v4-dream-thanksgiving')
+  assert.equal(dreamForDate(new Date(2026, 11, 25)).id, 'v4-dream-christmas')
   assert.equal(dreamForDate(new Date(2026, 9, 31)).id, dreamForDate(new Date(2027, 9, 31)).id)
   const key = (date: Date) => `${LANDSCAPE_SESSION_OPTIONS.namespace}:${landscapeDay(date)}`
   assert.notEqual(key(new Date(2026, 9, 31)), key(new Date(2027, 9, 31)), 'annual artwork repeats, attempts do not')
@@ -198,7 +198,7 @@ test('each annual special gets exactly one date, including the Juneteenth/Father
 })
 
 test('holiday repeats, misses, five-guess ceiling, expiry and accuracy-first ordering stay unchanged', () => {
-  for (const card of holidayDreams) {
+  for (const card of [...holidayDreams, ...v4HolidayDreams]) {
     const edits = differencesFor(card)
     let session = changeSession(null, { type: 'start' }, card.id, edits, 1000, card.aspectRatio)
     for (let i = 0; i < 7; i++) {

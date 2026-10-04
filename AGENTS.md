@@ -1,3 +1,9 @@
+## V4 production promotion — October 4, 2026
+
+The owner explicitly authorized pushing the complete V4 collection to the main Dreamerie site at 21:16:38 UTC (Sentinel_6eb6db8149ec819186b799bc3b23d779). This supersedes historical first-batch/playtest-only restrictions below. Production selects all 383 versioned V4 cards (365 ordinary +18 holidays), while all 558 historical IDs, source artwork, delivery files, geometry and saved attempts remain resolvable. The collection namespace, five confirmed guesses, two-minute deadline, calendar, score, streak and sharing behavior are unchanged. Development/playtest controls remain excluded from production.
+
+Release evidence and deployment handoff: docs/V4_PRODUCTION_RELEASE_20261004.md. Human timed difficulty and physical-phone approval remain pending; owner release authorization is recorded separately. Only the parent release task deploys the verified main commit to the existing production Render service, with manual deploys and existing settings preserved. Do not deploy the playtest feature branch to production.
+
 # Working on DREAMERIE
 
 ## Current authorized V4 expansion — October 4, 2026

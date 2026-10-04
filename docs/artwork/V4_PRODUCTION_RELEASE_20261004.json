@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-04",
+  "ownerApprovalSource": "Sentinel_6eb6db8149ec819186b799bc3b23d779",
+  "productionBaseline": "26d160a266bc2cd1e9f174ade78597088ce61915",
+  "playtestCommit": "83401207d6c4ab38d410bdb8843e47514aa9456b",
+  "currentCards": 383,
+  "ordinaryCards": 365,
+  "holidayCards": 18,
+  "historicalIdsPreserved": 558,
+  "resolvableIds": 941,
+  "storageNamespace": "dreamerie:v2:daily-collection:v1",
+  "unitTests": {
+    "passed": 100,
+    "failed": 0,
+    "skipped": 0
+  },
+  "typecheck": "passed",
+  "productionBuild": "passed",
+  "releaseGate": "passed",
+  "legacyPairValidator": "passed: 120 reviewed pairs / 240 native source PNGs",
+  "nativeLosslessDelivery": {
+    "V4": {
+      "files": 2298,
+      "sourceBytes": 2021310880,
+      "deliveryBytes": 794499784,
+      "exactDecodedRGBAAndICC": "passed: generation and independent check"
+    },
+    "V3": {
+      "files": 2298,
+      "exactDecodedRGBAAndICC": "passed: independent preservation check",
+      "assetsManifestAuditGitDiff": "empty"
+    }
+  },
+  "browserEnvironment": "Disposable headless Edge contexts; production Vite preview; mobile touch emulation; 320/390/844/1440 viewport widths",
+  "browserEvidence": {
+    "production-v4-browser.log": [
+      "PASS production 002 scheduled nativeV4/5locks/2min/inspection/4widths/persistedresult/no-preview-tools",
+      "PASS production 011 scheduled nativeV4/5locks/2min/inspection/4widths/persistedresult/no-preview-tools",
+      "PASS production 020 scheduled nativeV4/5locks/2min/inspection/4widths/persistedresult/no-preview-tools",
+      "PASS production 074 scheduled nativeV4/5locks/2min/inspection/4widths/persistedresult/no-preview-tools",
+      "PASS production 197 scheduled nativeV4/5locks/2min/inspection/4widths/persistedresult/no-preview-tools",
+      "PASS production 021 scheduled nativeV4/5locks/2min/inspection/4widths/persistedresult/no-preview-tools",
+      "PASS production 255 scheduled nativeV4/5locks/2min/inspection/4widths/persistedresult/no-preview-tools",
+      "PASS production 303 scheduled nativeV4/5locks/2min/inspection/4widths/persistedresult/no-preview-tools",
+      "PASS production 358 scheduled nativeV4/5locks/2min/inspection/4widths/persistedresult/no-preview-tools",
+      "PASS production 365 scheduled nativeV4/5locks/2min/inspection/4widths/persistedresult/no-preview-tools",
+      "PASS production halloween scheduled nativeV4/5locks/2min/inspection/4widths/persistedresult/no-preview-tools",
+      "PASS production christmas scheduled nativeV4/5locks/2min/inspection/4widths/persistedresult/no-preview-tools",
+      "PASS production valentines scheduled nativeV4/5locks/2min/inspection/4widths/persistedresult/no-preview-tools",
+      "PASS production st-patricks scheduled nativeV4/5locks/2min/inspection/4widths/persistedresult/no-preview-tools",
+      "PASS production independence scheduled nativeV4/5locks/2min/inspection/4widths/persistedresult/no-preview-tools",
+      "PASS production veterans scheduled nativeV4/5locks/2min/inspection/4widths/persistedresult/no-preview-tools",
+      "PASS production thanksgiving scheduled nativeV4/5locks/2min/inspection/4widths/persistedresult/no-preview-tools",
+      "PASS production easter scheduled nativeV4/5locks/2min/inspection/4widths/persistedresult/no-preview-tools",
+      "PASS production memorial scheduled nativeV4/5locks/2min/inspection/4widths/persistedresult/no-preview-tools",
+      "PASS production juneteenth scheduled nativeV4/5locks/2min/inspection/4widths/persistedresult/no-preview-tools",
+      "PASS production october-observance scheduled nativeV4/5locks/2min/inspection/4widths/persistedresult/no-preview-tools",
+      "PASS production new-years-eve scheduled nativeV4/5locks/2min/inspection/4widths/persistedresult/no-preview-tools",
+      "PASS production mlk scheduled nativeV4/5locks/2min/inspection/4widths/persistedresult/no-preview-tools",
+      "PASS production presidents scheduled nativeV4/5locks/2min/inspection/4widths/persistedresult/no-preview-tools",
+      "PASS production mothers scheduled nativeV4/5locks/2min/inspection/4widths/persistedresult/no-preview-tools",
+      "PASS production labor scheduled nativeV4/5locks/2min/inspection/4widths/persistedresult/no-preview-tools",
+      "PASS production fathers scheduled nativeV4/5locks/2min/inspection/4widths/persistedresult/no-preview-tools",
+      "PASS production new-years scheduled nativeV4/5locks/2min/inspection/4widths/persistedresult/no-preview-tools",
+      "PASS isolated production context disposed; no JS errors"
+    ],
+    "production-migration-qa.log": [
+      "PASS production historical painted-dream-002 pending/correct-old-geometry/original-delivery/deadline/resume/completed/no-new-attempt",
+      "PASS production historical revisit-dream-006 pending/correct-old-geometry/original-delivery/deadline/resume/completed/no-new-attempt",
+      "PASS production historical dream-002 pending/correct-old-geometry/original-delivery/deadline/resume/completed/no-new-attempt",
+      "PASS production historical holiday-painted-halloween pending/correct-old-geometry/original-delivery/deadline/resume/completed/no-new-attempt",
+      "PASS isolated migration contexts disposed; no user storage touched/no JS errors"
+    ],
+    "production-daily-persistence-qa.log": [
+      "PASS isolated normal daily pending mark and deadline survive interrupted reload",
+      "PASS normal daily one double-confirm lock, guess count and original deadline persist",
+      "PASS clock-advanced2min expiry and completed result survive reload; no retry/no JS errors",
+      "PASS isolated context disposed; no existing user storage touched"
+    ],
+    "production-fish-rules-qa.log": [
+      "PASS production fish top correct; spam marks spend zero; pending reload persists; double-confirm spends one",
+      "PASS production both unchanged fish miss; repeated found fish misses; each lock spends one",
+      "PASS production exactly five locks finish 2/5; no sixth guess",
+      "PASS production result persists/no retry/no preview controls/no JS errors; isolated context disposed"
+    ]
+  },
+  "humanTimedDifficulty": "not performed; pending",
+  "physicalPhone": "not performed; pending",
+  "deployment": "Parent task deploys verified main SHA; not claimed complete by this audit",
+  "preservedBranches": {
+    "prototype/social-dreams": "c6b1cbd61ec16f0e6ea795cbf2c68e3bc50588c4",
+    "feature/v4-harder-dreams": "83401207d6c4ab38d410bdb8843e47514aa9456b"
+  }
+}

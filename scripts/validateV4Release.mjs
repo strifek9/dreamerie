@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import { existsSync, readFileSync } from 'node:fs'
-import { currentDreams, playableDreams } from '../src/v3/dailyDream.ts'
+import { currentDreams, playableDreams, v3PlayableDreams } from '../src/v3/dailyDream.ts'
 import { v4PreviewDreams } from '../src/v4/previewDreams.ts'
 
 const preview = process.argv.includes('--preview')
@@ -26,9 +26,10 @@ expect(ledger.decisions.length === 383 && ledger.baselineCardCount === 383, 'Ver
 expect(new Set(ledger.decisions.map(row => row.id)).size === 383, 'Duplicate baseline IDs in Version 4 decision ledger')
 if (preview) {
   expect(currentDreams.length === 383, 'Preview changed the 383-card daily rotation')
-  expect(playableDreams.length === 558, 'Preview changed the 558 published/saved-card catalogue')
-  for (const card of cards) expect(!currentDreams.some(current => current.id === card.id), `${card.id}: preview entered the daily rotation`)
+  expect(v3PlayableDreams.length === 558, 'The 558 pre-V4 saved IDs were not preserved')
+  for (const card of cards) expect(!v3PlayableDreams.some(current => current.id === card.id), `${card.id}: V4 ID collides with a pre-V4 saved ID`)
 } else {
+  expect(typeof ledger.ownerCollectionReleaseApproval?.sourceId === 'string', 'Missing explicit owner collection release approval')
   const selectedIds = new Set(cards.map(card => card.id))
   const playableIds = new Set(playableDreams.map(card => card.id))
   const pending = ledger.decisions.filter(row => row.decision === 'pending')

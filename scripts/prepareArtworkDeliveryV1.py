@@ -16,6 +16,7 @@ PUBLIC = ROOT / 'public'
 PREFIX = '/artwork/v3/delivery-lossless-v1/'
 AUDIT = ROOT / 'docs/artwork/DELIVERY_LOSSLESS_V1.json'
 MANIFEST = ROOT / 'src/v3/artworkDelivery.generated.ts'
+CATALOGUE_EXPORT = 'v3CurrentDreams'
 PADDING = 32  # Neighboring pixels for browser interpolation at clip boundaries.
 
 
@@ -89,7 +90,7 @@ def main():
     if not features.check('webp'):
         raise RuntimeError('This Pillow installation needs WebP support.')
     result = subprocess.run(['node', '--experimental-strip-types', '--input-type=module', '-e',
-        "import { currentDreams } from './src/v3/dailyDream.ts'; console.log(JSON.stringify(currentDreams))"],
+        "import { " + CATALOGUE_EXPORT + " as currentDreams } from './src/v3/dailyDream.ts'; console.log(JSON.stringify(currentDreams))"],
         cwd=ROOT, capture_output=True, text=True, encoding='utf-8', check=True)
     cards = json.loads(result.stdout)
     if args.sample:

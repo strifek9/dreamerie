@@ -1,3 +1,5 @@
+Current production promotion: see [V4_PRODUCTION_RELEASE_20261004.md](V4_PRODUCTION_RELEASE_20261004.md). Historical milestones below retain their original approval scope.
+
 # Version 4: harder dreams
 
 Status: preproduction on `feature/v4-harder-dreams`. The owner requested a full audit of the 365 daily and 18 holiday cards, selective enrichment of sparse scenes, and harder and less predictable differences. On October 2 the owner separately authorized a work-in-progress commit and push as a checkpoint, not a V4 release or deployment. Version 3 remains on `main` and live.

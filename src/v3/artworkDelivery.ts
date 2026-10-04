@@ -1,5 +1,6 @@
 import type { LandscapeDream, LandscapeEdit } from '../v2/landscapeCollection.ts'
 import { artworkDelivery } from './artworkDelivery.generated.ts'
+import { artworkDelivery as v4ArtworkDelivery } from '../v4/artworkDelivery.generated.ts'
 
 interface ImagePlacement {
   readonly src: string
@@ -12,9 +13,9 @@ interface Delivery {
   readonly original: string
   readonly edits: Readonly<Record<string, ImagePlacement>>
 }
-const deliveries: Readonly<Record<string, Delivery>> = artworkDelivery
+const deliveries: Readonly<Record<string, Delivery>> = { ...artworkDelivery, ...v4ArtworkDelivery }
 
-// Only the current, pixel-verified catalogue has delivery copies. Legacy saved
+// Pixel-verified V4 and V3 catalogues keep separate delivery paths. Older saved
 // rounds keep their original sources, IDs, geometry and timing.
 export function originalArtwork(dream: LandscapeDream): string {
   return deliveries[dream.id]?.original ?? dream.original

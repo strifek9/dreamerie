@@ -2,20 +2,21 @@ import assert from 'node:assert/strict'
 import test from 'node:test'
 import { readFileSync, readdirSync } from 'node:fs'
 import { createHash } from 'node:crypto'
-import { currentDreams, playableDreams } from '../src/v3/dailyDream.ts'
+import { currentDreams, playableDreams, v3PlayableDreams } from '../src/v3/dailyDream.ts'
 import { confirmGuess, createRecallState, getRemainingGuesses } from '../src/game/dailyRecall.ts'
 import { differencesFor } from '../src/v2/landscapeCollection.ts'
 import { v4PreviewDreams } from '../src/v4/previewDreams.ts'
 import { previewHolidayForDream } from '../src/v4/previewHoliday.ts'
 import { holidayDreams } from '../src/v3/holidayDreams.ts'
 
-test('unreleased V4 proof is isolated from the published deck and has five bounded clues', () => {
+test('selected V4 cards have five bounded clues and preserve historical ID isolation', () => {
   assert.ok(v4PreviewDreams.length > 0)
   assert.equal(currentDreams.length, 383)
-  assert.equal(playableDreams.length, 558)
+  assert.equal(playableDreams.length, 941)
+  assert.equal(v3PlayableDreams.length, 558)
   for (const dream of v4PreviewDreams) {
-    assert.ok(!currentDreams.some(card => card.id === dream.id))
-    assert.ok(!playableDreams.some(card => card.id === dream.id))
+    assert.ok(currentDreams.some(card => card.id === dream.id))
+    assert.ok(!v3PlayableDreams.some(card => card.id === dream.id))
     assert.equal(dream.edits.length, 5)
     assert.equal(new Set(dream.edits.map(edit => edit.id)).size, 5)
     for (const edit of dream.edits) {

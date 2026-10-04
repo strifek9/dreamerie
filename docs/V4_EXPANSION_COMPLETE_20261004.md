@@ -1,3 +1,5 @@
+Current production promotion: see [V4_PRODUCTION_RELEASE_20261004.md](V4_PRODUCTION_RELEASE_20261004.md). Historical milestones below retain their original approval scope.
+
 # V4 expansion technical handoff — October 4, 2026
 
 All 356 authorized remaining current cards (338 ordinary and 18 holidays) have isolated five-clue V4 proofs and completed root technical QA. Together with the 27 existing proofs, the preview now contains 383 pairs / 1,915 clues. This completes the authorized artwork implementation and technical review; human timed difficulty, physical-phone review, production selection and publication remain pending.

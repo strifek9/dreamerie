@@ -9,7 +9,7 @@ import { LANDSCAPE_SESSION_OPTIONS } from '../src/v2/landscapeCollection.ts'
 
 test('cleanup preserves every current and historical saved-card asset without unused images', () => {
   assert.equal(currentDreams.length, 383)
-  assert.equal(playableDreams.length, 558)
+  assert.equal(playableDreams.length, 941)
   for (const file of requiredArtwork) assert.ok(existsSync(new URL(`../public${file}`, import.meta.url)), file)
   const images = artworkFiles().filter(file => /\.(png|jpe?g|webp|svg)$/i.test(file))
   assert.deepEqual(images.filter(file => !requiredArtwork.has(file)), [])
