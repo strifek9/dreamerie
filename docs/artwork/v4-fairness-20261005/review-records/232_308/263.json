@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-263",
+  "title": "The Staircase on the Back of a Stamp",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "704e6c80d03ac74fd4f6c39dfaa393bdd2b682a99a54ebe88bc9912cb3d2db7d",
+    "browserComposite": "6ba5a7345951de5d802477dbd0da706ae4e5992a585c9cf8d14b448215d37aee",
+    "mapping": "d42e55b00b35e1032c10f4e4d8d117d2d9475a2927d66201b3e783bcbc16cb64"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-263-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-263-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\263.png"
+  ],
+  "clues": [
+    {
+      "id": "seal",
+      "label": "The wax seal branch stem curls into a spiral.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.10526315789473684,
+        "top": 0.24867162592986186,
+        "width": 0.037679425837320576,
+        "height": 0.06801275239107332
+      }
+    },
+    {
+      "id": "clip",
+      "label": "The paperclip inner end curls upward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.17404306220095694,
+        "top": 0.7300743889479278,
+        "width": 0.028708133971291867,
+        "height": 0.04994686503719448
+      }
+    },
+    {
+      "id": "chair",
+      "label": "The tiny chair right arm ends in a scroll.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.48863636363636365,
+        "top": 0.6184909670563231,
+        "width": 0.034688995215311005,
+        "height": 0.04994686503719448
+      }
+    },
+    {
+      "id": "lid",
+      "label": "The ink bottle lid has a crescent ridge.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.8833732057416268,
+        "top": 0,
+        "width": 0.11244019138755981,
+        "height": 0.08820403825717323
+      }
+    },
+    {
+      "id": "stair",
+      "label": "The paper stair front lip bows upward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.631578947368421,
+        "top": 0.6450584484590861,
+        "width": 0.07834928229665072,
+        "height": 0.061636556854410204
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

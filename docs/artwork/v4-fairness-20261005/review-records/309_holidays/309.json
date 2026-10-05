@@ -1,0 +1,100 @@
+{
+  "card": "309",
+  "id": "v4-dream-309",
+  "title": "The Ladder's Nightgown",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "change-1",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-309-altered-source-v4.png",
+      "sourceSha256": "90fc9b8006408a4f980c0fe03e5e31ab610527353f03ed8f99f9c3e92e5ac528",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1343,
+        608,
+        137,
+        200
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-2",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-309-altered-source-v4.png",
+      "sourceSha256": "90fc9b8006408a4f980c0fe03e5e31ab610527353f03ed8f99f9c3e92e5ac528",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1525,
+        649,
+        108,
+        100
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-3",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-309-altered-source-v4.png",
+      "sourceSha256": "90fc9b8006408a4f980c0fe03e5e31ab610527353f03ed8f99f9c3e92e5ac528",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        241,
+        247,
+        70,
+        77
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-4",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-309-altered-source-v4.png",
+      "sourceSha256": "90fc9b8006408a4f980c0fe03e5e31ab610527353f03ed8f99f9c3e92e5ac528",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        212,
+        568,
+        39,
+        76
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-5",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-309-altered-source-v4.png",
+      "sourceSha256": "90fc9b8006408a4f980c0fe03e5e31ab610527353f03ed8f99f9c3e92e5ac528",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        134,
+        484,
+        81,
+        63
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "7179b9953881268011da486804a0f75238c448621d80c0ac24bd06133f763c6b",
+  "compositeSha256": "e8dbc5e125997cf3948ba90e29a44a5684abf0c2fd3c39678a65f8fb9ffc5f3f",
+  "evidence": [
+    "review-deliverables/Dreamerie-309-A-original.png",
+    "review-deliverables/Dreamerie-309-B-changed.png",
+    "audit-fairness\\309_holidays\\309.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

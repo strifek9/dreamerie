@@ -1,0 +1,96 @@
+{
+  "id": "v4-fairness-dream-270-v1",
+  "baselineId": "v4-dream-270",
+  "title": "The Monster and the Timid Thunder",
+  "status": "accepted-actual-browser-composite",
+  "visualFullPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "nativeSalientAndRestoredSitesReviewed": true,
+  "clues": [
+    {
+      "id": "shadow-cloud",
+      "label": "The monster's shadow cradles a cloud-shaped echo.",
+      "visualSinglePerceivedChangeAccepted": true,
+      "nativeBox": {
+        "left": 0.645933014354067,
+        "top": 0.2869287991498406,
+        "width": 0.215311004784689,
+        "height": 0.2869287991498406
+      }
+    },
+    {
+      "id": "cloud-upper-lightning-curl",
+      "label": "A small golden lightning curl appears above the cloud.",
+      "visualSinglePerceivedChangeAccepted": true,
+      "nativeBox": {
+        "left": 0.42942583732057416,
+        "top": 0.40913921360255046,
+        "width": 0.056818181818181816,
+        "height": 0.1275239107332625
+      }
+    },
+    {
+      "id": "cord-under-fringe",
+      "label": "The lamp cord slips under the rug's fringe.",
+      "visualSinglePerceivedChangeAccepted": true,
+      "nativeBox": {
+        "left": 0.7894736842105263,
+        "top": 0.8076514346439958,
+        "width": 0.13456937799043062,
+        "height": 0.1275239107332625
+      }
+    },
+    {
+      "id": "framed-stars",
+      "label": "Three little stars in the oval frame descend diagonally.",
+      "visualSinglePerceivedChangeAccepted": true,
+      "nativeBox": {
+        "left": 0.9330143540669856,
+        "top": 0.0818278427205101,
+        "width": 0.06698564593301436,
+        "height": 0.1434643995749203
+      }
+    },
+    {
+      "id": "cloth-hem",
+      "label": "The folded cloth's hem trades curls for pointed stitching.",
+      "visualSinglePerceivedChangeAccepted": true,
+      "nativeBox": {
+        "left": 0.5831339712918661,
+        "top": 0.8374070138150903,
+        "width": 0.1465311004784689,
+        "height": 0.15621679064824653
+      }
+    }
+  ],
+  "salientChangedPoints": [
+    [
+      760,
+      433
+    ]
+  ],
+  "restoredSites": [
+    {
+      "name": "restored-original-lower-lightning",
+      "point": [
+        750,
+        594
+      ],
+      "checkedSquareRadius": 20,
+      "exactOriginalPixels": true
+    }
+  ],
+  "outsideAuthoredBoxesPlusOnePixel": null,
+  "hashes": {
+    "original": "21bb2afd06920ce87b3c1aa09f6839debb8116aa99e13c07b672b47f77725f4a",
+    "changed": "5801c888ffa9cf61e34a10d0226d3532e56dfc593842f3da74a21d5979999eea",
+    "mapping": "71d7f880850954d421b460a96a684787c94a2c776a39bb11a41d286ea334082d"
+  },
+  "evidence": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\corrected\\270.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\corrected\\270-native-1.png"
+  ],
+  "mobileInteractionTesting": "root-owned; not performed by this reviewer",
+  "physicalPhoneReview": false,
+  "observations": "237: same clapper ball is covered locally by velvet; no lower added ball, original note flags/heads intact and one added note per target. 270: upper curl added while lower original bolt remains pixel-identical."
+}

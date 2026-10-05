@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-303",
+  "title": "The Mountain in the Typewriter",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "e74b3bac5cb8433792ce5d92a608499c66d2e41005dec0e63d27e9b33db24e44",
+    "browserComposite": "62d8950105eaff4f682bcbf3aecc0547fa519ed9e7d9961d69406995eec4607b",
+    "mapping": "f8ab6449f7d1384906564d967f23f7d019ab3257ae84188b6231020a9aaa7abb"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-303-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-303-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\303.png"
+  ],
+  "clues": [
+    {
+      "id": "lever-left",
+      "label": "The typewriter return lever points left.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.16088516746411483,
+        "top": 0.1381509032943677,
+        "width": 0.12380382775119617,
+        "height": 0.1997874601487779
+      }
+    },
+    {
+      "id": "mug-heart",
+      "label": "The coffee mug handle has a heart-shaped opening.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.025119617224880382,
+        "top": 0.02975557917109458,
+        "width": 0.0687799043062201,
+        "height": 0.14133900106269925
+      }
+    },
+    {
+      "id": "lens-spiral",
+      "label": "The magnified contour lines form a spiral.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.06160287081339713,
+        "top": 0.28374070138150903,
+        "width": 0.09928229665071771,
+        "height": 0.14558979808714134
+      }
+    },
+    {
+      "id": "key-moon",
+      "label": "A right-side key bears a crescent.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.5173444976076556,
+        "top": 0.6822529224229543,
+        "width": 0.03349282296650718,
+        "height": 0.05419766206163656
+      }
+    },
+    {
+      "id": "screw-star",
+      "label": "The brass sharpener screw has a star-shaped recess.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.1034688995215311,
+        "top": 0.8512221041445271,
+        "width": 0.01854066985645933,
+        "height": 0.030818278427205102
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-287",
+  "title": "The Boy Who Collected Doorways",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "dbd0f5ba8baa36cff8aca8a001aea29a45d52acf734bb8cdd2d35ea3def811cb",
+    "browserComposite": "d0b69a3b2698b6bfc5b22e9603242c631ba26a388b34e803e3a746e1321289ce",
+    "mapping": "0de861540048aa93908c7bbd108754f6af3e6cf279c221b939bf40da81faeb95"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-287-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-287-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\287.png"
+  ],
+  "clues": [
+    {
+      "id": "change-1",
+      "label": "The lantern's glass door opens to the left.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.049641148325358854,
+        "top": 0.7236981934112646,
+        "width": 0.12440191387559808,
+        "height": 0.2263549415515409
+      }
+    },
+    {
+      "id": "change-2",
+      "label": "The knee patch bears an embroidered spiral.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.2332535885167464,
+        "top": 0.5908607863974495,
+        "width": 0.05442583732057416,
+        "height": 0.09670563230605739
+      }
+    },
+    {
+      "id": "change-3",
+      "label": "The wall knocker's ring twists into a figure eight.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.016148325358851676,
+        "top": 0.11158342189160468,
+        "width": 0.04784688995215311,
+        "height": 0.1434643995749203
+      }
+    },
+    {
+      "id": "change-4",
+      "label": "The little mustard door has a crescent cutout.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.75,
+        "top": 0.5217853347502657,
+        "width": 0.03110047846889952,
+        "height": 0.0669500531349628
+      }
+    },
+    {
+      "id": "change-5",
+      "label": "The held blue door's window bars form a diagonal cross.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.3869617224880383,
+        "top": 0.27948990435706694,
+        "width": 0.04784688995215311,
+        "height": 0.10626992561105207
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

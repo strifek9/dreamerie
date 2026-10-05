@@ -1,0 +1,100 @@
+{
+  "card": "333",
+  "id": "v4-dream-333",
+  "title": "The Antelope's Unfinished Sweater",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "change-1",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-333-altered-source-v4.png",
+      "sourceSha256": "fc08b4f08b19aee7641e87e7b2e3663a3d9a4430e486e7c5d935465d3d266a23",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1265,
+        473,
+        226,
+        219
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-2",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-333-altered-source-v4.png",
+      "sourceSha256": "fc08b4f08b19aee7641e87e7b2e3663a3d9a4430e486e7c5d935465d3d266a23",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1491,
+        389,
+        178,
+        217
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-3",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-333-altered-source-v4.png",
+      "sourceSha256": "fc08b4f08b19aee7641e87e7b2e3663a3d9a4430e486e7c5d935465d3d266a23",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        268,
+        823,
+        114,
+        118
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-4",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-333-altered-source-v4.png",
+      "sourceSha256": "fc08b4f08b19aee7641e87e7b2e3663a3d9a4430e486e7c5d935465d3d266a23",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        727,
+        574,
+        331,
+        141
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-5",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-333-altered-source-v4.png",
+      "sourceSha256": "fc08b4f08b19aee7641e87e7b2e3663a3d9a4430e486e7c5d935465d3d266a23",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        141,
+        374,
+        118,
+        142
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "d4aa57aafb94e99511edc5f2dcdb6299319b2b4123fdb12c67493e0756bb0f44",
+  "compositeSha256": "be160f3da9864ceba7c9cbbdd0c2c1aaf9095c195e6b4f6e4803835476024c5f",
+  "evidence": [
+    "review-deliverables/Dreamerie-333-A-original.png",
+    "review-deliverables/Dreamerie-333-B-changed.png",
+    "audit-fairness\\309_holidays\\333.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

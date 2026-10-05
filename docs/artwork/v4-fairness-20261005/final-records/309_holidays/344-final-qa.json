@@ -1,0 +1,148 @@
+{
+  "cardId": "v4-fairness-dream-344-v1",
+  "fullNativeAandBVisuallyReviewed": true,
+  "allFiveNativePairedCropsVisuallyReviewed": true,
+  "verdict": "pass",
+  "finding": "One complete cream spiral replacing the snowflake; no extra cream stars/dots or old snowflake fragments. Other four clues unchanged.",
+  "Asha256": "73c987d6e40f7b46d3b77004eb91934e7587c9f2a00a5b0fc2610a6db09a9fcd",
+  "Bsha256": "c1bd82b3c2910aca59ca55396fb8d4b00ca00463185bb20e39073a7bc685c4f3",
+  "originalRGBAExact": true,
+  "outsideSelectedGeometryChangedPixels": 0,
+  "originalPuffOutsideInteriorMaskExact": null,
+  "clues": [
+    {
+      "id": "stopper",
+      "label": "The hot-water bottle stopper becomes triangular.",
+      "boxNative": [
+        315,
+        525,
+        94,
+        78
+      ],
+      "visuallyReviewed": true,
+      "changedPixels": 7291,
+      "historicalOtherCluePixelsPreserved": true
+    },
+    {
+      "id": "scarf",
+      "label": "The penguin trailing scarf forms a knot.",
+      "boxNative": [
+        482,
+        442,
+        112,
+        100
+      ],
+      "visuallyReviewed": true,
+      "changedPixels": 11170,
+      "historicalOtherCluePixelsPreserved": true
+    },
+    {
+      "id": "cloth",
+      "label": "The airborne blanket right tip curls into a loop.",
+      "boxNative": [
+        1292,
+        17,
+        53,
+        52
+      ],
+      "visuallyReviewed": true,
+      "changedPixels": 2742,
+      "historicalOtherCluePixelsPreserved": true
+    },
+    {
+      "id": "sun",
+      "label": "The jar sun disk has a smiling face.",
+      "boxNative": [
+        93,
+        84,
+        48,
+        46
+      ],
+      "visuallyReviewed": true,
+      "changedPixels": 2198,
+      "historicalOtherCluePixelsPreserved": true
+    },
+    {
+      "id": "snow-spiral",
+      "label": "The tin snowflake becomes one spiral swirl.",
+      "boxNative": [
+        102,
+        285,
+        68,
+        73
+      ],
+      "visuallyReviewed": true,
+      "changedPixels": 4932,
+      "historicalOtherCluePixelsPreserved": null
+    }
+  ],
+  "probes": [
+    {
+      "point": [
+        110,
+        343
+      ],
+      "originalRGBA": [
+        80,
+        120,
+        170,
+        255
+      ],
+      "changedRGBA": [
+        83,
+        120,
+        167,
+        255
+      ],
+      "equalsOriginal": false
+    },
+    {
+      "point": [
+        165,
+        347
+      ],
+      "originalRGBA": [
+        90,
+        121,
+        166,
+        255
+      ],
+      "changedRGBA": [
+        79,
+        117,
+        163,
+        255
+      ],
+      "equalsOriginal": false
+    },
+    {
+      "point": [
+        166,
+        302
+      ],
+      "originalRGBA": [
+        111,
+        129,
+        164,
+        255
+      ],
+      "changedRGBA": [
+        100,
+        127,
+        170,
+        255
+      ],
+      "equalsOriginal": false
+    }
+  ],
+  "salientPoint": [
+    111,
+    322
+  ],
+  "evidence": [
+    "fairness-corrected-pairs\\Dreamerie-344-A-original.png",
+    "fairness-corrected-pairs\\Dreamerie-344-B-changed.png",
+    "audit-fairness\\309_holidays\\344-final-five.png"
+  ],
+  "limits": "Actual native browser exports visually reviewed; no new interaction/physical-phone test by this agent; owner visual approval pending."
+}

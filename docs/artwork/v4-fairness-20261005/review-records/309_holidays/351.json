@@ -1,0 +1,100 @@
+{
+  "card": "351",
+  "id": "v4-dream-351",
+  "title": "The Child Who Wore the Hallway",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "window-shut",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-351-altered-source-v4.png",
+      "sourceSha256": "d7e39d1aa739b3c9e24af7a4f1016c78fb22f6a05dd74d90a8252558fabbdf5e",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        963,
+        413,
+        64,
+        111
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "umbrella-loop",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-351-altered-source-v4.png",
+      "sourceSha256": "d7e39d1aa739b3c9e24af7a4f1016c78fb22f6a05dd74d90a8252558fabbdf5e",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1370,
+        298,
+        79,
+        87
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "sun-waves",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-351-altered-source-v4.png",
+      "sourceSha256": "d7e39d1aa739b3c9e24af7a4f1016c78fb22f6a05dd74d90a8252558fabbdf5e",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        566,
+        259,
+        89,
+        121
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "key-heart",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-351-altered-source-v4.png",
+      "sourceSha256": "d7e39d1aa739b3c9e24af7a4f1016c78fb22f6a05dd74d90a8252558fabbdf5e",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1377,
+        78,
+        54,
+        52
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "buckle-diamond",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-351-altered-source-v4.png",
+      "sourceSha256": "d7e39d1aa739b3c9e24af7a4f1016c78fb22f6a05dd74d90a8252558fabbdf5e",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        88,
+        607,
+        49,
+        52
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "ec0dda4b30dcd6d7729ba6a6460ce38b8aea03ac18bcf0d5beb0cb5c055eea6e",
+  "compositeSha256": "cc3730f55a4f3665ccec9687b0d90afd8ab159f929bcf8f3c0db2237b4496c67",
+  "evidence": [
+    "review-deliverables/Dreamerie-351-A-original.png",
+    "review-deliverables/Dreamerie-351-B-changed.png",
+    "audit-fairness\\309_holidays\\351.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

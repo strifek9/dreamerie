@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-284",
+  "title": "The Rabbit's Uncooperative Reflection",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "c820c344022c71d1dc8fa2cf16bc84030a245191bae27803256736ab2589d6d2",
+    "browserComposite": "308f8e1c9c3530864da9b395d69c825cc3e7327aeb6285b6f7aa3f76db9f2551",
+    "mapping": "209abf5b7dc6a35837bdf522ae33dc5cd25e4dc78ab62d36a32548873348722d"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-284-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-284-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\284.png"
+  ],
+  "clues": [
+    {
+      "id": "change-1",
+      "label": "The reflected rabbit opens the book.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.6919856459330144,
+        "top": 0.31382978723404253,
+        "width": 0.11363636363636363,
+        "height": 0.1829787234042553
+      }
+    },
+    {
+      "id": "change-2",
+      "label": "The real rabbit mouth smiles.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.3068181818181818,
+        "top": 0.3723404255319149,
+        "width": 0.04126794258373206,
+        "height": 0.05531914893617021
+      }
+    },
+    {
+      "id": "change-3",
+      "label": "The brush bristle tips curl.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.5610047846889952,
+        "top": 0.8148936170212766,
+        "width": 0.12679425837320574,
+        "height": 0.08404255319148936
+      }
+    },
+    {
+      "id": "change-4",
+      "label": "The jar finial forms a ring.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.41327751196172247,
+        "top": 0.5468085106382978,
+        "width": 0.03229665071770335,
+        "height": 0.06382978723404255
+      }
+    },
+    {
+      "id": "change-5",
+      "label": "The pendant bears a crescent motif.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.06220095693779904,
+        "top": 0.22340425531914893,
+        "width": 0.025717703349282296,
+        "height": 0.07765957446808511
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

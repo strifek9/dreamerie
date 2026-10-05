@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-242",
+  "title": "A Robot Learning to Float",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "ebcbb0cae5ddce9c22b33e2fe0e33c8e967b0e5ccac6eca68a7b2c2074fb09b3",
+    "browserComposite": "07bea53df8b3fd43f1cf17211c72d743e7f388add5c5fd8fbc04bf799a2d5a45",
+    "mapping": "6b8331425d69f941cd90e9f688d25032bb58336996624d31d8a0b15a8293ae2b"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-242-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-242-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\242.png"
+  ],
+  "clues": [
+    {
+      "id": "change-1",
+      "label": "The drain cover hinges open.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0,
+        "top": 0.5759829968119022,
+        "width": 0.20095693779904306,
+        "height": 0.36238044633368754
+      }
+    },
+    {
+      "id": "change-2",
+      "label": "The hanging orange towel ties itself into a knot.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.6226076555023924,
+        "top": 0.12008501594048884,
+        "width": 0.06937799043062201,
+        "height": 0.14558979808714134
+      }
+    },
+    {
+      "id": "change-3",
+      "label": "The right cork float's white band becomes a braid.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.6148325358851675,
+        "top": 0.4771519659936238,
+        "width": 0.08133971291866028,
+        "height": 0.1902231668437832
+      }
+    },
+    {
+      "id": "change-4",
+      "label": "A spiral groove is cut into the soap.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.8803827751196173,
+        "top": 0.7385759829968119,
+        "width": 0.07775119617224881,
+        "height": 0.06482465462274177
+      }
+    },
+    {
+      "id": "change-5",
+      "label": "The bathtub's front foot curls into a closed loop.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.40311004784689,
+        "top": 0.24335812964930925,
+        "width": 0.0430622009569378,
+        "height": 0.0818278427205101
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

@@ -1,0 +1,30 @@
+
+> dreamerie@0.1.0 build:local-repair
+> npm run typecheck && node --experimental-strip-types scripts/validateV4Release.mjs --local-repair && vite build
+
+
+> dreamerie@0.1.0 typecheck
+> tsc -b
+
+Version 4 local repair (not authorized for publication) metadata gate passed: 383 card(s), five nonoverlapping clues each, versioned sources present; published catalogue preserved.
+vite v8.3.0 building client environment for production...
+transforming...
+Γ£ô 56 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     1.13 kB Γöé gzip:   0.56 kB
+dist/assets/index-D73TnmoS.css     30.22 kB Γöé gzip:   7.18 kB
+dist/assets/index-OxUDiEAw.js   1,973.19 kB Γöé gzip: 382.44 kB
+
+Γ£ô built in 12.99s
+[plugin builtin:vite-reporter]
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+[PLUGIN_TIMINGS] Plugin hooks ran for 12.5s of this 13.0s build (97%).
+The slowest hooks, timed inside each callback (the wait before a callback starts is excluded, the time it awaits is included):
+  - vite:prepare-out-dir renderStart (87%, 11.3s, 1 call)
+  - vite:css-post renderChunk (9%, 1.2s, 1 call)
+Additional hook time came from hooks under 1s.
+See https://rolldown.rs/reference/InputOptions.checks#plugintimings for more details.

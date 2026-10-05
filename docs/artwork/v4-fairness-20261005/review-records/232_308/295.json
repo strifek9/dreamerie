@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-295",
+  "title": "The Pear's Secret Stair",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "15c29642c596e552b80c2f378ea79f41f365c40d35cdd4761158c7dd0b174df5",
+    "browserComposite": "e32d46b68c721468673ff8fd64ebeeb11c3d76faa727f385f9805685d252c60d",
+    "mapping": "96d01d75196e9e4b83ec37c778195a2dd9b09adb7e3f70b757efda2fda9c0e60"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-295-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-295-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\295.png"
+  ],
+  "clues": [
+    {
+      "id": "change-1",
+      "label": "The coffee reflects a blue crescent.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.8157894736842105,
+        "top": 0.589798087141339,
+        "width": 0.034688995215311005,
+        "height": 0.030818278427205102
+      }
+    },
+    {
+      "id": "change-2",
+      "label": "The trunk handle has a wider curved grip.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.26854066985645936,
+        "top": 0.6865037194473964,
+        "width": 0.0687799043062201,
+        "height": 0.061636556854410204
+      }
+    },
+    {
+      "id": "change-3",
+      "label": "The candlestick foot has a gold star.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.06937799043062201,
+        "top": 0.6599362380446334,
+        "width": 0.02930622009569378,
+        "height": 0.05100956429330499
+      }
+    },
+    {
+      "id": "change-4",
+      "label": "One key opening becomes triangular.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.09688995215311005,
+        "top": 0.8480340063761955,
+        "width": 0.029904306220095694,
+        "height": 0.03294367693942614
+      }
+    },
+    {
+      "id": "change-5",
+      "label": "One pear window crossbar arches upward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.4910287081339713,
+        "top": 0.19872476089266738,
+        "width": 0.02751196172248804,
+        "height": 0.024442082890541977
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

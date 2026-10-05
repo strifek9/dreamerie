@@ -1,0 +1,100 @@
+{
+  "card": "322",
+  "id": "v4-dream-322",
+  "title": "The Marble Mason's Soft Wall",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "closed-eye",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-322-altered-source-v4.png",
+      "sourceSha256": "8867f7104d05be40592ba05b6057d87e7681d12d658c995b8d51a1f48a0a3ba9",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        764,
+        172,
+        35,
+        42
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "triangle-cavity",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-322-altered-source-v4.png",
+      "sourceSha256": "8867f7104d05be40592ba05b6057d87e7681d12d658c995b8d51a1f48a0a3ba9",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1221,
+        121,
+        110,
+        155
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    },
+    {
+      "id": "crescent-bucket",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-322-altered-source-v4.png",
+      "sourceSha256": "8867f7104d05be40592ba05b6057d87e7681d12d658c995b8d51a1f48a0a3ba9",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1469,
+        118,
+        54,
+        60
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "star-mallet",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-322-altered-source-v4.png",
+      "sourceSha256": "8867f7104d05be40592ba05b6057d87e7681d12d658c995b8d51a1f48a0a3ba9",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1316,
+        624,
+        103,
+        69
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "hex-pivot",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-322-altered-source-v4.png",
+      "sourceSha256": "8867f7104d05be40592ba05b6057d87e7681d12d658c995b8d51a1f48a0a3ba9",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        169,
+        490,
+        37,
+        31
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "7f9a02223e717c8d8f27e184effd3cc496e374779ba3ecb4916ea8321ea0b189",
+  "compositeSha256": "f5c67eb2cb3a14e74f7669c0952160435f6dcda73fd376cf3854897323b77e7e",
+  "evidence": [
+    "review-deliverables/Dreamerie-322-A-original.png",
+    "review-deliverables/Dreamerie-322-B-changed.png",
+    "audit-fairness\\309_holidays\\322.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

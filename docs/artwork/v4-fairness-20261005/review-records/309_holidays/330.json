@@ -1,0 +1,100 @@
+{
+  "card": "330",
+  "id": "v4-dream-330",
+  "title": "The Goose's Crooked Key",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "key-oval",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-330-altered-source-v4.png",
+      "sourceSha256": "d2f4eba0287e9245b17ae3dacae14ce81c928d5be702eadeb7424839bc0aa0e8",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        815,
+        340,
+        182,
+        223
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "cord-loop",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-330-altered-source-v4.png",
+      "sourceSha256": "d2f4eba0287e9245b17ae3dacae14ce81c928d5be702eadeb7424839bc0aa0e8",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1480,
+        107,
+        75,
+        117
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "goose-eye",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-330-altered-source-v4.png",
+      "sourceSha256": "d2f4eba0287e9245b17ae3dacae14ce81c928d5be702eadeb7424839bc0aa0e8",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1020,
+        173,
+        42,
+        49
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "tag-feather",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-330-altered-source-v4.png",
+      "sourceSha256": "d2f4eba0287e9245b17ae3dacae14ce81c928d5be702eadeb7424839bc0aa0e8",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1497,
+        315,
+        67,
+        99
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "hinge-diamond",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-330-altered-source-v4.png",
+      "sourceSha256": "d2f4eba0287e9245b17ae3dacae14ce81c928d5be702eadeb7424839bc0aa0e8",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1322,
+        441,
+        32,
+        24
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "e6c56bb3170d46e006959bcf411aa498d70e214c759b20f6937eaba6e3feaf38",
+  "compositeSha256": "2c469c160c79c614b10d4dd69c71112dc59f5c308b6366e5945e9292d5e0ac35",
+  "evidence": [
+    "review-deliverables/Dreamerie-330-A-original.png",
+    "review-deliverables/Dreamerie-330-B-changed.png",
+    "audit-fairness\\309_holidays\\330.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

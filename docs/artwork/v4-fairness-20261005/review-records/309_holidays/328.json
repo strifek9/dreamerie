@@ -1,0 +1,100 @@
+{
+  "card": "328",
+  "id": "v4-dream-328",
+  "title": "The Clockmaker's Loose Afternoon",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "cup",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-328-altered-source-v4.png",
+      "sourceSha256": "47ceecb4dfc5f240f3a5697d5075e56813bff7eef639d07e26ada6918af8ce19",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        252,
+        606,
+        93,
+        110
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "pendulum",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-328-altered-source-v4.png",
+      "sourceSha256": "47ceecb4dfc5f240f3a5697d5075e56813bff7eef639d07e26ada6918af8ce19",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1270,
+        211,
+        77,
+        85
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "loop",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-328-altered-source-v4.png",
+      "sourceSha256": "47ceecb4dfc5f240f3a5697d5075e56813bff7eef639d07e26ada6918af8ce19",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1008,
+        730,
+        69,
+        70
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "hourglass",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-328-altered-source-v4.png",
+      "sourceSha256": "47ceecb4dfc5f240f3a5697d5075e56813bff7eef639d07e26ada6918af8ce19",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1503,
+        373,
+        73,
+        60
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "tweezers",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-328-altered-source-v4.png",
+      "sourceSha256": "47ceecb4dfc5f240f3a5697d5075e56813bff7eef639d07e26ada6918af8ce19",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1220,
+        749,
+        85,
+        61
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "25e30f2d4a8c3efe5b4eca6f9b2e42275ac80c1b8d39c40da12ddf95b0feb876",
+  "compositeSha256": "0f3cc1e12b4ddad3c7cb2932c0ee8cf99aed28999ca06d7d821e32dd18105b0c",
+  "evidence": [
+    "review-deliverables/Dreamerie-328-A-original.png",
+    "review-deliverables/Dreamerie-328-B-changed.png",
+    "audit-fairness\\309_holidays\\328.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

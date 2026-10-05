@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-282",
+  "title": "The Sailor Inside the Shell Button",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "b6800f6b7fbc364f919886fe022a92f49cd7e9ec5dd0cce3fc0152738f519d90",
+    "browserComposite": "a009c47826a6b237691591061be3b456593280f2e1f8f03786fa8544df15f861",
+    "mapping": "0b870de6a0b528f0b3e604520f57a723d3eaf57ded011a6eae9ab82a1a661f8b"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-282-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-282-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\282.png"
+  ],
+  "clues": [
+    {
+      "id": "crescent-sail",
+      "label": "The sail bears a navy crescent.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.6423444976076556,
+        "top": 0.23379383634431455,
+        "width": 0.04904306220095694,
+        "height": 0.1179596174282678
+      }
+    },
+    {
+      "id": "raised-scarf",
+      "label": "The sailor\u2019s scarf tail lifts upward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.5251196172248804,
+        "top": 0.2858660998937301,
+        "width": 0.0430622009569378,
+        "height": 0.08289054197662062
+      }
+    },
+    {
+      "id": "turned-fluke",
+      "label": "The anchor\u2019s right fluke curls outward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.23145933014354067,
+        "top": 0.5345377258235919,
+        "width": 0.05442583732057416,
+        "height": 0.20403825717321997
+      }
+    },
+    {
+      "id": "square-wheel",
+      "label": "The wheel\u2019s central cap becomes square.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.5927033492822966,
+        "top": 0.40063761955366634,
+        "width": 0.020933014354066987,
+        "height": 0.039319872476089264
+      }
+    },
+    {
+      "id": "star-button",
+      "label": "The brass button bears a raised star.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.09150717703349283,
+        "top": 0.09351753453772582,
+        "width": 0.06220095693779904,
+        "height": 0.09989373007438895
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

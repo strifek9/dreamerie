@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-296",
+  "title": "The Lost Property of the Centipede",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "5e386203f6b1537852369a961589cd3fc8d0c3edf78c155b074caab3a87a2ff2",
+    "browserComposite": "ed11c203349d4212ad92bf316026dfe26e4f2d3b0c5392e8a00319aaf244b172",
+    "mapping": "29c095459a04b82de28b7e5daa1d101336405232e88196ceb54124dadda09bab"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-296-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-296-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\296.png"
+  ],
+  "clues": [
+    {
+      "id": "handle",
+      "label": "The suitcase handle arches upward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.008971291866028708,
+        "top": 0.24442082890541977,
+        "width": 0.0687799043062201,
+        "height": 0.07226354941551541
+      }
+    },
+    {
+      "id": "antenna",
+      "label": "The left antenna stalk forms a loop.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.458133971291866,
+        "top": 0.2104144527098831,
+        "width": 0.03827751196172249,
+        "height": 0.0563230605738576
+      }
+    },
+    {
+      "id": "cuff",
+      "label": "The yellow boot rim folds outward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.6608851674641149,
+        "top": 0.31668437832093516,
+        "width": 0.06279904306220095,
+        "height": 0.057385759829968117
+      }
+    },
+    {
+      "id": "lace",
+      "label": "The sneaker top lace forms a broad left loop.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.9013157894736842,
+        "top": 0.4208289054197662,
+        "width": 0.04485645933014354,
+        "height": 0.040382571732199786
+      }
+    },
+    {
+      "id": "buckle",
+      "label": "The brown boot buckle tilts into a diamond.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.8217703349282297,
+        "top": 0.4293304994686504,
+        "width": 0.025717703349282296,
+        "height": 0.048884165781083955
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

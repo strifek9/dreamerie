@@ -1,0 +1,100 @@
+{
+  "card": "valentines",
+  "id": "v4-dream-valentines",
+  "title": "The Path Our Shadows Remember",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "change-1",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-valentines-altered-source-v4.png",
+      "sourceSha256": "25b7431c424ef738cdfaaa3974e14537da55011f6c5761d2e78109da20532161",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        214,
+        734,
+        35,
+        34
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-2",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-valentines-altered-source-v4.png",
+      "sourceSha256": "25b7431c424ef738cdfaaa3974e14537da55011f6c5761d2e78109da20532161",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        373,
+        759,
+        56,
+        40
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-3",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-valentines-altered-source-v4.png",
+      "sourceSha256": "25b7431c424ef738cdfaaa3974e14537da55011f6c5761d2e78109da20532161",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        413,
+        163,
+        24,
+        23
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-4",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-valentines-altered-source-v4.png",
+      "sourceSha256": "25b7431c424ef738cdfaaa3974e14537da55011f6c5761d2e78109da20532161",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        637,
+        508,
+        23,
+        28
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-5",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-valentines-altered-source-v4.png",
+      "sourceSha256": "25b7431c424ef738cdfaaa3974e14537da55011f6c5761d2e78109da20532161",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        814,
+        233,
+        21,
+        23
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "b05069bae9e292859a13323a6b3d35edd729201f15bc18a6e102a9a11cecc301",
+  "compositeSha256": "f565b650781c3fddfc9db1c03d39f7d62c01615b26205e92bc9a177ac4597361",
+  "evidence": [
+    "review-deliverables/Dreamerie-valentines-A-original.png",
+    "review-deliverables/Dreamerie-valentines-B-changed.png",
+    "audit-fairness\\309_holidays\\valentines.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

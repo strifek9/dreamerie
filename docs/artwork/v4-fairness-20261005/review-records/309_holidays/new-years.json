@@ -1,0 +1,100 @@
+{
+  "card": "new-years",
+  "id": "v4-dream-new-years",
+  "title": "The Year Unrolls at Dawn",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "change-1",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-new-years-altered-source-v4.png",
+      "sourceSha256": "bcf55fa27da3c46819ea9ccb8ad95a14348f71bda4777778fb7b29d53ee82726",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        371,
+        60,
+        144,
+        154
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-2",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-new-years-altered-source-v4.png",
+      "sourceSha256": "bcf55fa27da3c46819ea9ccb8ad95a14348f71bda4777778fb7b29d53ee82726",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        730,
+        8,
+        77,
+        116
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-3",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-new-years-altered-source-v4.png",
+      "sourceSha256": "bcf55fa27da3c46819ea9ccb8ad95a14348f71bda4777778fb7b29d53ee82726",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        165,
+        668,
+        65,
+        77
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-4",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-new-years-altered-source-v4.png",
+      "sourceSha256": "bcf55fa27da3c46819ea9ccb8ad95a14348f71bda4777778fb7b29d53ee82726",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        72,
+        95,
+        63,
+        94
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-5",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-new-years-altered-source-v4.png",
+      "sourceSha256": "bcf55fa27da3c46819ea9ccb8ad95a14348f71bda4777778fb7b29d53ee82726",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        750,
+        268,
+        57,
+        59
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "72fe4e2713fb15b23d4c3a15716383074fd9ec39c122e9186589091dcaa52056",
+  "compositeSha256": "1b8aed06cf39a6f36468d7d2e9fb73ab08507298354579025c57a9306b1fae84",
+  "evidence": [
+    "review-deliverables/Dreamerie-new-years-A-original.png",
+    "review-deliverables/Dreamerie-new-years-B-changed.png",
+    "audit-fairness\\309_holidays\\new-years.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

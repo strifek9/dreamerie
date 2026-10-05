@@ -1,0 +1,100 @@
+{
+  "card": "310",
+  "id": "v4-dream-310",
+  "title": "The Robot Who Ironed the Sea",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "change-1",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-310-altered-source-v4.png",
+      "sourceSha256": "f1d18af931fbd1640ca95564306369f43b70bfcf84dc2e4e01490259bc42130a",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        75,
+        221,
+        110,
+        173
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-2",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-310-altered-source-v4.png",
+      "sourceSha256": "f1d18af931fbd1640ca95564306369f43b70bfcf84dc2e4e01490259bc42130a",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1233,
+        233,
+        131,
+        132
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-3",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-310-altered-source-v4.png",
+      "sourceSha256": "f1d18af931fbd1640ca95564306369f43b70bfcf84dc2e4e01490259bc42130a",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        561,
+        260,
+        78,
+        65
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-4",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-310-altered-source-v4.png",
+      "sourceSha256": "f1d18af931fbd1640ca95564306369f43b70bfcf84dc2e4e01490259bc42130a",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        232,
+        178,
+        60,
+        59
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-5",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-310-altered-source-v4.png",
+      "sourceSha256": "f1d18af931fbd1640ca95564306369f43b70bfcf84dc2e4e01490259bc42130a",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1508,
+        520,
+        67,
+        84
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "5e9f776d76c72cf45c00a62c9db5bb1857adfd3bdc68eeed9786304847c93d8b",
+  "compositeSha256": "3f38d57cc7c4ae667510a54476f41f201a9241b6124102c7cfccdc9a3a08a304",
+  "evidence": [
+    "review-deliverables/Dreamerie-310-A-original.png",
+    "review-deliverables/Dreamerie-310-B-changed.png",
+    "audit-fairness\\309_holidays\\310.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

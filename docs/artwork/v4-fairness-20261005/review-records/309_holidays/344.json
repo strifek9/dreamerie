@@ -1,0 +1,156 @@
+{
+  "card": "344",
+  "id": "v4-dream-344",
+  "title": "The Penguin Who Sorted Warmth",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "stopper",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-344-altered-source-v4.png",
+      "sourceSha256": "1e9dfbd393fd17142bc0e725b275fb7f4e8019fe5524437c9e298967c7958e69",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        315,
+        525,
+        94,
+        78
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "scarf",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-344-altered-source-v4.png",
+      "sourceSha256": "1e9dfbd393fd17142bc0e725b275fb7f4e8019fe5524437c9e298967c7958e69",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        482,
+        442,
+        112,
+        100
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "cloth",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-344-altered-source-v4.png",
+      "sourceSha256": "1e9dfbd393fd17142bc0e725b275fb7f4e8019fe5524437c9e298967c7958e69",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1292,
+        17,
+        53,
+        52
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "sun",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-344-altered-source-v4.png",
+      "sourceSha256": "1e9dfbd393fd17142bc0e725b275fb7f4e8019fe5524437c9e298967c7958e69",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        93,
+        84,
+        48,
+        46
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "snow",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-344-altered-source-v4.png",
+      "sourceSha256": "1e9dfbd393fd17142bc0e725b275fb7f4e8019fe5524437c9e298967c7958e69",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [
+        "344-snow-collateral-stars"
+      ],
+      "bounds": [
+        102,
+        285,
+        68,
+        73
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "73c987d6e40f7b46d3b77004eb91934e7587c9f2a00a5b0fc2610a6db09a9fcd",
+  "compositeSha256": "00f46a776a2ffd37c33ae5dec025598ecc354230b7e81402330468230114a06e",
+  "evidence": [
+    "review-deliverables/Dreamerie-344-A-original.png",
+    "review-deliverables/Dreamerie-344-B-changed.png",
+    "audit-fairness\\309_holidays\\344.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed",
+  "issues": [
+    {
+      "id": "344-snow-collateral-stars",
+      "clueId": "snow",
+      "severity": "confirmed collateral salient additions",
+      "description": "Central snowflake replacement also adds five disconnected cream stars/dots around the new spiral. They can be perceived as separate answers.",
+      "nativeOriginalBox": [
+        102,
+        285,
+        68,
+        73
+      ],
+      "spiralThresholdBoundsInclusive": [
+        113,
+        296,
+        163,
+        351
+      ],
+      "separateComponentBoundsInclusive": [
+        [
+          106,
+          339,
+          113,
+          347
+        ],
+        [
+          135,
+          285,
+          142,
+          292
+        ],
+        [
+          108,
+          293,
+          113,
+          298
+        ],
+        [
+          163,
+          299,
+          167,
+          304
+        ],
+        [
+          162,
+          345,
+          166,
+          350
+        ]
+      ],
+      "recommendation": "Keep one central spiral replacement; restore original blue background around it. Use a contour mask rather than merely narrower rectangle because peripheral stars overlap spiral bounding box. Preserve original region sufficient to remove old snowflake tips without added stars. Keep five clues and historical versions.",
+      "detailEvidence": "audit-fairness\\309_holidays\\344-5-detail.png"
+    }
+  ]
+}

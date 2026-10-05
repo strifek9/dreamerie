@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-257",
+  "title": "The Pomegranate's Private Theater",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "b6cb5148ec49f275573b2e589e2ab2597500cd021a68ad15f1e73b7171f66851",
+    "browserComposite": "900533de86cae7fad43c1b2660a410def1bbb5b88e054fda487f21645f94144a",
+    "mapping": "ad29a3d4a9da336a4d820b27a000f91e972e23e235ae53d534e33a63ead8aa6e"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-257-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-257-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\257.png"
+  ],
+  "clues": [
+    {
+      "id": "lens-cap",
+      "label": "The left opera-glass barrel has a pearl-white cap.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.7948564593301436,
+        "top": 0.30818278427205104,
+        "width": 0.06578947368421052,
+        "height": 0.04994686503719448
+      }
+    },
+    {
+      "id": "curtain-loop",
+      "label": "A braided loop surrounds the left curtain tassel.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.3116028708133971,
+        "top": 0.3846971307120085,
+        "width": 0.02751196172248804,
+        "height": 0.06376195536663125
+      }
+    },
+    {
+      "id": "stage-heart",
+      "label": "The hanging stage ring becomes heart-shaped.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.42105263157894735,
+        "top": 0.2412327311370882,
+        "width": 0.03289473684210526,
+        "height": 0.057385759829968117
+      }
+    },
+    {
+      "id": "chair-moon",
+      "label": "The front center-left seatback bears a golden crescent.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.4007177033492823,
+        "top": 0.6631243358129649,
+        "width": 0.0215311004784689,
+        "height": 0.04250797024442083
+      }
+    },
+    {
+      "id": "medal-mask",
+      "label": "The medal bears a smiling theater mask.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.7739234449760766,
+        "top": 0.8384697130712009,
+        "width": 0.056818181818181816,
+        "height": 0.09883103081827843
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

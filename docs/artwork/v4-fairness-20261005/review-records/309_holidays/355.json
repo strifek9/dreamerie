@@ -1,0 +1,100 @@
+{
+  "card": "355",
+  "id": "v4-dream-355",
+  "title": "The Robot Who Bottled a Sigh",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "change-1",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-355-altered-source-v4.png",
+      "sourceSha256": "dd55fd6647bd0e4452d1c155e7db94090303da598399da8a7ecadebe190b3df6",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        798,
+        829,
+        211,
+        64
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-2",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-355-altered-source-v4.png",
+      "sourceSha256": "dd55fd6647bd0e4452d1c155e7db94090303da598399da8a7ecadebe190b3df6",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1445,
+        753,
+        60,
+        59
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-3",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-355-altered-source-v4.png",
+      "sourceSha256": "dd55fd6647bd0e4452d1c155e7db94090303da598399da8a7ecadebe190b3df6",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1123,
+        828,
+        53,
+        28
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-4",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-355-altered-source-v4.png",
+      "sourceSha256": "dd55fd6647bd0e4452d1c155e7db94090303da598399da8a7ecadebe190b3df6",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        292,
+        713,
+        37,
+        24
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-5",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-355-altered-source-v4.png",
+      "sourceSha256": "dd55fd6647bd0e4452d1c155e7db94090303da598399da8a7ecadebe190b3df6",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        297,
+        134,
+        27,
+        28
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "326e22761920fc52cfcc666e54641357ce3796c1d702d263fc47585bcd6640cb",
+  "compositeSha256": "0cc15341476a8984dedf818f39b68dc84a7b72fb8f013dc08a884bd65bd8a461",
+  "evidence": [
+    "review-deliverables/Dreamerie-355-A-original.png",
+    "review-deliverables/Dreamerie-355-B-changed.png",
+    "audit-fairness\\309_holidays\\355.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

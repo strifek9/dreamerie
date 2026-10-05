@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-278",
+  "title": "The Diver Who Watered the Attic",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "dd0b07d31d1557b6ff19d171bec6b823124ea19994152ba4d91d02fecc2c0716",
+    "browserComposite": "98fc196dff9698284084cdad3436096538ea43fefb42f9099f28b9cd28be35c8",
+    "mapping": "8aefaf29a525de4471e2cf72d88978e6f4d757d7263d63f38f5601ab0e6b5467"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-278-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-278-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\278.png"
+  ],
+  "clues": [
+    {
+      "id": "grille",
+      "label": "The front helmet grille becomes an X.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.37799043062200954,
+        "top": 0.10520722635494155,
+        "width": 0.03827751196172249,
+        "height": 0.06588735387885228
+      }
+    },
+    {
+      "id": "sail",
+      "label": "The main sail lower corner folds upward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.6088516746411483,
+        "top": 0.22422954303931988,
+        "width": 0.03648325358851675,
+        "height": 0.07545164718384698
+      }
+    },
+    {
+      "id": "globe",
+      "label": "The armillary center ball has a spiral.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.7296650717703349,
+        "top": 0.3517534537725824,
+        "width": 0.03349282296650718,
+        "height": 0.06482465462274177
+      }
+    },
+    {
+      "id": "starfish",
+      "label": "The starfish right arm curls upward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.15370813397129188,
+        "top": 0.6981934112646121,
+        "width": 0.025717703349282296,
+        "height": 0.05951115834218916
+      }
+    },
+    {
+      "id": "rope",
+      "label": "The crate rope loop forms an overhand knot.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.9072966507177034,
+        "top": 0.6822529224229543,
+        "width": 0.07236842105263158,
+        "height": 0.07438894792773645
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

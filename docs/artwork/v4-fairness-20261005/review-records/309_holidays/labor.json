@@ -1,0 +1,100 @@
+{
+  "card": "labor",
+  "id": "v4-dream-labor",
+  "title": "The Workshop That Fixed Monday",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "change-1",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-labor-altered-source-v4.png",
+      "sourceSha256": "652a477efe18518d56dcc2fc8f23fa1eef3e8ca0c13f35d7a4c60edb142354c4",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        337,
+        448,
+        91,
+        105
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-2",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-labor-altered-source-v4.png",
+      "sourceSha256": "652a477efe18518d56dcc2fc8f23fa1eef3e8ca0c13f35d7a4c60edb142354c4",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1293,
+        132,
+        76,
+        93
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-3",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-labor-altered-source-v4.png",
+      "sourceSha256": "652a477efe18518d56dcc2fc8f23fa1eef3e8ca0c13f35d7a4c60edb142354c4",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        722,
+        293,
+        39,
+        43
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-4",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-labor-altered-source-v4.png",
+      "sourceSha256": "652a477efe18518d56dcc2fc8f23fa1eef3e8ca0c13f35d7a4c60edb142354c4",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1076,
+        535,
+        36,
+        35
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-5",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-labor-altered-source-v4.png",
+      "sourceSha256": "652a477efe18518d56dcc2fc8f23fa1eef3e8ca0c13f35d7a4c60edb142354c4",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1428,
+        739,
+        53,
+        53
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "30c19dd8504e1e1382859cc689afc8ade82c27ba9d64ba259644d63a8869ed54",
+  "compositeSha256": "0e4e3ac68567304691aa125d08607b464c5ec8bd6872e68eccfe94675fb35424",
+  "evidence": [
+    "review-deliverables/Dreamerie-labor-A-original.png",
+    "review-deliverables/Dreamerie-labor-B-changed.png",
+    "audit-fairness\\309_holidays\\labor.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

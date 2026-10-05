@@ -1,0 +1,100 @@
+{
+  "card": "363",
+  "id": "v4-dream-363",
+  "title": "The Gecko's Heavy Envelope",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "seal",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-363-altered-source-v4.png",
+      "sourceSha256": "932b0a5309b2fc2893480c79f696d60703731b2f89abcffd76375e03761763e7",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1212,
+        338,
+        96,
+        105
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "tile",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-363-altered-source-v4.png",
+      "sourceSha256": "932b0a5309b2fc2893480c79f696d60703731b2f89abcffd76375e03761763e7",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1379,
+        722,
+        219,
+        105
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "key",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-363-altered-source-v4.png",
+      "sourceSha256": "932b0a5309b2fc2893480c79f696d60703731b2f89abcffd76375e03761763e7",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        0,
+        711,
+        188,
+        102
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "rope",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-363-altered-source-v4.png",
+      "sourceSha256": "932b0a5309b2fc2893480c79f696d60703731b2f89abcffd76375e03761763e7",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        113,
+        442,
+        101,
+        59
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "eye",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-363-altered-source-v4.png",
+      "sourceSha256": "932b0a5309b2fc2893480c79f696d60703731b2f89abcffd76375e03761763e7",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        374,
+        255,
+        46,
+        29
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "4fb80e382064599f9319cbb4b5be507cb271e49e4606f83cb1cc952403c2237d",
+  "compositeSha256": "8d3acb148dc318c8a8b3c44bba18ff1300ee18d3db13bdc47213a1ed6028c6d7",
+  "evidence": [
+    "review-deliverables/Dreamerie-363-A-original.png",
+    "review-deliverables/Dreamerie-363-B-changed.png",
+    "audit-fairness\\309_holidays\\363.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

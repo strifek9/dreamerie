@@ -1,0 +1,100 @@
+{
+  "card": "334",
+  "id": "v4-dream-334",
+  "title": "The Box of Unfallen Rain",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "change-1",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-334-altered-source-v4.png",
+      "sourceSha256": "30df7dd18c16e66162fe38890ee64fe37ff6264f2ff19fcde1a0489f71e535d4",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        541,
+        688,
+        347,
+        253
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-2",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-334-altered-source-v4.png",
+      "sourceSha256": "30df7dd18c16e66162fe38890ee64fe37ff6264f2ff19fcde1a0489f71e535d4",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        636,
+        444,
+        219,
+        148
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-3",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-334-altered-source-v4.png",
+      "sourceSha256": "30df7dd18c16e66162fe38890ee64fe37ff6264f2ff19fcde1a0489f71e535d4",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        888,
+        656,
+        356,
+        144
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-4",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-334-altered-source-v4.png",
+      "sourceSha256": "30df7dd18c16e66162fe38890ee64fe37ff6264f2ff19fcde1a0489f71e535d4",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        275,
+        782,
+        57,
+        55
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-5",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-334-altered-source-v4.png",
+      "sourceSha256": "30df7dd18c16e66162fe38890ee64fe37ff6264f2ff19fcde1a0489f71e535d4",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1594,
+        563,
+        57,
+        90
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "c6320e1df7f2b6661c52fec89ec3251caae664365a76227c1cfa4553fe18fc0c",
+  "compositeSha256": "0c7e39de9468af00d10a6e6fb97447966c23d04b6915cb1e21492eaa3546b908",
+  "evidence": [
+    "review-deliverables/Dreamerie-334-A-original.png",
+    "review-deliverables/Dreamerie-334-B-changed.png",
+    "audit-fairness\\309_holidays\\334.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

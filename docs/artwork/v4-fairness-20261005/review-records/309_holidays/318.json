@@ -1,0 +1,100 @@
+{
+  "card": "318",
+  "id": "v4-dream-318",
+  "title": "The Umbrella Made of Windows",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "change-1",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-318-altered-source-v4.png",
+      "sourceSha256": "487b91c7a35edbbee54f13c951b195a8235b41e359ba01c1936816389c13a002",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        612,
+        141,
+        79,
+        88
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-2",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-318-altered-source-v4.png",
+      "sourceSha256": "487b91c7a35edbbee54f13c951b195a8235b41e359ba01c1936816389c13a002",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1041,
+        499,
+        95,
+        69
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-3",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-318-altered-source-v4.png",
+      "sourceSha256": "487b91c7a35edbbee54f13c951b195a8235b41e359ba01c1936816389c13a002",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        588,
+        705,
+        98,
+        103
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-4",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-318-altered-source-v4.png",
+      "sourceSha256": "487b91c7a35edbbee54f13c951b195a8235b41e359ba01c1936816389c13a002",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        954,
+        317,
+        52,
+        43
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-5",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-318-altered-source-v4.png",
+      "sourceSha256": "487b91c7a35edbbee54f13c951b195a8235b41e359ba01c1936816389c13a002",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        987,
+        794,
+        156,
+        66
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "4a208210b3eb8826c68ea4ade60adf3cbcb6928b3b0f18e5d37340dd413ed2b3",
+  "compositeSha256": "2167927ab04f4d30bbd13ddac1bb56b65ab3d2a7875f5165ddbdd5d5e280f997",
+  "evidence": [
+    "review-deliverables/Dreamerie-318-A-original.png",
+    "review-deliverables/Dreamerie-318-B-changed.png",
+    "audit-fairness\\309_holidays\\318.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

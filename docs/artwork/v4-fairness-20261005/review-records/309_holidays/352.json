@@ -1,0 +1,100 @@
+{
+  "card": "352",
+  "id": "v4-dream-352",
+  "title": "The Manta Ray's Curtains",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "cushion-curl",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-352-cushion-assembled-source-v4.png",
+      "sourceSha256": "7ef4af4c28b1dc0e3dc9cad386fe98614c822fa1f710c97f3b79b6a60c45f5cd",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1195,
+        570,
+        103,
+        40
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "stand-moon",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-352-altered-source-v4.png",
+      "sourceSha256": "04849b57c446d43d073a826a9a9d894a93f0ebda71afaf08a0b2b90eac4e5034",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1320,
+        492,
+        121,
+        74
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "tassel-loop",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-352-altered-source-v4.png",
+      "sourceSha256": "04849b57c446d43d073a826a9a9d894a93f0ebda71afaf08a0b2b90eac4e5034",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1544,
+        393,
+        51,
+        85
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "piano-moon",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-352-altered-source-v4.png",
+      "sourceSha256": "04849b57c446d43d073a826a9a9d894a93f0ebda71afaf08a0b2b90eac4e5034",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        279,
+        470,
+        57,
+        45
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "manta-eye",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-352-altered-source-v4.png",
+      "sourceSha256": "04849b57c446d43d073a826a9a9d894a93f0ebda71afaf08a0b2b90eac4e5034",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        898,
+        176,
+        47,
+        40
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "a8fb3ee76045cd3d466d0b18c827800f55b935a259873553f80f7a7c754c6259",
+  "compositeSha256": "4a9fb35e750b06fe93eac914692c2c0eedd40ae1bfd5687ee4725927ff717409",
+  "evidence": [
+    "review-deliverables/Dreamerie-352-A-original.png",
+    "review-deliverables/Dreamerie-352-B-changed.png",
+    "audit-fairness\\309_holidays\\352.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

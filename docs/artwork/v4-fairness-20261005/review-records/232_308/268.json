@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-268",
+  "title": "The Shoemaker of Empty Footsteps",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "fcfd325d1963a72f878565f609b1b38fd205fab7bbca13f1c5512d3d97d50ab8",
+    "browserComposite": "59446f9fad17c18b23675f9b1105c50c88c572de24d7e08670106d534a919f3b",
+    "mapping": "97ef2207808396f6f5e0c0e7b589db60b90c3027202b5568a598e55fa266c906"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-268-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-268-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\268.png"
+  ],
+  "clues": [
+    {
+      "id": "change-1",
+      "label": "The foremost glass shoe curls its toe upward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.7057416267942583,
+        "top": 0.7821466524973433,
+        "width": 0.09330143540669857,
+        "height": 0.1487778958554729
+      }
+    },
+    {
+      "id": "change-2",
+      "label": "The cobbler closes one eye.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.4611244019138756,
+        "top": 0.15834218916046758,
+        "width": 0.03289473684210526,
+        "height": 0.04782146652497343
+      }
+    },
+    {
+      "id": "change-3",
+      "label": "The awl handle has a carved crescent.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.42822966507177035,
+        "top": 0.696068012752391,
+        "width": 0.07476076555023924,
+        "height": 0.06482465462274177
+      }
+    },
+    {
+      "id": "change-4",
+      "label": "The spool end cap forms a star.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.6016746411483254,
+        "top": 0.8055260361317748,
+        "width": 0.04665071770334928,
+        "height": 0.10414452709883103
+      }
+    },
+    {
+      "id": "change-5",
+      "label": "The hanging footprint has a diamond heel mark.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.6836124401913876,
+        "top": 0.22316684378320936,
+        "width": 0.02751196172248804,
+        "height": 0.06588735387885228
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

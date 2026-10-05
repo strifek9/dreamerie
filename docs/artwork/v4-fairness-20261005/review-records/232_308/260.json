@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-260",
+  "title": "The Bell Pepper's Silent Bell",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "e71f900b703ba6ed7e710990ceab6ddbe63b6a586bf9407d4fb5c8344e971636",
+    "browserComposite": "a8b989a6fb7b69280a8a3cf1f4f4d20b72d8ff622c7fea8227a7a60eda4d5395",
+    "mapping": "81c0b949d906f973e50dc2b2736cffbe8e9c4d1291e1212c0f94ff2b30e2b8da"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-260-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-260-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\260.png"
+  ],
+  "clues": [
+    {
+      "id": "change-1",
+      "label": "The key bow has a diagonal crossbar.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.8630382775119617,
+        "top": 0.12964930924548354,
+        "width": 0.04665071770334928,
+        "height": 0.07013815090329437
+      }
+    },
+    {
+      "id": "change-2",
+      "label": "The bell interior reflects a blue crescent.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.6220095693779905,
+        "top": 0.9022316684378321,
+        "width": 0.04724880382775119,
+        "height": 0.053134962805526036
+      }
+    },
+    {
+      "id": "change-3",
+      "label": "The bowl motif stem curls inward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.11303827751196172,
+        "top": 0.822529224229543,
+        "width": 0.034688995215311005,
+        "height": 0.0669500531349628
+      }
+    },
+    {
+      "id": "change-4",
+      "label": "The stool cushion has a gold zigzag seam.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.8133971291866029,
+        "top": 0.5642933049946866,
+        "width": 0.041866028708133975,
+        "height": 0.09032943676939426
+      }
+    },
+    {
+      "id": "change-5",
+      "label": "The picture pin has an X slot.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.6925837320574163,
+        "top": 0.036131774707757705,
+        "width": 0.025119617224880382,
+        "height": 0.044633368756641874
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

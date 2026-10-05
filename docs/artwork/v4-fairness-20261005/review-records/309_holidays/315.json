@@ -1,0 +1,100 @@
+{
+  "card": "315",
+  "id": "v4-dream-315",
+  "title": "The Spool at the End of the Tunnel",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "diamond-opening",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-315-altered-source-v4.png",
+      "sourceSha256": "e5d0f4e4eb6c7fc927d9ac58367b4d6de28026ce251085fa2243c96637c1b249",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        193,
+        230,
+        92,
+        165
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    },
+    {
+      "id": "handle-bar",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-315-altered-source-v4.png",
+      "sourceSha256": "e5d0f4e4eb6c7fc927d9ac58367b4d6de28026ce251085fa2243c96637c1b249",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        168,
+        569,
+        79,
+        75
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "raised-hem",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-315-altered-source-v4.png",
+      "sourceSha256": "e5d0f4e4eb6c7fc927d9ac58367b4d6de28026ce251085fa2243c96637c1b249",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1510,
+        647,
+        153,
+        126
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    },
+    {
+      "id": "star-button",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-315-altered-source-v4.png",
+      "sourceSha256": "e5d0f4e4eb6c7fc927d9ac58367b4d6de28026ce251085fa2243c96637c1b249",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        941,
+        831,
+        59,
+        39
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "hex-pivot",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-315-altered-source-v4.png",
+      "sourceSha256": "e5d0f4e4eb6c7fc927d9ac58367b4d6de28026ce251085fa2243c96637c1b249",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        365,
+        659,
+        62,
+        41
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "4d353fab3d330613b257e67769a7fa430cbee53e391f141a0d4669293259f5c5",
+  "compositeSha256": "36de09ae83483821a31e99f81e0ae0c75afcb719d04dace377218f0623087a65",
+  "evidence": [
+    "review-deliverables/Dreamerie-315-A-original.png",
+    "review-deliverables/Dreamerie-315-B-changed.png",
+    "audit-fairness\\309_holidays\\315.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

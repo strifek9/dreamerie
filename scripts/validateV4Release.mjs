@@ -1,9 +1,11 @@
+import { authoredMaskProblem } from '../src/v4/authoredMaskBounds.ts'
 import assert from 'node:assert/strict'
 import { existsSync, readFileSync } from 'node:fs'
-import { currentDreams, playableDreams, v3PlayableDreams } from '../src/v3/dailyDream.ts'
+import { currentDreams, playableDreams, v3PlayableDreams, publishedDreams } from '../src/v3/dailyDream.ts'
 import { v4PreviewDreams } from '../src/v4/previewDreams.ts'
 
 const preview = process.argv.includes('--preview')
+const localRepair = process.argv.includes('--local-repair')
 const cards = preview ? v4PreviewDreams : currentDreams
 const expectedCount = 383
 const errors = []
@@ -30,6 +32,10 @@ if (preview) {
   for (const card of cards) expect(!v3PlayableDreams.some(current => current.id === card.id), `${card.id}: V4 ID collides with a pre-V4 saved ID`)
 } else {
   expect(typeof ledger.ownerCollectionReleaseApproval?.sourceId === 'string', 'Missing explicit owner collection release approval')
+  const corrected = cards.filter(card => card.id.startsWith('v4-fairness-'))
+  if (corrected.length && !localRepair) expect(typeof ledger.ownerFairnessPublicationApproval?.sourceId === 'string', 'Fairness repair publication is not authorized; use --local-repair for investigation validation only')
+  expect(publishedDreams.length === 941, 'The 941 published saved IDs were not preserved')
+  for (const old of publishedDreams) expect(playableDreams.some(card => card.id === old.id), `${old.id}: original published card missing`)
   const selectedIds = new Set(cards.map(card => card.id))
   const playableIds = new Set(playableDreams.map(card => card.id))
   const pending = ledger.decisions.filter(row => row.decision === 'pending')
@@ -56,6 +62,8 @@ for (const card of cards.filter(card => card.id.startsWith('v4-'))) {
   expect(card.edits.length === 5, `${card.id}: expected five clues, got ${card.edits.length}`)
   expect(new Set(card.edits.map(edit => edit.id)).size === 5, `${card.id}: duplicate clue IDs`)
   for (const edit of card.edits) {
+    const maskProblem = authoredMaskProblem(edit)
+    if (!preview) expect(!maskProblem, `${card.id}/${edit.id}: ${maskProblem}`)
     const { left, top, width, height } = edit.box
     expect(Number.isFinite(left) && Number.isFinite(top) && Number.isFinite(width) && Number.isFinite(height) &&
       left >= 0 && top >= 0 && width > 0 && height > 0 && left + width <= 1 && top + height <= 1,
@@ -68,9 +76,9 @@ for (const card of cards.filter(card => card.id.startsWith('v4-'))) {
 }
 
 if (errors.length) {
-  console.error(`Version 4 ${preview ? 'preview' : 'release'} is not ready:\n- ${errors.join('\n- ')}`)
+  console.error(`Version 4 ${preview ? 'preview' : localRepair ? 'local repair (not authorized for publication)' : 'release'} is not ready:\n- ${errors.join('\n- ')}`)
   process.exitCode = 1
 } else {
   if (!preview) assert.equal(cards.length, expectedCount)
-  console.log(`Version 4 ${preview ? 'preview' : 'release'} metadata gate passed: ${cards.length} card(s), five nonoverlapping clues each, versioned sources present; published catalogue preserved.`)
+  console.log(`Version 4 ${preview ? 'preview' : localRepair ? 'local repair (not authorized for publication)' : 'release'} metadata gate passed: ${cards.length} card(s), five nonoverlapping clues each, versioned sources present; published catalogue preserved.`)
 }

@@ -1,0 +1,100 @@
+{
+  "card": "353",
+  "id": "v4-dream-353",
+  "title": "The Apple That Forgot to Fall",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "change-1",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-353-altered-source-v4.png",
+      "sourceSha256": "5304f8da9580511cb796b50c6efe5d313d13d63e672127ec311e414b5f8dd9e9",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1214,
+        550,
+        184,
+        99
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-2",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-353-altered-source-v4.png",
+      "sourceSha256": "5304f8da9580511cb796b50c6efe5d313d13d63e672127ec311e414b5f8dd9e9",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        334,
+        714,
+        115,
+        61
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-3",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-353-altered-source-v4.png",
+      "sourceSha256": "5304f8da9580511cb796b50c6efe5d313d13d63e672127ec311e414b5f8dd9e9",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1090,
+        873,
+        72,
+        67
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-4",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-353-altered-source-v4.png",
+      "sourceSha256": "5304f8da9580511cb796b50c6efe5d313d13d63e672127ec311e414b5f8dd9e9",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        176,
+        317,
+        29,
+        38
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-5",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-353-altered-source-v4.png",
+      "sourceSha256": "5304f8da9580511cb796b50c6efe5d313d13d63e672127ec311e414b5f8dd9e9",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        449,
+        653,
+        29,
+        31
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "d96c59dabdf05b3fb0c852d57f5a79788b53b297eed5082a8b23e1906d0d5640",
+  "compositeSha256": "e80fd009919df6471e40e528cebbd78374e51aadd27d2322a3288ef9a89d82d6",
+  "evidence": [
+    "review-deliverables/Dreamerie-353-A-original.png",
+    "review-deliverables/Dreamerie-353-B-changed.png",
+    "audit-fairness\\309_holidays\\353.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

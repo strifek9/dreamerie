@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-248",
+  "title": "The Workshop of Lost Corners",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "54414f9979e0d06a710afb517cd1c2d163c75c17ebbfb780cc8371da3b286af1",
+    "browserComposite": "b261b7d1386a3a5796ee3ccc10317afe58c03fd025531891e44fd928d27e4cdc",
+    "mapping": "8494ca7dc11eddbb1e3e6418c88d00dfbf6a34f8bf4954d3cebdfaa7df75f1b9"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-248-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-248-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\248.png"
+  ],
+  "clues": [
+    {
+      "id": "change-1",
+      "label": "The lower scissor handle becomes triangular.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.409688995215311,
+        "top": 0.7353878852284803,
+        "width": 0.08313397129186603,
+        "height": 0.09351753453772582
+      }
+    },
+    {
+      "id": "change-2",
+      "label": "The coffee reflects a blue crescent.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.09808612440191387,
+        "top": 0.40170031880977686,
+        "width": 0.05143540669856459,
+        "height": 0.057385759829968117
+      }
+    },
+    {
+      "id": "change-3",
+      "label": "The spool hole has a diagonal crossbar.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.6794258373205742,
+        "top": 0.5409139213602551,
+        "width": 0.025717703349282296,
+        "height": 0.03400637619553666
+      }
+    },
+    {
+      "id": "change-4",
+      "label": "The stool triangle has a zigzag seam.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.6836124401913876,
+        "top": 0.30605738575983,
+        "width": 0.056220095693779906,
+        "height": 0.09139213602550478
+      }
+    },
+    {
+      "id": "change-5",
+      "label": "The thimble has a triangular cutout.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.3277511961722488,
+        "top": 0.5132837407013815,
+        "width": 0.026913875598086126,
+        "height": 0.04250797024442083
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

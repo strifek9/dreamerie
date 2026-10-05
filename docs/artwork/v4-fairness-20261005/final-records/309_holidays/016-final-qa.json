@@ -1,0 +1,167 @@
+{
+  "cardId": "v4-fairness-dream-016-v1",
+  "fullNativeAandBVisuallyReviewed": true,
+  "allFiveNativePairedCropsVisuallyReviewed": true,
+  "verdict": "pass",
+  "finding": "One complete inner pink steam spiral; original puff outline, position, spout and sky preserved; no separate left fragment.",
+  "Asha256": "35f34660effd5de08c49d662387ce524ab96a5882dd1e5cfe1378321cf1d3546",
+  "Bsha256": "e7dce55dba1917c15b96bf984acce18f1bb7c74e1b4601a55120a19c33d92245",
+  "originalRGBAExact": true,
+  "outsideSelectedGeometryChangedPixels": 0,
+  "originalPuffOutsideInteriorMaskExact": true,
+  "clues": [
+    {
+      "id": "cherry-steam-spiral",
+      "label": "The pink steam curls around the blue cherry.",
+      "boxNative": [
+        1255,
+        0,
+        230,
+        155
+      ],
+      "visuallyReviewed": true,
+      "changedPixels": 35329,
+      "historicalOtherCluePixelsPreserved": true
+    },
+    {
+      "id": "spout-inner-spiral",
+      "label": "The small spout puff contains one pink spiral curl.",
+      "boxNative": [
+        760,
+        164,
+        78,
+        68
+      ],
+      "visuallyReviewed": true,
+      "changedPixels": 3616,
+      "historicalOtherCluePixelsPreserved": null
+    },
+    {
+      "id": "goat-climbs-sugar",
+      "label": "The middle goat lifts its front hoof onto the next sugar cube.",
+      "boxNative": [
+        654,
+        439,
+        145,
+        125
+      ],
+      "visuallyReviewed": true,
+      "changedPixels": 18008,
+      "historicalOtherCluePixelsPreserved": true
+    },
+    {
+      "id": "spoon-heart-turns",
+      "label": "The wooden spoon's heart-shaped opening turns upright.",
+      "boxNative": [
+        1217,
+        784,
+        334,
+        147
+      ],
+      "visuallyReviewed": true,
+      "changedPixels": 48812,
+      "historicalOtherCluePixelsPreserved": true
+    },
+    {
+      "id": "diamond-scroll-overlap",
+      "label": "A leafy scroll reaches across the teapot's ivory diamond.",
+      "boxNative": [
+        973,
+        305,
+        270,
+        236
+      ],
+      "visuallyReviewed": true,
+      "changedPixels": 63316,
+      "historicalOtherCluePixelsPreserved": true
+    }
+  ],
+  "probes": [
+    {
+      "point": [
+        735,
+        185
+      ],
+      "originalRGBA": [
+        252,
+        212,
+        210,
+        255
+      ],
+      "changedRGBA": [
+        252,
+        212,
+        210,
+        255
+      ],
+      "equalsOriginal": true
+    },
+    {
+      "point": [
+        730,
+        207
+      ],
+      "originalRGBA": [
+        253,
+        210,
+        203,
+        255
+      ],
+      "changedRGBA": [
+        253,
+        210,
+        203,
+        255
+      ],
+      "equalsOriginal": true
+    },
+    {
+      "point": [
+        745,
+        145
+      ],
+      "originalRGBA": [
+        254,
+        117,
+        20,
+        255
+      ],
+      "changedRGBA": [
+        254,
+        117,
+        20,
+        255
+      ],
+      "equalsOriginal": true
+    },
+    {
+      "point": [
+        825,
+        240
+      ],
+      "originalRGBA": [
+        82,
+        65,
+        93,
+        255
+      ],
+      "changedRGBA": [
+        82,
+        65,
+        93,
+        255
+      ],
+      "equalsOriginal": true
+    }
+  ],
+  "salientPoint": [
+    793,
+    199
+  ],
+  "evidence": [
+    "fairness-corrected-pairs\\Dreamerie-016-A-original.png",
+    "fairness-corrected-pairs\\Dreamerie-016-B-changed.png",
+    "audit-fairness\\309_holidays\\016-final-five.png"
+  ],
+  "limits": "Actual native browser exports visually reviewed; no new interaction/physical-phone test by this agent; owner visual approval pending."
+}

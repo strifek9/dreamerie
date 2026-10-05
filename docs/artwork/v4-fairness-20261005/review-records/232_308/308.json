@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-308",
+  "title": "The Clockwork Cherry",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "2ca532029fc5f3fc801381231fcd6a3876961b2aef701d81815bb01314652cde",
+    "browserComposite": "939ed5af7544f7ed2a9c6dcf810276a87eb85317d96a89f7b3f025df418bc95d",
+    "mapping": "5158e551c481418257de9a627dfc53396f89320da897a67a30839dc1f2a477b6"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-308-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-308-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\308.png"
+  ],
+  "clues": [
+    {
+      "id": "change-1",
+      "label": "The closed cherry's bright reflection forms a crescent.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.26136363636363635,
+        "top": 0.3177470775770457,
+        "width": 0.10526315789473684,
+        "height": 0.19128586609989373
+      }
+    },
+    {
+      "id": "change-2",
+      "label": "The leaf's broad tip curls into a hollow tube.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.04485645933014354,
+        "top": 0.5504782146652497,
+        "width": 0.1417464114832536,
+        "height": 0.19872476089266738
+      }
+    },
+    {
+      "id": "change-3",
+      "label": "The red peel threads through its own loop.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.8522727272727273,
+        "top": 0.718384697130712,
+        "width": 0.14772727272727273,
+        "height": 0.281615302869288
+      }
+    },
+    {
+      "id": "change-4",
+      "label": "The loose gear's inner spokes curve into a spiral.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.05921052631578947,
+        "top": 0.822529224229543,
+        "width": 0.09150717703349283,
+        "height": 0.09351753453772582
+      }
+    },
+    {
+      "id": "change-5",
+      "label": "The winding key's right bow opens into a crescent.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.5005980861244019,
+        "top": 0.05419766206163656,
+        "width": 0.07535885167464115,
+        "height": 0.14133900106269925
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

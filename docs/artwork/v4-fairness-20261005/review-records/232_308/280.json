@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-280",
+  "title": "The Refrigerator's Small Volcano",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "bc77d78794f95a22d09c29ad32d399289d44863985fb7e22801e13b8030e4bf3",
+    "browserComposite": "97c09b1ccd4970d04527cc57eece45187bf238a27f5925d8aadc6f8c3d80657b",
+    "mapping": "044a1311f2e84f1dfcb4de8523bf0b7a782bd9718cee3acdf852321b787ceec8"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-280-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-280-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\280.png"
+  ],
+  "clues": [
+    {
+      "id": "flow",
+      "label": "The front jelly flow curls into a closed loop.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.48564593301435405,
+        "top": 0.565356004250797,
+        "width": 0.10107655502392345,
+        "height": 0.1073326248671626
+      }
+    },
+    {
+      "id": "handle",
+      "label": "The green casserole lid has an upright loop.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.6339712918660287,
+        "top": 0.37619553666312433,
+        "width": 0.04126794258373206,
+        "height": 0.04675876726886291
+      }
+    },
+    {
+      "id": "spatula",
+      "label": "The teal spatula slots curve.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.020933014354066987,
+        "top": 0.09458023379383634,
+        "width": 0.042464114832535885,
+        "height": 0.09032943676939426
+      }
+    },
+    {
+      "id": "cherry",
+      "label": "The sugar pot red finial becomes a heart.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.11722488038277512,
+        "top": 0.40063761955366634,
+        "width": 0.026913875598086126,
+        "height": 0.04144527098831031
+      }
+    },
+    {
+      "id": "cheese",
+      "label": "The cheese front hole becomes triangular.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.5998803827751196,
+        "top": 0.7821466524973433,
+        "width": 0.030502392344497607,
+        "height": 0.04994686503719448
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

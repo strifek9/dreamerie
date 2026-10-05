@@ -1,0 +1,117 @@
+{
+  "id": "v4-dream-270",
+  "title": "The Monster and the Timid Thunder",
+  "status": "confirmed-issue",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "21bb2afd06920ce87b3c1aa09f6839debb8116aa99e13c07b672b47f77725f4a",
+    "browserComposite": "5b1e719f6bc85647ab4ce4f99f0bfe535474222803f7c099a30d906ec361ed19",
+    "mapping": "10f3a669aff64db1bf2b84aa4a07c08273d74b9e8174cdff02d63a6ba957be12"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-270-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-270-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\270.png"
+  ],
+  "clues": [
+    {
+      "id": "shadow-cloud",
+      "label": "The monster's shadow cradles a cloud-shaped echo.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.645933014354067,
+        "top": 0.2869287991498406,
+        "width": 0.215311004784689,
+        "height": 0.2869287991498406
+      }
+    },
+    {
+      "id": "shy-lightning",
+      "label": "The shy lightning curls up into the lampshade.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": false,
+      "authoredBox": {
+        "left": 0.409688995215311,
+        "top": 0.3931987247608927,
+        "width": 0.08074162679425838,
+        "height": 0.3188097768331562
+      }
+    },
+    {
+      "id": "cord-under-fringe",
+      "label": "The lamp cord slips under the rug's fringe.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.7894736842105263,
+        "top": 0.8076514346439958,
+        "width": 0.13456937799043062,
+        "height": 0.1275239107332625
+      }
+    },
+    {
+      "id": "framed-stars",
+      "label": "Three little stars in the oval frame descend diagonally.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.9330143540669856,
+        "top": 0.0818278427205101,
+        "width": 0.06698564593301436,
+        "height": 0.1434643995749203
+      }
+    },
+    {
+      "id": "cloth-hem",
+      "label": "The folded cloth's hem trades curls for pointed stitching.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.5831339712918661,
+        "top": 0.8374070138150903,
+        "width": 0.1465311004784689,
+        "height": 0.15621679064824653
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "shy-lightning",
+      "type": "disconnected-relocation",
+      "oldSalientPoint": [
+        750,
+        594
+      ],
+      "newSalientPoint": [
+        760,
+        433
+      ],
+      "recommendedRepair": "Keep upper curl only; exclude lower cloud/bolt region so original lower bolt is restored. Suggested native narrowed patch [718,385,95,120], subject to fade/target QA."
+    }
+  ],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false,
+  "secondaryReviewNote": "framed-stars changes one compact three-star pattern within one oval; grouped pattern judged one difference rather than separate unrelated objects.",
+  "localCorrection": {
+    "module": "D:/Dreamerie/src/v4/fairnessCorrections232.ts",
+    "id": "v4-fairness-dream-270-v1",
+    "patches": {
+      "cloud-upper-lightning-curl": [
+        718,
+        385,
+        95,
+        120
+      ]
+    },
+    "edgeFade": 5,
+    "status": "implemented; root browser proof and mobile QA pending",
+    "preservation": "Original lower bolt retained; published source files and old metadata untouched"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "card": "329",
+  "id": "v4-dream-329",
+  "title": "The Shell That Listened Back",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "crank-up",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-329-altered-source-v4.png",
+      "sourceSha256": "0e66d8947abeb3340d31efbc210dcbe9169e192559d8f635351cc99db5afb45f",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1462,
+        550,
+        143,
+        153
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "ear-reversed",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-329-altered-source-v4.png",
+      "sourceSha256": "0e66d8947abeb3340d31efbc210dcbe9169e192559d8f635351cc99db5afb45f",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        590,
+        109,
+        119,
+        213
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "rung-twist",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-329-altered-source-v4.png",
+      "sourceSha256": "0e66d8947abeb3340d31efbc210dcbe9169e192559d8f635351cc99db5afb45f",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        395,
+        816,
+        199,
+        77
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "record-moon",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-329-altered-source-v4.png",
+      "sourceSha256": "0e66d8947abeb3340d31efbc210dcbe9169e192559d8f635351cc99db5afb45f",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1321,
+        481,
+        104,
+        38
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "shell-spiral",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-329-altered-source-v4.png",
+      "sourceSha256": "0e66d8947abeb3340d31efbc210dcbe9169e192559d8f635351cc99db5afb45f",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1301,
+        757,
+        111,
+        80
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "b98e9e764433b60eedf018bb1f708d83e25f5f877dd6a5934b54a0ae29c10f9a",
+  "compositeSha256": "96b20d3d948e6fc881e4df95ff84108daee0e6134019732dfe00ef8c29e80150",
+  "evidence": [
+    "review-deliverables/Dreamerie-329-A-original.png",
+    "review-deliverables/Dreamerie-329-B-changed.png",
+    "audit-fairness\\309_holidays\\329.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

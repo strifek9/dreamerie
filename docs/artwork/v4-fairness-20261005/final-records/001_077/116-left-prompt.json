@@ -1,0 +1,15 @@
+{
+  "prompt": "Make exactly ONE spot-the-difference addition to this complete1672x941 painting. The LARGE WOODEN WATER BOWL at bottom center needs a SMALL DARK TEAL CRESCENT painted on its FAR LEFT WOODEN FRONT, just above the white stripe. IMPORTANT LOCATION: crescent center pixel752,713 (45% imagewidth,76% imageheight), width16 pixels andheight16 pixels; complete crescent must be within x743..763 andy702..723. This is the narrow LEFT EDGE of the wooden bowl wall, immediately to the right of its far-left silhouette. Do not put it in the center of the bowl. Do not put ANY mark at x775 or farther right. Keep all falling water, all water flowing down the bowl, rim, band, wood shading, wall, floor and every other original feature unchanged. One clearly visible dark teal crescent, safely on the bowl far left. Output full native1672x941 wide painting, no resizing or cropping.",
+  "selectedBox": [
+    745,
+    695,
+    32,
+    32
+  ],
+  "salientPoint": [
+    760,
+    711
+  ],
+  "oldDraftPath": "audit-fairness/001_077/g116.png",
+  "reason": "Avoid overlap with unchanged helix clue beginningx782."
+}

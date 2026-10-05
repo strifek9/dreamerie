@@ -1,0 +1,100 @@
+{
+  "card": "325",
+  "id": "v4-dream-325",
+  "title": "The Squid at the Switchboard",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "change-1",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-325-altered-source-v4.png",
+      "sourceSha256": "c076d9889fdf7b7a8a15cf5a94399f36f48d7bfa90d3d647e586ba1dee1f3092",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1292,
+        672,
+        76,
+        115
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-2",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-325-altered-source-v4.png",
+      "sourceSha256": "c076d9889fdf7b7a8a15cf5a94399f36f48d7bfa90d3d647e586ba1dee1f3092",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        80,
+        479,
+        75,
+        66
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-3",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-325-altered-source-v4.png",
+      "sourceSha256": "c076d9889fdf7b7a8a15cf5a94399f36f48d7bfa90d3d647e586ba1dee1f3092",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        333,
+        568,
+        58,
+        59
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-4",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-325-altered-source-v4.png",
+      "sourceSha256": "c076d9889fdf7b7a8a15cf5a94399f36f48d7bfa90d3d647e586ba1dee1f3092",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1222,
+        111,
+        42,
+        49
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-5",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-325-altered-source-v4.png",
+      "sourceSha256": "c076d9889fdf7b7a8a15cf5a94399f36f48d7bfa90d3d647e586ba1dee1f3092",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1299,
+        563,
+        40,
+        41
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "a2f5cfd01465f42549176c1a3caafe0fe283c623589c9d6c8898ab024d6b9e1e",
+  "compositeSha256": "03864721e3466a7ab97da2042c3560fb2149bca96871312aaa09af7c3677302b",
+  "evidence": [
+    "review-deliverables/Dreamerie-325-A-original.png",
+    "review-deliverables/Dreamerie-325-B-changed.png",
+    "audit-fairness\\309_holidays\\325.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

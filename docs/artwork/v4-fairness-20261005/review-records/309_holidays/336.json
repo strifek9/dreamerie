@@ -1,0 +1,100 @@
+{
+  "card": "336",
+  "id": "v4-dream-336",
+  "title": "The Pineapple's Attic Window",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "horizontal-clasp",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-336-altered-source-v4.png",
+      "sourceSha256": "dec096897d24befc59e2b1ca3665838fc27e11efc0cb3484d60738d527920ba1",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1437,
+        440,
+        169,
+        164
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "window-brace",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-336-altered-source-v4.png",
+      "sourceSha256": "dec096897d24befc59e2b1ca3665838fc27e11efc0cb3484d60738d527920ba1",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        959,
+        145,
+        48,
+        61
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    },
+    {
+      "id": "triangle-roll",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-336-altered-source-v4.png",
+      "sourceSha256": "dec096897d24befc59e2b1ca3665838fc27e11efc0cb3484d60738d527920ba1",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        768,
+        481,
+        67,
+        99
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    },
+    {
+      "id": "diamond-spool",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-336-altered-source-v4.png",
+      "sourceSha256": "dec096897d24befc59e2b1ca3665838fc27e11efc0cb3484d60738d527920ba1",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1355,
+        697,
+        61,
+        94
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    },
+    {
+      "id": "crescent-pitcher",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-336-altered-source-v4.png",
+      "sourceSha256": "dec096897d24befc59e2b1ca3665838fc27e11efc0cb3484d60738d527920ba1",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        64,
+        397,
+        48,
+        55
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "5b3430646d4cd49f62323ccbd78c56456c53b1c5704bf482a94582d2d443eb3b",
+  "compositeSha256": "d551ff388df8b0f3612525b1ac6c55ca182a60ee18140d4919634ccc17fb7f48",
+  "evidence": [
+    "review-deliverables/Dreamerie-336-A-original.png",
+    "review-deliverables/Dreamerie-336-B-changed.png",
+    "audit-fairness\\309_holidays\\336.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-276",
+  "title": "The Porcupine's Spare Keys",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "b1eb92d1d92b212f4e9c37e8cb99616d36647fae5653786e9ef47d6258fbefd8",
+    "browserComposite": "1966330d69dc7ce07dc24a844b0ad8799fa5c7b16deb6dce13d0e11659707554",
+    "mapping": "bb77560c497dc074e71a021a602d0d8ba7723a3a6416b3a20307cb499415b505"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-276-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-276-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\276.png"
+  ],
+  "clues": [
+    {
+      "id": "change-1",
+      "label": "The carrying handle forms a narrower arch.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.7057416267942583,
+        "top": 0.23804463336875664,
+        "width": 0.16686602870813397,
+        "height": 0.11902231668437832
+      }
+    },
+    {
+      "id": "change-2",
+      "label": "The top key reflects a blue crescent.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.2278708133971292,
+        "top": 0.1381509032943677,
+        "width": 0.020933014354066987,
+        "height": 0.06482465462274177
+      }
+    },
+    {
+      "id": "change-3",
+      "label": "The clover key has a triangular opening.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.13875598086124402,
+        "top": 0.2869287991498406,
+        "width": 0.023923444976076555,
+        "height": 0.052072263549415514
+      }
+    },
+    {
+      "id": "change-4",
+      "label": "The leather key fob has a gold zigzag seam.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.8301435406698564,
+        "top": 0.9128586609989373,
+        "width": 0.026913875598086126,
+        "height": 0.061636556854410204
+      }
+    },
+    {
+      "id": "change-5",
+      "label": "One trunk rivet has an X groove.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.902511961722488,
+        "top": 0.4569606801275239,
+        "width": 0.019138755980861243,
+        "height": 0.04250797024442083
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

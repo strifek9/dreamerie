@@ -1,0 +1,100 @@
+{
+  "card": "348",
+  "id": "v4-dream-348",
+  "title": "The Alien's Empty Picnic",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "closed-eye",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-348-altered-source-v4.png",
+      "sourceSha256": "f8dea72af48b4b907007976034fb3b59b8abc5507be38edc454533c86aa840f8",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        628,
+        196,
+        98,
+        112
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "vertical-orbit",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-348-altered-source-v4.png",
+      "sourceSha256": "f8dea72af48b4b907007976034fb3b59b8abc5507be38edc454533c86aa840f8",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1471,
+        676,
+        110,
+        127
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    },
+    {
+      "id": "star-ball",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-348-altered-source-v4.png",
+      "sourceSha256": "f8dea72af48b4b907007976034fb3b59b8abc5507be38edc454533c86aa840f8",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1425,
+        40,
+        99,
+        105
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "sideways-latch",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-348-altered-source-v4.png",
+      "sourceSha256": "f8dea72af48b4b907007976034fb3b59b8abc5507be38edc454533c86aa840f8",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        768,
+        626,
+        67,
+        60
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    },
+    {
+      "id": "diamond-buckle",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-348-altered-source-v4.png",
+      "sourceSha256": "f8dea72af48b4b907007976034fb3b59b8abc5507be38edc454533c86aa840f8",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        132,
+        80,
+        67,
+        78
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    }
+  ],
+  "originalSha256": "711bd6c94dd1c07e81beaa454f0e1bdadbc4bc1424b229d4ebbc7c1c8da2bcf0",
+  "compositeSha256": "978e12de101d0553185b360d999b9026f1cc7d5b5a8f8837ca8475907691c788",
+  "evidence": [
+    "review-deliverables/Dreamerie-348-A-original.png",
+    "review-deliverables/Dreamerie-348-B-changed.png",
+    "audit-fairness\\309_holidays\\348.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-235",
+  "title": "The Long Way Around a Button",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "7b48d676385a01e3f6f39a35ff354544f0b9159b881dd2fab2ad5da4014c994f",
+    "browserComposite": "bc8066574871afa2c6bf8f25e09bfd4b4352f04396a135619654717c630a638e",
+    "mapping": "572b56ad29431c991e411ccfdd4afb2b50ded5a6f4bc1a91118db7b540309363"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-235-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-235-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\235.png"
+  ],
+  "clues": [
+    {
+      "id": "change-1",
+      "label": "The left sewing cord ties a knot.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.5699760765550239,
+        "top": 0.15409139213602552,
+        "width": 0.0729665071770335,
+        "height": 0.11370882040382571
+      }
+    },
+    {
+      "id": "change-2",
+      "label": "The front maze doorway has a pointed arch.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.4748803827751196,
+        "top": 0.4707757704569607,
+        "width": 0.11423444976076555,
+        "height": 0.21891604675876727
+      }
+    },
+    {
+      "id": "change-3",
+      "label": "The right antenna curls into a hook.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.40370813397129185,
+        "top": 0.4814027630180659,
+        "width": 0.034688995215311005,
+        "height": 0.06588735387885228
+      }
+    },
+    {
+      "id": "change-4",
+      "label": "The scroll end forms a star.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.3187799043062201,
+        "top": 0.536663124335813,
+        "width": 0.035287081339712915,
+        "height": 0.07863974495217853
+      }
+    },
+    {
+      "id": "change-5",
+      "label": "The backpack buckle forms a triangle.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.21830143540669855,
+        "top": 0.6227417640807651,
+        "width": 0.03409090909090909,
+        "height": 0.07013815090329437
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

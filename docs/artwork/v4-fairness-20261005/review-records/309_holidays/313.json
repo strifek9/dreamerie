@@ -1,0 +1,100 @@
+{
+  "card": "313",
+  "id": "v4-dream-313",
+  "title": "The Violinist of Cardboard Rain",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "change-1",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-313-altered-source-v4.png",
+      "sourceSha256": "9fe092637ae14029c4f93a1cbdcc1256c8d13548ad2feec9142a2d160c085a22",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1005,
+        812,
+        180,
+        82
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-2",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-313-altered-source-v4.png",
+      "sourceSha256": "9fe092637ae14029c4f93a1cbdcc1256c8d13548ad2feec9142a2d160c085a22",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1537,
+        550,
+        45,
+        51
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-3",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-313-altered-source-v4.png",
+      "sourceSha256": "9fe092637ae14029c4f93a1cbdcc1256c8d13548ad2feec9142a2d160c085a22",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        32,
+        734,
+        46,
+        62
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-4",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-313-altered-source-v4.png",
+      "sourceSha256": "9fe092637ae14029c4f93a1cbdcc1256c8d13548ad2feec9142a2d160c085a22",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        45,
+        465,
+        65,
+        25
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-5",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-313-altered-source-v4.png",
+      "sourceSha256": "9fe092637ae14029c4f93a1cbdcc1256c8d13548ad2feec9142a2d160c085a22",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        405,
+        471,
+        34,
+        35
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "f2532e7a240d935987b284e726715d3d76c16e4a74e9241c795558243954ff46",
+  "compositeSha256": "958982226dcc9af805f928cae2a6a818a31ba51718a74e8eb659dfd68e5815b2",
+  "evidence": [
+    "review-deliverables/Dreamerie-313-A-original.png",
+    "review-deliverables/Dreamerie-313-B-changed.png",
+    "audit-fairness\\309_holidays\\313.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

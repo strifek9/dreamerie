@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-232",
+  "title": "The Postman of Unsent Echoes",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "74731ad94124f554c4a2a27fe2795d6b4db6b7d477e997bc32dd61f14d602204",
+    "browserComposite": "1c623c51c5d01df3aa692b1d971b9709b9fae5b88aff82c1e43943ad9d28f8d2",
+    "mapping": "800f07818c804f6c3c8c24830c2e0a702f22a5eefe306ed26950481b1d809f24"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-232-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-232-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\232.png"
+  ],
+  "clues": [
+    {
+      "id": "change-1",
+      "label": "The letter slot has a diagonal crossbar.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.11244019138755981,
+        "top": 0.2146652497343252,
+        "width": 0.06399521531100479,
+        "height": 0.052072263549415514
+      }
+    },
+    {
+      "id": "change-2",
+      "label": "The doorknob reflects a blue crescent.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.22188995215311005,
+        "top": 0.1997874601487779,
+        "width": 0.022129186602870814,
+        "height": 0.048884165781083955
+      }
+    },
+    {
+      "id": "change-3",
+      "label": "The right ribbon bow loop points upward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.9533492822966507,
+        "top": 0.4867162592986185,
+        "width": 0.031698564593301434,
+        "height": 0.048884165781083955
+      }
+    },
+    {
+      "id": "change-4",
+      "label": "The bag buckle tongue turns diagonally.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.2111244019138756,
+        "top": 0.5696068012752391,
+        "width": 0.025717703349282296,
+        "height": 0.040382571732199786
+      }
+    },
+    {
+      "id": "change-5",
+      "label": "The cuff button has an X slot.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.35107655502392343,
+        "top": 0.5015940488841658,
+        "width": 0.022727272727272728,
+        "height": 0.04144527098831031
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

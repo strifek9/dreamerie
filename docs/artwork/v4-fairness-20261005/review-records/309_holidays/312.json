@@ -1,0 +1,100 @@
+{
+  "card": "312",
+  "id": "v4-dream-312",
+  "title": "The Door That Grew Tired of Knocking",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "change-1",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-312-altered-source-v4.png",
+      "sourceSha256": "8a23f0911367f83342f73b65678bd55c93ffbafe39ade55dd9c70ab99606d523",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        833,
+        493,
+        57,
+        58
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-2",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-312-altered-source-v4.png",
+      "sourceSha256": "8a23f0911367f83342f73b65678bd55c93ffbafe39ade55dd9c70ab99606d523",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1583,
+        307,
+        60,
+        83
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-3",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-312-altered-source-v4.png",
+      "sourceSha256": "8a23f0911367f83342f73b65678bd55c93ffbafe39ade55dd9c70ab99606d523",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        882,
+        340,
+        40,
+        46
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-4",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-312-altered-source-v4.png",
+      "sourceSha256": "8a23f0911367f83342f73b65678bd55c93ffbafe39ade55dd9c70ab99606d523",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        202,
+        676,
+        83,
+        67
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-5",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-312-altered-source-v4.png",
+      "sourceSha256": "8a23f0911367f83342f73b65678bd55c93ffbafe39ade55dd9c70ab99606d523",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1076,
+        204,
+        30,
+        40
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "0e7c2b9a76ec061fc3830dd53f4432813573422912181cfcb9723e5b0cbe09cb",
+  "compositeSha256": "bf5fd527f17fb5dfe22b09bfd4c36ebc21603a6e2504cb7ce1cbfd584a485b9e",
+  "evidence": [
+    "review-deliverables/Dreamerie-312-A-original.png",
+    "review-deliverables/Dreamerie-312-B-changed.png",
+    "audit-fairness\\309_holidays\\312.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

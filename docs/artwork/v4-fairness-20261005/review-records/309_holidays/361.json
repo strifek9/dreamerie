@@ -1,0 +1,100 @@
+{
+  "card": "361",
+  "id": "v4-dream-361",
+  "title": "The Peach-Colored Echo",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "change-1",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-361-altered-source-v4.png",
+      "sourceSha256": "d19d53c1d86739fe00c56a0007456c954b9550d9b2fdee61ffe11a6ff1f3b013",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        39,
+        374,
+        81,
+        89
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-2",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-361-altered-source-v4.png",
+      "sourceSha256": "d19d53c1d86739fe00c56a0007456c954b9550d9b2fdee61ffe11a6ff1f3b013",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        110,
+        597,
+        121,
+        64
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-3",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-361-altered-source-v4.png",
+      "sourceSha256": "d19d53c1d86739fe00c56a0007456c954b9550d9b2fdee61ffe11a6ff1f3b013",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        514,
+        592,
+        107,
+        81
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-4",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-361-altered-source-v4.png",
+      "sourceSha256": "d19d53c1d86739fe00c56a0007456c954b9550d9b2fdee61ffe11a6ff1f3b013",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1273,
+        629,
+        151,
+        245
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-5",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-361-altered-source-v4.png",
+      "sourceSha256": "d19d53c1d86739fe00c56a0007456c954b9550d9b2fdee61ffe11a6ff1f3b013",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        910,
+        303,
+        73,
+        81
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "85d9f2f5c0d77f4cee4736b4b1230b974c1a26f1a94a17341e49e6bc7ffb6847",
+  "compositeSha256": "49344e7925ed693cf85640591187c13c057a2c0b6da7fc7f5252aa6881e9ceb2",
+  "evidence": [
+    "review-deliverables/Dreamerie-361-A-original.png",
+    "review-deliverables/Dreamerie-361-B-changed.png",
+    "audit-fairness\\309_holidays\\361.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

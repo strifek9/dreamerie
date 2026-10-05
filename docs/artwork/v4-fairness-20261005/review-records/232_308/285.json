@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-285",
+  "title": "The Mechanical Swan's Laundry",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "b20f4bc8464199a8453f8e2e5a02d0e362a950c4e9adcd9b31b1e2693af64e04",
+    "browserComposite": "eb37261df69c84648d9ecbe765d043b515a7506dced1b6ebdcfee154d195978b",
+    "mapping": "db58ff688080119c6a0d3056ec395f18321e5e40c2ee7632901edfbe3c27a6bf"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-285-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-285-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\285.png"
+  ],
+  "clues": [
+    {
+      "id": "change-1",
+      "label": "The swan gear has curved spokes.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.27811004784689,
+        "top": 0.2869287991498406,
+        "width": 0.04904306220095694,
+        "height": 0.1179596174282678
+      }
+    },
+    {
+      "id": "change-2",
+      "label": "The nearest clothespin jaws open wider.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.8433014354066986,
+        "top": 0.6705632306057385,
+        "width": 0.05502392344497608,
+        "height": 0.13602550478214664
+      }
+    },
+    {
+      "id": "change-3",
+      "label": "The coral towel hem folds upward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.0819377990430622,
+        "top": 0.6312433581296493,
+        "width": 0.10227272727272728,
+        "height": 0.1806588735387885
+      }
+    },
+    {
+      "id": "change-4",
+      "label": "The detergent label forms a crescent.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.05801435406698564,
+        "top": 0.2263549415515409,
+        "width": 0.02631578947368421,
+        "height": 0.06482465462274177
+      }
+    },
+    {
+      "id": "change-5",
+      "label": "The cart wheel has a spiral brass hub.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.8941387559808612,
+        "top": 0.6153028692879915,
+        "width": 0.035287081339712915,
+        "height": 0.05419766206163656
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-272",
+  "title": "The Dragon's Bread Basket",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "0e032f2fc0ebf234af45ac705a4b864b5ede2f634a8ff9be22e29203a22551cb",
+    "browserComposite": "88b4c945d8e7c885e96234f49d5a12dc18212253d00fc5d7e241ae19dc537679",
+    "mapping": "de6f930515a5e56939f923961d6b0a309db672c1705550d0051349481f01d6ce"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-272-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-272-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\272.png"
+  ],
+  "clues": [
+    {
+      "id": "dragon-eye",
+      "label": "The dragon opens its eye.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.34688995215311,
+        "top": 0.14133900106269925,
+        "width": 0.06279904306220095,
+        "height": 0.07120085015940489
+      }
+    },
+    {
+      "id": "dragon-paw",
+      "label": "The raised forepaw curls toward the chest.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.39712918660287083,
+        "top": 0.38575982996811903,
+        "width": 0.0735645933014354,
+        "height": 0.1806588735387885
+      }
+    },
+    {
+      "id": "loaf-slashes",
+      "label": "The flour loaf has three parallel slashes.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.5526315789473685,
+        "top": 0.25292242295430395,
+        "width": 0.16028708133971292,
+        "height": 0.23698193411264612
+      }
+    },
+    {
+      "id": "tin-heart",
+      "label": "The tin handle hole becomes heart-shaped.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.7751196172248804,
+        "top": 0.019128586609989374,
+        "width": 0.023923444976076555,
+        "height": 0.04782146652497343
+      }
+    },
+    {
+      "id": "knife-moon",
+      "label": "The knife handle has a crescent inlay.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.9395933014354066,
+        "top": 0.4303931987247609,
+        "width": 0.022129186602870814,
+        "height": 0.044633368756641874
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-281",
+  "title": "The Acrobat Made of Mittens",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "286b1beff1f1046d2b19d86fd08922fff9515582efb1d373d1ddea398d0605e1",
+    "browserComposite": "803e036ce23ba3a792f2571bb348e71cbe0688e53aa41c2991c8db6645027e57",
+    "mapping": "56b7cccd27ecd320cd7e75b752316f729222dd52359149f91eab4d3e6bd6a4ff"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-281-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-281-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\281.png"
+  ],
+  "clues": [
+    {
+      "id": "crescent-leg",
+      "label": "The red leg mitten bears a crescent.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.43241626794258375,
+        "top": 0.39744952178533477,
+        "width": 0.04724880382775119,
+        "height": 0.0871413390010627
+      }
+    },
+    {
+      "id": "curled-thumb",
+      "label": "The head mitten\u2019s thumb curls downward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.4772727272727273,
+        "top": 0.08607863974495218,
+        "width": 0.038875598086124404,
+        "height": 0.08607863974495218
+      }
+    },
+    {
+      "id": "diagonal-spool",
+      "label": "The spool\u2019s winding runs diagonally.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.35825358851674644,
+        "top": 0.6950053134962806,
+        "width": 0.11064593301435406,
+        "height": 0.20191285866099895
+      }
+    },
+    {
+      "id": "heart-latch",
+      "label": "The chest\u2019s central latch has a heart opening.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.10705741626794259,
+        "top": 0.5398512221041445,
+        "width": 0.02930622009569378,
+        "height": 0.08289054197662062
+      }
+    },
+    {
+      "id": "straight-band",
+      "label": "The chair mitten\u2019s lowest band straightens.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.7535885167464115,
+        "top": 0.5738575982996812,
+        "width": 0.0735645933014354,
+        "height": 0.052072263549415514
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

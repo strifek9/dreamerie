@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-307",
+  "title": "The Wolf Who Packed the Wind",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "33d89e3485e55f36af326747a98ffb82c90c96e00ef587462a74cb641c9c42ec",
+    "browserComposite": "fde9e87b39d3faefc908b1f8c8419b0db7dbcd065ac6676ef923360f37956017",
+    "mapping": "ff772fe6fae022c68827600e5cead31cbc6e9ce0e039c136bf5a07f3b6f19a4e"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-307-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-307-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\307.png"
+  ],
+  "clues": [
+    {
+      "id": "scarf",
+      "label": "The bench scarf end forms an overhand knot.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.08732057416267942,
+        "top": 0.5026567481402763,
+        "width": 0.06339712918660287,
+        "height": 0.0871413390010627
+      }
+    },
+    {
+      "id": "wind",
+      "label": "The upper wind tip closes into a loop.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.8074162679425837,
+        "top": 0.2678002125398512,
+        "width": 0.05921052631578947,
+        "height": 0.08607863974495218
+      }
+    },
+    {
+      "id": "leaf",
+      "label": "The loose right leaf stem curls into a spiral.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.7589712918660287,
+        "top": 0.79596174282678,
+        "width": 0.038875598086124404,
+        "height": 0.07332624867162593
+      }
+    },
+    {
+      "id": "tag",
+      "label": "The luggage tag lower corner folds upward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.9401913875598086,
+        "top": 0.5047821466524973,
+        "width": 0.02751196172248804,
+        "height": 0.05419766206163656
+      }
+    },
+    {
+      "id": "buckle",
+      "label": "The central strap buckle frame becomes octagonal.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.527511961722488,
+        "top": 0.5951115834218916,
+        "width": 0.04844497607655503,
+        "height": 0.07863974495217853
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

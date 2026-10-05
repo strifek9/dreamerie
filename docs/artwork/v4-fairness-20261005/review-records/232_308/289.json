@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-289",
+  "title": "The Unwinding Gorilla",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "6be79d678cb4cb8fd7c0cb1dc55e208402b8120ca890ded2c7fd5e70261e6136",
+    "browserComposite": "5fdfa3d4a7798f8ad59ecdf847d4fd36abad43778a8da68efda793e0ea991476",
+    "mapping": "bef2adfcc6a1f6b4b4eb216fd22ea1036fe0bbbf5d04071455f3ccea1e10f671"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-289-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-289-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\289.png"
+  ],
+  "clues": [
+    {
+      "id": "change-1",
+      "label": "The bench blanket's hanging end passes through its own knot.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.05801435406698564,
+        "top": 0.6068012752391073,
+        "width": 0.10287081339712918,
+        "height": 0.3368756641870351
+      }
+    },
+    {
+      "id": "change-2",
+      "label": "The hanging wall rope threads through its own coil in a knot.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.10047846889952153,
+        "top": 0.206163655685441,
+        "width": 0.04665071770334928,
+        "height": 0.13708820403825717
+      }
+    },
+    {
+      "id": "change-3",
+      "label": "The crate's wooden front bears a carved spiral.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.8654306220095693,
+        "top": 0.7151965993623804,
+        "width": 0.06638755980861244,
+        "height": 0.11370882040382571
+      }
+    },
+    {
+      "id": "change-4",
+      "label": "The rug's left corner rolls up to reveal its underside.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.4276315789473684,
+        "top": 0.8660998937300743,
+        "width": 0.2607655502392344,
+        "height": 0.1339001062699256
+      }
+    },
+    {
+      "id": "change-5",
+      "label": "The tool tin's right rim curls into a hollow spout.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.05502392344497608,
+        "top": 0.33156216790648246,
+        "width": 0.03827751196172249,
+        "height": 0.05526036131774708
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

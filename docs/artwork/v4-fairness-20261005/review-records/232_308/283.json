@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-283",
+  "title": "The Melon of Folded Maps",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "f3166003f0920db9221ef0c7454716180dd448251fc520687f100d1ae6aa64dc",
+    "browserComposite": "de7df01f1906e0fa77a7069c8e4dc9744467f9ecc6194ae157c45563961c3962",
+    "mapping": "725448b499a1482bcde57356a5432512595445b6abe1873dbb87996ff583620e"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-283-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-283-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\283.png"
+  ],
+  "clues": [
+    {
+      "id": "standing-seed",
+      "label": "The loose seed stands upright.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.31638755980861244,
+        "top": 0.5876726886291179,
+        "width": 0.049641148325358854,
+        "height": 0.0924548352816153
+      }
+    },
+    {
+      "id": "folded-map",
+      "label": "The foreground map\u2019s inner fold becomes triangular.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.7314593301435407,
+        "top": 0.8320935175345378,
+        "width": 0.04784688995215311,
+        "height": 0.10201912858660998
+      }
+    },
+    {
+      "id": "crescent-bowl",
+      "label": "The bowl bears a carved crescent.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.895933014354067,
+        "top": 0.43251859723698194,
+        "width": 0.06279904306220095,
+        "height": 0.09989373007438895
+      }
+    },
+    {
+      "id": "square-loop",
+      "label": "The lower scroll\u2019s cord curls into a square loop.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.3026315789473684,
+        "top": 0.2784272051009564,
+        "width": 0.05083732057416268,
+        "height": 0.04994686503719448
+      }
+    },
+    {
+      "id": "star-rivet",
+      "label": "The knife\u2019s existing rivet becomes a silver star.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.23145933014354067,
+        "top": 0.822529224229543,
+        "width": 0.03588516746411483,
+        "height": 0.039319872476089264
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

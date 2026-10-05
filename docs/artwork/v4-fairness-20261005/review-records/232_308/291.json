@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-291",
+  "title": "The Baker's Floating Apron",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "926f93ba60849e77b7fd57a3b33bf7cce6cda437f3eb396ce64045287271d311",
+    "browserComposite": "f96b8e394aa8c2f364b66ca52a0af39bec266a3a044874a239faf1924e4b6a30",
+    "mapping": "7ae6ab738b705789e0fc465d71e8ed31e6b524b9b88394be6e088c93a10899f5"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-291-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-291-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\291.png"
+  ],
+  "clues": [
+    {
+      "id": "jug-ferns",
+      "label": "The small jug has three fern fronds.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.09389952153110048,
+        "top": 0.7513283740701382,
+        "width": 0.08911483253588516,
+        "height": 0.12433581296493093
+      }
+    },
+    {
+      "id": "kettle-lid",
+      "label": "The kettle lid stands ajar.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.09449760765550239,
+        "top": 0,
+        "width": 0.07894736842105263,
+        "height": 0.07438894792773645
+      }
+    },
+    {
+      "id": "bow-loop",
+      "label": "The apron bow has a broader slanting loop.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.21710526315789475,
+        "top": 0.2731137088204038,
+        "width": 0.13995215311004786,
+        "height": 0.22422954303931988
+      }
+    },
+    {
+      "id": "whisk-coil",
+      "label": "The whisk wires form a spiral.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.8373205741626795,
+        "top": 0.20722635494155153,
+        "width": 0.0430622009569378,
+        "height": 0.11158342189160468
+      }
+    },
+    {
+      "id": "board-heart",
+      "label": "The tall board handle has a heart-shaped hole.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.9545454545454546,
+        "top": 0.06907545164718384,
+        "width": 0.02452153110047847,
+        "height": 0.04994686503719448
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

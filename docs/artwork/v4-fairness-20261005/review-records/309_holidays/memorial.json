@@ -1,0 +1,100 @@
+{
+  "card": "memorial",
+  "id": "v4-dream-memorial",
+  "title": "The Light We Keep",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "chair",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-memorial-altered-source-v4.png",
+      "sourceSha256": "b989a8a0339d20f14348902164d155011db42a7e4062197ccf1889b2616fb2e4",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        235,
+        163,
+        120,
+        184
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "shawl",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-memorial-altered-source-v4.png",
+      "sourceSha256": "b989a8a0339d20f14348902164d155011db42a7e4062197ccf1889b2616fb2e4",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        535,
+        681,
+        143,
+        237
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "lily",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-memorial-altered-source-v4.png",
+      "sourceSha256": "b989a8a0339d20f14348902164d155011db42a7e4062197ccf1889b2616fb2e4",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1349,
+        754,
+        123,
+        99
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "ring",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-memorial-altered-source-v4.png",
+      "sourceSha256": "b989a8a0339d20f14348902164d155011db42a7e4062197ccf1889b2616fb2e4",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        746,
+        208,
+        67,
+        64
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "clasp",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-memorial-altered-source-v4.png",
+      "sourceSha256": "b989a8a0339d20f14348902164d155011db42a7e4062197ccf1889b2616fb2e4",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        653,
+        466,
+        39,
+        64
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "3a28299136d5549d906d97cf207fad8585a1553a4ec7a61781fab4142bd88b3c",
+  "compositeSha256": "6e69917f338a677dd0729aa45b5801684c8eee9ae217013618b2b3b5093716f7",
+  "evidence": [
+    "review-deliverables/Dreamerie-memorial-A-original.png",
+    "review-deliverables/Dreamerie-memorial-B-changed.png",
+    "audit-fairness\\309_holidays\\memorial.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

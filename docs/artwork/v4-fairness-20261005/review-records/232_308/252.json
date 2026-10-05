@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-252",
+  "title": "The Baker of Square Bubbles",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "c1cb6bf70dd8f8499209a6a3ac960ef215850c8dd0abb15c60d04c87cb3df084",
+    "browserComposite": "6ad5b5e9b7a186d1875120f9f8302c5851faec83e4f7bca8de7f842289a71690",
+    "mapping": "85f15c6bc55d74f9e56445ea187978c7105e695268d9b0fc5e1df113c86c1a9f"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-252-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-252-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\252.png"
+  ],
+  "clues": [
+    {
+      "id": "change-1",
+      "label": "The cat closes its nearer eye.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.215311004784689,
+        "top": 0.26567481402763016,
+        "width": 0.028708133971291867,
+        "height": 0.03825717321997875
+      }
+    },
+    {
+      "id": "change-2",
+      "label": "The sprayer spout curls into a hook.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.2625598086124402,
+        "top": 0.6068012752391073,
+        "width": 0.03588516746411483,
+        "height": 0.05419766206163656
+      }
+    },
+    {
+      "id": "change-3",
+      "label": "The whisk wires form a helix.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.7159090909090909,
+        "top": 0.15834218916046758,
+        "width": 0.041866028708133975,
+        "height": 0.11158342189160468
+      }
+    },
+    {
+      "id": "change-4",
+      "label": "The cutter rim has a V notch.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.340311004784689,
+        "top": 0.7268862911795961,
+        "width": 0.03708133971291866,
+        "height": 0.06057385759829968
+      }
+    },
+    {
+      "id": "change-5",
+      "label": "The mitt has a spiral stitch.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.9461722488038278,
+        "top": 0.6184909670563231,
+        "width": 0.028110047846889953,
+        "height": 0.04675876726886291
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

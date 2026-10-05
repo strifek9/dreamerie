@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-305",
+  "title": "The Onion's Empty Ballroom",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "ba7a8145c7ae3ad6f8b7a7bc0d64ee7aaff654c3a50ccb3137485e6af5700a19",
+    "browserComposite": "9c1105e3d1e0405f1b1c95975f96b93367d8fed146a46cdb4fc6363ef9a426e6",
+    "mapping": "bc13dff66b247fc4ef8e66991dd04c9f667c1b439cf530ea826066ebe03d1768"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-305-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-305-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\305.png"
+  ],
+  "clues": [
+    {
+      "id": "peel",
+      "label": "The left loose peel tip curls into a spiral.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.2589712918660287,
+        "top": 0.7810839532412327,
+        "width": 0.05921052631578947,
+        "height": 0.09564293304994687
+      }
+    },
+    {
+      "id": "chair",
+      "label": "The chair back upholstery becomes a heart.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.36363636363636365,
+        "top": 0.5356004250797024,
+        "width": 0.03349282296650718,
+        "height": 0.0669500531349628
+      }
+    },
+    {
+      "id": "pearl",
+      "label": "The left pearl front has a spiral groove.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.6997607655502392,
+        "top": 0.79596174282678,
+        "width": 0.034688995215311005,
+        "height": 0.06588735387885228
+      }
+    },
+    {
+      "id": "root",
+      "label": "The longest right root tip curls into a loop.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.9479665071770335,
+        "top": 0.59192348565356,
+        "width": 0.04366028708133971,
+        "height": 0.05419766206163656
+      }
+    },
+    {
+      "id": "reflection",
+      "label": "The chair reflected leg curls into a hook.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.39055023923444976,
+        "top": 0.6695005313496281,
+        "width": 0.02452153110047847,
+        "height": 0.05526036131774708
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

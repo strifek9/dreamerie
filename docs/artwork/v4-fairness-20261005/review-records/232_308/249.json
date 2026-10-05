@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-249",
+  "title": "The Blanket That Grew a Backbone",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "c9a5e74d55de566a1c1a05ac360ce036431ada5b775c98860abad70d7ce77942",
+    "browserComposite": "95cd5d56437d8aa2131a3826f12fb4776f04600bc798c7a4cdc16395f25d626d",
+    "mapping": "aa436eefb789f67216076e7f8225e205edd51680ee584dc9932e9c91f1c7c7cc"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-249-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-249-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\249.png"
+  ],
+  "clues": [
+    {
+      "id": "change-1",
+      "label": "The wooden toy tail curls upward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0,
+        "top": 0.69394261424017,
+        "width": 0.04126794258373206,
+        "height": 0.12964930924548354
+      }
+    },
+    {
+      "id": "change-2",
+      "label": "The stone motif becomes a crescent.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.125,
+        "top": 0.793836344314559,
+        "width": 0.03349282296650718,
+        "height": 0.04782146652497343
+      }
+    },
+    {
+      "id": "change-3",
+      "label": "The bedpost ball reflects a blue crescent.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.8492822966507177,
+        "top": 0.7236981934112646,
+        "width": 0.020933014354066987,
+        "height": 0.06376195536663125
+      }
+    },
+    {
+      "id": "change-4",
+      "label": "The blanket button has a diagonal crossbar.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.4150717703349282,
+        "top": 0.4293304994686504,
+        "width": 0.028110047846889953,
+        "height": 0.048884165781083955
+      }
+    },
+    {
+      "id": "change-5",
+      "label": "The middle hanging star has a slit.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.3211722488038278,
+        "top": 0.07438894792773645,
+        "width": 0.023923444976076555,
+        "height": 0.04250797024442083
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

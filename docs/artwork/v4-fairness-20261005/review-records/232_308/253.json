@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-253",
+  "title": "The Dragon's Unsent Letter",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "acb0db235296213d109b526e58c7d894c94f464b7bb0684913228eb9e48ad030",
+    "browserComposite": "6e72e13dbf17c754d6948eb2607cab1aa4a86bc5db0027a94bf04a747033d96f",
+    "mapping": "5c5fc8457952c8f8850e7d7d345af0c19ee31ffcecd35ba07a5a06306486bcd7"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-253-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-253-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\253.png"
+  ],
+  "clues": [
+    {
+      "id": "closed-eye",
+      "label": "The dragon closes one eye.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.4874401913875598,
+        "top": 0.1891604675876727,
+        "width": 0.03648325358851675,
+        "height": 0.052072263549415514
+      }
+    },
+    {
+      "id": "crescent-seal",
+      "label": "The wax seal bears a crescent.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.4916267942583732,
+        "top": 0.6004250797024442,
+        "width": 0.07834928229665072,
+        "height": 0.13071200850159406
+      }
+    },
+    {
+      "id": "diamond-pillow",
+      "label": "The armchair pillow turns to a diamond.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.7147129186602871,
+        "top": 0.332624867162593,
+        "width": 0.038875598086124404,
+        "height": 0.05844845908607864
+      }
+    },
+    {
+      "id": "sideways-twig",
+      "label": "The stamp\u2019s engraved twig lies sideways.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.08552631578947369,
+        "top": 0.34537725823591925,
+        "width": 0.05263157894736842,
+        "height": 0.1339001062699256
+      }
+    },
+    {
+      "id": "hooked-opener",
+      "label": "The letter opener\u2019s lower tip curls upward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.6435406698564593,
+        "top": 0.8852284803400637,
+        "width": 0.08971291866028708,
+        "height": 0.10520722635494155
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

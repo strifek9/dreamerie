@@ -25,10 +25,17 @@
       "id": "painted-dream-003",
       "title": "The Train Beneath the Pillow",
       "decision": "revise",
-      "replacementId": "v4-dream-003",
+      "replacementId": "v4-fairness-dream-003-v1",
       "ownerReleaseApproval": "Sentinel_6eb6db8149ec819186b799bc3b23d779",
       "humanDifficultyApproval": "pending",
-      "physicalPhoneApproval": "pending"
+      "physicalPhoneApproval": "pending",
+      "previousPublishedReplacementId": "v4-dream-003",
+      "localFairnessRepair": {
+        "sourceId": "Sentinel_f5f271ba34948191a17ad8a8e3b61e43",
+        "confirmationSourceId": "Sentinel_8dbef185cee08191bd7451b13e182901",
+        "status": "publication approved; tested local repair"
+      },
+      "ownerFairnessPublicationApproval": "Sentinel_18db498b489881919a7a0dbacaf13dc1"
     },
     {
       "id": "painted-dream-004",
@@ -79,10 +86,17 @@
       "id": "painted-dream-009",
       "title": "The Umbrella Orchestra",
       "decision": "revise",
-      "replacementId": "v4-dream-009",
+      "replacementId": "v4-fairness-dream-009-v1",
       "ownerReleaseApproval": "Sentinel_6eb6db8149ec819186b799bc3b23d779",
       "humanDifficultyApproval": "pending",
-      "physicalPhoneApproval": "pending"
+      "physicalPhoneApproval": "pending",
+      "previousPublishedReplacementId": "v4-dream-009",
+      "localFairnessRepair": {
+        "sourceId": "Sentinel_f5f271ba34948191a17ad8a8e3b61e43",
+        "confirmationSourceId": "Sentinel_8dbef185cee08191bd7451b13e182901",
+        "status": "publication approved; tested local repair"
+      },
+      "ownerFairnessPublicationApproval": "Sentinel_18db498b489881919a7a0dbacaf13dc1"
     },
     {
       "id": "painted-dream-010",
@@ -106,10 +120,17 @@
       "id": "painted-dream-012",
       "title": "The Tailor of Shadows",
       "decision": "revise",
-      "replacementId": "v4-dream-012",
+      "replacementId": "v4-fairness-dream-012-v1",
       "ownerReleaseApproval": "Sentinel_6eb6db8149ec819186b799bc3b23d779",
       "humanDifficultyApproval": "pending",
-      "physicalPhoneApproval": "pending"
+      "physicalPhoneApproval": "pending",
+      "localFairnessRepair": {
+        "sourceId": "Sentinel_f5f271ba34948191a17ad8a8e3b61e43",
+        "confirmationSourceId": "Sentinel_8dbef185cee08191bd7451b13e182901",
+        "status": "publication approved; tested local repair"
+      },
+      "previousPublishedReplacementId": "v4-dream-012",
+      "ownerFairnessPublicationApproval": "Sentinel_18db498b489881919a7a0dbacaf13dc1"
     },
     {
       "id": "painted-dream-013",
@@ -142,10 +163,17 @@
       "id": "painted-dream-016",
       "title": "The Teapot Volcano",
       "decision": "revise",
-      "replacementId": "v4-dream-016",
+      "replacementId": "v4-fairness-dream-016-v1",
       "ownerReleaseApproval": "Sentinel_6eb6db8149ec819186b799bc3b23d779",
       "humanDifficultyApproval": "pending",
-      "physicalPhoneApproval": "pending"
+      "physicalPhoneApproval": "pending",
+      "previousPublishedReplacementId": "v4-dream-016",
+      "localFairnessRepair": {
+        "sourceId": "Sentinel_f5f271ba34948191a17ad8a8e3b61e43",
+        "confirmationSourceId": "Sentinel_8dbef185cee08191bd7451b13e182901",
+        "status": "publication approved; tested local repair"
+      },
+      "ownerFairnessPublicationApproval": "Sentinel_18db498b489881919a7a0dbacaf13dc1"
     },
     {
       "id": "painted-dream-017",
@@ -214,10 +242,17 @@
       "id": "painted-dream-024",
       "title": "The Fox's Paper Moon",
       "decision": "revise",
-      "replacementId": "v4-dream-024",
+      "replacementId": "v4-fairness-dream-024-v1",
       "ownerReleaseApproval": "Sentinel_6eb6db8149ec819186b799bc3b23d779",
       "humanDifficultyApproval": "pending",
-      "physicalPhoneApproval": "pending"
+      "physicalPhoneApproval": "pending",
+      "previousPublishedReplacementId": "v4-dream-024",
+      "localFairnessRepair": {
+        "sourceId": "Sentinel_f5f271ba34948191a17ad8a8e3b61e43",
+        "confirmationSourceId": "Sentinel_8dbef185cee08191bd7451b13e182901",
+        "status": "publication approved; tested local repair"
+      },
+      "ownerFairnessPublicationApproval": "Sentinel_18db498b489881919a7a0dbacaf13dc1"
     },
     {
       "id": "painted-dream-025",
@@ -376,10 +411,17 @@
       "id": "revisit-dream-042",
       "title": "The Window That Walked",
       "decision": "revise",
-      "replacementId": "v4-dream-042",
+      "replacementId": "v4-fairness-dream-042-v1",
       "ownerReleaseApproval": "Sentinel_6eb6db8149ec819186b799bc3b23d779",
       "humanDifficultyApproval": "pending",
-      "physicalPhoneApproval": "pending"
+      "physicalPhoneApproval": "pending",
+      "previousPublishedReplacementId": "v4-dream-042",
+      "localFairnessRepair": {
+        "sourceId": "Sentinel_f5f271ba34948191a17ad8a8e3b61e43",
+        "confirmationSourceId": "Sentinel_8dbef185cee08191bd7451b13e182901",
+        "status": "publication approved; tested local repair"
+      },
+      "ownerFairnessPublicationApproval": "Sentinel_18db498b489881919a7a0dbacaf13dc1"
     },
     {
       "id": "revisit-dream-043",
@@ -430,10 +472,17 @@
       "id": "painted-dream-048",
       "title": "The Handful of Horizons",
       "decision": "revise",
-      "replacementId": "v4-dream-048",
+      "replacementId": "v4-fairness-dream-048-v1",
       "ownerReleaseApproval": "Sentinel_6eb6db8149ec819186b799bc3b23d779",
       "humanDifficultyApproval": "pending",
-      "physicalPhoneApproval": "pending"
+      "physicalPhoneApproval": "pending",
+      "previousPublishedReplacementId": "v4-dream-048",
+      "localFairnessRepair": {
+        "sourceId": "Sentinel_f5f271ba34948191a17ad8a8e3b61e43",
+        "confirmationSourceId": "Sentinel_8dbef185cee08191bd7451b13e182901",
+        "status": "publication approved; tested local repair"
+      },
+      "ownerFairnessPublicationApproval": "Sentinel_18db498b489881919a7a0dbacaf13dc1"
     },
     {
       "id": "painted-dream-049",
@@ -961,19 +1010,33 @@
       "id": "revisit-dream-107",
       "title": "The Curtain of Small Oceans",
       "decision": "revise",
-      "replacementId": "v4-dream-107",
+      "replacementId": "v4-fairness-dream-107-v1",
       "ownerReleaseApproval": "Sentinel_6eb6db8149ec819186b799bc3b23d779",
       "humanDifficultyApproval": "pending",
-      "physicalPhoneApproval": "pending"
+      "physicalPhoneApproval": "pending",
+      "previousPublishedReplacementId": "v4-dream-107",
+      "localFairnessRepair": {
+        "sourceId": "Sentinel_f5f271ba34948191a17ad8a8e3b61e43",
+        "confirmationSourceId": "Sentinel_8dbef185cee08191bd7451b13e182901",
+        "status": "publication approved; tested local repair"
+      },
+      "ownerFairnessPublicationApproval": "Sentinel_18db498b489881919a7a0dbacaf13dc1"
     },
     {
       "id": "painted-dream-108",
       "title": "The Stag's Velvet Library",
       "decision": "revise",
-      "replacementId": "v4-dream-108",
+      "replacementId": "v4-fairness-dream-108-v1",
       "ownerReleaseApproval": "Sentinel_6eb6db8149ec819186b799bc3b23d779",
       "humanDifficultyApproval": "pending",
-      "physicalPhoneApproval": "pending"
+      "physicalPhoneApproval": "pending",
+      "previousPublishedReplacementId": "v4-dream-108",
+      "localFairnessRepair": {
+        "sourceId": "Sentinel_f5f271ba34948191a17ad8a8e3b61e43",
+        "confirmationSourceId": "Sentinel_8dbef185cee08191bd7451b13e182901",
+        "status": "publication approved; tested local repair"
+      },
+      "ownerFairnessPublicationApproval": "Sentinel_18db498b489881919a7a0dbacaf13dc1"
     },
     {
       "id": "painted-dream-109",
@@ -1006,10 +1069,17 @@
       "id": "painted-dream-112",
       "title": "The Lemon-Slice Swing",
       "decision": "revise",
-      "replacementId": "v4-dream-112",
+      "replacementId": "v4-fairness-dream-112-v1",
       "ownerReleaseApproval": "Sentinel_6eb6db8149ec819186b799bc3b23d779",
       "humanDifficultyApproval": "pending",
-      "physicalPhoneApproval": "pending"
+      "physicalPhoneApproval": "pending",
+      "previousPublishedReplacementId": "v4-dream-112",
+      "localFairnessRepair": {
+        "sourceId": "Sentinel_f5f271ba34948191a17ad8a8e3b61e43",
+        "confirmationSourceId": "Sentinel_8dbef185cee08191bd7451b13e182901",
+        "status": "publication approved; tested local repair"
+      },
+      "ownerFairnessPublicationApproval": "Sentinel_18db498b489881919a7a0dbacaf13dc1"
     },
     {
       "id": "revisit-dream-113",
@@ -1042,10 +1112,17 @@
       "id": "revisit-dream-116",
       "title": "The Umbrella at the End of the Hall",
       "decision": "revise",
-      "replacementId": "v4-dream-116",
+      "replacementId": "v4-fairness-dream-116-v1",
       "ownerReleaseApproval": "Sentinel_6eb6db8149ec819186b799bc3b23d779",
       "humanDifficultyApproval": "pending",
-      "physicalPhoneApproval": "pending"
+      "physicalPhoneApproval": "pending",
+      "previousPublishedReplacementId": "v4-dream-116",
+      "localFairnessRepair": {
+        "sourceId": "Sentinel_f5f271ba34948191a17ad8a8e3b61e43",
+        "confirmationSourceId": "Sentinel_8dbef185cee08191bd7451b13e182901",
+        "status": "publication approved; tested local repair"
+      },
+      "ownerFairnessPublicationApproval": "Sentinel_18db498b489881919a7a0dbacaf13dc1"
     },
     {
       "id": "painted-dream-117",
@@ -1132,10 +1209,17 @@
       "id": "painted-dream-126",
       "title": "The Aquarium of Forgotten Passwords",
       "decision": "revise",
-      "replacementId": "v4-dream-126",
+      "replacementId": "v4-fairness-dream-126-v1",
       "ownerReleaseApproval": "Sentinel_6eb6db8149ec819186b799bc3b23d779",
       "humanDifficultyApproval": "pending",
-      "physicalPhoneApproval": "pending"
+      "physicalPhoneApproval": "pending",
+      "previousPublishedReplacementId": "v4-dream-126",
+      "localFairnessRepair": {
+        "sourceId": "Sentinel_f5f271ba34948191a17ad8a8e3b61e43",
+        "confirmationSourceId": "Sentinel_8dbef185cee08191bd7451b13e182901",
+        "status": "publication approved; tested local repair"
+      },
+      "ownerFairnessPublicationApproval": "Sentinel_18db498b489881919a7a0dbacaf13dc1"
     },
     {
       "id": "painted-dream-127",
@@ -1159,10 +1243,17 @@
       "id": "painted-dream-129",
       "title": "The Suitcase That Stayed Home",
       "decision": "revise",
-      "replacementId": "v4-dream-129",
+      "replacementId": "v4-fairness-dream-129-v1",
       "ownerReleaseApproval": "Sentinel_6eb6db8149ec819186b799bc3b23d779",
       "humanDifficultyApproval": "pending",
-      "physicalPhoneApproval": "pending"
+      "physicalPhoneApproval": "pending",
+      "previousPublishedReplacementId": "v4-dream-129",
+      "localFairnessRepair": {
+        "sourceId": "Sentinel_f5f271ba34948191a17ad8a8e3b61e43",
+        "confirmationSourceId": "Sentinel_8dbef185cee08191bd7451b13e182901",
+        "status": "publication approved; tested local repair"
+      },
+      "ownerFairnessPublicationApproval": "Sentinel_18db498b489881919a7a0dbacaf13dc1"
     },
     {
       "id": "painted-dream-130",
@@ -1285,10 +1376,17 @@
       "id": "painted-dream-143",
       "title": "The Castle Inside the Sandwich",
       "decision": "revise",
-      "replacementId": "v4-dream-143",
+      "replacementId": "v4-fairness-dream-143-v1",
       "ownerReleaseApproval": "Sentinel_6eb6db8149ec819186b799bc3b23d779",
       "humanDifficultyApproval": "pending",
-      "physicalPhoneApproval": "pending"
+      "physicalPhoneApproval": "pending",
+      "previousPublishedReplacementId": "v4-dream-143",
+      "localFairnessRepair": {
+        "sourceId": "Sentinel_f5f271ba34948191a17ad8a8e3b61e43",
+        "confirmationSourceId": "Sentinel_8dbef185cee08191bd7451b13e182901",
+        "status": "publication approved; tested local repair"
+      },
+      "ownerFairnessPublicationApproval": "Sentinel_18db498b489881919a7a0dbacaf13dc1"
     },
     {
       "id": "painted-dream-144",
@@ -1348,10 +1446,17 @@
       "id": "painted-dream-150",
       "title": "The Last Seat in the Mirror",
       "decision": "revise",
-      "replacementId": "v4-dream-150",
+      "replacementId": "v4-fairness-dream-150-v1",
       "ownerReleaseApproval": "Sentinel_6eb6db8149ec819186b799bc3b23d779",
       "humanDifficultyApproval": "pending",
-      "physicalPhoneApproval": "pending"
+      "physicalPhoneApproval": "pending",
+      "previousPublishedReplacementId": "v4-dream-150",
+      "localFairnessRepair": {
+        "sourceId": "Sentinel_f5f271ba34948191a17ad8a8e3b61e43",
+        "confirmationSourceId": "Sentinel_8dbef185cee08191bd7451b13e182901",
+        "status": "publication approved; tested local repair"
+      },
+      "ownerFairnessPublicationApproval": "Sentinel_18db498b489881919a7a0dbacaf13dc1"
     },
     {
       "id": "painted-dream-151",
@@ -1366,10 +1471,17 @@
       "id": "painted-dream-152",
       "title": "The Ferryman of Echoes",
       "decision": "revise",
-      "replacementId": "v4-dream-152",
+      "replacementId": "v4-fairness-dream-152-v1",
       "ownerReleaseApproval": "Sentinel_6eb6db8149ec819186b799bc3b23d779",
       "humanDifficultyApproval": "pending",
-      "physicalPhoneApproval": "pending"
+      "physicalPhoneApproval": "pending",
+      "previousPublishedReplacementId": "v4-dream-152",
+      "localFairnessRepair": {
+        "sourceId": "Sentinel_f5f271ba34948191a17ad8a8e3b61e43",
+        "confirmationSourceId": "Sentinel_8dbef185cee08191bd7451b13e182901",
+        "status": "publication approved; tested local repair"
+      },
+      "ownerFairnessPublicationApproval": "Sentinel_18db498b489881919a7a0dbacaf13dc1"
     },
     {
       "id": "painted-dream-153",
@@ -1384,19 +1496,33 @@
       "id": "painted-dream-154",
       "title": "The Girl Who Carried the Ceiling",
       "decision": "revise",
-      "replacementId": "v4-dream-154",
+      "replacementId": "v4-fairness-dream-154-v1",
       "ownerReleaseApproval": "Sentinel_6eb6db8149ec819186b799bc3b23d779",
       "humanDifficultyApproval": "pending",
-      "physicalPhoneApproval": "pending"
+      "physicalPhoneApproval": "pending",
+      "previousPublishedReplacementId": "v4-dream-154",
+      "localFairnessRepair": {
+        "sourceId": "Sentinel_f5f271ba34948191a17ad8a8e3b61e43",
+        "confirmationSourceId": "Sentinel_8dbef185cee08191bd7451b13e182901",
+        "status": "publication approved; tested local repair"
+      },
+      "ownerFairnessPublicationApproval": "Sentinel_18db498b489881919a7a0dbacaf13dc1"
     },
     {
       "id": "painted-dream-155",
       "title": "The Mountain's Lost Mitten",
       "decision": "revise",
-      "replacementId": "v4-dream-155",
+      "replacementId": "v4-fairness-dream-155-v1",
       "ownerReleaseApproval": "Sentinel_6eb6db8149ec819186b799bc3b23d779",
       "humanDifficultyApproval": "pending",
-      "physicalPhoneApproval": "pending"
+      "physicalPhoneApproval": "pending",
+      "previousPublishedReplacementId": "v4-dream-155",
+      "localFairnessRepair": {
+        "sourceId": "Sentinel_f5f271ba34948191a17ad8a8e3b61e43",
+        "confirmationSourceId": "Sentinel_8dbef185cee08191bd7451b13e182901",
+        "status": "publication approved; tested local repair"
+      },
+      "ownerFairnessPublicationApproval": "Sentinel_18db498b489881919a7a0dbacaf13dc1"
     },
     {
       "id": "painted-dream-156",
@@ -1591,10 +1717,17 @@
       "id": "painted-dream-177",
       "title": "The Railway of Sleeping Giants",
       "decision": "revise",
-      "replacementId": "v4-dream-177",
+      "replacementId": "v4-fairness-dream-177-v1",
       "ownerReleaseApproval": "Sentinel_6eb6db8149ec819186b799bc3b23d779",
       "humanDifficultyApproval": "pending",
-      "physicalPhoneApproval": "pending"
+      "physicalPhoneApproval": "pending",
+      "previousPublishedReplacementId": "v4-dream-177",
+      "localFairnessRepair": {
+        "sourceId": "Sentinel_f5f271ba34948191a17ad8a8e3b61e43",
+        "confirmationSourceId": "Sentinel_8dbef185cee08191bd7451b13e182901",
+        "status": "publication approved; tested local repair"
+      },
+      "ownerFairnessPublicationApproval": "Sentinel_18db498b489881919a7a0dbacaf13dc1"
     },
     {
       "id": "painted-dream-178",
@@ -1879,10 +2012,17 @@
       "id": "painted-dream-209",
       "title": "The Mirror That Needed Glasses",
       "decision": "revise",
-      "replacementId": "v4-dream-209",
+      "replacementId": "v4-fairness-dream-209-v1",
       "ownerReleaseApproval": "Sentinel_6eb6db8149ec819186b799bc3b23d779",
       "humanDifficultyApproval": "pending",
-      "physicalPhoneApproval": "pending"
+      "physicalPhoneApproval": "pending",
+      "previousPublishedReplacementId": "v4-dream-209",
+      "localFairnessRepair": {
+        "sourceId": "Sentinel_f5f271ba34948191a17ad8a8e3b61e43",
+        "confirmationSourceId": "Sentinel_8dbef185cee08191bd7451b13e182901",
+        "status": "publication approved; tested local repair"
+      },
+      "ownerFairnessPublicationApproval": "Sentinel_18db498b489881919a7a0dbacaf13dc1"
     },
     {
       "id": "painted-dream-210",
@@ -1933,10 +2073,17 @@
       "id": "painted-dream-215",
       "title": "Where the Dice Sleep",
       "decision": "revise",
-      "replacementId": "v4-dream-215",
+      "replacementId": "v4-fairness-dream-215-v1",
       "ownerReleaseApproval": "Sentinel_6eb6db8149ec819186b799bc3b23d779",
       "humanDifficultyApproval": "pending",
-      "physicalPhoneApproval": "pending"
+      "physicalPhoneApproval": "pending",
+      "previousPublishedReplacementId": "v4-dream-215",
+      "localFairnessRepair": {
+        "sourceId": "Sentinel_f5f271ba34948191a17ad8a8e3b61e43",
+        "confirmationSourceId": "Sentinel_8dbef185cee08191bd7451b13e182901",
+        "status": "publication approved; tested local repair"
+      },
+      "ownerFairnessPublicationApproval": "Sentinel_18db498b489881919a7a0dbacaf13dc1"
     },
     {
       "id": "painted-dream-216",
@@ -1996,10 +2143,17 @@
       "id": "painted-dream-222",
       "title": "The Turtle's Vacant Room",
       "decision": "revise",
-      "replacementId": "v4-dream-222",
+      "replacementId": "v4-fairness-dream-222-v1",
       "ownerReleaseApproval": "Sentinel_6eb6db8149ec819186b799bc3b23d779",
       "humanDifficultyApproval": "pending",
-      "physicalPhoneApproval": "pending"
+      "physicalPhoneApproval": "pending",
+      "previousPublishedReplacementId": "v4-dream-222",
+      "localFairnessRepair": {
+        "sourceId": "Sentinel_f5f271ba34948191a17ad8a8e3b61e43",
+        "confirmationSourceId": "Sentinel_8dbef185cee08191bd7451b13e182901",
+        "status": "publication approved; tested local repair"
+      },
+      "ownerFairnessPublicationApproval": "Sentinel_18db498b489881919a7a0dbacaf13dc1"
     },
     {
       "id": "painted-dream-223",
@@ -2131,10 +2285,17 @@
       "id": "painted-dream-237",
       "title": "The Bell Without a Sound",
       "decision": "revise",
-      "replacementId": "v4-dream-237",
+      "replacementId": "v4-fairness-dream-237-v1",
       "ownerReleaseApproval": "Sentinel_6eb6db8149ec819186b799bc3b23d779",
       "humanDifficultyApproval": "pending",
-      "physicalPhoneApproval": "pending"
+      "physicalPhoneApproval": "pending",
+      "previousPublishedReplacementId": "v4-dream-237",
+      "localFairnessRepair": {
+        "sourceId": "Sentinel_f5f271ba34948191a17ad8a8e3b61e43",
+        "confirmationSourceId": "Sentinel_8dbef185cee08191bd7451b13e182901",
+        "status": "publication approved; tested local repair"
+      },
+      "ownerFairnessPublicationApproval": "Sentinel_18db498b489881919a7a0dbacaf13dc1"
     },
     {
       "id": "painted-dream-238",
@@ -2428,10 +2589,17 @@
       "id": "painted-dream-270",
       "title": "The Monster and the Timid Thunder",
       "decision": "revise",
-      "replacementId": "v4-dream-270",
+      "replacementId": "v4-fairness-dream-270-v1",
       "ownerReleaseApproval": "Sentinel_6eb6db8149ec819186b799bc3b23d779",
       "humanDifficultyApproval": "pending",
-      "physicalPhoneApproval": "pending"
+      "physicalPhoneApproval": "pending",
+      "previousPublishedReplacementId": "v4-dream-270",
+      "localFairnessRepair": {
+        "sourceId": "Sentinel_f5f271ba34948191a17ad8a8e3b61e43",
+        "confirmationSourceId": "Sentinel_8dbef185cee08191bd7451b13e182901",
+        "status": "publication approved; tested local repair"
+      },
+      "ownerFairnessPublicationApproval": "Sentinel_18db498b489881919a7a0dbacaf13dc1"
     },
     {
       "id": "painted-dream-271",
@@ -3094,10 +3262,17 @@
       "id": "revisit-dream-344",
       "title": "The Penguin Who Sorted Warmth",
       "decision": "revise",
-      "replacementId": "v4-dream-344",
+      "replacementId": "v4-fairness-dream-344-v1",
       "ownerReleaseApproval": "Sentinel_6eb6db8149ec819186b799bc3b23d779",
       "humanDifficultyApproval": "pending",
-      "physicalPhoneApproval": "pending"
+      "physicalPhoneApproval": "pending",
+      "previousPublishedReplacementId": "v4-dream-344",
+      "localFairnessRepair": {
+        "sourceId": "Sentinel_f5f271ba34948191a17ad8a8e3b61e43",
+        "confirmationSourceId": "Sentinel_8dbef185cee08191bd7451b13e182901",
+        "status": "publication approved; tested local repair"
+      },
+      "ownerFairnessPublicationApproval": "Sentinel_18db498b489881919a7a0dbacaf13dc1"
     },
     {
       "id": "painted-dream-345",
@@ -3456,6 +3631,14 @@
     "date": "2026-10-04",
     "timeUTC": "21:16:38",
     "scope": "owner approval to promote all383 completed V4 cards to main Dreamerie production",
+    "humanTimedDifficulty": "not performed",
+    "physicalPhone": "not performed"
+  },
+  "ownerFairnessPublicationApproval": {
+    "sourceId": "Sentinel_18db498b489881919a7a0dbacaf13dc1",
+    "date": "2026-10-05",
+    "timeUTC": "15:35",
+    "scope": "Commit, safely promote to main, push and deploy the tested 25-card fairness repair to the existing main Dreamerie site; existing saves retain published versions, fresh games use corrections.",
     "humanTimedDifficulty": "not performed",
     "physicalPhone": "not performed"
   }

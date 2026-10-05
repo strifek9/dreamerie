@@ -1,0 +1,100 @@
+{
+  "card": "337",
+  "id": "v4-dream-337",
+  "title": "The Girl Who Swept Up the Tide",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "down-lever",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-337-altered-source-v4.png",
+      "sourceSha256": "1b39760dc6ff6c4ff52df7a7d3be80cd514259746db8be86845f95e8ae244214",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        258,
+        266,
+        112,
+        83
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "blue-sail",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-337-altered-source-v4.png",
+      "sourceSha256": "1b39760dc6ff6c4ff52df7a7d3be80cd514259746db8be86845f95e8ae244214",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        293,
+        24,
+        55,
+        44
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    },
+    {
+      "id": "triangle-shell",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-337-altered-source-v4.png",
+      "sourceSha256": "1b39760dc6ff6c4ff52df7a7d3be80cd514259746db8be86845f95e8ae244214",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1279,
+        846,
+        55,
+        49
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    },
+    {
+      "id": "crescent-dot",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-337-altered-source-v4.png",
+      "sourceSha256": "1b39760dc6ff6c4ff52df7a7d3be80cd514259746db8be86845f95e8ae244214",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        90,
+        54,
+        33,
+        32
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "triangle-handle",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-337-altered-source-v4.png",
+      "sourceSha256": "1b39760dc6ff6c4ff52df7a7d3be80cd514259746db8be86845f95e8ae244214",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        790,
+        542,
+        30,
+        28
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    }
+  ],
+  "originalSha256": "8f54b49499d526caeea5a4f225265584b42205c003ebf9d7d7a41fd3b7b4c35d",
+  "compositeSha256": "61f1c421a3a680c972d5d0647c6c0c2b3374346ec8a3b57ef63581597d9641f8",
+  "evidence": [
+    "review-deliverables/Dreamerie-337-A-original.png",
+    "review-deliverables/Dreamerie-337-B-changed.png",
+    "audit-fairness\\309_holidays\\337.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

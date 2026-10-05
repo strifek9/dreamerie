@@ -1,0 +1,100 @@
+{
+  "card": "327",
+  "id": "v4-dream-327",
+  "title": "The Bear Who Tucked in the Stairs",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "finial",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-327-altered-source-v4.png",
+      "sourceSha256": "34cd724201e15ee5c54c0f220f49d63c4cb45a3f39e13467cbb8ec102925e452",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1168,
+        136,
+        106,
+        114
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "scarf",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-327-altered-source-v4.png",
+      "sourceSha256": "34cd724201e15ee5c54c0f220f49d63c4cb45a3f39e13467cbb8ec102925e452",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        209,
+        299,
+        90,
+        95
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "lever",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-327-altered-source-v4.png",
+      "sourceSha256": "34cd724201e15ee5c54c0f220f49d63c4cb45a3f39e13467cbb8ec102925e452",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        27,
+        347,
+        88,
+        49
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "roof",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-327-altered-source-v4.png",
+      "sourceSha256": "34cd724201e15ee5c54c0f220f49d63c4cb45a3f39e13467cbb8ec102925e452",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1380,
+        550,
+        86,
+        59
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "stitch",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-327-altered-source-v4.png",
+      "sourceSha256": "34cd724201e15ee5c54c0f220f49d63c4cb45a3f39e13467cbb8ec102925e452",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        744,
+        575,
+        75,
+        78
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "c38fdb266be61127e622fc9a7fefe173eb42e56a6f24c3c439970c6fe80120a9",
+  "compositeSha256": "2973d7a72491f1f7e8c8da609b61b18aebf6bcfcc834b00322db3f1c5d4e50e3",
+  "evidence": [
+    "review-deliverables/Dreamerie-327-A-original.png",
+    "review-deliverables/Dreamerie-327-B-changed.png",
+    "audit-fairness\\309_holidays\\327.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-247",
+  "title": "The Walrus's Paper Fan",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "8807fb6996942047a7473fe08137ff99f0bdad73e3e9269727d0bd34c3a324bc",
+    "browserComposite": "bd22ff58e0bd085362d4d32cd69dfbca4956cecb1b648e1f7dc0eb7c62102aa1",
+    "mapping": "8f06967443b389930203eb22418e2fb10c273f4468e62ccd638fb5b361e9ce05"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-247-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-247-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\247.png"
+  ],
+  "clues": [
+    {
+      "id": "change-1",
+      "label": "The fish biscuit mouth opens in a smile.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.5729665071770335,
+        "top": 0.8533475026567482,
+        "width": 0.03289473684210526,
+        "height": 0.04250797024442083
+      }
+    },
+    {
+      "id": "change-2",
+      "label": "The fan bow gains an upright loop.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.5604066985645934,
+        "top": 0.6726886291179596,
+        "width": 0.039473684210526314,
+        "height": 0.08395324123273114
+      }
+    },
+    {
+      "id": "change-3",
+      "label": "The compass red needle bends in an elbow.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.8863636363636364,
+        "top": 0.7874601487778958,
+        "width": 0.038875598086124404,
+        "height": 0.03506907545164718
+      }
+    },
+    {
+      "id": "change-4",
+      "label": "The parcel cord crosses diagonally.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.046052631578947366,
+        "top": 0.824654622741764,
+        "width": 0.0861244019138756,
+        "height": 0.09776833156216791
+      }
+    },
+    {
+      "id": "change-5",
+      "label": "The compass winding loop reflects blue.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.9425837320574163,
+        "top": 0.7481402763018066,
+        "width": 0.03409090909090909,
+        "height": 0.05526036131774708
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

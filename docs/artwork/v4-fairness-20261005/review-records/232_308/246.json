@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-246",
+  "title": "The Girl Who Lent Her Reflection",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "5e3eedd90aef12a768996a08c6599f0bd2e822376db054fc35938d018330fd8f",
+    "browserComposite": "d41e991d673fc1a5e1a9ba15a2189143f7681e1bac05b78f27dde567c29f0f62",
+    "mapping": "10c7506dba6b55ea9613320915e99e6b6b0064313ad6568fff1c5846b0ec1fc8"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-246-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-246-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\246.png"
+  ],
+  "clues": [
+    {
+      "id": "reflection",
+      "label": "The reflection smiles with visible teeth.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.5376794258373205,
+        "top": 0.359192348565356,
+        "width": 0.03409090909090909,
+        "height": 0.03719447396386823
+      }
+    },
+    {
+      "id": "jar",
+      "label": "The silver jar relief becomes a heart.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.14473684210526316,
+        "top": 0.34643995749202977,
+        "width": 0.03349282296650718,
+        "height": 0.05526036131774708
+      }
+    },
+    {
+      "id": "book",
+      "label": "The top book crescent opens the other way.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.046052631578947366,
+        "top": 0.7513283740701382,
+        "width": 0.05203349282296651,
+        "height": 0.05100956429330499
+      }
+    },
+    {
+      "id": "charm",
+      "label": "The hanging crescent opens left.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.8289473684210527,
+        "top": 0.13602550478214664,
+        "width": 0.031698564593301434,
+        "height": 0.07226354941551541
+      }
+    },
+    {
+      "id": "brush",
+      "label": "The hairbrush handle has an interlaced braid.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.3145933014354067,
+        "top": 0.8916046758767269,
+        "width": 0.090311004784689,
+        "height": 0.04994686503719448
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-279",
+  "title": "The Beetle's Folded Bridge",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "8e79e4463719630b2bd1bbde7c89f49262a1127960e4ffc98e4241068db8ba63",
+    "browserComposite": "d93a93937c6b38331e4a7afa8ec6677660efcf981ae6e2a4dbdffa787acfdab8",
+    "mapping": "a8fdc9472fb8aafd5c9878ececfe534ca210e56209fb080da727ee2ad979a9ea"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-279-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-279-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\279.png"
+  ],
+  "clues": [
+    {
+      "id": "tack",
+      "label": "The distant tack head becomes hexagonal.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.8546650717703349,
+        "top": 0.24229543039319873,
+        "width": 0.08791866028708134,
+        "height": 0.1636556854410202
+      }
+    },
+    {
+      "id": "antenna",
+      "label": "The beetle upper antenna tip hooks downward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.4503588516746411,
+        "top": 0.33475026567481403,
+        "width": 0.03409090909090909,
+        "height": 0.061636556854410204
+      }
+    },
+    {
+      "id": "strap",
+      "label": "The left bridge strap has a chevron flap.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.2111244019138756,
+        "top": 0.10839532412327312,
+        "width": 0.038875598086124404,
+        "height": 0.11902231668437832
+      }
+    },
+    {
+      "id": "road",
+      "label": "The sloping road dash becomes a chevron.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.6070574162679426,
+        "top": 0.3379383634431456,
+        "width": 0.056220095693779906,
+        "height": 0.07226354941551541
+      }
+    },
+    {
+      "id": "clip",
+      "label": "The paperclip lower bend curls inward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.22188995215311005,
+        "top": 0.8533475026567482,
+        "width": 0.031698564593301434,
+        "height": 0.06269925611052073
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

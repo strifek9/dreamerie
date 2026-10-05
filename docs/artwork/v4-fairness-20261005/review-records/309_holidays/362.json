@@ -1,0 +1,100 @@
+{
+  "card": "362",
+  "id": "v4-dream-362",
+  "title": "The Girl Who Mended the Floor",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "ring",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-362-altered-source-v4.png",
+      "sourceSha256": "07628a744fb9b93ed8ad43b334178b31abe33ec7dc56f09fc25b3b3c10bed7d3",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        93,
+        553,
+        111,
+        69
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "groove",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-362-altered-source-v4.png",
+      "sourceSha256": "07628a744fb9b93ed8ad43b334178b31abe33ec7dc56f09fc25b3b3c10bed7d3",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        211,
+        650,
+        119,
+        114
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "lever",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-362-altered-source-v4.png",
+      "sourceSha256": "07628a744fb9b93ed8ad43b334178b31abe33ec7dc56f09fc25b3b3c10bed7d3",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1310,
+        21,
+        104,
+        57
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "cloth",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-362-altered-source-v4.png",
+      "sourceSha256": "07628a744fb9b93ed8ad43b334178b31abe33ec7dc56f09fc25b3b3c10bed7d3",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        240,
+        154,
+        63,
+        62
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "moon",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-362-altered-source-v4.png",
+      "sourceSha256": "07628a744fb9b93ed8ad43b334178b31abe33ec7dc56f09fc25b3b3c10bed7d3",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        696,
+        721,
+        85,
+        53
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "38258c0a0055de9d877c06b3a42d9bed9486fd8ca55ddd383f683ab8a9f7b995",
+  "compositeSha256": "ea01a29c9fe71ef5326f8ab528afd9081a953cad7b71520c193d42229e384edc",
+  "evidence": [
+    "review-deliverables/Dreamerie-362-A-original.png",
+    "review-deliverables/Dreamerie-362-B-changed.png",
+    "audit-fairness\\309_holidays\\362.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

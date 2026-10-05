@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-286",
+  "title": "The Stool That Needed a Rest",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "b1299f8d1f405a92ea83b327f4a04b1c0b708a9b9fbcb8d5522024f51a7d855c",
+    "browserComposite": "12a99ca6c9861fb971d90e8972b4dc65b727f8be4ffa9122449872055c53929e",
+    "mapping": "5b34da43afcd00e98f19ee6bfc85bd51e9aa7ee19657e0a7a6d65c5fb27a8098"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-286-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-286-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\286.png"
+  ],
+  "clues": [
+    {
+      "id": "change-1",
+      "label": "The stool mouth opens in a yawn.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.5705741626794258,
+        "top": 0.2635494155154091,
+        "width": 0.03409090909090909,
+        "height": 0.048884165781083955
+      }
+    },
+    {
+      "id": "change-2",
+      "label": "The right sock cuff folds downward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.645933014354067,
+        "top": 0.47396386822529224,
+        "width": 0.05263157894736842,
+        "height": 0.08607863974495218
+      }
+    },
+    {
+      "id": "change-3",
+      "label": "The mug handle opens into a hook.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.1638755980861244,
+        "top": 0.26461211477151964,
+        "width": 0.026913875598086126,
+        "height": 0.044633368756641874
+      }
+    },
+    {
+      "id": "change-4",
+      "label": "The lamp rim has a V notch.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.8020334928229665,
+        "top": 0.1073326248671626,
+        "width": 0.045454545454545456,
+        "height": 0.0669500531349628
+      }
+    },
+    {
+      "id": "change-5",
+      "label": "The cushion button has a diamond aperture.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.19078947368421054,
+        "top": 0.8405951115834219,
+        "width": 0.030502392344497607,
+        "height": 0.0563230605738576
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

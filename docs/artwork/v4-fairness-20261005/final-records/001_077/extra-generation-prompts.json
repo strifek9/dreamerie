@@ -1,0 +1,9 @@
+{
+  "107": "Edit this exact painting with ONE tiny localized change only. On the navy treasure chest in the lower-right corner, its TOP LID has a gold crescent moon centered around pixel1498,765 in a1672x941 painting. Replace ONLY that gold crescent with a SOLID ROUND GOLD FULL MOON in exactly the same location, approximately38px wide by22px tall accounting for perspective. It must be visibly a filled gold disk rather than a crescent. Preserve the navy chest lid, all tiny stars, border decorations, wind-up key, perspective, lighting, brushwork and ALL other artwork unchanged. Do not alter the sky moon, curtains, floor, chair, water, boat or any other object. Output the complete same1672x941 wide painting at native dimensions.",
+  "status": "generation pending",
+  "references": [
+    "D:/Dreamerie/public/artwork/v4/collection/dream-107-original-v4.png",
+    "D:/Dreamerie/public/artwork/v4/collection/dream-116-original-v4.png"
+  ],
+  "referenceMechanism": "view_image followed by num_last_images_to_include:1; Windows referenced_image_paths failed AbsolutePathBuf validation"
+}

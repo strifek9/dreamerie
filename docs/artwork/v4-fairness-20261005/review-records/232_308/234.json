@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-234",
+  "title": "The Octopus and the Stubborn Knot",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "092e63b738518e79f645d846c115c889be0c089c19f0c346c4d6f6c57946b703",
+    "browserComposite": "335ecd423d431cb298d4f96f0445907b84de6fde8d3986f79dd95db4a7f81380",
+    "mapping": "7605ded7b94374547c31510fbc554a7242a56a7546278112f64e64ca9b9b5f41"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-234-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-234-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\234.png"
+  ],
+  "clues": [
+    {
+      "id": "change-1",
+      "label": "The lower eye winks.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.3438995215311005,
+        "top": 0.34962805526036134,
+        "width": 0.06339712918660287,
+        "height": 0.09989373007438895
+      }
+    },
+    {
+      "id": "change-2",
+      "label": "The octopus mouth smiles.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.41088516746411485,
+        "top": 0.3698193411264612,
+        "width": 0.034688995215311005,
+        "height": 0.07332624867162593
+      }
+    },
+    {
+      "id": "change-3",
+      "label": "The bath plug has a crescent recess.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.6501196172248804,
+        "top": 0.7353878852284803,
+        "width": 0.046052631578947366,
+        "height": 0.10201912858660998
+      }
+    },
+    {
+      "id": "change-4",
+      "label": "The soap bears a pressed heart.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.025717703349282296,
+        "top": 0.018065887353878853,
+        "width": 0.06997607655502393,
+        "height": 0.07545164718384698
+      }
+    },
+    {
+      "id": "change-5",
+      "label": "The faucet mouth has a zigzag lip.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.6608851674641149,
+        "top": 0.04144527098831031,
+        "width": 0.07775119617224881,
+        "height": 0.0924548352816153
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

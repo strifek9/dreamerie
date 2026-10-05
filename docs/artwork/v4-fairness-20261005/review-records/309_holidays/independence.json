@@ -1,0 +1,100 @@
+{
+  "card": "independence",
+  "id": "v4-dream-independence",
+  "title": "Fireworks Beneath the Water",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "change-1",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-independence-altered-source-v4.png",
+      "sourceSha256": "5281d2193cf9051c70256827096122bcc8b05be461911fff12e12294c23329bf",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        123,
+        610,
+        41,
+        90
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-2",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-independence-altered-source-v4.png",
+      "sourceSha256": "5281d2193cf9051c70256827096122bcc8b05be461911fff12e12294c23329bf",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        632,
+        649,
+        40,
+        66
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-3",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-independence-altered-source-v4.png",
+      "sourceSha256": "5281d2193cf9051c70256827096122bcc8b05be461911fff12e12294c23329bf",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        467,
+        778,
+        91,
+        32
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-4",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-independence-altered-source-v4.png",
+      "sourceSha256": "5281d2193cf9051c70256827096122bcc8b05be461911fff12e12294c23329bf",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        689,
+        711,
+        29,
+        27
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-5",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-independence-altered-source-v4.png",
+      "sourceSha256": "5281d2193cf9051c70256827096122bcc8b05be461911fff12e12294c23329bf",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        451,
+        661,
+        24,
+        32
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "c40c2984aad4cb5c76450e96f37d1d6f837e3e048c2f25f52f831e7b98b080a7",
+  "compositeSha256": "b3555bf982ff82db25bb1cbac3e2bd46893d794a86c13552dd7adc7c27175e1a",
+  "evidence": [
+    "review-deliverables/Dreamerie-independence-A-original.png",
+    "review-deliverables/Dreamerie-independence-B-changed.png",
+    "audit-fairness\\309_holidays\\independence.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

@@ -1,0 +1,363 @@
+{
+  "status": "seven corrected cards finalized and visually verified",
+  "coverage": "Actual browser exported native A/B inspected as full-pair thumbnails plus five paired clue crops each;009 additionally inspected native enlarged bridge-key pair. Exact originals and7x7restored-site pixels checked. No physical phone or timed human test by this agent.",
+  "cards": [
+    {
+      "originalId": "v4-dream-003",
+      "replacementId": "v4-fairness-dream-003-v1",
+      "beforeClueId": "carriage-window-order",
+      "afterClueId": "near-carriage-dark-window",
+      "afterSalientPoints": [
+        [
+          806,
+          486
+        ]
+      ],
+      "mustBeUnchangedPoints": [
+        [
+          866,
+          491
+        ]
+      ],
+      "reason": "Restore other carriage windows; select only leftmost near-carriage window.",
+      "actualCompositeVerified": true,
+      "allFivePairedCropsVisualReviewed": true,
+      "fullCompositePairVisualReviewed": true,
+      "singleLocalizedCorrectionVisualVerified": true,
+      "restorePixelChecks": [
+        {
+          "point": [
+            866,
+            491
+          ],
+          "regionRadius": 3,
+          "exactUnchanged": true
+        }
+      ],
+      "clueIds": [
+        "steam-over-pillow",
+        "bell-beads-swing-left",
+        "pillow-pinwheel",
+        "near-carriage-dark-window",
+        "ticket-through-handle"
+      ],
+      "originalDecodedPixelsPreserved": true,
+      "originalExportSha256": "5099083c75fc412603b313b0cd06cd88ac2866f554e42a685aa2fbd16f2e20c8",
+      "changedExportSha256": "23645b0250fa93b70b98d12d0027f1db6af5acffc0803202f8869cc62b0b410f",
+      "mappingSha256": "db684527160de2a34469e434504d45a0348828eea96ac42934e92d6ff6c287d3",
+      "visualEvidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\corrected\\003.png"
+    },
+    {
+      "originalId": "v4-dream-009",
+      "replacementId": "v4-fairness-dream-009-v1",
+      "beforeClueId": "piano-key-rhythm",
+      "afterClueId": "far-black-key-extension",
+      "afterSalientPoints": [
+        [
+          468,
+          692
+        ]
+      ],
+      "mustBeUnchangedPoints": [
+        [
+          330,
+          749
+        ]
+      ],
+      "reason": "Restore nearest black key; select far key extension polygon.",
+      "actualCompositeVerified": true,
+      "allFivePairedCropsVisualReviewed": true,
+      "fullCompositePairVisualReviewed": true,
+      "singleLocalizedCorrectionVisualVerified": true,
+      "restorePixelChecks": [
+        {
+          "point": [
+            330,
+            749
+          ],
+          "regionRadius": 3,
+          "exactUnchanged": true
+        }
+      ],
+      "clueIds": [
+        "trumpet-tassel",
+        "mallet-pink-canopy",
+        "drum-spiral",
+        "far-black-key-extension",
+        "arch-vine-notes"
+      ],
+      "originalDecodedPixelsPreserved": true,
+      "originalExportSha256": "e8d3013f5dbc6fcdbb356877e6f63a359d17d3a72c1baaf8094d6a7be0944de9",
+      "changedExportSha256": "607aa4c74805a7e41f59a7bbf1a3ae9b0f6cf2935dd2cee0e1aaba9a43d3ff09",
+      "mappingSha256": "d91165259757f246516ba06f1c0bb3216de8425f56035d4b648f14edfa7b23f3",
+      "visualEvidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\corrected\\009.png"
+    },
+    {
+      "originalId": "v4-dream-024",
+      "replacementId": "v4-fairness-dream-024-v1",
+      "beforeClueId": "change-3",
+      "afterClueId": "spool-left-thread-loop",
+      "afterSalientPoints": [
+        [
+          330,
+          640
+        ]
+      ],
+      "mustBeUnchangedPoints": [
+        [
+          427,
+          674
+        ]
+      ],
+      "reason": "Keep only left-loop removal; restore right strand.",
+      "actualCompositeVerified": true,
+      "allFivePairedCropsVisualReviewed": true,
+      "fullCompositePairVisualReviewed": true,
+      "singleLocalizedCorrectionVisualVerified": true,
+      "restorePixelChecks": [
+        {
+          "point": [
+            427,
+            674
+          ],
+          "regionRadius": 3,
+          "exactUnchanged": true
+        }
+      ],
+      "clueIds": [
+        "change-1",
+        "change-2",
+        "spool-left-thread-loop",
+        "change-4",
+        "change-5"
+      ],
+      "originalDecodedPixelsPreserved": true,
+      "originalExportSha256": "1441c51bd469e00762fce307c9a359d0fc8ca7bc3a0f58105053f7a0975c24ab",
+      "changedExportSha256": "3c7a34dc9c4da1105de283e8fdb201c08f558da4dd31a27ee4ee145ca75dced6",
+      "mappingSha256": "939b8f549dca76c0be7a039de11862263a592d38069ac9a90adc2be4bf02d370",
+      "visualEvidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\corrected\\024.png"
+    },
+    {
+      "originalId": "v4-dream-042",
+      "replacementId": "v4-fairness-dream-042-v1",
+      "beforeClueId": "postcard-stamp",
+      "afterClueId": "postcard-upper-stamp",
+      "afterSalientPoints": [
+        [
+          617,
+          589
+        ]
+      ],
+      "mustBeUnchangedPoints": [
+        [
+          638,
+          626
+        ]
+      ],
+      "reason": "Keep only upper stamp disappearance; restore lower corner blank.",
+      "actualCompositeVerified": true,
+      "allFivePairedCropsVisualReviewed": true,
+      "fullCompositePairVisualReviewed": true,
+      "singleLocalizedCorrectionVisualVerified": true,
+      "restorePixelChecks": [
+        {
+          "point": [
+            638,
+            626
+          ],
+          "regionRadius": 3,
+          "exactUnchanged": true
+        }
+      ],
+      "clueIds": [
+        "dog-tail",
+        "hat-ribbon",
+        "shutter-crescent",
+        "postcard-upper-stamp",
+        "sock-ribs"
+      ],
+      "originalDecodedPixelsPreserved": true,
+      "originalExportSha256": "682e3938b8e84824ac09f2a69ec54bce66ffa72bbc4c0e3f7f405c112ef0a084",
+      "changedExportSha256": "c73c1beb0da228e8866d14250a720188d8a5c0cbe0f87dcd8b61aa5495ee75ad",
+      "mappingSha256": "ec0161d9972c4a7731b118b5a37c416fb69b6934366404081a189c7c907f3025",
+      "visualEvidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\corrected\\042.png"
+    },
+    {
+      "originalId": "v4-dream-048",
+      "replacementId": "v4-fairness-dream-048-v1",
+      "beforeClueId": "change-4",
+      "afterClueId": "key-shaft-ribbon-knot",
+      "afterSalientPoints": [
+        [
+          1265,
+          828
+        ]
+      ],
+      "mustBeUnchangedPoints": [
+        [
+          1358,
+          786
+        ],
+        [
+          1470,
+          852
+        ]
+      ],
+      "reason": "Keep only shaft knot addition; restore ring attachment and distant tail.",
+      "actualCompositeVerified": true,
+      "allFivePairedCropsVisualReviewed": true,
+      "fullCompositePairVisualReviewed": true,
+      "singleLocalizedCorrectionVisualVerified": true,
+      "restorePixelChecks": [
+        {
+          "point": [
+            1358,
+            786
+          ],
+          "regionRadius": 3,
+          "exactUnchanged": true
+        },
+        {
+          "point": [
+            1470,
+            852
+          ],
+          "regionRadius": 3,
+          "exactUnchanged": true
+        }
+      ],
+      "clueIds": [
+        "change-1",
+        "change-2",
+        "change-3",
+        "key-shaft-ribbon-knot",
+        "change-5"
+      ],
+      "originalDecodedPixelsPreserved": true,
+      "originalExportSha256": "a18f0bf7358e7df9e06cea3450ebcd798e5a81fbd46696198a63c7fe4f9a4081",
+      "changedExportSha256": "e265ddaa9abea8c4ca5e6be4eb6506bb051897b2630e7a2f9e3c851a7e7c765b",
+      "mappingSha256": "b178e22b7c353af92421f66b394b13ddc64fad7a368e61f32ea0803060cbd8fd",
+      "visualEvidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\corrected\\048.png"
+    },
+    {
+      "originalId": "v4-dream-107",
+      "replacementId": "v4-fairness-dream-107-v1",
+      "actualCompositeVerified": true,
+      "allFivePairedCropsVisualReviewed": true,
+      "fullCompositePairVisualReviewed": true,
+      "singleLocalizedCorrectionVisualVerified": true,
+      "sourceSha256": "86d6529d86f490fc93331519f9d84a450aa74999ddaec45160ff70601f8ab85d",
+      "afterSalientPoints": [
+        [
+          1498,
+          763
+        ]
+      ],
+      "restorePixelChecks": [
+        {
+          "point": [
+            1451,
+            781
+          ],
+          "regionRadius": 3,
+          "exactUnchanged": true
+        },
+        {
+          "point": [
+            1549,
+            770
+          ],
+          "regionRadius": 3,
+          "exactUnchanged": true
+        },
+        {
+          "point": [
+            1505,
+            835
+          ],
+          "regionRadius": 3,
+          "exactUnchanged": true
+        },
+        {
+          "point": [
+            1500,
+            820
+          ],
+          "regionRadius": 3,
+          "exactUnchanged": true
+        }
+      ],
+      "otherFourEditDefinitionsUnchanged": true,
+      "originalDecodedPixelsPreserved": true,
+      "originalExportSha256": "3cf2a98c03c321ae64458bdb76c7466de436198e65f766bfc949084e9ae518b7",
+      "changedExportSha256": "5d7ba703bf167fc076edd4f3970affecdb3eee5366e0c0594b2d178ce72086cd",
+      "mappingSha256": "fc5cf67db8b5979e68653dc5dd3598976b968162b45b0a0706467b7f4703059c",
+      "visualEvidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\corrected\\107.png",
+      "geometryConcern": null
+    },
+    {
+      "originalId": "v4-dream-116",
+      "replacementId": "v4-fairness-dream-116-v1",
+      "actualCompositeVerified": true,
+      "allFivePairedCropsVisualReviewed": true,
+      "fullCompositePairVisualReviewed": true,
+      "singleLocalizedCorrectionVisualVerified": true,
+      "sourceSha256": "b10a180c02127d5ecffc9d88a74f318f9c9ba3a555b78623962773b7b6818462",
+      "afterSalientPoints": [
+        [
+          760,
+          711
+        ]
+      ],
+      "restorePixelChecks": [
+        {
+          "point": [
+            852,
+            737
+          ],
+          "regionRadius": 3,
+          "exactUnchanged": true
+        },
+        {
+          "point": [
+            883,
+            749
+          ],
+          "regionRadius": 3,
+          "exactUnchanged": true
+        },
+        {
+          "point": [
+            810,
+            756
+          ],
+          "regionRadius": 3,
+          "exactUnchanged": true
+        },
+        {
+          "point": [
+            779,
+            714
+          ],
+          "regionRadius": 3,
+          "exactUnchanged": true
+        }
+      ],
+      "otherFourEditDefinitionsUnchanged": true,
+      "originalDecodedPixelsPreserved": true,
+      "originalExportSha256": "34fd742ac709ed1bf902ddc2065af28eb1cd6a8861f18b23d7d01b5e77010b62",
+      "changedExportSha256": "98bb6ceec32995f79f730cd6fb33dd26876b91211b8136be71f2820444265d09",
+      "mappingSha256": "586f30603fca532523d74879b02adb65e9502e2dbda1fef82a520024d5333546",
+      "visualEvidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\corrected\\116.png",
+      "geometryConcern": null,
+      "priorDraftVisualReviewed": true,
+      "selectedBox": [
+        745,
+        695,
+        32,
+        32
+      ],
+      "helixRectangleGapPixels": 5
+    }
+  ]
+}

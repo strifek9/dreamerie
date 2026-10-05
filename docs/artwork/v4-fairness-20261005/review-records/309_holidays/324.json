@@ -1,0 +1,100 @@
+{
+  "card": "324",
+  "id": "v4-dream-324",
+  "title": "The Girl Who Borrowed a Dragon's Nap",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "change-1",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-324-altered-source-v4.png",
+      "sourceSha256": "afabfde2e9edcb8dc205b88b060346347bc3d0796308c6d3512fa0887c7281f0",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        800,
+        202,
+        65,
+        79
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-2",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-324-altered-source-v4.png",
+      "sourceSha256": "afabfde2e9edcb8dc205b88b060346347bc3d0796308c6d3512fa0887c7281f0",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        255,
+        656,
+        44,
+        55
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-3",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-324-altered-source-v4.png",
+      "sourceSha256": "afabfde2e9edcb8dc205b88b060346347bc3d0796308c6d3512fa0887c7281f0",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        80,
+        632,
+        57,
+        54
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-4",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-324-altered-source-v4.png",
+      "sourceSha256": "afabfde2e9edcb8dc205b88b060346347bc3d0796308c6d3512fa0887c7281f0",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        295,
+        198,
+        37,
+        38
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-5",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-324-altered-source-v4.png",
+      "sourceSha256": "afabfde2e9edcb8dc205b88b060346347bc3d0796308c6d3512fa0887c7281f0",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        638,
+        414,
+        34,
+        30
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "83e96ee0e9208a4716321d94dd4e98476e4f1a5dca34de93aa1f9e94704aa08e",
+  "compositeSha256": "d4f8b747017dcfe0fc3ff90ab5786241e4d504981126f240801d81cb5e30cd84",
+  "evidence": [
+    "review-deliverables/Dreamerie-324-A-original.png",
+    "review-deliverables/Dreamerie-324-B-changed.png",
+    "audit-fairness\\309_holidays\\324.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

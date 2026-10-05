@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-301",
+  "title": "The Goblin's Porcelain Balloon",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "a578ad464c8b9fa31ed82541853122e9d2eaa865f6cd0b41a0ffe660385ca7a2",
+    "browserComposite": "b97d4bb507cfce1b9c1028b7d556e3b8263229726ad937e1a1450a53c97abd72",
+    "mapping": "4f6e7effd900648bf65445be6cc046de601b71a06647c6a6317c88304a0c0d4a"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-301-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-301-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\301.png"
+  ],
+  "clues": [
+    {
+      "id": "change-1",
+      "label": "The hat tip curls upward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.16267942583732056,
+        "top": 0.17109458023379384,
+        "width": 0.23863636363636365,
+        "height": 0.21679064824654623
+      }
+    },
+    {
+      "id": "change-2",
+      "label": "The porcelain handle opens into a hook.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.7805023923444976,
+        "top": 0.10095642933049948,
+        "width": 0.06160287081339713,
+        "height": 0.11583421891604676
+      }
+    },
+    {
+      "id": "change-3",
+      "label": "The right boot toe straightens.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.527511961722488,
+        "top": 0.8437832093517534,
+        "width": 0.07535885167464115,
+        "height": 0.0669500531349628
+      }
+    },
+    {
+      "id": "change-4",
+      "label": "The vest button has a clover aperture.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.37021531100478466,
+        "top": 0.6057385759829969,
+        "width": 0.02930622009569378,
+        "height": 0.057385759829968117
+      }
+    },
+    {
+      "id": "change-5",
+      "label": "The white cushion corner folds outward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.8355263157894737,
+        "top": 0.798087141339001,
+        "width": 0.08373205741626795,
+        "height": 0.08289054197662062
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

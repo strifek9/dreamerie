@@ -1,0 +1,100 @@
+{
+  "card": "presidents",
+  "id": "v4-dream-presidents",
+  "title": "The Library of Impossible Pages",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "change-1",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-presidents-altered-source-v4.png",
+      "sourceSha256": "54265b48dc2e56f228bbfd747fbcec5b1f4d92ee52cd6a99f742c0cfb0836fd1",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        51,
+        592,
+        137,
+        116
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-2",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-presidents-altered-source-v4.png",
+      "sourceSha256": "54265b48dc2e56f228bbfd747fbcec5b1f4d92ee52cd6a99f742c0cfb0836fd1",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        299,
+        702,
+        141,
+        85
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-3",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-presidents-altered-source-v4.png",
+      "sourceSha256": "54265b48dc2e56f228bbfd747fbcec5b1f4d92ee52cd6a99f742c0cfb0836fd1",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        414,
+        502,
+        77,
+        112
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-4",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-presidents-altered-source-v4.png",
+      "sourceSha256": "54265b48dc2e56f228bbfd747fbcec5b1f4d92ee52cd6a99f742c0cfb0836fd1",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1053,
+        638,
+        88,
+        78
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-5",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-presidents-altered-source-v4.png",
+      "sourceSha256": "54265b48dc2e56f228bbfd747fbcec5b1f4d92ee52cd6a99f742c0cfb0836fd1",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1550,
+        423,
+        44,
+        47
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "ec369a46e0321694dd33cc742a8ad2b168c630644ee92eb8f4d8c05d7a00fa65",
+  "compositeSha256": "f6b43a375f202bbd4689759f632bb41ec08affec791bdef1d567ea76cad7153f",
+  "evidence": [
+    "review-deliverables/Dreamerie-presidents-A-original.png",
+    "review-deliverables/Dreamerie-presidents-B-changed.png",
+    "audit-fairness\\309_holidays\\presidents.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

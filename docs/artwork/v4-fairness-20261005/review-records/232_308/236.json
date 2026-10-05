@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-236",
+  "title": "The Child Who Folded the Afternoon",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "5faec6dff1d23e731d510ceba1a149a229475ca2d6d271e5352b784db79f5466",
+    "browserComposite": "32188f0acffca2e58431f2353bf053b24e01331af13c1a36300740e2c066c6f0",
+    "mapping": "0eb513a0e1f97937cab331af776675f371d4f21626795d03dcb9d65a7b95ba7d"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-236-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-236-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\236.png"
+  ],
+  "clues": [
+    {
+      "id": "change-1",
+      "label": "The puppy's right ear folds upward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.12260765550239235,
+        "top": 0.5536663124335813,
+        "width": 0.05263157894736842,
+        "height": 0.12646121147715197
+      }
+    },
+    {
+      "id": "change-2",
+      "label": "The train chimney bends sideways.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.19677033492822968,
+        "top": 0.4112646121147715,
+        "width": 0.03229665071770335,
+        "height": 0.05526036131774708
+      }
+    },
+    {
+      "id": "change-3",
+      "label": "The wall sail bears a crescent opening.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.5095693779904307,
+        "top": 0.01700318809776833,
+        "width": 0.03289473684210526,
+        "height": 0.05100956429330499
+      }
+    },
+    {
+      "id": "change-4",
+      "label": "The green cube has a diamond recess.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.27212918660287083,
+        "top": 0.7545164718384697,
+        "width": 0.034688995215311005,
+        "height": 0.03825717321997875
+      }
+    },
+    {
+      "id": "change-5",
+      "label": "The red cube has a circular side aperture.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.2326555023923445,
+        "top": 0.5759829968119022,
+        "width": 0.01674641148325359,
+        "height": 0.039319872476089264
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

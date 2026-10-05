@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-256",
+  "title": "The Bathtub's Second Shore",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "d3430485fcd2bbdd619ddba9236d8b30e7845367ba771cce8380968ef438dcff",
+    "browserComposite": "2d1a67d85689894b02596f5ef2ef5aeab69cc1c79d5cb436943ad00b2330a2bc",
+    "mapping": "12b77bf5f758bb51f7d16dc35bc61858445971360ecf499f3afd950c4358661e"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-256-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-256-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\256.png"
+  ],
+  "clues": [
+    {
+      "id": "cottage-door",
+      "label": "The yellow cottage door stands ajar.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.3456937799043062,
+        "top": 0.04782146652497343,
+        "width": 0.023923444976076555,
+        "height": 0.06376195536663125
+      }
+    },
+    {
+      "id": "sail-left",
+      "label": "The striped sail has two white bands.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.7081339712918661,
+        "top": 0.46546227417640806,
+        "width": 0.04904306220095694,
+        "height": 0.09776833156216791
+      }
+    },
+    {
+      "id": "jar-lid",
+      "label": "The turquoise jar has a glass lid.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.8941387559808612,
+        "top": 0.02975557917109458,
+        "width": 0.038875598086124404,
+        "height": 0.06269925611052073
+      }
+    },
+    {
+      "id": "gull-beak",
+      "label": "The seagull opens its beak.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.5807416267942583,
+        "top": 0.3379383634431456,
+        "width": 0.023923444976076555,
+        "height": 0.026567481402763018
+      }
+    },
+    {
+      "id": "brush-heart",
+      "label": "The brush handle hole becomes heart-shaped.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.1166267942583732,
+        "top": 0.563230605738576,
+        "width": 0.022129186602870814,
+        "height": 0.03506907545164718
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

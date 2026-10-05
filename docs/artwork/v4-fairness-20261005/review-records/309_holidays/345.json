@@ -1,0 +1,100 @@
+{
+  "card": "345",
+  "id": "v4-dream-345",
+  "title": "The Doorway in the Measuring Tape",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "ring",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-345-altered-source-v4.png",
+      "sourceSha256": "1e5591dfc5e655413e9f9c1162d0b2e13065c83edcb1882af9adbe54c9d941f3",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1358,
+        419,
+        202,
+        185
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "awl",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-345-altered-source-v4.png",
+      "sourceSha256": "1e5591dfc5e655413e9f9c1162d0b2e13065c83edcb1882af9adbe54c9d941f3",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        108,
+        779,
+        288,
+        134
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "thimble",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-345-altered-source-v4.png",
+      "sourceSha256": "1e5591dfc5e655413e9f9c1162d0b2e13065c83edcb1882af9adbe54c9d941f3",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        292,
+        410,
+        136,
+        67
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "spool",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-345-altered-source-v4.png",
+      "sourceSha256": "1e5591dfc5e655413e9f9c1162d0b2e13065c83edcb1882af9adbe54c9d941f3",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1420,
+        0,
+        98,
+        51
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "lamp",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-345-altered-source-v4.png",
+      "sourceSha256": "1e5591dfc5e655413e9f9c1162d0b2e13065c83edcb1882af9adbe54c9d941f3",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        895,
+        144,
+        35,
+        40
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "e6820c990027a5134bd329ba068bccffd67f7f4cd4aeb6c2070da7bc02ef1767",
+  "compositeSha256": "e57d05b6778944e6b46e0125665a83ad1ac8db314bd7b2435b97c9f85eb6f0f1",
+  "evidence": [
+    "review-deliverables/Dreamerie-345-A-original.png",
+    "review-deliverables/Dreamerie-345-B-changed.png",
+    "audit-fairness\\309_holidays\\345.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

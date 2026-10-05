@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-274",
+  "title": "The Librarian of Pebble Voices",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "0d3cf4050cd41b78ff8e907e7b0fbe22da79f57b7f38578834c04485b7f2601c",
+    "browserComposite": "edab7e1573a9fe006e9599e3087bd79d7ac3c6f0ffcfb99fb8ac99387c44703c",
+    "mapping": "663647156c917499b5d8e6b719416e57a94ab70dbf046ccf664cfe9e8dc60344"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-274-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-274-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\274.png"
+  ],
+  "clues": [
+    {
+      "id": "eye-slit",
+      "label": "The librarian narrows one eye to a slit.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.5639952153110048,
+        "top": 0.2624867162592986,
+        "width": 0.0645933014354067,
+        "height": 0.07226354941551541
+      }
+    },
+    {
+      "id": "brush-loops",
+      "label": "The hanging brush bristles form loops.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.8175837320574163,
+        "top": 0.31243358129649307,
+        "width": 0.05263157894736842,
+        "height": 0.1030818278427205
+      }
+    },
+    {
+      "id": "curtain-knot",
+      "label": "The dotted-stone box's left curtain is gathered into a knot.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.6220095693779905,
+        "top": 0.7077577045696068,
+        "width": 0.02751196172248804,
+        "height": 0.16046758767268862
+      }
+    },
+    {
+      "id": "stone-feather",
+      "label": "The held green stone bears a feather.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.5771531100478469,
+        "top": 0.5047821466524973,
+        "width": 0.07535885167464115,
+        "height": 0.11583421891604676
+      }
+    },
+    {
+      "id": "canister-heart",
+      "label": "The left canister knob becomes a heart ring.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.08074162679425838,
+        "top": 0.3995749202975558,
+        "width": 0.025717703349282296,
+        "height": 0.052072263549415514
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

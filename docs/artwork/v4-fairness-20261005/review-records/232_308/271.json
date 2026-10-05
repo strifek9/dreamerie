@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-271",
+  "title": "The Girl and the Unfinished Zebra",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "f42cd3f8e4d2cf87da1302d7130fd067a89a243ecbe97bfe9f53028d39daf2e6",
+    "browserComposite": "7dde291284b96cd3db1526023880166f5ef7c92ac4f7472c479fab1072045a8c",
+    "mapping": "6a3e6662f8787718d214959e222948ec4f01f6751dfd471c5a0c07badeec5b59"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-271-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-271-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\271.png"
+  ],
+  "clues": [
+    {
+      "id": "change-1",
+      "label": "The zebra closes its visible eye.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.39832535885167464,
+        "top": 0.14240170031880978,
+        "width": 0.026913875598086126,
+        "height": 0.04144527098831031
+      }
+    },
+    {
+      "id": "change-2",
+      "label": "The first strip hem folds upward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.6584928229665071,
+        "top": 0.34643995749202977,
+        "width": 0.049641148325358854,
+        "height": 0.1339001062699256
+      }
+    },
+    {
+      "id": "change-3",
+      "label": "The door knocker opens into a hook.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.9401913875598086,
+        "top": 0.38788522848034007,
+        "width": 0.03648325358851675,
+        "height": 0.077577045696068
+      }
+    },
+    {
+      "id": "change-4",
+      "label": "The apron pocket bears heart stitching.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.5867224880382775,
+        "top": 0.5430393198724761,
+        "width": 0.031698564593301434,
+        "height": 0.06057385759829968
+      }
+    },
+    {
+      "id": "change-5",
+      "label": "The pot rim has a pouring notch.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.03648325358851675,
+        "top": 0.48034006376195537,
+        "width": 0.03827751196172249,
+        "height": 0.06057385759829968
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

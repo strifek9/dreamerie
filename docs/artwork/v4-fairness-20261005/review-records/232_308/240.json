@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-240",
+  "title": "The Kangaroo's Spare Afternoon",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "e312808a958a885a2487e15cb96123237603939aa428dbfa88c299bb938f7682",
+    "browserComposite": "f0fd1f79166d828dd0ad26cba8239951103ef7701b52bee8c21a7e77807f628f",
+    "mapping": "ae96c97d4736bbca57b94821482e2f44c08f7b9222eb2d47d31e18111a92f809"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-240-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-240-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\240.png"
+  ],
+  "clues": [
+    {
+      "id": "closed-eye",
+      "label": "The kangaroo closes one eye.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.34868421052631576,
+        "top": 0.11370882040382571,
+        "width": 0.034688995215311005,
+        "height": 0.053134962805526036
+      }
+    },
+    {
+      "id": "swept-tassel",
+      "label": "The tassel\u2019s fringe sweeps left.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.48564593301435405,
+        "top": 0.6227417640807651,
+        "width": 0.06399521531100479,
+        "height": 0.0924548352816153
+      }
+    },
+    {
+      "id": "braced-lantern",
+      "label": "The wall lantern gains an X brace.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.14294258373205743,
+        "top": 0.12433581296493093,
+        "width": 0.031698564593301434,
+        "height": 0.0669500531349628
+      }
+    },
+    {
+      "id": "lattice-chair",
+      "label": "The right theater chair has a diamond lattice.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.3929425837320574,
+        "top": 0.4675876726886291,
+        "width": 0.034688995215311005,
+        "height": 0.053134962805526036
+      }
+    },
+    {
+      "id": "square-ring",
+      "label": "The held curtain ring becomes square.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.4868421052631579,
+        "top": 0.14133900106269925,
+        "width": 0.03110047846889952,
+        "height": 0.0765143464399575
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

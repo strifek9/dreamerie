@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-233",
+  "title": "The Tent That Camped Indoors",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "ddcdb19a5a48846d2391930223430abfb52170be86b5f4beeea691eea380b3d5",
+    "browserComposite": "3b2606c34de8d39569900c4f577bd59fc51020ab18d6d6e848a512d674ddf487",
+    "mapping": "9a47011f9b7fb2b3c261ae729110c3ec3edaf1a01aea08993fc476e51cd0e51d"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-233-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-233-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\233.png"
+  ],
+  "clues": [
+    {
+      "id": "change-1",
+      "label": "The right slipper has a gold crescent.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.2535885167464115,
+        "top": 0.8235919234856536,
+        "width": 0.035287081339712915,
+        "height": 0.05100956429330499
+      }
+    },
+    {
+      "id": "change-2",
+      "label": "The suspended mug handle curls inward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.611244019138756,
+        "top": 0.33475026567481403,
+        "width": 0.01854066985645933,
+        "height": 0.04675876726886291
+      }
+    },
+    {
+      "id": "change-3",
+      "label": "The upper clock hand bends in an elbow.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.24760765550239233,
+        "top": 0.11052072263549416,
+        "width": 0.02033492822966507,
+        "height": 0.03506907545164718
+      }
+    },
+    {
+      "id": "change-4",
+      "label": "The tent toggle has a diagonal slit.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.5,
+        "top": 0.05419766206163656,
+        "width": 0.02751196172248804,
+        "height": 0.031880977683315624
+      }
+    },
+    {
+      "id": "change-5",
+      "label": "The pullchain ball reflects a blue crescent.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.6483253588516746,
+        "top": 0.5823591923485654,
+        "width": 0.017942583732057416,
+        "height": 0.03400637619553666
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

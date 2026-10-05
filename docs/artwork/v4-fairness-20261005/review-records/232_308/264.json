@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-264",
+  "title": "The Elephant's Glass Slippers",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "cc63ae7fc5575b4e72ac8a00d0a2cfa31941041c115c59a7b6297259f5c8a82c",
+    "browserComposite": "edb0e096711d69ff76150307e79cc1b0e610e599d8d3f0dddedb5a2df23f27cb",
+    "mapping": "6923a1f2ede37982f6ddb825a2a553c3aec243f38aea97d778b4b7df76692f09"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-264-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-264-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\264.png"
+  ],
+  "clues": [
+    {
+      "id": "heel",
+      "label": "The right glass slipper heel twists into a spiral.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.7278708133971292,
+        "top": 0.6014877789585548,
+        "width": 0.035287081339712915,
+        "height": 0.11902231668437832
+      }
+    },
+    {
+      "id": "bow",
+      "label": "The elephant right bow loop curls downward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.3965311004784689,
+        "top": 0.3475026567481403,
+        "width": 0.038875598086124404,
+        "height": 0.09564293304994687
+      }
+    },
+    {
+      "id": "box",
+      "label": "The jewelry box lid flips open.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.10825358851674641,
+        "top": 0.02975557917109458,
+        "width": 0.04844497607655503,
+        "height": 0.04782146652497343
+      }
+    },
+    {
+      "id": "brush",
+      "label": "The brush back has a gold crescent.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.8803827751196173,
+        "top": 0.7449521785334751,
+        "width": 0.04724880382775119,
+        "height": 0.048884165781083955
+      }
+    },
+    {
+      "id": "ribbon",
+      "label": "The blue ribbon arch has an overhand knot.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.48504784688995217,
+        "top": 0.8522848034006376,
+        "width": 0.12260765550239235,
+        "height": 0.1275239107332625
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-241",
+  "title": "The Stairwell in the Apricot",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "2b5d15cc1cf688f728c7b57942d3d6107edb475b1cced0a98492d01cfcca6d38",
+    "browserComposite": "4bdbefe1d20a2d25c801ac9f53c550533141aa5ff361a7339a90a3d737010eba",
+    "mapping": "51afe6b894f9e56edda0a37a3f548a0fc9a853d787bd818313680a11f8f8d62b"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-241-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-241-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\241.png"
+  ],
+  "clues": [
+    {
+      "id": "change-1",
+      "label": "A spiral groove winds across the apricot pit.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.09868421052631579,
+        "top": 0.05526036131774708,
+        "width": 0.15789473684210525,
+        "height": 0.21679064824654623
+      }
+    },
+    {
+      "id": "change-2",
+      "label": "The blue napkin's loose tip ties itself into a knot.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.49760765550239233,
+        "top": 0.7056323060573858,
+        "width": 0.14055023923444976,
+        "height": 0.29436769394261425
+      }
+    },
+    {
+      "id": "change-3",
+      "label": "A compass rose replaces the cup's blue leaf motif.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.7954545454545454,
+        "top": 0.04250797024442083,
+        "width": 0.14354066985645933,
+        "height": 0.21253985122210414
+      }
+    },
+    {
+      "id": "change-4",
+      "label": "The key's bow becomes an open crescent.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.9156698564593302,
+        "top": 0.4782146652497343,
+        "width": 0.08433014354066985,
+        "height": 0.13283740701381508
+      }
+    },
+    {
+      "id": "change-5",
+      "label": "One ladder rung hinges upward at its free end.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.6351674641148325,
+        "top": 0.4197662061636557,
+        "width": 0.05562200956937799,
+        "height": 0.08607863974495218
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

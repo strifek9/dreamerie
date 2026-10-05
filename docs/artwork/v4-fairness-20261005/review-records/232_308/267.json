@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-267",
+  "title": "The Toad's Porcelain Throne",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "f325ebc48a9fd92c5d469cb72b878cec5f0615353c45578ebebd20bb27b38c40",
+    "browserComposite": "e1495bbfbc313bebe45179b5f31636120c760e817116af971825320d8c4410cc",
+    "mapping": "ba1eb18143f442a6170bffcafc0b2f993ef7c76809b8d61b6a988c83164b6d9e"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-267-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-267-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\267.png"
+  ],
+  "clues": [
+    {
+      "id": "narrow-eye",
+      "label": "The toad\u2019s pupil narrows to a slit.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.4730861244019139,
+        "top": 0.0871413390010627,
+        "width": 0.03289473684210526,
+        "height": 0.05100956429330499
+      }
+    },
+    {
+      "id": "round-spoon",
+      "label": "The spoon\u2019s bowl becomes round.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.6106459330143541,
+        "top": 0.7725823591923485,
+        "width": 0.09270334928229665,
+        "height": 0.15834218916046758
+      }
+    },
+    {
+      "id": "horizontal-leaf",
+      "label": "The top cup\u2019s leaf motif lies horizontally.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.409688995215311,
+        "top": 0.3198724760892667,
+        "width": 0.11722488038277512,
+        "height": 0.12221041445270989
+      }
+    },
+    {
+      "id": "zigzag-bowl",
+      "label": "The lowest bowl\u2019s border forms a zigzag.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.39952153110047844,
+        "top": 0.8363443145589798,
+        "width": 0.20992822966507177,
+        "height": 0.05419766206163656
+      }
+    },
+    {
+      "id": "crescent-crown",
+      "label": "The crown\u2019s velvet panel bears a crescent.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.4820574162679426,
+        "top": 0.026567481402763018,
+        "width": 0.025119617224880382,
+        "height": 0.052072263549415514
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

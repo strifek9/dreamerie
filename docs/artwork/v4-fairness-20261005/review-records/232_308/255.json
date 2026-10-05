@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-255",
+  "title": "The Mouse and the Heavy Feather",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "618bdfd7a1a8e2b7e9968e82f06059acae02ead9f24a48f37b383ede3e6b5750",
+    "browserComposite": "760de57caf4d9302dc5ff9fe9f9ea76552bcaf61e9a66c95268e487bcbfe1934",
+    "mapping": "41d4cabe697d9c9aa339739f97c88f20bc984d006a530df9ea2597b3e4ff38e7"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-255-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-255-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\255.png"
+  ],
+  "clues": [
+    {
+      "id": "closed-eye",
+      "label": "The mouse closes its eye.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.27392344497607657,
+        "top": 0.41339001062699254,
+        "width": 0.028110047846889953,
+        "height": 0.03294367693942614
+      }
+    },
+    {
+      "id": "upright-acorn",
+      "label": "The cup\u2019s engraved acorn points upward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.7894736842105263,
+        "top": 0.6259298618490967,
+        "width": 0.037679425837320576,
+        "height": 0.0818278427205101
+      }
+    },
+    {
+      "id": "triangle-key",
+      "label": "The winding key\u2019s upper hole becomes triangular.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.14952153110047847,
+        "top": 0.43889479277364507,
+        "width": 0.031698564593301434,
+        "height": 0.05526036131774708
+      }
+    },
+    {
+      "id": "crescent-book",
+      "label": "The blue book\u2019s star becomes a crescent.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.25179425837320574,
+        "top": 0.09564293304994687,
+        "width": 0.08552631578947369,
+        "height": 0.18278427205100956
+      }
+    },
+    {
+      "id": "cross-hub",
+      "label": "One cart wheel\u2019s hub has a cross-shaped slot.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.3953349282296651,
+        "top": 0.71413390010627,
+        "width": 0.02452153110047847,
+        "height": 0.039319872476089264
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

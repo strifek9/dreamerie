@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-297",
+  "title": "The Compass That Pointed Inward",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "77e6ac3fa6d90d4e32b321bfa180148567516a227bccd537132d6c347b6c038a",
+    "browserComposite": "262907bec15a6636f301e33a9e11d47545626a754c247dd14d0f504cb4d57a94",
+    "mapping": "4fc6453cb45fbf162dc0be5cc2851cdd104120ae9675343600a933c62deaf7ac"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-297-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-297-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\297.png"
+  ],
+  "clues": [
+    {
+      "id": "ring",
+      "label": "The compass carrying ring becomes hexagonal.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.24342105263157895,
+        "top": 0,
+        "width": 0.12260765550239235,
+        "height": 0.14558979808714134
+      }
+    },
+    {
+      "id": "tail",
+      "label": "The paper lizard tail curls downward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.47787081339712917,
+        "top": 0.5058448459086079,
+        "width": 0.0861244019138756,
+        "height": 0.1126461211477152
+      }
+    },
+    {
+      "id": "key",
+      "label": "The loose key bow becomes diamond-shaped.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.6830143540669856,
+        "top": 0.7045696068012752,
+        "width": 0.07655502392344497,
+        "height": 0.10839532412327312
+      }
+    },
+    {
+      "id": "crescent",
+      "label": "The loose crescent has diagonal engraved stripes.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.04485645933014354,
+        "top": 0.7608926673751328,
+        "width": 0.07535885167464115,
+        "height": 0.12008501594048884
+      }
+    },
+    {
+      "id": "spout",
+      "label": "The bottle mouth has a right pouring lip.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.8935406698564593,
+        "top": 0.5547290116896918,
+        "width": 0.04007177033492823,
+        "height": 0.06482465462274177
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

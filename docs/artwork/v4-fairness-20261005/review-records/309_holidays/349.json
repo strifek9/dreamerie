@@ -1,0 +1,105 @@
+{
+  "card": "349",
+  "id": "v4-dream-349",
+  "title": "The Sparrow's Wooden Ocean",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "closed-eye",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-349-altered-source-v4.png",
+      "sourceSha256": "beafdc1f381dd78a4bb92462f61e3d829b1521c2ce89ef4914e7ed5c03c1105d",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        734,
+        115,
+        43,
+        41
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "angular-shaving",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-349-altered-source-v4.png",
+      "sourceSha256": "beafdc1f381dd78a4bb92462f61e3d829b1521c2ce89ef4914e7ed5c03c1105d",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        829,
+        729,
+        143,
+        132
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "star-jar",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-349-altered-source-v4.png",
+      "sourceSha256": "beafdc1f381dd78a4bb92462f61e3d829b1521c2ce89ef4914e7ed5c03c1105d",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        95,
+        570,
+        87,
+        108
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "crescent-handle",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-349-altered-source-v4.png",
+      "sourceSha256": "beafdc1f381dd78a4bb92462f61e3d829b1521c2ce89ef4914e7ed5c03c1105d",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1504,
+        140,
+        88,
+        111
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "hex-rivet",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-349-altered-source-v4.png",
+      "sourceSha256": "beafdc1f381dd78a4bb92462f61e3d829b1521c2ce89ef4914e7ed5c03c1105d",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1568,
+        466,
+        58,
+        58
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "dc5e6ace84ca5d42f22eb29daa7bd1a9d498aba19c2ba9ef20d2db24d2570b72",
+  "compositeSha256": "8ab3d95ffd2464f09292037217be0054648142480d3defa509ddf7530236b980",
+  "evidence": [
+    "review-deliverables/Dreamerie-349-A-original.png",
+    "review-deliverables/Dreamerie-349-B-changed.png",
+    "audit-fairness\\309_holidays\\349.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed",
+  "additionalInspection": {
+    "clueId": "angular-shaving",
+    "detailEvidence": "audit-fairness\\309_holidays\\349-2-detail.png",
+    "finding": "Interior shaving free end visibly connects to the same angular loop bottom; not confirmed as disconnected separate added object."
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "card": "358",
+  "id": "v4-dream-358",
+  "title": "The Dancer with Two Left Shadows",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "change-1",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-358-altered-source-v4.png",
+      "sourceSha256": "d0fe8bef62ec34fcd7e2ee8488b7ac4a576e10d0ed2b009fe62d812bec638a93",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        417,
+        843,
+        172,
+        64
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-2",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-358-altered-source-v4.png",
+      "sourceSha256": "d0fe8bef62ec34fcd7e2ee8488b7ac4a576e10d0ed2b009fe62d812bec638a93",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        43,
+        335,
+        70,
+        102
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-3",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-358-altered-source-v4.png",
+      "sourceSha256": "d0fe8bef62ec34fcd7e2ee8488b7ac4a576e10d0ed2b009fe62d812bec638a93",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1439,
+        637,
+        83,
+        87
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-4",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-358-altered-source-v4.png",
+      "sourceSha256": "d0fe8bef62ec34fcd7e2ee8488b7ac4a576e10d0ed2b009fe62d812bec638a93",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        118,
+        768,
+        57,
+        55
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-5",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-358-altered-source-v4.png",
+      "sourceSha256": "d0fe8bef62ec34fcd7e2ee8488b7ac4a576e10d0ed2b009fe62d812bec638a93",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        40,
+        540,
+        72,
+        50
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "1d1e8a2026eb9616aab14d2a03b139db42903e62d45c9d805b6f812093bafb39",
+  "compositeSha256": "e18530e79cc1edd5315bf2ea0fd1f34b0739ce6b7bb819b05f60fe077ddb2d03",
+  "evidence": [
+    "review-deliverables/Dreamerie-358-A-original.png",
+    "review-deliverables/Dreamerie-358-B-changed.png",
+    "audit-fairness\\309_holidays\\358.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

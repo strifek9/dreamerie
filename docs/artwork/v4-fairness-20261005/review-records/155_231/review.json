@@ -1,0 +1,2369 @@
+{
+  "baseline": "5920a05202f66ce0542bb4c2cfbbd4af3f2e212a",
+  "reviewedCards": 77,
+  "reviewedClues": 385,
+  "cardsRecommendedRepair": 5,
+  "issues": 7,
+  "cards": [
+    {
+      "cardId": "v4-dream-155",
+      "title": "The Mountain's Lost Mitten",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 1359,
+        "bounds": [
+          397,
+          626,
+          496,
+          672
+        ]
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\155-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-155.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-155-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-155-B-changed.png"
+      },
+      "issues": [
+        {
+          "clueId": "yarn-to-case",
+          "kind": "visible-change-outside-accepted-geometry",
+          "points": [
+            [
+              489,
+              650
+            ],
+            [
+              597,
+              620
+            ],
+            [
+              657,
+              550
+            ]
+          ],
+          "repair": "Restrict yarn addition to suitcase handle; restore connecting rope outside accepted box, including cuff collateral."
+        },
+        {
+          "clueId": "cuff-knit",
+          "kind": "collateral-linked-rope",
+          "points": [
+            [
+              675,
+              550
+            ]
+          ],
+          "repair": "Restore original cord/button region while retaining knit change."
+        }
+      ],
+      "reviewVerdict": "repair-recommended"
+    },
+    {
+      "cardId": "v4-dream-156",
+      "title": "The Dinner That Floated Away",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\156-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-155.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-156-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-156-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-157",
+      "title": "The Peacock Who Shed Colors",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\157-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-155.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-157-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-157-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-158",
+      "title": "The Sandwich Between Floors",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\158-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-155.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-158-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-158-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-159",
+      "title": "The Sock Puppet's Rebellion",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\159-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-159.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-159-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-159-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-160",
+      "title": "The Museum of Misplaced Gravity",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\160-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-159.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-160-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-160-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-161",
+      "title": "The Hedgehog's Unfinished Armor",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\161-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-159.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-161-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-161-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-162",
+      "title": "The Submarine in the Soap Bubble",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\162-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-159.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-162-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-162-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-163",
+      "title": "The Tail of the Queue",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\163-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-163.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-163-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-163-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-164",
+      "title": "The Violin That Grew Quiet",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\164-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-163.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-164-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-164-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-165",
+      "title": "The Sphinx at the Vending Machine",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\165-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-163.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-165-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-165-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-166",
+      "title": "The Raincoat's Indoor Parade",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\166-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-163.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-166-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-166-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-167",
+      "title": "The Paper Tiger's Gentle Bite",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\167-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-167.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-167-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-167-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-168",
+      "title": "The Diver of Unmade Beds",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\168-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-167.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-168-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-168-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-169",
+      "title": "The Camel's Last Hump",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\169-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-167.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-169-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-169-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-170",
+      "title": "The Lighthouse in the Fingertip",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\170-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-167.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-170-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-170-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-171",
+      "title": "The Orchestra of Unopened Letters",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\171-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-171.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-171-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-171-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-172",
+      "title": "The Sloth Who Hurried Slowly",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\172-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-171.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-172-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-172-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-173",
+      "title": "The Doorway of Missing Corners",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\173-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-171.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-173-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-173-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-174",
+      "title": "The Chef Who Stirred a Spiral",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\174-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-171.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-174-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-174-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-175",
+      "title": "The Polar Bear's Warm Shadow",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\175-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-175.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-175-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-175-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-176",
+      "title": "The Teacup That Refused Its Handle",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\176-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-175.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-176-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-176-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-177",
+      "title": "The Railway of Sleeping Giants",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\177-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-175.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-177-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-177-B-changed.png"
+      },
+      "issues": [
+        {
+          "clueId": "case-handle",
+          "kind": "relocation-two-loci",
+          "points": [
+            [
+              1105,
+              509
+            ],
+            [
+              1105,
+              544
+            ]
+          ],
+          "repair": "Retain original top handle and local new front loop; relabel front added loop."
+        }
+      ],
+      "reviewVerdict": "repair-recommended"
+    },
+    {
+      "cardId": "v4-dream-178",
+      "title": "The Painter of Invisible Windows",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\178-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-175.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-178-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-178-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-179",
+      "title": "The Angler of Loose Buttons",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\179-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-179.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-179-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-179-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-180",
+      "title": "The Carnival Folded in a Fan",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\180-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-179.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-180-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-180-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-181",
+      "title": "The Alien Who Unrolled the Hallway",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\181-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-179.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-181-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-181-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-182",
+      "title": "Footprints in the Fishing Net",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\182-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-179.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-182-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-182-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-183",
+      "title": "The Computer That Lost Its Marbles",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\183-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-183.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-183-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-183-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-184",
+      "title": "The Braid That Held the Bridge",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\184-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-183.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-184-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-184-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-185",
+      "title": "The Kite That Swallowed the Wind",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\185-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-183.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-185-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-185-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-186",
+      "title": "The Mermaid and the Silent Keys",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\186-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-183.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-186-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-186-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-187",
+      "title": "The Dragon in the Matchbox",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\187-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-187.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-187-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-187-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-188",
+      "title": "The Photographer Outside the Photograph",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\188-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-187.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-188-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-188-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-189",
+      "title": "The Bicycle That Pedaled Backwards",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\189-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-187.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-189-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-189-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-190",
+      "title": "The Weight of One Feather",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\190-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-187.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-190-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-190-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-191",
+      "title": "The Mask That Blushed Alone",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\191-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-191.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-191-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-191-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-192",
+      "title": "The Night Shift of the Sunflower",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\192-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-191.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-192-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-192-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-193",
+      "title": "The Girl Who Unzipped the Rain",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\193-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-191.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-193-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-193-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-194",
+      "title": "The City on the Tongue of a Shoe",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\194-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-191.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-194-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-194-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-195",
+      "title": "The Cartographer of Crumpled Air",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\195-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-195.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-195-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-195-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-196",
+      "title": "The Monster Who Feared Balloons",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\196-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-195.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-196-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-196-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-197",
+      "title": "The Hour That Fell Out",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\197-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-195.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-197-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-197-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-198",
+      "title": "The Skateboarder and the Borrowed Horizon",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\198-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-195.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-198-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-198-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-199",
+      "title": "The Octagon That Wanted a Hug",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\199-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-199.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-199-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-199-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-200",
+      "title": "The Lighthouse Keeper's Missing Stair",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\200-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-199.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-200-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-200-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-201",
+      "title": "The Angry Accordion",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\201-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-199.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-201-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-201-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-202",
+      "title": "The Snail Who Outgrew the Spiral",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\202-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-199.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-202-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-202-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-203",
+      "title": "The Bedtime Bureau of Lost Socks",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\203-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-203.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-203-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-203-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-204",
+      "title": "The Violinist and the Unheard Color",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\204-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-203.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-204-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-204-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-205",
+      "title": "The Pear That Contained a Winter",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\205-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-203.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-205-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-205-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-206",
+      "title": "The Umbrella Repair of Dreams",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\206-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-203.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-206-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-206-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-207",
+      "title": "The Elevator Button's Day Off",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\207-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-207.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-207-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-207-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-208",
+      "title": "The Puppeteer of Gentle Thunder",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\208-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-207.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-208-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-208-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-209",
+      "title": "The Mirror That Needed Glasses",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\209-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-207.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-209-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-209-B-changed.png"
+      },
+      "issues": [
+        {
+          "clueId": "reflected-knob",
+          "kind": "relocation-two-loci",
+          "points": [
+            [
+              1067,
+              279
+            ],
+            [
+              1041,
+              279
+            ]
+          ],
+          "repair": "Restore original right knob; keep a single localized new reflected detail if meaningful."
+        }
+      ],
+      "reviewVerdict": "repair-recommended"
+    },
+    {
+      "cardId": "v4-dream-210",
+      "title": "The Library Beneath the Chessboard",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\210-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-207.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-210-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-210-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-211",
+      "title": "Applause for an Empty Stage",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\211-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-211.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-211-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-211-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-212",
+      "title": "The Moth Behind the Velvet Door",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\212-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-211.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-212-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-212-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-213",
+      "title": "Carrying Yesterday's Puddle",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\213-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-211.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-213-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-213-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-214",
+      "title": "The Laundry of Borrowed Shadows",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\214-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-211.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-214-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-214-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-215",
+      "title": "Where the Dice Sleep",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\215-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-215.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-215-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-215-B-changed.png"
+      },
+      "issues": [
+        {
+          "clueId": "cup-handle",
+          "kind": "relocation-two-loci",
+          "points": [
+            [
+              937,
+              481
+            ],
+            [
+              899,
+              482
+            ]
+          ],
+          "repair": "Restore original right handle; retain new left as second handle and relabel."
+        },
+        {
+          "clueId": "blanket-moons",
+          "kind": "multiple-independent-motifs",
+          "points": [
+            [
+              818,
+              606
+            ],
+            [
+              872,
+              630
+            ],
+            [
+              892,
+              653
+            ],
+            [
+              846,
+              667
+            ],
+            [
+              904,
+              613
+            ]
+          ],
+          "repair": "Restrict to single moon at 892,653; restore all other motifs."
+        }
+      ],
+      "reviewVerdict": "repair-recommended"
+    },
+    {
+      "cardId": "v4-dream-216",
+      "title": "A Saddle for the Tide",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\216-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-215.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-216-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-216-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-217",
+      "title": "The Telephone That Wanted to Listen",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\217-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-215.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-217-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-217-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-218",
+      "title": "The Barber of Tangled Roads",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\218-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-215.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-218-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-218-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-219",
+      "title": "The Snowman's Warm Footsteps",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\219-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-219.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-219-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-219-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-220",
+      "title": "The Alien and the Stuck Hiccup",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\220-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-219.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-220-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-220-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-221",
+      "title": "The Staircase in the Ribbon",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\221-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-219.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-221-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-221-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-222",
+      "title": "The Turtle's Vacant Room",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\222-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-219.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-222-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-222-B-changed.png"
+      },
+      "issues": [
+        {
+          "clueId": "turned-mug",
+          "kind": "relocation-two-loci",
+          "points": [
+            [
+              1106,
+              394
+            ],
+            [
+              1058,
+              393
+            ]
+          ],
+          "repair": "Restore original right handle; retain added left handle as second handle and relabel."
+        }
+      ],
+      "reviewVerdict": "repair-recommended"
+    },
+    {
+      "cardId": "v4-dream-223",
+      "title": "The Eraser That Lost the Mountain",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\223-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-223.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-223-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-223-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-224",
+      "title": "The Cathedral of Small Repairs",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\224-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-223.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-224-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-224-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-225",
+      "title": "The Wardrobe's Winter Breath",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\225-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-223.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-225-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-225-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-226",
+      "title": "The Potato Who Held the Door",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\226-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-223.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-226-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-226-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-227",
+      "title": "The Rabbit Who Outgrew the Trick",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\227-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-227.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-227-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-227-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-228",
+      "title": "The Clockwork Orchard in a Lunchbox",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\228-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-227.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-228-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-228-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-229",
+      "title": "The Quietest Argument",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\229-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-227.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-229-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-229-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-230",
+      "title": "The Diver at the Keyhole",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\230-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-227.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-230-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-230-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    },
+    {
+      "cardId": "v4-dream-231",
+      "title": "The Lemon's Long Afternoon",
+      "visualReview": {
+        "fullComposite": true,
+        "fivePairedCrops": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "method": "Agent visual inspection of actual browser-export composites and crops; phone/pan interaction not run by this reviewer."
+      },
+      "currentMetadataMatchesEvidence": true,
+      "originalNativePixelsMatchCurrentMaster": true,
+      "outsideAcceptedBoxUnionAutomatic": {
+        "pixelsOver8": 0,
+        "bounds": null
+      },
+      "evidence": {
+        "fiveCrops": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\231-five.png",
+        "fullContact": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\155_231\\full-231.png",
+        "original": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-231-A-original.png",
+        "memory": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-231-B-changed.png"
+      },
+      "issues": [],
+      "reviewVerdict": "no-confirmed-fairness-class-issue"
+    }
+  ]
+}

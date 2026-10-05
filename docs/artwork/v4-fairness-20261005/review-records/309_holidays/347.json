@@ -1,0 +1,100 @@
+{
+  "card": "347",
+  "id": "v4-dream-347",
+  "title": "The Snail's Velvet Drum",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "hooked-antenna",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-347-altered-source-v4.png",
+      "sourceSha256": "0f7598711d161796a52b57981655cdb812fd7bcee26d51b7da85dcb94b80a145",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        994,
+        311,
+        107,
+        116
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    },
+    {
+      "id": "crescent-drum",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-347-altered-source-v4.png",
+      "sourceSha256": "0f7598711d161796a52b57981655cdb812fd7bcee26d51b7da85dcb94b80a145",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        404,
+        322,
+        62,
+        159
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "star-weight",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-347-altered-source-v4.png",
+      "sourceSha256": "0f7598711d161796a52b57981655cdb812fd7bcee26d51b7da85dcb94b80a145",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1191,
+        219,
+        91,
+        94
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "pointed-drop",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-347-altered-source-v4.png",
+      "sourceSha256": "0f7598711d161796a52b57981655cdb812fd7bcee26d51b7da85dcb94b80a145",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1505,
+        752,
+        68,
+        70
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "triangle-bell",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-347-altered-source-v4.png",
+      "sourceSha256": "0f7598711d161796a52b57981655cdb812fd7bcee26d51b7da85dcb94b80a145",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        216,
+        598,
+        46,
+        55
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    }
+  ],
+  "originalSha256": "7f9d60d90715deba1a5908b10c279fffa14a63cf05f1648967c7b2315e98fc61",
+  "compositeSha256": "25bb286c815690fa828a1498090c449bc663da44b287990d26b59210eb975d3f",
+  "evidence": [
+    "review-deliverables/Dreamerie-347-A-original.png",
+    "review-deliverables/Dreamerie-347-B-changed.png",
+    "audit-fairness\\309_holidays\\347.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-273",
+  "title": "The Piano That Crossed the Hall",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "4cea370a811e5ab38977985321db69a4bbe50dc5b7bdff3e2c2c88f3ad97713f",
+    "browserComposite": "eac7c1fd6c7f8d1db4e30454b67562efcba34c44c625dec978157ad2eb488e93",
+    "mapping": "2384072dabefe734a112251233bc444aaff2046ba0c4ef34316167309b084f49"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-273-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-273-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\273.png"
+  ],
+  "clues": [
+    {
+      "id": "bench-diamonds",
+      "label": "The bench cushion has pale diamond motifs.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.8313397129186603,
+        "top": 0.6131774707757705,
+        "width": 0.1686602870813397,
+        "height": 0.15727948990435706
+      }
+    },
+    {
+      "id": "page-curl",
+      "label": "The score's upper-right page corner curls backward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.7296650717703349,
+        "top": 0.23910733262486716,
+        "width": 0.03289473684210526,
+        "height": 0.052072263549415514
+      }
+    },
+    {
+      "id": "fish-mouth",
+      "label": "The fish narrows its open mouth.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.5645933014354066,
+        "top": 0.14240170031880978,
+        "width": 0.02033492822966507,
+        "height": 0.04994686503719448
+      }
+    },
+    {
+      "id": "key-heart",
+      "label": "The hanging piano key bears a black heart.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.5921052631578947,
+        "top": 0.0765143464399575,
+        "width": 0.025717703349282296,
+        "height": 0.08076514346439957
+      }
+    },
+    {
+      "id": "shell-coil",
+      "label": "The front shell wheel has a tighter central coil.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.4605263157894737,
+        "top": 0.7555791710945803,
+        "width": 0.060406698564593304,
+        "height": 0.1275239107332625
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

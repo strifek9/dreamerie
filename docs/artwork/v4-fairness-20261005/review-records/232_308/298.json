@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-298",
+  "title": "The Chessboard's Day Off",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "9b884999e4da1ed977f592aecad565a315f6dcd0db15e0ce2905222e641e0523",
+    "browserComposite": "d46f6bb037761c5d2db598bb9c5eb2c10c67c3da9678924eded58226b5d50200",
+    "mapping": "0f243ca885ca41326667ff44590c00f50b951c3ba17dc9fd4f763be760bb4d14"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-298-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-298-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\298.png"
+  ],
+  "clues": [
+    {
+      "id": "ear",
+      "label": "The knight visible ear folds forward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.32954545454545453,
+        "top": 0.16046758767268862,
+        "width": 0.05442583732057416,
+        "height": 0.09458023379383634
+      }
+    },
+    {
+      "id": "lever",
+      "label": "The rook door knob becomes a left lever.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.7494019138755981,
+        "top": 0.2603613177470776,
+        "width": 0.031698564593301434,
+        "height": 0.031880977683315624
+      }
+    },
+    {
+      "id": "tile",
+      "label": "The loose front tile corner curls up.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.444377990430622,
+        "top": 0.7970244420828906,
+        "width": 0.06937799043062201,
+        "height": 0.09458023379383634
+      }
+    },
+    {
+      "id": "hinge",
+      "label": "The ramp hinge pin bows upward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.5855263157894737,
+        "top": 0.7492029755579172,
+        "width": 0.05143540669856459,
+        "height": 0.06057385759829968
+      }
+    },
+    {
+      "id": "cross",
+      "label": "The king crown cross has a round opening.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.05442583732057416,
+        "top": 0.03294367693942614,
+        "width": 0.020933014354066987,
+        "height": 0.03825717321997875
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

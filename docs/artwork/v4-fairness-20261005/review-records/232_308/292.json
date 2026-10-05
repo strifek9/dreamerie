@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-292",
+  "title": "The Fork That Learned to Branch",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "1caee08104309eb5987a00a74401a403dfc882f8d380662d047cd95ba1cdf7a6",
+    "browserComposite": "dd9d35d31268ccd9bccf947bade315af699e792226f88bbc2fb65a8b1f753fb6",
+    "mapping": "9bee17be6347ed52447a7178dc3f2ae4c03d06e3d162445b5587b9b23e4559e1"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-292-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-292-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\292.png"
+  ],
+  "clues": [
+    {
+      "id": "walnut-crack",
+      "label": "The walnut opens along a dark seam.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.025717703349282296,
+        "top": 0.34006376195536664,
+        "width": 0.11064593301435406,
+        "height": 0.15090329436769395
+      }
+    },
+    {
+      "id": "purple-loop",
+      "label": "The purple ribbon tail forms a hanging loop.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.680622009569378,
+        "top": 0.4303931987247609,
+        "width": 0.04904306220095694,
+        "height": 0.12858660998937302
+      }
+    },
+    {
+      "id": "white-twist",
+      "label": "The white ribbon twists into a corkscrew.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.6578947368421053,
+        "top": 0.22741764080765142,
+        "width": 0.0867224880382775,
+        "height": 0.08289054197662062
+      }
+    },
+    {
+      "id": "pink-loop",
+      "label": "The pink ribbon tail curls upward into a loop.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.7936602870813397,
+        "top": 0.09670563230605739,
+        "width": 0.06279904306220095,
+        "height": 0.16578108395324123
+      }
+    },
+    {
+      "id": "fork-moon",
+      "label": "The fork handle has a crescent engraving.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.08313397129186603,
+        "top": 0.7619553666312433,
+        "width": 0.11124401913875598,
+        "height": 0.14027630180658873
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

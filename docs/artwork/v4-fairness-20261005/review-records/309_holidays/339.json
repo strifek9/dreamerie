@@ -1,0 +1,100 @@
+{
+  "card": "339",
+  "id": "v4-dream-339",
+  "title": "The Bridge Inside a Biscuit",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "change-1",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-339-altered-source-v4.png",
+      "sourceSha256": "eede703653329b24195c2407b1ed9f9038cd4e1755bb56611031df055fd6dbb1",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1448,
+        565,
+        178,
+        98
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-2",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-339-altered-source-v4.png",
+      "sourceSha256": "eede703653329b24195c2407b1ed9f9038cd4e1755bb56611031df055fd6dbb1",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        716,
+        442,
+        43,
+        39
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-3",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-339-altered-source-v4.png",
+      "sourceSha256": "eede703653329b24195c2407b1ed9f9038cd4e1755bb56611031df055fd6dbb1",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1085,
+        99,
+        96,
+        105
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-4",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-339-altered-source-v4.png",
+      "sourceSha256": "eede703653329b24195c2407b1ed9f9038cd4e1755bb56611031df055fd6dbb1",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        300,
+        337,
+        83,
+        62
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-5",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-339-altered-source-v4.png",
+      "sourceSha256": "eede703653329b24195c2407b1ed9f9038cd4e1755bb56611031df055fd6dbb1",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        472,
+        329,
+        27,
+        27
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "d4fe2c64667a1da41c64833df152d92cbabb4f0e9d4e2f0a0df5190e95a0044f",
+  "compositeSha256": "2eae4a80bf5bb3b1ff8758fecbd6dbe020f77a5199b37beb0e2d308204aa802b",
+  "evidence": [
+    "review-deliverables/Dreamerie-339-A-original.png",
+    "review-deliverables/Dreamerie-339-B-changed.png",
+    "audit-fairness\\309_holidays\\339.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-258",
+  "title": "The Boy Who Walked the Tablecloth",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "cd246a01b962d10ac8597e22f17f77d9f9cea0f79b8e02c4ec160c3adeb45a11",
+    "browserComposite": "13a4df584e2bf4ab849e92d6d606231482034bfe2145ede6e2c47a3cf0d4db58",
+    "mapping": "4051cf55b94320d32d88d5ebf8d535588139db6f1f968685aff8a197015d267d"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-258-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-258-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\258.png"
+  ],
+  "clues": [
+    {
+      "id": "chair-crossbar",
+      "label": "The chair back has a broad horizontal crossbar.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.5023923444976076,
+        "top": 0.2624867162592986,
+        "width": 0.10705741626794259,
+        "height": 0.2454835281615303
+      }
+    },
+    {
+      "id": "shoe-unfastened",
+      "label": "The raised shoe strap stands unfastened.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.8624401913875598,
+        "top": 0.7098831030818279,
+        "width": 0.034688995215311005,
+        "height": 0.0818278427205101
+      }
+    },
+    {
+      "id": "tureen-lid",
+      "label": "The tureen lid tilts open.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.22248803827751196,
+        "top": 0.18809776833156217,
+        "width": 0.09389952153110048,
+        "height": 0.06801275239107332
+      }
+    },
+    {
+      "id": "dog-wink",
+      "label": "The dog closes one eye.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.07894736842105263,
+        "top": 0.46439957492029754,
+        "width": 0.019736842105263157,
+        "height": 0.03506907545164718
+      }
+    },
+    {
+      "id": "sweater-leaf",
+      "label": "The sweater has a leaf motif with a curled stem.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.819377990430622,
+        "top": 0.2518597236981934,
+        "width": 0.03827751196172249,
+        "height": 0.0871413390010627
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

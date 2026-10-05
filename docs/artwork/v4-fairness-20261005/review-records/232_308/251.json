@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-251",
+  "title": "The Lobster's Small Apology",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "c16ebf199e806f925a93695df06645257a2e4612f3b9304ff1759aa5a3e5f508",
+    "browserComposite": "f6af8cda0983263f14266cdaf63df6c017f6ca1b04376c7cb9700be77cf623e1",
+    "mapping": "6af2ab51b84cb8008bfc7667b0024801b832f9fbf12fcb8d0f80fce95466b57d"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-251-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-251-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\251.png"
+  ],
+  "clues": [
+    {
+      "id": "change-1",
+      "label": "The nearer lobster eye winks.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.30023923444976075,
+        "top": 0.13071200850159406,
+        "width": 0.0430622009569378,
+        "height": 0.06907545164718384
+      }
+    },
+    {
+      "id": "change-2",
+      "label": "The cup handle opens into a hook.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.34748803827751196,
+        "top": 0.29861849096705634,
+        "width": 0.03349282296650718,
+        "height": 0.08076514346439957
+      }
+    },
+    {
+      "id": "change-3",
+      "label": "The spoon bowl has a heart aperture.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.3397129186602871,
+        "top": 0.8384697130712009,
+        "width": 0.04126794258373206,
+        "height": 0.06269925611052073
+      }
+    },
+    {
+      "id": "change-4",
+      "label": "The tin shell ribs curl into a spiral.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.9114832535885168,
+        "top": 0.5015940488841658,
+        "width": 0.05980861244019139,
+        "height": 0.1179596174282678
+      }
+    },
+    {
+      "id": "change-5",
+      "label": "The napkin sail bows inward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.8438995215311005,
+        "top": 0.871413390010627,
+        "width": 0.037679425837320576,
+        "height": 0.08395324123273114
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

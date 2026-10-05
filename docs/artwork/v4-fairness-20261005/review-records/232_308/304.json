@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-304",
+  "title": "The Turtle's Umbrella Stand",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "9f054d6152a591db08c3b57a5ca04df35e90713fceb5733d39555437b4c8a0ae",
+    "browserComposite": "e6110187def09b76d65793d2b0db466315a5a161038787d78cee1a6a9b2fd07e",
+    "mapping": "29309751e7544e08e3e62838b7fa7e0179237ed4e7b05ea4f31b064c626e1686"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-304-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-304-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\304.png"
+  ],
+  "clues": [
+    {
+      "id": "knocker-raised",
+      "label": "The door knocker ring is raised horizontally.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.031698564593301434,
+        "top": 0.1636556854410202,
+        "width": 0.0950956937799043,
+        "height": 0.2911795961742827
+      }
+    },
+    {
+      "id": "mini-door",
+      "label": "The tall purple miniature door is closed.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.45633971291866027,
+        "top": 0.02763018065887354,
+        "width": 0.06578947368421052,
+        "height": 0.16046758767268862
+      }
+    },
+    {
+      "id": "umbrella-twist",
+      "label": "The cream umbrella has spiral folds.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.513755980861244,
+        "top": 0.20403825717321997,
+        "width": 0.07057416267942583,
+        "height": 0.1742826780021254
+      }
+    },
+    {
+      "id": "turtle-eye",
+      "label": "The turtle closes its eye.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.3480861244019139,
+        "top": 0.594048884165781,
+        "width": 0.034688995215311005,
+        "height": 0.05100956429330499
+      }
+    },
+    {
+      "id": "shell-tulip",
+      "label": "The left-front shell panel bears a tulip.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.4826555023923445,
+        "top": 0.6248671625929861,
+        "width": 0.056818181818181816,
+        "height": 0.11902231668437832
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

@@ -1,0 +1,100 @@
+{
+  "card": "342",
+  "id": "v4-dream-342",
+  "title": "The Tailor of Crumpled Distance",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "change-1",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-342-altered-source-v4.png",
+      "sourceSha256": "792d3e534830fcfc0656b249a1673716add412624b3c5d87ab2bfbd0cbd5f402",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        86,
+        145,
+        52,
+        65
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-2",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-342-altered-source-v4.png",
+      "sourceSha256": "792d3e534830fcfc0656b249a1673716add412624b3c5d87ab2bfbd0cbd5f402",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        347,
+        722,
+        257,
+        188
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-3",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-342-altered-source-v4.png",
+      "sourceSha256": "792d3e534830fcfc0656b249a1673716add412624b3c5d87ab2bfbd0cbd5f402",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        641,
+        627,
+        65,
+        71
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-4",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-342-altered-source-v4.png",
+      "sourceSha256": "792d3e534830fcfc0656b249a1673716add412624b3c5d87ab2bfbd0cbd5f402",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        291,
+        864,
+        54,
+        71
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-5",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-342-altered-source-v4.png",
+      "sourceSha256": "792d3e534830fcfc0656b249a1673716add412624b3c5d87ab2bfbd0cbd5f402",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1394,
+        754,
+        212,
+        155
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "aef5b29bc2364477fe0ff5579041fbe7fa47f0d5b4cecca10efc5b66d53c6196",
+  "compositeSha256": "f63983af9b2627c8914c69a5a565a442b7681e95fa95007d942df8f96c4ec00a",
+  "evidence": [
+    "review-deliverables/Dreamerie-342-A-original.png",
+    "review-deliverables/Dreamerie-342-B-changed.png",
+    "audit-fairness\\309_holidays\\342.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

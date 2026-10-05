@@ -1,0 +1,4 @@
+PASS012 mobilefit salientcurl scoresone
+PASS012 zoom/pan salientcurl mapscorrectly; repeatedfoundguess spendsone; pan/zoomspendzero
+PASS012 correctedpending/count/deadline surviveinterruptedreload
+PASS012 twominexpiry/completedreload/noextraattempt/noJSerrors; disposablecontextonly

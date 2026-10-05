@@ -1,0 +1,100 @@
+{
+  "card": "new-years-eve",
+  "id": "v4-dream-new-years-eve",
+  "title": "The Midnight Ball That Became a Planet",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "change-1",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-new-years-eve-altered-source-v4.png",
+      "sourceSha256": "54a0a222e8ae43afe6b76e66cbd30e40d4bf1b78c5a4f1c13d72a0dc6ea1cb2a",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        81,
+        390,
+        72,
+        77
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-2",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-new-years-eve-altered-source-v4.png",
+      "sourceSha256": "54a0a222e8ae43afe6b76e66cbd30e40d4bf1b78c5a4f1c13d72a0dc6ea1cb2a",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1014,
+        214,
+        88,
+        155
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-3",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-new-years-eve-altered-source-v4.png",
+      "sourceSha256": "54a0a222e8ae43afe6b76e66cbd30e40d4bf1b78c5a4f1c13d72a0dc6ea1cb2a",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1209,
+        283,
+        75,
+        83
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-4",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-new-years-eve-altered-source-v4.png",
+      "sourceSha256": "54a0a222e8ae43afe6b76e66cbd30e40d4bf1b78c5a4f1c13d72a0dc6ea1cb2a",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        571,
+        298,
+        57,
+        55
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-5",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-new-years-eve-altered-source-v4.png",
+      "sourceSha256": "54a0a222e8ae43afe6b76e66cbd30e40d4bf1b78c5a4f1c13d72a0dc6ea1cb2a",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        946,
+        597,
+        33,
+        27
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "caa3f7f24c5914a31681aab35c61486cea8dac0f4d9d31486399ec16efb217ce",
+  "compositeSha256": "ec7bffc73e32e5cfdac6f8759ef672e9475e2492f052f4eabf7eb7867a9226e0",
+  "evidence": [
+    "review-deliverables/Dreamerie-new-years-eve-A-original.png",
+    "review-deliverables/Dreamerie-new-years-eve-B-changed.png",
+    "audit-fairness\\309_holidays\\new-years-eve.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

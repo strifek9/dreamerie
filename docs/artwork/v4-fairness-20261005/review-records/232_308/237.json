@@ -1,0 +1,156 @@
+{
+  "id": "v4-dream-237",
+  "title": "The Bell Without a Sound",
+  "status": "confirmed-issue",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": null,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "6ceb7dbad1449d028cb859190a18ff618a626ea1587a3d32373ac157a5786280",
+    "browserComposite": "218c8d2bb56ff4e7caef60909252f5c68f57b10dcbd8aa0a16e450492d7751b0",
+    "mapping": "3bfccbd242b7ac070eada451f2d6f9ae47eac0e22f48e39b00310fbff6f37365"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-237-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-237-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\237.png"
+  ],
+  "clues": [
+    {
+      "id": "bell-clapper",
+      "label": "The bell's brass clapper hangs below its rim.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": false,
+      "authoredBox": {
+        "left": 0.39473684210526316,
+        "top": 0.3475026567481403,
+        "width": 0.09868421052631579,
+        "height": 0.24973432518597238
+      }
+    },
+    {
+      "id": "card-note",
+      "label": "The paper note slips behind the folded card.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": false,
+      "authoredBox": {
+        "left": 0.6070574162679426,
+        "top": 0.11583421891604676,
+        "width": 0.20334928229665072,
+        "height": 0.29861849096705634
+      }
+    },
+    {
+      "id": "bowl-note",
+      "label": "The bowl's paper note hooks over a different part of its rim.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": false,
+      "authoredBox": {
+        "left": 0.8869617224880383,
+        "top": 0.18703506907545164,
+        "width": 0.11064593301435406,
+        "height": 0.1997874601487779
+      }
+    },
+    {
+      "id": "ribbon-loop",
+      "label": "The velvet ribbon threads under its own loop.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.5460526315789473,
+        "top": 0.4218916046758767,
+        "width": 0.24641148325358853,
+        "height": 0.255047821466525
+      }
+    },
+    {
+      "id": "book-emblem",
+      "label": "The blue book's embossed flower gains curled leaves above and below.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.07117224880382775,
+        "top": 0.06057385759829968,
+        "width": 0.08074162679425838,
+        "height": 0.22210414452709884
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "bell-clapper",
+      "type": "disconnected-salient-change",
+      "oldSalientPoint": [
+        790,
+        403
+      ],
+      "newSalientPoint": [
+        738,
+        527
+      ],
+      "observation": "Original brass ball partly remains inside the bell while a second lower clapper ball appears; separate salient locations.",
+      "recommendedRepair": "Retain only one localized change; inspect brass remnants carefully when narrowing patch."
+    },
+    {
+      "id": "card-note",
+      "type": "disconnected-relocation",
+      "oldSalientPoint": [
+        1250,
+        181
+      ],
+      "newSalientPoint": [
+        1048,
+        273
+      ],
+      "recommendedRepair": "Restore original top note and retain only newly added left note. Suggested patch x1035,y280,w70,h95, verify fade/target."
+    },
+    {
+      "id": "bowl-note",
+      "type": "disconnected-relocation",
+      "oldSalientPoint": [
+        1522,
+        281
+      ],
+      "newSalientPoint": [
+        1568,
+        277
+      ],
+      "recommendedRepair": "Restore original left note and retain only new right note. Suggested patch x1560,y225,w100,h135 requires checking old-stem overlap."
+    }
+  ],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false,
+  "browserCompositeEvidence": "Fresh root-owned browser export; prior export validation file unavailable. Current metadata matches baseline and original pixels match master.",
+  "localCorrection": {
+    "module": "D:/Dreamerie/src/v4/fairnessCorrections232.ts",
+    "id": "v4-fairness-dream-237-v1",
+    "patches": {
+      "velvet-over-clapper-ball": [
+        735,
+        350,
+        90,
+        120
+      ],
+      "additional-note-behind-card": [
+        1025,
+        235,
+        70,
+        70
+      ],
+      "additional-note-at-right-bowl-rim": [
+        1540,
+        244,
+        110,
+        118
+      ]
+    },
+    "edgeFade": 5,
+    "status": "implemented; root browser proof and mobile QA pending",
+    "preservation": "All published source files and old card metadata untouched"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-302",
+  "title": "The Girl and the Sleeping Weather",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "13c82da980f4b1e2a0732630afed3dc88dd6da1a1851c0f75957034fe424755d",
+    "browserComposite": "9de382f34198b21e904f3456f37e3bd1fac7e99f7761c54e0778985c853a911c",
+    "mapping": "580888fbd8b586dede5315349e5b78d460c0de87b25ac0e10088258574fda54e"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-302-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-302-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\302.png"
+  ],
+  "clues": [
+    {
+      "id": "boat-sail",
+      "label": "The blanket boat has a single sail right of its mast.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.687799043062201,
+        "top": 0.5823591923485654,
+        "width": 0.07834928229665072,
+        "height": 0.11689691817215728
+      }
+    },
+    {
+      "id": "butterfly-fold",
+      "label": "The hanging butterfly folds its left wings inward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.2027511961722488,
+        "top": 0.09139213602550478,
+        "width": 0.056220095693779906,
+        "height": 0.16259298618490967
+      }
+    },
+    {
+      "id": "mug-fern",
+      "label": "The windowsill mug bears a fern frond.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.8708133971291866,
+        "top": 0.2157279489904357,
+        "width": 0.04066985645933014,
+        "height": 0.07332624867162593
+      }
+    },
+    {
+      "id": "cloud-wink",
+      "label": "The little rain cloud closes one eye.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.2159090909090909,
+        "top": 0.6014877789585548,
+        "width": 0.016148325358851676,
+        "height": 0.026567481402763018
+      }
+    },
+    {
+      "id": "lace-heart",
+      "label": "The boot lace loop becomes heart-shaped.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.2069377990430622,
+        "top": 0.7417640807651434,
+        "width": 0.03229665071770335,
+        "height": 0.05419766206163656
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

@@ -18,7 +18,7 @@ import { PlayStats } from './PlayStats'
 import { usePlayStats } from './usePlayStats'
 import { originalArtwork } from './artworkDelivery'
 import { v4PreviewDreams } from '../v4/previewDreams'
-import { v4HolidayDetails } from '../v4/releasedCollection'
+import { v4HolidayDetails, v4VerseId } from '../v4/releasedCollection'
 import { useArtworkLoading } from './useArtworkLoading'
 import '../v2/versionTwo.css'
 import './versionThree.css'
@@ -48,7 +48,7 @@ export default function VersionThree() {
 
 function Round({ dream, day, playtest, onNew }: { dream: LandscapeDream; day: number; playtest: boolean; onNew: () => void }) {
   const holiday = holidayDetails(dream.id) ?? v4HolidayDetails(dream.id)
-  const verseId = dream.id.replace(/^(painted-|revisit-|v4-)/, '')
+  const verseId = v4VerseId(dream.id)
   const verse = holiday?.verse ?? yearVerses[verseId] ?? verseForDream(verseId)
   const differences = useMemo(() => differencesFor(dream), [dream])
   const { phase, recall, result, recallLeft, pendingSide, dispatch, storageError, busy } = useDailySession(day, dream.id, differences, playtest, LANDSCAPE_SESSION_OPTIONS)

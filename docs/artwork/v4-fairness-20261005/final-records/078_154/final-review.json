@@ -1,0 +1,268 @@
+{
+  "cards": [
+    {
+      "id": "v4-fairness-dream-108-v1",
+      "actualBrowserCompositeFinalVisualVerdict": "pass",
+      "allFiveCluePairsVisuallyReviewed": true,
+      "fullCompositeVisuallyReviewed": true,
+      "clippedFragmentsOrObviousSeamsObserved": false,
+      "disconnectedSalientChangesObserved": false,
+      "changedPixelsOutsideAllFiveAcceptedBoxes": 0,
+      "restoredSites": [
+        {
+          "point": [
+            1030,
+            600
+          ],
+          "changedPixelsIn17x17Neighborhood": 0,
+          "exactOriginalPixels": true
+        },
+        {
+          "point": [
+            800,
+            750
+          ],
+          "changedPixelsIn17x17Neighborhood": 0,
+          "exactOriginalPixels": true
+        }
+      ],
+      "salientChangedPoint": [
+        711,
+        714
+      ],
+      "pointPixelChanged": true,
+      "APath": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\fairness-corrected-pairs\\Dreamerie-108-A-original.png",
+      "ASha256": "8becbc8900fea186d6b393e340f021b5d36df26a437c54864ced605c59cc1ed6",
+      "BPath": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\fairness-corrected-pairs\\Dreamerie-108-B-changed.png",
+      "BSha256": "ef64ffee0147722e8b837b58642c2fc9a239261a1897063ff8a388a09fb8e7d7",
+      "mappingPath": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\fairness-corrected-pairs\\private-108-mapping.json",
+      "mappingSha256": "7a5893380a689e05ea50beb1ff8fd666c7d333787099a676f98994d877b21757",
+      "pairedCropEvidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\078_154\\final\\108-five-pairs.jpg",
+      "fullPairEvidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\078_154\\final\\108-full.jpg",
+      "browserMobileInteractionPerformedByThisAgent": false,
+      "physicalPhoneQA": "not performed"
+    },
+    {
+      "id": "v4-fairness-dream-112-v1",
+      "actualBrowserCompositeFinalVisualVerdict": "pass",
+      "allFiveCluePairsVisuallyReviewed": true,
+      "fullCompositeVisuallyReviewed": true,
+      "clippedFragmentsOrObviousSeamsObserved": false,
+      "disconnectedSalientChangesObserved": false,
+      "changedPixelsOutsideAllFiveAcceptedBoxes": 0,
+      "restoredSites": [
+        {
+          "point": [
+            1514,
+            716
+          ],
+          "changedPixelsIn17x17Neighborhood": 0,
+          "exactOriginalPixels": true
+        }
+      ],
+      "salientChangedPoint": [
+        1364,
+        716
+      ],
+      "pointPixelChanged": true,
+      "APath": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\fairness-corrected-pairs\\Dreamerie-112-A-original.png",
+      "ASha256": "1f32dd22391c091ac8a68279ffab797a6277572f943510381a3e5fc13f8c2b23",
+      "BPath": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\fairness-corrected-pairs\\Dreamerie-112-B-changed.png",
+      "BSha256": "1195c3b8272f500bcf62cf8cfb827d281b9cd9921d7b0343a25e45740cc0267f",
+      "mappingPath": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\fairness-corrected-pairs\\private-112-mapping.json",
+      "mappingSha256": "92b0acfecb61aff9bcbb394260afb97b02a4dccfbebf215323b5800a788fdba1",
+      "pairedCropEvidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\078_154\\final\\112-five-pairs.jpg",
+      "fullPairEvidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\078_154\\final\\112-full.jpg",
+      "browserMobileInteractionPerformedByThisAgent": false,
+      "physicalPhoneQA": "not performed"
+    },
+    {
+      "id": "v4-fairness-dream-126-v1",
+      "actualBrowserCompositeFinalVisualVerdict": "pass",
+      "allFiveCluePairsVisuallyReviewed": true,
+      "fullCompositeVisuallyReviewed": true,
+      "clippedFragmentsOrObviousSeamsObserved": false,
+      "disconnectedSalientChangesObserved": false,
+      "changedPixelsOutsideAllFiveAcceptedBoxes": 0,
+      "restoredSites": [
+        {
+          "point": [
+            490,
+            278
+          ],
+          "changedPixelsIn17x17Neighborhood": 0,
+          "exactOriginalPixels": true
+        }
+      ],
+      "salientChangedPoint": [
+        466,
+        145
+      ],
+      "pointPixelChanged": true,
+      "APath": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\fairness-corrected-pairs\\Dreamerie-126-A-original.png",
+      "ASha256": "132707202ed547e51850570abdf3cd3154d4d92c95b13fd7411b02b3a2e09ab2",
+      "BPath": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\fairness-corrected-pairs\\Dreamerie-126-B-changed.png",
+      "BSha256": "fbc2472c659a27336409114cb2a2e11745dfaa15606c736c35f5edbab0e3e5be",
+      "mappingPath": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\fairness-corrected-pairs\\private-126-mapping.json",
+      "mappingSha256": "0aa1efc0706ab3b8d019f93806f2362c88ac8c86aec0a26ca80762783e1eb0a5",
+      "pairedCropEvidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\078_154\\final\\126-five-pairs.jpg",
+      "fullPairEvidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\078_154\\final\\126-full.jpg",
+      "browserMobileInteractionPerformedByThisAgent": false,
+      "physicalPhoneQA": "not performed"
+    },
+    {
+      "id": "v4-fairness-dream-129-v1",
+      "actualBrowserCompositeFinalVisualVerdict": "pass",
+      "allFiveCluePairsVisuallyReviewed": true,
+      "fullCompositeVisuallyReviewed": true,
+      "clippedFragmentsOrObviousSeamsObserved": false,
+      "disconnectedSalientChangesObserved": false,
+      "changedPixelsOutsideAllFiveAcceptedBoxes": 0,
+      "restoredSites": [
+        {
+          "point": [
+            280,
+            779
+          ],
+          "changedPixelsIn17x17Neighborhood": 0,
+          "exactOriginalPixels": true
+        }
+      ],
+      "salientChangedPoint": [
+        329,
+        711
+      ],
+      "pointPixelChanged": true,
+      "APath": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\fairness-corrected-pairs\\Dreamerie-129-A-original.png",
+      "ASha256": "b41e64e829251a4b832c475bae7f2e1ae0b800362482f8fce8640d4e90fa7fb3",
+      "BPath": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\fairness-corrected-pairs\\Dreamerie-129-B-changed.png",
+      "BSha256": "f00f1b6ec46630f75d137765a88a65e2d068e82e759fb8dc688387eafcf351fe",
+      "mappingPath": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\fairness-corrected-pairs\\private-129-mapping.json",
+      "mappingSha256": "84d482e672b97c72dc95138214f3379ef139e4c303c222bf38a17cf0d1bae464",
+      "pairedCropEvidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\078_154\\final\\129-five-pairs.jpg",
+      "fullPairEvidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\078_154\\final\\129-full.jpg",
+      "browserMobileInteractionPerformedByThisAgent": false,
+      "physicalPhoneQA": "not performed"
+    },
+    {
+      "id": "v4-fairness-dream-143-v1",
+      "actualBrowserCompositeFinalVisualVerdict": "pass",
+      "allFiveCluePairsVisuallyReviewed": true,
+      "fullCompositeVisuallyReviewed": true,
+      "clippedFragmentsOrObviousSeamsObserved": false,
+      "disconnectedSalientChangesObserved": false,
+      "changedPixelsOutsideAllFiveAcceptedBoxes": 0,
+      "restoredSites": [
+        {
+          "point": [
+            1125,
+            30
+          ],
+          "changedPixelsIn17x17Neighborhood": 0,
+          "exactOriginalPixels": true
+        }
+      ],
+      "salientChangedPoint": [
+        1220,
+        37
+      ],
+      "pointPixelChanged": true,
+      "APath": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\fairness-corrected-pairs\\Dreamerie-143-A-original.png",
+      "ASha256": "bff32ffd0c4336646a5bb31b84413060fb0521ae9129c230a681497d245ed85f",
+      "BPath": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\fairness-corrected-pairs\\Dreamerie-143-B-changed.png",
+      "BSha256": "9d86d1283c4a77f0b652fc9cf2a95754a4b7473bc85b964f14cb202a6bbdb97c",
+      "mappingPath": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\fairness-corrected-pairs\\private-143-mapping.json",
+      "mappingSha256": "ba3d608636515f1b6d40209e7047e80f500b758d52a823d41b346edeabb1ddbf",
+      "pairedCropEvidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\078_154\\final\\143-five-pairs.jpg",
+      "fullPairEvidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\078_154\\final\\143-full.jpg",
+      "browserMobileInteractionPerformedByThisAgent": false,
+      "physicalPhoneQA": "not performed"
+    },
+    {
+      "id": "v4-fairness-dream-150-v1",
+      "actualBrowserCompositeFinalVisualVerdict": "pass",
+      "allFiveCluePairsVisuallyReviewed": true,
+      "fullCompositeVisuallyReviewed": true,
+      "clippedFragmentsOrObviousSeamsObserved": false,
+      "disconnectedSalientChangesObserved": false,
+      "changedPixelsOutsideAllFiveAcceptedBoxes": 0,
+      "restoredSites": [
+        {
+          "point": [
+            1525,
+            336
+          ],
+          "changedPixelsIn17x17Neighborhood": 0,
+          "exactOriginalPixels": true
+        },
+        {
+          "point": [
+            1496,
+            280
+          ],
+          "changedPixelsIn17x17Neighborhood": 0,
+          "exactOriginalPixels": true
+        }
+      ],
+      "salientChangedPoint": [
+        1560,
+        297
+      ],
+      "pointPixelChanged": true,
+      "APath": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\fairness-corrected-pairs\\Dreamerie-150-A-original.png",
+      "ASha256": "67035ad243a59b8ab5b0176ca59e2414039e8018e0e0065968dbf16634af4714",
+      "BPath": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\fairness-corrected-pairs\\Dreamerie-150-B-changed.png",
+      "BSha256": "f86d686b4a581ab1dd482883a232f6bdeb6fc992d219777654a3428de378658c",
+      "mappingPath": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\fairness-corrected-pairs\\private-150-mapping.json",
+      "mappingSha256": "ee3f267d30fbce5e775be2cec3a86147064e7888766ee4160084ecf9700c434d",
+      "pairedCropEvidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\078_154\\final\\150-five-pairs.jpg",
+      "fullPairEvidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\078_154\\final\\150-full.jpg",
+      "browserMobileInteractionPerformedByThisAgent": false,
+      "physicalPhoneQA": "not performed"
+    },
+    {
+      "id": "v4-fairness-dream-152-v1",
+      "actualBrowserCompositeFinalVisualVerdict": "pass",
+      "allFiveCluePairsVisuallyReviewed": true,
+      "fullCompositeVisuallyReviewed": true,
+      "clippedFragmentsOrObviousSeamsObserved": false,
+      "disconnectedSalientChangesObserved": false,
+      "changedPixelsOutsideAllFiveAcceptedBoxes": 0,
+      "restoredSites": [
+        {
+          "point": [
+            584,
+            554
+          ],
+          "changedPixelsIn17x17Neighborhood": 0,
+          "exactOriginalPixels": true
+        },
+        {
+          "point": [
+            588,
+            551
+          ],
+          "changedPixelsIn17x17Neighborhood": 0,
+          "exactOriginalPixels": true
+        }
+      ],
+      "salientChangedPoint": [
+        642,
+        572
+      ],
+      "pointPixelChanged": true,
+      "APath": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\fairness-corrected-pairs\\Dreamerie-152-A-original.png",
+      "ASha256": "8b1ff8fe3a4695c86a45d96320d194e736d99c7487a0de24fb4097a9eb2977e2",
+      "BPath": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\fairness-corrected-pairs\\Dreamerie-152-B-changed.png",
+      "BSha256": "6516e33e9476df4d6767740711dadbc508be0aea269653b2330cab9a29cf5697",
+      "mappingPath": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\fairness-corrected-pairs\\private-152-mapping.json",
+      "mappingSha256": "3fbd022f17ba5b0ea9904790e6ef6e78e264c1efa9fe383ab79aedac1461b09d",
+      "pairedCropEvidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\078_154\\final\\152-five-pairs.jpg",
+      "fullPairEvidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\078_154\\final\\152-full.jpg",
+      "browserMobileInteractionPerformedByThisAgent": false,
+      "physicalPhoneQA": "not performed"
+    }
+  ],
+  "coverage": "7 actual corrected native browser full composites plus35 paired clues visually reviewed; decoded pixel checks separate from visual judgement.",
+  "fragmentChangedDuringFinalReview": false
+}

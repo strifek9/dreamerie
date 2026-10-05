@@ -1,0 +1,100 @@
+{
+  "card": "340",
+  "id": "v4-dream-340",
+  "title": "The Monster Who Held the Ceiling",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "change-1",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-340-altered-source-v4.png",
+      "sourceSha256": "d62688956e6ba5733ab21945540bae7140da0608e0a12626d0d4d428cf1b4c87",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        590,
+        570,
+        66,
+        37
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-2",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-340-altered-source-v4.png",
+      "sourceSha256": "d62688956e6ba5733ab21945540bae7140da0608e0a12626d0d4d428cf1b4c87",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        281,
+        485,
+        39,
+        42
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-3",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-340-altered-source-v4.png",
+      "sourceSha256": "d62688956e6ba5733ab21945540bae7140da0608e0a12626d0d4d428cf1b4c87",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        471,
+        706,
+        113,
+        66
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-4",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-340-altered-source-v4.png",
+      "sourceSha256": "d62688956e6ba5733ab21945540bae7140da0608e0a12626d0d4d428cf1b4c87",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        50,
+        330,
+        84,
+        38
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-5",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-340-altered-source-v4.png",
+      "sourceSha256": "d62688956e6ba5733ab21945540bae7140da0608e0a12626d0d4d428cf1b4c87",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1291,
+        669,
+        55,
+        61
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "545b02b612bc6c6bc7c91bf70d66bb21757980ea3204e92fc74a254d23eafa2d",
+  "compositeSha256": "c8e68e6f758379a23f2ef30bae85b5f9cef42d568348cd2ade38437d37eb3ce8",
+  "evidence": [
+    "review-deliverables/Dreamerie-340-A-original.png",
+    "review-deliverables/Dreamerie-340-B-changed.png",
+    "audit-fairness\\309_holidays\\340.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

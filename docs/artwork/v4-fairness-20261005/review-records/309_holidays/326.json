@@ -1,0 +1,100 @@
+{
+  "card": "326",
+  "id": "v4-dream-326",
+  "title": "The Chair's Glass Lake",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "cherry",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-326-altered-source-v4.png",
+      "sourceSha256": "718756f02ea135e4fd43a9248383fd7544007b37f046c0ce0cda0ef3ecd9d80a",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        154,
+        699,
+        49,
+        73
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "vein",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-326-altered-source-v4.png",
+      "sourceSha256": "718756f02ea135e4fd43a9248383fd7544007b37f046c0ce0cda0ef3ecd9d80a",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        574,
+        627,
+        105,
+        73
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "sail",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-326-altered-source-v4.png",
+      "sourceSha256": "718756f02ea135e4fd43a9248383fd7544007b37f046c0ce0cda0ef3ecd9d80a",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1023,
+        363,
+        56,
+        47
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "reflection",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-326-altered-source-v4.png",
+      "sourceSha256": "718756f02ea135e4fd43a9248383fd7544007b37f046c0ce0cda0ef3ecd9d80a",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1024,
+        510,
+        58,
+        104
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "bench",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-326-altered-source-v4.png",
+      "sourceSha256": "718756f02ea135e4fd43a9248383fd7544007b37f046c0ce0cda0ef3ecd9d80a",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        451,
+        125,
+        176,
+        49
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "8f01b7b6be31b199b649c8ada54c6d0bc3d9e4d14a393d5163b53dd0d646b393",
+  "compositeSha256": "8d18b9ebaf3dca5242986140cb93f877e95bbda0dcb8652b9e5dcd2646b94bd7",
+  "evidence": [
+    "review-deliverables/Dreamerie-326-A-original.png",
+    "review-deliverables/Dreamerie-326-B-changed.png",
+    "audit-fairness\\309_holidays\\326.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

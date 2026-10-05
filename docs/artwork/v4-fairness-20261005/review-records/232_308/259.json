@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-259",
+  "title": "The Cabinet of Borrowed Thunder",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "cf15f0910aef7ca23c16f99e2e7ff24ac8b85b8d5630dd54a1ccdd3ed6689c66",
+    "browserComposite": "68689707ee6478064aacda9e08f0801d8a835e9c901b4d22b7f5e57dcbb5cdef",
+    "mapping": "c708e3253905ec3e979ee67f8556f8ff8ed86aa729cf2a2e29d995ca5d384a5a"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-259-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-259-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\259.png"
+  ],
+  "clues": [
+    {
+      "id": "change-1",
+      "label": "The mug motif becomes a gold star.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.13935406698564592,
+        "top": 0.5781083953241233,
+        "width": 0.04066985645933014,
+        "height": 0.07120085015940489
+      }
+    },
+    {
+      "id": "change-2",
+      "label": "The magnifying glass reflects a blue crescent.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.5215311004784688,
+        "top": 0.4059511158342189,
+        "width": 0.02631578947368421,
+        "height": 0.04782146652497343
+      }
+    },
+    {
+      "id": "change-3",
+      "label": "One ladder brace arches upward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.46351674641148327,
+        "top": 0.6641870350690755,
+        "width": 0.045454545454545456,
+        "height": 0.05100956429330499
+      }
+    },
+    {
+      "id": "change-4",
+      "label": "The lantern lattice has a diagonal crossbar.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.7296650717703349,
+        "top": 0.8044633368756642,
+        "width": 0.05143540669856459,
+        "height": 0.1126461211477152
+      }
+    },
+    {
+      "id": "change-5",
+      "label": "One cabinet pull has an X engraving.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.7948564593301436,
+        "top": 0.3655685441020191,
+        "width": 0.01854066985645933,
+        "height": 0.025504782146652496
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

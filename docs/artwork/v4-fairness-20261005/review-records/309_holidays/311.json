@@ -1,0 +1,100 @@
+{
+  "card": "311",
+  "id": "v4-dream-311",
+  "title": "The Caterpillar's Glass House",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "change-1",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-311-altered-source-v4.png",
+      "sourceSha256": "bfd6c8933551a77f768c30e43c447a2ccc101fc7cfe3bd009d155ca8f64f4468",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1294,
+        726,
+        75,
+        97
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-2",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-311-altered-source-v4.png",
+      "sourceSha256": "bfd6c8933551a77f768c30e43c447a2ccc101fc7cfe3bd009d155ca8f64f4468",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        73,
+        265,
+        83,
+        254
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-3",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-311-altered-source-v4.png",
+      "sourceSha256": "bfd6c8933551a77f768c30e43c447a2ccc101fc7cfe3bd009d155ca8f64f4468",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1032,
+        453,
+        60,
+        56
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-4",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-311-altered-source-v4.png",
+      "sourceSha256": "bfd6c8933551a77f768c30e43c447a2ccc101fc7cfe3bd009d155ca8f64f4468",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        363,
+        387,
+        42,
+        40
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-5",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-311-altered-source-v4.png",
+      "sourceSha256": "bfd6c8933551a77f768c30e43c447a2ccc101fc7cfe3bd009d155ca8f64f4468",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        873,
+        396,
+        40,
+        40
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "a3c44aac42509ff64c084485014c6478e77127835da16c35130499fc9ec71300",
+  "compositeSha256": "7d0f114d7a01514525cb7b040f3c82124894607aea24fffab45be54fdf63f3e9",
+  "evidence": [
+    "review-deliverables/Dreamerie-311-A-original.png",
+    "review-deliverables/Dreamerie-311-B-changed.png",
+    "audit-fairness\\309_holidays\\311.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

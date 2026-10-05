@@ -1,0 +1,100 @@
+{
+  "card": "332",
+  "id": "v4-dream-332",
+  "title": "The Boy Who Pressed the Silence",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "change-1",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-332-altered-source-v4.png",
+      "sourceSha256": "6323eb2314e705639a1165ad0fbee8ecec830e3445d88f6385bd127c10d89bc6",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        560,
+        531,
+        151,
+        158
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-2",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-332-altered-source-v4.png",
+      "sourceSha256": "6323eb2314e705639a1165ad0fbee8ecec830e3445d88f6385bd127c10d89bc6",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        434,
+        786,
+        163,
+        126
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-3",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-332-altered-source-v4.png",
+      "sourceSha256": "6323eb2314e705639a1165ad0fbee8ecec830e3445d88f6385bd127c10d89bc6",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1327,
+        184,
+        143,
+        196
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-4",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-332-altered-source-v4.png",
+      "sourceSha256": "6323eb2314e705639a1165ad0fbee8ecec830e3445d88f6385bd127c10d89bc6",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        204,
+        764,
+        62,
+        58
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-5",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-332-altered-source-v4.png",
+      "sourceSha256": "6323eb2314e705639a1165ad0fbee8ecec830e3445d88f6385bd127c10d89bc6",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        131,
+        603,
+        60,
+        65
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "bee463d3d6c3f28fc7ab421350019598bfc941b1f60eff29569411d7d4222ad7",
+  "compositeSha256": "b0d121ab624cc1790b08eee813b6d9a0ec1b6b268d97afea4b6e6b105634db7d",
+  "evidence": [
+    "review-deliverables/Dreamerie-332-A-original.png",
+    "review-deliverables/Dreamerie-332-B-changed.png",
+    "audit-fairness\\309_holidays\\332.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

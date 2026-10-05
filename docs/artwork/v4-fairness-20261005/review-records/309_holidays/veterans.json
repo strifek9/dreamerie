@@ -1,0 +1,100 @@
+{
+  "card": "veterans",
+  "id": "v4-dream-veterans",
+  "title": "The Long Way Home",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "closed-eye",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-veterans-altered-source-v4.png",
+      "sourceSha256": "0033065c8090f68d7b042844199dba52e2225b377c79e66bd0fc8338b01da9fb",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1008,
+        328,
+        45,
+        35
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "left-clapper",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-veterans-altered-source-v4.png",
+      "sourceSha256": "0033065c8090f68d7b042844199dba52e2225b377c79e66bd0fc8338b01da9fb",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1091,
+        156,
+        57,
+        43
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    },
+    {
+      "id": "crescent-bowl",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-veterans-altered-source-v4.png",
+      "sourceSha256": "0033065c8090f68d7b042844199dba52e2225b377c79e66bd0fc8338b01da9fb",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        209,
+        703,
+        62,
+        74
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "heart-tag",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-veterans-altered-source-v4.png",
+      "sourceSha256": "0033065c8090f68d7b042844199dba52e2225b377c79e66bd0fc8338b01da9fb",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        978,
+        452,
+        44,
+        44
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    },
+    {
+      "id": "star-flame",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-veterans-altered-source-v4.png",
+      "sourceSha256": "0033065c8090f68d7b042844199dba52e2225b377c79e66bd0fc8338b01da9fb",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1556,
+        765,
+        49,
+        58
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    }
+  ],
+  "originalSha256": "964275ba502655e21e64480dd26fd184a8e707d10125378555f2f70478986f1e",
+  "compositeSha256": "1b1deaf202d6a0673a09723932951ec040581032b00884e94b6fb21f65c376fc",
+  "evidence": [
+    "review-deliverables/Dreamerie-veterans-A-original.png",
+    "review-deliverables/Dreamerie-veterans-B-changed.png",
+    "audit-fairness\\309_holidays\\veterans.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

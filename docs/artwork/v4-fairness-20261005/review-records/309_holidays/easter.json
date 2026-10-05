@@ -1,0 +1,100 @@
+{
+  "card": "easter",
+  "id": "v4-dream-easter",
+  "title": "The Garden Inside the Egg",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "wheel-three",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-easter-altered-source-v4.png",
+      "sourceSha256": "81b59250749e329a53ee5568d7b3428f59782f2fd4e6f4bf3e1e92298900bcdb",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1352,
+        776,
+        165,
+        159
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "egg-crescents",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-easter-altered-source-v4.png",
+      "sourceSha256": "81b59250749e329a53ee5568d7b3428f59782f2fd4e6f4bf3e1e92298900bcdb",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1053,
+        812,
+        112,
+        129
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "door-closes",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-easter-door-assembled-source-v4.png",
+      "sourceSha256": "5b7b2bb104c9c7c70e0441e13ed58516db5735a6dd0d90ffdff62461f49e9cc5",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1353,
+        463,
+        144,
+        190
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "rabbit-wink",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-easter-altered-source-v4.png",
+      "sourceSha256": "81b59250749e329a53ee5568d7b3428f59782f2fd4e6f4bf3e1e92298900bcdb",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1005,
+        201,
+        37,
+        40
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "bow-fold",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-easter-altered-source-v4.png",
+      "sourceSha256": "81b59250749e329a53ee5568d7b3428f59782f2fd4e6f4bf3e1e92298900bcdb",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        251,
+        602,
+        55,
+        61
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "94764c797b1688867444d9a2a2a5b18f6b48c07d5b03392862114ab1c862b60f",
+  "compositeSha256": "92c41526aa9c26b835ec7a9e505488019a3e2e6b6b0b2cfb8fdd19f508b6ac2e",
+  "evidence": [
+    "review-deliverables/Dreamerie-easter-A-original.png",
+    "review-deliverables/Dreamerie-easter-B-changed.png",
+    "audit-fairness\\309_holidays\\easter.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

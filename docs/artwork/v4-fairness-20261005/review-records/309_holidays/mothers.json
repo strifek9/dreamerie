@@ -1,0 +1,100 @@
+{
+  "card": "mothers",
+  "id": "v4-dream-mothers",
+  "title": "The Home Inside Her Card",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "jam-spiral",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-mothers-altered-source-v4.png",
+      "sourceSha256": "fb8f8160665049bf96a5e84acdc09cdeb75cb24159069c0653a9d134111e4f1a",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        482,
+        634,
+        101,
+        41
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "cup-heart",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-mothers-altered-source-v4.png",
+      "sourceSha256": "fb8f8160665049bf96a5e84acdc09cdeb75cb24159069c0653a9d134111e4f1a",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        766,
+        598,
+        61,
+        65
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "door-ajar",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-mothers-altered-source-v4.png",
+      "sourceSha256": "fb8f8160665049bf96a5e84acdc09cdeb75cb24159069c0653a9d134111e4f1a",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        832,
+        250,
+        48,
+        79
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "bow-fold",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-mothers-altered-source-v4.png",
+      "sourceSha256": "fb8f8160665049bf96a5e84acdc09cdeb75cb24159069c0653a9d134111e4f1a",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        896,
+        709,
+        85,
+        69
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "cat-awake",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-mothers-altered-source-v4.png",
+      "sourceSha256": "fb8f8160665049bf96a5e84acdc09cdeb75cb24159069c0653a9d134111e4f1a",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        150,
+        484,
+        33,
+        29
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "38ea4cd3530dff8446ade8f392454cf7d31a72b32e642fa7aa3a9ccecce8ea31",
+  "compositeSha256": "9ea975f89a51702716aae4881fc94b6b97427a3db0b292e2ab80cf15e8e4ffba",
+  "evidence": [
+    "review-deliverables/Dreamerie-mothers-A-original.png",
+    "review-deliverables/Dreamerie-mothers-B-changed.png",
+    "audit-fairness\\309_holidays\\mothers.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

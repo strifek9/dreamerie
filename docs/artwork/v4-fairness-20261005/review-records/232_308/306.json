@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-306",
+  "title": "The Fisher of Loose Tiles",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "fbfcc5f9beac99633a35346ad462ab4264a283e3dacc712478271873e78f9200",
+    "browserComposite": "4d4e3003f00c00f2b4aad1752cd5f9fd8f72bc1c941f73098595c8b91ade0bd5",
+    "mapping": "3447181e245d68fc129c4c2220939551bd323ce837b551edf01636ff7397b52b"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-306-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-306-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\306.png"
+  ],
+  "clues": [
+    {
+      "id": "magnet",
+      "label": "The magnet bridge becomes flat-topped.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.6034688995215312,
+        "top": 0.461211477151966,
+        "width": 0.05861244019138756,
+        "height": 0.08820403825717323
+      }
+    },
+    {
+      "id": "claw",
+      "label": "The hammer claw hooks upward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.3277511961722488,
+        "top": 0.769394261424017,
+        "width": 0.04844497607655503,
+        "height": 0.10201912858660998
+      }
+    },
+    {
+      "id": "cup",
+      "label": "The cup handle curls into a spiral.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.18301435406698566,
+        "top": 0.7035069075451648,
+        "width": 0.042464114832535885,
+        "height": 0.09351753453772582
+      }
+    },
+    {
+      "id": "knocker",
+      "label": "The door knocker ring becomes hexagonal.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.0861244019138756,
+        "top": 0.044633368756641874,
+        "width": 0.04904306220095694,
+        "height": 0.08501594048884166
+      }
+    },
+    {
+      "id": "tile",
+      "label": "The bucket tile flower becomes a star.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.4437799043062201,
+        "top": 0.3655685441020191,
+        "width": 0.05263157894736842,
+        "height": 0.09139213602550478
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

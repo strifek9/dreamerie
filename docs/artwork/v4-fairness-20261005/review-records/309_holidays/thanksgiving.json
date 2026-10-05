@@ -1,0 +1,100 @@
+{
+  "card": "thanksgiving",
+  "id": "v4-dream-thanksgiving",
+  "title": "The Turkeys' Harvest Feast",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "spoon-raised",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-thanksgiving-spoon-assembled-source-v4.png",
+      "sourceSha256": "7bf4b970b46de42ecdff887f7d42593b29a45a9fba52d852720dec052756218a",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1075,
+        532,
+        119,
+        97
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "gravy-heart",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-thanksgiving-altered-source-v4.png",
+      "sourceSha256": "6c956ce3f9697899630859b85e5a82f4948d8d392a401dc8e7c1fd9e895122e3",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        510,
+        666,
+        48,
+        55
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "pastry-curl",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-thanksgiving-altered-source-v4.png",
+      "sourceSha256": "6c956ce3f9697899630859b85e5a82f4948d8d392a401dc8e7c1fd9e895122e3",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        836,
+        570,
+        54,
+        60
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "young-eye",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-thanksgiving-altered-source-v4.png",
+      "sourceSha256": "6c956ce3f9697899630859b85e5a82f4948d8d392a401dc8e7c1fd9e895122e3",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1221,
+        303,
+        48,
+        47
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "brooch-star",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-thanksgiving-altered-source-v4.png",
+      "sourceSha256": "6c956ce3f9697899630859b85e5a82f4948d8d392a401dc8e7c1fd9e895122e3",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        387,
+        331,
+        41,
+        45
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "5d9199c9d4b01a192917c88d91ef2355cbc3849ed551da28c6354c91e99155f6",
+  "compositeSha256": "6c5353b5e5480271c110659801a2070c5bf63ca5c928bca9a730809ffeb7fe74",
+  "evidence": [
+    "review-deliverables/Dreamerie-thanksgiving-A-original.png",
+    "review-deliverables/Dreamerie-thanksgiving-B-changed.png",
+    "audit-fairness\\309_holidays\\thanksgiving.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

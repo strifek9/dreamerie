@@ -1,0 +1,100 @@
+{
+  "card": "fathers",
+  "id": "v4-dream-fathers",
+  "title": "Dad's Kite Could Carry a Lake",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "scarf",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-fathers-altered-source-v4.png",
+      "sourceSha256": "22b5441f36175037235f5e26c2feb606494e2e1ccdff3b65e324bc72273333d2",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        194,
+        369,
+        185,
+        215
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "card",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-fathers-altered-source-v4.png",
+      "sourceSha256": "22b5441f36175037235f5e26c2feb606494e2e1ccdff3b65e324bc72273333d2",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        809,
+        539,
+        54,
+        62
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "mug",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-fathers-altered-source-v4.png",
+      "sourceSha256": "22b5441f36175037235f5e26c2feb606494e2e1ccdff3b65e324bc72273333d2",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        112,
+        688,
+        55,
+        62
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "sail",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-fathers-altered-source-v4.png",
+      "sourceSha256": "22b5441f36175037235f5e26c2feb606494e2e1ccdff3b65e324bc72273333d2",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1210,
+        93,
+        76,
+        66
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "bird",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-fathers-altered-source-v4.png",
+      "sourceSha256": "22b5441f36175037235f5e26c2feb606494e2e1ccdff3b65e324bc72273333d2",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1361,
+        8,
+        73,
+        47
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "8f6fdfb5117c0924651474c7ef87b292f4561dd90e456af4f09da6cad7214364",
+  "compositeSha256": "7a97384664e7eda61afa02e8e51ddfc96a4241a1ac81cf0d7e858faaee40855b",
+  "evidence": [
+    "review-deliverables/Dreamerie-fathers-A-original.png",
+    "review-deliverables/Dreamerie-fathers-B-changed.png",
+    "audit-fairness\\309_holidays\\fathers.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

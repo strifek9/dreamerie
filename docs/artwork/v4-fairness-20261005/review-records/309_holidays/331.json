@@ -1,0 +1,100 @@
+{
+  "card": "331",
+  "id": "v4-dream-331",
+  "title": "The Elevator in the Cabbage",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "napkin-unfold",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-331-altered-source-v4.png",
+      "sourceSha256": "9e85a17ff184e6ba8df843c82efc9e6537dee0a7e3ecfe94f9cee202fdca20d7",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        887,
+        450,
+        165,
+        115
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "bar-bowed",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-331-altered-source-v4.png",
+      "sourceSha256": "9e85a17ff184e6ba8df843c82efc9e6537dee0a7e3ecfe94f9cee202fdca20d7",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        708,
+        443,
+        111,
+        40
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "wheel-three",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-331-altered-source-v4.png",
+      "sourceSha256": "9e85a17ff184e6ba8df843c82efc9e6537dee0a7e3ecfe94f9cee202fdca20d7",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        699,
+        142,
+        73,
+        73
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "floor-flower",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-331-altered-source-v4.png",
+      "sourceSha256": "9e85a17ff184e6ba8df843c82efc9e6537dee0a7e3ecfe94f9cee202fdca20d7",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        723,
+        538,
+        135,
+        74
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "rivet-crescent",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-331-altered-source-v4.png",
+      "sourceSha256": "9e85a17ff184e6ba8df843c82efc9e6537dee0a7e3ecfe94f9cee202fdca20d7",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        225,
+        840,
+        45,
+        43
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "a6a8b0a3bdd915c9cadc986651c8491794052307f7788b8c27ce6feb05a867a0",
+  "compositeSha256": "304c226a03ef4f8f36c379e57ebf2be8ecae8ae8e4455c0e491da022292dd8af",
+  "evidence": [
+    "review-deliverables/Dreamerie-331-A-original.png",
+    "review-deliverables/Dreamerie-331-B-changed.png",
+    "audit-fairness\\309_holidays\\331.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

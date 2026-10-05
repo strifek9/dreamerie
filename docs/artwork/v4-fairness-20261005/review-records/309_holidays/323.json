@@ -1,0 +1,100 @@
+{
+  "card": "323",
+  "id": "v4-dream-323",
+  "title": "The Lemon That Kept the Rain",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "change-1",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-323-altered-source-v4.png",
+      "sourceSha256": "68a4bbcbfcbab5f55bad7d655077f2ff91a69335624c83bdd5d94af90d95533f",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1110,
+        646,
+        132,
+        51
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-2",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-323-altered-source-v4.png",
+      "sourceSha256": "68a4bbcbfcbab5f55bad7d655077f2ff91a69335624c83bdd5d94af90d95533f",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        795,
+        258,
+        51,
+        69
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-3",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-323-altered-source-v4.png",
+      "sourceSha256": "68a4bbcbfcbab5f55bad7d655077f2ff91a69335624c83bdd5d94af90d95533f",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1180,
+        274,
+        100,
+        27
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-4",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-323-altered-source-v4.png",
+      "sourceSha256": "68a4bbcbfcbab5f55bad7d655077f2ff91a69335624c83bdd5d94af90d95533f",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        332,
+        744,
+        42,
+        23
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-5",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-323-altered-source-v4.png",
+      "sourceSha256": "68a4bbcbfcbab5f55bad7d655077f2ff91a69335624c83bdd5d94af90d95533f",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        768,
+        304,
+        22,
+        19
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "2a029331df98030dffdc6b360dc53c645359f6340d642013ac6565792e2ea8fd",
+  "compositeSha256": "c60ffd74fc5e3b4328ca608daa415ad931257c19f65c43de1f5ded97f53df5e8",
+  "evidence": [
+    "review-deliverables/Dreamerie-323-A-original.png",
+    "review-deliverables/Dreamerie-323-B-changed.png",
+    "audit-fairness\\309_holidays\\323.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

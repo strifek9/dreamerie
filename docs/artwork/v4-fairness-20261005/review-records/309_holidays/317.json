@@ -1,0 +1,100 @@
+{
+  "card": "317",
+  "id": "v4-dream-317",
+  "title": "The Child Who Untied the Path",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "change-1",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-317-altered-source-v4.png",
+      "sourceSha256": "1118e79e073ec5687bafb43955f15c92f8f6eddb3012ff897273808acfad039f",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        385,
+        16,
+        111,
+        83
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-2",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-317-altered-source-v4.png",
+      "sourceSha256": "1118e79e073ec5687bafb43955f15c92f8f6eddb3012ff897273808acfad039f",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        68,
+        749,
+        72,
+        58
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-3",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-317-altered-source-v4.png",
+      "sourceSha256": "1118e79e073ec5687bafb43955f15c92f8f6eddb3012ff897273808acfad039f",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        232,
+        679,
+        159,
+        90
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-4",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-317-altered-source-v4.png",
+      "sourceSha256": "1118e79e073ec5687bafb43955f15c92f8f6eddb3012ff897273808acfad039f",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        343,
+        445,
+        56,
+        64
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-5",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-317-altered-source-v4.png",
+      "sourceSha256": "1118e79e073ec5687bafb43955f15c92f8f6eddb3012ff897273808acfad039f",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        539,
+        532,
+        106,
+        99
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "9bc508f13d5859de7f1b71a6721be30ad823d92921a2f0cf27c86a4daa902d6b",
+  "compositeSha256": "479513d349978a0856ad0433d9be7cc89b25185f2755fd07038a15ecfaea0b5e",
+  "evidence": [
+    "review-deliverables/Dreamerie-317-A-original.png",
+    "review-deliverables/Dreamerie-317-B-changed.png",
+    "audit-fairness\\309_holidays\\317.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

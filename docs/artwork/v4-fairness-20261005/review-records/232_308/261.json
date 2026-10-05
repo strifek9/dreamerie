@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-261",
+  "title": "The Hermit Crab's Waiting Room",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "72e96200ac672a301f4175f72e645e67d3df0b0f4f4c4231752901c0204c93ad",
+    "browserComposite": "3d063166b88e735a28e583df4d7f5f890d3c839a45486ebf8daa80a35eb68b3c",
+    "mapping": "9c9824698772b652c0d41ef12e35f7a8b1810663769fca1026c41e099e6da4ce"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-261-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-261-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\261.png"
+  ],
+  "clues": [
+    {
+      "id": "change-1",
+      "label": "The glass pebble reflects a gold star.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.8409090909090909,
+        "top": 0.7396386822529224,
+        "width": 0.041866028708133975,
+        "height": 0.06376195536663125
+      }
+    },
+    {
+      "id": "change-2",
+      "label": "The left chair armrest arches upward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.18361244019138756,
+        "top": 0.3230605738575983,
+        "width": 0.03588516746411483,
+        "height": 0.05844845908607864
+      }
+    },
+    {
+      "id": "change-3",
+      "label": "The wooden sign has an S-shaped groove.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.3875598086124402,
+        "top": 0.19766206163655686,
+        "width": 0.04724880382775119,
+        "height": 0.039319872476089264
+      }
+    },
+    {
+      "id": "change-4",
+      "label": "The lamp shade reflects a blue crescent.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.22727272727272727,
+        "top": 0.14027630180658873,
+        "width": 0.0215311004784689,
+        "height": 0.03825717321997875
+      }
+    },
+    {
+      "id": "change-5",
+      "label": "The doorknob has an X groove.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.45215311004784686,
+        "top": 0.2678002125398512,
+        "width": 0.022727272727272728,
+        "height": 0.03719447396386823
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

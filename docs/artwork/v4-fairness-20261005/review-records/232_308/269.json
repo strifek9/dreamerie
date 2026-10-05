@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-269",
+  "title": "The Window in the Accordion",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "b2a5e3df1e0dd9ad5bf6c037ea056c7dd6c32195c0f3005fc029ce17f7053432",
+    "browserComposite": "c43c404e56e91a136299a1e3b45a85990d3fcaa2c06d9bc6217d33a6670b440c",
+    "mapping": "78acb9777d737773d067b9876d74863897e5a0e218bf1d65473d0ebf3e0efbbe"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-269-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-269-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\269.png"
+  ],
+  "clues": [
+    {
+      "id": "change-1",
+      "label": "The chair back bears a spiral.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.4611244019138756,
+        "top": 0.4442082890541977,
+        "width": 0.025717703349282296,
+        "height": 0.06057385759829968
+      }
+    },
+    {
+      "id": "change-2",
+      "label": "The pendant tilts sideways.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.45933014354066987,
+        "top": 0.255047821466525,
+        "width": 0.04904306220095694,
+        "height": 0.08926673751328375
+      }
+    },
+    {
+      "id": "change-3",
+      "label": "The mirror reflects a crescent.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.34688995215311,
+        "top": 0.31668437832093516,
+        "width": 0.014952153110047847,
+        "height": 0.057385759829968117
+      }
+    },
+    {
+      "id": "change-4",
+      "label": "The candle wick curls into a loop.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.9407894736842105,
+        "top": 0.13177470775770456,
+        "width": 0.020933014354066987,
+        "height": 0.052072263549415514
+      }
+    },
+    {
+      "id": "change-5",
+      "label": "The top bass button becomes square.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.7763157894736842,
+        "top": 0.3432518597236982,
+        "width": 0.01854066985645933,
+        "height": 0.036131774707757705
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

@@ -1,0 +1,85 @@
+{
+  "cardId": "v4-fairness-dream-344-v1",
+  "publishedIdPreserved": "v4-dream-344",
+  "source": "/artwork/v4/fairness/dream-344-snow-source-v1.png",
+  "sha256": "22a7567ab2f3d262932b8563e45fcdd7efebea1d26e1cc7ad6f99b7ab772ff15",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "acceptedRectangleUnchanged": [
+    102,
+    285,
+    68,
+    73
+  ],
+  "nativeVisualReview": "One connected cream spiral; no surrounding disconnected cream stars or dots; no snowflake fragments. Native source crop reviewed before integration. Browser clipped composite review pending root export.",
+  "automaticCreamComponents": [
+    {
+      "pixels": 1329,
+      "boundsInclusive": [
+        108,
+        293,
+        166,
+        349
+      ]
+    }
+  ],
+  "fiveSalientNativePoints": [
+    {
+      "clue": "stopper",
+      "point": [
+        362,
+        565
+      ]
+    },
+    {
+      "clue": "scarf",
+      "point": [
+        533,
+        488
+      ]
+    },
+    {
+      "clue": "cloth",
+      "point": [
+        1315,
+        42
+      ]
+    },
+    {
+      "clue": "sun",
+      "point": [
+        117,
+        107
+      ]
+    },
+    {
+      "clue": "snow-spiral",
+      "point": [
+        111,
+        322
+      ]
+    }
+  ],
+  "removedCollateralProbePoints": [
+    [
+      110,
+      343
+    ],
+    [
+      165,
+      347
+    ],
+    [
+      166,
+      302
+    ]
+  ],
+  "removedCollateralMeaning": "New source has plain blue at these previous added-star locations. Exact matching original background not asserted because generation may change local brush pixels; only accepted rectangle is selected.",
+  "ownerVisualApproval": "pending",
+  "publication": "not authorized",
+  "firstDraft": "fairness-344-generated.png; rejected concentric circles",
+  "selectedDraft": "fairness-344-generated-final.png",
+  "promptEvidence": "344-repair-prompts.json"
+}

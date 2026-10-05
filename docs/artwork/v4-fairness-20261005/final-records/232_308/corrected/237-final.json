@@ -1,0 +1,133 @@
+{
+  "id": "v4-fairness-dream-237-v1",
+  "baselineId": "v4-dream-237",
+  "title": "The Bell Without a Sound",
+  "status": "accepted-actual-browser-composite",
+  "visualFullPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "nativeSalientAndRestoredSitesReviewed": true,
+  "clues": [
+    {
+      "id": "velvet-over-clapper-ball",
+      "label": "The velvet folds over the brass clapper ball.",
+      "visualSinglePerceivedChangeAccepted": true,
+      "nativeBox": {
+        "left": 0.4395933014354067,
+        "top": 0.37194473963868224,
+        "width": 0.05382775119617225,
+        "height": 0.1275239107332625
+      }
+    },
+    {
+      "id": "additional-note-behind-card",
+      "label": "An additional paper note peeks behind the card's left edge.",
+      "visualSinglePerceivedChangeAccepted": true,
+      "nativeBox": {
+        "left": 0.6130382775119617,
+        "top": 0.24973432518597238,
+        "width": 0.041866028708133975,
+        "height": 0.07438894792773645
+      }
+    },
+    {
+      "id": "additional-note-at-right-bowl-rim",
+      "label": "An additional paper note hooks over the bowl's right rim.",
+      "visualSinglePerceivedChangeAccepted": true,
+      "nativeBox": {
+        "left": 0.9210526315789473,
+        "top": 0.2592986184909671,
+        "width": 0.06578947368421052,
+        "height": 0.12539851222104145
+      }
+    },
+    {
+      "id": "ribbon-loop",
+      "label": "The velvet ribbon threads under its own loop.",
+      "visualSinglePerceivedChangeAccepted": true,
+      "nativeBox": {
+        "left": 0.5460526315789473,
+        "top": 0.4218916046758767,
+        "width": 0.24641148325358853,
+        "height": 0.255047821466525
+      }
+    },
+    {
+      "id": "book-emblem",
+      "label": "The blue book's embossed flower gains curled leaves above and below.",
+      "visualSinglePerceivedChangeAccepted": true,
+      "nativeBox": {
+        "left": 0.07117224880382775,
+        "top": 0.06057385759829968,
+        "width": 0.08074162679425838,
+        "height": 0.22210414452709884
+      }
+    }
+  ],
+  "salientChangedPoints": [
+    [
+      785,
+      403
+    ],
+    [
+      1048,
+      273
+    ],
+    [
+      1604,
+      294
+    ]
+  ],
+  "restoredSites": [
+    {
+      "name": "restored-top-card-note",
+      "point": [
+        1250,
+        181
+      ],
+      "checkedSquareRadius": 12,
+      "exactOriginalPixels": true
+    },
+    {
+      "name": "restored-left-bowl-note-head",
+      "point": [
+        1509,
+        307
+      ],
+      "checkedSquareRadius": 8,
+      "exactOriginalPixels": true
+    },
+    {
+      "name": "restored-left-bowl-note-flag",
+      "point": [
+        1545,
+        210
+      ],
+      "checkedSquareRadius": 8,
+      "exactOriginalPixels": true
+    },
+    {
+      "name": "no-added-lower-clapper",
+      "point": [
+        738,
+        527
+      ],
+      "checkedSquareRadius": 20,
+      "exactOriginalPixels": true
+    }
+  ],
+  "outsideAuthoredBoxesPlusOnePixel": null,
+  "hashes": {
+    "original": "6ceb7dbad1449d028cb859190a18ff618a626ea1587a3d32373ac157a5786280",
+    "changed": "d86bc51edf7b25ac63e4116e6f634de2c3b566cb6581875deb877ab405a60bb1",
+    "mapping": "1a1242cdeefd5e8c3c1b2be454a07e1830bae140b8430262356b24ecf759f81b"
+  },
+  "evidence": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\corrected\\237.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\corrected\\237-native-1.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\corrected\\237-native-2.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\corrected\\237-native-3.png"
+  ],
+  "mobileInteractionTesting": "root-owned; not performed by this reviewer",
+  "physicalPhoneReview": false,
+  "observations": "237: same clapper ball is covered locally by velvet; no lower added ball, original note flags/heads intact and one added note per target. 270: upper curl added while lower original bolt remains pixel-identical."
+}

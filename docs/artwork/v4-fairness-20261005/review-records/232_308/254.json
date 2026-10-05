@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-254",
+  "title": "The Sock Ferryman",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "45f8c6555ea10f3ea031f7a3c085a454321de67a2cf2181217f2606156b36e17",
+    "browserComposite": "087cdd19a504c83138539892a57b6248818615548a164c148fcea008426d0e2a",
+    "mapping": "6eff3b1729a3633c9248c8d9aa8142ba3f284e37a75ee5abf369c6ebd354967b"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-254-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-254-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\254.png"
+  ],
+  "clues": [
+    {
+      "id": "surprised-mouth",
+      "label": "The ferryman\u2019s mouth forms an O.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.3116028708133971,
+        "top": 0.23485653560042508,
+        "width": 0.02930622009569378,
+        "height": 0.0563230605738576
+      }
+    },
+    {
+      "id": "sideways-bell",
+      "label": "The bell turns to face left.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.22248803827751196,
+        "top": 0.23485653560042508,
+        "width": 0.046052631578947366,
+        "height": 0.10520722635494155
+      }
+    },
+    {
+      "id": "swept-tassel",
+      "label": "The loafer\u2019s tassel sweeps right.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.4491626794258373,
+        "top": 0.5696068012752391,
+        "width": 0.07834928229665072,
+        "height": 0.1073326248671626
+      }
+    },
+    {
+      "id": "heart-latch",
+      "label": "The boat latch has a heart-shaped opening.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.29485645933014354,
+        "top": 0.640807651434644,
+        "width": 0.04066985645933014,
+        "height": 0.09989373007438895
+      }
+    },
+    {
+      "id": "round-pull",
+      "label": "The distant zipper pull has a round opening.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.7828947368421053,
+        "top": 0.20085015940488843,
+        "width": 0.02631578947368421,
+        "height": 0.04569606801275239
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

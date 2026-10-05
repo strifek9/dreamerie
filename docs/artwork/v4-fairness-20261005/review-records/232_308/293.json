@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-293",
+  "title": "The Octopus's Invisible Suit",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "788be244f15bc91d4cded80bd754f1e5075b19e19bd99c34eec053d9a912a25b",
+    "browserComposite": "c0dc444b55c0c99828e33dab076fb20f028a3c0ec6662c37771af9583611bdbc",
+    "mapping": "c901065a05b850a4bb8759073d97319ce70c604345c98ff6ecbec0a64d03f1a7"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-293-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-293-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\293.png"
+  ],
+  "clues": [
+    {
+      "id": "change-1",
+      "label": "The iron reflects a blue crescent.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.4599282296650718,
+        "top": 0.59192348565356,
+        "width": 0.02631578947368421,
+        "height": 0.05100956429330499
+      }
+    },
+    {
+      "id": "change-2",
+      "label": "The upper scissor handle becomes triangular.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.11961722488038277,
+        "top": 0.7598299681190224,
+        "width": 0.06937799043062201,
+        "height": 0.06057385759829968
+      }
+    },
+    {
+      "id": "change-3",
+      "label": "The dresser pull arches upward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.9389952153110048,
+        "top": 0.4218916046758767,
+        "width": 0.041866028708133975,
+        "height": 0.04782146652497343
+      }
+    },
+    {
+      "id": "change-4",
+      "label": "The spool hole has a wooden crossbar.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.056220095693779906,
+        "top": 0.7173219978746015,
+        "width": 0.026913875598086126,
+        "height": 0.02975557917109458
+      }
+    },
+    {
+      "id": "change-5",
+      "label": "One jacket body button has an X groove.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.6255980861244019,
+        "top": 0.6280552603613178,
+        "width": 0.017942583732057416,
+        "height": 0.031880977683315624
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

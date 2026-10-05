@@ -1,0 +1,100 @@
+{
+  "card": "365",
+  "id": "v4-dream-365",
+  "title": "The Door We Left Ajar",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "crescent-moon",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-365-altered-source-v4.png",
+      "sourceSha256": "3b70e9543adbd2ca1b8f4ea7a1d2f135f46c71fca5c0d0910a4b944daed54279",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        515,
+        79,
+        60,
+        64
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "open-envelope",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-365-altered-source-v4.png",
+      "sourceSha256": "3b70e9543adbd2ca1b8f4ea7a1d2f135f46c71fca5c0d0910a4b944daed54279",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1306,
+        733,
+        179,
+        110
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    },
+    {
+      "id": "star-sail",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-365-altered-source-v4.png",
+      "sourceSha256": "3b70e9543adbd2ca1b8f4ea7a1d2f135f46c71fca5c0d0910a4b944daed54279",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        218,
+        650,
+        33,
+        46
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    },
+    {
+      "id": "square-knob",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-365-altered-source-v4.png",
+      "sourceSha256": "3b70e9543adbd2ca1b8f4ea7a1d2f135f46c71fca5c0d0910a4b944daed54279",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        767,
+        359,
+        43,
+        50
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "heart-keyhole",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-365-altered-source-v4.png",
+      "sourceSha256": "3b70e9543adbd2ca1b8f4ea7a1d2f135f46c71fca5c0d0910a4b944daed54279",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1506,
+        635,
+        32,
+        32
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "d928c974fadc2979a937e41cba7f525877793985273c4758a40e5f1a5defe427",
+  "compositeSha256": "8b2a6a9055978b2b26b2ddb7e4d61abb8c99feb466b07f69e99fd947aa5a4110",
+  "evidence": [
+    "review-deliverables/Dreamerie-365-A-original.png",
+    "review-deliverables/Dreamerie-365-B-changed.png",
+    "audit-fairness\\309_holidays\\365.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

@@ -1,0 +1,100 @@
+{
+  "card": "341",
+  "id": "v4-dream-341",
+  "title": "The Jellyfish's Dry Umbrella",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "change-1",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-341-altered-source-v4.png",
+      "sourceSha256": "c20badd84768a6db8352ac024ed145fbe8a90cc66c11116b25da96246d3fb0c9",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1290,
+        149,
+        66,
+        59
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-2",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-341-altered-source-v4.png",
+      "sourceSha256": "c20badd84768a6db8352ac024ed145fbe8a90cc66c11116b25da96246d3fb0c9",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1091,
+        284,
+        61,
+        49
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-3",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-341-altered-source-v4.png",
+      "sourceSha256": "c20badd84768a6db8352ac024ed145fbe8a90cc66c11116b25da96246d3fb0c9",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        44,
+        575,
+        153,
+        79
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-4",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-341-altered-source-v4.png",
+      "sourceSha256": "c20badd84768a6db8352ac024ed145fbe8a90cc66c11116b25da96246d3fb0c9",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1253,
+        714,
+        80,
+        81
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-5",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-341-altered-source-v4.png",
+      "sourceSha256": "c20badd84768a6db8352ac024ed145fbe8a90cc66c11116b25da96246d3fb0c9",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1429,
+        784,
+        36,
+        63
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "74c037d351009a2bd8c6f6a37aeeb87ae62dd5cda209c53ab74a045b4bc765d8",
+  "compositeSha256": "c8d7b01aa305799e50a8c0f667c27401f3dfacf4a6c46d01c8d1bcfeff84bb2f",
+  "evidence": [
+    "review-deliverables/Dreamerie-341-A-original.png",
+    "review-deliverables/Dreamerie-341-B-changed.png",
+    "audit-fairness\\309_holidays\\341.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

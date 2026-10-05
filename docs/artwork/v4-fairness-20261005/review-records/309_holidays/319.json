@@ -1,0 +1,100 @@
+{
+  "card": "319",
+  "id": "v4-dream-319",
+  "title": "The Starfish's Five Empty Gloves",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "change-1",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-319-altered-source-v4.png",
+      "sourceSha256": "58071df2cfe672d76424f71ebc93754ab1ee3dac6dd92d4e1f24e8c91daf910f",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        832,
+        285,
+        76,
+        38
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-2",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-319-altered-source-v4.png",
+      "sourceSha256": "58071df2cfe672d76424f71ebc93754ab1ee3dac6dd92d4e1f24e8c91daf910f",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1241,
+        301,
+        141,
+        113
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-3",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-319-altered-source-v4.png",
+      "sourceSha256": "58071df2cfe672d76424f71ebc93754ab1ee3dac6dd92d4e1f24e8c91daf910f",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        523,
+        580,
+        177,
+        114
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-4",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-319-altered-source-v4.png",
+      "sourceSha256": "58071df2cfe672d76424f71ebc93754ab1ee3dac6dd92d4e1f24e8c91daf910f",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        787,
+        583,
+        112,
+        119
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-5",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-319-altered-source-v4.png",
+      "sourceSha256": "58071df2cfe672d76424f71ebc93754ab1ee3dac6dd92d4e1f24e8c91daf910f",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1445,
+        751,
+        170,
+        190
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "6574715efb5e3b5d9c64b94ea42b30886860c8b63282ae4b6c7b7bae5720d0f4",
+  "compositeSha256": "e097f5442f5859cb0d7a1d0e27be725d8609a85f5ffc4760e25e935443213f8e",
+  "evidence": [
+    "review-deliverables/Dreamerie-319-A-original.png",
+    "review-deliverables/Dreamerie-319-B-changed.png",
+    "audit-fairness\\309_holidays\\319.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

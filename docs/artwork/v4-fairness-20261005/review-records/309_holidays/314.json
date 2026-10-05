@@ -1,0 +1,100 @@
+{
+  "card": "314",
+  "id": "v4-dream-314",
+  "title": "The Seahorse's Pocket Watch",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "closed-eye",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-314-altered-source-v4.png",
+      "sourceSha256": "d7169d1a19106ad4762dd1b1922bda7d294f075d94fd90e0afe194a3a3d5eb20",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        645,
+        137,
+        66,
+        68
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "square-ring",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-314-altered-source-v4.png",
+      "sourceSha256": "d7169d1a19106ad4762dd1b1922bda7d294f075d94fd90e0afe194a3a3d5eb20",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        932,
+        293,
+        104,
+        80
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    },
+    {
+      "id": "triangle-shell",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-314-altered-source-v4.png",
+      "sourceSha256": "d7169d1a19106ad4762dd1b1922bda7d294f075d94fd90e0afe194a3a3d5eb20",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1437,
+        683,
+        82,
+        81
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    },
+    {
+      "id": "crescent-lamp",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-314-altered-source-v4.png",
+      "sourceSha256": "d7169d1a19106ad4762dd1b1922bda7d294f075d94fd90e0afe194a3a3d5eb20",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        977,
+        463,
+        51,
+        49
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "star-plate",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-314-altered-source-v4.png",
+      "sourceSha256": "d7169d1a19106ad4762dd1b1922bda7d294f075d94fd90e0afe194a3a3d5eb20",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        877,
+        466,
+        49,
+        47
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    }
+  ],
+  "originalSha256": "58e9f6e157b7c2a00e4b1ce91bf61d4546cefe82dfad16b9157c058299dbc287",
+  "compositeSha256": "dedfeef2698ccdbd4a0aea01703665443c678d6668d0f92aab67bfcfcaa49635",
+  "evidence": [
+    "review-deliverables/Dreamerie-314-A-original.png",
+    "review-deliverables/Dreamerie-314-B-changed.png",
+    "audit-fairness\\309_holidays\\314.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

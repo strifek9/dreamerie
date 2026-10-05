@@ -1,0 +1,100 @@
+{
+  "card": "356",
+  "id": "v4-dream-356",
+  "title": "The Otter's Dry Waterfall",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "change-1",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-356-altered-source-v4.png",
+      "sourceSha256": "63180c97ee8c1775cb4cfb5c5ebd732ec78434001dde7aefc3390b8144bc8f68",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        655,
+        588,
+        605,
+        220
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-2",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-356-altered-source-v4.png",
+      "sourceSha256": "63180c97ee8c1775cb4cfb5c5ebd732ec78434001dde7aefc3390b8144bc8f68",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        61,
+        694,
+        279,
+        127
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-3",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-356-altered-source-v4.png",
+      "sourceSha256": "63180c97ee8c1775cb4cfb5c5ebd732ec78434001dde7aefc3390b8144bc8f68",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        847,
+        368,
+        369,
+        189
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-4",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-356-altered-source-v4.png",
+      "sourceSha256": "63180c97ee8c1775cb4cfb5c5ebd732ec78434001dde7aefc3390b8144bc8f68",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        392,
+        735,
+        119,
+        74
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-5",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-356-altered-source-v4.png",
+      "sourceSha256": "63180c97ee8c1775cb4cfb5c5ebd732ec78434001dde7aefc3390b8144bc8f68",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        51,
+        441,
+        119,
+        140
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "99f1bb22df51c27bd722aa8f1637794136f5b4602db4e67959797de27fd9c881",
+  "compositeSha256": "22d10f450cd9eb44d0d585beb7bf761907f206e13f270d7298f79153c0a4b84c",
+  "evidence": [
+    "review-deliverables/Dreamerie-356-A-original.png",
+    "review-deliverables/Dreamerie-356-B-changed.png",
+    "audit-fairness\\309_holidays\\356.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

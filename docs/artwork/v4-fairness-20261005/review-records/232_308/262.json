@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-262",
+  "title": "The Clock That Ate Its Hands",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "05cd25e5b6aca3cd2583b856d10365984a7c2e4256c20b80c22be071112f37ce",
+    "browserComposite": "5d85fb5df76e9fbcfeddc369ce91dd41def9ac22dbe7d9a177542a3b68367ec7",
+    "mapping": "0f3daea47c17538b63ac0368e4cc7c6dfcb6beaa96f6acc16984d07eb33cd0bc"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-262-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-262-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\262.png"
+  ],
+  "clues": [
+    {
+      "id": "wink",
+      "label": "The clock left eye closes in a wink.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.3307416267942584,
+        "top": 0.16578108395324123,
+        "width": 0.0729665071770335,
+        "height": 0.10626992561105207
+      }
+    },
+    {
+      "id": "smile",
+      "label": "The pendulum mouth becomes a smile.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.7398325358851675,
+        "top": 0.6705632306057385,
+        "width": 0.028708133971291867,
+        "height": 0.03294367693942614
+      }
+    },
+    {
+      "id": "key",
+      "label": "The floor key upper opening is triangular.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.06698564593301436,
+        "top": 0.7948990435706695,
+        "width": 0.038875598086124404,
+        "height": 0.05844845908607864
+      }
+    },
+    {
+      "id": "scroll",
+      "label": "The clock left scroll curls into a spiral.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.20813397129186603,
+        "top": 0.6556854410201913,
+        "width": 0.05083732057416268,
+        "height": 0.13071200850159406
+      }
+    },
+    {
+      "id": "rope",
+      "label": "The curtain rope crossing changes its weave.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.9300239234449761,
+        "top": 0.3443145589798087,
+        "width": 0.06997607655502393,
+        "height": 0.08820403825717323
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

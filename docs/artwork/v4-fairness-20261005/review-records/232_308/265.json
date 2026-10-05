@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-265",
+  "title": "The Seamstress of Warm Shadows",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "a5bb650b95d5a97bcfb7c73a8adf4066ea5aa2f4b9af58eadfd17f9f0f5a0e58",
+    "browserComposite": "4c690b1d80ea4d3aebf9abc2df6a484f2057e84ac18bfa2548fae4c7d447eaa6",
+    "mapping": "aed2be5322ff2ac7567999866b9d3b67b18492e76ec23541cc1f571c244d0f03"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-265-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-265-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\265.png"
+  ],
+  "clues": [
+    {
+      "id": "open-smile",
+      "label": "The seamstress opens her smile.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.6148325358851675,
+        "top": 0.22316684378320936,
+        "width": 0.042464114832535885,
+        "height": 0.0563230605738576
+      }
+    },
+    {
+      "id": "pointed-bulb",
+      "label": "The lamp\u2019s bulb has a pointed flame shape.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.1937799043062201,
+        "top": 0.18384697130712008,
+        "width": 0.06698564593301436,
+        "height": 0.09351753453772582
+      }
+    },
+    {
+      "id": "square-spool",
+      "label": "The spool has a square center hole.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.2589712918660287,
+        "top": 0.5961742826780021,
+        "width": 0.019736842105263157,
+        "height": 0.044633368756641874
+      }
+    },
+    {
+      "id": "cross-thimble",
+      "label": "The thimble\u2019s top has a cross-shaped opening.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.23385167464114834,
+        "top": 0.6981934112646121,
+        "width": 0.022727272727272728,
+        "height": 0.023379383634431455
+      }
+    },
+    {
+      "id": "slotted-pivot",
+      "label": "The scissors\u2019 pivot has an X slot.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.125,
+        "top": 0.8299681190223167,
+        "width": 0.020933014354066987,
+        "height": 0.025504782146652496
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

@@ -1,0 +1,41 @@
+PASS v4-fairness-dream-003-v1 fit all5 actualchangedpixel touches/2min/5locks/4widths/completedreload/no-preview
+PASS v4-fairness-dream-009-v1 fit all5 actualchangedpixel touches/2min/5locks/4widths/completedreload/no-preview
+PASS v4-fairness-dream-012-v1 fit all5 actualchangedpixel touches/2min/5locks/4widths/completedreload/no-preview
+PASS v4-fairness-dream-016-v1 fit all5 actualchangedpixel touches/2min/5locks/4widths/completedreload/no-preview
+PASS v4-fairness-dream-024-v1 fit all5 actualchangedpixel touches/2min/5locks/4widths/completedreload/no-preview
+PASS v4-fairness-dream-042-v1 fit all5 actualchangedpixel touches/2min/5locks/4widths/completedreload/no-preview
+PASS v4-fairness-dream-048-v1 fit all5 actualchangedpixel touches/2min/5locks/4widths/completedreload/no-preview
+PASS v4-fairness-dream-107-v1 fit all5 actualchangedpixel touches/2min/5locks/4widths/completedreload/no-preview
+PASS v4-fairness-dream-108-v1 fit all5 actualchangedpixel touches/2min/5locks/4widths/completedreload/no-preview
+PASS v4-fairness-dream-112-v1 fit all5 actualchangedpixel touches/2min/5locks/4widths/completedreload/no-preview
+PASS v4-fairness-dream-126-v1 fit all5 actualchangedpixel touches/2min/5locks/4widths/completedreload/no-preview
+PASS v4-fairness-dream-129-v1 fit all5 actualchangedpixel touches/2min/5locks/4widths/completedreload/no-preview
+PASS v4-fairness-dream-143-v1 fit all5 actualchangedpixel touches/2min/5locks/4widths/completedreload/no-preview
+PASS v4-fairness-dream-150-v1 fit all5 actualchangedpixel touches/2min/5locks/4widths/completedreload/no-preview
+PASS v4-fairness-dream-152-v1 fit all5 actualchangedpixel touches/2min/5locks/4widths/completedreload/no-preview
+PASS v4-fairness-dream-154-v1 fit all5 actualchangedpixel touches/2min/5locks/4widths/completedreload/no-preview
+PASS v4-fairness-dream-155-v1 fit all5 actualchangedpixel touches/2min/5locks/4widths/completedreload/no-preview
+PASS v4-fairness-dream-177-v1 fit all5 actualchangedpixel touches/2min/5locks/4widths/completedreload/no-preview
+PASS v4-fairness-dream-209-v1 fit all5 actualchangedpixel touches/2min/5locks/4widths/completedreload/no-preview
+PASS v4-fairness-dream-215-v1 fit all5 actualchangedpixel touches/2min/5locks/4widths/completedreload/no-preview
+PASS v4-fairness-dream-222-v1 fit all5 actualchangedpixel touches/2min/5locks/4widths/completedreload/no-preview
+PASS v4-fairness-dream-237-v1 fit all5 actualchangedpixel touches/2min/5locks/4widths/completedreload/no-preview
+PASS v4-fairness-dream-270-v1 fit all5 actualchangedpixel touches/2min/5locks/4widths/completedreload/no-preview
+PASS v4-fairness-dream-344-v1 fit all5 actualchangedpixel touches/2min/5locks/4widths/completedreload/no-preview
+PASS v4-fairness-dream-116-v1 fit all5 actualchangedpixel touches/2min/5locks/4widths/completedreload/no-preview
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: {"exceptionId":1,"text":"Uncaught","lineNumber":0,"columnNumber":61,"scriptId":"246","stackTrace":{"callFrames":[{"functionName":"","scriptId":"246","url":"","lineNumber":0,"columnNumber":61}]},"exception":{"type":"object","subtype":"error","className":"TypeError","description":"TypeError: Cannot read properties of null (reading 'click')\n    at <anonymous>:1:62","objectId":"-8395992976992272888.52.2"}}
+    at ev (file:///C:/Users/Kou/Documents/Codex/2026-10-04/task/fairness-production-salient-qa.mjs:7:280)
+    at async click (file:///C:/Users/Kou/Documents/Codex/2026-10-04/task/fairness-production-salient-qa.mjs:7:576)
+    at async file:///C:/Users/Kou/Documents/Codex/2026-10-04/task/fairness-production-salient-qa.mjs:26:24 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+
+Node.js v22.18.0

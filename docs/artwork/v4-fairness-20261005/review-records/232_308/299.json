@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-299",
+  "title": "The Alligator's Knitted River",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "85c4b685ed17bd27d8578065783c206227fef404bfd52a117dda1447ada1a7a8",
+    "browserComposite": "01833387fe2897b3dfb8577a88d68352b182f370ecf5f23de7d4bb321b0aae29",
+    "mapping": "21cdb11710d6a6bd90892d5ac25e0e12b807db16cd28205ab30d156ab8a760e3"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-299-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-299-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\299.png"
+  ],
+  "clues": [
+    {
+      "id": "change-1",
+      "label": "The alligator closes its nearer eye.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.31100478468899523,
+        "top": 0.11689691817215728,
+        "width": 0.04366028708133971,
+        "height": 0.061636556854410204
+      }
+    },
+    {
+      "id": "change-2",
+      "label": "The bridge handrail end curls into a loop.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.5669856459330144,
+        "top": 0.536663124335813,
+        "width": 0.050239234449760764,
+        "height": 0.06907545164718384
+      }
+    },
+    {
+      "id": "change-3",
+      "label": "The chest latch swings sideways.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.8755980861244019,
+        "top": 0.34537725823591925,
+        "width": 0.05980861244019139,
+        "height": 0.10414452709883103
+      }
+    },
+    {
+      "id": "change-4",
+      "label": "The upper needle has a star end cap.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.3534688995215311,
+        "top": 0.8119022316684378,
+        "width": 0.04904306220095694,
+        "height": 0.09032943676939426
+      }
+    },
+    {
+      "id": "change-5",
+      "label": "The toy boat's right sail curves.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.9533492822966507,
+        "top": 0.5504782146652497,
+        "width": 0.04665071770334928,
+        "height": 0.1647183846971307
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-277",
+  "title": "The Peach Pit Observatory",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "9dac09dd13fc454d625144d8b7a724aff0d7d1b7f64235dbfb3352c692f5de7b",
+    "browserComposite": "b9791f9e4ad1349d34251c786c2a8a4ad70d7a378b5e1ec9921487d250f73c98",
+    "mapping": "f045081d1754d5a0affe0c6b0121ef4eb37ffd49094bfd4e82fd38eccf13763b"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-277-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-277-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\277.png"
+  ],
+  "clues": [
+    {
+      "id": "change-1",
+      "label": "The spoon reflects a blue crescent.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.3157894736842105,
+        "top": 0.8320935175345378,
+        "width": 0.05442583732057416,
+        "height": 0.07226354941551541
+      }
+    },
+    {
+      "id": "change-2",
+      "label": "The telescope wheel has crossed bars.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.26674641148325356,
+        "top": 0.38150903294367694,
+        "width": 0.025119617224880382,
+        "height": 0.044633368756641874
+      }
+    },
+    {
+      "id": "change-3",
+      "label": "The middle ladder rung arches upward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.4019138755980861,
+        "top": 0.47927736450584485,
+        "width": 0.02930622009569378,
+        "height": 0.026567481402763018
+      }
+    },
+    {
+      "id": "change-4",
+      "label": "The stool top has a gold star.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.3397129186602871,
+        "top": 0.485653560042508,
+        "width": 0.028708133971291867,
+        "height": 0.026567481402763018
+      }
+    },
+    {
+      "id": "change-5",
+      "label": "The blue book spine has a gold zigzag.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.37200956937799046,
+        "top": 0.3889479277364506,
+        "width": 0.014952153110047847,
+        "height": 0.06057385759829968
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

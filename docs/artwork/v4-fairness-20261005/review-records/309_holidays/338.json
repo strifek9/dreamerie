@@ -1,0 +1,100 @@
+{
+  "card": "338",
+  "id": "v4-dream-338",
+  "title": "The Chameleon's Spare Coat",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "change-1",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-338-altered-source-v4.png",
+      "sourceSha256": "74d4889c135156b0640d51bfd97844389e06d190dd2f5765deebb0ac2b6a9ce3",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1175,
+        596,
+        67,
+        69
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-2",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-338-altered-source-v4.png",
+      "sourceSha256": "74d4889c135156b0640d51bfd97844389e06d190dd2f5765deebb0ac2b6a9ce3",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1027,
+        144,
+        128,
+        49
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-3",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-338-altered-source-v4.png",
+      "sourceSha256": "74d4889c135156b0640d51bfd97844389e06d190dd2f5765deebb0ac2b6a9ce3",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1028,
+        365,
+        35,
+        40
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-4",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-338-altered-source-v4.png",
+      "sourceSha256": "74d4889c135156b0640d51bfd97844389e06d190dd2f5765deebb0ac2b6a9ce3",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1540,
+        365,
+        76,
+        89
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-5",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-338-altered-source-v4.png",
+      "sourceSha256": "74d4889c135156b0640d51bfd97844389e06d190dd2f5765deebb0ac2b6a9ce3",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        49,
+        233,
+        43,
+        44
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "bee2e88cd40ff7321092d81c87e35d229f63e18c4bf0f1ea6ba7eab33c92152b",
+  "compositeSha256": "0c69dc88ba2b7b229e051f76fb2858a19707550118ad8c3ebcac9217109286e5",
+  "evidence": [
+    "review-deliverables/Dreamerie-338-A-original.png",
+    "review-deliverables/Dreamerie-338-B-changed.png",
+    "audit-fairness\\309_holidays\\338.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

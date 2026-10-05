@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-266",
+  "title": "The Umbilical of the City",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "f55fc95f1398ca4dd879d2838b4c3e29385f51e174527c8312922ece8003ca5e",
+    "browserComposite": "3eaa287dc1632592d18423b23ffc558fb985b4de11741e40ef15118a4f82dcf9",
+    "mapping": "0be34985d3f169d24baf92c4dfc84efaf3d2c60cc5566bfc6bb4b7637a472d41"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-266-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-266-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\266.png"
+  ],
+  "clues": [
+    {
+      "id": "spiral-dial",
+      "label": "The telephone dial\u2019s center bears a spiral.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.20813397129186603,
+        "top": 0.40807651434643993,
+        "width": 0.06399521531100479,
+        "height": 0.11477151965993623
+      }
+    },
+    {
+      "id": "raised-stop",
+      "label": "The dial\u2019s finger stop curls upward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.27811004784689,
+        "top": 0.4569606801275239,
+        "width": 0.04724880382775119,
+        "height": 0.08607863974495218
+      }
+    },
+    {
+      "id": "braced-lantern",
+      "label": "The hanging lantern gains an X brace.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.9288277511961722,
+        "top": 0.3602550478214665,
+        "width": 0.03409090909090909,
+        "height": 0.07120085015940489
+      }
+    },
+    {
+      "id": "round-door",
+      "label": "The little house\u2019s right opening becomes round.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.6220095693779905,
+        "top": 0.8565356004250797,
+        "width": 0.02332535885167464,
+        "height": 0.04250797024442083
+      }
+    },
+    {
+      "id": "triangle-key",
+      "label": "The key\u2019s bow becomes triangular.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.0819377990430622,
+        "top": 0.798087141339001,
+        "width": 0.050239234449760764,
+        "height": 0.07013815090329437
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

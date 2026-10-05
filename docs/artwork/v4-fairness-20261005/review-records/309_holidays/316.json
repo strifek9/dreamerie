@@ -1,0 +1,100 @@
+{
+  "card": "316",
+  "id": "v4-dream-316",
+  "title": "The Hippo's Small Orchestra",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "closed-eye",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-316-altered-source-v4.png",
+      "sourceSha256": "50b26e8fae675bc6dd44f02e458b39303e6380b56df4f38bef44cb86f489536f",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        748,
+        156,
+        47,
+        38
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "round-spoon",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-316-altered-source-v4.png",
+      "sourceSha256": "50b26e8fae675bc6dd44f02e458b39303e6380b56df4f38bef44cb86f489536f",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        622,
+        15,
+        91,
+        86
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    },
+    {
+      "id": "crescent-bow",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-316-altered-source-v4.png",
+      "sourceSha256": "50b26e8fae675bc6dd44f02e458b39303e6380b56df4f38bef44cb86f489536f",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        764,
+        340,
+        51,
+        64
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    },
+    {
+      "id": "square-knob",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-316-altered-source-v4.png",
+      "sourceSha256": "50b26e8fae675bc6dd44f02e458b39303e6380b56df4f38bef44cb86f489536f",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        776,
+        877,
+        75,
+        64
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "triangle-hole",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-316-altered-source-v4.png",
+      "sourceSha256": "50b26e8fae675bc6dd44f02e458b39303e6380b56df4f38bef44cb86f489536f",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        459,
+        167,
+        29,
+        35
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    }
+  ],
+  "originalSha256": "7e1dfa3f62e07feaad5acc0d56d022e892f104a62bfb5b23ebb87d5e967da778",
+  "compositeSha256": "e288e2aed270f58ab983c354055de05f90fdd61707805e95efa3bcc2c59c872a",
+  "evidence": [
+    "review-deliverables/Dreamerie-316-A-original.png",
+    "review-deliverables/Dreamerie-316-B-changed.png",
+    "audit-fairness\\309_holidays\\316.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

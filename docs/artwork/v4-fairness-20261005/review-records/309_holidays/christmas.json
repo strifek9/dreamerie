@@ -1,0 +1,100 @@
+{
+  "card": "christmas",
+  "id": "v4-dream-christmas",
+  "title": "The Elves' First Presents",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "awake-cat",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-christmas-altered-source-v4.png",
+      "sourceSha256": "9073aa5b827f33df50375bdeaa12d73bcb7614399c721f8fa592b106724ad9d7",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        922,
+        509,
+        25,
+        21
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "closed-whale",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-christmas-altered-source-v4.png",
+      "sourceSha256": "9073aa5b827f33df50375bdeaa12d73bcb7614399c721f8fa592b106724ad9d7",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        781,
+        416,
+        26,
+        24
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "crescent-stocking",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-christmas-altered-source-v4.png",
+      "sourceSha256": "9073aa5b827f33df50375bdeaa12d73bcb7614399c721f8fa592b106724ad9d7",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1465,
+        312,
+        53,
+        77
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "inverted-tree",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-christmas-altered-source-v4.png",
+      "sourceSha256": "9073aa5b827f33df50375bdeaa12d73bcb7614399c721f8fa592b106724ad9d7",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1612,
+        657,
+        60,
+        82
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    },
+    {
+      "id": "star-flame",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-christmas-altered-source-v4.png",
+      "sourceSha256": "9073aa5b827f33df50375bdeaa12d73bcb7614399c721f8fa592b106724ad9d7",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1484,
+        166,
+        28,
+        47
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    }
+  ],
+  "originalSha256": "72995a5fc0b44d2ddc7c31769e2a61fa0412226c2b13e1752398a51661f9fe34",
+  "compositeSha256": "e716b6bc7fefb437e9ff13ffcb1ed979310bc90c7a99de3bd4dd5a5a13649524",
+  "evidence": [
+    "review-deliverables/Dreamerie-christmas-A-original.png",
+    "review-deliverables/Dreamerie-christmas-B-changed.png",
+    "audit-fairness\\309_holidays\\christmas.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

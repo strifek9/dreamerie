@@ -1,0 +1,100 @@
+{
+  "card": "st-patricks",
+  "id": "v4-dream-st-patricks",
+  "title": "The Staircase of Lucky Coins",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "change-1",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-st-patricks-altered-source-v4.png",
+      "sourceSha256": "ee807d2d2afd42f64ddd696d0a1cb9959a5386d26b500904b54929cd6aa53560",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        796,
+        188,
+        58,
+        40
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-2",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-st-patricks-altered-source-v4.png",
+      "sourceSha256": "ee807d2d2afd42f64ddd696d0a1cb9959a5386d26b500904b54929cd6aa53560",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        614,
+        478,
+        66,
+        68
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-3",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-st-patricks-altered-source-v4.png",
+      "sourceSha256": "ee807d2d2afd42f64ddd696d0a1cb9959a5386d26b500904b54929cd6aa53560",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        915,
+        607,
+        28,
+        35
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-4",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-st-patricks-altered-source-v4.png",
+      "sourceSha256": "ee807d2d2afd42f64ddd696d0a1cb9959a5386d26b500904b54929cd6aa53560",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        940,
+        702,
+        43,
+        27
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-5",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-st-patricks-altered-source-v4.png",
+      "sourceSha256": "ee807d2d2afd42f64ddd696d0a1cb9959a5386d26b500904b54929cd6aa53560",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        506,
+        651,
+        52,
+        40
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "c416701b61ec0d53f461884b54ac76c60978bd1af2fc45270479021dc85e75ec",
+  "compositeSha256": "22fff56e93dc7f1a2dbcfbf2c4aa1cdc1f1cc09984bf7000bcb0957039046f71",
+  "evidence": [
+    "review-deliverables/Dreamerie-st-patricks-A-original.png",
+    "review-deliverables/Dreamerie-st-patricks-B-changed.png",
+    "audit-fairness\\309_holidays\\st-patricks.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

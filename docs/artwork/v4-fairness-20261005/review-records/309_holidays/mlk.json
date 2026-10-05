@@ -1,0 +1,100 @@
+{
+  "card": "mlk",
+  "id": "v4-dream-mlk",
+  "title": "The Bridge We Make Together",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "change-1",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-mlk-altered-source-v4.png",
+      "sourceSha256": "636e2cd5636206e8fc41fa4f2173c3df4e4938b8c45e1309dcff86a4b668a736",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1101,
+        659,
+        81,
+        88
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-2",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-mlk-altered-source-v4.png",
+      "sourceSha256": "636e2cd5636206e8fc41fa4f2173c3df4e4938b8c45e1309dcff86a4b668a736",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1462,
+        246,
+        57,
+        42
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-3",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-mlk-altered-source-v4.png",
+      "sourceSha256": "636e2cd5636206e8fc41fa4f2173c3df4e4938b8c45e1309dcff86a4b668a736",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1531,
+        551,
+        114,
+        74
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-4",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-mlk-altered-source-v4.png",
+      "sourceSha256": "636e2cd5636206e8fc41fa4f2173c3df4e4938b8c45e1309dcff86a4b668a736",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        250,
+        140,
+        63,
+        63
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-5",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-mlk-altered-source-v4.png",
+      "sourceSha256": "636e2cd5636206e8fc41fa4f2173c3df4e4938b8c45e1309dcff86a4b668a736",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        71,
+        93,
+        65,
+        32
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "536954ef058bd0c5bee4c23e179b30ac5f8d15cc116df6a94ae0db8a72f88111",
+  "compositeSha256": "e9571c45108ada498f1c311847beacd6198d3b962b7fbb3758742901632bfdfb",
+  "evidence": [
+    "review-deliverables/Dreamerie-mlk-A-original.png",
+    "review-deliverables/Dreamerie-mlk-B-changed.png",
+    "audit-fairness\\309_holidays\\mlk.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

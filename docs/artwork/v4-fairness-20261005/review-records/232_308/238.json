@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-238",
+  "title": "The Eel in the Extension Cord",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "34c8b60c977d82442b3e6b5194eba9e198c8408fb233baa0f81d470dbae7f858",
+    "browserComposite": "162bcb4e5183eb2a37f72922b1ee396e6fffb4412162725948519260b501700b",
+    "mapping": "779a5425ee80bb7a71ff92dc13e5575cd0f4c97180295571f05d6e879e32e370"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-238-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-238-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\238.png"
+  ],
+  "clues": [
+    {
+      "id": "closed-eye",
+      "label": "The eel closes its eye.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.6979665071770335,
+        "top": 0.44314558979808716,
+        "width": 0.031698564593301434,
+        "height": 0.04675876726886291
+      }
+    },
+    {
+      "id": "bolt-switch",
+      "label": "The rocker switch carries a lightning symbol.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.05502392344497608,
+        "top": 0.22741764080765142,
+        "width": 0.04724880382775119,
+        "height": 0.0924548352816153
+      }
+    },
+    {
+      "id": "turned-wheel",
+      "label": "The mouse wheel turns across the seam.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.791267942583732,
+        "top": 0.485653560042508,
+        "width": 0.05442583732057416,
+        "height": 0.0818278427205101
+      }
+    },
+    {
+      "id": "square-spiral",
+      "label": "The paperclip\u2019s outer curl becomes square.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.34629186602870815,
+        "top": 0.8278427205100957,
+        "width": 0.056220095693779906,
+        "height": 0.09670563230605739
+      }
+    },
+    {
+      "id": "sideways-socket",
+      "label": "The center socket\u2019s slots form a sideways pattern.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.1686602870813397,
+        "top": 0.32199787460148777,
+        "width": 0.04844497607655503,
+        "height": 0.08820403825717323
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

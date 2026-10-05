@@ -1,0 +1,100 @@
+{
+  "card": "321",
+  "id": "v4-dream-321",
+  "title": "The Fox's Velvet Passport",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "closed-eye",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-321-altered-source-v4.png",
+      "sourceSha256": "52d8afd76b820f530a3b6cd8053e7b623e82c574834eb390fbf7e3c3c27d9c5a",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        832,
+        230,
+        72,
+        51
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "horizontal-twig",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-321-altered-source-v4.png",
+      "sourceSha256": "52d8afd76b820f530a3b6cd8053e7b623e82c574834eb390fbf7e3c3c27d9c5a",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        147,
+        349,
+        84,
+        72
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    },
+    {
+      "id": "round-lantern",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-321-altered-source-v4.png",
+      "sourceSha256": "52d8afd76b820f530a3b6cd8053e7b623e82c574834eb390fbf7e3c3c27d9c5a",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        886,
+        453,
+        53,
+        58
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    },
+    {
+      "id": "crescent-cup",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-321-altered-source-v4.png",
+      "sourceSha256": "52d8afd76b820f530a3b6cd8053e7b623e82c574834eb390fbf7e3c3c27d9c5a",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1562,
+        546,
+        75,
+        83
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "square-button",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-321-altered-source-v4.png",
+      "sourceSha256": "52d8afd76b820f530a3b6cd8053e7b623e82c574834eb390fbf7e3c3c27d9c5a",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1349,
+        485,
+        42,
+        42
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    }
+  ],
+  "originalSha256": "10f8a529b517f41faa44a98cd22c51c137ad961f01a40a41dd909bf49b82ccc8",
+  "compositeSha256": "5d1c0ad2dbc3811bb1d8530f6d003ac905246c518842266a18432bab42b34ae6",
+  "evidence": [
+    "review-deliverables/Dreamerie-321-A-original.png",
+    "review-deliverables/Dreamerie-321-B-changed.png",
+    "audit-fairness\\309_holidays\\321.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

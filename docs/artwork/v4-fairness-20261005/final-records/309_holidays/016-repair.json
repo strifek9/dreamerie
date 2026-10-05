@@ -1,0 +1,71 @@
+{
+  "cardId": "v4-fairness-dream-016-v1",
+  "publishedIdPreserved": "v4-dream-016",
+  "source": "/artwork/v4/fairness/dream-016-spout-source-v1.png",
+  "sha256": "3b552d6d31ca75826ee58e5a398939237ebb8d8a53c17560c38cec2afe3441ed",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "newAcceptedRectangle": [
+    760,
+    164,
+    78,
+    68
+  ],
+  "previousAcceptedRectangle": [
+    728,
+    133,
+    153,
+    159
+  ],
+  "mask": "Interior of original pink puff intersected with ellipse center799,198/radii37,32; selects no original orange sky, preserving original puff silhouette",
+  "nativeVisualReview": "Generated inner puff has one connected pink steam spiral, no relocation or extra fragment. Source crop inspected. Actual masked browser composite pending root export.",
+  "salientNativePoint": [
+    793,
+    199
+  ],
+  "restoredUnchangedProbePoints": [
+    [
+      735,
+      185
+    ],
+    [
+      730,
+      207
+    ],
+    [
+      745,
+      145
+    ],
+    [
+      825,
+      240
+    ]
+  ],
+  "fiveSalientNativePoints": [
+    [
+      1370,
+      83
+    ],
+    [
+      793,
+      199
+    ],
+    [
+      710,
+      492
+    ],
+    [
+      1370,
+      850
+    ],
+    [
+      1068,
+      417
+    ]
+  ],
+  "ownerVisualApproval": "pending",
+  "publication": "not authorized",
+  "evidence": "016-generated-puff-detail.png"
+}

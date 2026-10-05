@@ -1,3 +1,4 @@
+import { fairnessCorrections } from '../src/v4/fairnessCorrections.ts'
 import assert from 'node:assert/strict'
 import test from 'node:test'
 import { readFileSync } from 'node:fs'
@@ -200,7 +201,7 @@ test('painted duplicates consume guesses, expiry cannot pause, and accuracy alwa
 
 test('painted rotation preserves order and every old saved round keeps its own artwork and deadline', () => {
   assert.equal(currentDreams.length, 383)
-  assert.equal(playableDreams.length, 941)
+  assert.equal(playableDreams.length, 941 + fairnessCorrections.length)
   assert.equal(LANDSCAPE_SESSION_OPTIONS.namespace, 'dreamerie:v2:daily-collection:v1')
   for (const [index, card] of landscapeCollection.entries()) {
     const expectedId = revisitIds[`painted-${card.id}`] ?? `painted-${card.id}`

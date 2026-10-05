@@ -1,0 +1,100 @@
+{
+  "card": "364",
+  "id": "v4-dream-364",
+  "title": "The Cupboard's Last Warm Light",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "knob",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-364-altered-source-v4.png",
+      "sourceSha256": "969563290f048820b4bf1c6e36207b090a0004214024995cce5d83a3e8b16daf",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        844,
+        572,
+        77,
+        78
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "heart",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-364-altered-source-v4.png",
+      "sourceSha256": "969563290f048820b4bf1c6e36207b090a0004214024995cce5d83a3e8b16daf",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        815,
+        92,
+        61,
+        56
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "cuff",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-364-altered-source-v4.png",
+      "sourceSha256": "969563290f048820b4bf1c6e36207b090a0004214024995cce5d83a3e8b16daf",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        326,
+        654,
+        156,
+        89
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "lace",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-364-altered-source-v4.png",
+      "sourceSha256": "969563290f048820b4bf1c6e36207b090a0004214024995cce5d83a3e8b16daf",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1039,
+        575,
+        56,
+        64
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "clasp",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-364-altered-source-v4.png",
+      "sourceSha256": "969563290f048820b4bf1c6e36207b090a0004214024995cce5d83a3e8b16daf",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1560,
+        438,
+        59,
+        133
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "1f1e710046df85a946d52ff976f65e2bd75d874b1dcf73f8db2f4522d7934b2e",
+  "compositeSha256": "3085534ce8e92a232d0a8ad879827c6904fd938b328858b9c5f481bd450289aa",
+  "evidence": [
+    "review-deliverables/Dreamerie-364-A-original.png",
+    "review-deliverables/Dreamerie-364-B-changed.png",
+    "audit-fairness\\309_holidays\\364.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

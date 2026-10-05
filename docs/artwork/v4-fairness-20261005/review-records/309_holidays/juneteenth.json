@@ -1,0 +1,100 @@
+{
+  "card": "juneteenth",
+  "id": "v4-dream-juneteenth",
+  "title": "The Door That Became the Horizon",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "quilt",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-juneteenth-altered-source-v4.png",
+      "sourceSha256": "97946acbf82fa3e2e2f257e659507f016739988e4ff41f3dd11ac46059836b00",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1032,
+        690,
+        152,
+        136
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "kite",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-juneteenth-altered-source-v4.png",
+      "sourceSha256": "97946acbf82fa3e2e2f257e659507f016739988e4ff41f3dd11ac46059836b00",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1321,
+        116,
+        85,
+        80
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "key",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-juneteenth-altered-source-v4.png",
+      "sourceSha256": "97946acbf82fa3e2e2f257e659507f016739988e4ff41f3dd11ac46059836b00",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        295,
+        755,
+        93,
+        71
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "clasp",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-juneteenth-altered-source-v4.png",
+      "sourceSha256": "97946acbf82fa3e2e2f257e659507f016739988e4ff41f3dd11ac46059836b00",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        327,
+        624,
+        71,
+        91
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "handle",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-juneteenth-altered-source-v4.png",
+      "sourceSha256": "97946acbf82fa3e2e2f257e659507f016739988e4ff41f3dd11ac46059836b00",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        508,
+        362,
+        64,
+        63
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "3479951b9d263c692ada66ba3b75266aae4a3c21efbd1b3de12ebf16c92d1793",
+  "compositeSha256": "a5c11f6b699d575797fc5e9e46ac8081e9f03a4d710943da43e4b2d6289189e7",
+  "evidence": [
+    "review-deliverables/Dreamerie-juneteenth-A-original.png",
+    "review-deliverables/Dreamerie-juneteenth-B-changed.png",
+    "audit-fairness\\309_holidays\\juneteenth.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

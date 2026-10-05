@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-290",
+  "title": "The Curtain's One Good Eye",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "864da7f6bde408ffb2e023a9130d9e796d2d7626c3caa00743be72f1b1813c10",
+    "browserComposite": "e5c7913fe0e6d66ffe1b3f17c58f412125419bb0634941990ac6137edd0b20e4",
+    "mapping": "01f5cc775f3a79b78cc96e13445762711e2dd9bdae80d924c37a155eeb7979bd"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-290-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-290-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\290.png"
+  ],
+  "clues": [
+    {
+      "id": "left-loops",
+      "label": "The left tassel fringe forms braided loops.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0,
+        "top": 0.3931987247608927,
+        "width": 0.1166267942583732,
+        "height": 0.3007438894792774
+      }
+    },
+    {
+      "id": "weight-open",
+      "label": "The curtain weight lid stands ajar.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.7816985645933014,
+        "top": 0.6748140276301806,
+        "width": 0.11722488038277512,
+        "height": 0.1275239107332625
+      }
+    },
+    {
+      "id": "rod-ring",
+      "label": "The brass rod tip becomes a closed ring.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.7816985645933014,
+        "top": 0.13177470775770456,
+        "width": 0.07775119617224881,
+        "height": 0.155154091392136
+      }
+    },
+    {
+      "id": "right-braid",
+      "label": "The right tassel fringe becomes one thick braid.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.9150717703349283,
+        "top": 0.6057385759829969,
+        "width": 0.08492822966507177,
+        "height": 0.23804463336875664
+      }
+    },
+    {
+      "id": "reflection-knot",
+      "label": "The reflected right stage curtain is tied back.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.5532296650717703,
+        "top": 0.38150903294367694,
+        "width": 0.060406698564593304,
+        "height": 0.1742826780021254
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

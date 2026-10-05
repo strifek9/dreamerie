@@ -1,0 +1,3036 @@
+{
+  "range": "001\u2013077 excluding012",
+  "baseline": "5920a05202f66ce0542bb4c2cfbbd4af3f2e212a",
+  "method": "Viewed actual exported browser composite pair and five original/changed crop pairs per available card; original-pixel and metadata freshness checks. Contact-sheet thumbnails are visual aids, not physical phone QA. No new browser interactions performed by this agent.",
+  "cards": [
+    {
+      "id": "v4-dream-001",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\001.png",
+      "originalExportSha256": "7f3cf828af0e7057d2a282315ca3bc63a281d63ba3708d56a9772ca2bf87b093",
+      "compositeExportSha256": "ebfb8066395d4bffd7c3c4fef819a345d0379ef2a0f5366cab96b662e693f707",
+      "clues": [
+        {
+          "id": "fox-tail-scale-rim",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "vine-ladder-rung",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "clock-hand-twig",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "droplet-reflection",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "embroidered-crossing",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-002",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\002.png",
+      "originalExportSha256": "a4183a257b60bda89899fec02a0f843d5d8ad4f031c2786a7eee6c9378f464bc",
+      "compositeExportSha256": "e44fe836f7b56733acd8133b8919ec32100299202ab708232d2b16231ff29f98",
+      "clues": [
+        {
+          "id": "shawl-crescent",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "paper-fish",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "cloud-stitches",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "parasol-bow",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "lily-stitches",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-003",
+      "status": "suspected fairness issue",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\003.png",
+      "originalExportSha256": "5099083c75fc412603b313b0cd06cd88ac2866f554e42a685aa2fbd16f2e20c8",
+      "compositeExportSha256": "051be49c22349de0a6b28d2bc8d15daeb170f78c7ca7c99dff686570032bec1f",
+      "clues": [
+        {
+          "id": "steam-over-pillow",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "bell-beads-swing-left",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "pillow-pinwheel",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "carriage-window-order",
+          "visualReviewed": true,
+          "issue": {
+            "class": "suspected multi-site / boundary residue",
+            "description": "Two separate carriage-window groups are reordered; one clue may read as two independent window differences. Prefer keeping left carriage unchanged and one right-carriage window motif change.",
+            "requiresRootAdjudication": true
+          }
+        },
+        {
+          "id": "ticket-through-handle",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-004",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\004.png",
+      "originalExportSha256": "a3d3c671626f68a6b1e3d094bf928910c3a83757a1cc8c26a98ac5ba3d8219e3",
+      "compositeExportSha256": "b10ec12e12123354b5557418fbd60aaccec143db6130d6cf6ee86682040624d1",
+      "clues": [
+        {
+          "id": "wave-crosses-threshold",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "gull-lifts-wing",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "fish-ribbon-wrist",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "ribbon-under-shoe-buckle",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "shell-pearl",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-005",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\005.png",
+      "originalExportSha256": "602789f9b29f8372f4e10f748c9791f6ab3631a34319d72915e9e561fb4b9469",
+      "compositeExportSha256": "70001ea4dbf07a5c19f60c3c4c26ebd8790e7dfb2ea197ff9c1a61b37e78b950",
+      "clues": [
+        {
+          "id": "bird-looks-down",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "pink-stream-through-bridge",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "bootlace-bow",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "umbrella-snail-spiral",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "snail-carries-door",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-006",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\006.png",
+      "originalExportSha256": "95f52e7a2e89ecbf7f43520befd2558dd822378e461956fdac36b1b16a503320",
+      "compositeExportSha256": "76c072895ba3f8e2234f811e5e3a787419bfe6768f1c97af458a0a45b8c98bd9",
+      "clues": [
+        {
+          "id": "chair-cloth-fold",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "needle-at-buttonhole",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "pennant-around-mast",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "pebble-sail-reflection",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "cuff-button-wave",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-007",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\007.png",
+      "originalExportSha256": "1a95e6b81a5e77e89b2d7312703dcd5f8a881737763d36eedc0f8379bd35f0d2",
+      "compositeExportSha256": "221a184e54d5303e6642cad1526bdc1d2322b233f2998690b07cc6c0e6fa120c",
+      "clues": [
+        {
+          "id": "moon-in-fishbowl",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "teapot-over-roof",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "door-ajar",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "tail-moon-fish",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "orange-stems-braid",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-008",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\008.png",
+      "originalExportSha256": "ea1c45d49f9179e81f551f021a6f2331133366c2e27f84cbcd041260fc9ce898",
+      "compositeExportSha256": "04cf587b44a0d6f977f332f40cf578163ad8e01f744ecce8c4d831b7b4266521",
+      "clues": [
+        {
+          "id": "scarf-around-mitten",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "pine-through-cuff",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "star-twine",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "snow-handle",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "acorn-pine",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-009",
+      "status": "suspected fairness issue",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\009.png",
+      "originalExportSha256": "e8d3013f5dbc6fcdbb356877e6f63a359d17d3a72c1baaf8094d6a7be0944de9",
+      "compositeExportSha256": "0e8ca80c933bf067e7cfdee67746b927a6d4fb0d887c1df0906fd9d6ec6ebeb8",
+      "clues": [
+        {
+          "id": "trumpet-tassel",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "mallet-pink-canopy",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "drum-spiral",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "piano-key-rhythm",
+          "visualReviewed": true,
+          "issue": {
+            "class": "suspected multi-site / boundary residue",
+            "description": "Two separated black keys exchange long/short positions. Adjacent pattern-order edit but two tappable objects; localize one key.",
+            "requiresRootAdjudication": true
+          }
+        },
+        {
+          "id": "arch-vine-notes",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-010",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\010.png",
+      "originalExportSha256": "d544cf06f987e486ce4d8d93ed6fa6641e422e6c0b8f49627fcabd2d1f541bda",
+      "compositeExportSha256": "21c54d768b623954121e9dbb944c246abca86618191353358288a24ffd6db2c8",
+      "clues": [
+        {
+          "id": "paper-wing-frame",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "key-under-cushion",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "bird-in-water",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "window-vine-crossing",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "framed-star",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-011",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\011.png",
+      "originalExportSha256": "f633aa3f5170282352fa7677a7411599753a63f7a84bdc08046406dc307b721c",
+      "compositeExportSha256": "943e0a9f59410a6aff980b00330dcd298b31dc475d058e20a2c496363d1a8b62",
+      "clues": [
+        {
+          "id": "compass-toward-wave",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "pearl-order",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "fish-through-shell",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "armillary-inner-ring",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "book-tail-diagram",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-013",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\013.png",
+      "originalExportSha256": "f72754fae4d2a513621e9abf8b4186d5534fecc0273bed10375f9c2fb7310189",
+      "compositeExportSha256": "a696a61925d98c2cf1536b1c4a4211305439b6f45a9e0232fd19ceb1bc9ad797",
+      "clues": [
+        {
+          "id": "sail-around-mast",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "cloud-crosses-beam",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "leaf-bow-curl",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "window-diagonal-bars",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "heart-cross-grain-inlay",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-014",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\014.png",
+      "originalExportSha256": "87e4d7a1fc4b4e6399b4d8b1d1418657486a883ff2cbb1f907ecd17c2411eada",
+      "compositeExportSha256": "23aa223d4d7e96d132572db357c5d5562147fd53c772f18a256899f587d35230",
+      "clues": [
+        {
+          "id": "light-through-stone-crack",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "balloon-in-tree-shadow",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "bird-wing-under-fold",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "chair-slat-weaves-rail",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "string-around-cuff",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-015",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\015.png",
+      "originalExportSha256": "5484d522da1b40eabfdd0df22493d3649db9b636bad0f1b69a62ab74b9465235",
+      "compositeExportSha256": "e638d1d96e254ec171e69036fde2da7b2e5f3cc50db80715aa1cf3cb5cfb082e",
+      "clues": [
+        {
+          "id": "moon-folds-over-line",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "crescent-in-basin",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "towel-around-basket-rim",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "paw-behind-clothespin",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "vine-around-clothespin",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-016",
+      "status": "suspected fairness issue",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\016.png",
+      "originalExportSha256": "35f34660effd5de08c49d662387ce524ab96a5882dd1e5cfe1378321cf1d3546",
+      "compositeExportSha256": "63d63959fd7ab3cc36d1dacf72a7b9f6b4bef5cc46b6a0e7a72018161789f22f",
+      "clues": [
+        {
+          "id": "cherry-steam-spiral",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "spout-puff",
+          "visualReviewed": true,
+          "issue": {
+            "class": "suspected multi-site / boundary residue",
+            "description": "Spout-puff crop has separate small white crescent on left boundary after puff moves. Possible retained original puff edge; inspect actual native region before repair.",
+            "requiresRootAdjudication": true
+          }
+        },
+        {
+          "id": "goat-climbs-sugar",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "spoon-heart-turns",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "diamond-scroll-overlap",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-017",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\017.png",
+      "originalExportSha256": "c65b9254e9e407fa745c1ffcbf6a8c658ce06b4df0d98104232dbce42c7221ad",
+      "compositeExportSha256": "a909671e3fce52c124eb24155923a527755e33eb3aa5bae01aa4f75eea5d7532",
+      "clues": [
+        {
+          "id": "ribbon-around-antler",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "blossom-over-sash",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "frog-reflection",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "second-crescent",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "leaf-boat",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-018",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\018.png",
+      "originalExportSha256": "aacfc7d89bf0bc77d03231d9a0cb02fc3a0221418aa56331d68bf7bef8f35faf",
+      "compositeExportSha256": "0a0cef7a12c11f6d224698541280d95e944ef567815bb0579b53e6c67d1141d9",
+      "clues": [
+        {
+          "id": "floating-stone-tilts",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "plant-root-around-step",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "shoe-lace-through-footprint",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "book-scarf-around-stair",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "rail-through-keyhole",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-019",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\019.png",
+      "originalExportSha256": "f9e8089c12ad26be5e7b6ec2a6f9b3df3bf8e9370ee9b475f95f5f8a1b2f417e",
+      "compositeExportSha256": "ad060353d770e0693c5c352c5953ac2a4eda7b5e308fbaa9f22791be144af1d1",
+      "clues": [
+        {
+          "id": "ribbon-through-handle",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "fox-thread-loop",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "napkin-cloud",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "quilt-roof-fold",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "pinwheel-order",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-020",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\020.png",
+      "originalExportSha256": "0ffc9c3cf0aad675e0cbd8fa3552eb9a1aed705b63d1b9e6c6cee2c498586014",
+      "compositeExportSha256": "4202fb6dcf74d112f244e968ed18d00b70ca5c4e44e694850bcc21fbce0d1031",
+      "clues": [
+        {
+          "id": "butterfly-reflection-in-dome",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "pearl-size-order",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "statue-folded-wing",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "elephant-wing-over-saddle",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "crescent-through-leaves",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-021",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\021.png",
+      "originalExportSha256": "c39d3fb153158761a03b5b46bdc1235285dd892dec3b0133037e90167b2ea1f1",
+      "compositeExportSha256": "4c8db7fcfa923849b53872b7be6fbe8d76e3be6e6a3445c5eb36893ac4c41017",
+      "clues": [
+        {
+          "id": "rolling-pin-tie",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "oven-knob-crescent",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "tray-rolled-lip",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "cherry-stem-loop",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "apron-crescent-up",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-022",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\022.png",
+      "originalExportSha256": "b24cd73c7dc62bd3ab53ebab2fb67f99cc342ff7825d0f1d44348dd75d1a7f99",
+      "compositeExportSha256": "920d779733855d86f9fc8941748b79a3d075404f912e08cb51ec658c2761a233",
+      "clues": [
+        {
+          "id": "change-5",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-2",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-3",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-4",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-1",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-023",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\023.png",
+      "originalExportSha256": "d877fbe9ca96762d31b96e8bb33c4cad297698f3fc8bd164579436fe0d3d6d8e",
+      "compositeExportSha256": "f0fdc87b94bee37c64ce1bc8f285590ab6cfb563dff56d02035ed3f11cf44b30",
+      "clues": [
+        {
+          "id": "sock-turn",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "lighthouse-dome",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "boat-bench",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "rope-eight",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "button-slit",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-024",
+      "status": "confirmed fairness issue",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\024.png",
+      "originalExportSha256": "1441c51bd469e00762fce307c9a359d0fc8ca7bc3a0f58105053f7a0975c24ab",
+      "compositeExportSha256": "d11dd77398f9351aa9944e21f9325860e1dc32cc8fefa6f568ad9c8ada6198b2",
+      "clues": [
+        {
+          "id": "change-1",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-2",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-3",
+          "visualReviewed": true,
+          "issue": {
+            "class": "disconnected removal plus addition / relocation",
+            "description": "Removes left-hand thread loop AND reroutes separate right-hand thread strand. Restore left loop; retain only localized right strand alteration.",
+            "nativeSalientPoints": [
+              [
+                330,
+                640
+              ],
+              [
+                427,
+                674
+              ]
+            ],
+            "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\detail-024.png"
+          }
+        },
+        {
+          "id": "change-4",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-5",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-025",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\025.png",
+      "originalExportSha256": "8439387fa792dc84a30bd4fb0ec3ed7081ad1d95947f0a7e6078b33631783b4a",
+      "compositeExportSha256": "27c38945a9ffc463ee1ceb7c94e3509be6d42351107dda8fc8d1dba446f8ea54",
+      "clues": [
+        {
+          "id": "change-1",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-2",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-3",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-4",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-5",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-026",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\026.png",
+      "originalExportSha256": "d33243b26812a7948010025cfed306b9eb8e670701571b6fb197cb79674a2729",
+      "compositeExportSha256": "858e4746c69d85c3cf83b3408f42fb60e31bdfda1cade0cb2d6b7308a5eb4ced",
+      "clues": [
+        {
+          "id": "change-1",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-2",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-3",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-4",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-5",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-027",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\027.png",
+      "originalExportSha256": "e0435388cd16e6738d03f70704bf44392ca9373572242cc946cd9996d96c4adb",
+      "compositeExportSha256": "f199af4640cb3b762fd65cfa7400f6aac11dd3ce4cd49a2ab01138803bd194eb",
+      "clues": [
+        {
+          "id": "change-1",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-2",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-3",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-4",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-5",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-028",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\028.png",
+      "originalExportSha256": "800890723746a8ac570fd0399517815e0199c7b947209d1dce1ac2b6f555d84a",
+      "compositeExportSha256": "d71c5ca48ca11b5a9686c81e1077f049e0d1dde07da8ca80b6c1d60838f08244",
+      "clues": [
+        {
+          "id": "change-1",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-2",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-3",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-4",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-5",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-029",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\029.png",
+      "originalExportSha256": "08992f227d99a23b8c34fb09a7ab78864e3fc73255075f7dba8cf49dc85a3544",
+      "compositeExportSha256": "7c1005bba9e7c6461769a4ba1803c8c5e91b7ba9e0e44c5f001c24b77266e30d",
+      "clues": [
+        {
+          "id": "change-1",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-2",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-3",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-4",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-5",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-030",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\030.png",
+      "originalExportSha256": "fd055a5dbfff7a8f132b660968fc7e7d30b17ecf11256e93a333b1f7fef207cf",
+      "compositeExportSha256": "923a1fe2388d64ab3539423b878c0fe6fe6b978a0a301cf3a4100bf488884f17",
+      "clues": [
+        {
+          "id": "eye",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "vine",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "star",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "crescent",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "rose",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-031",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\031.png",
+      "originalExportSha256": "a927c81581e1174d75d6a8eabf84be9d2dccb8d7454f38e873474a55174fe1fb",
+      "compositeExportSha256": "f128d551d659fe58397cfbadfb8309cd7140a2c8cc9e2bd373124150f78d825f",
+      "clues": [
+        {
+          "id": "change-1",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-2",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-3",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-4",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-5",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-032",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\032.png",
+      "originalExportSha256": "7479a4505e3056e35b39be2586a85bfbb11593ead25820ef320f92215b4975f7",
+      "compositeExportSha256": "00c571da49aa16869bbef733cb81fd22c59d781aac30e86fa834356dc32a3cfc",
+      "clues": [
+        {
+          "id": "change-1",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-2",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-3",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-4",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-5",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-033",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\033.png",
+      "originalExportSha256": "1e8544de3c9e5922e6ebe3f7ca2ff1e70581ce57e70a8008768329baae970777",
+      "compositeExportSha256": "0666d82955d17dd213af2561d47655cf51d6eb45b6aa4c29e70aa07785d95e60",
+      "clues": [
+        {
+          "id": "change-1",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-2",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-3",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-4",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-5",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-034",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\034.png",
+      "originalExportSha256": "b945e08ff874f409fa166cb27a020caf14dd2b1a01d05f81dcf184a7d95db094",
+      "compositeExportSha256": "d5fd9cc15c468bf9ace7a8e76e72ebe66fa0ce86b9b1fe61cc36c23cc165e590",
+      "clues": [
+        {
+          "id": "beak",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "window",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "crescent",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "reflection",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "latch",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-035",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\035.png",
+      "originalExportSha256": "e88a130b970354ee3f7dca3efdbf75c7a1648070de95a8412ac3040615b4afa6",
+      "compositeExportSha256": "d197490f3650f5eeac8d45b564a38c5b6dd4d7c7f1feb1645a4544ecf7f623e4",
+      "clues": [
+        {
+          "id": "door",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "sail",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "hat",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "float",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "towel",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-036",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\036.png",
+      "originalExportSha256": "f0ccde77f1b8f3674dd52187662bb10b654a3da923afb818ac5bce1ba65b1093",
+      "compositeExportSha256": "5e0d64844acf7d773455d2d675084f126de7b25b0818fb3f1c5a14654f0376b7",
+      "clues": [
+        {
+          "id": "spout",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "fruit",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "blanket",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "strap",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "bow",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-037",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\037.png",
+      "originalExportSha256": "5237f4f619e707c62fc8f637b71717c43b9c8e3e09dbbfd1188c7f3fd3a97177",
+      "compositeExportSha256": "c6b77207e3b51ddfb7d4815746fd4d64c5540612c8d1b05e867e088f068b8fe8",
+      "clues": [
+        {
+          "id": "ring",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "handle",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "flame",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "bookmark",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "leaf-curl",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-038",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\038.png",
+      "originalExportSha256": "44373df60faa6247630b883008b1e4d95cbd6debdb1e552c0898f8ed5ae5940e",
+      "compositeExportSha256": "d76b6b0a7a33c86a8b52a02e7fdaeae9d0cbe5bee0fee21409247137093f0b6b",
+      "clues": [
+        {
+          "id": "moon",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "latch",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "strap",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "reflection",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "shell",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-039",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\039.png",
+      "originalExportSha256": "ed2934c45ed19d84f191d5e3810a6b3c27eee21333ee2cd71f27ddd7a849eb82",
+      "compositeExportSha256": "413e4c62535d22532698de3e7e5bacaf4c30ed190c526eb5c922027ddbd4905a",
+      "clues": [
+        {
+          "id": "hole",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "bow",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "pennant",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "star",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "bridge",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-040",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\040.png",
+      "originalExportSha256": "7c2f953358219e80608a0a0a67cb6aef5e9ab2cc6d83302b1abbd777239d7d64",
+      "compositeExportSha256": "585d2e13efae85466f532e1868d71b3697f4369d995ea9d47bbf49a707ecd44c",
+      "clues": [
+        {
+          "id": "braided-tassel",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "center-drop",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "star-turn",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "square-buckle",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "neck-leaf",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-041",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\041.png",
+      "originalExportSha256": "5692357443452efe1b40ea8eac6d4136cd6811b8b5c3b189e448d21b63ca3f93",
+      "compositeExportSha256": "2b1b2d988b515e169d9e760bfd43d92eea922faf4673fb6187a7b731fda7c4e7",
+      "clues": [
+        {
+          "id": "ring-key",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "ribbon-loop",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "watch-hands",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "egg-wave",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "watch-moon",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-042",
+      "status": "confirmed fairness issue",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\042.png",
+      "originalExportSha256": "682e3938b8e84824ac09f2a69ec54bce66ffa72bbc4c0e3f7f405c112ef0a084",
+      "compositeExportSha256": "6ba31eda10b4a1e99c9b8cec88cb3b34997aa0933c5e9d9b0a3ddc179a763275",
+      "clues": [
+        {
+          "id": "dog-tail",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "hat-ribbon",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "shutter-crescent",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "postcard-stamp",
+          "visualReviewed": true,
+          "issue": {
+            "class": "disconnected removal plus addition / relocation",
+            "description": "Postcard stamp relocates upper-right to lower-right; separate disappearance and appearance sites. Keep stamp at original location and alter motif there.",
+            "nativeSalientPoints": [
+              [
+                617,
+                589
+              ],
+              [
+                638,
+                626
+              ]
+            ],
+            "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\detail-042.png"
+          }
+        },
+        {
+          "id": "sock-ribs",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-043",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\043.png",
+      "originalExportSha256": "0caa407d0c805f266b1f817882f1b20ace81aef2c50f95e4696257bb341861c6",
+      "compositeExportSha256": "87e97d1235cc4def92bbfdbffc48ce56b4a240d38e469e97882e8e4ac94d6071",
+      "clues": [
+        {
+          "id": "change-1",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-2",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-3",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-4",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-5",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-044",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\044.png",
+      "originalExportSha256": "e0f08fc7848beac1ca837da14b36fb20b95a1ca45fe2f8dfd2f95e8929b30518",
+      "compositeExportSha256": "0b573240018d43f190c823748eb8ac3786e590487dd371d35a8c66795163c77a",
+      "clues": [
+        {
+          "id": "change-1",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-2",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-3",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-4",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-5",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-045",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\045.png",
+      "originalExportSha256": "5a4d56da66f52950b0256dd75483c6127423e5b100e9f6231cc8351443afa0c3",
+      "compositeExportSha256": "bbe6c88bd1f73d20c59ad8281c9a6141db5f92acf633e27bd221a6f10cd2597e",
+      "clues": [
+        {
+          "id": "change-1",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-2",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-3",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-4",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-5",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-046",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\046.png",
+      "originalExportSha256": "fcd6bfda797ef2cd68a454fa5a588c2fa3c66aefbd2147d21bb843bc184c85af",
+      "compositeExportSha256": "9262b168d920108860de7cb7c2fd63eae9d83bad0826d11ac8d82da48fc37e66",
+      "clues": [
+        {
+          "id": "change-1",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-2",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-3",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-4",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-5",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-047",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\047.png",
+      "originalExportSha256": "52db59a93c815791323c7fb51971ae0566295353037b53033875ecfb1870a0bb",
+      "compositeExportSha256": "d4da22051c85b82f4d7b70760f3ea7d58a5173d64e8a0550904f40856c056083",
+      "clues": [
+        {
+          "id": "change-1",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-2",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-3",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-4",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-5",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-048",
+      "status": "confirmed fairness issue",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\048.png",
+      "originalExportSha256": "a18f0bf7358e7df9e06cea3450ebcd798e5a81fbd46696198a63c7fe4f9a4081",
+      "compositeExportSha256": "6dc526e96be7ff28b481fb60e04af27014289ae9fdacab799852c0685a9bd92b",
+      "clues": [
+        {
+          "id": "change-1",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-2",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-3",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-4",
+          "visualReviewed": true,
+          "issue": {
+            "class": "disconnected removal plus addition / relocation",
+            "description": "Red ribbon attachment moves from right ring to left shaft, creating separated removal/addition sites. Restore right ring attachment; retain one localized knot change.",
+            "nativeSalientPoints": [
+              [
+                1358,
+                786
+              ],
+              [
+                1265,
+                828
+              ]
+            ],
+            "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\detail-048.png"
+          }
+        },
+        {
+          "id": "change-5",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-049",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\049.png",
+      "originalExportSha256": "03c030c9a8ffac0d8ff8d0cfcee90b22c477355a995baf82169eb9b9456ab5df",
+      "compositeExportSha256": "cc5d8b77e990952e4c76bed475cf8a4db9be23129cab5c074d66bf111d26931e",
+      "clues": [
+        {
+          "id": "bag-moon",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "bell-clapper",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "envelope-flap",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "knocker-hinge",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "quill-nib",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-050",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\050.png",
+      "originalExportSha256": "a47c6af56cc2af62758beea9f8e737650717d0f64282782dc4b5f0d109e70701",
+      "compositeExportSha256": "a613609858faf4f793b715e1d000b6820e6ed65e6cb7292a83e63cdcfe00aac9",
+      "clues": [
+        {
+          "id": "ring",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "swan-head",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "ribbon-weave",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "strut-clasp",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "bench-medallion",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-051",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\051.png",
+      "originalExportSha256": "67888809997fbb3fb5acc0983ea854ae928310809001ec7a0fc35c2e8d861b3a",
+      "compositeExportSha256": "3be939c3eec00ff34ee7fed02871087b294d61252720fae2f5e7102773870ebb",
+      "clues": [
+        {
+          "id": "shadow-beak",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "conch-mouth",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "chair-brace",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "strap-pin",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "fan-ridge",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-052",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\052.png",
+      "originalExportSha256": "26771d165c7b4f05cfd0c9e40becec920fd0e44fda3c8fcf01632f934daac540",
+      "compositeExportSha256": "3c260bb66988115e5e6def976f3c4ff1018c58c393eb8223be8853be5c7a272a",
+      "clues": [
+        {
+          "id": "tail",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "moon",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "keyhole",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "print",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "heart",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-053",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\053.png",
+      "originalExportSha256": "18c5306ce2844c324560e3a90f4a4c747db02428fc4b9a8aafe8c1dbcfc3d3c3",
+      "compositeExportSha256": "722034e58e7ba65d74a0eda9ffc33deb8d200f5793d818105ff97d3fe7420ca6",
+      "clues": [
+        {
+          "id": "ribbon",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "collar",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "handle",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "vent",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "lamp",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-054",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\054.png",
+      "originalExportSha256": "8797ba4d64ed57c301f73f31e352975e78ef03278c92d6d8a770b6ff75f808d4",
+      "compositeExportSha256": "9f979b4e5e46d562c3139b03931ea13182040e66b5d358bf603d486d7b4871dc",
+      "clues": [
+        {
+          "id": "sun",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "patch",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "sail",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "shutter",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "starfish",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-055",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\055.png",
+      "originalExportSha256": "14ff9076e718ddd8cd4eb95d85114c278de4c9db2fa38ec8940b7417e52abbff",
+      "compositeExportSha256": "66540326271530b166f47c597c0c4c67bc46615e48f70f520f00f7f7d56c0669",
+      "clues": [
+        {
+          "id": "change-1",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-2",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-3",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-4",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-5",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-056",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\056.png",
+      "originalExportSha256": "03798b3ef739cab4399f78c2d8f2d50e3965512c66408da7df036db289cc8acc",
+      "compositeExportSha256": "16ab219f4f1b8adb49117730b243b4df8ce9c70d51fc0b03e1f812b05c159282",
+      "clues": [
+        {
+          "id": "change-1",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-2",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-3",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-4",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-5",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-057",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\057.png",
+      "originalExportSha256": "7c844af4c84bc3a4152cf6d9deebebe39389f774957d7af70713946747828694",
+      "compositeExportSha256": "31d9a56f3ac240d623834c6886a5c869aa0f33d8e5f294027098e283128de95f",
+      "clues": [
+        {
+          "id": "change-1",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-2",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-3",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-4",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-5",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-058",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\058.png",
+      "originalExportSha256": "43033acf1872a26a06ff512ea49ec28124697435102ae59cf9ff480bca0545b0",
+      "compositeExportSha256": "05dd39bb30b70e357b8769f013014dfa5fd4452637580ba0714d38b07d0be3bf",
+      "clues": [
+        {
+          "id": "left-clapper",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "closed-mouth",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "boat-sail",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "braid-tassel",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "cherry-stem",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-059",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\059.png",
+      "originalExportSha256": "56923ff04ce7b0b229e4ea75c0934b5488701fdd089c661e3cf25396f653e302",
+      "compositeExportSha256": "d1f6502d10b93960f1152497d33924509a47af93e641a9da897a910ff0f133e1",
+      "clues": [
+        {
+          "id": "curved-quill",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "open-beak",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "ajar-book",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "knotted-tassel",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "moon-medallion",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-060",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\060.png",
+      "originalExportSha256": "fc2b39c06f95d493cc3898ba4c661f0813b7cab5cbe96d9535a56b4d3b99f66e",
+      "compositeExportSha256": "f2f9965e475c876980cbe73dbece8938340b949d61b0c8c16dfc57cc55e645c0",
+      "clues": [
+        {
+          "id": "goat-turn",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "mitten-thumb",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "thermos-lid",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "stone-rings",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "knob-spiral",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-061",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\061.png",
+      "originalExportSha256": "778f556e0286bdcd1f983728e1bed601f85c8f5c5a1edfeac55c0aa343b5848a",
+      "compositeExportSha256": "d22367c37c8dbabbbf766d5abfe143f462c6b26a7d2ad362a7de57f69f96bbb6",
+      "clues": [
+        {
+          "id": "change-1",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-2",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-3",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-4",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-5",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-062",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\062.png",
+      "originalExportSha256": "2d1e069c2286f09b28c9c75a165a80ed9f58a86629cd857e7e08f92f7335410e",
+      "compositeExportSha256": "492a3a38597f84e6b19b1588d1d674778636f8c3775c8d061824fc7c008f4f39",
+      "clues": [
+        {
+          "id": "change-1",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-2",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-3",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-4",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-5",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-063",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\063.png",
+      "originalExportSha256": "684ff8461fc836fffa238affe79b6cd17bcfd8d457e39ea1feb5a93854784875",
+      "compositeExportSha256": "96d90ebccebebb39056961c05598ba231e260bf3b0b88679fc188afc0ef2ca62",
+      "clues": [
+        {
+          "id": "change-1",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-2",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-3",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-4",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-5",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-064",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\064.png",
+      "originalExportSha256": "6fb58efe1ca680b6c761adcbfbfe318da9d8ca8013eadd549d8627d7065bc2fd",
+      "compositeExportSha256": "954b991f3891d2298e8413d394865ffbb67f95b955d839742819cdee915bdf4a",
+      "clues": [
+        {
+          "id": "change-1",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-2",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-3",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-4",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-5",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-065",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\065.png",
+      "originalExportSha256": "4bc260ff628b0d47d3418edb126508bd1208c8187c51d6149360dd8975e8b844",
+      "compositeExportSha256": "9efbe0d45f0659c748396a2bc0b461ca4be853b3a20c535e88e8926b4bb52eb8",
+      "clues": [
+        {
+          "id": "change-1",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-2",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-3",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-4",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-5",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-066",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\066.png",
+      "originalExportSha256": "05426a2b7b3f13a5307ab0e9e100621a3f00eab644bf0bf5a71ae9dd2bdf4e4b",
+      "compositeExportSha256": "bd2b26b8813c995a4791ec055ad52c54a155b6ee08b33dd4c83030865ef8ab31",
+      "clues": [
+        {
+          "id": "change-1",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-2",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-3",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-4",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-5",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-067",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\067.png",
+      "originalExportSha256": "05172729255fd19ea31b3aa2b3c7d9d771cde0e73f98c7d3f741adf6f08ae920",
+      "compositeExportSha256": "2abd56d5dfc99ab26d89c94cc4c55ad35034bf16de481a9a27004b5b650b2999",
+      "clues": [
+        {
+          "id": "closed-cushion-eye",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "bear-eye",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "crescent-turn",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "globe-axis",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "heart-pull",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-068",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\068.png",
+      "originalExportSha256": "f5a99bafa4b905b5214e2404b66e5adb7e32589880aee5be14c26544fff835ef",
+      "compositeExportSha256": "4f5130da232b3e07e502a2ddc2763003c67650afebc2a220b7396cfa43806089",
+      "clues": [
+        {
+          "id": "tail-spiral",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "arched-chair",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "scarf-knots",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "spool-groove",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "buckle-tab",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-069",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\069.png",
+      "originalExportSha256": "51550efee3c40533353c6c032a4fc0a8b70c2eb996af3323772222b408716631",
+      "compositeExportSha256": "8a45836f0211980794ca3416c7da7909877ed937a48c7ba2c74f987cdcba85f0",
+      "clues": [
+        {
+          "id": "closed-gondola-door",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "hub-crescent",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "closed-fist",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "stone-spiral",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "star-leaf-hole",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-070",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\070.png",
+      "originalExportSha256": "4c590f4e1b4e33ec5d96f18cd19d7967128cb2a4ecc847ff388bb7d3bb2227ce",
+      "compositeExportSha256": "e9fa42dae64063ca4552c23e82a29a6cd251d9ee71e1882e10dfd984ac00f495",
+      "clues": [
+        {
+          "id": "change-1",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-2",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-3",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-4",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-5",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-071",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\071.png",
+      "originalExportSha256": "0f74278e5be69316cc1ba16faf7d5d3eaa2b2ede789c0edd5583e7b12c3ef7f2",
+      "compositeExportSha256": "483215faaee9d310124d00c7a58b5e8e76c199983dbab30c35c6035beadac654",
+      "clues": [
+        {
+          "id": "change-1",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-2",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-3",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-4",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-5",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-072",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\072.png",
+      "originalExportSha256": "dfd53be350a35db6ca94533f45383b84fbcd857b947e9f045c05cbb45c4c1857",
+      "compositeExportSha256": "6486e3a39e7ade0ce6cd385993c26a90f8234b08aa76533e8c871fe820fd27ec",
+      "clues": [
+        {
+          "id": "change-1",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-2",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-3",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-4",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "change-5",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-073",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\073.png",
+      "originalExportSha256": "027cb896f0a7cf11301a4181db504fb5fbc33c17f3b0ab3e0137cb004b51a82c",
+      "compositeExportSha256": "51760c39c4b4e808adaaa6b0bd4597913d95a60b088e64f98b2af5447547e18b",
+      "clues": [
+        {
+          "id": "bench-cutout",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "collar-knot",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "fountain-jet",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "hinge",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "spiral",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-074",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\074.png",
+      "originalExportSha256": "05bfa194b2366250f36dda508fdc4f4cc1b3aaa000f8f335127cb8921c22e5a0",
+      "compositeExportSha256": "3ccf7ea4426ef116b50224525ec6b72afa0ff4a4110728dce75a265b284294b6",
+      "clues": [
+        {
+          "id": "crane-wings",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "train-order",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "ladder-fold",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "window-mullion",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "curled-scrap",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-075",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\075.png",
+      "originalExportSha256": "15993d28c62afcd2ef74b5ac1925aa573061db4609afb4e56bdf0fa565df086c",
+      "compositeExportSha256": "eb52846e4dbe5cb77093f36d6d973e4628d1e0d2c76f74451042a6b12bdbf615",
+      "clues": [
+        {
+          "id": "star",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "scarf",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "ski-tip",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "handle-brace",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "mitten-pattern",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-076",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\076.png",
+      "originalExportSha256": "0169be87aa842d434d7ede8fbaccc287be994c69c4d4a78282f8bc1f4b19aa5a",
+      "compositeExportSha256": "a8833937ac11055f7f3261eedbc8fcb9dc27a43c80c59ddf45121ede932b8edd",
+      "clues": [
+        {
+          "id": "cushion-ring",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "minute-hand",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "crest-tip",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "lantern-pin",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "tieback-loop",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    },
+    {
+      "id": "v4-dream-077",
+      "status": "reviewed",
+      "visualReviewed": true,
+      "reviewedClues": 5,
+      "fullCompositeVisualReviewed": true,
+      "originalDecodedPixelsMatchCurrent": true,
+      "currentGeometryMatches": true,
+      "evidence": "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\001_077\\077.png",
+      "originalExportSha256": "a394129e292484ee2a08b16db32e9fdbe9ac65bbae717dba151ac611646f9a54",
+      "compositeExportSha256": "a4e033cda62d3f003e72349f9d097a83bcd81960f2240023eba86ea3b301921b",
+      "clues": [
+        {
+          "id": "handle",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "canopy",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "dial",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "bow",
+          "visualReviewed": true,
+          "issue": null
+        },
+        {
+          "id": "pebble",
+          "visualReviewed": true,
+          "issue": null
+        }
+      ]
+    }
+  ],
+  "scopeLimitations": [
+    "No live/mobile interaction testing by this review agent; root owns browser tests.",
+    "No physical-phone or human timed-difficulty validation.",
+    "Visual contact sheets include full composites at thumbnail size and each paired clue crop; detailed crops viewed for024/042/048."
+  ],
+  "visualReviewedCards": 76,
+  "reviewedClues": 380,
+  "refreshedVisualChecks": [
+    "022 all five paired crops and full composite inspected after fresh export",
+    "030 all five paired crops and full composite inspected after fresh export"
+  ]
+}

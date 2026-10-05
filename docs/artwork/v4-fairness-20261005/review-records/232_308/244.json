@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-244",
+  "title": "The Dresser of Unmade Waves",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "cf68413807e702a75697aa8012b8122e21ee55e8e53ec072f288341ef61187e4",
+    "browserComposite": "bd511dc9a418ecebf08d4c687a1d27e22fe666f658c4af889dbaa46d1d8a9311",
+    "mapping": "4a2bc2aa17fc5ceeac388872e74e054628654fd22b62de4ca5ea11ec7df09e63"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-244-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-244-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\244.png"
+  ],
+  "clues": [
+    {
+      "id": "pull",
+      "label": "The top left shell pull hangs upside down.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.5586124401913876,
+        "top": 0.21891604675876727,
+        "width": 0.041866028708133975,
+        "height": 0.06057385759829968
+      }
+    },
+    {
+      "id": "horse",
+      "label": "The seahorse tail curls to the right.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.9204545454545454,
+        "top": 0.24017003188097769,
+        "width": 0.030502392344497607,
+        "height": 0.06588735387885228
+      }
+    },
+    {
+      "id": "sail",
+      "label": "The model boat right sail curves inward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.7165071770334929,
+        "top": 0,
+        "width": 0.028110047846889953,
+        "height": 0.08289054197662062
+      }
+    },
+    {
+      "id": "needle",
+      "label": "The compass needle has a bold left arrowhead.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.07057416267942583,
+        "top": 0.7917109458023379,
+        "width": 0.03827751196172249,
+        "height": 0.03506907545164718
+      }
+    },
+    {
+      "id": "moon",
+      "label": "The chair blanket moon opens left.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.9521531100478469,
+        "top": 0.5451647183846972,
+        "width": 0.025119617224880382,
+        "height": 0.04994686503719448
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

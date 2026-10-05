@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-300",
+  "title": "The Hallway That Hid in a Book",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "e437190a3580913e02ab6a9c681013d2c9d199765ea0593dfeda87bcc3859787",
+    "browserComposite": "ec200f1b82ab63deb785ccdb2587ee8c250c0128ace8ca359ef98b1c9ec963ab",
+    "mapping": "8950e76ad6e5168e0eeca4483020766900f35bcf7e335b1bf6bc43fbee1ce6fa"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-300-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-300-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\300.png"
+  ],
+  "clues": [
+    {
+      "id": "change-1",
+      "label": "The blue door has a hanging pull ring.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.36901913875598086,
+        "top": 0.40913921360255046,
+        "width": 0.028110047846889953,
+        "height": 0.08395324123273114
+      }
+    },
+    {
+      "id": "change-2",
+      "label": "The nearest left flame bends sideways.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.41566985645933013,
+        "top": 0.23273113708820403,
+        "width": 0.03708133971291866,
+        "height": 0.06057385759829968
+      }
+    },
+    {
+      "id": "change-3",
+      "label": "The left lens reflects a crescent.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.35586124401913877,
+        "top": 0.7066950053134963,
+        "width": 0.03289473684210526,
+        "height": 0.05951115834218916
+      }
+    },
+    {
+      "id": "change-4",
+      "label": "The stamp face bears a spiral.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.8157894736842105,
+        "top": 0.8267800212539851,
+        "width": 0.04724880382775119,
+        "height": 0.1126461211477152
+      }
+    },
+    {
+      "id": "change-5",
+      "label": "The key bow forms a heart.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.060406698564593304,
+        "top": 0.7215727948990436,
+        "width": 0.06399521531100479,
+        "height": 0.077577045696068
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

@@ -1,0 +1,100 @@
+{
+  "card": "halloween",
+  "id": "v4-dream-halloween",
+  "title": "The Street That Curled into Halloween",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "round-mouth",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-halloween-altered-source-v4.png",
+      "sourceSha256": "96b57b19b2161fa2d1a51b1da5823593ccf9b2c6df1534e8617d7f81bd990c20",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        399,
+        349,
+        42,
+        38
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    },
+    {
+      "id": "curled-tail",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-halloween-altered-source-v4.png",
+      "sourceSha256": "96b57b19b2161fa2d1a51b1da5823593ccf9b2c6df1534e8617d7f81bd990c20",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1262,
+        303,
+        48,
+        66
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    },
+    {
+      "id": "crescent-hat",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-halloween-altered-source-v4.png",
+      "sourceSha256": "96b57b19b2161fa2d1a51b1da5823593ccf9b2c6df1534e8617d7f81bd990c20",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        742,
+        400,
+        59,
+        69
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    },
+    {
+      "id": "square-knocker",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-halloween-altered-source-v4.png",
+      "sourceSha256": "96b57b19b2161fa2d1a51b1da5823593ccf9b2c6df1534e8617d7f81bd990c20",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        167,
+        307,
+        95,
+        97
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "cross-panel",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-halloween-altered-source-v4.png",
+      "sourceSha256": "96b57b19b2161fa2d1a51b1da5823593ccf9b2c6df1534e8617d7f81bd990c20",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        995,
+        546,
+        38,
+        41
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    }
+  ],
+  "originalSha256": "890919ed7a6593edfecf822caf423915418ba72c6901104b2fc9b47928e636fd",
+  "compositeSha256": "30e6a0239dcc2f166928e8aea87fd160cc627571ea4a29640cc8fb73acdea19b",
+  "evidence": [
+    "review-deliverables/Dreamerie-halloween-A-original.png",
+    "review-deliverables/Dreamerie-halloween-B-changed.png",
+    "audit-fairness\\309_holidays\\halloween.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

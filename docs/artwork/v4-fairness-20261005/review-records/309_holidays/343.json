@@ -1,0 +1,100 @@
+{
+  "card": "343",
+  "id": "v4-dream-343",
+  "title": "The Walnut's Moonless Night",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "change-1",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-343-altered-source-v4.png",
+      "sourceSha256": "df8f2cd5b3f2e117528477374a030a88abdaaca909d6328f66c973b38c025bc8",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        800,
+        387,
+        122,
+        77
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-2",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-343-altered-source-v4.png",
+      "sourceSha256": "df8f2cd5b3f2e117528477374a030a88abdaaca909d6328f66c973b38c025bc8",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1236,
+        332,
+        71,
+        53
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-3",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-343-altered-source-v4.png",
+      "sourceSha256": "df8f2cd5b3f2e117528477374a030a88abdaaca909d6328f66c973b38c025bc8",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1104,
+        307,
+        41,
+        47
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-4",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-343-altered-source-v4.png",
+      "sourceSha256": "df8f2cd5b3f2e117528477374a030a88abdaaca909d6328f66c973b38c025bc8",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        750,
+        242,
+        88,
+        98
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-5",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-343-altered-source-v4.png",
+      "sourceSha256": "df8f2cd5b3f2e117528477374a030a88abdaaca909d6328f66c973b38c025bc8",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1468,
+        765,
+        104,
+        82
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "861d9613ca8dc6a68114186f9964da17841ce2bacdff8b94a4d1da974800ab21",
+  "compositeSha256": "73bed222c07d68996ed8002b990505c9f212c40e286552afd3b43a9c61a2ca80",
+  "evidence": [
+    "review-deliverables/Dreamerie-343-A-original.png",
+    "review-deliverables/Dreamerie-343-B-changed.png",
+    "audit-fairness\\309_holidays\\343.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

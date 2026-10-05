@@ -1,0 +1,100 @@
+{
+  "card": "350",
+  "id": "v4-dream-350",
+  "title": "The Teaspoon's Long Journey",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "towel-roll",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-350-towel-assembled-source-v4.png",
+      "sourceSha256": "52df0a08c68c2f74361d2d82ed912602327ea1ecc773f66ee3eca1104013d143",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        0,
+        506,
+        638,
+        435
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "bench-tilt",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-350-altered-source-v4.png",
+      "sourceSha256": "94173d2158b871822856dccea8ca9e17bc346d635a7d2edd06e831a08af016bc",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1390,
+        253,
+        177,
+        119
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "spoon-moon",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-350-altered-source-v4.png",
+      "sourceSha256": "94173d2158b871822856dccea8ca9e17bc346d635a7d2edd06e831a08af016bc",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        222,
+        322,
+        158,
+        97
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "arch-point",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-350-altered-source-v4.png",
+      "sourceSha256": "94173d2158b871822856dccea8ca9e17bc346d635a7d2edd06e831a08af016bc",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        804,
+        228,
+        197,
+        148
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "knob-spiral",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-350-altered-source-v4.png",
+      "sourceSha256": "94173d2158b871822856dccea8ca9e17bc346d635a7d2edd06e831a08af016bc",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1492,
+        541,
+        94,
+        68
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "bd8c218f2480299a49df1485d3c8f304bc27ecce24c2f56fdd957aaad88c3e23",
+  "compositeSha256": "76b67b87d2748c367d018ed62122eda83c99d642b26613a00f347eca7f021bb7",
+  "evidence": [
+    "review-deliverables/Dreamerie-350-A-original.png",
+    "review-deliverables/Dreamerie-350-B-changed.png",
+    "audit-fairness\\309_holidays\\350.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

@@ -1,0 +1,100 @@
+{
+  "card": "359",
+  "id": "v4-dream-359",
+  "title": "The Chandelier That Needed Shoes",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "change-1",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-359-altered-source-v4.png",
+      "sourceSha256": "ba9436fdfb3a01acb3638da8780a3fb58ef3476db2fff0066ceb2cabc3c3a357",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        607,
+        572,
+        72,
+        66
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-2",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-359-altered-source-v4.png",
+      "sourceSha256": "ba9436fdfb3a01acb3638da8780a3fb58ef3476db2fff0066ceb2cabc3c3a357",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1204,
+        635,
+        111,
+        98
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-3",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-359-altered-source-v4.png",
+      "sourceSha256": "ba9436fdfb3a01acb3638da8780a3fb58ef3476db2fff0066ceb2cabc3c3a357",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1520,
+        429,
+        152,
+        79
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-4",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-359-altered-source-v4.png",
+      "sourceSha256": "ba9436fdfb3a01acb3638da8780a3fb58ef3476db2fff0066ceb2cabc3c3a357",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        522,
+        18,
+        61,
+        61
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-5",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-359-altered-source-v4.png",
+      "sourceSha256": "ba9436fdfb3a01acb3638da8780a3fb58ef3476db2fff0066ceb2cabc3c3a357",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        907,
+        713,
+        43,
+        47
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "cc77ac374295855b5341b8d98cac83da80865b2bf67fa29926b7049c4219b046",
+  "compositeSha256": "276085b0d1ff709843139d3d020ae7e6fd9cb98579d520992e06206d3850e3b7",
+  "evidence": [
+    "review-deliverables/Dreamerie-359-A-original.png",
+    "review-deliverables/Dreamerie-359-B-changed.png",
+    "audit-fairness\\309_holidays\\359.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

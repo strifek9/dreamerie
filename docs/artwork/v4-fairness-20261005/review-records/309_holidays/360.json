@@ -1,0 +1,100 @@
+{
+  "card": "360",
+  "id": "v4-dream-360",
+  "title": "The Badger's Folded Winter",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "change-1",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-360-altered-source-v4.png",
+      "sourceSha256": "20142448bdb9bed7d21a69af39aef154b4117dc1df69f19ef9571725e98d586f",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1142,
+        65,
+        73,
+        109
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-2",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-360-altered-source-v4.png",
+      "sourceSha256": "20142448bdb9bed7d21a69af39aef154b4117dc1df69f19ef9571725e98d586f",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        745,
+        520,
+        109,
+        119
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-3",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-360-altered-source-v4.png",
+      "sourceSha256": "20142448bdb9bed7d21a69af39aef154b4117dc1df69f19ef9571725e98d586f",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        6,
+        477,
+        109,
+        91
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-4",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-360-altered-source-v4.png",
+      "sourceSha256": "20142448bdb9bed7d21a69af39aef154b4117dc1df69f19ef9571725e98d586f",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1253,
+        158,
+        59,
+        53
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-5",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-360-altered-source-v4.png",
+      "sourceSha256": "20142448bdb9bed7d21a69af39aef154b4117dc1df69f19ef9571725e98d586f",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1398,
+        763,
+        188,
+        127
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "ad28eb463910307148db1491b170f7e7392994170190ff7943437986723ae21e",
+  "compositeSha256": "faa5cdb51b26eeefeecde18f2677a3eb7380458e0b871275335815d4ab458e4b",
+  "evidence": [
+    "review-deliverables/Dreamerie-360-A-original.png",
+    "review-deliverables/Dreamerie-360-B-changed.png",
+    "audit-fairness\\309_holidays\\360.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

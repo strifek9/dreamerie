@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-288",
+  "title": "The Whale in the Measuring Jug",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "f7aa630299d845ad583211168fde979c229c9496ba95f849ca8e801f71c6dda8",
+    "browserComposite": "931114b7b343c7298bcf007c7a3d87cd7789b415782e52cfe394e6c259015f6f",
+    "mapping": "5335469ffc1421858ca4ba2e22af990eaa84b6468cf6460f0e201196ba347635"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-288-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-288-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\288.png"
+  ],
+  "clues": [
+    {
+      "id": "change-1",
+      "label": "The origami whale's tail folds into a paper fan.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.3409090909090909,
+        "top": 0.007438894792773645,
+        "width": 0.12739234449760767,
+        "height": 0.1902231668437832
+      }
+    },
+    {
+      "id": "change-2",
+      "label": "A crescent reflects in the bowl's water beside the boat.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.9150717703349283,
+        "top": 0.5037194473963869,
+        "width": 0.08492822966507177,
+        "height": 0.09032943676939426
+      }
+    },
+    {
+      "id": "change-3",
+      "label": "The shell's ribs wind into a spiral.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.8492822966507177,
+        "top": 0.7045696068012752,
+        "width": 0.1375598086124402,
+        "height": 0.1742826780021254
+      }
+    },
+    {
+      "id": "change-4",
+      "label": "The map's left corner rolls into a hollow curl.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.486244019138756,
+        "top": 0.8065887353878852,
+        "width": 0.13576555023923445,
+        "height": 0.15834218916046758
+      }
+    },
+    {
+      "id": "change-5",
+      "label": "The jug's spout curls into a hollow lip.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.11483253588516747,
+        "top": 0.1636556854410202,
+        "width": 0.05801435406698564,
+        "height": 0.13602550478214664
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}

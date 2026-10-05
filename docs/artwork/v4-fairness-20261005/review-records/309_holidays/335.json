@@ -1,0 +1,100 @@
+{
+  "card": "335",
+  "id": "v4-dream-335",
+  "title": "The Robot's Paper Heartbeat",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "open-mouth",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-335-altered-source-v4.png",
+      "sourceSha256": "1a79d6db9dd9072ad48dee12628533cf652923ac3315ee7d5ff86d258b72ed86",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        654,
+        256,
+        43,
+        39
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "inverted-heart",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-335-altered-source-v4.png",
+      "sourceSha256": "1a79d6db9dd9072ad48dee12628533cf652923ac3315ee7d5ff86d258b72ed86",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1115,
+        303,
+        88,
+        101
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "square-spool",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-335-altered-source-v4.png",
+      "sourceSha256": "1a79d6db9dd9072ad48dee12628533cf652923ac3315ee7d5ff86d258b72ed86",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1514,
+        606,
+        49,
+        23
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    },
+    {
+      "id": "cross-screw",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-335-altered-source-v4.png",
+      "sourceSha256": "1a79d6db9dd9072ad48dee12628533cf652923ac3315ee7d5ff86d258b72ed86",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        462,
+        356,
+        47,
+        50
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "hex-pivot",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-335-altered-source-v4.png",
+      "sourceSha256": "1a79d6db9dd9072ad48dee12628533cf652923ac3315ee7d5ff86d258b72ed86",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        577,
+        787,
+        37,
+        26
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "f54bbccc5ea58c8e662b90b59c853e11826a81e729f59cabbd63b444a3656beb",
+  "compositeSha256": "0e2a4f6a564e2499c7ba042a2fe873911db710441ec2fcc650eed6a4170a78ae",
+  "evidence": [
+    "review-deliverables/Dreamerie-335-A-original.png",
+    "review-deliverables/Dreamerie-335-B-changed.png",
+    "audit-fairness\\309_holidays\\335.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

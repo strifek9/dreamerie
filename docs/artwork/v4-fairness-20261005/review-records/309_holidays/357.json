@@ -1,0 +1,100 @@
+{
+  "card": "357",
+  "id": "v4-dream-357",
+  "title": "The Cucumber's Long Corridor",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "change-1",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-357-altered-source-v4.png",
+      "sourceSha256": "46bbf78f6570eb937bdf41a7851490edf1406869fd895db9e15412f28baae3a6",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        293,
+        620,
+        153,
+        189
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-2",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-357-altered-source-v4.png",
+      "sourceSha256": "46bbf78f6570eb937bdf41a7851490edf1406869fd895db9e15412f28baae3a6",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        211,
+        50,
+        78,
+        122
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-3",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-357-altered-source-v4.png",
+      "sourceSha256": "46bbf78f6570eb937bdf41a7851490edf1406869fd895db9e15412f28baae3a6",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1123,
+        175,
+        55,
+        117
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-4",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-357-altered-source-v4.png",
+      "sourceSha256": "46bbf78f6570eb937bdf41a7851490edf1406869fd895db9e15412f28baae3a6",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        726,
+        507,
+        54,
+        101
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "change-5",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-357-altered-source-v4.png",
+      "sourceSha256": "46bbf78f6570eb937bdf41a7851490edf1406869fd895db9e15412f28baae3a6",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1497,
+        571,
+        105,
+        178
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    }
+  ],
+  "originalSha256": "3d87f8a496ed0156663d1890c8583451e5ee13afeb35c710a863b8e754a2739c",
+  "compositeSha256": "19b1299ffaa6e67731c597432849e6ec5c0b66be7ccabf3194464b1788e41fc5",
+  "evidence": [
+    "review-deliverables/Dreamerie-357-A-original.png",
+    "review-deliverables/Dreamerie-357-B-changed.png",
+    "audit-fairness\\309_holidays\\357.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

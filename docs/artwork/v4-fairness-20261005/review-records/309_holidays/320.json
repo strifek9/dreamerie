@@ -1,0 +1,100 @@
+{
+  "card": "320",
+  "id": "v4-dream-320",
+  "title": "The Drawer That Held Its Breath",
+  "fullCompositeVisuallyReviewed": true,
+  "allFivePairedCropsVisuallyReviewed": true,
+  "originalNativePixelsExact": true,
+  "outsideAuthoredRegionsExact": true,
+  "clues": [
+    {
+      "id": "closed-eye",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-320-altered-source-v4.png",
+      "sourceSha256": "7c18e2073d5b477e7617b903288107aee8e3e025b71906328916fc714a256be9",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        450,
+        273,
+        26,
+        25
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "curled-tail",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-320-altered-source-v4.png",
+      "sourceSha256": "7c18e2073d5b477e7617b903288107aee8e3e025b71906328916fc714a256be9",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        946,
+        155,
+        141,
+        88
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    },
+    {
+      "id": "square-knob",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-320-altered-source-v4.png",
+      "sourceSha256": "7c18e2073d5b477e7617b903288107aee8e3e025b71906328916fc714a256be9",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        627,
+        597,
+        75,
+        72
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    },
+    {
+      "id": "crescent-cup",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-320-altered-source-v4.png",
+      "sourceSha256": "7c18e2073d5b477e7617b903288107aee8e3e025b71906328916fc714a256be9",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1492,
+        790,
+        53,
+        56
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": true
+    },
+    {
+      "id": "star-book",
+      "sourcePath": "D:\\Dreamerie\\public\\artwork\\v4\\collection\\dream-320-altered-source-v4.png",
+      "sourceSha256": "7c18e2073d5b477e7617b903288107aee8e3e025b71906328916fc714a256be9",
+      "interiorExact": true,
+      "cropVisuallyReviewed": true,
+      "issueIds": [],
+      "bounds": [
+        1509,
+        438,
+        57,
+        54
+      ],
+      "mappingGeometryExact": true,
+      "mappingLabelExact": false
+    }
+  ],
+  "originalSha256": "531c98dcdd94fe6f4238a09991b6f2b889852c53903be07657924926d4435afc",
+  "compositeSha256": "3c09f22f92c3f59b4bbafb5060c51a361d1798372af6ac011998bebacab71cf9",
+  "evidence": [
+    "review-deliverables/Dreamerie-320-A-original.png",
+    "review-deliverables/Dreamerie-320-B-changed.png",
+    "audit-fairness\\309_holidays\\320.jpg"
+  ],
+  "browserInteractionReview": "not performed by this agent",
+  "physicalPhoneReview": "not performed"
+}

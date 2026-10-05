@@ -2,7 +2,7 @@ import assert from 'node:assert/strict'
 import test from 'node:test'
 import { readFileSync } from 'node:fs'
 import { createHash } from 'node:crypto'
-import { currentDreams, playableDreams, v3CurrentDreams } from '../src/v3/dailyDream.ts'
+import { currentDreams, playableDreams, v3CurrentDreams, v4DeliveryDreams } from '../src/v3/dailyDream.ts'
 import { artworkSources, changedArtwork, originalArtwork } from '../src/v3/artworkDelivery.ts'
 
 interface Asset {
@@ -18,8 +18,8 @@ const bytes = (path: string) => readFileSync(new URL(`../public${path}`, import.
 const hash = (value: Buffer) => createHash('sha256').update(value).digest('hex')
 
 test('all 383 current cards preload only their full original and five lossless clue crops', () => {
-  assert.equal(audit.cards.length, currentDreams.length)
-  assert.equal(assets.size, currentDreams.length * 6)
+  assert.equal(audit.cards.length, v4DeliveryDreams.length)
+  assert.equal(assets.size, v4DeliveryDreams.length * 6)
   for (const dream of currentDreams) {
     const urls = artworkSources(dream)
     assert.equal(urls.length, 6, dream.id)
@@ -86,7 +86,7 @@ test('delivery checksums match the pixel-verified audit and every file is native
 
 test('legacy saved cards keep original sources and delivery selection never mutates puzzle data', () => {
   const snapshot = JSON.stringify(playableDreams)
-  const currentIds = new Set([...currentDreams, ...v3CurrentDreams].map(card => card.id))
+  const currentIds = new Set([...v4DeliveryDreams, ...v3CurrentDreams].map(card => card.id))
   for (const dream of playableDreams) {
     artworkSources(dream)
     if (currentIds.has(dream.id)) continue

@@ -1,0 +1,87 @@
+{
+  "id": "v4-dream-294",
+  "title": "The Girl Who Pulled the Horizon Closer",
+  "status": "no-confirmed-class-defect",
+  "visualReview": true,
+  "fullBrowserPairReviewed": true,
+  "fivePairedCropsReviewed": true,
+  "mappingMatchesBaseline": true,
+  "originalMasterPixelsMatch": true,
+  "browserCompositeMatchesPreviouslyValidatedHash": true,
+  "changedPixelsOutsideAuthoredBoxesPlusOnePixel": null,
+  "sourceHashes": {
+    "original": "da75ae374654b2062afd15ff3cf8c3e83b45ccf34a883dfb8d27b8873f66b693",
+    "browserComposite": "b695e89186033c11e5d148b7315c41915691561e5f1bff9729857df8585f78e5",
+    "mapping": "3f31a1350c49c001d92093bb99df0268541aef1a123e6f47b454e84d632270e8"
+  },
+  "evidencePaths": [
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-294-A-original.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\review-deliverables\\Dreamerie-294-B-changed.png",
+    "C:\\Users\\Kou\\Documents\\Codex\\2026-10-04\\task\\audit-fairness\\232_308\\294.png"
+  ],
+  "clues": [
+    {
+      "id": "change-1",
+      "label": "The reel crossbrace arches upward.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.36004784688995217,
+        "top": 0.6148936170212767,
+        "width": 0.11363636363636363,
+        "height": 0.05851063829787234
+      }
+    },
+    {
+      "id": "change-2",
+      "label": "The shell opening reflects a blue arc.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.8032296650717703,
+        "top": 0.8914893617021277,
+        "width": 0.0215311004784689,
+        "height": 0.03723404255319149
+      }
+    },
+    {
+      "id": "change-3",
+      "label": "The starfish has a central spiral pattern.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.8809808612440191,
+        "top": 0.7351063829787234,
+        "width": 0.014952153110047847,
+        "height": 0.02872340425531915
+      }
+    },
+    {
+      "id": "change-4",
+      "label": "The waist sash has gold embroidery.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.2159090909090909,
+        "top": 0.3574468085106383,
+        "width": 0.023923444976076555,
+        "height": 0.036170212765957444
+      }
+    },
+    {
+      "id": "change-5",
+      "label": "The axle cap has a triangular slot.",
+      "pairedCropReviewed": true,
+      "localizedSinglePerceivedChange": true,
+      "authoredBox": {
+        "left": 0.4491626794258373,
+        "top": 0.36914893617021277,
+        "width": 0.017344497607655503,
+        "height": 0.030851063829787233
+      }
+    }
+  ],
+  "issues": [],
+  "mobileInteractionTesting": "not performed by this reviewer; root owns isolated mobile fit/zoom/pan and saved flow checks",
+  "physicalPhoneReview": false
+}
