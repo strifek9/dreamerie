@@ -1,0 +1,5 @@
+PASS active midnight: original card/key/deadline preserved, Home Continue does not grant next-day attempt
+PASS expired prior day stays readable; existing Home restores next-day saved result without changing either record
+PASS idle landing focus refreshes local-calendar date without starting timer
+PASS continuously open idle landing crosses local midnight on accelerated interval without a new control or automatic attempt
+PASS local rollover QA/no JS exceptions

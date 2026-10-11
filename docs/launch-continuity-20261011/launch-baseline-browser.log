@@ -1,0 +1,6 @@
+PASS first-time landing states five guesses, misses count, deliberate Remember; failed artwork blocks Start with no attempt/timer
+PASS failed active reload keeps pending/start, Continue and retry never reset or pause
+PASS simulated background/foreground expiry uses original deadline and result focus
+PASS spoiler-free share/copy in-memory adapters, quiet native-cancel adapter, denied-copy manual fallback with focus/selection; no real share/clipboard
+OBSERVED next-day Home {"header":"Dreamerie\n?\nDaily Dream #18","button":"View result","prior":true}
+PASS local launch flow inspection complete
