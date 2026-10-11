@@ -1,3 +1,7 @@
+## Previous-version restoration - October 11, 2026
+
+The owner rejected the October 11 usability update and requested full restoration of the prior version, with changes only for confirmed resolution defects. Application/tests are restored exactly to f660bcf4090414c914ed1d4ae7bd64731191c1e9 on fix/restore-pre-usability. No resolution defect was confirmed; no speculative source/layout fix was added. Today's implementation and evidence remain recoverable. Local commit only: push/main integration/deployment require explicit additional publication approval. Preserve all artwork, card IDs, storage schema, player data, rules, hosting and October25 planning reminder. Evidence: docs/RESTORATION_20261011.md. The mobile usability instructions below are historical and superseded for this candidate.
+
 ## Current mobile usability work - October11 2026
 
 Sentinel_75b721c9cb5081919926e09d36d90aef authorizes the other usability goals and explicitly rejects rapid Dream/Memory switching. Simultaneous larger comparison, obvious pending Cancel, returning-player/rollover/share verification and directly related safe polish are complete locally on feat/mobile-comparison-cancel. A local commit is authorized; push, main promotion and deployment require new release approval. No temporal flipping, overlay, blink comparison, zoom-preserving picture toggle, clue/rule/timer changes or hosting migration. Evidence: docs/USABILITY_20261011.json. October25 remains a planning reminder only. Older publication approvals below are historical and do not authorize this release.
