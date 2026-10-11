@@ -8,7 +8,7 @@ export type DailySession = {
   guesses: { point: Point; elapsedSeconds: number }[]
   pending: { point: Point; side: DreamSide } | null
 }
-export type SessionAction = { type: 'start' } | { type: 'mark'; point: Point; side: DreamSide } | { type: 'confirm'; expectedCount: number; point: Point; side: DreamSide }
+export type SessionAction = { type: 'cancel'; expectedCount: number; point: Point; side: DreamSide } | { type: 'start' } | { type: 'mark'; point: Point; side: DreamSide } | { type: 'confirm'; expectedCount: number; point: Point; side: DreamSide }
 // Keep the published collection key: removing old modes must not reset attempts.
 export const DAILY_SESSION_NAMESPACE = 'dreamerie:v2:daily-collection:v1'
 export const dailyStorageKey = (day: number) => `${DAILY_SESSION_NAMESPACE}:${day}`
@@ -68,6 +68,9 @@ export function changeSession(session: DailySession | null, action: SessionActio
   if (action.type === 'start') return session ?? { version: 1, cardId, startedAt: now, guesses: [], pending: null }
   if (!session || sessionSnapshot(session, differences, now, aspectRatio).result) return session
   if (action.type === 'mark') return isPoint(action.point) ? { ...session, pending: { point: action.point, side: action.side } } : session
+  if (action.type === 'cancel') return action.expectedCount === session.guesses.length && session.pending && action.side === session.pending.side
+    && action.point.x === session.pending.point.x && action.point.y === session.pending.point.y
+    ? { ...session, pending: null } : session
   // A stale tab/double confirmation must never consume the next guess.
   if (!session.pending || action.expectedCount !== session.guesses.length || action.side !== session.pending.side
     || action.point.x !== session.pending.point.x || action.point.y !== session.pending.point.y) return session

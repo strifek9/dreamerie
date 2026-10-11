@@ -1,0 +1,84 @@
+{
+  "authorizationSourceId": "Sentinel_75b721c9cb5081919926e09d36d90aef",
+  "date": "2026-10-11",
+  "baselineCommit": "f660bcf4090414c914ed1d4ae7bd64731191c1e9",
+  "branch": "feat/mobile-comparison-cancel",
+  "status": "Implemented and tested locally; local commit authorized; push and deployment await new release approval",
+  "changes": [
+    "Full-screen simultaneous comparison: stacked portrait, side by side landscape, shared zoom/pan; never a rapid flip, overlay, blink or picture toggle",
+    "Short-phone inline paintings use full available width; fitted paintings allow page swipes and controls remain reachable",
+    "Cancel beside Remember in inline, both-image and existing single-image inspection; cancels no lock, preserves deadline; stale count/point/side protection; returns focus to canvas; Escape cancels inline pending guess",
+    "Alt+arrow keyboard panning; ordinary arrows place markers; pan instructions in accessible label",
+    "Device/browser Back, Escape and Close dismiss inspection and restore opener focus; StrictMode-safe history registration",
+    "An open tab offers today’s new dream after calendar rollover without interrupting an active attempt or replacing its deadline; prior saved records remain intact",
+    "Perfect score uses All found instead of misleading missed legend; share text omits V3 internal label"
+  ],
+  "inline320Measurement": {
+    "viewport": [
+      320,
+      568
+    ],
+    "previousPaintingWidthPx": 224,
+    "currentPaintingWidthPx": 299.21875,
+    "increasePercent": 33.6,
+    "qualification": "Full painting at390portrait is naturally limited by phone width; the larger comparison stage supports shared zoom. No automatic crop or changed clue geometry."
+  },
+  "verification": {
+    "unitTests": 108,
+    "failed": 0,
+    "skipped": 0,
+    "typecheck": "passed",
+    "productionBuild": "passed; existing large-chunk advisory only",
+    "legacyArtworkValidator": "passed120pairs/240nativePNGs; artwork unchanged",
+    "browser": "Dedicated headless Microsoft Edge155.0.4283.45 on Windows; disposable contexts via CDP9336; localDEV5177 and production-preview5180 only",
+    "viewports": [
+      [
+        320,
+        568
+      ],
+      [
+        390,
+        844
+      ],
+      [
+        844,
+        390
+      ],
+      [
+        1440,
+        900
+      ]
+    ],
+    "flows": [
+      "Actual touch placement/cancel without lock consumption",
+      "Two-touch pinch and shared zoom",
+      "Keyboard marker placement, Escape cancellation and Alt+arrow pan",
+      "Back/Escape/Close and focus restoration in comparison",
+      "Existing single viewer Cancel visible in portrait/landscape, focus and Back/Close",
+      "Unconfirmed marker reload preserves original start/deadline",
+      "Historical published V4 saved perfect result retains original delivery/score",
+      "Same-tab day rollover offers next scheduled day without deleting old result",
+      "In-progress day rollover expires the original unpaused attempt before offering next day",
+      "Five authored-point touches including zoomed hit in comparison reach5/5; five-lock cap, automatic modal close and completed reload",
+      "Native-share/copy adapters invoked with in-memory stubs only; no external sharing or clipboard writes; fallback opens textarea and focuses it",
+      "Short fitted painting actual touch swipe scrolls page without placing marker or spending guess"
+    ],
+    "successfulRunJSExceptions": 0,
+    "physicalPhone": "not run",
+    "nativeShareSheet": "not run",
+    "realClipboard": "not run",
+    "fullPhysicalAccessibilityAudit": "not run",
+    "productionDailyPlays": "none"
+  },
+  "preserved": [
+    "Five differences/five confirmed guesses; repeats and misses still spend locks",
+    "Unpausable120-second deadline; scoring/tie-break",
+    "Artwork, clue difficulty, geometry, historical delivery assets and saved collection namespace",
+    "Main/social branches, hosting/billing/domains and October25 planning reminder",
+    "Find Edwin and PieceTogether untouched"
+  ],
+  "reviewNotes": [
+    "Initial browser-harness issues were corrected: returnByValue DOM objects must be coerced to Boolean; programmatic clicks require explicit focus for opener assertions; native Escape simulation needs virtual key27. These were not product regressions.",
+    "Controlled dates and saved fixtures are confined to local disposable browser contexts. Harnesses contain this PC’s D:/Dreamerie path and require the dedicated CDP port/local preview; they are supporting evidence, not portable CI."
+  ]
+}

@@ -316,3 +316,26 @@ test('share grids include all five outcomes for perfect and expired rounds', () 
   assert.ok(perfect.includes('5/5 · 0:08\n🟪🟪🟪🟪🟪'))
   assert.ok(expired.includes('0/5 · 2:00\n⬛⬛⬛⬛⬛'))
 })
+
+test('cancel removes a saved pending guess without spending a lock or resetting its deadline', () => {
+  const start = changeSession(null, { type: 'start' }, 'fixture', differences, 1000)!
+  const point = { x: .1, y: .2 }
+  const marked = changeSession(start, { type: 'mark', point, side: 'changed' }, 'fixture', differences, 2000)!
+  const cancelled = changeSession(marked, { type: 'cancel', expectedCount: 0, point, side: 'changed' }, 'fixture', differences, 3000)!
+  assert.equal(cancelled.pending, null)
+  assert.equal(cancelled.startedAt, 1000)
+  assert.deepEqual(cancelled.guesses, [])
+  assert.equal(sessionSnapshot(cancelled, differences, 3000).recallLeft, 118)
+  assert.equal(changeSession(cancelled, { type: 'confirm', point, side: 'changed', expectedCount: 0 }, 'fixture', differences, 4000), cancelled)
+  assert.deepEqual(parseSession(JSON.stringify(cancelled), 'fixture'), cancelled)
+})
+
+test('a stale cancel cannot remove another tab marker or change a completed attempt', () => {
+  const start = changeSession(null, { type: 'start' }, 'fixture', differences, 1000)!
+  const point = { x: .1, y: .2 }
+  const marked = changeSession(start, { type: 'mark', point, side: 'changed' }, 'fixture', differences, 2000)!
+  assert.equal(changeSession(marked, { type: 'cancel', expectedCount: 0, point: { x: .3, y: .4 }, side: 'changed' }, 'fixture', differences, 3000), marked)
+  assert.equal(changeSession(marked, { type: 'cancel', expectedCount: 0, point, side: 'original' }, 'fixture', differences, 3000), marked)
+  assert.equal(changeSession(marked, { type: 'cancel', expectedCount: 1, point, side: 'changed' }, 'fixture', differences, 3000), marked)
+  assert.equal(changeSession(marked, { type: 'cancel', expectedCount: 0, point, side: 'changed' }, 'fixture', differences, 122000), marked)
+})

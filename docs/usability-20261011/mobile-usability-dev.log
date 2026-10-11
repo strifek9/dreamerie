@@ -1,0 +1,10 @@
+PASS320 portrait inline painting { width: 299.21875, height: 168.390625, overflow: false }
+PASS touch/keyboard cancellation costs zero guesses and returns focus
+PASS actual simulated two-touch pinch and tap/cancel; no spent guesses
+PASS both visible/shared zoom/keyboard pan/cancel including zoomed marker;4 responsive sizes
+PASS Back/Escape/Close dismiss comparison; focus restored, attempt retained
+PASS pending reload preserves original start/deadline and cancellation persists
+PASS historical perfect result art/score, truthful legend, version-free share/native-copy adapters/fallback focus
+PASS same-tab next-day prompt, new scheduled card, prior result preserved
+PASS active-day rollover expires original unpaused deadline; prior records retained
+PASS isolated production QA complete/noJSexceptions/no realuserdata

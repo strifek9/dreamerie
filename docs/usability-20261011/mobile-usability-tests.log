@@ -1,0 +1,662 @@
+
+> dreamerie@0.1.0 test
+> node --experimental-strip-types --test tests/dailyRecall.test.ts tests/landscape.test.ts tests/staticHosting.test.ts tests/dreamRitual.test.ts tests/holidays.test.ts tests/playStats.test.ts tests/paintedCollection.test.ts tests/analytics.test.ts tests/artworkDelivery.test.ts tests/assetInventory.test.ts tests/launchReadiness.test.ts tests/v4Preview.test.ts tests/v4Release.test.ts tests/authoredMaskBounds.test.ts
+
+TAP version 13
+# Subtest: analytics runs only on the exact HTTPS production origin
+ok 1 - analytics runs only on the exact HTTPS production origin
+  ---
+  duration_ms: 0.6949
+  type: 'test'
+  ...
+# Subtest: review links stay untracked while ordinary shared visits are included
+ok 2 - review links stay untracked while ordinary shared visits are included
+  ---
+  duration_ms: 0.2257
+  type: 'test'
+  ...
+# Subtest: installs exactly one nonblocking vendor script with only the public site token
+ok 3 - installs exactly one nonblocking vendor script with only the public site token
+  ---
+  duration_ms: 0.9915
+  type: 'test'
+  ...
+# Subtest: disabled tracking touches no DOM, and installation failures never escape into gameplay
+ok 4 - disabled tracking touches no DOM, and installation failures never escape into gameplay
+  ---
+  duration_ms: 0.3881
+  type: 'test'
+  ...
+# Subtest: all 383 current cards preload only their full original and five lossless clue crops
+ok 5 - all 383 current cards preload only their full original and five lossless clue crops
+  ---
+  duration_ms: 11.5782
+  type: 'test'
+  ...
+# Subtest: delivery checksums match the pixel-verified audit and every file is native-resolution lossless WebP
+ok 6 - delivery checksums match the pixel-verified audit and every file is native-resolution lossless WebP
+  ---
+  duration_ms: 25045.8076
+  type: 'test'
+  ...
+# Subtest: legacy saved cards keep original sources and delivery selection never mutates puzzle data
+ok 7 - legacy saved cards keep original sources and delivery selection never mutates puzzle data
+  ---
+  duration_ms: 16.6779
+  type: 'test'
+  ...
+# Subtest: cleanup preserves every current and historical saved-card asset without unused images
+ok 8 - cleanup preserves every current and historical saved-card asset without unused images
+  ---
+  duration_ms: 507.4248
+  type: 'test'
+  ...
+# Subtest: permanent-mode cleanup preserves the exact published collection storage namespace
+ok 9 - permanent-mode cleanup preserves the exact published collection storage namespace
+  ---
+  duration_ms: 0.3505
+  type: 'test'
+  ...
+# Subtest: previously published V4 review sources remain available and byte-identical
+ok 10 - previously published V4 review sources remain available and byte-identical
+  ---
+  duration_ms: 52.8605
+  type: 'test'
+  ...
+# Subtest: authored polygon bounds support absolute, relative and implicit line commands
+ok 11 - authored polygon bounds support absolute, relative and implicit line commands
+  ---
+  duration_ms: 1.9107
+  type: 'test'
+  ...
+# Subtest: published yarn-to-case out-of-hitbox mask is detected, preserved and excluded from current cards
+ok 12 - published yarn-to-case out-of-hitbox mask is detected, preserved and excluded from current cards
+  ---
+  duration_ms: 1.4563
+  type: 'test'
+  ...
+# Subtest: cloth-river curl is one answer and repeats spend one of five locks
+ok 13 - cloth-river curl is one answer and repeats spend one of five locks
+  ---
+  duration_ms: 0.5438
+  type: 'test'
+  ...
+# Subtest: every corrected version restores pending and completed attempts without changing the round
+ok 14 - every corrected version restores pending and completed attempts without changing the round
+  ---
+  duration_ms: 6.7488
+  type: 'test'
+  ...
+# Subtest: full-stage inspection centers letterboxed axes and bounds pan against the larger window
+ok 15 - full-stage inspection centers letterboxed axes and bounds pan against the larger window
+  ---
+  duration_ms: 1.2694
+  type: 'test'
+  ...
+# Subtest: full-stage taps use the enlarged painting, including areas beyond the original fitted frame
+ok 16 - full-stage taps use the enlarged painting, including areas beyond the original fitted frame
+  ---
+  duration_ms: 0.1757
+  type: 'test'
+  ...
+# Subtest: daily attempts restore pending markers and the original timer after refresh
+ok 17 - daily attempts restore pending markers and the original timer after refresh
+  ---
+  duration_ms: 0.463
+  type: 'test'
+  ...
+# Subtest: closing the browser does not pause the attempt; expired attempts cannot restart
+ok 18 - closing the browser does not pause the attempt; expired attempts cannot restart
+  ---
+  duration_ms: 0.4107
+  type: 'test'
+  ...
+# Subtest: five saved guesses freeze the score and measured time across reloads
+ok 19 - five saved guesses freeze the score and measured time across reloads
+  ---
+  duration_ms: 0.4319
+  type: 'test'
+  ...
+# Subtest: stale or double confirmations cannot use another guess or another tabΓÇÖs marker
+ok 20 - stale or double confirmations cannot use another guess or another tabΓÇÖs marker
+  ---
+  duration_ms: 0.1614
+  type: 'test'
+  ...
+# Subtest: storage updates read the latest attempt and each new date gets its own key
+ok 21 - storage updates read the latest attempt and each new date gets its own key
+  ---
+  duration_ms: 0.2747
+  type: 'test'
+  ...
+# Subtest: malformed or incompatible saved attempts fail closed rather than silently resetting
+ok 22 - malformed or incompatible saved attempts fail closed rather than silently resetting
+  ---
+  duration_ms: 0.3086
+  type: 'test'
+  ...
+# Subtest: storage failures do not report a successfully started or saved attempt
+ok 23 - storage failures do not report a successfully started or saved attempt
+  ---
+  duration_ms: 0.2835
+  type: 'test'
+  ...
+# Subtest: viewer pan remains bounded and zooming out restores a fully fitted painting
+ok 24 - viewer pan remains bounded and zooming out restores a fully fitted painting
+  ---
+  duration_ms: 0.3871
+  type: 'test'
+  ...
+# Subtest: zoom keeps the detail under the pointer stationary
+ok 25 - zoom keeps the detail under the pointer stationary
+  ---
+  duration_ms: 0.153
+  type: 'test'
+  ...
+# Subtest: viewer taps use transformed artwork bounds at different sizes and reject outside taps
+ok 26 - viewer taps use transformed artwork bounds at different sizes and reject outside taps
+  ---
+  duration_ms: 0.2037
+  type: 'test'
+  ...
+# Subtest: results split found answers left and missed answers right without renumbering
+ok 27 - results split found answers left and missed answers right without renumbering
+  ---
+  duration_ms: 0.1934
+  type: 'test'
+  ...
+# Subtest: placing or repositioning a pending marker does not submit a guess
+ok 28 - placing or repositioning a pending marker does not submit a guess
+  ---
+  duration_ms: 0.0524
+  type: 'test'
+  ...
+# Subtest: each confirmation consumes exactly one guess, whether correct or false
+ok 29 - each confirmation consumes exactly one guess, whether correct or false
+  ---
+  duration_ms: 0.0638
+  type: 'test'
+  ...
+# Subtest: five confirmed guesses end the game and a sixth can never be recorded
+ok 30 - five confirmed guesses end the game and a sixth can never be recorded
+  ---
+  duration_ms: 0.0783
+  type: 'test'
+  ...
+# Subtest: a found difference cannot score twice but the duplicate confirmation is consumed
+ok 31 - a found difference cannot score twice but the duplicate confirmation is consumed
+  ---
+  duration_ms: 0.0816
+  type: 'test'
+  ...
+# Subtest: finding all five differences ends immediately with perfect accuracy
+ok 32 - finding all five differences ends immediately with perfect accuracy
+  ---
+  duration_ms: 7.3859
+  type: 'test'
+  ...
+# Subtest: accuracy ranks before time and time breaks accuracy ties
+ok 33 - accuracy ranks before time and time breaks accuracy ties
+  ---
+  duration_ms: 0.149
+  type: 'test'
+  ...
+# Subtest: time display stays simple and human-readable
+ok 34 - time display stays simple and human-readable
+  ---
+  duration_ms: 0.081
+  type: 'test'
+  ...
+# Subtest: small nested details retain their hit area after being found
+ok 35 - small nested details retain their hit area after being found
+  ---
+  duration_ms: 0.0888
+  type: 'test'
+  ...
+# Subtest: the visible circle counts side overlaps and exact tangency, not just its center
+ok 36 - the visible circle counts side overlaps and exact tangency, not just its center
+  ---
+  duration_ms: 0.1004
+  type: 'test'
+  ...
+# Subtest: corner overlap uses a circle rather than an expanded rectangular hit area
+ok 37 - corner overlap uses a circle rather than an expanded rectangular hit area
+  ---
+  duration_ms: 0.058
+  type: 'test'
+  ...
+# Subtest: multiple overlaps score only the nearest region; found targets never fall through
+ok 38 - multiple overlaps score only the nearest region; found targets never fall through
+  ---
+  duration_ms: 0.0843
+  type: 'test'
+  ...
+# Subtest: center hits take priority over nearby overlaps and ties are deterministic
+ok 39 - center hits take priority over nearby overlaps and ties are deterministic
+  ---
+  duration_ms: 0.0641
+  type: 'test'
+  ...
+# Subtest: overlap allowance scales with the artwork on phone, desktop and zoomed views
+ok 40 - overlap allowance scales with the artwork on phone, desktop and zoomed views
+  ---
+  duration_ms: 0.1399
+  type: 'test'
+  ...
+# Subtest: share text reports the Wordle-style score without revealing locations
+ok 41 - share text reports the Wordle-style score without revealing locations
+  ---
+  duration_ms: 0.1645
+  type: 'test'
+  ...
+# Subtest: play links preserve the hosted path without leaking query, fragment or credentials
+ok 42 - play links preserve the hosted path without leaking query, fragment or credentials
+  ---
+  duration_ms: 0.2279
+  type: 'test'
+  ...
+# Subtest: share grids include all five outcomes for perfect and expired rounds
+ok 43 - share grids include all five outcomes for perfect and expired rounds
+  ---
+  duration_ms: 0.1036
+  type: 'test'
+  ...
+# Subtest: cancel removes a saved pending guess without spending a lock or resetting its deadline
+ok 44 - cancel removes a saved pending guess without spending a lock or resetting its deadline
+  ---
+  duration_ms: 0.1668
+  type: 'test'
+  ...
+# Subtest: a stale cancel cannot remove another tab marker or change a completed attempt
+ok 45 - a stale cancel cannot remove another tab marker or change a completed attempt
+  ---
+  duration_ms: 0.0949
+  type: 'test'
+  ...
+# Subtest: all 600 answer crops contain their full detail, stay within native artwork, and are square
+ok 46 - all 600 answer crops contain their full detail, stay within native artwork, and are square
+  ---
+  duration_ms: 4.7887
+  type: 'test'
+  ...
+# Subtest: guess feedback distinguishes pending, correct, repeat and miss without changing scoring
+ok 47 - guess feedback distinguishes pending, correct, repeat and miss without changing scoring
+  ---
+  duration_ms: 0.473
+  type: 'test'
+  ...
+# Subtest: result language acknowledges zero, partial and perfect accuracy
+ok 48 - result language acknowledges zero, partial and perfect accuracy
+  ---
+  duration_ms: 0.1405
+  type: 'test'
+  ...
+# Subtest: Halloween and Christmas replace only their local calendar day, every year
+ok 49 - Halloween and Christmas replace only their local calendar day, every year
+  ---
+  duration_ms: 1.7715
+  type: 'test'
+  ...
+# Subtest: U.S. Thanksgiving is the fourth Thursday, not a fixed November date
+ok 50 - U.S. Thanksgiving is the fourth Thursday, not a fixed November date
+  ---
+  duration_ms: 4.6826
+  type: 'test'
+  ...
+# Subtest: holiday overrides never reorder or shift the ordinary daily rotation
+ok 51 - holiday overrides never reorder or shift the ordinary daily rotation
+  ---
+  duration_ms: 1.1565
+  type: 'test'
+  ...
+# Subtest: an existing ordinary or holiday attempt wins over a newly published schedule
+ok 52 - an existing ordinary or holiday attempt wins over a newly published schedule
+  ---
+  duration_ms: 2.5186
+  type: 'test'
+  ...
+# Subtest: legacy holiday progress keeps its original geometry, score and deadline
+ok 53 - legacy holiday progress keeps its original geometry, score and deadline
+  ---
+  duration_ms: 1.5719
+  type: 'test'
+  ...
+# Subtest: all eighteen holiday pairs have five independent, in-bounds changes and aligned full-resolution assets
+ok 54 - all eighteen holiday pairs have five independent, in-bounds changes and aligned full-resolution assets
+  ---
+  duration_ms: 605.7094
+  type: 'test'
+  ...
+# Subtest: the complete 2026 calendar covers federal holidays plus popular celebrations
+ok 55 - the complete 2026 calendar covers federal holidays plus popular celebrations
+  ---
+  duration_ms: 0.5071
+  type: 'test'
+  ...
+# Subtest: Gregorian Easter handles movable dates and the earliest/latest exceptions
+ok 56 - Gregorian Easter handles movable dates and the earliest/latest exceptions
+  ---
+  duration_ms: 2.2972
+  type: 'test'
+  ...
+# Subtest: fixed-date holidays use the actual day, never substitute bank-holiday dates
+ok 57 - fixed-date holidays use the actual day, never substitute bank-holiday dates
+  ---
+  duration_ms: 0.442
+  type: 'test'
+  ...
+# Subtest: each annual special gets exactly one date, including the Juneteenth/FatherΓÇÖs Day collision
+ok 58 - each annual special gets exactly one date, including the Juneteenth/FatherΓÇÖs Day collision
+  ---
+  duration_ms: 43.8777
+  type: 'test'
+  ...
+# Subtest: holiday repeats, misses, five-guess ceiling, expiry and accuracy-first ordering stay unchanged
+ok 59 - holiday repeats, misses, five-guess ceiling, expiry and accuracy-first ordering stay unchanged
+  ---
+  duration_ms: 5.412
+  type: 'test'
+  ...
+# Subtest: all 120 daily paintings have their own short couplet, stable on reload and rotation
+ok 60 - all 120 daily paintings have their own short couplet, stable on reload and rotation
+  ---
+  duration_ms: 1.8247
+  type: 'test'
+  ...
+# Subtest: all 120 landscape cards have five distinct reachable answers and can finish perfectly
+ok 61 - all 120 landscape cards have five distinct reachable answers and can finish perfectly
+  ---
+  duration_ms: 3419.0372
+  type: 'test'
+  ...
+# Subtest: daily landscape rotation visits every card, wraps, and isolates existing saved games
+ok 62 - daily landscape rotation visits every card, wraps, and isolates existing saved games
+  ---
+  duration_ms: 1.342
+  type: 'test'
+  ...
+# Subtest: every collection card matches its visual audit and preserves the five-guess ceiling on repeats and expiry
+ok 63 - every collection card matches its visual audit and preserves the five-guess ceiling on repeats and expiry
+  ---
+  duration_ms: 12.9656
+  type: 'test'
+  ...
+# Subtest: V2 preserves full-resolution originals and exactly five reachable landscape regions
+ok 64 - V2 preserves full-resolution originals and exactly five reachable landscape regions
+  ---
+  duration_ms: 3.3827
+  type: 'test'
+  ...
+# Subtest: landscape circle overlap uses width units on both axes, including edges
+ok 65 - landscape circle overlap uses width units on both axes, including edges
+  ---
+  duration_ms: 0.1677
+  type: 'test'
+  ...
+# Subtest: marking either landscape never submits; duplicate confirmations cannot score or consume twice
+ok 66 - marking either landscape never submits; duplicate confirmations cannot score or consume twice
+  ---
+  duration_ms: 0.3215
+  type: 'test'
+  ...
+# Subtest: V2 deadline cannot pause or restart and whole-second results rank accuracy first
+ok 67 - V2 deadline cannot pause or restart and whole-second results rank accuracy first
+  ---
+  duration_ms: 0.1537
+  type: 'test'
+  ...
+# Subtest: start readiness waits for the original and every changed region
+ok 68 - start readiness waits for the original and every changed region
+  ---
+  duration_ms: 1.8202
+  type: 'test'
+  ...
+# Subtest: shared artwork URLs load once and cannot count duplicate load events
+ok 69 - shared artwork URLs load once and cannot count duplicate load events
+  ---
+  duration_ms: 0.3032
+  type: 'test'
+  ...
+# Subtest: a failed image remains failed despite late loads; a fresh retry can succeed
+ok 70 - a failed image remains failed despite late loads; a fresh retry can succeed
+  ---
+  duration_ms: 0.2647
+  type: 'test'
+  ...
+# Subtest: stalled loading offers recovery instead of disabling Start indefinitely
+ok 71 - stalled loading offers recovery instead of disabling Start indefinitely
+  ---
+  duration_ms: 32.96
+  type: 'test'
+  ...
+# Subtest: unmount/StrictMode cleanup ignores obsolete loads and timeouts
+ok 72 - unmount/StrictMode cleanup ignores obsolete loads and timeouts
+  ---
+  duration_ms: 30.4577
+  type: 'test'
+  ...
+# Subtest: empty artwork and image creation failure surface recoverable errors
+ok 73 - empty artwork and image creation failure surface recoverable errors
+  ---
+  duration_ms: 0.5413
+  type: 'test'
+  ...
+# Subtest: native sharing and explicit Copy deliver the exact spoiler-free message
+ok 74 - native sharing and explicit Copy deliver the exact spoiler-free message
+  ---
+  duration_ms: 0.32
+  type: 'test'
+  ...
+# Subtest: cancelling a share sheet is not an error and does not silently copy
+ok 75 - cancelling a share sheet is not an error and does not silently copy
+  ---
+  duration_ms: 0.2548
+  type: 'test'
+  ...
+# Subtest: denied/unavailable sharing and clipboard offer manual-copy fallback
+ok 76 - denied/unavailable sharing and clipboard offer manual-copy fallback
+  ---
+  duration_ms: 0.5129
+  type: 'test'
+  ...
+# Subtest: remaining guesses uses the singular only when one confirmation remains
+ok 77 - remaining guesses uses the singular only when one confirmation remains
+  ---
+  duration_ms: 0.6897
+  type: 'test'
+  ...
+# Subtest: 37 revisited pairs match inspected sources and preserve all superseded saved attempts
+ok 78 - 37 revisited pairs match inspected sources and preserve all superseded saved attempts
+  ---
+  duration_ms: 1298.0278
+  type: 'test'
+  ...
+# Subtest: all 245 expansion pairs match reviewed geometry, corrections, verses and native master hashes
+ok 79 - all 245 expansion pairs match reviewed geometry, corrections, verses and native master hashes
+  ---
+  duration_ms: 6963.2981
+  type: 'test'
+  ...
+# Subtest: 365-day wrap preserves published positions and all saved painted attempts across schedule changes
+ok 80 - 365-day wrap preserves published positions and all saved painted attempts across schedule changes
+  ---
+  duration_ms: 10.5363
+  type: 'test'
+  ...
+# Subtest: 120 painted pairs match reviewed metadata and immutable asset checksums
+ok 81 - 120 painted pairs match reviewed metadata and immutable asset checksums
+  ---
+  duration_ms: 2934.6037
+  type: 'test'
+  ...
+# Subtest: all 1825 painted differences are independently reachable, fit answer crops and finish in five confirmations
+ok 82 - all 1825 painted differences are independently reachable, fit answer crops and finish in five confirmations
+  ---
+  duration_ms: 32.468
+  type: 'test'
+  ...
+# Subtest: painted duplicates consume guesses, expiry cannot pause, and accuracy always outranks time
+ok 83 - painted duplicates consume guesses, expiry cannot pause, and accuracy always outranks time
+  ---
+  duration_ms: 20.1269
+  type: 'test'
+  ...
+# Subtest: painted rotation preserves order and every old saved round keeps its own artwork and deadline
+ok 84 - painted rotation preserves order and every old saved round keeps its own artwork and deadline
+  ---
+  duration_ms: 2.6315
+  type: 'test'
+  ...
+# Subtest: new players have zero stats; completed days are sorted and deduplicated
+ok 85 - new players have zero stats; completed days are sorted and deduplicated
+  ---
+  duration_ms: 1.8844
+  type: 'test'
+  ...
+# Subtest: yesterday keeps a streak alive; a missed calendar day resets only current
+ok 86 - yesterday keeps a streak alive; a missed calendar day resets only current
+  ---
+  duration_ms: 0.2033
+  type: 'test'
+  ...
+# Subtest: five confirmed guesses count even when all are misses, and rereading never increments
+ok 87 - five confirmed guesses count even when all are misses, and rereading never increments
+  ---
+  duration_ms: 0.5677
+  type: 'test'
+  ...
+# Subtest: an unfinished attempt counts only at its original timeout, even after closing the tab
+ok 88 - an unfinished attempt counts only at its original timeout, even after closing the tab
+  ---
+  duration_ms: 0.2196
+  type: 'test'
+  ...
+# Subtest: existing V2 records and holiday rounds count without any storage writes
+ok 89 - existing V2 records and holiday rounds count without any storage writes
+  ---
+  duration_ms: 0.2036
+  type: 'test'
+  ...
+# Subtest: previews, legacy namespaces, unknown cards, malformed keys and future days cannot add stats
+ok 90 - previews, legacy namespaces, unknown cards, malformed keys and future days cannot add stats
+  ---
+  duration_ms: 0.1408
+  type: 'test'
+  ...
+# Subtest: future start times or confirmations do not count after a clock rollback
+ok 91 - future start times or confirmations do not count after a clock rollback
+  ---
+  duration_ms: 0.1912
+  type: 'test'
+  ...
+# Subtest: damaged or unavailable history is reported without rewriting or pretending it is empty
+ok 92 - damaged or unavailable history is reported without rewriting or pretending it is empty
+  ---
+  duration_ms: 0.3981
+  type: 'test'
+  ...
+# Subtest: calendar streaks cross month, year, leap-day and daylight-saving boundaries
+ok 93 - calendar streaks cross month, year, leap-day and daylight-saving boundaries
+  ---
+  duration_ms: 1.6445
+  type: 'test'
+  ...
+# Subtest: history reflects other-tab updates and cleared site data without a stale counter
+ok 94 - history reflects other-tab updates and cleared site data without a stale counter
+  ---
+  duration_ms: 0.5898
+  type: 'test'
+  ...
+# Subtest: only a completed-today streak of at least two days adds a short share line
+ok 95 - only a completed-today streak of at least two days adds a short share line
+  ---
+  duration_ms: 0.2876
+  type: 'test'
+  ...
+# Subtest: production serves only the built game and health, never legacy rooms or private files
+ok 96 - production serves only the built game and health, never legacy rooms or private files
+  ---
+  duration_ms: 1421.0127
+  type: 'test'
+  ...
+# Subtest: production refuses to start without a built homepage
+ok 97 - production refuses to start without a built homepage
+  ---
+  duration_ms: 1.2247
+  type: 'test'
+  ...
+# Subtest: selected V4 cards have five bounded clues and preserve historical ID isolation
+ok 98 - selected V4 cards have five bounded clues and preserve historical ID isolation
+  ---
+  duration_ms: 3.8787
+  type: 'test'
+  ...
+# Subtest: V4 proof retains its native-resolution, versioned generated source files
+ok 99 - V4 proof retains its native-resolution, versioned generated source files
+  ---
+  duration_ms: 10699.4061
+  type: 'test'
+  ...
+# Subtest: every V4 preview completes with five distinct center hits and repeats spend a guess
+ok 100 - every V4 preview completes with five distinct center hits and repeats spend a guess
+  ---
+  duration_ms: 12.2963
+  type: 'test'
+  ...
+# Subtest: Seamstress fish clue changes and awards only one selectable fish
+ok 101 - Seamstress fish clue changes and awards only one selectable fish
+  ---
+  duration_ms: 0.2769
+  type: 'test'
+  ...
+# Subtest: all eighteen isolated holiday IDs resolve their existing verses without mixing New Year dates
+ok 102 - all eighteen isolated holiday IDs resolve their existing verses without mixing New Year dates
+  ---
+  duration_ms: 0.3546
+  type: 'test'
+  ...
+# Subtest: complete owner-approved V4 selection is versioned and preserves all 558 published IDs
+ok 103 - complete owner-approved V4 selection is versioned and preserves all 558 published IDs
+  ---
+  duration_ms: 8.6684
+  type: 'test'
+  ...
+# Subtest: new V4 days keep 365-day order and all eighteen holiday overrides for 20 years
+ok 104 - new V4 days keep 365-day order and all eighteen holiday overrides for 20 years
+  ---
+  duration_ms: 10.768
+  type: 'test'
+  ...
+# Subtest: every old saved pending/completed round stays on its exact art, geometry, score and deadline
+ok 105 - every old saved pending/completed round stays on its exact art, geometry, score and deadline
+  ---
+  duration_ms: 143.7426
+  type: 'test'
+  ...
+# Subtest: all current V4 targets score five distinct locks, repeats spend a guess and old delivery stays selected
+ok 106 - all current V4 targets score five distinct locks, repeats spend a guess and old delivery stays selected
+  ---
+  duration_ms: 3.4405
+  type: 'test'
+  ...
+# Subtest: fairness versions retain original verses, holiday metadata and published V4 pairs
+ok 107 - fairness versions retain original verses, holiday metadata and published V4 pairs
+  ---
+  duration_ms: 8.7628
+  type: 'test'
+  ...
+# Subtest: all 941 published metadata objects and delivery selections match immutable release 5920a05
+ok 108 - all 941 published metadata objects and delivery selections match immutable release 5920a05
+  ---
+  duration_ms: 18.5299
+  type: 'test'
+  ...
+1..108
+# tests 108
+# suites 0
+# pass 108
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 25884.4089

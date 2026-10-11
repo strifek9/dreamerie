@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { DreamCanvas, DreamViewer } from '../components/InspectableDream'
+import { ComparisonViewer } from './ComparisonViewer'
 import { createShareText, formatClock, getAnswerReveals, remainingGuessLabel } from '../game/dailyRecall'
 import { shareResult } from '../game/sharing'
 import { RESTING_VIEW, zoomAt, type ImageView } from '../game/imageInspection'
@@ -27,8 +28,16 @@ const knownCardIds = new Set(playableDreams.map(dream => dream.id))
 
 export default function VersionThree() {
   const [run, setRun] = useState(0)
-  const [date] = useState(() => new Date())
+  const [date, setDate] = useState(() => new Date())
   const today = landscapeDay(date)
+  const [latestDate, setLatestDate] = useState(() => new Date())
+  useEffect(() => {
+    const refresh = () => setLatestDate(new Date())
+    const timer = window.setInterval(refresh, 15000)
+    window.addEventListener('focus', refresh)
+    document.addEventListener('visibilitychange', refresh)
+    return () => { clearInterval(timer); window.removeEventListener('focus', refresh); document.removeEventListener('visibilitychange', refresh) }
+  }, [])
   const requested = (import.meta.env.DEV || import.meta.env.MODE === 'playtest') ? new URLSearchParams(location.search).get('dream') : null
   const selectedPreview = (import.meta.env.DEV || import.meta.env.MODE === 'playtest') ? v4PreviewDreams.find(card => card.id === requested) : undefined
   const selected = playableDreams.find(card => card.id === requested)
@@ -43,10 +52,14 @@ export default function VersionThree() {
   })
   const playtest = Boolean(selected || selectedPreview) || run > 0
   const dream = selectedPreview && run === 0 ? selectedPreview : playableDreams[index]
-  return <Round key={`${dream.id}-${run}`} dream={dream} day={playtest ? (selectedPreview && run === 0 ? currentDreams.length + 1 : index + 1) : today} playtest={playtest} onNew={() => { setIndex(value => (value + 1) % currentDreams.length); setRun(value => value + 1) }}/>
+  return <Round key={`${dream.id}-${playtest ? index : today}-${run}`} dream={dream} day={playtest ? (selectedPreview && run === 0 ? currentDreams.length + 1 : index + 1) : today} playtest={playtest} newDaily={landscapeDay(latestDate) !== today && !playtest ? () => {
+    const next = new Date(); setDate(next); setLatestDate(next)
+    try { setIndex(playableDreams.indexOf(dreamForDate(next, localStorage.getItem(`${LANDSCAPE_SESSION_OPTIONS.namespace}:${landscapeDay(next)}`)))) }
+    catch { setIndex(playableDreams.indexOf(dreamForDate(next))) }
+  } : undefined} onNew={() => { setIndex(value => (value + 1) % currentDreams.length); setRun(value => value + 1) }}/>
 }
 
-function Round({ dream, day, playtest, onNew }: { dream: LandscapeDream; day: number; playtest: boolean; onNew: () => void }) {
+function Round({ dream, day, playtest, onNew, newDaily }: { newDaily?: () => void; dream: LandscapeDream; day: number; playtest: boolean; onNew: () => void }) {
   const holiday = holidayDetails(dream.id) ?? v4HolidayDetails(dream.id)
   const verseId = v4VerseId(dream.id)
   const verse = holiday?.verse ?? yearVerses[verseId] ?? verseForDream(verseId)
@@ -61,6 +74,7 @@ function Round({ dream, day, playtest, onNew }: { dream: LandscapeDream; day: nu
   const shareDetails = useRef<HTMLDetailsElement>(null)
   const shareMessage = useRef<HTMLTextAreaElement>(null)
   const [view, setView] = useState<ImageView>(RESTING_VIEW)
+  const [comparisonOpen, setComparisonOpen] = useState(false)
   const [previewZoom, setPreviewZoom] = useState(false)
   const [expandedSide, setExpandedSide] = useState<'original' | 'changed' | null>(null)
   const [answerIndex, setAnswerIndex] = useState<number | null>(null)
@@ -70,18 +84,18 @@ function Round({ dream, day, playtest, onNew }: { dream: LandscapeDream; day: nu
   // Fitted result images belong to the scrolling page. Zoom in explicitly to inspect.
   const scrollResults = Boolean(result) && view.scale <= 1
   useEffect(() => { window.scrollTo({ top: 0, behavior: 'instant' }) }, [landing, phase])
-  useEffect(() => { if (phase === 'result') { setHome(false); setPreviewZoom(false); setHintOpen(false); setExpandedSide(null) } }, [phase])
+  useEffect(() => { if (phase === 'result') { setHome(false); setPreviewZoom(false); setHintOpen(false); setExpandedSide(null); setComparisonOpen(false) } }, [phase])
   useEffect(() => {
     // Wait for an automatically closed viewer/help dialog to restore its opener
     // before moving focus to the newly available result.
     if (phase !== 'result' || landing) { resultFocused.current = false; return }
-    if (!resultFocused.current && !expandedSide && !previewZoom && !hintOpen && resultHeading.current) {
+    if (!resultFocused.current && !comparisonOpen && !expandedSide && !previewZoom && !hintOpen && resultHeading.current) {
       resultHeading.current.focus({ preventScroll: true })
       resultFocused.current = true
     }
-  }, [phase, landing, expandedSide, previewZoom, hintOpen])
+  }, [phase, landing, expandedSide, previewZoom, hintOpen, comparisonOpen])
   const streakLine = !playtest && day === landscapeDay() ? streakShareLine(stats) : ''
-  const shareText = result ? createShareText(day, result, differences, recall.foundDifferenceIds, location.href).replace(`Dreamerie #${day}`, `Dreamerie V3 · ${playtest ? 'Playtest' : holiday?.occasion ?? 'Daily Dream'} #${day}`).replace('Your turn to dream.', `${streakLine ? `${streakLine}\n` : ''}Your turn to dream.`) : ''
+  const shareText = result ? createShareText(day, result, differences, recall.foundDifferenceIds, location.href).replace(`Dreamerie #${day}`, `Dreamerie · ${playtest ? 'Playtest' : holiday?.occasion ?? 'Daily Dream'} #${day}`).replace('Your turn to dream.', `${streakLine ? `${streakLine}\n` : ''}Your turn to dream.`) : ''
   async function share(copy = false) {
     const status = await shareResult(shareText, copy, {
       share: navigator.share ? data => navigator.share(data) : undefined,
@@ -103,10 +117,25 @@ function Round({ dream, day, playtest, onNew }: { dream: LandscapeDream; day: nu
       {result && markers && getAnswerReveals(differences, recall.foundDifferenceIds, side).map(({ difference: d, number, found }) => <span key={d.id} className={`answer-outline ${found ? 'answer-found' : ''}`} style={{ left: `${d.box.left * 100}%`, top: `${d.box.top * 100}%`, width: `${d.box.width * 100}%`, height: `${d.box.height * 100}%` }}><span>{number}</span></span>)}
     </>
   }
-  const guessAction = <button className="primary-action" disabled={!recall.pending || busy || Boolean(storageError)} onClick={() => { if (recall.pending) void dispatch({ type: 'confirm', point: recall.pending, side: pendingSide, expectedCount: recall.confirmed.length }) }}>Remember</button>
+  async function cancelGuess() {
+    if (!recall.pending) return
+    await dispatch({ type: 'cancel', expectedCount: recall.confirmed.length, point: recall.pending, side: pendingSide })
+    requestAnimationFrame(() => {
+      const root = document.querySelector('dialog[open]') ?? document.querySelector('.v2-board')
+      const target = root?.querySelector<HTMLButtonElement>(`[data-side="${pendingSide}"] .dream-canvas`) ?? root?.querySelector<HTMLButtonElement>('.dream-canvas')
+      target?.focus({ preventScroll: true })
+    })
+  }
+  useEffect(() => {
+    const escape = (event: KeyboardEvent) => { if (event.key === 'Escape' && recall.pending && !document.querySelector('dialog[open]')) { event.preventDefault(); void cancelGuess() } }
+    window.addEventListener('keydown', escape)
+    return () => window.removeEventListener('keydown', escape)
+  })
+  const guessAction = <div className="v3-guess-buttons"><button className="primary-action" disabled={!recall.pending || busy || Boolean(storageError)} onClick={() => { if (recall.pending) void dispatch({ type: 'confirm', point: recall.pending, side: pendingSide, expectedCount: recall.confirmed.length }) }}>Remember</button><button className="text-action v3-cancel" disabled={!recall.pending || busy || Boolean(storageError)} onClick={() => void cancelGuess()}>Cancel</button></div>
   const revealAction = <button className="text-action" onClick={() => setMarkers(!markers)}>{markers ? 'Hide' : 'Show'} markers</button>
   return <main className={`v2-app v3-app ${landing ? 'v2-landing' : 'v2-round'} ${result ? 'v2-finished' : ''}`}>
     <header className="v2-header"><div className="v2-brand-row"><a href="./" aria-label="Dreamerie home" onClick={event => { event.preventDefault(); setHome(true) }}><img className="v3-brand-mark" src="/dreamerie-mark.svg" alt=""/><span>Dreamerie</span></a><button className="v2-hint-toggle" aria-label="How to play" aria-haspopup="dialog" onClick={() => setHintOpen(true)}>?</button></div><span>{playtest ? 'Playtest' : 'Daily Dream'} #{day}</span></header>
+    {newDaily && phase !== 'play' && <p className="v3-new-day">A new daily dream is ready. <button className="text-action" onClick={newDaily}>Open today's dream</button></p>}
     {storageError && <p role="alert" className="storage-warning">{storageError}</p>}
     {artworkLoading.status === 'error' && <p role="alert" className="storage-warning">The paintings couldn’t load. Check your connection, then <button className="text-action" onClick={artworkLoading.retry}>Try again</button>.{phase === 'play' && ' Your timer is still running.'}</p>}
     {landing ? <section className="v2-welcome">
@@ -123,14 +152,15 @@ function Round({ dream, day, playtest, onNew }: { dream: LandscapeDream; day: nu
       {result ? <section className={`v2-result${result.accuracy === 5 ? ' v3-result--perfect' : ''}`} aria-labelledby="result-title"><p className="eyebrow v3-result-message">{resultVerse(result.accuracy)}</p><h1 id="result-title" ref={resultHeading} tabIndex={-1}>{result.accuracy}/5 <span>· {formatClock(result.elapsedSeconds)}</span></h1><div className="v3-result-stars" role="img" aria-label={`${result.accuracy} of 5 differences found`}>{differences.map(d => <span key={d.id} aria-hidden="true" className={recall.foundDifferenceIds.includes(d.id) ? 'star-found' : ''}>{recall.foundDifferenceIds.includes(d.id) ? '✦' : '◇'}</span>)}</div><div className="v2-share"><button className="primary-action" onClick={() => void share()}>Share result</button><button className="text-action" onClick={() => void share(true)}>Copy</button></div><p role="status">{shareStatus}</p></section>
       : <div className="v2-status"><strong>{remainingGuessLabel(recall)}</strong><time aria-label="Time remaining">{formatClock(recallLeft)}</time><MemoryFragments guesses={recall.confirmed}/></div>}
       <section className="v2-board" aria-label="Compare both paintings">
-        {(['original', 'changed'] as const).map(side => <figure key={side}><figcaption>{side === 'original' ? 'The Dream' : 'The Memory'}<div className="v2-caption-actions">{result && <span>{side === 'original' ? 'Found · Green' : 'Missed · Red'}</span>}<button className="v2-expand" aria-label={`Expand ${side === 'original' ? 'The Dream' : 'The Memory'}`} title="Hold the painting or expand" onClick={() => setExpandedSide(side)}>⤢</button></div></figcaption>
-          <DreamCanvas label={`${side === 'original' ? 'The Dream' : 'The Memory'}. ${result ? 'Inspect the answers.' : 'Tap to mark, then Remember to confirm.'} Hold to expand. ${scrollResults ? 'Swipe to scroll the page. Use Zoom in to examine details.' : 'Zoom and drag move both paintings.'}`} onExpand={() => setExpandedSide(side)} view={view} onView={scrollResults ? undefined : updateView} selectable={!result} pendingPoint={recall.pending} onTap={result ? undefined : point => { void dispatch({ type: 'mark', point, side }) }}>
+        {(['original', 'changed'] as const).map(side => <figure key={side} data-side={side}><figcaption>{side === 'original' ? 'The Dream' : 'The Memory'}<div className="v2-caption-actions">{result && <span>{side === 'original' ? 'Found · Green' : result.accuracy === differences.length ? 'All found' : 'Missed · Red'}</span>}<button className="v2-expand" aria-label={`Expand ${side === 'original' ? 'The Dream' : 'The Memory'}`} title="Hold the painting or expand" onClick={() => setExpandedSide(side)}>⤢</button></div></figcaption>
+          <DreamCanvas label={`${side === 'original' ? 'The Dream' : 'The Memory'}. ${result ? 'Inspect the answers.' : 'Tap to mark, then Remember to confirm.'} Hold to expand. ${scrollResults ? 'Swipe to scroll the page. Use Zoom in to examine details.' : view.scale <= 1 ? 'Swipe to scroll. Expand both for pinch zoom.' : 'Zoom and drag move both paintings.'}`} onExpand={() => setExpandedSide(side)} view={view} onView={view.scale <= 1 ? undefined : updateView} selectable={!result} pendingPoint={recall.pending} onTap={result ? undefined : point => { void dispatch({ type: 'mark', point, side }) }}>
             {artwork(side)}
           </DreamCanvas>
         </figure>)}
       </section>
       <footer className="v2-controls">
         <div className="v2-zoom" aria-label="Zoom both paintings"><button aria-label="Zoom out both paintings" disabled={view.scale <= 1} onClick={() => setView(zoomAt(view, view.scale / 1.4, { x: .5, y: .5 }))}>−</button><button onClick={() => setView(RESTING_VIEW)}>Fit</button><button aria-label="Zoom in both paintings" disabled={view.scale >= 4} onClick={() => setView(zoomAt(view, view.scale * 1.4, recall.pending ?? { x: .5, y: .5 }))}>+</button></div>
+        <button className="text-action v3-expand-pair" aria-haspopup="dialog" onClick={() => setComparisonOpen(true)}>Expand both</button>
         {result ? revealAction : guessAction}
         {!result && <p role="status">{guessFeedback(recall, differences, dream.aspectRatio)}</p>}
         <small>{result ? scrollResults ? 'Hold to expand' : 'Fit to scroll' : 'Hold to expand · pinch to zoom'}</small>
@@ -139,6 +169,7 @@ function Round({ dream, day, playtest, onNew }: { dream: LandscapeDream; day: nu
     </>}
     {previewZoom && landing && <DreamViewer fitAspectRatio={dream.aspectRatio} title={dream.title} onClose={() => setPreviewZoom(false)} simpleZoom status={phase === 'play' ? <span>{formatClock(recallLeft)} left · timer running</span> : undefined}><LandscapeArtwork dream={dream} changed={false}/></DreamViewer>}
     {expandedSide && !landing && <DreamViewer fitAspectRatio={dream.aspectRatio} title={expandedSide === 'original' ? 'The Dream' : 'The Memory'} pendingPoint={recall.pending} onClose={() => setExpandedSide(null)} onTap={result ? undefined : point => { void dispatch({ type: 'mark', point, side: expandedSide }) }} status={result ? <span>{result.accuracy}/5 · {formatClock(result.elapsedSeconds)}</span> : <span>{remainingGuessLabel(recall)} · {formatClock(recallLeft)} · timer running</span>} action={result ? revealAction : <><div className="v3-guess-action"><MemoryFragments guesses={recall.confirmed}/>{guessAction}</div><p className="v3-viewer-feedback" role="status">{guessFeedback(recall, differences, dream.aspectRatio)}</p></>}>{artwork(expandedSide)}</DreamViewer>}
+    {comparisonOpen && !landing && <ComparisonViewer aspectRatio={dream.aspectRatio} view={view} onView={updateView} onClose={() => setComparisonOpen(false)} pendingPoint={recall.pending} onTap={result ? undefined : (point, side) => { void dispatch({ type: 'mark', point, side }) }} status={result ? `${result.accuracy}/5 · ${formatClock(result.elapsedSeconds)}` : `${remainingGuessLabel(recall)} · ${formatClock(recallLeft)} · timer running`} action={result ? revealAction : guessAction} feedback={result ? undefined : guessFeedback(recall, differences, dream.aspectRatio)} artwork={artwork}/>}
     {hintOpen && <GameHint onClose={() => setHintOpen(false)} timeLeft={phase === 'play' ? recallLeft : undefined}/>}
     {result && !landing && answerIndex !== null && <AnswerInspection dream={dream} differences={differences} foundIds={recall.foundDifferenceIds} index={answerIndex} onSelect={setAnswerIndex} onClose={() => setAnswerIndex(null)}/>}
     {(import.meta.env.DEV || import.meta.env.MODE === 'playtest') && <div className="v2-dev"><button className="text-action" onClick={onNew}>New day (dev only)</button><a href={import.meta.env.MODE === 'playtest' ? '/v4-review.html' : '?review=1'}>{import.meta.env.MODE === 'playtest' ? 'V4 artwork review (answers)' : `Review all ${currentDreams.length}`}</a><select aria-label="Preview a V4 dream" value={dream.id.startsWith('v4-') ? dream.id : ''} onChange={event => { if (event.target.value) location.assign(`?dream=${event.target.value}`) }}><option value="" disabled>V4 previews</option>{v4PreviewDreams.map(card => <option key={card.id} value={card.id}>{card.title}</option>)}</select><select aria-label="Preview a holiday" value={holiday?.id ?? ''} onChange={event => { if (event.target.value) location.assign(`?dream=${event.target.value}`) }}><option value="" disabled>Holiday previews</option>{holidayDreams.map(card => <option key={card.id} value={card.id}>{card.occasion}</option>)}</select><span>{dream.id}</span></div>}
@@ -156,7 +187,7 @@ function GameHint({ onClose, timeLeft }: { onClose: () => void; timeLeft?: numbe
   return <dialog className="v2-hint" ref={dialog} aria-labelledby="v2-hint-title" onCancel={event => { event.preventDefault(); onClose() }}>
     <h2 id="v2-hint-title">How to play</h2>
     <p>Find five differences between <strong>The Dream</strong> and <strong>The Memory</strong>.</p>
-    <p>Tap either painting to place or move your circle. <strong>Remember</strong> confirms.</p>
+    <p>Tap either painting to place or move your circle. <strong>Remember</strong> confirms. <strong>Cancel</strong> removes your circle without using a guess.</p>
     <p>You have <strong>five guesses total</strong>. Wrong guesses count too.</p>
     <p>Hold or tap ⤢ to expand. Pinch or use +/− to zoom. You can guess there too.</p>
     <p className="v2-hint-timer">{timeLeft === undefined ? 'Two minutes once you press Start. No pauses.' : `${formatClock(timeLeft)} left · The timer is still running.`}</p>

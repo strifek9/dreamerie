@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState, type CSSProperties, type PointerEvent, type ReactNode } from 'react'
+import { useDialogBack } from './useDialogBack'
 import { GAME_CONFIG, type Point } from '../game/dailyRecall'
 import { constrainView, HOLD_MS, imagePoint, MOVE_THRESHOLD, RESTING_VIEW, zoomAt, type ImageView } from '../game/imageInspection'
 
@@ -120,12 +121,18 @@ export function DreamCanvas({ children, label, onTap, onExpand, view = RESTING_V
   }
 
   return <button ref={canvas} type="button" className={`dream-canvas${onView ? ' dream-canvas--inspect' : ''}${fitAspectRatio ? ' dream-canvas--full-stage' : ''}`}
-    aria-label={`${label}${selectable ? ' Arrow keys move your marker.' : ''}`} onPointerDown={start} onPointerMove={move} onPointerUp={end}
+    aria-label={`${label}${selectable ? ' Arrow keys move your marker.' : ''}${onView ? ' Alt plus arrow keys pan the paintings.' : ''}`} onPointerDown={start} onPointerMove={move} onPointerUp={end}
     onPointerCancel={() => { clearHold(); points.current.clear(); gesture.current.moved = true }}
     onLostPointerCapture={(event) => { if (points.current.has(event.pointerId)) { clearHold(); points.current.clear(); gesture.current.moved = true } }}
     onContextMenu={(event) => event.preventDefault()} onDragStart={(event) => event.preventDefault()}
     onClick={(event) => { if (event.detail === 0) onTap?.(keyboardPoint.current) }}
     onKeyDown={(event) => {
+      if (onView && (!selectable || event.altKey) && ['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown'].includes(event.key)) {
+        event.preventDefault()
+        const step = event.shiftKey ? .025 : .1
+        onView(constrainView({ ...currentView.current, x: currentView.current.x + (event.key === 'ArrowLeft' ? step : event.key === 'ArrowRight' ? -step : 0), y: currentView.current.y + (event.key === 'ArrowUp' ? step : event.key === 'ArrowDown' ? -step : 0) }, viewport))
+        return
+      }
       if (!selectable || !['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown'].includes(event.key)) return
       event.preventDefault()
       const step = event.shiftKey ? .005 : .025
@@ -154,6 +161,7 @@ export function DreamViewer({ children, title, onClose, onTap, pendingPoint, sta
   fitAspectRatio?: number
 }) {
   const dialog = useRef<HTMLDialogElement>(null)
+  useDialogBack(onClose)
   const [view, setView] = useState(RESTING_VIEW)
   useEffect(() => {
     const element = dialog.current!

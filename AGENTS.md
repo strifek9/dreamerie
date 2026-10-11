@@ -1,3 +1,7 @@
+## Current mobile usability work - October11 2026
+
+Sentinel_75b721c9cb5081919926e09d36d90aef authorizes the other usability goals and explicitly rejects rapid Dream/Memory switching. Simultaneous larger comparison, obvious pending Cancel, returning-player/rollover/share verification and directly related safe polish are complete locally on feat/mobile-comparison-cancel. A local commit is authorized; push, main promotion and deployment require new release approval. No temporal flipping, overlay, blink comparison, zoom-preserving picture toggle, clue/rule/timer changes or hosting migration. Evidence: docs/USABILITY_20261011.json. October25 remains a planning reminder only. Older publication approvals below are historical and do not authorize this release.
+
 ## V4 production promotion — October 4, 2026
 
 The owner explicitly authorized pushing the complete V4 collection to the main Dreamerie site at 21:16:38 UTC (Sentinel_6eb6db8149ec819186b799bc3b23d779). This supersedes historical first-batch/playtest-only restrictions below. Production selects all 383 versioned V4 cards (365 ordinary +18 holidays), while all 558 historical IDs, source artwork, delivery files, geometry and saved attempts remain resolvable. The collection namespace, five confirmed guesses, two-minute deadline, calendar, score, streak and sharing behavior are unchanged. Development/playtest controls remain excluded from production.
