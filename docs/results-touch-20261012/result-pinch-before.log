@@ -1,0 +1,2 @@
+INITIAL {"scale":1,"touchAction":"pan-y pinch-zoom","events":[{"type":"pointerdown"},{"type":"touchstart","touches":1},{"type":"pointerdown"},{"type":"touchstart","touches":2},{"type":"touchmove","touches":2},{"type":"touchmove","touches":2},{"type":"touchmove","touches":2},{"type":"touchmove","touches":2},{"type":"pointercancel"},{"type":"pointercancel"},{"type":"touchmove","touches":2},{"type":"touchmove","touches":2}]}
+AFTERBUTTON 3.08

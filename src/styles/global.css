@@ -79,6 +79,7 @@ button:focus-visible { outline: 2px solid var(--moon); outline-offset: 4px; }
 .dream-canvas::after { content: ''; position: absolute; inset: 0; border: 1px solid #d9d1ee38; border-radius: inherit; pointer-events: none; }
 .dream-canvas:disabled { opacity: 1; cursor: default; }
 .dream-canvas--inspect { touch-action: none; }
+.dream-canvas--scrollable { touch-action: pan-y; }
 .card-frame { position: relative; }
 .expand-card { display: flex; gap: .35rem; align-items: center; justify-content: center; min-height: 2.75rem; padding: .4rem .65rem; border: 1px solid #e4ddf733; border-radius: 999px; background: #10122c88; color: #e5e0f1; font: .75rem 'Segoe UI', system-ui, sans-serif; cursor: zoom-in; }
 .daily-card .expand-card { margin: .5rem auto 0; }

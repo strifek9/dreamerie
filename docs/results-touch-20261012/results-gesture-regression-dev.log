@@ -1,0 +1,10 @@
+PASS newly finished result first pinch zooms image, not page, without buttons
+PASS zoomed one-finger pan moves native image
+PASS pinch back to fit restores ordinary one-finger page scrolling
+PASS marker-overlay first pinch and Fit/reset/re-pinch
+PASS touch/pointer cancellation clears pending hold/gesture; next pinch works
+PASS orientation change mid-touch and next landscape first pinch
+PASS restored completed result first pinch at DPR3; result/record unchanged
+PASS hidden markers do not gate gestures
+PASS ordinary fitted-results wheel scroll remains native
+PASS viewport/DPR, source aspect and immutable completed record; no JS exceptions

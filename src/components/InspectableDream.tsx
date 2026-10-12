@@ -12,10 +12,11 @@ type CanvasProps = {
   selectable?: boolean
   pendingPoint?: Point | null
   fitAspectRatio?: number
+  scrollWhenFitted?: boolean
 }
 
-/** The page scrolls normally; only an explicitly expanded painting captures pan/zoom. */
-export function DreamCanvas({ children, label, onTap, onExpand, view = RESTING_VIEW, onView, selectable = false, pendingPoint, fitAspectRatio }: CanvasProps) {
+/** Fitted results scroll with one finger; two fingers inspect the native artwork. */
+export function DreamCanvas({ children, label, onTap, onExpand, view = RESTING_VIEW, onView, selectable = false, pendingPoint, fitAspectRatio, scrollWhenFitted = false }: CanvasProps) {
   const canvas = useRef<HTMLButtonElement>(null)
   const fittedFrame = useRef<HTMLSpanElement>(null)
   const [viewport, setViewport] = useState<Point>({ x: 1, y: 1 })
@@ -28,6 +29,7 @@ export function DreamCanvas({ children, label, onTap, onExpand, view = RESTING_V
   const currentView = useRef(view)
   currentView.current = displayedView
   const gesture = useRef({ origin: { x: 0, y: 0 }, view, distance: 0, moved: false })
+  const touchGesture = useRef<{ origin: Point; view: ImageView; distance: number; moved: boolean } | null>(null)
 
   useEffect(() => {
     const element = canvas.current
@@ -52,7 +54,7 @@ export function DreamCanvas({ children, label, onTap, onExpand, view = RESTING_V
   }
 
   useEffect(() => {
-    const cancel = () => { clearHold(); points.current.clear(); gesture.current.moved = true }
+    const cancel = () => { clearHold(); points.current.clear(); touchGesture.current = null; gesture.current.moved = true }
     window.addEventListener('resize', cancel)
     window.addEventListener('blur', cancel)
     return () => { cancel(); window.removeEventListener('resize', cancel); window.removeEventListener('blur', cancel) }
@@ -62,15 +64,74 @@ export function DreamCanvas({ children, label, onTap, onExpand, view = RESTING_V
     const element = canvas.current
     if (!element || !onView) return
     const wheel = (event: WheelEvent) => {
+      if (scrollWhenFitted && currentView.current.scale <= 1 && !event.ctrlKey) return
       event.preventDefault()
       const bounds = (fittedFrame.current ?? element).getBoundingClientRect()
       onView(zoomAt(currentView.current, currentView.current.scale * (event.deltaY < 0 ? 1.16 : .86), { x: (event.clientX - bounds.left) / bounds.width, y: (event.clientY - bounds.top) / bounds.height }, viewport))
     }
     element.addEventListener('wheel', wheel, { passive: false })
     return () => element.removeEventListener('wheel', wheel)
-  }, [onView, viewport])
+  }, [onView, viewport, scrollWhenFitted])
+
+  useEffect(() => {
+    const element = canvas.current
+    if (!element || !scrollWhenFitted || !onView) return
+    // At fit, one finger belongs to page scrolling. A non-passive two-touch
+    // listener claims an image pinch before Chrome starts viewport zoom/pan.
+    // Pointer events alone can be cancelled when the browser owns that gesture.
+    const read = (event: TouchEvent) => {
+      const first = event.touches[0], second = event.touches[1]
+      return first ? {
+        origin: second ? { x: (first.clientX + second.clientX) / 2, y: (first.clientY + second.clientY) / 2 } : { x: first.clientX, y: first.clientY },
+        distance: second ? Math.hypot(first.clientX - second.clientX, first.clientY - second.clientY) : 0,
+      } : null
+    }
+    const reset = () => { clearHold(); touchGesture.current = null }
+    const begin = (event: TouchEvent) => {
+      reset()
+      if (event.touches.length > 2) return
+      const next = read(event)
+      if (!next) return
+      if ((event.touches.length > 1 || currentView.current.scale > 1) && event.cancelable) event.preventDefault()
+      touchGesture.current = { ...next, view: currentView.current, moved: event.touches.length > 1 }
+      if (event.touches.length === 1 && onExpand) hold.current = setTimeout(() => {
+        if (touchGesture.current) touchGesture.current.moved = true
+        hold.current = null
+        onExpand()
+      }, HOLD_MS)
+    }
+    const moveTouch = (event: TouchEvent) => {
+      const initial = touchGesture.current, next = read(event)
+      if (!initial || !next || event.touches.length > 2) return
+      const dx = next.origin.x - initial.origin.x, dy = next.origin.y - initial.origin.y
+      if (event.touches.length > 1 || Math.hypot(dx, dy) > MOVE_THRESHOLD) { clearHold(); initial.moved = true }
+      if (event.touches.length === 1 && initial.view.scale <= 1) return
+      if (event.cancelable) event.preventDefault()
+      const bounds = (fittedFrame.current ?? element).getBoundingClientRect()
+      if (!bounds.width || !bounds.height) return
+      const scale = next.distance && initial.distance ? initial.view.scale * next.distance / initial.distance : initial.view.scale
+      const zoomed = zoomAt(initial.view, scale, { x: (initial.origin.x - bounds.left) / bounds.width, y: (initial.origin.y - bounds.top) / bounds.height }, viewport)
+      onView(constrainView({ ...zoomed, x: zoomed.x + dx / bounds.width, y: zoomed.y + dy / bounds.height }, viewport))
+    }
+    const finish = (event: TouchEvent) => {
+      clearHold()
+      const next = read(event)
+      touchGesture.current = next ? { ...next, view: currentView.current, moved: true } : null
+    }
+    element.addEventListener('touchstart', begin, { passive: false })
+    element.addEventListener('touchmove', moveTouch, { passive: false })
+    element.addEventListener('touchend', finish)
+    element.addEventListener('touchcancel', reset)
+    return () => {
+      element.removeEventListener('touchstart', begin)
+      element.removeEventListener('touchmove', moveTouch)
+      element.removeEventListener('touchend', finish)
+      element.removeEventListener('touchcancel', reset)
+    }
+  }, [scrollWhenFitted, onView, onExpand, viewport])
 
   function start(event: PointerEvent<HTMLButtonElement>) {
+    if (scrollWhenFitted && event.pointerType === 'touch') return
     if (event.button !== 0 || points.current.size >= 2) return
     clearHold()
     event.currentTarget.setPointerCapture(event.pointerId)
@@ -119,7 +180,7 @@ export function DreamCanvas({ children, label, onTap, onExpand, view = RESTING_V
     }
   }
 
-  return <button ref={canvas} type="button" className={`dream-canvas${onView ? ' dream-canvas--inspect' : ''}${fitAspectRatio ? ' dream-canvas--full-stage' : ''}`}
+  return <button ref={canvas} type="button" className={`dream-canvas${onView ? ' dream-canvas--inspect' : ''}${scrollWhenFitted && displayedView.scale <= 1 ? ' dream-canvas--scrollable' : ''}${fitAspectRatio ? ' dream-canvas--full-stage' : ''}`}
     aria-label={`${label}${selectable ? ' Arrow keys move your marker.' : ''}`} onPointerDown={start} onPointerMove={move} onPointerUp={end}
     onPointerCancel={() => { clearHold(); points.current.clear(); gesture.current.moved = true }}
     onLostPointerCapture={(event) => { if (points.current.has(event.pointerId)) { clearHold(); points.current.clear(); gesture.current.moved = true } }}
