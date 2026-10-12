@@ -1,0 +1,9 @@
+# Dreamerie branded Pages address — October 12, 2026
+
+The owner authorized a permanent free Cloudflare address without a personal account name and approved only adding Pages Edit to the existing OAuth login. Verified scopes: user:read, offline_access, account:read, workers_scripts:write, pages:write. Account a33da68cdde23678a1d6224dc03be58b returned project dreamerie with subdomain dreamerie.pages.dev.
+
+Build with DREAMERIE_PUBLIC_ORIGIN=https://dreamerie.pages.dev and npm run build:pages. The mode retains the same artwork mapping, 383 current cards, 966 saved IDs, game rules, layout, results pinch fix and manual progress helpers. It changes the canonical and existing analytics origin guard to the verified address, emits explicit static 404 handling, and copies the same lossless native artwork. No paid services, account-wide Workers subdomain rename, redirects or deletion of old sites.
+
+Publishing uses the isolated ignored .validation/pages-publisher installation of Wrangler 4.149.0 and its Pages-only configuration, never another game's CLI configuration. The CLI's project-create default delegated to Workers and failed without deployment; --force explicitly created classic Pages once. Subsequent Pages deployment does not use --force.
+
+Previous verification: 111 unit tests, typecheck, Pages asset audit and isolated local Chromium desktop/mobile touch checks passed. Final actual-origin build and hosted verification are recorded in release evidence. Physical Samsung hardware, native sharing/file picker and download behavior remain unverified. The owner accepts a fresh start; existing progress helpers and old origins remain available for others.
