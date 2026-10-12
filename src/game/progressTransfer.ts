@@ -6,12 +6,22 @@ type Reader = Pick<Storage, 'length' | 'key' | 'getItem'>
 type Writer = Reader & Pick<Storage, 'setItem' | 'removeItem'>
 const prefix = `${DAILY_SESSION_NAMESPACE}:`
 const record = (value: unknown): value is Record<string, unknown> => value !== null && typeof value === 'object' && !Array.isArray(value)
+// parseSession validates gameplay; transfer additionally strips unknown nested
+// fields so a legacy/debug property can never travel in the private export.
+function transferSession(session: DailySession): DailySession {
+  const point = (p: { x: number; y: number }) => ({ x: p.x, y: p.y })
+  return {
+    version: 1, cardId: session.cardId, startedAt: session.startedAt,
+    guesses: session.guesses.map(g => ({ point: point(g.point), elapsedSeconds: g.elapsedSeconds })),
+    pending: session.pending ? { point: point(session.pending.point), side: session.pending.side } : null,
+  }
+}
 function entry(value: unknown, known: ReadonlySet<string>, today: number, now: number): ProgressEntry {
   if (!record(value) || !Number.isSafeInteger(value.day) || Number(value.day) < 1 || Number(value.day) > today || !record(value.session)) throw new Error('Invalid or future puzzle day.')
   if (typeof value.session.cardId !== 'string' || !known.has(value.session.cardId)) throw new Error('This file contains an unsupported dream.')
   const session = parseSession(JSON.stringify(value.session), value.session.cardId)
   if (!session || session.startedAt > now) throw new Error('Invalid or future round start.')
-  return { day: Number(value.day), session }
+  return { day: Number(value.day), session: transferSession(session) }
 }
 export function readProgress(raw: string, known: ReadonlySet<string>, today: number, now: number): ProgressFile {
   if (raw.length > 2_000_000) throw new Error('Progress file is too large.')
@@ -40,7 +50,8 @@ export function reviewProgress(file: ProgressFile, storage: Reader) {
     if (raw === null) missing.push(entry)
     else {
       try {
-        if (JSON.stringify(parseSession(raw, entry.session.cardId)) === JSON.stringify(entry.session)) identical.push(entry.day)
+        const existing = parseSession(raw, entry.session.cardId)
+        if (existing && JSON.stringify(transferSession(existing)) === JSON.stringify(entry.session)) identical.push(entry.day)
         else conflicts.push(entry.day)
       } catch { conflicts.push(entry.day) }
     }

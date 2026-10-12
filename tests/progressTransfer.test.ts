@@ -48,3 +48,27 @@ test('quota failure rolls back new records while existing unrelated/history reco
   assert.throws(() => importMissingProgress(exported, target), /could not be saved/)
   assert.equal(target.getItem(key(1)), null); assert.equal(target.getItem(key(3)), 'keep existing'); assert.equal(target.getItem('unrelated'), 'keep')
 })
+
+test('export/import drops adversarial nested fields while preserving exact official point data and source records', () => {
+  const source = new Store()
+  const injected = JSON.parse(JSON.stringify(session))
+  injected.guesses[0].point.extra = { token: 'SYNTHETIC_PRIVATE_VALUE', nested: { x: 99 } }
+  injected.pending.point.extra = ['SYNTHETIC_PRIVATE_VALUE']
+  injected.pending.point.__proto__ = { hidden: 'SYNTHETIC_PRIVATE_VALUE' }
+  injected.guesses[0].extra = 'SYNTHETIC_PRIVATE_VALUE'
+  injected.pending.extra = 'SYNTHETIC_PRIVATE_VALUE'
+  injected.extra = 'SYNTHETIC_PRIVATE_VALUE'
+  const raw = JSON.stringify(injected)
+  source.setItem(key(1), raw)
+  const exported = exportProgress(source, known, 3, now)
+  assert.ok(!JSON.stringify(exported).includes('SYNTHETIC_PRIVATE_VALUE'))
+  assert.deepEqual(exported.entries[0].session, session)
+  assert.equal(source.getItem(key(1)), raw)
+  assert.deepEqual(reviewProgress(exported, source).identical, [1])
+  const untrusted = { ...exported, entries: [{ day: 1, session: JSON.parse(raw) }] }
+  const read = readProgress(JSON.stringify(untrusted), known, 3, now)
+  const target = new Store()
+  importMissingProgress(read, target)
+  assert.equal(target.getItem(key(1)), JSON.stringify(session))
+  assert.equal(source.getItem(key(1)), raw)
+})

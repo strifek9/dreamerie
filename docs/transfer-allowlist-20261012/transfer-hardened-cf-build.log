@@ -1,0 +1,36 @@
+
+> dreamerie@0.1.0 build:cloudflare
+> npm run typecheck && node --experimental-strip-types scripts/validateV4Release.mjs && vite build --mode cloudflare && node --experimental-strip-types scripts/finalizeCloudflare.mjs
+
+
+> dreamerie@0.1.0 typecheck
+> tsc -b
+
+Version 4 release metadata gate passed: 383 card(s), five nonoverlapping clues each, versioned sources present; published catalogue preserved.
+vite v8.3.0 building client environment for cloudflare...
+transforming...
+Γ£ô 60 modules transformed.
+rendering chunks...
+computing gzip size...
+.validation/cloudflare-dist/index.html                         1.22 kB Γöé gzip:   0.59 kB
+.validation/cloudflare-dist/progress.html                      2.22 kB Γöé gzip:   1.14 kB
+.validation/cloudflare-dist/assets/app-Z61mkJ_9.css           30.26 kB Γöé gzip:   7.19 kB
+.validation/cloudflare-dist/assets/progress-Beyd2f88.js        4.22 kB Γöé gzip:   1.76 kB
+.validation/cloudflare-dist/assets/app-CytzJrza.js           877.53 kB Γöé gzip: 332.50 kB
+.validation/cloudflare-dist/assets/dailyDream-CuVQnEj1.js  1,165.65 kB Γöé gzip: 231.47 kB
+
+Γ£ô built in 17.30s
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+[PLUGIN_TIMINGS] Plugin hooks ran for 17.0s of this 17.3s build (98%).
+The slowest hooks, timed inside each callback (the wait before a callback starts is excluded, the time it awaits is included):
+  - dreamerie-static-delivery renderChunk (80%, 13.9s, 3 calls)
+  - vite:prepare-out-dir renderStart (18%, 3.0s, 1 call)
+1 hook is listed without a time. Its calls overlapped, so the time inside one call includes work from other calls. To find its cost, profile the build with `node --cpu-prof`:
+  - vite:build-html transform (2 calls)
+See https://rolldown.rs/reference/InputOptions.checks#plugintimings for more details.
+
+{"cards":966,"current":383,"files":4619,"bytes":1599622984,"maxBytes":2687952,"nativePNGConversions":363,"calendarYears":[2026,2046],"headers":"/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n/art/*\n  Cache-Control: public, max-age=31536000, immutable\n/progress\n  Cache-Control: no-store\n  Referrer-Policy: no-referrer\n/progress.html\n  Cache-Control: no-store\n  Referrer-Policy: no-referrer\n"}
