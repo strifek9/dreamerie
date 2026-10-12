@@ -1,0 +1,5 @@
+PASS explicit local-file export, review before writes, cross-origin import, active deadline/pending and unrelated data; no query/referrer transfer or analytics on helper
+PASS repeated imports and conflicts keep existing days; only missing history restored
+PASS invalid file cannot enable import
+PASS imported active game resumes exact marker and expires original unpaused deadline
+PASS source origin unchanged, no JS exceptions, no real player storage/files

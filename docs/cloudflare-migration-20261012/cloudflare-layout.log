@@ -1,0 +1,11 @@
+PASS native delivery dimensions [{"src":"/art/dc3784cdf367ad5b0be7053f8ee76c8c95f29bf734e11143aa8d12214cdbd665.webp","width":1672,"height":941},{"src":"/art/6b060c5d2be71b77804ee23e9f38b0fd0db5c6c02329cb0c86a34eae32a43953.webp","width":200,"height":144},{"src":"/art/00aa594bdf319ae9baf62c0f3815ed7f58e41b89b9c88ebfd2f88994c46d5b87.webp","width":387,"height":329},{"src":"/art/7f2b6e5cd81bf8dbcf9d4c6e1d68bc27dbf4762da525c7655f6a8c5fd5bffb7e.webp","width":237,"height":179},{"src":"/art/66660a762b561336fedb9d1e451933338ec5a75b4f0dab2b67d0163c45b5229f.webp","width":520,"height":248},{"src":"/art/fa8d184717395c4730e7750e9a92a96e2687f67b00c227761d8b4588536aa862.webp","width":126,"height":122}]
+PASS inline fitted geometry 320 568 1 224 126.0625
+PASS inline fitted geometry 390 844 3 369.21875 207.78125
+PASS inline fitted geometry 844 390 2 239.859375 134.984375
+PASS inline fitted geometry 1440 900 1 486.828125 273.984375
+PASS inline fitted geometry 2560 1440 1 960 540.28125
+PASS five viewport/DPR fits, no crop/distortion/filter, native crop placement and actual touch-to-source coordinates
+PASS pending reload, Continue, five actual correct touches/confirmation cap and completed reload
+PASS original/changed answer close-up identical square source coordinates
+PASS saved published card exact art, pending/start continuity and unpaused deadline expiry inside viewer
+PASS restoration production QA/no JS exceptions/no real user state

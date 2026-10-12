@@ -11,3 +11,5 @@ dist-server/
 .env
 .env.*
 !.env.example
+
+.wrangler/

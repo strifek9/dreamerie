@@ -1,0 +1,26 @@
+
+> dreamerie@0.1.0 prepare:cloudflare
+> node --experimental-strip-types scripts/prepareCloudflareAssets.mjs && python scripts/encodeCloudflareAssets.py
+
+Required artwork inventory: 966 saved-card IDs, 383 current cards, 5109 unique files
+Native delivery audit 250/5109
+Native delivery audit 500/5109
+Native delivery audit 750/5109
+Native delivery audit 1000/5109
+Native delivery audit 1250/5109
+Native delivery audit 1500/5109
+Native delivery audit 1750/5109
+Native delivery audit 2000/5109
+Native delivery audit 2250/5109
+Native delivery audit 2500/5109
+Native delivery audit 2750/5109
+Native delivery audit 3000/5109
+Native delivery audit 3250/5109
+Native delivery audit 3500/5109
+Native delivery audit 3750/5109
+Native delivery audit 4000/5109
+Native delivery audit 4250/5109
+Native delivery audit 4500/5109
+Native delivery audit 4750/5109
+Native delivery audit 5000/5109
+{"sources": 5109, "uniqueDeliveryFiles": 4611, "sourceBytes": 2559218344, "deliveryBytes": 1597541328, "convertedNativePNGs": 363}

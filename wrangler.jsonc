@@ -1,0 +1,8 @@
+{
+  "name": "dreamerie",
+  "account_id": "a33da68cdde23678a1d6224dc03be58b",
+  "compatibility_date": "2026-10-12",
+  "workers_dev": true,
+  "assets": { "directory": "./.validation/cloudflare-dist", "not_found_handling": "none" },
+  "observability": { "enabled": false }
+}

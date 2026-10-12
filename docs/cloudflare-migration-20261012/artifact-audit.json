@@ -1,0 +1,13 @@
+{
+  "cards": 966,
+  "current": 383,
+  "files": 4619,
+  "bytes": 1599622723,
+  "maxBytes": 2687952,
+  "nativePNGConversions": 363,
+  "calendarYears": [
+    2026,
+    2046
+  ],
+  "headers": "/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n/art/*\n  Cache-Control: public, max-age=31536000, immutable\n/progress\n  Cache-Control: no-store\n  Referrer-Policy: no-referrer\n/progress.html\n  Cache-Control: no-store\n  Referrer-Policy: no-referrer\n"
+}
