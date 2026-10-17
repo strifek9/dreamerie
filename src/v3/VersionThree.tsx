@@ -1,3 +1,4 @@
+import { Support } from '../SupportPanel'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { DreamCanvas, DreamViewer } from '../components/InspectableDream'
 import { createShareText, formatClock, getAnswerReveals, remainingGuessLabel } from '../game/dailyRecall'
@@ -163,6 +164,7 @@ function Round({ dream, day, playtest, onNew, onToday }: { dream: LandscapeDream
     {hintOpen && <GameHint onClose={() => setHintOpen(false)} timeLeft={phase === 'play' ? recallLeft : undefined}/>}
     {result && !landing && answerIndex !== null && <AnswerInspection dream={dream} differences={differences} foundIds={recall.foundDifferenceIds} index={answerIndex} onSelect={setAnswerIndex} onClose={() => setAnswerIndex(null)}/>}
     {(import.meta.env.DEV || import.meta.env.MODE === 'playtest') && <div className="v2-dev"><button className="text-action" onClick={onNew}>New day (dev only)</button><a href={import.meta.env.MODE === 'playtest' ? '/v4-review.html' : '?review=1'}>{import.meta.env.MODE === 'playtest' ? 'V4 artwork review (answers)' : `Review all ${currentDreams.length}`}</a><select aria-label="Preview a V4 dream" value={dream.id.startsWith('v4-') ? dream.id : ''} onChange={event => { if (event.target.value) location.assign(`?dream=${event.target.value}`) }}><option value="" disabled>V4 previews</option>{v4PreviewDreams.map(card => <option key={card.id} value={card.id}>{card.title}</option>)}</select><select aria-label="Preview a holiday" value={holiday?.id ?? ''} onChange={event => { if (event.target.value) location.assign(`?dream=${event.target.value}`) }}><option value="" disabled>Holiday previews</option>{holidayDreams.map(card => <option key={card.id} value={card.id}>{card.occasion}</option>)}</select><span>{dream.id}</span></div>}
+    <Support/>
   </main>
 }
 
