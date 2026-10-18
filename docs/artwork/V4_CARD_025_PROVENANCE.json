@@ -39,7 +39,13 @@
       }
     }
   ],
-  "refinedSources": [],
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-025-heart-strings-source-v2.png",
+      "sha256": "9A2810140CE5E0CAC4B18D621CAC57DC0F1F9BF339E41088320767F707E9D045",
+      "prompt": "Deterministic source pixel alignment of three strings inside heart patch only; see scripts/repairViolinStrings20261018.py. Imagegen attempt rejected for reversing intended heart."
+    }
+  ],
   "authoredRegions": [
     {
       "id": "change-1",
@@ -117,5 +123,25 @@
     ],
     "previewReload": "fresh attempt by design",
     "humanDifficulty": "pending"
+  },
+  "retiredGeneratedSources": [
+    {
+      "path": "/artwork/v4/delivery-lossless-v1/v4-dream-025-change-1.webp",
+      "sha256": "21226ED3DA25BC774856C6B00592FC7D4CA1BDF68DCCDE4E16CDE20E7F028A54"
+    }
+  ],
+  "stringRepair20261018": {
+    "authorized": "User explicitly requested correction and publication",
+    "bounds": [
+      254,
+      263,
+      352,
+      385
+    ],
+    "nativeDimensions": [
+      1672,
+      941
+    ],
+    "preserved": "All five clue IDs, labels, boxes, original, other four sources/deliveries and published source assets. Same card ID corrects existing saved attempts without changing scores or deadlines."
   }
 }

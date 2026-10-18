@@ -120,13 +120,36 @@ test('fairness versions retain original verses, holiday metadata and published V
   }
 })
 
-test('all 941 published metadata objects and delivery selections match immutable release 5920a05', () => {
+test('published metadata matches release 5920a05 except the authorized violin string source repair', () => {
   const fixture = JSON.parse(readFileSync(new URL('./fixtures/publishedDreams-5920a05.json', import.meta.url), 'utf8'))
   assert.equal(fixture.cards.length, 941)
   for (const row of fixture.cards) {
     const savedCard = playableDreams.find(card => card.id === row.id)!
     assert.ok(savedCard, row.id)
-    assert.equal(createHash('sha256').update(JSON.stringify(savedCard)).digest('hex'), row.cardSha256, row.id)
-    assert.deepEqual(artworkSources(savedCard), row.deliveries, row.id)
+    let baseline = savedCard
+    const deliveries = artworkSources(savedCard)
+    if (row.id === 'v4-dream-025') {
+      assert.equal(savedCard.edits[0].source, '/artwork/v4/collection/dream-025-heart-strings-source-v2.png')
+      assert.equal(deliveries[1], '/artwork/v4/delivery-lossless-v1/v4-dream-025-change-1-strings-v2.webp')
+      baseline = { ...savedCard, edits: savedCard.edits.map((edit, index) => {
+        if (index !== 0) return edit
+        const { source: _source, ...unchanged } = edit
+        return unchanged
+      }) }
+      deliveries[1] = '/artwork/v4/delivery-lossless-v1/v4-dream-025-change-1.webp'
+    }
+    assert.equal(createHash('sha256').update(JSON.stringify(baseline)).digest('hex'), row.cardSha256, row.id)
+    assert.deepEqual(deliveries, row.deliveries, row.id)
   }
+})
+
+test('October 18 violin repair keeps the same daily card and five scoring coordinates', () => {
+  const card = dreamForDate(new Date(2026, 9, 18, 12))
+  assert.equal(card.id, 'v4-dream-025')
+  assert.equal(card.title, 'The Violin Orchard')
+  const differences = differencesFor(card)
+  let state = createRecallState()
+  for (const clue of differences) state = confirmGuess(state, clue, 5, differences, card.aspectRatio).state
+  assert.equal(state.foundDifferenceIds.length, 5)
+  assert.equal(state.confirmed.length, 5)
 })

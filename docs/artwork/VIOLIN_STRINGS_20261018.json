@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-18",
+  "cardId": "v4-dream-025",
+  "title": "The Violin Orchard",
+  "dailyNumber": 25,
+  "dimensions": [
+    1672,
+    941
+  ],
+  "fiveIntendedClues": 5,
+  "deltaBounds": [
+    254,
+    263,
+    352,
+    385
+  ],
+  "changedCompositePixels": 9805,
+  "outsideFiveHotspots": "exact original pixels",
+  "otherFourPatches": "byte identical",
+  "sourceAssembly": "native existing source, localized horizontal alignment; original pixels at seam; no generated output used",
+  "tests": "115 passed",
+  "pagesBuild": "passed",
+  "browser": "actual local Pages build Start, pair, enlarged Memory inspected",
+  "physicalDevice": "not tested",
+  "authorization": "User explicitly requested correction and publish; source thread 01a11847-5138-76f4-b7e0-5bbc418a30d3"
+}

@@ -9,5 +9,14 @@ delivery.CATALOGUE_EXPORT = 'v4DeliveryDreams'
 delivery.PREFIX = '/artwork/v4/delivery-lossless-v1/'
 delivery.AUDIT = root / 'docs/artwork/V4_DELIVERY_LOSSLESS_V1.json'
 delivery.MANIFEST = root / 'src/v4/artworkDelivery.generated.ts'
+
+# The October 18 authorized repair updates existing rounds while retaining the
+# published crop for older cached bundles. Never overwrite its immutable URL.
+encode = delivery.encode
+def versioned_encode(source, name, box, check):
+    if source == '/artwork/v4/collection/dream-025-heart-strings-source-v2.png':
+        name += '-strings-v2'
+    return encode(source, name, box, check)
+delivery.encode = versioned_encode
 if __name__ == '__main__':
     delivery.main()

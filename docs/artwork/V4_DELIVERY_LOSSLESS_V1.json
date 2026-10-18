@@ -3,8 +3,8 @@
   "resized": false,
   "pixelEquality": "RGBA exact",
   "paddingPixels": 32,
-  "sourceBytes": 2184307078,
-  "deliveryBytes": 845797632,
+  "sourceBytes": 2186861613,
+  "deliveryBytes": 845797604,
   "cards": [
     {
       "id": "v4-dream-001",
@@ -178,8 +178,8 @@
     },
     {
       "id": "v4-dream-025",
-      "sourceBytes": 5341471,
-      "deliveryBytes": 2481250
+      "sourceBytes": 7896006,
+      "deliveryBytes": 2481222
     },
     {
       "id": "v4-dream-026",
@@ -5534,8 +5534,8 @@
       "rgbaSha256": "9a7964c31d648ca01f7a46d32ce3e4ca7eea2e085d182bc6af6f9db1ba260921"
     },
     {
-      "source": "/artwork/v4/collection/dream-025-altered-source-v4.png",
-      "delivery": "/artwork/v4/delivery-lossless-v1/v4-dream-025-change-1.webp",
+      "source": "/artwork/v4/collection/dream-025-heart-strings-source-v2.png",
+      "delivery": "/artwork/v4/delivery-lossless-v1/v4-dream-025-change-1-strings-v2.webp",
       "sourceWidth": 1672,
       "sourceHeight": 941,
       "crop": [
@@ -5544,11 +5544,11 @@
         163,
         186
       ],
-      "sourceBytes": 2554839,
-      "deliveryBytes": 33392,
-      "sourceSha256": "100ccd47b8c9313907d21c0c4619f98ddb35865dd8c403b94bcc158d6f58fd76",
-      "deliverySha256": "21226ed3da25bc774856c6b00592fc7d4ca1bdf68dccde4e16cde20e7f028a54",
-      "rgbaSha256": "72f4d86269be95e25a1f7222e0d5c2a8cc79fdf31e3311e49a81859ba8cec4bf"
+      "sourceBytes": 2554535,
+      "deliveryBytes": 33364,
+      "sourceSha256": "9a2810140ce5e0cac4b18d621cac57dc0f1f9bf339e41088320767f707e9d045",
+      "deliverySha256": "a5b718388e74917cfc1bbc9c763473ea93572fb446b4bc4a4c006e41b1c36752",
+      "rgbaSha256": "8e9d1eb0366c30a2700689e45aebd973c918f49b652bfa7e4a9abfe7eb1a11b4"
     },
     {
       "source": "/artwork/v4/collection/dream-025-altered-source-v4.png",

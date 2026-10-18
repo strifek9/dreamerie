@@ -1729,6 +1729,7 @@ export const v4PreviewDreams: readonly LandscapeDream[] = [{
     {
       "id": "change-1",
       "label": "The violin's gold heart hangs point upward.",
+      "source": "/artwork/v4/collection/dream-025-heart-strings-source-v2.png",
       "difficulty": "Easy",
       "edgeFade": 3,
       "box": {
