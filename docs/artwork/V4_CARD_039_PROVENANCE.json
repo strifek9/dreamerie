@@ -22,7 +22,13 @@
       }
     }
   ],
-  "refinedSources": [],
+  "refinedSources": [
+    {
+      "path": "/artwork/v4/collection/dream-039-pennant-connected-v2.png",
+      "sha256": "531C1CB635A24F6BC2A1DD76270C28E0D8A9C80B8C6F7DBBAAE4ED925DA07958",
+      "prompt": "Native localized recomposition; scripts/repairApricotPennant20261102.py. Original pixels outside unchanged hitbox. No generated artwork."
+    }
+  ],
   "authoredRegions": [
     {
       "id": "hole",
@@ -100,5 +106,11 @@
     ],
     "previewReload": "fresh attempt by design",
     "humanDifficulty": "pending"
-  }
+  },
+  "retiredGeneratedSources": [
+    {
+      "path": "/artwork/v4/delivery-lossless-v1/v4-dream-039-pennant.webp",
+      "sha256": "4BDCDBE22E0CA1AF6102A500C1A8AC6C947C9EAE0207F90167AD6D2C23396D0E"
+    }
+  ]
 }

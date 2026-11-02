@@ -2443,9 +2443,10 @@ export const v4PreviewDreams: readonly LandscapeDream[] = [{
     },
     {
       "id": "pennant",
+      "source": "/artwork/v4/collection/dream-039-pennant-connected-v2.png",
       "label": "The red pennant folds over its rope attachment.",
       "difficulty": "Hard",
-      "edgeFade": 4,
+      "edgeFade": 0,
       "box": {
         "left": 0.17882775119617225,
         "top": 0.310308182784272,

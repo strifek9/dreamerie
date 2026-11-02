@@ -1,0 +1,24 @@
+{
+  "base": "http://127.0.0.1:4177",
+  "evidence": [
+    {
+      "mobile": false,
+      "fresh": "4/5",
+      "retained": "5/5",
+      "reload": true,
+      "zoom": true,
+      "expanded": true,
+      "cardId": "v4-fairness-dream-039-v1"
+    },
+    {
+      "mobile": true,
+      "fresh": "4/5",
+      "retained": "5/5",
+      "reload": true,
+      "zoom": true,
+      "expanded": true,
+      "cardId": "v4-fairness-dream-039-v1"
+    }
+  ],
+  "errors": []
+}

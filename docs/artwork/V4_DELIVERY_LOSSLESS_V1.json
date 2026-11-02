@@ -3,8 +3,8 @@
   "resized": false,
   "pixelEquality": "RGBA exact",
   "paddingPixels": 32,
-  "sourceBytes": 2186861613,
-  "deliveryBytes": 845797604,
+  "sourceBytes": 2196903188,
+  "deliveryBytes": 848090032,
   "cards": [
     {
       "id": "v4-dream-001",
@@ -228,8 +228,8 @@
     },
     {
       "id": "v4-dream-039",
-      "sourceBytes": 4988975,
-      "deliveryBytes": 2291900
+      "sourceBytes": 7515275,
+      "deliveryBytes": 2292164
     },
     {
       "id": "v4-dream-040",
@@ -1920,6 +1920,11 @@
       "id": "v4-dream-new-years",
       "sourceBytes": 5674230,
       "deliveryBytes": 2473414
+    },
+    {
+      "id": "v4-fairness-dream-039-v1",
+      "sourceBytes": 7515275,
+      "deliveryBytes": 2292164
     },
     {
       "id": "v4-fairness-dream-012-v1",
@@ -6588,8 +6593,8 @@
       "rgbaSha256": "4a0c5d6fadb1438383e540ca397995f60ac19dff39b61481dd024d352016670c"
     },
     {
-      "source": "/artwork/v4/collection/dream-039-altered-source-v4.png",
-      "delivery": "/artwork/v4/delivery-lossless-v1/v4-dream-039-pennant.webp",
+      "source": "/artwork/v4/collection/dream-039-pennant-connected-v2.png",
+      "delivery": "/artwork/v4/delivery-lossless-v1/v4-dream-039-pennant-connected-v2.webp",
       "sourceWidth": 1672,
       "sourceHeight": 941,
       "crop": [
@@ -6598,11 +6603,11 @@
         126,
         127
       ],
-      "sourceBytes": 2440358,
-      "deliveryBytes": 19810,
-      "sourceSha256": "8e0a7435cba09707600f9ca5eaedf2c27b1e5a20bbf6bd3be71aab98a4def27a",
-      "deliverySha256": "4bdcdbe22e0ca1af6102a500c1a8ac6c947c9eae0207f90167ad6d2c23396d0e",
-      "rgbaSha256": "f1ce73232db3ba17ee15db5436390786c10e42949dd8bc867e0f8e00ff373d51"
+      "sourceBytes": 2526300,
+      "deliveryBytes": 20074,
+      "sourceSha256": "531c1cb635a24f6bc2a1dd76270c28e0d8a9c80b8c6f7dbbaae4ed925da07958",
+      "deliverySha256": "fc93546fa7341c51bfa926b1a965b98508ae8f71bbcdbb10294a857d120e8eda",
+      "rgbaSha256": "432c7f8f4a5cfe8bccb6c41038f5636cdb7562cc0365019448843d1e5342c069"
     },
     {
       "source": "/artwork/v4/collection/dream-039-altered-source-v4.png",
@@ -41113,6 +41118,108 @@
       "sourceSha256": "bcf55fa27da3c46819ea9ccb8ad95a14348f71bda4777778fb7b29d53ee82726",
       "deliverySha256": "5ea0a1f72fe6e439e9fc220ef99095b8946ea7d63d3ec73ba14ab2fda8de81d4",
       "rgbaSha256": "0ee512091b946a9ecf30781cc79975c7eb7ed67ed3577c5b41855fdd2fbf8f79"
+    },
+    {
+      "source": "/artwork/v4/collection/dream-039-original-v4.png",
+      "delivery": "/artwork/v4/delivery-lossless-v1/v4-fairness-dream-039-v1-original.webp",
+      "sourceWidth": 1672,
+      "sourceHeight": 941,
+      "crop": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "sourceBytes": 2548617,
+      "deliveryBytes": 2156264,
+      "sourceSha256": "ed2934c45ed19d84f191d5e3810a6b3c27eee21333ee2cd71f27ddd7a849eb82",
+      "deliverySha256": "263e12fbf9c12ff12f2fc02ba4aa3cd1b94f9096fd58c99655918437f2366c85",
+      "rgbaSha256": "64a30a7b4b403e699bbe4ce7d6208ce7aa3af714b72e0f9294c45810dd1175a1"
+    },
+    {
+      "source": "/artwork/v4/collection/dream-039-altered-source-v4.png",
+      "delivery": "/artwork/v4/delivery-lossless-v1/v4-fairness-dream-039-v1-hole.webp",
+      "sourceWidth": 1672,
+      "sourceHeight": 941,
+      "crop": [
+        730,
+        43,
+        128,
+        134
+      ],
+      "sourceBytes": 2440358,
+      "deliveryBytes": 21070,
+      "sourceSha256": "8e0a7435cba09707600f9ca5eaedf2c27b1e5a20bbf6bd3be71aab98a4def27a",
+      "deliverySha256": "36fdf72afaecf32cff1adc5032111548dfc4e181588a86f2a3707beff2743533",
+      "rgbaSha256": "6fea97ca56f71bdd3d49fbe9cf2acd8e322215ea1d4ac2cce73359c0298c7e35"
+    },
+    {
+      "source": "/artwork/v4/collection/dream-039-altered-source-v4.png",
+      "delivery": "/artwork/v4/delivery-lossless-v1/v4-fairness-dream-039-v1-bow.webp",
+      "sourceWidth": 1672,
+      "sourceHeight": 941,
+      "crop": [
+        409,
+        639,
+        140,
+        149
+      ],
+      "sourceBytes": 2440358,
+      "deliveryBytes": 32816,
+      "sourceSha256": "8e0a7435cba09707600f9ca5eaedf2c27b1e5a20bbf6bd3be71aab98a4def27a",
+      "deliverySha256": "521148de7282eb28954e3b6c0ca18c7b9e1b37d0d6d97c68fe8ae0625d69cacf",
+      "rgbaSha256": "4a0c5d6fadb1438383e540ca397995f60ac19dff39b61481dd024d352016670c"
+    },
+    {
+      "source": "/artwork/v4/collection/dream-039-pennant-connected-v2.png",
+      "delivery": "/artwork/v4/delivery-lossless-v1/v4-fairness-dream-039-v1-pennant-connected-v2.webp",
+      "sourceWidth": 1672,
+      "sourceHeight": 941,
+      "crop": [
+        267,
+        260,
+        126,
+        127
+      ],
+      "sourceBytes": 2526300,
+      "deliveryBytes": 20074,
+      "sourceSha256": "531c1cb635a24f6bc2a1dd76270c28e0d8a9c80b8c6f7dbbaae4ed925da07958",
+      "deliverySha256": "fc93546fa7341c51bfa926b1a965b98508ae8f71bbcdbb10294a857d120e8eda",
+      "rgbaSha256": "432c7f8f4a5cfe8bccb6c41038f5636cdb7562cc0365019448843d1e5342c069"
+    },
+    {
+      "source": "/artwork/v4/collection/dream-039-altered-source-v4.png",
+      "delivery": "/artwork/v4/delivery-lossless-v1/v4-fairness-dream-039-v1-star.webp",
+      "sourceWidth": 1672,
+      "sourceHeight": 941,
+      "crop": [
+        442,
+        545,
+        150,
+        145
+      ],
+      "sourceBytes": 2440358,
+      "deliveryBytes": 34478,
+      "sourceSha256": "8e0a7435cba09707600f9ca5eaedf2c27b1e5a20bbf6bd3be71aab98a4def27a",
+      "deliverySha256": "5ab081603416c236f49a55ae2ef156693b17d8d8be89d1957ae5d5f54b7fda64",
+      "rgbaSha256": "34319319d668d37f37ae31348712e35d51800d61d9dc2a869d8212a52fb6a65a"
+    },
+    {
+      "source": "/artwork/v4/collection/dream-039-altered-source-v4.png",
+      "delivery": "/artwork/v4/delivery-lossless-v1/v4-fairness-dream-039-v1-bridge.webp",
+      "sourceWidth": 1672,
+      "sourceHeight": 941,
+      "crop": [
+        1346,
+        711,
+        150,
+        126
+      ],
+      "sourceBytes": 2440358,
+      "deliveryBytes": 27462,
+      "sourceSha256": "8e0a7435cba09707600f9ca5eaedf2c27b1e5a20bbf6bd3be71aab98a4def27a",
+      "deliverySha256": "b31decab46094cbb348545322de52cca1dbaffabc11bc2c80479bad9321e3441",
+      "rgbaSha256": "0064d94174bf4f28b83b385340f03bd36f01dcfe662958cf962131562a141618"
     },
     {
       "source": "/artwork/v4/collection/dream-012-original-v4.png",

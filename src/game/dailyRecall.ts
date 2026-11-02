@@ -8,6 +8,7 @@ export interface DifferenceBox { readonly left: number; readonly top: number; re
 
 export interface Difference extends Point {
   readonly id: string
+  readonly guessRadius?: number
   readonly radius: number
   readonly difficulty: DifferenceDifficulty
   readonly label: string
@@ -83,7 +84,7 @@ export function findDifference(
     || a.difference.box.width * a.difference.box.height - b.difference.box.width * b.difference.box.height
     || a.difference.id.localeCompare(b.difference.id))
   const nearest = candidates[0]
-  const target = nearest && nearest.distance <= GAME_CONFIG.guessRadius + 1e-10 ? nearest.difference : undefined
+  const target = nearest && nearest.distance <= (nearest.difference.guessRadius ?? GAME_CONFIG.guessRadius) + 1e-10 ? nearest.difference : undefined
   return target && !foundDifferenceIds.includes(target.id) ? target : undefined
 }
 

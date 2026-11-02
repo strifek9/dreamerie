@@ -120,7 +120,7 @@ test('fairness versions retain original verses, holiday metadata and published V
   }
 })
 
-test('published metadata matches release 5920a05 except the authorized violin string source repair', () => {
+test('published metadata matches release 5920a05 except authorized violin and pennant visual repairs', () => {
   const fixture = JSON.parse(readFileSync(new URL('./fixtures/publishedDreams-5920a05.json', import.meta.url), 'utf8'))
   assert.equal(fixture.cards.length, 941)
   for (const row of fixture.cards) {
@@ -137,6 +137,16 @@ test('published metadata matches release 5920a05 except the authorized violin st
         return unchanged
       }) }
       deliveries[1] = '/artwork/v4/delivery-lossless-v1/v4-dream-025-change-1.webp'
+    }
+    if (row.id === 'v4-dream-039') {
+      assert.equal(savedCard.edits.find(edit => edit.id === 'star')!.guessRadius, undefined)
+      baseline = { ...savedCard, edits: savedCard.edits.map(edit => {
+        if (edit.id !== 'pennant') return edit
+        const { source: _source, ...unchanged } = edit
+        return { ...unchanged, edgeFade: 4 }
+      }) }
+      assert.equal(deliveries[3], '/artwork/v4/delivery-lossless-v1/v4-dream-039-pennant-connected-v2.webp')
+      deliveries[3] = '/artwork/v4/delivery-lossless-v1/v4-dream-039-pennant.webp'
     }
     assert.equal(createHash('sha256').update(JSON.stringify(baseline)).digest('hex'), row.cardSha256, row.id)
     assert.deepEqual(deliveries, row.deliveries, row.id)

@@ -3,6 +3,7 @@ import type { Difference, DifferenceBox, DifferenceDifficulty } from '../game/da
 import { DAILY_SESSION_NAMESPACE } from '../game/dailySession.ts'
 
 export interface LandscapeEdit {
+  readonly guessRadius?: number
   readonly id: string
   readonly label: string
   readonly difficulty: DifferenceDifficulty

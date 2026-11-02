@@ -16,6 +16,8 @@ encode = delivery.encode
 def versioned_encode(source, name, box, check):
     if source == '/artwork/v4/collection/dream-025-heart-strings-source-v2.png':
         name += '-strings-v2'
+    if source == '/artwork/v4/collection/dream-039-pennant-connected-v2.png':
+        name += '-connected-v2'
     return encode(source, name, box, check)
 delivery.encode = versioned_encode
 if __name__ == '__main__':
