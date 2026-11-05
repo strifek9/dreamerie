@@ -4,6 +4,7 @@
 import assert from 'node:assert/strict'
 import { mkdirSync, writeFileSync } from 'node:fs'
 const base = process.env.QA_ORIGIN || 'http://127.0.0.1:4178'
+const cardId = process.env.QA_CARD_ID || 'v4-dream-043'
 const targets = await (await fetch(`${process.env.QA_CDP || 'http://127.0.0.1:9455'}/json`)).json()
 const socket = new WebSocket(targets.find(t => t.type === 'page').webSocketDebuggerUrl)
 await new Promise(r => socket.addEventListener('open', r, { once: true }))
@@ -53,7 +54,7 @@ try {
       await send('Page.navigate', { url: 'about:blank' }); await wait(`location.href==='about:blank'`)
       await send('Page.navigate', { url: base }); await wait(`!!document.querySelector('.v3-app')`)
       // A disposable real-day save exercises persistence, not the dev-only path.
-      await evaluate(`localStorage.clear();localStorage.setItem('dreamerie:v2:daily-collection:v1:43',JSON.stringify({version:1,cardId:'v4-dream-043',startedAt:Date.now(),guesses:Array.from({length:4},()=>({point:{x:.5,y:.5},elapsedSeconds:0})),pending:null}))`)
+      await evaluate(`localStorage.clear();localStorage.setItem('dreamerie:v2:daily-collection:v1:43',JSON.stringify({version:1,cardId:${JSON.stringify(cardId)},startedAt:Date.now(),guesses:Array.from({length:4},()=>({point:{x:.5,y:.5},elapsedSeconds:0})),pending:null}))`)
       await send('Page.navigate', { url: 'about:blank' }); await wait(`location.href==='about:blank'`)
       await send('Page.navigate', { url: base }); await wait(`!!document.querySelector('.v2-board')`)
       await click('[aria-label="Zoom in both paintings"]'); await click('[aria-label="Zoom in both paintings"]')
@@ -111,5 +112,5 @@ try {
     }
   }
   assert.deepEqual(errors, [])
-  writeFileSync('.validation/completion-fit/browser-qa.json', JSON.stringify({ base, evidence, errors }, null, 2))
+  writeFileSync('.validation/completion-fit/browser-qa.json', JSON.stringify({ base, cardId, evidence, errors }, null, 2))
 } finally { socket.close() }

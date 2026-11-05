@@ -427,7 +427,7 @@
       "id": "revisit-dream-043",
       "title": "The Otter's Lemon Boat",
       "decision": "revise",
-      "replacementId": "v4-dream-043",
+      "replacementId": "v4-fairness-dream-043-v1",
       "ownerReleaseApproval": "Sentinel_6eb6db8149ec819186b799bc3b23d779",
       "humanDifficultyApproval": "pending",
       "physicalPhoneApproval": "pending"
@@ -3640,6 +3640,15 @@
     "timeUTC": "15:35",
     "scope": "Commit, safely promote to main, push and deploy the tested 25-card fairness repair to the existing main Dreamerie site; existing saves retain published versions, fresh games use corrections.",
     "humanTimedDifficulty": "not performed",
+    "physicalPhone": "not performed"
+  },
+  "ownerOtterScoringPublicationApproval": {
+    "sourceId": "Sentinel_03e2af6fca2c8191b15086552cb0784c",
+    "date": "2026-11-05",
+    "cardId": "v4-fairness-dream-043-v1",
+    "target": "https://dreamerie.pages.dev",
+    "scope": "Commit, push and publish the tested completion zoom-fit and two Otter emblem scoring corrections now; paddle connection artwork remains excluded and deferred.",
+    "historicalSavedScoring": "preserved",
     "physicalPhone": "not performed"
   }
 }

@@ -33,6 +33,10 @@ if (preview) {
 } else {
   expect(typeof ledger.ownerCollectionReleaseApproval?.sourceId === 'string', 'Missing explicit owner collection release approval')
   const corrected = cards.filter(card => card.id.startsWith('v4-fairness-'))
+  if (cards.some(card => card.id === 'v4-fairness-dream-043-v1') && !localRepair) {
+    expect(typeof ledger.ownerOtterScoringPublicationApproval?.sourceId === 'string',
+      'Otter scoring candidate has no separate publication approval; use --local-repair for local validation only')
+  }
   if (corrected.length && !localRepair) expect(typeof ledger.ownerFairnessPublicationApproval?.sourceId === 'string', 'Fairness repair publication is not authorized; use --local-repair for investigation validation only')
   expect(publishedDreams.length === 941, 'The 941 published saved IDs were not preserved')
   for (const old of publishedDreams) expect(playableDreams.some(card => card.id === old.id), `${old.id}: original published card missing`)

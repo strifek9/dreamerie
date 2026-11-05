@@ -9,6 +9,7 @@ import { fairnessCorrections232 } from './fairnessCorrections232.ts'
 import { fairnessCorrections309 } from './fairnessCorrections309.ts'
 
 const original039 = v4PreviewDreams.find(card => card.id === 'v4-dream-039')!
+const original043 = v4PreviewDreams.find(card => card.id === 'v4-dream-043')!
 const original154 = v4PreviewDreams.find(card => card.id === 'v4-dream-154')!
 const original012 = v4PreviewDreams.find(card => card.id === 'v4-dream-012')!
 // Keep the floating offcut unchanged; only the new curl is composited.
@@ -17,6 +18,12 @@ export const fairnessCorrections: readonly LandscapeDream[] = [{
   id: 'v4-fairness-dream-039-v1',
   // Saved rounds replay against the published tolerance; fresh rounds exclude the mouse.
   edits: original039.edits.map(edit => edit.id === 'star' ? { ...edit, guessRadius: 8 / 1672 } : edit),
+}, {
+  ...original043,
+  id: 'v4-fairness-dream-043-v1',
+  // Keep historical basket/peel scoring on the saved ID; localize fresh emblem guesses.
+  // Eight native pixels follow the existing small-emblem Apricot precedent.
+  edits: original043.edits.map(edit => ['change-2', 'change-3'].includes(edit.id) ? { ...edit, guessRadius: 8 / 1672 } : edit),
 }, {
   ...original012,
   id: 'v4-fairness-dream-012-v1',
