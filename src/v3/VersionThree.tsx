@@ -92,7 +92,13 @@ function Round({ dream, day, playtest, onNew, onToday }: { dream: LandscapeDream
   // Fitted result images belong to the scrolling page. Zoom in explicitly to inspect.
   const scrollResults = Boolean(result) && view.scale <= 1
   useEffect(() => { window.scrollTo({ top: 0, behavior: 'instant' }) }, [landing, phase])
-  useEffect(() => { if (phase === 'result') { setHome(false); setPreviewZoom(false); setHintOpen(false); setExpandedSide(null) } }, [phase])
+  useEffect(() => {
+    if (phase !== 'result') return
+    // Fit the shared comparison once when the round ends, including expiry
+    // while away or inspecting a viewer. Later answer inspection keeps its zoom.
+    setView(RESTING_VIEW)
+    setHome(false); setPreviewZoom(false); setHintOpen(false); setExpandedSide(null)
+  }, [phase])
   useEffect(() => {
     // Wait for an automatically closed viewer/help dialog to restore its opener
     // before moving focus to the newly available result.
@@ -146,7 +152,8 @@ function Round({ dream, day, playtest, onNew, onToday }: { dream: LandscapeDream
       : <div className="v2-status"><strong>{remainingGuessLabel(recall)}</strong><time aria-label="Time remaining">{formatClock(recallLeft)}</time><MemoryFragments guesses={recall.confirmed}/></div>}
       <section className="v2-board" aria-label="Compare both paintings">
         {(['original', 'changed'] as const).map(side => <figure key={side}><figcaption>{side === 'original' ? 'The Dream' : 'The Memory'}<div className="v2-caption-actions">{result && <span>{side === 'original' ? 'Found · Green' : result.accuracy === 5 ? 'All found' : 'Missed · Red'}</span>}<button className="v2-expand" aria-label={`Expand ${side === 'original' ? 'The Dream' : 'The Memory'}`} title="Hold the painting or expand" onClick={() => setExpandedSide(side)}>⤢</button></div></figcaption>
-          <DreamCanvas label={`${side === 'original' ? 'The Dream' : 'The Memory'}. ${result ? 'Inspect the answers.' : 'Tap to mark, then Remember to confirm.'} Hold to expand. ${scrollResults ? 'Swipe to scroll the page. Pinch to examine details.' : 'Zoom and drag move both paintings.'}`} onExpand={() => setExpandedSide(side)} view={view} onView={updateView} scrollWhenFitted={Boolean(result)} selectable={!result} pendingPoint={recall.pending} onTap={result ? undefined : point => { void dispatch({ type: 'mark', point, side }) }}>
+          {/* Retire active pointers/holds at completion so an unfinished gesture cannot undo Fit. */}
+          <DreamCanvas key={result ? 'result' : 'play'} label={`${side === 'original' ? 'The Dream' : 'The Memory'}. ${result ? 'Inspect the answers.' : 'Tap to mark, then Remember to confirm.'} Hold to expand. ${scrollResults ? 'Swipe to scroll the page. Pinch to examine details.' : 'Zoom and drag move both paintings.'}`} onExpand={() => setExpandedSide(side)} view={view} onView={updateView} scrollWhenFitted={Boolean(result)} selectable={!result} pendingPoint={recall.pending} onTap={result ? undefined : point => { void dispatch({ type: 'mark', point, side }) }}>
             {artwork(side)}
           </DreamCanvas>
         </figure>)}
