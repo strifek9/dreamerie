@@ -123,6 +123,9 @@ button:focus-visible { outline: 2px solid var(--moon); outline-offset: 4px; }
 .result-tile.found { background: var(--violet); color: #15152b; }
 .answer-outline { position: absolute; border: 1px solid #f3a5ab; border-radius: 5px; box-shadow: 0 0 0 1px #17152d; pointer-events: none; }
 .answer-outline.answer-found { border-color: #bdeccc; }
+.answer-overlays { position: absolute; inset: 0; display: block; pointer-events: none; }
+.answer-badge-leader { position: absolute; height: 1px; transform-origin: 0 0; background: #f3a5ab; pointer-events: none; }
+.answer-found .answer-badge-leader { background: #bdeccc; }
 .answer-outline > span { position: absolute; bottom: calc(100% + 3px); left: 0; display: grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; background: #f3a5ab; color: #17152d; font: 700 12px/1 system-ui; }
 .answer-found > span { background: #bdeccc; }
 .result-caption--original { color: #bdeccc !important; }

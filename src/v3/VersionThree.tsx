@@ -12,6 +12,7 @@ import { differencesFor, landscapeDay, LANDSCAPE_SESSION_OPTIONS, type Landscape
 import { currentDreams, dreamForDate, playableDreams } from './dailyDream'
 import { holidayDetails, holidayDreams } from './holidayDreams'
 import { AnswerInspection } from './AnswerInspection'
+import { AnswerOverlays } from './AnswerOverlays'
 import { MemoryFragments } from './MemoryFragments'
 import { guessFeedback, resultVerse } from './dreamRitual'
 import { streakShareLine } from '../game/playStats'
@@ -128,7 +129,7 @@ function Round({ dream, day, playtest, onNew, onToday }: { dream: LandscapeDream
       <LandscapeArtwork dream={dream} changed={side === 'changed'}/>
       {!result && recall.confirmed.map((guess, i) => <span key={i} className={`dream-marker ${guess.correct ? 'dream-marker--found' : 'dream-marker--false'}`} style={{ left: `${guess.point.x * 100}%`, top: `${guess.point.y * 100}%` }}>{guess.correct ? '✓' : '×'}</span>)}
       {!result && recall.pending && <span className="dream-marker dream-marker--pending" style={{ left: `${recall.pending.x * 100}%`, top: `${recall.pending.y * 100}%` }}/>}
-      {result && markers && getAnswerReveals(differences, recall.foundDifferenceIds, side).map(({ difference: d, number, found }) => <span key={d.id} className={`answer-outline ${found ? 'answer-found' : ''}`} style={{ left: `${d.box.left * 100}%`, top: `${d.box.top * 100}%`, width: `${d.box.width * 100}%`, height: `${d.box.height * 100}%` }}><span>{number}</span></span>)}
+      {result && markers && <AnswerOverlays reveals={getAnswerReveals(differences, recall.foundDifferenceIds, side)}/>}
     </>
   }
   const guessAction = <button className="primary-action" disabled={!recall.pending || busy || Boolean(storageError)} onClick={() => { if (recall.pending) void dispatch({ type: 'confirm', point: recall.pending, side: pendingSide, expectedCount: recall.confirmed.length }) }}>Remember</button>
